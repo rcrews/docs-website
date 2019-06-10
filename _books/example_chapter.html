@@ -1,0 +1,191 @@
+---
+layout: docux
+title: Ambari Admin Tasks
+---
+
+<!-- THIS IS OUTPUT CUT AND PASTED DIRECTLY FROM DOCBOOKS. CHANGES ARE AS COMMENTED -->
+
+<div id="content">
+    <div class="statustext">&nbsp;</div>
+    <div class="chapter">
+        <div class="titlepage">
+            <div>
+                <div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="ch_ambari_admin_tasks"></a><div class="chapter">Chapter 2</div>Ambari
+                    Admin Tasks</h2></div>
+            </div>
+        </div>
+        <p>An "Ambari Admin" has administrator (or super-user) privilege. When logged into Ambari with the "Ambari
+            Admin" privilege, you can: </p>
+
+        <ul>
+            <li><p>
+                <a href="#_changing_the_administrator_account_password" target="_top">Change the
+                    Administrator Account Password</a></p></li>
+            <li><p><a href="#_creating_a_cluster" target="_top">Create a cluster</a></p></li>
+            <li><p><a href="#_setting_cluster_permissions" target="_top">Set
+                access permissions for an existing cluster</a></p></li>
+            <li><p><a href="ch_managing_views.html" target="_top">Create, delete, and
+                edit view instances</a></p></li>
+            <li><p><a href="_setting_view_permissions.html" target="_top">Manage
+                permissions for view instances</a></p></li>
+            <li><p><a href="_managing_users_and_groups.html" target="_top">Create,
+                edit, and delete users and user groups</a></p></li>
+        </ul>
+        <p> For more information about creating Ambari users locally and importing Ambari LDAP users, see <a
+                class="link" href="_managing_users_and_groups.html" target="_top">Managing Users and Groups</a>. </p>
+    </div>
+
+
+    <div class="section">
+        <div class="titlepage">
+            <div>
+                <div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a
+                        id="_changing_the_administrator_account_password"></a>2.1 &nbsp;Changing the Administrator
+                    Account Password <a class="hash-link" href="#_changing_the_administrator_account_password">#</a></h3></div>
+            </div>
+        </div>
+        <p>During install and setup, the Cluster Installer wizard automatically creates a default user with "Ambari
+            Admin" privilege. You can change the password for this user (or other Local users in the system) from the
+            Ambari Administration interface. You can change the password for the default <code
+                    class="literal">admin</code> user to create a unique administrator credential for your system.</p>
+
+        <p>To change the password for the default <code class="literal">admin</code> account: </p>
+
+        <div class="orderedlist">
+            <ol class="orderedlist" type="1">
+                <li><p> Browse to the Users section.</p></li>
+                <li><p> Select the <code class="literal">admin</code> user. </p></li>
+                <li><p> Click the Change Password button.</p></li>
+                <li><p> Enter the current <code class="literal">admin</code> password and the new
+                    password twice. </p></li>
+                <li><p> Click OK to save the new password.</p></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="titlepage">
+            <div>
+                <div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both">
+                    <a id="_creating_a_cluster"></a>2.2 &nbsp;Creating a Cluster <a class="hash-link" href="#_creating_a_cluster">#</a></h3></div>
+            </div>
+        </div>
+        <p>As an Ambari Admin, you can launch the Cluster Install Wizard and create a cluster. To create a cluster, from
+            the Ambari Administration interface: </p>
+
+        <div class="orderedlist">
+            <ol class="orderedlist" type="1">
+                <li><p> Click <code class="literal">Install Cluster</code>. The Cluster Install Wizard
+                    displays. </p></li>
+                <li><p> Follow the steps in the wizard to install your cluster.</p></li>
+            </ol>
+        </div>
+        <p>For more information about prerequisites and system requirements, see
+            <a href="http://dev.hortonworks.com.s3.amazonaws.com/HDPDocuments/Ambari-Trunk/bk_Installing_HDP_AMB/content/ch_Getting_Ready.html" target="_top">Getting
+                Ready</a>. </p></div>
+
+    <div class="section">
+        <div class="titlepage">
+            <div>
+                <div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a
+                        id="_setting_cluster_permissions"></a>2.3 &nbsp;Setting Cluster Permissions <a class="hash-link" href="#_setting_cluster_permissions">#</a></h3></div>
+            </div>
+        </div>
+        <p>After you create a cluster, users with Admin Admin privileges automatically get Operator permission on the
+            cluster. By default, no users have access to the cluster. You can grant permissions on the cluster to other
+            users and groups from the Ambari Administration interface.</p>
+
+        <p>Ambari manages the following permissions for a cluster: <code class="literal">Operator</code> and <code
+                class="literal">Read-Only</code>. Users and Groups with <code class="literal">Operator</code> permission
+            are granted access to the cluster. Operator permission provides full control of the following services: </p>
+
+        <div>
+            <ul>
+                <li><p> Start</p></li>
+                <li><p> Stop</p></li>
+                <li><p> Restart</p></li>
+                <li><p> Add New</p>
+
+                    <p> And The Following Configurations: </p></li>
+                <li><p> Modify</p></li>
+                <li><p> Revert</p></li>
+            </ul>
+        </div>
+        <p>Users and Groups with <code class="literal">Read-Only</code> permission can only view, not modify, services
+            and configurations.</p>
+
+        <p>Users with Ambari Admin privileges are implicitly granted <code class="literal">Operator</code> permission.
+            Plus, Ambari Admin users have access to the Ambari Administration interface which allows them to control
+            permissions for the cluster. </p>
+
+        <p>To modify user and group permissions for a cluster: </p>
+
+        <div class="orderedlist">
+            <ol class="orderedlist" type="1">
+                <li><p> As an Ambari Admin, access the Ambari Administration interface.</p></li>
+                <li><p> Click Permissions, displayed under the cluster name.</p></li>
+                <li><p> The form showing the permissions <code class="literal">Operator</code> and
+                    <code class="literal">Read-Only</code> with users and groups is displayed. </p></li>
+                <li><p> Modify the users and groups mapped to each permission and save.</p></li>
+            </ol>
+        </div>
+        <p>For more information about managing users and groups, see <a
+                                                                        href="_managing_users_and_groups.html"
+                                                                        target="_top">Managing Users and Groups</a>.
+        </p>
+
+        <div class="warning callout">
+            <div>Assigning permissions to a group having <span class="italic">no</span> members is possible. </div>
+        </div>
+        <div class="note callout" >
+            <div>Verify user permissions, group membership, and group permissions to ensure that each user and group has appropriate permissions. </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="titlepage">
+            <div>
+                <div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a
+                        id="_viewing_the_cluster_dashboard"></a>2.4 &nbsp;Viewing the Cluster Dashboard <a class="hash-link" href="#_viewing_the_cluster_dashboard">#</a></h3></div>
+            </div>
+        </div>
+        <p>After you have created a cluster, select <code class="literal">Clusters &gt; Go to Dashboard</code> to open
+            the Dashboard view. For more information about using Ambari to monitor and manage your cluster, see <a
+                    class="link"
+                    href="http://dev.hortonworks.com.s3.amazonaws.com/HDPDocuments/Ambari-Trunk/bk_Ambari_Users_Guide/content/ch_monitoring_and_managing_your_hdp_cluster_with_ambari.html"
+                    target="_top">Monitoring and Managing your HDP Cluster with Ambari</a>. </p>
+    </div>
+
+    <div class="section">
+        <div class="titlepage">
+            <div>
+                <div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a
+                        id="_renaming_a_cluster_"></a>2.5 &nbsp;Renaming a Cluster  <a class="hash-link" href="#_renaming_a_cluster_">#</a></h3></div>
+            </div>
+        </div>
+        <p>A user with Admin Admin privileges can rename a cluster, using the Ambari Administration interface. </p>
+
+        <p>To rename a cluster: </p>
+
+        <div class="orderedlist">
+            <ol class="orderedlist" type="1">
+                <li><p> In Clusters, click the Rename Cluster icon, next to the cluster name.</p>
+
+                    <div class="informalfigure">
+                        <div class="mediaobject"><img src="/HDPDocuments/Ambari-2.2.1.1/bk_Ambari_Admin_Guide/content/figures/2/figures/Rename_cluster.png"></div>
+                    </div>
+                    <p>The cluster name becomes write-able.</p></li>
+                <li><p> Enter alphanumeric characters as a cluster name.</p></li>
+                <li><p> Click the check mark.</p></li>
+                <li><p> Confirm.</p></li>
+            </ol>
+        </div>
+        <div class="important callout"><div>After renaming the cluster, alert checks must be re-queued on the agents. Therefore, you must retart Ambari Server and the Ambari Agents for the change to take effect. </div></div>
+        <div class="important callout"><div>By changing the name of the cluster, the Ambari REST API resource for the cluster also changes. You must adjust any API calls you make to use this new name.</div></div>
+    </div>
+
+    <div class="prev-next">
+        <div class="prev"><a href="#">&laquo; Administering Ambari: Overview</a></div>
+        <div class="next"><a href="#">Managing Users and Groups &raquo;</a></div>
+    </div>
+</div>

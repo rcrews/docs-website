@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% include head.html -%}
+<body class="docs {{ page.collection }} {{ page.layout }}">
+    <div id="body_container">
+        {% include header.html -%}
+        <div class="lowerbody">
+            {{ content }}
+        {% include footer.html -%}
+        {% include get_started_overlay.html -%}
+    </div>
+</body>
+</html>

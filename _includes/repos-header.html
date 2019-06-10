@@ -1,0 +1,52 @@
+<!--[if lt IE 9]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+{% include www_header.html -%}
+<div class="mainbody">
+    <section class="ps titlebar">
+        <div>
+            <div class="featured_image"><img src="/common/img/product_icons/icon-{{ page.title | remove: " " | downcase }}.png" onerror='this.onerror = null; this.src="/common/img/product_icons/icon-empty.png"'></div>
+            <div class="breadcrumb"><a href="/">Documentation</a> &raquo; <span class="current_book">{{ page.title }} Download Links</span></div>
+            <h1 class="wordy">{{ page.title }} {% if page.layout != "post" %}Download Links{% endif %}</h1>
+            {% if page.version -%}
+                {% for product in site.data.versions -%}
+                {% if product.name == page.title -%}
+                <div class="pulldown versions">
+                    <div class="this">Version {{ page.version }} {% if page.type %}({{ page.type }}){% endif %}</div>
+                    <div class="selector">
+                        <ul class="major">
+                        {% for version in product.versions -%}
+                            <li><a href="{{ version.url }}">{{ version.title }}{% if version.type %}<span class="type {{ version.type | handleize | downcase }}">{{ version.type }}</span>{% endif %}</a>
+                                {% if version.minors -%}
+                                <ul class="minor">
+                                    {% for minor in version.minors -%}
+                                    <li><a href="{{ minor.url }}">{{ minor.title }}{% if minor.type and minor.type != 'Maintenance' %}<span class="type {{ minor.type | handleize | downcase }}">{{ minor.type }}</span>{% endif %}</a></li>
+                                    {% endfor -%}
+                                </ul>
+                            </li>
+                            {% else -%}
+                            </li>
+                            {% endif -%}
+                        {% endfor -%}
+                        </ul>
+                    </div>
+                </div>
+                {% endif -%}
+                {% endfor -%}
+                <!-- <div class="basic_subtitle">Version {{ page.version }} {% if page.type %} ({{ page.type }}) {% endif %}</div> -->
+            {% endif -%}
+        </div>
+    </section>
+    <section class="ps cta-bar">
+        <div>
+            <div class="doctools">
+                <div class="search">
+                    <form id="cta-search" class="searchform">
+                        <input type="text" size="40" placeholder="Search Docs" value="" class="searchterm" name="searchterm"> <i class="fa fa-search submit"></i>
+                    </form>
+                    <!-- Google search widget code DIV
+                    <div id="search"><gcse:search></gcse:search></div> -->
+                </div>
+            </div>
+        </div>
+    </section>

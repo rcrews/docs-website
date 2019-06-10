@@ -1,0 +1,15 @@
+---
+# Only the main SASS file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import
+    "base/mixins",
+    "base/settings",
+    "base/base",
+    "base/global",
+    "base/layout",
+    // "syntax-highlighting",
+    "base/gcse",
+    "fontawesome/font-awesome",
+    "libs/fancybox"
+;

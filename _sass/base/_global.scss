@@ -1,0 +1,347 @@
+/* WWW stylesheet overrides */
+section       { float:none; }
+
+
+a { color:$bright-blue;
+
+  &:visited { color:$bright-blue; }
+  &:hover   { color:$hilite; }
+}
+
+
+figcaption { text-align:center; color:#999; font-size:80%; }
+
+
+/* We should really add some context to this... h1's, h2's appear differently in panel pages than L300 pages. */
+
+h1 {
+  font-size:250%;
+  font-weight:bold;
+  line-height: 1.125em;
+  margin:0px 0px 20px;
+  text-transform:uppercase;
+  font-family:$header-font;
+
+  @include breakpoint( medium ) {
+    font-size:300%;
+    line-height: 1.5em;
+  }
+
+  &+.subtitle {
+    font-size:110%;
+    color:#999;
+    font-weight:300;
+    margin-top:0px;
+
+    @include breakpoint( medium ) {
+      font-size:140%;
+    }
+  }
+
+  a { text-decoration:none; }
+}
+
+div.titlepage h1 {
+  font-size: 220%;
+  font-weight: 300;
+  line-height: 120%;
+  margin: 10px 0px 15px;
+  text-transform: none;
+}
+
+h2 {
+  font-size:180%;
+  font-weight:300;
+  margin:10px 0px 15px;
+  overflow:visible;
+  font-family:$header-font;
+
+  &+.subtitle {
+    font-size:110%;
+    color:#aaa;
+    font-weight:300;
+    margin-top:-20px;
+    margin-bottom:20px;
+    line-height: 170%;
+  }
+
+  &+h3 { margin-top:0px; }
+  &+p { margin-top:5px; }
+  a { text-decoration:none; }
+}
+
+h3 {
+  font-size:145%;
+  margin:40px 0 10px;
+  font-family:$header-font;
+  font-weight:300;
+
+  @include breakpoint( medium ) {
+
+  }
+
+  &+p { margin-top:0px; }
+  a { text-decoration:none;}
+}
+
+h4 { margin-top:20px; font-size:120%; font-weight:400;
+
+}
+
+/* A better looking default horizontal rule */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+// MEDIA
+/* Remove the gap between images and the bottom of their containers: h5bp.com/i/440  */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+
+  &.shadowed  {
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.5));
+    filter: url(/wp-content/themes/hortonworks/css/shadow.svg#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#777')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#777')";
+  }
+}
+
+// BUTTONS
+.btn {
+  display:inline-block;
+  padding:5px 10px;
+  text-decoration:none;
+  text-align:center;
+  border-radius:$radius;
+  color:#fff;
+  background-color:$primary-green;
+  font-weight:bold;
+  margin-right:5px;
+  margin-bottom:5px;
+
+  &:active { position:relative; top:1px; }
+  &:focus {  }
+  &:visited { color:#fff; }
+  &:hover { color:#fff;
+    background-color:$dark-green;
+  }
+
+  &.small {
+    padding:5px 10px;
+    font-size:80%;
+  }
+
+  &.large {
+    padding:15px 30px;
+    @include breakpoint( desktop ) { font-size:120%; }
+
+  }
+
+  // Used when there's some smaller text below the main button text
+  &.w_subtext { padding:5px; }
+
+  // Used where the buttons need to take up the whole div
+  &.full {
+    width:100%;
+    display:block;
+  }
+
+  &.clear {
+    color:$primary-green !important;
+    border:1px solid #DCDCDC;
+    background-color:$background-grey !important;
+    // @include background-image(linear-gradient(rgba(246,247,247,1) 0%, rgba(231,232,233,1) 100%));
+
+    &:hover {
+      border:1px solid #DCDCDC;
+      background-color:$background-grey;
+      // @include background-image(linear-gradient(rgba(231,232,233,1) 0%, rgba(246,247,247,1) 100%));
+    }
+  }
+
+  // These override elements are designed for a white background. For use on green backgrounds, or other colors, see below.
+  &.loud {
+    background:$hilite;
+    color:#fff;
+    border:0px solid $dark-orange;
+
+    &:hover { background-color:$bright-orange; }
+    .subtext { color:$pale-orange; }
+  }
+
+  &.dark {
+    background:#333;
+    color:#fff;
+    border:0px solid #000;
+
+    &:hover { background-color:$bright-orange; }
+    .subtext { color:$pale-orange; }
+  }
+}
+
+/* New Buttons */
+
+.button-default, .button-white, .button-green, .button-orange {
+  display: inline-block;
+  border: 2px solid white;
+  padding: 11px 16px 11px 21px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 0.05em;
+  background: transparent;
+  margin-top: 25px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+.button-default:hover, .button-white:hover, .button-green:hover, .button-orange:hover {
+  background: white;
+  color: #008cff; }
+
+.main-body .mktoForm .button-default, .main-body .mktoForm .button-white, .main-body .mktoForm .button-green, .main-body .mktoForm .button-orange {
+  margin-bottom: 20px; }
+
+.button-white {
+  background: transparent;
+  border-color: #00A3AF;
+  color: #00A3AF; }
+.button-white:hover {
+  background: #008cff;
+  border-color: #008cff;
+  color: white; }
+
+.button-green {
+  background: #00A3AF;
+  border-color: #00A3AF;
+  color: white; }
+.button-green:hover {
+  background: #008cff;
+  border-color: #008cff;
+  color: white; }
+
+.button-orange {
+  background: #FF7400;
+  border-color: #FF7400;
+  color: white; }
+.button-orange:hover {
+  background: #F96702;
+  border-color: #F96702;
+  color: white; }
+
+
+
+// LINKS
+
+/* For documents linking to xyz sort of file */
+
+a       { text-decoration:none; }
+a.pdf { padding-left:20px; background:url(../images/icons/pdf_icon.png) no-repeat; }
+
+a.hash-link     { display:none; } // Show-hide handled by jQuery
+
+// LISTS
+ol              { padding-left:20px; }  // Flush by default.
+ol li           { margin-bottom:5px; }
+ul ul           { padding:0px; }
+
+/* No Indent for the list */
+ul.no-indent,
+ol.no-indent    { padding-left:15px; }
+
+/* Simple, no dots, just line-breaks */
+ul.nodots,
+ol.nodots       { padding:0px; margin-left:0px;
+  li            { list-style-type:none; }
+}
+
+/* Create a commma separated list */
+ul.comma_separated, ol.comma_separated {
+  overflow:auto;
+  padding-left:0px;
+  display:inline-block;
+
+  li { list-style-type:none; display:inline-block;
+    &:after { content:", " }
+    &:last-child:after  { content:""; }
+  }
+}
+
+/* Create a string of jump links (i.e. at the top of long pages) */
+ul.jump_links, ol.jump_links {
+  overflow:auto;
+  padding-left:0px;
+  display:inline-block;
+
+  li { list-style-type:none; display:inline-block;
+    &:after { content:"  |  " }
+    &:last-child:after  { content:""; }
+  }
+}
+
+/* Used for a list of links */
+ul.jump_offs, ol.jump_offs {
+  list-style-type:none;
+  padding-left:0px;
+}
+
+/* Use with lots of text per bullet. - Adds spacing below the list item to give it more of a paragraph styling */
+ul.wide li, ol.wide li {
+  margin-bottom:10px;
+
+  b:first-child,
+  strong:first-child, { display:block; }
+  b+br { display:none; }
+}
+
+ul.check, ol.check {
+  padding-left:0px;
+  list-style-type:none;
+
+  li {
+    padding-left:25px;
+    background:url(/wp-content/themes/hortonworks/images/icons/check_grey_x16.png) left 3px no-repeat;
+    vertical-align:top;
+    margin-bottom:10px;
+  }
+}
+
+// TABLES
+table.fixed,
+table.fixed tbody   { table-layout:fixed; }
+td                  { vertical-align:top; }
+
+/* We don't need padding around a UL if it's the only content in a table */
+td>ul:first-child   { margin-top:0px; margin-bottom:0px;}
+
+.data-table         { width: 100%;
+  th                { color: #fff; background-color: #999; padding: 2px 5px; border: 1px solid #fff; font-weight:400; }
+  th > p            { margin-bottom:0px; } // Circumvent incorrect HTML in docbooks.
+  td                { padding: 2px 5px; border: 1px solid #fff; }
+  tr:nth-child(odd) { background-color: #f6f6f6; }
+  tr:nth-child(odd) td:first-child { background-color: #f0f0f0; font-weight: bold; }
+  tr:nth-child(even) { background-color: #f0f0f0; }
+  tr:nth-child(even) td:first-child { background-color: #e6e6e6; font-weight: bold; }
+}
+
+// GENERAL COPY RULES
+/* Avoids funky spacing at the top of a column that starts with a paragraph */
+div>p:first-child { margin-top:0px; }
+
+// HIGHLIGHT.JS OVERRIDE
+.hljs               { background-color:transparent; }
+
+// SEARCH HIGHLIGHTS
+.search-highlight   { background-color: rgba(255,255,0,0.3); }
+
+// Lower the cookie notice
+.footer .footer-nav .cookie-notice-wrap.visible { bottom: 0 }

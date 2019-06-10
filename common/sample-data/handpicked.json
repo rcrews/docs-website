@@ -1,0 +1,56 @@
+ {
+    "data": [
+        {
+            "booktitle": "HDFS Administration Guide",
+            "release": "2.2.2.0",
+            "product": "Ambari",
+            "title": "ACLs on HDFS",
+            "text": "This guide describes how to use Access Control Lists (ACLs) on the Hadoop Distributed File System (HDFS). ACLs extend the HDFS permission model to support more granular file access based on arbitrary combinations of users and group.",
+            "url": "/docbooks/example_chapter.html"
+        }, {
+            "booktitle": "HDFS Administration Guide",
+            "release": "2.2.2.0",
+            "product": "Ambari",
+            "title": "ACLs on HDFS | Configuring ACLs on HDFS",
+            "text": "Only one property needs to be specified in the hdfs-site.xml file in order to enable ACLs on HDFS...",
+            "url": "/docbooks/example_chapter.html"
+        }, {
+            "booktitle": "HDFS Administration Guide",
+            "release": "2.2.2.0",
+            "product": "Ambari",
+            "title": "ACLs on HDFS | Configuring ACLs",
+            "text": "Before the implementation of Access Control Lists (ACLs), the HDFS permission model was equivalent to traditional UNIX Permission Bits. In this model, permissions for each file or directory are managed by a set of three distinct user classes: Owner, Group, and Others. ",
+            "url": "/docbooks/example_chapter.html"
+        },{
+            "booktitle": "Hive User Guide",
+            "release": "2.4.2",
+            "product": "HDP",
+            "title": "Hive Authorization | Storage-Based Authorization in Hive",
+            "text": "In addition to the traditional POSIX permissions model, HDFS also provides ACLs, or access control lists, as described in ACLs on HDFS. An ACL consists of a set of ACL entries, and each entry names a specific user or group and grants or denies read, write, and execute permissions for the specified user or group.",
+            "url": "https://docs.hortonworks.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
+        },{
+            "booktitle": "Hadoop Security Guide",
+            "release": "2.4.2",
+            "product": "HDP",
+            "title": "Configuring HDP for Kerberos | Adding Security Information to Configuration Files",
+            "text": "ACL for who all can view the default servlets in the HDFS....",
+            "url": "https://docs.hortonworks.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
+        },{
+            "booktitle": "Data Governance Guide",
+            "release": "2.4.2",
+            "product": "HDP",
+            "title": "Mirroring Data (Falcon)",
+            "text": "Expand the Advanced Options section of the page to configure how often the target cluster is updated, throttle distcp operations, set a retry policy, and specify the ACL for the mirror entity",
+            "url": "https://docs.hortonworks.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
+        },{
+            "booktitle": "Release Notes",
+            "release": "2.2.2.0",
+            "product": "Ambari",
+            "title": "Known Issues",
+            "text": "The issue is with the ZooKeeper principal generated for AMS. For example, if the principal is called amszk/<HOSTNAME>@<REALM>, without proper ACL setup ZooKeeper does not work with custom principal name. Switch to u anse existing keytab if present on that host or create a new keytab as zookeeper/<HOSTNAME>@<REALM>",
+            "url": "https://docs.hortonworks.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
+        }
+    ]
+}
+
+

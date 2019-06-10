@@ -1,0 +1,199 @@
+---
+layout: docux
+title: Ambari Admin Tasks
+---
+
+<!-- THIS IS OUTPUT CUT AND PASTED DIRECTLY FROM DOCBOOKS. CHANGES ARE AS COMMENTED -->
+
+<div id="content">
+    <div class="statustext">&nbsp;</div>
+    <div class="chapter">
+        <div class="titlepage">
+            <div>
+                <div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title"><a id="ch_ambari_admin_tasks"></a><div class="chapter">Chapter 5</div>The Kitchen Sink</h2></div>
+            </div>
+        </div>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth <span class="search-highlight">cluster permissions</span> tatsoi tomatillo melon azuki bean garlic.</p>
+
+        <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. </p>
+
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div><h3 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a
+                            id="_changing_the_administrator_account_password"></a>1.1 &nbsp;An H3 Header Example</h3></div>
+                </div>
+            </div>
+            <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley salsify.</p>
+
+            <h4>Lists</h4>
+            <p>This is an example of an ordered list:  </p>
+
+            <div class="orderedlist">
+                <ol class="orderedlist" type="1">
+                    <li><p> Browse to the Users section.</p></li>
+                    <li><p> Select the <code class="literal">admin</code> user. </p></li>
+                    <li><p> Click the Change Password button.</p></li>
+                    <li><p> Enter the current <code class="literal">admin</code> password and the new
+                        password twice. </p></li>
+                    <li><p> Click OK to save the new password.</p></li>
+                </ol>
+            </div>
+
+            <h4>Tables</h4>
+
+            <p>Tables seem to have fairly simple structure that we can use. </p>
+
+            <table class="data-table">
+                <colgroup>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th align="left">
+                        <p><span class="bold"><strong><span class="bold"><strong>Policy ID</strong></span></strong></span></p>
+                    </th>
+                    <th align="left">
+                        <p><span class="bold"><strong><span class="bold"><strong>Policy Name</strong></span></strong></span></p>
+                    </th>
+                    <th align="left">
+                        <p><span class="bold"><strong><span class="bold"><strong>Replica Block Placement (for n replicas)</strong></span></strong></span></p>
+                    </th>
+                    <th align="left">
+                        <p><span class="bold"><strong><span class="bold"><strong>Fallback storage for creation</strong></span></strong></span></p>
+                    </th>
+                    <th align="left">
+                        <p><span class="bold"><strong><span class="bold"><strong>Fallback storage for replication</strong></span></strong></span></p>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td align="left">12</td>
+                    <td align="left">HOT (default)</td>
+                    <td align="left">Disk: n</td>
+                    <td align="left">&lt;none&gt;</td>
+                    <td align="left">ARCHIVE</td>
+                </tr>
+                <tr>
+                    <td align="left">8</td>
+                    <td align="left">WARM</td>
+                    <td align="left">Disk: 1, ARCHIVE: n-1</td>
+                    <td align="left">DISK, ARCHIVE</td>
+                    <td align="left">DISK, ARCHIVE</td>
+                </tr>
+                <tr>
+                    <td align="left">4</td>
+                    <td align="left">COLD</td>
+                    <td align="left">ARCHIVE: n</td>
+                    <td align="left">&lt;none&gt;</td>
+                    <td align="left">&lt;none&gt;</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h4>Code Formatting</h4>
+
+            <p>Code formatting should have the following characteristics : </p>
+
+            <ul>
+                <li>Easy to copy & paste.</li>
+                <li>Syntax highlighted.</li>
+            </ul>
+
+            <p>To make syntax highlighting work, we're using <a href="https://highlightjs.org/">highlight.js</a>, a mature and streamlined syntax highlighting tool that just works. Additional styling is available.</p>
+
+            <p>Example: CLI.</p>
+            <pre><code class="bash">[bsmith@hadoop01 ~]$ sudo -u hdfs hadoop dfsadmin -report
+Configured Capacity: 19010409390080 (17.29 TB) Present Capacity: 18228294160384 (16.58 TB) DFS Remaining: 5514620928000 (5.02 TB) DFS
+Used: 12713673232384 (11.56 TB) DFS Used%: 69.75% Under replicated blocks: 181 Blocks with corrupt replicas: 0  Missing blocks: 0
+            </code></pre>
+
+            <p>Example: bash script</p>
+            <pre><code>#!/bin/bash
+
+# Adjust/Add the property "net.topology.script.file.name"
+# to core-site.xml with the "absolute" path the this
+# file. ENSURE the file is "executable".
+
+# Supply appropriate rack prefix
+RACK_PREFIX=default
+
+# To test, supply a hostname as script input:
+if [ $# -gt 0 ]; then
+
+CTL_FILE=${CTL_FILE:-"rack_topology.data"}
+HADOOP_CONF=${HADOOP_CONF:-"/etc/hadoop/conf"}
+
+if [ ! -f ${HADOOP_CONF}/${CTL_FILE} ]; then
+    echo -n "/$RACK_PREFIX/rack "
+    exit 0
+fi
+
+while [ $# -gt 0 ] ; do
+    nodeArg=$1
+    exec< ${HADOOP_CONF}/${CTL_FILE}
+    result=""
+    while read line ; do
+        ar=( $line )
+        if [ "${ar[0]}" = "$nodeArg" ] ; then
+            result="${ar[1]}"
+        fi
+    done
+    shift
+    if [ -z "$result" ] ; then
+        echo -n "/$RACK_PREFIX/rack "
+    else
+        echo -n "/$RACK_PREFIX/rack_$result "
+    fi
+done
+            </code></pre>
+
+            <p>Example: XML</p>
+            <pre class="programlisting"><code>&lt;property&gt;
+  &lt;name&gt;mapreduce.map.output.compress&lt;/name&gt;
+  &lt;value&gt;true&lt;/value&gt;
+&lt;/property&gt;
+
+&lt;property&gt;
+  &lt;name&gt;mapreduce.map.output.compress.codec&lt;/name&gt;
+  &lt;value&gt;org.apache.hadoop.io.compress.GzipCodec&lt;/value&gt;
+&lt;/property&gt;
+
+&lt;property&gt;
+  &lt;name&gt;mapreduce.output.fileoutputformat.compress.type&lt;/name&gt;
+  &lt;value&gt;BLOCK&lt;/value&gt;
+&lt;/property&gt;</code></pre>
+
+            <p>Example: java</p>
+            <pre><code class="java">SimpleHBaseMapper mapper = new SimpleHBaseMapper()
+.withRowKeyField("word")
+.withColumnFields(new Fields("word"))
+.withCounterFields(new Fields("count"))
+.withColumnFamily("cf");
+            </code></pre>
+
+
+
+
+            <h4>Callouts</h4>
+
+            <p>Here are examples of the callouts we are using. Some of them seem duplicative?</p>
+
+            <div class="tip callout"><div>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane. </div></div>
+            <div class="note callout"><div>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane. </div></div>
+            <div class="warning callout"><div>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane. </div></div>
+            <div class="caution callout"><div>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane. </div></div>
+            <div class="important callout"><div>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane.</div></div>
+        </div>
+    </div>
+
+    <div class="prev-next">
+        <div class="prev"><a href="#">&laquo; The Previous Chapter Title</a></div>
+        <div class="next"><a href="#">The Next Chapter Title &raquo;</a></div>
+    </div>
+</div>

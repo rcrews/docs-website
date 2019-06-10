@@ -1,0 +1,187 @@
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":27,
+    "params":{
+      "q":"setup acl hdfs",
+      "fq":"((product:Ambari AND release:2.2.2.0) OR (product:Data Platform AND release:2.4.2.0))"}},
+  "response":{"numFound":1471,"start":0,"maxScore":17.626097,"docs":[
+      {
+        "booktitle":["ambari_views_guide"],
+        "release":["2.2.2.0"],
+        "product":["Ambari"],
+        "url":["/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_proxy_user.html"],
+        "title":["Setup HDFS Proxy User"],
+        "id":"/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_proxy_user.html",
+        "score":17.626097},
+      {
+        "booktitle":["ambari_views_guide"],
+        "release":["2.2.2.0"],
+        "product":["Ambari"],
+        "url":["/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_proxy_user_pig_view.html"],
+        "title":["Setup HDFS Proxy User"],
+        "id":"/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_proxy_user_pig_view.html",
+        "score":17.626097},
+      {
+        "booktitle":["ambari_views_guide"],
+        "release":["2.2.2.0"],
+        "product":["Ambari"],
+        "url":["/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_user_directory.html"],
+        "title":["Setup HDFS User Directory"],
+        "id":"/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_user_directory.html",
+        "score":17.626097},
+      {
+        "booktitle":["ambari_views_guide"],
+        "release":["2.2.2.0"],
+        "product":["Ambari"],
+        "url":["/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_user_directory_pig_view.html"],
+        "title":["Setup HDFS User Directory"],
+        "id":"/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_user_directory_pig_view.html",
+        "score":17.626097},
+      {
+        "booktitle":["ambari_troubleshooting"],
+        "release":["2.2.2.0"],
+        "product":["Ambari"],
+        "url":["/HDPDocuments/Ambari-2.2.2.0/bk_ambari_troubleshooting/content/_resolving_ambari_install_and_setup_problems.html"],
+        "title":["Resolving Ambari Install and Setup Problems"],
+        "id":"/HDPDocuments/Ambari-2.2.2.0/bk_ambari_troubleshooting/content/_resolving_ambari_install_and_setup_problems.html",
+        "score":17.626097},
+      {
+        "booktitle":["hbase_java_api"],
+        "release":["2.4.2.0"],
+        "product":["Data Platform"],
+        "url":["/HDPDocuments/HDP2/HDP-2.4.2/bk_hbase_java_api/org/apache/hadoop/hbase/IntegrationTestIngestWithACL.html"],
+        "title":["IntegrationTestIngestWithACL (Hortonworks Data Platform Apache HBase Java API Reference)"],
+        "id":"/HDPDocuments/HDP2/HDP-2.4.2/bk_hbase_java_api/org/apache/hadoop/hbase/IntegrationTestIngestWithACL.html",
+        "score":15.644846},
+      {
+        "booktitle":["ambari_views_guide"],
+        "release":["2.2.2.0"],
+        "product":["Ambari"],
+        "url":["/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_WebHCat_proxy_user_pig_view.html"],
+        "title":["Setup WebHCat Proxy User"],
+        "id":"/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_WebHCat_proxy_user_pig_view.html",
+        "score":12.651738},
+      {
+        "booktitle":["ambari_views_guide"],
+        "release":["2.2.2.0"],
+        "product":["Ambari"],
+        "url":["/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/section_kerberos_setup_hive_view.html"],
+        "title":["Kerberos Setup for Hive Views"],
+        "id":"/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/section_kerberos_setup_hive_view.html",
+        "score":12.651738},
+      {
+        "booktitle":["ambari_views_guide"],
+        "release":["2.2.2.0"],
+        "product":["Ambari"],
+        "url":["/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/section_pig_view_kerberos_config.html"],
+        "title":["Kerberos Setup for Pig Views"],
+        "id":"/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/section_pig_view_kerberos_config.html",
+        "score":12.651738},
+      {
+        "booktitle":["Ambari_Security_Guide"],
+        "release":["2.2.2.0"],
+        "product":["Ambari"],
+        "url":["/HDPDocuments/Ambari-2.2.2.0/bk_Ambari_Security_Guide/content/_launching_the_kerberos_wizard_automated_setup.html"],
+        "title":["Launching the Kerberos Wizard (Automated Setup)"],
+        "id":"/HDPDocuments/Ambari-2.2.2.0/bk_Ambari_Security_Guide/content/_launching_the_kerberos_wizard_automated_setup.html",
+        "score":12.651738}]
+  },
+  "highlighting":{
+    "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_proxy_user.html":{
+      "text":["1.1. <em>Setup</em> <em>HDFS</em> Proxy User To set up an <em>HDFS</em> proxy user for the Ambari Server daemon account, you",
+        " need to configure the proxy user in the <em>HDFS</em> configuration. This configuration is determined",
+        ", you set up an <em>HDFS</em> proxy user for root with the following: In Ambari Web, browse to Services > <em>HDFS</em>"]},
+    "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_proxy_user_pig_view.html":{
+      "text":["1.1. <em>Setup</em> <em>HDFS</em> Proxy User To set up an <em>HDFS</em> proxy user for the Ambari Server daemon account, you",
+        " need to configure the proxy user in the <em>HDFS</em> configuration. This configuration is determined",
+        ", you set up an <em>HDFS</em> proxy user for root with the following: In Ambari Web, browse to Services > <em>HDFS</em>"]},
+    "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_user_directory.html":{
+      "text":["1.2. <em>Setup</em> <em>HDFS</em> User Directory The Hive View stores user metadata in <em>HDFS</em>. By default, the location",
+        " in <em>HDFS</em> for this metadata is /user/${username} where ${username} is the username of the currently logged",
+        " for getting started with Ambari, the /user/admin folder needs to be created in <em>HDFS</em>. Therefore, be sure"]},
+    "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_user_directory_pig_view.html":{
+      "text":["1.3. <em>Setup</em> <em>HDFS</em> User Directory The Hive View stores user metadata in <em>HDFS</em>. By default, the location",
+        " in <em>HDFS</em> for this metadata is /user/${username} where ${username} is the username of the currently logged",
+        " for getting started with Ambari, the /user/admin folder needs to be created in <em>HDFS</em>. Therefore, be sure"]},
+    "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_troubleshooting/content/_resolving_ambari_install_and_setup_problems.html":{
+      "text":["2. Resolving Ambari Install and <em>Setup</em> Problems Try the recommended solution for each",
+        " to misconfiguration or other <em>setup</em> errors. Use the left navigation bar to go back to the appropriate screen",
+        " information, then make any necessary changes. 2.5. Problem: <em>HDFS</em> Smoke Test Fails If your Data"]},
+    "/HDPDocuments/HDP2/HDP-2.4.2/bk_hbase_java_api/org/apache/hadoop/hbase/IntegrationTestIngestWithACL.html":{
+      "text":["IntegrationTestIngestWith<em>ACL</em> (Hortonworks Data Platform Apache HBase Java API Reference) Java",
+        " | Constr | Method Detail: Field | Constr | Method org.apache.hadoop.hbase Class IntegrationTestIngestWith<em>ACL</em>",
+        ".apache.hadoop.hbase.IntegrationTestBase org.apache.hadoop.hbase.IntegrationTestIngest org.apache.hadoop.hbase.IntegrationTestIngestWith<em>ACL</em>"]},
+    "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_WebHCat_proxy_user_pig_view.html":{
+      "text":["1.2. <em>Setup</em> WebHCat Proxy User You must set up an <em>HDFS</em> proxy user for WebHCat and a WebHCat proxy",
+        " user for the Ambari Server daemon account. To <em>setup</em> the <em>HDFS</em> proxy user for WebHCat : In Ambari Web",
+        ", browse to Services > <em>HDFS</em> > Configs. Under the Advanced tab, navigate to the Custom core-site section"]},
+    "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/section_kerberos_setup_hive_view.html":{
+      "text":["2.3. Kerberos <em>Setup</em> for Hive Views To set up basic Kerberos for views, see \"Set Up Kerberos",
+        " requires the following additional settings: Table 8.4. Kerberos Settings for Hive Views Property Value Web<em>HDFS</em>"]},
+    "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/section_pig_view_kerberos_config.html":{
+      "text":["2.3. Kerberos <em>Setup</em> for Pig Views To set up basic Kerberos for views, see \"Set Up Kerberos",
+        " requires that Web<em>HDFS</em> Authentication be set to auth=KERBEROS;proxyuser=<ambari-user-principal> For example"]},
+    "/HDPDocuments/Ambari-2.2.2.0/bk_Ambari_Security_Guide/content/_launching_the_kerberos_wizard_automated_setup.html":{
+      "text":["4.2.1. Launching the Kerberos Wizard (Automated <em>Setup</em>) Be sure you have Installed and Configured",
+        " name string. For example, if your cluster is named HDP and your realm is EXAMPLE.COM, the <em>hdfs</em>",
+        " principal will be created as <em>hdfs</em>-HDP@EXAMPLE.COM. Confirm your configuration. You can optionally download"]}},
+  "debug":{
+    "rawquerystring":"setup acl hdfs",
+    "querystring":"setup acl hdfs",
+    "parsedquery":"(+(DisjunctionMaxQuery(((text:setup)^1.0 | (ptext:setup)^2.0)) DisjunctionMaxQuery(((text:acl)^1.0 | (ptext:acl)^2.0)) DisjunctionMaxQuery(((text:hdf)^1.0 | (ptext:hdf)^2.0))) ())/no_coord",
+    "parsedquery_toString":"+(((text:setup)^1.0 | (ptext:setup)^2.0) ((text:acl)^1.0 | (ptext:acl)^2.0) ((text:hdf)^1.0 | (ptext:hdf)^2.0)) ()",
+    "explain":{
+      "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_proxy_user.html":"\n17.626097 = sum of:\n  17.626097 = sum of:\n    10.092134 = max of:\n      3.2843494 = weight(text:setup in 86) [], result of:\n        3.2843494 = score(doc=86,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      10.092134 = weight(ptext:setup in 86) [], result of:\n        10.092134 = score(doc=86,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          5.046067 = idf(docFreq=1459, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    7.5339627 = max of:\n      2.5596035 = weight(text:hdf in 86) [], result of:\n        2.5596035 = score(doc=86,freq=1.0 = termFreq=1.0\n), product of:\n          2.5596035 = idf(docFreq=17955, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      7.5339627 = weight(ptext:hdf in 86) [], result of:\n        7.5339627 = score(doc=86,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          3.7669814 = idf(docFreq=5244, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n",
+      "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_proxy_user_pig_view.html":"\n17.626097 = sum of:\n  17.626097 = sum of:\n    10.092134 = max of:\n      3.2843494 = weight(text:setup in 87) [], result of:\n        3.2843494 = score(doc=87,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      10.092134 = weight(ptext:setup in 87) [], result of:\n        10.092134 = score(doc=87,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          5.046067 = idf(docFreq=1459, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    7.5339627 = max of:\n      2.5596035 = weight(text:hdf in 87) [], result of:\n        2.5596035 = score(doc=87,freq=1.0 = termFreq=1.0\n), product of:\n          2.5596035 = idf(docFreq=17955, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      7.5339627 = weight(ptext:hdf in 87) [], result of:\n        7.5339627 = score(doc=87,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          3.7669814 = idf(docFreq=5244, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n",
+      "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_user_directory.html":"\n17.626097 = sum of:\n  17.626097 = sum of:\n    10.092134 = max of:\n      3.2843494 = weight(text:setup in 88) [], result of:\n        3.2843494 = score(doc=88,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      10.092134 = weight(ptext:setup in 88) [], result of:\n        10.092134 = score(doc=88,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          5.046067 = idf(docFreq=1459, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    7.5339627 = max of:\n      2.5596035 = weight(text:hdf in 88) [], result of:\n        2.5596035 = score(doc=88,freq=1.0 = termFreq=1.0\n), product of:\n          2.5596035 = idf(docFreq=17955, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      7.5339627 = weight(ptext:hdf in 88) [], result of:\n        7.5339627 = score(doc=88,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          3.7669814 = idf(docFreq=5244, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n",
+      "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_HDFS_user_directory_pig_view.html":"\n17.626097 = sum of:\n  17.626097 = sum of:\n    10.092134 = max of:\n      3.2843494 = weight(text:setup in 89) [], result of:\n        3.2843494 = score(doc=89,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      10.092134 = weight(ptext:setup in 89) [], result of:\n        10.092134 = score(doc=89,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          5.046067 = idf(docFreq=1459, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    7.5339627 = max of:\n      2.5596035 = weight(text:hdf in 89) [], result of:\n        2.5596035 = score(doc=89,freq=1.0 = termFreq=1.0\n), product of:\n          2.5596035 = idf(docFreq=17955, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      7.5339627 = weight(ptext:hdf in 89) [], result of:\n        7.5339627 = score(doc=89,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          3.7669814 = idf(docFreq=5244, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n",
+      "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_troubleshooting/content/_resolving_ambari_install_and_setup_problems.html":"\n17.626097 = sum of:\n  17.626097 = sum of:\n    10.092134 = max of:\n      3.2843494 = weight(text:setup in 4907) [], result of:\n        3.2843494 = score(doc=4907,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      10.092134 = weight(ptext:setup in 4907) [], result of:\n        10.092134 = score(doc=4907,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          5.046067 = idf(docFreq=1459, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    7.5339627 = max of:\n      2.5596035 = weight(text:hdf in 4907) [], result of:\n        2.5596035 = score(doc=4907,freq=1.0 = termFreq=1.0\n), product of:\n          2.5596035 = idf(docFreq=17955, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      7.5339627 = weight(ptext:hdf in 4907) [], result of:\n        7.5339627 = score(doc=4907,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          3.7669814 = idf(docFreq=5244, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n",
+      "/HDPDocuments/HDP2/HDP-2.4.2/bk_hbase_java_api/org/apache/hadoop/hbase/IntegrationTestIngestWithACL.html":"\n15.644846 = sum of:\n  15.644846 = sum of:\n    3.2843494 = max of:\n      3.2843494 = weight(text:setup in 825) [], result of:\n        3.2843494 = score(doc=825,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    12.3604965 = max of:\n      4.5869336 = weight(text:acl in 825) [], result of:\n        4.5869336 = score(doc=825,freq=1.0 = termFreq=1.0\n), product of:\n          4.5869336 = idf(docFreq=2364, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      12.3604965 = weight(ptext:acl in 825) [], result of:\n        12.3604965 = score(doc=825,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          6.1802483 = idf(docFreq=469, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n",
+      "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/_setup_WebHCat_proxy_user_pig_view.html":"\n12.651738 = sum of:\n  12.651738 = sum of:\n    10.092134 = max of:\n      3.2843494 = weight(text:setup in 90) [], result of:\n        3.2843494 = score(doc=90,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      10.092134 = weight(ptext:setup in 90) [], result of:\n        10.092134 = score(doc=90,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          5.046067 = idf(docFreq=1459, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    2.5596035 = max of:\n      2.5596035 = weight(text:hdf in 90) [], result of:\n        2.5596035 = score(doc=90,freq=1.0 = termFreq=1.0\n), product of:\n          2.5596035 = idf(docFreq=17955, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n",
+      "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/section_kerberos_setup_hive_view.html":"\n12.651738 = sum of:\n  12.651738 = sum of:\n    10.092134 = max of:\n      3.2843494 = weight(text:setup in 113) [], result of:\n        3.2843494 = score(doc=113,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      10.092134 = weight(ptext:setup in 113) [], result of:\n        10.092134 = score(doc=113,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          5.046067 = idf(docFreq=1459, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    2.5596035 = max of:\n      2.5596035 = weight(text:hdf in 113) [], result of:\n        2.5596035 = score(doc=113,freq=1.0 = termFreq=1.0\n), product of:\n          2.5596035 = idf(docFreq=17955, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n",
+      "/HDPDocuments/Ambari-2.2.2.0/bk_ambari_views_guide/content/section_pig_view_kerberos_config.html":"\n12.651738 = sum of:\n  12.651738 = sum of:\n    10.092134 = max of:\n      3.2843494 = weight(text:setup in 115) [], result of:\n        3.2843494 = score(doc=115,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      10.092134 = weight(ptext:setup in 115) [], result of:\n        10.092134 = score(doc=115,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          5.046067 = idf(docFreq=1459, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    2.5596035 = max of:\n      2.5596035 = weight(text:hdf in 115) [], result of:\n        2.5596035 = score(doc=115,freq=1.0 = termFreq=1.0\n), product of:\n          2.5596035 = idf(docFreq=17955, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n",
+      "/HDPDocuments/Ambari-2.2.2.0/bk_Ambari_Security_Guide/content/_launching_the_kerberos_wizard_automated_setup.html":"\n12.651738 = sum of:\n  12.651738 = sum of:\n    10.092134 = max of:\n      3.2843494 = weight(text:setup in 4876) [], result of:\n        3.2843494 = score(doc=4876,freq=1.0 = termFreq=1.0\n), product of:\n          3.2843494 = idf(docFreq=8698, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n      10.092134 = weight(ptext:setup in 4876) [], result of:\n        10.092134 = score(doc=4876,freq=1.0 = termFreq=1.0\n), product of:\n          2.0 = boost\n          5.046067 = idf(docFreq=1459, docCount=226820)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n    2.5596035 = max of:\n      2.5596035 = weight(text:hdf in 4876) [], result of:\n        2.5596035 = score(doc=4876,freq=1.0 = termFreq=1.0\n), product of:\n          2.5596035 = idf(docFreq=17955, docCount=232176)\n          1.0 = tfNorm, computed from:\n            1.0 = termFreq=1.0\n            1.2 = parameter k1\n            0.0 = parameter b (norms omitted for field)\n"},
+    "QParser":"DisMaxQParser",
+    "altquerystring":null,
+    "boostfuncs":null,
+    "filter_queries":["((product:Ambari AND release:2.2.2.0) OR (product:Data Platform AND release:2.4.2.0))"],
+    "parsed_filter_queries":["(+product:Ambari +release:2.2.2.0) (product:Data +_text_:platform +release:2.4.2.0)"],
+    "timing":{
+      "time":27.0,
+      "prepare":{
+        "time":1.0,
+        "query":{
+          "time":1.0},
+        "facet":{
+          "time":0.0},
+        "facet_module":{
+          "time":0.0},
+        "mlt":{
+          "time":0.0},
+        "highlight":{
+          "time":0.0},
+        "stats":{
+          "time":0.0},
+        "expand":{
+          "time":0.0},
+        "debug":{
+          "time":0.0}},
+      "process":{
+        "time":26.0,
+        "query":{
+          "time":6.0},
+        "facet":{
+          "time":0.0},
+        "facet_module":{
+          "time":0.0},
+        "mlt":{
+          "time":0.0},
+        "highlight":{
+          "time":11.0},
+        "stats":{
+          "time":0.0},
+        "expand":{
+          "time":0.0},
+        "debug":{
+          "time":9.0}}}}}

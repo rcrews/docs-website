@@ -1,0 +1,64 @@
+// Our variables
+$header-font:               "Roboto Condensed", sans-serif;
+$base-font:                 "Roboto", sans-serif;
+$quote-font:                "Roboto Slab", serif;
+$base-font-size:            16px;
+$base-font-weight:          300;
+$small-font-size:           $base-font-size * 0.875;
+$base-line-height:          1.7;
+
+$spacing-unit:              20px;
+
+$text-color:                #444;
+$background-color:          #fdfdfd;
+
+    // #ff7400 // Cloudera Bright Orange*
+    // #305868 // Cloudera Slate*
+    // #00a3af // Cloudera Mint
+    // #008cff // Cloudera Blue
+    // #f96702 // Cloudera Dark Orange
+
+$primary-green: 			#305868; // Changed to Cloudra Slate
+$light-green: 				#446877;
+$pale-green: 				#597986;
+$dark-green: 				#2b4f5d;
+
+$light-orange: 				#ff8f32;
+$pale-orange: 				#ff8119;
+$dark-orange: 				#f96702;
+$bright-orange:             #ff7400; // Changed to Cloudera oranges
+
+$bright-blue:               #1997ff;
+$primary-blue: 				#008cff; // Changed to Cloudera blues
+$blue-grey: 				#007ee5;
+$hilite:                    #32a3ff;
+
+$dark-grey: 				#696969;
+$light-grey: 				#d5d5d5;
+$background-grey: 		    #efefef;
+$super-light-grey: 		    #f8f8f8;
+
+$radius:3px;
+
+// Default Width of the content area
+$content-width:    1400px;
+
+// small and Up
+$small-screen:      emCalc( 480px ) !default;
+
+// medium and Up
+$medium-screen:     emCalc( 768px ) !default;
+
+// medium and Up
+$desktop-screen:     emCalc( 960px ) !default;
+
+// large and up
+$large-screen:      emCalc( 1200px ) !default;
+
+// $Media Queries
+// Used in breakpoint mixin
+$screen:            "only screen" !default;
+$small:             "#{$screen} and (min-width: #{$small-screen})" !default;
+$medium:            "#{$screen} and (min-width: #{$medium-screen})" !default;
+$desktop:           "#{$screen} and (min-width: #{$desktop-screen})" !default;
+$large:             "#{$screen} and (min-width: #{$large-screen})" !default;

@@ -1,0 +1,263 @@
+/* Override a few things from the core stylesheet */
+.main-navigation 					{ background-color:#fff; }
+.main-nav > .wrapper				{ padding-left:30px; padding-right:30px;
+	@include breakpoint( desktop )	{ padding-left:40px; padding-right:40px; margin:auto; max-width:1400px;}
+}
+
+nav .main-menu.mobile-menu > li > a	{ margin-left:30px; }
+.main-nav.off-canvas 				{ top: -77px; }
+
+/* The header is the area included in header.inc - including navigation and all that. */
+#header                             { @include clearfix(); height: auto; background:#333; z-index:45;
+    > div                           { position:relative;  padding:10px 20px 4px; }
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    padding:0;
+    text-align:center;
+    font-size:120%;
+    margin: 0 auto 15px;
+}
+
+@include breakpoint( desktop )	    {
+    #header > div 				    { padding:18px 40px 0; max-width:1200px; @include clearfix; }
+    #header 					    { background:#fff; overflow:visible; position:relative; }
+    #logo 						    { margin-right:10px; margin-top:0; width:120px; min-height:45px;  float:left; }
+    .menu-link 					    { display:none; }
+}
+
+/* Breadcrumbs */
+.breadcrumb 				        { float:none; text-transform:uppercase; font-weight:normal; padding:0; display:none; font-size:85%; margin-top:10px; margin-bottom:10px;
+    @include breakpoint( medium )   { display:block; }
+    a				                { color:#fff; text-decoration:none;  }
+    a:hover                         { text-decoration:underline; color:#fff; }
+    ul 						        { padding-left:0px; margin:0px; }
+}
+
+.mainnav                        { display:none; font-family: $header-font;
+    ul                          { position:relative; list-style-type:none; margin: 0; padding: 0; z-index: 1001;
+        >li                     { position:relative; float:left; color:#404041; font-weight:300; font-size:120%; margin: 0;
+            a                   { color:#404041; padding:7px 15px;}
+            &:hover             { border-bottom:3px solid $primary-green; padding-bottom:10px;
+                > ul            { visibility:visible; opacity:1; }
+                > a             { color:$primary-green;  }
+            }
+
+
+            ul,
+            ul li ul            { visibility:hidden; opacity:0; position: absolute; width:200px; background:#555; z-index: 1001;
+                box-shadow:0 2px 2px -1px rgba(0, 0, 0, 0.055);
+
+                -webkit-transition:opacity 0.2s linear, visibility 0.2s linear; ///* Chrome &amp; Safari*/
+                -moz-transition:opacity 0.2s linear, visibility 0.2s linear; // /*Mozilla Firefox*/
+                -o-transition:opacity 0.2s linear, visibility 0.2s linear; // /* Opera */
+                transition:opacity 0.2s linear, visibility 0.2s linear;
+            }
+
+            ul                  { top:32px; left:1px;
+                li              { clear:both; width:100%; border:0 none;  text-transform:initial;
+                    a           { background:none;  color:#fff; text-decoration:none; display:inline-block; border:0 none; float:left; clear:both; width:200px;}
+                    &:hover > a { background-color:$primary-green; color:#fff; }
+                    &:last-child { border-bottom: 0 none;}
+                    &.latest    { font-weight:bold; }
+                    i           { display:block; float:right; }
+                }
+            }
+
+            ul li ul            { top: 0px; left: 200px; border-left:1px solid #fff;}
+        }
+
+        a.first {
+            border-left: 0 none;
+        }
+
+        a.last {
+            border-right: 0 none;
+        }
+    }
+    >ul>li:last-of-type a     { padding-right:0px; }
+
+    @include breakpoint( desktop )   { float:right; margin-top:15px; display:block; }
+}
+
+/* TITLEBAR STYLES */
+.ps.titlebar {
+    text-align: left;
+    background-color: #305868;
+    color: #fff;
+
+    & > div { padding: 10px 30px 5px; }
+
+    @include breakpoint(desktop) { min-height: 80px; padding-bottom: 0px;
+        & > div {
+            padding: 30px 40px 40px;
+            text-align: left;
+        }
+    }
+
+    .subtitle p {
+        margin: 0px;
+    }
+
+    /* Cuz sometimes you want a regular subtitle... like when there's a menu in the black area */
+    .basic_subtitle {
+        font-size: 115%;
+        font-weight:300;
+
+        @include breakpoint(desktop) {
+            font-size: 125%;
+            font-family: $header-font;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+    }
+
+    /* Titlebar Featured Image  */
+    .featured_image { display:none;
+
+        @include breakpoint(desktop) {
+            display:block;
+            position:absolute;
+            right: 50px;
+            bottom:0;
+            height:220px;
+            width:250px;
+            padding:30px;
+            background-image:url(/common/img/white-book-bg.png);
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:contain;
+            text-align:center;
+
+            img        {
+                width:90%;
+                -ms-transform: skew(0, -3deg); /* IE 9 */
+                -webkit-transform: skew(0, -3deg); /* Safari */
+                transform: skew(0, -3deg);
+            }
+        }
+    }
+
+    .bg-fa {
+        font-size: 200px;
+        overflow: hidden;
+        position: absolute;
+        right: 100px;
+        top: -100px;
+        opacity: 0.25;
+    }
+
+    h1 {
+        color: #fff;
+        margin-bottom: 10px;
+
+        @include breakpoint(desktop) {
+            margin-bottom: 0px;
+            padding-right:300px;
+        }
+
+        & + .subtitle {
+            background-color: #000;
+            color: #fff;
+            width: auto;
+            padding: 5px 20px 10px;
+            margin: 10px -20px -20px;
+
+            @include breakpoint(medium) {
+                padding: 5px 40px;
+                margin: 10px -40px -30px;
+            }
+        }
+    }
+}
+
+.ps.cta-bar {
+    background-color: #00a3af;
+    background-image: -webkit-linear-gradient(to right, #00a3af, #008cff);
+    background-image: -moz-linear-gradient(to right, #00a3af, #008cff);
+    background-image: -ms-linear-gradient(to right, #00a3af, #008cff);
+    background-image: -o-linear-gradient(to right, #00a3af, #008cff);
+    background-image: linear-gradient(to right, #00a3af, #008cff);
+
+    >div    {
+        height:80px; padding:20px 30px;
+    }
+}
+
+
+/* Version Selector... same structure used in drop down on version pages as the home page. */
+.doctools                            {
+    @include breakpoint( desktop )   { text-align:center; }
+}
+
+/* VERSION PULL DOWN ON PRODUCT PAGES */
+.titlebar .versions             { vertical-align:top; text-align:left; font-family:$header-font;
+    .selector                   { position:absolute;  z-index:100; display:none; border:1px solid #666;}
+    .this                       { margin-top:-5px; font-size:130%; color:#fff; padding:1px 8px 2px 0px; margin-bottom:2px; cursor:pointer;
+        &:after                 { content: "\F107";  font-family: FontAwesome; margin-left:15px; font-size:140%; }
+        &.active                { }
+        &.active:after          { content: "\00D7"; margin-top:-2px;  }
+    }
+    ul.major                    { min-width:130px; margin-left:0px; background-color:#444; border-top:0px; margin-bottom:0px; padding:0;
+        >li                     { font-weight:bold;
+            >a                  { background-color:#555; }
+        }
+        li                      { list-style-type:none; border-bottom: 1px solid #444;
+            a                   { display:block; color:#fff; padding:5px 8px; margin:0;}
+            a:hover             { color:$hilite; background-color:$background-grey; }
+        }
+        .minor                  { margin-left:0px;  margin-bottom:0px; font-weight:normal;
+            li a                { padding-left:10px; }
+            .type               { background-color:#999; color: #fff; padding: 0px 5px;  display: inline-block; margin-top: 2px; border-radius: 2px; float:right; font-size: 90%;
+                &.latest        { background-color:$hilite; }
+            }
+
+        }
+    }
+    a                           { color:#555;  }
+    a:hover                     { color:$hilite; }
+
+    @include breakpoint( desktop )   { position:relative;  margin-right:20px;
+        .this                        { background-color:transparent; color:#fff;  }
+    }
+}
+
+
+
+.search                             { text-align:left; position:relative;
+    input                           { display:inline-block; border-radius:0; padding:10px; height:auto; font-size:120%; border:0; position:relative; color:#999; width:100%;   }
+    i.submit                        { font-size:120%; position:absolute; top:10px; right:10px; color:$primary-green; cursor:pointer;}
+
+    @include breakpoint( desktop )  { margin-right:-25px; display:inline-block; max-height:40px;
+        input[type=text]            { width:auto; }
+    }
+
+}
+
+
+/* FOOTER STYLES */
+.docs-footer                         {
+    >div                        { overflow:auto; padding-right:20px; }
+    .product-section            { width:100%;
+        > div                   { background-color:$background-grey; overflow:auto;}
+        h2                      { margin-top:0px; color:#777; text-align:left;  }
+
+        .post-meta              { font-size:85%; color:#999; }
+
+        ul {
+            margin-left: 0px;
+            width: 50%;
+            float: left;
+
+            list-style-type:none;
+        }
+
+    }
+    @include breakpoint( desktop )	{ position:absolute;  bottom:100px; height:80px; width:100%;  /* Height of the footer */
+        .product-section            { width:50%; float:left; }
+    }
+}
+
+

@@ -1,0 +1,58 @@
+---
+layout: indexpages
+title: Cloudera
+# To Do: Resolve broken links to
+#    /common/img/product_icons/icon-hortonworks.png
+#    /common/img/product_icons/icon-docsiterefresh.png
+#    (Same for _includes/header.html)
+---
+
+<section class="ps mainindex">
+    <div>
+        <div class="section products">
+            {% for product in site.data.versions %}
+            <div class="product">
+                <div class="icon">
+                    <a href="{{ product.latest-url }}">
+                        <img src="/common/img/product_icons/icon-{{ product.name | remove: " " | downcase }}.png" onerror='this.onerror = null; this.src="/common/img/product_icons/icon-empty.png"'>
+                    </a>
+                </div>
+                {% if product.versions %}
+                <div class="versions">
+                    <div class="this">version {{ product.latest-version }}</div>
+                    <div class="selector">
+                        <div class="arrow_box">
+                            <h3>{{ product.name }} Releases</h3>
+                            <ul class="major">
+                                {% for version in product.versions %}
+                                <li><a href="{{ version.url }}">{{ version.title }} {% if version.type %}({{ version.type }}){% endif %}</a>
+                                    {% if version.minors %}
+                                    <ul class="minor">
+                                        {% for minor in version.minors %}
+                                        <li>
+                                            <a href="{{ minor.url }}">{{ minor.title }}
+                                                {% if minor.type and minor.type != 'Maintenance' %}({{minor.type}}){% endif %}
+                                            </a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul></li>
+                                    {% else %}
+                                    </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="versions">
+                    <div class="this-no-fa"></div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+

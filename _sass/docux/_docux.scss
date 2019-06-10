@@ -1,0 +1,137 @@
+/* DOCBOOK LAYOUT */
+
+    .mainbody           { padding-bottom:initial; }
+    .footer             { font-size:90%; }
+
+/* HEADER STYLES */
+    .breadcrumb_bg      { background-color:$super-light-grey; width:100%; position:absolute; height:60px; }
+
+    .topstrip           {     background-color: #2ec093;
+        background-image: -webkit-linear-gradient(to right, #2ec093, #3bb7d9);
+        background-image: -moz-linear-gradient(to right, #2ec093, #3bb7d9);
+        background-image: -ms-linear-gradient(to right, #2ec093, #3bb7d9);
+        background-image: -o-linear-gradient(to right, #2ec093, #3bb7d9);
+        background-image: linear-gradient(to right, #2ec093, #3bb7d9);
+        /* border-top:3px solid #000; */ }
+    .topstrip > div     { max-height:10px; padding:5px 40px }
+
+    h2                  { font-size:220%; margin-top:-10px; }
+    h2 .chapter         { font-size:50%; color:#ccc; text-transform:uppercase;   }
+
+    .titlebar>div       { padding-top:15px; padding-bottom:15px;  }
+    .book_title         { font-size:250%; line-height: 120%; margin-top:20px; margin-bottom:0px; font-weight:bold; font-family:$header-font; }
+    .breadcrumb         { text-transform:uppercase; font-size:90%;
+        .current_book   { display:none; }
+    }
+
+    .ebooks             {
+        .format         { display:inline;  padding-left:5px;
+            img         { width:20px;}
+        }
+
+    }
+
+    @include breakpoint(desktop) {
+        .book_title                 { font-size:350%; margin-top:40px; }
+        .titlebar>div>div           { margin-left:27%; }
+        .breadcrumb .current_book   { display:inline; }
+
+        .ebooks             { display:block; position:absolute; right:40px; bottom:30px; width:250px; font-size:85%; text-align:right;
+            .desc           { display:none; }
+            .format         { display:inline;  padding-left:5px;
+                img         { width:30px;}
+            }
+        }
+
+        .ps.doc-content > div     { padding-top:10px; }
+    }
+
+/* ASIDE STYLES */
+
+    .aside.left             { font-size:100%;   }
+
+    @include breakpoint(desktop) {
+        .aside.left         { min-width:200px; padding-top:15px; width:24%; float:left; font-size:90%; margin-right:20px;  }
+    }
+
+    .toc                { margin-top:20px;
+        ol              { margin-left:-10px; padding-left:0px; list-style-type:none; }
+        ol>li           { padding-left:35px; border-left:2px solid white; position:relative; padding-right:5px;
+            .dropdown   { float:right; color:#999; display:none;  }
+            &:hover     { // background-color:#f6f6f6;
+                .dropdown { display:block; }
+            }
+            &.current   { font-weight:500;
+                &:hover     { background-color:transparent; }
+            }
+            &.current .sections  { display:block; font-weight:normal; }
+            &.current ul  { border-left:2px solid $primary-green; list-style-type:none; }
+            .subsections    { margin-left:15px; margin-top: 5px; }
+        }
+
+        .sections       { display:none; margin-left:-22px; padding-left:37px; margin-top:10px; margin-bottom:10px; list-style-type:none; }
+        .chapno         { padding-right:8px; font-weight:500; font-size:90%; margin-left:-25px; }
+    }
+
+    .search             { position:relative;
+        .icon           { position:absolute; right:10px; top:4px; }
+        #searchfield    { width:100%;  padding:5px 10px; color:#999; }
+
+    }
+
+/* CONTENT STYLING */
+
+    @include breakpoint(desktop) {
+        #content            { margin-left:27%; overflow:auto; }
+    }
+
+    #content            {
+        li > p          { margin:0px; } /* Remove styling on improper <p> tags in list items */
+        ul li           { margin-left:20px; }
+
+
+        .callout                { padding:5px 10px; margin-bottom:10px; overflow:auto;
+            &:before            { font-family: FontAwesome; font-size:250%; padding-right:10px; padding-left:5px; float:left;}
+            &>div               { padding-left:50px; padding-top:10px; }
+            &.warning           { background-color:#FFFCDE; color:#EBB255;
+                &:before        { content: "\f071"; color: #F5BA6C; }
+                &>div:before    { content: "Warning"; color:#F5BA6C; font-weight:bold; display:block; font-size:120%}
+            }
+            &.note              { background-color:#f6f6f6; color:#999;
+                &:before        { content: "\f0a4"; color:#999; }
+                &>div:before    { content: "Note"; color:#999; font-weight:bold; display:block; font-size:120%}
+            }
+            &.caution           { background-color:#FFFCDE; color:#F5BA6C;
+                &:before        { content: "\f071"; color:#F5BA6C; }
+                &>div:before    { content: "Caution"; color:#F5BA6C; font-weight:bold; display:block; font-size:120%}
+            }
+            &.tip               { background-color:#f6f6f6; color:#999;
+                &:before        { content: "\f0a4"; color:#999; }
+                &>div:before    { content: "Tip"; color:#999; font-weight:bold; display:block; font-size:120%}
+            }
+            &.important         { background-color:#F5EDEC; color:rgb(198, 117, 116);
+                &:before        { content: "\f256"; color:#900; }
+                &>div:before    { content: "Important"; color:#900; font-weight:bold; display:block; font-size:120%}
+            }
+        }
+    }
+
+    .prev-next  { overflow:auto; margin-top:15px; font-weight:400;
+        .prev   { float:left; }
+        .next   { float:right; }
+
+    }
+
+table { margin-bottom: 10px; }
+.titlepage a { text-decoration: none; color: black; }
+.toc { display: none; }
+#searchDiv { display: none; }
+.search {padding-bottom: 1ex;}
+
+// highlight.js makes .hljs elements into block elements and adds padding.
+// main.css adds padding.
+// Disable all this inside .replaceable elements.
+em.replaceable code, em.replaceable .hljs {
+  padding: 0;
+  display: inline;
+}

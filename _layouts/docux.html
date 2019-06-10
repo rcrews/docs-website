@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% include docux_head.html -%}
+<body class="docs {{ page.collection }} ">
+    <div id="body_container">
+        {% include docux_header.html -%}
+        {{ content }}
+        {% include docux_footer.html -%}
+    </div>
+</body>
+</html>

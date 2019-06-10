@@ -1,0 +1,173 @@
+    </div><!-- // End Lowerbody -->
+</div> <!-- // End mainbody -->
+<section class="ps docs-footer">
+    <div>
+        <div class="product-section community">
+            <div>
+                <div class="section_content">
+                    <h2>Community Connection</h2>
+                    <ul class="community-links">
+                        <li><a href="//community.hortonworks.com/answers/index.html">Answers</a></li>
+                        <li><a href="//community.hortonworks.com/gallery/index.html">Code Hub</a></li>
+                        <li><a href="//community.hortonworks.com/kb/index.html">Knowledgebase</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="product-section blog">
+            <div>
+                <div class="section_content">
+{% comment -%}
+                    <h2>Documentation: What’s New</h2>
+                    <ul class="blog-posts">
+                        {% for post in site.posts %}
+                        <li>
+                            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                            <br><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+{% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include get_started_overlay.html %}
+{% include lucene_overlay.html %}
+<section class="footer no-padding">
+  <div class="footer-nav grey-bg">
+    <div class="cookie-notice-wrap">
+      <div class="cookie-notice wrapper">
+        <p>This website uses cookies for analytics, personalization, and advertising. To learn more or change your cookie settings, please read our <a href="https://hortonworks.com/cookie-policy/">Cookie Policy</a>. By continuing to browse, you agree to our use of cookies.</p>
+        <a href="index.html#" class="close"><img src="/wp-content/uploads/2016/05/green-circle-x.png" alt="Close"></a>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    if (typeof jQuery === 'undefined') {
+        document.write("<script src='/common/js/libs/jquery/jquery.js'>\x3C/script>");
+    }
+</script>
+<!-- LOAD IN JS FROM WWW -->
+<script>
+var sfjq$ = jQuery.noConflict(), $ = jQuery.noConflict();
+var HMUUD = {};
+var HMUCG = {};
+</script>
+<script src="//hortonworks.com/wp-content/themes/hortonworks/js/scripts.min.js"></script>
+<script src="/common/js/plugins.js"></script>
+<script src="/common/js/scripts.js"></script>
+<script>
+var $ = jQuery;
+$(function () {
+    "use strict";
+    $('.related-projects').matchHeight({
+        byRow: false,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+    $('.product-section > div').matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+    $('.shared_links .section').matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+    $('.shared_links .section').matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+    $.fn.matchHeight._beforeUpdate = function (evt) {
+        $('.related-projects').css('position', 'relative');
+    }
+    $.fn.matchHeight._afterUpdate = function (evt) {
+        $('.loading-sections').hide();
+        $('.related-projects').css('position', 'absolute');
+        $('.product-sections > div').css('visibility', 'visible');
+
+    }
+    // Prepare the books for modal usage.
+    $(".fancybox").fancybox({
+        closeBtn: true,
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    });
+    // Columnize the list layout in the footer
+    $('ul.projects, ul.community-links, ul.blog-posts').columnizeList({
+        columns: 2,
+        wrapper_class: 'columnizedList',
+        nested_item_class: 'nestedItem'
+    });
+    $('.arrow-menu').hover(
+        function (evt) {
+            $('.drop-menu').hide();
+            $(this).find('.drop-menu').fadeIn();
+        }, function() {
+            $('.drop-menu').fadeOut();
+        });
+    $('.mainindex .versions .this').click(function (evt) {
+        if ($(this).hasClass('active')) {
+            // NOT YET ACTIVE
+            $(this).removeClass('active');
+            $(this).next('.selector').hide();
+        } else {
+            // ALREADY ACTIVE
+            $('.selector').hide();
+            $('.versions .this').removeClass('active')
+            $(this).addClass('active');
+            // $(this).hide();
+            $(this).next('.selector').show();
+        }
+    });
+    $('.pulldown.versions .this').click(function (evt) {
+        if ($(this).hasClass('active')) {
+            // NOT YET ACTIVE
+            $(this).removeClass('active');
+            $(this).next('.selector').hide();
+        } else {
+            // ALREADY ACTIVE
+            $('.selector').hide();
+            $('.versions .this').removeClass('active');
+
+            $(this).addClass('active');
+            $(this).next('.selector').show();
+        }
+    });
+    $('body').click(function (e) {
+        // UNSET THE VERSION DROPDOWNS... WHEREVER THEY ARE
+        if ($(e.target).closest('.versions').length === 0) {
+            $('.versions .this').removeClass('active');
+            $('.versions .selector').hide();
+            $('.versions .this').show();
+        }
+    });
+    // Google search widget code script and styles for search box.
+    // Also a part of the search widget is a DIV tag embedded just
+    // after the closing DIV tag of the breadcrumbs section
+    var cx = '008738428046544130690:uaig9xhdwyw';
+    var gcse = document.createElement('script');
+    gcse.type = 'application/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol === 'https:'
+        ? 'https:'
+        : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+});
+</script>

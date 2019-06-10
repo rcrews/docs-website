@@ -1,0 +1,51 @@
+div.foyer {
+
+  .foyer-content {
+    margin: 2rem 2rem 0 2rem;
+  }
+  
+  .foyer-publications {
+    margin: 1rem 2rem 1rem 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .foyer-publication {
+      margin: 0.6rem;
+      flex: 1 1 45vw;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: #eee;
+
+      a::hover {
+        background: #999;
+      }
+
+      .top-band {
+        height:0.75rem;
+        width:100%;
+        background:#3bd;
+        border-radius:3px 3px 0 0;
+      }
+
+      .publication-title {
+        font-weight: bold;
+        color: #777;
+        margin: 0;
+        padding: 0.4rem 0.5rem 0 0.5rem;
+        border: none;
+      }
+
+      .publication-description {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 0;
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        border: none;
+      }
+
+    }
+
+  }
+
+}

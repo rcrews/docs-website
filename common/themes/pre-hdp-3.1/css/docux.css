@@ -1,0 +1,256 @@
+/* DOCBOOK LAYOUT */
+.mainbody {
+  padding-bottom: initial; }
+
+.footer {
+  font-size: 90%; }
+
+/* HEADER STYLES */
+.breadcrumb_bg {
+  background-color: #f9f8f8;
+  width: 100%;
+  position: absolute;
+  height: 60px; }
+
+.topstrip {
+  background-color: #2ec093;
+  background-image: -webkit-linear-gradient(to right, #2ec093, #3bb7d9);
+  background-image: -moz-linear-gradient(to right, #2ec093, #3bb7d9);
+  background-image: -ms-linear-gradient(to right, #2ec093, #3bb7d9);
+  background-image: -o-linear-gradient(to right, #2ec093, #3bb7d9);
+  background-image: linear-gradient(to right, #2ec093, #3bb7d9);
+  /* border-top:3px solid #000; */ }
+
+.topstrip > div {
+  max-height: 10px;
+  padding: 5px 40px; }
+
+h2 {
+  font-size: 220%;
+  margin-top: -10px; }
+
+h2 .chapter {
+  font-size: 50%;
+  color: #ccc;
+  text-transform: uppercase; }
+
+.titlebar > div {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.book_title {
+  font-size: 250%;
+  line-height: 120%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.breadcrumb {
+  text-transform: uppercase;
+  font-size: 90%; }
+  .breadcrumb .current_book {
+    display: none; }
+
+.ebooks .format {
+  display: inline;
+  padding-left: 5px; }
+  .ebooks .format img {
+    width: 20px; }
+
+@media only screen and (min-width: 60em) {
+  .book_title {
+    font-size: 350%;
+    margin-top: 40px; }
+
+  .titlebar > div > div {
+    margin-left: 27%; }
+
+  .breadcrumb .current_book {
+    display: inline; }
+
+  .ebooks {
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    width: 250px;
+    font-size: 85%;
+    text-align: right; }
+    .ebooks .desc {
+      display: none; }
+    .ebooks .format {
+      display: inline;
+      padding-left: 5px; }
+      .ebooks .format img {
+        width: 30px; }
+
+  .ps.doc-content > div {
+    padding-top: 10px; } }
+/* ASIDE STYLES */
+.aside.left {
+  font-size: 100%; 
+  background-color: #fdfdfd;
+  }
+
+@media only screen and (min-width: 60em) {
+  .aside.left {
+    min-width: 200px;
+    padding-top: 15px;
+    width: 24%;
+    float: left;
+    font-size: 90%;
+    margin-right: 20px; } }
+.toc {
+  margin-top: 20px; }
+  .toc ol {
+    margin-left: -10px;
+    padding-left: 0px;
+    list-style-type: none; }
+  .toc ol > li {
+    padding-left: 35px;
+    border-left: 2px solid white;
+    position: relative;
+    padding-right: 5px; }
+    .toc ol > li .dropdown {
+      float: right;
+      color: #999;
+      display: none; }
+    .toc ol > li:hover .dropdown {
+      display: block; }
+    .toc ol > li.current {
+      font-weight: 500; }
+      .toc ol > li.current:hover {
+        background-color: transparent; }
+    .toc ol > li.current .sections {
+      display: block;
+      font-weight: normal; }
+    .toc ol > li.current ul {
+      border-left: 2px solid #3FAD2A;
+      list-style-type: none; }
+    .toc ol > li .subsections {
+      margin-left: 15px;
+      margin-top: 5px; }
+  .toc .sections {
+    display: none;
+    margin-left: -22px;
+    padding-left: 37px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none; }
+  .toc .chapno {
+    padding-right: 8px;
+    font-weight: 500;
+    font-size: 90%;
+    margin-left: -25px; }
+
+.search {
+  position: relative; }
+  .search .icon {
+    position: absolute;
+    right: 10px;
+    top: 4px; }
+  .search #searchfield {
+    width: 100%;
+    padding: 5px 10px;
+    color: #999; }
+
+/* CONTENT STYLING */
+@media only screen and (min-width: 60em) {
+  #content {
+    margin-left: 27%;
+    overflow: auto; } }
+#content {
+  /* Remove styling on improper <p> tags in list items */ }
+  #content li > p {
+    margin: 0px; }
+  #content ul li {
+    margin-left: 20px; }
+  #content .callout {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    overflow: auto; }
+    #content .callout:before {
+      font-family: FontAwesome;
+      font-size: 250%;
+      padding-right: 10px;
+      padding-left: 5px;
+      float: left; }
+    #content .callout > div {
+      padding-left: 50px;
+      padding-top: 10px; }
+    #content .callout.warning {
+      background-color: #FFFCDE;
+      color: #EBB255; }
+      #content .callout.warning:before {
+        content: "\f071";
+        color: #F5BA6C; }
+      #content .callout.warning > div:before {
+        content: "Warning";
+        color: #F5BA6C;
+        font-weight: bold;
+        display: block;
+        font-size: 120%; }
+    #content .callout.note {
+      background-color: #f6f6f6;
+      color: #999; }
+      #content .callout.note:before {
+        content: "\f0a4";
+        color: #999; }
+      #content .callout.note > div:before {
+        content: "Note";
+        color: #999;
+        font-weight: bold;
+        display: block;
+        font-size: 120%; }
+    #content .callout.caution {
+      background-color: #FFFCDE;
+      color: #F5BA6C; }
+      #content .callout.caution:before {
+        content: "\f071";
+        color: #F5BA6C; }
+      #content .callout.caution > div:before {
+        content: "Caution";
+        color: #F5BA6C;
+        font-weight: bold;
+        display: block;
+        font-size: 120%; }
+    #content .callout.tip {
+      background-color: #f6f6f6;
+      color: #999; }
+      #content .callout.tip:before {
+        content: "\f0a4";
+        color: #999; }
+      #content .callout.tip > div:before {
+        content: "Tip";
+        color: #999;
+        font-weight: bold;
+        display: block;
+        font-size: 120%; }
+    #content .callout.important {
+      background-color: #F5EDEC;
+      color: #c67574; }
+      #content .callout.important:before {
+        content: "\f256";
+        color: #900; }
+      #content .callout.important > div:before {
+        content: "Important";
+        color: #900;
+        font-weight: bold;
+        display: block;
+        font-size: 120%; }
+
+.prev-next {
+  overflow: auto;
+  margin-top: 15px;
+  font-weight: 400; }
+  .prev-next .prev {
+    float: left; }
+  .prev-next .next {
+    float: right; }
+
+table { margin-bottom: 10px; }
+.titlepage a { text-decoration: none; color: black; }
+.toc { display: none; }
+#searchDiv { display: none; }
+.search {padding-bottom: 1ex;}

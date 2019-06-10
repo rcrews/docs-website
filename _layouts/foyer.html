@@ -1,0 +1,22 @@
+---
+layout: indexpages
+---
+<div class="loading-sections"><i class="fa fa-spinner fa-spin"></i></div>
+<div class="foyer">
+    <div class="foyer-content">
+        {{ content }}
+    </div>
+    <div class="foyer-publications">
+        {% for publication in page.publications -%}
+        <div class="foyer-publication">
+          <div class="top-band"></div>
+          <a href="{{ publication.url }}">
+            <div>
+              <p class="publication-title">{{ publication.title }}</p>
+              <p class="publication-description">{{ publication.description }}</p>
+            </div>
+          </a>
+        </div>
+        {% endfor -%}
+    </div>
+</section>

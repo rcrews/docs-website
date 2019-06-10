@@ -1,0 +1,39 @@
+<head>
+<meta charset="UTF-8">
+<link rel="dns-prefetch" href="//code.jquery.com">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+{% comment -%}
+    LOAD IN CSS FOUNDATIONS FROM WWW
+{% endcomment -%}
+<link rel="stylesheet" href="//hortonworks.com/wp-content/themes/hortonworks/css/default.min.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,500,700" rel="stylesheet">
+{% comment -%}
+    DOCS
+{% endcomment -%}
+<link rel="stylesheet" href="{{ "/common/css/main.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/common/css/indexpages.css" | prepend: site.baseurl }}">
+<link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+<!-- Favicons -->
+<link rel="shortcut icon" type="image/x-icon" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/favicon.ico"/>
+<link rel="apple-touch-icon" sizes="57x57" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xapple-touch-icon-57x57.png.pagespeed.ic.TWz7ifYwiI.png">
+<link rel="apple-touch-icon" sizes="60x60" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xapple-touch-icon-60x60.png.pagespeed.ic.HZppYaDG1E.png">
+<link rel="apple-touch-icon" sizes="72x72" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xapple-touch-icon-72x72.png.pagespeed.ic._jPqxsGVB1.png">
+<link rel="apple-touch-icon" sizes="76x76" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xapple-touch-icon-76x76.png.pagespeed.ic.71rdjYcwRn.png">
+<link rel="apple-touch-icon" sizes="114x114" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xapple-touch-icon-114x114.png.pagespeed.ic.Q4nDge4MnV.png">
+<link rel="apple-touch-icon" sizes="120x120" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xapple-touch-icon-120x120.png.pagespeed.ic.TYW1NinmLV.png">
+<link rel="apple-touch-icon" sizes="144x144" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xapple-touch-icon-144x144.png.pagespeed.ic.XQcmOhgM6J.png">
+<link rel="apple-touch-icon" sizes="152x152" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xapple-touch-icon-152x152.png.pagespeed.ic.2NPa6vh9T7.png">
+<link rel="apple-touch-icon" sizes="180x180" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xapple-touch-icon-180x180.png.pagespeed.ic.qQK5JeH06Q.png">
+<link rel="icon" type="image/png" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xfavicon-32x32.png.pagespeed.ic.hEm_p8NF7H.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xandroid-chrome-192x192.png.pagespeed.ic.Md6R_bKM6R.png" sizes="192x192">
+<link rel="icon" type="image/png" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xfavicon-96x96.png.pagespeed.ic.kaK_lsbcCX.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/xfavicon-16x16.png.pagespeed.ic.b6UA6mflqk.png" sizes="16x16">
+<link rel="manifest" href="//www.cloudera.com/etc/designs/www/clientlibs/css/assets/icons/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/etc/designs/www/clientlibs/css/assets/icons/favicon/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>

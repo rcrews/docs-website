@@ -1,0 +1,90 @@
+---
+layout: repos-page
+---
+<div class="loading-sections"><i class="fa fa-spinner fa-spin"></i></div>
+<section class="ps product-sections">
+    <div>
+        {% for section in page.sections %}
+            <div id="{{ section.title }}-repos">
+            	<div>
+            		<ul class="jump_links">
+            			{% for os in section.op-sys %}
+            				<li class="li" ><a href="{{ page.url }}#{{os.name}}">{{ os.title }}</a></li>
+            			{% endfor %}
+            		</ul>
+            	</div>
+                <h2>{{ section.title }}</h2>
+                {% if section.title == 'HDP' %}
+                <p>This page provides links to all the relevant components that make up the HDP stack software.
+                Click the blue arrow for an OS specific command line download example, to use in your own scripts. 
+                For related information regarding installing or upgrading your HDP stack software, see the 
+                <a href="index.html" target="_blank">HDP documentation page</a>.</p>
+                {% endif %}
+                {% if section.title == 'Ambari' %}
+                <p>This page provides links to all the relevant components that support your Ambari deployment. 
+                Click the blue arrow for an OS specific command line download example, to use in your own scripts.
+                For related information regarding installing or upgrading Ambari, see the 
+                <a href="index.html" target="_blank">Ambari documentation page</a>.</p>
+                {% endif %}
+                {% if section.title == 'HDF' %}
+                <p>This page provides links to all the relevant components that make up the HDF stack software. 
+                Click the blue arrow for an OS specific command line download example, to use in your own scripts.
+                For related information regarding installing or upgrading HDF, see the 
+                <a href="index.html" target="_blank">HDF documentation page</a>.</p>
+                {% endif %}
+                <div class="books">
+                    {% for os in section.op-sys %}
+                    	<div id="{{ os.name }}">
+                    		<h3>{{ os.title }}</h3>
+                    		<ul>
+                    			{% for bit in os.bits %}
+                    				<li>
+                    					<a href="{{ bit.url }}">{{ bit.title }}</a>
+                    					{% if os.name != 'helper_files' %}
+										<a style="cursor:pointer;" onclick="return toggleMe('{{ bit.id }}')"><img id="{{ bit.id }}_image" src="../../../../common/img/left_arrow.png" style="border:0;margin-left:3px;margin-right:5px;vertical-align:middle;"></a>
+										<div id="{{ bit.id }}" style="display: none; background-color: #D3D3D3; font-family: Courier New;">
+											{{ bit.code }}
+										</div>
+										{% endif %}
+                    				</li>
+                    			{% endfor %}
+                    		</ul>
+                    	</div>
+                    {% endfor %}
+                    {% if section.title == 'HDF' %}
+                    	<div id="additional_downloads">
+                    		<h3>Additional Downloads:</h3>
+                    		<ul>
+                    			{% for extra in section.extras %}
+                    				<li>
+                    					<a href="{{ extra.url }}">{{ extra.title }}</a>
+										<!--<a style="cursor:pointer;" onclick="return toggleMe('{{ extra.id }}')"><img id="{{ extra.id }}_image" src="../../../../common/img/left_arrow.png" style="border:0;margin-right:5px;vertical-align:middle;"></a>
+										<div id="{{ extra.id }}" style="display: none; background-color: #D3D3D3; font-family: Courier New;">
+											{{ extra.code }}
+										</div>-->
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					{% endif %}
+                </div>
+            </div>
+        {% endfor %}
+        <div class="clearance"></div>
+    </div>
+</section>
+<script>
+	function toggleMe(a){
+	var e=document.getElementById(a);
+	var i = document.getElementById(a + '_image');
+	if(!e)return true;
+		if(e.style.display=="none"){
+			e.style.display="block"
+			i.src = '../../../../common/img/up_arrow.png';
+		} else {
+			e.style.display="none"
+			i.src = '../../../../common/img/left_arrow.png';
+		}
+		return false;
+	}
+</script>

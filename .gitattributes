@@ -1,0 +1,15 @@
+*.xml				linguist-language=DocBook
+jquery*.js			linguist-vendored
+pom.xml				linguist-language=Maven
+de_stemmer.js		linguist-vendored
+en_stemmer.js		linguist-vendored
+fr_stemmer.js		linguist-vendored
+browserDetect.js	linguist-vendored
+base64.js			linguist-vendored
+frames_redirect.js	linguist-vendored
+md5.js				linguist-vendored
+quick_search.js		linguist-vendored
+webhelp.js			linguist-vendored
+nwSearchFnt.js		linguist-vendored
+plugins.js			linguist-vendored
+scripts.js			linguist-vendored
