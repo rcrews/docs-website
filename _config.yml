@@ -35,8 +35,12 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - HDPDocuments
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+include:
+  - HDPDocuments/HDF3/

@@ -60,7 +60,7 @@ $(document).ready(function() {
         treeParent.replaceChild(tree, document.getElementById("tree"));
     }
 
-    fetch("../../navigation.json")
+    fetch("navigation_unprocessed.json")
         .then((res) => res.json())
         .then((data) => {
             replaceNavigationTree(data);

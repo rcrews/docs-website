@@ -1,4 +1,10 @@
+/* We'll switch this out to CSS Grid. 
+ *  - https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412
+ *  - https://hackernoon.com/how-css-grid-beats-bootstrap-85d5881cf163 
+ */
+
 /* Simple Grid I picked this up from somewhere. - http://css-tricks.com/dont-overthink-it-grids/ */
+
 $pad: 2.1875em; // 35px Convert to relative measure
 
 @include breakpoint( medium ) {

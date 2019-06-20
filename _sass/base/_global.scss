@@ -1,13 +1,34 @@
-/* WWW stylesheet overrides */
-section       { float:none; }
+// GLOBAL
+// *     { box-sizing: border-box; } // By default,  include margins and padding in height..
 
+html,
+button,
+input,
+select,
+textarea 	{ color: #333; }
+body, table { 
+	font-size: 1em; 
+	line-height: 1.5;  
+	font-family:$base-font; 
+	font-weight:300; 
+}
+
+a { 
+	color:$blue-grey; 
+	
+	&:visited { color:$blue-grey; }
+	&:hover { color:$bright-orange; }
+}
+
+
+/* General base element style settings */
+section       { float:none; }
 
 a { color:$bright-blue;
 
   &:visited { color:$bright-blue; }
   &:hover   { color:$hilite; }
 }
-
 
 figcaption { text-align:center; color:#999; font-size:80%; }
 
