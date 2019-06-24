@@ -34,7 +34,8 @@ $(document).ready(function() {
                 let ul = document.createElement("ul");
                 let container = li.appendChild(ul);
                 if (typeof levelItem.sub === "string") {
-                    fetch(`../../${levelItem.sub}`)
+                    // fetch(`../../${levelItem.sub}`)
+                    fetch(`https://docs.hortonworks.com/HDPDocuments/HDF3/HDF-3.4.1.1/${levelItem.sub}`, {mode: 'no-cors'})
                         .then((res) => res.json())
                         .then((data) => makeLevel(container, data))
                         .catch((err) => makeLevel(container,
