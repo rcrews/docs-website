@@ -17,6 +17,7 @@ $(document).ready(function() {
   // hides the top 95px or so of the page.
   // This code deals with the problem when
   // you click on a link within a page.
+  /*
   $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
       && location.hostname == this.hostname) {
@@ -31,11 +32,13 @@ $(document).ready(function() {
       }
     }
   });
+  */
 
 
 
   //  $("#showHideHighlight").button(); //add jquery button styling to 'Go' button
   //Generate tabs in nav-pane with JQuery
+  /*
   $(function() {
     $("#tabs").tabs({
       cookie: {
@@ -44,6 +47,7 @@ $(document).ready(function() {
       }
     });
   });
+  */
 
   //Generate the tree
   $("#ulTreeDiv").attr("style","");
@@ -59,13 +63,16 @@ $(document).ready(function() {
 //    $("#ulTreeDiv").attr("style","display:block;");
 
   //.searchButton is the css class applied to 'Go' button
+  /*
   $(function() {
     $("button", ".searchButton").button();
 
     $("button", ".searchButton").click(function() { return false; });
   });
+  */
 
   //'ui-tabs-1' is the cookie name which is used for the persistence of the tabs.(Content/Search tab)
+  /*
   if ($.cookie('ui-tabs-1') === '1') {    //search tab is visible
     if ($.cookie('textToSearch') != undefined && $.cookie('textToSearch').length > 0) {
       document.getElementById('textToSearch').value = $.cookie('textToSearch');
@@ -74,6 +81,7 @@ $(document).ready(function() {
       $("#showHideHighlight").css("display","block");
     }
   }
+  */
 
   syncToc(); //Synchronize the toc tree with the content pane, when loading the page.
   // restore the vertical scroll position of the side nav

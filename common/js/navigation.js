@@ -1,4 +1,6 @@
+
 $(document).ready(function() {
+    
     function replaceNavigationTree(navigationJson) {
         "use strict";
 
