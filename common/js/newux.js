@@ -27,34 +27,41 @@ var NEWUX = (function($) {
                 .replace(/-+/g, '-'); // collapse dashes
 
             return str;
+        },
+        flatten: function(arr, subkey) {
+            // TODO! Flatten a nested array with subs, into a consectutive array.
+            return [];
         }
     }
 
     var Pubnav = {
 
-        product: '',
-        pagestate: {
-            current: '',
-            up: '',
-            forward: '',
-            next: '',
+        nav_tree: [], // Will hold the full, cleaned, nav JSON file
+        product: '', // Holds a unique name for the product we're in, which is used as a key for saving the menu.
+        pagestate: { // Will hold the current state of the page.
+            current: {},
+            prev: {},
+            next: {},
+            depth: 0, // How many layers deep we are.
+            breadpath: [],// Array of Parents... in descending order.
+            children: [] // Flattened Array of Subs }
         },
-        navstate: [],
+        navstate: [], // Holds the list of open nav items in the menu... used to maintain state between loads.
         init: function() {
             this.loadNav();
         },
         bindEvents: function() {
             // Catch Link Clicks from Pubmenu and Feed through System
-
             $('.ctoc a').on('click', this.requestNewContent.bind(this));
-            $('.ctoc li.xp').on('click', this.handleOpen);
-            $('.ctoc .expand').on('click', this.contractNav);
 
-            // Catch Back Button Clicks and Update Page.
+            // Nav Menu Expand/Contract
+            $('.ctoc li.xp').on('click', this.handleNavOpen);
+            $('.ctoc .expand').on('click', this.handleNavContract);
+
+            // Back Button Clicks.
             $(window).bind("popstate", this.handleBackButton.bind(this));
-
         },
-        handleOpen: function(evt) {
+        handleNavOpen: function(evt) {
             evt.stopPropagation();
             let $this = $(this);
 
@@ -62,36 +69,30 @@ var NEWUX = (function($) {
             if(!($this).hasClass('open')) {
                 let id = $(this).data('navid');
                 // Update the state
-                Pubnav.expandElem(id);
+                Pubnav.expandNavElem(id);
 
                 // Update state
                 Pubnav.navstate.push(id);
                 localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
             }
         },
-        expandElem: function(id) {
-            console.log(id);
-            let $this = $('.ctoc li').find(`[data-navid='${id}']`);
-            console.log($this);
-            $this.children('ul').slideDown();
-            $this.children('.expand').text('\uf106');
-            $this.addClass('open');
-        },
-        contractNav: function(evt) {
+        handleNavContract: function(evt) {
             if(!($(this).text() === '\uf107')) {
                 evt.stopPropagation();
                 $(this).text('\uf107').siblings('ul').slideUp().parent('li').removeClass('open');
 
-
                 // Update State
                 let id = $(this).parent('li').data('navid');
                 let index = Pubnav.navstate.indexOf(id);
-                console.log('remove ' + id + ': ' + index);
                 if (index > -1) {
                     Pubnav.navstate.splice(index, 1);
                 }
                 localStorage.setItem(this.product + '_navstate', Pubnav.navstate);
             }
+        },
+        handleBackButton: function() {
+            let url = location.pathname;
+            this.loadNewContent(url);
         },
         loadNav: function() {
             // TODO!!! Come up with a system on where to find the navigation.JSON file for this product...
@@ -106,24 +107,60 @@ var NEWUX = (function($) {
             fetch(url)
                 .then((resp) => resp.json()) // Transform the data into json
                 .then((data) => {
-                    let html = this.createTree(data);
-                    // $('.ctoc').append('<p class="hello">Hello</div>');
+                    // 1. Clean and build tree... add unique ids for all elements based on hrefs, check for duplicates.
+                    this.nav_tree = this.cleanNavData(data);
+
+                    // 2. Figure out what page I am, and update the page state
+                    let active_url =  new URL(window.location.href);
+                    let active_id = this.getIdFromHref(active_url.pathname);
+                    this.mapPageState(this.nav_tree, active_id);
+
+                    // 3. Now build out the tree in HTML
+                    let html = this.createHtmlTree(this.nav_tree);
                     $('.ctoc').append(html);
-                    this.bindEvents();
                     if(this.navstate.length > 0) {
                         for(let id of this.navstate) {
-                            this.expandElem(id);
+                            this.expandNavElem(id);
                         }
                     }
+
+                    // 4. Bind Event Handlers
+                    this.bindEvents();
+
+                    // Update Page Links and Breadcrumbs
+                    this.updatePageState();
                 });
         },
-        createTree: function(tree) {
+        cleanNavData(data) {
+            // Let's ensure a good ID for every item in the nav.
+            // If the item doesn't have an ID, create it from the href.
+
+            for(let i=0; i < data.length; i++) {
+                if(typeof data[i].id === 'undefined') {
+                    if (typeof data[i].href !== 'undefined') {
+                        // Use the HREF to build the ID... this is the preferred method.
+                        data[i].id = this.getIdFromHref(data[i].href)
+                    } else {
+                        // Use the text to build the ID... this might occur for menu items that have no page.
+                        data[i].id = Utils.slugify(data[i].text);
+                    }
+                }
+                // Now the ID has been defined... if the item has kids, let's iterate through those.
+                if (typeof data[i].sub !== 'undefined') {
+                    data[i].sub = this.cleanNavData(data[i].sub);
+                }
+
+            }
+
+            return data;
+        },
+        createHtmlTree: function(tree) {
             let html = "<ul>";
             tree.forEach((item) => {
                 let css = "";
                 if(!('id' in item)) {
                     if('href' in item) {
-                        item.id = item.href.substring(item.href.lastIndexOf('/') + 1, item.href.indexOf('.html'));
+                        item.id = this.getIdFromHref(item.href);
                     } else {
                         item.id = slugify('item.text');
                     }
@@ -138,21 +175,50 @@ var NEWUX = (function($) {
                 }
                 if('sub' in item) {
                     html += "<span class='expand'>&#xf107;</span>";  // NOTE, BE CAREFUL ABOUT CHANGING THE ICON. IT'S USED IN THE CONTROL STRUCTURE
-                    html += this.createTree(item.sub);
+                    html += this.createHtmlTree(item.sub);
                 }
                 html += '</li>';
           });
           html += "</ul>";
           return html;
         },
-        handleBackButton: function() {
-            let url = location.pathname;
-            this.loadNewContent(url);
+        expandNavElem: function(id) {
+            let $this = $('.ctoc li').find(`[data-navid='${id}']`);
+            $this.children('ul').slideDown();
+            $this.children('.expand').text('\uf106');
+            $this.addClass('open');
+        },
+        getIdFromHref:function(href) {
+            // Clever way to parse incomplete URLs -  https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
+
+            let parser = document.createElement('a');
+            parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
+
+            // We want to turn ID into sam-overview-index
+            let chunks = parser.pathname.split('/');
+
+            let id = chunks[chunks.length - 1];
+            id = id.substring(0, id.indexOf('.'));  // dump anything after a period... .html / .php etc.
+
+            if(chunks.length > 5) {
+                if(chunks[chunks.length - 2] !== 'content') {
+                    id = chunks[chunks.length - 2] + '-' + id;
+                } else {
+                    id = chunks[chunks.length - 3] + '-' + id;
+                }
+            }
+            return id;
+
+
         },
         requestNewContent: function(e) {
             // Grab the Recommended URL 
             let url = $(e.target).attr('href');
-            
+
+            // Set the Active Item on the Nav.
+            $('.ctoc li').removeClass('active');
+            $(e.target).closest('li').addClass('active');
+
             // Confirm this is actually a doc URL
             if(!this.isValidDocURL(url)) {
                 return false;
@@ -165,6 +231,8 @@ var NEWUX = (function($) {
             // Update History 
             history.pushState(null, null, url);
 
+            // TODO! Notify Google Analytics about the new page load.
+
             e.preventDefault(); 
         },
         loadNewContent: function(url) {
@@ -174,11 +242,58 @@ var NEWUX = (function($) {
                     $(this).fadeIn(200);
                 });
             });
-            // Update the Menu Too!
+
+            // TODO! CHeck if there are any additional scripcs of styles that need to be imported and applied?
+
+            // TODO! Update the Menu with the Active Tab.
+
         },
         isValidDocURL: function(url) {
             // Do checks
             return true; 
+        },
+        mapPageState: function(navarray, id) {
+            // This searches for the id in the nav tree, and then sets up the back, forward etc.
+
+            for(let i = 0; i < navarray.length; i++) {
+                if(navarray[i].id === id) {
+                    // We found it!
+                    this.pagestate.current = navarray[i];
+                    if(i-1 >= 0) {
+                        this.pagestate.prev = navarray[i-1];
+                    }
+                    if(i+1 < navarray.length) {
+                        this.pagestate.next = navarray[i+1];
+                    }
+                    if(navarray[i].sub !== 'undefined') {
+                        this.pagestate.children = Utils.flatten(navarray[i].sub);
+                    }
+                    this.pagestate.depth = 1;
+                    return true;
+                } else {
+
+                    // Check if the item has kids....
+                    if(typeof navarray[i].sub !== 'undefined') {
+                        if(this.mapPageState(navarray[i].sub, id)) { // If the kid was it!
+                            this.pagestate.breadpath.unshift(navarray[i]);
+                            if(this.pagestate.depth === 1) {
+                                this.pagestate.parent = navarray[i];
+                            }
+                            this.pagestate.depth++;
+                            return true;
+                        }
+                    }
+
+                }
+            }
+            return false; // didn't find a matching id?
+        },
+        updatePageState: function() {
+            // Update the page elems based on current situation!
+            
+
+            // Set the active item in the menu.
+            $('.ctoc li').find(`[data-navid='${this.pagestate.current.id}']`).addClass('active');
         }
     };
 

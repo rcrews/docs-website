@@ -2,14 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <title>Cloudera Data Platform (CDP):  Overview</title>
-    <meta name="description" content="Topic description">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- THESE META TAGS ARE GOOD. IN PARTICULAR, WE'D WANT TO KEEP... OR RELY ON PARSING THE URL? -->
+    <meta name="prodname" content="Apache NiFi"> <!-- KEEP -->
+    <meta name="version" content="3"> <!-- KEEP -->
+    <meta name="release" content="4"> <!-- KEEP -->
+    <meta name="modification" content="1.1"> <!-- KEEP -->
+    <meta name="brand" content="DataFlow"> <!-- LET'S TALK ABOUT THIS!!! -->
+    <meta name="rights" content="© 2019, 2018, 2017, 2016 Hortonworks, Inc.">
+    <meta name="DC.Date.Created" content="2019-05-15">
+    <meta name="DC.Date.Modified" content="2019-05-15">
+    <meta name="DC.Format" content="XHTML">
+    <meta name="DC.Identifier" content="what-is-apache-nifi"> <!-- URLs USE UNDERSCORE, WHICH I USE IN THE JS -->
+
+    <title>Cloudera Data Platform (CDP):  Topic Title</title>   <!-- Product (Shortname) : Topic Title -->
+    <meta name="description" content="Topic Description Goes Here">
+
+    <!-- STRUCTURE CSS -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" > <!-- TODO.. can we move this to CSS? Use a minimized version? -->
+    <link rel="stylesheet" href="/common/css/newux.css">
+
+    <!-- CONTENT SPECIFIC CSS... WE'LL WANT TO EXECUTE THIS ON PAGE CHANGE -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
-    <link rel="stylesheet" href="/common/css/newux.css"> 
+
   </head>
   <body>
     
@@ -17,8 +33,8 @@
     <header class="chead">
         <div class="breadcrumbs">
           <span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
-          <span class="bread-product"><a href="/">HDF</a></span> 
-          <span class="bread-version">3.0.3 <i class="fas fa-angle-down"></i></span> 
+          <span class="bread-product"><a href="/">CDP</a></span> <!-- THIS SHOULD BE THE SHORTNAME? -->
+          <span class="bread-version">1.0.1 <i class="fas fa-angle-down"></i></span> <!-- PULLDOWN WILL BE DEFINED BY THE PUBMENU APP -->
           <span class="bread-category">Concepts</span>
         </div> 
         <div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div>
@@ -34,7 +50,7 @@
         <article class="maincontent">
 
           <div class="inner-breadcrumbs">
-              <span class="inner-bread-category">Concepts</span> 
+              <span class="inner-bread-category">Concepts</span> <!-- THIS CAN/SHOULD BE DEFINED BY THE PUBMENU APP -->
           </div>
           
           <!-- BODY OF CONTENT GOES HERE --> 
@@ -44,19 +60,19 @@
           <!-- END CONTENT --> 
         </article>
         
-        <div class="short-prev"><a href="">&laquo;</a></div>
-        <div class="short-next"><a href="">&raquo;</a></div>
+        <div class="short-prev"><a href="">&laquo;</a></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
+        <div class="short-next"><a href="">&raquo;</a></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
         
-        <div class="up"></div>
-        <div class="prev"><a href="">&laquo; Getting Started with Apache Nifi</a></div>
-        <div class="next">Getting Started: <a href="">Terminology Used in This Guide &raquo;</a></div>
+        <div class="up"></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
+        <div class="prev"><a href="">&laquo; Getting Started with Apache Nifi</a></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
+        <div class="next">Getting Started: <a href="">Terminology Used in This Guide &raquo;</a></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
       </div>
 
-      <!-- IN PUBLICATION NAVIGATION --> 
+      <!-- IN PUBLICATION NAVIGATION.. THIS CAN ALL BE INJECTED BY JS. -->
       <aside class="pubmenu">
           <div class="product-title">
             <img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"> 
-            <span class="product-name">Hortonworks Dataflow</span>
+            <span class="product-name">Cloudera Data Platform</span>
           </div>
           <nav class="ctoc">
               <!-- THIS WILL BE BUILT AUTOMATICALLY BY JS  -->
@@ -69,7 +85,7 @@
         <a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png" ></a>
     </div> 
     
-    <!-- PRODUCT DRAWER... this should be built dynamically by JS. Not part of the documentation. --> 
+    <!-- PRODUCT DRAWER... this should also be built dynamically by JS. Not part of the documentation. -->
     <nav class="product-drawer">
       <div class="full-logo"><img src="/common/img/cloudera.png"></div>
       <ul class="products">
@@ -78,7 +94,7 @@
         <li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li>
         <li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li>
         <li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li>
-        <li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</li>
+        <li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li>
         <li class='cat'>Data Services</li>
         <li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li>
         <li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li>
@@ -90,14 +106,14 @@
       <div class="open-close">&raquo;</div>
     </nav>
 
-    <footer></footer>
+    <footer></footer> <!-- I didn't place anythinig here yet. -->
 
     <!-- NewUX Scripts --> 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <!-- WE CAN PROBABLY BUNDLE SCRIPTS ON THE SERVER SIDE, AND LEAVE THIS OUT. -->
     <script src="/common/js/newux.js"></script>
 
     <!-- Content Scripts --> 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script>
     
   </body>
 </html>
