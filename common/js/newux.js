@@ -16,9 +16,9 @@ var NEWUX = (function($) {
             str = str.toLowerCase();
 
             // remove accents, swap ñ for n, etc
-            var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
-            var to   = "aaaaeeeeiiiioooouuuunc------";
-            for (var i=0, l=from.length ; i<l ; i++) {
+            let from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
+            let to   = "aaaaeeeeiiiioooouuuunc------";
+            for (let i=0, l=from.length ; i<l ; i++) {
                 str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
             }
 
@@ -29,10 +29,31 @@ var NEWUX = (function($) {
             return str;
         },
         flatten: function(arr, subkey) {
-            // TODO! Flatten a nested array with subs, into a consectutive array.
+            // TODO! Flatten a nested array with subs, into a consectutive array.... we'll use this to make it easier to jump forwards and backwards.
             return [];
+        },
+        makeIdFromHref:function(href) {
+            // Clever way to parse incomplete URLs -  https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
+
+            let parser = document.createElement('a');
+            parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
+
+            // We want to turn ID into sam-overview-index
+            let chunks = parser.pathname.split('/');
+
+            let id = chunks[chunks.length - 1];
+            id = id.substring(0, id.indexOf('.'));  // dump anything after a period... .html / .php etc.
+
+            if(chunks.length > 5) {
+                if(chunks[chunks.length - 2] !== 'content') {
+                    id = chunks[chunks.length - 2] + '-' + id;
+                } else {
+                    id = chunks[chunks.length - 3] + '-' + id;
+                }
+            }
+            return id;
         }
-    }
+    };
 
     var Pubnav = {
 
@@ -51,8 +72,9 @@ var NEWUX = (function($) {
             this.loadNav();
         },
         bindEvents: function() {
+
             // Catch Link Clicks from Pubmenu and Feed through System
-            $('.ctoc a').on('click', this.requestNewContent.bind(this));
+            $('.ctoc a, .cpage a').on('click', this.requestNewContent.bind(this));
 
             // Nav Menu Expand/Contract
             $('.ctoc li.xp').on('click', this.handleNavOpen);
@@ -95,16 +117,21 @@ var NEWUX = (function($) {
             this.loadNewContent(url);
         },
         loadNav: function() {
-            // TODO!!! Come up with a system on where to find the navigation.JSON file for this product...
-            //      - It'll be in the root of the product URL... so we'll need to parse that.
-            let url = "/hdf3/hdf-3.4.0/navigation.json";
+            // When we load up the JS for the page, we rely on the navigation.json file that is present in the product root.
 
-            // TODO!!! And while we're at it, we should tease out the root product.
-            this.product = 'HDF3';
+            // Normally, we expect this to be in the third folder... so for example. /HDF3/hdf-3.0.4/navigation.json
+            let url =  new URL(window.location.href);
+            let url_chunks = url.pathname.split('/'); // This will include the first item as an empty item.
+            url_chunks.length = 3; // This will dump any extra url stuff for nested files.
+            let navfile = url_chunks.join('/') + "/navigation.json";
+
+            // Let's also define the product code for saving the navstate and the product bar lookup.
+            this.product = url_chunks[0].toLowerCase();
             this.navstate = localStorage.getItem(this.product + '_navstate') ? localStorage.getItem(this.product + '_navstate').split(',') : [];
 
-            // Get the JSON, and then build out a shadow structure and insert it into the DOM.
-            fetch(url)
+            // Now, get the JSON, and then build out a shadow structure and insert it into the DOM.
+            // TODO!!! - Handle errors?
+            fetch(navfile)
                 .then((resp) => resp.json()) // Transform the data into json
                 .then((data) => {
                     // 1. Clean and build tree... add unique ids for all elements based on hrefs, check for duplicates.
@@ -112,7 +139,7 @@ var NEWUX = (function($) {
 
                     // 2. Figure out what page I am, and update the page state
                     let active_url =  new URL(window.location.href);
-                    let active_id = this.getIdFromHref(active_url.pathname);
+                    let active_id = Utils.makeIdFromHref(active_url.pathname);
                     this.mapPageState(this.nav_tree, active_id);
 
                     // 3. Now build out the tree in HTML
@@ -127,7 +154,7 @@ var NEWUX = (function($) {
                     // 4. Bind Event Handlers
                     this.bindEvents();
 
-                    // Update Page Links and Breadcrumbs
+                    // 5. Update Page Links and Breadcrumbs
                     this.updatePageState();
                 });
         },
@@ -139,7 +166,7 @@ var NEWUX = (function($) {
                 if(typeof data[i].id === 'undefined') {
                     if (typeof data[i].href !== 'undefined') {
                         // Use the HREF to build the ID... this is the preferred method.
-                        data[i].id = this.getIdFromHref(data[i].href)
+                        data[i].id = Utils.makeIdFromHref(data[i].href)
                     } else {
                         // Use the text to build the ID... this might occur for menu items that have no page.
                         data[i].id = Utils.slugify(data[i].text);
@@ -160,7 +187,7 @@ var NEWUX = (function($) {
                 let css = "";
                 if(!('id' in item)) {
                     if('href' in item) {
-                        item.id = this.getIdFromHref(item.href);
+                        item.id = Utils.makeIdFromHref(item.href);
                     } else {
                         item.id = slugify('item.text');
                     }
@@ -188,69 +215,61 @@ var NEWUX = (function($) {
             $this.children('.expand').text('\uf106');
             $this.addClass('open');
         },
-        getIdFromHref:function(href) {
-            // Clever way to parse incomplete URLs -  https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
-
-            let parser = document.createElement('a');
-            parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
-
-            // We want to turn ID into sam-overview-index
-            let chunks = parser.pathname.split('/');
-
-            let id = chunks[chunks.length - 1];
-            id = id.substring(0, id.indexOf('.'));  // dump anything after a period... .html / .php etc.
-
-            if(chunks.length > 5) {
-                if(chunks[chunks.length - 2] !== 'content') {
-                    id = chunks[chunks.length - 2] + '-' + id;
-                } else {
-                    id = chunks[chunks.length - 3] + '-' + id;
-                }
-            }
-            return id;
-
-
-        },
         requestNewContent: function(e) {
-            // Grab the Recommended URL 
+
+
+            // Grab the Recommended URL
             let url = $(e.target).attr('href');
 
             // Set the Active Item on the Nav.
-            $('.ctoc li').removeClass('active');
-            $(e.target).closest('li').addClass('active');
+            // $(e.target).closest('li').addClass('active');
 
-            // Confirm this is actually a doc URL
-            if(!this.isValidDocURL(url)) {
-                return false;
+            // Confirm this is actually in the menu tree...
+            let destination = this.getNestedItemBy('href', url, this.nav_tree);
+            if(destination) {
+                // If it's a page in the menu tree...
+                this.loadNewContent(url);
+                this.pagestate.breadpath.length = 0; // This should really be part of mapPageState, but I can't do it because I'm recursing on that function.
+                this.mapPageState(this.nav_tree, destination.id);
+                this.updatePageState();
+
+                // Update History
+                history.pushState(null, null, url);
+
+                // TODO! Notify Google Analytics about the new page load.
+
+                e.preventDefault();
             }
-
-            // Get the new content. 
-            // TODO! Check if it's successful before completing the rest. 
-            this.loadNewContent(url);
-
-            // Update History 
-            history.pushState(null, null, url);
-
-            // TODO! Notify Google Analytics about the new page load.
-
-            e.preventDefault(); 
         },
         loadNewContent: function(url) {
             // Update New Content with Transition Effects - TODO... just handle this with CSS?
             $( "#content" ).fadeOut(200, function() {
-                $(this).hide().load( url + " #content", function() { 
-                    $(this).fadeIn(200);
+                $(this).hide().load( url + " #content", function(response, status, xhr) {
+                    if(status == "error") {
+                        let msg = "Sorry but there was an error loading that page.";
+                        $( "#content" ).html( msg + " " + xhr.status + " " + xhr.statusText );
+                        $(this).fadeIn(200);
+                    } else {
+                        $(this).fadeIn(200);
+                    }
+
                 });
             });
 
-            // TODO! CHeck if there are any additional scripcs of styles that need to be imported and applied?
-
-            // TODO! Update the Menu with the Active Tab.
-
+            // TODO! If script tags are included within the content, I think that they'll be removed. We might want to figure out how to execute them!
         },
-        isValidDocURL: function(url) {
-            // Do checks
-            return true; 
+        getNestedItemBy: function(key, value, arr) {
+            for(let i=0; i < arr.length; i++) {
+                if(key === 'id' && arr[i].id === value) {
+                    return arr[i];
+                } else if(key === 'href' && arr[i].href !== undefined && arr[i].href.indexOf(value) >= 0) {
+                    return arr[i];
+                } else if(typeof arr[i].sub !== "undefined") {
+                    let item = this.getNestedItemBy(key, value, arr[i].sub);
+                    if(item !== false) return item;
+                }
+            }
+            return false; // Defaults to false if we couldn't find anything.
         },
         mapPageState: function(navarray, id) {
             // This searches for the id in the nav tree, and then sets up the back, forward etc.
@@ -263,7 +282,7 @@ var NEWUX = (function($) {
                         this.pagestate.prev = navarray[i-1];
                     }
                     if(i+1 < navarray.length) {
-                        this.pagestate.next = navarray[i+1];
+                        this.pagestate.next = navarray[i+1]; // TODO!!! - This should really be the first child if the element has children!
                     }
                     if(navarray[i].sub !== 'undefined') {
                         this.pagestate.children = Utils.flatten(navarray[i].sub);
@@ -290,9 +309,20 @@ var NEWUX = (function($) {
         },
         updatePageState: function() {
             // Update the page elems based on current situation!
-            
+
+            // Prev
+            $('.cpage .prev a').attr('href', this.pagestate.prev.href).html('&laquo; ' + this.pagestate.prev.text);
+            $('.cpage .short-prev a').attr('href', this.pagestate.prev.href);
+
+            // Next
+            $('.cpage .next a').attr('href', this.pagestate.next.href).html(this.pagestate.next.text + ' &raquo;' );
+            $('.cpage .short-next a').attr('href', this.pagestate.next.href);
+
+            // Breadcrumbs
+            $('.inner-breadcrumbs').html(this.pagestate.breadpath[this.pagestate.breadpath.length - 1].text);
 
             // Set the active item in the menu.
+            $('.ctoc li').removeClass('active');
             $('.ctoc li').find(`[data-navid='${this.pagestate.current.id}']`).addClass('active');
         }
     };
@@ -356,8 +386,6 @@ var NEWUX = (function($) {
         $('.search').hide().removeClass('open');
         $('.launch-search').show();
     });
-
-
 
     Pubnav.init();
 
