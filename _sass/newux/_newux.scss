@@ -169,7 +169,7 @@ body                    { margin: 0; }
     &.open            { transform:scale(1); }
 
     @include breakpoint(desktop) { transform:scale(1); grid-area: pubnav; background-color:#f0f0f0; position:relative; z-index:0; height:auto; padding:35px 20px 20px; 
-        .product-title  { max-width:200px;  }
+        .product-title  { max-width:300px;  }
         .product-name   { margin-left:70px; padding-top:0; }
         .product-logo   { width:60px; }
         .ctoc            { position:sticky; top:70px;
@@ -206,7 +206,7 @@ body                    { margin: 0; }
         .products       { padding-top:0;
             li          { padding:5px; }
             .text       { display:inline; }
-            .cat        { display:block; padding-left:10px; }
+            .cat        { display:block; padding-left:10px; margin-bottom:1px; }
             img         { padding:5px; padding-right:10px; }
         }
         .full-logo      { display:block; padding:13px; height:24px; background-color:#272A35;

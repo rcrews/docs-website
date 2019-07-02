@@ -109,7 +109,8 @@ var NEWUX = (function($) {
                 if (index > -1) {
                     Pubnav.navstate.splice(index, 1);
                 }
-                localStorage.setItem(this.product + '_navstate', Pubnav.navstate);
+                console.log(Pubnav.navstate);
+                localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
             }
         },
         handleBackButton: function() {
@@ -216,8 +217,6 @@ var NEWUX = (function($) {
             $this.addClass('open');
         },
         requestNewContent: function(e) {
-
-
             // Grab the Recommended URL
             let url = $(e.target).attr('href');
 
