@@ -1,6 +1,4 @@
-
 $(document).ready(function() {
-    
     function replaceNavigationTree(navigationJson) {
         "use strict";
 
@@ -36,8 +34,7 @@ $(document).ready(function() {
                 let ul = document.createElement("ul");
                 let container = li.appendChild(ul);
                 if (typeof levelItem.sub === "string") {
-                    // fetch(`../../${levelItem.sub}`)
-                    fetch(`https://docs.hortonworks.com/HDPDocuments/HDF3/HDF-3.4.1.1/${levelItem.sub}`, {mode: 'no-cors'})
+                    fetch(`../../${levelItem.sub}`)
                         .then((res) => res.json())
                         .then((data) => makeLevel(container, data))
                         .catch((err) => makeLevel(container,
@@ -63,7 +60,7 @@ $(document).ready(function() {
         treeParent.replaceChild(tree, document.getElementById("tree"));
     }
 
-    fetch("navigation_unprocessed.json")
+    fetch("../../navigation.json")
         .then((res) => res.json())
         .then((data) => {
             replaceNavigationTree(data);

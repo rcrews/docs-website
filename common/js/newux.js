@@ -350,7 +350,7 @@ var NEWUX = (function($) {
         if($('.product-drawer').hasClass('open')) {
             $('.product-drawer').css('width', '50px').removeClass('open');
             $('.cmain').removeAttr('style'); // TODO!!! - A bit brittle if something else codes styles to this element!
-            $('.cheader').removeAttr('style');
+            $('.chead').removeAttr('style');
             $('.logo').show();
             $(this).html('&raquo;'); // TODO... delay this .5s
             
@@ -359,7 +359,7 @@ var NEWUX = (function($) {
             // setTimeout(function() { $('.product-drawer').addClass('open')}, 500);
             $('.logo').hide();
             $('.cmain').css('marginLeft', '210px');
-            $('.cheader').css('left', '210px');
+            $('.chead').css('left', '210px');
             $(this).html('&laquo;');
         }
     });
