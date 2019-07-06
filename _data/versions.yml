@@ -1,0 +1,1219 @@
+---
+- name: Cloudera
+  latest-url: https://www.cloudera.com/documentation.html
+
+- name: HDP
+  latest-version: 3.1.0
+  latest-url: /hdp/3.1.0/index.html
+  search-name: Data Platform
+  versions:
+    - title: 3.1
+      url: /hdp/3.1.0/index.html
+      minors:
+      - title: 3.1.0
+        type: Latest
+        url: /hdp/3.1.0/index.html
+    - title: 3.0
+      url: /hdp/3.0.1/index.html
+      minors:
+      - title: 3.0.1
+        url: /hdp/3.0.1/index.html
+      - title: 3.0.0
+        url: /hdp/3.0.0/index.html
+    - title: 2.6
+      url: /hdp/2.6.5/index.html
+      minors:
+      - title: 2.6.5
+        url: /hdp/2.6.5/index.html
+      - title: 2.6.4
+        url: /hdp/2.6.4/index.html
+      - title: 2.6.3
+        url: /hdp/2.6.3/index.html
+      - title: 2.6.2
+        url: /hdp/2.6.2/index.html
+      - title: 2.6.1
+        url: /hdp/2.6.1/index.html
+      - title: 2.6.0
+        url: /hdp/2.6.0/index.html
+    - title: 2.5
+      url: /hdp/2.5.6/index.html
+      minors:
+      - title: 2.5.6
+        url: /hdp/2.5.6/index.html
+      - title: 2.5.5
+        url: /hdp/2.5.5/index.html
+      - title: 2.5.3
+        url: /hdp/2.5.3/index.html
+      - title: 2.5.0
+        url: /hdp/2.5.0/index.html
+    - title: 2.4
+      url: /hdp/2.4.3/index.html
+      minors:
+      - title: 2.4.3
+        url: /hdp/2.4.3/index.html
+      - title: 2.4.2
+        url: /hdp/2.4.2/index.html
+      - title: 2.4.0
+        url: /hdp/2.4.0/index.html
+    - title: 2.3
+      url: /hdp/2.3.6/index.html
+      minors:
+      - title: 2.3.6
+        url: /hdp/2.3.6/index.html
+      - title: 2.3.4.7
+        url: /hdp/2.3.4.7/index.html
+      - title: 2.3.4
+        url: /hdp/2.3.4/index.html
+      - title: 2.3.2
+        url: /hdp/2.3.2/index.html
+      - title: 2.3.0
+        url: /hdp/2.3.0/index.html
+    - title: 2.2
+      url: /hdp/2.2.9/index.html
+      minors:
+      - title: 2.2.9
+        url: /hdp/2.2.9/index.html
+      - title: 2.2.8
+        url: /hdp/2.2.8/index.html
+      - title: 2.2.6
+        url: /hdp/2.2.6/index.html
+      - title: 2.2.4
+        url: /hdp/2.2.4/index.html
+      - title: 2.2.0
+        url: /hdp/2.2.0/index.html
+    - title: 2.1
+      url: /hdp/2.1.15/index.html
+      minors:
+      - title: 2.1.15
+        url: /hdp/2.1.15/index.html
+      - title: 2.1.10
+        url: /hdp/2.1.10/index.html
+      - title: 2.1.7
+        url: /hdp/2.1.7/index.html
+      - title: 2.1.5
+        url: /hdp/2.1.5/index.html
+      - title: 2.1.4
+        url: /hdp/2.1.4.0/README-HDP-2.1.4.0.txt
+      - title: 2.1.3
+        url: /hdp/2.1.3/index.html
+      - title: 2.1.2
+        url: /hdp/2.1.2/index.html
+      - title: 2.1.1
+        url: /hdp/2.1.1/index.html
+    - title: 2.0
+      url: /hdp/2.0.13.0/index.html
+      minors:
+      - title: 2.0.13
+        url: /hdp/2.0.13.0/index.html
+      - title: 2.0.12
+        url: /hdp/2.0.12.0/index.html
+      - title: 2.0.9.1 # The Ambari 1.4.4 docs are hosted in the HDP 2.0.9.1 library
+        url: /hdp/2.0.9.1/index.html
+      - title: 2.0.9
+        url: /hdp/2.0.9.0/index.html
+      - title: 2.0.8
+        url: /hdp/2.0.8.0/index.html
+      - title: 2.0.6
+        url: /hdp/2.0.6.0/index.html
+    - title: 1.3
+      url: /hdp/1.3.10/index.html
+      minors:
+      - title: 1.3.10
+        url: /hdp/1.3.10/index.html
+      - title: 1.3.9
+        url: /hdp/1.3.9/index.html
+      - title: 1.3.7
+        url: /hdp/1.3.7/index.html
+      - title: 1.3.3
+        url: /hdp/1.3.3/index.html
+      - title: 1.3.2
+        url: /hdp/1.3.2/index.html
+      - title: 1.3.1
+        url: /hdp/1.3.1/index.html
+      - title: 1.3.0
+        url: /hdp/1.3.0/index.html
+
+- name: DataFlow
+  latest-version: 3.4.1.1
+  latest-url: /hdf/3.4.1.1/index.html
+  search-name: DataFlow
+  versions:
+    - title: 3.4
+      url: /hdf/3.4.1.1/index.html
+      minors:
+        - title: 3.4.1.1
+          type: latest
+          url: /hdf/3.4.1.1/index.html
+        - title: 3.4.0
+          url: /hdf/3.4.0/index.html
+    - title: 3.3
+      url: /hdf/3.3.1/index.html
+      minors:
+        - title: 3.3.1
+          url: /hdf/3.3.1/index.html
+        - title: 3.3.0
+          url: /hdf/3.3.0/index.html
+    - title: 3.2
+      url: /hdf/3.2.0/index.html
+      minors:
+        - title: 3.2.0
+          url: /hdf/3.2.0/index.html
+    - title: 3.1
+      url: /hdf/3.1.2/index.html
+      minors:
+        - title: 3.1.2
+          url: /hdf/3.1.2/index.html
+        - title: 3.1.1
+          url: /hdf/3.1.1/index.html
+        - title: 3.1.0
+          url: /hdf/3.1.0/index.html
+    - title: 3.0
+      url: /hdf/3.0.2/index.html
+      minors:
+        - title: 3.0.3
+          url: /hdf/3.0.3/index.html
+        - title: 3.0.2
+          url: /hdf/3.0.2/index.html
+        - title: 3.0.1.1
+          url: /hdf/3.0.1.1/index.html
+        - title: 3.0.1
+          url: /hdf/3.0.1/index.html
+        - title: 3.0.0
+          url: /hdf/3.0.0/index.html
+    - title: 2.1
+      url: /hdf/2.1.4/index.html
+      minors:
+        - title: 2.1.4
+          url: /hdf/2.1.4/index.html
+        - title: 2.1.2
+          url: /hdf/2.1.2/index.html
+        - title: 2.1.1
+          url: /hdf/2.1.1/index.html
+        - title: 2.1.0
+          url: /hdf/2.1.0/index.html
+    - title: 2.0
+      url: /hdf/2.0.2/index.html
+      minors:
+        - title: 2.0.2
+          url: /hdf/2.0.2/index.html
+        - title: 2.0.1
+          url: /hdf/2.0.1/index.html
+        - title: 2.0.0
+          url: /hdf/2.0.0/index.html
+    - title: 1.2
+      url: /hdf/1.2.1/index.html
+      minors:
+        - title: 1.2.1
+          url: /hdf/1.2.1/index.html
+        - title: 1.2.0.1
+          url: /hdf/1.2.0.1/index.html
+        - title: 1.2
+          url: /hdf/1.2/index.html
+    - title: 1.1
+      url: /hdf/1.1.2.1/index.html
+      minors:
+        - title: 1.1.2.1
+          url: /hdf/1.1.2.1/index.html
+        - title: 1.1.2
+          url: /hdf/1.1.2/index.html
+        - title: 1.1.1
+          url: /hdf/1.1.1/index.html
+        - title: 1.1.0
+          url: /hdf/1.1.0/index.html
+
+- name: Ambari
+  latest-version: 2.7.3.0
+  latest-url: /ambari/2.7.3.0/index.html
+  search-name: Ambari
+  versions:
+    - title: 2.7
+      url: /ambari/2.7.3.0/index.html
+      minors:
+        - title: 2.7.3.0
+          type: Latest
+          url: /ambari/2.7.3.0/index.html
+        - title: 2.7.1.0
+          url: /ambari/2.7.1.0/index.html
+        - title: 2.7.0.0
+          url: /ambari/2.7.0.0/index.html
+    - title: 2.6
+      url: /ambari/2.6.2.2/index.html
+      minors:
+        - title: 2.6.2.2
+          url: /ambari/2.6.2.2/index.html
+        - title: 2.6.2.0
+          url: /ambari/2.6.2.0/index.html
+        - title: 2.6.1.5
+          url: /ambari/2.6.1.5/index.html
+        - title: 2.6.1.0
+          url: /ambari/2.6.1.0/index.html
+        - title: 2.6.0.0
+          url: /ambari/2.6.0.0/index.html
+    - title: 2.5
+      url: /ambari/2.5.2.0/index.html
+      minors:
+        - title: 2.5.2.0
+          url: /ambari/2.5.2.0/index.html
+        - title: 2.5.1.0
+          url: /ambari/2.5.1.0/index.html
+        - title: 2.5.0.3
+          url: /ambari/2.5.0.3/index.html
+    - title: 2.4
+      url: /ambari/2.4.3.0/index.html
+      minors:
+        - title: 2.4.3.0
+          url: /ambari/2.4.3.0/index.html
+        - title: 2.4.2.0
+          url: /ambari/2.4.2.0/index.html
+        - title: 2.4.1.0
+          url: /ambari/2.4.1.0/index.html
+        - title: 2.4.0.1
+          url: /ambari/2.4.0.1/index.html
+        - title: 2.4.0.0
+          url: /ambari/2.4.0.0/index.html
+    - title: 2.2
+      url: /ambari/2.2.2.18/index.html
+      minors:
+        - title: 2.2.2.18
+          url: /ambari/2.2.2.18/index.html
+        - title: 2.2.2.0
+          url: /ambari/2.2.2.0/index.html
+        - title: 2.2.1.1
+          url: /ambari/2.2.1.1/index.html
+        - title: 2.2.1.0
+          url: /ambari/2.2.1.0/index.html
+        - title: 2.2.0.0
+          url: /ambari/2.2.0.0/index.html
+    - title: 2.1
+      url: /ambari/2.1.2.1/index.html
+      minors:
+        - title: 2.1.2.1
+          url: /ambari/2.1.2.1/index.html
+        - title: 2.1.2.0
+          url: /ambari/2.1.2.0/index.html
+        - title: 2.1.1.0
+          url: /ambari/2.1.1.0/index.html
+        - title: 2.1.0.0
+          url: /ambari/2.1.0.0/index.html
+    - title: 2.0
+      url: /ambari/2.0.2.0/index.html
+      minors:
+        - title: 2.0.2.0
+          url: /ambari/2.0.2.0/index.html
+        - title: 2.0.1.0
+          url: /ambari/2.0.1.0/index.html
+        - title: 2.0.0.0
+          url: /ambari/2.0.0.0/index.html
+    - title: 1.7
+      url: /ambari/1.7.0.0/index.html
+      minors:
+        - title: 1.7.0.0
+          url: /ambari/1.7.0.0/index.html
+    - title: 1.6
+      url: /ambari/1.6.1.0/index.html
+      minors:
+        - title: 1.6.1.0
+          url: /ambari/1.6.1.0/index.html
+        - title: 1.6.0.0
+          url: /ambari/1.6.0.0/index.html
+    - title: 1.5
+      url: /ambari/1.5.1.0/index.html
+      minors:
+        - title: 1.5.1.0
+          url: /ambari/1.5.1.0/index.html
+        - title: 1.5.0.0
+          url: /ambari/1.5.0.0/index.html
+    - title: 1.4
+      url: /ambari/1.4.4/index.html
+      minors:
+        - title: 1.4.4.0
+          url: /ambari/1.4.4/index.html
+
+- name: SmartSense
+  latest-version: 1.5.1
+  latest-url: /smartsense/1.5.1/index.html
+  search-name: SmartSense
+  versions:
+    - title: 1.5
+      url: /smartsense/1.5.1/index.html
+      minors:
+        - title: 1.5.1
+          type: Latest
+          url: /smartsense/1.5.1/index.html
+        - title: 1.5.0
+          url: /smartsense/1.5.0/index.html
+    - title: 1.4
+      url: /smartsense/1.4.5/index.html
+      minors:
+        - title: 1.4.5
+          url: /smartsense/1.4.5/index.html
+        - title: 1.4.4
+          url: /smartsense/1.4.4/index.html
+        - title: 1.4.3
+          url: /smartsense/1.4.3/index.html
+        - title: 1.4.2
+          url: /smartsense/1.4.2/index.html
+        - title: 1.4.0
+          url: /smartsense/1.4.0/index.html
+    - title: 1.3
+      url: /smartsense/1.3.1/index.html
+      minors:
+        - title: 1.3.1
+          url: /smartsense/1.3.1/index.html
+        - title: 1.3.0
+          url: /smartsense/1.3.0/index.html
+    - title: 1.2
+      url: /smartsense/1.2.2/index.html
+      minors:
+        - title: 1.2.2
+          url: /smartsense/1.2.2/index.html
+        - title: 1.2.1
+          url: /smartsense/1.2.1/index.html
+        - title: 1.2.0
+          url: /smartsense/1.2.0/index.html
+    - title: 1.1.0
+      url: /smartsense/1.1.0/index.html
+      minors:
+        - title: 1.1.0
+          url: /smartsense/1.1.0/index.html
+
+- name: Cybersecurity
+  latest-version: 1.9.1
+  latest-url: /hcp/1.9.1/index.html
+  search-name: Cybersecurity
+  versions:
+    - title: 1.9
+      url: /hcp/1.9.1/index.html
+      minors:
+        - title: 1.9.1
+          type: Latest
+          url: /hcp/1.9.1/index.html
+        - title: 1.9.0
+          url: /hcp/1.9.0/index.html
+    - title: 1.8
+      url: /hcp/1.8.0/index.html
+      minors:
+        - title: 1.8.0
+          url: /hcp/1.8.0/index.html
+    - title: 1.7
+      url: /hcp/1.7.1/index.html
+      minors:
+        - title: 1.7.1
+          url: /hcp/1.7.1/index.html
+        - title: 1.7.0
+          url: /hcp/1.7.0/index.html
+    - title: 1.6
+      url: /hcp/1.6.1/index.html
+      minors:
+        - title: 1.6.1
+          url: /hcp/1.6.1/index.html
+        - title: 1.6.0
+          url: /hcp/1.6.0/index.html
+    - title: 1.5
+      url: /hcp/1.5.1/index.html
+      minors:
+        - title: 1.5.1
+          url: /hcp/1.5.1/index.html
+        - title: 1.5.0
+          url: /hcp/1.5.0/index.html
+    - title: 1.4
+      url: /hcp/1.4.2/index.html
+      minors:
+        - title: 1.4.2
+          url: /hcp/1.4.2/index.html
+        - title: 1.4.1
+          url: /hcp/1.4.1/index.html
+        - title: 1.4.0
+          url: /hcp/1.4.0/index.html
+    - title: 1.3
+      url: /hcp/1.3.2/index.html
+      minors:
+        - title: 1.3.2
+          url: /hcp/1.3.2/index.html
+        - title: 1.3.1
+          url: /hcp/1.3.1/index.html
+        - title: 1.3.0
+          url: /hcp/1.3.0/index.html
+    - title: 1.2
+      url: /hcp/1.2.2/index.html
+      minors:
+        - title: 1.2.2
+          url: /hcp/1.2.2/index.html
+        - title: 1.2.1
+          url: /hcp/1.2.1/index.html
+        - title: 1.2.0
+          url: /hcp/1.2.0/index.html
+    - title: 1.1
+      url: /hcp/1.1.0/index.html
+      minors:
+        - title: 1.1.0
+          url: /hcp/1.1.0/index.html
+
+- name: DataPlane Service
+  latest-url: /dps/cloud/index.html
+  search-name: DPS
+
+- name: DataPlane Platform
+  latest-version: 1.2.2
+  latest-url: /dp/1.2.2/index.html
+  search-name: DataPlane
+  versions:
+    - title: 1.2
+      url: /dp/1.2.2/index.html
+      minors:
+        - title: 1.2.2
+          type: Latest
+          url: /dp/1.2.2/index.html
+        - title: 1.2.1
+          url: /dp/1.2.1/index.html
+        - title: 1.2.0
+          url: /dp/1.2.0/index.html
+    - title: 1.1
+      url: /dp/1.1.0/index.html
+      minors:
+        - title: 1.1.0
+          url: /dp/1.1.0/index.html
+    - title: 1.0
+      url: /dp/1.0.0/index.html
+      minors:
+        - title: 1.0.0
+          url: /dp/1.0.0/index.html
+
+- name: Data Lifecycle Manager
+  latest-version: 1.5.0
+  latest-url: /dlm/1.5.0/index.html
+  search-name: Data Lifecycle Manager
+  versions:
+    - title: 1.5
+      url: /dlm/1.5.0/index.html
+      minors:
+        - title: 1.5.0
+          type: Latest
+          url: /dlm/1.4.0/index.html
+    - title: 1.4
+      url: /dlm/1.4.0/index.html
+      minors:
+        - title: 1.4.0
+          url: /dlm/1.4.0/index.html
+    - title: 1.3
+      url: /dlm/1.3.0/index.html
+      minors:
+        - title: 1.3.0
+          url: /dlm/1.3.0/index.html
+    - title: 1.2
+      url: /dlm/1.2.0/index.html
+      minors:
+        - title: 1.2.0
+          url: /dlm/1.2.0/index.html
+    - title: 1.1
+      url: /dlm/1.1.2/index.html
+      minors:
+        - title: 1.1.2
+          url: /dlm/1.1.2/index.html
+        - title: 1.1.0
+          url: /dlm/1.1.0/index.html
+    - title: 1.0
+      url: /dlm/1.0.0/index.html
+      minors:
+        - title: 1.0.0
+          url: /dlm/1.0.0/index.html
+
+- name: Data Steward Studio
+  latest-version: 1.5.0
+  latest-url: /dss/1.5.0/index.html
+  search-name: Data Steward Studio
+  versions:
+    - title: 1.5
+      url: /dss/1.5.0/index.html
+      minors:
+        - title: 1.5.0
+          type: Latest
+          url: /dss/1.5.0/index.html
+    - title: 1.4
+      url: /dss/1.4.0/index.html
+      minors:
+        - title: 1.4.0
+          url: /dss/1.4.0/index.html
+    - title: 1.3
+      url: /dss/1.3.1/index.html
+      minors:
+        - title: 1.3.1
+          url: /dss/1.3.1/index.html
+        - title: 1.3.0
+          url: /dss/1.3.0/index.html
+    - title: 1.2
+      url: /dss/1.2.2/index.html
+      minors:
+        - title: 1.2.2
+          url: /dss/1.2.2/index.html
+        - title: 1.2.1
+          url: /dss/1.2.1/index.html
+    - title: 1.0
+      url: /dss/1.0.0/index.html
+      minors:
+        - title: 1.0.0
+          url: /dss/1.0.0/index.html
+
+- name: Streams Messaging Manager
+  latest-version: 1.2.1
+  latest-url: /smm/1.2.1/index.html
+  search-name: Streams Messaging Manager
+  versions:
+    - title: 1.2
+      url: /smm/1.2.1/index.html
+      minors:
+        - title: 1.2.1
+          type: Latest
+          url: /smm/1.2.1/index.html
+        - title: 1.2.0
+          url: /smm/1.2.0/index.html
+    - title: 1.1
+      url: /smm/1.1.0/index.html
+      minors:
+        - title: 1.1.0
+          url: /smm/1.1.0/index.html
+    - title: 1.0
+      url: /smm/1.0.0/index.html
+      minors:
+        - title: 1.0.0
+          url: /smm/1.0.0/index.html
+
+- name: Data Analytics Studio
+  latest-version: 1.3.0
+  latest-url: /das/1.3.0/index.html
+  search-name: Data Analytics Studio
+  versions:
+    - title: 1.3
+      url: /das/1.3.0/index.html
+      minors:
+        - title: 1.3.0
+          type: Latest
+          url: /das/1.3.0/index.html
+    - title: 1.2
+      url: /das/1.2.1/index.html
+      minors:
+        - title: 1.2.1
+          url: /das/1.2.1/index.html
+        - title: 1.2.0
+          url: /das/1.2.0/index.html
+    - title: 1.1
+      url: /das/1.1.0/index.html
+      minors:
+        - title: 1.1.0
+          url: /das/1.1.0/index.html
+    - title: 1.0
+      url: /das/1.0.2/index.html
+      minors:
+        - title: 1.0.2
+          url: /das/1.0.2/index.html
+        - title: 1.0.0
+          url: /das/1.0.0/index.html
+
+- name: Edge Management
+  latest-version: 1.0.0
+  latest-url: /cem/1.0.0/index.html
+  search-name: Edge Management
+  versions:
+    - title: 1.0
+      url: /cem/1.0.0/index.html
+      minors:
+        - title: 1.0.0
+          type: Latest
+          url: /cem/1.0.0/index.html
+
+- name: Flow Management
+  latest-version: 1.0.1
+  latest-url: /cfm/1.0.1/index.html
+  search-name: Flow Management
+  versions:
+    - title: 1.0
+      url: /cfm/1.0.1/index.html
+      minors:
+        - title: 1.0.1
+          type: Latest
+          url: /cfm/1.0.1/index.html
+        - title: 1.0.0
+          url: /cfm/1.0.0/index.html
+
+- name: Stream Processing
+  latest-version: 1.0.0
+  latest-url: /csp/1.0.0/index.html
+  search-name: Stream Processing
+  versions:
+    - title: 1.0
+      url: /csp/1.0.0/index.html
+      minors:
+        - title: 1.0.0
+          type: Latest
+          url: /csp/1.0.0/index.html
+
+- name: Cloudbreak
+  latest-version: 2.9.1
+  latest-url: /cloudbreak/2.9.1/index.html
+  search-name: Cloudbreak
+  versions:
+    - title: 2.9
+      url: /cloudbreak/2.9.1/index.html
+      minors:
+        - title: 2.9.1
+          type: latest
+          url: /cloudbreak/2.9.1/index.html
+        - title: 2.9.0
+          url: /cloudbreak/2.9.0/index.html
+    - title: 2.7
+      url: /cloudbreak/2.7.2/index.html
+      minors:
+        - title: 2.7.2
+          url: /cloudbreak/2.7.2/index.html
+        - title: 2.7.1
+          url: /cloudbreak/2.7.1/index.html
+        - title: 2.7.0
+          url: /cloudbreak/2.7.0/index.html
+    - title: 2.4
+      url: /cloudbreak/2.4.2/index.html
+      minors:
+        - title: 2.4.3
+          url: /cloudbreak/2.4.3/index.html
+        - title: 2.4.2
+          url: /cloudbreak/2.4.2/index.html
+        - title: 2.4.1
+          url: /cloudbreak/2.4.1/index.html
+        - title: 2.4.0
+          url: /cloudbreak/2.4.0/index.html
+    - title: 1.16
+      url: /cloudbreak/1.16.6/index.html
+      minors:
+        - title: 1.16.6
+          url: /cloudbreak/1.16.6/index.html
+        - title: 1.16.5
+          url: /cloudbreak/1.16.5/index.html
+        - title: 1.16.4
+          url: /cloudbreak/1.16.4/index.html
+        - title: 1.16.1
+          url: /cloudbreak/1.16.1/index.html
+
+- name: Data Platform Search
+  latest-version: 4.0.0
+  latest-url: /hdps/4.0.0/index.html
+  search-name: HDP Search
+  versions:
+    - title: 4.0
+      url: /hdps/4.0.0/index.html
+      minors:
+        - title: 4.0.0
+          type: Latest
+          url: /hdps/4.0.0/index.html
+    - title: 3.0
+      url: /hdps/3.0.0/index.html
+      minors:
+        - title: 3.0.0
+          url: /hdps/3.0.0/index.html
+
+- name: HDP for Cloud
+  latest-version: 3.0.1
+  latest-url: /hdp-for-cloud/3.0.1/index.html
+  search-name: HDPforCloud
+  versions:
+    - title: 3.0
+      url: /hdp-for-cloud/3.0.1/index.html
+      minors:
+        - title: 3.0.1
+          type: Latest
+          url: /hdp-for-cloud/3.0.1/index.html
+    - title: 2.0
+      url: /hdp-for-cloud/2.6.5/index.html
+      minors:
+        - title: 2.6.5
+          url: /hdp-for-cloud/2.6.5/index.html
+
+- name: Altus
+  latest-version: Cloud
+  latest-url: /altus/cloud/index.html
+  search-name: altus
+  versions:
+    - title: Cloud
+      url: /altus/cloud/index.html
+
+- name: CDH
+  latest-version: 5.1
+  latest-url: /cdh/latest/index.html
+  search-name: cdh
+  versions:
+    - title: 5.0
+      url: /cdh/5.1/index.html
+      minors:
+        - title: 5.1
+          label: Latest
+          url: /cdh/5.1/index.html
+        - title: 5.0
+          url: /cdh/5.0/index.html
+
+- name: Data Science Workbench
+  latest-version: 1.5
+  latest-url: /cdsw/latest/index.html
+  search-name: cdsw
+  versions:
+    - title: 1.0
+      url: /cdsw/1.5/index.html
+      minors:
+        - title: 1.5
+          label: Latest
+          url: /cdsw/1.5/index.html
+        - title: 1.4
+          url: /cdsw/1.4/index.html
+        - title: 1.3
+          url: /cdsw/1.3/index.html
+        - title: 1.2
+          url: /cdsw/1.2/index.html
+        - title: 1.1
+          url: /cdsw/1.1/index.html
+        - title: 1.0
+          url: /cdsw/1.0/index.html
+
+- name: Director
+  latest-version: Cloud
+  latest-url: /director/cloud/index.html
+  search-name: director
+  versions:
+    - title: Cloud
+      url: /director/cloud/index.html
+    - title: 6.0
+      url: /director/latest/index.html
+      minors:
+        - title: 6.0
+          label: Latest
+          url: /director/6.0/index.html
+    - title: 2.0
+      url: /director/2.8/index.html
+      minors:
+        - title: 2.8
+          url: /director/2.8/index.html
+        - title: 2.7
+          url: /director/2.7/index.html
+        - title: 2.6
+          url: /director/2.6/index.html
+        - title: 2.5
+          url: /director/2.5/index.html
+        - title: 2.4
+          url: /director/2.4/index.html
+        - title: 2.3
+          url: /director/2.3/index.html
+        - title: 2.2
+          url: /director/2.2/index.html
+        - title: 2.1
+          url: /director/2.1/index.html
+        - title: 2.0
+          url: /director/2.0/index.html
+    - title: 1.0
+      url: /director/1.5/index.html
+      minors:
+        - title: 1.5
+          url: /director/1.5/index.html
+        - title: 1.1
+          url: /director/1.1/index.html
+        - title: 1.0
+          url: /director/1.0/index.html
+
+- name: Enterprise
+  latest-version: 6.2
+  latest-url: /enterprise/latest/index.html
+  search-name: enterprise
+  versions:
+    - title: 6.0
+      url: /enterprise/latest/index.html
+      minors:
+        - title: 6.2
+          label: Latest
+          url: /enterprise/6.2/index.html
+        - title: 6.1
+          url: /enterprise/6.1/index.html
+        - title: 6.0
+          url: /enterprise/6.0/index.html
+    - title: 5.0
+      url: /enterprise/5.16/index.html
+      minors:
+        - title: 5.16
+          url: /enterprise/5.16/index.html
+        - title: 5.15
+          url: /enterprise/5.15/index.html
+        - title: 5.14
+          url: /enterprise/5.14/index.html
+        - title: 5.13
+          url: /enterprise/5.13/index.html
+        - title: 5.12
+          url: /enterprise/5.12/index.html
+        - title: 5.11
+          url: /enterprise/5.11/index.html
+        - title: 5.10
+          url: /enterprise/5.10/index.html
+        - title: 5.9
+          url: /enterprise/5.9/index.html
+        - title: 5.8
+          url: /enterprise/5.8/index.html
+        - title: 5.7
+          url: /enterprise/5.7/index.html
+        - title: 5.6
+          url: /enterprise/5.6/index.html
+        - title: 5.5
+          url: /enterprise/5.5/index.html
+        - title: 5.4
+          url: /enterprise/5.4/index.html
+        - title: 5.3
+          url: /enterprise/5.3/index.html
+        - title: 5.2
+          url: /enterprise/5.2/index.html
+
+- name: Kafka
+  latest-version: 3.0
+  latest-url: /kafka/latest/index.html
+  search-name: kafka
+  versions:
+    - title: 3.0
+      url: /kafka/latest/index.html
+      minors:
+        - title: 3.0
+          label: Latest
+          url: /kafka/3.0/index.html
+    - title: 2.0
+      url: /kafka/2.2/index.html
+      minors:
+        - title: 2.2
+          url: /kafka/2.2/index.html
+        - title: 2.1
+          url: /kafka/2.1/index.html
+        - title: 2.0
+          url: /kafka/2.0/index.html
+    - title: 1.0
+      url: /kafka/1.4/index.html
+      minors:
+        - title: 1.4
+          url: /kafka/1.4/index.html
+        - title: 1.3
+          url: /kafka/1.3/index.html
+        - title: 1.2
+          url: /kafka/1.2/index.html
+
+- name: Kudu
+  latest-version: 5.12
+  latest-url: /kudu/latest/index.html
+  search-name: kudu
+  versions:
+    - title: 5.0
+      url: /kudu/latest/index.html
+      minors:
+        - title: 5.12
+          label: Latest
+          url: /kudu/5.12/index.html
+        - title: 5.11
+          url: /kudu/5.11/index.html
+        - title: 5.10
+          url: /kudu/5.10/index.html
+
+- name: Manager
+  latest-version: 5.1
+  latest-url: /manager/latest/index.html
+  search-name: manager
+  versions:
+    - title: 5.0
+      url: /manager/latest/index.html
+      minors:
+        - title: 5.1
+          label: Latest
+          url: /manager/5.1/index.html
+        - title: 5.0
+          url: /manager/5.0/index.html
+
+- name: Navigator Optimizer
+  latest-version: Cloud
+  latest-url: /navopt/cloud/index.html
+  search-name: navopt
+  versions:
+    - title: Cloud
+      url: /navopt/cloud/index.html
+
+- name: Accumulo
+  latest-version: 1.7.2
+  latest-url: /accumulo/latest/index.html
+  search-name: accumulo
+  versions:
+    - title: 1.7
+      url: /accumulo/1.7.2/index.html
+      minors:
+        - title: 1.7.2
+          label: Latest
+          url: /accumulo/1.7.2/index.html
+    - title: 1.6
+      url: /accumulo/1.6.0/index.html
+      minors:
+        - title: 1.6.0
+          url: /accumulo/1.6.0/index.html
+
+- name: Hive JDBC
+  latest-version: 2.6.2
+  latest-url: /hive-jdbc/latest/index.html
+  search-name: hive-jdbc
+  versions:
+    - title: 2.6
+      url: /hive-jdbc/2.6.2/index.html
+      minors:
+        - title: 2.6.2
+          label: Latest
+          url: /hive-jdbc/2.6.2/index.html
+    - title: 2.5
+      url: /hive-jdbc/2.5.20/index.html
+      minors:
+        - title: 2.5.20
+          url: /hive-jdbc/2.5.20/index.html
+        - title: 2.5.19
+          url: /hive-jdbc/2.5.19/index.html
+        - title: 2.5.18
+          url: /hive-jdbc/2.5.18/index.html
+        - title: 2.5.17
+          url: /hive-jdbc/2.5.17/index.html
+        - title: 2.5.16
+          url: /hive-jdbc/2.5.16/index.html
+        - title: 2.5.15
+          url: /hive-jdbc/2.5.15/index.html
+        - title: 2.5.12
+          url: /hive-jdbc/2.5.12/index.html
+        - title: 2.5.10
+          url: /hive-jdbc/2.5.10/index.html
+        - title: 2.5.9
+          url: /hive-jdbc/2.5.9/index.html
+        - title: 2.5.6
+          url: /hive-jdbc/2.5.6/index.html
+        - title: 2.5.4
+          url: /hive-jdbc/2.5.4/index.html
+
+- name: Hive ODBC
+  latest-version: 2.5.25
+  latest-url: /hive-odbc/latest/index.html
+  search-name: hive-odbc
+  versions:
+    - title: 2.5
+      url: /hive-odbc/2.5.25/index.html
+      minors:
+        - title: 2.5.25
+          label: Latest
+          url: /hive-odbc/2.5.25/index.html
+        - title: 2.5.24
+          url: /hive-odbc/2.5.24/index.html
+        - title: 2.5.22
+          url: /hive-odbc/2.5.23/index.html
+        - title: 2.5.21
+          url: /hive-odbc/2.5.21/index.html
+        - title: 2.5.20
+          url: /hive-odbc/2.5.20/index.html
+        - title: 2.5.19
+          url: /hive-odbc/2.5.19/index.html
+        - title: 2.5.18
+          url: /hive-odbc/2.5.18/index.html
+        - title: 2.5.17
+          url: /hive-odbc/2.5.17/index.html
+        - title: 2.5.16
+          url: /hive-odbc/2.5.16/index.html
+        - title: 2.5.15
+          url: /hive-odbc/2.5.15/index.html
+        - title: 2.5.14
+          url: /hive-odbc/2.5.14/index.html
+        - title: 2.5.13
+          url: /hive-odbc/2.5.13/index.html
+        - title: 2.5.12
+          url: /hive-odbc/2.5.12/index.html
+        - title: 2.5.10
+          url: /hive-odbc/2.5.10/index.html
+        - title: 2.5.9
+          url: /hive-odbc/2.5.9/index.html
+        - title: 2.5.5
+          url: /hive-odbc/2.5.5/index.html
+        - title: 2.5.0
+          url: /hive-odbc/2.5.0/index.html
+    - title: 2.0
+      url: /hive-odbc/2.0.0/index.html
+      minors:
+        - title: 2.0.0
+          url: /hive-odbc/2.0.0/index.html
+
+- name: Impala JDBC
+  latest-version: 2.6.9
+  latest-url: /impala-jdbc/latest/index.html
+  search-name: impala-jdbc
+  versions:
+    - title: 2.6
+      url: /impala-jdbc/2.6.9/index.html
+      minors:
+        - title: 2.6.9
+          label: Latest
+          url: /impala-jdbc/2.6.9/index.html
+        - title: 2.6.4
+          url: /impala-jdbc/2.6.4/index.html
+        - title: 2.6.3
+          url: /impala-jdbc/2.6.3/index.html
+        - title: 2.6.2
+          url: /impala-jdbc/2.6.2/index.html
+    - title: 2.5
+      url: /impala-jdbc/2.5.45/index.html
+      minors:
+        - title: 2.5.45
+          url: /impala-jdbc/2.5.45/index.html
+        - title: 2.5.43
+          url: /impala-jdbc/2.5.43/index.html
+        - title: 2.5.42
+          url: /impala-jdbc/2.5.42/index.html
+        - title: 2.5.41
+          url: /impala-jdbc/2.5.41/index.html
+        - title: 2.5.38
+          url: /impala-jdbc/2.5.38/index.html
+        - title: 2.5.37
+          url: /impala-jdbc/2.5.37/index.html
+        - title: 2.5.36
+          url: /impala-jdbc/2.5.36/index.html
+        - title: 2.5.35
+          url: /impala-jdbc/2.5.35/index.html
+        - title: 2.5.34
+          url: /impala-jdbc/2.5.34/index.html
+        - title: 2.5.32
+          url: /impala-jdbc/2.5.32/index.html
+        - title: 2.5.31
+          url: /impala-jdbc/2.5.31/index.html
+        - title: 2.5.30
+          url: /impala-jdbc/2.5.30/index.html
+        - title: 2.5.29
+          url: /impala-jdbc/2.5.29/index.html
+        - title: 2.5.28
+          url: /impala-jdbc/2.5.28/index.html
+        - title: 2.5.24
+          url: /impala-jdbc/2.5.24/index.html
+        - title: 2.5.22
+          url: /impala-jdbc/2.5.22/index.html
+        - title: 2.5.21
+          url: /impala-jdbc/2.5.21/index.html
+        - title: 2.5.16
+          url: /impala-jdbc/2.5.16/index.html
+        - title: 2.5.14
+          url: /impala-jdbc/2.5.14/index.html
+        - title: 2.5.5
+          url: /impala-jdbc/2.5.5/index.html
+
+- name: Impala ODBC
+  latest-version: 2.6.0
+  latest-url: /impala-odbc/latest/index.html
+  search-name: impala-odbc
+  versions:
+    - title: 2.6
+      url: /impala-odbc/2.6.0/index.html
+      minors:
+        - title: 2.6.0
+          label: Latest
+          url: /impala-odbc/2.6.0/index.html
+    - title: 2.5
+      url: /impala-odbc/2.5.44/index.html
+      minors:
+        - title: 2.5.44
+          url: /impala-odbc/2.5.44/index.html
+        - title: 2.5.43
+          url: /impala-odbc/2.5.43/index.html
+        - title: 2.5.42
+          url: /impala-odbc/2.5.42/index.html
+        - title: 2.5.41
+          url: /impala-odbc/2.5.41/index.html
+        - title: 2.5.40
+          url: /impala-odbc/2.5.40/index.html
+        - title: 2.5.39
+          url: /impala-odbc/2.5.39/index.html
+        - title: 2.5.37
+          url: /impala-odbc/2.5.37/index.html
+        - title: 2.5.36
+          url: /impala-odbc/2.5.36/index.html
+        - title: 2.5.35
+          url: /impala-odbc/2.5.35/index.html
+        - title: 2.5.34
+          url: /impala-odbc/2.5.34/index.html
+        - title: 2.5.33
+          url: /impala-odbc/2.5.33/index.html
+        - title: 2.5.32
+          url: /impala-odbc/2.5.32/index.html
+        - title: 2.5.31
+          url: /impala-odbc/2.5.31/index.html
+        - title: 2.5.30
+          url: /impala-odbc/2.5.30/index.html
+        - title: 2.5.29
+          url: /impala-odbc/2.5.29/index.html
+        - title: 2.5.28
+          url: /impala-odbc/2.5.28/index.html
+        - title: 2.5.26
+          url: /impala-odbc/2.5.26/index.html
+        - title: 2.5.23
+          url: /impala-odbc/2.5.23/index.html
+        - title: 2.5.22
+          url: /impala-odbc/2.5.22/index.html
+        - title: 2.5.20
+          url: /impala-odbc/2.5.20/index.html
+        - title: 2.5.17
+          url: /impala-odbc/2.5.17/index.html
+        - title: 2.5.15
+          url: /impala-odbc/2.5.15/index.html
+        - title: 2.5.13
+          url: /impala-odbc/2.5.13/index.html
+        - title: 2.5.5
+          url: /impala-odbc/2.5.5/index.html
+        - title: 2.5.2
+          url: /impala-odbc/2.5.2/index.html
+    - title: 2.0
+      url: /impala-odbc/2.0.0/index.html
+      minors:
+        - title: 2.0.0
+          url: /impala-odbc/2.0.0/index.html
+    - title: 1.2
+      url: /impala-odbc/1.2.0/index.html
+      minors:
+        - title: 1.2.0
+          url: /impala-odbc/1.2.0/index.html
+
+- name: Netezza Connector
+  latest-version: 1.0
+  latest-url: /netezza-connector/latest/index.html
+  search-name: netezza-connector
+  versions:
+    - title: 1.0
+      url: /netezza-connector/1.0/index.html
+      minors:
+        - title: 1.0
+          label: Latest
+          url: /netezza-connector/1.0/index.html
+
+- name: Teradata Connector
+  latest-version: 1.0
+  latest-url: /teradata-connector/latest/index.html
+  search-name: teradata-connector
+  versions:
+    - title: 1.0
+      url: /teradata-connector/1.0/index.html
+      minors:
+        - title: 1.0
+          label: Latest
+          url: /teradata-connector/1.0/index.html
+
+- name: Licenses
+  latest-version: Latest
+  latest-url: /licenses/latest/index.html
+  search-name: licenses
+  versions:
+    - title: Latest
+      url: /licenses/latest/index.html
+
+- name: Security Bulletins
+  latest-version: Latest
+  latest-url: /security-bulletins/latest/index.html
+  search-name: security-bulletins
+  versions:
+    - title: Latest
+      url: /security-bulletins/latest/index.html
+
+- name: Workload XM
+  latest-version: Cloud
+  latest-url: /wxm/cloud/index.html
+  search-name: wxm
+  versions:
+    - title: Cloud
+      url: /wxm/cloud/index.html
