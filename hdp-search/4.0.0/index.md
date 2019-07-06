@@ -2,7 +2,7 @@
 layout: product
 title: Data Platform Search
 version: 4.0.0
-base-path: /HDPDocuments/HDPS/HDPS-4.0.0/
+base-path: /hdp-search/4.0.0/
 
 sections:
   - title: Administration

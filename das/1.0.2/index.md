@@ -2,7 +2,7 @@
 layout: product
 title: Data Analytics Studio
 version: 1.0.2
-base-path: /HDPDocuments/DAS/DAS-1.0.2/
+base-path: /das/1.0.2/
 
 sections:
   - title: Release Notes

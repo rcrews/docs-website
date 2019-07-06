@@ -2,7 +2,7 @@
 layout: product
 title: DataPlane Platform
 version: 1.1.0
-base-path: /HDPDocuments/DP/DP-1.1.0/
+base-path: /dp/1.1.0/
 
 sections:
   - title: Release Notes

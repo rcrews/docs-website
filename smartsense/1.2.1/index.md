@@ -2,7 +2,7 @@
 layout: product
 title: SmartSense
 version: 1.2.1
-base-path: /HDPDocuments/SS1/SmartSense-1.2.1/
+base-path: /smartsense/1.2.1/
 
 sections:
   - title: Administration

@@ -2,7 +2,7 @@
 layout: product
 title: Edge Management
 version: 1.0.0
-base-path: /HDPDocuments/CEM/CEM-1.0.0/
+base-path: /cem/1.0.0/
 
 sections:
   - title: Release Notes

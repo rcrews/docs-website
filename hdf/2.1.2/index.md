@@ -2,7 +2,7 @@
 layout: product
 title: DataFlow
 version: 2.1.2
-base-path: /HDPDocuments/HDF2/HDF-2.1.2/
+base-path: /hdf/2.1.2/
 
 sections:
   - title: Release Notes

@@ -2,7 +2,7 @@
 layout: product
 title: Cybersecurity
 version: 1.2.0
-base-path: /HDPDocuments/HCP1/HCP-1.2.0/
+base-path: /hcp/1.2.0/
 
 sections:
   - title: Release Notes

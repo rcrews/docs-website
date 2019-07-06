@@ -2,7 +2,7 @@
 layout: product
 title: HDP
 version: 3.0.1
-base-path: /HDPDocuments/HDP3/HDP-3.0.1/
+base-path: /hdp/3.0.1/
 
 sections:
 

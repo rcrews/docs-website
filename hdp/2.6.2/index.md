@@ -2,7 +2,7 @@
 layout: product
 title: HDP
 version: 2.6.2
-base-path: /HDPDocuments/HDP2/HDP-2.6.2/
+base-path: /hdp/2.6.2/
 
 sections:
 

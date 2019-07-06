@@ -2,7 +2,7 @@
 layout: product
 title: HDP
 version: 2.2.8
-base-path: /HDPDocuments/HDP2/HDP-2.2.8/
+base-path: /hdp/2.2.8/
 
 sections:
 # - title: Install // Human Readable Section Title

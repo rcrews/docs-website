@@ -2,7 +2,7 @@
 layout: product
 title: Data Steward Studio
 version: 1.2.2
-base-path: /HDPDocuments/DSS1/DSS-1.2.2/
+base-path: /dss/1.2.2/
 
 sections:
   - title: Release Notes

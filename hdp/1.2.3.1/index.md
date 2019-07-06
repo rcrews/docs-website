@@ -2,7 +2,7 @@
 layout: product
 title: HDP
 version: 1.2.3.1
-base-path: /HDPDocuments/HDP1/HDP-1.2.3.1/
+base-path: /hdp/1.2.3.1/
 
 sections:
   - title: Release Notes

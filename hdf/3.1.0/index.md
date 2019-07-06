@@ -2,7 +2,7 @@
 layout: product
 title: DataFlow
 version: 3.1.0
-base-path: /HDPDocuments/HDF3/HDF-3.1.0/
+base-path: /hdf/3.1.0/
 
 sections:
   - title: Release Notes

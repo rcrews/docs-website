@@ -2,7 +2,7 @@
 layout: product
 title: Ambari
 version: 2.2.2.18
-base-path: /HDPDocuments/Ambari-2.2.2.18/
+base-path: /ambari/2.2.2.18/
 
 sections:
   - title: Release Notes

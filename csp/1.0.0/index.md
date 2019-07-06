@@ -2,7 +2,7 @@
 layout: product
 title: Stream Processing
 version: 1.0.0
-base-path: /HDPDocuments/CSP/CSP-1.0.0/
+base-path: /csp/1.0.0/
 
 sections:
   - title: Release Notes

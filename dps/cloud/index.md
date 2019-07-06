@@ -1,7 +1,7 @@
 ---
 layout: product
 title: DataPlane Service
-base-path: /HDPDocuments/DPS/DPS/
+base-path: /dps/cloud/
 
 sections:
   - title: Release Notes

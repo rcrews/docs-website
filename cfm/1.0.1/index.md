@@ -2,7 +2,7 @@
 layout: product
 title: Flow Management
 version: 1.0.1
-base-path: /HDPDocuments/CFM/CFM-1.0.1/
+base-path: /cfm/1.0.1/
 
 sections:
   - title: Release Notes

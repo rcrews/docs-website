@@ -2,7 +2,7 @@
 layout: product
 title: HDP
 version: 1.2.0
-base-path: /HDPDocuments/HDP1/HDP-1.2.0/
+base-path: /hdp/1.2.0/
 
 sections:
   - title: Release Notes

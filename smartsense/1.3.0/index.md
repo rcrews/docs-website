@@ -2,7 +2,7 @@
 layout: product
 title: SmartSense
 version: 1.3.0
-base-path: /HDPDocuments/SS1/SmartSense-1.3.0/
+base-path: /smartsense/1.3.0/
 
 sections:
   - title: Release Notes

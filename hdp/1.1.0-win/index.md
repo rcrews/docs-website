@@ -2,15 +2,15 @@
 layout: product
 title: HDP for Windows
 version: 1.1.0
-base-path: /HDPDocuments/HDP1/HDP-Win-1.1.0/
+base-path: /hdp/1.1.0-win/
 
 sections:
   - title: Release Notes
     name: releasenotes
     books:
       - title: Release Notes
-        url: bk_releasenotes_HDP-Win/content/ch_relnotes-hdp-win-1.1.1.html
-        pdf: bk_releasenotes_HDP-Win/bk_releasenotes_HDP-Win-20130521.pdf
+        url: bk_releasenotes_HDP-win/content/ch_relnotes-hdp-win-1.1.1.html
+        pdf: bk_releasenotes_HDP-win/bk_releasenotes_HDP-Win-20130521.pdf
 
   - title: Install
     name: install

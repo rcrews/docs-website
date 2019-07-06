@@ -2,7 +2,7 @@
 layout: product
 title: Streams Messaging Manager
 version: 1.2.1
-base-path: /HDPDocuments/SMM/SMM-1.2.1/
+base-path: /smm/1.2.1/
 
 sections:
   - title: Release Notes

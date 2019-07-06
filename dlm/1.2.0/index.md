@@ -2,7 +2,7 @@
 layout: product
 title: Data Lifecycle Manager
 version: 1.2.0
-base-path: /HDPDocuments/DLM1/DLM-1.2.0/
+base-path: /dlm/1.2.0/
 
 sections:
   - title: Release Notes

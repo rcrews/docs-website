@@ -2,7 +2,7 @@
 layout: product
 title: HDP for Windows
 version: 2.2.6
-base-path: /HDPDocuments/HDP2/HDP-2.2.6-Win/
+base-path: /hdp/2.2.6-win/
 
 sections:
   - title: Release Notes

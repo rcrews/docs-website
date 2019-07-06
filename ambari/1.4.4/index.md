@@ -2,7 +2,7 @@
 layout: product
 title: Ambari
 version: 1.4.4
-base-path: /HDPDocuments/HDP2/HDP-2.0.9.1/
+base-path: /hdp/2.0.9.1/
 # Note: The Ambari 1.4.4 books are hosted in the HDP 2.0.9.1 library.
 
 sections:

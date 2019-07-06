@@ -2,7 +2,7 @@
 layout: product
 title: HDP for Cloud
 version: 3.0.1
-base-path: /HDPDocuments/HDPforCloud/HDPforCloud-3.0.1/
+base-path: /hdp-for-cloud/3.0.1/
 
 sections:
 

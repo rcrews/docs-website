@@ -2,15 +2,15 @@
 layout: product
 title: HDP for Windows
 version: 2.1.2
-base-path: /HDPDocuments/HDP2/HDP-2.1.2-Win/
+base-path: /hdp/2.1.2-win/
 
 sections:
   - title: Release Notes
     name: releasenotes
     books:
       - title: Release Notes
-        url: bk_releasenotes_HDP-Win/content/ch_relnotes-HDP-2.1.0.0-Win.html
-        pdf: bk_releasenotes_HDP-Win/bk_releasenotes_HDP-Win-20140502.pdf
+        url: bk_releasenotes_HDP-win/content/ch_relnotes-HDP-2.1.0.0-Win.html
+        pdf: bk_releasenotes_HDP-win/bk_releasenotes_HDP-Win-20140502.pdf
 
   - title: Install
     name: install

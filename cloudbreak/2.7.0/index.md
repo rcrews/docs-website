@@ -2,7 +2,7 @@
 layout: product
 title: Cloudbreak
 version: 2.7.0
-base-path: /HDPDocuments/Cloudbreak/Cloudbreak-2.7.0/
+base-path: /cloudbreak/2.7.0/
 
 sections:
   - title: Release Notes

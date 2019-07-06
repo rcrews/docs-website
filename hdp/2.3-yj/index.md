@@ -2,7 +2,7 @@
 layout: product
 title: HDP
 version: 2.3 Yahoo! Japan
-base-path: /HDPDocuments/HDP2/HDP-2.3-yj/
+base-path: /hdp/2.3-yj/
 
 sections:
 # - title: Install // Human Readable Section Title
