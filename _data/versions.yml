@@ -1,7 +1,4 @@
 ---
-- name: Cloudera
-  latest-url: https://www.cloudera.com/documentation.html
-
 - name: HDP
   latest-version: 3.1.0
   latest-url: /hdp/3.1.0/index.html
