@@ -9,8 +9,8 @@ sections:
     name: releasenotes
     books:
       - title: Release Notes
-        url: ../../DP/DP-1.0.0/bk_dps-release-notes/content/dps_relnotes.html
-        pdf: ../../DP/DP-1.0.0/bk_dps-release-notes/bk_dps-release-notes.pdf
+        url: ../dp/1.0.0/bk_dps-release-notes/content/dps_relnotes.html
+        pdf: ../dp/1.0.0/bk_dps-release-notes/bk_dps-release-notes.pdf
       - title: Support Matrix
         url: https://supportmatrix.hortonworks.com/
 

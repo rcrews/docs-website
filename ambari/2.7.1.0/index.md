@@ -18,9 +18,9 @@ sections:
     name: installation-upgrade
     books:
       - title: Installation
-        url: ../HDP3/HDP-3.0.1/installation.html
+        url: ../hdp/3.0.1/installation.html
       - title: Upgrade
-        url: ../HDP3/HDP-3.0.1/upgrade.html
+        url: ../hdp/3.0.1/upgrade.html
 #      - title: Apache Ambari Installation
 #        url: bk_ambari-installation/index.html
 #      - title: Apache Ambari Major Upgrade

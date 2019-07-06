@@ -13,9 +13,9 @@ json:
     id: concepts
     sub:
       - text: Apache NiFi Overview
-        href: ../../HDF3/HDF-3.4.0/apache-nifi-overview/index.html
+        href: ../hdf/3.4.0/apache-nifi-overview/index.html
         id: apache-nifi-overview
-        sub: ../../HDF3/HDF-3.4.0/apache-nifi-overview/navigation.json
+        sub: ../hdf/3.4.0/apache-nifi-overview/navigation.json
 
   - text: Installation & Upgrade
     id: install
@@ -41,49 +41,49 @@ json:
         id: securing-cfm
         sub: securing-cfm/navigation.json
       - text: Using the Apache NiFi Interface
-        href: ../../HDF3/HDF-3.4.0/using-nifi-interface/index.html
+        href: ../hdf/3.4.0/using-nifi-interface/index.html
         id: using-nifi-interface
-        sub: ../../HDF3/HDF-3.4.0/using-nifi-interface/navigation.json
+        sub: ../hdf/3.4.0/using-nifi-interface/navigation.json
       - text: Building an Apache NiFi DataFlow
-        href: ../../HDF3/HDF-3.4.0/building-a-dataflow/index.html
+        href: ../hdf/3.4.0/building-a-dataflow/index.html
         id: building-a-dataflow
-        sub: ../../HDF3/HDF-3.4.0/building-a-dataflow/navigation.json
+        sub: ../hdf/3.4.0/building-a-dataflow/navigation.json
       - text: Managing an Apache NiFi DataFlow
-        href: ../../HDF3/HDF-3.4.0/managing-a-dataflow/index.html
+        href: ../hdf/3.4.0/managing-a-dataflow/index.html
         id: managing-a-dataflow
-        sub: ../../HDF3/HDF-3.4.0/managing-a-dataflow/navigation.json
+        sub: ../hdf/3.4.0/managing-a-dataflow/navigation.json
       - text: Navigating an Apache NiFi DataFlow
-        href: ../../HDF3/HDF-3.4.0/navigating-a-dataflow/index.html
+        href: ../hdf/3.4.0/navigating-a-dataflow/index.html
         id: navigating-a-dataflow
-        sub: ../../HDF3/HDF-3.4.0/navigating-a-dataflow/navigation.json
+        sub: ../hdf/3.4.0/navigating-a-dataflow/navigation.json
       - text: Monitoring an Apache NiFi DataFlow
-        href: ../../HDF3/HDF-3.4.0/monitoring-a-dataflow/index.html
+        href: ../hdf/3.4.0/monitoring-a-dataflow/index.html
         id: monitoring-a-dataflow
-        sub: ../../HDF3/HDF-3.4.0/monitoring-a-dataflow/navigation.json
+        sub: ../hdf/3.4.0/monitoring-a-dataflow/navigation.json
       - text: Versioning an Apache NiFi DataFlow
-        href: ../../HDF3/HDF-3.4.0/versioning-a-dataflow/index.html
+        href: ../hdf/3.4.0/versioning-a-dataflow/index.html
         id: versioning-a-dataflow
-        sub: ../../HDF3/HDF-3.4.0/versioning-a-dataflow/navigation.json
+        sub: ../hdf/3.4.0/versioning-a-dataflow/navigation.json
       - text: Using Apache NiFi Templates
-        href: ../../HDF3/HDF-3.4.0/using-dataflow-templates/index.html
+        href: ../hdf/3.4.0/using-dataflow-templates/index.html
         id: using-dataflow-templates
-        sub: ../../HDF3/HDF-3.4.0/using-dataflow-templates/navigation.json
+        sub: ../hdf/3.4.0/using-dataflow-templates/navigation.json
       - text: Using Apache NiFi Provenance Tools
-        href: ../../HDF3/HDF-3.4.0/using-dataflow-provenance-tools/index.html
+        href: ../hdf/3.4.0/using-dataflow-provenance-tools/index.html
         id: using-dataflow-provenance-tools
-        sub: ../../HDF3/HDF-3.4.0/using-dataflow-provenance-tools/navigation.json
+        sub: ../hdf/3.4.0/using-dataflow-provenance-tools/navigation.json
       - text: Adding functionality to Apache NiFi
-        href: ../../HDF3/HDF-3.4.0/adding-functionality-to-apache-nifi/index.html
+        href: ../hdf/3.4.0/adding-functionality-to-apache-nifi/index.html
         id: adding-functionality-to-apache-nifi
-        sub: ../../HDF3/HDF-3.4.0/adding-functionality-to-apache-nifi/navigation.json
+        sub: ../hdf/3.4.0/adding-functionality-to-apache-nifi/navigation.json
       - text: Using the Apache NiFi Toolkit
-        href: ../../HDF3/HDF-3.4.0/nifi-toolkit/index.html
+        href: ../hdf/3.4.0/nifi-toolkit/index.html
         id: nifi-toolkit
-        sub: ../../HDF3/HDF-3.4.0/nifi-toolkit/navigation.json
+        sub: ../hdf/3.4.0/nifi-toolkit/navigation.json
       - text: Using Apache NiFi Registry
-        href: ../../HDF3/HDF-3.4.0/using-nifi-registry/index.html
+        href: ../hdf/3.4.0/using-nifi-registry/index.html
         id: using-nifi-registry
-        sub: ../../HDF3/HDF-3.4.0/using-nifi-registry/navigation.json
+        sub: ../hdf/3.4.0/using-nifi-registry/navigation.json
 
   - text: Reference
     name: reference
@@ -93,25 +93,25 @@ json:
         id: property-enhancements
         sub: property-enhancements/navigation.json
       - text: Record Path Reference
-        href: ../../HDF3/HDF-3.4.0/record-path-guide/index.html
+        href: ../hdf/3.4.0/record-path-guide/index.html
         id: record-path-guide
-        sub: ../../HDF3/HDF-3.4.0/record-path-guide/navigation.json
+        sub: ../hdf/3.4.0/record-path-guide/navigation.json
       - text: Apache NiFi Expression Language Guide
-        href: ../../HDF3/HDF-3.4.0/expression-language-guide/index.html
+        href: ../hdf/3.4.0/expression-language-guide/index.html
         id: expression-language-guide
-        sub: ../../HDF3/HDF-3.4.0/expression-language-guide/navigation.json
+        sub: ../hdf/3.4.0/expression-language-guide/navigation.json
       - text: Apache NiFi State Management
-        href: ../../HDF3/HDF-3.4.0/nifi-state-management/index.html
+        href: ../hdf/3.4.0/nifi-state-management/index.html
         id: nifi-state-management
-        sub: ../../HDF3/HDF-3.4.0/nifi-state-management/navigation.json
+        sub: ../hdf/3.4.0/nifi-state-management/navigation.json
       - text: Apache NiFi System Properties
-        href: ../../HDF3/HDF-3.4.0/nifi-system-properties/index.html
+        href: ../hdf/3.4.0/nifi-system-properties/index.html
         id: nifi-system-properties
-        sub: ../../HDF3/HDF-3.4.0/nifi-system-properties/navigation.json
+        sub: ../hdf/3.4.0/nifi-system-properties/navigation.json
       - text: Administering Apache NiFi Registry
-        href: ../../HDF3/HDF-3.4.0/administering-nifi-registry/index.html
+        href: ../hdf/3.4.0/administering-nifi-registry/index.html
         id: administering-nifi-registry
-        sub: ../../HDF3/HDF-3.4.0/administering-nifi-registry/navigation.json
+        sub: ../hdf/3.4.0/administering-nifi-registry/navigation.json
 
   - text: Release Notes
     name: releasenotes
@@ -125,13 +125,13 @@ json:
     name: learning-training
     sub:
       - text: Getting Started with Apache NiFi
-        href: ../../HDF3/HDF-3.4.0/getting-started-with-apache-nifi/index.html
+        href: ../hdf/3.4.0/getting-started-with-apache-nifi/index.html
         id: getting-started-with-apache-nifi
-        sub: ../../HDF3/HDF-3.4.0/getting-started-with-apache-nifi/navigation.json
+        sub: ../hdf/3.4.0/getting-started-with-apache-nifi/navigation.json
       - text: Getting Started with Apache NiFi Registry
-        href: ../../HDF3/HDF-3.4.0/getting-started-with-nifi-registry/index.html
+        href: ../hdf/3.4.0/getting-started-with-nifi-registry/index.html
         id: getting-started-with-nifi-registry
-        sub: ../../HDF3/HDF-3.4.0/getting-started-with-nifi-registry/navigation.json
+        sub: ../hdf/3.4.0/getting-started-with-nifi-registry/navigation.json
 
 
 ---

@@ -150,8 +150,8 @@ sections:
     name: streaming-analytics
     books:
       - title: Apache Storm Component Guide
-        url: ../../HDP2/HDP-2.5.3/bk_storm-component-guide/content/ch_storm-overview.html
-        pdf: ../../HDP2/HDP-2.5.3/bk_storm-component-guide/bk_storm-component-guide.pdf
+        url: ../hdp/2.5.3/bk_storm-component-guide/content/ch_storm-overview.html
+        pdf: ../hdp/2.5.3/bk_storm-component-guide/bk_storm-component-guide.pdf
 
       - title: Apache Kafka Documentation
         url: http://kafka.apache.org/0100/documentation.html

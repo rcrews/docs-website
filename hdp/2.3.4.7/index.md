@@ -35,8 +35,8 @@ sections:
 #            url: bk_getting-started-guide/content/ch_typical-hadoop-cluster.html
 
       - title: Ambari Automated Install Guide
-        url: ../../Ambari-2.2.1.1/bk_Installing_HDP_AMB/content/ch_Getting_Ready.html
-        pdf: ../../Ambari-2.2.1.1/bk_Installing_HDP_AMB/bk_Installing_HDP_AMB.pdf
+        url: ../ambari/2.2.1.1/bk_Installing_HDP_AMB/content/ch_Getting_Ready.html
+        pdf: ../ambari/2.2.1.1/bk_Installing_HDP_AMB/bk_Installing_HDP_AMB.pdf
 
       - title: Non-Ambari Cluster Installation Guide
         url: bk_installing_manually_book/index.html
@@ -101,8 +101,8 @@ sections:
     name: upgrade
     books:
       - title: Ambari Upgrade Guide
-        url: ../../Ambari-2.2.1.1/bk_upgrading_Ambari/content/_ambari_upgrade_guide.html
-        pdf: ../../Ambari-2.2.1.1/bk_upgrading_Ambari/bk_upgrading_Ambari.pdf
+        url: ../ambari/2.2.1.1/bk_upgrading_Ambari/content/_ambari_upgrade_guide.html
+        pdf: ../ambari/2.2.1.1/bk_upgrading_Ambari/bk_upgrading_Ambari.pdf
 
       - title: Non-Ambari Cluster Upgrade Guide
         url: bk_upgrading_hdp_manually/index.html

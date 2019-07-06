@@ -17,7 +17,7 @@ sections:
     name: installation-upgrade
     books:
       - title: Getting Started
-        url: ../../HDF3/HDF-3.3.0/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
+        url: ../hdf/3.3.0/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
       - title: Installation
         url: installation/index.html
       - title: Upgrade

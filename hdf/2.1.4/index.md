@@ -133,12 +133,12 @@ sections:
     name: streaming-analytics
     books:
       - title: Apache Storm Component Guide
-        url: ../../HDP2/HDP-2.6.1/bk_storm-component-guide/content/ch_storm-overview.html
-        pdf: ../../HDP2/HDP-2.6.1/bk_storm-component-guide/bk_storm-component-guide.pdf
+        url: ../hdp/2.6.1/bk_storm-component-guide/content/ch_storm-overview.html
+        pdf: ../hdp/2.6.1/bk_storm-component-guide/bk_storm-component-guide.pdf
 
       - title: Apache Kafka Component Guide
-        url: ../../HDP2/HDP-2.6.1/bk_kafka-component-guide/content/ch_introduction_kafka.html
-        pdf: ../../HDP2/HDP-2.6.1/bk_kafka-component-guide/bk_kafka-component-guide.pdf
+        url: ../hdp/2.6.1/bk_kafka-component-guide/content/ch_introduction_kafka.html
+        pdf: ../hdp/2.6.1/bk_kafka-component-guide/bk_kafka-component-guide.pdf
 
 ---
 

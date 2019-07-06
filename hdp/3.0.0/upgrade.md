@@ -4,12 +4,12 @@ breadcrumb-title: HDP
 title: Upgrade
 publications:
   - title: Apache Ambari Upgrade
-    url: ../../Ambari-2.7.0.0/bk_ambari-upgrade/index.html
+    url: ../ambari/2.7.0.0/bk_ambari-upgrade/index.html
     description: >-
       Describes upgrading Ambari and stack components to the latest
       versions.
   - title: Apache Ambari Upgrade for IBM Power Systems
-    url: ../../Ambari-2.7.0.0/bk_ambari-upgrade-ppc/index.html
+    url: ../ambari/2.7.0.0/bk_ambari-upgrade-ppc/index.html
     description: >-
       Describes upgrading Ambari and stack components to the latest
       versions on IBM Power Systems.

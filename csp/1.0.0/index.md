@@ -15,7 +15,7 @@ sections:
     name: concepts
     books:
       - title: Schema Registry Overview
-        url: ../../HDF3/HDF-3.4.0/schema-registry-overview/content/schema_registry_overview.html
+        url: ../hdf/3.4.0/schema-registry-overview/content/schema_registry_overview.html
 
   - title: Installation
     name: install
@@ -30,10 +30,10 @@ sections:
       #   url: securing-csp/index.html
 
       - title: Integrating with Schema Registry
-        url: ../../HDF3/HDF-3.4.0/integrating-with-schema-registry/content/integrating_with_nifi.html
+        url: ../hdf/3.4.0/integrating-with-schema-registry/content/integrating_with_nifi.html
 
       - title: Using Schema Registry
-        url: ../../HDF3/HDF-3.4.0/using-schema-registry/content/adding_a_new_schema.html
+        url: ../hdf/3.4.0/using-schema-registry/content/adding_a_new_schema.html
 
       - title: Using CDK
         url: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_using.html

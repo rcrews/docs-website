@@ -17,8 +17,8 @@ sections:
     name: install
     books:
       - title: Apache Ambari Installation
-        url: ../../Ambari-2.5.1.0/bk_ambari-installation/content/ch_Getting_Ready.html
-        pdf: ../../Ambari-2.5.1.0/bk_ambari-installation/bk_ambari-installation.pdf
+        url: ../ambari/2.5.1.0/bk_ambari-installation/content/ch_Getting_Ready.html
+        pdf: ../ambari/2.5.1.0/bk_ambari-installation/bk_ambari-installation.pdf
 
       - title: Command Line Installation
         url: bk_command-line-installation/index.html
@@ -85,8 +85,8 @@ sections:
     name: upgrade
     books:
       - title: Apache Ambari Upgrade
-        url: ../../Ambari-2.5.1.0/bk_ambari-upgrade/content/ambari_upgrade_guide.html
-        pdf: ../../Ambari-2.5.1.0/bk_ambari-upgrade/bk_ambari-upgrade.pdf
+        url: ../ambari/2.5.1.0/bk_ambari-upgrade/content/ambari_upgrade_guide.html
+        pdf: ../ambari/2.5.1.0/bk_ambari-upgrade/bk_ambari-upgrade.pdf
 
       - title: Command Line Upgrade
         url: bk_command-line-upgrade/index.html

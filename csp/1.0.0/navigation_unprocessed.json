@@ -13,9 +13,9 @@ json:
     name: concepts
     sub:
       - text: Schema Registry Overview
-        href: ../../HDF3/HDF-3.4.0/schema-registry-overview/content/schema_registry_overview.html
+        href: ../hdf/3.4.0/schema-registry-overview/content/schema_registry_overview.html
         id: schema-registry-overview
-        sub: ../../HDF3/HDF-3.4.0/schema-registry-overview/navigation.json
+        sub: ../hdf/3.4.0/schema-registry-overview/navigation.json
 
   - text: Installation
     name: install
@@ -34,14 +34,14 @@ json:
       #   sub: installation/navigation.json
 
       - text: Integrating with Schema Registry
-        href: ../../HDF3/HDF-3.4.0/integrating-with-schema-registry/content/integrating_with_nifi.html
+        href: ../hdf/3.4.0/integrating-with-schema-registry/content/integrating_with_nifi.html
         id: integrating-with-schema-registry
-        sub: ../../HDF3/HDF-3.4.0/integrating-with-schema-registry/navigation.json
+        sub: ../hdf/3.4.0/integrating-with-schema-registry/navigation.json
 
       - text: Using Schema Registry
-        href: ../../HDF3/HDF-3.4.0/using-schema-registry/content/adding_a_new_schema.html
+        href: ../hdf/3.4.0/using-schema-registry/content/adding_a_new_schema.html
         id: using-schema-registry
-        sub: ../../HDF3/HDF-3.4.0/using-schema-registry/navigation.json
+        sub: ../hdf/3.4.0/using-schema-registry/navigation.json
 
       - text: Using CDK
         href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_using.html

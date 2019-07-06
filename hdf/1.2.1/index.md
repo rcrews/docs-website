@@ -43,8 +43,8 @@ sections:
         pdf: bk_UserGuide/bk_UserGuide.pdf
 
       - title: Storm User Guide
-        url: ../../HDP2/HDP-2.4.0/bk_storm-user-guide/content/ch_using_storm.html
-        pdf: ../../HDP2/HDP-2.4.0/bk_storm-user-guide/bk_storm-user-guide.pdf
+        url: ../hdp/2.4.0/bk_storm-user-guide/content/ch_using_storm.html
+        pdf: ../hdp/2.4.0/bk_storm-user-guide/bk_storm-user-guide.pdf
 
       - title: Kafka Documentation
         url: https://kafka.apache.org/090/documentation.html

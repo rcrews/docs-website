@@ -15,7 +15,7 @@ sections:
     name: concepts
     books:
       - title: Apache NiFi Overview
-        url: ../../HDF3/HDF-3.4.0/apache-nifi-overview/index.html
+        url: ../hdf/3.4.0/apache-nifi-overview/index.html
 
   - title: Installation
     name: install
@@ -33,7 +33,7 @@ sections:
       - title: Using Apache NiFi
         url: howto.html
       - title: Using Apache NiFi Registry
-        url: ../../HDF3/HDF-3.4.0/using-nifi-registry/index.html
+        url: ../hdf/3.4.0/using-nifi-registry/index.html
 
   - title: Reference
     name: reference
@@ -43,15 +43,15 @@ sections:
       - title: Administering Apache NiFi
         url: admin-nifi.html
       - title: Administering Apache NiFi Registry
-        url: ../../HDF3/HDF-3.4.0/administering-nifi-registry/index.html
+        url: ../hdf/3.4.0/administering-nifi-registry/index.html
 
   - title: Learning & Training
     name: learning-training
     books:
       - title: Getting Started with Apache NiFi
-        url: ../../HDF3/HDF-3.4.0/getting-started-with-apache-nifi/index.html
+        url: ../hdf/3.4.0/getting-started-with-apache-nifi/index.html
       - title: Getting Started with Apache NiFi Registry
-        url: ../../HDF3/HDF-3.4.0/getting-started-with-nifi-registry/index.html
+        url: ../hdf/3.4.0/getting-started-with-nifi-registry/index.html
 
 ---
 

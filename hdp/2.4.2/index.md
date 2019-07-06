@@ -28,8 +28,8 @@ sections:
 #        pdf: bk_getting-started-guide/bk_getting-started-guide.pdf
 
       - title: Ambari Automated Install Guide
-        url: ../../Ambari-2.2.2.18/bk_ambari-installation/content/ch_Getting_Ready.html
-        pdf: ../../Ambari-2.2.2.18/bk_ambari-installation/bk_ambari-installation.pdf
+        url: ../ambari/2.2.2.18/bk_ambari-installation/content/ch_Getting_Ready.html
+        pdf: ../ambari/2.2.2.18/bk_ambari-installation/bk_ambari-installation.pdf
 
       - title: Non-Ambari Cluster Installation Guide
         url: bk_installing_manually_book/index.html
@@ -94,8 +94,8 @@ sections:
     name: upgrade
     books:
       - title: Ambari Upgrade Guide
-        url: ../../Ambari-2.2.2.18/bk_ambari-upgrade/content/_ambari_upgrade_guide.html
-        pdf: ../../Ambari-2.2.2.18/bk_ambari-upgrade/bk_ambari-upgrade.pdf
+        url: ../ambari/2.2.2.18/bk_ambari-upgrade/content/_ambari_upgrade_guide.html
+        pdf: ../ambari/2.2.2.18/bk_ambari-upgrade/bk_ambari-upgrade.pdf
 
       - title: Non-Ambari Cluster Upgrade Guide
         url: bk_upgrading_hdp_manually/index.html
