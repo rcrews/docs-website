@@ -17,120 +17,204 @@ json:
         href: hive-overview/index.html
         sub: hive-overview/navigation.json
 
-      - text: Data Governance Overview
-        id: atlas-overview
-        href: atlas-overview/index.html
-        sub: atlas-overview/navigation.json
+      - text: administering-hue
+        id: administering-hue
+        href: administering-hue/index.html
+        sub: administering-hue/navigation.json
 
-      - text: Apache Spark Overview
-        id: spark-overview
-        href: spark-overview/index.html
-        sub: spark-overview/navigation.json
+      - text: administering-kudu
+        id: administering-kudu
+        href: administering-kudu/index.html
+        sub: administering-kudu/navigation.json
 
-      - text: Apache Zeppelin Overview
-        id: zeppelin-overview
-        href: zeppelin-overview/index.html
-        sub: zeppelin-overview/navigation.json
+      - text: configuring-apache-hive
+        id: configuring-apache-hive
+        href: configuring-apache-hive/index.html
+        sub: configuring-apache-hive/navigation.json
 
-      - text: HDP Security Overview
-        id: security-overview
-        href: security-overview/index.html
-        sub: security-overview/navigation.json
+      - text: hive-introduction
+        id: hive-introduction
+        href: hive-introduction/index.html
+        sub: hive-introduction/navigation.json
 
-      - text: Apache Kafka Overview
-        id: kafka-overview
-        href: kafka-overview/index.html
-        sub: kafka-overview/navigation.json
+      - text: hue-introduction
+        id: hue-introduction
+        href: hue-introduction/index.html
+        sub: hue-introduction/navigation.json
 
-      - text: Apache Storm Overview
-        id: storm-overview
-        href: storm-overview/index.html
-        sub: storm-overview/navigation.json
+      - text: impala-client
+        id: impala-client
+        href: impala-client/index.html
+        sub: impala-client/navigation.json
 
-  - text: Installation & Upgrade
-    id: installation-upgrade
-    sub:
-      - text: Installation
-        href:  installation.html
-        sub:
-          - text: Apache Ambari Installation
-            id: bk_ambari-installation
-            href: ../ambari/2.7.3.0/bk_ambari-installation/index.html
-          - text: Apache Ambari Installation for IBM Power Systems
-            id: bk_ambari-installation-ppc
-            href: ../ambari/2.7.3.0/bk_ambari-installation-ppc/index.html
-          - text: Installing Apache Atlas
-            id: installing-atlas
-            href: installing-atlas/index.html
-            sub: installing-atlas/navigation.json
-          - text: Installing Apache Spark
-            id: installing-spark
-            href: installing-spark/index.html
-            sub: installing-spark/navigation.json
-          - text: Installing Apache Zeppelin
-            id: installing-zeppelin
-            href: installing-zeppelin/index.html
-            sub: installing-zeppelin/navigation.json
-          - text: Installing Apache Ranger
-            id: installing-ranger
-            href: installing-ranger/index.html
-            sub: installing-ranger/navigation.json
-          - text: Installing Apache Ranger KMS
-            id: installing-ranger-kms
-            href: installing-ranger-kms/index.html
-            sub: installing-ranger-kms/navigation.json
-          - text: Installating Apache Knox
-            id: installing-knox
-            href: installing-knox/index.html
-            sub: installing-knox/navigation.json
-          - text: Installing and Configuring Apache Storm
-            id: installing-configuring-storm
-            href: installing-configuring-storm/index.html
-            sub: installing-configuring-storm/navigation.json
-          - text: Installing and Configuring Apache Kafka
-            id: installing-configuring-kafka
-            href: installing-configuring-kafka/index.html
-            sub: installing-configuring-kafka/navigation.json
+      - text: impala-file-formats
+        id: impala-file-formats
+        href: impala-file-formats/index.html
+        sub: impala-file-formats/navigation.json
 
-      - text: Upgrade
-        href: upgrade.html
-        sub:
-          - text: Apache Ambari Major Upgrade
-            id: bk_ambari-upgrade-major
-            href: ../ambari/2.7.3.0/bk_ambari-upgrade-major/index.html
-          - text: Apache Ambari Minor Upgrade
-            id: bk_ambari-upgrade
-            href: ../ambari/2.7.3.0/bk_ambari-upgrade/index.html
-          - text: Apache Ambari Upgrade for IBM Power Systems
-            id: bk_ambari-upgrade-ppc
-            href: ../ambari/2.7.3.0/bk_ambari-upgrade-ppc/index.html
+      - text: impala-metadata
+        id: impala-metadata
+        href: impala-metadata/index.html
+        sub: impala-metadata/navigation.json
+
+      - text: impala-monitoring
+        id: impala-monitoring
+        href: impala-monitoring/index.html
+        sub: impala-monitoring/navigation.json
+
+      - text: impala-overview
+        id: impala-overview
+        href: impala-overview/index.html
+        sub: impala-overview/navigation.json
+
+      - text: impala-performance
+        id: impala-performance
+        href: impala-performance/index.html
+        sub: impala-performance/navigation.json
+
+      - text: impala-performance-tuning
+        id: impala-performance-tuning
+        href: impala-performance-tuning/index.html
+        sub: impala-performance-tuning/navigation.json
+
+      - text: impala-planning
+        id: impala-planning
+        href: impala-planning/index.html
+        sub: impala-planning/navigation.json
+
+      - text: impala-resource
+        id: impala-resource
+        href: impala-resource/index.html
+        sub: impala-resource/navigation.json
+
+      - text: impala-scalability
+        id: impala-scalability
+        href: impala-scalability/index.html
+        sub: impala-scalability/navigation.json
+
+      - text: impala-security
+        id: impala-security
+        href: impala-security/index.html
+        sub: impala-security/navigation.json
+
+      - text: impala-storage
+        id: impala-storage
+        href: impala-storage/index.html
+        sub: impala-storage/navigation.json
+
+      - text: impala-timeouts
+        id: impala-timeouts
+        href: impala-timeouts/index.html
+        sub: impala-timeouts/navigation.json
+
+      - text: impala-troubleshooting
+        id: impala-troubleshooting
+        href: impala-troubleshooting/index.html
+        sub: impala-troubleshooting/navigation.json
+
+      - text: kudu-design
+        id: kudu-design
+        href: kudu-design/index.html
+        sub: kudu-design/navigation.json
+
+      - text: kudu-development
+        id: kudu-development
+        href: kudu-development/index.html
+        sub: kudu-development/navigation.json
+
+      - text: kudu-install-and-upgrade
+        id: kudu-install-and-upgrade
+        href: kudu-install-and-upgrade/index.html
+        sub: kudu-install-and-upgrade/navigation.json
+
+      - text: kudu-integration
+        id: kudu-integration
+        href: kudu-integration/index.html
+        sub: kudu-integration/navigation.json
+
+      - text: kudu-overview
+        id: kudu-overview
+        href: kudu-overview/index.html
+        sub: kudu-overview/navigation.json
+
+      - text: materialized-view-commands
+        id: materialized-view-commands
+        href: materialized-view-commands/index.html
+        sub: materialized-view-commands/navigation.json
+
+      - text: monitoring-impala
+        id: monitoring-impala
+        href: monitoring-impala/index.html
+        sub: monitoring-impala/navigation.json
+
+      - text: navigation_unprocessed.json
+        id: navigation_unprocessed.json
+        href: navigation_unprocessed.json/index.html
+        sub: navigation_unprocessed.json/navigation.json
+
+      - text: securing-hue
+        id: securing-hue
+        href: securing-hue/index.html
+        sub: securing-hue/navigation.json
+
+      - text: security-ranger-auditing
+        id: security-ranger-auditing
+        href: security-ranger-auditing/index.html
+        sub: security-ranger-auditing/navigation.json
+
+      - text: security-ranger-authorization
+        id: security-ranger-authorization
+        href: security-ranger-authorization/index.html
+        sub: security-ranger-authorization/navigation.json
+
+      - text: troubleshooting-hue
+        id: troubleshooting-hue
+        href: troubleshooting-hue/index.html
+        sub: troubleshooting-hue/navigation.json
+
+      - text: troubleshooting-impala
+        id: troubleshooting-impala
+        href: troubleshooting-impala/index.html
+        sub: troubleshooting-impala/navigation.json
+
+      - text: troubleshooting-kudu
+        id: troubleshooting-kudu
+        href: troubleshooting-kudu/index.html
+        sub: troubleshooting-kudu/navigation.json
+
+      - text: tuning-hue
+        id: tuning-hue
+        href: tuning-hue/index.html
+        sub: tuning-hue/navigation.json
+
+      - text: using-cbo-in-hive
+        id: using-cbo-in-hive
+        href: using-cbo-in-hive/index.html
+        sub: using-cbo-in-hive/navigation.json
+
+      - text: using-hue
+        id: using-hue
+        href: using-hue/index.html
+        sub: using-hue/navigation.json
+
+      - text: workflow-management
+        id: workflow-management
+        href: workflow-management/index.html
+        sub: workflow-management/navigation.json
+
+      - text: workload-management
+        id: workload-management
+        href: workload-management/index.html
+        sub: workload-management/navigation.json
+
+      - text: yarn-data-management
+        id: yarn-data-management
+        href: yarn-data-management/index.html
+        sub: yarn-data-management/navigation.json
 
   - text: How To
     id: how-to
     sub:
-      - text: Data Storage & Data OS
-        id: data-storage-data-os
-        sub:
-          - text: Managing Data Operating System
-            id: data-operating-system
-            href: data-operating-system/index.html
-            sub: data-operating-system/navigation.json
-
-          - text: Scaling Namespaces and Optimizing Data Storage
-            id: data-storage
-            href: data-storage/index.html
-            sub: data-storage/navigation.json
-
-          - text: Administering HDFS
-            id: administration
-            href: administration/index.html
-            sub: administration/navigation.json
-
-          - text: Configuring Fault Tolerance
-            id: fault-tolerance
-            href: fault-tolerance/index.html
-            sub: fault-tolerance/navigation.json
-
       - text: Data Access
         id: data-access
         sub:
@@ -150,14 +234,14 @@ json:
             sub: managing-hive/navigation.json
 
           - text: Managing Apache Hive Workloads
-            id: hive-workload
-            href: hive-workload/index.html
-            sub: hive-workload/navigation.json
+            id: managing-a-hive-workload
+            href: managing-a-hive-workload/index.html
+            sub: managing-a-hive-workload/navigation.json
 
-          - text: Configuring Apache Hive
-            id: configuring-hive
-            href: configuring-hive/index.html
-            sub: configuring-hive/navigation.json
+          # - text: Configuring Apache Hive
+          #   id: configuring-hive
+          #   href: configuring-hive/index.html
+          #   sub: configuring-hive/navigation.json
 
           - text: Securing Apache Hive
             id: securing-hive
@@ -165,9 +249,9 @@ json:
             sub: securing-hive/navigation.json
 
           - text: Integrating Apache Hive with Spark and BI
-            id: integrating-hive
-            href: integrating-hive/index.html
-            sub: integrating-hive/navigation.json
+            id: integrating-hive-and-bi
+            href: integrating-hive-and-bi/index.html
+            sub: integrating-hive-and-bi/navigation.json
 
           - text: Migrating Data
             id: migrating-data
@@ -179,221 +263,29 @@ json:
             href: performance-tuning/index.html
             sub: performance-tuning/navigation.json
 
-          - text: Accessing Data Using Druid
-            id: adding-druid
-            href: adding-druid/index.html
-            sub: adding-druid/navigation.json
+          # - text: Accessing Data Using Druid
+          #   id: adding-druid
+          #   href: adding-druid/index.html
+          #   sub: adding-druid/navigation.json
 
-          - text: Using Druid and Apache Hive
-            id: using-druid
-            href: using-druid/index.html
-            sub: using-druid/navigation.json
+          #  - text: Using Druid and Apache Hive
+          #    id: using-druid
+          #    href: using-druid/index.html
+          #    sub: using-druid/navigation.json
 
-          - text: Using HBase to Store and Access Data
-            id: hbase-data-access
-            href: hbase-data-access/index.html
-            sub: hbase-data-access/navigation.json
+          # - text: Using HBase to Store and Access Data
+          #   id: hbase-data-access
+          #   href: hbase-data-access/index.html
+          #   sub: hbase-data-access/navigation.json
 
-          - text: Using Phoenix to Store and Access Data
-            id: phoenix-data-access
-            href: phoenix-data-access/index.html
-            sub: phoenix-data-access/navigation.json
+          # - text: Using Phoenix to Store and Access Data
+          #   id: phoenix-data-access
+          #   href: phoenix-data-access/index.html
+          #   sub: phoenix-data-access/navigation.json
 
-          - text: Accessing Cloud Data
-            id: bk_cloud-data-access
-            href: bk_cloud-data-access/index.html
-
-      - text: Streaming
-        id: streaming
-        sub:
-          - text: Developing Apache Storm Applications
-            id: developing-storm-applications
-            href: developing-storm-applications/index.html
-            sub: developing-storm-applications/navigation.json
-          - text: Using Storm to Move Data
-            id: storm-moving-data
-            href: storm-moving-data/index.html
-            sub: storm-moving-data/navigation.json
-          - text: Working with Storm Topologies
-            id: storm-topologies
-            href: storm-topologies/index.html
-            sub: storm-topologies/navigation.json
-          - text: Mirroring Data Across Clusters with Kafka MirrorMaker
-            id: kafka-mirroring-data
-            href: kafka-mirroring-data/index.html
-            sub: kafka-mirroring-data/navigation.json
-          - text: Creating Kafka Topics
-            id: kafka-working-with-topics
-            href: kafka-working-with-topics/index.html
-            sub: kafka-working-with-topics/navigation.json
-          - text: Developing Kafka Producers and Consumer
-            id: kafka-working-with-producers-consumers
-            href: kafka-working-with-producers-consumers/index.html
-            sub: kafka-working-with-producers-consumers/navigation.json
-
-      - text: Governance
-        id: governance
-        sub:
-          - text: Using Apache Atlas
-            id: using-atlas
-            href: using-atlas/index.html
-            sub: using-atlas/navigation.json
-
-          - text: Configuring Apache Atlas
-            id: configuring-atlas
-            href: configuring-atlas/index.html
-            sub: configuring-atlas/navigation.json
-
-      - text: Data Science
-        id: data-science
-        sub:
-          - text: Configuring Apache Spark
-            id: configuring-spark
-            href: configuring-spark/index.html
-            sub: configuring-spark/navigation.json
-
-          - text: Running Apache Spark Applications
-            id: running-spark-applications
-            href: running-spark-applications/index.html
-            sub: running-spark-applications/navigation.json
-
-          - text: Developing Apache Spark Applications
-            id: developing-spark-applications
-            href: developing-spark-applications/index.html
-            sub: developing-spark-applications/navigation.json
-
-          - text: Tuning Apache Spark
-            id: tuning-spark
-            href: tuning-spark/index.html
-            sub: tuning-spark/navigation.json
-
-          - text: Configuring Apache Zeppelin
-            id: configuring-zeppelin
-            href: configuring-zeppelin/index.html
-            sub: configuring-zeppelin/navigation.json
-
-          - text: Configuring Apache Zeppelin Security
-            id: configuring-zeppelin-security
-            href: configuring-zeppelin-security/index.html
-            sub: configuring-zeppelin-security/navigation.json
-
-          - text: Using Apache Zeppelin
-            id: using-zeppelin
-            href: using-zeppelin/index.html
-            sub: using-zeppelin/navigation.json
-
-          - text: IBM Data Science Experience
-            href: https://datascience.ibm.com/docs/content/local/welcome.html
-
-      - text: Security
-        id: security
-        sub:
-          - text: Configuring Proxy with Apache Knox
-            id: configuring-proxy-knox
-            href: configuring-proxy-knox/index.html
-            sub: configuring-proxy-knox/navigation.json
-
-          - text: Configuring Authentication with Kerberos
-            id: authentication-with-kerberos
-            href: authentication-with-kerberos/index.html
-            sub: authentication-with-kerberos/navigation.json
-
-          - text: Configuring Ambari Authentication with LDAP/AD
-            id: ambari-authentication-ldap-ad
-            href: ambari-authentication-ldap-ad/index.html
-            sub: ambari-authentication-ldap-ad/navigation.json
-
-          - text: Configuring Ranger Authentication with UNIX, LDAP, or AD
-            id: configuring-ranger-authe-with-unix-ldap-ad
-            href: configuring-ranger-authe-with-unix-ldap-ad/index.html
-            sub: configuring-ranger-authe-with-unix-ldap-ad/navigation.json
-
-          - text: Configuring Knox SSO
-            id: configuring-knox-sso
-            href: configuring-knox-sso/index.html
-            sub: configuring-knox-sso/navigation.json
-
-          - text: Providing Authorization with Ranger
-            id: authorization-ranger
-            href: authorization-ranger/index.html
-            sub: authorization-ranger/navigation.json
-
-          - text: Managing Auditing
-            id: managing-auditing
-            href: managing-auditing/index.html
-            sub: managing-auditing/navigation.json
-
-          - text: Configuring Wire Encryption
-            id: configuring-wire-encryption
-            href: configuring-wire-encryption/index.html
-            sub: configuring-wire-encryption/navigation.json
-
-          - text: Configuring Advanced Security Options for Ambari
-            id: configuring-advanced-security-options-for-ambari
-            href: configuring-advanced-security-options-for-ambari/index.html
-            sub: configuring-advanced-security-options-for-ambari/navigation.json
-
-          - text: Configuring HDFS Encryption
-            id: configuring-hdfs-encryption
-            href: configuring-hdfs-encryption/index.html
-            sub: configuring-hdfs-encryption/navigation.json
-
-          - text: Securing Credentials
-            id: securing-credentials
-            href: securing-credentials/index.html
-            sub: securing-credentials/navigation.json
-
-  - text: Reference
-    id: reference
-    sub:
-      - text: Cluster Planning
-        id: cluster-planning
-        href: cluster-planning/index.html
-        sub: cluster-planning/navigation.json
-
-      - text: Apache Hive Workload Management Commands
-        id: hive-workload-commands
-        href: hive-workload-commands/index.html
-        sub: hive-workload-commands/navigation.json
-
-      - text: Materialized View Commands
-        id: materialized-view
-        href: materialized-view/index.html
-        sub: materialized-view/navigation.json
-
-#      - text: Apache Atlas APIs
-#        id: atlas-apis
-#        href: atlas-apis/index.html
-#        sub: atlas-apis/navigation.json
-
-      - text: HDFS ACLs
-        id: hdfs-acls
-        href: hdfs-acls/index.html
-        sub: hdfs-acls/navigation.json
-
-      - text: ZooKeeper ACLs
-        id: zookeeper-acls
-        href: zookeeper-acls/index.html
-        sub: zookeeper-acls/navigation.json
-
-      - text: Audit Reference
-        id: audit-ref
-        href: audit-ref/index.html
-        sub: audit-ref/navigation.json
-
-      - text: Security Reference
-        id: security-reference
-        href: security-reference/index.html
-        sub: security-reference/navigation.json
-
-      - text: Apache Ranger Public REST APIs
-        id: ranger-apis
-        href: ranger-apis/index.html
-        sub: ranger-apis/navigation.json
-
-      - text: Teradata Connector User Guide
-        id: bk_teradata-connector-user-guide
-        href: bk_teradata-connector-user-guide/index.html
+          # - text: Accessing Cloud Data
+          #   id: bk_cloud-data-access
+          #   href: bk_cloud-data-access/index.html
 
   - text: Release Notes
     id: releasenotes
@@ -402,4 +294,4 @@ json:
         id: release-notes
         href: release-notes/index.html
         sub: release-notes/navigation.json
----
+
