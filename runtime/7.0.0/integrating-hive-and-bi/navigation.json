@@ -1,0 +1,58 @@
+
+        [
+            
+            {
+                
+        "text" : "Hive Warehouse Connector for accessing Apache Spark data",
+        "href" : "topics/cr-hive_hivewarehouseconnector_for_handling_apache_spark_data.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Apache Spark-Apache Hive connection configuration",
+        "href" : "topics/cr-hive_apache_spark_hive_connection_configuration.html"
+            },
+
+            {
+                
+        "text" : "Submit a Hive Warehouse Connector Scala or Java application",
+        "href" : "topics/cr-hive_submit_a_hivewarehouseconnector_app.html"
+            },
+
+            {
+                
+        "text" : "Submit a Hive Warehouse Connector Python app",
+        "href" : "topics/cr-hive_submit_a_hivewarehouseconnector_python.html"
+            },
+
+            {
+                
+        "text" : "Hive Warehouse Connector supported types",
+        "href" : "topics/cr-hive_hivewarehouseconnector_supported_types.html"
+            },
+
+            {
+                
+        "text" : "HiveWarehouseSession API operations",
+        "href" : "topics/cr-hive_hivewarehousesession_api_operations.html"
+            },
+
+            {
+                
+        "text" : "Use the Hive Warehouse Connector for streaming",
+        "href" : "topics/cr-hive_use_hwc_for_streaming.html"
+            }
+
+        ]
+    
+
+            },
+            {
+                
+        "text" : "Query a SQL data source using the JdbcStorageHandler",
+        "href" : "topics/cr-hive_query_sql_using_jdbcstoragehandler.html"
+            }
+        ]
+    

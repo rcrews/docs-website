@@ -1,0 +1,20 @@
+
+        [
+            
+            {
+                
+        "text" : "Start the Hive Shell",
+        "href" : "topics/cr-hive_start_hive_as_authorized_user.html"
+            },
+            {
+                
+        "text" : "Run a Hive command",
+        "href" : "topics/cr-hive_run_hive_command.html"
+            },
+            {
+                
+        "text" : "Convert Hive CLI scripts to Beeline",
+        "href" : "topics/cr-hive_use_variables.html"
+            }
+        ]
+    

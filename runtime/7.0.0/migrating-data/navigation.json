@@ -1,0 +1,69 @@
+
+        [
+            
+            {
+                
+        "text" : "Data migration to Apache Hive",
+        "href" : "topics/cr-hive_data_migration.html"
+            },
+            {
+                
+        "text" : "Moving data from databases to Apache Hive",
+        "href" : "topics/cr-hive_moving_data_from_databases_to_hive.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Create a Sqoop import command",
+        "href" : "topics/cr-hive_create_a_sqoop_import_command.html"
+            },
+
+            {
+                
+        "text" : "Import RDBMS data into Hive",
+        "href" : "topics/cr-hive_import_rdbms_data_into_hive.html"
+            }
+
+        ]
+    
+
+            },
+            {
+                
+        "text" : "Moving data from HDFS to Apache Hive",
+        "href" : "topics/cr-hive_moving_data_from_hdfs_to_hive.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Import RDBMS data to HDFS",
+        "href" : "topics/cr-hive_import_rdbms_data_to_hdfs.html"
+            },
+
+            {
+                
+        "text" : "Convert an HDFS file to ORC",
+        "href" : "topics/cr-hive_convert_an_hdfs_file_to_orc.html"
+            },
+
+            {
+                
+        "text" : "Incrementally update an imported table",
+        "href" : "topics/cr-hive_incrementally_update_an_imported_table.html"
+            }
+
+        ]
+    
+
+            },
+            {
+                
+        "text" : "Hive import command options",
+        "href" : "topics/cr-hive_import_command_options.html"
+            }
+        ]
+    

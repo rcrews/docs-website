@@ -1,0 +1,213 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="reference"><meta name="description" content="Using Ambari Services &gt; Hive &gt; Settings , you can check and configure key properties in Interactive Query settings. You can check, configure, or add some LLAP properties in Hive &gt; Services &gt; Configs &gt; Advanced . Knowing the internal names and definitions of the properties helps simplify the LLAP configuration task."><meta name="DC.subject" content="interactive query, HDP, LLAP parameters, Hive"><meta name="keywords" content="interactive query, HDP, LLAP parameters, Hive"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_setting_up_llap.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_use_hiveserver_interactive.html"><meta name="DC.Relation" scheme="URI" content="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload/content/hive_interactive_queue.html"><meta name="prodname" content="Cloudera Runtime"><meta name="version" content="1"><meta name="release" content="0"><meta name="modification" content="0"><meta name="brand" content="Cloudera Runtime"><meta name="rights" content="© 2019 Cloudera, Inc."><meta name="DC.Date.Created" content="2019-04-15"><meta name="DC.Date.Modified" content="2019-04-15"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_llap_properties"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>LLAP and HiveServer Interactive properties</title><script type="application/javascript">
+      
+      
+    //The id for tree cookie
+    var treeCookieId = "treeview-bk_release-notes";
+    var language = "en";
+    var w = new Object();
+    //Localization
+    txt_filesfound = 'Results';
+    txt_enter_at_least_1_char = "You must enter at least one character.";
+    txt_browser_not_supported = "Please enable JavaScript.";
+    txt_please_wait = "Please wait. Search in progress...";
+    txt_results_for = "Results for: ";
+    
+    
+    </script><script type="application/javascript" src="https://code.jquery.com/jquery-1.4.3.min.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery-ui-1.8.2.custom.min.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery.cookie.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery.treeview.min.js"></script><link href="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" rel="stylesheet" type="text/css" media="screen, projection"><script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js" type="application/javascript"></script><script type="application/javascript" src="/common/js/navigation.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/main.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/htmlFileList.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/htmlFileInfoList.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/nwSearchFnt.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/en_stemmer.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-1.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-2.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-3.js"></script><script type="application/javascript">
+      
+      
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-22950817-19', 'auto');
+    ga('send', 'pageview');
+    
+    
+    </script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/plugins.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/scripts.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" type="application/javascript"></script><script type="application/javascript">
+      
+    // PAGE SPECIFIC SCRIPTS
+    
+    $('.chapters>li .dropdown').click(function () {
+    var $arrow = $(this).find('i.fa');
+    if( $arrow.hasClass('fa-chevron-down')) {
+    $(this).siblings('.sections').show();
+    $arrow.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    } else {
+    console.log('up');
+    $(this).siblings('.sections').hide();
+    $arrow.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    }
+    });
+    
+    //  $('h3').on('mouseenter',function() {
+    //      console.log('received mouseover');
+    //      $(this).find('.hash-link').show();
+    //  });
+    
+    //  $('h3').on('mouseleave',function() {
+    //      $(this).find('.hash-link').hide();
+    //  });
+    
+    
+    // STICKY SIDEBARs
+    var stickySidebar = $('.sticky');
+    
+    if (stickySidebar.length > 0) {
+    var stickyHeight = stickySidebar.height(),
+    sidebarTop = stickySidebar.offset().top;
+    }
+    
+    // on scroll move the sidebar
+    $(window).scroll(function () {
+    if (stickySidebar.length > 0) {
+    var scrollTop = $(window).scrollTop();
+    console.log
+    
+    if (sidebarTop < scrollTop) {
+    stickySidebar.css('top', scrollTop - sidebarTop);
+    
+    // stop the sticky sidebar at the footer to avoid overlapping
+    var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+    stickyStop = $('.main-content').offset().top + $('.main-content').height();
+    if (stickyStop < sidebarBottom) {
+    var stopPosition = $('.main-content').height() - stickyHeight;
+    stickySidebar.css('top', stopPosition);
+    }
+    }
+    else {
+    stickySidebar.css('top', '0');
+    }
+    }
+    });
+    
+    $(window).resize(function () {
+    if (stickySidebar.length > 0) {
+    stickyHeight = stickySidebar.height();
+    }
+    });
+    
+    // Initialize Syntax Highlighting
+    hljs.initHighlightingOnLoad();
+    
+    </script><style type="text/css">
+      
+      
+    input {
+    margin-bottom: 5px;
+    margin-top: 2px;
+    }
+    
+    .folder {
+    display: block;
+    height: 22px;
+    padding-left: 20px;
+    background: transparent url(/common/themes/pre-hdp-3.1/images/folder.gif) 0 0px no-repeat;
+    }
+    
+    </style><link href="/common/themes/pre-hdp-3.1/images/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-70x70.png" rel="icon" type="image/x-icon" sizes="32x32"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" rel="icon" type="image/x-icon" sizes="192x192"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" rel="apple-touch-icon-precomposed" type="image/x-icon" sizes="192x192"><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css" rel="stylesheet"><link rel="stylesheet" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/main.css"><link rel="stylesheet" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/docux.css"><style type="text/css"></style><link rel="stylesheet" type="text/css" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/jquery-ui-1.8.2.custom.css"><link rel="stylesheet" type="text/css" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/jquery.treeview.css"><link href="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" rel="stylesheet" type="text/css" media="screen, projection"></head><body class="docs books"><div id="body_container"><div class="breadcrumb_bg"><!-- --></div><div id="navbar"><section class="ps topstrip"><div><!-- --></div></section></div><div id="mainbody"><section class="ps titlebar"><div><div class="breadcrumb"><a href="/">Hortonworks Docs</a> » <a id="index_page" href="../../index.html">Cloudera Runtime 1.0.0</a> » <span class="current_book">Apache Hive Performance Tuning</span></div><div class="book_title">Apache Hive Performance Tuning</div><div class="ebooks"><div class="formats"><span class="desc">Also available as:</span><div class="format"><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" title="Download a PDF of this document" class="pdficon" href="../cr-hive_performance_tuning.pdf"><img src="/common/themes/pre-hdp-3.1/images/pdf.png" alt="PDF"></a></div></div></div></div></section><div class="lowerbody"><section class="ps doc-content"><div><div class="aside left"><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div class="ui-tabs ui-widget ui-widget-content ui-corner-all"><div id="treeDiv" class="ui-tabs-panel ui-widget-content ui-corner-bottom"><img src="/common/themes/pre-hdp-3.1/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li><a href="../topics/cr-hive_optimizing_data_warehouse.html">Optimizing an Apache Hive data warehouse</a></li><li><a href="../topics/cr-hive_prepare_to_tune_performance.html">Preparations for tuning performance</a></li><li><a href="../topics/cr-hive_setting_up_llap.html">Setting up LLAP</a><ul><li><a href="../topics/cr-hive_enable_yarn_preemption.html">Enable YARN preemption</a></li><li><a href="../topics/cr-hive_enable_interactive_query.html">Enable interactive query</a></li><li><a href="../topics/cr-hive_setup_multiple_hsi.html">Set up multiple HiveServer Interactives for high availability</a></li><li><a href="../topics/cr-hive_configure_llap_queue.html">Configure an llap queue</a></li><li><a href="../topics/cr-hive_llap_add_proxy.html">Add a Hive proxy</a></li><li><a href="../topics/cr-hive_setup_llap.html">Configure other LLAP properties</a></li><li><a href="../topics/cr-hive_hiveserver_heap_sizing.html">Configure the HiveServer heap size</a></li><li><a href="../topics/cr-hive_save_llap_restart.html">Save LLAP settings and restart services</a></li><li><a href="../topics/cr-hive_run_llap_query.html">Run an interactive query</a></li></ul></li><li class="active"><a href="../topics/cr-hive_llap_parameters.html">LLAP and HiveServer Interactive properties</a></li><li><a href="../topics/cr-hive_use_hiveserver_interactive.html">Use HiveServer Interactive UI</a></li><li><a href="../topics/cr-hive_connect_clients_to_llap.html">Connect a JDBC client to LLAP</a></li><li><a href="../topics/cr-hive_configuring_yarn_queues.html">Configuring YARN queues for Hive</a><ul><li><a href="../topics/cr-hive_configure_queue_for_batch.html">Configure a queue for batch processing</a></li><li><a href="../topics/cr-hive_configure_custom_llap_queue.html">Configure a custom LLAP queue</a></li></ul></li><li><a href="../topics/cr-hive_setup_multiple_hiveservers.html">Set up multiple HiveServer instances</a></li><li><a href="../topics/cr-hive_warehouse_processing.html">Key components of Hive warehouse processing</a></li><li><a href="../topics/cr-hive_query_result_cache_ms_cache.html">Query result cache and metastore cache</a></li><li><a href="../topics/cr-hive_tez_engine_properties.html">Tez execution engine properties</a></li><li><a href="../topics/cr-hive_monitoring_performance.html">Monitoring Apache Hive performance</a><ul><li><a href="../topics/cr-hive_monitor_llap_resources.html">Monitoring LLAP resources</a></li></ul></li><li><a href="../topics/cr-hive_maximize_storage_resources_using_orc.html">Maximizing storage resources using ORC</a><ul><li><a href="../topics/cr-hive_advanced_orc_properties.html">Advanced ORC properties</a></li></ul></li><li><a href="../topics/cr-hive_improving_performance_using_partitions.html">Improving performance using partitions</a></li><li><a href="../topics/cr-hive_bucketed_tables.html">Handling bucketed tables</a></li><li><a href="../topics/cr-hive_cost_based_optimizer_overview.html">Improving performance using the cost-based optimizer</a><ul><li><a href="../topics/cr-hive_set_up_cbo_and_stats.html">Set up the cost-based optimizer and statistics</a></li><li><a href="../topics/cr-hive_generate_hive_statistics.html">Generate and view Apache Hive statistics</a></li><li><a href="../topics/cr-hive_statistics_generation_and_viewing_commands.html">Statistics generation and viewing commands</a></li><li><a href="../topics/cr-hive_optimization_and_planning_properties.html">Optimization and planning properties</a></li></ul></li></ul></div></div></div></div></div><div class="formats"><div class="pdf"><!-- --></div></div></div><div class="next-prev-links"><span class="previouslink"><a class="link" href="../topics/cr-hive_setting_up_llap.html" title="Using Ambari, you can set up basic, low-latency analytical processing (LLAP) by accepting the default llap queue, changing some YARN queue properties, and adding a HiveServer property to hive-site.xml.">Prev</a></span><span class="nextlink"><a class="link" href="../topics/cr-hive_use_hiveserver_interactive.html" title="You can access the HiveServer Interactive UI in Ambari to monitor and display heap, system, and cache metrics of each Hive LLAP node.">Next</a></span></div><div id="content" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">LLAP and HiveServer Interactive properties</h1>
+  
+  
+  <div class="body refbody"><p class="shortdesc">Using Ambari <span class="ph menucascade"><span class="ph uicontrol">Services</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Hive</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Settings</span></span>, you can check and configure key properties in Interactive Query settings. You
+    can check, configure, or add some LLAP properties in <span class="ph menucascade"><span class="ph uicontrol">Hive</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Services</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Configs</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Advanced</span></span>. Knowing the internal names and definitions of the properties helps simplify the
+    LLAP configuration task.</p>
+    <table class="table frame-all" id="hive_llap_properties__table_pgd_m2y_vgb"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
+          <tr class="row">
+            <th class="entry align-left colsep-1 rowsep-1" id="hive_llap_properties__table_pgd_m2y_vgb__entry__1">Ambari UI Component</th>
+            <th class="entry align-left colsep-1 rowsep-1" id="hive_llap_properties__table_pgd_m2y_vgb__entry__2">Property</th>
+            <th class="entry align-left colsep-1 rowsep-1" id="hive_llap_properties__table_pgd_m2y_vgb__entry__3">Access From</th>
+            <th class="entry align-left colsep-1 rowsep-1" id="hive_llap_properties__table_pgd_m2y_vgb__entry__4">Description</th>
+          </tr>
+        </thead><tbody class="tbody">
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">Custom hiveserver2-interactive-site </td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">hive.server2.tez.interactive.queue</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Services &gt; Hive &gt; Configs</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">The name of a YARN queue for workload management, required for managing
+              workloads</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">In-Memory Cache per Daemon</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">hive.llap.io.memory.size</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Interactive Query</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">Memory reserved for in-memory cache (memory per daemon - heap – headroom).
+            </td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">Memory per Daemon</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">hive.llap.daemon.yarn.container.mb</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Interactive Query</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">Total memory used by LLAP daemons (YARN Container size), which includes memory
+              for daemon cache and query execution (cache + heap + headroom = memory per daemon.)
+              Recommendation: Set to yarn.scheduler.maximum-allocation-mb</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">Tez Container Size</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">hive.tez.container.size</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Optimization</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">Change to override java options from map tasks that Tez uses by default.
+              Recommended: 4 – 6 GB recommended, for each executor allocate one VCPU</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">LLAP Daemon Container Max Headroom</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">llap_headroom_space</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Advanced hive-interactive-env</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">Maximum headroom reserved from YARN container running LLAP. The upper limit used
+              for automatic size calculations. Actual value might be lower. Minimum: 5 percent of
+              LLAP Daemon Size or 6 GB.</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">LLAP Daemon Heap Size (MB)</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">llap_heap_size</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Advanced hive-interactive-env</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">hive.llap.daemon.num.executors * hive.tez.container.size</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">LLAP Queue Size</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">yarn.scheduler.capacity.root.llap.capacity</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 "> Capacity Scheduler</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">The capacity as a percentage of total allocated to the queue.</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">Maximum Total Concurrent Queries</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">hive.server2.tez.sessions.per.default.queue</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Services &gt; Hive &gt; Configs &gt; Advanced</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">A positive integer that determines the number of Tez sessions (parallelism)
+              launched on each hive.server2.tez.default.queue. Spawns an equal number of TEZ
+              AMs.</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">Maximum Container Size (Memory)</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">yarn.scheduler.maximum-allocation-mb</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Services &gt; YARN &gt; Configs &gt; Memory</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">The maximum allocation for every container request at the Resource Manager in
+              MBs. Higher memory capped to this value.</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">Number of Nodes for Running Hive LLAP Daemon</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">num_llap_nodes_for_llap_daemons</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Advanced hive-interactive-env</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">Self-explanatory</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">Number of Executors per LLAP Daemon</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">hive.llap.daemon.num.executors</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Interactive Query</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">The number of fragments a single LLAP daemon runs concurrently, generally equals
+              yarn.scheduler.maximum-allocation-vcores.</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__1 ">Tez AM coordinator Size</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__2 ">tez.am.resource.memory.mb</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__3 ">Advanced tez-interactive-site</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_llap_properties__table_pgd_m2y_vgb__entry__4 ">The memory used by the AppMaster only if the value is not explicit in the DAG
+              definition. Same as yarn.scheduler.minimum-allocation-mb.</td>
+          </tr>
+        </tbody></table>
+  </div>
+<nav role="navigation" class="related-links"><div class="familylinks"></div><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload/content/hive_interactive_queue.html" target="_blank">Configure a YARN queue for workload management</a></div></div></nav></div></div></section></div></div></div><section class="ps footer"><div><div class="copyright">© 2012–2019, Hortonworks, Inc.</div><div class="license">Document licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">Creative
+          Commons Attribution ShareAlike 4.0 License</a>.</div><div class="menulinks"><a href="https://hortonworks.com">Hortonworks.com</a> | 
+          <a href="#">Documentation</a> |
+          <a href="https://hortonworks.com/support/">Support</a> |
+          <a href="https://community.hortonworks.com/">Community</a></div></div></section></body></html>

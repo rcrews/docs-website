@@ -1,0 +1,238 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="concept"><meta name="description" content="You can create a Hive-managed table or an external table. Hive does not fully control an external table, and you can keep the data source for this type of table outside the Hive metastore."><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_create_a_crud_transactional_table.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_create_insert_only_transactional_table.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_create_an_external_table.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_drop_external_table_data.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive-create-s3-based-table.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_constraints.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_table_type.html"><meta name="prodname" content="Data Access"><meta name="version" content="3"><meta name="release" content="1"><meta name="modification" content="0"><meta name="brand" content="Data Platform"><meta name="rights" content="© 2019, 2018, 2017, 2016 Hortonworks, Inc."><meta name="DC.Date.Created" content="2018-07-12"><meta name="DC.Date.Modified" content="2018-07-12"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_apache_hive_tables"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>Apache Hive 3 tables</title><script type="application/javascript">
+      
+      
+    //The id for tree cookie
+    var treeCookieId = "treeview-bk_release-notes";
+    var language = "en";
+    var w = new Object();
+    //Localization
+    txt_filesfound = 'Results';
+    txt_enter_at_least_1_char = "You must enter at least one character.";
+    txt_browser_not_supported = "Please enable JavaScript.";
+    txt_please_wait = "Please wait. Search in progress...";
+    txt_results_for = "Results for: ";
+    
+    
+    </script><script type="application/javascript" src="https://code.jquery.com/jquery-1.4.3.min.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery-ui-1.8.2.custom.min.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery.cookie.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery.treeview.min.js"></script><link href="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" rel="stylesheet" type="text/css" media="screen, projection"><script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js" type="application/javascript"></script><script type="application/javascript" src="/common/js/navigation.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/main.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/htmlFileList.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/htmlFileInfoList.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/nwSearchFnt.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/en_stemmer.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-1.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-2.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-3.js"></script><script type="application/javascript">
+      
+      
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-22950817-19', 'auto');
+    ga('send', 'pageview');
+    
+    
+    </script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/plugins.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/scripts.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" type="application/javascript"></script><script type="application/javascript">
+      
+    // PAGE SPECIFIC SCRIPTS
+    
+    $('.chapters>li .dropdown').click(function () {
+    var $arrow = $(this).find('i.fa');
+    if( $arrow.hasClass('fa-chevron-down')) {
+    $(this).siblings('.sections').show();
+    $arrow.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    } else {
+    console.log('up');
+    $(this).siblings('.sections').hide();
+    $arrow.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    }
+    });
+    
+    //  $('h3').on('mouseenter',function() {
+    //      console.log('received mouseover');
+    //      $(this).find('.hash-link').show();
+    //  });
+    
+    //  $('h3').on('mouseleave',function() {
+    //      $(this).find('.hash-link').hide();
+    //  });
+    
+    
+    // STICKY SIDEBARs
+    var stickySidebar = $('.sticky');
+    
+    if (stickySidebar.length > 0) {
+    var stickyHeight = stickySidebar.height(),
+    sidebarTop = stickySidebar.offset().top;
+    }
+    
+    // on scroll move the sidebar
+    $(window).scroll(function () {
+    if (stickySidebar.length > 0) {
+    var scrollTop = $(window).scrollTop();
+    console.log
+    
+    if (sidebarTop < scrollTop) {
+    stickySidebar.css('top', scrollTop - sidebarTop);
+    
+    // stop the sticky sidebar at the footer to avoid overlapping
+    var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+    stickyStop = $('.main-content').offset().top + $('.main-content').height();
+    if (stickyStop < sidebarBottom) {
+    var stopPosition = $('.main-content').height() - stickyHeight;
+    stickySidebar.css('top', stopPosition);
+    }
+    }
+    else {
+    stickySidebar.css('top', '0');
+    }
+    }
+    });
+    
+    $(window).resize(function () {
+    if (stickySidebar.length > 0) {
+    stickyHeight = stickySidebar.height();
+    }
+    });
+    
+    // Initialize Syntax Highlighting
+    hljs.initHighlightingOnLoad();
+    
+    </script><style type="text/css">
+      
+      
+    input {
+    margin-bottom: 5px;
+    margin-top: 2px;
+    }
+    
+    .folder {
+    display: block;
+    height: 22px;
+    padding-left: 20px;
+    background: transparent url(/common/themes/pre-hdp-3.1/images/folder.gif) 0 0px no-repeat;
+    }
+    
+    </style><link href="/common/themes/pre-hdp-3.1/images/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-70x70.png" rel="icon" type="image/x-icon" sizes="32x32"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" rel="icon" type="image/x-icon" sizes="192x192"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" rel="apple-touch-icon-precomposed" type="image/x-icon" sizes="192x192"><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css" rel="stylesheet"><link rel="stylesheet" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/main.css"><link rel="stylesheet" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/docux.css"><style type="text/css"></style><link rel="stylesheet" type="text/css" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/jquery-ui-1.8.2.custom.css"><link rel="stylesheet" type="text/css" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/jquery.treeview.css"><link href="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" rel="stylesheet" type="text/css" media="screen, projection"></head><body class="docs books"><div id="body_container"><div class="breadcrumb_bg"><!-- --></div><div id="navbar"><section class="ps topstrip"><div><!-- --></div></section></div><div id="mainbody"><section class="ps titlebar"><div><div class="breadcrumb"><a href="/">Hortonworks Docs</a> » <a id="index_page" href="../../index.html">Data Platform 3.1.0</a> » <span class="current_book">Using Apache HiveQL</span></div><div class="book_title">Using Apache HiveQL</div><div class="ebooks"><div class="formats"><span class="desc">Also available as:</span><div class="format"><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" title="Download a PDF of this document" class="pdficon" href="../cr-hive_using_hiveql.pdf"><img src="/common/themes/pre-hdp-3.1/images/pdf.png" alt="PDF"></a></div></div></div></div></section><div class="lowerbody"><section class="ps doc-content"><div><div class="aside left"><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div class="ui-tabs ui-widget ui-widget-content ui-corner-all"><div id="treeDiv" class="ui-tabs-panel ui-widget-content ui-corner-bottom"><img src="/common/themes/pre-hdp-3.1/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li class="active"><a href="../topics/cr-hive_hive_3_tables.html">Apache Hive 3 tables</a><ul><li><a href="../topics/cr-hive_create_a_crud_transactional_table.html">Create a CRUD transactional table</a></li><li><a href="../topics/cr-hive_create_insert_only_transactional_table.html">Create an insert-only transactional table</a></li><li><a href="../topics/cr-hive_create_an_external_table.html">Create, use, and drop an external table</a></li><li><a href="../topics/cr-hive_drop_external_table_data.html">Drop an external table along with data</a></li><li><a href="../topics/cr-hive-create-s3-based-table.html">Create an S3-based table</a></li><li><a href="../topics/cr-hive_constraints.html">Using constraints</a></li><li><a href="../topics/cr-hive_table_type.html">Determine the table type</a></li></ul></li><li><a href="../topics/cr-hive_3_internals.html">Hive 3 ACID transactions</a></li><li><a href="../topics/cr-hive_using_materialized_views.html">Using materialized views</a><ul><li><a href="../topics/cr-hive_create_and_use_materialized_view.html">Create and use a materialized view</a></li><li><a href="../topics/cr-hive_use_materialized_view_subquery.html">Use a materialized view in a subquery</a></li><li><a href="../topics/cr-hive_drop_a_materialized_view.html">Drop a materialized view</a></li><li><a href="../topics/cr-hive_show_a_materialized_view.html">Show materialized views</a></li><li><a href="../topics/cr-hive_describe_a_materialized_view.html">Describe a materialized view</a></li><li><a href="../topics/cr-hive_enable_disable_materialized_rewrite.html">Manage rewriting of a query</a></li><li><a href="../topics/cr-hive_create_materialized_view_in_druid.html">Create a materialized view and store it in Druid</a></li><li><a href="../topics/cr-hive_create_partitioned_materialized_view.html">Create and use a partitioned materialized view</a></li></ul></li><li><a href="../topics/cr-hive_hive_query_language_basics.html">Apache Hive Query Language basics</a><ul><li><a href="../topics/cr-hive_query_information_schema.html">Query the information_schema database</a></li><li><a href="../topics/cr-hive_insert_data_in_a_hive_table.html">Insert data into an ACID table</a></li><li><a href="../topics/cr-hive_update_data_in_a_hive_table.html">Update data in a table</a></li><li><a href="../topics/cr-hive_merge_data_in_hive_tables.html">Merge data in tables</a></li><li><a href="../topics/cr-hive_delete_data_from_a_hive_table.html">Delete data from a table</a></li><li><a href="../topics/cr-hive_use_a_subquery_in_a_hive_table.html">Use a subquery</a><ul><li><a href="../topics/cr-hive_hive_subquery_limitations.html">Subquery restrictions</a></li></ul></li><li><a href="../topics/cr-hive_aggregate_and_group_data_in_a_hive_table.html">Aggregate and group data</a></li><li><a href="../topics/cr-hive_query_correlated_data_in_a_hive_table.html">Query correlated data</a></li><li><a href="../topics/cr-hive_using_common_table_expressions.html">Using common table expressions</a><ul><li><a href="../topics/cr-hive_create_a_table_using_a_cte.html">Use a CTE in a query</a></li></ul></li><li><a href="../topics/cr-hive_name_a_hive_column_using_an_identifier.html">Escape an illegal identifier</a></li><li><a href="../topics/cr-hive_char_data_type_support_in_hive.html">CHAR data type support</a></li></ul></li><li><a href="../topics/cr-hive-create_partitions_dynamically.html">Create partitions dynamically</a><ul><li><a href="../topics/cr-hive-msck-repair.html">Repair partitions using MSCK repair</a></li></ul></li><li><a href="../topics/cr-hive-manage-partitions.html">Manage partitions automatically</a><ul><li><a href="../topics/cr-hive-automate-msck.html">Automate partition discovery and repair</a></li><li><a href="../topics/cr-hive-set-partition-retention.html">Manage partition retention time</a></li></ul></li><li><a href="../topics/cr-hive_surrogate_keys.html">Generate surrogate keys</a></li><li><a href="../topics/cr-hive_query_sql_using_jdbcstoragehandler.html">Query a SQL data source using the JdbcStorageHandler</a></li><li><a href="../topics/cr-hive-using-functions.html">Using functions</a><ul><li><a href="../topics/cr-hive-show-functions.html">Reload, view, and filter functions</a></li><li><a href="../topics/cr-hive_create_udf.html">Create a user-defined function</a><ul><li><a href="../topics/cr-hive_set_up_development_environment.html">Set up the development environment</a></li><li><a href="../topics/cr-hive_create_udf_class.html">Create the UDF class</a></li><li><a href="../topics/cr-hive_create_place_udf_jar.html">Build the project and upload the JAR</a></li><li><a href="../topics/cr-hive_register_udf.html">Register the UDF</a></li><li><a href="../topics/cr-hive_use_udf_in_query.html">Call the UDF in a query</a></li></ul></li></ul></li></ul></div></div></div></div></div><div class="formats"><div class="pdf"><!-- --></div></div></div><div id="content" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Apache Hive 3 tables</h1>
+  
+  <div class="body conbody"><p class="shortdesc">You can create a Hive-managed table or an external table. Hive does not fully control
+    an external table, and you can keep the data source for this type of table outside the Hive
+    metastore. </p>
+    <p class="p">Hive has full control over managed tables. Only through Hive can you access and change the
+      data in managed tables. Managed tables, except temporary tables, are transactional tables
+      having ACID (atomicity, consistency, isolation, and durability) properties. Because Hive has
+      full control of managed tables, Hive can optimize these tables extensively. If you need to
+      bypass Hive to access data directly on the file system, you use external tables or a storage
+      handler. </p>
+    <p class="p">The following matrix lists the types of tables you can create using Hive, whether or not ACID
+      properties are supported, required storage format, and key SQL operations. </p>
+    <table class="table frame-all" id="hive_apache_hive_tables__table_mgk_zrv_g2b"><caption></caption><colgroup><col style="width:20.159680638722556%"><col style="width:19.960079840319363%"><col style="width:19.960079840319363%"><col style="width:19.960079840319363%"><col style="width:19.960079840319363%"></colgroup><thead class="thead">
+          <tr class="row">
+            <th class="entry align-left colsep-1 rowsep-1" id="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__1">Table Type</th>
+            <th class="entry align-left colsep-1 rowsep-1" id="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__2">ACID</th>
+            <th class="entry align-left colsep-1 rowsep-1" id="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__3">File Format</th>
+            <th class="entry align-left colsep-1 rowsep-1" id="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__4">INSERT</th>
+            <th class="entry align-left colsep-1 rowsep-1" id="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__5">UPDATE/DELETE</th>
+          </tr>
+        </thead><tbody class="tbody">
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__1 ">Managed: CRUD transactional</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__2 ">Yes</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__3 ">ORC</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__4 ">Yes</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__5 ">Yes</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__1 ">Managed: Insert-only transactional</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__2 ">Yes</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__3 ">Any</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__4 ">Yes</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__5 ">No</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__1 ">Managed: Temporary</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__2 ">No</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__3 ">Any</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__4 ">Yes</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__5 ">No</td>
+          </tr>
+          <tr class="row">
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__1 ">External</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__2 ">No</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__3 ">Any</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__4 ">Yes</td>
+            <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_mgk_zrv_g2b__entry__5 ">No</td>
+          </tr>
+        </tbody></table>
+    <p class="p">Although you cannot use the SQL UPDATE or DELETE statements to delete data in some types of
+      tables, you can use DROP PARTITION on any table type to delete the data. </p>
+    <p class="p">The managed table storage type is Optimized Row Column (ORC) by default. If you accept the
+      default by not specifying any storage during table creation, or if you specify ORC storage,
+      the result is an ACID table with insert, update, and delete (CRUD) capabilities. If you
+      specify any other storage type, such as text, CSV,  AVRO, or JSON, the result is an
+      insert-only ACID table. You cannot update or delete columns in the table.</p>
+    <div class="p">The following table and subsequent sections cover other differences between managed
+      (transactional) and external tables:<table class="table frame-all" id="hive_apache_hive_tables__table_zld_1dg_dfb"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead">
+            <tr class="row">
+              <th class="entry align-left colsep-1 rowsep-1" id="hive_apache_hive_tables__table_zld_1dg_dfb__entry__1">Table type</th>
+              <th class="entry align-left colsep-1 rowsep-1" id="hive_apache_hive_tables__table_zld_1dg_dfb__entry__2">Security</th>
+              <th class="entry align-left colsep-1 rowsep-1" id="hive_apache_hive_tables__table_zld_1dg_dfb__entry__3">Spark access</th>
+              <th class="entry align-left colsep-1 rowsep-1" id="hive_apache_hive_tables__table_zld_1dg_dfb__entry__4">Optimizations</th>
+            </tr>
+          </thead><tbody class="tbody">
+            <tr class="row">
+              <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_zld_1dg_dfb__entry__1 ">Managed (transactional)</td>
+              <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_zld_1dg_dfb__entry__2 ">Ranger authorization only, no simple authentication</td>
+              <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_zld_1dg_dfb__entry__3 ">Yes, using Hive Warehouse Connector</td>
+              <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_zld_1dg_dfb__entry__4 ">Statistics and others</td>
+            </tr>
+            <tr class="row">
+              <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_zld_1dg_dfb__entry__1 ">External</td>
+              <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_zld_1dg_dfb__entry__2 ">Ranger or simple authentication </td>
+              <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_zld_1dg_dfb__entry__3 ">Yes, direct file access</td>
+              <td class="entry align-left colsep-1 rowsep-1" headers="hive_apache_hive_tables__table_zld_1dg_dfb__entry__4 ">Limited</td>
+            </tr>
+          </tbody></table></div>
+    <section class="section"><h2 class="title sectiontitle">Transactional tables</h2>
+      
+      <p class="p">Transactional (ACID) tables reside in the Hive warehouse. To achieve ACID compliance, Hive
+        has to manage the table, including access to the table data. The data in CRUD (create,
+        retrieve, update, and delete) tables must be in ORC file format. Insert-only tables support
+        all file formats. Hive is designed to support a relatively low rate of transactions, as
+        opposed to serving as an online analytical processing (OLAP) system. You can use the SHOW
+        TRANSACTIONS command to list open and aborted transactions.</p>
+      <p class="p">Transactional tables in Hive 3 are on a par with non-ACID tables. No bucketing or sorting
+        is required in Hive 3 transactional tables. These tables are compatible with native cloud
+        storage.</p>
+      <p class="p">Hive supports one statement per transaction, which can include any number of rows,
+        partitions, or tables.</p>
+    </section>
+    <section class="section"><h2 class="title sectiontitle">External tables</h2>
+      
+      <p class="p">External table data is not owned or controlled by Hive. You typically use an external table
+        when you want to access data directly at the file level through a tool other than Hive. Hive
+        3 does not support the following capabilities for external tables: </p>
+      <ul class="ul">
+        <li class="li">Query cache</li>
+        <li class="li">Materialized views, except in a limited way</li>
+        <li class="li">Default statistics gathering </li>
+        <li class="li">Compute queries using statistics</li>
+        <li class="li">Automatic runtime filtering</li>
+        <li class="li">File merging after insert</li>
+      </ul>
+      <p class="p">When you run DROP TABLE on an external table, by default Hive drops only the metadata
+        (schema). If you want the DROP TABLE command to also remove the actual data in the external
+        table, as DROP TABLE does on a managed table, you need to set the
+          <code class="ph codeph">external.table.purge</code> property to true as described later. </p>
+    </section>
+    <section class="section"><h2 class="title sectiontitle">Location of tables</h2>
+      
+      <p class="p">When you launch your cluster, you accept default or specify Hive metastore variables
+          <code class="ph codeph">hive.metastore.warehouse.dir</code> and
+          <code class="ph codeph">hive.metastore.warehouse.external.dir</code> that determine cloud storage
+        locations for Hive tables. Managed tables reside in the managed tablespace on S3, which only
+        Hive can access. By default, Hive assumes external tables reside in the external tablespace
+        on S3. </p>
+      <p class="p">To determine the managed or external table type, you can run the DESCRIBE EXTENDED
+        table_name command.</p>
+    </section>
+    
+  </div>
+<nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="../topics/cr-hive_create_a_crud_transactional_table.html">Create a CRUD transactional table</a></strong><br>You create a CRUD transactional table when you need a managed table that you can         update, delete, and merge.</li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_create_insert_only_transactional_table.html">Create an insert-only transactional table</a></strong><br>You can create a transactional table using any storage format if you do not require         update and delete capability.</li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_create_an_external_table.html">Create, use, and drop an external table</a></strong><br>You use an external table, which is a table that Hive does not manage, to import data         from a file on S3, or another file system, into Hive.</li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_drop_external_table_data.html">Drop an external table along with data</a></strong><br>When you run DROP TABLE on an external table, by default Hive drops only the metadata         (schema). If you want the DROP TABLE command to also remove the actual data in the external         table, as DROP TABLE does on a managed table, you need to configure the table properties         accordingly.</li><li class="link ulchildlink"><strong><a href="../topics/cr-hive-create-s3-based-table.html">Create an S3-based table</a></strong><br>You can create an external table having a data source located on S3 or some other         file system. </li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_constraints.html">Using constraints</a></strong><br>You can use DEFAULT, PRIMARY KEY, FOREIGN KEY, and NOT NULL constraints in Hive ACID   table definitions to improve the performance, accuracy, and reliability of data.</li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_table_type.html">Determine the table type</a></strong><br>You can determine the type of a Hive table, whether it has ACID properties, the         storage format, such as ORC, and other information. Knowing the table type is important for         a number of reasons, such as understanding how to store data in the table or to complete         remove data from the cluster.</li></ul></nav></div></div></section></div></div></div><section class="ps footer"><div><div class="copyright">© 2012–2019, Hortonworks, Inc.</div><div class="license">Document licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">Creative
+          Commons Attribution ShareAlike 4.0 License</a>.</div><div class="menulinks"><a href="https://hortonworks.com">Hortonworks.com</a> | 
+          <a href="#">Documentation</a> |
+          <a href="https://hortonworks.com/support/">Support</a> |
+          <a href="https://community.hortonworks.com/">Community</a></div></div></section></body></html>

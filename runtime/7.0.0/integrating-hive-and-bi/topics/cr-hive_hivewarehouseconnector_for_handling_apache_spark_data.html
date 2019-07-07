@@ -1,0 +1,149 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="concept"><meta name="description" content="The Hive Warehouse Connector (HWC) is a Spark library/plugin that is launched with the Spark app. You need to understand how to use HWC to access Spark tables from Hive. You also export tables to Hive from Spark and vice versa using this connector."><meta name="DC.subject" content="Hive, Spark, Hive Warehouse Connector, HiveWarehouseConnector"><meta name="keywords" content="Hive, Spark, Hive Warehouse Connector, HiveWarehouseConnector"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_query_sql_using_jdbcstoragehandler.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_apache_spark_hive_connection_configuration.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_submit_a_hivewarehouseconnector_app.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_submit_a_hivewarehouseconnector_python.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_hivewarehouseconnector_supported_types.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_hivewarehousesession_api_operations.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_use_hwc_for_streaming.html"><meta name="DC.Relation" scheme="URI" content="https://github.com/hortonworks/hive-warehouse-connector-release"><meta name="DC.Relation" scheme="URI" content="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/developing-spark-applications/content/using_spark_hive_warehouse_connector.html"><meta name="DC.Relation" scheme="URI" content="https://community.hortonworks.com/content/kbentry/223626/integrating-apache-hive-with-apache-spark-hive-war.html"><meta name="DC.Relation" scheme="URI" content="https://hortonworks.com/blog/hive-warehouse-connector-use-cases/"><meta name="prodname" content="Cloudera Runtime"><meta name="version" content="1"><meta name="release" content="0"><meta name="modification" content="0"><meta name="brand" content="Cloudera Runtime"><meta name="rights" content="© 2019 Cloudera, Inc."><meta name="DC.Date.Created" content="2019-04-15"><meta name="DC.Date.Modified" content="2019-04-15"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_hivewarehouseconnector_for_accessing_spark"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>Hive Warehouse Connector for accessing Apache Spark data</title><script type="application/javascript">
+      
+      
+    //The id for tree cookie
+    var treeCookieId = "treeview-bk_release-notes";
+    var language = "en";
+    var w = new Object();
+    //Localization
+    txt_filesfound = 'Results';
+    txt_enter_at_least_1_char = "You must enter at least one character.";
+    txt_browser_not_supported = "Please enable JavaScript.";
+    txt_please_wait = "Please wait. Search in progress...";
+    txt_results_for = "Results for: ";
+    
+    
+    </script><script type="application/javascript" src="https://code.jquery.com/jquery-1.4.3.min.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery-ui-1.8.2.custom.min.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery.cookie.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery.treeview.min.js"></script><link href="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" rel="stylesheet" type="text/css" media="screen, projection"><script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js" type="application/javascript"></script><script type="application/javascript" src="/common/js/navigation.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/main.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/htmlFileList.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/htmlFileInfoList.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/nwSearchFnt.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/en_stemmer.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-1.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-2.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-3.js"></script><script type="application/javascript">
+      
+      
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-22950817-19', 'auto');
+    ga('send', 'pageview');
+    
+    
+    </script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/plugins.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/scripts.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" type="application/javascript"></script><script type="application/javascript">
+      
+    // PAGE SPECIFIC SCRIPTS
+    
+    $('.chapters>li .dropdown').click(function () {
+    var $arrow = $(this).find('i.fa');
+    if( $arrow.hasClass('fa-chevron-down')) {
+    $(this).siblings('.sections').show();
+    $arrow.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    } else {
+    console.log('up');
+    $(this).siblings('.sections').hide();
+    $arrow.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    }
+    });
+    
+    //  $('h3').on('mouseenter',function() {
+    //      console.log('received mouseover');
+    //      $(this).find('.hash-link').show();
+    //  });
+    
+    //  $('h3').on('mouseleave',function() {
+    //      $(this).find('.hash-link').hide();
+    //  });
+    
+    
+    // STICKY SIDEBARs
+    var stickySidebar = $('.sticky');
+    
+    if (stickySidebar.length > 0) {
+    var stickyHeight = stickySidebar.height(),
+    sidebarTop = stickySidebar.offset().top;
+    }
+    
+    // on scroll move the sidebar
+    $(window).scroll(function () {
+    if (stickySidebar.length > 0) {
+    var scrollTop = $(window).scrollTop();
+    console.log
+    
+    if (sidebarTop < scrollTop) {
+    stickySidebar.css('top', scrollTop - sidebarTop);
+    
+    // stop the sticky sidebar at the footer to avoid overlapping
+    var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+    stickyStop = $('.main-content').offset().top + $('.main-content').height();
+    if (stickyStop < sidebarBottom) {
+    var stopPosition = $('.main-content').height() - stickyHeight;
+    stickySidebar.css('top', stopPosition);
+    }
+    }
+    else {
+    stickySidebar.css('top', '0');
+    }
+    }
+    });
+    
+    $(window).resize(function () {
+    if (stickySidebar.length > 0) {
+    stickyHeight = stickySidebar.height();
+    }
+    });
+    
+    // Initialize Syntax Highlighting
+    hljs.initHighlightingOnLoad();
+    
+    </script><style type="text/css">
+      
+      
+    input {
+    margin-bottom: 5px;
+    margin-top: 2px;
+    }
+    
+    .folder {
+    display: block;
+    height: 22px;
+    padding-left: 20px;
+    background: transparent url(/common/themes/pre-hdp-3.1/images/folder.gif) 0 0px no-repeat;
+    }
+    
+    </style><link href="/common/themes/pre-hdp-3.1/images/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-70x70.png" rel="icon" type="image/x-icon" sizes="32x32"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" rel="icon" type="image/x-icon" sizes="192x192"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" rel="apple-touch-icon-precomposed" type="image/x-icon" sizes="192x192"><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css" rel="stylesheet"><link rel="stylesheet" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/main.css"><link rel="stylesheet" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/docux.css"><style type="text/css"></style><link rel="stylesheet" type="text/css" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/jquery-ui-1.8.2.custom.css"><link rel="stylesheet" type="text/css" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/jquery.treeview.css"><link href="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" rel="stylesheet" type="text/css" media="screen, projection"></head><body class="docs books"><div id="body_container"><div class="breadcrumb_bg"><!-- --></div><div id="navbar"><section class="ps topstrip"><div><!-- --></div></section></div><div id="mainbody"><section class="ps titlebar"><div><div class="breadcrumb"><a href="/">Hortonworks Docs</a> » <a id="index_page" href="../../index.html">Cloudera Runtime 1.0.0</a> » <span class="current_book">Integrating Apache Hive with Spark and BI</span></div><div class="book_title">Integrating Apache Hive with Spark and BI</div><div class="ebooks"><div class="formats"><span class="desc">Also available as:</span><div class="format"><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" title="Download a PDF of this document" class="pdficon" href="../cr-hive_integrating_hive_and_bi.pdf"><img src="/common/themes/pre-hdp-3.1/images/pdf.png" alt="PDF"></a></div></div></div></div></section><div class="lowerbody"><section class="ps doc-content"><div><div class="aside left"><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div class="ui-tabs ui-widget ui-widget-content ui-corner-all"><div id="treeDiv" class="ui-tabs-panel ui-widget-content ui-corner-bottom"><img src="/common/themes/pre-hdp-3.1/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li class="active"><a href="../topics/cr-hive_hivewarehouseconnector_for_handling_apache_spark_data.html">Hive Warehouse Connector for accessing Apache Spark data</a><ul><li><a href="../topics/cr-hive_apache_spark_hive_connection_configuration.html">Apache Spark-Apache Hive connection configuration</a></li><li><a href="../topics/cr-hive_submit_a_hivewarehouseconnector_app.html">Submit a Hive Warehouse Connector Scala or Java application</a></li><li><a href="../topics/cr-hive_submit_a_hivewarehouseconnector_python.html">Submit a Hive Warehouse Connector Python app</a></li><li><a href="../topics/cr-hive_hivewarehouseconnector_supported_types.html">Hive Warehouse Connector supported types</a></li><li><a href="../topics/cr-hive_hivewarehousesession_api_operations.html">HiveWarehouseSession API operations</a></li><li><a href="../topics/cr-hive_use_hwc_for_streaming.html">Use the Hive Warehouse Connector for streaming</a></li></ul></li><li><a href="../topics/cr-hive_query_sql_using_jdbcstoragehandler.html">Query a SQL data source using the JdbcStorageHandler</a></li></ul></div></div></div></div></div><div class="formats"><div class="pdf"><!-- --></div></div></div><div class="next-prev-links"><span class="nextlink"><a class="link" href="../topics/cr-hive_query_sql_using_jdbcstoragehandler.html" title="Using the JdbcStorageHandler, you can connect Hive to a MySQL, PostgreSQL, Oracle, MS SQL, or Derby data source, create an external table to represent the data, and then query the table.">Next</a></span></div><div id="content" aria-labelledby="ariaid-title1">
+ <h1 class="title topictitle1" id="ariaid-title1">Hive Warehouse Connector for accessing Apache Spark data</h1>
+  
+  
+ <div class="body conbody"><p class="shortdesc">The Hive Warehouse Connector (HWC) is a Spark library/plugin that is launched with the
+    Spark app. You need to understand how to use HWC to access Spark tables from Hive. You also
+    export tables to Hive from Spark and vice versa using this connector.</p><p class="p">You can use the HWC API to access any type of table in Hive from Spark. When you use SparkSQL,
+      standard Spark APIs access tables Spark tables. </p>
+    <p class="p">Using the HWC, you can export tables and extracts from the Spark to Hive and from Hive to
+      Spark. You export tables and extracts from Spark to Hive by reading them using Spark APIs and
+      writing them to Hive using the HWC. Conversely, you export tables and extracts from Hive to
+      Spark by reading them using the Hive Warehouse Connector and writing them to Spark using Spark
+      APIs.</p>
+   <p class="p">Using the HWC, you can read and write Apache Spark DataFrames and Streaming DataFrames to and
+      from Apache Hive. Apache Ranger and the HiveWarehouseConnector library provide row and column,
+      fine-grained access to Spark data in Hive. </p>
+   <div class="p"><strong class="ph b">Limitations</strong><ul class="ul" id="hive_hivewarehouseconnector_for_accessing_spark__ul_hdz_jdx_g3b">
+     <li class="li">Currently, HWC supports tables in ORC format only.</li>
+     <li class="li">The spark thrift server is not supported.</li>
+   </ul></div>
+   <p class="p"><strong class="ph b">Supported applications and operations</strong></p>
+   <div class="p">The Hive Warehouse Connector supports the following applications:<ul class="ul" id="hive_hivewarehouseconnector_for_accessing_spark__ul_ml4_24m_d2b">
+     <li class="li">Spark shell</li>
+     <li class="li">PySpark</li>
+     <li class="li">The spark-submit script</li>
+   </ul></div>
+   <div class="p">The following list describes a few of the operations supported by the Hive Warehouse Connector: <ul class="ul">
+     <li class="li">Describing a table</li>
+     <li class="li">Creating a table for ORC-formatted data</li>
+     <li class="li">Selecting Hive data and retrieving a DataFrame</li>
+     <li class="li">Writing a DataFrame to Hive in batch</li>
+     <li class="li">Executing a Hive update statement</li>
+     <li class="li">Reading table data from Hive, transforming it in Spark, and writing it to a new Hive
+       table</li>
+     <li class="li">Writing a DataFrame or Spark stream to Hive using HiveStreaming</li>
+   </ul></div>
+ </div>
+<nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="../topics/cr-hive_apache_spark_hive_connection_configuration.html">Apache Spark-Apache Hive connection configuration</a></strong><br>In Spark, you can use the Hive Warehouse Connector for accessing ACID table data in     Hive. </li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_submit_a_hivewarehouseconnector_app.html">Submit a Hive Warehouse Connector Scala or Java application</a></strong><br>You can submit an app based on the HiveWarehouseConnector library to run on Spark         Shell, PySpark, and <code class="ph codeph">spark-submit</code>.</li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_submit_a_hivewarehouseconnector_python.html">Submit a Hive Warehouse Connector Python app</a></strong><br>You can submit a Python app based on the HiveWarehouseConnector library by         following the steps to submit a Scala or Java application, and then adding a Python         package.</li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_hivewarehouseconnector_supported_types.html">Hive Warehouse Connector supported types</a></strong><br> The Hive Warehouse Connector maps most Apache Hive types to Apache Spark types and     vice versa, but there are a few exceptions that you must manage.</li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_hivewarehousesession_api_operations.html">HiveWarehouseSession API operations</a></strong><br>HiveWarehouseSession acts as an API to bridge Spark with Hive. In your Spark source code, you create an instance of HiveWarehouseSession. You use the language-specific code to create the HiveWarehouseSession.</li><li class="link ulchildlink"><strong><a href="../topics/cr-hive_use_hwc_for_streaming.html">Use the Hive Warehouse Connector for streaming</a></strong><br>When using HiveStreaming to write a DataFrame to Hive or a Spark Stream to Hive, you         need to escape any commas in the stream because the Hive Warehouse Connector uses the commas         as the field delimiter.</li></ul><div class="familylinks"></div><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="https://github.com/hortonworks/hive-warehouse-connector-release" target="_blank">HiveWarehouseConnector Github project (select a feature branch)</a></div><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/developing-spark-applications/content/using_spark_hive_warehouse_connector.html" target="_blank">HiveWarehouseConnector for handling Apache Spark data</a></div><div><a class="link" href="https://community.hortonworks.com/content/kbentry/223626/integrating-apache-hive-with-apache-spark-hive-war.html" target="_blank">Hortonworks Community Connection: Integrating Apache Hive with Apache Spark-\-Hive Warehouse Connector</a></div><div><a class="link" href="https://hortonworks.com/blog/hive-warehouse-connector-use-cases/" target="_blank">Hive Warehouse Connector Use Cases</a></div></div></nav></div></div></section></div></div></div><section class="ps footer"><div><div class="copyright">© 2012–2019, Hortonworks, Inc.</div><div class="license">Document licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">Creative
+          Commons Attribution ShareAlike 4.0 License</a>.</div><div class="menulinks"><a href="https://hortonworks.com">Hortonworks.com</a> | 
+          <a href="#">Documentation</a> |
+          <a href="https://hortonworks.com/support/">Support</a> |
+          <a href="https://community.hortonworks.com/">Community</a></div></div></section></body></html>
