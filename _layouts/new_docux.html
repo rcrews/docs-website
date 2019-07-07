@@ -21,46 +21,46 @@
 
     <!-- STRUCTURE CSS -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" > <!-- TODO.. can we move this to CSS? Use a minimized version? -->
-    <link rel="stylesheet" href="/common/css/newux.css">
+    <link rel="stylesheet" href="/common/css/main.css">
 
     <!-- CONTENT SPECIFIC CSS... WE'LL WANT TO EXECUTE THIS ON PAGE CHANGE -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
 
   </head>
   <body>
-    
-    <!-- HEADER BAR --> 
+
+    <!-- HEADER BAR -->
     <header class="chead">
         <div class="breadcrumbs">
           <span class="bread-home"><a href="/"><!-- <i class="fas fa-home"></i>--><span class="text-home">Cloudera Docs</span></a></span>
           <span class="bread-product"><a href="/">CDP Management Console</a></span> <!-- THIS SHOULD BE THE SHORTNAME? -->
           <span class="bread-version"><i class="fas fa-cloud"></i> <!-- 1.0.1 <i class="fas fa-angle-down"></i>--></span> <!-- PULLDOWN WILL BE DEFINED BY THE PUBMENU APP -->
           <span class="bread-category">Concepts</span>
-        </div> 
+        </div>
         <div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div>
         <div class="launch-search"><i class="fas fa-search"></i></div>
         <div class="launch-pubnav"><i class="fas fa-bars"></i></div>
     </header>
 
-    <!-- MAIN BODY OF PAGE --> 
-    <main class="cmain"> 
+    <!-- MAIN BODY OF PAGE -->
+    <main class="cmain">
 
-      <!-- THE WHITE CONTENT AREA --> 
-      <div class="cpage"> 
+      <!-- THE WHITE CONTENT AREA -->
+      <div class="cpage">
         <article class="maincontent">
 
           <div class="inner-breadcrumbs">Concepts</div> <!-- THIS CAN/SHOULD BE DEFINED BY THE PUBMENU APP -->
 
-          <!-- BODY OF CONTENT GOES HERE --> 
+          <!-- BODY OF CONTENT GOES HERE -->
           <div id="content">
             {{ content }}
           </div>
-          <!-- END CONTENT --> 
+          <!-- END CONTENT -->
         </article>
-        
+
         <div class="short-prev"><a href="">&laquo;</a></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
         <div class="short-next"><a href="">&raquo;</a></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
-        
+
         <div class="up"></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
         <div class="prev"><a href="">&laquo; Getting Started with Apache Nifi</a></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
         <div class="next">Getting Started: <a href="">Terminology Used in This Guide &raquo;</a></div> <!-- THIS WILL BE DEFINED BY THE PUBMENU APP -->
@@ -81,8 +81,8 @@
     <!-- CORPORATE LOGO -->
     <div class="logo">
         <a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png" ></a>
-    </div> 
-    
+    </div>
+
     <!-- PRODUCT DRAWER... this should also be built dynamically by JS. Not part of the documentation. -->
     <nav class="product-drawer">
       <div class="full-logo"><img src="/common/img/cloudera.png"></div>
@@ -127,12 +127,12 @@
 
     <footer></footer> <!-- I didn't place anythinig here yet. -->
 
-    <!-- NewUX Scripts --> 
+    <!-- NewUX Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <!-- WE CAN PROBABLY BUNDLE SCRIPTS ON THE SERVER SIDE, AND LEAVE THIS OUT. -->
-    <script src="/common/js/newux.js"></script>
+    <script src="/common/js/main.js"></script>
 
-    <!-- Content Scripts --> 
+    <!-- Content Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script>
-    
+
   </body>
 </html>
