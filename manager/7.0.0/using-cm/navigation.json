@@ -1,0 +1,444 @@
+
+        [
+            
+            {
+                
+        "text" : "Cloudera Manager Overview",
+        "href" : "topics/cm-cloudera-manager-overview.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Terminology",
+        "href" : "topics/cm-terminology.html"
+            },
+
+            {
+                
+        "text" : "Architecture",
+        "href" : "topics/cm-architecture.html"
+            },
+
+            {
+                
+        "text" : "State Management",
+        "href" : "topics/cm-state-management.html"
+            },
+
+            {
+                
+        "text" : "Cloudera Manager Admin Console",
+        "href" : "topics/cm_intro_admin_console.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Home Page",
+        "href" : "topics/cm_intro_home.html"
+            }
+
+        ]
+    
+
+            },
+
+            {
+                
+        "text" : "Process Management",
+        "href" : "topics/cm-process-management.html"
+            },
+
+            {
+                
+        "text" : "Host Management",
+        "href" : "topics/cm-host-management.html"
+            },
+
+            {
+                
+        "text" : "Cloudera Manager Agents",
+        "href" : "topics/admin_cloudera_manager_agents.html"
+            },
+
+            {
+                
+        "text" : "Resource Management",
+        "href" : "topics/cm-resource-management.html"
+            },
+
+            {
+                
+        "text" : "User Management",
+        "href" : "topics/cm-user-management.html"
+            },
+
+            {
+                
+        "text" : "Security Management",
+        "href" : "topics/cm-security-management.html"
+            },
+
+            {
+                
+        "text" : "Cloudera Management Service",
+        "href" : "topics/cm-cloudera-management-service.html"
+            },
+
+            {
+                
+        "text" : "Cloudera Manager API",
+        "href" : "topics/cm_intro_api.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Using the Cloudera Manager API to Obtain Configuration Files",
+        "href" : "topics/cm-api-get-configuration.html"
+            },
+
+            {
+                
+        "text" : "Backing Up and Restoring the Cloudera Manager Configuration",
+        "href" : "topics/cm-api-backup-restore-configuration.html"
+            }
+
+        ]
+    
+
+            }
+
+        ]
+    
+
+            },
+            {
+                How To
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Logging in to the Cloudera Manager Admin Console",
+        "href" : "topics/cm-log-in.html"
+            },
+
+            {
+                
+        "text" : "Automatic Logout",
+        "href" : "topics/cm_auto_logout.html"
+            },
+
+            {
+                
+        "text" : "Documentation",
+        "href" : ""
+            },
+
+            {
+                
+        "text" : "Starting, Stopping, and Restarting the Cloudera Manager Server",
+        "href" : "topics/cm_ag_server.html"
+            },
+
+            {
+                
+        "text" : "Managing Cloudera Manager Server Logs",
+        "href" : "topics/cm-view-server-logs.html"
+            },
+
+            {
+                
+        "text" : "Managing the Cloudera Manager Agent Logs",
+        "href" : "topics/cm-manage-agent-logs.html"
+            },
+
+            {
+                
+        "text" : "Configuring Cloudera Manager",
+        "href" : "topics/cm-configure-cloudera-manager.html"
+            }
+
+        ]
+    
+
+            },
+            {
+                
+        "text" : "Cluster Configuration Overview",
+        "href" : "topics/cm_mc_service_config_overview.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Server and Client Configuration",
+        "href" : "topics/cm-server-client-configuration.html"
+            },
+
+            {
+                
+        "text" : "Modifying Configuration Properties Using Cloudera Manager",
+        "href" : "topics/cm_mc_mod_configs.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Changing the Configuration of a Service or Role Instance",
+        "href" : "topics/cm-changing-the-configuration-of-a-service-or-role-instance.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Searching for Properties",
+        "href" : "topics/cm-searching-for-properties.html"
+            },
+
+            {
+                
+        "text" : "Validation of Configuration Properties",
+        "href" : "topics/cm-validation-of-configuration-properties.html"
+            },
+
+            {
+                
+        "text" : "Overriding Configuration Properties",
+        "href" : "topics/cm-overriding-configuration-properties.html"
+            },
+
+            {
+                
+        "text" : "Viewing and Editing Overridden Configuration Properties",
+        "href" : "topics/cm-viewing-and-editing-overridden-configuration-properties.html"
+            },
+
+            {
+                
+        "text" : "Resetting Configuration Properties to the Default Value",
+        "href" : "topics/cm-resetting-configuration-properties-to-the-default-value.html"
+            },
+
+            {
+                
+        "text" : "Viewing and Editing Host Overrides",
+        "href" : "topics/cm-viewing-and-editing-host-overrides.html"
+            }
+
+        ]
+    
+
+            },
+
+            {
+                
+        "text" : "Restarting Services and Instances after Configuration Changes",
+        "href" : "topics/cm-restarting-services-and-instances-after-configuration-changes.html"
+            },
+
+            {
+                
+        "text" : "Suppressing Configuration and Parameter Validation Warnings",
+        "href" : "topics/cm-suppressing-configuration-and-parameter-validation-warnings.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Suppressing a Configuration Validation in Cloudera Manager",
+        "href" : "topics/cm-suppress%20configuration-validation.html"
+            },
+
+            {
+                
+        "text" : "Managing Suppressed Validations",
+        "href" : "topics/cm-manage-suppressed-validations.html"
+            },
+
+            {
+                
+        "text" : "Suppressing Configuration Validations Before They Trigger Warnings",
+        "href" : "topics/cm-suppress-validations-trigger.html"
+            },
+
+            {
+                
+        "text" : "Viewing a List of All Suppressed Validations",
+        "href" : "topics/cm-view-supppressed-validations.html"
+            }
+
+        ]
+    
+
+            }
+
+        ]
+    
+
+            },
+
+            {
+                
+        "text" : "Cluster-Wide Configuration",
+        "href" : "topics/admin_global_config.html"
+            },
+
+            {
+                
+        "text" : "Custom Configuration",
+        "href" : "topics/cm_mc_config_snippet.html"
+            },
+
+            {
+                
+        "text" : "Setting an Advanced Configuration Snippet for a Runtime Component",
+        "href" : "topics/cm-set-advanced-configuration-service.html"
+            },
+
+            {
+                
+        "text" : "Setting an Advanced Configuration Snippet for a Cluster",
+        "href" : "topics/cm-set-advanced-configuration-cluster.html"
+            },
+
+            {
+                
+        "text" : "Stale Configurations",
+        "href" : "topics/cm_mc_stale_configuration.html"
+            },
+
+            {
+                
+        "text" : "Client Configuration Files",
+        "href" : "topics/cm_mc_client_config.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "How Client Configurations are Deployed",
+        "href" : "topics/cm-how-client-configurations-are-deployed.html"
+            },
+
+            {
+                
+        "text" : "Downloading Client Configuration Files",
+        "href" : "topics/cm-downloading-client-configuration-files.html"
+            },
+
+            {
+                
+        "text" : "Manually Redeploying Client Configuration Files",
+        "href" : "topics/cm-manually-redeploying-client-configuration-files.html"
+            },
+
+            {
+                
+        "text" : "Client Configuration Files",
+        "href" : "topics/cm_mc_client_config.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "How Client Configurations are Deployed",
+        "href" : "topics/cm-how-client-configurations-are-deployed.html"
+            },
+
+            {
+                
+        "text" : "Downloading Client Configuration Files",
+        "href" : "topics/cm-downloading-client-configuration-files.html"
+            },
+
+            {
+                
+        "text" : "Manually Redeploying Client Configuration Files",
+        "href" : "topics/cm-manually-redeploying-client-configuration-files.html"
+            }
+
+        ]
+    
+
+            }
+
+        ]
+    
+
+            },
+
+            {
+                
+        "text" : "Viewing and Reverting Configuration Changes",
+        "href" : "topics/cm_mc_revert_configs.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Viewing Configuration Changes",
+        "href" : "topics/cm-view-configuration-changes.html"
+            },
+
+            {
+                
+        "text" : "Reverting Configuration Changes",
+        "href" : "topics/cm-revert-configuration.html"
+            }
+
+        ]
+    
+
+            },
+
+            {
+                
+        "text" : "Client Configuration Files",
+        "href" : "topics/cm_mc_client_config.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "How Client Configurations are Deployed",
+        "href" : "topics/cm-how-client-configurations-are-deployed.html"
+            },
+
+            {
+                
+        "text" : "Downloading Client Configuration Files",
+        "href" : "topics/cm-downloading-client-configuration-files.html"
+            },
+
+            {
+                
+        "text" : "Manually Redeploying Client Configuration Files",
+        "href" : "topics/cm-manually-redeploying-client-configuration-files.html"
+            }
+
+        ]
+    
+
+            }
+
+        ]
+    
+
+            }
+        ]
+    

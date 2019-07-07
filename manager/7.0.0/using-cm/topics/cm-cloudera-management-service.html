@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="concept"><meta name="description" content=""><meta name="DC.Relation" scheme="URI" content="../topics/cm-cloudera-manager-overview.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="concept_fnf_mss_vk"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Cloudera Management Service</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Cloudera Management Service</h1>
+   
+   <div class="body conbody"><p class="shortdesc"></p>
+      <div class="p">The Cloudera Management Service implements various management features as a set
+      of roles:<ul class="ul" id="concept_fnf_mss_vk__d27e29">
+        <li class="li">Activity Monitor - collects information about activities run by the MapReduce
+          service. This role is not added by default.</li>
+        <li class="li">Host Monitor - collects health and metric information about hosts</li>
+        <li class="li">Service Monitor - collects health and metric information about services and
+          activity information from the YARN and Impala services</li>
+        <li class="li">Event Server - aggregates relevant Hadoop events and makes them available for
+          alerting and searching</li>
+        <li class="li">Alert Publisher - generates and delivers alerts for certain types of events</li>
+        <li class="li">Reports Manager - generates reports that provide an historical view into disk
+          utilization by user, user group, and directory, processing activities
+          by user and YARN pool, and HBase tables and namespaces. This role is
+          not added in Cloudera Express.</li>
+      </ul></div>
+    <div class="p">You can view the status of the Cloudera Management Service by doing one
+      of the following: <ul class="ul" id="concept_fnf_mss_vk__ul_dz3_53y_2n">
+        <li class="li" id="concept_fnf_mss_vk__li_xjz_lrp_fp">Select <span class="ph menucascade"><span class="ph uicontrol">Clusters</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Cloudera Management Service</span></span>.</li>
+        <li class="li" id="concept_fnf_mss_vk__li_kwh_tpk_np">On the
+              <span class="ph menucascade"><span class="ph uicontrol">Home</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Status</span></span>
+          tab, in <span class="ph uicontrol">Cloudera Management Service</span> table,
+          click the <strong class="ph b">Cloudera Management Service</strong> link.</li>
+      </ul></div>
+      <p class="p">In addition, for certain editions of the Cloudera Enterprise license, the Cloudera Management Service provides the <a class="xref" href="cn_iu_audit_server.html#cn_topic_5">Navigator Audit Server</a> and <a class="xref" href="cn_iu_metadata_server.html#xd_583c10bfdbd326ba--43d5fd93-1410993f8c2--7f71">Navigator Metadata Server</a> roles for <a class="xref" href="cn_iu_introduce_navigator.html#cn_topic_2">Cloudera Navigator</a>.</p>
+      <section class="section" id="concept_fnf_mss_vk__section_cgz_1fv_wk"><h2 class="title sectiontitle">Health Tests</h2>
+         
+         <p class="p">Cloudera Manager monitors the health of the services,
+      roles, and hosts that are running in your clusters using <dfn class="term">health
+        tests</dfn>. The Cloudera Management Service also provides health tests
+      for its roles. Role-based health tests are enabled by default. For
+      example, a simple health test is whether there's enough disk space in
+      every NameNode data directory. A more complicated health test may evaluate
+      when the last checkpoint for HDFS was compared to a threshold or whether a
+      DataNode is connected to a NameNode. Some of these health tests also
+      aggregate other health tests: in a distributed system like HDFS, it's
+      normal to have a few DataNodes down (assuming you've got dozens of hosts),
+      so we allow for setting thresholds on what percentage of hosts should
+      color the entire service down.</p>
+         <p class="p">Health tests can return one of three values:
+        <strong class="ph b">Good</strong>, <strong class="ph b">Concerning</strong>, and <strong class="ph b">Bad</strong>. A test returns
+        <strong class="ph b">Concerning</strong> health if the test falls below a warning threshold. A
+      test returns <strong class="ph b">Bad</strong> if the test falls below a critical
+      threshold. The overall health of a service or role instance is a roll-up
+      of its health tests. If any health test is <strong class="ph b">Concerning</strong> (but none are
+        <strong class="ph b">Bad</strong>) the role's or service's health is <strong class="ph b">Concerning</strong>; if any
+      health test is <strong class="ph b">Bad</strong>, the service's or role's health is
+      <strong class="ph b">Bad</strong>.</p>
+         <p class="p">In the Cloudera Manager Admin Console, health tests results are indicated with colors: <strong class="ph b">Good</strong>
+      <img class="image" id="concept_fnf_mss_vk__d10e76" src="../images/status_health_good.png">, <strong class="ph b">Concerning</strong>
+      <img class="image" id="concept_fnf_mss_vk__d10e81" src="../images/status_health_concerning.png">, and <strong class="ph b">Bad</strong>
+      <img class="image" id="concept_fnf_mss_vk__d10e87" src="../images/status_health_bad.png">.</p>
+         <p class="p">One common question is whether monitoring can be separated from configuration.
+          One of the goals for monitoring is to enable it without needing to do
+          additional configuration and installing additional tools (for example,
+          Nagios). By having a deep model of the configuration, Cloudera Manager
+          is able to know which directories to monitor, which ports to use, and
+          what credentials to use for those ports. This tight coupling means
+          that, when you install Cloudera Manager all the monitoring is enabled.</p>
+      </section>
+      <section class="section" id="concept_fnf_mss_vk__section_wv4_1fv_wk"><h2 class="title sectiontitle">Metric Collection and Display</h2>
+         
+         <p class="p">To perform monitoring, the Service Monitor and Host Monitor collects metrics. A
+          <dfn class="term">metric</dfn> is a numeric value, associated with a name (for
+          example, "CPU seconds"), an entity it applies to ("host17"), and a
+          timestamp. Most metric collection is performed by the Agent. The Agent
+          communicates with a supervised process, requests the metrics, and
+          forwards them to the Service Monitor. In most cases, this is done once
+          per minute.</p>
+         <p class="p">A few special metrics are collected by the Service Monitor. For example, the
+          Service Monitor hosts an HDFS canary, which tries to write, read, and
+          delete a file from HDFS at regular intervals, and measure whether it
+          succeeded, and how long it took. Once metrics are received, they're
+          aggregated and stored.</p>
+         <p class="p">Using the Charts page in the Cloudera Manager Admin Console, you can query and
+          explore the metrics being collected. Charts display <dfn class="term">time
+          series</dfn>, which are streams of metric data points for a specific
+          entity. Each metric data point contains a timestamp and the value of
+          that metric at that timestamp.</p>
+         <p class="p">Some metrics (for example, <code class="ph codeph">total_cpu_seconds</code>) are counters, and
+          the appropriate way to query them is to take their rate over time,
+          which is why a lot of metrics queries contain the <code class="ph codeph">dt0</code>
+          function. For example, <code class="ph codeph">dt0(total_cpu_seconds</code>). (The
+          <code class="ph codeph">dt0</code> syntax is intended to remind you of derivatives.
+          The <span class="keyword apiname">0</span> indicates that the rate of a monotonically increasing counter should never have
+          negative rates.)</p>
+      </section>
+      <section class="section" id="concept_fnf_mss_vk__section_fxj_s4g_yk"><h2 class="title sectiontitle">Events, Alerts, and Triggers</h2>
+         
+         <p class="p">An <dfn class="term">event</dfn> is a record that something of interest has occurred – a
+      service's health has changed state, a log message (of the appropriate
+      severity) has been logged, and so on. Many events are enabled and
+      configured by default.</p>
+         <p class="p">An <dfn class="term">alert</dfn> is an event that is considered
+      especially noteworthy and is triggered by a selected event. Alerts are
+      shown with an <img class="image" id="concept_fnf_mss_vk__d26e36" src="../images/alert.png"> badge when they appear in a list of <a class="xref" href="cm_dg_events.html#cmug_topic_10">events</a>. You can configure
+      the Alert Publisher to send alert notifications by email or by SNMP trap
+      to a trap receiver.</p>
+         <p class="p">A <dfn class="term">trigger</dfn> is a statement that specifies an
+      action to be taken when one or more specified conditions are met for a
+      service, role, role configuration group, or host. The conditions are
+      expressed as a <a class="xref" href="cm_dg_tsquery.html#cmug_topic_11_7">tsquery
+        statement</a>, and the action to be taken is to change the health for
+      the service, role, role configuration group, or host to either Concerning
+      (yellow) or Bad (red).</p>
+      </section>
+   </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/cm-cloudera-manager-overview.html">Cloudera Manager Overview</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

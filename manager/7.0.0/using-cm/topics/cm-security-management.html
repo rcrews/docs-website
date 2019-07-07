@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="concept"><meta name="description" content=""><meta name="DC.Relation" scheme="URI" content="../topics/cm-cloudera-manager-overview.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="concept_r1h_tzx_bp"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Security Management</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Security Management</h1>
+   
+   
+   <div class="body conbody"><p class="shortdesc"></p>
+      <p class="p">Cloudera Manager strives to consolidate security configurations across several
+        projects.</p>
+      <section class="section" id="concept_r1h_tzx_bp__section_udv_k4l_cp"><h2 class="title sectiontitle">Authentication</h2>
+         
+         <p class="p">Authentication is a process that requires users and services
+      to prove their identity when trying to access a system resource.
+      Organizations typically manage user identity and authentication through
+      various time-tested technologies, including Lightweight Directory Access
+      Protocol (LDAP) for identity, directory, and other services, such as group
+      management, and Kerberos for authentication.</p>
+         <p class="p">Cloudera clusters support integration with both of these
+      technologies. For example, organizations with existing LDAP directory
+      services such as Active Directory (included in Microsoft Windows Server as
+      part of its suite of Active Directory Services) can leverage the
+      organization's existing user accounts and group listings instead of
+      creating new accounts throughout the cluster. Using an external system
+      such as Active Directory or OpenLDAP is required to support the user role
+      authorization mechanism implemented in Cloudera Navigator.</p>
+         <p class="p">For authentication, Cloudera supports integration with MIT
+      Kerberos and with Active Directory. Microsoft Active Directory supports
+      Kerberos for authentication in addition to its identity management and
+      directory functionality, that is, LDAP. </p>
+         <p class="p">These systems are not mutually exclusive. For example,
+      Microsoft Active Directory is an LDAP directory service that also provides
+      Kerberos authentication services, and Kerberos credentials can be stored
+      and managed in an LDAP directory service. Cloudera Manager Server, CDH
+      nodes, and Cloudera Enterprise components, such as Cloudera Navigator,
+      Apache Hive, Hue, and Impala, can all make use of Kerberos
+      authentication.</p>
+      </section>
+      <section class="section" id="concept_r1h_tzx_bp__section_ujv_k4l_cp"><h2 class="title sectiontitle">Authorization</h2>
+         
+         <div class="p">Authorization is concerned with who or what has access or control over a given
+      resource or service. Since Hadoop merges together the capabilities of
+      multiple varied, and previously separate IT systems as an enterprise data
+      hub that stores and works on all data within an organization, it requires
+      multiple authorization controls with varying granularities. In such cases,
+      Hadoop management tools simplify setup and maintenance by:<ul class="ul" id="concept_r1h_tzx_bp__d19e31">
+        <li class="li">Tying all users to groups, which can be specified in existing LDAP or AD
+          directories.</li>
+        <li class="li">Providing role-based access control for similar interaction methods, like batch
+          and interactive SQL queries. For example, Apache Sentry permissions
+          apply to Hive (HiveServer2) and Impala.</li>
+      </ul></div>
+         <div class="p">
+            <span class="ph">CDH currently provides the following forms of access control:</span>
+            <ul class="ul" id="concept_r1h_tzx_bp__ul_t4d_yty_bp">
+               <li class="li">
+                  <span class="ph">Traditional POSIX-style permissions for directories and files, where each directory and file is assigned a single owner and group. Each assignment has a basic set of permissions available; file permissions are simply read, write, and execute, and directories have an additional permission to determine access to child directories.</span>
+               </li>
+               <li class="li">
+                  <span class="ph"><a class="xref" href="cdh_sg_hdfs_ext_acls.html#xd_583c10bfdbd326ba--6eed2fb8-14349d04bee--76a9">Extended Access Control Lists</a> (ACLs) for HDFS that provide
+          fine-grained control of permissions for HDFS files by allowing you to
+          set different permissions for specific named users or named groups.</span>
+               </li>
+               <li class="li">
+                  <span class="ph">Apache HBase uses ACLs to authorize various operations (<code class="ph codeph">READ, WRITE, CREATE, ADMIN</code>) by column, column family, and column family qualifier. HBase ACLs are granted and revoked to both users and groups.</span>
+               </li>
+               <li class="li">
+                  <span class="ph">Role-based access control with <a class="xref" href="sentry_intro.html#sentry_overview">Apache Sentry</a>.</span>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section class="section" id="concept_r1h_tzx_bp__section_ksv_k4l_cp"><h2 class="title sectiontitle">Encryption</h2>
+         
+         <p class="p">Data at rest and data in transit encryption function at
+      different technology layers of the cluster:</p>
+      </section>
+   </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/cm-cloudera-manager-overview.html">Cloudera Manager Overview</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

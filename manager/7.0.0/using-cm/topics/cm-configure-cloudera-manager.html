@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="concept"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="cmug_topic_13"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Configuring Cloudera Manager</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Configuring Cloudera Manager</h1>
+  <div class="body conbody">
+    <p class="p">From the <span class="ph uicontrol">Administration</span> tab you can select options for
+      configuring settings that affect how Cloudera Manager interacts with your
+      clusters.</p>
+    <p class="p toc inpage"></p>
+  </div>
+  <article class="topic concept nested1" aria-labelledby="ariaid-title2" id="cmug_topic_13_1">
+    <h2 class="title topictitle2" id="ariaid-title2">Settings</h2>
+    <div class="body conbody">
+      <div class="p">The <strong class="ph b">Settings</strong> page provides a number of categories as follows:<ul class="ul" id="cmug_topic_13_1__ul_i2g_ljc_sk">
+          <li class="li"><strong class="ph b">Performance</strong> - Set the Cloudera Manager Agent heartbeat interval. See
+            <a class="xref" href="cm_ag_agent_config.html#cmug_topic_5_16__section_fvb_4rq_wm">cm_ag_agent_config.html#cmug_topic_5_16__section_fvb_4rq_wm</a>.</li>
+          <li class="li"><strong class="ph b">Advanced</strong> - Enable API debugging and other advanced options.</li>
+          <li class="li"><strong class="ph b">Monitoring</strong> - Set Agent health status parameters. For configuration
+            instructions, see
+            <a class="xref" href="cm_ag_agent_config.html#cmug_topic_5_16">cm_ag_agent_config.html#cmug_topic_5_16</a>.</li>
+          <li class="li"><strong class="ph b">Security</strong> - Set TLS encryption settings to enable TLS
+            encryption between the Cloudera Manager Server, Agents, and clients.
+            For configuration instructions, see <a class="xref" href="how_to_configure_cm_tls.html">how_to_configure_cm_tls.html</a>. You can also:<ul class="ul" id="cmug_topic_13_1__ul_yfn_qyv_wk">
+              <li class="li">Set the realm for Kerberos security and point to a custom
+                keytab retrieval script. For configuration instructions, see
+                  <a class="xref" href="security.html#xd_583c10bfdbd326ba--5a52cca-1476e7473cd--7f92">security.html#xd_583c10bfdbd326ba--5a52cca-1476e7473cd--7f92</a>.</li>
+              <li class="li">Specify session timeout and a "Remember Me" option.</li>
+            </ul></li>
+          <li class="li"><strong class="ph b">Ports and Addresses</strong> - Set ports for the Cloudera Manager Admin Console
+            and Server. For configuration instructions, see
+            <a class="xref" href="cm_ag_cm_server_ports.html#cmug_topic_13_10">Configuring Cloudera Manager Server Ports</a>.</li>
+          <li class="li"><strong class="ph b">Other</strong><ul class="ul" id="cmug_topic_13_1__ul_wlt_syv_wk">
+              <li class="li">Enable Cloudera usage data collection For configuration instructions, see
+                <a class="xref" href="cm_ag_data_collection.html#cmug_topic_13_11">Managing Anonymous Usage Data Collection</a>.</li>
+              <li class="li">Set a custom header color and banner text for the Admin console.</li>
+
+              <li class="li">Set an "Information Assurance Policy" statement – this
+                statement will be presented to every user before they are
+                allowed to access the login dialog box. The user must click "I
+                Agree" in order to proceed to the login dialog box.</li>
+
+              <li class="li">Disable/enable the auto-search for the Events panel at the bottom of a page.</li>
+            </ul></li>
+          <li class="li" id="cmug_topic_13_1__li_dwb_jpp_y4"><strong class="ph b" id="cmug_topic_13_1__b_pz4_jpp_y4">Support</strong><ul class="ul" id="cmug_topic_13_1__ul_knb_f3t_4n">
+              <li class="li">Configure diagnostic data collection properties. See
+                <a class="xref" href="cm_ag_data_collection.html#cmug_topic_15_4">Diagnostic Data Collection</a>.</li>
+              <li class="li">Configure how to access Cloudera Manager
+                <a class="xref" href="admin_cm_help.html#xd_583c10bfdbd326ba-7dae4aa6-147c30d0933--7b11">help</a>
+                files.</li>
+            </ul></li>
+          <li class="li"><strong class="ph b">External Authentication</strong> - Specify the configuration to use LDAP, Active
+            Directory, or an external program for authentication. See
+            <a class="xref" href="cm_sg_external_auth.html#cmug_topic_13_9">cm_sg_external_auth.html#cmug_topic_13_9</a>
+            for instructions.</li>
+          <li class="li"><strong class="ph b">Parcels</strong> - Configure settings for parcels, including the location of
+            remote repositories that should be made available for download, and
+            other settings such as the frequency with which Cloudera Manager
+            will check for new parcels, limits on the number of downloads or
+            concurrent distribution uploads. See
+            <a class="xref" href="cm_ig_parcels.html">Parcels</a> for more information.</li>
+          <li class="li"><strong class="ph b">Network</strong> - Configure proxy server settings. See
+            <a class="xref" href="cm_ag_network.html#xd_583c10bfdbd326ba--6eed2fb8-14349d04bee--76fa">cm_ag_network.html#xd_583c10bfdbd326ba--6eed2fb8-14349d04bee--76fa</a>.</li>
+          <li class="li"><strong class="ph b">Custom Service Descriptors</strong> - Configure custom service descriptor
+            properties for
+            <a class="xref" href="cm_mc_addon_services.html#xd_583c10bfdbd326ba--43d5fd93-1410993f8c2--7e18">cm_mc_addon_services.html#xd_583c10bfdbd326ba--43d5fd93-1410993f8c2--7e18</a>.</li>
+        </ul></div>
+      <div class="p">You can also configure the following:<ul class="ul">
+          <li class="li">Alerts<p class="p">See <a class="xref" href="cm_ag_alerts.html#cmug_topic_10_3">cm_ag_alerts.html#cmug_topic_10_3</a>.</p></li>
+          <li class="li">Users <p class="p">See <a class="xref" href="cm_ag_user_accnts.html#cmug_topic_3_6">Cloudera Manager User Accounts</a>.</p></li>
+          <li class="li">Kerberos<p class="p">See <a class="xref" href="cm_sg_intro_kerb.html#xd_583c10bfdbd326ba--6eed2fb8-14349d04bee--76dd">cm_sg_intro_kerb.html#xd_583c10bfdbd326ba--6eed2fb8-14349d04bee--76dd</a>.</p></li>
+          <li class="li">License<p class="p">See <a class="xref" href="cm_ag_licenses.html#cmug_topic_13_7">cm_ag_licenses.html#cmug_topic_13_7</a>.</p>
+          </li>
+          <li class="li">Language<p class="p">You can change the language of the Cloudera Manager
+              Admin Console User Interface through the language preference in
+              your browser. Information on how to do this for the browsers
+              supported by Cloudera Manager is shown under the Administration
+              page. You can also change the language for the information
+              provided with activity and health events, and for alert email
+              messages by selecting <strong class="ph b">Language</strong>, selecting the language you
+              want from the drop-down list on this page, then clicking <strong class="ph b">Save
+                Changes</strong>.</p></li>
+          <li class="li">Peers (<p class="p">See <a class="xref" href="cm_bdr_replication_source.html#cmug_topic_16_1">cm_bdr_replication_source.html#cmug_topic_16_1</a>.</p></li>
+        </ul></div>
+    </div>
+  </article>
+</div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="task"><meta name="description" content=""><meta name="DC.Relation" scheme="URI" content="../topics/cm_intro_api.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="untitled4"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Using the Cloudera Manager API to Obtain Configuration Files</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Using the Cloudera Manager API to Obtain Configuration Files</h1>
+    
+    <div class="body taskbody"><p class="shortdesc"></p>
+        <section class="section context">
+            <p class="p"></p>
+        </section>
+        <ol class="ol steps"><li class="li step stepexpand">
+        <span class="ph cmd">Obtain the list of a service's roles: </span><div class="itemgroup info">
+          <pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/<var class="keyword varname">clusterName</var>/services/<var class="keyword varname">serviceName</var>/roles</code></pre>
+        </div>
+      </li><li class="li step stepexpand"><span class="ph cmd">Obtain the list of configuration files a process is
+          using:</span><div class="itemgroup info">
+          <pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/<var class="keyword varname">clusterName</var>/services/<var class="keyword varname">serviceName</var>/roles/<var class="keyword varname">roleName</var>/process</code></pre>
+        </div></li><li class="li step stepexpand"><span class="ph cmd">Obtain the content of any particular file:</span><div class="itemgroup info">
+          <pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/<var class="keyword varname">clusterName</var>/services/<var class="keyword varname">serviceName</var>/roles/<var class="keyword varname">roleName</var>/process/
+configFiles/<var class="keyword varname">configFileName</var></code></pre>
+          <div class="p">For
+            example:<pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/Cluster%201/services/OOZIE-1/roles/
+OOZIE-1-OOZIE_SERVER-e121641328fcb107999f2b5fd856880d/process/configFiles/oozie-site.xml</code></pre></div>
+        </div></li></ol>
+    <div class="example" id="untitled4__example_txn_qcw_yr"><h2 class="title sectiontitle">Retrieving Service and Host
+        Properties</h2><div class="p">To update a service property using the Cloudera
+        Manager APIs, you'll need to know the name of the property, not just the
+        display name. If you know the property's display name but not the
+        property name itself, retrieve the documentation by requesting any
+        configuration object with the query string <code class="ph codeph">view=FULL</code>
+        appended to the URL. For
+        example:<pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/Cluster%201/services/<var class="keyword varname">service_name</var>/config?view=FULL </code></pre></div><div class="p">Search
+        the results for the display name of the desired property. For example, a
+        search for the display name <strong class="ph b">HDFS Service Environment Advanced
+          Configuration Snippet (Safety Valve)</strong> shows that the corresponding
+        property name is
+        <code class="ph codeph">hdfs_service_env_safety_valve</code>:<pre class="pre codeblock json"><code>{
+   "name" : "hdfs_service_env_safety_valve",
+   "require" : false,
+   "displayName" : "HDFS Service Environment Advanced Configuration Snippet (Safety Valve)",
+   "description" : "For advanced use onlyu, key/value pairs (one on each line) to be inserted into a roles
+   environment. Applies to configurations of all roles in this service except client configuration.",
+   "relatedName" : "",
+   "validationState" : "OK"
+}</code></pre></div><p class="p">Similar
+        to finding service properties, you can also find host properties. First,
+        get the host IDs for a cluster with the URL:
+      </p><pre class="pre codeblock"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//hosts</code></pre>
+      This should return host objects of the form:
+      <pre class="pre codeblock json"><code>{
+   "hostId" : "2c2e951c-aaf2-4780-a69f-0382181f1821",
+   "ipAddress" : "10.30.195.116",
+   "hostname" : "<var class="keyword varname">cm_server_host</var>",
+   "rackId" : "/default",
+   "hostUrl" : "http://<var class="keyword varname">cm_server_host</var>:7180/cmf/hostRedirect/2c2e951c-adf2-4780-a69f-0382181f1821",
+   "maintenanceMode" : false,
+   "maintenanceOwners" : [ ],
+   "commissionState" : "COMMISSIONED",
+   "numCores" : 4,
+   "totalPhysMemBytes" : 10371174400
+}</code></pre>
+      Then obtain the host properties by including one of the returned host IDs
+      in the URL:
+      <pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//hosts/2c2e951c-adf2-4780-a69f-0382181f1821?view=FULL </code></pre></div>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/cm_intro_api.html">Cloudera Manager API</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

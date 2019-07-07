@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="task"><meta name="description" content=""><meta name="DC.Relation" scheme="URI" content="../topics/cm_mc_mod_configs.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-searching-for-properties.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-validation-of-configuration-properties.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-overriding-configuration-properties.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-viewing-and-editing-overridden-configuration-properties.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-resetting-configuration-properties-to-the-default-value.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-viewing-and-editing-host-overrides.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="cmug_topic_5_3_1"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Changing the Configuration of a Service or Role Instance</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Changing the Configuration of a Service or Role Instance</h1>
+   
+   <div class="body taskbody"><p class="shortdesc"></p><ol class="ol steps"><li class="li step stepexpand"><span class="ph cmd">Go to the service status page.
+              (<span class="ph menucascade"><span class="ph uicontrol">Cluster</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">
+                  <var class="keyword varname">service
+                name</var>
+               </span></span>)</span></li><li class="li step stepexpand"><span class="ph cmd">Click the <span class="ph uicontrol">Configuration</span>
+        tab.</span></li><li class="li step stepexpand"><span class="ph cmd">Locate the property you want to edit. You can type all or
+          part of the property name in the <a class="xref" href="#concept_xhp_2ff_lt">search box</a>, or use the filters on the left side of the
+          screen: </span><ul class="ul choices">
+          <li class="li choice">Status<div class="p">The <span class="ph uicontrol">Status</span> section limits the
+              displayed properties by their status. Possible statuses
+                include:<ul class="ul" id="cmug_topic_5_3_1__ul_cpz_351_kr">
+                <li class="li">Error</li>
+                <li class="li">Warning</li>
+                <li class="li">Edited</li>
+                <li class="li">Non-default</li>
+                <li class="li">Has Overrides</li>
+              </ul>
+            </div></li>
+          <li class="li choice">Scope<p class="p">The <span class="ph uicontrol">Scope</span> section of the left
+              hand panel organizes the configuration properties by role types;
+              first those that are <strong class="ph b">Service-Wide</strong>, followed by various role
+              types within the service. When you select one of these roles, a
+              set of properties whose values are managed by the default role
+              group for the role display. Any additional role groups that apply
+              to the property also appear in this panel and you can modify
+              values for each role group just as you can the default role
+              group.</p></li>
+          <li class="li choice">Category<p class="p">The <span class="ph uicontrol">Category</span> section of the
+              left hand panel allows you to limit the displayed properties by
+              category.</p></li>
+        </ul></li><li class="li step stepexpand"><span class="ph cmd">Edit the property value. </span><div class="itemgroup info">
+          <ul class="ul" id="cmug_topic_5_3_1__ul_rts_kff_jr">
+            <li class="li">To facilitate entering some types of values, you can specify not
+              only the value, but also the units that apply to the value. for
+              example, to enter a setting that specifies bytes per second, you
+              can choose to enter the value in bytes (B), KiBs, MiBs, or
+              GiBs—selected from a drop-down menu that appears when you edit the
+              value.</li>
+            <li class="li">If the property allows a list of values, click the <img class="image" id="cmug_topic_5_3_1__image_ucf_cxs_j4" src="../images/add.png"> icon to the right of the edit field to add
+              an additional field. An example of this is the HDFS DataNode Data
+              Directory property, which can have a comma-delimited list of
+              directories as its value. To remove an item from such a list,
+              click the <img class="image" id="cmug_topic_5_3_1__image_ddm_dxs_j4" src="../images/delete.png"> icon to the right of the field you want to
+              remove.</li>
+          </ul>
+          <p class="p">Many configuration properties have different values that are
+            configured by multiple role groups. (See <a class="xref" href="cm_mc_role_groups.html#cmug_topic_5_4">Role Groups</a>).</p>
+          <p class="p">To edit configuration values for multiple role groups:</p>
+        </div><ol type="a" class="ol substeps">
+          <li class="li substep substepexpand"><span class="ph cmd">Go to the property, For example, the configuration panel
+              for the <span class="ph uicontrol">Heap Dump Directory</span> property
+              displays the DataNode Default Group (a role group), and a link
+              that says <span class="ph uicontrol">... and 6 others</span>.</span><div class="itemgroup stepxmp">
+              <div class="p">
+                <br><img class="image" id="cmug_topic_5_3_1__image_wbw_km2_jr" src="../images/property_role_more.png"><br>
+              </div>
+            </div></li>
+          <li class="li substep substepexpand"><span class="ph cmd">Click the <span class="ph uicontrol">... and 6 others</span> link
+              to display all of the role groups:</span><div class="itemgroup stepxmp">
+              <div class="p">
+                <br><img class="image" id="cmug_topic_5_3_1__image_bcw_km2_jr" src="../images/property_role_group_all.png"><br>
+              </div>
+            </div></li>
+          <li class="li substep substepexpand"><span class="ph cmd">Click the <span class="ph uicontrol">Show fewer</span> link to
+              collapse the list of role groups. </span><div class="itemgroup info">
+              <p class="p">If you edit the single value for this property, Cloudera
+                Manager applies the value to all role groups. To edit the values
+                for one or more of these role groups individually, click
+                  <span class="ph uicontrol">Edit Individual Values</span>. Individual
+                fields display where you can edit the values for each role
+                group. For example:</p>
+              <div class="p">
+                <br><img class="image" id="cmug_topic_5_3_1__image_gcw_km2_jr" src="../images/property_role_edit_individual.png"><br>
+              </div>
+            </div></li>
+        </ol></li><li class="li step stepexpand"><span class="ph cmd">Click <strong class="ph b">Save Changes</strong> to commit the changes.</span><div class="itemgroup info">
+          You can add a note that is included with the change in the
+          Configuration History. This changes the setting for the role group,
+          and applies to all role instances associated with that role group.
+          Depending on the change you made, you may need to restart the service
+          or roles associated with the configuration you just changed. Or, you
+          may need to redeploy your client configuration for the service. You
+          should see a message to that effect at the top of the Configuration
+          page, and services will display an outdated configuration <img class="image" id="cmug_topic_5_3_1__image_zwj_zqw_dl" src="../images/restart_needed.png">(Restart Needed),<img class="image" id="cmug_topic_5_3_1__image_k1b_qms_j4" src="../images/refresh_needed.png">(Refresh Needed), or outdated client
+          configuration <img class="image" id="cmug_topic_5_3_1__image_lq5_rfj_pn" src="../images/clientconfig.png"> indicator. <span class="ph">Click the
+                              indicator to display the <a class="xref" href="cm_mc_stale_configuration.html#xd_583c10bfdbd326ba--6eed2fb8-14349d04bee--7e53">Stale Configurations</a> page.</span>
+        </div></li></ol></div>
+<nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="../topics/cm-searching-for-properties.html">Searching for Properties</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm-validation-of-configuration-properties.html">Validation of Configuration Properties</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm-overriding-configuration-properties.html">Overriding Configuration Properties</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm-viewing-and-editing-overridden-configuration-properties.html">Viewing and Editing Overridden Configuration Properties</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm-resetting-configuration-properties-to-the-default-value.html">Resetting Configuration Properties to the Default Value</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm-viewing-and-editing-host-overrides.html">Viewing and Editing Host Overrides</a></strong><br></li></ul><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/cm_mc_mod_configs.html">Modifying Configuration Properties Using Cloudera Manager</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

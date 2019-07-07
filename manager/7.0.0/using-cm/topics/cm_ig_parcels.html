@@ -1,0 +1,565 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="concept"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="cmug_topic_7_11"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Parcels</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Parcels</h1>
+  
+  <div class="body conbody">
+    
+    <div class="p" id="cmug_topic_7_11__p_jjb_qvf_vm">A <dfn class="term">parcel</dfn> is a binary distribution format
+      containing the program files, along with additional metadata used by
+      Cloudera Manager. The important differences between parcels and packages
+        are:<ul class="ul" id="cmug_topic_7_11__ul_bwj_2ct_vk">
+        <li class="li">Parcels are self-contained and installed in a versioned directory, which means that
+          multiple versions of a given parcel can be installed side-by-side. You can then designate
+          one of these installed versions as the active one. With packages, only one package can be
+          installed at a time so there is no distinction between what is installed and what is
+          active.</li>
+        <li class="li">Parcels are required for rolling upgrades.</li>
+        <li class="li">You can install parcels at any location in the filesystem. They are installed by default
+          in <code class="ph codeph">/opt/cloudera/parcels</code>. In contrast, packages are installed in
+            <code class="ph codeph">/usr/lib</code>.</li>
+        <li class="li">When you install from the <span class="ph uicontrol">Parcels</span> page,
+          Cloudera Manager automatically downloads, distributes, and activates
+          the correct parcel for the operating system running on each host in
+          the cluster. All CDH hosts that make up a logical cluster must run on
+          the same major OS release to be covered by Cloudera Support. Cloudera
+          Manager must run on the same major OS release as at least one of the
+          CDH clusters it manages, to be covered by Cloudera Support. The risk
+          of issues caused by running different minor OS releases is considered
+          lower than the risk of running different major OS releases. Cloudera
+          recommends running the same minor release cross-cluster, because it
+          simplifies issue tracking and supportability. For information about
+          supported operating systems, see <a class="xref" href="rg_os_requirements.html#os_requirements">rg_os_requirements.html#os_requirements</a>.</li>
+      </ul></div>
+    <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0"><tbody><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="Important" src="/common/themes/pre-hdp-3.1/images/admon/important.png"></td><th align="left"><div class="admon-title-text">Important</div></th></tr><tr><td><div class="admon-text">Cloudera Manager manages parcels without the need for
+      users to manipulate parcels in the filesystem. You might cause failures or
+      unexpected behaviors in your cluster if you perform any of the following
+      unsupported actions:<ul class="ul" id="cmug_topic_7_11__ul_etb_mp1_jy">
+        <li class="li">Installing parcels within custom RPM packages and saving them to the
+          Cloudera Manager parcel directory.</li>
+        <li class="li">Downloading parcels and manually placing them in the Cloudera
+          Manager parcel directory.</li>
+        <li class="li">Manually adding, modifying, or deleting files within the root
+          parcels directory or its subdirectories.</li>
+      </ul>
+    </div></td></tr></tbody></table></div>
+    <p class="p">For detailed installation instructions using parcels, and other methods,
+      see <a class="xref" href="installation.html#install_cm_cdh">installation.html#install_cm_cdh</a>.</p>
+    <div class="p">Parcels are available for CDH, for other managed services, and for Sqoop
+        Connectors.<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0"><tbody><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="Important" src="/common/themes/pre-hdp-3.1/images/admon/important.png"></td><th align="left"><div class="admon-title-text">Important</div></th></tr><tr><td><div class="admon-text">You cannot install
+      software using both parcels and packages in the same cluster. </div></td></tr></tbody></table></div></div>
+    <p class="p toc inpage all"></p>
+  </div>
+  <article class="topic concept nested1" aria-labelledby="ariaid-title2" id="concept_fwl_d1x_k4">
+    <h2 class="title topictitle2" id="ariaid-title2">Advantages of Parcels</h2>
+    <div class="body conbody">
+      <div class="p" id="concept_fwl_d1x_k4__p_ovl_hgx_pn">Because of their unique properties, parcels offer the
+        following advantages over packages:<ul class="ul" id="concept_fwl_d1x_k4__ul_lwj_2ct_vk">
+          <li class="li"><strong class="ph b">Distribution of CDH as a single object</strong> - Instead of having
+            a separate package for each component of CDH, parcels are
+            distributed as a single object. This makes it easier to distribute
+            software to a cluster that is not connected to the Internet.</li>
+          <li class="li"><strong class="ph b">Internal consistency</strong> - All CDH components are matched,
+            eliminating the possibility of installing components from different
+            CDH versions.</li>
+          <li class="li"><strong class="ph b">Installation outside of <code class="ph codeph">/usr</code></strong> - In some
+            environments, Hadoop administrators do not have privileges to
+            install system packages. With parcels, administrators can install to
+              <code class="ph codeph">/opt</code>, or anywhere else.<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0"><tbody><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="Note" src="/common/themes/pre-hdp-3.1/images/admon/note.png"></td><th align="left"><div class="admon-title-text">Note</div></th></tr><tr><td><div class="admon-text"><span class="ph" id="concept_fwl_d1x_k4__parcelpath">With parcels, the path to the CDH libraries
+                is <code class="ph codeph">/opt/cloudera/parcels/CDH/lib</code> instead of the
+                usual <code class="ph codeph">/usr/lib</code>. Do not link
+                  <code class="ph codeph">/usr/lib/</code> elements to parcel-deployed paths,
+                because the links can cause scripts that distinguish between the
+                two paths to not work.</span></div></td></tr></tbody></table></div></li>
+          <li class="li"><strong class="ph b">Installation of CDH without <code class="ph codeph">sudo</code></strong> - Parcel
+            installation is handled by the Cloudera Manager Agent running as
+              <code class="ph codeph">root</code> or another user, so you can install CDH
+            without <code class="ph codeph">sudo</code>.</li>
+          <li class="li"><strong class="ph b">Decoupled distribution from activation</strong> - With side-by-side
+            install capabilities, you can stage a new version of CDH across the
+            cluster before switching to it. This allows the most time-consuming
+            part of an upgrade to be done ahead of time without affecting
+            cluster operations, thereby reducing downtime.</li>
+          <li class="li"><strong class="ph b">Rolling upgrades</strong> - Using packages requires you to shut down
+            the old process, upgrade the package, and then start the new
+            process. Errors can be difficult to recover from, and upgrading
+            requires extensive integration with the package management system to
+            function seamlessly. With parcels, when a new version is staged
+            side-by-side, you can switch to a new minor version by simply
+            changing which version of CDH is used when restarting each process.
+            You can then perform upgrades with <a class="xref" href="cm_mc_rolling_restart.html#cmug_topic_5_7">rolling
+              restarts</a>, in which service roles are restarted in the
+            correct order to switch to the new version with minimal service
+            interruption. Your cluster can continue to run on the existing
+            installed components while you stage a new version across your
+            cluster, without impacting your current operations. Major version
+            upgrades (for example, CDH 5 to CDH 6) require full service restarts
+            because of substantial changes between the versions. Finally, you
+            can upgrade individual parcels or multiple parcels at the same
+            time.</li>
+          <li class="li"><strong class="ph b">Upgrade management</strong> - Cloudera Manager manages all the steps
+            in a CDH version upgrade. With packages, Cloudera Manager only helps
+            with initial installation.</li>
+          <li class="li"><strong class="ph b">Additional components</strong> - Parcels are not limited to CDH. LZO
+            and <a class="xref" href="cm_mc_addon_services.html#xd_583c10bfdbd326ba--43d5fd93-1410993f8c2--7e18">add-on service</a> parcels are also available.</li>
+          <li class="li"><strong class="ph b">Compatibility with other distribution tools</strong> - Cloudera
+            Manager works with other tools you use for download and
+            distribution, such as Puppet. Or, you can download the parcel to
+            Cloudera Manager Server manually if your cluster has no Internet
+            connectivity and then have Cloudera Manager distribute the parcel to
+            the cluster.</li>
+        </ul></div>
+    </div>
+  </article>
+  <article class="topic concept nested1" aria-labelledby="ariaid-title3" id="concept_k1c_wgx_pn">
+    <h2 class="title topictitle2" id="ariaid-title3">Parcel Life Cycle</h2>
+    <div class="body conbody">
+      <div class="p" id="concept_k1c_wgx_pn__p_iwg_zgx_pn">To enable upgrades and additions with minimal
+        disruption, parcels have following phases:<ul class="ul" id="concept_k1c_wgx_pn__ul_lcb_5vf_vm">
+          <li class="li"><strong class="ph b">Downloaded</strong> -The parcel software is copied to a local parcel
+            directory on the Cloudera Manager Server, where it is available for
+            distribution to other hosts in any of the clusters managed by this
+            Cloudera Manager Server. You can have multiple parcels for a product
+            downloaded to your Cloudera Manager Server. After a parcel has been
+            downloaded to the Server, it is available for distribution on all
+            clusters managed by the Server. A downloaded parcel appears in the
+            cluster-specific section for every cluster managed by this Cloudera
+            Manager Server.</li>
+          <li class="li"><strong class="ph b">Distributed</strong> - The parcel is copied to the cluster hosts,
+            and components of the parcel are unpacked. Distributing a parcel
+            does not upgrade the components running on your cluster; the current
+            services continue to run unchanged. You can have multiple parcels
+            distributed on your cluster. Distributing parcels does not require
+            Internet access; the Cloudera Manager Agent on each cluster member
+            downloads the parcels from the local parcel repository on the
+            Cloudera Manager Server.</li>
+          <li class="li"><strong class="ph b">Activated</strong> - Links to the parcel components are created.
+            Activation does not automatically stop the current services or
+            perform a restart. You can restart services after activation, or the
+            system administrator can determine when to perform those
+              operations.<p class="p">If you are upgrading CDH or managed services when
+              you activate a parcel, follow the instructions in <a class="xref" href="ug_cdh_upgrade.html">ug_cdh_upgrade.html</a> to complete the upgrade.</p></li>
+          <li class="li"><strong class="ph b">In Use</strong> - The parcel components on the cluster hosts are in
+            use when you start or restart the services that use those
+            components. </li>
+          <li class="li"><strong class="ph b">Deactivated</strong> - The links to the parcel components are
+            removed from the cluster hosts.</li>
+          <li class="li"><strong class="ph b">Removed</strong> - The parcel components are removed from the
+            cluster hosts.</li>
+          <li class="li"><strong class="ph b">Deleted</strong> - The parcel is deleted from the local parcel
+            repository on the Cloudera Manager Server.</li>
+        </ul></div>
+      <p class="p">Cloudera Manager detects when new parcels are available. You can
+        configure Cloudera Manager to download and distribute parcels
+        automatically. See <a class="xref" href="#cmug_topic_7_11_5__section_sd4_bzx_bm">Configuring Cloudera Manager Server Parcel Settings</a>.</p>
+    </div>
+  </article>
+  <article class="topic concept nested1" aria-labelledby="ariaid-title4" id="cmug_topic_7_11_6">
+    <h2 class="title topictitle2" id="ariaid-title4">Parcel Locations</h2>
+    <div class="body conbody">
+      <p class="p">The default location for the local parcel directory on the Cloudera
+        Manager Server is <code class="ph codeph">/opt/cloudera/parcel-repo</code>. To change
+        this location, follow the instructions in <a class="xref" href="#cmug_topic_7_11_5__section_sd4_bzx_bm">Configuring Cloudera Manager Server Parcel Settings</a>.</p>
+      <div class="p">The default location for the distributed parcels on managed hosts is
+          <code class="ph codeph">/opt/cloudera/parcels</code>. To change this location, set
+        the <code class="ph codeph">parcel_dir</code> property in
+          <code class="ph codeph">/etc/cloudera-scm-agent/config.ini</code> file of the
+        Cloudera Manager Agent and restart the Cloudera Manager Agent or by
+        following the instructions in <a class="xref" href="#cmug_topic_7_11_5__section_srx_xyx_bm">Configuring the Host Parcel Directory</a>.<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0"><tbody><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="Note" src="/common/themes/pre-hdp-3.1/images/admon/note.png"></td><th align="left"><div class="admon-title-text">Note</div></th></tr><tr><td><div class="admon-text"><span class="ph" id="cmug_topic_7_11_6__d24e121">With parcels, the path to the CDH libraries
+                is <code class="ph codeph">/opt/cloudera/parcels/CDH/lib</code> instead of the
+                usual <code class="ph codeph">/usr/lib</code>. Do not link
+                  <code class="ph codeph">/usr/lib/</code> elements to parcel-deployed paths,
+                because the links can cause scripts that distinguish between the
+                two paths to not work.</span></div></td></tr></tbody></table></div></div>
+    </div>
+  </article>
+  <article class="topic concept nested1" aria-labelledby="ariaid-title5" id="concept_vwq_421_yk">
+    <h2 class="title topictitle2" id="ariaid-title5">Managing Parcels</h2>
+  
+    <div class="body conbody">
+      <p class="p">On the Parcels page in Cloudera Manager, you can manage parcel
+        installation and activation and determine which parcel versions are
+        running across your clusters. The Parcels page displays a list of
+        parcels managed by Cloudera Manager. Cloudera Manager displays the name,
+        version, and status of each parcel and provides available actions on the
+        parcel. </p>
+      <section class="section" id="concept_vwq_421_yk__section_tgk_khl_sr"><h3 class="title sectiontitle">Accessing the Parcels Page</h3>
+        
+        <div class="p">Access the Parcels page by doing one of the following:<ul class="ul" id="concept_vwq_421_yk__ul_jg5_wjf_qn">
+            <li class="li">Click the parcel icon in the top navigation bar.</li>
+            <li class="li">Click the <strong class="ph b">Hosts</strong> in the top navigation bar, then the
+                <strong class="ph b">Parcels</strong> tab.</li>
+          </ul></div>
+        <p class="p">Use the selectors on the left side of the console to filter the
+          displayed parcels: </p>
+        <ul class="ul" id="concept_vwq_421_yk__ul_agw_ynj_3r">
+          <li class="li"><span class="ph uicontrol">Location</span> selector - View only parcels that
+            are available remotely, only parcels pertaining to a particular
+            cluster, or parcels pertaining to all clusters. When you access the
+            Parcels page, the selector is set to Available Remotely.</li>
+          <li class="li"><span class="ph uicontrol">Error Status</span> section of the
+              <span class="ph uicontrol">Filters</span> selector - Limit the list of
+            displayed parcels by error status. </li>
+          <li class="li"><span class="ph uicontrol">Parcel Name</span> section of the
+              <span class="ph uicontrol">Filters</span> selector - Limit the list of
+            displayed parcels by parcel name. </li>
+          <li class="li"><span class="ph uicontrol">Status</span> section of the
+              <span class="ph uicontrol">Filters</span> selector - Limit the list to
+            parcels that have been distributed, parcels that have not been
+            distributed (<span class="ph uicontrol">Other</span>), or all parcels.</li>
+        </ul>
+        <p class="p">When you download a parcel, it appears in the list for each cluster
+          managed by Cloudera Manager, indicating that the parcel is available
+          for distribution on those clusters. Only one copy of the downloaded
+          parcel resides on the Cloudera Manager Server. After you distribute
+          the parcel, Cloudera Manager copies the parcel to the hosts in that
+          cluster.</p>
+        <p class="p">For example, if Cloudera Manager is managing two clusters, the rows
+          in the All Clusters page list the information about the parcels on the
+          two clusters. The Status column displays the current status of the
+          parcels. The Version column displays version information about the
+          parcel. Click the information icon to view the release notes for the
+          parcel. The Actions column shows actions you can perform on the
+          parcels, such as download, distribute, delete, deactivate, and remove
+          from host.</p>
+        <div class="p">
+          <br><img class="image" id="concept_vwq_421_yk__image_nms_3mj_3r" src="../images/parcels_list.png"><br>
+        </div>
+      </section>
+      <section class="section" id="concept_vwq_421_yk__section_cnx_b3y_bm"><h3 class="title sectiontitle">Downloading a Parcel</h3>
+        
+        <ol class="ol" id="concept_vwq_421_yk__ol_v3d_zf1_yk">
+          <li class="li">Go to the Parcels page. In the Location selector, click
+                <span class="ph uicontrol"><var class="keyword varname">ClusterName</var></span> or
+              <span class="ph uicontrol">Available Remotely</span>. Parcels that are
+            available for download display the Available Remotely status and a
+            Download button.<p class="p">If the parcel you want is not shown here—for
+              example, you want to upgrade to a version of CDH that is not the
+              most current version—you can make additional remote parcel
+              repositories available. You can also configure the location of the
+              local parcel repository and other settings. See <a class="xref" href="#cmug_topic_7_11_5">Parcel Configuration Settings</a>.</p><div class="p">If a parcel
+              version is too new to be supported by the Cloudera Manager
+              version, the parcel appears with a red background and error
+                message:<br><img class="image" id="concept_vwq_421_yk__image_jrt_wgl_sr" src="../images/unsupported.png"><br>Such parcels are also listed when you select the
+              Error status in the Error Status section of the Filters
+              selector.</div></li>
+          <li class="li">Click the <strong class="ph b">Download</strong> button of the parcel you want to
+            download  to your local repository. The status changes to
+            Downloading.</li>
+        </ol>
+        <p class="p">After a parcel has been downloaded, it is removed from the Available
+          Remotely page.</p>
+      </section>
+      <section class="section" id="concept_vwq_421_yk__section_sty_b3y_bm"><h3 class="title sectiontitle">Distributing a Parcel</h3>
+        
+        <p class="p">Downloaded parcels can be distributed to the hosts in your cluster
+          and made available for activation. Parcels are downloaded to the
+          Cloudera Manager Server, so with multiple clusters, the downloaded
+          parcels are shown as available to <em class="ph i">all</em> clusters managed by the
+          Cloudera Manager Server. However, you select distribution to a
+          specific cluster's hosts on a cluster-by-cluster basis.</p>
+        <ol class="ol" id="concept_vwq_421_yk__ol_vj4_t3k_3s">
+          <li class="li">From the Parcels page, in the Location selector, select the
+            cluster where you want to distribute the parcel, or select
+              <span class="ph uicontrol">All Clusters</span>. (The first cluster in the
+            list is selected by default when you open the Parcels page.)</li>
+          <li class="li">Click <strong class="ph b">Distribute</strong> for the parcel you want to distribute. The
+            status changes to <span class="ph uicontrol">Distributing</span>. During
+            distribution, you can: <ul class="ul" id="concept_vwq_421_yk__ul_rhd_x3k_3s">
+              <li class="li">Click the <span class="ph uicontrol">Details</span> link in the Status
+                column to view the <span class="ph uicontrol">Parcel Distribution
+                  Status</span> page.</li>
+              <li class="li">Click <span class="ph uicontrol">Cancel</span> to cancel the
+                distribution. When the Distribute action completes, the button
+                changes to <span class="ph uicontrol">Activate</span>, and you can click
+                the <span class="ph uicontrol">Distributed</span> status link to view the
+                status page.</li>
+            </ul></li>
+        </ol>
+        <p class="p">Distribution does not require Internet access; the Cloudera Manager
+          Agent on each cluster member downloads the parcel from the local
+          parcel repository hosted on the Cloudera Manager Server.</p>
+        <p class="p">If you have a large number of hosts to which parcels must be
+          distributed, you can control how many concurrent uploads Cloudera
+          Manager performs. See <a class="xref" href="#cmug_topic_7_11_5">Parcel Configuration Settings</a>.</p>
+        <p class="p">To delete a parcel that is ready to be distributed, click the
+          triangle at the right end of the <span class="ph uicontrol">Distribute</span>
+          button and select <span class="ph uicontrol">Delete</span>. This deletes the
+          parcel from the local parcel repository.</p>
+        <p class="p">Distributing parcels to the hosts in the cluster does not affect the
+          current running services.</p>
+      </section>
+      <section class="section" id="concept_vwq_421_yk__section_ug1_c3y_bm"><h3 class="title sectiontitle">Activating a Parcel</h3>
+        
+        <p class="p">Parcels that have been distributed to the hosts in a cluster are
+          ready to be activated.</p>
+        <ol class="ol" id="concept_vwq_421_yk__ol_rkd_zf1_yk">
+          <li class="li">From the Parcels page, in the Location selector, choose
+                <span class="ph uicontrol"><var class="keyword varname">ClusterName</var></span> or
+              <span class="ph uicontrol">All Clusters</span>, and click the <strong class="ph b">Activate</strong>
+            button for the parcel you want to activate. This updates Cloudera
+            Manager to point to the new software, which is ready to run the next
+            time a service is restarted. A pop-up indicates which services must
+            be restarted to use the new parcel. </li>
+          <li class="li">Choose one of the following:<ul class="ul" id="concept_vwq_421_yk__ul_z4l_qr1_mt">
+              <li class="li"><span class="ph uicontrol">Restart</span> - Activate the parcel and
+                restart services affected by the new parcel.</li>
+              <li class="li"><span class="ph uicontrol">Activate Only</span> - Active the parcel. You
+                can restart services at a time that is convenient. If you do not
+                restart services as part of the activation process, you must
+                restart them at a later time. Until you restart services, the
+                current parcel continues to run. </li>
+            </ul></li>
+          <li class="li">Click <span class="ph uicontrol">OK</span>.</li>
+        </ol>
+        <p class="p">Activating a new parcel also deactivates the previously active parcel
+          for the product you just upgraded. However, until you restart the
+          services, the previously active parcel displays a status of <strong class="ph b">Still
+            in use</strong> because the services are using that parcel, and you
+          cannot remove the parcel until it is no longer being used.</p>
+        <p class="p">If the parcel you activate updates the software for only a subset of
+          services, even if you restart all of that subset, the previously
+          active parcel displays <strong class="ph b">Still in use</strong> until you restart the
+          remaining services. For example, if you are running HDFS, YARN, Oozie,
+          Hue, Impala, and Spark services, and you activate a parcel that
+          updates only the Oozie service, the pop-up that displays instructs you
+          to restart only the Oozie and Hue services. Because the older parcel
+          is still in use by the HDFS, YARN, Impala, and Spark services, the
+          parcel page shows that parcel as <span class="ph uicontrol">Still in use</span>
+          until you restart these remaining services.</p>
+        <p class="p">Sometimes additional upgrade steps may be required. In this case,
+          instead of <strong class="ph b">Activate</strong>, the button will say <strong class="ph b">Upgrade</strong>. When
+          you click the <span class="ph uicontrol">Upgrade</span> button, the upgrade
+          wizard starts. See <a class="xref" href="ug_cdh_upgrade.html">ug_cdh_upgrade.html</a>.</p>
+      </section>
+      <section class="section" id="concept_vwq_421_yk__section_i5r_b3y_bm"><h3 class="title sectiontitle">Deactivating a Parcel</h3>
+        
+        <p class="p">You can deactivate an active parcel; this updates Cloudera Manager to
+          point to the previous software version, which is ready to run the next
+          time a service is restarted. From the Parcels page, choose
+              <span class="ph uicontrol"><var class="keyword varname">ClusterName</var></span> or
+            <span class="ph uicontrol">All Clusters</span> in the Location selector, and
+          click the <strong class="ph b">Deactivate</strong> button on an activated parcel.</p>
+        <p class="p">To use the previous version of the software, restart your services.</p>
+        <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0"><tbody><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="Important" src="/common/themes/pre-hdp-3.1/images/admon/important.png"></td><th align="left"><div class="admon-title-text">Important</div></th></tr><tr><td><div class="admon-text">If you originally installed from parcels, and one
+          version of the software is installed (that is, no packages, and no
+          previous parcels have been activated and started), when you attempt to
+          restart after deactivating the current version, your roles will be
+          stopped and will not be able to restart.</div></td></tr></tbody></table></div>
+      </section>
+      <section class="section" id="concept_vwq_421_yk__section_y4k_b3y_bm"><h3 class="title sectiontitle">Removing a Parcel</h3>
+        
+        <p class="p">From the Parcels page, in the Location selector, choose
+              <span class="ph uicontrol"><var class="keyword varname">ClusterName</var></span> or
+            <span class="ph uicontrol">All Clusters</span>, click the <img class="image" id="concept_vwq_421_yk__image_c2d_f3l_sr" src="../images/down_arrow.png"> to the
+          right of an <strong class="ph b">Activate</strong> button, and select <strong class="ph b">Remove from
+            Hosts</strong>.</p>
+      </section>
+      <section class="section" id="concept_vwq_421_yk__section_cpk_b3y_bm"><h3 class="title sectiontitle">Deleting a Parcel</h3>
+        
+        <p class="p">From the Parcels page, in the Location selector, choose
+              <span class="ph uicontrol"><var class="keyword varname">ClusterName</var></span> or
+            <span class="ph uicontrol">All Clusters</span>, and click the <img class="image" id="concept_vwq_421_yk__image_p3q_f3l_sr" src="../images/down_arrow.png"> to the
+          right of a <strong class="ph b">Distribute</strong> button, and select <strong class="ph b">Delete</strong>.</p>
+      </section>
+      <section class="section" id="concept_vwq_421_yk__section_irq_wc1_4r"><h3 class="title sectiontitle">Changing the Parcel
+          Directory</h3>The default location of the parcel directory is
+          <code class="ph codeph">/opt/cloudera/parcels</code>. To relocate distributed
+        parcels to a different directory, do the following:<ol class="ol" id="concept_vwq_421_yk__ol_rvq_xc1_4r">
+          <li class="li">Stop all services.</li>
+          <li class="li"><a class="xref" href="#concept_vwq_421_yk__section_i5r_b3y_bm">Deactivate</a> all in-use parcels.</li>
+          <li class="li"><a class="xref" href="cm_ag_agents.html#cmug_topic_14_4__section_o5s_zxs_v4">Shut down</a> the Cloudera Manager Agent on all hosts.</li>
+          <li class="li">Move the existing parcels to the new location.</li>
+          <li class="li"><a class="xref" href="#cmug_topic_7_11_5__section_srx_xyx_bm">Configure</a> the host parcel directory.</li>
+          <li class="li"><a class="xref" href="cm_ag_agents.html#cmug_topic_14_4__section_wbb_zxs_v4">Start</a> the Cloudera Manager Agents.</li>
+          <li class="li"><a class="xref" href="#concept_vwq_421_yk__section_ug1_c3y_bm">Activate</a> the parcels.</li>
+          <li class="li">Start all services.</li>
+        </ol></section>
+      <section class="section" id="concept_vwq_421_yk__section_krf_vtk_lp"><h3 class="title sectiontitle">Troubleshooting</h3> If you
+        experience an error while performing parcel operations, click the red
+        'X' icons on the parcel page to display a message that identifies the
+        source of the error. <p class="p">If a parcel is being distributed but never
+          completes, make sure you have enough free space in the <a class="xref" href="#cmug_topic_7_11_5">parcel download
+            directories</a>, because Cloudera Manager will try to download
+          and unpack parcels even if there is insufficient space.</p></section>
+    </div>
+  </article>
+  <article class="topic concept nested1" aria-labelledby="ariaid-title6" id="concept_wbj_bfn_hl">
+    <h2 class="title topictitle2" id="ariaid-title6">Viewing Parcel Usage</h2>
+    <div class="body conbody">
+      <div class="p">The <strong class="ph b">Parcel Usage</strong> page shows parcels in current use in your
+        clusters. In a large deployment, this makes it easier to keep track of
+        different versions installed across the cluster, especially if some
+        hosts were not available when you performed an installation or upgrade,
+        or were added later. To display the Parcel Usage page:<ol class="ol" id="concept_wbj_bfn_hl__ol_zqh_zxx_bm">
+          <li class="li">Do one of the following:<ul class="ul" id="concept_wbj_bfn_hl__ul_orh_zxx_bm">
+              <li class="li">Click the parcel icon in the top navigation bar.</li>
+              <li class="li">Click <strong class="ph b">Hosts</strong> in the top navigation bar and click the
+                  <strong class="ph b">Parcels</strong> tab.</li>
+            </ul></li>
+          <li class="li">Click the <strong class="ph b">Parcel Usage</strong> button.</li>
+        </ol></div><p class="p">This page only shows the usage of parcels, not components
+        that were installed as packages. If you select a cluster running
+        packages, the cluster is not displayed, and instead you see a message
+        indicating the cluster is not running parcels. </p>
+      <br><img class="image" id="concept_wbj_bfn_hl__image_nwf_yrf_1l" src="../images/parcel_usage.jpg"><br>
+      <p class="p">You can view parcel usage by cluster or by product.</p><p class="p">You can also
+        view just the hosts running only the active parcels, or just hosts
+        running older parcels (not the currently active parcels), or
+        both.</p><p class="p">The host map at the right shows each host in the cluster,
+        with the status of the parcels on that host. If the host is running the
+        processes from the currently activated parcels, the host is indicated in
+        blue. A black square indicates that a parcel has been activated, but
+        that all the running processes are from an earlier version of the
+        software. This occurs, for example, if you have not restarted a service
+        or role after activating a new parcel. If you have individual hosts
+        running components installed as packages, the square is
+        empty.</p><p class="p">Move the cursor over the grid icon to see the rack to which the hosts are
+        assigned. Hosts on different racks are displayed in separate rows.</p><p class="p">To view the exact versions of the software running on a
+        given host, click the square representing the host. This displays the
+        parcel versions installed on that host.</p>
+      <br><img class="image" id="concept_wbj_bfn_hl__image_pjj_k42_cl" src="../images/parcel_usage2.jpg"><br>
+      <p class="p">The pop-up lists the roles running on the selected host that are part
+        of the listed parcel. Clicking a role opens the Cloudera Manager page
+        for that role. It also shows whether the parcel is active or not.</p><p class="p">If a host is running various software versions, the square representing the
+        host is a four-square grid icon. When you move the cursor over that
+        host, both the active and inactive components are shown. For example, in
+        the image below, the older CDH parcel has been deactivated, but only the
+        HDFS service has been restarted.</p>
+      <br><img class="image" id="concept_wbj_bfn_hl__image_xyw_vdn_hl" src="../images/parcel_usage4.jpg"><br>
+    </div>
+  </article>
+  <article class="topic concept nested1" aria-labelledby="ariaid-title7" id="cmug_topic_7_11_5">
+    <h2 class="title topictitle2" id="ariaid-title7">Parcel Configuration Settings</h2>
+  
+    <div class="body conbody">
+      <p class="p">You can configure where parcels are stored on the Cloudera Manager Server host,
+        the URLs of parcel repositories, the properties of a proxy server
+        through which parcels are downloaded, and where parcels distributed to
+        cluster hosts are stored.</p>
+      <section class="section" id="cmug_topic_7_11_5__section_sd4_bzx_bm"><h3 class="title sectiontitle">Configuring Cloudera Manager Server Parcel Settings</h3>
+        
+        <ol class="ol" id="cmug_topic_7_11_5__ol_ghw_1n5_4n">
+          <li class="li" id="cmug_topic_7_11_5__li_srs_5n5_4n">Use one of the following methods to open the parcel settings page:<ul class="ul" id="cmug_topic_7_11_5__ul_nzv_xl5_4n">
+              <li class="li"><strong class="ph b">Navigation bar</strong><ol class="ol" type="a" id="cmug_topic_7_11_5__ol_vqp_nn5_4n">
+                  <li class="li">Click the parcel icon in the top navigation bar or click
+                      <span class="ph uicontrol">Hosts</span> and click the
+                      <span class="ph uicontrol">Parcels</span> tab.</li>
+                  <li class="li">Click the <strong class="ph b">Configuration</strong> button.</li>
+                </ol></li>
+              <li class="li"><strong class="ph b">Menu</strong>
+                <ol class="ol" type="a" id="cmug_topic_7_11_5__ol_wrz_rl5_4n">
+                  <li class="li" id="cmug_topic_7_11_5__li_tpr_x3w_kn">Select
+                        <span class="ph menucascade"><span class="ph uicontrol">Administration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Settings</span></span>.</li>
+                  <li class="li">Select
+                        <span class="ph menucascade"><span class="ph uicontrol">Category</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Parcels</span></span>.</li>
+                </ol></li>
+            </ul></li>
+          <li class="li">Specify a property:<ul class="ul" id="cmug_topic_7_11_5__ul_rnn_cn5_4n">
+              <li class="li"><strong class="ph b">Local Parcel Repository Path</strong> defines the path on the Cloudera Manager
+                Server host where downloaded parcels are stored.</li>
+              <li class="li"><strong class="ph b">Remote Parcel Repository URLs</strong> is a list of repositories
+                that Cloudera Manager checks for parcels. Initially this points
+                to the latest released CDH 5 and CDH 6repositories, but you can
+                add your own repository locations to the list. Use this
+                mechanism to add Cloudera repositories that are not listed by
+                default, such as older versions of CDH. You can also use this to
+                add your own <a class="xref" href="cm_ig_create_local_parcel_repo.html#internal_parcel_repo">custom repositories</a>. The locations of the Cloudera
+                parcel repositories are
+                    <code class="ph codeph">https://archive.cloudera.com/<var class="keyword varname">product</var>/parcels/<var class="keyword varname">version</var></code>,
+                where <var class="keyword varname">product</var> is a product name and
+                  <var class="keyword varname">version</var> is a specific product version,
+                  <code class="ph codeph">latest</code>, or the substitution variable
+                  <code class="ph codeph">{latest_supported}</code>. The substitution variable
+                appears after the parcel for the CDH version with the same major
+                number as the Cloudera Manager version to enable substitution of
+                the latest supported maintenance version of CDH.<div class="p">To add a
+                  parcel repository:<ol class="ol" type="a" id="cmug_topic_7_11_5__ol_dmr_fn5_4n">
+                    <li class="li" id="cmug_topic_7_11_5__li_nhn_wn5_4n">In the <strong class="ph b">Remote Parcel Repository
+                        URLs</strong> list, click the addition symbol to open an
+                      additional row.</li>
+                    <li class="li" id="cmug_topic_7_11_5__li_jvr_wn5_4n">Enter the path to the
+                      repository.</li>
+                  </ol></div></li>
+            </ul></li>
+          <li class="li" id="cmug_topic_7_11_5__li_knz_wn5_4n">Click <strong class="ph b">Save Changes</strong>.</li>
+        </ol>
+        <div class="p">You can also:<ul class="ul" id="cmug_topic_7_11_5__ul_fzh_xtx_bm">
+            <li class="li">Set the frequency with which Cloudera Manager checks for new
+              parcels.</li>
+            <li class="li">Configure a proxy to access to the remote repositories.</li>
+            <li class="li">Configure whether downloads and distribution of parcels should
+              occur automatically when new ones are detected. If automatic
+              downloading and distribution are not enabled (the default), go to
+              the <strong class="ph b">Parcels</strong> page to initiate these actions.</li>
+            <li class="li">Control which products can be downloaded if automatic downloading is enabled.</li>
+            <li class="li">Control whether to retain downloaded parcels.</li>
+            <li class="li">Control whether to retain old parcel versions and how many
+              parcel versions to retain</li>
+          </ul></div>
+        <div class="p">You can tune the parcel distribution load on your network by
+          configuring the bandwidth limits and the number of concurrent uploads.
+          The defaults are up to 50 MiB/s aggregate bandwidth and 50 concurrent
+          parcel uploads.<ul class="ul" id="cmug_topic_7_11_5__ul_ups_nyx_bm">
+            <li class="li">Theoretically, the concurrent upload count (<strong class="ph b">Maximum Parcel
+                Uploads</strong>) is unimportant if all hosts have the same speed
+              Ethernet. Fifty concurrent uploads is acceptable in most cases.
+              However, if the server has more bandwidth (for example, 10 GbE,
+              and the normal hosts are using 1 GbE), then the count is important
+              to maximize bandwidth. It should be at least the difference in
+              speeds (10x in this case).</li>
+            <li class="li">The bandwidth limit (<strong class="ph b">Parcel Distribution Rate Limit</strong>)
+              should be your Ethernet speed (in MiB/seconds) divided by
+              approximately 16. You can use a higher limit if you have QoS
+              configured to prevent starving other services, or if you can
+              accept the risk associated with higher bandwidth load.</li>
+          </ul></div>
+      </section>
+      <section class="section" id="cmug_topic_7_11_5__section_yyk_gd1_m4"><h3 class="title sectiontitle">Configuring a Proxy Server</h3>
+        
+        <p class="p">To configure a proxy server through which parcels are downloaded, follow the
+          instructions in
+          <a class="xref" href="cm_ag_network.html#xd_583c10bfdbd326ba--6eed2fb8-14349d04bee--76fa">cm_ag_network.html#xd_583c10bfdbd326ba--6eed2fb8-14349d04bee--76fa</a>.</p>
+      </section>
+      <section class="section" id="cmug_topic_7_11_5__section_srx_xyx_bm"><h3 class="title sectiontitle">Configuring the Host Parcel Directory</h3>
+        
+        <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0"><tbody><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="Important" src="/common/themes/pre-hdp-3.1/images/admon/important.png"></td><th align="left"><div class="admon-title-text">Important</div></th></tr><tr><td><div class="admon-text">If you modify the
+          parcel directory location, make sure that all hosts use the same
+          location. Using different locations on different hosts can cause
+          unexpected problems.</div></td></tr></tbody></table></div>
+        <div class="p">To configure the location of distributed parcels:<ol class="ol" id="cmug_topic_7_11_5__ol_zyd_x1y_bm">
+            <li class="li" id="cmug_topic_7_11_5__li_hw5_kb5_4n">Click <strong class="ph b">Hosts</strong> in the top navigation bar.</li>
+            
+            <li class="li">Select
+                  <span class="ph menucascade"><span class="ph uicontrol">Category</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Parcels</span></span>.</li>
+            <li class="li">Configure the value of the <strong class="ph b">Parcel Directory</strong> property. The setting of the
+              <code class="ph codeph">parcel_dir</code> property in the
+              <a class="xref" href="cm_ag_agent_config.html#cmug_topic_5_16__section_kw3_5rq_wm">Cloudera
+              Manager Agent configuration file</a> overrides this setting.</li>
+            
+            <li class="li" id="cmug_topic_7_11_5__li_vw4_3tp_kq"><a class="xref" href="cm_ag_agents.html#cmug_topic_14_4__section_o5s_zxs_v4">Restart</a> the Cloudera Manager Agent on all hosts.</li>
+          </ol></div>
+      </section>
+      <section class="section" id="cmug_topic_7_11_5__section_l2f_z1k_3v"><h3 class="title sectiontitle">Configuring Peer-to-Peer Distribution of Parcels</h3>
+        
+        <p class="p">Cloudera Manager uses a peer-to-peer service to efficiently
+          distribute parcels to cluster hosts. The service is enabled by default
+          and is configured to run on port <code class="ph codeph">7191</code>. You can change
+          this port number, and you can disable peer-to-peer distribution. </p>
+        <div class="p">To modify peer-to-peer distribution of parcels:<ol class="ol" id="cmug_topic_7_11_5__ol_g1v_2ck_3v">
+            <li class="li">Open Cloudera Manager and select
+                  <span class="ph menucascade"><span class="ph uicontrol">Hosts</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">All
+                  Hosts</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Configuration</span></span>.</li>
+            <li class="li">Change the value of the <span class="ph uicontrol">P2P Parcel Distribution
+                Port</span> property to the new port number.<p class="p">Set the
+                value to <code class="ph codeph">0</code> to disable peer-to-peer distribution
+                of parcels.</p></li>
+            
+          </ol></div>
+      </section>
+    </div>
+  </article>
+</div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="concept"><meta name="description" content=""><meta name="DC.Relation" scheme="URI" content="../topics/cm-cloudera-manager-overview.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="concept_vgj_tny_jk"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Process Management</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Process Management</h1>
+   
+   <div class="body conbody"><p class="shortdesc"></p>
+      <p class="p">In a non-Cloudera Manager managed cluster, you most likely start a role
+        instance process using an init script, for example, <code class="ph codeph">service
+          hadoop-hdfs-datanode start</code>. Cloudera Manager does not use
+          <code class="ph codeph">init</code> scripts for the daemons it manages; in a
+        Cloudera Manager managed cluster, starting and stopping services using
+          <code class="ph codeph">init</code> scripts will not work.</p>
+      <p class="p" id="concept_vgj_tny_jk__p_s1x_5dh_vt">In a Cloudera Manager managed cluster, you can only start or stop role
+        instance processes using Cloudera Manager. Cloudera Manager uses an open source process
+        management tool called <a class="xref" href="http://supervisord.org/" target="_blank">
+            <code class="ph codeph">supervisord</code>
+         </a>, that starts processes, takes care of redirecting
+        log files, notifying of process failure, setting the effective user ID of the calling
+        process to the right user, and so on. Cloudera Manager supports automatically restarting a
+        crashed process. It will also flag a role instance with a bad health flag if its process
+        crashes repeatedly right after start up.</p>
+      <p class="p">Stopping the Cloudera Manager Server and the Cloudera Manager Agents
+        will not bring down your services; any running role instances keep
+        running.</p>
+      <p class="p" id="concept_vgj_tny_jk__p_iyx_lqx_tt">The Agent is started by <code class="ph codeph">init.d</code> at start-up. It, in turn,
+        contacts the Cloudera Manager Server and determines which processes should be running. The
+        Agent is monitored as part of Cloudera Manager's host monitoring. If the Agent stops
+        heartbeating, the host is marked as having bad health.</p>
+      <p class="p" id="concept_vgj_tny_jk__p_oq5_lqx_tt">One of the Agent's main responsibilities is to start
+        and stop processes. When the Agent detects a new process from the Server
+        heartbeat, the Agent creates a directory for it in
+          <code class="ph codeph">/var/run/cloudera-scm-agent</code> and unpacks the
+        configuration. It then contacts <code class="ph codeph">supervisord</code>, which
+        starts the process. </p>
+      <p class="p">These actions reinforce an important point: a Cloudera Manager process
+        never travels alone. In other words, a process is more than just the
+        arguments to <span class="keyword apiname">exec()</span>—it also includes configuration
+        files, directories that need to be created, and other information.</p>
+   </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/cm-cloudera-manager-overview.html">Cloudera Manager Overview</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

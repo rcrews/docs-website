@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="concept"><meta name="DC.Relation" scheme="URI" content="../topics/cm-server-client-configuration.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm_mc_mod_configs.html"><meta name="DC.Relation" scheme="URI" content="../topics/admin_global_config.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm_mc_config_snippet.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-set-advanced-configuration-service.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-set-advanced-configuration-cluster.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm_mc_stale_configuration.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm_mc_client_config.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm_mc_revert_configs.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm_mc_client_config.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="cmug_topic_2_2"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Cluster Configuration Overview</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Cluster Configuration Overview</h1>
+  
+  <div class="body conbody">
+    <p class="p">When Cloudera Manager configures a service, it allocates
+        <dfn class="term">roles</dfn> that are required for that service to the hosts in
+      your cluster. The role determines which service daemons run on a host. </p>
+    <div class="p">For example, for an HDFS service instance, Cloudera Manager
+        configures:<ul class="ul" id="cmug_topic_2_2__ul_pdb_f3x_bs">
+        <li class="li">One host to run the NameNode role.</li>
+        <li class="li">One host to run as the secondary NameNode role.</li>
+        <li class="li">One host to run the Balancer role.</li>
+        <li class="li">Remaining hosts as to run DataNode roles.</li>
+      </ul></div>
+    <p class="p"><span class="ph">A
+      <dfn class="term">role group</dfn>
+      is a set of configuration properties for a role type, as well as a list of
+      role instances associated with that group. Cloudera Manager automatically
+      creates a default role group named <strong class="ph b"><var class="keyword varname">Role Type</var> Default
+      Group</strong> for each role type.</span></p>
+    <p class="p" id="cmug_topic_2_2__p_wfl_vt2_qp">When you run the installation or upgrade wizard,
+      Cloudera Manager configures the default role groups it adds, and adds any
+      other required role groups for a given role type. For example, a DataNode
+      role on the same host as the NameNode might require a different
+      configuration than DataNode roles running on other hosts. Cloudera Manager
+      creates a separate role group for the DataNode role running on the
+      NameNode host and uses the default configuration for DataNode roles
+      running on other hosts.</p>
+    <p class="p">Cloudera Manager wizards <a class="xref" href="cm_mc_autoconfig.html#concept_gl4_yb3_rn">autoconfigure</a> role
+      group properties based on the resources available on the hosts. For
+      properties that are not dependent on host resources, Cloudera Manager
+      default values typically align with CDH default values for that
+      configuration. Cloudera Manager deviates when the CDH default is not a
+      recommended configuration or when the default values are illegal.<span class="ph"> For the complete catalog of properties and their default
+        values, see <a class="xref" href="cm_props_top.html#xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7e52">cm_props_top.html#xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7e52</a>.</span></p>
+    <section class="section" id="cmug_topic_2_2__section_dsm_2wz_xk"><h2 class="title sectiontitle">Server and Client
+        Configuration</h2><p class="p">Administrators are sometimes surprised that
+        modifying <code class="ph codeph">/etc/hadoop/conf</code> and then restarting HDFS has
+        no effect. That is because service instances started by Cloudera Manager
+        do not read configurations from the default locations. To use HDFS as an
+        example, when not managed by Cloudera Manager, there would usually be
+        one HDFS configuration per host, located at
+          <code class="ph codeph">/etc/hadoop/conf/hdfs-site.xml</code>. Server-side daemons
+        and clients running on the same host would all use that same
+        configuration.</p><p class="p">Cloudera Manager distinguishes between server and
+        client configuration. In the case of HDFS, the file
+          <code class="ph codeph">/etc/hadoop/conf/hdfs-site.xml</code> contains only
+        configuration relevant to an HDFS client. That is, by default, if you
+        run a program that needs to communicate with Hadoop, it will get the
+        addresses of the NameNode and JobTracker, and other important
+        configurations, from that directory. A similar approach is taken for
+          <code class="ph codeph">/etc/hbase/conf</code> and
+        <code class="ph codeph">/etc/hive/conf</code>.</p><div class="p">In contrast, the HDFS role
+        instances (for example, NameNode and DataNode) obtain their
+        configurations from a private per-process directory, under
+          <code class="ph codeph">/var/run/cloudera-scm-agent/process/</code><var class="keyword varname">unique-process-name</var>.
+        Giving each process its own private execution and configuration
+        environment allows Cloudera Manager to control each process
+        independently. For example, here are the contents of an example
+          <span class="ph filepath">879-hdfs-NAMENODE</span> process
+        directory:<pre class="pre codeblock"><code>$ tree -a /var/run/cloudera-scm-Agent/process/879-hdfs-NAMENODE/
+  /var/run/cloudera-scm-Agent/process/879-hdfs-NAMENODE/
+  ├── cloudera_manager_Agent_fencer.py
+  ├── cloudera_manager_Agent_fencer_secret_key.txt
+  ├── cloudera-monitor.properties
+  ├── core-site.xml
+  ├── dfs_hosts_allow.txt
+  ├── dfs_hosts_exclude.txt
+  ├── event-filter-rules.json
+  ├── hadoop-metrics2.properties
+  ├── hdfs.keytab
+  ├── hdfs-site.xml
+  ├── log4j.properties
+  ├── logs
+  │   ├── stderr.log
+  │   └── stdout.log
+  ├── topology.map
+  └── topology.py
+</code></pre></div>
+      Distinguishing between server and client configuration provides several
+      advantages: <ul class="ul" id="cmug_topic_2_2__ul_qgj_tny_jk">
+        <li class="li">Sensitive information in the server-side configuration, such as the
+          password for the Hive Metastore RDBMS, is not exposed to the
+          clients.</li>
+        <li class="li">A service that depends on another service may deploy with customized
+          configuration. For example, to get good HDFS read performance, Impala
+          needs a specialized version of the HDFS client configuration, which
+          may be harmful to a generic client. This is achieved by separating the
+          HDFS configuration for the Impala daemons (stored in the per-process
+          directory mentioned above) from that of the generic client
+            (<code class="ph codeph">/etc/hadoop/conf</code>).</li>
+        <li class="li">Client configuration files are much smaller and more readable. This
+          also avoids confusing non-administrator Hadoop users with irrelevant
+          server-side properties.</li>
+      </ul>
+    </section>
+  </div>
+<nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="../topics/cm-server-client-configuration.html">Server and Client Configuration</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm_mc_mod_configs.html">Modifying Configuration Properties Using Cloudera Manager</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/admin_global_config.html">Cluster-Wide Configuration</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm_mc_config_snippet.html">Custom Configuration</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm-set-advanced-configuration-service.html">Setting an Advanced Configuration Snippet for a Runtime Component</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm-set-advanced-configuration-cluster.html">Setting an Advanced Configuration Snippet for a Cluster</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm_mc_stale_configuration.html">Stale Configurations</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm_mc_client_config.html">Client Configuration Files</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm_mc_revert_configs.html">Viewing and Reverting Configuration Changes</a></strong><br></li></ul></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

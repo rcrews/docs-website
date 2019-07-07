@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="concept"><meta name="DC.Relation" scheme="URI" content="../topics/cm-cloudera-manager-overview.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-api-get-configuration.html"><meta name="DC.Relation" scheme="URI" content="../topics/cm-api-backup-restore-configuration.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7f20"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Cloudera Manager API</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Cloudera Manager API</h1>
+  
+  <div class="body conbody">
+    <p class="p" id="xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7f20__CM-API-intro">The Cloudera Manager API provides configuration and
+      service lifecycle management, service health information and metrics, and
+      allows you to configure Cloudera Manager itself. The API is served on the
+      same host and port as the <a class="xref" href="cm_intro_admin_console.html#cmug_topic_3_2">Cloudera Manager Admin Console</a>, and does not require
+      an extra process or extra configuration. The API supports HTTP Basic
+      Authentication, accepting the same users and credentials as the Cloudera
+      Manager Admin Console.</p>
+    <p class="p">You can also access the Cloudera Manager Swagger API user interface from
+      the <span class="ph uicontrol">Cloudera Manager Admin Console</span>. Go to
+          <span class="ph menucascade"><span class="ph uicontrol">Support</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">API
+          Explorer</span></span> to open Swagger.</p>
+    <p class="p toc inpage"></p>
+    <section class="section" id="xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7f20__section_tq5_h4q_5n"><h2 class="title sectiontitle">API Documentation Resources</h2>
+      
+      <div class="p">
+        <ul class="ul" id="xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7f20__ul_ojf_jxf_1l">
+          <li class="li"><a class="xref" href="http://cloudera.github.io/cm_api/docs/quick-start/" target="_blank">Quick Start</a></li>
+          <li class="li"></li>
+          <li class="li"></li>
+          <li class="li"><a class="xref" href="http://cloudera.github.io/cm_api/docs/python-client/" target="_blank">Python Client</a>
+            (deprecated)</li>
+          <li class="li"><a class="xref" href="https://cloudera.github.io/cm_api/docs/python-client-swagger/" target="_blank">Python Client</a>
+            (Swagger-based)</li>
+          <li class="li"><a class="xref" href="https://cloudera.github.io/cm_api/docs/java-client-swagger/" target="_blank">Java Client</a>
+            (Swagger-based)</li>
+          <li class="li"><a class="xref" href="https://archive.cloudera.com/cm6/6.1.0/generic/jar/cm_api/swagger-html-sdk-docs/java/README.html" target="_blank">Java SDK Reference</a></li>
+          <li class="li"><a class="xref" href="cm_intro_automation_api.html#xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7f17">Using the Cloudera Manager API for Cluster Automation</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="example" id="xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7f20__example_jrl_5ln_tm"><h2 class="title sectiontitle">Obtaining Configuration Files</h2>
+      
+      <ol class="ol" id="xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7f20__ol_sjp_ttn_tm">
+        <li class="li">Obtain the list of a service's
+          roles:<pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/<var class="keyword varname">clusterName</var>/services/<var class="keyword varname">serviceName</var>/roles</code></pre></li>
+        <li class="li">Obtain the list of configuration files a process is
+          using:<pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/<var class="keyword varname">clusterName</var>/services/<var class="keyword varname">serviceName</var>/roles/<var class="keyword varname">roleName</var>/process</code></pre></li>
+        <li class="li">Obtain the content of any particular
+            file:<pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/<var class="keyword varname">clusterName</var>/services/<var class="keyword varname">serviceName</var>/roles/<var class="keyword varname">roleName</var>/process/
+configFiles/<var class="keyword varname">configFileName</var></code></pre><div class="p">For
+            example:<pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/Cluster%201/services/OOZIE-1/roles/
+OOZIE-1-OOZIE_SERVER-e121641328fcb107999f2b5fd856880d/process/configFiles/oozie-site.xml</code></pre></div></li>
+      </ol>
+    </div>
+    <div class="example" id="xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7f20__example_txn_qcw_yr"><h2 class="title sectiontitle">Retrieving Service and Host Properties</h2>
+      
+      <div class="p">To update a service property using the Cloudera Manager APIs, you'll
+        need to know the name of the property, not just the display name. If you
+        know the property's display name but not the property name itself,
+        retrieve the documentation by requesting any configuration object with
+        the query string <code class="ph codeph">view=FULL</code> appended to the URL. For
+        example:<pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//clusters/Cluster%201/services/<var class="keyword varname">service_name</var>/config?view=FULL </code></pre></div>
+      <div class="p">Search the results for the display name of the desired property. For
+        example, a search for the display name <strong class="ph b">HDFS Service Environment
+          Advanced Configuration Snippet (Safety Valve)</strong> shows that the
+        corresponding property name is
+          <code class="ph codeph">hdfs_service_env_safety_valve</code>:<pre class="pre codeblock json"><code>{
+   "name" : "hdfs_service_env_safety_valve",
+   "require" : false,
+   "displayName" : "HDFS Service Environment Advanced Configuration Snippet (Safety Valve)",
+   "description" : "For advanced use onlyu, key/value pairs (one on each line) to be inserted into a roles
+   environment. Applies to configurations of all roles in this service except client configuration.",
+   "relatedName" : "",
+   "validationState" : "OK"
+}</code></pre></div>
+    </div>
+    <section class="section" id="xd_583c10bfdbd326ba--7f25092b-13fba2465e5--7f20__section_hcr_1xv_ls"> Similar to finding service properties, you
+      can also find host properties. First, get the host IDs for a cluster with
+      the URL:
+      <pre class="pre codeblock"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//hosts</code></pre>
+      This should return host objects of the form:
+      <pre class="pre codeblock json"><code>{
+   "hostId" : "2c2e951c-aaf2-4780-a69f-0382181f1821",
+   "ipAddress" : "10.30.195.116",
+   "hostname" : "<var class="keyword varname">cm_server_host</var>",
+   "rackId" : "/default",
+   "hostUrl" : "http://<var class="keyword varname">cm_server_host</var>:7180/cmf/hostRedirect/2c2e951c-adf2-4780-a69f-0382181f1821",
+   "maintenanceMode" : false,
+   "maintenanceOwners" : [ ],
+   "commissionState" : "COMMISSIONED",
+   "numCores" : 4,
+   "totalPhysMemBytes" : 10371174400
+}</code></pre>
+      Then obtain the host properties by including one of the returned host IDs
+      in the URL:
+      <pre class="pre codeblock cdoc-input"><code>http://<var class="keyword varname">cm_server_host</var>:7180/api//hosts/2c2e951c-adf2-4780-a69f-0382181f1821?view=FULL </code></pre>
+    </section>
+  </div>
+<nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="../topics/cm-api-get-configuration.html">Using the Cloudera Manager API to Obtain Configuration Files</a></strong><br></li><li class="link ulchildlink"><strong><a href="../topics/cm-api-backup-restore-configuration.html">Backing Up and Restoring the Cloudera Manager Configuration</a></strong><br></li></ul><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/cm-cloudera-manager-overview.html">Cloudera Manager Overview</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

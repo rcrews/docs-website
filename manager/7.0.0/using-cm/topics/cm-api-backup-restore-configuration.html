@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="task"><meta name="description" content=""><meta name="DC.Relation" scheme="URI" content="../topics/cm_intro_api.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="untitled5"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Backing Up and Restoring the Cloudera Manager Configuration</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Backing Up and Restoring the Cloudera Manager Configuration </h1>
+    
+    <div class="body taskbody"><p class="shortdesc"></p>
+        <section class="section context">
+      <p class="p">You can use the Cloudera Manager REST API to export and import all of
+        its configuration data. The API exports a JSON document that contains
+        configuration data for the Cloudera Manager instance. You can use this
+        JSON document to back up and restore a Cloudera Manager deployment. </p>
+      
+    </section>
+        <p class="li stepsection">Exporting the Cloudera Manager Configuration</p><ol class="ol steps"><li class="li step stepexpand"><span class="ph cmd">Export the Cloudera Manager configuration:</span><ol type="a" class="ol substeps">
+          <li class="li substep substepexpand"><span class="ph cmd">Log in to the Cloudera Manager server host as the
+                <code class="ph codeph">root</code> user.</span></li>
+          <li class="li substep substepexpand"><span class="ph cmd">Run the following command:</span><div class="itemgroup info">
+              <pre class="pre codeblock cdoc-input"><code># curl -u <var class="keyword varname">admin_uname</var>:<var class="keyword varname">admin_pass</var> "http://<var class="keyword varname">cm_server_host</var>:7180/api//cm/deployment" &gt;
+<var class="keyword varname">path_to_file</var>/cm-deployment.json</code></pre>
+              <div class="p">Where:<ul class="ul">
+                  <li class="li"><code class="ph codeph"><var class="keyword varname">admin_uname</var></code> is a
+                    username with either the Full Administrator or Cluster
+                    Administrator role.</li>
+                  <li class="li"><code class="ph codeph"><var class="keyword varname">admin_pass</var></code> is the
+                    password for the <var class="keyword varname">admin_uname</var>
+                    username.</li>
+                  <li class="li"><code class="ph codeph"><var class="keyword varname">cm_server_host</var></code> is the
+                    hostname of the Cloudera Manager server. </li>
+                  <li class="li"><code class="ph codeph"><var class="keyword varname">path_to_file</var></code> is the
+                    path to the file where you want to save the
+                    configuration.</li>
+                </ul></div>
+            </div></li>
+        </ol></li><li class="li step stepexpand"><span class="ph cmd">Redact Sensitive information from the Exported
+          Configuration</span><div class="itemgroup info">
+          <div class="p">The exported configuration may contain passwords and other
+            sensitive information. You can configure redaction of the sensitive
+            items by specifying a JVM parameter for Cloudera Manager. When you
+            set this parameter, API calls to Cloudera Manager for configuration
+            data do not include the sensitive information. <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0"><tbody><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="Important" src="/common/themes/pre-hdp-3.1/images/admon/important.png"></td><th align="left"><div class="admon-title-text">Important</div></th></tr><tr><td><div class="admon-text">If you configure this redaction, you cannot use
+              an exported configuration to restore the configuration of your
+              cluster due to the redacted information.</div></td></tr></tbody></table></div></div>
+          <p class="p">To configure redaction for the API:</p>
+        </div><ol type="a" class="ol substeps">
+          <li class="li substep substepexpand"><span class="ph cmd">Log in the Cloudera Manager server host</span></li>
+          <li class="li substep substepexpand"><span class="ph cmd">Edit the
+                <code class="ph codeph">/etc/default/cloudera-scm-server</code> file by adding
+              the following property (separate each property with a space) to
+              the line that begins with <samp class="ph systemoutput sysout">export
+                CMF_JAVA_OPTS</samp>.</span><div class="itemgroup info"><pre class="pre codeblock cdoc-input-file"><code>-Dcom.cloudera.api.redaction=true</code></pre>For
+              example:<pre class="pre codeblock cdoc-input"><code>export CMF_JAVA_OPTS="-Xmx2G <strong class="ph b">-Dcom.cloudera.api.redaction=true</strong>"</code></pre></div></li>
+          <li class="li substep substepexpand"><span class="ph cmd">Restart Cloudera Manager:</span><div class="itemgroup info">
+              <pre class="pre codeblock cdoc-input"><code>sudo service cloudera-scm-server restart</code></pre>
+            </div></li>
+        </ol></li><li class="li step stepexpand"><span class="ph cmd">Restore the Cloudera Manager Configuration</span><div class="itemgroup info">
+          
+          <p class="p">Using a previously saved JSON document that contains the Cloudera
+            Manager configuration data, you can restore that configuration to a
+            running cluster. </p>
+        </div><ol type="a" class="ol substeps">
+          <li class="li substep substepexpand"><span class="ph cmd">Using the Cloudera Manager Administration Console, stop
+              all running services in your cluster:</span><div class="itemgroup info">
+              <ol class="ol" type="i">
+                <li class="li">On the
+                      <span class="ph menucascade"><span class="ph uicontrol">Home</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Status</span></span>
+                  tab, click <img class="image" id="untitled5__image_mbq_hnq_zhb" src="../images/down_arrow.png">
+                  to the right of the cluster name and select <strong class="ph b">Stop</strong>.</li>
+                <li class="li">Click <strong class="ph b">Stop</strong> in the confirmation screen. The <strong class="ph b">Command
+                    Details</strong> window shows the progress of stopping
+                    services.<p class="p">When <strong class="ph b">All services successfully stopped</strong>
+                    appears, the task is complete and you can close the
+                      <strong class="ph b">Command Details</strong> window.</p></li>
+              </ol>
+              <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0"><tbody><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="Warning" src="/common/themes/pre-hdp-3.1/images/admon/warning.png"></td><th align="left"><div class="admon-title-text">Warning</div></th></tr><tr><td><div class="admon-text">If you do not stop the cluster before making
+                this API call, the API call will stop <em class="ph i">all</em> cluster
+                services before running the job. Any running jobs and data are
+                lost.</div></td></tr></tbody></table></div>
+            </div></li>
+          <li class="li substep substepexpand"><span class="ph cmd">Log in to the Cloudera Manager server host as the
+                <code class="ph codeph">root</code> user.</span></li>
+          <li class="li substep substepexpand"><span class="ph cmd">Run the following command: </span><div class="itemgroup info">
+              <pre class="pre codeblock cdoc-input"><code>curl -H "Content-Type: application/json" --upload-file <var class="keyword varname">path_to_file</var>/cm-deployment.json -u admin:admin http://<var class="keyword varname">cm_server_host</var>:7180/api//cm/deployment?deleteCurrentDeployment=true</code></pre>
+              <div class="p">Where: <ul class="ul" id="untitled5__ul_cgd_mzd_nr">
+                  <li class="li"><code class="ph codeph"><var class="keyword varname">admin_uname</var></code> is a
+                    username with either the Full Administrator or Cluster
+                    Administrator role.</li>
+                  <li class="li"><code class="ph codeph"><var class="keyword varname">admin_pass</var></code> is the
+                    password for the <var class="keyword varname">admin_uname</var>
+                    username.</li>
+                  <li class="li"><code class="ph codeph"><var class="keyword varname">cm_server_host</var></code> is the
+                    hostname of the Cloudera Manager server. </li>
+                  <li class="li"><code class="ph codeph"><var class="keyword varname">path_to_file</var></code> is the
+                    path to the file containing the JSON configuration
+                    file.</li>
+                </ul></div>
+            </div></li>
+          <li class="li substep substepexpand"><span class="ph cmd">Restart the Cloudera Manager Server.</span><div class="itemgroup info">
+              <dl class="dl" id="untitled5__restart-cm-server">
+                
+                  <dt class="dt dlterm" id="untitled5__cm_os_systemd">RHEL 7, SLES 12, Debian 8, Ubuntu 16.04
+                    and higher</dt>
+                  <dd class="dd">
+                    <pre class="pre codeblock cdoc-input"><code>sudo systemctl restart cloudera-scm-server</code></pre>
+                  </dd>
+                
+                
+                  <dt class="dt dlterm" id="untitled5__cm_os_services">RHEL 5 or 6, SLES 11, Debian 6 or 7,
+                    Ubuntu 12.04 or 14.04</dt>
+                  <dd class="dd">
+                    <pre class="pre codeblock cdoc-input"><code>sudo service cloudera-scm-server restart</code></pre>
+                  </dd>
+                
+              </dl>
+            </div></li>
+        </ol></li></ol>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/cm_intro_api.html">Cloudera Manager API</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>
