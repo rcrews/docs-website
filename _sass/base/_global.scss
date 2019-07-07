@@ -270,7 +270,10 @@ a.hash-link     { display:none; } // Show-hide handled by jQuery
 // LISTS
 ol              { padding-left:20px; }  // Flush by default.
 ol li           { margin-bottom:5px; }
-ul ul           { padding:0px; }
+// ul ul           { padding:0px; }
+
+dt              { font-weight:400; }
+dd              { margin-left:0; margin-bottom:12px;  }
 
 /* No Indent for the list */
 ul.no-indent,

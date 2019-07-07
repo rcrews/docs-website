@@ -130,6 +130,7 @@ body                    { margin: 0; }
     .product-name       { display:block; margin-left:50px; padding-top:5px;  }
     .product-logo       { width:40px; float:left; }
     .ctoc               {
+        ul              { padding:0; }
         li              { padding-left:0; list-style-type:none; position:relative;
             &.open>.expand  { color:$bright-blue; }
             &.active>.item { border-left:3px solid $bright-orange;
@@ -217,3 +218,15 @@ body                    { margin: 0; }
     .open-close         { box-sizing:border-box; position: absolute; height:3rem; width:100%; bottom: 0; right:0; font-size: 200%;  text-align:right; padding-right: 20px; color:$bright-orange; background-color:#323544; box-shadow:0 -10px 10px #323544;}
 }
 
+.product-home           {
+    .product-section    { box-shadow: 0 0 10px #d6d6d6; padding:30px 20px; margin:20px 0;
+        .icon           { display:none; }
+        .section-title  { margin:0 0 15px; }
+        .book .title    { margin-bottom:3px; }
+    }
+
+    #section-releasenotes { box-shadow:none; background-color:#686b79; padding:10px 30px;
+        .section-title   { display:none;  }
+        a                { color:#fff; text-decoration:underline; }
+    }
+}

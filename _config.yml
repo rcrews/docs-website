@@ -35,6 +35,43 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+# And exclude these to make the compilation fast on my dev environment.
+  - cem
+  - dlm
+  - hdp
+  - kafka
+  - smm
+  - cfm
+  - dp
+  - hdp-for-cloud
+  - kudu
+  - teradata-connector
+  - cloudbreak
+  - dps
+  - hdp-search
+  - machine-learning
+  - dss
+  - hive-jdbc
+  - management-console
+  - accumulo
+  - csp
+  - hive-odbc
+  # manager
+  - ambari
+  - das
+  - impala-jdbc
+  - netezza-connector
+  - cdh
+  - data-hub
+  - hcp
+  - impala-odbc
+  # runtime - What we're using for testing.
+  - cdsw
+  - director
+  - hdf
+  - smartsense
+
+
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/

@@ -1,89 +1,68 @@
 ---
-layout: indexpages
+layout: new_docux
 ---
-<div class="loading-sections"><i class="fa fa-spinner fa-spin"></i></div>
-<section class="ps product-sections">
-    <div>
-        {% for section in page.sections -%}
-        <div class="product-section" id="section-{{ section.name }}">
-            <div>
-                <div class="section_content">
-                    <div class="icon"><img src="/common/img/section_icons/icon-{{ section.name | downcase }}.png" onerror='this.onerror = null; this.src="/common/img/section_icons/icon-empty.png"'></div>
-                    <h2>{{ section.title }}</h2>
-                    {% if section.books -%}
-                    <div class="books">
-                        {% for book in section.books -%}
-                            {% if book.url contains '//' -%}
-                                {% assign full_url = book.url -%}
-                            {% else -%}
-                                {% assign full_url = page.base-path | append:book.url -%}
-                            {% endif -%}
-                            {% if book.pdf contains '//' -%}
-                                {% assign full_pdf = book.pdf -%}
-                            {% else -%}
-                                {% assign full_pdf = page.base-path | append:book.pdf -%}
-                            {% endif -%}
-                            {% assign short_name = book.url | remove: "/index.html" -%}
-                            <div class="book">
-                                <div class="title">
-                                    {% if book.pdf -%}
-                                    <a href="{{ full_pdf }}" class="pdf-link"><img alt="PDF" src="/common/img/pdf_icon.png"></a>
-                                    {% endif -%}
-                                    {% if book.contents -%}
-                                        <a class="fancybox desktop" href="#{{ short_name }}">{{ book.title }}</a>
-                                        <a class=" mobile" href="{{ full_url }}">{{ book.title }}</a>
-                                    {% else -%}
-                                        <a href="{{ full_url }}">{{ book.title }}</a>
-                                    {% endif -%}
-                                </div>
-                                {% if book.contents -%}
-                                {% comment -%}
-                                <!-- Used to try and do a lookup with this, but it was too complex for Jekyll -->
-                                <!-- Is there an automatic way to detect if book contents have been generated for this book? -->
-                                {% endcomment -%}
-                                <div class="bk_contents" id="{{ short_name }}">
-                                    <div class="cover">
-                                        <a href="{{ full_url | replace: '/index.html', '/content/index.html' }}"><img src="/common/img/covers/generic_cover.png"></a>
-                                        <div class="pdf"><a href="{{ full_pdf }}" class="small btn"><i class="fa fa-file-pdf-o"></i>&nbsp; PDF Version</a></div>
-                                    </div>
-                                    {% if book.title contains 'HDB' -%}
-                                    {% if page.version == '2.6.4' or page.version == '2.6.5' -%}
-                                    <p class="no-longer-acquire">As of December 2017, Hortonworks HDB is no longer available as part of new service subscriptions.</p>
-                                    {% endif -%}
-                                    {% endif -%}
-                                    <h3 class="title"><a href="{{ full_url }}">{{ book.title }}</a></h3>
-                                    <ol class="">
-                                        {% for chapter in book.contents -%}
-                                        <li><a href="{{ page.base-path | append: chapter.url }}">{{ chapter.chapter }}</a></li>
-                                        {% endfor -%}
-                                   </ol>
-                                </div>
-                                {% endif -%}
-                            </div>
-                        {% endfor -%}
-                    </div> <!-- // End section_content -->
-                </div>
-                {% endif -%}
-                <!--
-                {% if section.subprojects -%}
-                <div class="meta related-projects">
-                    <h3>Related Projects</h3>
-                    <ul class="projects">
-                        {% for project in section.subprojects -%}
-                            {% if project.url -%}
-                                <li><a href="{{ project.url }} ">{{ project.name }} </a></li>
-                            {% else -%}
-                                <li>{{ project.name }}</li>
-                            {% endif -%}
-                        {% endfor -%}
-                    </ul>
-                </div>
-                {% endif -%}
-                -->
-            </div>
-        </div>
-        <div class="clearance"></div>
-        {% endfor -%}
+<h1>{{ page.title }}</h1>
+<div class="product-home">
+    <div class="product-content">
+        {{ content }}
     </div>
-</section>
-<script></script>
+    {% for section in page.sections -%}
+    <div class="product-section" id="section-{{ section.name }}">
+        <div class="icon"><img src="/common/img/section_icons/icon-{{ section.name | downcase }}.png" onerror='this.onerror = null; this.src="/common/img/section_icons/icon-empty.png"'></div>
+        <h2 class="section-title">{{ section.title }}</h2>
+        {% if section.books -%}
+            <div class="books">
+                {% for book in section.books -%}
+                    {% if book.url contains '//' -%}
+                        {% assign full_url = book.url -%}
+                    {% else -%}
+                        {% assign full_url = page.base-path | append:book.url -%}
+                    {% endif -%}
+                    {% if book.pdf contains '//' -%}
+                        {% assign full_pdf = book.pdf -%}
+                    {% else -%}
+                        {% assign full_pdf = page.base-path | append:book.pdf -%}
+                    {% endif -%}
+                    {% assign short_name = book.url | remove: "/index.html" -%}
+                    <div class="book">
+                        <div class="title">
+                            {% if book.pdf -%}
+                            <a href="{{ full_pdf }}" class="pdf-link"><img alt="PDF" src="/common/img/pdf_icon.png"></a>
+                            {% endif -%}
+                            {% if book.contents -%}
+                                <a class="fancybox desktop" href="#{{ short_name }}">{{ book.title }}</a>
+                                <a class=" mobile" href="{{ full_url }}">{{ book.title }}</a>
+                            {% else -%}
+                                <a href="{{ full_url }}">{{ book.title }}</a>
+                            {% endif -%}
+                        </div>
+                        {% if book.contents -%}
+                        {% comment -%}
+                        <!-- Used to try and do a lookup with this, but it was too complex for Jekyll -->
+                        <!-- Is there an automatic way to detect if book contents have been generated for this book? -->
+                        {% endcomment -%}
+                        <div class="bk_contents" id="{{ short_name }}">
+                            <div class="cover">
+                                <a href="{{ full_url | replace: '/index.html', '/content/index.html' }}"><img src="/common/img/covers/generic_cover.png"></a>
+                                <div class="pdf"><a href="{{ full_pdf }}" class="small btn"><i class="fa fa-file-pdf-o"></i>&nbsp; PDF Version</a></div>
+                            </div>
+                            {% if book.title contains 'HDB' -%}
+                            {% if page.version == '2.6.4' or page.version == '2.6.5' -%}
+                            <p class="no-longer-acquire">As of December 2017, Hortonworks HDB is no longer available as part of new service subscriptions.</p>
+                            {% endif -%}
+                            {% endif -%}
+                            <h3 class="title"><a href="{{ full_url }}">{{ book.title }}</a></h3>
+                            <ol class="">
+                                {% for chapter in book.contents -%}
+                                <li><a href="{{ page.base-path | append: chapter.url }}">{{ chapter.chapter }}</a></li>
+                                {% endfor -%}
+                           </ol>
+                        </div>
+                        {% endif -%}
+                    </div>
+                {% endfor -%}
+            </div> <!-- // End section_content -->
+        {% endif -%}
+    </div>
+    {% endfor -%}
+</div>
