@@ -137,11 +137,6 @@ json:
         href: kudu-overview/index.html
         sub: kudu-overview/navigation.json
 
-      - text: materialized-view-commands
-        id: materialized-view-commands
-        href: materialized-view-commands/index.html
-        sub: materialized-view-commands/navigation.json
-
       - text: monitoring-impala
         id: monitoring-impala
         href: monitoring-impala/index.html
@@ -156,16 +151,6 @@ json:
         id: securing-hue
         href: securing-hue/index.html
         sub: securing-hue/navigation.json
-
-      - text: security-ranger-auditing
-        id: security-ranger-auditing
-        href: security-ranger-auditing/index.html
-        sub: security-ranger-auditing/navigation.json
-
-      - text: security-ranger-authorization
-        id: security-ranger-authorization
-        href: security-ranger-authorization/index.html
-        sub: security-ranger-authorization/navigation.json
 
       - text: troubleshooting-hue
         id: troubleshooting-hue
@@ -287,6 +272,27 @@ json:
           #   id: bk_cloud-data-access
           #   href: bk_cloud-data-access/index.html
 
+      - text: Security
+        id: security
+        sub:
+        - text: security-ranger-auditing
+          id: security-ranger-auditing
+          href: security-ranger-auditing/index.html
+          sub: security-ranger-auditing/navigation.json
+
+        - text: security-ranger-authorization
+          id: security-ranger-authorization
+          href: security-ranger-authorization/index.html
+          sub: security-ranger-authorization/navigation.json
+
+  - text: Reference
+    id: reference
+    sub:
+      - text: materialized-view-commands
+        id: materialized-view-commands
+        href: materialized-view-commands/index.html
+        sub: materialized-view-commands/navigation.json
+
   - text: Release Notes
     id: releasenotes
     sub:
@@ -294,4 +300,4 @@ json:
         id: release-notes
         href: release-notes/index.html
         sub: release-notes/navigation.json
-
+---

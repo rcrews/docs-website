@@ -17,64 +17,129 @@ sections:
     books:
       - title: Apache Hive Overview
         url: hive-overview/index.html
-      - title: Data Governance Overview
-        url: atlas-overview/index.html
-      - title: Apache Spark Overview
-        url: spark-overview/index.html
-      - title: Apache Zeppelin Overview
-        url: zeppelin-overview/index.html
-      - title: HDP Security Overview
-        url: security-overview/index.html
-      - title: Apache Kafka Overview
-        url: kafka-overview/index.html
-      - title: Apache Storm Overview
-        url: storm-overview/index.html
 
-  - title: Installation & Upgrade
-    name: installation-upgrade
-    books:
-      - title: Installation
-        url:  installation.html
-      - title: Upgrade
-        url: upgrade.html
+      - title: administering-hue
+        url: administering-hue/index.html
+
+      - title: administering-kudu
+        url: administering-kudu/index.html
+
+      - title: configuring-apache-hive
+        url: configuring-apache-hive/index.html
+
+      - title: hive-introduction
+        url: hive-introduction/index.html
+
+      - title: hue-introduction
+        url: hue-introduction/index.html
+
+      - title: impala-client
+        url: impala-client/index.html
+
+      # - title: impala-file-formats
+      #   url: impala-file-formats/index.html
+
+      # - title: impala-metadata
+      #   url: impala-metadata/index.html
+
+      # - title: impala-monitoring
+      #   url: impala-monitoring/index.html
+
+      # - title: impala-overview
+      #   url: impala-overview/index.html
+
+      # - title: impala-performance
+      #   url: impala-performance/index.html
+
+      # - title: impala-performance-tuning
+      #   url: impala-performance-tuning/index.html
+
+      # - title: impala-planning
+      #   url: impala-planning/index.html
+
+      # - title: impala-resource
+      #   url: impala-resource/index.html
+
+      # - title: impala-scalability
+      #   url: impala-scalability/index.html
+
+      # - title: impala-security
+      #   url: impala-security/index.html
+
+      # - title: impala-storage
+      #   url: impala-storage/index.html
+
+      # - title: impala-timeouts
+      #   url: impala-timeouts/index.html
+
+      # - title: impala-troubleshooting
+      #   url: impala-troubleshooting/index.html
+
+      # - title: kudu-design
+      #   url: kudu-design/index.html
+
+      # - title: kudu-development
+      #   url: kudu-development/index.html
+
+      # - title: kudu-install-and-upgrade
+      #   url: kudu-install-and-upgrade/index.html
+
+      # - title: kudu-integration
+      #   url: kudu-integration/index.html
+
+      # - title: kudu-overview
+      #   url: kudu-overview/index.html
+
+      # - title: monitoring-impala
+      #   url: monitoring-impala/index.html
+
+      # - title: navigation_unprocessed.json
+      #   url: navigation_unprocessed.json/index.html
+
+      # - title: securing-hue
+      #   url: securing-hue/index.html
+
+      # - title: troubleshooting-hue
+      #   url: troubleshooting-hue/index.html
+
+      # - title: troubleshooting-impala
+      #   url: troubleshooting-impala/index.html
+
+      # - title: troubleshooting-kudu
+      #   url: troubleshooting-kudu/index.html
+
+      # - title: tuning-hue
+      #   url: tuning-hue/index.html
+
+      # - title: using-cbo-in-hive
+      #   url: using-cbo-in-hive/index.html
+
+      # - title: using-hue
+      #   url: using-hue/index.html
+
+      # - title: workflow-management
+      #   url: workflow-management/index.html
+
+      # - title: workload-management
+      #   url: workload-management/index.html
+
+      # - title: yarn-data-management
+      #   url: yarn-data-management/index.html
 
   - title: How To
     name: how-to
     books:
-      - title: Data Storage & Data OS
-        url:  data-storage-data-os.html
       - title: Data Access
         url: data-access.html
-      - title: Streaming
-        url: streaming.html
-      - title: Governance
-        url: governance.html
-      - title: Data Science
-        url: data-science.html
+
       - title: Security
         url: security.html
 
   - title: Reference
     name: reference
     books:
-      - title: Cluster Planning
-        url: cluster-planning/index.html
-      - title: Apache Hive Workload Management Commands
-        url: hive-workload-commands/index.html
       - title: Materialized View Commands
-        url: materialized-view/index.html
-      - title: HDFS ACLs
-        url: hdfs-acls/index.html
-      - title: ZooKeeper ACLs
-        url: zookeeper-acls/index.html
-      - title: Audit Reference
-        url: audit-ref/index.html
-      - title: Security Reference
-        url: security-reference/index.html
-      - title: Apache Ranger Public REST APIs
-        url: ranger-apis/index.html
-      - title: Teradata Connector User Guide
-        url: bk_teradata-connector-user-guide/index.html
+        url: materialized-view-commands/index.html
 
 ---
 
