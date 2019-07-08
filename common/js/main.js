@@ -74,7 +74,7 @@ var NEWUX = (function($) {
         bindEvents: function() {
 
             // Catch Link Clicks from Pubmenu and Feed through System
-            $('.ctoc a, .cpage a').on('click', this.requestNewContent.bind(this));
+            $('.ctoc a, .cpage a').on('click', this.requestNewPage.bind(this));
 
             // Nav Menu Expand/Contract
             $('.ctoc li.xp').on('click', this.handleNavOpen);
@@ -115,7 +115,7 @@ var NEWUX = (function($) {
         },
         handleBackButton: function() {
             let url = location.pathname;
-            this.loadNewContent(url);
+            this.loadContent(url);
         },
         loadNav: function() {
             // When we load up the JS for the page, we rely on the navigation.json file that is present in the product root.
@@ -216,18 +216,15 @@ var NEWUX = (function($) {
             $this.children('.expand').text('\uf106');
             $this.addClass('open');
         },
-        requestNewContent: function(e) {
+        requestNewPage: function(e) {
             // Grab the Recommended URL
             let url = $(e.target).attr('href');
-
-            // Set the Active Item on the Nav.
-            // $(e.target).closest('li').addClass('active');
 
             // Confirm this is actually in the menu tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
             if(destination) {
                 // If it's a page in the menu tree...
-                this.loadNewContent(url);
+                this.loadContent(url);
                 this.pagestate.breadpath.length = 0; // This should really be part of mapPageState, but I can't do it because I'm recursing on that function.
                 this.mapPageState(this.nav_tree, destination.id);
                 this.updatePageState();
@@ -236,11 +233,10 @@ var NEWUX = (function($) {
                 history.pushState(null, null, url);
 
                 // TODO! Notify Google Analytics about the new page load.
-
                 e.preventDefault();
             }
         },
-        loadNewContent: function(url) {
+        loadContent: function(url) {
             // Update New Content with Transition Effects - TODO... just handle this with CSS?
             $( "#content" ).fadeOut(200, function() {
                 $(this).hide().load( url + " #content", function(response, status, xhr) {
@@ -318,7 +314,8 @@ var NEWUX = (function($) {
             $('.cpage .short-next a').attr('href', this.pagestate.next.href);
 
             // Breadcrumbs
-            // $('.inner-breadcrumbs').html(this.pagestate.breadpath[this.pagestate.breadpath.length - 1].text);
+            console.log(this.pagestate.breadpath);
+            $('.inner-breadcrumbs').html(this.pagestate.breadpath[this.pagestate.breadpath.length - 1]);
 
             // Set the active item in the menu.
             $('.ctoc li').removeClass('active');
