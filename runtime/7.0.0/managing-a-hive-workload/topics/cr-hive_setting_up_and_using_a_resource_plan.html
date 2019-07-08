@@ -1,118 +1,39 @@
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="task"><meta name="description" content="Understanding the prerequisites for using workload management is critical. Prerequisites are running LLAP and setting up a YARN queue for workload management in addition to the LLAP queue. As administrator, you can define a resource plan using HiveQL DDL statements that typically include event-triggered resource pools for different users or applications. You can then manage workloads using the resource plan. After creating and enabling a resource plan, you must activate it. When you want to alter a resource plan or stop using it, you must disable it."><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_workload_management.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_workload_management_entity_data_in_sys.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_create_a_resource_plan.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_enable_a_resource_plan.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_activate_a_resource_plan.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_query_sys_database_for_plan_data.html"><meta name="DC.Relation" scheme="URI" content="../topics/cr-hive_disable_a_resource_plan.html"><meta name="DC.Relation" scheme="URI" content="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload-commands/content/hive_workload_management_command_summary.html"><meta name="DC.Relation" scheme="URI" content="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload-commands/content/hive_workload_trigger_counters.html"><meta name="DC.Relation" scheme="URI" content="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload/content/hive_interactive_queue.html"><meta name="DC.Relation" scheme="URI" content="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/performance-tuning/content/hive_setting_up_llap.html"><meta name="prodname" content="Cloudera Runtime"><meta name="version" content="1"><meta name="release" content="0"><meta name="modification" content="0"><meta name="brand" content="Cloudera Runtime"><meta name="rights" content="© 2019 Cloudera, Inc."><meta name="DC.Date.Created" content="2019-04-15"><meta name="DC.Date.Modified" content="2019-04-15"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="create_a_resource_plan_name"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>Setting up and using a resource plan</title><script type="application/javascript">
-      
-      
-    //The id for tree cookie
-    var treeCookieId = "treeview-bk_release-notes";
-    var language = "en";
-    var w = new Object();
-    //Localization
-    txt_filesfound = 'Results';
-    txt_enter_at_least_1_char = "You must enter at least one character.";
-    txt_browser_not_supported = "Please enable JavaScript.";
-    txt_please_wait = "Please wait. Search in progress...";
-    txt_results_for = "Results for: ";
-    
-    
-    </script><script type="application/javascript" src="https://code.jquery.com/jquery-1.4.3.min.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery-ui-1.8.2.custom.min.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery.cookie.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/jquery.treeview.min.js"></script><link href="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" rel="stylesheet" type="text/css" media="screen, projection"><script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js" type="application/javascript"></script><script type="application/javascript" src="/common/js/navigation.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/main.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/htmlFileList.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/htmlFileInfoList.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/nwSearchFnt.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/en_stemmer.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-1.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-2.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/index-3.js"></script><script type="application/javascript">
-      
-      
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-22950817-19', 'auto');
-    ga('send', 'pageview');
-    
-    
-    </script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/plugins.js"></script><script type="application/javascript" src="/common/themes/pre-hdp-3.1/js/scripts.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" type="application/javascript"></script><script type="application/javascript">
-      
-    // PAGE SPECIFIC SCRIPTS
-    
-    $('.chapters>li .dropdown').click(function () {
-    var $arrow = $(this).find('i.fa');
-    if( $arrow.hasClass('fa-chevron-down')) {
-    $(this).siblings('.sections').show();
-    $arrow.removeClass('fa-chevron-down').addClass('fa-chevron-up');
-    } else {
-    console.log('up');
-    $(this).siblings('.sections').hide();
-    $arrow.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-    }
-    });
-    
-    //  $('h3').on('mouseenter',function() {
-    //      console.log('received mouseover');
-    //      $(this).find('.hash-link').show();
-    //  });
-    
-    //  $('h3').on('mouseleave',function() {
-    //      $(this).find('.hash-link').hide();
-    //  });
-    
-    
-    // STICKY SIDEBARs
-    var stickySidebar = $('.sticky');
-    
-    if (stickySidebar.length > 0) {
-    var stickyHeight = stickySidebar.height(),
-    sidebarTop = stickySidebar.offset().top;
-    }
-    
-    // on scroll move the sidebar
-    $(window).scroll(function () {
-    if (stickySidebar.length > 0) {
-    var scrollTop = $(window).scrollTop();
-    console.log
-    
-    if (sidebarTop < scrollTop) {
-    stickySidebar.css('top', scrollTop - sidebarTop);
-    
-    // stop the sticky sidebar at the footer to avoid overlapping
-    var sidebarBottom = stickySidebar.offset().top + stickyHeight,
-    stickyStop = $('.main-content').offset().top + $('.main-content').height();
-    if (stickyStop < sidebarBottom) {
-    var stopPosition = $('.main-content').height() - stickyHeight;
-    stickySidebar.css('top', stopPosition);
-    }
-    }
-    else {
-    stickySidebar.css('top', '0');
-    }
-    }
-    });
-    
-    $(window).resize(function () {
-    if (stickySidebar.length > 0) {
-    stickyHeight = stickySidebar.height();
-    }
-    });
-    
-    // Initialize Syntax Highlighting
-    hljs.initHighlightingOnLoad();
-    
-    </script><style type="text/css">
-      
-      
-    input {
-    margin-bottom: 5px;
-    margin-top: 2px;
-    }
-    
-    .folder {
-    display: block;
-    height: 22px;
-    padding-left: 20px;
-    background: transparent url(/common/themes/pre-hdp-3.1/images/folder.gif) 0 0px no-repeat;
-    }
-    
-    </style><link href="/common/themes/pre-hdp-3.1/images/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-70x70.png" rel="icon" type="image/x-icon" sizes="32x32"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" rel="icon" type="image/x-icon" sizes="192x192"><link href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" rel="apple-touch-icon-precomposed" type="image/x-icon" sizes="192x192"><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css" rel="stylesheet"><link rel="stylesheet" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/main.css"><link rel="stylesheet" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/docux.css"><style type="text/css"></style><link rel="stylesheet" type="text/css" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/jquery-ui-1.8.2.custom.css"><link rel="stylesheet" type="text/css" media="screen, projection" href="/common/themes/pre-hdp-3.1/css/jquery.treeview.css"><link href="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css" rel="stylesheet" type="text/css" media="screen, projection"></head><body class="docs books"><div id="body_container"><div class="breadcrumb_bg"><!-- --></div><div id="navbar"><section class="ps topstrip"><div><!-- --></div></section></div><div id="mainbody"><section class="ps titlebar"><div><div class="breadcrumb"><a href="/">Hortonworks Docs</a> » <a id="index_page" href="../../index.html">Cloudera Runtime 1.0.0</a> » <span class="current_book">Managing an Apache Hive Workload</span></div><div class="book_title">Managing an Apache Hive Workload</div><div class="ebooks"><div class="formats"><span class="desc">Also available as:</span><div class="format"><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" title="Download a PDF of this document" class="pdficon" href="../cr-hive_managing_a_hive_workload.pdf"><img src="/common/themes/pre-hdp-3.1/images/pdf.png" alt="PDF"></a></div></div></div></div></section><div class="lowerbody"><section class="ps doc-content"><div><div class="aside left"><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div class="ui-tabs ui-widget ui-widget-content ui-corner-all"><div id="treeDiv" class="ui-tabs-panel ui-widget-content ui-corner-bottom"><img src="/common/themes/pre-hdp-3.1/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li><a href="../topics/cr-hive_workload_management.html">Workload management</a></li><li class="active"><a href="../topics/cr-hive_setting_up_and_using_a_resource_plan.html">Setting up and using a resource plan</a><ul><li><a href="../topics/cr-hive_create_a_resource_plan.html">Create a resource plan</a></li><li><a href="../topics/cr-hive_enable_a_resource_plan.html">Enable a resource plan</a></li><li><a href="../topics/cr-hive_activate_a_resource_plan.html">Activate a resource plan</a></li><li><a href="../topics/cr-hive_query_sys_database_for_plan_data.html">Query sys database for plan data</a></li><li><a href="../topics/cr-hive_disable_a_resource_plan.html">Disable a resource plan</a></li></ul></li><li><a href="../topics/cr-hive_workload_management_entity_data_in_sys.html">Workload management entity data in sys</a></li></ul></div></div></div></div></div><div class="formats"><div class="pdf"><!-- --></div></div></div><div class="next-prev-links"><span class="previouslink"><a class="link" href="../topics/cr-hive_workload_management.html" title="As administrator, you manage workloads by creating resource plans to improve parallel query execution and cluster sharing of queries using low-latency analytical processing (LLAP).">Prev</a></span><span class="nextlink"><a class="link" href="../topics/cr-hive_workload_management_entity_data_in_sys.html" title="From the Hive sys database, you can get information about workload management and other Hive entities.">Next</a></span></div><div id="content" aria-labelledby="ariaid-title1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="copyright" content="(C) Copyright 2019">
+<meta name="DC.rights.owner" content="(C) Copyright 2019">
+<meta name="DC.Type" content="concept">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="cmug_topic_10">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+<link rel="stylesheet" href="/common/css/main.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+<title>Events</title>
+</head>
+<body class="hg">
+<header class="chead">
+<div class="breadcrumbs"><span class="bread-home"><a href="/"><span class="text-home">Cloudera Docs</span></a></span> <span class="bread-category">Category</span></div>
+<div class="search"><input type="text" placeholder="Search Documentation"></div>
+<div class="launch-search"></div>
+<div class="launch-pubnav"></div>
+</header>
+<main class="cmain">
+<div class="cpage">
+<article class="maincontent">
+<div class="inner-breadcrumbs">Concepts</div>
+
+<div id="content" aria-labelledby="ariaid-title1">
     <h1 class="title topictitle1" id="ariaid-title1">Setting up and using a resource plan</h1>
-    
+
     <div class="body taskbody"><p class="shortdesc">Understanding the prerequisites for using
         workload management is critical. Prerequisites are running LLAP and setting up a YARN queue
         for workload management in addition to the LLAP queue. As administrator, you can define a resource plan using HiveQL DDL statements that
         typically include event-triggered resource pools for different users or applications. You
-        can then manage workloads using the resource plan. After creating and enabling a resource plan, you must activate it. 
+        can then manage workloads using the resource plan. After creating and enabling a resource plan, you must activate it.
         When you want to alter a resource plan or stop using it, you must disable it.</p>
       <div class="section prereq p">
             <ul class="ul" id="create_a_resource_plan_name__ul_fkk_kpv_dhb">
@@ -125,8 +46,42 @@
             </ul>
         </div>
     </div>
-<nav role="navigation" class="related-links"><ol class="olchildlinks"><li class="link olchildlink"><a href="../topics/cr-hive_create_a_resource_plan.html">Create a resource plan.</a><br>As administrator, you can create resource plans that configure your cluster for         different conditions, enabling you to improve parallel query execution and share queries on         nodes running LLAP. You can allocate resources to a pool of users, groups, or applications and trigger actions in a plan.</li><li class="link olchildlink"><a href="../topics/cr-hive_enable_a_resource_plan.html">Enable the resource plan.</a><br>You can enable, and optionally activate, a resource plan to manage a workload by         running a query.</li><li class="link olchildlink"><a href="../topics/cr-hive_activate_a_resource_plan.html">Activate the resource plan.</a><br>You can activate an enabled resource plan to apply the plan to a query workload to         start managing the workload.</li><li class="link olchildlink"><a href="../topics/cr-hive_query_sys_database_for_plan_data.html">Query the sys database for resource plan data.</a><br>You query the sys database in the Hive metastore to retrieve information about workload     management entities, such as a resource plan.</li><li class="link olchildlink"><a href="../topics/cr-hive_disable_a_resource_plan.html">Disable the resource plan.</a><br>You can disable a resource plan to modify it or to stop managing a workload by         running a query.</li></ol><div class="familylinks"></div><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload-commands/content/hive_workload_management_command_summary.html" target="_blank">Hive Workload Management Command Summary</a></div><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload-commands/content/hive_workload_trigger_counters.html" target="_blank">Workload trigger counters</a></div><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload/content/hive_interactive_queue.html" target="_blank">Configure a YARN queue for workload management</a></div><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/performance-tuning/content/hive_setting_up_llap.html" target="_blank">Set up LLAP</a></div></div></nav></div></div></section></div></div></div><section class="ps footer"><div><div class="copyright">© 2012–2019, Hortonworks, Inc.</div><div class="license">Document licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">Creative
-          Commons Attribution ShareAlike 4.0 License</a>.</div><div class="menulinks"><a href="https://hortonworks.com">Hortonworks.com</a> | 
-          <a href="#">Documentation</a> |
-          <a href="https://hortonworks.com/support/">Support</a> |
-          <a href="https://community.hortonworks.com/">Community</a></div></div></section></body></html>
+<nav role="navigation" class="related-links"><ol class="olchildlinks"><li class="link olchildlink"><a href="../topics/cr-hive_create_a_resource_plan.html">Create a resource plan.</a><br>As administrator, you can create resource plans that configure your cluster for         different conditions, enabling you to improve parallel query execution and share queries on         nodes running LLAP. You can allocate resources to a pool of users, groups, or applications and trigger actions in a plan.</li><li class="link olchildlink"><a href="../topics/cr-hive_enable_a_resource_plan.html">Enable the resource plan.</a><br>You can enable, and optionally activate, a resource plan to manage a workload by         running a query.</li><li class="link olchildlink"><a href="../topics/cr-hive_activate_a_resource_plan.html">Activate the resource plan.</a><br>You can activate an enabled resource plan to apply the plan to a query workload to         start managing the workload.</li><li class="link olchildlink"><a href="../topics/cr-hive_query_sys_database_for_plan_data.html">Query the sys database for resource plan data.</a><br>You query the sys database in the Hive metastore to retrieve information about workload     management entities, such as a resource plan.</li><li class="link olchildlink"><a href="../topics/cr-hive_disable_a_resource_plan.html">Disable the resource plan.</a><br>You can disable a resource plan to modify it or to stop managing a workload by         running a query.</li></ol><div class="familylinks"></div><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload-commands/content/hive_workload_management_command_summary.html" target="_blank">Hive Workload Management Command Summary</a></div><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload-commands/content/hive_workload_trigger_counters.html" target="_blank">Workload trigger counters</a></div><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/hive-workload/content/hive_interactive_queue.html" target="_blank">Configure a YARN queue for workload management</a></div><div><a class="link" href="http://docs-dev.cloudera.com.s3.amazonaws.com/HDPDocuments/CR/CR-master/performance-tuning/content/hive_setting_up_llap.html" target="_blank">Set up LLAP</a></div></div></nav></div>
+
+</article>
+<div class="short-prev"><a href="">«</a></div>
+<div class="short-next"><a href="">»</a></div>
+<div class="up"></div>
+<div class="prev"><a href="">« Getting Started with Apache Nifi</a></div>
+<div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div>
+</div>
+<aside class="pubmenu">
+<div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div>
+<nav class="ctoc"></nav>
+</aside>
+</main>
+<div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div>
+<nav class="product-drawer">
+<div class="full-logo"><img src="/common/img/cloudera.png"></div>
+<ul class="products">
+<li class="cat">Data Platforms</li>
+<li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li>
+<li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li>
+<li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li>
+<li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li>
+<li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li>
+<li class="cat">Data Services</li>
+<li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li>
+<li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li>
+<li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li>
+<li class="cat">Cloud Services</li>
+<li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li>
+<li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li>
+</ul>
+<div class="open-close">»</div>
+</nav>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/common/js/main.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script>
+</body>
+</html>
