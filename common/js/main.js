@@ -141,7 +141,11 @@ var NEWUX = (function($) {
                     // 2. Figure out what page I am, and update the page state
                     let active_url =  new URL(window.location.href);
                     let active_id = Utils.makeIdFromHref(active_url.pathname);
-                    this.mapPageState(this.nav_tree, active_id);
+
+                    // TODO! - We're looking for the page based on an id which we made up, but really we should just base it on the href which is always correct.
+
+                    let map = this.mapPageState(this.nav_tree, active_id);
+                    console.log(map);
 
                     // 3. Now build out the tree in HTML
                     let html = this.createHtmlTree(this.nav_tree);
@@ -279,15 +283,14 @@ var NEWUX = (function($) {
                     if(i+1 < navarray.length) {
                         this.pagestate.next = navarray[i+1]; // TODO!!! - This should really be the first child if the element has children!
                     }
-                    if(navarray[i].sub !== 'undefined') {
+                    if(typeof navarray[i].sub === 'object') {
                         this.pagestate.children = Utils.flatten(navarray[i].sub);
                     }
                     this.pagestate.depth = 1;
                     return true;
                 } else {
-
                     // Check if the item has kids....
-                    if(typeof navarray[i].sub !== 'undefined') {
+                    if(typeof navarray[i].sub === 'object') {
                         if(this.mapPageState(navarray[i].sub, id)) { // If the kid was it!
                             this.pagestate.breadpath.unshift(navarray[i]);
                             if(this.pagestate.depth === 1) {
@@ -313,9 +316,23 @@ var NEWUX = (function($) {
             $('.cpage .next a').attr('href', this.pagestate.next.href).html(this.pagestate.next.text + ' &raquo;' );
             $('.cpage .short-next a').attr('href', this.pagestate.next.href);
 
-            // Breadcrumbs
-            console.log(this.pagestate.breadpath);
-            $('.inner-breadcrumbs').html(this.pagestate.breadpath[this.pagestate.breadpath.length - 1]);
+            // Outer Breadcrumbs
+            if(this.pagestate.breadpath.length >= 2) {
+                let output = `<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`;
+                $('.bread-category').html(output);
+            }
+
+            // Inner Breadcrumbs
+            if(this.pagestate.breadpath.length >= 3) {
+                let output = "";
+                for(let i=2; i < this.pagestate.breadpath.length; i++ ) {
+                    if(i >= 3) {
+                        output += ' &rang; ';
+                    }
+                    output += `<a href="${this.pagestate.breadpath[i].href}">${this.pagestate.breadpath[i].text}</a>`;
+                }
+                $('.inner-breadcrumbs').html(output);
+            }
 
             // Set the active item in the menu.
             $('.ctoc li').removeClass('active');
