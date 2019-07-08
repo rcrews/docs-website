@@ -12,563 +12,556 @@ json:
   - text: Concepts
     id: concepts
     sub:
-      - text: Apache Hive Overview
+      - text: Hive Overview
         id: hive-overview
-        href: hive-overview/index.html
-        sub: hive-overview/navigation.json
+        href: /runtime/7.0.0/hive-overview/index.html
+        sub:
+          - text: Configuring Apache Hive
+            id: configuring-apache-hive
+            href: /runtime/7.0.0/configuring-apache-hive/index.html
+            sub: configuring-apache-hive/navigation.json
 
-      - text: administering-hue
-        id: administering-hue
-        href: administering-hue/index.html
-        sub: administering-hue/navigation.json
+          - text: Hive Introduction
+            id: hive-introduction
+            href: /runtime/7.0.0/hive-introduction/index.html
+            sub: hive-introduction/navigation.json
 
-      - text: administering-kudu
-        id: administering-kudu
-        href: administering-kudu/index.html
-        sub: administering-kudu/navigation.json
+          - text: Using CBO in Hive
+            id: using-cbo-in-hive
+            href: /runtime/7.0.0/using-cbo-in-hive/index.html
+            sub: using-cbo-in-hive/navigation.json
 
-      - text: configuring-apache-hive
-        id: configuring-apache-hive
-        href: configuring-apache-hive/index.html
-        sub: configuring-apache-hive/navigation.json
+          - text: YARN Data Management
+            id: yarn-data-management
+            href: /runtime/7.0.0/yarn-data-management/index.html
+            sub: yarn-data-management/navigation.json
 
-      - text: hive-introduction
-        id: hive-introduction
-        href: hive-introduction/index.html
-        sub: hive-introduction/navigation.json
-
-      - text: hue-introduction
+      - text: Hue Overview
         id: hue-introduction
-        href: hue-introduction/index.html
-        sub: hue-introduction/navigation.json
+        href: /runtime/7.0.0/hue-introduction/index.html
+        sub:
+          - text: Administering Hue
+            id: administering-hue
+            href: /runtime/7.0.0/administering-hue/index.html
+            sub: administering-hue/navigation.json
 
-      - text: impala-client
-        id: impala-client
-        href: impala-client/index.html
-        sub: impala-client/navigation.json
+          - text: Securing Hue
+            id: securing-hue
+            href: /runtime/7.0.0/securing-hue/index.html
+            sub: securing-hue/navigation.json
 
-      - text: impala-file-formats
-        id: impala-file-formats
-        href: impala-file-formats/index.html
-        sub: impala-file-formats/navigation.json
+          - text: Troubleshooting Hue
+            id: troubleshooting-hue
+            href: /runtime/7.0.0/troubleshooting-hue/index.html
+            sub: troubleshooting-hue/navigation.json
 
-      - text: impala-metadata
-        id: impala-metadata
-        href: impala-metadata/index.html
-        sub: impala-metadata/navigation.json
+          - text: Tuning Hue
+            id: tuning-hue
+            href: /runtime/7.0.0/tuning-hue/index.html
+            sub: tuning-hue/navigation.json
 
-      - text: impala-monitoring
-        id: impala-monitoring
-        href: impala-monitoring/index.html
-        sub: impala-monitoring/navigation.json
+          - text: Using Hue
+            id: using-hue
+            href: /runtime/7.0.0/using-hue/index.html
+            sub: using-hue/navigation.json
 
-      - text: impala-overview
+      - text: Impala Overview
         id: impala-overview
-        href: impala-overview/index.html
-        sub: impala-overview/navigation.json
+        href: /runtime/7.0.0/impala-overview/index.html
+        sub:
+          - text: Impala Client
+            id: impala-client
+            href: /runtime/7.0.0/impala-client/index.html
+            sub: impala-client/navigation.json
 
-      - text: impala-performance
-        id: impala-performance
-        href: impala-performance/index.html
-        sub: impala-performance/navigation.json
+          - text: Impala File Formats
+            id: impala-file-formats
+            href: /runtime/7.0.0/impala-file-formats/index.html
+            sub: impala-file-formats/navigation.json
 
-      - text: impala-performance-tuning
-        id: impala-performance-tuning
-        href: impala-performance-tuning/index.html
-        sub: impala-performance-tuning/navigation.json
+          - text: Impala Metadata
+            id: impala-metadata
+            href: /runtime/7.0.0/impala-metadata/index.html
+            sub: impala-metadata/navigation.json
 
-      - text: impala-planning
-        id: impala-planning
-        href: impala-planning/index.html
-        sub: impala-planning/navigation.json
+          - text: Impala Monitoring
+            id: impala-monitoring
+            href: /runtime/7.0.0/impala-monitoring/index.html
+            sub: impala-monitoring/navigation.json
 
-      - text: impala-resource
-        id: impala-resource
-        href: impala-resource/index.html
-        sub: impala-resource/navigation.json
+          - text: Impala Performance
+            id: impala-performance
+            href: /runtime/7.0.0/impala-performance/index.html
+            sub: impala-performance/navigation.json
 
-      - text: impala-scalability
-        id: impala-scalability
-        href: impala-scalability/index.html
-        sub: impala-scalability/navigation.json
+          - text: impala-performance-tuning
+            id: impala-performance-tuning
+            href: /runtime/7.0.0/impala-performance-tuning/index.html
+            sub: impala-performance-tuning/navigation.json
 
-      - text: impala-security
-        id: impala-security
-        href: impala-security/index.html
-        sub: impala-security/navigation.json
+          - text: impala-planning
+            id: impala-planning
+            href: /runtime/7.0.0/impala-planning/index.html
+            sub: impala-planning/navigation.json
 
-      - text: impala-storage
-        id: impala-storage
-        href: impala-storage/index.html
-        sub: impala-storage/navigation.json
+          - text: monitoring-impala
+            id: monitoring-impala
+            href: /runtime/7.0.0/monitoring-impala/index.html
+            sub: monitoring-impala/navigation.json
 
-      - text: impala-timeouts
-        id: impala-timeouts
-        href: impala-timeouts/index.html
-        sub: impala-timeouts/navigation.json
+          - text: impala-resource
+            id: impala-resource
+            href: /runtime/7.0.0/impala-resource/index.html
+            sub: impala-resource/navigation.json
 
-      - text: impala-troubleshooting
-        id: impala-troubleshooting
-        href: impala-troubleshooting/index.html
-        sub: impala-troubleshooting/navigation.json
+          - text: impala-scalability
+            id: impala-scalability
+            href: /runtime/7.0.0/impala-scalability/index.html
+            sub: impala-scalability/navigation.json
 
-      - text: kudu-design
-        id: kudu-design
-        href: kudu-design/index.html
-        sub: kudu-design/navigation.json
+          - text: impala-security
+            id: impala-security
+            href: /runtime/7.0.0/impala-security/index.html
+            sub: impala-security/navigation.json
 
-      - text: kudu-development
-        id: kudu-development
-        href: kudu-development/index.html
-        sub: kudu-development/navigation.json
+          - text: impala-storage
+            id: impala-storage
+            href: /runtime/7.0.0/impala-storage/index.html
+            sub: impala-storage/navigation.json
 
-      - text: kudu-install-and-upgrade
-        id: kudu-install-and-upgrade
-        href: kudu-install-and-upgrade/index.html
-        sub: kudu-install-and-upgrade/navigation.json
+          - text: impala-timeouts
+            id: impala-timeouts
+            href: /runtime/7.0.0/impala-timeouts/index.html
+            sub: impala-timeouts/navigation.json
 
-      - text: kudu-integration
-        id: kudu-integration
-        href: kudu-integration/index.html
-        sub: kudu-integration/navigation.json
+          - text: impala-troubleshooting
+            id: impala-troubleshooting
+            href: /runtime/7.0.0/impala-troubleshooting/index.html
+            sub: impala-troubleshooting/navigation.json
 
-      - text: kudu-overview
+          - text: troubleshooting-impala
+            id: troubleshooting-impala
+            href: /runtime/7.0.0/troubleshooting-impala/index.html
+            sub: troubleshooting-impala/navigation.json
+
+      - text: Kudu Overview
         id: kudu-overview
-        href: kudu-overview/index.html
-        sub: kudu-overview/navigation.json
+        href: /runtime/7.0.0/kudu-overview/index.html
+        sub:
+          - text: Administering Kudu
+            id: administering-kudu
+            href: /runtime/7.0.0/administering-kudu/index.html
+            sub: administering-kudu/navigation.json
 
-      - text: monitoring-impala
-        id: monitoring-impala
-        href: monitoring-impala/index.html
-        sub: monitoring-impala/navigation.json
+          - text: kudu-design
+            id: kudu-design
+            href: /runtime/7.0.0/kudu-design/index.html
+            sub: kudu-design/navigation.json
 
-      - text: navigation_unprocessed.json
-        id: navigation_unprocessed.json
-        href: navigation_unprocessed.json/index.html
-        sub: navigation_unprocessed.json/navigation.json
+          - text: kudu-development
+            id: kudu-development
+            href: /runtime/7.0.0/kudu-development/index.html
+            sub: kudu-development/navigation.json
 
-      - text: securing-hue
-        id: securing-hue
-        href: securing-hue/index.html
-        sub: securing-hue/navigation.json
+          - text: kudu-install-and-upgrade
+            id: kudu-install-and-upgrade
+            href: /runtime/7.0.0/kudu-install-and-upgrade/index.html
+            sub: kudu-install-and-upgrade/navigation.json
 
-      - text: troubleshooting-hue
-        id: troubleshooting-hue
-        href: troubleshooting-hue/index.html
-        sub: troubleshooting-hue/navigation.json
+          - text: kudu-integration
+            id: kudu-integration
+            href: /runtime/7.0.0/kudu-integration/index.html
+            sub: kudu-integration/navigation.json
 
-      - text: troubleshooting-impala
-        id: troubleshooting-impala
-        href: troubleshooting-impala/index.html
-        sub: troubleshooting-impala/navigation.json
+          - text: troubleshooting-kudu
+            id: troubleshooting-kudu
+            href: /runtime/7.0.0/troubleshooting-kudu/index.html
+            sub: troubleshooting-kudu/navigation.json
 
-      - text: troubleshooting-kudu
-        id: troubleshooting-kudu
-        href: troubleshooting-kudu/index.html
-        sub: troubleshooting-kudu/navigation.json
-
-      - text: tuning-hue
-        id: tuning-hue
-        href: tuning-hue/index.html
-        sub: tuning-hue/navigation.json
-
-      - text: using-cbo-in-hive
-        id: using-cbo-in-hive
-        href: using-cbo-in-hive/index.html
-        sub: using-cbo-in-hive/navigation.json
-
-      - text: using-hue
-        id: using-hue
-        href: using-hue/index.html
-        sub: using-hue/navigation.json
-
-      - text: workflow-management
+      - text: Workflow Management
         id: workflow-management
-        href: workflow-management/index.html
+        href: /runtime/7.0.0/workflow-management/index.html
         sub: workflow-management/navigation.json
 
-      - text: workload-management
+      - text: Workload Management
         id: workload-management
-        href: workload-management/index.html
+        href: /runtime/7.0.0/workload-management/index.html
         sub: workload-management/navigation.json
-
-      - text: yarn-data-management
-        id: yarn-data-management
-        href: yarn-data-management/index.html
-        sub: yarn-data-management/navigation.json
 
   - text: How To
     id: how-to
     sub:
       - text: Data Access
         id: data-access
+        href: /runtime/7.0.0/data-access.html
         sub:
           - text: Starting Apache Hive
             id: starting-hive
-            href: starting-hive/index.html
+            href: /runtime/7.0.0/starting-hive/index.html
             sub:
             - text: Start the Hive Shell
-              href: topics/cr-hive_start_hive_as_authorized_user.html
+              href: /runtime/7.0.0/starting-hive/topics/cr-hive_start_hive_as_authorized_user.html
             - text: Run a Hive command
-              href: topics/cr-hive_run_hive_command.html
+              href: /runtime/7.0.0/starting-hive/topics/cr-hive_run_hive_command.html
             - text: Convert Hive CLI scripts to Beeline
-              href: topics/cr-hive_use_variables.html
+              href: /runtime/7.0.0/starting-hive/topics/cr-hive_use_variables.html
 
           - text: Using Apache HiveQL
             id: using-hiveql
-            href: using-hiveql/index.html
+            href: /runtime/7.0.0/using-hiveql/index.html
             sub:
             - text: Apache Hive 3 tables
-              href: topics/cr-hive_hive_3_tables.html
+              href: /runtime/7.0.0/topics/cr-hive_hive_3_tables.html
               sub:
               - text: Create a CRUD transactional table
-                href: topics/cr-hive_create_a_crud_transactional_table.html
+                href: /runtime/7.0.0/topics/cr-hive_create_a_crud_transactional_table.html
               - text: Create an insert-only transactional table
-                href: topics/cr-hive_create_insert_only_transactional_table.html
+                href: /runtime/7.0.0/topics/cr-hive_create_insert_only_transactional_table.html
               - text: Create, use, and drop an external table
-                href: topics/cr-hive_create_an_external_table.html
+                href: /runtime/7.0.0/topics/cr-hive_create_an_external_table.html
               - text: Drop an external table along with data
-                href: topics/cr-hive_drop_external_table_data.html
+                href: /runtime/7.0.0/topics/cr-hive_drop_external_table_data.html
               - text: Create an S3-based table
-                href: topics/cr-hive-create-s3-based-table.html
+                href: /runtime/7.0.0/topics/cr-hive-create-s3-based-table.html
               - text: Using constraints
-                href: topics/cr-hive_constraints.html
+                href: /runtime/7.0.0/topics/cr-hive_constraints.html
               - text: Determine the table type
-                href: topics/cr-hive_table_type.html
+                href: /runtime/7.0.0/topics/cr-hive_table_type.html
             - text: Hive 3 ACID transactions
-              href: topics/cr-hive_3_internals.html
+              href: /runtime/7.0.0/topics/cr-hive_3_internals.html
             - text: Using materialized views
-              href: topics/cr-hive_using_materialized_views.html
+              href: /runtime/7.0.0/topics/cr-hive_using_materialized_views.html
               sub:
               - text: Create and use a materialized view
-                href: topics/cr-hive_create_and_use_materialized_view.html
+                href: /runtime/7.0.0/topics/cr-hive_create_and_use_materialized_view.html
               - text: Use a materialized view in a subquery
-                href: topics/cr-hive_use_materialized_view_subquery.html
+                href: /runtime/7.0.0/topics/cr-hive_use_materialized_view_subquery.html
               - text: Drop a materialized view
-                href: topics/cr-hive_drop_a_materialized_view.html
+                href: /runtime/7.0.0/topics/cr-hive_drop_a_materialized_view.html
               - text: Show materialized views
-                href: topics/cr-hive_show_a_materialized_view.html
+                href: /runtime/7.0.0/topics/cr-hive_show_a_materialized_view.html
               - text: Describe a materialized view
-                href: topics/cr-hive_describe_a_materialized_view.html
+                href: /runtime/7.0.0/topics/cr-hive_describe_a_materialized_view.html
               - text: Manage rewriting of a query
-                href: topics/cr-hive_enable_disable_materialized_rewrite.html
+                href: /runtime/7.0.0/topics/cr-hive_enable_disable_materialized_rewrite.html
               - text: Create a materialized view and store it in Druid
-                href: topics/cr-hive_create_materialized_view_in_druid.html
+                href: /runtime/7.0.0/topics/cr-hive_create_materialized_view_in_druid.html
               - text: Create and use a partitioned materialized view
-                href: topics/cr-hive_create_partitioned_materialized_view.html
+                href: /runtime/7.0.0/topics/cr-hive_create_partitioned_materialized_view.html
             - text: Apache Hive Query Language basics
-              href: topics/cr-hive_hive_query_language_basics.html
+              href: /runtime/7.0.0/topics/cr-hive_hive_query_language_basics.html
               sub:
               - text: Query the information_schema database
-                href: topics/cr-hive_query_information_schema.html
+                href: /runtime/7.0.0/topics/cr-hive_query_information_schema.html
               - text: Insert data into an ACID table
-                href: topics/cr-hive_insert_data_in_a_hive_table.html
+                href: /runtime/7.0.0/topics/cr-hive_insert_data_in_a_hive_table.html
               - text: Update data in a table
-                href: topics/cr-hive_update_data_in_a_hive_table.html
+                href: /runtime/7.0.0/topics/cr-hive_update_data_in_a_hive_table.html
               - text: Merge data in tables
-                href: topics/cr-hive_merge_data_in_hive_tables.html
+                href: /runtime/7.0.0/topics/cr-hive_merge_data_in_hive_tables.html
               - text: Delete data from a table
-                href: topics/cr-hive_delete_data_from_a_hive_table.html
+                href: /runtime/7.0.0/topics/cr-hive_delete_data_from_a_hive_table.html
               - text: Use a subquery
-                href: topics/cr-hive_use_a_subquery_in_a_hive_table.html
+                href: /runtime/7.0.0/topics/cr-hive_use_a_subquery_in_a_hive_table.html
                 sub:
                 - text: Subquery restrictions
-                  href: topics/cr-hive_hive_subquery_limitations.html
+                  href: /runtime/7.0.0/topics/cr-hive_hive_subquery_limitations.html
               - text: Aggregate and group data
-                href: topics/cr-hive_aggregate_and_group_data_in_a_hive_table.html
+                href: /runtime/7.0.0/topics/cr-hive_aggregate_and_group_data_in_a_hive_table.html
               - text: Query correlated data
-                href: topics/cr-hive_query_correlated_data_in_a_hive_table.html
+                href: /runtime/7.0.0/topics/cr-hive_query_correlated_data_in_a_hive_table.html
               - text: Using common table expressions
-                href: topics/cr-hive_using_common_table_expressions.html
+                href: /runtime/7.0.0/topics/cr-hive_using_common_table_expressions.html
                 sub:
                 - text: Use a CTE in a query
-                  href: topics/cr-hive_create_a_table_using_a_cte.html
+                  href: /runtime/7.0.0/topics/cr-hive_create_a_table_using_a_cte.html
               - text: Escape an illegal identifier
-                href: topics/cr-hive_name_a_hive_column_using_an_identifier.html
+                href: /runtime/7.0.0/topics/cr-hive_name_a_hive_column_using_an_identifier.html
               - text: CHAR data type support
-                href: topics/cr-hive_char_data_type_support_in_hive.html
+                href: /runtime/7.0.0/topics/cr-hive_char_data_type_support_in_hive.html
             - text: Create partitions dynamically
-              href: topics/cr-hive-create_partitions_dynamically.html
+              href: /runtime/7.0.0/topics/cr-hive-create_partitions_dynamically.html
               sub:
               - text: Repair partitions using MSCK repair
-                href: topics/cr-hive-msck-repair.html
+                href: /runtime/7.0.0/topics/cr-hive-msck-repair.html
             - text: Manage partitions automatically
-              href: topics/cr-hive-manage-partitions.html
+              href: /runtime/7.0.0/topics/cr-hive-manage-partitions.html
               sub:
               - text: Automate partition discovery and repair
-                href: topics/cr-hive-automate-msck.html
+                href: /runtime/7.0.0/topics/cr-hive-automate-msck.html
               - text: Manage partition retention time
-                href: topics/cr-hive-set-partition-retention.html
+                href: /runtime/7.0.0/topics/cr-hive-set-partition-retention.html
             - text: Generate surrogate keys
-              href: topics/cr-hive_surrogate_keys.html
+              href: /runtime/7.0.0/topics/cr-hive_surrogate_keys.html
             - text: Query a SQL data source using the JdbcStorageHandler
-              href: topics/cr-hive_query_sql_using_jdbcstoragehandler.html
+              href: /runtime/7.0.0/topics/cr-hive_query_sql_using_jdbcstoragehandler.html
             - text: Using functions
-              href: topics/cr-hive-using-functions.html
+              href: /runtime/7.0.0/topics/cr-hive-using-functions.html
               sub:
               - text: Reload, view, and filter functions
-                href: topics/cr-hive-show-functions.html
+                href: /runtime/7.0.0/topics/cr-hive-show-functions.html
               - text: Create a user-defined function
-                href: topics/cr-hive_create_udf.html
+                href: /runtime/7.0.0/topics/cr-hive_create_udf.html
                 sub:
                 - text: Set up the development environment
-                  href: topics/cr-hive_set_up_development_environment.html
+                  href: /runtime/7.0.0/topics/cr-hive_set_up_development_environment.html
                 - text: Create the UDF class
-                  href: topics/cr-hive_create_udf_class.html
+                  href: /runtime/7.0.0/topics/cr-hive_create_udf_class.html
                 - text: Build the project and upload the JAR
-                  href: topics/cr-hive_create_place_udf_jar.html
+                  href: /runtime/7.0.0/topics/cr-hive_create_place_udf_jar.html
                 - text: Register the UDF
-                  href: topics/cr-hive_register_udf.html
+                  href: /runtime/7.0.0/topics/cr-hive_register_udf.html
                 - text: Call the UDF in a query
-                  href: topics/cr-hive_use_udf_in_query.html
+                  href: /runtime/7.0.0/topics/cr-hive_use_udf_in_query.html
 
           - text: Managing Apache Hive
             id: managing-hive
-            href: managing-hive/index.html
+            href: /runtime/7.0.0/managing-hive/index.html
             sub:
             - text: ACID operations
-              href: topics/cr-hive_acid_operations.html
+              href: /runtime/7.0.0/managing-hive/topics/cr-hive_acid_operations.html
               sub:
               - text: Configure partitions for transactions
-                href: topics/cr-hive_configure_partitions_in_hive.html
+                href: /runtime/7.0.0/managing-hive/topics/cr-hive_configure_partitions_in_hive.html
               - text: View transactions
-                href: topics/cr-hive_view_hive_transactions.html
+                href: /runtime/7.0.0/managing-hive/topics/cr-hive_view_hive_transactions.html
               - text: View transaction locks
-                href: topics/cr-hive_view_transaction_locks.html
+                href: /runtime/7.0.0/managing-hive/topics/cr-hive_view_transaction_locks.html
             - text: Query vectorization
-              href: topics/cr-hive_vectorized_query_execution.html
+              href: /runtime/7.0.0/managing-hive/topics/cr-hive_vectorized_query_execution.html
               sub:
               - text: Enable vectorization
-                href: topics/cr-hive_enable_vectorization.html
+                href: /runtime/7.0.0/managing-hive/topics/cr-hive_enable_vectorization.html
               - text: Check query execution
-                href: topics/cr-hive_check_query_execution.html
+                href: /runtime/7.0.0/managing-hive/topics/cr-hive_check_query_execution.html
 
           - text: Managing Apache Hive Workloads
             id: managing-a-hive-workload
-            href: managing-a-hive-workload/index.html
+            href: /runtime/7.0.0/managing-a-hive-workload/index.html
             sub:
             - text: Workload management
-              href: topics/cr-hive_workload_management.html
+              href: /runtime/7.0.0/managing-a-hive-workload/topics/cr-hive_workload_management.html
             - text: Setting up and using a resource plan
-              href: topics/cr-hive_setting_up_and_using_a_resource_plan.html
+              href: /runtime/7.0.0/managing-a-hive-workload/topics/cr-hive_setting_up_and_using_a_resource_plan.html
               sub:
               - text: Create a resource plan
-                href: topics/cr-hive_create_a_resource_plan.html
+                href: /runtime/7.0.0/managing-a-hive-workload/topics/cr-hive_create_a_resource_plan.html
               - text: Enable a resource plan
-                href: topics/cr-hive_enable_a_resource_plan.html
+                href: /runtime/7.0.0/managing-a-hive-workload/topics/cr-hive_enable_a_resource_plan.html
               - text: Activate a resource plan
-                href: topics/cr-hive_activate_a_resource_plan.html
+                href: /runtime/7.0.0/managing-a-hive-workload/topics/cr-hive_activate_a_resource_plan.html
               - text: Query sys database for plan data
-                href: topics/cr-hive_query_sys_database_for_plan_data.html
+                href: /runtime/7.0.0/managing-a-hive-workload/topics/cr-hive_query_sys_database_for_plan_data.html
               - text: Disable a resource plan
-                href: topics/cr-hive_disable_a_resource_plan.html
+                href: /runtime/7.0.0/managing-a-hive-workload/topics/cr-hive_disable_a_resource_plan.html
             - text: Workload management entity data in sys
-              href: topics/cr-hive_workload_management_entity_data_in_sys.html
+              href: /runtime/7.0.0/managing-a-hive-workload/topics/cr-hive_workload_management_entity_data_in_sys.html
 
           # - text: Configuring Apache Hive
           #   id: configuring-hive
-          #   href: configuring-hive/index.html
+          #   href: /runtime/7.0.0/configuring-hive/index.html
           #   sub: configuring-hive/navigation.json
 
           - text: Securing Apache Hive
             id: securing-hive
-            href: securing-hive/index.html
+            href: /runtime/7.0.0/securing-hive/index.html
             sub:
             - text: Authorizing Apache Hive Access
-              href: topics/cr-hive_hive_authorization_models.html
+              href: /runtime/7.0.0/securing-hive/topics/cr-hive_hive_authorization_models.html
             - text: HDFS ACL permissions model
-              href: topics/cr-hive_sba_permissions_model.html
+              href: /runtime/7.0.0/securing-hive/topics/cr-hive_sba_permissions_model.html
               sub:
               - text: Configure storage-based authorization
-                href: topics/cr-hive_configure_storage_based_authorization.html
+                href: /runtime/7.0.0/securing-hive/topics/cr-hive_configure_storage_based_authorization.html
               - text: Authorization configuration parameters
-                href: topics/cr-hive_authorization_configuration_parameters.html
+                href: /runtime/7.0.0/securing-hive/topics/cr-hive_authorization_configuration_parameters.html
               - text: Storage-based operation permissions
-                href: topics/cr-hive_storage_based_authorization_permissions.html
+                href: /runtime/7.0.0/securing-hive/topics/cr-hive_storage_based_authorization_permissions.html
             - text: Transactional table access
-              href: topics/cr-hive_transactional_table_access.html
+              href: /runtime/7.0.0/securing-hive/topics/cr-hive_transactional_table_access.html
             - text: External table access
-              href: topics/cr-hive_external_table_access.html
+              href: /runtime/7.0.0/securing-hive/topics/cr-hive_external_table_access.html
             - text: Apache Spark access to Apache Hive
-              href: topics/cr-hive_spark_access_to_hive.html
+              href: /runtime/7.0.0/securing-hive/topics/cr-hive_spark_access_to_hive.html
             - text: Remote data access
-              href: topics/cr-hive_remote_data_access.html
+              href: /runtime/7.0.0/securing-hive/topics/cr-hive_remote_data_access.html
               sub:
               - text: Secure HiveServer using LDAP
-                href: topics/cr-hive_secure_hiveserver_using_ldap.html
+                href: /runtime/7.0.0/securing-hive/topics/cr-hive_secure_hiveserver_using_ldap.html
               - text: Secure HiveServer using LDAP over SSL
-                href: topics/cr-hive_secure_hiveserver_using_ldap_over_ssl.html
+                href: /runtime/7.0.0/securing-hive/topics/cr-hive_secure_hiveserver_using_ldap_over_ssl.html
               - text: Secure LLAP in HiveServer
-                href: topics/cr-hive_secure_llap_in_hiveserver.html
+                href: /runtime/7.0.0/securing-hive/topics/cr-hive_secure_llap_in_hiveserver.html
               - text: Connections to Apache Hive
-                href: topics/cr-hive_connections_to_hive.html
+                href: /runtime/7.0.0/securing-hive/topics/cr-hive_connections_to_hive.html
 
           - text: Integrating Apache Hive with Spark and BI
             id: integrating-hive-and-bi
-            href: integrating-hive-and-bi/index.html
+            href: /runtime/7.0.0/integrating-hive-and-bi/index.html
             sub:
             - text: Hive Warehouse Connector for accessing Apache Spark data
-              href: topics/cr-hive_hivewarehouseconnector_for_handling_apache_spark_data.html
+              href: /runtime/7.0.0/topics/cr-hive_hivewarehouseconnector_for_handling_apache_spark_data.html
               sub:
               - text: Apache Spark-Apache Hive connection configuration
-                href: topics/cr-hive_apache_spark_hive_connection_configuration.html
+                href: /runtime/7.0.0/topics/cr-hive_apache_spark_hive_connection_configuration.html
               - text: Submit a Hive Warehouse Connector Scala or Java application
-                href: topics/cr-hive_submit_a_hivewarehouseconnector_app.html
+                href: /runtime/7.0.0/topics/cr-hive_submit_a_hivewarehouseconnector_app.html
               - text: Submit a Hive Warehouse Connector Python app
-                href: topics/cr-hive_submit_a_hivewarehouseconnector_python.html
+                href: /runtime/7.0.0/topics/cr-hive_submit_a_hivewarehouseconnector_python.html
               - text: Hive Warehouse Connector supported types
-                href: topics/cr-hive_hivewarehouseconnector_supported_types.html
+                href: /runtime/7.0.0/topics/cr-hive_hivewarehouseconnector_supported_types.html
               - text: HiveWarehouseSession API operations
-                href: topics/cr-hive_hivewarehousesession_api_operations.html
+                href: /runtime/7.0.0/topics/cr-hive_hivewarehousesession_api_operations.html
               - text: Use the Hive Warehouse Connector for streaming
-                href: topics/cr-hive_use_hwc_for_streaming.html
+                href: /runtime/7.0.0/topics/cr-hive_use_hwc_for_streaming.html
             - text: Query a SQL data source using the JdbcStorageHandler
-              href: topics/cr-hive_query_sql_using_jdbcstoragehandler.html
+              href: /runtime/7.0.0/topics/cr-hive_query_sql_using_jdbcstoragehandler.html
 
           - text: Migrating Data
             id: migrating-data
-            href: migrating-data/index.html
+            href: /runtime/7.0.0/migrating-data/index.html
             sub:
             - text: Data migration to Apache Hive
-              href: topics/cr-hive_data_migration.html
+              href: /runtime/7.0.0/topics/cr-hive_data_migration.html
             - text: Moving data from databases to Apache Hive
-              href: topics/cr-hive_moving_data_from_databases_to_hive.html
+              href: /runtime/7.0.0/topics/cr-hive_moving_data_from_databases_to_hive.html
               sub:
               - text: Create a Sqoop import command
-                href: topics/cr-hive_create_a_sqoop_import_command.html
+                href: /runtime/7.0.0/topics/cr-hive_create_a_sqoop_import_command.html
               - text: Import RDBMS data into Hive
-                href: topics/cr-hive_import_rdbms_data_into_hive.html
+                href: /runtime/7.0.0/topics/cr-hive_import_rdbms_data_into_hive.html
             - text: Moving data from HDFS to Apache Hive
-              href: topics/cr-hive_moving_data_from_hdfs_to_hive.html
+              href: /runtime/7.0.0/topics/cr-hive_moving_data_from_hdfs_to_hive.html
               sub:
               - text: Import RDBMS data to HDFS
-                href: topics/cr-hive_import_rdbms_data_to_hdfs.html
+                href: /runtime/7.0.0/topics/cr-hive_import_rdbms_data_to_hdfs.html
               - text: Convert an HDFS file to ORC
-                href: topics/cr-hive_convert_an_hdfs_file_to_orc.html
+                href: /runtime/7.0.0/topics/cr-hive_convert_an_hdfs_file_to_orc.html
               - text: Incrementally update an imported table
-                href: topics/cr-hive_incrementally_update_an_imported_table.html
+                href: /runtime/7.0.0/topics/cr-hive_incrementally_update_an_imported_table.html
             - text: Hive import command options
-              href: topics/cr-hive_import_command_options.html
+              href: /runtime/7.0.0/topics/cr-hive_import_command_options.html
 
           - text: Apache Hive Performance Tuning
             id: performance-tuning
-            href: performance-tuning/index.html
+            href: /runtime/7.0.0/performance-tuning/index.html
             sub:
             - text: Optimizing an Apache Hive data warehouse
-              href: topics/cr-hive_optimizing_data_warehouse.html
+              href: /runtime/7.0.0/topics/cr-hive_optimizing_data_warehouse.html
             - text: Preparations for tuning performance
-              href: topics/cr-hive_prepare_to_tune_performance.html
+              href: /runtime/7.0.0/topics/cr-hive_prepare_to_tune_performance.html
             - text: Setting up LLAP
-              href: topics/cr-hive_setting_up_llap.html
+              href: /runtime/7.0.0/topics/cr-hive_setting_up_llap.html
               sub:
               - text: Enable YARN preemption
-                href: topics/cr-hive_enable_yarn_preemption.html
+                href: /runtime/7.0.0/topics/cr-hive_enable_yarn_preemption.html
               - text: Enable interactive query
-                href: topics/cr-hive_enable_interactive_query.html
+                href: /runtime/7.0.0/topics/cr-hive_enable_interactive_query.html
               - text: Set up multiple HiveServer Interactives for high availability
-                href: topics/cr-hive_setup_multiple_hsi.html
+                href: /runtime/7.0.0/topics/cr-hive_setup_multiple_hsi.html
               - text: Configure an llap queue
-                href: topics/cr-hive_configure_llap_queue.html
+                href: /runtime/7.0.0/topics/cr-hive_configure_llap_queue.html
               - text: Add a Hive proxy
-                href: topics/cr-hive_llap_add_proxy.html
+                href: /runtime/7.0.0/topics/cr-hive_llap_add_proxy.html
               - text: Configure other LLAP properties
-                href: topics/cr-hive_setup_llap.html
+                href: /runtime/7.0.0/topics/cr-hive_setup_llap.html
               - text: Configure the HiveServer heap size
-                href: topics/cr-hive_hiveserver_heap_sizing.html
+                href: /runtime/7.0.0/topics/cr-hive_hiveserver_heap_sizing.html
               - text: Save LLAP settings and restart services
-                href: topics/cr-hive_save_llap_restart.html
+                href: /runtime/7.0.0/topics/cr-hive_save_llap_restart.html
               - text: Run an interactive query
-                href: topics/cr-hive_run_llap_query.html
+                href: /runtime/7.0.0/topics/cr-hive_run_llap_query.html
             - text: LLAP and HiveServer Interactive properties
-              href: topics/cr-hive_llap_parameters.html
+              href: /runtime/7.0.0/topics/cr-hive_llap_parameters.html
             - text: Use HiveServer Interactive UI
-              href: topics/cr-hive_use_hiveserver_interactive.html
+              href: /runtime/7.0.0/topics/cr-hive_use_hiveserver_interactive.html
             - text: Connect a JDBC client to LLAP
-              href: topics/cr-hive_connect_clients_to_llap.html
+              href: /runtime/7.0.0/topics/cr-hive_connect_clients_to_llap.html
             - text: Configuring YARN queues for Hive
-              href: topics/cr-hive_configuring_yarn_queues.html
+              href: /runtime/7.0.0/topics/cr-hive_configuring_yarn_queues.html
               sub:
               - text: Configure a queue for batch processing
-                href: topics/cr-hive_configure_queue_for_batch.html
+                href: /runtime/7.0.0/topics/cr-hive_configure_queue_for_batch.html
               - text: Configure a custom LLAP queue
-                href: topics/cr-hive_configure_custom_llap_queue.html
+                href: /runtime/7.0.0/topics/cr-hive_configure_custom_llap_queue.html
             - text: Set up multiple HiveServer instances
-              href: topics/cr-hive_setup_multiple_hiveservers.html
+              href: /runtime/7.0.0/topics/cr-hive_setup_multiple_hiveservers.html
             - text: Key components of Hive warehouse processing
-              href: topics/cr-hive_warehouse_processing.html
+              href: /runtime/7.0.0/topics/cr-hive_warehouse_processing.html
             - text: Query result cache and metastore cache
-              href: topics/cr-hive_query_result_cache_ms_cache.html
+              href: /runtime/7.0.0/topics/cr-hive_query_result_cache_ms_cache.html
             - text: Tez execution engine properties
-              href: topics/cr-hive_tez_engine_properties.html
+              href: /runtime/7.0.0/topics/cr-hive_tez_engine_properties.html
             - text: Monitoring Apache Hive performance
-              href: topics/cr-hive_monitoring_performance.html
+              href: /runtime/7.0.0/topics/cr-hive_monitoring_performance.html
               sub:
               - text: Monitoring LLAP resources
-                href: topics/cr-hive_monitor_llap_resources.html
+                href: /runtime/7.0.0/topics/cr-hive_monitor_llap_resources.html
             - text: Maximizing storage resources using ORC
-              href: topics/cr-hive_maximize_storage_resources_using_orc.html
+              href: /runtime/7.0.0/topics/cr-hive_maximize_storage_resources_using_orc.html
               sub:
               - text: Advanced ORC properties
-                href: topics/cr-hive_advanced_orc_properties.html
+                href: /runtime/7.0.0/topics/cr-hive_advanced_orc_properties.html
             - text: Improving performance using partitions
-              href: topics/cr-hive_improving_performance_using_partitions.html
+              href: /runtime/7.0.0/topics/cr-hive_improving_performance_using_partitions.html
             - text: Handling bucketed tables
-              href: topics/cr-hive_bucketed_tables.html
+              href: /runtime/7.0.0/topics/cr-hive_bucketed_tables.html
             - text: Improving performance using the cost-based optimizer
-              href: topics/cr-hive_cost_based_optimizer_overview.html
+              href: /runtime/7.0.0/topics/cr-hive_cost_based_optimizer_overview.html
               sub:
               - text: Set up the cost-based optimizer and statistics
-                href: topics/cr-hive_set_up_cbo_and_stats.html
+                href: /runtime/7.0.0/topics/cr-hive_set_up_cbo_and_stats.html
               - text: Generate and view Apache Hive statistics
-                href: topics/cr-hive_generate_hive_statistics.html
+                href: /runtime/7.0.0/topics/cr-hive_generate_hive_statistics.html
               - text: Statistics generation and viewing commands
-                href: topics/cr-hive_statistics_generation_and_viewing_commands.html
+                href: /runtime/7.0.0/topics/cr-hive_statistics_generation_and_viewing_commands.html
               - text: Optimization and planning properties
-                href: topics/cr-hive_optimization_and_planning_properties.html
+                href: /runtime/7.0.0/topics/cr-hive_optimization_and_planning_properties.html
 
           # - text: Accessing Data Using Druid
           #   id: adding-druid
-          #   href: adding-druid/index.html
+          #   href: /runtime/7.0.0/adding-druid/index.html
           #   sub: adding-druid/navigation.json
 
           #  - text: Using Druid and Apache Hive
           #    id: using-druid
-          #    href: using-druid/index.html
+          #    href: /runtime/7.0.0/using-druid/index.html
           #    sub: using-druid/navigation.json
 
           # - text: Using HBase to Store and Access Data
           #   id: hbase-data-access
-          #   href: hbase-data-access/index.html
+          #   href: /runtime/7.0.0/hbase-data-access/index.html
           #   sub: hbase-data-access/navigation.json
 
           # - text: Using Phoenix to Store and Access Data
           #   id: phoenix-data-access
-          #   href: phoenix-data-access/index.html
+          #   href: /runtime/7.0.0/phoenix-data-access/index.html
           #   sub: phoenix-data-access/navigation.json
 
           # - text: Accessing Cloud Data
           #   id: bk_cloud-data-access
-          #   href: bk_cloud-data-access/index.html
+          #   href: /runtime/7.0.0/bk_cloud-data-access/index.html
 
       - text: Security
         id: security
+        href: /runtime/7.0.0/security.html
         sub:
         - text: security-ranger-auditing
           id: security-ranger-auditing
-          href: security-ranger-auditing/index.html
+          href: /runtime/7.0.0/security-ranger-auditing/index.html
           sub: security-ranger-auditing/navigation.json
 
         - text: security-ranger-authorization
           id: security-ranger-authorization
-          href: security-ranger-authorization/index.html
+          href: /runtime/7.0.0/security-ranger-authorization/index.html
           sub: security-ranger-authorization/navigation.json
 
   - text: Reference
     id: reference
     sub:
-      - text: materialized-view-commands
+      - text: Materialized View Commands
         id: materialized-view-commands
-        href: materialized-view-commands/index.html
+        href: /runtime/7.0.0/materialized-view-commands/index.html
         sub: materialized-view-commands/navigation.json
 
   - text: Release Notes
@@ -576,6 +569,6 @@ json:
     sub:
       - text: Release Notes
         id: release-notes
-        href: release-notes/index.html
+        href: /runtime/7.0.0/release-notes/index.html
         sub: release-notes/navigation.json
 ---

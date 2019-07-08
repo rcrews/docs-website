@@ -15,26 +15,26 @@ sections:
   - title: Concepts
     name: concepts
     books:
-      - title: Apache Hive Overview
+      - title: Hive Overview
         url: hive-overview/index.html
 
-      - title: administering-hue
+      - title: Hue Overview
         url: administering-hue/index.html
 
-      - title: administering-kudu
-        url: administering-kudu/index.html
+      - title: Kudu Overview
+        url: kudu-overview/index.html
 
-      - title: configuring-apache-hive
-        url: configuring-apache-hive/index.html
+      - title: Impala Overview
+        url: impala-overview/index.html
 
-      - title: hive-introduction
-        url: hive-introduction/index.html
+      - title: Workflow Management
+        url: workflow-management/index.html
 
-      - title: hue-introduction
-        url: hue-introduction/index.html
+      - title: Workload Management
+        url: workload-management/index.html
 
-      - title: impala-client
-        url: impala-client/index.html
+      # - title: impala-client
+      #  url: impala-client/index.html
 
       # - title: impala-file-formats
       #   url: impala-file-formats/index.html

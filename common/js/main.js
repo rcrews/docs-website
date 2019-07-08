@@ -174,7 +174,7 @@ var NEWUX = (function($) {
                     }
                 }
                 // Now the ID has been defined... if the item has kids, let's iterate through those.
-                if (typeof data[i].sub !== 'undefined') {
+                if (typeof data[i].sub === 'object') {
                     data[i].sub = this.cleanNavData(data[i].sub);
                 }
 
@@ -201,7 +201,7 @@ var NEWUX = (function($) {
                 } else {
                     html += `<li class='${css}' data-navid='${item.id}'><span class='item'>${item.text}</span>`;
                 }
-                if('sub' in item) {
+                if('sub' in item && typeof item.sub === 'object') {
                     html += "<span class='expand'>&#xf107;</span>";  // NOTE, BE CAREFUL ABOUT CHANGING THE ICON. IT'S USED IN THE CONTROL STRUCTURE
                     html += this.createHtmlTree(item.sub);
                 }
@@ -318,7 +318,7 @@ var NEWUX = (function($) {
             $('.cpage .short-next a').attr('href', this.pagestate.next.href);
 
             // Breadcrumbs
-            $('.inner-breadcrumbs').html(this.pagestate.breadpath[this.pagestate.breadpath.length - 1].text);
+            // $('.inner-breadcrumbs').html(this.pagestate.breadpath[this.pagestate.breadpath.length - 1].text);
 
             // Set the active item in the menu.
             $('.ctoc li').removeClass('active');
