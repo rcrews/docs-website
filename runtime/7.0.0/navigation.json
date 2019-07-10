@@ -323,6 +323,8 @@ json:
               sub:
               - text: Configure partitions for transactions
                 href: /runtime/7.0.0/managing-hive/topics/cr-hive_configure_partitions_in_hive.html
+              - text: Page with lots of text
+                href: /runtime/7.0.0/managing-hive/topics/cr-test-page.html
               - text: View transactions
                 href: /runtime/7.0.0/managing-hive/topics/cr-hive_view_hive_transactions.html
               - text: View transaction locks

@@ -61,8 +61,8 @@ var NEWUX = (function($) {
         product: '', // Holds a unique name for the product we're in, which is used as a key for saving the menu.
         pagestate: { // Will hold the current state of the page.
             current: {},
-            prev: {},
-            next: {},
+            prev: "",
+            next: "",
             depth: 0, // How many layers deep we are.
             breadpath: [],// Array of Parents... in descending order.
             children: [] // Flattened Array of Subs }
@@ -74,7 +74,8 @@ var NEWUX = (function($) {
         bindEvents: function() {
 
             // Catch Link Clicks from Pubmenu and Feed through System
-            $('.ctoc a, .cpage a').on('click', this.requestNewPage.bind(this));
+            $('.ctoc a').on('click', this.requestNewPage.bind(this));
+            $('.cpage').on('click', 'a', this.requestNewPage.bind(this));
 
             // Nav Menu Expand/Contract
             $('.ctoc li.xp').on('click', this.handleNavOpen);
@@ -139,13 +140,13 @@ var NEWUX = (function($) {
                     this.nav_tree = this.cleanNavData(data);
 
                     // 2. Figure out what page I am, and update the page state
-                    let active_url =  new URL(window.location.href);
-                    let active_id = Utils.makeIdFromHref(active_url.pathname);
+
+                    // Look for URL in nav.json
+                    let item = this.getNestedItemBy('href', url.pathname, this.nav_tree);
+                    let active_id = item.id;
 
                     // TODO! - We're looking for the page based on an id which we made up, but really we should just base it on the href which is always correct.
-
-                    let map = this.mapPageState(this.nav_tree, active_id);
-                    console.log(map);
+                    let figured_pagestate = this.mapPageState(this.nav_tree, active_id);
 
                     // 3. Now build out the tree in HTML
                     let html = this.createHtmlTree(this.nav_tree);
@@ -162,6 +163,35 @@ var NEWUX = (function($) {
                     // 5. Update Page Links and Breadcrumbs
                     this.updatePageState();
                 });
+        },
+        loadContent: function(url) {
+
+            $( "#content" ).fadeTo(200, 0, function() {
+                // $('.maincontent').append("<div id='content-spinner'><i class='fas fa-circle-notch fa-spin'></i></div>");
+                // TODO... do a check to see that we're on the same domain.
+
+                console.log(document.location.href);
+                // document.location.href = url;
+
+                $('#content').load( url + " #content", function(response, status, xhr) {
+                    if(status === "error") {
+                        let msg = "Sorry but there was an error loading that page.";
+                        $( "#content" ).html( msg + " " + xhr.status + " " + xhr.statusText );
+                        $(this).fadeTo(200,1);
+                    } else {
+                        document.body.scrollTop = document.documentElement.scrollTop = 0;
+                        $(this).fadeTo(200,1);
+
+                        // Update History
+                        history.pushState(null, null, url);
+
+                    }
+                    // $('#content-spinner').detach();
+                });
+
+            });
+
+            // TODO! If script tags are included within the content, I think that they'll be removed. We might want to figure out how to execute them!
         },
         cleanNavData(data) {
             // Let's ensure a good ID for every item in the nav.
@@ -226,36 +256,17 @@ var NEWUX = (function($) {
 
             // Confirm this is actually in the menu tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
+
             if(destination) {
                 // If it's a page in the menu tree...
                 this.loadContent(url);
                 this.pagestate.breadpath.length = 0; // This should really be part of mapPageState, but I can't do it because I'm recursing on that function.
-                this.mapPageState(this.nav_tree, destination.id);
+                let updated_pagestate = this.mapPageState(this.nav_tree, destination.id);
                 this.updatePageState();
-
-                // Update History
-                history.pushState(null, null, url);
 
                 // TODO! Notify Google Analytics about the new page load.
                 e.preventDefault();
             }
-        },
-        loadContent: function(url) {
-            // Update New Content with Transition Effects - TODO... just handle this with CSS?
-            $( "#content" ).fadeOut(200, function() {
-                $(this).hide().load( url + " #content", function(response, status, xhr) {
-                    if(status == "error") {
-                        let msg = "Sorry but there was an error loading that page.";
-                        $( "#content" ).html( msg + " " + xhr.status + " " + xhr.statusText );
-                        $(this).fadeIn(200);
-                    } else {
-                        $(this).fadeIn(200);
-                    }
-
-                });
-            });
-
-            // TODO! If script tags are included within the content, I think that they'll be removed. We might want to figure out how to execute them!
         },
         getNestedItemBy: function(key, value, arr) {
             for(let i=0; i < arr.length; i++) {
@@ -277,12 +288,10 @@ var NEWUX = (function($) {
                 if(navarray[i].id === id) {
                     // We found it!
                     this.pagestate.current = navarray[i];
-                    if(i-1 >= 0) {
-                        this.pagestate.prev = navarray[i-1];
-                    }
-                    if(i+1 < navarray.length) {
-                        this.pagestate.next = navarray[i+1]; // TODO!!! - This should really be the first child if the element has children!
-                    }
+
+                    this.pagestate.prev = (i-1 >= 0) ? navarray[i-1] : ""; // TODO!!! - This should really be the parent if there is no sibling.
+                    this.pagestate.next = (i+1 < navarray.length) ?  navarray[i+1] : ""; // TODO!!! - This should really be the first child if the element has children!
+
                     if(typeof navarray[i].sub === 'object') {
                         this.pagestate.children = Utils.flatten(navarray[i].sub);
                     }
@@ -304,17 +313,29 @@ var NEWUX = (function($) {
                 }
             }
             return false; // didn't find a matching id?
+
+
         },
         updatePageState: function() {
             // Update the page elems based on current situation!
 
             // Prev
-            $('.cpage .prev a').attr('href', this.pagestate.prev.href).html('&laquo; ' + this.pagestate.prev.text);
-            $('.cpage .short-prev a').attr('href', this.pagestate.prev.href);
+            if(typeof this.pagestate.prev === 'object') {
+                $('.cpage').addClass('hasprev');
+                $('.cpage .prev a').attr('href', this.pagestate.prev.href).html('&laquo; ' + this.pagestate.prev.text);
+                $('.cpage .short-prev a').attr('href', this.pagestate.prev.href);
+            } else {
+                $('.cpage').removeClass('hasprev');
+            }
 
             // Next
-            $('.cpage .next a').attr('href', this.pagestate.next.href).html(this.pagestate.next.text + ' &raquo;' );
-            $('.cpage .short-next a').attr('href', this.pagestate.next.href);
+            if(typeof this.pagestate.next === 'object') {
+                $('.cpage').addClass('hasnext');
+                $('.cpage .next a').attr('href', this.pagestate.next.href).html(this.pagestate.next.text + ' &raquo;');
+                $('.cpage .short-next a').attr('href', this.pagestate.next.href);
+            } else {
+                $('.cpage').removeClass('hasnext');
+            }
 
             // Outer Breadcrumbs
             if(this.pagestate.breadpath.length >= 2) {
@@ -331,7 +352,9 @@ var NEWUX = (function($) {
                     }
                     output += `<a href="${this.pagestate.breadpath[i].href}">${this.pagestate.breadpath[i].text}</a>`;
                 }
-                $('.inner-breadcrumbs').html(output);
+                $('.inner-breadcrumbs').html(output).fadeTo(200, 1);
+            } else {
+                $('.inner-breadcrumbs').fadeTo(200, 0);
             }
 
             // Set the active item in the menu.

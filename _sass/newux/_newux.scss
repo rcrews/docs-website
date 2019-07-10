@@ -59,7 +59,6 @@ body                    { margin: 0; }
         .launch-pubnav  { display:none; }
         .breadcrumbs    {  }
     }
-    
 }
 
 .cmain                  { position:relative; transition: margin-left .5s; margin-top:50px; margin-left:0px;  background-color:#f0f0f0; 
@@ -80,19 +79,32 @@ body                    { margin: 0; }
     
     .maincontent        { position:relative; background-color:#fff; padding:30px 20px; 
      }
- 
+
+    #content-spinner    { font-size:300%; text-align:center; margin:50px auto; color:#999; }
+
     .inner-breadcrumbs  { text-transform:uppercase; margin-bottom:10px; color:#aaa; font-family:"Roboto Condensed", sans-serif; font-size:120%; 
         a               { color:#ccc;  }
         a:hover         { text-decoration:underline; }
     }
     .inner-bread-product::after { content:">"; padding:0 5px; }
-     
+
+    /* Handle visibility when a forward or back page doesn't exist. */
+    .prev,
+    .next,
+    .short-prev,
+    .short-next         { display:none; }
+
+    &.hasprev .prev,
+    &.hasprev .short-prev,
+    &.hasnext .short-next,
+    &.hasnext .next     { display:block; }
+
     .prev               { float:left; padding:10px; line-height:2; }
     .next               { float:right; padding:10px; line-height:2; text-align:right;  }
     
     .short-prev         { font-size:180%; position:absolute; top:2rem; right:3.6rem; }
     .short-next         { font-size:180%; position:absolute; top:2rem; right:1.6rem; }
-        
+
     h1                  { font-family:"Roboto Condensed", sans-serif; font-size:140; font-weight:300; text-transform:initial; }
 
     @include breakpoint(medium) { 
@@ -108,30 +120,35 @@ body                    { margin: 0; }
 
 
     @include breakpoint(desktop) { 
-       &                { padding:40px 80px 80px 10px;  }
-       .maincontent     { 
-            &::before,
-            &::after    { content: ""; position: absolute; width: 100%; height: 100%; background-color: #f9f9f9; box-shadow: 2px 2px 2px rgba(0,0,0,0.05); }
+        &                   { padding:40px 80px 80px 10px;  }
 
-            &::before   { left: 1.6rem; top: 1.8rem; z-index: -1; }
-            &::after    { left: 3.2rem; top: 3.6rem; z-index: -2; }
+        &.hasprev .maincontent::before,
+        &.hasnext .maincontent::before,
+        &.hasprev.hasnext .maincontent::after   { content: ""; position: absolute; width: 100%; height: 100%; background-color: #f9f9f9; box-shadow: 2px 2px 2px rgba(0,0,0,0.05); }
 
+        .maincontent        {
+            &::before       { left: 1.6rem; top: 1.8rem; z-index: -1; }
+            &::after        { left: 3.2rem; top: 3.6rem; z-index: -2; }
         }
 
-        .prev           { float:initial; font-size:90%; margin-left:2.5rem; padding:0; }
-        .next           { float:initial; font-size:90%; margin-right:-2.5rem; padding:0; }
-        
-       .short-prev      { font-size:140%; position:absolute; top:7rem; right:4rem; }
-       .short-next      { font-size:140%; position:absolute; top:7rem; right:2.2rem; }
-   
+        &.hasprev .prev     { float:initial; font-size:90%; margin-left:2.5rem; padding:0; }
+        &.hasnext .next     { float:initial; font-size:90%; margin-right:-1rem; padding:0; }
+        &.hasprev.hasnext .next { margin-right:-2.5rem;  }
+
+        .short-prev,
+        .short-next         { font-size:140%; position:absolute; top:7rem; right:4rem; }
+
+        &.hasprev.hasnext .short-next { right:2.2rem; }
+
     }
 }
 
-.pubmenu                { position:absolute; transition:transform 0.5s; transform:scale(0); transform-origin:top right; top:0px; left:0px; right:0px; box-sizing: border-box; padding:30px 20px 20px 20px; background-color:rgba(255,255,255,0.9); 
+.pubmenu                { position:absolute; transition:transform 0.5s; transform:scale(0); transform-origin:top right; top:0px; left:0px; right:0px; box-sizing: border-box; padding:30px 20px 20px 20px; background-color:rgba(255,255,255,0.9);
     .product-title      { display:none; font-size:150%; color:#303d54; font-family:"Roboto Condensed", sans-serif; margin-bottom: 20px; overflow:auto; } /* DUPLICATE OF THE BREADCRUMBS! */
     .product-name       { display:block; margin-left:50px; padding-top:5px;  }
     .product-logo       { width:40px; float:left; }
     .ctoc               {
+
         ul              { padding:0; }
         li              { padding-left:0; list-style-type:none; position:relative;
             &.open>.expand  { color:$bright-blue; }
@@ -171,12 +188,19 @@ body                    { margin: 0; }
 
     &.open            { transform:scale(1); }
 
-    @include breakpoint(desktop) { transform:scale(1); grid-area: pubnav; background-color:#f0f0f0; position:relative; z-index:0; height:auto; padding:35px 20px 20px; 
+    @include breakpoint(desktop) { transform:scale(1); grid-area: pubnav; background-color:#f0f0f0; position:relative; z-index:0; height:auto; padding:35px 20px 20px;
+
         .product-title  { max-width:300px;  }
         .product-name   { margin-left:70px; padding-top:0; }
         .product-logo   { width:60px; }
-        .ctoc            { position:sticky; top:70px;
+        .ctoc           { position:sticky; top:70px;
             .expand     { color:#ddd; }
+
+            &> ul       { margin-top:5px; height:85vh; overflow-y:auto;
+                &::-webkit-scrollbar { width: 0.5em; background-color:#f0f0f0; }
+                &::-webkit-scrollbar-thumb { background-color: #e0e0e0; outline: 1px solid slategrey; border-radius:5px; }
+            }
+
         }
     }
 }
