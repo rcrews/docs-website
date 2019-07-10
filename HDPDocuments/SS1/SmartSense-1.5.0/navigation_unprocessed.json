@@ -1,0 +1,54 @@
+---
+layout: json
+json:
+  - text: Concepts
+    id: concepts
+    sub:
+      - text: SmartSense Overview
+        id: introduction
+        href: introduction/index.html
+        sub: introduction/navigation.json
+
+  - text: Installation & Upgrade
+    id: installation-upgrade
+    sub:
+      - text: Installing SmartSense on HDP
+        id: installation-hdp
+        href: installation-hdp/index.html
+        sub: installation-hdp/navigation.json
+
+      - text: Installing SmartSense on HDF
+        id: installation-hdf
+        href: installation-hdf/index.html
+        sub: installation-hdf/navigation.json
+
+  - text: How To
+    id: how-to
+    sub:
+      - text: Using SmartSense
+        id: using
+        href: using/index.html
+        sub: using/navigation.json
+
+      - text: Configuring SmartSense
+        id: configuration
+        href: configuration/index.html
+        sub: configuration/navigation.json
+
+  - text: Reference
+    id: reference
+    sub:
+      - text: SmartSense Configuration Guidelines
+        id: reference
+        href: reference/index.html
+        sub: reference/navigation.json
+
+  - text: Release Notes
+    id: releasenotes
+    sub:
+      - text: Release Notes
+        id: release-notes
+        href: release-notes/index.html
+        sub: release-notes/navigation.json
+
+---

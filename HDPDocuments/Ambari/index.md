@@ -1,0 +1,4 @@
+---
+layout: indexredirect
+product: Ambari
+---

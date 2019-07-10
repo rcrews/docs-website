@@ -1,0 +1,48 @@
+---
+layout: json
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+json:
+  - text: Concepts
+    id: concepts
+    sub:
+      - text: Core Concepts
+        id: core-concepts
+        href: core-concepts/index.html
+        sub: core-concepts/navigation.json
+
+  - text: Installation & Upgrade
+    id: installation-upgrade
+    sub:
+      - text: Installation
+        id: installation
+        href: installation/index.html
+        sub: installation/navigation.json
+      - text: Troubleshooting
+        id: troubleshooting
+        href: troubleshooting/index.html
+        sub: troubleshooting/navigation.json
+
+  - text: How To
+    id: how-to
+    sub:
+      - text: Operations
+        id: operations
+        href: operations/index.html
+        sub: operations/navigation.json
+
+  - text: Release Notes
+    id: releasenotes
+    sub:
+      - text: Release Notes
+        id: release-notes
+        href: release-notes/index.html
+        sub: release-notes/navigation.json
+
+---

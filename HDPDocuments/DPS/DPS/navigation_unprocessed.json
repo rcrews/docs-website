@@ -1,0 +1,95 @@
+---
+layout: json
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+json:
+  - text: Concepts
+    id: concepts
+    sub:
+      - text: Overview
+        href: overview/index.html
+        id: overview
+        sub: overview/navigation.json
+
+  - text: How To
+    id: how-to
+    sub:
+      - text: Getting Started
+        href: getting-started/index.html
+        id: getting-started
+        sub: getting-started/navigation.json
+      - text: Environments
+        href: environment-resources/index.html
+        id: environment-resources
+        sub: environment-resources/navigation.json
+      - text: Creating a Cluster on AWS
+        href: create-cluster-aws/index.html
+        id: create-cluster-aws
+        sub: create-cluster-aws/navigation.json
+      - text: Creating a Cluster on Azure
+        href: create-cluster-azure/index.html
+        id: create-cluster-azure
+        sub: create-cluster-azure/navigation.json
+      - text: Creating a Cluster on GCP
+        href: create-cluster-gcp/index.html
+        id: create-cluster-gcp
+        sub: create-cluster-gcp/navigation.json
+      - text: Managing Clusters
+        href: manage-clusters/index.html
+        id: manage-clusters
+        sub: manage-clusters/navigation.json
+      - text: Configuring Cloud Data Access
+        href: cloud-data-access/index.html
+        id: cloud-data-access
+        sub: cloud-data-access/navigation.json
+      - text: Data Lakes
+        href: data-lakes/index.html
+        id: data-lakes
+        sub: data-lakes/navigation.json
+      - text: User Management
+        href: user-management/index.html
+        id: user-management
+        sub: user-management/navigation.json
+      - text: Workspaces
+        href: workspaces/index.html
+        id: workspaces
+        sub: workspaces/navigation.json
+      - text: Command Line
+        href: install-cli/index.html
+        id: install-cli
+        sub: install-cli/navigation.json
+
+  - text: Troubleshooting
+    id: troubleshooting
+    sub:
+      - text: Troubleshooting
+        href: troubleshooting/index.html
+        id: troubleshooting
+        sub: troubleshooting/navigation.json
+
+  - text: Reference
+    id: reference
+    sub:
+      - text: ??
+        href: xxx/index.html
+        id: xxx
+        sub: xxx/navigation.json
+      - text: ??
+        href: yyy/index.html
+        id: yyy
+        sub: yyy/navigation.json
+
+  - text: Release Notes
+    id: releasenotes
+    sub:
+      - text: Release Notes
+        href: release-notes/index.html
+        id: release-notes
+        sub: release-notes/navigation.json
+---
