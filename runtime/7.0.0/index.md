@@ -3,7 +3,6 @@ layout: product
 title: Cloudera Runtime
 version: 7.0.0
 base-path: /runtime/7.0.0/
-
 sections:
 
   - title: Release Notes
