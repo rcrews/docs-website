@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  grid-template-columns: 60px 1em minmax(1em, 52em) minmax(1em, auto);
+  grid-template-rows: 60px 1em minmax(100vh, auto) 1em;
+  grid-template-areas:
+    "product-box	breadcrumbs		breadcrumbs		breadcrumbs"
+    "product-box	top-gap			top-gap			top-gap"
+    "product-box	left-gap		content			right-gap"
+    "product-box	bottom-gap		bottom-gap		bottom-gap";
+}
+
+#product_box {
+  background: black;
+  grid-area: product-box;
+}
+
+#breadcrumbs {
+  background: white;
+  grid-area: breadcrumbs;
+}
+
+main {
+  grid-area: content;
+}

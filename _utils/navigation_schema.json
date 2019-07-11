@@ -1,0 +1,48 @@
+{
+  "$id": "http://docs.hortonworks.org/json-schemas/navigation.json",
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Navigation Item Node",
+  "description": "A node in the docs.hortonworks navigation data structure",
+  "type": "array",
+  "properties": {
+    "href": {
+      "$comment": "URL associated with this item",
+      "type": "string",
+      "format": "uri"
+    },
+    "id": {
+      "$comment": "Identifier in xml:id format associated with this item",
+      "type": "string",
+      "pattern": "^[\\w][-.\\w]+$"
+    },
+    "pdf": {
+      "$comment": "URL to the PDF version, if not already provided in the href value",
+      "type": "string",
+      "format": "uri"
+    },
+    "src": {
+      "$comment": "URL to an icon associated with this item",
+      "type": "string",
+      "format": "uri"
+    },
+    "sub": {
+      "anyOf": [
+        {
+          "$comment": "An array following this schema",
+          "$ref": "#"
+        },
+        {
+          "$comment": "URL to a JSON file containing an array following this schema",
+          "type": "string",
+          "format": "uri"
+        }
+      ]
+    },
+    "text": {
+      "$comment": "Text associated with this item",
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "required": ["text"]
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>F99A662B-93B0-42FA-8EBF-BDB68DF16AAA</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>F99A662B-93B0-42FA-8EBF-BDB68DF16AAA</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va3QDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAZAIAAAUAAAABAQAAVXNlcnMA
+				AAAGAAAAAQEAAHJjcmV3cwAABwAAAAEBAABEZXNrdG9w
+				ABAAAAABAQAAd2ViX3N0b3JhZ2VfdGVzdBAAAAABBgAA
+				BAAAABQAAAAkAAAANAAAAAgAAAAEAwAADFEJAAAAAAAI
+				AAAABAMAAPCcCQAAAAAACAAAAAQDAAD1rGQDAAAAAAgA
+				AAAEAwAA86xFAAIAAAAQAAAAAQYAAGQAAAB0AAAAhAAA
+				AJQAAAAIAAAAAAQAAEG/4z8VhmZBGAAAAAECAAACAAAA
+				AAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
+				AwAAAgAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTov
+				Ly8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAHCi
+				R3QAAAAIAAAAAAQAAEG7fW+vAAAAJAAAAAEBAAAxNzE3
+				MUQ0Ri0wRjE4LTM3NjgtQjgzRC03OTAwNkM4M0I4ODEY
+				AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEA
+				AAABAQAALwAAALEAAAABAgAAMTU1ZTZmZDIzNWU2OGY5
+				YzFkOGYwNTM4MWYyYTc0MTIyMmIyMDU3NDswMDAwMDAw
+				MDswMDAwMDAwMDswMDAwMDAwMDAwMDAwMDIwO2NvbS5h
+				cHBsZS5hcHAtc2FuZGJveC5yZWFkLXdyaXRlOzAxOzAx
+				MDAwMDA1OzAwMDAwMDAyMDA0NWFjZjM7L3VzZXJzL3Jj
+				cmV3cy9kZXNrdG9wL3dlYl9zdG9yYWdlX3Rlc3QAAAAA
+				2AAAAP7///8BAAAAAAAAABEAAAAEEAAATAAAAAAAAAAF
+				EAAApAAAAAAAAAAQEAAAzAAAAAAAAABAEAAAvAAAAAAA
+				AAACIAAAnAEAAAAAAAAFIAAADAEAAAAAAAAQIAAAHAEA
+				AAAAAAARIAAAUAEAAAAAAAASIAAAMAEAAAAAAAATIAAA
+				QAEAAAAAAAAgIAAAfAEAAAAAAAAwIAAA7AAAAAAAAAAB
+				wAAA9AAAAAAAAAARwAAAFAAAAAAAAAASwAAAAAEAAAAA
+				AAAB0AAA7AAAAAAAAACA8AAAqAEAAAAAAAA=
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/rcrews/Desktop/web_storage_test/</string>
+				<key>RelativePath</key>
+				<string>./</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>web_storage_test</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>

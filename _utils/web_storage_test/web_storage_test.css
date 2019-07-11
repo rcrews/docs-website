@@ -1,0 +1,28 @@
+#pubmap {
+  width: 22em;
+  display: grid;
+  grid-template-columns: 1fr 5em;
+}
+
+#nav p {
+  margin: 0;
+}
+
+#nav {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#nav ol {
+  list-style: none;
+  padding-left: 0.5em;
+}
+
+#nav2 details {
+  padding-left: 0.5em;
+}
+
+div.details p {
+  margin: 0;
+  padding-left: 2em;
+}

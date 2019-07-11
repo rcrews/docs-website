@@ -1,0 +1,122 @@
+openapi: 3.0.0
+info:
+  title: Ratings and Comments
+  description: Ratings and comments for Hortonworks doc URLs
+  contact:
+    name: Robert Crews
+    url: 'https://docs.hortonworks.com/'
+    email: docs@hortonworks.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  version: 0.1.0
+tags:
+  - name: Ratings
+    description: Ratings for a URL
+  - name: Comments
+    description: Process comments for content at a URL
+paths:
+  /rating:
+    get:
+      tags:
+        - Ratings
+      summary: Returns the average rating and total ratings for a URL
+      parameters:
+        - in: path
+          name: path
+          schema:
+            type: string
+          required: true
+          description: Path from web root. Should start with a slash "/"
+          example: >-
+            /HDPDocuments/HDP2/HDP-2.6.3/bk_data-governance/content/ch_atlas_searching_and_viewing_entities.html
+      responses:
+        '200':
+          description: A rating object
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  averageRating:
+                    type: number
+                    description: A value from 0 to 5
+                  totalRatings:
+                    type: integer
+                    description: Total ratings for the path
+                example:
+                  averageRating: 4.2
+                  totalRatings: 14
+    post:
+      tags:
+        - Ratings
+      summary: Creates or updates a rating for a URL
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                path:
+                  type: string
+                rating:
+                  type: integer
+              example:
+                path: >-
+                  /HDPDocuments/HDP2/HDP-2.6.3/bk_data-governance/content/ch_atlas_searching_and_viewing_entities.html
+                rating: 5
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema:
+                $ref: >-
+                  #/paths/~1rating/get/responses/200/content/application~1json/schema
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: >-
+                  #/paths/~1rating/get/responses/200/content/application~1json/schema
+  /comment:
+    post:
+      tags:
+        - Comments
+      summary: Sends email
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                path:
+                  type: string
+                  description: URL of where the comment originated
+                from:
+                  type: string
+                  description: Sender's email
+                subject:
+                  type: string
+                  description: Comment title
+                body:
+                  type: string
+                  description: Comment
+              example:
+                path: >-
+                  /HDPDocuments/HDP2/HDP-2.6.3/bk_data-governance/content/ch_atlas_searching_and_viewing_entities.html
+                from: fred@bedrock.com
+                subject: Great Content!
+                body: >-
+                  Thank you so much for writing this great content. It has made
+                  me a better person.
+              required:
+                - path
+                - subject
+                - body
+      responses:
+        '201':
+          description: Email sent

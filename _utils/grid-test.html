@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+@import url("https://use.fontawesome.com/releases/v5.0.4/css/all.css");
+*, *:before, *:after { box-sizing: border-box; }
+html { font-size: 62.5%; }
+body {
+  font-size: 1.6rem;
+  background-color: #e7e7e7;
+  display: grid;
+  grid-template-columns: 20rem 3rem auto;
+  grid-template-rows: 6rem 3rem auto;
+  grid-template-areas: 
+    "product-box breadcrumbs breadcrumbs"
+    "product-box . ."
+    "product-box . central";
+  transition-property: grid-template-columns;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+body.product-box-compact {
+  grid-template-columns: 5rem 3rem auto;
+  transition-property: grid-template-columns;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+#product-box {
+  grid-area: product-box;
+  background: black;
+}
+#central {
+  grid-area: central;
+  display: grid;
+  grid-template-columns: 32rem 3rem auto 21rem;
+  grid-template-rows: auto 3rem;
+  grid-template-areas: 
+    "pubmap .  main ."
+    ".  .  .  .";
+}
+#breadcrumbs {
+  grid-area: breadcrumbs;
+  background: white;
+}
+#pubmap {
+  grid-area: pubmap;
+  position: sticky;
+  top: 3rem;
+  height: calc(100vh - 9rem);
+  overflow: auto;
+  border: 1px dotted red;
+}
+main {
+  grid-area: main;
+  background: white;
+  height: 108rem;
+}
+
+#breadcrumbs {
+  background-color: white;
+  position: relative;
+  left: $fluid-product-bar-collapsed-width;
+  height: $fluid-breadcrumbs-height;
+  width: calc(100vw - #{$fluid-product-bar-collapsed-width});
+}
+
+#breadcrumbs a {
+    text-decoration: none;
+  }
+
+#breadcrumbs p {
+    font-size: 2.0rem;
+    margin: 0 0 0 2rem;
+    padding: 1.6rem 0 0 0;
+    color: $fluid-breadcrumbs-utility-icons-color;
+  }
+
+#breadcrumbs p.breadcrumb-text {
+      color: $fluid-breadcrumbs-text-color;
+    }
+
+#breadcrumbs p.selected {
+      color: $fluid-breadcrumbs-selected-color;
+    }
+
+#breadcrumbs p.fas {
+      font-size: 1.6rem;
+    }
+
+#breadcrumbs p.breadcrumb-spacer {
+      margin: 0 0.5rem;
+      color: $fluid-breadcrumbs-spacer-color;
+    }
+</style>
+</head>
+<body>
+
+<nav id="product-box">
+<p>Product Box</p>
+</nav>
+
+<nav id="breadcrumbs">
+<p><a href="https://docs.hortonworks.com/" class="breadcrumb-text"><span class="fas fa-home"></span></a>
+<span class="breadcrumb-spacer">/</span>
+<a href="/HDPDocuments/HDF3/" class="breadcrumb-text">Hortonworks DataFlow</a>
+<span class="breadcrumb-spacer">/</span>
+<a href="/HDPDocuments/HDF3/HDF-3.0.3/" class="breadcrumb-text">3.0.3</a>
+<span class="breadcrumb-spacer">/</span>
+<a href="/HDPDocuments/HDF3/HDF-3.0.3/bk_getting-started-with-apache-nifi/" class="breadcrumb-text">Getting Started</a>
+<span class="breadcrumb-spacer">/</span>
+<a class="breadcrumb-text selected">Who is This Guide For?</a></p>
+</nav>
+
+<div id="central">
+
+<nav id="pubmap">
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+<p>pubmap</p>
+</nav>
+
+<main>
+<p>This is a test.</p>
+</main>
+
+</div>
+
+</body>
+</html>
