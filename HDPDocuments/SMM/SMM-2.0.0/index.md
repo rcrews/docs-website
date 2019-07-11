@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Streams Messaging Manager
 version: 2.0.0
 base-path: /HDPDocuments/SMM/SMM-2.0.0/
@@ -32,6 +32,10 @@ sections:
         url: managing-alert-policies/index.html
       - title: Managing Topics
         url: managing-topics/index.html
+      - title: Monitoring End to End Latency
+        url: monitoring-end-to-end-latency/index.html
+      - title: Monitoring Kafka Cluster Replications
+        url: monitoring-kafka-cluster-replications/index.html
 
   - title: Reference
     name: reference

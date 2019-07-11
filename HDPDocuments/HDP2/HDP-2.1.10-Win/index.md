@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: HDP for Windows
 version: 2.1.10
 base-path: /HDPDocuments/HDP2/HDP-2.1.10-Win/

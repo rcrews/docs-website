@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: HDP for Cloud
 version: 3.0.1
 base-path: /HDPDocuments/HDPforCloud/HDPforCloud-3.0.1/

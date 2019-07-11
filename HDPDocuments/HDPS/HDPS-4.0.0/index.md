@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Data Platform Search
 version: 4.0.0
 base-path: /HDPDocuments/HDPS/HDPS-4.0.0/

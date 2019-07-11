@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Cybersecurity
 version: 1.2.2
 base-path: /HDPDocuments/HCP1/HCP-1.2.2/

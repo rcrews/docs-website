@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Stream Processing
 version: 1.0.0
 base-path: /HDPDocuments/CSP/CSP-1.0.0/

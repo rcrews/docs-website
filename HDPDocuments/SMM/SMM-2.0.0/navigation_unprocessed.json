@@ -42,6 +42,14 @@ json:
         href: managing-topics/index.html
         id: managing-topics
         sub: managing-topics/navigation.json
+      - text: Monitoring End to End Latency
+        href: monitoring-end-to-end-latency/index.html
+        id: monitoring-end-to-end-latency
+        sub: monitoring-end-to-end-latency/navigation.json
+      - text: Monitoring Kafka Cluster Replications
+        href: monitoring-kafka-cluster-replications/index.html
+        id: monitoring-kafka-cluster-replications
+        sub: monitoring-kafka-cluster-replications/navigation.json
 
   - text: Reference
     id: reference

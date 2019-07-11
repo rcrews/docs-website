@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: hwx_foyer
 breadcrumb-title: DataFlow
 title: Installing HDF Components
 icon: hdf

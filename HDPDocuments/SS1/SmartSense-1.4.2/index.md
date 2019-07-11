@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: SmartSense
 version: 1.4.2
 base-path: /HDPDocuments/SS1/SmartSense-1.4.2/

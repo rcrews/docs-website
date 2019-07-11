@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: HDP for Windows
 version: 1.3.0
 base-path: /HDPDocuments/HDP1/HDP-Win-1.3.0/

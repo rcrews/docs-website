@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: hwx_foyer
 breadcrumb-title: DataPlane Service
 title: Workload Clusters
 icon: dataplaneservice

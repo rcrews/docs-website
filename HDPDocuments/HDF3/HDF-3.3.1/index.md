@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: DataFlow
 version: 3.3.1
 base-path: /HDPDocuments/HDF3/HDF-3.3.1/

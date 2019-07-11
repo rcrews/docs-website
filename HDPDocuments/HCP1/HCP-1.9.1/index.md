@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Cybersecurity
 version: 1.9.1
 base-path: /HDPDocuments/HCP1/HCP-1.9.1/
@@ -114,8 +114,8 @@ sections:
       - title: Triage Squid Using the Typosquatting Algorithm
         url: triage-squid-using-typosquatting/index.html
 
-      # - title: Investigating Alerts
-      #   url: investigating-alerts/index.html
+      - title: Investigating Alerts
+        url: investigating-alerts/index.html
 
 ---
 

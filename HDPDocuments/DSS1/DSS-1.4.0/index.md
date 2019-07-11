@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Data Steward Studio
 version: 1.4.0
 base-path: /HDPDocuments/DSS1/DSS-1.4.0/

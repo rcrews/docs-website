@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: DataPlane Platform
 version: 1.2.1
 base-path: /HDPDocuments/DP/DP-1.2.1/

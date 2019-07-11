@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: DataPlane Service
 base-path: /HDPDocuments/DPS/DPS/
 

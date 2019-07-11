@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: hwx_foyer
 breadcrumb-title: Cybersecurity
 title: Zeppelin
 icon: cybersecurity

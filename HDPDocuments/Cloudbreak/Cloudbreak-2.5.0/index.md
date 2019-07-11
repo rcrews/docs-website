@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Cloudbreak
 version: 2.5.0 Technical Preview
 base-path: /HDPDocuments/Cloudbreak/Cloudbreak-2.5.0/

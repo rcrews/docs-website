@@ -324,9 +324,9 @@ json:
         href: triage-squid-using-typosquatting/index.html
         sub: triage-squid-using-typosquatting/navigation.json
 
-      # - text: Investigating Alerts
-      #   id: investigating-alerts
-      #   href: investigating-alerts/index.html
-      #   sub: investigating-alerts/navigation.json
+      - text: Investigating Alerts
+        id: investigating-alerts
+        href: investigating-alerts/index.html
+        sub: investigating-alerts/navigation.json
 
 ---

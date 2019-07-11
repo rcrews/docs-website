@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: HDP
 version: 1.3.0
 base-path: /HDPDocuments/HDP1/HDP-1.3.0/

@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Cloudbreak
 version: 1.6.2
 

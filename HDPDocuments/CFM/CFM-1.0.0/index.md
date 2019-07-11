@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Flow Management
 version: 1.0.0
 base-path: /HDPDocuments/CFM/CFM-1.0.0/

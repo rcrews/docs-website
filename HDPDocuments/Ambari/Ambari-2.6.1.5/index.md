@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Ambari
 version: 2.6.1.5
 base-path: /HDPDocuments/Ambari-2.6.1.5/

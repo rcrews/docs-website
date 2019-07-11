@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: hwx_product
 title: Cloudbreak
 version: 2.4.1
 base-path: /HDPDocuments/Cloudbreak/Cloudbreak-2.4.1/
