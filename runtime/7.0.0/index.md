@@ -48,11 +48,6 @@ sections:
       - title: Materialized View Commands
         url: materialized-view-commands/index.html
 
----
-CDP Runtime offers several tools for processing, analyzing and making sense from data. Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
-
-Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
-
 
 #      - title: administering-hue
 #        url: administering-hue/index.html
@@ -203,3 +198,7 @@ Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi
 #
 #      - title: yarn-data-management
 #        url: yarn-data-management/index.html
+---
+CDP Runtime offers several tools for processing, analyzing and making sense from data. Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+
+Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
