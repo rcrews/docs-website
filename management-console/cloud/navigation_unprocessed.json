@@ -1,0 +1,34 @@
+---
+layout: json
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+json:
+  - text: Concepts
+    id: concepts
+    sub:
+      - text: credentials-aws
+        href: credentials-aws/index.html
+        id: credentials-aws
+        sub: credentials-aws/navigation.json
+
+      - text: credentials-azure
+        href: credentials-azure/index.html
+        id: credentials-azure
+        sub: credentials-azure/navigation.json
+
+      - text: troubleshooting
+        href: troubleshooting/index.html
+        id: troubleshooting
+        sub: troubleshooting/navigation.json
+
+      - text: user-management
+        href: user-management/index.html
+        id: user-management
+        sub: user-management/navigation.json
+---

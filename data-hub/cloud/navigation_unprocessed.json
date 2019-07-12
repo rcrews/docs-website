@@ -1,0 +1,69 @@
+---
+layout: json
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+json:
+  - text: Concepts
+    id: concepts
+    sub:
+      - text: access-clusters
+        href: access-clusters/index.html
+        id: access-clusters
+        sub: access-clusters/navigation.json
+
+      - text: blueprints
+        href: blueprints/index.html
+        id: blueprints
+        sub: blueprints/navigation.json
+
+      - text: create-cluster-aws
+        href: create-cluster-aws/index.html
+        id: create-cluster-aws
+        sub: create-cluster-aws/navigation.json
+
+      - text: create-cluster-azure
+        href: create-cluster-azure/index.html
+        id: create-cluster-azure
+        sub: create-cluster-azure/navigation.json
+
+      - text: databases
+        href: databases/index.html
+        id: databases
+        sub: databases/navigation.json
+
+      - text: ebs-encryption-aws
+        href: ebs-encryption-aws/index.html
+        id: ebs-encryption-aws
+        sub: ebs-encryption-aws/navigation.json
+
+      - text: image-catalogs
+        href: image-catalogs/index.html
+        id: image-catalogs
+        sub: image-catalogs/navigation.json
+
+      - text: manage-clusters
+        href: manage-clusters/index.html
+        id: manage-clusters
+        sub: manage-clusters/navigation.json
+
+      - text: proxy
+        href: proxy/index.html
+        id: proxy
+        sub: proxy/navigation.json
+
+      - text: recipes
+        href: recipes/index.html
+        id: recipes
+        sub: recipes/navigation.json
+
+      - text: troubleshooting-clusters
+        href: troubleshooting-clusters/index.html
+        id: troubleshooting-clusters
+        sub: troubleshooting-clusters/navigation.json
+---

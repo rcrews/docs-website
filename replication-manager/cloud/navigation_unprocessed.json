@@ -1,0 +1,24 @@
+---
+layout: json
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+json:
+  - text: Concepts
+    id: concepts
+    sub:
+      - text: core-concepts
+        href: core-concepts/index.html
+        id: core-concepts
+        sub: core-concepts/navigation.json
+
+      - text: operations
+        href: operations/index.html
+        id: operations
+        sub: operations/navigation.json
+---
