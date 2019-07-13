@@ -1,6 +1,20 @@
 var NEWUX = (function($) {
     'use strict';
 
+    var WhoAmI = {
+        product_name : "", // We get this from the from the URL, or the meta-tag
+        version_name : "", // We get this from the URL, or the meta tag.
+        latest_version : "", // We need to look this up from the versions.yaml.
+        other_versions : [], // Populate this from versions.yaml
+        products : [], // The full versions.yaml jsonified.
+        init : function () {
+
+            // Walk the versions.yaml tree and get the related information for this product
+            // and init the related information etc
+
+        }
+    };
+
     // Example Toolbelt Functions
     var Utils = { 
         store: function (namespace, data) {
@@ -382,6 +396,14 @@ var NEWUX = (function($) {
     };
 
     var Search = {
+
+        init: function() {
+            // Figure out what product I am... else
+            this.query = null;
+            this.bindEvents();
+
+        },
+
         // Configs the search functionality...
         searchURL: function() {
             let sserver = ["nool", "yoop"];
@@ -391,17 +413,13 @@ var NEWUX = (function($) {
             // return "/common/sample-data/solr1.json"
         },
 
-        init: function() {
-            this.query = null;
-            this.bindEvents();
-            // this.set ??
-        },
-
         bindEvents: function() {
             $('.searchform').on('submit', this.launchSearch.bind(this));
             $('.searchform i.submit').on('click', function() {
                 $(this).closest('.searchform').trigger('submit');
             });
+
+
             $('.lucene-container .close-btn').on( 'click', this.hideSearch.bind(this));
             $('.lucene-results .filter').on('click', this.updateFilters.bind(this));
             $('.lucene-results .versions>i').on('click', this.showVersionOptions.bind(this))
@@ -524,7 +542,7 @@ var NEWUX = (function($) {
                 search_url = this.searchURL();
             // solr_url = "//localhost:8983/solr/corehw/query?";
 
-            // Build the Query from the searchterm and filters.
+            // Build the Query from the searchterm and filters that are in the HTML.
             $('.filters .product').each(function(index) {
                 if(!$(this).hasClass('inactive')) {
                     if(fq !== "") {
@@ -585,7 +603,8 @@ var NEWUX = (function($) {
                             if (output_holder.hasOwnProperty(book)) {
                                 result = "";
                                 result += '<div class="book-group">';
-                                result += ' <div class="book">' + book + '</div>';
+                                console.log(book);
+                                result += ' <div class="book">' + (book !== 'undefined' ? book : "")  + '</div>';
                                 for(var i=0; i < output_holder[book].length; i++) {
                                     result += output_holder[book][i];
                                 }
