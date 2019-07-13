@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<title>Fixed Issues - Hortonworks Data Platform</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><meta name="mavenGroupId" content="com.hortonworks.docs"/><meta name="mavenArtifactId" content="hdp-ambari-release-notes"/><meta name="mavenVersionId" content="master"/><link rel="home" href="index.html" title="Hortonworks Data Platform"/><link rel="up" href="ch_relnotes-ambari-2.6.2.4-7.html" title="Chapter 2. Release Notes Ambari - 2.6.2.4-7"/><link rel="prev" href="ambari_relnotes-2.6.2.4-7-known-issues.html" title="Known Issue"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="git-sha" content="005651c7353448bcae9967a8da5a91541914506f"/><meta name="buildTime" content="2018-07-25T04:20:16+00:00"/><script type="application/javascript">
+            //The id for tree cookie
+            var treeCookieId = "treeview-bk_ambari-release-notes";
+            var language = "en";
+            var w = new Object();
+            //Localization
+            txt_filesfound = 'Results';
+            txt_enter_at_least_1_char = "You must enter at least one character.";
+            txt_browser_not_supported = "Please enable JavaScript.";
+            txt_please_wait = "Please wait. Search in progress...";
+            txt_results_for = "Results for: ";
+        </script><style type="text/css">
+            input {
+            margin-bottom: 5px;
+            margin-top: 2px;
+            }
+
+            .folder {
+            display: block;
+            height: 22px;
+            padding-left: 20px;
+            background: transparent url(../common/jquery/treeview/images/folder.gif) 0 0px no-repeat;
+            }
+            
+        </style><link rel="icon" href="../favicon.ico" type="image/x-icon" sizes="16x16"/><link rel="icon" href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-70x70.png" type="image/x-icon" sizes="32x32"/><link rel="icon" href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" type="image/x-icon" sizes="192x192"/><link rel="apple-touch-icon-precomposed" href="https://hortonworks.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" type="image/x-icon" sizes="192x192"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"/><link rel="stylesheet" href="../common/css/main.css"/><link rel="stylesheet" href="../common/css/docux.css"/><!--[if IE]>
+	        <link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
+	        <![endif]--><link rel="stylesheet" type="text/css" href="../common/jquery/theme-redmond/jquery-ui-1.8.2.custom.css"/><link rel="stylesheet" type="text/css" href="../common/jquery/treeview/jquery.treeview.css"/><script type="application/javascript" src="https://code.jquery.com/jquery-1.4.3.min.js"><!-- --></script><script type="application/javascript" src="../common/jquery/jquery-ui-1.8.2.custom.min.js"><!-- --></script><script type="application/javascript" src="../common/jquery/jquery.cookie.js"><!-- --></script><script type="application/javascript" src="../common/jquery/treeview/jquery.treeview.min.js"><!-- --></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.css"/><script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"><!-- jQuery plugin for glossary popups. --></script><script type="application/javascript" src="../common/main.js"><!-- --></script><script type="application/javascript" src="search/htmlFileList.js"><!-- --></script><script type="application/javascript" src="search/htmlFileInfoList.js"><!-- --></script><script type="application/javascript" src="search/nwSearchFnt.js"><!-- --></script><script type="application/javascript" src="search/stemmers/en_stemmer.js"><!-- //make this scalable to other languages as well. --></script><script type="application/javascript" src="search/index-1.js"><!-- --></script><script type="application/javascript" src="search/index-2.js"><!-- --></script><script type="application/javascript" src="search/index-3.js"><!-- --></script><script type="application/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-22950817-19', 'auto');
+ga('send', 'pageview');</script></head><body class="docs books"><div id="body_container"><div class="breadcrumb_bg"><!-- --></div><div id="navbar"><section class="ps topstrip"><div><!-- --></div></section></div><div class="mainbody"><section class="ps titlebar"><div><div class="breadcrumb"><a href="/">Hortonworks Docs</a> » <a id="index_page" href="../../../Ambari/Ambari-2.6.2.4-7/index.html">Apache Ambari 2.6.2.4-7</a> » <span class="current_book">Apache Ambari Release Notes for HDInsight</span></div><div class="book_title">Apache Ambari Release Notes for HDInsight</div><div class="ebooks"><div class="formats"><span class="desc">Also available as:</span><div class="format"><a onclick="_gaq.push(['_trackEvent', 'Header', 'pdfDownload', 'click', 1]);" title="Download a PDF of this document" class="pdficon" href="../bk_ambari-release-notes.pdf"><img src="../common/img/pdf.png" alt="PDF"/></a></div></div></div></div></section><div class="lowerbody"><section class="ps doc-content"><div><div class="aside left"><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv" tabindex="1"><span class="contentsTab">Contents</span></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none" class="thisisthat"><ul id="tree" class="filetree"><li tabindex="2"><span class="file"><a href="ch_relnotes-ambari-2.6.2.2.html">1. Release Notes Ambari - 2.6.2.2</a></span><ul><li tabindex="2"><span class="file"><a href="ambari_relnotes-2.6.2.2-fixed-issues.html">Fixed Issue</a></span></li></ul></li><li tabindex="2"><span class="file"><a href="ch_relnotes-ambari-2.6.2.4-7.html">2. Release Notes Ambari - 2.6.2.4-7</a></span><ul><li tabindex="2"><span class="file"><a href="ambari_relnotes-2.6.2.4-7-known-issues.html">Known Issue</a></span></li><li tabindex="2" id="webhelp-currentid"><span class="file"><a href="ambari_relnotes-2.6.2.4-7-fixed-issues.html">Fixed Issues</a></span></li></ul></li></ul></div></div></div></div></div><div class="formats"><div class="pdf"><!-- --></div></div></div><div id="content"><div class="statustext"><!-- --></div><div class="prev-next"><div class="prev"><a accesskey="p" class="navLinkPrevious" onclick="_gaq.push(['_trackEvent', 'Header', 'prevLink', 'click', 1]);" tabindex="5" href="ambari_relnotes-2.6.2.4-7-known-issues.html">« Prev</a></div></div><div class="section"><div xmlns="" class="titlepage"><div><div><h2 xmlns="http://www.w3.org/1999/xhtml" class="title" style="clear: both"><a id="ambari_relnotes-2.6.2.4-7-fixed-issues">​</a>Fixed Issues</h2></div></div></div><p>The following issues are resolved in Ambari 2.6.2.4-7:</p><div class="informaltable"><table border="1"><colgroup><col width="70"/><col width="70"/><col width="70"/><col width="220"/><col width="100"/></colgroup><thead><tr><th>
+                            <p>Version</p>
+                        </th><th>
+                            <p>Apache Jira</p>
+                        </th><th>
+                            <p>HWX Jira</p>
+                        </th><th>
+                            <p>Summary</p>
+                        </th><th>
+                            <p>Components</p>
+                        </th></tr></thead><tbody><tr><td>2.6.2.4-7</td><td><a class="link" href="https://issues.apache.org/jira/browse/AMBARI-1052" target="_top">AMBARI-1052</a></td><td>N/A</td><td> install_packages.py installs packages in a non-deterministic
+                            manner</td><td> </td></tr><tr><td>2.6.2.4-7</td><td><a class="link" href="https://issues.apache.org/jira/browse/AMBARI-1055" target="_top">AMBARI-1055</a></td><td>N/A</td><td> Ambari Upgrade - Cannot finalize on hosts where target stack was not
+                            installed</td><td> </td></tr><tr><td>2.6.2.4-7</td><td><a class="link" href="https://issues.apache.org/jira/browse/AMBARI-1058" target="_top">AMBARI-1058</a></td><td> </td><td> </td><td> </td></tr><tr><td>2.6.2.4-7</td><td><a class="link" href="https://issues.apache.org/jira/browse/AMBARI-1065" target="_top">AMBARI-1065</a></td><td>N/A</td><td>hardcoded hadoop-azure version in views</td><td> </td></tr><tr><td>2.6.2.4-7</td><td><a class="link" href="https://issues.apache.org/jira/browse/AMBARI-1069" target="_top">AMBARI-1069</a></td><td>N/A</td><td>API call throws <a class="link" href="https://issues.apache.org/jira/browse/HTTP-405" target="_top">HTTP-405</a> error on Pig View UDF tab </td><td> </td></tr><tr><td>2.6.2.4-7</td><td><a class="link" href="https://issues.apache.org/jira/browse/AMBARI-1070" target="_top">AMBARI-1070</a></td><td>N/A</td><td>Failed To Create Script Error is thrown in Pig View and File
+                            resource</td><td> </td></tr><tr><td>2.6.2.4-7</td><td>N/A</td><td>BUG-105722</td><td>Added check for under replication of partitions</td><td> </td></tr><tr><td>2.6.2.4-7</td><td>N/A</td><td>BUG-105722</td><td>Fixed case for Topic</td><td> </td></tr><tr><td>2.6.2.4-7</td><td>N/A</td><td>BUG-105798</td><td>Agent fails to auto-start HDFS when using LZO </td><td> </td></tr><tr><td>2.6.2.4-7</td><td>N/A</td><td>BUG-105801</td><td>Failed to force_non_member_install a stack version on hosts</td><td> </td></tr><tr><td>2.6.2.4-7</td><td>N/A</td><td>RMP-11302</td><td>Fixing HDP version for Kafka 1.1 for HDP (MSFT) on AMBARI
+                            2.6.2.4</td><td> </td></tr></tbody></table></div><p><span class="bold"><strong>More Information</strong></span></p><p><a class="link" href="https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.2.0/bk_ambari-release-notes/content/ambari_relnotes-2.6.2.0-fixed-issues.html" target="_top">Selected issues resolved in Ambari 2.6.2
+        </a></p></div></div></div></section></div></div></div><section class="ps footer"><div><div class="copyright">© 2012–2018, Hortonworks, Inc.</div><div class="license">Document licensed under the
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">Creative
+      Commons Attribution ShareAlike 4.0 License</a>.</div><div class="menulinks"><a href="https://hortonworks.com">Hortonworks.com</a> |
+                  <a href="/">Documentation</a> |
+                  <a href="https://hortonworks.com/support/">Support</a> |
+                  <a href="https://community.hortonworks.com/">Community</a></div></div></section><script type="application/javascript" src="../common/js/plugins.js"><!-- --></script><script type="application/javascript" src="../common/js/scripts.js"><!-- --></script><script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"><!-- --></script><script type="application/javascript">
+  // PAGE SPECIFIC SCRIPTS
+  
+  $('.chapters>li .dropdown').click(function () {
+      var $arrow = $(this).find('i.fa');
+      if( $arrow.hasClass('fa-chevron-down')) {
+          $(this).siblings('.sections').show();
+          $arrow.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+      } else {
+          console.log('up');
+          $(this).siblings('.sections').hide();
+          $arrow.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+      }
+  });
+  
+//  $('h3').on('mouseenter',function() {
+//      console.log('received mouseover');
+//      $(this).find('.hash-link').show();
+//  });
+
+//  $('h3').on('mouseleave',function() {
+//      $(this).find('.hash-link').hide();
+//  });
+  
+  
+  // STICKY SIDEBARs
+  var stickySidebar = $('.sticky');
+  
+  if (stickySidebar.length > 0) {
+      var stickyHeight = stickySidebar.height(),
+            sidebarTop = stickySidebar.offset().top;
+  }
+  
+  // on scroll move the sidebar
+  $(window).scroll(function () {
+      if (stickySidebar.length > 0) {
+          var scrollTop = $(window).scrollTop();
+          console.log
+  
+          if (sidebarTop < scrollTop) {
+              stickySidebar.css('top', scrollTop - sidebarTop);
+  
+              // stop the sticky sidebar at the footer to avoid overlapping
+              var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+                      stickyStop = $('.main-content').offset().top + $('.main-content').height();
+              if (stickyStop < sidebarBottom) {
+                  var stopPosition = $('.main-content').height() - stickyHeight;
+                  stickySidebar.css('top', stopPosition);
+              }
+          }
+          else {
+              stickySidebar.css('top', '0');
+          }
+      }
+  });
+  
+  $(window).resize(function () {
+      if (stickySidebar.length > 0) {
+          stickyHeight = stickySidebar.height();
+      }
+  });
+  
+  // Initialize Syntax Highlighting
+  hljs.initHighlightingOnLoad();
+</script></body></html>

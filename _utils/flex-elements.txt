@@ -1,0 +1,26 @@
+body.content-page
+  nav.product-box
+  div.content
+    header
+    article
+      nav.navigation-layers
+      div.wrap-topic
+        main.topic
+        nav.prev
+        nav.next
+      nav.right-nav
+    footer
+
+
+1. body.content-page
+  2. div.content
+    2. article
+      2. div.wrap-topic
+        1. main.topic
+        2. nav.prev
+        3. nav.next
+      1. nav.navigation-layers
+      3. nav.right-nav
+    1. header
+    3. footer
+  1. nav.product-box

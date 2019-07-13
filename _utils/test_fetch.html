@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+<style>
+</style>
+<title>JavaScript Tests</title>
+</head>
+<body>
+<header></header>
+<article>
+<h1>JavaScript Tests</h1>
+
+</article>
+<footer></footer>
+<script>
+const releasesUri =
+    "https://raw.githubusercontent.com/hortonworks/build-manifests/master/AMBARI/2.6/release_url_info.json?token=AK6zJvOqzyQxy9x6pVtgSWacUcbdq1bUks5bIuEMwA%3D%3D";
+fetch(releasesUri)
+    .then(response => { return response.json(); })
+    .then(json => {
+        const ul = document.createElement("ul");
+        for (const key in json) {
+            ul.appendChild(document.createElement("li"))
+              .appendChild(document.createTextNode(key));
+        }
+        document.getElementsByTagName("body")[0].appendChild(ul);
+    })
+    .catch(e => console.log(e));
+</script>
+</body>
+</html>

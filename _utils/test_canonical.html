@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+<style>
+</style>
+<title>JavaScript Tests</title>
+</head>
+<body>
+<header"></header>
+<article>
+<h1>JavaScript Tests</h1>
+
+</article>
+<footer></footer>
+<script type="application/javascript">
+const URL01 = "https://example.com/foo/bar.html";
+const URL02 = "https://example.com/foo";
+const URL03 = "https://example.com/foo/bar.html#baz";
+const URL04 = "https://example.com/foo/bar.html?s=15#baz";
+const URL05 = "https://example.com/foo//bar.html?s=15#baz";
+const URL06 = "https://example.com/foo/./bar.html?s=15#baz";
+const URL07 = "https://example.com/foo/../bar.html?s=15#baz";
+const URL08 = "https://example.com/foo/./././././bar.html?s=15#baz";
+const URL09 = "https://example.com/foo/that/../../bar.html?s=15#baz";
+const URL10 = "./.././bar.html?s=15#baz";
+const URL11 = "abababababababababar.html?s=15#baz";
+const URL12 = "./../bar.html?s=15#baz";
+const URL13 = "../bar.html?s=15#baz";
+
+// console.log(URL06.match(/blue/, 'bar'));
+
+/** Joins a base URI and a URI */
+function uri_join(base, uri) {
+    "use strict";
+    if (!base) {
+        base = "";
+    }
+    if (!uri) {
+        uri = "";
+    }
+
+    /** Removes ./ and resolves ../ from String path */
+    function removeDotDirs(str) {
+
+        /** Removes ./ from the beginning of a String */
+        function r1(stg) {
+            let re = new RegExp("^[.]/");
+            if (re.test(stg)) {
+                return r1(stg.replace(re, ""));
+            }
+            return stg;
+        }
+
+        /** Replaces /./ with / throughout a String */
+        function r2(stg) {
+            let re = new RegExp("/[.]/");
+            if (re.test(stg)) {
+                return r2(stg.replace(re, "/"));
+            }
+            return stg;
+        }
+
+        /** Resolves /../ entries throughout a String path */
+        function r3(stg) {
+            let re = new RegExp("[^/]+/[.]{2}/");
+            if (re.test(stg)) {
+                return r3(stg.replace(re, ""));
+            }
+            return stg;
+        }
+
+        /* Order is important */
+        return r3(r2(r1(str)));
+    }
+
+    /** Assures base ends with a slash */
+    function endWithSlash(base) {
+        let m = base.match(new RegExp("([^/]+)$"));
+        if (m === null) {
+            return base;
+        }
+        if (/^[\d.]+$/.test(m[1]) || m[1].indexOf(".") === -1) {
+            return base + "/";
+        }
+        return base.substring(0, base.lastIndexOf("/") + 1);
+    }
+
+    return removeDotDirs(endWithSlash(base) + uri);
+}
+
+console.log( uri_join(Window.location, URL10) );
+console.log( uri_join("//ambari/2.1.2.1/index.html", URL10) );
+
+</script>
+</body>
+</html>
