@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="task"><meta name="description" content="You can create a materialized view of a query to calculate and store results of an expensive operation, such as join."><meta name="DC.Relation" scheme="URI" content="../topics/hive_using_materialized_views.html"><meta name="DC.Relation" scheme="URI" content="http://docs-stage.cloudera.com/HDPDocuments/CR/CR-1.0.0/materialized-view/content/hive_alter_materialized_view_rebuild.html"><meta name="prodname" content="Data Access"><meta name="version" content="3"><meta name="release" content="1"><meta name="modification" content="0"><meta name="brand" content="Data Platform"><meta name="rights" content="© 2019, 2018, 2017, 2016 Cloudera, Inc."><meta name="DC.Date.Created" content="2018-07-12"><meta name="DC.Date.Modified" content="2018-07-12"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_create_and_use_materialized"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Create and use a materialized view</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Create and use a materialized view</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">You can create a materialized view of a query to calculate and store results of an
+        expensive operation, such as join. </p>
+        <section class="section context">
+            <p class="p">In this task, you create and populate example tables. You create a materialized view
+                of a join of the tables. Subsequently, when you run a query to join the tables, the
+                query plan takes advantage of the precomputed join to accelerate processing. This
+                task is over-simplified and is intended to show the syntax and output of a
+                materialized view, not to demonstrate accelerated processing that results in a
+                real-world task, which would process a large amount of data.</p>
+        </section>
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">In Data Analytics Studio (DAS), the Hive shell, or other Hive UI, create two
+                    tables:</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>CREATE TABLE emps (
+   empid INT,
+   deptno INT,
+   name VARCHAR(256),
+   salary FLOAT,
+   hire_date TIMESTAMP);
+                    
+CREATE TABLE depts (
+   deptno INT,
+   deptname VARCHAR(256),
+   locationid INT);</code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Insert some data into the tables for example purposes:</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>INSERT INTO TABLE emps VALUES (10001,101,'jane doe',250000,'2018-01-10');
+INSERT INTO TABLE emps VALUES (10002,100,'somporn klailee',210000,'2017-12-25');
+INSERT INTO TABLE emps VALUES (10003,200,'jeiranan thongnopneua',175000,'2018-05-05');
+                    
+INSERT INTO TABLE depts VALUES (100,'HR',10);
+INSERT INTO TABLE depts VALUES (101,'Eng',11);
+INSERT INTO TABLE depts VALUES (200,'Sup',20);               </code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Create a materialized view to join the tables:</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>CREATE MATERIALIZED VIEW mv1
+  AS SELECT empid, deptname, hire_date
+  FROM emps JOIN depts
+  ON (emps.deptno = depts.deptno)
+  WHERE hire_date &gt;= '2017-01-01';</code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Execute a query that takes advantage of the precomputation performed by the
+                    materialized view:</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>SELECT empid, deptname
+  FROM emps
+  JOIN depts
+  ON (emps.deptno = depts.deptno)
+  WHERE hire_date &gt;= '2017-01-01'
+  AND hire_date &lt;= '2019-01-01';</code></pre>
+                </div>
+                <div class="itemgroup stepresult">Output is:
+                    <pre class="pre codeblock"><code>+--------+-----------+
+| empid  | deptname  |
++--------+-----------+
+| 10003  | Sup       |
+| 10002  | HR        |
+| 10001  | Eng       |
++--------+-----------+              </code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Verify that the query rewrite used the materialized view by running an extended
+                    EXPLAIN statement:</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>EXPLAIN EXTENDED SELECT empid, deptname
+  FROM emps
+  JOIN depts
+  ON (emps.deptno = depts.deptno)
+  WHERE hire_date &gt;= '2017-01-01'
+  AND hire_date &lt;= '2019-01-01';</code></pre>
+                </div>
+                <div class="itemgroup stepresult">The output shows the alias <code class="ph codeph">default.mv1</code> for the
+                    materialized view in the TableScan section of the plan.
+                    <pre class="pre codeblock"><code>OPTIMIZED SQL: SELECT `empid`, `deptname`          
+FROM `default`.`mv1`                               
+WHERE TIMESTAMP '2019-01-01 00:00:00.000000000' &gt;= `hire_date` 
+STAGE DEPENDENCIES:                                
+  Stage-0 is a root stage                          
+                                                                           
+STAGE PLANS:                                       
+  Stage: Stage-0                                   
+    Fetch Operator                                 
+      limit: -1                                    
+      Processor Tree:                              
+        TableScan                                  
+          alias: default.mv1                       
+          filterExpr: (hire_date &lt;= TIMESTAMP'2019-01-01 
+            00:00:00') (type: boolean) |
+          GatherStats: false                       
+          Filter Operator                          
+            isSamplingPred: false                  
+            predicate: (hire_date &lt;= TIMESTAMP'2019-01-01 
+              00:00:00') (type: boolean) 
+            Select Operator                        
+              expressions: empid (type: int), deptname (type: varchar(256)) 
+              outputColumnNames: _col0, _col1      
+              ListSink                             </code></pre></div>
+            </li></ol>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/hive_using_materialized_views.html" title="Apache Hive works with Apache Calcite to optimize your queries automatically using materialized views you create.">Using materialized views</a></div></div><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="http://docs-stage.cloudera.com/HDPDocuments/CR/CR-1.0.0/materialized-view/content/hive_alter_materialized_view_rebuild.html" target="_blank">Materialized view commands</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

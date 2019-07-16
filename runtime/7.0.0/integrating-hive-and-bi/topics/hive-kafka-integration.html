@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="concept"><meta name="description" content="As an Apache Hive user, you can connect to, analyze, and transform data in Apache Kafka from Hive. You can offload data from Kafka to the Hive warehouse. Using Hive-Kafka integration, you can perform actions on real-time data and incorporate streamed data into your application."><meta name="DC.subject" content="Hive, Kafka, Kafka storage handler, Hive data stream"><meta name="keywords" content="Hive, Kafka, Kafka storage handler, Hive data stream"><meta name="DC.Relation" scheme="URI" content="https://kafka.apache.org/0110/documentation.html"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive-kafka-integration"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Apache Hive-Kafka integration</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+ <h1 class="title topictitle1" id="ariaid-title1">Apache Hive-Kafka integration</h1>
+ 
+ 
+ <div class="body conbody"><p class="shortdesc">As an Apache Hive user, you can connect to, analyze, and transform data in Apache Kafka
+  from Hive. You can offload data from Kafka to the Hive warehouse. Using Hive-Kafka integration,
+  you can perform actions on real-time data and incorporate streamed data into your
+  application.</p>
+  <div class="p">You connect to Kafka data from Hive by creating an external table that maps to a Kafka topic.
+   The table definition includes a reference to a Kafka storage handler that connects to Kafka. On
+   the external table, Hive-Kafka integration supports ad hoc queries, such as questions about data
+   changes in the stream over a period of time. You can transform Kafka data in the following
+    ways:<ul class="ul" id="hive-kafka-integration__ul_nxj_w3g_kfb">
+    <li class="li">Perform data masking</li>
+    <li class="li">Join dimension tables or any stream</li>
+    <li class="li">Aggregate data</li>
+    <li class="li">Change the SerDe encoding of the original stream</li>
+    <li class="li">Create a persistent stream in a Kafka topic</li>
+   </ul></div>
+  <div class="p">You can achieve data offloading by controlling its position in the stream. The Hive-Kafka
+   connector supports the following serialization and deserialization formats:<ul class="ul" id="hive-kafka-integration__ul_vmk_dvl_kfb">
+    <li class="li">JsonSerDe (default)</li>
+    <li class="li">OpenCSVSerde</li>
+    <li class="li">AvroSerDe</li>
+   </ul></div>
+ </div>
+<nav role="navigation" class="related-links"><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="https://kafka.apache.org/0110/documentation.html" target="_blank">Apache Kafka Documentation</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

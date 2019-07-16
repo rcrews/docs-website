@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="task"><meta name="description" content="Hive supports the ANSI-standard information_schema database, which you can query for information about tables, views, columns, and your Hive privileges. The information_schema data reveals the state of the system, similar to sys database data, but in a user-friendly, read-only way. You can use joins, aggregates, filters, and projections in information_schema queries."><meta name="DC.Relation" scheme="URI" content="../topics/hive_hive_query_language_basics.html"><meta name="prodname" content="Data Access"><meta name="version" content="3"><meta name="release" content="1"><meta name="modification" content="0"><meta name="brand" content="Data Platform"><meta name="rights" content="© 2019, 2018, 2017, 2016 Cloudera, Inc."><meta name="DC.Date.Created" content="2018-07-12"><meta name="DC.Date.Modified" content="2018-07-12"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_query_the_information_schema"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Query the information_schema database</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Query the information_schema database</h1>
+    
+    
+    <div class="body taskbody"><p class="shortdesc">Hive supports the ANSI-standard information_schema database, which you can query for
+        information about tables, views, columns, and your Hive privileges. The information_schema
+        data reveals the state of the system, similar to sys database data, but in a user-friendly,
+        read-only way. You can use joins, aggregates, filters, and projections in information_schema
+        queries.</p>
+        <section class="section context">
+            <p class="p">One of the steps in this task involves changing the time interval for synchronization
+                between HiveServer and the policy. HiveServer responds to any policy changes within
+                this time interval. You can query the information_schema database for only your own
+                privilege information.</p>
+        </section>
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Open the Ranger Access Manager at <span class="ph filepath">&lt;node URI&gt;:6080</span>, and
+                    check that access policies exist for the <code class="ph codeph">hive</code> user.</span>
+                <div class="itemgroup stepxmp">
+                    <figure class="fig fignone" id="hive_query_the_information_schema__fig_szl_yzr_h2b">
+                        <img class="image" id="hive_query_the_information_schema__image_tn5_c1s_h2b" src="../images/hive_ranger_hive_user_policy.png">
+                    </figure>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to <span class="ph menucascade"><span class="ph uicontrol">Services</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Hive</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Configs</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Advanced</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Custom hive-site</span></span>.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Add the <code class="ph codeph">hive.privilege.synchronizer.interval</code> key and set the
+                    value to 1.</span>
+                <div class="itemgroup info">This setting changes the synchronization from the default one-half hour to one
+                    minute.</div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">From the Beeline shell, start Hive, and check that Ambari installed the
+                    information_schema database:</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>SHOW DATABASES;
+...
++---------------------+
+|    database_name    |
++---------------------+
+| default             |
+| information_schema  |
+| sys                 |
++---------------------+</code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Use the information_schema database to list tables in the database.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>USE information_schema;
+...
+SHOW TABLES;
+...
++--------------------+
+|      tab_name      |
++--------------------+
+| column_privileges  |
+| columns            |
+| schemata           |
+| table_privileges   |
+| tables             |
+| views              |
++--------------------+</code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Query the information_schema database to see, for example, information about
+                    tables into which you can insert values.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>SELECT * FROM information_schema.tables WHERE is_insertable_into='YES' limit 2;
+...
++--------------------+-------------------+-----------------
+|tables.table_catalog|tables.table_schema|tables.table_name
++--------------------+-------------------+-----------------
+|default             |default            |students2
+|default             |default            |t3</code></pre>
+                </div>
+            </li></ol>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/hive_hive_query_language_basics.html" title="Using Apache Hive, you can query distributed data storage including Hadoop data.">Apache Hive Query Language basics</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

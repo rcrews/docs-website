@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="task"><meta name="description" content="You use an external table, which is a table that Hive does not manage, to import data from a file on S3, or another file system, into Hive."><meta name="DC.Relation" scheme="URI" content="../topics/hive_hive_3_tables.html"><meta name="prodname" content="Data Access"><meta name="version" content="3"><meta name="release" content="1"><meta name="modification" content="0"><meta name="brand" content="Data Platform"><meta name="rights" content="© 2019, 2018, 2017, 2016 Cloudera, Inc."><meta name="DC.Date.Created" content="2018-07-12"><meta name="DC.Date.Modified" content="2018-07-12"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_create_an_external_table"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Create, use, and drop an external table</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Create, use, and drop an external table</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">You use an external table, which is a table that Hive does not manage, to import data
+        from a file on S3, or another file system, into Hive.</p>
+        <div class="section prereq p">
+            <div class="p">
+                <ul class="ul" id="hive_create_an_external_table__ul_np2_jht_f3b">
+                    <li class="li">Obtain access to S3 to store a comma-separated values (CSV) file that will
+                        serve as the data source for the external table. </li>
+                </ul>
+            </div>
+            <div class="p">
+                <ul class="ul">
+                    <li class="li">Set up S3Guard to prevent data inconsistency caused by the S3 eventual
+                        consistency model. </li>
+                    <li class="li">Set up Hive policies in Ranger to include S3 URLs.</li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        <section class="section context">
+            <p class="p">In this task, you create an external table, store the data in Hive using a
+                managed table, and drop the external table. You create an external table and load
+                data from a file into the table. You then use a Hive managed table to store the data
+                in Hive. This task demonstrates the following Hive principles:</p>
+            <ul class="ul">
+                <li class="li">A major difference between an external and a managed (internal) table: the
+                    persistence of table data on the files system after a <code class="ph codeph">DROP
+                        TABLE</code> statement. <ul class="ul">
+                        <li class="li">External table drop: Hive drops only the metadata, which consists mainly
+                            of the schema definition. </li>
+                        <li class="li">Managed table drop: Hive deletes the data and the metadata stored in the
+                            Hive warehouse.</li>
+                    </ul></li>
+            </ul>
+            <ul class="ul">
+                <li class="li">You can make the external table data available after dropping it by issuing
+                    another CREATE EXTERNAL TABLE statement to load the data from the file system. </li>
+                <li class="li">The LOCATION clause in the CREATE TABLE specifies the location of external
+                    table data.</li>
+            </ul>
+                       
+        </section>
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Create a text file named <span class="ph filepath">students.csv</span> that contains the
+                    following lines.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>1,jane,doe,senior,mathematics
+2,john,smith,junior,engineering               </code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Move the file to S3 in a bucket called <span class="ph filepath">andrena</span>, and put
+                        <span class="ph filepath">students.csv</span> in the directory.</span>
+                
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Start the Hive
+                    shell, use Data Analytics Studio (DAS), or use another Hive UI.</span><div class="itemgroup stepxmp">For example, substitute the URI of your HiveServer: <code class="ph codeph">beeline -u
+                        jdbc:hive2://myhiveserver.com:10000 -n hive -p</code></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Create an external table schema definition that specifies the text format,
+                    loads data from<span class="ph filepath"> students.csv</span> in
+                        <span class="ph filepath">s3a://andrena</span>.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>CREATE EXTERNAL TABLE IF NOT EXISTS names_text(
+  student_ID INT, FirstName STRING, LastName STRING,    
+  year STRING, Major STRING)
+  COMMENT 'Student Names'
+  ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY ','
+  STORED AS TEXTFILE
+  LOCATION 's3a://andrena';</code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Verify that the Hive warehouse stores the student names in the external
+                    table.</span>
+                <div class="itemgroup stepxmp"><code class="ph codeph">SELECT * FROM names_text;</code></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Create the schema for a managed table.</span><div class="itemgroup stepxmp"><pre class="pre codeblock"><code>CREATE TABLE IF NOT EXISTS Names(
+  student_ID INT, FirstName STRING, LastName STRING,    
+  year STRING, Major STRING)
+  COMMENT 'Student Names';</code></pre></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Move the external table data to the managed table.</span><div class="itemgroup stepxmp"><code class="ph codeph">INSERT OVERWRITE TABLE Names SELECT * FROM names_text;</code></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Verify that the data from the external table resides in the managed table, and
+                    drop the external table, and verify that the data still resides in the managed
+                    table. </span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>SELECT * from Names; 
+DROP TABLE names_text;
+SELECT * from Names;                  </code></pre>
+                </div>
+                <div class="itemgroup info">The results from the managed table Names appears. </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Verify that the external table schema definition is lost.</span><div class="itemgroup stepxmp"><code class="ph codeph">SELECT * from names_text;</code></div>
+                <div class="itemgroup info">Selecting all from <code class="ph codeph">names_text</code> returns no results because the
+                    external table schema is lost. The <span class="ph filepath">students.csv</span> file on S3
+                    containing student names data remains intact.</div>
+            </li></ol>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/hive_hive_3_tables.html" title="You can create a Hive-managed table or an external table. Hive does not fully control an external table, and you can keep the data source for this type of table outside the Hive metastore.">Apache Hive 3 tables</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

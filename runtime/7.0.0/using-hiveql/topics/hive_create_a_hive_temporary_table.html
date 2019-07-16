@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.Type" content="task"><meta name="description" content="Create a temporary table to improve performance by storing data temporarily for intermediate use, or reuse, by a complex query."><meta name="DC.Relation" scheme="URI" content="https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-CreateTableCreate/Drop/TruncateTable"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_create_a_hive_temporary_table"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Create a temporary table</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Create a temporary
+      table</h1>
+   
+   <div class="body taskbody"><p class="shortdesc">Create a temporary table to improve performance by storing data temporarily for
+      intermediate use, or reuse, by a complex query.</p>
+      <section class="section context">Temporary table data persists only during the current Apache Hive session. Hive drops
+         the table at the end of the session. If you use the name of a permanent table to create the
+         temporary table, the permanent table is inaccessible during the session unless you drop or
+         rename the temporary table. You can create a temporary table having the same name as
+         another user's temporary table because user sessions are independent. Temporary tables do
+         not support partitioned columns and indexes.</section>
+
+         <ol class="ol steps"><li class="li step stepexpand">
+            <span class="ph cmd"> Create a temporary table having one string column. </span>
+               <div class="itemgroup stepxmp">CREATE TEMPORARY TABLE tmp1 (tname varchar(64));</div>
+         </li><li class="li step stepexpand">
+            <span class="ph cmd">Create a temporary table using the CREATE TABLE AS SELECT (CTAS) statement.</span>
+            <div class="itemgroup stepxmp">
+               <pre class="pre codeblock"><code>CREATE TEMPORARY TABLE tmp2 AS SELECT c2, c3, c4 FROM mytable;</code></pre>
+            </div>
+              
+         </li><li class="li step stepexpand">
+               <span class="ph cmd">Create a temporary table using the CREATE TEMPORARY TABLE LIKE statement.</span>
+               <div class="itemgroup stepxmp"><pre class="pre codeblock"><code>CREATE TEMPORARY TABLE tmp3 LIKE tmp1;</code></pre></div>
+            </li></ol>
+      
+   </div>
+<nav role="navigation" class="related-links"><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-CreateTableCreate/Drop/TruncateTable" target="_blank">Create/Drop/Truncate Table on the Apache wiki</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

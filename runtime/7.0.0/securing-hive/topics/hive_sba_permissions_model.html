@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="concept"><meta name="description" content="As administrator, you must understand the permissions model supported in CDP Data Center and later. If you do not use Ranger for security, you need to add users to an HDFS access control list to permit access to the Hive warehouse for running DML queries."><meta name="DC.Relation" scheme="URI" content="../topics/hive_hive_authorization_models.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_transactional_table_access.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_configure_storage_based_authorization.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_authorization_configuration_parameters.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_storage_based_authorization_permissions.html"><meta name="DC.Relation" scheme="URI" content="https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsPermissionsGuide.html"><meta name="DC.Relation" scheme="URI" content="http://docs-stage.cloudera.com/HDPDocuments/CR/CR-1.0.0/hdfs-acls/content/acls_on_hdfs.html"><meta name="prodname" content="Cloudera Runtime"><meta name="version" content="1"><meta name="release" content="0"><meta name="modification" content="0"><meta name="brand" content="Cloudera Runtime"><meta name="rights" content="© 2019 Cloudera, Inc."><meta name="DC.Date.Created" content="2019-04-15"><meta name="DC.Date.Modified" content="2019-04-15"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_sba_permissions_model"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>HDFS ACL permissions model</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+ <h1 class="title topictitle1" id="ariaid-title1">HDFS ACL permissions model</h1>
+ 
+ <div class="body conbody"><p class="shortdesc">As administrator, you must understand the permissions model supported in CDP Data Center and
+  later. If you do not use Ranger for security, you need to add users to an HDFS access control list
+  to permit access to the Hive warehouse for running DML queries.</p>
+  <p class="p">Hive 3 supports the HDFS access control model instead of the past Hive permission inheritance
+   based on the <code class="ph codeph">hive.warehouse.subdir.inherit.perms</code> parameter setting. In Hive 3, a
+   directory inherits permissions from the <em class="ph i">Default ACL</em>. The Default ACL serves as a template
+   from which Access ACLs for subdirectories and files are built. The Access ACL manages user access
+   to child directories and files derived from the Default ACL. </p><figure class="fig fignone"><img class="image" id="hive_sba_permissions_model__image_wd5_dlx_c2b" src="../images/hive_hiveql_sba_permissions_model.png"></figure>
+  <p class="p">Modifications to the Default ACL of a parent are propagated to the Access ACL or Default ACL of
+   new children only. Existing children are unchanged.</p>
+  <div class="p">The structures of Default ACLs and Access ACLs are identical:<table class="table frame-all" id="hive_sba_permissions_model__table_sny_lmx_c2b"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+      <tr class="row">
+       <th class="entry align-left colsep-1 rowsep-1" id="hive_sba_permissions_model__table_sny_lmx_c2b__entry__1">Entity Type</th>
+       <th class="entry align-left colsep-1 rowsep-1" id="hive_sba_permissions_model__table_sny_lmx_c2b__entry__2">Entity</th>
+       <th class="entry align-left colsep-1 rowsep-1" id="hive_sba_permissions_model__table_sny_lmx_c2b__entry__3">Permissions</th>
+      </tr>
+     </thead><tbody class="tbody">
+      <tr class="row">
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__1 " rowspan="2">Owners</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__2 ">Owning user</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__3 ">r-w-x</td>
+      </tr>
+      <tr class="row">
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__2 ">Owning group</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__3 ">r-w-x</td>
+      </tr>
+      <tr class="row">
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__1 " rowspan="2">Named groups and users</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__2 ">marketing</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__3 ">r-w-x</td>
+      </tr>
+      <tr class="row">
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__2 ">jane</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__3 ">r-w-x</td>
+      </tr>
+      <tr class="row">
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__1 ">Unnamed groups and users</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__2 ">other</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__3 ">r-w-x</td>
+      </tr>
+      <tr class="row">
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__1 ">Not applicable</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__2 ">mask</td>
+       <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_sny_lmx_c2b__entry__3 ">r-w-x</td>
+      </tr>
+     </tbody></table></div>
+  <section class="section"><h2 class="title sectiontitle">HDFS permissions</h2>
+   
+   <div class="p">The following table describes read, write, and execute permissions on directories and
+     files:<table class="table frame-all" id="hive_sba_permissions_model__table_t5p_h5x_c2b"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+       <tr class="row">
+        <th class="entry align-left colsep-1 rowsep-1" id="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__1" colspan="2">File</th>
+        <th class="entry align-left colsep-1 rowsep-1" id="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__2">Directory</th>
+       </tr>
+      </thead><tbody class="tbody">
+       <tr class="row">
+        <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__1 ">Read (r)</td>
+        <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__1 ">Able to read a file</td>
+        <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__2 ">Requires r-x to list the directory contents</td>
+       </tr>
+       <tr class="row">
+        <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__1 ">Write (w)</td>
+        <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__1 ">Able to write or append to a file</td>
+        <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__2 ">Requires r-x to create subdirectories</td>
+       </tr>
+       <tr class="row">
+        <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__1 ">Execute (e)</td>
+        <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__1 ">Able to parse and run file commands</td>
+        <td class="entry align-left colsep-1 rowsep-1" headers="hive_sba_permissions_model__table_t5p_h5x_c2b__entry__2 ">Requires x to
+         traverse
+         the directory</td>
+       </tr>
+      </tbody></table></div>
+
+  </section>
+  <section class="section"><h2 class="title sectiontitle">Permission examples</h2>
+   
+   <p class="p">Consider an example in which you want the sales group to access contents of a table for all
+    HiveQL operations. In this case, you must set a Default ACL permissions for the group as -
+     <code class="ph codeph">default:group:sales:rwx</code>. The default mask on the directories restricts the
+    permissions granted using Default ACLs. The Default ACL for the <em class="ph i">hive</em> group is
+     <code class="ph codeph">default:group:hive:rwx</code>. This mask gives read, write, and execute access to the
+    hive group and sets permissions on the base directory for databases accessed through Ambari. </p>
+   <p class="p">The following example shows directory and file permissions required to read
+    sales_report.txt:</p><figure class="fig fignone"><img class="image" id="hive_sba_permissions_model__image_t3l_gfy_c2b" src="../images/hive_hiveql_sba_permissions_read.png"></figure>
+   <p class="p">The following example shows directory and file permissions required to append to
+    sales_report.txt:</p>
+   <figure class="fig fignone"><img class="image" id="hive_sba_permissions_model__image_z3n_pfy_c2b" src="../images/hive_hiveql_sba_permissions_write.png"></figure>
+   <p class="p">The following example shows directory permissions required to delete sales_report.txt:</p>
+   <figure class="fig fignone"><img class="image" id="hive_sba_permissions_model__image_k2j_sfy_c2b" src="../images/hive_hiveql_sba_permissions_delete.png"></figure>
+  </section>
+  
+ </div>
+ 
+<nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="../topics/hive_configure_storage_based_authorization.html">Configure storage-based authorization</a></strong><br>You need to set parameters in <span class="ph filepath">hive-site.xml</span> to enable       storage-based authorization (SBA).</li><li class="link ulchildlink"><strong><a href="../topics/hive_authorization_configuration_parameters.html">Authorization configuration parameters</a></strong><br>Understanding key authorization parameter descriptions help you configure storage-based     authorization correctly. </li><li class="link ulchildlink"><strong><a href="../topics/hive_storage_based_authorization_permissions.html">Storage-based operation permissions</a></strong><br></li></ul><div class="familylinks"></div><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsPermissionsGuide.html" target="_blank">Apache Software Foundation HDFS Permissions Guide</a></div><div><a class="link" href="http://docs-stage.cloudera.com/HDPDocuments/CR/CR-1.0.0/hdfs-acls/content/acls_on_hdfs.html" target="_blank">HDFS ACLs</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

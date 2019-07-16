@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="task"><meta name="description" content="When creating a materialized view, you can partition selected columns to improve performance. Partitioning separates the view of a table into parts, which often improves query rewrites of partition-wise joins of materialized views with tables or other materialized views."><meta name="DC.Relation" scheme="URI" content="../topics/hive_using_materialized_views.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_create_and_use_materialized_view.html"><meta name="DC.Relation" scheme="URI" content="http://docs-stage.cloudera.com/HDPDocuments/CR/CR-1.0.0/materialized-view/content/hive_alter_materialized_view_rebuild.html"><meta name="prodname" content="Data Access"><meta name="version" content="3"><meta name="release" content="1"><meta name="modification" content="0"><meta name="brand" content="Data Platform"><meta name="rights" content="© 2019, 2018, 2017, 2016 Cloudera, Inc."><meta name="DC.Date.Created" content="2018-07-12"><meta name="DC.Date.Modified" content="2018-07-12"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_create_partitioned_materialized_view"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Create and use a partitioned materialized view</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Create and use a partitioned materialized view</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">When creating a materialized view, you can partition selected columns to improve
+        performance. Partitioning separates the view of a table into parts, which often improves
+        query rewrites of partition-wise joins of materialized views with tables or other
+        materialized views.</p>
+        <section class="section context">
+            <p class="p">This task assumes you created a materialized view of the <code class="ph codeph">emps</code> and
+                    <code class="ph codeph">depts</code> tables and assumes you created these tables. The
+                    <code class="ph codeph">emps</code> table contains the following data:</p>
+                <table class="table frame-all" id="hive_create_partitioned_materialized_view__table_vbg_vby_v2b"><caption></caption><colgroup><col><col><col><col><col></colgroup><thead class="thead">
+                            <tr class="row">
+                                <th class="entry align-left colsep-1 rowsep-1" id="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__1"> empid </th>
+                                <th class="entry align-left colsep-1 rowsep-1" id="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__2"> deptno </th>
+                                <th class="entry align-left colsep-1 rowsep-1" id="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__3"> name </th>
+                                <th class="entry align-left colsep-1 rowsep-1" id="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__4"> salary </th>
+                                <th class="entry align-left colsep-1 rowsep-1" id="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__5"> hire_date </th>
+                            </tr>
+                        </thead><tbody class="tbody">
+                            <tr class="row">
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__1 "> 10001 </td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__2 "> 101 </td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__3 "> jane doe </td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__4 "> 250000</td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__5 "> 2018-01-10</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__1 "> 10005 </td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__2 "> 100 </td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__3 "> somporn klailee </td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__4 "> 210000</td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__5 "> 2017-12-25</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__1 "> 10006 </td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__2 "> 200 </td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__3 "> jeiranan thongnopneua </td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__4 "> 175000</td>
+                                <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_vbg_vby_v2b__entry__5 "> 2018-05-05</td>
+                            </tr>
+                        </tbody></table>
+            
+      <p class="p">The <code class="ph codeph">depts</code> table contains the following data:</p>
+            <table class="table frame-all" id="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+                        <tr class="row">
+                            <th class="entry align-left colsep-1 rowsep-1" id="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__1">deptno</th>
+                            <th class="entry align-left colsep-1 rowsep-1" id="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__2">deptname</th>
+                            <th class="entry align-left colsep-1 rowsep-1" id="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__3">locationid</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__1 ">100</td>
+                            <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__2 ">HR</td>
+                            <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__3 ">10</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__1 ">101</td>
+                            <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__2 ">Eng</td>
+                            <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__3 ">11</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__1 ">200</td>
+                            <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__2 ">Sup</td>
+                            <td class="entry align-left colsep-1 rowsep-1" headers="hive_create_partitioned_materialized_view__table_cgm_gcy_v2b__entry__3 ">20</td>
+                        </tr>
+                    </tbody></table>
+            <p class="p">In this task, you create two materialized views: one partitions data on department;
+                the another partitions data on hire date. You select data, filtered by
+                department,from the original table, not from either one of the materialized views.
+                The explain plan shows that Hive rewrites your query for efficiency to select data
+                from the materialized view that partitions data by department. In this task, you
+                also see the effects of rebuilding a materialized view.</p>
+        </section>
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Create a materialized view of the <code class="ph codeph">emps</code> table that partitions
+                    data into departments.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>CREATE MATERIALIZED VIEW partition_mv_1 PARTITIONED ON (deptno) 
+AS SELECT hire_date, deptno FROM emps WHERE deptno &gt; 100 AND deptno &lt; 200;</code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Create a second materialized view that partitions the data on the hire date
+                    instead of the department number.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>CREATE MATERIALIZED VIEW partition_mv_2 PARTITIONED ON (hire_date)
+  AS SELECT deptno, hire_date FROM emps where deptno &gt; 100 AND deptno &lt; 200;</code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Generate an extended explain plan by selecting data for department 101 directly from the emps table without using the materialized view.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>EXPLAIN EXTENDED SELECT deptno, hire_date FROM emps_a where deptno = 101;</code></pre>
+                </div>
+                <div class="itemgroup stepresult">
+                    <p class="p">The explain plan shows that Hive rewrites your query for efficiency, using the better of the two
+                        materialized views for the job: partition_mv_1.</p>
+                    <pre class="pre codeblock"><code>+----------------------------------------------------+
+|                      Explain                       |
++----------------------------------------------------+
+| OPTIMIZED SQL: SELECT CAST(101 AS INTEGER) AS `deptno`, `hire_date` |
+| FROM `default`.`partition_mv_1`                    |
+| WHERE 101 = `deptno`                               |
+| STAGE DEPENDENCIES:                                |
+|   Stage-0 is a root stage  
+...</code></pre>
+                </div>
+                
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Correct Jane Doe's hire date to February 12, 2018, rebuild one of the
+                    materialized views, but not the other, and compare contents of both materialized
+                    views.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>INSERT INTO emps VALUES (10001,101,'jane doe',250000,'2018-02-12');
+ALTER MATERIALIZED VIEW partition_mv_1 REBUILD;
+SELECT * FROM partition_mv_1 where deptno = 101;
+SELECT * FROM partition_mv_2 where deptno = 101;              </code></pre>
+                </div>
+                <div class="itemgroup stepresult">The output of selecting the rebuilt partition_mv_1 includes the original
+                    row and newly inserted row because INSERT does not perform in-place updates
+                    (overwrites).
+                    <pre class="pre codeblock"><code>+---------------------------+------------------------+
+| partition_mv_1.hire_date  | partition_mv_1.deptno  |
++---------------------------+------------------------+
+| 2018-01-10 00:00:00.0     | 101                    |
+| 2018-02-12 00:00:00.0     | 101                    |
++---------------------------+------------------------+                 </code></pre>
+                    The output from the other partition is stale because you did not rebuild it:
+                    <pre class="pre codeblock"><code>+------------------------+---------------------------+
+| partition_mv_2.deptno  | partition_mv_2.hire_date  |
++------------------------+---------------------------+
+| 101                    | 2018-01-10 00:00:00.0     |
++------------------------+---------------------------+</code></pre></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Create a second employees table and a materialized view of the tables joined on
+                    the department number.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>CREATE TABLE emps2 TBLPROPERTIES AS SELECT * FROM emps;
+
+CREATE MATERIALIZED VIEW partition_mv_3 PARTITIONED ON (deptno) AS
+  SELECT emps.hire_date, emps.deptno FROM emps, emps2
+  WHERE emps.deptno = emps2.deptno
+  AND emps.deptno &gt; 100 AND emps.deptno &lt; 200;              </code></pre>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Generate an explain plan that joins tables emps and emps2 on department number using a query that omits the partitioned materialized view.</span>
+                <div class="itemgroup stepxmp"><pre class="pre codeblock"><code>EXPLAIN EXTENDED SELECT emps.hire_date, emps.deptno FROM emps, emps2
+  WHERE emps.deptno = emps2.deptno
+  AND emps.deptno &gt; 100 AND emps.deptno &lt; 200;</code></pre></div>
+                <div class="itemgroup stepresult">The output shows that Hive rewrites the query to use the partitioned
+                    materialized view partition_mv_3 even though your query omitted the materialized
+                    view.</div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Verify that the partition_mv_3 sets up the partition for deptno=101 for
+                    partition_mv_3.</span>
+                <div class="itemgroup stepxmp">
+                    <pre class="pre codeblock"><code>SHOW PARTITIONS partition_mv_3;</code></pre>
+                </div>
+                <div class="itemgroup stepresult">Output is:
+                    <pre class="pre codeblock"><code>+-------------+
+|  partition  |
++-------------+
+| deptno=101  |
++-------------+</code></pre></div>
+            </li></ol>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/hive_using_materialized_views.html" title="Apache Hive works with Apache Calcite to optimize your queries automatically using materialized views you create.">Using materialized views</a></div></div><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="../topics/hive_create_and_use_materialized_view.html" title="You can create a materialized view of a query to calculate and store results of an expensive operation, such as join.">Create and use a materialized view</a></div><div><a class="link" href="http://docs-stage.cloudera.com/HDPDocuments/CR/CR-1.0.0/materialized-view/content/hive_alter_materialized_view_rebuild.html" target="_blank">Materialized view commands</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>

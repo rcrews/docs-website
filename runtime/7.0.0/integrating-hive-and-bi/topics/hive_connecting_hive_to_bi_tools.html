@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.Type" content="task"><meta name="description" content="To query, analyze, and visualize data stored within the Hortonworks Data Platform using drivers provided by Hortonworks, you connect Apache Hive to Business Intelligence (BI) tools."><meta name="DC.subject" content="Hive, BI, JDBC, ODBC"><meta name="keywords" content="Hive, BI, JDBC, ODBC"><meta name="DC.Relation" scheme="URI" content="../topics/hive_hivewarehouseconnector_for_handling_apache_spark_data.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_query_sql_using_jdbcstoragehandler.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_locate_the_jdbc_driver.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_specify_the_jdbc_connection_string.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_connection_string_url_syntax.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_locate_the_jdbc_driver.html"><meta name="DC.Relation" scheme="URI" content="../topics/hive_specify_the_jdbc_connection_string.html"><meta name="DC.Relation" scheme="URI" content="https://github.com/hortonworks/hive-warehouse-connector-release"><meta name="prodname" content="Cloudera Runtime"><meta name="version" content="1"><meta name="release" content="0"><meta name="modification" content="0"><meta name="brand" content="Cloudera Runtime"><meta name="rights" content="© 2019 Cloudera, Inc."><meta name="DC.Date.Created" content="2019-04-15"><meta name="DC.Date.Modified" content="2019-04-15"><meta name="DC.Format" content="XHTML"><meta name="DC.Identifier" content="hive_connecting_hive_to_bi_tools"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"><link rel="stylesheet" href="/common/css/main.css"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"><title>Connecting Hive to BI tools using a JDBC/ODBC driver</title></head><body class="hg"><header class="chead"><div class="breadcrumbs">
+<span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+<span class="bread-product"></span>
+<span class="bread-version"></span>
+<span class="bread-category">Category</span></div>
+<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div><div class="launch-search"><i class="fas fa-search"></i></div><div class="launch-pubnav"><i class="fas fa-bars"></i></div></header><main class="cmain"><div class="cpage"><article class="maincontent"><div class="inner-breadcrumbs">Concepts</div><div id="content" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Connecting Hive to BI tools
+      using a JDBC/ODBC driver</h1>
+   
+   
+   <div class="body taskbody"><p class="shortdesc">To query, analyze, and visualize data stored within the Hortonworks Data Platform
+      using drivers provided by Hortonworks, you connect Apache Hive to Business Intelligence (BI)
+      tools.</p>
+      <section class="section context"> How you connect to Hive depends on a number of factors: the location of Hive inside
+         or outside the cluster, the HiveServer deployment, the type of transport, transport-layer
+         security, and authentication. HiveServer is the server interface that enables remote
+         clients to execute queries against Hive and retrieve the results using a JDBC or ODBC
+         connection.
+         
+         You can download the drivers from the downloads page on the Cloudera web site.</section>
+      <div class="section prereq p">
+         <ul class="ul" id="hive_connecting_hive_to_bi_tools__ul_jvy_lqr_rdb">
+            <li class="li">Choose a Hive authorization model.</li>
+            <li class="li">Configure authenticated users for querying Hive through JDBC or ODBC driver by
+               setting the value of the <code class="ph codeph">hive.server2.enable.doAs</code> configuration
+               property in the hive.site.xml file. </li>
+         </ul>
+      </div>
+         <ol class="ol steps"><li class="li step">
+            <span class="ph cmd">Download the JDBC or ODBC driver.</span>
+         </li><li class="li step">
+            <span class="ph cmd"> Depending on the type of driver you obtain, proceed as follows: </span>
+            <ul class="ul choices">
+               <li class="li choice">ODBC driver: follow instructions on the ODBC driver download site, and skip
+                  the rest of the steps in this procedure.</li>
+               <li class="li choice">JDBC driver: put the driver in the classpath of your JDBC client. </li></ul>
+         </li><li class="li step">
+            <span class="ph cmd">Find the JDBC URL for HiveServer.</span>
+               <ul class="ul choices">
+                  <li class="li choice">In Cloudera Data Platform (CDP), from the hamburger menu of your computer
+                  cluster, click <code class="ph codeph">Copy JDBC URL</code>.</li>
+                  <li class="li choice">In Cloudera Manager (CM), click Clusters &gt; HIVE_ON_TEZ_1 click Actions,
+                  and select Download Client Configuration. <figure class="fig fignone">
+                     <img class="image" id="hive_connecting_hive_to_bi_tools__image_c2b_zcr_j3b" src="../images/hive-cm-jdbc-url.png">
+                  </figure>Open <code class="ph codeph">beeline-site.xml</code>, and copy the value of
+                     <code class="ph codeph">beeline.hs2.jdbc.url.HIVE_ON_TEZ-1</code> . This value is the JDBC
+                  URL. For example
+                     <code class="ph codeph">jdbc:hive2://my_hiveserver.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2</code></li>
+               </ul>
+            </li><li class="li step">
+            <span class="ph cmd">In the BI tool, such as Tableau, configure the JDBC connection using the JDBC URL
+               and driver class name, <code class="ph codeph">org.apache.hive.jdbc.HiveDriver</code>.</span>
+         </li></ol>
+
+   </div>
+<nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="../topics/hive_locate_the_jdbc_driver.html">Locate the JDBC or ODBC driver</a></strong><br>You download the JDBC driver, navigate to the installed JDBC driver, or you download       the ODBC driver.</li><li class="link ulchildlink"><strong><a href="../topics/hive_specify_the_jdbc_connection_string.html">Specify the JDBC connection string</a></strong><br>You construct a JDBC URL to connect Hive to a BI tool.</li><li class="link ulchildlink"><strong><a href="../topics/hive_connection_string_url_syntax.html">JDBC connection string syntax</a></strong><br>The JDBC connection string for connecting to a remote Hive client requires a host,       port, and Hive database name, and can optionally specify a transport type and authentication.</li></ul><div class="familylinks"></div><div class="linklist relinfo"><strong>Related information</strong><br><div><a class="link" href="../topics/hive_locate_the_jdbc_driver.html" title="You download the JDBC driver, navigate to the installed JDBC driver, or you download the ODBC driver.">Locate the JDBC or ODBC driver</a></div><div><a class="link" href="../topics/hive_specify_the_jdbc_connection_string.html" title="You construct a JDBC URL to connect Hive to a BI tool.">Specify the JDBC connection string</a></div><div><a class="link" href="https://github.com/hortonworks/hive-warehouse-connector-release" target="_blank">HiveWarehouseConnector Github project (select a feature branch)</a></div></div></nav></div></article><div class="short-prev"><a href="">«</a></div><div class="short-next"><a href="">»</a></div><div class="up"></div><div class="prev"><a href="">« Getting Started with Apache Nifi</a></div><div class="next">Getting Started: <a href="">Terminology Used in This Guide »</a></div></div><aside class="pubmenu"><div class="product-title"><img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png"><span class="product-name">Cloudera Data Platform</span></div><nav class="ctoc"></nav></aside></main><div class="logo"><a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a></div><nav class="product-drawer"><div class="full-logo"><img src="/common/img/cloudera.png"></div><ul class="products"><li class="cat">Data Platforms</li><li><img src="/common/img/mini_icons/icon-ambari.png"><span class="text">Ambari</span></li><li><img src="/common/img/mini_icons/icon-hdp.png"><span class="text">Data Platform</span></li><li class="active"><img src="/common/img/mini_icons/icon-hdf.png"><span class="text">Dataflow</span></li><li><img src="/common/img/mini_icons/icon-smartsense.png"><span class="text">Smartsense</span></li><li><img src="/common/img/mini_icons/icon-cybersecurity.png"><span class="text">Cybersecurity</span></li><li class="cat">Data Services</li><li><img src="/common/img/mini_icons/icon-dataplane.png"><span class="text">DataPlane Core</span></li><li><img src="/common/img/mini_icons/icon-studio.png"><span class="text">Data Analytics Studio</span></li><li><img src="/common/img/mini_icons/icon-datasteward.png"><span class="text">Data Steward Studio</span></li><li class="cat">Cloud Services</li><li><img src="/common/img/mini_icons/icon-cloudbreak.png"><span class="text">Cloudbreak</span></li><li><img src="/common/img/mini_icons/icon-hdcloud.png"><span class="text">HDCloud for AWS</span></li></ul><div class="open-close">»</div></nav><footer></footer><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="/common/js/main.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js" class="test"></script></body></html>
