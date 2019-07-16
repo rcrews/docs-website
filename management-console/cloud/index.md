@@ -5,14 +5,17 @@ version: cloud
 base-path: /management-console/cloud/
 
 sections:
-  - title: Concepts
-    name: concepts
+  - title: How to
+    name: how-to
     books:
       - title: credentials-aws
         url: credentials-aws/index.html
 
       - title: credentials-azure
         url: credentials-azure/index.html
+        
+      - title: user-management
+        url: user-management/index.html
 
       - title: troubleshooting
         url: troubleshooting/index.html
