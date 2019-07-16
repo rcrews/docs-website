@@ -1,93 +1,88 @@
 ---
 layout: json
+#- text: Release Notes
 #- text: Concepts
 #- text: Planning
-#- text: Installation & Upgrade
 #- text: How To
 #- text: Troubleshooting
 #- text: Reference
-#- text: Release Notes
 #- text: Learning & Training
 json:
-  - text: Concepts
-    id: concepts
+  # - text: Release Notes
+  #   id: releasenotes
+  #   sub:
+
+  # - text: Concepts
+  #   id: concepts
+  #   sub:
+
+  # - text: Planning
+  #   id: planning
+  #   sub:
+
+  - text: How To
+    id: howto
     sub:
-      - text: Access Clusters
+      - text: Creating a Cluster on AWS
+        href: create-cluster-aws/index.html
+        id: create-cluster-aws
+        sub: create-cluster-aws/navigation.json
+
+      - text: Creating a Cluster on Azure
+        href: create-cluster-azure/index.html
+        id: create-cluster-azure
+        sub: create-cluster-azure/navigation.json
+
+      - text: Accessing Clusters
         href: access-clusters/index.html
         id: access-clusters
         sub: access-clusters/navigation.json
+
+      - text: Managing Clusters
+        href: manage-clusters/index.html
+        id: manage-clusters
+        sub: manage-clusters/navigation.json
 
       - text: Blueprints
         href: blueprints/index.html
         id: blueprints
         sub: blueprints/navigation.json
 
-      - text: Create Cluster AWS
-        href: create-cluster-aws/index.html
-        id: create-cluster-aws
-        sub: create-cluster-aws/navigation.json
-
-      - text: Create Cluster Azure
-        href: create-cluster-azure/index.html
-        id: create-cluster-azure
-        sub: create-cluster-azure/navigation.json
-
       - text: Databases
         href: databases/index.html
         id: databases
         sub: databases/navigation.json
-
-      - text: EBS Encryption AWS
-        href: ebs-encryption-aws/index.html
-        id: ebs-encryption-aws
-        sub: ebs-encryption-aws/navigation.json
 
       - text: Image Catalogs
         href: image-catalogs/index.html
         id: image-catalogs
         sub: image-catalogs/navigation.json
 
-      - text: Manage Clusters
-        href: manage-clusters/index.html
-        id: manage-clusters
-        sub: manage-clusters/navigation.json
+      - text: Recipes
+        href: recipes/index.html
+        id: recipes
+        sub: recipes/navigation.json
 
       - text: Proxy
         href: proxy/index.html
         id: proxy
         sub: proxy/navigation.json
 
-      - text: Recipes
-        href: recipes/index.html
-        id: recipes
-        sub: recipes/navigation.json
+      - text: EBS Encryption AWS
+        href: ebs-encryption-aws/index.html
+        id: ebs-encryption-aws
+        sub: ebs-encryption-aws/navigation.json
 
-  # - text: Planning
-  #   id: planning
-  #   sub:
-
-  # - text: Installation & Upgrade
-  #   id: installation
-  #   sub:
-
-  - text: How To
-    id: howto
-    sub:
-      - text: troubleshooting-clusters
+   - text: Troubleshooting
+     id: troubleshooting
+     sub:
+      - text: Troubleshooting Clusters
         href: troubleshooting-clusters/index.html
         id: troubleshooting-clusters
         sub: troubleshooting-clusters/navigation.json
 
-  # - text: Troubleshooting
-  #   id: troubleshooting
-  #   sub:
-
   # - text: Reference
   #   id: reference
-  #   sub:
-
-  # - text: Release Notes
-  #   id: releasenotes
   #   sub:
 
   # - text: Learning & Training
