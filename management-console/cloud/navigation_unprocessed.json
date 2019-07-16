@@ -1,17 +1,14 @@
 ---
 layout: json
-#- text: Release Notes
 #- text: Concepts
 #- text: Planning
+#- text: Installation & Upgrade
 #- text: How To
 #- text: Troubleshooting
 #- text: Reference
+#- text: Release Notes
 #- text: Learning & Training
 json:
-  # - text: Release Notes
-  #   id: releasenotes
-  #   sub:
-
   # - text: Concepts
   #   id: concepts
   #   sub:
@@ -20,9 +17,12 @@ json:
   #   id: planning
   #   sub:
 
-   - text: How To
-     id: howto
-     sub:
+  # - text: Installation & Upgrade
+  #   id: installation
+  #   sub:
+  - text: How To
+    id: howto
+    sub:
       - text: Create a Credential on AWS
         href: credentials-aws/index.html
         id: credentials-aws
@@ -38,16 +38,20 @@ json:
         id: user-management
         sub: user-management/navigation.json
 
-   - text: Troubleshooting
-     id: troubleshooting
-     sub:
-      - text: Troubleshooting 
+  - text: Troubleshooting
+    id: troubleshooting
+    sub:
+      - text: Troubleshooting
         href: troubleshooting/index.html
         id: troubleshooting
         sub: troubleshooting/navigation.json
 
   # - text: Reference
   #   id: reference
+  #   sub:
+
+  # - text: Release Notes
+  #   id: releasenotes
   #   sub:
 
   # - text: Learning & Training

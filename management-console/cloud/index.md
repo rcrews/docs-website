@@ -8,13 +8,17 @@ sections:
   # - title: Release Notes
   #   name: releasenotes
   #   books:
-  
+
   # - title: Concepts
   #   name: concepts
   #   books:
-  
+
   # - title: Planning
   #   name: planning
+  #   books:
+
+  # - title: Installation & Upgrade
+  #   name: installation
   #   books:
 
   - title: How to
@@ -25,11 +29,10 @@ sections:
 
       - title: Creating a Credential on Azure
         url: credentials-azure/index.html
-        
+
       - title: Managing Users
         url: user-management/index.html
-        
-        
+
   - title: Troubleshooting
     name: troubleshooting
     books:

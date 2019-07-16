@@ -9,15 +9,19 @@ sections:
   #   name: releasenotes
   #   books:
 
-  #  - title: Concepts
+  # - title: Concepts
   #   name: concepts
   #   books:
-  
+
   # - title: Planning
   #   name: planning
   #   books:
 
-  - title: How to
+  # - title: Installation & Upgrade
+  #   name: installation
+  #   books:
+
+  - title: How To
     name: howto
     books:
       - title: Creating a Cluster on AWS
@@ -28,7 +32,7 @@ sections:
 
       - title: Accessing Clusters
         url: access-clusters/index.html
-        
+
       - title: Managing clusters
         url: manage-clusters/index.html
 
