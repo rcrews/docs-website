@@ -26,7 +26,7 @@ sections:
       - title: cluster-maintenance
         url: cluster-maintenance/index.html
 
-      - title: configuring-apache-hive
+      - title: Configuring Hive
         url: configuring-apache-hive/index.html
 
       - title: configuring-fault-tolerance
@@ -41,13 +41,13 @@ sections:
       - title: developing-spark-applications
         url: developing-spark-applications/index.html
 
-      - title: hive-introduction
+      - title: Hive Overview
         url: hive-introduction/index.html
 
-      - title: hive-metastore
+      - title: Hive Metastore
         url: hive-metastore/index.html
 
-      - title: hive-performance-tuning
+      - title: Hive Performance Tuning
         url: hive-performance-tuning/index.html
 
       - title: hue-introduction
@@ -95,7 +95,7 @@ sections:
       - title: impala-troubleshooting
         url: impala-troubleshooting/index.html
 
-      - title: integrating-hive-and-bi
+      - title: Integrating Hive with Spark and BI
         url: integrating-hive-and-bi/index.html
 
       - title: kudu-design
@@ -113,22 +113,22 @@ sections:
       - title: kudu-overview
         url: kudu-overview/index.html
 
-      - title: managing-a-hive-workload
+      - title: Managing a Hive Workload
         url: managing-a-hive-workload/index.html
 
       - title: managing-hadoop-jobs
         url: managing-hadoop-jobs/index.html
 
-      - title: managing-hive
+      - title: Managing Hive
         url: managing-hive/index.html
 
-      - title: materialized-view-commands
+      - title: Materialized View Commands
         url: materialized-view-commands/index.html
 
       - title: metrics-diagnostics
         url: metrics-diagnostics/index.html
 
-      - title: migrating-data
+      - title: Migrating Data
         url: migrating-data/index.html
 
       - title: migrating-data-into-hive
@@ -140,7 +140,7 @@ sections:
       - title: navigation.json
         url: navigation.json/index.html
 
-      - title: performance-tuning
+      - title: Hive Performance Tuning
         url: performance-tuning/index.html
 
       - title: ports-reference
@@ -149,7 +149,7 @@ sections:
       - title: running-spark-applications
         url: running-spark-applications/index.html
 
-      - title: securing-hive
+      - title: Securing Hive
         url: securing-hive/index.html
 
       - title: securing-hue
@@ -164,7 +164,7 @@ sections:
       - title: spark-overview
         url: spark-overview/index.html
 
-      - title: starting-hive
+      - title: Start Hive and Run Commands
         url: starting-hive/index.html
 
       - title: troubleshooting-hue
@@ -179,13 +179,13 @@ sections:
       - title: tuning-spark
         url: tuning-spark/index.html
 
-      - title: using-cbo-in-hive
+      - title: Using the Cost-based Optimizer in Hive
         url: using-cbo-in-hive/index.html
 
       - title: using-cm
         url: using-cm/index.html
 
-      - title: using-hiveql
+      - title: Using HiveQL
         url: using-hiveql/index.html
 
       - title: using-hue
@@ -194,7 +194,7 @@ sections:
       - title: using-zeppelin
         url: using-zeppelin/index.html
 
-      - title: workload-management
+      - title: Hive Workload Management Commands
         url: workload-management/index.html
 
       - title: yarn-data-management
