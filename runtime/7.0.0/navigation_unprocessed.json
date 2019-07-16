@@ -343,8 +343,8 @@ json:
   - text: How To
     id: howto
     sub:
-      - title: Identity Management and Federation
-        url: identity-management-and-federation/index.html
+      - text: Identity Management and Federation
+        ref: identity-management-and-federation/index.html
         id: identity-management-and-federation-and-federation/index.html
         sub: identity-management-and-federation/navigation.json
 
@@ -355,8 +355,8 @@ json:
   - text: Reference
     id: reference
     sub:
-      - title: Knox Reference
-        url: knox-reference/index.html
+      - text: Knox Reference
+        href: knox-reference/index.html
         id: knox-reference/index.html
         sub: knox-reference/navigation.json
 
