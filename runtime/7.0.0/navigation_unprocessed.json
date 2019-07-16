@@ -12,292 +12,357 @@ json:
   - text: Concepts
     id: concepts
     sub:
-      - text: Apache Hive Overview
-        id: hive-overview
-        href: hive-overview/index.html
-        sub: hive-overview/navigation.json
+      - text: core-concepts
+        href: core-concepts/index.html
+        id: core-concepts
+        sub: core-concepts/navigation.json
 
       - text: administering-hue
-        id: administering-hue
         href: administering-hue/index.html
+        id: administering-hue
         sub: administering-hue/navigation.json
 
       - text: administering-kudu
-        id: administering-kudu
         href: administering-kudu/index.html
+        id: administering-kudu
         sub: administering-kudu/navigation.json
 
+      - text: atlas-access-control-using-tags
+        href: atlas-access-control-using-tags/index.html
+        id: atlas-access-control-using-tags
+        sub: atlas-access-control-using-tags/navigation.json
+
+      - text: atlas-working-with-classifications
+        href: atlas-working-with-classifications/index.html
+        id: atlas-working-with-classifications
+        sub: atlas-working-with-classifications/navigation.json
+
+      - text: cluster-maintenance
+        href: cluster-maintenance/index.html
+        id: cluster-maintenance
+        sub: cluster-maintenance/navigation.json
+
       - text: configuring-apache-hive
-        id: configuring-apache-hive
         href: configuring-apache-hive/index.html
+        id: configuring-apache-hive
         sub: configuring-apache-hive/navigation.json
 
+      - text: configuring-fault-tolerance
+        href: configuring-fault-tolerance/index.html
+        id: configuring-fault-tolerance
+        sub: configuring-fault-tolerance/navigation.json
+
+      - text: configuring-spark
+        href: configuring-spark/index.html
+        id: configuring-spark
+        sub: configuring-spark/navigation.json
+
+      - text: configuring-zeppelin
+        href: configuring-zeppelin/index.html
+        id: configuring-zeppelin
+        sub: configuring-zeppelin/navigation.json
+
+      - text: developing-spark-applications
+        href: developing-spark-applications/index.html
+        id: developing-spark-applications
+        sub: developing-spark-applications/navigation.json
+
       - text: hive-introduction
-        id: hive-introduction
         href: hive-introduction/index.html
+        id: hive-introduction
         sub: hive-introduction/navigation.json
 
+      - text: hive-metastore
+        href: hive-metastore/index.html
+        id: hive-metastore
+        sub: hive-metastore/navigation.json
+
+      - text: hive-performance-tuning
+        href: hive-performance-tuning/index.html
+        id: hive-performance-tuning
+        sub: hive-performance-tuning/navigation.json
+
       - text: hue-introduction
-        id: hue-introduction
         href: hue-introduction/index.html
+        id: hue-introduction
         sub: hue-introduction/navigation.json
 
       - text: impala-client
-        id: impala-client
         href: impala-client/index.html
+        id: impala-client
         sub: impala-client/navigation.json
 
       - text: impala-file-formats
-        id: impala-file-formats
         href: impala-file-formats/index.html
+        id: impala-file-formats
         sub: impala-file-formats/navigation.json
 
       - text: impala-metadata
-        id: impala-metadata
         href: impala-metadata/index.html
+        id: impala-metadata
         sub: impala-metadata/navigation.json
 
       - text: impala-monitoring
-        id: impala-monitoring
         href: impala-monitoring/index.html
+        id: impala-monitoring
         sub: impala-monitoring/navigation.json
 
       - text: impala-overview
-        id: impala-overview
         href: impala-overview/index.html
+        id: impala-overview
         sub: impala-overview/navigation.json
 
       - text: impala-performance
-        id: impala-performance
         href: impala-performance/index.html
+        id: impala-performance
         sub: impala-performance/navigation.json
 
       - text: impala-performance-tuning
-        id: impala-performance-tuning
         href: impala-performance-tuning/index.html
+        id: impala-performance-tuning
         sub: impala-performance-tuning/navigation.json
 
       - text: impala-planning
-        id: impala-planning
         href: impala-planning/index.html
+        id: impala-planning
         sub: impala-planning/navigation.json
 
       - text: impala-resource
-        id: impala-resource
         href: impala-resource/index.html
+        id: impala-resource
         sub: impala-resource/navigation.json
 
       - text: impala-scalability
-        id: impala-scalability
         href: impala-scalability/index.html
+        id: impala-scalability
         sub: impala-scalability/navigation.json
 
       - text: impala-security
-        id: impala-security
         href: impala-security/index.html
+        id: impala-security
         sub: impala-security/navigation.json
 
       - text: impala-storage
-        id: impala-storage
         href: impala-storage/index.html
+        id: impala-storage
         sub: impala-storage/navigation.json
 
       - text: impala-timeouts
-        id: impala-timeouts
         href: impala-timeouts/index.html
+        id: impala-timeouts
         sub: impala-timeouts/navigation.json
 
       - text: impala-troubleshooting
-        id: impala-troubleshooting
         href: impala-troubleshooting/index.html
+        id: impala-troubleshooting
         sub: impala-troubleshooting/navigation.json
 
+      - text: integrating-hive-and-bi
+        href: integrating-hive-and-bi/index.html
+        id: integrating-hive-and-bi
+        sub: integrating-hive-and-bi/navigation.json
+
       - text: kudu-design
-        id: kudu-design
         href: kudu-design/index.html
+        id: kudu-design
         sub: kudu-design/navigation.json
 
       - text: kudu-development
-        id: kudu-development
         href: kudu-development/index.html
+        id: kudu-development
         sub: kudu-development/navigation.json
 
       - text: kudu-install-and-upgrade
-        id: kudu-install-and-upgrade
         href: kudu-install-and-upgrade/index.html
+        id: kudu-install-and-upgrade
         sub: kudu-install-and-upgrade/navigation.json
 
       - text: kudu-integration
-        id: kudu-integration
         href: kudu-integration/index.html
+        id: kudu-integration
         sub: kudu-integration/navigation.json
 
       - text: kudu-overview
-        id: kudu-overview
         href: kudu-overview/index.html
+        id: kudu-overview
         sub: kudu-overview/navigation.json
 
-      - text: monitoring-impala
-        id: monitoring-impala
-        href: monitoring-impala/index.html
-        sub: monitoring-impala/navigation.json
+      - text: managing-a-hive-workload
+        href: managing-a-hive-workload/index.html
+        id: managing-a-hive-workload
+        sub: managing-a-hive-workload/navigation.json
+
+      - text: managing-hadoop-jobs
+        href: managing-hadoop-jobs/index.html
+        id: managing-hadoop-jobs
+        sub: managing-hadoop-jobs/navigation.json
+
+      - text: managing-hive
+        href: managing-hive/index.html
+        id: managing-hive
+        sub: managing-hive/navigation.json
+
+      - text: materialized-view-commands
+        href: materialized-view-commands/index.html
+        id: materialized-view-commands
+        sub: materialized-view-commands/navigation.json
+
+      - text: metrics-diagnostics
+        href: metrics-diagnostics/index.html
+        id: metrics-diagnostics
+        sub: metrics-diagnostics/navigation.json
+
+      - text: migrating-data
+        href: migrating-data/index.html
+        id: migrating-data
+        sub: migrating-data/navigation.json
+
+      - text: migrating-data-into-hive
+        href: migrating-data-into-hive/index.html
+        id: migrating-data-into-hive
+        sub: migrating-data-into-hive/navigation.json
 
       - text: navigation_unprocessed.json
-        id: navigation_unprocessed.json
         href: navigation_unprocessed.json/index.html
+        id: navigation_unprocessed.json
         sub: navigation_unprocessed.json/navigation.json
 
+      - text: navigation.json
+        href: navigation.json/index.html
+        id: navigation.json
+        sub: navigation.json/navigation.json
+
+      - text: performance-tuning
+        href: performance-tuning/index.html
+        id: performance-tuning
+        sub: performance-tuning/navigation.json
+
+      - text: ports-reference
+        href: ports-reference/index.html
+        id: ports-reference
+        sub: ports-reference/navigation.json
+
+      - text: running-spark-applications
+        href: running-spark-applications/index.html
+        id: running-spark-applications
+        sub: running-spark-applications/navigation.json
+
+      - text: securing-hive
+        href: securing-hive/index.html
+        id: securing-hive
+        sub: securing-hive/navigation.json
+
       - text: securing-hue
-        id: securing-hue
         href: securing-hue/index.html
+        id: securing-hue
         sub: securing-hue/navigation.json
 
+      - text: security-ranger-auditing
+        href: security-ranger-auditing/index.html
+        id: security-ranger-auditing
+        sub: security-ranger-auditing/navigation.json
+
+      - text: security-ranger-authorization
+        href: security-ranger-authorization/index.html
+        id: security-ranger-authorization
+        sub: security-ranger-authorization/navigation.json
+
+      - text: spark-overview
+        href: spark-overview/index.html
+        id: spark-overview
+        sub: spark-overview/navigation.json
+
+      - text: starting-hive
+        href: starting-hive/index.html
+        id: starting-hive
+        sub: starting-hive/navigation.json
+
       - text: troubleshooting-hue
-        id: troubleshooting-hue
         href: troubleshooting-hue/index.html
+        id: troubleshooting-hue
         sub: troubleshooting-hue/navigation.json
 
-      - text: troubleshooting-impala
-        id: troubleshooting-impala
-        href: troubleshooting-impala/index.html
-        sub: troubleshooting-impala/navigation.json
-
       - text: troubleshooting-kudu
-        id: troubleshooting-kudu
         href: troubleshooting-kudu/index.html
+        id: troubleshooting-kudu
         sub: troubleshooting-kudu/navigation.json
 
       - text: tuning-hue
-        id: tuning-hue
         href: tuning-hue/index.html
+        id: tuning-hue
         sub: tuning-hue/navigation.json
 
+      - text: tuning-spark
+        href: tuning-spark/index.html
+        id: tuning-spark
+        sub: tuning-spark/navigation.json
+
       - text: using-cbo-in-hive
-        id: using-cbo-in-hive
         href: using-cbo-in-hive/index.html
+        id: using-cbo-in-hive
         sub: using-cbo-in-hive/navigation.json
 
+      - text: using-cm
+        href: using-cm/index.html
+        id: using-cm
+        sub: using-cm/navigation.json
+
+      - text: using-hiveql
+        href: using-hiveql/index.html
+        id: using-hiveql
+        sub: using-hiveql/navigation.json
+
       - text: using-hue
-        id: using-hue
         href: using-hue/index.html
+        id: using-hue
         sub: using-hue/navigation.json
 
-      - text: workflow-management
-        id: workflow-management
-        href: workflow-management/index.html
-        sub: workflow-management/navigation.json
+      - text: using-zeppelin
+        href: using-zeppelin/index.html
+        id: using-zeppelin
+        sub: using-zeppelin/navigation.json
 
       - text: workload-management
-        id: workload-management
         href: workload-management/index.html
+        id: workload-management
         sub: workload-management/navigation.json
 
       - text: yarn-data-management
-        id: yarn-data-management
         href: yarn-data-management/index.html
+        id: yarn-data-management
         sub: yarn-data-management/navigation.json
 
-  - text: How To
-    id: how-to
-    sub:
-      - text: Data Access
-        id: data-access
-        sub:
-          - text: Starting Apache Hive
-            id: starting-hive
-            href: starting-hive/index.html
-            sub: starting-hive/navigation.json
+      - text: zeppelin-overview
+        href: zeppelin-overview/index.html
+        id: zeppelin-overview
+        sub: zeppelin-overview/navigation.json
 
-          - text: Using Apache HiveQL
-            id: using-hiveql
-            href: using-hiveql/index.html
-            sub: using-hiveql/navigation.json
+  # - text: Planning
+  #   id: planning
+  #   sub:
 
-          - text: Managing Apache Hive
-            id: managing-hive
-            href: managing-hive/index.html
-            sub: managing-hive/navigation.json
+  # - text: Installation & Upgrade
+  #   id: installation
+  #   sub:
 
-          - text: Managing Apache Hive Workloads
-            id: managing-a-hive-workload
-            href: managing-a-hive-workload/index.html
-            sub: managing-a-hive-workload/navigation.json
+  # - text: How To
+  #   id: howto
+  #   sub:
 
-          # - text: Configuring Apache Hive
-          #   id: configuring-hive
-          #   href: configuring-hive/index.html
-          #   sub: configuring-hive/navigation.json
+  # - text: Troubleshooting
+  #   id: troubleshooting
+  #   sub:
 
-          - text: Securing Apache Hive
-            id: securing-hive
-            href: securing-hive/index.html
-            sub: securing-hive/navigation.json
+  # - text: Reference
+  #   id: reference
+  #   sub:
 
-          - text: Integrating Apache Hive with Spark and BI
-            id: integrating-hive-and-bi
-            href: integrating-hive-and-bi/index.html
-            sub: integrating-hive-and-bi/navigation.json
+  # - text: Release Notes
+  #   id: releasenotes
+  #   sub:
 
-          - text: Migrating Data
-            id: migrating-data
-            href: migrating-data/index.html
-            sub: migrating-data/navigation.json
-
-          - text: Apache Hive Performance Tuning
-            id: performance-tuning
-            href: performance-tuning/index.html
-            sub: performance-tuning/navigation.json
-
-          # - text: Accessing Data Using Druid
-          #   id: adding-druid
-          #   href: adding-druid/index.html
-          #   sub: adding-druid/navigation.json
-
-          #  - text: Using Druid and Apache Hive
-          #    id: using-druid
-          #    href: using-druid/index.html
-          #    sub: using-druid/navigation.json
-
-          # - text: Using HBase to Store and Access Data
-          #   id: hbase-data-access
-          #   href: hbase-data-access/index.html
-          #   sub: hbase-data-access/navigation.json
-
-          # - text: Using Phoenix to Store and Access Data
-          #   id: phoenix-data-access
-          #   href: phoenix-data-access/index.html
-          #   sub: phoenix-data-access/navigation.json
-
-          # - text: Accessing Cloud Data
-          #   id: bk_cloud-data-access
-          #   href: bk_cloud-data-access/index.html
-
-      - text: Security
-        id: security
-        sub:
-        - text: security-ranger-auditing
-          id: security-ranger-auditing
-          href: security-ranger-auditing/index.html
-          sub: security-ranger-auditing/navigation.json
-
-        - text: security-ranger-authorization
-          id: security-ranger-authorization
-          href: security-ranger-authorization/index.html
-          sub: security-ranger-authorization/navigation.json
-
-  - text: Reference
-    id: reference
-    sub:
-      - text: materialized-view-commands
-        id: materialized-view-commands
-        href: materialized-view-commands/index.html
-        sub: materialized-view-commands/navigation.json
-
-  - text: Release Notes
-    id: releasenotes
-    sub:
-      - text: Release Notes
-        id: release-notes
-        href: release-notes/index.html
-        sub: release-notes/navigation.json
+  # - text: Learning & Training
+  #   id: learning
+  #   sub:
 ---
+

@@ -31,4 +31,32 @@ json:
         href: user-management/index.html
         id: user-management
         sub: user-management/navigation.json
+
+  # - text: Planning
+  #   id: planning
+  #   sub:
+
+  # - text: Installation & Upgrade
+  #   id: installation
+  #   sub:
+
+  # - text: How To
+  #   id: howto
+  #   sub:
+
+  # - text: Troubleshooting
+  #   id: troubleshooting
+  #   sub:
+
+  # - text: Reference
+  #   id: reference
+  #   sub:
+
+  # - text: Release Notes
+  #   id: releasenotes
+  #   sub:
+
+  # - text: Learning & Training
+  #   id: learning
+  #   sub:
 ---

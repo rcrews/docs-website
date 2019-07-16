@@ -12,13 +12,40 @@ json:
   - text: Concepts
     id: concepts
     sub:
-      - text: core-concepts
+      - text: Core Concepts
         href: core-concepts/index.html
         id: core-concepts
         sub: core-concepts/navigation.json
 
-      - text: managing
+  # - text: Planning
+  #   id: planning
+  #   sub:
+
+  # - text: Installation & Upgrade
+  #   id: installation
+  #   sub:
+
+  - text: How To
+    id: howto
+    sub:
+      - text: Managing
         href: managing/index.html
         id: managing
         sub: managing/navigation.json
+
+  # - text: Troubleshooting
+  #   id: troubleshooting
+  #   sub:
+
+  # - text: Reference
+  #   id: reference
+  #   sub:
+
+  # - text: Release Notes
+  #   id: releasenotes
+  #   sub:
+
+  # - text: Learning & Training
+  #   id: learning
+  #   sub:
 ---
