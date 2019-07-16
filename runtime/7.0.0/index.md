@@ -173,8 +173,8 @@ sections:
       - title: tuning-spark
         url: tuning-spark/index.html
 
-      - title: Using the Cost-based Optimizer in Hive
-        url: using-cbo-in-hive/index.html
+      # - title: Using the Cost-based Optimizer in Hive
+      #  url: using-cbo-in-hive/index.html
 
       - title: using-cm
         url: using-cm/index.html
