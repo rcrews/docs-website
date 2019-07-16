@@ -60,8 +60,6 @@ exclude:
   - runtime/7.0.0/integrating-hive-and-bi/
   - runtime/7.0.0/managing-a-hive-workload/
   - runtime/7.0.0/managing-hive/
-  - runtime/7.0.0/migrating-data/
-  - runtime/7.0.0/performance-tuning/
   - runtime/7.0.0/securing-hive/
   - runtime/7.0.0/starting-hive/
   - runtime/7.0.0/using-hiveql/

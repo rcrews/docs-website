@@ -77,11 +77,6 @@ json:
         id: hive-metastore
         sub: hive-metastore/navigation.json
 
-      - text: hive-performance-tuning
-        href: hive-performance-tuning/index.html
-        id: hive-performance-tuning
-        sub: hive-performance-tuning/navigation.json
-
       - text: hue-introduction
         href: hue-introduction/index.html
         id: hue-introduction
@@ -211,11 +206,6 @@ json:
         href: metrics-diagnostics/index.html
         id: metrics-diagnostics
         sub: metrics-diagnostics/navigation.json
-
-      - text: migrating-data
-        href: migrating-data/index.html
-        id: migrating-data
-        sub: migrating-data/navigation.json
 
       - text: migrating-data-into-hive
         href: migrating-data-into-hive/index.html

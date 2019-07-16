@@ -128,9 +128,6 @@ sections:
       - title: metrics-diagnostics
         url: metrics-diagnostics/index.html
 
-      - title: Migrating Data
-        url: migrating-data/index.html
-
       - title: migrating-data-into-hive
         url: migrating-data-into-hive/index.html
 
@@ -139,9 +136,6 @@ sections:
 
       - title: navigation.json
         url: navigation.json/index.html
-
-      - title: Hive Performance Tuning
-        url: performance-tuning/index.html
 
       - title: ports-reference
         url: ports-reference/index.html
