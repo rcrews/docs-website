@@ -9,7 +9,7 @@ publications:
       "Configuring Apache Ranger to collect audits,
       access history and reporting data."
 
-  - title: Providing Authorization with Ranger
+  - title: Ranger Authorization
     url: security-ranger-authorization/index.html
     description: >-
       Configuring Apache Ranger to provide authorization to your cluster
