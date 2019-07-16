@@ -23,6 +23,9 @@ sections:
       - title: atlas-working-with-classifications
         url: atlas-working-with-classifications/index.html
 
+      - title: Security Overview
+        url: cdp-security-overview/index.html
+
       - title: cluster-maintenance
         url: cluster-maintenance/index.html
 
@@ -205,17 +208,21 @@ sections:
   #   name: installation
   #   books:
 
-  # - title: How To
-  #   name: howto
-  #   books:
+  - title: How To
+    name: howto
+    books:
+      - title: Identity Management and Federation
+        url: identity-management-and-federation/index.html
 
   # - title: Troubleshooting
   #   name: troubleshooting
   #   books:
 
-  # - title: Reference
-  #   name: reference
-  #   books:
+  - title: Reference
+    name: reference
+    books:
+      - title: Knox Reference
+        url: knox-reference/index.html
 
   # - title: Learning & Training
   #   name: learning
