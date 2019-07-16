@@ -1,59 +1,53 @@
 ---
 layout: json
+#- text: Release Notes
 #- text: Concepts
 #- text: Planning
-#- text: Installation & Upgrade
 #- text: How To
 #- text: Troubleshooting
 #- text: Reference
-#- text: Release Notes
 #- text: Learning & Training
 json:
-  - text: Concepts
-    id: concepts
-    sub:
-      - text: credentials-aws
-        href: credentials-aws/index.html
-        id: credentials-aws
-        sub: credentials-aws/navigation.json
+  # - text: Release Notes
+  #   id: releasenotes
+  #   sub:
 
-      - text: credentials-azure
-        href: credentials-azure/index.html
-        id: credentials-azure
-        sub: credentials-azure/navigation.json
-
-      - text: troubleshooting
-        href: troubleshooting/index.html
-        id: troubleshooting
-        sub: troubleshooting/navigation.json
-
-      - text: user-management
-        href: user-management/index.html
-        id: user-management
-        sub: user-management/navigation.json
+  # - text: Concepts
+  #   id: concepts
+  #   sub:
 
   # - text: Planning
   #   id: planning
   #   sub:
 
-  # - text: Installation & Upgrade
-  #   id: installation
-  #   sub:
+   - text: How To
+     id: howto
+     sub:
+      - text: Create a Credential on AWS
+        href: credentials-aws/index.html
+        id: credentials-aws
+        sub: credentials-aws/navigation.json
 
-  # - text: How To
-  #   id: howto
-  #   sub:
+      - text: Create a Credential on Azure
+        href: credentials-azure/index.html
+        id: credentials-azure
+        sub: credentials-azure/navigation.json
 
-  # - text: Troubleshooting
-  #   id: troubleshooting
-  #   sub:
+      - text: Managing Users
+        href: user-management/index.html
+        id: user-management
+        sub: user-management/navigation.json
+
+   - text: Troubleshooting
+     id: troubleshooting
+     sub:
+      - text: Troubleshooting 
+        href: troubleshooting/index.html
+        id: troubleshooting
+        sub: troubleshooting/navigation.json
 
   # - text: Reference
   #   id: reference
-  #   sub:
-
-  # - text: Release Notes
-  #   id: releasenotes
   #   sub:
 
   # - text: Learning & Training
