@@ -4,7 +4,7 @@
             {
                 
         "text" : "Hive Warehouse Connector for accessing Apache Spark data",
-        "href" : "topics/cr-hive_hivewarehouseconnector_for_handling_apache_spark_data.html",
+        "href" : "topics/hive_hivewarehouseconnector_for_handling_apache_spark_data.html",
 
         "sub" : [
             
@@ -12,37 +12,98 @@
             {
                 
         "text" : "Apache Spark-Apache Hive connection configuration",
-        "href" : "topics/cr-hive_apache_spark_hive_connection_configuration.html"
+        "href" : "topics/hive_apache_spark_hive_connection_configuration.html"
             },
 
             {
                 
         "text" : "Submit a Hive Warehouse Connector Scala or Java application",
-        "href" : "topics/cr-hive_submit_a_hivewarehouseconnector_app.html"
+        "href" : "topics/hive_submit_a_hivewarehouseconnector_app.html"
             },
 
             {
                 
         "text" : "Submit a Hive Warehouse Connector Python app",
-        "href" : "topics/cr-hive_submit_a_hivewarehouseconnector_python.html"
+        "href" : "topics/hive_submit_a_hivewarehouseconnector_python.html"
             },
 
             {
                 
         "text" : "Hive Warehouse Connector supported types",
-        "href" : "topics/cr-hive_hivewarehouseconnector_supported_types.html"
+        "href" : "topics/hive_hivewarehouseconnector_supported_types.html"
             },
 
             {
                 
         "text" : "HiveWarehouseSession API operations",
-        "href" : "topics/cr-hive_hivewarehousesession_api_operations.html"
+        "href" : "topics/hive_hivewarehousesession_api_operations.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Catalog operations",
+        "href" : "topics/hive-hwc-catalog-operations.html"
+            },
+
+            {
+                
+        "text" : "Read and write operations",
+        "href" : "topics/hive-read-write-operations.html"
             },
 
             {
                 
         "text" : "Use the Hive Warehouse Connector for streaming",
-        "href" : "topics/cr-hive_use_hwc_for_streaming.html"
+        "href" : "topics/hive_use_hwc_for_streaming.html"
+            },
+
+            {
+                
+        "text" : "Hive Warehouse Connector API Examples",
+        "href" : "topics/hive-etl-example.html"
+            },
+
+            {
+                
+        "text" : "Hive Warehouse Connector Interfaces",
+        "href" : "topics/hive-hwc-interfaces.html"
+            }
+
+        ]
+    
+
+            }
+
+        ]
+    
+
+            },
+            {
+                
+        "text" : "Connecting Hive to BI tools using a JDBC/ODBC driver",
+        "href" : "topics/hive_connecting_hive_to_bi_tools.html",
+
+        "sub" : [
+            
+
+            {
+                
+        "text" : "Locate the JDBC or ODBC driver",
+        "href" : "topics/hive_locate_the_jdbc_driver.html"
+            },
+
+            {
+                
+        "text" : "Specify the JDBC connection string",
+        "href" : "topics/hive_specify_the_jdbc_connection_string.html"
+            },
+
+            {
+                
+        "text" : "JDBC connection string syntax",
+        "href" : "topics/hive_connection_string_url_syntax.html"
             }
 
         ]
@@ -52,7 +113,7 @@
             {
                 
         "text" : "Query a SQL data source using the JdbcStorageHandler",
-        "href" : "topics/cr-hive_query_sql_using_jdbcstoragehandler.html"
+        "href" : "topics/hive_query_sql_using_jdbcstoragehandler.html"
             }
         ]
     

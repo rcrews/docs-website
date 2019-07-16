@@ -4,12 +4,12 @@
             {
                 
         "text" : "Authorizing Apache Hive Access",
-        "href" : "topics/cr-hive_hive_authorization_models.html"
+        "href" : "topics/hive_hive_authorization_models.html"
             },
             {
                 
         "text" : "HDFS ACL permissions model",
-        "href" : "topics/cr-hive_sba_permissions_model.html",
+        "href" : "topics/hive_sba_permissions_model.html",
 
         "sub" : [
             
@@ -17,19 +17,19 @@
             {
                 
         "text" : "Configure storage-based authorization",
-        "href" : "topics/cr-hive_configure_storage_based_authorization.html"
+        "href" : "topics/hive_configure_storage_based_authorization.html"
             },
 
             {
                 
         "text" : "Authorization configuration parameters",
-        "href" : "topics/cr-hive_authorization_configuration_parameters.html"
+        "href" : "topics/hive_authorization_configuration_parameters.html"
             },
 
             {
                 
         "text" : "Storage-based operation permissions",
-        "href" : "topics/cr-hive_storage_based_authorization_permissions.html"
+        "href" : "topics/hive_storage_based_authorization_permissions.html"
             }
 
         ]
@@ -39,22 +39,22 @@
             {
                 
         "text" : "Transactional table access",
-        "href" : "topics/cr-hive_transactional_table_access.html"
+        "href" : "topics/hive_transactional_table_access.html"
             },
             {
                 
         "text" : "External table access",
-        "href" : "topics/cr-hive_external_table_access.html"
+        "href" : "topics/hive_external_table_access.html"
             },
             {
                 
         "text" : "Apache Spark access to Apache Hive",
-        "href" : "topics/cr-hive_spark_access_to_hive.html"
+        "href" : "topics/hive_spark_access_to_hive.html"
             },
             {
                 
         "text" : "Remote data access",
-        "href" : "topics/cr-hive_remote_data_access.html",
+        "href" : "topics/hive_remote_data_access.html",
 
         "sub" : [
             
@@ -62,25 +62,25 @@
             {
                 
         "text" : "Secure HiveServer using LDAP",
-        "href" : "topics/cr-hive_secure_hiveserver_using_ldap.html"
+        "href" : "topics/hive_secure_hiveserver_using_ldap.html"
             },
 
             {
                 
         "text" : "Secure HiveServer using LDAP over SSL",
-        "href" : "topics/cr-hive_secure_hiveserver_using_ldap_over_ssl.html"
+        "href" : "topics/hive_secure_hiveserver_using_ldap_over_ssl.html"
             },
 
             {
                 
         "text" : "Secure LLAP in HiveServer",
-        "href" : "topics/cr-hive_secure_llap_in_hiveserver.html"
+        "href" : "topics/hive_secure_llap_in_hiveserver.html"
             },
 
             {
                 
         "text" : "Connections to Apache Hive",
-        "href" : "topics/cr-hive_connections_to_hive.html"
+        "href" : "topics/hive_connections_to_hive.html"
             }
 
         ]

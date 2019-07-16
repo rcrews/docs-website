@@ -4,7 +4,7 @@
             {
                 
         "text" : "ACID operations",
-        "href" : "topics/cr-hive_acid_operations.html",
+        "href" : "topics/hive_acid_operations.html",
 
         "sub" : [
             
@@ -12,19 +12,19 @@
             {
                 
         "text" : "Configure partitions for transactions",
-        "href" : "topics/cr-hive_configure_partitions_in_hive.html"
+        "href" : "topics/hive_configure_partitions_in_hive.html"
             },
 
             {
                 
         "text" : "View transactions",
-        "href" : "topics/cr-hive_view_hive_transactions.html"
+        "href" : "topics/hive_view_hive_transactions.html"
             },
 
             {
                 
         "text" : "View transaction locks",
-        "href" : "topics/cr-hive_view_transaction_locks.html"
+        "href" : "topics/hive_view_transaction_locks.html"
             }
 
         ]
@@ -34,7 +34,7 @@
             {
                 
         "text" : "Query vectorization",
-        "href" : "topics/cr-hive_vectorized_query_execution.html",
+        "href" : "topics/hive_vectorized_query_execution.html",
 
         "sub" : [
             
@@ -42,13 +42,13 @@
             {
                 
         "text" : "Enable vectorization",
-        "href" : "topics/cr-hive_enable_vectorization.html"
+        "href" : "topics/hive_enable_vectorization.html"
             },
 
             {
                 
         "text" : "Check query execution",
-        "href" : "topics/cr-hive_check_query_execution.html"
+        "href" : "topics/hive_check_query_execution.html"
             }
 
         ]
