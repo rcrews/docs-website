@@ -74,9 +74,9 @@ json:
         id: ebs-encryption-aws
         sub: ebs-encryption-aws/navigation.json
 
-   - text: Troubleshooting
-     id: troubleshooting
-     sub:
+  - text: Troubleshooting
+    id: troubleshooting
+    sub:
       - text: Troubleshooting Clusters
         href: troubleshooting-clusters/index.html
         id: troubleshooting-clusters
