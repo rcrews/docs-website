@@ -155,10 +155,10 @@ sections:
       - title: securing-hue
         url: securing-hue/index.html
 
-      - title: security-ranger-auditing
+      - title: Ranger Auditing
         url: security-ranger-auditing/index.html
 
-      - title: security-ranger-authorization
+      - title: Ranger Authorization
         url: security-ranger-authorization/index.html
 
       - title: spark-overview
