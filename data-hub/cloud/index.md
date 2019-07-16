@@ -5,89 +5,56 @@ version: cloud
 base-path: /data-hub/cloud/
 
 sections:
-<<<<<<< Updated upstream
-  - title: How to
-    name: how-to
-    books:
-      - title: create-cluster-aws
-=======
   # - title: Release Notes
   #   name: releasenotes
   #   books:
 
-  - title: Concepts
-    name: concepts
+  #  - title: Concepts
+  #   name: concepts
+  #   books:
+  
+  # - title: Planning
+  #   name: planning
+  #   books:
+
+  - title: How to
+    name: howto
     books:
-      - title: Access Clusters
-        url: access-clusters/index.html
-
-      - title: Blueprints
-        url: blueprints/index.html
-
-      - title: Create Cluster AWS
->>>>>>> Stashed changes
+      - title: Creating a Cluster on AWS
         url: create-cluster-aws/index.html
 
-      - title: Create Cluster Azure
+      - title: Creating a Cluster on Azure
         url: create-cluster-azure/index.html
-  
-      - title: access-clusters
+
+      - title: Accessing Clusters
         url: access-clusters/index.html
         
-      - title: manage-clusters
+      - title: Managing clusters
         url: manage-clusters/index.html
 
-      - title: blueprints
+      - title: Blueprints
         url: blueprints/index.html
 
       - title: Databases
         url: databases/index.html
 
-<<<<<<< Updated upstream
-      - title: image-catalogs
-        url: image-catalogs/index.html
-
-      - title: recipes
-=======
-      - title: EBS Encryption AWS
-        url: ebs-encryption-aws/index.html
-
       - title: Image Catalogs
         url: image-catalogs/index.html
 
-      - title: Manage Clusters
-        url: manage-clusters/index.html
+      - title: Recipes
+        url: recipes/index.html
+
+      - title: EBS Encryption on AWS
+        url: ebs-encryption-aws/index.html
 
       - title: Proxy
         url: proxy/index.html
 
-      - title: Recipes
->>>>>>> Stashed changes
-        url: recipes/index.html
-              
-      - title: proxy
-        url: proxy/index.html
-        
-      - title: ebs-encryption-aws
-        url: ebs-encryption-aws/index.html
-
-  # - title: Planning
-  #   name: planning
-  #   books:
-
-  # - title: Installation & Upgrade
-  #   name: installation
-  #   books:
-
-  - title: How To
-    name: howto
+  - title: Troubleshooting
+    name: troubleshooting
     books:
       - title: Troubleshooting Clusters
         url: troubleshooting-clusters/index.html
-
-  # - title: Troubleshooting
-  #   name: troubleshooting
-  #   books:
 
   # - title: Reference
   #   name: reference
