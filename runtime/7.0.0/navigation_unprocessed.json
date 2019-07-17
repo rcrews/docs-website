@@ -232,7 +232,7 @@ json:
         id: tuning-spark
         sub: tuning-spark/navigation.json
 
-      - text: using-cm
+      - text: Cloudera Manager User Guide
         href: using-cm/index.html
         id: using-cm
         sub: using-cm/navigation.json
