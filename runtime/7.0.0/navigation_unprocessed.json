@@ -12,11 +12,6 @@ json:
   - text: Concepts
     id: concepts
     sub:
-      - text: core-concepts
-        href: core-concepts/index.html
-        id: core-concepts
-        sub: core-concepts/navigation.json
-
       - text: administering-hue
         href: administering-hue/index.html
         id: administering-hue
