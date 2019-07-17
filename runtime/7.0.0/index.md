@@ -140,7 +140,7 @@ sections:
       - title: tuning-spark
         url: tuning-spark/index.html
 
-      - title: using-cm
+      - title: Cloudera Manager User Guide
         url: using-cm/index.html
 
       - title: using-hue
