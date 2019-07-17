@@ -12,12 +12,12 @@ json:
   - text: Concepts
     id: concepts
     sub:
-      - text: core-concepts
+      - text: Core Concepts
         href: core-concepts/index.html
         id: core-concepts
         sub: core-concepts/navigation.json
 
-      - text: operations
+      - text: Operations
         href: operations/index.html
         id: operations
         sub: operations/navigation.json

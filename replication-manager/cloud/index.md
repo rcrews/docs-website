@@ -12,11 +12,8 @@ sections:
   - title: Concepts
     name: concepts
     books:
-      - title: core-concepts
+      - title: Core Concepts
         url: core-concepts/index.html
-
-      - title: operations
-        url: operations/index.html
 
   # - title: Planning
   #   name: planning
@@ -26,9 +23,11 @@ sections:
   #   name: installation
   #   books:
 
-  # - title: How To
-  #   name: howto
-  #   books:
+  - title: How To
+    name: howto
+    books:
+      - title: Operations
+        url: operations/index.html
 
   # - title: Troubleshooting
   #   name: troubleshooting
