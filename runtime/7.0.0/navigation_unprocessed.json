@@ -187,16 +187,6 @@ json:
         id: metrics-diagnostics
         sub: metrics-diagnostics/navigation.json
 
-      - text: navigation_unprocessed.json
-        href: navigation_unprocessed.json/index.html
-        id: navigation_unprocessed.json
-        sub: navigation_unprocessed.json/navigation.json
-
-      - text: navigation.json
-        href: navigation.json/index.html
-        id: navigation.json
-        sub: navigation.json/navigation.json
-
       - text: ports-reference
         href: ports-reference/index.html
         id: ports-reference

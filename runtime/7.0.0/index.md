@@ -110,12 +110,6 @@ sections:
       - title: metrics-diagnostics
         url: metrics-diagnostics/index.html
 
-      - title: navigation_unprocessed.json
-        url: navigation_unprocessed.json/index.html
-
-      - title: navigation.json
-        url: navigation.json/index.html
-
       - title: ports-reference
         url: ports-reference/index.html
 
@@ -174,16 +168,16 @@ sections:
     books:
       - title: Identity Management and Federation
         url: identity-management-and-federation/index.html
-        
+
       - title: Configuring Hive
         url: configuring-apache-hive/index.html
 
       - title: Hive Metastore
         url: hive-metastore/index.html
-        
+
       - title: Integrating Hive with Spark and BI
         url: integrating-hive-and-bi/index.html
-        
+
       - title: Managing a Hive Workload
         url: managing-a-hive-workload/index.html
 
@@ -192,22 +186,22 @@ sections:
 
       - title: Migrating Data
         url: migrating-data-into-hive/index.html
-        
+
     # - title: Hive Performance Tuning
     #   url: hive-performance-tuning/index.html
-        
+
       - title: Securing Hive
         url: securing-hive/index.html
 
       - title: Start Hive and Run Commands
         url: starting-hive/index.html
-        
+
      # - title: Using the Cost-based Optimizer in Hive
      #  url: using-cbo-in-hive/index.html
 
       - title: Using HiveQL
         url: using-hiveql/index.html
-        
+
   # - title: Troubleshooting
   #   name: troubleshooting
   #   books:
@@ -217,10 +211,10 @@ sections:
     books:
       - title: Knox Reference
         url: knox-reference/index.html
-        
+
       - title: Hive Workload Management Commands
         url: workload-management/index.html
-        
+
       - title: Materialized View Commands
         url: materialized-view-commands/index.html
 
