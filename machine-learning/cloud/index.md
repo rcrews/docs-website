@@ -12,104 +12,32 @@ sections:
   - title: Concepts
     name: concepts
     books:
-      - title: architecture
-        url: architecture/index.html
-
-      - title: backup
-        url: backup/index.html
-
-      - title: cli
-        url: cli/index.html
-
-      - title: collaboration-overview
-        url: collaboration-overview/index.html
-
-      - title: customized-engines
-        url: customized-engines/index.html
-
-      - title: distributed-computing-workers
-        url: distributed-computing-workers/index.html
-
-      - title: editors
-        url: editors/index.html
-
-      - title: email
-        url: email/index.html
-
-      - title: engines-overview
-        url: engines-overview/index.html
-
-      - title: engines
-        url: engines/index.html
-
-      - title: experiments
-        url: experiments/index.html
-
-      - title: faq
-        url: faq/index.html
-
-      - title: git-collaboration
-        url: git-collaboration/index.html
-
-      - title: gpu
-        url: gpu/index.html
-
-      - title: import-data
-        url: import-data/index.html
-
-      - title: jobs-pipelines
-        url: jobs-pipelines/index.html
-
-      - title: jupyter
-        url: jupyter/index.html
-
-      - title: ml-guide
-        url: ml-guide/index.html
-
-      - title: model-training-deployment-overview
-        url: model-training-deployment-overview/index.html
-
-      - title: models
-        url: models/index.html
-
-      - title: monitoring
-        url: monitoring/index.html
-
-      - title: product
+      - title: Product Overview
         url: product/index.html
 
-      - title: projects
-        url: projects/index.html
+      - title: Architecture Overview
+        url: architecture/index.html
 
-      - title: quickstart
-        url: quickstart/index.html
+      - title: Engines Overview
+        url: engines-overview/index.html
 
-      - title: security-overview
+      - title: Security Overview
         url: security-overview/index.html
 
-      - title: security
-        url: security/index.html
+      - title: Collaboration Overview
+        url: collaboration-overview/index.html
 
-      - title: spark
-        url: spark/index.html
+      # Needs to be categorized
+      - title: Distributed Computing Workers
+        url: distributed-computing-workers/index.html
 
-      - title: troubleshooting
-        url: troubleshooting/index.html
+      # Needs to be categorized. Ambreen says this will be removed later
+      - title: Machine Learning Guide
+        url: ml-guide/index.html
 
-      - title: user-accounts
-        url: user-accounts/index.html
-
-      - title: visualizations
-        url: visualizations/index.html
-
-      - title: web-ui
-        url: web-ui/index.html
-
-      - title: workbench
-        url: workbench/index.html
-
-      - title: workspaces
-        url: workspaces/index.html
+      # Needs to be categorized
+      - title: Model Training Deployment Overview
+        url: model-training-deployment-overview/index.html
 
   # - title: Planning
   #   name: planning
@@ -119,17 +47,89 @@ sections:
   #   name: installation
   #   books:
 
-  # - title: How To
-  #   name: howto
-  #   books:
+  - title: How To
+    name: howto
+    books:
+      - title: Quickstart
+        url: quickstart/index.html
 
-  # - title: Troubleshooting
-  #   name: troubleshooting
-  #   books:
+      - title: Workspaces
+        url: workspaces/index.html
 
-  # - title: Reference
-  #   name: reference
-  #   books:
+      - title: Projects
+        url: projects/index.html
+
+      - title: Engines
+        url: engines/index.html
+
+      - title: Customized Engines
+        url: customized-engines/index.html
+
+      - title: Spark
+        url: spark/index.html
+
+      - title: GPU
+        url: gpu/index.html
+
+      - title: Web UI
+        url: web-ui/index.html
+
+      - title: Experiments
+        url: experiments/index.html
+
+      - title: Models
+        url: models/index.html
+
+      - title: Jobs Pipelines
+        url: jobs-pipelines/index.html
+
+      - title: Workbench
+        url: workbench/index.html
+
+      - title: Editors
+        url: editors/index.html
+
+      - title: Git Collaboration
+        url: git-collaboration/index.html
+
+      - title: Visualizations
+        url: visualizations/index.html
+
+      - title: User Accounts
+        url: user-accounts/index.html
+
+      - title: Monitoring
+        url: monitoring/index.html
+
+      - title: Security
+        url: security/index.html
+
+      - title: Backup
+        url: backup/index.html
+
+      - title: Email
+        url: email/index.html
+
+      - title: Import Data
+        url: import-data/index.html
+
+  - title: Troubleshooting
+    name: troubleshooting
+    books:
+      - title: Troubleshooting
+        url: troubleshooting/index.html
+
+  - title: Reference
+    name: reference
+    books:
+      - title: CLI
+        url: cli/index.html
+
+      - title: FAQ
+        url: faq/index.html
+
+      - title: Jupyter
+        url: jupyter/index.html
 
   # - title: Learning & Training
   #   name: learning

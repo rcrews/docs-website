@@ -12,170 +12,47 @@ json:
   - text: Concepts
     id: concepts
     sub:
-      - text: architecture
-        href: architecture/index.html
-        id: architecture
-        sub: architecture/navigation.json
-
-      - text: backup
-        href: backup/index.html
-        id: backup
-        sub: backup/navigation.json
-
-      - text: cli
-        href: cli/index.html
-        id: cli
-        sub: cli/navigation.json
-
-      - text: collaboration-overview
-        href: collaboration-overview/index.html
-        id: collaboration-overview
-        sub: collaboration-overview/navigation.json
-
-      - text: customized-engines
-        href: customized-engines/index.html
-        id: customized-engines
-        sub: customized-engines/navigation.json
-
-      - text: distributed-computing-workers
-        href: distributed-computing-workers/index.html
-        id: distributed-computing-workers
-        sub: distributed-computing-workers/navigation.json
-
-      - text: editors
-        href: editors/index.html
-        id: editors
-        sub: editors/navigation.json
-
-      - text: email
-        href: email/index.html
-        id: email
-        sub: email/navigation.json
-
-      - text: engines-overview
-        href: engines-overview/index.html
-        id: engines-overview
-        sub: engines-overview/navigation.json
-
-      - text: engines
-        href: engines/index.html
-        id: engines
-        sub: engines/navigation.json
-
-      - text: experiments
-        href: experiments/index.html
-        id: experiments
-        sub: experiments/navigation.json
-
-      - text: faq
-        href: faq/index.html
-        id: faq
-        sub: faq/navigation.json
-
-      - text: git-collaboration
-        href: git-collaboration/index.html
-        id: git-collaboration
-        sub: git-collaboration/navigation.json
-
-      - text: gpu
-        href: gpu/index.html
-        id: gpu
-        sub: gpu/navigation.json
-
-      - text: import-data
-        href: import-data/index.html
-        id: import-data
-        sub: import-data/navigation.json
-
-      - text: jobs-pipelines
-        href: jobs-pipelines/index.html
-        id: jobs-pipelines
-        sub: jobs-pipelines/navigation.json
-
-      - text: jupyter
-        href: jupyter/index.html
-        id: jupyter
-        sub: jupyter/navigation.json
-
-      - text: ml-guide
-        href: ml-guide/index.html
-        id: ml-guide
-        sub: ml-guide/navigation.json
-
-      - text: model-training-deployment-overview
-        href: model-training-deployment-overview/index.html
-        id: model-training-deployment-overview
-        sub: model-training-deployment-overview/navigation.json
-
-      - text: models
-        href: models/index.html
-        id: models
-        sub: models/navigation.json
-
-      - text: monitoring
-        href: monitoring/index.html
-        id: monitoring
-        sub: monitoring/navigation.json
-
-      - text: product
+      - text: Product Overview
         href: product/index.html
         id: product
         sub: product/navigation.json
 
-      - text: projects
-        href: projects/index.html
-        id: projects
-        sub: projects/navigation.json
+      - text: Architecture Overview
+        href: architecture/index.html
+        id: architecture
+        sub: architecture/navigation.json
 
-      - text: quickstart
-        href: quickstart/index.html
-        id: quickstart
-        sub: quickstart/navigation.json
+      - text: Engines Overview
+        href: engines-overview/index.html
+        id: engines-overview
+        sub: engines-overview/navigation.json
 
-      - text: security-overview
+      - text: Security Overview
         href: security-overview/index.html
         id: security-overview
         sub: security-overview/navigation.json
 
-      - text: security
-        href: security/index.html
-        id: security
-        sub: security/navigation.json
+      - text: Collaboration Overview
+        href: collaboration-overview/index.html
+        id: collaboration-overview
+        sub: collaboration-overview/navigation.json
 
-      - text: spark
-        href: spark/index.html
-        id: spark
-        sub: spark/navigation.json
+      # Needs to be categorized
+      - text: Distributed Computing Workers
+        href: distributed-computing-workers/index.html
+        id: distributed-computing-workers
+        sub: distributed-computing-workers/navigation.json
 
-      - text: troubleshooting
-        href: troubleshooting/index.html
-        id: troubleshooting
-        sub: troubleshooting/navigation.json
+      # Needs to be categorized. Ambreen says this will be removed later
+      - text: Machine Learning Guide
+        href: ml-guide/index.html
+        id: ml-guide
+        sub: ml-guide/navigation.json
 
-      - text: user-accounts
-        href: user-accounts/index.html
-        id: user-accounts
-        sub: user-accounts/navigation.json
-
-      - text: visualizations
-        href: visualizations/index.html
-        id: visualizations
-        sub: visualizations/navigation.json
-
-      - text: web-ui
-        href: web-ui/index.html
-        id: web-ui
-        sub: web-ui/navigation.json
-
-      - text: workbench
-        href: workbench/index.html
-        id: workbench
-        sub: workbench/navigation.json
-
-      - text: workspaces
-        href: workspaces/index.html
-        id: workspaces
-        sub: workspaces/navigation.json
+      - text: Model Training Deployment Overview
+        href: model-training-deployment-overview/index.html
+        id: model-training-deployment-overview
+        sub: model-training-deployment-overview/navigation.json
 
   # - text: Planning
   #   id: planning
@@ -185,17 +62,139 @@ json:
   #   id: installation
   #   sub:
 
-  # - text: How To
-  #   id: howto
-  #   sub:
+  - text: How To
+    id: howto
+    sub:
+      - text: Quickstart
+        href: quickstart/index.html
+        id: quickstart
+        sub: quickstart/navigation.json
 
-  # - text: Troubleshooting
-  #   id: troubleshooting
-  #   sub:
+      - text: Workspaces
+        href: workspaces/index.html
+        id: workspaces
+        sub: workspaces/navigation.json
 
-  # - text: Reference
-  #   id: reference
-  #   sub:
+      - text: Projects
+        href: projects/index.html
+        id: projects
+        sub: projects/navigation.json
+
+      - text: Engines
+        href: engines/index.html
+        id: engines
+        sub: engines/navigation.json
+
+      - text: Customized Engines
+        href: customized-engines/index.html
+        id: customized-engines
+        sub: customized-engines/navigation.json
+
+      - text: Spark
+        href: spark/index.html
+        id: spark
+        sub: spark/navigation.json
+
+      - text: GPU
+        href: gpu/index.html
+        id: gpu
+        sub: gpu/navigation.json
+
+      - text: Web UI
+        href: web-ui/index.html
+        id: web-ui
+        sub: web-ui/navigation.json
+
+      - text: Experiments
+        href: experiments/index.html
+        id: experiments
+        sub: experiments/navigation.json
+
+      - text: Models
+        href: models/index.html
+        id: models
+        sub: models/navigation.json
+
+      - text: Jobs Pipelines
+        href: jobs-pipelines/index.html
+        id: jobs-pipelines
+        sub: jobs-pipelines/navigation.json
+
+      - text: Workbench
+        href: workbench/index.html
+        id: workbench
+        sub: workbench/navigation.json
+
+      - text: Editors
+        href: editors/index.html
+        id: editors
+        sub: editors/navigation.json
+
+      - text: Git Collaboration
+        href: git-collaboration/index.html
+        id: git-collaboration
+        sub: git-collaboration/navigation.json
+
+      - text: Visualizations
+        href: visualizations/index.html
+        id: visualizations
+        sub: visualizations/navigation.json
+
+      - text: User Accounts
+        href: user-accounts/index.html
+        id: user-accounts
+        sub: user-accounts/navigation.json
+
+      - text: Monitoring
+        href: monitoring/index.html
+        id: monitoring
+        sub: monitoring/navigation.json
+
+      - text: Security
+        href: security/index.html
+        id: security
+        sub: security/navigation.json
+
+      - text: Backup
+        href: backup/index.html
+        id: backup
+        sub: backup/navigation.json
+
+      - text: Email
+        href: email/index.html
+        id: email
+        sub: email/navigation.json
+
+      - text: Import Data
+        href: import-data/index.html
+        id: import-data
+        sub: import-data/navigation.json
+
+  - text: Troubleshooting
+    id: troubleshooting
+    sub:
+      - text: Troubleshooting
+        href: troubleshooting/index.html
+        id: troubleshooting
+        sub: troubleshooting/navigation.json
+
+  - text: Reference
+    id: reference
+    sub:
+      - text: CLI
+        href: cli/index.html
+        id: cli
+        sub: cli/navigation.json
+
+      - text: FAQ
+        href: faq/index.html
+        id: faq
+        sub: faq/navigation.json
+
+      - text: Jupyter
+        href: jupyter/index.html
+        id: jupyter
+        sub: jupyter/navigation.json
 
   # - text: Release Notes
   #   id: releasenotes
