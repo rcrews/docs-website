@@ -90,7 +90,7 @@ sections:
       - title: impala-troubleshooting
         url: impala-troubleshooting/index.html
 
-      - title: kudu-design
+      - title: Kudu Design
         url: kudu-design/index.html
 
       - title: kudu-development
