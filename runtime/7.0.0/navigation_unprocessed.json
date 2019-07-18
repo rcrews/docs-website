@@ -58,67 +58,57 @@ json:
         id: hue-introduction
         sub: hue-introduction/navigation.json
 
-      - text: impala-client
-        href: impala-client/index.html
-        id: impala-client
-        sub: impala-client/navigation.json
-
-      - text: impala-file-formats
-        href: impala-file-formats/index.html
-        id: impala-file-formats
-        sub: impala-file-formats/navigation.json
-
-      - text: impala-metadata
-        href: impala-metadata/index.html
-        id: impala-metadata
-        sub: impala-metadata/navigation.json
-
-      - text: impala-monitoring
-        href: impala-monitoring/index.html
-        id: impala-monitoring
-        sub: impala-monitoring/navigation.json
-
-      - text: impala-overview
+      - text: Impala Overview
         href: impala-overview/index.html
         id: impala-overview
         sub: impala-overview/navigation.json
 
-      - text: impala-performance
+      - text: Impala Client
+        href: impala-client/index.html
+        id: impala-client
+        sub: impala-client/navigation.json
+
+      - text: Impala Monitoring
+        href: impala-monitoring/index.html
+        id: impala-monitoring
+        sub: impala-monitoring/navigation.json
+
+      - text: Impala Performance
         href: impala-performance/index.html
         id: impala-performance
         sub: impala-performance/navigation.json
 
-      - text: impala-performance-tuning
-        href: impala-performance-tuning/index.html
-        id: impala-performance-tuning
-        sub: impala-performance-tuning/navigation.json
-
-      - text: impala-planning
-        href: impala-planning/index.html
-        id: impala-planning
-        sub: impala-planning/navigation.json
-
-      - text: impala-resource
+      - text: Impala Resource Management
         href: impala-resource/index.html
         id: impala-resource
         sub: impala-resource/navigation.json
 
-      - text: impala-scalability
+      - text: Impala Scalability
         href: impala-scalability/index.html
         id: impala-scalability
         sub: impala-scalability/navigation.json
 
-      - text: impala-security
+      - text: Impala Metadata
+        href: impala-metadata/index.html
+        id: impala-metadata
+        sub: impala-metadata/navigation.json
+
+      - text: Impala Security
         href: impala-security/index.html
         id: impala-security
         sub: impala-security/navigation.json
 
-      - text: impala-storage
+      - text: Impala File Formats
+        href: impala-file-formats/index.html
+        id: impala-file-formats
+        sub: impala-file-formats/navigation.json
+
+      - text: Impala Storage
         href: impala-storage/index.html
         id: impala-storage
         sub: impala-storage/navigation.json
 
-      - text: impala-timeouts
+      - text: Impala Timeouts
         href: impala-timeouts/index.html
         id: impala-timeouts
         sub: impala-timeouts/navigation.json
@@ -209,9 +199,14 @@ json:
         id: zeppelin-overview
         sub: zeppelin-overview/navigation.json
 
-  # - text: Planning
-  #   id: planning
-  #   sub:
+  - text: Planning
+    id: planning
+    sub:
+      - text: Planning for Impala
+        href: impala-planning/index.html
+        id: impala-planning
+        sub: impala-planning/navigation.json
+
 
   # - text: Installation & Upgrade
   #   id: installation
@@ -224,6 +219,11 @@ json:
         ref: identity-management-and-federation/index.html
         id: identity-management-and-federation-and-federation/index.html
         sub: identity-management-and-federation/navigation.json
+
+      - text: Impala Performance Tuning
+        href: impala-performance-tuning/index.html
+        id: impala-performance-tuning
+        sub: impala-performance-tuning/navigation.json
 
       - text: Configuring Hive
         href: configuring-apache-hive/index.html
@@ -364,4 +364,3 @@ json:
   #   id: learning
   #   sub:
 ---
-

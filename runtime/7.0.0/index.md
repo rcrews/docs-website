@@ -39,43 +39,37 @@ sections:
       - title: hue-introduction
         url: hue-introduction/index.html
 
-      - title: impala-client
-        url: impala-client/index.html
-
-      - title: impala-file-formats
-        url: impala-file-formats/index.html
-
-      - title: impala-metadata
-        url: impala-metadata/index.html
-
-      - title: impala-monitoring
-        url: impala-monitoring/index.html
-
-      - title: impala-overview
+      - title: Impala Overview
         url: impala-overview/index.html
 
-      - title: impala-performance
+      - title: Impala Client
+        url: impala-client/index.html
+
+      - title: Impala Monitoring
+        url: impala-monitoring/index.html
+
+      - title: Impala Performance
         url: impala-performance/index.html
 
-      - title: impala-performance-tuning
-        url: impala-performance-tuning/index.html
-
-      - title: impala-planning
-        url: impala-planning/index.html
-
-      - title: impala-resource
+      - title: Impala Resource Management
         url: impala-resource/index.html
 
-      - title: impala-scalability
+      - title: Impala Scalability
         url: impala-scalability/index.html
 
-      - title: impala-security
+      - title: Impala Metadata
+        url: impala-metadata/index.html
+
+      - title: Impala Security
         url: impala-security/index.html
 
-      - title: impala-storage
+      - title: Impala File Formats
+        url: impala-file-formats/index.html
+
+      - title: Impala Storage
         url: impala-storage/index.html
 
-      - title: impala-timeouts
+      - title: Impala Timeouts
         url: impala-timeouts/index.html
 
       - title: Kudu Design
@@ -130,9 +124,11 @@ sections:
       - title: Apache Zeppelin Overview
         url: zeppelin-overview/index.html
 
-  # - title: Planning
-  #   name: planning
-  #   books:
+  - title: Planning
+    name: planning
+    books:
+      - title: Planning for Impala
+        url: impala-planning/index.html
 
   # - title: Installation & Upgrade
   #   name: installation
@@ -143,6 +139,9 @@ sections:
     books:
       - title: Identity Management and Federation
         url: identity-management-and-federation/index.html
+
+      - title: Impala Performance Tuning
+        url: impala-performance-tuning/index.html
 
       - title: Configuring Hive
         url: configuring-apache-hive/index.html
@@ -201,7 +200,7 @@ sections:
   - title: Troubleshooting
     name: troubleshooting
     books:
-      - title: impala-troubleshooting
+      - title: Impala Troubleshooting
         url: impala-troubleshooting/index.html
 
       - title: troubleshooting-hue
@@ -232,4 +231,3 @@ sections:
 CDP Runtime offers several tools for processing
 
 Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
-
