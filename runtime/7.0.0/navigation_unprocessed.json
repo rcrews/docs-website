@@ -143,7 +143,7 @@ json:
         id: impala-troubleshooting
         sub: impala-troubleshooting/navigation.json
 
-      - text: kudu-design
+      - text: Kudu Design
         href: kudu-design/index.html
         id: kudu-design
         sub: kudu-design/navigation.json
