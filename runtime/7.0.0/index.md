@@ -142,8 +142,8 @@ sections:
       - title: tuning-spark
         url: tuning-spark/index.html
 
-      - title: Cloudera Manager User Guide
-        url: using-cm/index.html
+      - title: Cloudera Manager Overview
+        url: cm-concepts/index.html
 
       - title: using-hue
         url: using-hue/index.html
@@ -188,6 +188,9 @@ sections:
 
       - title: Migrating Data
         url: migrating-data-into-hive/index.html
+        
+      - title: Using Cloudera Manager
+        url: cm-how-to/index.html
 
     # - title: Hive Performance Tuning
     #   url: hive-performance-tuning/index.html
@@ -219,6 +222,9 @@ sections:
 
       - title: Materialized View Commands
         url: materialized-view-commands/index.html
+                
+      - title: Cloudera Manager Reference 
+        url: cm-reference/index.html
 
   # - title: Learning & Training
   #   name: learning
