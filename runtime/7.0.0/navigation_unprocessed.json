@@ -48,21 +48,6 @@ json:
         id: configuring-fault-tolerance
         sub: configuring-fault-tolerance/navigation.json
 
-      - text: configuring-spark
-        href: configuring-spark/index.html
-        id: configuring-spark
-        sub: configuring-spark/navigation.json
-
-      - text: configuring-zeppelin
-        href: configuring-zeppelin/index.html
-        id: configuring-zeppelin
-        sub: configuring-zeppelin/navigation.json
-
-      - text: developing-spark-applications
-        href: developing-spark-applications/index.html
-        id: developing-spark-applications
-        sub: developing-spark-applications/navigation.json
-
       - text: hive-introduction
         href: hive-introduction/index.html
         id: hive-introduction
@@ -189,11 +174,6 @@ json:
       #   id: ports-reference
       #   sub: ports-reference/navigation.json
 
-      - text: running-spark-applications
-        href: running-spark-applications/index.html
-        id: running-spark-applications
-        sub: running-spark-applications/navigation.json
-
       - text: securing-hue
         href: securing-hue/index.html
         id: securing-hue
@@ -209,7 +189,7 @@ json:
         id: security-ranger-authorization
         sub: security-ranger-authorization/navigation.json
 
-      - text: spark-overview
+      - text: Apache Spark Overview
         href: spark-overview/index.html
         id: spark-overview
         sub: spark-overview/navigation.json
@@ -229,11 +209,6 @@ json:
         id: tuning-hue
         sub: tuning-hue/navigation.json
 
-      - text: tuning-spark
-        href: tuning-spark/index.html
-        id: tuning-spark
-        sub: tuning-spark/navigation.json
-
       - text: Cloudera Manager User Guide
         href: using-cm/index.html
         id: using-cm
@@ -249,11 +224,6 @@ json:
         id: using-hue
         sub: using-hue/navigation.json
 
-      - text: using-zeppelin
-        href: using-zeppelin/index.html
-        id: using-zeppelin
-        sub: using-zeppelin/navigation.json
-
       - text: workload-management
         href: workload-management/index.html
         id: workload-management
@@ -264,7 +234,7 @@ json:
         id: yarn-data-management
         sub: yarn-data-management/navigation.json
 
-      - text: zeppelin-overview
+      - text: Apache Zeppelin Overview
         href: zeppelin-overview/index.html
         id: zeppelin-overview
         sub: zeppelin-overview/navigation.json
@@ -329,6 +299,36 @@ json:
         href: starting-hive/index.html
         id: starting-hive
         sub: starting-hive/navigation.json
+
+      - text: Configuring Apache Spark
+        href: configuring-spark/index.html
+        id: configuring-spark
+        sub: configuring-spark/navigation.json
+
+      - text: Developing Apache Spark Applications
+        href: developing-spark-applications/index.html
+        id: developing-spark-applications
+        sub: developing-spark-applications/navigation.json
+
+      - text: Running Apache Spark Applications
+        href: running-spark-applications/index.html
+        id: running-spark-applications
+        sub: running-spark-applications/navigation.json
+
+      - text: Tuning Apache Spark
+        href: tuning-spark/index.html
+        id: tuning-spark
+        sub: tuning-spark/navigation.json
+
+      - text: Configuring Apache Zeppelin
+        href: configuring-zeppelin/index.html
+        id: configuring-zeppelin
+        sub: configuring-zeppelin/navigation.json
+
+      - text: Using Apache Zeppelin
+        href: using-zeppelin/index.html
+        id: using-zeppelin
+        sub: using-zeppelin/navigation.json
 
       # - text: using-cbo-in-hive
       #   href: using-cbo-in-hive/index.html
