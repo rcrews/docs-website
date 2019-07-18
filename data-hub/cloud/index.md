@@ -39,9 +39,6 @@ sections:
       - title: Blueprints
         url: blueprints/index.html
 
-      - title: Databases
-        url: databases/index.html
-
       - title: Image Catalogs
         url: image-catalogs/index.html
 
@@ -50,9 +47,6 @@ sections:
 
       - title: EBS Encryption on AWS
         url: ebs-encryption-aws/index.html
-
-      - title: Proxy
-        url: proxy/index.html
 
   - title: Troubleshooting
     name: troubleshooting
