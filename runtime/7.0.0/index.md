@@ -78,9 +78,6 @@ sections:
       - title: impala-timeouts
         url: impala-timeouts/index.html
 
-      - title: impala-troubleshooting
-        url: impala-troubleshooting/index.html
-
       - title: Kudu Design
         url: kudu-design/index.html
 
@@ -117,12 +114,6 @@ sections:
 
       - title: Apache Spark Overview
         url: spark-overview/index.html
-
-      - title: troubleshooting-hue
-        url: troubleshooting-hue/index.html
-
-      - title: troubleshooting-kudu
-        url: troubleshooting-kudu/index.html
 
       - title: tuning-hue
         url: tuning-hue/index.html
@@ -201,15 +192,23 @@ sections:
       - title: Using Apache Zepppelin
         url: using-zeppelin/index.html
 
-     # - title: Using the Cost-based Optimizer in Hive
-     #  url: using-cbo-in-hive/index.html
+      # - title: Using the Cost-based Optimizer in Hive
+      #   url: using-cbo-in-hive/index.html
 
       - title: Using HiveQL
         url: using-hiveql/index.html
 
-  # - title: Troubleshooting
-  #   name: troubleshooting
-  #   books:
+  - title: Troubleshooting
+    name: troubleshooting
+    books:
+      - title: impala-troubleshooting
+        url: impala-troubleshooting/index.html
+
+      - title: troubleshooting-hue
+        url: troubleshooting-hue/index.html
+
+      - title: troubleshooting-kudu
+        url: troubleshooting-kudu/index.html
 
   - title: Reference
     name: reference
