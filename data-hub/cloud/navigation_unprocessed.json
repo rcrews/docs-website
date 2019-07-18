@@ -49,11 +49,6 @@ json:
         id: blueprints
         sub: blueprints/navigation.json
 
-      - text: Databases
-        href: databases/index.html
-        id: databases
-        sub: databases/navigation.json
-
       - text: Image Catalogs
         href: image-catalogs/index.html
         id: image-catalogs
@@ -63,11 +58,6 @@ json:
         href: recipes/index.html
         id: recipes
         sub: recipes/navigation.json
-
-      - text: Proxy
-        href: proxy/index.html
-        id: proxy
-        sub: proxy/navigation.json
 
       - text: EBS Encryption AWS
         href: ebs-encryption-aws/index.html
