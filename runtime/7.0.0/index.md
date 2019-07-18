@@ -170,7 +170,7 @@ sections:
 
       - title: Migrating Data
         url: migrating-data-into-hive/index.html
-        
+
       - title: Using Cloudera Manager
         url: cm-how-to/index.html
 
@@ -182,7 +182,7 @@ sections:
 
       - title: Start Hive and Run Commands
         url: starting-hive/index.html
-        
+
       - title: Configuring Apache Spark
         url: configuring-spark/index.html
 
@@ -222,8 +222,8 @@ sections:
 
       - title: Materialized View Commands
         url: materialized-view-commands/index.html
-                
-      - title: Cloudera Manager Reference 
+
+      - title: Cloudera Manager Reference
         url: cm-reference/index.html
 
   # - title: Learning & Training
