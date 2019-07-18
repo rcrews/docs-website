@@ -310,7 +310,7 @@ json:
       #   id: using-cbo-in-hive
       #   sub: using-cbo-in-hive/navigation.json
 
-      - text: using-hiveql
+      - text: Using HiveQL
         href: using-hiveql/index.html
         id: using-hiveql
         sub: using-hiveql/navigation.json
