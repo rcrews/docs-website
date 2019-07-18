@@ -22,15 +22,10 @@ json:
         id: administering-kudu
         sub: administering-kudu/navigation.json
 
-      - text: atlas-access-control-using-tags
+      - text: Controlling Data Access Using Metadata Tags
         href: atlas-access-control-using-tags/index.html
         id: atlas-access-control-using-tags
         sub: atlas-access-control-using-tags/navigation.json
-
-      - text: atlas-working-with-classifications
-        href: atlas-working-with-classifications/index.html
-        id: atlas-working-with-classifications
-        sub: atlas-working-with-classifications/navigation.json
 
       - text: Security Overview
         href: cdp-security-overview/index.html
@@ -215,6 +210,11 @@ json:
   - text: How To
     id: howto
     sub:
+      - text: Working with Classifications
+        href: atlas-working-with-classifications/index.html
+        id: atlas-working-with-classifications
+        sub: atlas-working-with-classifications/navigation.json
+
       - text: Identity Management and Federation
         ref: identity-management-and-federation/index.html
         id: identity-management-and-federation-and-federation/index.html

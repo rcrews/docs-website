@@ -17,11 +17,8 @@ sections:
       - title: administering-kudu
         url: administering-kudu/index.html
 
-      - title: atlas-access-control-using-tags
+      - title: Controlling Data Access Using Metadata Tags
         url: atlas-access-control-using-tags/index.html
-
-      - title: atlas-working-with-classifications
-        url: atlas-working-with-classifications/index.html
 
       - title: Security Overview
         url: cdp-security-overview/index.html
@@ -137,6 +134,9 @@ sections:
   - title: How To
     name: howto
     books:
+      - title: Working with Classifications
+        url: atlas-working-with-classifications/index.html
+
       - title: Identity Management and Federation
         url: identity-management-and-federation/index.html
 
