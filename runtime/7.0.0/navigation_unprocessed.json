@@ -318,7 +318,7 @@ json:
   - text: Troubleshooting
     id: troubleshooting
     sub:
-      - text: impala-troubleshooting
+      - text: Impala Troubleshooting
         href: impala-troubleshooting/index.html
         id: impala-troubleshooting
         sub: impala-troubleshooting/navigation.json
