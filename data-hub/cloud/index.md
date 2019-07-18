@@ -44,6 +44,9 @@ sections:
 
       - title: Recipes
         url: recipes/index.html
+        
+      - title: Custom Properties
+        url: custom-properties/index.html
 
       - title: EBS Encryption on AWS
         url: ebs-encryption-aws/index.html
