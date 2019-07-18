@@ -106,9 +106,6 @@ sections:
       # - title: ports-reference
       #   url: ports-reference/index.html
 
-      - title: running-spark-applications
-        url: running-spark-applications/index.html
-
       - title: securing-hue
         url: securing-hue/index.html
 
