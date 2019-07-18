@@ -59,6 +59,11 @@ json:
         id: recipes
         sub: recipes/navigation.json
 
+      - text: Custom Properties
+        href: custom-properties/index.html
+        id: custom-properties
+        sub: custom-properties/navigation.json
+
       - text: EBS Encryption AWS
         href: ebs-encryption-aws/index.html
         id: ebs-encryption-aws
