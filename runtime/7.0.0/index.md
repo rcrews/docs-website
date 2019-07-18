@@ -26,8 +26,9 @@ sections:
       - title: Security Overview
         url: cdp-security-overview/index.html
 
-      - title: cluster-maintenance
-        url: cluster-maintenance/index.html
+      # Removed at Siaram's request, July 18
+      # - title: cluster-maintenance
+      #   url: cluster-maintenance/index.html
 
       - title: configuring-fault-tolerance
         url: configuring-fault-tolerance/index.html
@@ -110,8 +111,9 @@ sections:
       - title: metrics-diagnostics
         url: metrics-diagnostics/index.html
 
-      - title: ports-reference
-        url: ports-reference/index.html
+      # Removed at Siaram's request, July 18
+      # - title: ports-reference
+      #   url: ports-reference/index.html
 
       - title: running-spark-applications
         url: running-spark-applications/index.html

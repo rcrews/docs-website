@@ -44,7 +44,7 @@ sections:
 
       - title: Recipes
         url: recipes/index.html
-        
+
       - title: Custom Properties
         url: custom-properties/index.html
 

@@ -37,10 +37,11 @@ json:
         id: cdp-security-overview/index.html
         sub: cdp-security-overview/navigation.json
 
-      - text: cluster-maintenance
-        href: cluster-maintenance/index.html
-        id: cluster-maintenance
-        sub: cluster-maintenance/navigation.json
+      # Removed at Siaram's request, July 18
+      # - text: cluster-maintenance
+      #   href: cluster-maintenance/index.html
+      #   id: cluster-maintenance
+      #   sub: cluster-maintenance/navigation.json
 
       - text: configuring-fault-tolerance
         href: configuring-fault-tolerance/index.html
@@ -182,10 +183,11 @@ json:
         id: metrics-diagnostics
         sub: metrics-diagnostics/navigation.json
 
-      - text: ports-reference
-        href: ports-reference/index.html
-        id: ports-reference
-        sub: ports-reference/navigation.json
+      # Removed at Siaram's request, July 18
+      # - text: ports-reference
+      #   href: ports-reference/index.html
+      #   id: ports-reference
+      #   sub: ports-reference/navigation.json
 
       - text: running-spark-applications
         href: running-spark-applications/index.html
