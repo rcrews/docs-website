@@ -33,15 +33,6 @@ sections:
       - title: configuring-fault-tolerance
         url: configuring-fault-tolerance/index.html
 
-      - title: configuring-spark
-        url: configuring-spark/index.html
-
-      - title: configuring-zeppelin
-        url: configuring-zeppelin/index.html
-
-      - title: developing-spark-applications
-        url: developing-spark-applications/index.html
-
       - title: Hive Overview
         url: hive-introduction/index.html
 
@@ -127,7 +118,7 @@ sections:
       - title: Ranger Authorization
         url: security-ranger-authorization/index.html
 
-      - title: spark-overview
+      - title: Apache Spark Overview
         url: spark-overview/index.html
 
       - title: troubleshooting-hue
@@ -139,22 +130,16 @@ sections:
       - title: tuning-hue
         url: tuning-hue/index.html
 
-      - title: tuning-spark
-        url: tuning-spark/index.html
-
       - title: Cloudera Manager Overview
         url: cm-concepts/index.html
 
       - title: using-hue
         url: using-hue/index.html
 
-      - title: using-zeppelin
-        url: using-zeppelin/index.html
-
       - title: yarn-data-management
         url: yarn-data-management/index.html
 
-      - title: zeppelin-overview
+      - title: Apache Zeppelin Overview
         url: zeppelin-overview/index.html
 
   # - title: Planning
@@ -200,6 +185,24 @@ sections:
 
       - title: Start Hive and Run Commands
         url: starting-hive/index.html
+        
+      - title: Configuring Apache Spark
+        url: configuring-spark/index.html
+
+      - title: Developing Apache Spark Applications
+        url: developing-spark-applications/index.html
+
+      - title: Running Apache Spark Applications
+        url: running-spark-applications/index.html
+
+      - title: Tuning Apache Spark
+        url: tuning-spark/index.html
+
+      - title: Configuring Apache Zeppelin
+        url: configuring-zeppelin/index.html
+
+      - title: Using Apache Zepppelin
+        url: using-zeppelin/index.html
 
      # - title: Using the Cost-based Optimizer in Hive
      #  url: using-cbo-in-hive/index.html
