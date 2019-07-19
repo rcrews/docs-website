@@ -323,12 +323,12 @@ json:
         id: impala-troubleshooting
         sub: impala-troubleshooting/navigation.json
 
-      - text: troubleshooting-hue
+      - text: Troubleshooting Hue
         href: troubleshooting-hue/index.html
         id: troubleshooting-hue
         sub: troubleshooting-hue/navigation.json
 
-      - text: troubleshooting-kudu
+      - text: Troubleshooting Apache Kudu
         href: troubleshooting-kudu/index.html
         id: troubleshooting-kudu
         sub: troubleshooting-kudu/navigation.json

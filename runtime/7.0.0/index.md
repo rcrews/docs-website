@@ -205,10 +205,10 @@ sections:
       - title: Impala Troubleshooting
         url: impala-troubleshooting/index.html
 
-      - title: troubleshooting-hue
+      - title: Troubleshooting Hue
         url: troubleshooting-hue/index.html
 
-      - title: troubleshooting-kudu
+      - title: Troubleshooting Apache Kudu
         url: troubleshooting-kudu/index.html
 
   - title: Reference
