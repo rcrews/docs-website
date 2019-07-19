@@ -248,7 +248,7 @@ json:
         id: managing-hive
         sub: managing-hive/navigation.json
 
-      - text: Migrating Data
+      - text: Migrating Data to Hive
         href: migrating-data-into-hive/index.html
         id: migrating-data-into-hive
         sub: migrating-data-into-hive/navigation.json
@@ -346,7 +346,7 @@ json:
         id: workload-management
         sub: workload-management/navigation.json
 
-      - text: Materialized View Commands
+      - text: Hive Materialized View Commands
         href: materialized-view-commands/index.html
         id: materialized-view-commands
         sub: materialized-view-commands/navigation.json
