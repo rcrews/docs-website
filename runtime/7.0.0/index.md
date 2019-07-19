@@ -158,7 +158,7 @@ sections:
       - title: Managing Hive
         url: managing-hive/index.html
 
-      - title: Migrating Data
+      - title: Migrating Data to Hive
         url: migrating-data-into-hive/index.html
 
       - title: Managing Data Hub Clusters using Cloudera Manager
@@ -220,7 +220,7 @@ sections:
       - title: Hive Workload Management Commands
         url: workload-management/index.html
 
-      - title: Materialized View Commands
+      - title: Hive Materialized View Commands
         url: materialized-view-commands/index.html
 
       - title: Cloudera Manager Reference
