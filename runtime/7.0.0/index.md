@@ -27,37 +27,37 @@ sections:
       - title: Hue Introduction
         url: hue-introduction/index.html
 
-      - title: Impala Overview
+      - title: Apache Impala Overview
         url: impala-overview/index.html
 
-      - title: Impala Client
+      - title: Apache Impala Client
         url: impala-client/index.html
 
-      - title: Impala Monitoring
+      - title: Apache Impala Monitoring
         url: impala-monitoring/index.html
 
-      - title: Impala Performance
+      - title: Apache Impala Performance
         url: impala-performance/index.html
 
-      - title: Impala Resource Management
+      - title: Apache Impala Resource Management
         url: impala-resource/index.html
 
-      - title: Impala Scalability
+      - title: Apache Impala Scalability
         url: impala-scalability/index.html
 
-      - title: Impala Metadata
+      - title: Apache Impala Metadata
         url: impala-metadata/index.html
 
-      - title: Impala Security
+      - title: Apache Impala Security
         url: impala-security/index.html
 
-      - title: Impala File Formats
+      - title: Apache Impala File Formats
         url: impala-file-formats/index.html
 
-      - title: Impala Storage
+      - title: Apache Impala Storage
         url: impala-storage/index.html
 
-      - title: Impala Timeouts
+      - title: Apache Impala Timeouts
         url: impala-timeouts/index.html
 
       - title: Apache Kudu Design
@@ -94,7 +94,7 @@ sections:
   - title: Planning
     name: planning
     books:
-      - title: Planning for Impala
+      - title: Planning for Apache Impala
         url: impala-planning/index.html
 
   - title: Installation & Upgrade
@@ -140,7 +140,7 @@ sections:
       - title: Identity Management and Federation
         url: identity-management-and-federation/index.html
 
-      - title: Impala Performance Tuning
+      - title: Apache Impala Performance Tuning
         url: impala-performance-tuning/index.html
 
       - title: Configuring Hive
@@ -202,7 +202,7 @@ sections:
   - title: Troubleshooting
     name: troubleshooting
     books:
-      - title: Impala Troubleshooting
+      - title: Apache Impala Troubleshooting
         url: impala-troubleshooting/index.html
 
       - title: Troubleshooting Hue
