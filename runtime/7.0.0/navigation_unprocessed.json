@@ -253,7 +253,7 @@ json:
         id: migrating-data-into-hive
         sub: migrating-data-into-hive/navigation.json
 
-      - text: Using Cloudera Manager
+      - text: Managing Clusters
         href: cm-how-to/index.html
         id: cm-how-to
         sub: cm-how-to/navigation.json

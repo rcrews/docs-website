@@ -161,7 +161,7 @@ sections:
       - title: Migrating Data
         url: migrating-data-into-hive/index.html
 
-      - title: Using Cloudera Manager
+      - title: Managing Data Hub Clusters using Cloudera Manager
         url: cm-how-to/index.html
 
       # Removed at Kris's request
