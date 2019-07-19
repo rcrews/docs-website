@@ -11,12 +11,6 @@ sections:
   - title: Concepts
     name: concepts
     books:
-      - title: administering-hue
-        url: administering-hue/index.html
-
-      - title: administering-kudu
-        url: administering-kudu/index.html
-
       - title: Controlling Data Access Using Metadata Tags
         url: atlas-access-control-using-tags/index.html
 
@@ -27,13 +21,10 @@ sections:
       # - title: cluster-maintenance
       #   url: cluster-maintenance/index.html
 
-      - title: configuring-fault-tolerance
-        url: configuring-fault-tolerance/index.html
-
       - title: Hive Overview
         url: hive-introduction/index.html
 
-      - title: hue-introduction
+      - title: Hue Introduction
         url: hue-introduction/index.html
 
       - title: Impala Overview
@@ -69,33 +60,18 @@ sections:
       - title: Impala Timeouts
         url: impala-timeouts/index.html
 
-      - title: Kudu Design
+      - title: Apache Kudu Design
         url: kudu-design/index.html
 
-      - title: kudu-development
-        url: kudu-development/index.html
-
-      - title: kudu-install-and-upgrade
-        url: kudu-install-and-upgrade/index.html
-
-      - title: kudu-integration
-        url: kudu-integration/index.html
-
-      - title: kudu-overview
+      - title: Apache Kudu Overview
         url: kudu-overview/index.html
 
-      - title: managing-hadoop-jobs
-        url: managing-hadoop-jobs/index.html
-
-      - title: metrics-diagnostics
+      - title: Metrics Diagnostics
         url: metrics-diagnostics/index.html
 
       # Removed at Siaram's request, July 18
       # - title: ports-reference
       #   url: ports-reference/index.html
-
-      - title: securing-hue
-        url: securing-hue/index.html
 
       - title: Ranger Auditing
         url: security-ranger-auditing/index.html
@@ -106,16 +82,10 @@ sections:
       - title: Apache Spark Overview
         url: spark-overview/index.html
 
-      - title: tuning-hue
-        url: tuning-hue/index.html
-
       - title: Cloudera Manager Overview
         url: cm-concepts/index.html
 
-      - title: using-hue
-        url: using-hue/index.html
-
-      - title: yarn-data-management
+      - title: Apache YARN Data Management
         url: yarn-data-management/index.html
 
       - title: Apache Zeppelin Overview
@@ -127,13 +97,43 @@ sections:
       - title: Planning for Impala
         url: impala-planning/index.html
 
-  # - title: Installation & Upgrade
-  #   name: installation
-  #   books:
+  - title: Installation & Upgrade
+    name: installation
+    books:
+      - title: Apache Kudu Install and Upgrade
+        url: kudu-install-and-upgrade/index.html
+
 
   - title: How To
     name: howto
     books:
+      - title: Administering Hue
+        url: administering-hue/index.html
+
+      - title: Securing Hue
+        url: securing-hue/index.html
+
+      - title: Tuning Hue
+        url: tuning-hue/index.html
+
+      - title: Using Hue
+        url: using-hue/index.html
+
+      - title: Administering Apache Kudu
+        url: administering-kudu/index.html
+
+      - title: Apache Kudu Development
+        url: kudu-development/index.html
+
+      - title: Apache Kudu Integration
+        url: kudu-integration/index.html
+
+      - title: Managing Hadoop Jobs
+        url: managing-hadoop-jobs/index.html
+
+      - title: Configuring Fault Tolerance
+        url: configuring-fault-tolerance/index.html
+
       - title: Working with Classifications
         url: atlas-working-with-classifications/index.html
 
@@ -164,8 +164,9 @@ sections:
       - title: Using Cloudera Manager
         url: cm-how-to/index.html
 
-    # - title: Hive Performance Tuning
-    #   url: hive-performance-tuning/index.html
+      # Removed at Kris's request
+      # - title: Hive Performance Tuning
+      #   url: hive-performance-tuning/index.html
 
       - title: Securing Hive
         url: securing-hive/index.html
@@ -191,6 +192,7 @@ sections:
       - title: Using Apache Zepppelin
         url: using-zeppelin/index.html
 
+      # Removed at Kris's request
       # - title: Using the Cost-based Optimizer in Hive
       #   url: using-cbo-in-hive/index.html
 
