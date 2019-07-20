@@ -230,6 +230,14 @@ sections:
   #   name: learning
   #   books:
 ---
-CDP Runtime offers several tools for processing
+Cloudera Runtime offers several tools for processing...
 
-Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+Justo iaculis blandit congue malesuada pellentesque ultrices fermentum
+vel nisl nibh diam natoque montes semper nascetur rutrum faucibus ipsum
+mus enim feugiat et duis sed risus ullamcorper suspendisse fames finibus
+facilisi pulvinar fringilla lacus magnis non donec sagittis placerat
+ultricies integer aliquam vulputate amet nunc euismod tortor netus
+inceptos in habitasse elit sociosqu venenatis aptent morbi maecenas
+pretium phasellus imperdiet molestie laoreet bibendum curabitur
+parturient cubilia velit efficitur dictumst tellus condimentum auctor
+praesent accumsan consectetur at litora scelerisque lectus tincidunt
