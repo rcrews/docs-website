@@ -28,7 +28,7 @@ json:
       #   id: cluster-maintenance
       #   sub: cluster-maintenance/navigation.json
 
-      - text: Hive Overview
+      - text: Apache Hive Overview
         href: hive-introduction/index.html
         id: hive-introduction
         sub: hive-introduction/navigation.json
@@ -223,32 +223,32 @@ json:
         id: impala-performance-tuning
         sub: impala-performance-tuning/navigation.json
 
-      - text: Configuring Hive
+      - text: Configuring Apache Hive
         href: configuring-apache-hive/index.html
         id: configuring-apache-hive
         sub: configuring-apache-hive/navigation.json
 
-      - text: Hive Metastore
+      - text: Apache Hive Metastore
         href: hive-metastore/index.html
         id: hive-metastore
         sub: hive-metastore/navigation.json
 
-      - text: Integrating Hive with Spark and BI
+      - text: Integrating Apache Hive with Apache Spark and BI
         href: integrating-hive-and-bi/index.html
         id: integrating-hive-and-bi
         sub: integrating-hive-and-bi/navigation.json
 
-      - text: Managing a Hive Workload
+      - text: Managing an Apache Hive Workload
         href: managing-a-hive-workload/index.html
         id: managing-a-hive-workload
         sub: managing-a-hive-workload/navigation.json
 
-      - text: Managing Hive
+      - text: Managing Apache Hive
         href: managing-hive/index.html
         id: managing-hive
         sub: managing-hive/navigation.json
 
-      - text: Migrating Data to Hive
+      - text: Migrating Data to Apache Hive
         href: migrating-data-into-hive/index.html
         id: migrating-data-into-hive
         sub: migrating-data-into-hive/navigation.json
@@ -264,12 +264,12 @@ json:
       #   id: hive-performance-tuning
       #   sub: hive-performance-tuning/navigation.json
 
-      - text: Securing Hive
+      - text: Securing Apache Hive
         href: securing-hive/index.html
         id: securing-hive
         sub: securing-hive/navigation.json
 
-      - text: Start Hive and Run Commands
+      - text: Start Apache Hive and Run Commands
         href: starting-hive/index.html
         id: starting-hive
         sub: starting-hive/navigation.json
@@ -341,12 +341,12 @@ json:
         id: knox-reference/index.html
         sub: knox-reference/navigation.json
 
-      - text: Hive Workload Management Commands
+      - text: Apache Hive Workload Management Commands
         href: workload-management/index.html
         id: workload-management
         sub: workload-management/navigation.json
 
-      - text: Hive Materialized View Commands
+      - text: Apache Hive Materialized View Commands
         href: materialized-view-commands/index.html
         id: materialized-view-commands
         sub: materialized-view-commands/navigation.json
