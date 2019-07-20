@@ -21,7 +21,7 @@ sections:
       # - title: cluster-maintenance
       #   url: cluster-maintenance/index.html
 
-      - title: Hive Overview
+      - title: Apache Hive Overview
         url: hive-introduction/index.html
 
       - title: Hue Introduction
@@ -143,35 +143,35 @@ sections:
       - title: Apache Impala Performance Tuning
         url: impala-performance-tuning/index.html
 
-      - title: Configuring Hive
+      - title: Configuring Apache Hive
         url: configuring-apache-hive/index.html
 
-      - title: Hive Metastore
+      - title: Apache Hive Metastore
         url: hive-metastore/index.html
 
-      - title: Integrating Hive with Spark and BI
+      - title: Integrating Apache Hive with Apache Spark and BI
         url: integrating-hive-and-bi/index.html
 
-      - title: Managing a Hive Workload
+      - title: Managing an Apache Hive Workload
         url: managing-a-hive-workload/index.html
 
-      - title: Managing Hive
+      - title: Managing Apache Hive
         url: managing-hive/index.html
 
-      - title: Migrating Data to Hive
+      - title: Migrating Data to Apache Hive
         url: migrating-data-into-hive/index.html
 
       - title: Managing Data Hub Clusters using Cloudera Manager
         url: cm-how-to/index.html
 
       # Removed at Kris's request
-      # - title: Hive Performance Tuning
+      # - title: Apache Hive Performance Tuning
       #   url: hive-performance-tuning/index.html
 
-      - title: Securing Hive
+      - title: Securing Apache Hive
         url: securing-hive/index.html
 
-      - title: Start Hive and Run Commands
+      - title: Start Apache Hive and Run Commands
         url: starting-hive/index.html
 
       - title: Configuring Apache Spark
@@ -217,10 +217,10 @@ sections:
       - title: Knox Reference
         url: knox-reference/index.html
 
-      - title: Hive Workload Management Commands
+      - title: Apache Hive Workload Management Commands
         url: workload-management/index.html
 
-      - title: Hive Materialized View Commands
+      - title: Apache Hive Materialized View Commands
         url: materialized-view-commands/index.html
 
       - title: Cloudera Manager Reference
