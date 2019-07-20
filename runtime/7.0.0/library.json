@@ -1,0 +1,86 @@
+---
+layout: json
+json:
+  text: Cloudera Runtime
+  versions:
+    7.0.0: /runtime/7.0.0
+
+  # For PDFs, use the publication directory,
+  # (get from window.location)
+  # as the key. The value is the path from
+  # the publication directory.
+  pdfs:
+    accessing-hbase: hbase-accessing.pdf
+    administering-hue: hue-administration.pdf
+    administering-kudu: kudu-administration.pdf
+    administration: kudu-administration.pdf
+    apis-metrics: hdfs-apis-metrics.pdf
+    atlas-access-control-using-tags: atlas-access-control.pdf
+    atlas-working-with-classifications: atlas-classifications.pdf
+    cdp-security-overview: security-overview-cdp.pdf
+    configuring-apache-hive: hive_configuring_apache_hive.pdf
+    configuring-fault-tolerance: cr-configuring-fault-tolerance.pdf
+    configuring-hbase: hbase-configuring.pdf
+    configuring-spark: spark-configuring.pdf
+    configuring-zeppelin: zeppelin-configuring.pdf
+    data-protection: hdfs-data-protection.pdf
+    design: kudu-design.pdf
+    developing-spark-applications: spark-developing-applications.pdf
+    development: kudu-development.pdf
+    hbase-adls: hbase-adls.pdf
+    hbase-getting-started: hbase-getting-started.pdf
+    hbase-health-tests: hbase-health-tests.pdf
+    hbase-high-availability: hbase-high-availability.pdf
+    hbase-introduction: hbase-introduction.pdf
+    hbase-metrics: hbase-metrics.pdf
+    hbase-replication: hbase-replication.pdf
+    hbase-s3: hbase-s3.pdf
+    hbase-security: hbase-security.pdf
+    hbase-snapshots: hbase-snapshots.pdf
+    hdfs-acls: hdfs-acls.pdf
+    hive-introduction: hive_introduction.pdf
+    hive-metastore: hive-hms.pdf
+    hive-performance-tuning: hive_performance_tuning.pdf
+    hue-introduction: hue-introduction.pdf
+    install-and-upgrade: kudu-installation-upgrade.pdf
+    integrating-hive-and-bi: hive_integrating_hive_and_bi.pdf
+    integration: kudu-integration.pdf
+    knox-reference: security-knox-reference.pdf
+    kudu-design: kudu-design.pdf
+    kudu-development: kudu-development.pdf
+    kudu-install-and-upgrade: kudu-installation-upgrade.pdf
+    kudu-integration: kudu-integration.pdf
+    kudu-overview: kudu-overview.pdf
+    managing-a-hive-workload: hive_managing_a_hive_workload.pdf
+    managing-hadoop-jobs: oozie-managing-hadoop-jobs.pdf
+    managing-hbase: hbase-managing.pdf
+    managing-zookeeper: zookeeper-managing.pdf
+    materialized-view-commands: hive_materialized_view_commands.pdf
+    metrics-diagnostics: oozie-metrics-diagnostics.pdf
+    migrating-data-into-hive: hive_migrating_data.pdf
+    monitoring-zookeeper: zookeeper-monitoring.pdf
+    overview: kudu-overview.pdf
+    ports-reference: cr-ports-reference.pdf
+    running-spark-applications: spark-running-applications.pdf
+    scaling-namespaces-optimizing-data-storage: hdfs-scaling-namespaces-optimizing-data-storage.pdf
+    scaling-namespaces: hdfs-scaling-namespaces-optimizing-data-storage.pdf
+    securing-hive: hive_securing_hive.pdf
+    securing-hue: hue-security.pdf
+    security-ranger-auditing: security-ranger-auditing.pdf
+    security-ranger-authorization: security-ranger-authorization.pdf
+    spark-overview: spark-overview.pdf
+    starting-hive: hive_starting_hive.pdf
+    troubleshooting-hbase: hbase-troubleshooting.pdf
+    troubleshooting-hue: hue-troubleshooting.pdf
+    troubleshooting-kudu: kudu-troubleshooting.pdf
+    troubleshooting: kudu-troubleshooting.pdf
+    tuning-hue: hue-tuning.pdf
+    tuning-spark: spark-tuning.pdf
+    using-cm: cm-user-guide.pdf
+    using-hiveql: hive_using_hiveql.pdf
+    using-hue: hue-using.pdf
+    using-zeppelin: zeppelin-using.pdf
+    workload-management: hive_workload_management_commands.pdf
+    zeppelin-overview: zeppelin-overview.pdf
+    zookeeper-authentication: zookeeper-authentication.pdf
+---

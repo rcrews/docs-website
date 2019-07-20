@@ -1,0 +1,15 @@
+---
+layout: json
+json:
+  text: Data Catalog
+  versions:
+    cloud: /data-catalog/cloud
+
+  # For PDFs, use the publication directory,
+  # (get from window.location)
+  # as the key. The value is the path from
+  # the publication directory.
+  pdfs:
+    core-concepts: dc-core-concepts.pdf
+    managing: dc-managing-data-catalog.pdf
+---

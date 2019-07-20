@@ -1,0 +1,15 @@
+---
+layout: json
+json:
+  text: Replication Manager
+  versions:
+    cloud: /replication-manager/cloud
+
+  # For PDFs, use the publication directory,
+  # (get from window.location)
+  # as the key. The value is the path from
+  # the publication directory.
+  pdfs:
+    core-concepts: rm-core-concepts.pdf
+    operations: rm-operations.pdf
+---

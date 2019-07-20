@@ -1,0 +1,46 @@
+---
+layout: json
+json:
+  text: Machine Learning
+  versions:
+    cloud: /machine-learning/cloud
+
+  # For PDFs, use the publication directory,
+  # (get from window.location)
+  # as the key. The value is the path from
+  # the publication directory.
+  pdfs:
+    architecture: ml-architecture-overview.pdf
+    backup: ml-backup.pdf
+    cli: ml-cli.pdf
+    collaboration-overview: ml-collaboration-overview.pdf
+    customized-engines: ml-customized-engines.pdf
+    distributed-computing-workers: ml-distributed-computing-workers.pdf
+    editors: ml-editors.pdf
+    email: ml-email.pdf
+    engines-overview: ml-engines-overview.pdf
+    engines: ml-engines.pdf
+    experiments: ml-experiments.pdf
+    faq: ml-faq.pdf
+    git-collaboration: ml-git-collaboration.pdf
+    gpu: ml-gpu.pdf
+    import-data: ml-import-data.pdf
+    jobs-pipelines: ml-jobs-pipelines.pdf
+    jupyter: ml-jupyter.pdf
+    ml-guide: ml-guide.pdf
+    model-training-deployment-overview: ml-model-training-deployment-overview.pdf
+    models: ml-models.pdf
+    monitoring: ml-monitoring.pdf
+    product: ml-product-overview.pdf
+    projects: ml-projects.pdf
+    quickstart: ml-quickstart.pdf
+    security-overview: ml-security-overview.pdf
+    security: ml-security.pdf
+    spark: ml-spark.pdf
+    troubleshooting: ml-troubleshooting.pdf
+    user-accounts: ml-user-accounts.pdf
+    visualizations: ml-visualizations.pdf
+    web-ui: ml-web-ui.pdf
+    workbench: ml-workbench.pdf
+    workspaces: ml-workspaces.pdf
+---

@@ -1,0 +1,23 @@
+---
+layout: json
+json:
+  text: Data Hub
+  versions:
+    cloud: /data-hub/cloud
+
+  # For PDFs, use the publication directory,
+  # (get from window.location)
+  # as the key. The value is the path from
+  # the publication directory.
+  pdfs:
+    access-clusters: dh-access-clusters.pdf
+    blueprints: dh-blueprints.pdf
+    create-cluster-aws: dh-create-cluster.pdf
+    create-cluster-azure: dh-create-cluster.pdf
+    custom-properties: dh-custom-properties.pdf
+    ebs-encryption-aws: dh-ebs-encryption-aws.pdf
+    image-catalogs: dh-image-catalogs.pdf
+    manage-clusters: dh-manage-clusters.pdf
+    recipes: dh-recipes.pdf
+    troubleshooting-clusters: dh-troubleshoot.pdf
+---

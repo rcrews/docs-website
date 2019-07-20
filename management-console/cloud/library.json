@@ -1,0 +1,17 @@
+---
+layout: json
+json:
+  text: Management Console
+  versions:
+    cloud: /management-console/cloud
+
+  # For PDFs, use the publication directory,
+  # (get from window.location)
+  # as the key. The value is the path from
+  # the publication directory.
+  pdfs:
+    credentials-aws: mc-credentials-aws.pdf
+    credentials-azure: mc-credentials-azure.pdf
+    troubleshooting: mc-troubleshoot.pdf
+    user-management: mc-user-management.pdf
+---
