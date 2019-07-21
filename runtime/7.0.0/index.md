@@ -103,7 +103,6 @@ sections:
       - title: Apache Kudu Install and Upgrade
         url: kudu-install-and-upgrade/index.html
 
-
   - title: How To
     name: howto
     books:
@@ -148,23 +147,23 @@ sections:
 
       - title: Starting Apache Hive
         url: starting-hive/index.html
-        
+
       - title: Using HiveQL
         url: using-hiveql/index.html
-        
+
       - title: Managing Apache Hive
         url: managing-hive/index.html
-        
+
       - title: Managing Apache Hive Workloads
         url: managing-a-hive-workload/index.html
 
       - title: Configuring Apache Hive
         url: configuring-apache-hive/index.html
-        
+
       - title: Configuring Apache Hive Metastore
         url: hive-metastore/index.html
 
-       - title: Securing Apache Hive
+      - title: Securing Apache Hive
         url: securing-hive/index.html
 
       - title: Integrating Apache Hive with Apache Spark and BI
@@ -172,16 +171,15 @@ sections:
 
       - title: Migrating Data to Apache Hive
         url: migrating-data-into-hive/index.html
-        
+
       # Removed at Kris's request
       # - title: Apache Hive Performance Tuning
       #   url: hive-performance-tuning/index.html
-      
+
       # Removed at Kris's request
       # - title: Using the Cost-based Optimizer in Hive
       #   url: using-cbo-in-hive/index.html
 
-        
       - title: Configuring Apache Spark
         url: configuring-spark/index.html
 
