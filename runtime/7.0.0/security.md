@@ -3,13 +3,13 @@ layout: foyer
 breadcrumb-title: HDP
 title: Security
 publications:
-  - title: Ranger Auditing
+  - title: Apache Ranger Auditing
     url: security-ranger-auditing/index.html
     description: >-
       "Configuring Apache Ranger to collect audits,
       access history and reporting data."
 
-  - title: Ranger Authorization
+  - title: Apache Ranger Authorization
     url: security-ranger-authorization/index.html
     description: >-
       Configuring Apache Ranger to provide authorization to your cluster
