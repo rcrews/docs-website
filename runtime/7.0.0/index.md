@@ -143,37 +143,40 @@ sections:
       - title: Apache Impala Performance Tuning
         url: impala-performance-tuning/index.html
 
+      - title: Managing Data Hub Clusters using Cloudera Manager
+        url: cm-how-to/index.html
+
+      - title: Starting Apache Hive
+        url: starting-hive/index.html
+        
+      - title: Using HiveQL
+        url: using-hiveql/index.html
+        
+      - title: Managing Apache Hive
+        url: managing-hive/index.html
+        
+      - title: Managing Apache Hive Workloads
+        url: managing-a-hive-workload/index.html
+
       - title: Configuring Apache Hive
         url: configuring-apache-hive/index.html
-
-      - title: Apache Hive Metastore
+        
+      - title: Configuring Apache Hive Metastore
         url: hive-metastore/index.html
+
+       - title: Securing Apache Hive
+        url: securing-hive/index.html
 
       - title: Integrating Apache Hive with Apache Spark and BI
         url: integrating-hive-and-bi/index.html
 
-      - title: Managing an Apache Hive Workload
-        url: managing-a-hive-workload/index.html
-
-      - title: Managing Apache Hive
-        url: managing-hive/index.html
-
       - title: Migrating Data to Apache Hive
         url: migrating-data-into-hive/index.html
-
-      - title: Managing Data Hub Clusters using Cloudera Manager
-        url: cm-how-to/index.html
-
+        
       # Removed at Kris's request
       # - title: Apache Hive Performance Tuning
       #   url: hive-performance-tuning/index.html
-
-      - title: Securing Apache Hive
-        url: securing-hive/index.html
-
-      - title: Start Apache Hive and Run Commands
-        url: starting-hive/index.html
-
+        
       - title: Configuring Apache Spark
         url: configuring-spark/index.html
 
@@ -195,9 +198,6 @@ sections:
       # Removed at Kris's request
       # - title: Using the Cost-based Optimizer in Hive
       #   url: using-cbo-in-hive/index.html
-
-      - title: Using HiveQL
-        url: using-hiveql/index.html
 
       - title: Accessing HBase
         url: accessing-hbase/index.html
