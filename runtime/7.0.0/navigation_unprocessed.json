@@ -223,36 +223,6 @@ json:
         id: impala-performance-tuning
         sub: impala-performance-tuning/navigation.json
 
-      - text: Configuring Apache Hive
-        href: configuring-apache-hive/index.html
-        id: configuring-apache-hive
-        sub: configuring-apache-hive/navigation.json
-
-      - text: Apache Hive Metastore
-        href: hive-metastore/index.html
-        id: hive-metastore
-        sub: hive-metastore/navigation.json
-
-      - text: Integrating Apache Hive with Apache Spark and BI
-        href: integrating-hive-and-bi/index.html
-        id: integrating-hive-and-bi
-        sub: integrating-hive-and-bi/navigation.json
-
-      - text: Managing an Apache Hive Workload
-        href: managing-a-hive-workload/index.html
-        id: managing-a-hive-workload
-        sub: managing-a-hive-workload/navigation.json
-
-      - text: Managing Apache Hive
-        href: managing-hive/index.html
-        id: managing-hive
-        sub: managing-hive/navigation.json
-
-      - text: Migrating Data to Apache Hive
-        href: migrating-data-into-hive/index.html
-        id: migrating-data-into-hive
-        sub: migrating-data-into-hive/navigation.json
-
       - text: Managing Clusters
         href: cm-how-to/index.html
         id: cm-how-to
@@ -264,15 +234,62 @@ json:
       #   id: hive-performance-tuning
       #   sub: hive-performance-tuning/navigation.json
 
+      - text: Starting Apache Hive
+        href: starting-hive/index.html
+        id: starting-hive
+        sub: starting-hive/navigation.json
+
+      - text: Using HiveQL
+        href: using-hiveql/index.html
+        id: using-hiveql
+        sub: using-hiveql/navigation.json
+
+      - text: Managing Apache Hive
+        href: managing-hive/index.html
+        id: managing-hive
+        sub: managing-hive/navigation.json
+
+      - text: Managing Apache Hive Workloads
+        href: managing-a-hive-workload/index.html
+        id: managing-a-hive-workload
+        sub: managing-a-hive-workload/navigation.json
+
+      - text: Configuring Apache Hive
+        href: configuring-apache-hive/index.html
+        id: configuring-apache-hive
+        sub: configuring-apache-hive/navigation.json
+
+      - text: Configuring Apache Hive Metastore
+        href: hive-metastore/index.html
+        id: hive-metastore
+        sub: hive-metastore/navigation.json
+
       - text: Securing Apache Hive
         href: securing-hive/index.html
         id: securing-hive
         sub: securing-hive/navigation.json
 
-      - text: Start Apache Hive and Run Commands
-        href: starting-hive/index.html
-        id: starting-hive
-        sub: starting-hive/navigation.json
+      - text: Integrating Apache Hive with Apache Spark and BI
+        href: integrating-hive-and-bi/index.html
+        id: integrating-hive-and-bi
+        sub: integrating-hive-and-bi/navigation.json
+
+      - text: Migrating Data to Apache Hive
+        href: migrating-data-into-hive/index.html
+        id: migrating-data-into-hive
+        sub: migrating-data-into-hive/navigation.json
+
+      # Removed at Kris's request
+      # - text: Hive Performance Tuning
+      #   href: hive-performance-tuning/index.html
+      #   id: hive-performance-tuning
+      #   sub: hive-performance-tuning/navigation.json
+
+      # Removed at Kris's request
+      # - text: using-cbo-in-hive
+      #   href: using-cbo-in-hive/index.html
+      #   id: using-cbo-in-hive
+      #   sub: using-cbo-in-hive/navigation.json
 
       - text: Configuring Apache Spark
         href: configuring-spark/index.html
@@ -303,17 +320,6 @@ json:
         href: using-zeppelin/index.html
         id: using-zeppelin
         sub: using-zeppelin/navigation.json
-
-      # Removed at Kris's request
-      # - text: using-cbo-in-hive
-      #   href: using-cbo-in-hive/index.html
-      #   id: using-cbo-in-hive
-      #   sub: using-cbo-in-hive/navigation.json
-
-      - text: Using HiveQL
-        href: using-hiveql/index.html
-        id: using-hiveql
-        sub: using-hiveql/navigation.json
 
       - text: Accessing HBase
         href: accessing-hbase/index.html
