@@ -73,10 +73,10 @@ sections:
       # - title: ports-reference
       #   url: ports-reference/index.html
 
-      - title: Ranger Auditing
+      - title: Apache Ranger Auditing
         url: security-ranger-auditing/index.html
 
-      - title: Ranger Authorization
+      - title: Apache Ranger Authorization
         url: security-ranger-authorization/index.html
 
       - title: Apache Spark Overview
