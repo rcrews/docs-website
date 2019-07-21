@@ -176,6 +176,11 @@ sections:
       # Removed at Kris's request
       # - title: Apache Hive Performance Tuning
       #   url: hive-performance-tuning/index.html
+      
+      # Removed at Kris's request
+      # - title: Using the Cost-based Optimizer in Hive
+      #   url: using-cbo-in-hive/index.html
+
         
       - title: Configuring Apache Spark
         url: configuring-spark/index.html
@@ -194,10 +199,6 @@ sections:
 
       - title: Using Apache Zepppelin
         url: using-zeppelin/index.html
-
-      # Removed at Kris's request
-      # - title: Using the Cost-based Optimizer in Hive
-      #   url: using-cbo-in-hive/index.html
 
       - title: Accessing HBase
         url: accessing-hbase/index.html
