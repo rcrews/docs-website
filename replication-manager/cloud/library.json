@@ -5,11 +5,8 @@ json:
   versions:
     cloud: /replication-manager/cloud
 
-  # For PDFs, use the publication directory,
-  # (get from window.location)
-  # as the key. The value is the path from
-  # the publication directory.
+  # Match "/key/" in window.location, then use value URL
   pdfs:
-    core-concepts: rm-core-concepts.pdf
-    operations: rm-operations.pdf
+    core-concepts: /replication-manager/cloud/core-concepts/rm-core-concepts.pdf
+    operations: /replication-manager/cloud/operations/rm-operations.pdf
 ---

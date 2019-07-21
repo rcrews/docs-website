@@ -315,6 +315,16 @@ json:
         id: using-hiveql
         sub: using-hiveql/navigation.json
 
+      - text: Accessing HBase
+        href: accessing-hbase/index.html
+        id: accessing-hbase
+        sub: accessing-hbase/navigation.json
+
+      - text: Authenticating ZooKeeper
+        href: zookeeper-authentication/index.html
+        id: zookeeper-authentication
+        sub: zookeeper-authentication/navigation.json
+
   - text: Troubleshooting
     id: troubleshooting
     sub:

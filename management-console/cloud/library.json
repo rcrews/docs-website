@@ -5,13 +5,10 @@ json:
   versions:
     cloud: /management-console/cloud
 
-  # For PDFs, use the publication directory,
-  # (get from window.location)
-  # as the key. The value is the path from
-  # the publication directory.
+  # Match "/key/" in window.location, then use value URL
   pdfs:
-    credentials-aws: mc-credentials-aws.pdf
-    credentials-azure: mc-credentials-azure.pdf
-    troubleshooting: mc-troubleshoot.pdf
-    user-management: mc-user-management.pdf
+    credentials-aws: /management-console/cloud/credentials-aws/mc-credentials-aws.pdf
+    credentials-azure: /management-console/cloud/credentials-azure/mc-credentials-azure.pdf
+    troubleshooting: /management-console/cloud/troubleshooting/mc-troubleshoot.pdf
+    user-management: /management-console/cloud/user-management/mc-user-management.pdf
 ---

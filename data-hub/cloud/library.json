@@ -5,19 +5,16 @@ json:
   versions:
     cloud: /data-hub/cloud
 
-  # For PDFs, use the publication directory,
-  # (get from window.location)
-  # as the key. The value is the path from
-  # the publication directory.
+  # Match "/key/" in window.location, then use value URL
   pdfs:
-    access-clusters: dh-access-clusters.pdf
-    blueprints: dh-blueprints.pdf
-    create-cluster-aws: dh-create-cluster.pdf
-    create-cluster-azure: dh-create-cluster.pdf
-    custom-properties: dh-custom-properties.pdf
-    ebs-encryption-aws: dh-ebs-encryption-aws.pdf
-    image-catalogs: dh-image-catalogs.pdf
-    manage-clusters: dh-manage-clusters.pdf
-    recipes: dh-recipes.pdf
-    troubleshooting-clusters: dh-troubleshoot.pdf
+    access-clusters: /data-hub/cloud/access-clusters/dh-access-clusters.pdf
+    blueprints: /data-hub/cloud/blueprints/dh-blueprints.pdf
+    create-cluster-aws: /data-hub/cloud/create-cluster-aws/dh-create-cluster.pdf
+    create-cluster-azure: /data-hub/cloud/create-cluster-azure/dh-create-cluster.pdf
+    custom-properties: /data-hub/cloud/custom-properties/dh-custom-properties.pdf
+    ebs-encryption-aws: /data-hub/cloud/ebs-encryption-aws/dh-ebs-encryption-aws.pdf
+    image-catalogs: /data-hub/cloud/image-catalogs/dh-image-catalogs.pdf
+    manage-clusters: /data-hub/cloud/manage-clusters/dh-manage-clusters.pdf
+    recipes: /data-hub/cloud/recipes/dh-recipes.pdf
+    troubleshooting-clusters: /data-hub/cloud/troubleshooting-clusters/dh-troubleshoot.pdf
 ---

@@ -199,6 +199,12 @@ sections:
       - title: Using HiveQL
         url: using-hiveql/index.html
 
+      - title: Accessing HBase
+        url: accessing-hbase/index.html
+
+      - title: Authenticating ZooKeeper
+        url: zookeeper-authentication/index.html
+
   - title: Troubleshooting
     name: troubleshooting
     books:

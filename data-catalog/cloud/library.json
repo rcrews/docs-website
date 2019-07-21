@@ -5,11 +5,8 @@ json:
   versions:
     cloud: /data-catalog/cloud
 
-  # For PDFs, use the publication directory,
-  # (get from window.location)
-  # as the key. The value is the path from
-  # the publication directory.
+  # Match "/key/" in window.location, then use value URL
   pdfs:
-    core-concepts: dc-core-concepts.pdf
-    managing: dc-managing-data-catalog.pdf
+    core-concepts: /data-catalog/cloud/core-concepts/dc-core-concepts.pdf
+    managing: /data-catalog/cloud/managing/dc-managing-data-catalog.pdf
 ---
