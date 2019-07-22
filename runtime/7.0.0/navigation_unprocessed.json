@@ -114,12 +114,12 @@ json:
       #   id: ports-reference
       #   sub: ports-reference/navigation.json
 
-      - text: Ranger Auditing
+      - text: Apache Ranger Auditing
         href: security-ranger-auditing/index.html
         id: security-ranger-auditing
         sub: security-ranger-auditing/navigation.json
 
-      - text: Ranger Authorization
+      - text: Apache Ranger Authorization
         href: security-ranger-authorization/index.html
         id: security-ranger-authorization
         sub: security-ranger-authorization/navigation.json
