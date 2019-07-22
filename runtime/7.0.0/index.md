@@ -88,6 +88,9 @@ sections:
       - title: Apache YARN Data Management
         url: yarn-data-management/index.html
 
+      - title: Apache Zeppelin Overview
+        url: zeppelin-overview/index.html
+
       - title: Apache HBase Introduction
         url: hbase-introduction/index.html
 
@@ -133,11 +136,11 @@ sections:
       - title: Scaling Namespaces and Optimizing Data Storage
         url: scaling-namespaces/index.html
 
-      - title: Configuring Data Protection
-        url: configuring-data-protection/index.html
-
       - title: Configuring Fault Tolerance
         url: configuring-fault-tolerance/index.html
+
+      - title: Configuring Data Protection
+        url: configuring-data-protection/index.html
 
       - title: Configuring HDFS ACLs
         url: hdfs-acls/index.html
@@ -151,8 +154,12 @@ sections:
       - title: Apache Impala Performance Tuning
         url: impala-performance-tuning/index.html
 
-      - title: Managing Data Hub Clusters using Cloudera Manager
+      - title: Managing Clusters
         url: cm-how-to/index.html
+
+      # Removed at Kris's request
+      # - title: Apache Hive Performance Tuning
+      #   url: hive-performance-tuning/index.html
 
       - title: Starting Apache Hive
         url: starting-hive/index.html
@@ -182,10 +189,6 @@ sections:
         url: migrating-data-into-hive/index.html
 
       # Removed at Kris's request
-      # - title: Apache Hive Performance Tuning
-      #   url: hive-performance-tuning/index.html
-
-      # Removed at Kris's request
       # - title: Using the Cost-based Optimizer in Hive
       #   url: using-cbo-in-hive/index.html
 
@@ -210,48 +213,47 @@ sections:
     #  - title: Using HBase to Store and Access Data
     #    url: hbase-getting-started/index.html
 
-       - title: Configuring HBase
-         url: configuring-hbase/index.html
+      - title: Configuring HBase
+        url: configuring-hbase/index.html
 
-       - title: Using Azure Data Lake Store with HBase
-         url: hbase-adls/index.html
+      - title: Using Azure Data Lake Store with HBase
+        url: hbase-adls/index.html
 
-       - title: Using Amazon S3 with HBase
-         url: hbase-s3/index.html
+      - title: Using Amazon S3 with HBase
+        url: hbase-s3/index.html
 
-       - title: Managing HBase Security
-         url: hbase-security/index.html
+      - title: Managing HBase Security
+        url: hbase-security/index.html
 
       - title: Accessing HBase by using the HBase Shell
         url: hbase-accessing/index.html
 
-       - title: Managing HBase
-         url: hbase-managing/index.html
+      - title: Managing HBase
+        url: hbase-managing/index.html
 
-       - title: Configuring HBase High Availability
-         url: hbase-high-availability/index.html
+      - title: Configuring HBase High Availability
+        url: hbase-high-availability/index.html
 
-       - title: Using HBase Backup and Disaster Recovery
-         url: hbase-replication/index.html
+      - title: Using HBase Backup and Disaster Recovery
+        url: hbase-replication/index.html
 
-       - title: Configuring HBase Snapshots
-         url: hbase-snapshots/index.html
+      - title: Configuring HBase Snapshots
+        url: hbase-snapshots/index.html
 
-       - title: Using HBase Health Tests
-         url: hbase-health-tests/index.html
+      - title: Using HBase Health Tests
+        url: hbase-health-tests/index.html
 
-       - title: Using HBase Metrics
-         url: hbase-metrics/index.html
+      - title: Using HBase Metrics
+        url: hbase-metrics/index.html
 
-       - title: Managing ZooKeeper
-         url: zookeeper-managing/index.html
+      - title: Managing ZooKeeper
+        url: zookeeper-managing/index.html
 
-       - title: Authenticating ZooKeeper
-         url: zookeeper-authentication/index.html
+      - title: Authenticating ZooKeeper
+        url: zookeeper-authentication/index.html
 
-       - title: Monitoring ZooKeeper
-         url: zookeeper-monitoring/index.html        
-
+      - title: Monitoring ZooKeeper
+        url: zookeeper-monitoring/index.html
 
   - title: Troubleshooting
     name: troubleshooting
@@ -267,8 +269,6 @@ sections:
 
       - title: Troubleshooting HBase
         url: hbase-troubleshooting/index.html
-
-
 
   - title: Reference
     name: reference

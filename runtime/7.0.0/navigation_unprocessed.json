@@ -244,7 +244,7 @@ json:
         sub: cm-how-to/navigation.json
 
       # Removed at Kris's request
-      # - text: Hive Performance Tuning
+      # - text: Apahce Hive Performance Tuning
       #   href: hive-performance-tuning/index.html
       #   id: hive-performance-tuning
       #   sub: hive-performance-tuning/navigation.json
@@ -293,12 +293,6 @@ json:
         href: migrating-data-into-hive/index.html
         id: migrating-data-into-hive
         sub: migrating-data-into-hive/navigation.json
-
-      # Removed at Kris's request
-      # - text: Hive Performance Tuning
-      #   href: hive-performance-tuning/index.html
-      #   id: hive-performance-tuning
-      #   sub: hive-performance-tuning/navigation.json
 
       # Removed at Kris's request
       # - text: using-cbo-in-hive
@@ -430,7 +424,7 @@ json:
         id: troubleshooting-kudu
         sub: troubleshooting-kudu/navigation.json
 
-      - text:
+      - text: Troubleshooting HBase
         href: hbase-troubleshooting/index.html
         id: hbase-troubleshooting
         sub: hbase-troubleshooting/navigation.json
