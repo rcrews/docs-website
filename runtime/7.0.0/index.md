@@ -94,6 +94,30 @@ sections:
       - title: Apache HBase Introduction
         url: hbase-introduction/index.html
 
+      - title: DATA STORAGE
+        url: data-storage-concepts.md
+
+      - title: COMPUTE
+        url: compute-concepts.md
+
+      - title: DATA ACCESS
+        url: data-access-concepts.md
+
+      - title: DATA SCIENCE
+        url: data-science-concepts.md
+
+      - title: STREAMING
+        url: streaming-concepts.md
+
+      - title: SECURITY
+        url: security-concepts.md
+
+      - title: GOVERNANCE
+        url: governance-concepts.md
+
+      - title: CLOUDERA MANAGER
+        url: managing-concepts.md
+
   - title: Planning
     name: planning
     books:
@@ -254,6 +278,30 @@ sections:
 
       - title: Monitoring ZooKeeper
         url: monitoring-zookeeper/index.html
+
+      - title: DATA STORAGE
+        url: data-storage-howto.md
+
+      - title: COMPUTE
+        url: compute-howto.md
+
+      - title: DATA ACCESS
+        url: data-access-howto.md
+
+      - title: DATA SCIENCE
+        url: data-science-howto.md
+
+      - title: STREAMING
+        url: streaming-howto.md
+
+      - title: SECURITY
+        url: security-howto.md
+
+      - title: GOVERNANCE
+        url: governance-howto.md
+
+      - title: CLOUDERA MANAGER
+        url: managing-howto.md
 
   - title: Troubleshooting
     name: troubleshooting
