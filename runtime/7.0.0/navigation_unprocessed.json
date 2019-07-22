@@ -214,9 +214,9 @@ json:
         sub: configuring-fault-tolerance/navigation.json
 
       - text: Configuring Data Protection
-        href: configuring-data-protection/index.html
-        id: configuring-data-protection
-        sub: configuring-data-protection/navigation.json
+        href: data-protection/index.html
+        id: data-protection
+        sub: data-protection/navigation.json
 
       - text: Configuring HDFS ACLs
         href: hdfs-acls/index.html
@@ -357,14 +357,14 @@ json:
         sub: hbase-security/navigation.json
 
       - text: Accessing HBase by using the HBase Shell
-        href: hbase-accessing/index.html
-        id: hbase-accessing
-        sub: hbase-accessing/navigation.json
+        href: accessing-hbase/index.html
+        id: accessing-hbase
+        sub: accessing-hbase/navigation.json
 
       - text: Managing HBase
-        href: hbase-managing/index.html
-        id: hbase-managing
-        sub: hbase-managing/navigation.json
+        href: managing-base/index.html
+        id: managing-base
+        sub: managing-base/navigation.json
 
       - text: Configuring HBase High Availability
         href: hbase-high-availability/index.html
@@ -392,9 +392,9 @@ json:
         sub: hbase-metrics/navigation.json
 
       - text: Managing ZooKeeper
-        href: zookeeper-managing/index.html
-        id: zookeeper-managing
-        sub: zookeeper-managing/navigation.json
+        href: managing-zookeeper/index.html
+        id: managing-zookeeper
+        sub: managing-zookeeper/navigation.json
 
       - text: Authenticating ZooKeeper
         href: zookeeper-authentication/index.html
@@ -402,9 +402,9 @@ json:
         sub: zookeeper-authentication/navigation.json
 
       - text: Monitoring ZooKeeper
-        href: zookeeper-monitoring/index.html
-        id: zookeeper-monitoring
-        sub: zookeeper-monitoring/navigation.json
+        href: monitoring-zookeeper/index.html
+        id: monitoring-zookeeper
+        sub: monitoring-zookeeper/navigation.json
 
   - text: Troubleshooting
     id: troubleshooting
@@ -425,9 +425,9 @@ json:
         sub: troubleshooting-kudu/navigation.json
 
       - text: Troubleshooting HBase
-        href: hbase-troubleshooting/index.html
-        id: hbase-troubleshooting
-        sub: hbase-troubleshooting/navigation.json
+        href: troubleshooting-hbase/index.html
+        id: troubleshooting-hbase
+        sub: troubleshooting-hbase/navigation.json
 
   - text: Reference
     id: reference
@@ -459,8 +459,8 @@ json:
 
       - text: APIs and Metrics for Working with HDFS
         href: hdfs-apis-metrics/index.html
-        id: hdfs-metrics-apis
-        sub: hdfs-metrics-apis/navigation.json
+        id: hdfs-apis-metrics
+        sub: hdfs-apis-metrics/navigation.json
 
   # - text: Release Notes
   #   id: releasenotes

@@ -140,7 +140,7 @@ sections:
         url: configuring-fault-tolerance/index.html
 
       - title: Configuring Data Protection
-        url: configuring-data-protection/index.html
+        url: data-protection/index.html
 
       - title: Configuring HDFS ACLs
         url: hdfs-acls/index.html
@@ -226,10 +226,10 @@ sections:
         url: hbase-security/index.html
 
       - title: Accessing HBase by using the HBase Shell
-        url: hbase-accessing/index.html
+        url: accessing-hbase/index.html
 
       - title: Managing HBase
-        url: hbase-managing/index.html
+        url: managing-base/index.html
 
       - title: Configuring HBase High Availability
         url: hbase-high-availability/index.html
@@ -247,13 +247,13 @@ sections:
         url: hbase-metrics/index.html
 
       - title: Managing ZooKeeper
-        url: zookeeper-managing/index.html
+        url: managing-zookeeper/index.html
 
       - title: Authenticating ZooKeeper
         url: zookeeper-authentication/index.html
 
       - title: Monitoring ZooKeeper
-        url: zookeeper-monitoring/index.html
+        url: monitoring-zookeeper/index.html
 
   - title: Troubleshooting
     name: troubleshooting
@@ -268,7 +268,7 @@ sections:
         url: troubleshooting-kudu/index.html
 
       - title: Troubleshooting HBase
-        url: hbase-troubleshooting/index.html
+        url: troubleshooting-hbase/index.html
 
   - title: Reference
     name: reference
