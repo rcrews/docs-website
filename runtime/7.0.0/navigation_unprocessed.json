@@ -103,11 +103,6 @@ json:
         id: kudu-overview
         sub: kudu-overview/navigation.json
 
-      - text: Metrics Diagnostics
-        href: metrics-diagnostics/index.html
-        id: metrics-diagnostics
-        sub: metrics-diagnostics/navigation.json
-
       # Removed at Sairam's request, July 18
       # - text: ports-reference
       #   href: ports-reference/index.html
@@ -203,10 +198,25 @@ json:
         id: configuring-oozie
         sub: configuring-oozie/navigation.json
 
+      - text: Scaling Namespaces and Optimizing Data Storage
+        href: scaling-namespaces/index.html
+        id: scaling-namespaces
+        sub: scaling-namespaces/navigation.json
+
       - text: Configuring Fault Tolerance
         href: configuring-fault-tolerance/index.html
         id: configuring-fault-tolerance
         sub: configuring-fault-tolerance/navigation.json
+
+      - text: Configuring Data Protection
+        href: configuring-data-protection/index.html
+        id: configuring-data-protection
+        sub: configuring-data-protection/navigation.json
+
+      - text: Configuring HDFS ACLs
+        href: hdfs-acls/index.html
+        id: hdfs-acls
+        sub: hdfs-acls/navigation.json
 
       - text: Working with Classifications
         href: atlas-working-with-classifications/index.html
@@ -376,6 +386,11 @@ json:
         href: oozie-metrics-diagnostics/index.html
         id: oozie-metrics-diagnostics
         sub: oozie-metrics-diagnostics/navigation.json
+
+      - text: APIs and Metrics for Working with HDFS
+        href: hdfs-apis-metrics/index.html
+        id: hdfs-metrics-apis
+        sub: hdfs-metrics-apis/navigation.json
 
   # - text: Release Notes
   #   id: releasenotes
