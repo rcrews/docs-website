@@ -66,9 +66,6 @@ sections:
       - title: Apache Kudu Overview
         url: kudu-overview/index.html
 
-      - title: Metrics Diagnostics
-        url: metrics-diagnostics/index.html
-
       # Removed at Sairam's request, July 18
       # - title: ports-reference
       #   url: ports-reference/index.html
@@ -132,9 +129,18 @@ sections:
 
       - title: Configuring Oozie
         url: configuring-oozie/index.html
+        
+      - title: Scaling Namespaces and Optimizing Data Storage
+        url: scaling-namespaces/index.html
+        
+      - title: Configuring Data Protection
+        url: configuring-data-protection/index.html
 
       - title: Configuring Fault Tolerance
         url: configuring-fault-tolerance/index.html
+        
+      - title: Configuring HDFS ACLs
+        url: hdfs-acls/index.html
 
       - title: Working with Classifications
         url: atlas-working-with-classifications/index.html
@@ -281,6 +287,9 @@ sections:
         
       - title: Oozie Metrics and Diagnostics
         url: oozie-metrics-diagnostics/index.html
+        
+      - title: APIs and Metrics for Working with HDFS
+        url: hdfs-apis-metrics/index.html
 
   # - title: Learning & Training
   #   name: learning
