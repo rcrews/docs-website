@@ -139,6 +139,11 @@ json:
         id: zeppelin-overview
         sub: zeppelin-overview/navigation.json
 
+      - text: Apache HBase Introduction
+        href: hbase-introduction/index.html
+        id: hbase-introduction
+        sub: hbase-introduction/navigation.json
+
   - text: Planning
     id: planning
     sub:
@@ -331,15 +336,80 @@ json:
         id: using-zeppelin
         sub: using-zeppelin/navigation.json
 
-      - text: Accessing HBase
-        href: accessing-hbase/index.html
-        id: accessing-hbase
-        sub: accessing-hbase/navigation.json
+  #   - text: Using HBase to Store and Access Data
+  #     href: hbase-getting-started/index.html
+  #     id: hbase-getting-started
+  #     sub: hbase-getting-started/navigation.json
+
+      - text: Configuring HBase
+        href: configuring-hbase/index.html
+        id: configuring-hbase
+        sub: configuring-hbase/navigation.json
+
+      - text: Using Azure Data Lake Store with HBase
+        href: hbase-adls/index.html
+        id: hbase-adls
+        sub: hbase-adls/navigation.json
+
+      - text: Using Amazon S3 with HBase
+        href: hbase-s3/index.html
+        id: hbase-s3
+        sub: hbase-s3/navigation.json
+
+      - text: Managing HBase Security
+        href: hbase-security/index.html
+        id: hbase-security
+        sub: hbase-security/navigation.json
+
+      - text: Accessing HBase by using the HBase Shell
+        href: hbase-accessing/index.html
+        id: hbase-accessing
+        sub: hbase-accessing/navigation.json
+
+      - text: Managing HBase
+        href: hbase-managing/index.html
+        id: hbase-managing
+        sub: hbase-managing/navigation.json
+
+      - text: Configuring HBase High Availability
+        href: hbase-high-availability/index.html
+        id: hbase-high-availability
+        sub: hbase-high-availability/navigation.json
+
+      - text: Using HBase Backup and Disaster Recovery
+        href: hbase-replication/index.html
+        id: hbase-replication
+        sub: hbase-replication/navigation.json
+
+      - text: Configuring HBase Snapshots
+        href: hbase-snapshots/index.html
+        id: hbase-snapshots
+        sub: hbase-snapshots/navigation.json
+
+      - text: Using HBase Health Tests
+        href: hbase-health-tests/index.html
+        id: hbase-health-tests
+        sub: hbase-health-tests/navigation.json
+
+      - text: Using HBase Metrics
+        href: hbase-metrics/index.html
+        id: hbase-metrics
+        sub: hbase-metrics/navigation.json
+
+      - text: Managing ZooKeeper
+        href: zookeeper-managing/index.html
+        id: zookeeper-managing
+        sub: zookeeper-managing/navigation.json
 
       - text: Authenticating ZooKeeper
         href: zookeeper-authentication/index.html
         id: zookeeper-authentication
         sub: zookeeper-authentication/navigation.json
+
+      - text: Monitoring ZooKeeper
+        href: zookeeper-monitoring/index.html
+        id: zookeeper-monitoring
+        sub: zookeeper-monitoring/navigation.json
 
   - text: Troubleshooting
     id: troubleshooting
@@ -358,6 +428,11 @@ json:
         href: troubleshooting-kudu/index.html
         id: troubleshooting-kudu
         sub: troubleshooting-kudu/navigation.json
+
+      - text:
+        href: hbase-troubleshooting/index.html
+        id: hbase-troubleshooting
+        sub: hbase-troubleshooting/navigation.json
 
   - text: Reference
     id: reference
