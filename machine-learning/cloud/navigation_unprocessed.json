@@ -32,27 +32,16 @@ json:
         id: security-overview
         sub: security-overview/navigation.json
 
+      - text: Model Training & Deployment Overview
+        href: model-training-deployment-overview/index.html
+        id: model-training-deployment-overview
+        sub: model-training-deployment-overview/navigation.json
+
       - text: Collaboration Overview
         href: collaboration-overview/index.html
         id: collaboration-overview
         sub: collaboration-overview/navigation.json
 
-      # Needs to be categorized
-      - text: Distributed Computing Workers
-        href: distributed-computing-workers/index.html
-        id: distributed-computing-workers
-        sub: distributed-computing-workers/navigation.json
-
-      # Needs to be categorized. Ambreen says this will be removed later
-      - text: Machine Learning Guide
-        href: ml-guide/index.html
-        id: ml-guide
-        sub: ml-guide/navigation.json
-
-      - text: Model Training Deployment Overview
-        href: model-training-deployment-overview/index.html
-        id: model-training-deployment-overview
-        sub: model-training-deployment-overview/navigation.json
 
   # - text: Planning
   #   id: planning
@@ -70,7 +59,7 @@ json:
         id: quickstart
         sub: quickstart/navigation.json
 
-      - text: Workspaces
+      - text: ML Workspaces
         href: workspaces/index.html
         id: workspaces
         sub: workspaces/navigation.json
@@ -95,15 +84,10 @@ json:
         id: spark
         sub: spark/navigation.json
 
-      - text: GPU
+      - text: GPUs
         href: gpu/index.html
         id: gpu
         sub: gpu/navigation.json
-
-      - text: Web UI
-        href: web-ui/index.html
-        id: web-ui
-        sub: web-ui/navigation.json
 
       - text: Experiments
         href: experiments/index.html
@@ -115,7 +99,7 @@ json:
         id: models
         sub: models/navigation.json
 
-      - text: Jobs Pipelines
+      - text: Jobs & Pipelines
         href: jobs-pipelines/index.html
         id: jobs-pipelines
         sub: jobs-pipelines/navigation.json
@@ -125,12 +109,22 @@ json:
         id: workbench
         sub: workbench/navigation.json
 
-      - text: Editors
+      - text: Third-Party Editors
         href: editors/index.html
         id: editors
         sub: editors/navigation.json
 
-      - text: Git Collaboration
+      - text: Distributed Computing with Workers
+        href: distributed-computing-workers/index.html
+        id: distributed-computing-workers
+        sub: distributed-computing-workers/navigation.json
+
+      - text: Web UIs and Applications
+        href: web-ui/index.html
+        id: web-ui
+        sub: web-ui/navigation.json
+
+      - text: Git for Collaboration
         href: git-collaboration/index.html
         id: git-collaboration
         sub: git-collaboration/navigation.json
@@ -191,7 +185,7 @@ json:
         id: faq
         sub: faq/navigation.json
 
-      - text: Jupyter
+      - text: Jupyter Magics
         href: jupyter/index.html
         id: jupyter
         sub: jupyter/navigation.json
