@@ -136,44 +136,44 @@ json:
 
       #- text: DATA STORAGE
       #  href: data-storage-concepts.html
-      #    sub:
+      #  sub:
 
       #- text: COMPUTE
       #  href: compute-concepts.html
-      #    sub:
+      #  sub:
 
       #- text: DATA ACCESS
       #  href: data-access-concepts.html
-      #    sub:
+      #  sub:
 
       - text: DATA SCIENCE
         href: data-science-concepts.html
-          sub:
-            - text: Apache Spark Overview
-              href: spark-overview/index.html
-              id: spark-overview
-              sub: spark-overview/navigation.json
+        sub:
+          - text: Apache Spark Overview
+            href: spark-overview/index.html
+            id: spark-overview
+            sub: spark-overview/navigation.json
 
-            - text: Apache Zeppelin Overview
-              href: zeppelin-overview/index.html
-              id: zeppelin-overview
-              sub: zeppelin-overview/navigation.json
+          - text: Apache Zeppelin Overview
+            href: zeppelin-overview/index.html
+            id: zeppelin-overview
+            sub: zeppelin-overview/navigation.json
 
       #- text: STREAMING
       #  href: streaming-concepts.html
-      #    sub:
+      #  sub:
 
       #- text: SECURITY
       #  href: security-concepts.html
-      #    sub:
+      #  sub:
 
       #- text: GOVERNANCE
       #  href: governance-concepts.html
-      #    sub:
+      #  sub:
 
       #- text: CLUSTER MANAGEMENT
       #  href: cluster-management-concepts.html
-      #    sub:
+      #  sub:
 
   - text: Planning
     id: planning
@@ -409,64 +409,64 @@ json:
 
       #- text: DATA STORAGE
       #  href: data-storage-howto.html
-      #    sub:
+      #  sub:
 
       #- text: COMPUTE
       #  href: compute-howto.html
-      #    sub:
+      #  sub:
 
       #- text: DATA ACCESS
       #  href: data-access-howto.html
-      #    sub:
+      #  sub:
 
       - text: DATA SCIENCE
         href: data-science-howto.html
-          sub:
-            - text: Configuring Apache Spark
-              href: configuring-spark/index.html
-              id: configuring-spark
-              sub: configuring-spark/navigation.json
+        sub:
+          - text: Configuring Apache Spark
+            href: configuring-spark/index.html
+            id: configuring-spark
+            sub: configuring-spark/navigation.json
 
-            - text: Developing Apache Spark Applications
-              href: developing-spark-applications/index.html
-              id: developing-spark-applications
-              sub: developing-spark-applications/navigation.json
+          - text: Developing Apache Spark Applications
+            href: developing-spark-applications/index.html
+            id: developing-spark-applications
+            sub: developing-spark-applications/navigation.json
 
-            - text: Running Apache Spark Applications
-              href: running-spark-applications/index.html
-              id: running-spark-applications
-              sub: running-spark-applications/navigation.json
+          - text: Running Apache Spark Applications
+            href: running-spark-applications/index.html
+            id: running-spark-applications
+            sub: running-spark-applications/navigation.json
 
-            - text: Tuning Apache Spark
-              href: tuning-spark/index.html
-              id: tuning-spark
-              sub: tuning-spark/navigation.json
+          - text: Tuning Apache Spark
+            href: tuning-spark/index.html
+            id: tuning-spark
+            sub: tuning-spark/navigation.json
 
-            - text: Configuring Apache Zeppelin
-              href: configuring-zeppelin/index.html
-              id: configuring-zeppelin
-              sub: configuring-zeppelin/navigation.json
+          - text: Configuring Apache Zeppelin
+            href: configuring-zeppelin/index.html
+            id: configuring-zeppelin
+            sub: configuring-zeppelin/navigation.json
 
-            - text: Using Apache Zeppelin
-              href: using-zeppelin/index.html
-              id: using-zeppelin
-              sub: using-zeppelin/navigation.json
+          - text: Using Apache Zeppelin
+            href: using-zeppelin/index.html
+            id: using-zeppelin
+            sub: using-zeppelin/navigation.json
 
       #- text: STREAMING
       #  href: streaming-howto.html
-      #    sub:
+      #  sub:
 
       #- text: SECURITY
       #  href: security-howto.html
-      #    sub:
+      #  sub:
 
       #- text: GOVERNANCE
       #  href: governance-howto.html
-      #    sub:
+      #  sub:
 
       #- text: CLUSTER MANAGEMENT
       #  href: cluster-management-howto.html
-      #    sub:
+      #  sub:
 
   - text: Troubleshooting
     id: troubleshooting
