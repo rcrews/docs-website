@@ -3,11 +3,19 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Data Science
 publications:
-  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
-  #- title: Configuring Apache Spark
-  #  url: configuring-spark/index.html
-  #  description: >-
-  #    Describes how to configure Apache Spark services and security.
+  - title: Apache Spark Overview
+    url: spark-overview/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Zeppelin Overview
+    url: zeppelin-overview/index.html
+    description:
+    description: >-
+      publication description dictumst vestibulum morbi aliquam libero
+      dui ipsum lectus
+
 ---
 Overview of Cloudera Runtime data science concepts goes here.... Neque
 mi fermentum urna mus sit phasellus auctor enim, sem torquent litora

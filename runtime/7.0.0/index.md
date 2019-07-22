@@ -76,9 +76,6 @@ sections:
       - title: Apache Ranger Authorization
         url: security-ranger-authorization/index.html
 
-      - title: Apache Spark Overview
-        url: spark-overview/index.html
-
       - title: Cloudera Manager Overview
         url: cm-concepts/index.html
 
@@ -87,9 +84,6 @@ sections:
 
       - title: Apache YARN Data Management
         url: yarn-data-management/index.html
-
-      - title: Apache Zeppelin Overview
-        url: zeppelin-overview/index.html
 
       - title: Apache HBase Introduction
         url: hbase-introduction/index.html
@@ -220,24 +214,6 @@ sections:
       # Removed at Kris's request
       # - title: Using the Cost-based Optimizer in Hive
       #   url: using-cbo-in-hive/index.html
-
-      - title: Configuring Apache Spark
-        url: configuring-spark/index.html
-
-      - title: Developing Apache Spark Applications
-        url: developing-spark-applications/index.html
-
-      - title: Running Apache Spark Applications
-        url: running-spark-applications/index.html
-
-      - title: Tuning Apache Spark
-        url: tuning-spark/index.html
-
-      - title: Configuring Apache Zeppelin
-        url: configuring-zeppelin/index.html
-
-      - title: Using Apache Zepppelin
-        url: using-zeppelin/index.html
 
     #  - title: Using HBase to Store and Access Data
     #    url: hbase-getting-started/index.html

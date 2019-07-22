@@ -119,11 +119,6 @@ json:
         id: security-ranger-authorization
         sub: security-ranger-authorization/navigation.json
 
-      - text: Apache Spark Overview
-        href: spark-overview/index.html
-        id: spark-overview
-        sub: spark-overview/navigation.json
-
       - text: Cloudera Manager Overview
         href: cm-concepts/index.html
         id: cm-concepts
@@ -133,11 +128,6 @@ json:
         href: yarn-data-management/index.html
         id: yarn-data-management
         sub: yarn-data-management/navigation.json
-
-      - text: Apache Zeppelin Overview
-        href: zeppelin-overview/index.html
-        id: zeppelin-overview
-        sub: zeppelin-overview/navigation.json
 
       - text: Apache HBase Introduction
         href: hbase-introduction/index.html
@@ -156,9 +146,18 @@ json:
       #  href: data-access-concepts.html
       #    sub:
 
-      #- text: DATA SCIENCE
-      #  href: data-science-concepts.html
-      #    sub:
+      - text: DATA SCIENCE
+        href: data-science-concepts.html
+          sub:
+            - text: Apache Spark Overview
+              href: spark-overview/index.html
+              id: spark-overview
+              sub: spark-overview/navigation.json
+
+            - text: Apache Zeppelin Overview
+              href: zeppelin-overview/index.html
+              id: zeppelin-overview
+              sub: zeppelin-overview/navigation.json
 
       #- text: STREAMING
       #  href: streaming-concepts.html
@@ -332,36 +331,6 @@ json:
       #   id: using-cbo-in-hive
       #   sub: using-cbo-in-hive/navigation.json
 
-      - text: Configuring Apache Spark
-        href: configuring-spark/index.html
-        id: configuring-spark
-        sub: configuring-spark/navigation.json
-
-      - text: Developing Apache Spark Applications
-        href: developing-spark-applications/index.html
-        id: developing-spark-applications
-        sub: developing-spark-applications/navigation.json
-
-      - text: Running Apache Spark Applications
-        href: running-spark-applications/index.html
-        id: running-spark-applications
-        sub: running-spark-applications/navigation.json
-
-      - text: Tuning Apache Spark
-        href: tuning-spark/index.html
-        id: tuning-spark
-        sub: tuning-spark/navigation.json
-
-      - text: Configuring Apache Zeppelin
-        href: configuring-zeppelin/index.html
-        id: configuring-zeppelin
-        sub: configuring-zeppelin/navigation.json
-
-      - text: Using Apache Zeppelin
-        href: using-zeppelin/index.html
-        id: using-zeppelin
-        sub: using-zeppelin/navigation.json
-
   # Gokul reomoved this because this topic is incomplete
   #   - text: Using HBase to Store and Access Data
   #     href: hbase-getting-started/index.html
@@ -450,9 +419,38 @@ json:
       #  href: data-access-howto.html
       #    sub:
 
-      #- text: DATA SCIENCE
-      #  href: data-science-howto.html
-      #    sub:
+      - text: DATA SCIENCE
+        href: data-science-howto.html
+          sub:
+            - text: Configuring Apache Spark
+              href: configuring-spark/index.html
+              id: configuring-spark
+              sub: configuring-spark/navigation.json
+
+            - text: Developing Apache Spark Applications
+              href: developing-spark-applications/index.html
+              id: developing-spark-applications
+              sub: developing-spark-applications/navigation.json
+
+            - text: Running Apache Spark Applications
+              href: running-spark-applications/index.html
+              id: running-spark-applications
+              sub: running-spark-applications/navigation.json
+
+            - text: Tuning Apache Spark
+              href: tuning-spark/index.html
+              id: tuning-spark
+              sub: tuning-spark/navigation.json
+
+            - text: Configuring Apache Zeppelin
+              href: configuring-zeppelin/index.html
+              id: configuring-zeppelin
+              sub: configuring-zeppelin/navigation.json
+
+            - text: Using Apache Zeppelin
+              href: using-zeppelin/index.html
+              id: using-zeppelin
+              sub: using-zeppelin/navigation.json
 
       #- text: STREAMING
       #  href: streaming-howto.html
