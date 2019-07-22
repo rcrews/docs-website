@@ -1,6 +1,6 @@
 ---
 layout: json
-#- text: Concepts
+#- text: Concepts & Use Cases
 #- text: Planning
 #- text: Installation & Upgrade
 #- text: How To
@@ -9,7 +9,7 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
-  - text: Concepts
+  - text: Concepts & Use Cases
     id: concepts
     sub:
       - text: Controlling Data Access Using Metadata Tags
@@ -362,9 +362,9 @@ json:
         sub: accessing-hbase/navigation.json
 
       - text: Managing HBase
-        href: managing-base/index.html
-        id: managing-base
-        sub: managing-base/navigation.json
+        href: managing-hbase/index.html
+        id: managing-hbase
+        sub: managing-hbase/navigation.json
 
       - text: Configuring HBase High Availability
         href: hbase-high-availability/index.html

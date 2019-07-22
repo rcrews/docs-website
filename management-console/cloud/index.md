@@ -9,7 +9,7 @@ sections:
   #   name: releasenotes
   #   books:
 
-  # - title: Concepts
+  # - title: Concepts & Use Cases
   #   name: concepts
   #   books:
 

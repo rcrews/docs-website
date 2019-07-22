@@ -8,7 +8,7 @@ sections:
   #   name: releasenotes
   #   books:
 
-  - title: Concepts
+  - title: Concepts & Use Cases
     name: concepts
     books:
       - title: Controlling Data Access Using Metadata Tags
@@ -229,7 +229,7 @@ sections:
         url: accessing-hbase/index.html
 
       - title: Managing HBase
-        url: managing-base/index.html
+        url: managing-hbase/index.html
 
       - title: Configuring HBase High Availability
         url: hbase-high-availability/index.html
