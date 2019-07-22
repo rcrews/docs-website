@@ -95,28 +95,28 @@ sections:
         url: hbase-introduction/index.html
 
       - title: DATA STORAGE
-        url: data-storage-concepts.md
+        url: data-storage-concepts.html
 
       - title: COMPUTE
-        url: compute-concepts.md
+        url: compute-concepts.html
 
       - title: DATA ACCESS
-        url: data-access-concepts.md
+        url: data-access-concepts.html
 
       - title: DATA SCIENCE
-        url: data-science-concepts.md
+        url: data-science-concepts.html
 
       - title: STREAMING
-        url: streaming-concepts.md
+        url: streaming-concepts.html
 
       - title: SECURITY
-        url: security-concepts.md
+        url: security-concepts.html
 
       - title: GOVERNANCE
-        url: governance-concepts.md
+        url: governance-concepts.html
 
       - title: CLOUDERA MANAGER
-        url: managing-concepts.md
+        url: managing-concepts.html
 
   - title: Planning
     name: planning
@@ -280,28 +280,28 @@ sections:
         url: monitoring-zookeeper/index.html
 
       - title: DATA STORAGE
-        url: data-storage-howto.md
+        url: data-storage-howto.html
 
       - title: COMPUTE
-        url: compute-howto.md
+        url: compute-howto.html
 
       - title: DATA ACCESS
-        url: data-access-howto.md
+        url: data-access-howto.html
 
       - title: DATA SCIENCE
-        url: data-science-howto.md
+        url: data-science-howto.html
 
       - title: STREAMING
-        url: streaming-howto.md
+        url: streaming-howto.html
 
       - title: SECURITY
-        url: security-howto.md
+        url: security-howto.html
 
       - title: GOVERNANCE
-        url: governance-howto.md
+        url: governance-howto.html
 
       - title: CLOUDERA MANAGER
-        url: managing-howto.md
+        url: managing-howto.html
 
   - title: Troubleshooting
     name: troubleshooting

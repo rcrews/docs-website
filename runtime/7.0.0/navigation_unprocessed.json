@@ -144,6 +144,38 @@ json:
         id: hbase-introduction
         sub: hbase-introduction/navigation.json
 
+      #- text: DATA STORAGE
+      #  href: data-storage-concepts.html
+      #    sub:
+
+      #- text: COMPUTE
+      #  href: compute-concepts.html
+      #    sub:
+
+      #- text: DATA ACCESS
+      #  href: data-access-concepts.html
+      #    sub:
+
+      #- text: DATA SCIENCE
+      #  href: data-science-concepts.html
+      #    sub:
+
+      #- text: STREAMING
+      #  href: streaming-concepts.html
+      #    sub:
+
+      #- text: SECURITY
+      #  href: security-concepts.html
+      #    sub:
+
+      #- text: GOVERNANCE
+      #  href: governance-concepts.html
+      #    sub:
+
+      #- text: CLOUDERA MANAGER
+      #  href: managing-concepts.html
+      #    sub:
+
   - text: Planning
     id: planning
     sub:
@@ -405,6 +437,38 @@ json:
         href: monitoring-zookeeper/index.html
         id: monitoring-zookeeper
         sub: monitoring-zookeeper/navigation.json
+
+      #- text: DATA STORAGE
+      #  href: data-storage-howto.html
+      #    sub:
+
+      #- text: COMPUTE
+      #  href: compute-howto.html
+      #    sub:
+
+      #- text: DATA ACCESS
+      #  href: data-access-howto.html
+      #    sub:
+
+      #- text: DATA SCIENCE
+      #  href: data-science-howto.html
+      #    sub:
+
+      #- text: STREAMING
+      #  href: streaming-howto.html
+      #    sub:
+
+      #- text: SECURITY
+      #  href: security-howto.html
+      #    sub:
+
+      #- text: GOVERNANCE
+      #  href: governance-howto.html
+      #    sub:
+
+      #- text: CLOUDERA MANAGER
+      #  href: managing-howto.html
+      #    sub:
 
   - text: Troubleshooting
     id: troubleshooting
