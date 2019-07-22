@@ -177,9 +177,6 @@ sections:
       - title: Apache Impala Performance Tuning
         url: impala-performance-tuning/index.html
 
-      - title: Managing Clusters
-        url: cm-how-to/index.html
-
       # Removed at Kris's request
       # - title: Apache Hive Performance Tuning
       #   url: hive-performance-tuning/index.html

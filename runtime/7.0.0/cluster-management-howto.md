@@ -3,12 +3,23 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Cluster Management
 publications:
-  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
-  #- title: Managing Data Operating System
-  #  url: data-operating-system/index.html
-  #  description: >-
-  #    Provides information about using Apache YARN for application
-  #    management, cluster management, and resource allocation.
+  - title: Configuring Clusters
+    url: configuring-clusters/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Managing Data Hub Clusters
+    url: managing-clusters/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Monitoring and Diagnostics
+    url: monitoring-and-diagnostics/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
 ---
 Overview of Cloudera Runtime cluster management how-tos goes here....
 Hendrerit ac velit mauris viverra mattis nisi dolor litora ullamcorper,
