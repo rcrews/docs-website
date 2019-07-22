@@ -533,6 +533,11 @@ json:
         id: hdfs-apis-metrics
         sub: hdfs-apis-metrics/navigation.json
 
+      - text: Apache Atlas Metadata Collection Reference
+        href: atlas-metadata-collection/index.html
+        id: atlas-metadata-collection
+        sub: atlas-metadata-collection/navigation.json
+
   # - text: Release Notes
   #   id: releasenotes
   #   sub:

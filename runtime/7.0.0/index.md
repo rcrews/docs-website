@@ -317,6 +317,9 @@ sections:
       - title: APIs and Metrics for Working with HDFS
         url: hdfs-apis-metrics/index.html
 
+      - title: Apache Atlas Metadata Collection Reference
+        url: atlas-metadata-collection/index.html
+
   # - title: Learning & Training
   #   name: learning
   #   books:
