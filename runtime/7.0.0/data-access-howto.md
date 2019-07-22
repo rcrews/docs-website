@@ -3,6 +3,7 @@ layout: foyer
 breadcrumb-title: How To
 title: Data Access
 publications:
+  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
   #- title: Starting Apache Hive
   #  url: starting-hive/index.html
   #  description: >-

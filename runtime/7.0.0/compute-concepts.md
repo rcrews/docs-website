@@ -3,6 +3,7 @@ layout: foyer
 breadcrumb-title: Concepts & Use Cases
 title: Compute
 publications:
+  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
   #- title: Managing Data Operating System
   #  url: data-operating-system/index.html
   #  description: >-

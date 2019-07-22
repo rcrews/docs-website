@@ -3,6 +3,7 @@ layout: foyer
 breadcrumb-title: Concepts & Use Cases
 title: Governance
 publications:
+  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
   #- title: Using Apache Atlas
   #  url: using-atlas/index.html
   #  description: >-

@@ -3,6 +3,7 @@ layout: foyer
 breadcrumb-title: How To
 title: Security
 publications:
+  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
   #- title: Apache Ranger Auditing
   #  url: security-ranger-auditing/index.html
   #  description: >-

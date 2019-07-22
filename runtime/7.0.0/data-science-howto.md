@@ -3,6 +3,7 @@ layout: foyer
 breadcrumb-title: How To
 title: Data Science
 publications:
+  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
   #- title: Configuring Apache Spark
   #  url: configuring-spark/index.html
   #  description: >-
