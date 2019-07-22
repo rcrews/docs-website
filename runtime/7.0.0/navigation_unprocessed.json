@@ -22,7 +22,7 @@ json:
         id: cdp-security-overview/index.html
         sub: cdp-security-overview/navigation.json
 
-      # Removed at Siaram's request, July 18
+      # Removed at Sairam's request, July 18
       # - text: cluster-maintenance
       #   href: cluster-maintenance/index.html
       #   id: cluster-maintenance
@@ -108,7 +108,7 @@ json:
         id: metrics-diagnostics
         sub: metrics-diagnostics/navigation.json
 
-      # Removed at Siaram's request, July 18
+      # Removed at Sairam's request, July 18
       # - text: ports-reference
       #   href: ports-reference/index.html
       #   id: ports-reference
@@ -198,10 +198,10 @@ json:
         id: kudu-integration
         sub: kudu-integration/navigation.json
 
-      - text: Managing Hadoop Jobs
-        href: managing-hadoop-jobs/index.html
-        id: managing-hadoop-jobs
-        sub: managing-hadoop-jobs/navigation.json
+      - text: Configuring Oozie
+        href: configuring-oozie/index.html
+        id: configuring-oozie
+        sub: configuring-oozie/navigation.json
 
       - text: Configuring Fault Tolerance
         href: configuring-fault-tolerance/index.html
@@ -371,6 +371,11 @@ json:
         href: cm-reference/index.html
         id: cm-reference
         sub: cm-reference/navigation.json
+
+      - text: Oozie Metrics and Diagnostics
+        href: oozie-metrics-diagnostics/index.html
+        id: oozie-metrics-diagnostics
+        sub: oozie-metrics-diagnostics/navigation.json
 
   # - text: Release Notes
   #   id: releasenotes
