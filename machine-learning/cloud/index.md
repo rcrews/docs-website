@@ -24,20 +24,11 @@ sections:
       - title: Security Overview
         url: security-overview/index.html
 
+      - title: Model Training and Deployment Overview
+        url: model-training-deployment-overview/index.html
+
       - title: Collaboration Overview
         url: collaboration-overview/index.html
-
-      # Needs to be categorized
-      - title: Distributed Computing Workers
-        url: distributed-computing-workers/index.html
-
-      # Needs to be categorized. Ambreen says this will be removed later
-      - title: Machine Learning Guide
-        url: ml-guide/index.html
-
-      # Needs to be categorized
-      - title: Model Training Deployment Overview
-        url: model-training-deployment-overview/index.html
 
   # - title: Planning
   #   name: planning
@@ -53,7 +44,7 @@ sections:
       - title: Quickstart
         url: quickstart/index.html
 
-      - title: Workspaces
+      - title: ML Workspaces
         url: workspaces/index.html
 
       - title: Projects
@@ -68,11 +59,8 @@ sections:
       - title: Spark
         url: spark/index.html
 
-      - title: GPU
+      - title: GPUs
         url: gpu/index.html
-
-      - title: Web UI
-        url: web-ui/index.html
 
       - title: Experiments
         url: experiments/index.html
@@ -80,16 +68,22 @@ sections:
       - title: Models
         url: models/index.html
 
-      - title: Jobs Pipelines
+      - title: Jobs and Pipelines
         url: jobs-pipelines/index.html
 
       - title: Workbench
         url: workbench/index.html
 
-      - title: Editors
+      - title: Third-Party Editors
         url: editors/index.html
 
-      - title: Git Collaboration
+      - title: Distributed Computing with Workers
+        url: distributed-computing-workers/index.html
+
+      - title: Web UIs and Applications
+        url: web-ui/index.html
+
+      - title: Git for Collaboration
         url: git-collaboration/index.html
 
       - title: Visualizations

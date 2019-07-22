@@ -32,7 +32,7 @@ json:
         id: security-overview
         sub: security-overview/navigation.json
 
-      - text: Model Training & Deployment Overview
+      - text: Model Training and Deployment Overview
         href: model-training-deployment-overview/index.html
         id: model-training-deployment-overview
         sub: model-training-deployment-overview/navigation.json
@@ -99,7 +99,7 @@ json:
         id: models
         sub: models/navigation.json
 
-      - text: Jobs & Pipelines
+      - text: Jobs and Pipelines
         href: jobs-pipelines/index.html
         id: jobs-pipelines
         sub: jobs-pipelines/navigation.json
