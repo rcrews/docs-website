@@ -101,10 +101,7 @@ sections:
       - title: Backup
         url: backup/index.html
 
-      - title: Email
-        url: email/index.html
-
-      - title: Import Data
+      - title: Data Access
         url: import-data/index.html
 
   - title: Troubleshooting

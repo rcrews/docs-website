@@ -154,12 +154,7 @@ json:
         id: backup
         sub: backup/navigation.json
 
-      - text: Email
-        href: email/index.html
-        id: email
-        sub: email/navigation.json
-
-      - text: Import Data
+      - text: Data Access
         href: import-data/index.html
         id: import-data
         sub: import-data/navigation.json
