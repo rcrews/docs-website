@@ -1,7 +1,7 @@
 ---
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
-title: Compute
+title: Cluster Management
 publications:
   # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
   #- title: Managing Data Operating System
@@ -10,8 +10,8 @@ publications:
   #    Provides information about using Apache YARN for application
   #    management, cluster management, and resource allocation.
 ---
-Overview of Cloudera Runtime compute how-tos goes here.... Hendrerit ac
-velit mauris viverra mattis nisi dolor litora ullamcorper, placerat
-venenatis congue tempus tincidunt interdum metus dui feugiat, primis
-fusce fames lobortis morbi natoque torquent magna neque, class ultrices
-dis pharetra vitae ante sodales enim.
+Overview of Cloudera Runtime cluster management how-tos goes here....
+Hendrerit ac velit mauris viverra mattis nisi dolor litora ullamcorper,
+placerat venenatis congue tempus tincidunt interdum metus dui feugiat,
+primis fusce fames lobortis morbi natoque torquent magna neque, class
+ultrices dis pharetra vitae ante sodales enim.

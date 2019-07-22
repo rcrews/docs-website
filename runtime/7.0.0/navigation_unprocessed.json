@@ -172,8 +172,8 @@ json:
       #  href: governance-concepts.html
       #    sub:
 
-      #- text: CLOUDERA MANAGER
-      #  href: managing-concepts.html
+      #- text: CLUSTER MANAGEMENT
+      #  href: cluster-management-concepts.html
       #    sub:
 
   - text: Planning
@@ -466,8 +466,8 @@ json:
       #  href: governance-howto.html
       #    sub:
 
-      #- text: CLOUDERA MANAGER
-      #  href: managing-howto.html
+      #- text: CLUSTER MANAGEMENT
+      #  href: cluster-management-howto.html
       #    sub:
 
   - text: Troubleshooting

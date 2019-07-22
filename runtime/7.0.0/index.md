@@ -106,8 +106,10 @@ sections:
       - title: DATA SCIENCE
         url: data-science-concepts.html
 
-      - title: STREAMING
-        url: streaming-concepts.html
+      # Streaming omitted since Kafka is not planned for the initial release
+      # Will be restored for a later release
+      #- title: STREAMING
+      #  url: streaming-concepts.html
 
       - title: SECURITY
         url: security-concepts.html
@@ -115,8 +117,11 @@ sections:
       - title: GOVERNANCE
         url: governance-concepts.html
 
-      - title: CLOUDERA MANAGER
-        url: managing-concepts.html
+      # Omitted because the current plan is to have only one
+      # Cloudera Manager publication, and so it will remain
+      # at the top level
+      #- title: CLUSTER MANAGEMENT
+      #  url: cluster-management-concepts.html
 
   - title: Planning
     name: planning
@@ -291,8 +296,8 @@ sections:
       - title: DATA SCIENCE
         url: data-science-howto.html
 
-      - title: STREAMING
-        url: streaming-howto.html
+      #- title: STREAMING
+      #  url: streaming-howto.html
 
       - title: SECURITY
         url: security-howto.html
@@ -300,8 +305,8 @@ sections:
       - title: GOVERNANCE
         url: governance-howto.html
 
-      - title: CLOUDERA MANAGER
-        url: managing-howto.html
+      - title: CLUSTER MANAGEMENT
+        url: cluster-management-howto.html
 
   - title: Troubleshooting
     name: troubleshooting
