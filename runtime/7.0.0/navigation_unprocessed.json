@@ -12,11 +12,6 @@ json:
   - text: Concepts & Use Cases
     id: concepts
     sub:
-      - text: Controlling Data Access Using Metadata Tags
-        href: atlas-access-control-using-tags/index.html
-        id: atlas-access-control-using-tags
-        sub: atlas-access-control-using-tags/navigation.json
-
       - text: Security Overview
         href: cdp-security-overview/index.html
         id: cdp-security-overview/index.html
@@ -167,9 +162,13 @@ json:
       #  href: security-concepts.html
       #  sub:
 
-      #- text: GOVERNANCE
-      #  href: governance-concepts.html
-      #  sub:
+      - text: GOVERNANCE
+        href: governance-concepts.html
+        sub:
+          - text: Controlling Data Access Using Metadata Tags
+            href: atlas-access-control-using-tags/index.html
+            id: atlas-access-control-using-tags
+            sub: atlas-access-control-using-tags/navigation.json
 
       #- text: CLUSTER MANAGEMENT
       #  href: cluster-management-concepts.html
@@ -253,11 +252,6 @@ json:
         href: hdfs-acls/index.html
         id: hdfs-acls
         sub: hdfs-acls/navigation.json
-
-      - text: Working with Classifications
-        href: atlas-working-with-classifications/index.html
-        id: atlas-working-with-classifications
-        sub: atlas-working-with-classifications/navigation.json
 
       - text: Identity Management and Federation
         ref: identity-management-and-federation/index.html
@@ -455,9 +449,13 @@ json:
       #  href: security-howto.html
       #  sub:
 
-      #- text: GOVERNANCE
-      #  href: governance-howto.html
-      #  sub:
+      - text: GOVERNANCE
+        href: governance-howto.html
+        sub:
+          - text: Working with Classifications
+            href: atlas-working-with-classifications/index.html
+            id: atlas-working-with-classifications
+            sub: atlas-working-with-classifications/navigation.json
 
       - text: CLUSTER MANAGEMENT
         href: cluster-management-howto.html

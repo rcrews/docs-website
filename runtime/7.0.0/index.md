@@ -11,9 +11,6 @@ sections:
   - title: Concepts & Use Cases
     name: concepts
     books:
-      - title: Controlling Data Access Using Metadata Tags
-        url: atlas-access-control-using-tags/index.html
-
       - title: Security Overview
         url: cdp-security-overview/index.html
 
@@ -167,9 +164,6 @@ sections:
 
       - title: Configuring HDFS ACLs
         url: hdfs-acls/index.html
-
-      - title: Working with Classifications
-        url: atlas-working-with-classifications/index.html
 
       - title: Identity Management and Federation
         url: identity-management-and-federation/index.html
