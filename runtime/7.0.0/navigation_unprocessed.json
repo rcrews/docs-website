@@ -336,6 +336,7 @@ json:
         id: using-zeppelin
         sub: using-zeppelin/navigation.json
 
+  # Gokul reomoved this because this topic is incomplete
   #   - text: Using HBase to Store and Access Data
   #     href: hbase-getting-started/index.html
   #     id: hbase-getting-started

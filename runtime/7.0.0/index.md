@@ -84,7 +84,7 @@ sections:
 
       - title: Apache YARN Data Management
         url: yarn-data-management/index.html
-        
+
       - title: Apache YARN Data Management
         url: yarn-data-management/index.html
 
@@ -129,16 +129,16 @@ sections:
 
       - title: Configuring Oozie
         url: configuring-oozie/index.html
-        
+
       - title: Scaling Namespaces and Optimizing Data Storage
         url: scaling-namespaces/index.html
-        
+
       - title: Configuring Data Protection
         url: configuring-data-protection/index.html
 
       - title: Configuring Fault Tolerance
         url: configuring-fault-tolerance/index.html
-        
+
       - title: Configuring HDFS ACLs
         url: hdfs-acls/index.html
 
@@ -207,51 +207,51 @@ sections:
       - title: Using Apache Zepppelin
         url: using-zeppelin/index.html
 
-      - title: Using HBase to Store and Access Data
-        url: hbase-getting-started/index.html
-        
+    #  - title: Using HBase to Store and Access Data
+    #    url: hbase-getting-started/index.html
+
        - title: Configuring HBase
          url: configuring-hbase/index.html
-         
+
        - title: Using Azure Data Lake Store with HBase
          url: hbase-adls/index.html
-         
+
        - title: Using Amazon S3 with HBase
          url: hbase-s3/index.html
-         
+
        - title: Managing HBase Security
          url: hbase-security/index.html
-         
+
       - title: Accessing HBase by using the HBase Shell
         url: hbase-accessing/index.html
-         
+
        - title: Managing HBase
          url: hbase-managing/index.html
-         
+
        - title: Configuring HBase High Availability
          url: hbase-high-availability/index.html
-        
+
        - title: Using HBase Backup and Disaster Recovery
          url: hbase-replication/index.html
-         
+
        - title: Configuring HBase Snapshots
          url: hbase-snapshots/index.html
-         
+
        - title: Using HBase Health Tests
          url: hbase-health-tests/index.html
-         
+
        - title: Using HBase Metrics
          url: hbase-metrics/index.html
-         
+
        - title: Managing ZooKeeper
          url: zookeeper-managing/index.html
-         
+
        - title: Authenticating ZooKeeper
          url: zookeeper-authentication/index.html
-         
+
        - title: Monitoring ZooKeeper
          url: zookeeper-monitoring/index.html        
-        
+
 
   - title: Troubleshooting
     name: troubleshooting
@@ -264,11 +264,11 @@ sections:
 
       - title: Troubleshooting Apache Kudu
         url: troubleshooting-kudu/index.html
-        
+
       - title: Troubleshooting HBase
         url: hbase-troubleshooting/index.html
-        
-        
+
+
 
   - title: Reference
     name: reference
@@ -284,10 +284,10 @@ sections:
 
       - title: Cloudera Manager Reference
         url: cm-reference/index.html
-        
+
       - title: Oozie Metrics and Diagnostics
         url: oozie-metrics-diagnostics/index.html
-        
+
       - title: APIs and Metrics for Working with HDFS
         url: hdfs-apis-metrics/index.html
 
