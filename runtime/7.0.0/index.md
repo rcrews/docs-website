@@ -17,7 +17,7 @@ sections:
       - title: Security Overview
         url: cdp-security-overview/index.html
 
-      # Removed at Siaram's request, July 18
+      # Removed at Sairam's request, July 18
       # - title: cluster-maintenance
       #   url: cluster-maintenance/index.html
 
@@ -69,7 +69,7 @@ sections:
       - title: Metrics Diagnostics
         url: metrics-diagnostics/index.html
 
-      # Removed at Siaram's request, July 18
+      # Removed at Sairam's request, July 18
       # - title: ports-reference
       #   url: ports-reference/index.html
 
@@ -130,8 +130,8 @@ sections:
       - title: Apache Kudu Integration
         url: kudu-integration/index.html
 
-      - title: Managing Hadoop Jobs
-        url: managing-hadoop-jobs/index.html
+      - title: Configuring Oozie
+        url: configuring-oozie/index.html
 
       - title: Configuring Fault Tolerance
         url: configuring-fault-tolerance/index.html
@@ -278,6 +278,9 @@ sections:
 
       - title: Cloudera Manager Reference
         url: cm-reference/index.html
+        
+      - title: Oozie Metrics and Diagnostics
+        url: oozie-metrics-diagnostics/index.html
 
   # - title: Learning & Training
   #   name: learning
