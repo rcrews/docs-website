@@ -3364,3 +3364,72 @@ ul.tabs {
     background-image: url("/common/img/lib/fancybox/fancybox_loading@2x.gif");
     background-size: 24px 24px;
     /*The size of the normal image, half the size of the hi-res image*/ } }
+    
+
+/* DITA markup specific */
+
+/* table borders */
+
+.frame-top {
+  border-top: solid 1px;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.frame-bottom {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: solid 1px;
+  border-left: 0;
+}
+
+.frame-topbot {
+  border-top: solid 1px;
+  border-right: 0;
+  border-bottom: solid 1px;
+  border-left: 0;
+}
+
+.frame-all {
+  border: solid 1px;
+}
+
+.frame-sides {
+  border-top: 0;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-bottom: 0;
+}
+
+.frame-none {
+  border: 0;
+}
+
+.colsep-0 {
+  border-right: 0;
+}
+
+.colsep-1 {
+  border-right: 1px solid;
+}
+
+.rowsep-0 {
+  border-bottom: 0;
+}
+
+.rowsep-1 {
+  border-bottom: 1px solid;
+}
+
+tr > th:last-child {
+  border-right: 0;
+  }
+  
+tr > td:last-child {
+  border-right: 0;
+  }
+  
+tbody > tr:last-child > td {
+  border-bottom: 0;
+  }
