@@ -85,9 +85,6 @@ sections:
       - title: Apache YARN High Availability
         url: yarn-high-availability/index.html
 
-      - title: Apache YARN Tuning
-        url: yarn-tuning/index.html
-
       - title: DATA ACCESS
         url: data-access-howto.html
 
@@ -153,6 +150,9 @@ sections:
 
       - title: Apache Atlas Metadata Collection Reference
         url: atlas-metadata-collection/index.html
+        
+      - title: Apache YARN Tuning
+        url: yarn-tuning/index.html
 
   # - title: Learning & Training
   #   name: learning
