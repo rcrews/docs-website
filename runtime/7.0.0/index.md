@@ -64,27 +64,6 @@ sections:
       - title: COMPUTE
         url: compute-howto.html
 
-      - title: Managing Applications on Apache YARN
-        url: yarn-application-management/index.html
-
-      - title: Managing and Allocating Cluster Resources using Apache YARN
-        url: yarn-allocate-resources/index.html
-
-      - title: Using Cloud Credentials with Apache YARN
-        url: yarn-using-cloud-credentials/index.html
-
-      - title: Monitoring Clusters and Apache YARN Applications
-        url: yarn-monitoring-clusters-applications/index.html
-
-      - title: Apache YARN Health Tests and Metrics
-        url: yarn-health-test-and-metrics/index.html
-
-      - title: Configuring Apache YARN Security
-        url: yarn-security/index.html
-
-      - title: Apache YARN High Availability
-        url: yarn-high-availability/index.html
-
       - title: DATA ACCESS
         url: data-access-howto.html
 
@@ -150,7 +129,7 @@ sections:
 
       - title: Apache Atlas Metadata Collection Reference
         url: atlas-metadata-collection/index.html
-        
+
       - title: Apache YARN Tuning
         url: yarn-tuning/index.html
 

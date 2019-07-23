@@ -325,11 +325,6 @@ json:
             id: yarn-high-availability
             sub: yarn-high-availability/navigation.json
 
-          - text: Apache YARN Tuning
-            href: yarn-tuning/index.html
-            id: yarn-tuning
-            sub: yarn-tuning/navigation.json
-
       - text: DATA ACCESS
         href: data-access-howto.html
         sub:
@@ -565,6 +560,11 @@ json:
         href: atlas-metadata-collection/index.html
         id: atlas-metadata-collection
         sub: atlas-metadata-collection/navigation.json
+
+      - text: Apache YARN Tuning
+        href: yarn-tuning/index.html
+        id: yarn-tuning
+        sub: yarn-tuning/navigation.json
 
   # - text: Release Notes
   #   id: releasenotes
