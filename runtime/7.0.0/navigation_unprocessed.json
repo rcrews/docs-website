@@ -306,42 +306,42 @@ json:
       - text: COMPUTE
         href: compute-howto.html
         sub:
-          - text: Managing Applications on YARN 
+          - text: Managing Applications on Apache YARN 
             href: yarn-application-management/index.html
             id: yarn-application-management
             sub: yarn-application-management/navigation.json
 
-          - text: Managing and Allocating Cluster Resources using YARN 
+          - text: Managing and Allocating Cluster Resources using Apache YARN 
             href: yarn-allocate-resources/index.html
             id: yarn-allocate-resources
             sub: yarn-allocate-resources/navigation.json
 
-          - text: Using Cloud Credentials with YARN
+          - text: Using Cloud Credentials with Apache YARN
             href: yarn-using-cloud-credentials/index.html
             id: yarn-using-cloud-credentials
             sub: yarn-using-cloud-credentials/navigation.json
 
-          - text: Monitoring Clusters and YARN Applications
+          - text: Monitoring Clusters and Apache YARN Applications
             href: yarn-monitoring-clusters-applications/index.html
             id: yarn-monitoring-clusters-applications
             sub: yarn-monitoring-clusters-applications/navigation.json
 
-          - text: YARN Health Tests and Metrics
+          - text: Apache YARN Health Tests and Metrics
             href: yarn-health-test-and-metrics/index.html
             id: yarn-health-test-and-metrics
             sub: yarn-health-test-and-metrics/navigation.json
 
-          - text: Configuring YARN Security
+          - text: Configuring Apache YARN Security
             href: yarn-security/index.html
             id: yarn-security
             sub: yarn-security/navigation.json
 
-          - text: YARN High Availability
+          - text: Apache YARN High Availability
             href: yarn-high-availability/index.html
             id: yarn-high-availability
             sub: yarn-high-availability/navigation.json
 
-          - text: YARN Tuning
+          - text: Apache YARN Tuning
             href: yarn-tuning/index.html
             id: yarn-tuning
             sub: yarn-tuning/navigation.json
