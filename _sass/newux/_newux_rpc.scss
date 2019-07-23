@@ -1,0 +1,68 @@
+#content, .content {
+
+
+  /* DITA markup for table borders */
+
+  .frame-top {
+    border-top: 1px solid;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+  }
+
+  .frame-bottom {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid;
+    border-left: 0;
+  }
+
+  .frame-topbot {
+    border-top: 1px solid;
+    border-right: 0;
+    border-bottom: 1px solid;
+    border-left: 0;
+  }
+
+  .frame-all {
+    border: solid 1px;
+  }
+
+  .frame-sides {
+    border-top: 0;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 0;
+  }
+
+  .frame-none {
+    border: 0;
+  }
+
+  .colsep-0 {
+    border-right: 0;
+  }
+
+  .colsep-1 {
+    border-right: 1px solid;
+  }
+
+  .rowsep-0 {
+    border-bottom: 0;
+  }
+
+  .rowsep-1 {
+    border-bottom: 1px solid;
+  }
+    tr > th:last-child {
+    border-right: 0;
+  }
+
+  tr > td:last-child {
+    border-right: 0;
+  }
+
+  tbody > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
