@@ -36,9 +36,6 @@ sections:
       - title: Managing clusters
         url: manage-clusters/index.html
 
-      - title: Blueprints
-        url: blueprints/index.html
-
       - title: Image Catalogs
         url: image-catalogs/index.html
 
