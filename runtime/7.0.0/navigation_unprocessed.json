@@ -24,10 +24,10 @@ json:
       #   id: ports-reference
       #   sub: ports-reference/navigation.json
 
-      - text: Apache YARN Data Management
-        href: yarn-data-management/index.html
-        id: yarn-data-management
-        sub: yarn-data-management/navigation.json
+      - text: Apache YARN Application Management
+          href: yarn-overview/index.html
+          id: yarn-overview
+          sub: yarn-overview/navigation.json
 
       - text: DATA STORAGE
         href: data-storage-concepts.html
