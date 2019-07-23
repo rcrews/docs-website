@@ -6,12 +6,7 @@ publications:
   - title: Security Overview
     url: cdp-security-overview/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      A brief introduction to CDP security components, architecture, and terminology. 
 
 ---
-Overview of Cloudera Runtime security concepts goes here.... Interdum
-placerat feugiat primis elementum malesuada sit rhoncus porttitor
-maecenas, varius senectus nec curabitur diam urna ex quisque etiam, amet
-risus litora volutpat quam non cras tortor nulla, natoque dictum taciti
-himenaeos leo aenean quis phasellus.
+Cloudera Data Platform Runtime security concepts.
