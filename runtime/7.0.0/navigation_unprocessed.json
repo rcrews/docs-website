@@ -24,10 +24,6 @@ json:
       #   id: ports-reference
       #   sub: ports-reference/navigation.json
 
-      - text: Apache YARN Application Management
-          href: yarn-overview/index.html
-          id: yarn-overview
-          sub: yarn-overview/navigation.json
 
       - text: DATA STORAGE
         href: data-storage-concepts.html
@@ -50,7 +46,11 @@ json:
       #- text: COMPUTE
       #  href: compute-concepts.html
       #  sub:
-
+           - text: Apache YARN Application Management
+             href: yarn-overview/index.html
+             id: yarn-overview
+             sub: yarn-overview/navigation.json
+ 
       - text: DATA ACCESS
         href: data-access-concepts.html
         sub:
@@ -306,6 +306,30 @@ json:
       #- text: COMPUTE
       #  href: compute-howto.html
       #  sub:
+          - text: Managing Applications on YARN 
+            href: yarn-application-management/index.html
+            id: yarn-application-management
+            sub: yarn-application-management/navigation.json
+
+          - text: Managing and Allocating Cluster Resources using YARN 
+            href: yarn-allocate-resources/index.html
+            id: yarn-allocate-resources
+            sub: yarn-allocate-resources/navigation.json
+
+          - text: Using Cloud Credentials with YARN
+            href: yarn-using-cloud-credentials/index.html
+            id: yarn-using-cloud-credentials
+            sub: yarn-using-cloud-credentials/navigation.json
+
+          - text: Monitoring Clusters and YARN Applications
+            href: yarn-monitoring-clusters-applications/index.html
+            id: yarn-monitoring-clusters-applications
+            sub: yarn-monitoring-clusters-applications/navigation.json
+
+          - text: YARN Health Tests and Metrics
+            href: yarn-health-test-and-metrics/index.html
+            id: yarn-health-test-and-metrics
+            sub: yarn-health-test-and-metrics/navigation.json
 
       - text: DATA ACCESS
         href: data-access-howto.html
