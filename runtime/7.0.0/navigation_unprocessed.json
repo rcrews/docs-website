@@ -131,16 +131,6 @@ json:
             id: cdp-security-overview/index.html
             sub: cdp-security-overview/navigation.json
 
-          - text: Apache Ranger Auditing
-            href: security-ranger-auditing/index.html
-            id: security-ranger-auditing
-            sub: security-ranger-auditing/navigation.json
-
-          - text: Apache Ranger Authorization
-            href: security-ranger-authorization/index.html
-            id: security-ranger-authorization
-            sub: security-ranger-authorization/navigation.json
-
       - text: GOVERNANCE
         href: governance-concepts.html
         sub:
@@ -458,6 +448,16 @@ json:
             ref: identity-management-and-federation/index.html
             id: identity-management-and-federation-and-federation/index.html
             sub: identity-management-and-federation/navigation.json
+
+          - text: Apache Ranger Auditing
+            href: security-ranger-auditing/index.html
+            id: security-ranger-auditing
+            sub: security-ranger-auditing/navigation.json
+
+          - text: Apache Ranger Authorization
+            href: security-ranger-authorization/index.html
+            id: security-ranger-authorization
+            sub: security-ranger-authorization/navigation.json
 
       - text: GOVERNANCE
         href: governance-howto.html
