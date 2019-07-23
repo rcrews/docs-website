@@ -8,6 +8,18 @@ publications:
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
+      
+  - title: Apache Ranger Auditing
+    url: security-ranger-auditing/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Ranger Authorization
+    url: security-ranger-authorization/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit      
 ---
 Overview of Cloudera Runtime security how-tos goes here.... Interdum
 placerat feugiat primis elementum malesuada sit rhoncus porttitor
