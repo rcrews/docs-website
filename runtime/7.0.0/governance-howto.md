@@ -5,8 +5,8 @@ title: Governance
 publications:
   - title: Working with Classifications
     url: atlas-working-with-classifications/index.html
-   description: >-
-     How to use Apache Atlas to search for, classify, and manage data.
+    description: >-
+      How to use Apache Atlas to search for, classify, and manage data.
 ---
 Apache Atlas provides data governance capabilities for Hadoop. Apache
 Atlas serves as a common metadata store that is designed to exchange

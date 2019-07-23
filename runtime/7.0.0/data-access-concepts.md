@@ -3,12 +3,83 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Data Access
 publications:
-  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
-  #- title: Starting Apache Hive
-  #  url: starting-hive/index.html
-  #  description: >-
-  #    Describes how to launch Hive, execute Hive commands, and issue
-  #    Hive queries from Beeline
+  - title: Apache Hive Overview
+    url: hive-introduction/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Hue Introduction
+    url: hue-introduction/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Overview
+    url: impala-overview/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Client
+    url: impala-client/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Monitoring
+    url: impala-monitoring/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Performance
+    url: impala-performance/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Resource Management
+    url: impala-resource/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Scalability
+    url: impala-scalability/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Metadata
+    url: impala-metadata/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Security
+    url: impala-security/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala File Formats
+    url: impala-file-formats/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Storage
+    url: impala-storage/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Impala Timeouts
+    url: impala-timeouts/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
 ---
 Overview of Cloudera Runtime data access concepts goes here.... Sem odio
 nascetur nibh cubilia sapien rhoncus erat conubia, primis porttitor

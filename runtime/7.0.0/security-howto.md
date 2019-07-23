@@ -3,12 +3,11 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Security
 publications:
-  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
-  #- title: Apache Ranger Auditing
-  #  url: security-ranger-auditing/index.html
-  #  description: >-
-  #    "Configuring Apache Ranger to collect audits,
-  #    access history and reporting data."
+  - title: Identity Management and Federation
+    url: identity-management-and-federation/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
 ---
 Overview of Cloudera Runtime security how-tos goes here.... Interdum
 placerat feugiat primis elementum malesuada sit rhoncus porttitor

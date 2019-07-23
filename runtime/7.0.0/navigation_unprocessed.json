@@ -12,91 +12,11 @@ json:
   - text: Concepts & Use Cases
     id: concepts
     sub:
-      - text: Security Overview
-        href: cdp-security-overview/index.html
-        id: cdp-security-overview/index.html
-        sub: cdp-security-overview/navigation.json
-
       # Removed at Sairam's request, July 18
       # - text: cluster-maintenance
       #   href: cluster-maintenance/index.html
       #   id: cluster-maintenance
       #   sub: cluster-maintenance/navigation.json
-
-      - text: Apache Hive Overview
-        href: hive-introduction/index.html
-        id: hive-introduction
-        sub: hive-introduction/navigation.json
-
-      - text: Hue Introduction
-        href: hue-introduction/index.html
-        id: hue-introduction
-        sub: hue-introduction/navigation.json
-
-      - text: Apache Impala Overview
-        href: impala-overview/index.html
-        id: impala-overview
-        sub: impala-overview/navigation.json
-
-      - text: Apache Impala Client
-        href: impala-client/index.html
-        id: impala-client
-        sub: impala-client/navigation.json
-
-      - text: Apache Impala Monitoring
-        href: impala-monitoring/index.html
-        id: impala-monitoring
-        sub: impala-monitoring/navigation.json
-
-      - text: Apache Impala Performance
-        href: impala-performance/index.html
-        id: impala-performance
-        sub: impala-performance/navigation.json
-
-      - text: Apache Impala Resource Management
-        href: impala-resource/index.html
-        id: impala-resource
-        sub: impala-resource/navigation.json
-
-      - text: Apache Impala Scalability
-        href: impala-scalability/index.html
-        id: impala-scalability
-        sub: impala-scalability/navigation.json
-
-      - text: Apache Impala Metadata
-        href: impala-metadata/index.html
-        id: impala-metadata
-        sub: impala-metadata/navigation.json
-
-      - text: Apache Impala Security
-        href: impala-security/index.html
-        id: impala-security
-        sub: impala-security/navigation.json
-
-      - text: Apache Impala File Formats
-        href: impala-file-formats/index.html
-        id: impala-file-formats
-        sub: impala-file-formats/navigation.json
-
-      - text: Apache Impala Storage
-        href: impala-storage/index.html
-        id: impala-storage
-        sub: impala-storage/navigation.json
-
-      - text: Apache Impala Timeouts
-        href: impala-timeouts/index.html
-        id: impala-timeouts
-        sub: impala-timeouts/navigation.json
-
-      - text: Apache Kudu Design
-        href: kudu-design/index.html
-        id: kudu-design
-        sub: kudu-design/navigation.json
-
-      - text: Apache Kudu Overview
-        href: kudu-overview/index.html
-        id: kudu-overview
-        sub: kudu-overview/navigation.json
 
       # Removed at Sairam's request, July 18
       # - text: ports-reference
@@ -104,42 +24,100 @@ json:
       #   id: ports-reference
       #   sub: ports-reference/navigation.json
 
-      - text: Apache Ranger Auditing
-        href: security-ranger-auditing/index.html
-        id: security-ranger-auditing
-        sub: security-ranger-auditing/navigation.json
-
-      - text: Apache Ranger Authorization
-        href: security-ranger-authorization/index.html
-        id: security-ranger-authorization
-        sub: security-ranger-authorization/navigation.json
-
-      - text: Cloudera Manager Overview
-        href: cm-concepts/index.html
-        id: cm-concepts
-        sub: cm-concepts/navigation.json
-
       - text: Apache YARN Data Management
         href: yarn-data-management/index.html
         id: yarn-data-management
         sub: yarn-data-management/navigation.json
 
-      - text: Apache HBase Introduction
-        href: hbase-introduction/index.html
-        id: hbase-introduction
-        sub: hbase-introduction/navigation.json
+      - text: DATA STORAGE
+        href: data-storage-concepts.html
+        sub:
+          - text: Apache Kudu Design
+            href: kudu-design/index.html
+            id: kudu-design
+            sub: kudu-design/navigation.json
 
-      #- text: DATA STORAGE
-      #  href: data-storage-concepts.html
-      #  sub:
+          - text: Apache Kudu Overview
+            href: kudu-overview/index.html
+            id: kudu-overview
+            sub: kudu-overview/navigation.json
+
+          - text: Apache HBase Introduction
+            href: hbase-introduction/index.html
+            id: hbase-introduction
+            sub: hbase-introduction/navigation.json
 
       #- text: COMPUTE
       #  href: compute-concepts.html
       #  sub:
 
-      #- text: DATA ACCESS
-      #  href: data-access-concepts.html
-      #  sub:
+      - text: DATA ACCESS
+        href: data-access-concepts.html
+        sub:
+          - text: Apache Hive Overview
+            href: hive-introduction/index.html
+            id: hive-introduction
+            sub: hive-introduction/navigation.json
+
+          - text: Hue Introduction
+            href: hue-introduction/index.html
+            id: hue-introduction
+            sub: hue-introduction/navigation.json
+
+          - text: Apache Impala Overview
+            href: impala-overview/index.html
+            id: impala-overview
+            sub: impala-overview/navigation.json
+
+          - text: Apache Impala Client
+            href: impala-client/index.html
+            id: impala-client
+            sub: impala-client/navigation.json
+
+          - text: Apache Impala Monitoring
+            href: impala-monitoring/index.html
+            id: impala-monitoring
+            sub: impala-monitoring/navigation.json
+
+          - text: Apache Impala Performance
+            href: impala-performance/index.html
+            id: impala-performance
+            sub: impala-performance/navigation.json
+
+          - text: Apache Impala Resource Management
+            href: impala-resource/index.html
+            id: impala-resource
+            sub: impala-resource/navigation.json
+
+          - text: Apache Impala Scalability
+            href: impala-scalability/index.html
+            id: impala-scalability
+            sub: impala-scalability/navigation.json
+
+          - text: Apache Impala Metadata
+            href: impala-metadata/index.html
+            id: impala-metadata
+            sub: impala-metadata/navigation.json
+
+          - text: Apache Impala Security
+            href: impala-security/index.html
+            id: impala-security
+            sub: impala-security/navigation.json
+
+          - text: Apache Impala File Formats
+            href: impala-file-formats/index.html
+            id: impala-file-formats
+            sub: impala-file-formats/navigation.json
+
+          - text: Apache Impala Storage
+            href: impala-storage/index.html
+            id: impala-storage
+            sub: impala-storage/navigation.json
+
+          - text: Apache Impala Timeouts
+            href: impala-timeouts/index.html
+            id: impala-timeouts
+            sub: impala-timeouts/navigation.json
 
       - text: DATA SCIENCE
         href: data-science-concepts.html
@@ -158,9 +136,23 @@ json:
       #  href: streaming-concepts.html
       #  sub:
 
-      #- text: SECURITY
-      #  href: security-concepts.html
-      #  sub:
+      - text: SECURITY
+        href: security-concepts.html
+        sub:
+          - text: Security Overview
+            href: cdp-security-overview/index.html
+            id: cdp-security-overview/index.html
+            sub: cdp-security-overview/navigation.json
+
+          - text: Apache Ranger Auditing
+            href: security-ranger-auditing/index.html
+            id: security-ranger-auditing
+            sub: security-ranger-auditing/navigation.json
+
+          - text: Apache Ranger Authorization
+            href: security-ranger-authorization/index.html
+            id: security-ranger-authorization
+            sub: security-ranger-authorization/navigation.json
 
       - text: GOVERNANCE
         href: governance-concepts.html
@@ -170,9 +162,13 @@ json:
             id: atlas-access-control-using-tags
             sub: atlas-access-control-using-tags/navigation.json
 
-      #- text: CLUSTER MANAGEMENT
-      #  href: cluster-management-concepts.html
-      #  sub:
+      - text: CLUSTER MANAGEMENT
+        href: cluster-management-concepts.html
+        sub:
+          - text: Cloudera Manager Overview
+            href: cm-concepts/index.html
+            id: cm-concepts
+            sub: cm-concepts/navigation.json
 
   - text: Planning
     id: planning
@@ -193,194 +189,6 @@ json:
   - text: How To
     id: howto
     sub:
-      - text: Administering Hue
-        href: administering-hue/index.html
-        id: administering-hue
-        sub: administering-hue/navigation.json
-
-      - text: Securing Hue
-        href: securing-hue/index.html
-        id: securing-hue
-        sub: securing-hue/navigation.json
-
-      - text: Tuning Hue
-        href: tuning-hue/index.html
-        id: tuning-hue
-        sub: tuning-hue/navigation.json
-
-      - text: Using Hue
-        href: using-hue/index.html
-        id: using-hue
-        sub: using-hue/navigation.json
-
-      - text: Administering Apache Kudu
-        href: administering-kudu/index.html
-        id: administering-kudu
-        sub: administering-kudu/navigation.json
-
-      - text: Apache Kudu Development
-        href: kudu-development/index.html
-        id: kudu-development
-        sub: kudu-development/navigation.json
-
-      - text: Apache Kudu Integration
-        href: kudu-integration/index.html
-        id: kudu-integration
-        sub: kudu-integration/navigation.json
-
-      - text: Configuring Oozie
-        href: configuring-oozie/index.html
-        id: configuring-oozie
-        sub: configuring-oozie/navigation.json
-
-      - text: Scaling Namespaces and Optimizing Data Storage
-        href: scaling-namespaces/index.html
-        id: scaling-namespaces
-        sub: scaling-namespaces/navigation.json
-
-      - text: Configuring Fault Tolerance
-        href: configuring-fault-tolerance/index.html
-        id: configuring-fault-tolerance
-        sub: configuring-fault-tolerance/navigation.json
-
-      - text: Configuring Data Protection
-        href: data-protection/index.html
-        id: data-protection
-        sub: data-protection/navigation.json
-
-      - text: Configuring HDFS ACLs
-        href: hdfs-acls/index.html
-        id: hdfs-acls
-        sub: hdfs-acls/navigation.json
-
-      - text: Identity Management and Federation
-        ref: identity-management-and-federation/index.html
-        id: identity-management-and-federation-and-federation/index.html
-        sub: identity-management-and-federation/navigation.json
-
-      - text: Apache Impala Performance Tuning
-        href: impala-performance-tuning/index.html
-        id: impala-performance-tuning
-        sub: impala-performance-tuning/navigation.json
-
-      # Removed at Kris's request
-      # - text: Apahce Hive Performance Tuning
-      #   href: hive-performance-tuning/index.html
-      #   id: hive-performance-tuning
-      #   sub: hive-performance-tuning/navigation.json
-
-      - text: Starting Apache Hive
-        href: starting-hive/index.html
-        id: starting-hive
-        sub: starting-hive/navigation.json
-
-      - text: Using HiveQL
-        href: using-hiveql/index.html
-        id: using-hiveql
-        sub: using-hiveql/navigation.json
-
-      - text: Managing Apache Hive
-        href: managing-hive/index.html
-        id: managing-hive
-        sub: managing-hive/navigation.json
-
-      - text: Managing Apache Hive Workloads
-        href: managing-a-hive-workload/index.html
-        id: managing-a-hive-workload
-        sub: managing-a-hive-workload/navigation.json
-
-      - text: Configuring Apache Hive
-        href: configuring-apache-hive/index.html
-        id: configuring-apache-hive
-        sub: configuring-apache-hive/navigation.json
-
-      - text: Configuring Apache Hive Metastore
-        href: hive-metastore/index.html
-        id: hive-metastore
-        sub: hive-metastore/navigation.json
-
-      - text: Securing Apache Hive
-        href: securing-hive/index.html
-        id: securing-hive
-        sub: securing-hive/navigation.json
-
-      - text: Integrating Apache Hive with Apache Spark and BI
-        href: integrating-hive-and-bi/index.html
-        id: integrating-hive-and-bi
-        sub: integrating-hive-and-bi/navigation.json
-
-      - text: Migrating Data to Apache Hive
-        href: migrating-data-into-hive/index.html
-        id: migrating-data-into-hive
-        sub: migrating-data-into-hive/navigation.json
-
-      # Removed at Kris's request
-      # - text: using-cbo-in-hive
-      #   href: using-cbo-in-hive/index.html
-      #   id: using-cbo-in-hive
-      #   sub: using-cbo-in-hive/navigation.json
-
-  # Gokul reomoved this because this topic is incomplete
-  #   - text: Using HBase to Store and Access Data
-  #     href: hbase-getting-started/index.html
-  #     id: hbase-getting-started
-  #     sub: hbase-getting-started/navigation.json
-
-      - text: Configuring HBase
-        href: configuring-hbase/index.html
-        id: configuring-hbase
-        sub: configuring-hbase/navigation.json
-
-      - text: Using Azure Data Lake Store with HBase
-        href: hbase-adls/index.html
-        id: hbase-adls
-        sub: hbase-adls/navigation.json
-
-      - text: Using Amazon S3 with HBase
-        href: hbase-s3/index.html
-        id: hbase-s3
-        sub: hbase-s3/navigation.json
-
-      - text: Managing HBase Security
-        href: hbase-security/index.html
-        id: hbase-security
-        sub: hbase-security/navigation.json
-
-      - text: Accessing HBase by using the HBase Shell
-        href: accessing-hbase/index.html
-        id: accessing-hbase
-        sub: accessing-hbase/navigation.json
-
-      - text: Managing HBase
-        href: managing-hbase/index.html
-        id: managing-hbase
-        sub: managing-hbase/navigation.json
-
-      - text: Configuring HBase High Availability
-        href: hbase-high-availability/index.html
-        id: hbase-high-availability
-        sub: hbase-high-availability/navigation.json
-
-      - text: Using HBase Backup and Disaster Recovery
-        href: hbase-replication/index.html
-        id: hbase-replication
-        sub: hbase-replication/navigation.json
-
-      - text: Configuring HBase Snapshots
-        href: hbase-snapshots/index.html
-        id: hbase-snapshots
-        sub: hbase-snapshots/navigation.json
-
-      - text: Using HBase Health Tests
-        href: hbase-health-tests/index.html
-        id: hbase-health-tests
-        sub: hbase-health-tests/navigation.json
-
-      - text: Using HBase Metrics
-        href: hbase-metrics/index.html
-        id: hbase-metrics
-        sub: hbase-metrics/navigation.json
-
       - text: Managing ZooKeeper
         href: managing-zookeeper/index.html
         id: managing-zookeeper
@@ -396,17 +204,193 @@ json:
         id: monitoring-zookeeper
         sub: monitoring-zookeeper/navigation.json
 
-      #- text: DATA STORAGE
-      #  href: data-storage-howto.html
-      #  sub:
+      - text: DATA STORAGE
+        href: data-storage-howto.html
+        sub:
+          - text: Administering Apache Kudu
+            href: administering-kudu/index.html
+            id: administering-kudu
+            sub: administering-kudu/navigation.json
+
+          - text: Apache Kudu Development
+            href: kudu-development/index.html
+            id: kudu-development
+            sub: kudu-development/navigation.json
+
+          - text: Apache Kudu Integration
+            href: kudu-integration/index.html
+            id: kudu-integration
+            sub: kudu-integration/navigation.json
+
+          - text: Scaling Namespaces and Optimizing Data Storage
+            href: scaling-namespaces/index.html
+            id: scaling-namespaces
+            sub: scaling-namespaces/navigation.json
+
+          - text: Configuring Fault Tolerance
+            href: configuring-fault-tolerance/index.html
+            id: configuring-fault-tolerance
+            sub: configuring-fault-tolerance/navigation.json
+
+          - text: Configuring Data Protection
+            href: data-protection/index.html
+            id: data-protection
+            sub: data-protection/navigation.json
+
+          - text: Configuring HDFS ACLs
+            href: hdfs-acls/index.html
+            id: hdfs-acls
+            sub: hdfs-acls/navigation.json
+
+          # Gokul reomoved this because this topic is incomplete
+          # - text: Using HBase to Store and Access Data
+          #   href: hbase-getting-started/index.html
+          #   id: hbase-getting-started
+          #   sub: hbase-getting-started/navigation.json
+
+          - text: Configuring HBase
+            href: configuring-hbase/index.html
+            id: configuring-hbase
+            sub: configuring-hbase/navigation.json
+
+          - text: Using Azure Data Lake Store with HBase
+            href: hbase-adls/index.html
+            id: hbase-adls
+            sub: hbase-adls/navigation.json
+
+          - text: Using Amazon S3 with HBase
+            href: hbase-s3/index.html
+            id: hbase-s3
+            sub: hbase-s3/navigation.json
+
+          - text: Managing HBase Security
+            href: hbase-security/index.html
+            id: hbase-security
+            sub: hbase-security/navigation.json
+
+          - text: Accessing HBase by using the HBase Shell
+            href: accessing-hbase/index.html
+            id: accessing-hbase
+            sub: accessing-hbase/navigation.json
+
+          - text: Managing HBase
+            href: managing-hbase/index.html
+            id: managing-hbase
+            sub: managing-hbase/navigation.json
+
+          - text: Configuring HBase High Availability
+            href: hbase-high-availability/index.html
+            id: hbase-high-availability
+            sub: hbase-high-availability/navigation.json
+
+          - text: Using HBase Backup and Disaster Recovery
+            href: hbase-replication/index.html
+            id: hbase-replication
+            sub: hbase-replication/navigation.json
+
+          - text: Configuring HBase Snapshots
+            href: hbase-snapshots/index.html
+            id: hbase-snapshots
+            sub: hbase-snapshots/navigation.json
+
+          - text: Using HBase Health Tests
+            href: hbase-health-tests/index.html
+            id: hbase-health-tests
+            sub: hbase-health-tests/navigation.json
+
+          - text: Using HBase Metrics
+            href: hbase-metrics/index.html
+            id: hbase-metrics
+            sub: hbase-metrics/navigation.json
 
       #- text: COMPUTE
       #  href: compute-howto.html
       #  sub:
 
-      #- text: DATA ACCESS
-      #  href: data-access-howto.html
-      #  sub:
+      - text: DATA ACCESS
+        href: data-access-howto.html
+        sub:
+          - text: Securing Hue
+            href: securing-hue/index.html
+            id: securing-hue
+            sub: securing-hue/navigation.json
+
+          - text: Tuning Hue
+            href: tuning-hue/index.html
+            id: tuning-hue
+            sub: tuning-hue/navigation.json
+
+          - text: Using Hue
+            href: using-hue/index.html
+            id: using-hue
+            sub: using-hue/navigation.json
+
+          - text: Administering Hue
+            href: administering-hue/index.html
+            id: administering-hue
+            sub: administering-hue/navigation.json
+
+          - text: Apache Impala Performance Tuning
+            href: impala-performance-tuning/index.html
+            id: impala-performance-tuning
+            sub: impala-performance-tuning/navigation.json
+
+          # Removed at Kris's request
+          # - text: Apahce Hive Performance Tuning
+          #   href: hive-performance-tuning/index.html
+          #   id: hive-performance-tuning
+          #   sub: hive-performance-tuning/navigation.json
+
+          - text: Starting Apache Hive
+            href: starting-hive/index.html
+            id: starting-hive
+            sub: starting-hive/navigation.json
+
+          - text: Using HiveQL
+            href: using-hiveql/index.html
+            id: using-hiveql
+            sub: using-hiveql/navigation.json
+
+          - text: Managing Apache Hive
+            href: managing-hive/index.html
+            id: managing-hive
+            sub: managing-hive/navigation.json
+
+          - text: Managing Apache Hive Workloads
+            href: managing-a-hive-workload/index.html
+            id: managing-a-hive-workload
+            sub: managing-a-hive-workload/navigation.json
+
+          - text: Configuring Apache Hive
+            href: configuring-apache-hive/index.html
+            id: configuring-apache-hive
+            sub: configuring-apache-hive/navigation.json
+
+          - text: Configuring Apache Hive Metastore
+            href: hive-metastore/index.html
+            id: hive-metastore
+            sub: hive-metastore/navigation.json
+
+          - text: Securing Apache Hive
+            href: securing-hive/index.html
+            id: securing-hive
+            sub: securing-hive/navigation.json
+
+          - text: Integrating Apache Hive with Apache Spark and BI
+            href: integrating-hive-and-bi/index.html
+            id: integrating-hive-and-bi
+            sub: integrating-hive-and-bi/navigation.json
+
+          - text: Migrating Data to Apache Hive
+            href: migrating-data-into-hive/index.html
+            id: migrating-data-into-hive
+            sub: migrating-data-into-hive/navigation.json
+
+          # Removed at Kris's request
+          # - text: using-cbo-in-hive
+          #   href: using-cbo-in-hive/index.html
+          #   id: using-cbo-in-hive
+          #   sub: using-cbo-in-hive/navigation.json
 
       - text: DATA SCIENCE
         href: data-science-howto.html
@@ -441,13 +425,21 @@ json:
             id: using-zeppelin
             sub: using-zeppelin/navigation.json
 
-      #- text: STREAMING
-      #  href: streaming-howto.html
-      #  sub:
+      - text: STREAMING
+        href: streaming-howto.html
+        sub:
+          - text: Configuring Oozie
+            href: configuring-oozie/index.html
+            id: configuring-oozie
+            sub: configuring-oozie/navigation.json
 
-      #- text: SECURITY
-      #  href: security-howto.html
-      #  sub:
+      - text: SECURITY
+        href: security-howto.html
+        sub:
+          - text: Identity Management and Federation
+            ref: identity-management-and-federation/index.html
+            id: identity-management-and-federation-and-federation/index.html
+            sub: identity-management-and-federation/navigation.json
 
       - text: GOVERNANCE
         href: governance-howto.html

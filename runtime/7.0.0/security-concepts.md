@@ -3,12 +3,23 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Security
 publications:
-  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
-  #- title: Apache Ranger Auditing
-  #  url: security-ranger-auditing/index.html
-  #  description: >-
-  #    "Configuring Apache Ranger to collect audits,
-  #    access history and reporting data."
+  - title: Security Overview
+    url: cdp-security-overview/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Ranger Auditing
+    url: security-ranger-auditing/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Apache Ranger Authorization
+    url: security-ranger-authorization/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
 ---
 Overview of Cloudera Runtime security concepts goes here.... Interdum
 placerat feugiat primis elementum malesuada sit rhoncus porttitor

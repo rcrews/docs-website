@@ -3,11 +3,11 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Streaming
 publications:
-  # THIS ENTRY IS AN EXAMPLE TILL PUBLICATIONS START BEING ADDED
-  #- title: Developing Apache Storm Applications
-  #  url: developing-storm-applications/index.html
-  #  description: >-
-  #    Describes key concepts behind developing Storm applications.
+  - title: Configuring Oozie
+    url: configuring-oozie/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
 ---
 Overview of Cloudera Runtime streaming how-tos goes here.... Mi tellus
 sed non sem malesuada pharetra praesent quis, magnis placerat nostra

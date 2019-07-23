@@ -11,11 +11,9 @@ publications:
 
   - title: Apache Zeppelin Overview
     url: zeppelin-overview/index.html
-    description:
     description: >-
       publication description dictumst vestibulum morbi aliquam libero
       dui ipsum lectus
-
 ---
 Overview of Cloudera Runtime data science concepts goes here.... Neque
 mi fermentum urna mus sit phasellus auctor enim, sem torquent litora
