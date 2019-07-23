@@ -12,19 +12,6 @@ json:
   - text: Concepts & Use Cases
     id: concepts
     sub:
-      # Removed at Sairam's request, July 18
-      # - text: cluster-maintenance
-      #   href: cluster-maintenance/index.html
-      #   id: cluster-maintenance
-      #   sub: cluster-maintenance/navigation.json
-
-      # Removed at Sairam's request, July 18
-      # - text: ports-reference
-      #   href: ports-reference/index.html
-      #   id: ports-reference
-      #   sub: ports-reference/navigation.json
-
-
       - text: DATA STORAGE
         href: data-storage-concepts.html
         sub:
@@ -50,7 +37,7 @@ json:
              href: yarn-overview/index.html
              id: yarn-overview
              sub: yarn-overview/navigation.json
- 
+
       - text: DATA ACCESS
         href: data-access-concepts.html
         sub:
@@ -170,6 +157,18 @@ json:
             id: cm-concepts
             sub: cm-concepts/navigation.json
 
+      # Removed at Sairam's request, July 18
+      # - text: cluster-maintenance
+      #   href: cluster-maintenance/index.html
+      #   id: cluster-maintenance
+      #   sub: cluster-maintenance/navigation.json
+
+      # Removed at Sairam's request, July 18
+      # - text: ports-reference
+      #   href: ports-reference/index.html
+      #   id: ports-reference
+      #   sub: ports-reference/navigation.json
+
   - text: Planning
     id: planning
     sub:
@@ -189,21 +188,6 @@ json:
   - text: How To
     id: howto
     sub:
-      - text: Managing ZooKeeper
-        href: managing-zookeeper/index.html
-        id: managing-zookeeper
-        sub: managing-zookeeper/navigation.json
-
-      - text: Authenticating ZooKeeper
-        href: zookeeper-authentication/index.html
-        id: zookeeper-authentication
-        sub: zookeeper-authentication/navigation.json
-
-      - text: Monitoring ZooKeeper
-        href: monitoring-zookeeper/index.html
-        id: monitoring-zookeeper
-        sub: monitoring-zookeeper/navigation.json
-
       - text: DATA STORAGE
         href: data-storage-howto.html
         sub:
@@ -242,7 +226,7 @@ json:
             id: hdfs-acls
             sub: hdfs-acls/navigation.json
 
-          # Gokul reomoved this because this topic is incomplete
+          # Gokul reomoved this because this publication is incomplete
           # - text: Using HBase to Store and Access Data
           #   href: hbase-getting-started/index.html
           #   id: hbase-getting-started
@@ -306,12 +290,12 @@ json:
       - text: COMPUTE
         href: compute-howto.html
         sub:
-          - text: Managing Applications on Apache YARN 
+          - text: Managing Applications on Apache YARN
             href: yarn-application-management/index.html
             id: yarn-application-management
             sub: yarn-application-management/navigation.json
 
-          - text: Managing and Allocating Cluster Resources using Apache YARN 
+          - text: Managing and Allocating Cluster Resources using Apache YARN
             href: yarn-allocate-resources/index.html
             id: yarn-allocate-resources
             sub: yarn-allocate-resources/navigation.json
@@ -506,6 +490,20 @@ json:
             id: monitoring-and-diagnostics
             sub: monitoring-and-diagnostics/navigation.json
 
+      - text: Managing ZooKeeper
+        href: managing-zookeeper/index.html
+        id: managing-zookeeper
+        sub: managing-zookeeper/navigation.json
+
+      - text: Authenticating ZooKeeper
+        href: zookeeper-authentication/index.html
+        id: zookeeper-authentication
+        sub: zookeeper-authentication/navigation.json
+
+      - text: Monitoring ZooKeeper
+        href: monitoring-zookeeper/index.html
+        id: monitoring-zookeeper
+        sub: monitoring-zookeeper/navigation.json
   - text: Troubleshooting
     id: troubleshooting
     sub:

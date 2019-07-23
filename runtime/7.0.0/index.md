@@ -19,9 +19,6 @@ sections:
       # - title: ports-reference
       #   url: ports-reference/index.html
 
-      - title: Apache YARN Application Management
-        url: yarn-overview/index.html
-
       - title: DATA STORAGE
         url: data-storage-concepts.html
 
@@ -46,6 +43,9 @@ sections:
       - title: CLUSTER MANAGEMENT
         url: cluster-management-concepts.html
 
+      - title: Apache YARN Application Management
+        url: yarn-overview/index.html
+
   - title: Planning
     name: planning
     books:
@@ -61,27 +61,18 @@ sections:
   - title: How To
     name: howto
     books:
-      - title: Managing ZooKeeper
-        url: managing-zookeeper/index.html
-
-      - title: Authenticating ZooKeeper
-        url: zookeeper-authentication/index.html
-
-      - title: Monitoring ZooKeeper
-        url: monitoring-zookeeper/index.html
-
       - title: DATA STORAGE
         url: data-storage-howto.html
 
       - title: COMPUTE
         url: compute-howto.html
-        
-      - title: Managing Applications on Apache YARN 
+
+      - title: Managing Applications on Apache YARN
         url: yarn-application-management/index.html
 
-       - title: Managing and Allocating Cluster Resources using Apache YARN 
+       - title: Managing and Allocating Cluster Resources using Apache YARN
          url: yarn-allocate-resources/index.html
-  
+
        - title: Using Cloud Credentials with Apache YARN
          url: yarn-using-cloud-credentials/index.html
 
@@ -96,7 +87,7 @@ sections:
 
        - title: Apache YARN High Availability
          url: yarn-high-availability/index.html
- 
+
        - title: Apache YARN Tuning
          url: yarn-tuning/index.html
 
@@ -118,6 +109,14 @@ sections:
       - title: CLUSTER MANAGEMENT
         url: cluster-management-howto.html
 
+      - title: Managing ZooKeeper
+        url: managing-zookeeper/index.html
+
+      - title: Authenticating ZooKeeper
+        url: zookeeper-authentication/index.html
+
+      - title: Monitoring ZooKeeper
+        url: monitoring-zookeeper/index.html
   - title: Troubleshooting
     name: troubleshooting
     books:
