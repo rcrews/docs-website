@@ -76,28 +76,28 @@ sections:
       - title: COMPUTE
         url: compute-howto.html
         
-      - title: Managing Applications on YARN 
+      - title: Managing Applications on Apache YARN 
         url: yarn-application-management/index.html
 
-       - title: Managing and Allocating Cluster Resources using YARN 
+       - title: Managing and Allocating Cluster Resources using Apache YARN 
          url: yarn-allocate-resources/index.html
   
-       - title: Using Cloud Credentials with YARN
+       - title: Using Cloud Credentials with Apache YARN
          url: yarn-using-cloud-credentials/index.html
 
-       - title: Monitoring Clusters and YARN Applications
+       - title: Monitoring Clusters and Apache YARN Applications
          url: yarn-monitoring-clusters-applications/index.html
 
-       - title: YARN Health Tests and Metrics
+       - title: Apache YARN Health Tests and Metrics
          url: yarn-health-test-and-metrics/index.html
 
-       - title: Configuring YARN Security
+       - title: Configuring Apache YARN Security
          url: yarn-security/index.html
 
-       - title: YARN High Availability
+       - title: Apache YARN High Availability
          url: yarn-high-availability/index.html
  
-       - title: YARN Tuning
+       - title: Apache YARN Tuning
          url: yarn-tuning/index.html
 
       - title: DATA ACCESS
