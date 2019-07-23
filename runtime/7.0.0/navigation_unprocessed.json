@@ -33,7 +33,7 @@ json:
       - text: COMPUTE
         href: compute-concepts.html
         sub:
-           - text: Apache YARN Application Management
+           - text: Apache YARN Overview
              href: yarn-overview/index.html
              id: yarn-overview
              sub: yarn-overview/navigation.json
