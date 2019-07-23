@@ -303,9 +303,9 @@ json:
             id: hbase-metrics
             sub: hbase-metrics/navigation.json
 
-      #- text: COMPUTE
-      #  href: compute-howto.html
-      #  sub:
+      - text: COMPUTE
+        href: compute-howto.html
+        sub:
           - text: Managing Applications on YARN 
             href: yarn-application-management/index.html
             id: yarn-application-management
@@ -330,6 +330,21 @@ json:
             href: yarn-health-test-and-metrics/index.html
             id: yarn-health-test-and-metrics
             sub: yarn-health-test-and-metrics/navigation.json
+
+          - text: Configuring YARN Security
+            href: yarn-security/index.html
+            id: yarn-security
+            sub: yarn-security/navigation.json
+
+          - text: YARN High Availability
+            href: yarn-high-availability/index.html
+            id: yarn-high-availability
+            sub: yarn-high-availability/navigation.json
+
+          - text: YARN Tuning
+            href: yarn-tuning/index.html
+            id: yarn-tuning
+            sub: yarn-tuning/navigation.json
 
       - text: DATA ACCESS
         href: data-access-howto.html
