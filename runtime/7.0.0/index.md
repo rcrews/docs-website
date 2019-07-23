@@ -19,8 +19,8 @@ sections:
       # - title: ports-reference
       #   url: ports-reference/index.html
 
-      - title: Apache YARN Data Management
-        url: yarn-data-management/index.html
+      - title: Apache YARN Application Management
+        url: yarn-overview/index.html
 
       - title: DATA STORAGE
         url: data-storage-concepts.html
@@ -75,6 +75,30 @@ sections:
 
       - title: COMPUTE
         url: compute-howto.html
+        
+      - title: Managing Applications on YARN 
+        url: yarn-application-management/index.html
+
+       - title: Managing and Allocating Cluster Resources using YARN 
+         url: yarn-allocate-resources/index.html
+  
+       - title: Using Cloud Credentials with YARN
+         url: yarn-using-cloud-credentials/index.html
+
+       - title: Monitoring Clusters and YARN Applications
+         url: yarn-monitoring-clusters-applications/index.html
+
+       - title: YARN Health Tests and Metrics
+         url: yarn-health-test-and-metrics/index.html
+
+       - title: Configuring YARN Security
+         url: yarn-security/index.html
+
+       - title: YARN High Availability
+         url: yarn-high-availability/index.html
+ 
+       - title: YARN Tuning
+         url: yarn-tuning/index.html
 
       - title: DATA ACCESS
         url: data-access-howto.html
