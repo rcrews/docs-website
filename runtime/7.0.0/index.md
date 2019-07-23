@@ -11,14 +11,6 @@ sections:
   - title: Concepts & Use Cases
     name: concepts
     books:
-      # Removed at Sairam's request, July 18
-      # - title: cluster-maintenance
-      #   url: cluster-maintenance/index.html
-
-      # Removed at Sairam's request, July 18
-      # - title: ports-reference
-      #   url: ports-reference/index.html
-
       - title: DATA STORAGE
         url: data-storage-concepts.html
 
@@ -43,8 +35,13 @@ sections:
       - title: CLUSTER MANAGEMENT
         url: cluster-management-concepts.html
 
-      - title: Apache YARN Application Management
-        url: yarn-overview/index.html
+      # Removed at Sairam's request, July 18
+      # - title: cluster-maintenance
+      #   url: cluster-maintenance/index.html
+
+      # Removed at Sairam's request, July 18
+      # - title: ports-reference
+      #   url: ports-reference/index.html
 
   - title: Planning
     name: planning
@@ -117,6 +114,7 @@ sections:
 
       - title: Monitoring ZooKeeper
         url: monitoring-zookeeper/index.html
+
   - title: Troubleshooting
     name: troubleshooting
     books:
