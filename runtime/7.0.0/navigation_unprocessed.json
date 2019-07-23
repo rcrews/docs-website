@@ -43,9 +43,9 @@ json:
             id: hbase-introduction
             sub: hbase-introduction/navigation.json
 
-      #- text: COMPUTE
-      #  href: compute-concepts.html
-      #  sub:
+      - text: COMPUTE
+        href: compute-concepts.html
+        sub:
            - text: Apache YARN Application Management
              href: yarn-overview/index.html
              id: yarn-overview
