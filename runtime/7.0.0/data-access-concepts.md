@@ -6,8 +6,7 @@ publications:
   - title: Apache Hive Overview
     url: hive-introduction/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Presents key features of Hive and Hive 3 architecture
 
   - title: Hue Introduction
     url: hue-introduction/index.html
