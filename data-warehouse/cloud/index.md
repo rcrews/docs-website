@@ -55,5 +55,5 @@ sections:
 ---
 Data Warehouse is a CDP service for self-service creation of independent data warehouses
 and data marts that autoscale up and down to meet your varying workload demands.
-Data Warehouse service provides isolated compute instances for each data warehouse/mart,
-automatic optimization, and with enables you to save costs while meeting SLAs.
+The Data Warehouse service provides isolated compute instances for each data warehouse/mart,
+automatic optimization, and enables you to save costs while meeting SLAs.
