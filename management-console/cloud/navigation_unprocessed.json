@@ -9,9 +9,13 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
-  # - text: Concepts & Use Cases
-  #   id: concepts
-  #   sub:
+ - text: Concepts & Use Cases
+   id: concepts
+   sub:
+      - text: Management Console Overview
+        href: overview/index.html
+        id: overview
+        sub: overview/navigation.json   
 
   # - text: Planning
   #   id: planning
@@ -23,6 +27,11 @@ json:
   - text: How To
     id: howto
     sub:
+      - text: Getting Started
+        href: getting-started/index.html
+        id: getting-started
+        sub: getting-started/navigation.json
+    
       - text: Creating a Credential on AWS
         href: credentials-aws/index.html
         id: credentials-aws
@@ -32,11 +41,31 @@ json:
         href: credentials-azure/index.html
         id: credentials-azure
         sub: credentials-azure/navigation.json
+        
+      - text: Environments
+        href: environments/index.html
+        id: environments
+        sub: environments/navigation.json        
 
       - text: Managing Users
         href: user-management/index.html
         id: user-management
         sub: user-management/navigation.json
+        
+      - text: Classic Clusters
+        href: classic-clusters/index.html
+        id: classic-clusters
+        sub: classic-clusters/navigation.json   
+        
+      - text: CLI
+        href: cli/index.html
+        id: cli
+        sub: cli/navigation.json   
+         
+      - text: SDK
+        href: sdk/index.html
+        id: sdk
+        sub: sdk/navigation.json                      
 
   - text: Troubleshooting
     id: troubleshooting

@@ -9,9 +9,11 @@ sections:
   #   name: releasenotes
   #   books:
 
-  # - title: Concepts & Use Cases
-  #   name: concepts
-  #   books:
+ - title: Concepts & Use Cases
+   name: concepts
+   books:
+      - title: Management Console Overview
+        url: overview/index.html
 
   # - title: Planning
   #   name: planning
@@ -24,14 +26,29 @@ sections:
   - title: How to
     name: howto
     books:
-      - title: Creating a Credential on AWS
+      - title: Getting Started
+        url: getting-started/index.html    
+    
+      - title: Credentials on AWS
         url: credentials-aws/index.html
 
-      - title: Creating a Credential on Azure
+      - title: Credentials on Azure
         url: credentials-azure/index.html
 
-      - title: Managing Users
+      - title: Environments
+        url: environments/index.html
+
+      - title: User Management
         url: user-management/index.html
+        
+      - title: Classic Clusters
+        url: classic-clusters/index.html       
+        
+      - title: CLI
+        url: cli/index.html
+        
+     - title: SDK
+       url: sdk/index.html
 
   - title: Troubleshooting
     name: troubleshooting
