@@ -32,12 +32,12 @@ json:
         id: getting-started
         sub: getting-started/navigation.json
 
-      - text: Credential for AWS
+      - text: Credentials for AWS
         href: credentials-aws/index.html
         id: credentials-aws
         sub: credentials-aws/navigation.json
 
-      - text: Credential for Azure
+      - text: Credentials for Azure
         href: credentials-azure/index.html
         id: credentials-azure
         sub: credentials-azure/navigation.json
@@ -47,7 +47,7 @@ json:
         id: environments
         sub: environments/navigation.json
 
-      - text: Managing Users
+      - text: User Management
         href: user-management/index.html
         id: user-management
         sub: user-management/navigation.json

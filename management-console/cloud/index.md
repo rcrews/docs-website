@@ -29,10 +29,10 @@ sections:
       - title: Getting Started
         url: getting-started/index.html
 
-      - title: Credential for AWS
+      - title: Credentials for AWS
         url: credentials-aws/index.html
 
-      - title: Credential for Azure
+      - title: Credentials for Azure
         url: credentials-azure/index.html
 
       - title: Environments
