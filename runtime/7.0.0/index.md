@@ -11,8 +11,8 @@ sections:
   - title: Concepts & Use Cases
     name: concepts
     books:
-      - title: DATA STORAGE
-        url: data-storage-concepts.html
+      - title: STORAGE
+        url: storage-concepts.html
 
       - title: COMPUTE
         url: compute-concepts.html
@@ -58,8 +58,8 @@ sections:
   - title: How To
     name: howto
     books:
-      - title: DATA STORAGE
-        url: data-storage-howto.html
+      - title: STORAGE
+        url: storage-howto.html
 
       - title: COMPUTE
         url: compute-howto.html
@@ -81,15 +81,6 @@ sections:
 
       - title: CLUSTER MANAGEMENT
         url: cluster-management-howto.html
-
-      - title: Managing ZooKeeper
-        url: managing-zookeeper/index.html
-
-      - title: Authenticating ZooKeeper
-        url: zookeeper-authentication/index.html
-
-      - title: Monitoring ZooKeeper
-        url: monitoring-zookeeper/index.html
 
   - title: Troubleshooting
     name: troubleshooting
