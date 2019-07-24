@@ -1,0 +1,11 @@
+---
+layout: json
+json:
+  text: Data Warehouse
+  versions:
+    cloud: /data-warehouse/cloud
+
+  # Match "/key/" in window.location, then use value URL
+  #pdfs:
+  #  none: /yet.pdf
+---

@@ -1,0 +1,51 @@
+---
+layout: json
+#- text: Concepts & Use Cases
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+json:
+  - text: Concepts & Use Cases
+    id: concepts
+    sub:
+      - text: Data Warehouse Overview
+        href: url-goes-here
+        # id: overview
+        # sub: overview/navigation.json
+
+  # - text: Planning
+  #   id: planning
+  #   sub:
+
+  # - text: Installation & Upgrade
+  #   id: installation
+  #   sub:
+
+  - text: How To
+    id: howto
+    sub:
+      - text: Using Data Warehouse
+        href: url-goes-here
+        # id: create-cluster-aws
+        # sub: create-cluster-aws/navigation.json
+
+  # - text: Troubleshooting
+  #   id: troubleshooting
+  #   sub:
+
+  # - text: Reference
+  #   id: reference
+  #   sub:
+
+  # - text: Release Notes
+  #   id: releasenotes
+  #   sub:
+
+  # - text: Learning & Training
+  #   id: learning
+  #   sub:
+---
