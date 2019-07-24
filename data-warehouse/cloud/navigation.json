@@ -13,9 +13,13 @@ json:
     id: concepts
     sub:
       - text: Data Warehouse Overview
-        href: url-goes-here
+        href: https://drive.google.com/open?id=1qhHJtsA5-40fm9Hg1dHD8W2WnnUsTgDxYMZdhvu_9KI
         # id: overview
-        # sub: overview/navigation.json
+        sub:
+          - text: Data Warehouse service overview
+            href: https://drive.google.com/open?id=1qhHJtsA5-40fm9Hg1dHD8W2WnnUsTgDxYMZdhvu_9KI
+          - text: AWS account requirements
+            href: https://drive.google.com/open?id=1GzV-Nm72VLhcZOM2hWw7oLe7Ha1tVlwWkeiTm38kwaA
 
   # - text: Planning
   #   id: planning
@@ -29,9 +33,21 @@ json:
     id: howto
     sub:
       - text: Using Data Warehouse
-        href: url-goes-here
+        href: https://drive.google.com/open?id=15PhYVXTVSbgh-DywQAPDiQ_LXVvBVzkR_87vFAFgcfY
         # id: create-cluster-aws
-        # sub: create-cluster-aws/navigation.json
+        sub:
+          - text: Moving on-premises workloads to the cloud
+            href: https://drive.google.com/open?id=15PhYVXTVSbgh-DywQAPDiQ_LXVvBVzkR_87vFAFgcfY
+          - text: Creating data warehouses
+            href: https://drive.google.com/open?id=1WTBjXGRF7--KGImP4xlKw5YvD_LFJIku_04cJDeFRr4
+          - text: Creating data marts
+            href: https://drive.google.com/open?id=1Bn3zbv40l8V3O1KbDGZmyWoSEJLk6bTaUQbjZmAMriA
+          - text: Setting autoscaling thresholds
+            href: https://drive.google.com/open?id=1Rb71k_BNcaLhbY9O277UidqvR8E4tOe49lgqI1gTyMo
+          - text: Integrating third-party tools with the Data Warehouse service
+            href: https://drive.google.com/open?id=16QfAX307mXsIalI9iqT0aRQcbNZQPoy6BKtiEpKZS2U
+          - text: Querying data
+            href: https://drive.google.com/open?id=1SVM3bW7VLoAUhiHLJ_K_iyn8zyPvw567HRFtxoNn90k
 
   # - text: Troubleshooting
   #   id: troubleshooting
