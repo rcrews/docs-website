@@ -1,4 +1,3 @@
----
 layout: product
 title: Cloudera Runtime
 version: 7.0.0
@@ -102,6 +101,9 @@ sections:
     books:
       - title: Knox Reference
         url: knox-reference/index.html
+
+      - title: Apache Impala Reference
+        url: impala-reference/index.html
 
       - title: Apache Hive Workload Management Commands
         url: workload-management/index.html

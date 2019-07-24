@@ -288,11 +288,6 @@ json:
             id: administering-hue
             sub: administering-hue/navigation.json
 
-          - text: Apache Impala Performance Tuning
-            href: impala-performance-tuning/index.html
-            id: impala-performance-tuning
-            sub: impala-performance-tuning/navigation.json
-
           # Removed at Kris's request
           # - text: Apahce Hive Performance Tuning
           #   href: hive-performance-tuning/index.html
@@ -485,6 +480,11 @@ json:
         href: knox-reference/index.html
         id: knox-reference/index.html
         sub: knox-reference/navigation.json
+
+      - text: Apach Impala Reference
+        href: impala-reference/index.html
+        id: impala-reference/index.html
+        sub: impala-reference/navigation.json
 
       - text: Apache Hive Workload Management Commands
         href: workload-management/index.html
