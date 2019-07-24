@@ -32,12 +32,12 @@ json:
         id: getting-started
         sub: getting-started/navigation.json
 
-      - text: Creating a Credential on AWS
+      - text: Credential for AWS
         href: credentials-aws/index.html
         id: credentials-aws
         sub: credentials-aws/navigation.json
 
-      - text: Creating a Credential on Azure
+      - text: Credential for Azure
         href: credentials-azure/index.html
         id: credentials-azure
         sub: credentials-azure/navigation.json
