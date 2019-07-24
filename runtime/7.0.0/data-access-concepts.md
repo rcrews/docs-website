@@ -13,11 +13,13 @@ publications:
     description: >-
           Provides an overview and key components of Apache Impala
 
-  - title: Hue Introduction
+  - title: Hue Overview
     url: hue-introduction/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+       Introduces Hue, which is a query editor that can be used
+       to submit and analyze SQL queries and design Oozie workflows.
+        
+
 ---
 Overview of Cloudera Runtime data access concepts goes here.... Sem odio
 nascetur nibh cubilia sapien rhoncus erat conubia, primis porttitor
