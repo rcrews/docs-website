@@ -8,74 +8,13 @@ publications:
     description: >-
       Presents key features of Hive and Hive 3 architecture
 
-  - title: Hue Introduction
-    url: hue-introduction/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
   - title: Apache Impala Overview
     url: impala-overview/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+          Provides an overview and key components of Apache Impala
 
-  - title: Apache Impala Client
-    url: impala-client/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Impala Monitoring
-    url: impala-monitoring/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Impala Performance
-    url: impala-performance/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Impala Resource Management
-    url: impala-resource/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Impala Scalability
-    url: impala-scalability/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Impala Metadata
-    url: impala-metadata/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Impala Security
-    url: impala-security/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Impala File Formats
-    url: impala-file-formats/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Impala Storage
-    url: impala-storage/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Impala Timeouts
-    url: impala-timeouts/index.html
+  - title: Hue Introduction
+    url: hue-introduction/index.html
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit

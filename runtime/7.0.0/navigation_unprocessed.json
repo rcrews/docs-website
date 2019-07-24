@@ -46,65 +46,15 @@ json:
             id: hive-introduction
             sub: hive-introduction/navigation.json
 
-          - text: Hue Introduction
-            href: hue-introduction/index.html
-            id: hue-introduction
-            sub: hue-introduction/navigation.json
-
           - text: Apache Impala Overview
             href: impala-overview/index.html
             id: impala-overview
             sub: impala-overview/navigation.json
 
-          - text: Apache Impala Client
-            href: impala-client/index.html
-            id: impala-client
-            sub: impala-client/navigation.json
-
-          - text: Apache Impala Monitoring
-            href: impala-monitoring/index.html
-            id: impala-monitoring
-            sub: impala-monitoring/navigation.json
-
-          - text: Apache Impala Performance
-            href: impala-performance/index.html
-            id: impala-performance
-            sub: impala-performance/navigation.json
-
-          - text: Apache Impala Resource Management
-            href: impala-resource/index.html
-            id: impala-resource
-            sub: impala-resource/navigation.json
-
-          - text: Apache Impala Scalability
-            href: impala-scalability/index.html
-            id: impala-scalability
-            sub: impala-scalability/navigation.json
-
-          - text: Apache Impala Metadata
-            href: impala-metadata/index.html
-            id: impala-metadata
-            sub: impala-metadata/navigation.json
-
-          - text: Apache Impala Security
-            href: impala-security/index.html
-            id: impala-security
-            sub: impala-security/navigation.json
-
-          - text: Apache Impala File Formats
-            href: impala-file-formats/index.html
-            id: impala-file-formats
-            sub: impala-file-formats/navigation.json
-
-          - text: Apache Impala Storage
-            href: impala-storage/index.html
-            id: impala-storage
-            sub: impala-storage/navigation.json
-
-          - text: Apache Impala Timeouts
-            href: impala-timeouts/index.html
-            id: impala-timeouts
-            sub: impala-timeouts/navigation.json
+          - text: Hue Introduction
+            href: hue-introduction/index.html
+            id: hue-introduction
+            sub: hue-introduction/navigation.json
 
       - text: DATA SCIENCE
         href: data-science-concepts.html
