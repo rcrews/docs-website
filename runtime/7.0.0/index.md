@@ -85,7 +85,7 @@ sections:
   - title: Troubleshooting
     name: troubleshooting
     books:
-      - title: Apache Impala Troubleshooting
+      - title: Troubleshooting Apache Impala
         url: impala-troubleshooting/index.html
 
       - title: Troubleshooting Hue
