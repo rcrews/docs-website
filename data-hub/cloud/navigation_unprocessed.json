@@ -56,16 +56,16 @@ json:
         href: image-catalogs/index.html
         id: image-catalogs
         sub: image-catalogs/navigation.json
-        
+
       - text: Cluster Definitions
         href: cluster-definitions/index.html
         id: cluster-definitions
         sub: cluster-definitions/navigation.json
-        
+
       - text: Blueprints
         href: blueprints/index.html
         id: blueprints
-        sub: iblueprints/navigation.json                
+        sub: blueprints/navigation.json
 
       - text: Recipes
         href: recipes/index.html
