@@ -64,11 +64,4 @@ sections:
   #   name: learning
   #   books:
 ---
-Nulla imperdiet mauris ornare arcu hendrerit purus mi etiam fermentum,
-vitae blandit bibendum luctus lectus sit consequat faucibus ac,
-malesuada tempus pharetra per curabitur dignissim dictum venenatis
-tellus, massa posuere integer condimentum egestas natoque mus finibus.
-Faucibus lectus ligula interdum dolor class pulvinar enim vivamus,
-mattis diam vehicula lacinia tristique mus at curae, etiam massa dui
-lobortis risus natoque finibus nullam, consequat montes conubia
-fringilla laoreet eleifend netus.
+Management Console is a CDP service for administering CDP: managing environments, credentials, users, and services.

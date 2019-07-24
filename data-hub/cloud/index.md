@@ -72,14 +72,4 @@ sections:
   #   name: learning
   #   books:
 ---
-
-Cursus dignissim id aliquam platea etiam ornare maecenas enim, fringilla
-hendrerit aliquet tellus mattis sed suscipit vulputate vel, eros odio
-hac magnis ipsum lobortis pulvinar libero imperdiet, leo habitant
-parturient sagittis sociosqu fames faucibus. Laoreet lacinia faucibus
-magna morbi accumsan pulvinar pharetra auctor, volutpat lectus risus
-nunc tempus maecenas placerat egestas, in erat per molestie arcu litora
-semper eros, sem euismod eget metus donec quis enim. Purus bibendum
-congue enim rhoncus massa lacus maecenas sem, vitae ex eget luctus
-torquent donec accumsan diam posuere, sed a justo condimentum dictumst
-egestas per ultrices mollis, augue lectus magnis euismod ut ante risus.
+Data Hub is a CDP service for launching and managing workload clusters powered by Cloudera Runtime. Data Hub provides a set of cluster definitions that allow you to quickly provision and access workload clusters for prescriptive use cases, and allows you to define custom cluster configurations.
