@@ -9,9 +9,9 @@ sections:
   #   name: releasenotes
   #   books:
 
- - title: Concepts & Use Cases
-   name: concepts
-   books:
+  - title: Concepts & Use Cases
+    name: concepts
+    books:
       - title: Management Console Overview
         url: overview/index.html
 
@@ -27,8 +27,8 @@ sections:
     name: howto
     books:
       - title: Getting Started
-        url: getting-started/index.html    
-    
+        url: getting-started/index.html
+
       - title: Credentials on AWS
         url: credentials-aws/index.html
 
@@ -40,15 +40,15 @@ sections:
 
       - title: User Management
         url: user-management/index.html
-        
+
       - title: Classic Clusters
-        url: classic-clusters/index.html       
-        
+        url: classic-clusters/index.html
+
       - title: CLI
         url: cli/index.html
-        
-     - title: SDK
-       url: sdk/index.html
+
+      - title: SDK
+        url: sdk/index.html
 
   - title: Troubleshooting
     name: troubleshooting

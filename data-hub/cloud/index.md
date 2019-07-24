@@ -9,11 +9,11 @@ sections:
   #   name: releasenotes
   #   books:
 
- - title: Concepts & Use Cases
-   name: concepts
-   books:
-     - title: Data Hub Overview
-       url: overview/index.html   
+  - title: Concepts & Use Cases
+    name: concepts
+    books:
+      - title: Data Hub Overview
+        url: overview/index.html
 
   - title: Planning
     name: planning
@@ -45,9 +45,9 @@ sections:
 
       - title: Cluster Definitions
         url: cluster-definitions/index.html
-        
+
       - title: Blueprints
-        url: blueprints/index.html        
+        url: blueprints/index.html
 
       - title: Recipes
         url: recipes/index.html
