@@ -33,12 +33,6 @@ publications:
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
 
-  - title: Apache Impala Performance Tuning
-    url: impala-performance-tuning/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
   # Removed at Kris's request
   # - title: Apache Hive Performance Tuning
   #   url: hive-performance-tuning/index.html
@@ -61,7 +55,7 @@ publications:
   - title: Managing Apache Hive Workloads
     url: managing-a-hive-workload/index.html
     description: >-
-      Summarizes and describes how to improve parallel query execution and share queries in a cluster 
+      Summarizes and describes how to improve parallel query execution and share queries in a cluster
       that supports low-latency analytical processing (LLAP)
 
   - title: Configuring Apache Hive
@@ -95,9 +89,15 @@ publications:
   # Removed at Kris's request
   # - title: Using the Cost-based Optimizer in Hive
   #   url: using-cbo-in-hive/index.html
+
+  - title: Managing Apache Impala
+    url: impala-manage/index.html
+    description: >-
+      Presents the task topics for configuring and managing Impala
+
 ---
 Cloudera Runtime includes Apache Hive 3, Apache Impala, and Hue. Hive and Impala provide access
-to data stored in the Hive metastore database. Hive 3 addresses enterprise data warehouse 
-demands for transactional data in the ORC file format. Impala performs high-performance, 
-low-latency SQL queries on data in Parquet and other formats. Hue, a web-based interactive 
+to data stored in the Hive metastore database. Hive 3 addresses enterprise data warehouse
+demands for transactional data in the ORC file format. Impala performs high-performance,
+low-latency SQL queries on data in Parquet and other formats. Hue, a web-based interactive
 query editor, interacts with data warehouses, including the Hive metastore.

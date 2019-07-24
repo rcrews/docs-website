@@ -350,6 +350,11 @@ json:
           #   id: using-cbo-in-hive
           #   sub: using-cbo-in-hive/navigation.json
 
+          - text: Managing Apache Impala
+            href: impala-manage/index.html
+            id: impala-manage
+            sub: impala-manage/navigation.json
+
       - text: DATA SCIENCE
         href: data-science-howto.html
         sub:
