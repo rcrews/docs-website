@@ -126,7 +126,7 @@ json:
       - text: SECURITY
         href: security-concepts.html
         sub:
-          - text: Security Overview
+          - text: CDP Security Overview
             href: cdp-security-overview/index.html
             id: cdp-security-overview/index.html
             sub: cdp-security-overview/navigation.json
