@@ -9,13 +9,21 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
-  # - text: Concepts & Use Cases
-  #   id: concepts
-  #   sub:
+  - text: Concepts & Use Cases
+    id: concepts
+    sub:
+      - text: Data Hub Overview
+        href: overview/index.html
+        id: overview
+        sub: overview/navigation.json
 
-  # - text: Planning
-  #   id: planning
-  #   sub:
+  - text: Planning
+    id: planning
+    sub:
+      - text: Cluster Planning
+        href: cluster-planning/index.html
+        id: cluster-planning
+        sub: cluster-planning/navigation.json
 
   # - text: Installation & Upgrade
   #   id: installation
@@ -48,6 +56,16 @@ json:
         href: image-catalogs/index.html
         id: image-catalogs
         sub: image-catalogs/navigation.json
+        
+      - text: Cluster Definitions
+        href: cluster-definitions/index.html
+        id: cluster-definitions
+        sub: cluster-definitions/navigation.json
+        
+      - text: Blueprints
+        href: blueprints/index.html
+        id: blueprints
+        sub: iblueprints/navigation.json                
 
       - text: Recipes
         href: recipes/index.html
