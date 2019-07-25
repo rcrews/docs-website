@@ -12,26 +12,26 @@ publications:
   - title: Administering Hue
     url: administering-hue/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Describes how to configure Hue, customize its web UI, and to
+      enable integration with Apache Atlas.
 
-  - title: Securing Hue
-    url: securing-hue/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+#  - title: Securing Hue
+#    url: securing-hue/index.html
+#    description: >-
+#      publication description ante nec fusce varius mattis facilisis
+#      consectetur sit
 
-  - title: Tuning Hue
-    url: tuning-hue/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+#  - title: Tuning Hue
+#    url: tuning-hue/index.html
+#    description: >-
+#      publication description ante nec fusce varius mattis facilisis
+#      consectetur sit
 
   - title: Using Hue
     url: using-hue/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Describes how to use Hue to query Apache Impala data sets and
+      how to use it to browse metadata in Apache Atlas.
 
   # Removed at Kris's request
   # - title: Apache Hive Performance Tuning
@@ -96,8 +96,9 @@ publications:
       Presents the task topics for configuring and managing Impala
 
 ---
-Cloudera Runtime includes Apache Hive 3, Apache Impala, and Hue. Hive and Impala provide access
+Cloudera Data Platform Runtime data access how-to's provide information about how to use
+Apache Impala, Apache Hive 3, and Hue to access your data sets. Hive and Impala provide access
 to data stored in the Hive metastore database. Hive 3 addresses enterprise data warehouse
 demands for transactional data in the ORC file format. Impala performs high-performance,
-low-latency SQL queries on data in Parquet and other formats. Hue, a web-based interactive
-query editor, interacts with data warehouses, including the Hive metastore.
+low-latency SQL queries on data in Parquet and other formats. Hue is a web-based interactive
+query editor that can also be used to create Oozie workflows.
