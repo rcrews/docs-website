@@ -67,7 +67,7 @@ sections:
   - title: Learning & Training
     name: learning
     books:
-      - title: Getting Started with the Management Console
+      - title: Getting Started with Management Console
         url: getting-started-tutorial/index.html
 
 ---
