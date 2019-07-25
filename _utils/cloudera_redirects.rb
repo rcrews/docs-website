@@ -1,26 +1,34 @@
 #!/usr/env ruby -w
 # frozen_string_literal: true
 
+# Create client-side redirects for www.cloudera destinations referenced
+# from (legacy) cloudera documentation. Whenever a link starts with a
+# slash (under the expection the URL referenced a resource on the
+# www.cloudera.com site) we can redirect to the equivalent
+# www.cloudera.com resource.
+
 require 'erb'
 require 'fileutils'
 
-template = '<!DOCTYPE html>
-  <html lang="en">
-  <head>
-  <meta charset="UTF-8">
-  <title>Moved</title>
-  <meta http-equiv="refresh" content="0; URL=<%= @redirect %>">
-  </head>
-  <body>
-  <p></p>
-  </body>
-  </html>
-'.gsub(/^  /, '')
+template = '<meta http-equiv="refresh" content="0; URL=<%= @redirect %>">'
+# template = '<!DOCTYPE html>
+#   <html lang="en">
+#   <head>
+#   <meta charset="UTF-8">
+#   <title>Moved</title>
+#   <meta http-equiv="refresh" content="0; URL=<%= @redirect %>">
+#   </head>
+#   <body>
+#   <p></p>
+#   </body>
+#   </html>
+# '.gsub(/^  /, '')
 
 # Remember, the following do NOT take the same pattern redirect as the
 # others:
-#   index.html
-#   documentation.html
+#   index.html (new docs homepage)
+#   documentation.html (/documentation/index.html)
+#   downloads.html.html (/downloads.html)
 # Keep them out of the list below.
 redirects = %w[
   about.html
@@ -283,7 +291,6 @@ redirects = %w[
   developers/get-started-with-hadoop-tutorial.html
   developers/hadoop-ecosystem-books.html
   downloads.html
-  downloads.html.html
   downloads/cdf.html
   downloads/cdf/config.html
   downloads/cdf/csp-trial.html

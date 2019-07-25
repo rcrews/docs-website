@@ -8,15 +8,18 @@ publications:
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
-      
+
   - title: Apache Ranger Auditing
     url: security-ranger-auditing/index.html
     description: >-
-      Apache Ranger provides access auditing and reporting for CDP services. 
+      Apache Ranger provides access auditing and reporting for CDP
+      services.
 
   - title: Apache Ranger Authorization
     url: security-ranger-authorization/index.html
     description: >-
-      Apache Ranger provides fine-grained access control for CDP services.       
+      Apache Ranger provides fine-grained access control for CDP
+      services.
 ---
-Cloudera Data Platform security components enable you to control access to CDP services, and also provide access auditing and reporting. 
+Cloudera Data Platform security components enable you to control access
+to CDP services, and also provide access auditing and reporting.

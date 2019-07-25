@@ -6,7 +6,7 @@ publications:
   - title: CDP Security Overview
     url: cdp-security-overview/index.html
     description: >-
-      A brief introduction to CDP security components, architecture, and terminology. 
-
+      A brief introduction to CDP security components, architecture, and
+      terminology.
 ---
 Cloudera Data Platform Runtime security concepts.
