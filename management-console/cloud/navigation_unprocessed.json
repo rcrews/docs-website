@@ -20,6 +20,10 @@ json:
   - text: Planning
     id: planning
     sub:
+      - text: AWS Requirements
+        href: requirements-aws/index.html
+        id: requirements-aws
+        sub: requirements-aws/navigation.json
 
   # - text: Installation & Upgrade
   #   id: installation
@@ -90,4 +94,8 @@ json:
   - text: Learning & Training
     id: learning
     sub:
+      - text: Getting Started with the Management Console
+        href: getting-started-tutorial/index.html
+        id: getting-started-tutorial
+        sub: getting-started-tutorial/navigation.json
 ---

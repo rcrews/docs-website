@@ -20,6 +20,8 @@ sections:
   - title: Planning
     name: planning
     books:
+      - title: AWS Requirements
+        url: requirements-aws/index.html
 
   # - title: Installation & Upgrade
   #   name: installation
@@ -65,6 +67,8 @@ sections:
   - title: Learning & Training
     name: learning
     books:
+      - title: Getting Started with the Management Console
+        url: getting-started-tutorial/index.html
 
 ---
 Management Console is a CDP service for administering CDP. As a CDP administrator, you can use it for managing environments, data lakes, environment resources, and users across all CDP services.
