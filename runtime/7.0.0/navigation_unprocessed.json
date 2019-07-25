@@ -15,15 +15,15 @@ json:
       - text: DATA STORAGE
         href: data-storage-concepts.html
         sub:
-          - text: Apache Kudu Design
-            href: kudu-design/index.html
-            id: kudu-design
-            sub: kudu-design/navigation.json
-
           - text: Apache Kudu Overview
             href: kudu-overview/index.html
             id: kudu-overview
             sub: kudu-overview/navigation.json
+
+          - text: Apache Kudu Design
+            href: kudu-design/index.html
+            id: kudu-design
+            sub: kudu-design/navigation.json
 
           - text: Apache HBase Introduction
             href: hbase-introduction/index.html

@@ -3,14 +3,14 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Data Storage
 publications:
-  - title: Apache Kudu Design
-    url: kudu-design/index.html
+  - title: Apache Kudu Overview
+    url: kudu-overview/index.html
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
 
-  - title: Apache Kudu Overview
-    url: kudu-overview/index.html
+  - title: Apache Kudu Design
+    url: kudu-design/index.html
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
