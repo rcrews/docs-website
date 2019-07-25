@@ -3,7 +3,7 @@
 
 # Create client-side redirects for www.cloudera destinations referenced
 # from (legacy) cloudera documentation. Whenever a link starts with a
-# slash (under the expection the URL referenced a resource on the
+# slash (under the expection the URL references a resource on the
 # www.cloudera.com site) we can redirect to the equivalent
 # www.cloudera.com resource.
 
