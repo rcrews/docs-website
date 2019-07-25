@@ -37,10 +37,10 @@ json:
         id: credentials-aws
         sub: credentials-aws/navigation.json
 
-      - text: Credentials for Azure
-        href: credentials-azure/index.html
-        id: credentials-azure
-        sub: credentials-azure/navigation.json
+      # - text: Credentials for Azure
+      #   href: credentials-azure/index.html
+      #   id: credentials-azure
+      #   sub: credentials-azure/navigation.json
 
       - text: Environments
         href: environments/index.html

@@ -32,8 +32,8 @@ sections:
       - title: Credentials for AWS
         url: credentials-aws/index.html
 
-      - title: Credentials for Azure
-        url: credentials-azure/index.html
+      # - title: Credentials for Azure
+      #   url: credentials-azure/index.html
 
       - title: Environments
         url: environments/index.html

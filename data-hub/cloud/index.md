@@ -31,8 +31,8 @@ sections:
       - title: Creating a Cluster on AWS
         url: create-cluster-aws/index.html
 
-      - title: Creating a Cluster on Azure
-        url: create-cluster-azure/index.html
+      # - title: Creating a Cluster on Azure
+      #   url: create-cluster-azure/index.html
 
       - title: Accessing Clusters
         url: access-clusters/index.html
