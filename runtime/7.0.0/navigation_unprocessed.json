@@ -84,10 +84,10 @@ json:
       - text: GOVERNANCE
         href: governance-concepts.html
         sub:
-          - text: Controlling Data Access Using Metadata Tags
-            href: atlas-access-control-using-tags/index.html
-            id: atlas-access-control-using-tags
-            sub: atlas-access-control-using-tags/navigation.json
+          - text: Governance Overview & Use Cases
+            href: cdp-governance-overview/index.html
+            id: cdp-governance-overview
+            sub: cdp-governance-overview/navigation.json
 
       - text: CLUSTER MANAGEMENT
         href: cluster-management-concepts.html

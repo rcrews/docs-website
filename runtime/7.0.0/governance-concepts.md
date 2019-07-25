@@ -3,10 +3,10 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Governance
 publications:
-  - title: Controlling Data Access Using Metadata Tags
-    url: atlas-access-control-using-tags/index.html
+  - title: Gvernance Concepts & Use Cases
+    url: cdp-governance-overview
     description: >-
-      How to use Apache Atlas to search for, classify, and manage data.
+      Concepts for collecting, creating, and using metadata in Apache Atlas.
 ---
 Apache Atlas provides data governance capabilities for Hadoop. Apache
 Atlas serves as a common metadata store that is designed to exchange
