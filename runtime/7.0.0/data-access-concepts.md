@@ -11,17 +11,14 @@ publications:
   - title: Apache Impala Overview
     url: impala-overview/index.html
     description: >-
-          Provides an overview and key components of Apache Impala
+      Provides an overview and key components of Apache Impala
 
   - title: Hue Overview
     url: hue-introduction/index.html
     description: >-
-       Introduces Hue, which is a query editor that can be used
-       to submit and analyze SQL queries and design Oozie workflows.
-        
-
+      Introduces Hue, which is a query editor that can be used to submit
+      and analyze SQL queries and design Oozie workflows.
 ---
 Cloudera Data Platform Runtime data access concepts provide overview
-information about Apache Impala, Apache Hive, and Hue. These
-components provide SQL interfaces that enable you to access
-your data sets.
+information about Apache Impala, Apache Hive, and Hue. These components
+provide SQL interfaces that enable you to access your data sets.

@@ -44,7 +44,6 @@ publications:
     description: >-
       Publication description sagittis mus tempor sollicitudin ridiculus
       nascetur in enim
-
 ---
 Overview of Cloudera Runtime compute how-tos goes here.... Hendrerit ac
 velit mauris viverra mattis nisi dolor litora ullamcorper, placerat

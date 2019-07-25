@@ -8,7 +8,6 @@ publications:
     description: >-
       Publication description orci sed nunc diam himenaeos tellus
       ultrices porttitor
-
 ---
 Overview of Cloudera Runtime compute concepts goes here.... Hendrerit ac
 velit mauris viverra mattis nisi dolor litora ullamcorper, placerat
