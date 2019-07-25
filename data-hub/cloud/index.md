@@ -5,9 +5,9 @@ version: cloud
 base-path: /data-hub/cloud/
 
 sections:
-  # - title: Release Notes
-  #   name: releasenotes
-  #   books:
+  - title: Release Notes
+    name: releasenotes
+    books:
 
   - title: Concepts & Use Cases
     name: concepts
@@ -68,8 +68,8 @@ sections:
   #   name: reference
   #   books:
 
-  # - title: Learning & Training
-  #   name: learning
-  #   books:
+  - title: Learning & Training
+    name: learning
+    books:
 ---
 Data Hub is a CDP service for launching and managing workload clusters powered by Cloudera Runtime. Data Hub provides a set of cluster definitions that allow you to quickly provision and access workload clusters for prescriptive use cases, and allows you to define custom cluster configurations.

@@ -94,11 +94,11 @@ json:
   #   id: reference
   #   sub:
 
-  # - text: Release Notes
-  #   id: releasenotes
-  #   sub:
+  - text: Release Notes
+    id: releasenotes
+    sub:
 
-  # - text: Learning & Training
-  #   id: learning
-  #   sub:
+  - text: Learning & Training
+    id: learning
+    sub:
 ---
