@@ -17,6 +17,11 @@ template = '<!DOCTYPE html>
   </html>
 '.gsub(/^  /, '')
 
+# Remember, the following do NOT take the same pattern redirect as the
+# others:
+#   index.html
+#   documentation.html
+# Keep them out of the list below.
 redirects = %w[
   about.html
   about/careers.html
@@ -187,13 +192,107 @@ redirects = %w[
   about/training/virtual-classroom.html
   careers.html
   contact-sales.html
-  documentation.html
+  content/dam/www/marketing/resources/analyst-reports/big-data-cybersecurity-analytics-research-report.pdf.landing.html
+  content/dam/www/marketing/resources/analyst-reports/DBTA_AprMay2018_BP-evolution-of-analytics.pdf.landing.html
+  content/dam/www/marketing/resources/analyst-reports/deep-learning-forrester.pdf.landing.html
+  content/dam/www/marketing/resources/analyst-reports/gartner-roadmap-for-it-to-help-drive-machine-learning.landing.html
+  content/dam/www/marketing/resources/analyst-reports/tdwi_checklist_2018_Cloudera_Modernizing_Data_Warehouse_Infrastructure.pdf.landing.html
+  content/dam/www/marketing/resources/analyst-reports/tdwi-checklist-report-emerging-design-patterns-for-data-management.pdf.landing.html
+  content/dam/www/marketing/resources/case-studies/Cloudera_Drawbridge_Case_Study_102_A4.pdf.landing.html
+  content/dam/www/marketing/resources/case-studies/lufthansa-customer-success-story.pdf.landing.html
+  content/dam/www/marketing/resources/datasheets/cloudera-data-science-workbench-introduction.pdf.landing.html
+  content/dam/www/marketing/resources/datasheets/cloudera-enterprise-datasheet.pdf.landing.html
+  content/dam/www/marketing/resources/datasheets/cloudera-navigator-datasheet.pdf.landing.html
+  content/dam/www/marketing/resources/datasheets/cloudera-security-datasheet.pdf.landing.html
+  content/dam/www/marketing/resources/datasheets/gov-proactive-and-predictive-support-overview.pdf.landing.html
+  content/dam/www/marketing/resources/datasheets/gov-support-datasheet.pdf.landing.html
+  content/dam/www/marketing/resources/demos/cloudera-data-science-workbench-demo.png.landing.html
+  content/dam/www/marketing/resources/emea/en/webinars/realism-and-real-time-in-cyber-security-machine-learning.png.landing.html
+  content/dam/www/marketing/resources/emea/es/solution-briefs/estudio-de-la-madurez-en-el-uso-de-la-analitica-avanzada-en-el-sector-asegurador.pdf.landing.html
+  content/dam/www/marketing/resources/solution-briefs/cloudera-and-tableau-enable-real-time-business-intelligence.pdf.landing.html
+  content/dam/www/marketing/resources/solution-briefs/customer-360-powered-by-zero2hero.pdf.landing.html
+  content/dam/www/marketing/resources/solution-briefs/seeing-information-more-clearly-with-enterprise-data-cloud-analytics.pdf.landing.html
+  content/dam/www/marketing/resources/solution-briefs/zwoox-data-ingestion-made-easy.pdf.landing.html
+  content/dam/www/marketing/resources/videos/modernizing-bi-and-analytics.landing.html
+  content/dam/www/marketing/resources/webinars/Big-Data-Fundamentals-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/Big-Data-Fundamentals-recorded-webinar1.png.landing.html
+  content/dam/www/marketing/resources/webinars/cdsw-office-hours-series-part1.png.landing.html
+  content/dam/www/marketing/resources/webinars/cdsw-office-hours-series-part2.png.landing.html
+  content/dam/www/marketing/resources/webinars/cloud-computing-in-retail-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/Cloudera-Data-Science-Workbench-sparklyr-implyr-and-More-dplyr-Interfaces-to-Large-scale-Data-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/cloudera-fast-forward-labs-accelerate-machine-learning-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/cloudera-fast-forward-labs-building-a-better-recommendation-system-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/cloudera-sdx-consistent-security-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/clouderas-new-cloud-native-platform.png.landing.html
+  content/dam/www/marketing/resources/webinars/Consolidate-your-data-marts-for-fast-flexible-analytics-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/data_driven_enterprises_run_the_cloudera_modern_data_warehouse.png.landing.html
+  content/dam/www/marketing/resources/webinars/data_in_motion_tech_launch_showcase.png.landing.html
+  content/dam/www/marketing/resources/webinars/data-driven-transformation-for-telcos.png.landing.html
+  content/dam/www/marketing/resources/webinars/dbta-edge-management-gaining-value-from-iot.png.landing.html
+  content/dam/www/marketing/resources/webinars/deep-learning-with-cloudera-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/Demystifying-ML-&-AI-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/doing-a-180-on-customer-360-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/experience-the-first-hybrid-multi-cloud-data-warehouse-on-cdp.png.landing.html
+  content/dam/www/marketing/resources/webinars/extending-cloudera-sdx-beyond-the-platform-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/federated-learning-ml-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/harnessing-the-cloud-for-big-data-insights-emea.png.landing.html
+  content/dam/www/marketing/resources/webinars/hbr-cybersecurity-for-the-c-suite.png.landing.html
+  content/dam/www/marketing/resources/webinars/hive-impala-and-spark-oh-my-sql-on-Hadoop-in-cloudera-5-5.png.landing.html
+  content/dam/www/marketing/resources/webinars/how_sdi_modernized_supply_chain_data.png.landing.html
+  content/dam/www/marketing/resources/webinars/impala-unlocks-interactive-bi-on-hadoop-slide-deck.png.landing.html
+  content/dam/www/marketing/resources/webinars/industrialize-ai-with-enterprise-scale-machine-learning-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/industrialize-ai-with-enterprise-scale-machine-learning-recorded-webinar1.png.landing.html
+  content/dam/www/marketing/resources/webinars/information-management-atscale-gsk-toyota-succeed-with-bi-on-the-data-lake.landing.html
+  content/dam/www/marketing/resources/webinars/introducing-cdsw-1.6-an-new-ml-services.png.landing.html
+  content/dam/www/marketing/resources/webinars/introducing-cdsw-for-hdp.png.landing.html
+  content/dam/www/marketing/resources/webinars/introducing-cloudera-dataflow.png.landing.html
+  content/dam/www/marketing/resources/webinars/kafka-power-chat-challenges-in-streaming-architectures.png.landing.html
+  content/dam/www/marketing/resources/webinars/leveraging-the-cloud-for-analytics-and-ml.png.landing.html
+  content/dam/www/marketing/resources/webinars/leveraging-the-cloud-for-big-data-analytics-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/leveraging-the-cloud-for-precision-medicine-and-more.png.landing.html
+  content/dam/www/marketing/resources/webinars/live-cloudera-cybersecurity-solution-demo.png.landing.html
+  content/dam/www/marketing/resources/webinars/Machine-Learning-Models-From-Research-to-Production-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/Making-Self-Service-BI-a-Reality-in-the-Enterprise-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/mit-sloan-webinar-five-strategies-for-getting-the-most-from-ai.landing.html
+  content/dam/www/marketing/resources/webinars/modern-data-strategy-for-regional-and-mid-size-banks-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/modern-data-warehousing-fundamentals-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/SDX-GDPR-webinar.jpg.landing.html
+  content/dam/www/marketing/resources/webinars/shortening-the-sales-cycle-with-a-modern-data-warehouse.png.landing.html
+  content/dam/www/marketing/resources/webinars/simplify-your-response-to-gdpr-webinar.png.landing.html
+  content/dam/www/marketing/resources/webinars/speed-flexibility-intelligence-beyond-the-traditional-data-warehouse.png.landing.html
+  content/dam/www/marketing/resources/webinars/supercharge-splunk-with-cloudera.png.landing.html
+  content/dam/www/marketing/resources/webinars/the-future-of-data-warehousing--etl-will-never-be-the-same.png.landing.html
+  content/dam/www/marketing/resources/webinars/things-we-bet-you-didnt-know-your-cloudera-data-warehouse-can-do.png.landing.html
+  content/dam/www/marketing/resources/webinars/video--hadoop-security-iii---protecting-data-at-rest-and-in-moti.png.landing.html
+  content/dam/www/marketing/resources/webinars/video--hadoop-security-iv---visibility-through-a-single-end-to-e.png.landing.html
+  content/dam/www/marketing/resources/webinars/Whats-New-in-Cloudera-Enterprise-6.0-The-Inside-Scoop-recorded-webinar.png.landing.html
+  content/dam/www/marketing/resources/whitepapers/12-requirements-for-a-modern-data-architecture-in-a-hybrid-cloud-world.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/apache-impala-incubating-analytic-database-for-apache-hadoop-technical-ebook.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/Cloudera_Deep_Learning.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/cloudera-enterprise-whitepaper.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/cloudera-gdpr-whitepaper.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/cloudera-lowering-business-risk-with-data.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/cybersecurity-sourcebook-2017.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/five-steps-for-aligning-data-and-hybrid-cloud-architectures.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/idg-building-a-data-driven-enterprise.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/modern-data-platform-for-cloud-cloudera-whitepaper.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/operational-database-whitepaper.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/power-your-business-transformation-with-edc.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/Qlik_Cloudera_BigData_eBook_020818.pdf.landing.html
+  content/dam/www/marketing/resources/whitepapers/why-open-source-matters.pdf.landing.html
+  developers/get-started-with-hadoop-tutorial.html
+  developers/hadoop-ecosystem-books.html
   downloads.html
+  downloads.html.html
   downloads/cdf.html
   downloads/cdf/config.html
   downloads/cdf/csp-trial.html
   downloads/cdf/csp.html
+  downloads/cdh/6-2-0.html
+  downloads/connectors/hive/jdbc/2-5-15.html
+  downloads/connectors/impala/jdbc/2-5-5.html
   downloads/director.html
+  downloads/director/1-5-2.html
   downloads/director/2-5-0.html
   downloads/director/2-5-1.html
   downloads/director/2-6-0.html
@@ -248,6 +347,18 @@ redirects = %w[
   downloads/manager/6-1-0.html
   downloads/manager/6-1-1.html
   downloads/manager/6-2-0.html
+  downloads/navigator/encrypt/6-2-0.html
+  downloads/navigator/key-hsm/6-1-0.html
+  downloads/navigator/key-trustee-kms/6-2-0.html
+  downloads/navigator/key-trustee-server/5-10-0.html
+  downloads/navigator/key-trustee-server/5-11-0.html
+  downloads/navigator/key-trustee-server/5-12-0.html
+  downloads/navigator/key-trustee-server/5-13-0.html
+  downloads/navigator/key-trustee-server/5-14-0.html
+  downloads/navigator/key-trustee-server/5-7-0.html
+  downloads/navigator/key-trustee-server/5-8-0.html
+  downloads/navigator/key-trustee-server/6-0-0.html
+  downloads/navigator/key-trustee-server/6-1-0.html
   downloads/quickstart_vms.html
   downloads/quickstart_vms/5-10.html
   downloads/quickstart_vms/5-12.html
@@ -274,15 +385,18 @@ redirects = %w[
   products/fast-forward-labs-research.html
   products/fast-forward-labs-research/fast-forward-labs-research-reports.html
   products/fast-forward-labs-research/latest-research.html
+  products/open-source/apache-hadoop/impala.html
   products/operational-db.html
   products/operational-db/operational-database.html
   products/pricing.html
   products/pricing/product-features.html
+  products/product-components/cloudera-navigator.html
   products/sdx.html
   products/workload-xm.html
   resources.html
   solutions.html
   solutions/customer-insights.html
+  solutions/cybersecurity.html
   solutions/gallery.html
   solutions/gallery/accenture-cyber-intelligence-platform.html
   solutions/gallery/accenture-insights-platform.html
