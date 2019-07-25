@@ -1,4 +1,19 @@
 ---
+- s: documentation.html
+  d: /documentation/index.html
+- s: downloads.html.html
+  d: /downloads.html
+- s: documentation/enterprise/upgrade.html
+  d: /documentation/enterprise/upgrade/topics/ug_overview.html
+
+# From here to the end, just redirect to the equivalent path on
+# www.cloudera.com
+- s: about-cloudera.html
+  d: https://www.cloudera.com/about-cloudera.html
+- s: about-cloudera/careers.html
+  d: https://www.cloudera.com/about-cloudera/careers.html
+- s: about-cloudera/press-center.html
+  d: https://www.cloudera.com/about-cloudera/press-center.html
 - s: about.html
   d: https://www.cloudera.com/about.html
 - s: about/careers.html
@@ -333,10 +348,30 @@
   d: https://www.cloudera.com/about/training/training-partners.html
 - s: about/training/virtual-classroom.html
   d: https://www.cloudera.com/about/training/virtual-classroom.html
+- s: campaign/forrester-now-tech-iot-data-management.html
+  d: https://www.cloudera.com/campaign/forrester-now-tech-iot-data-management.html
+- s: campaign/forrester-wave-hark-cloud-hadoop-spark.html
+  d: https://www.cloudera.com/campaign/forrester-wave-hark-cloud-hadoop-spark.html
+- s: campaign/gartner-multicloud-intercloud-data-management.html
+  d: https://www.cloudera.com/campaign/gartner-multicloud-intercloud-data-management.html
+- s: campaign/hybrid-cloud-report-451.html
+  d: https://www.cloudera.com/campaign/hybrid-cloud-report-451.html
+- s: campaign/tdwi-pulse-developing-data-strategy-for-iot.html
+  d: https://www.cloudera.com/campaign/tdwi-pulse-developing-data-strategy-for-iot.html
 - s: careers.html
   d: https://www.cloudera.com/careers.html
 - s: contact-sales.html
   d: https://www.cloudera.com/contact-sales.html
+- s: contact-sales/thank-you.html
+  d: https://www.cloudera.com/contact-sales/thank-you.html
+- s: contact-us.html
+  d: https://www.cloudera.com/contact-us.html
+- s: content/cloudera-content/cloudera-docs/CDH5/latest/CDH5-Security-Guide/CDH5-Security-Guide.html
+  d: https://www.cloudera.com/content/cloudera-content/cloudera-docs/CDH5/latest/CDH5-Security-Guide/CDH5-Security-Guide.html
+- s: content/cloudera-content/cloudera-docs/CDH5/latest/Search/Cloudera-Search-User-Guide/csug_mapreduce_batch_index_ref.html
+  d: https://www.cloudera.com/content/cloudera-content/cloudera-docs/CDH5/latest/Search/Cloudera-Search-User-Guide/csug_mapreduce_batch_index_ref.html
+- s: content/cloudera-content/cloudera-docs/CDH5/latest/Search/Cloudera-Search-User-Guide/csug_solrctl_ref.html
+  d: https://www.cloudera.com/content/cloudera-content/cloudera-docs/CDH5/latest/Search/Cloudera-Search-User-Guide/csug_solrctl_ref.html
 - s: content/dam/www/marketing/resources/analyst-reports/big-data-cybersecurity-analytics-research-report.pdf.landing.html
   d: https://www.cloudera.com/content/dam/www/marketing/resources/analyst-reports/big-data-cybersecurity-analytics-research-report.pdf.landing.html
 - s: content/dam/www/marketing/resources/analyst-reports/DBTA_AprMay2018_BP-evolution-of-analytics.pdf.landing.html
@@ -513,6 +548,74 @@
   d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/Qlik_Cloudera_BigData_eBook_020818.pdf.landing.html
 - s: content/dam/www/marketing/resources/whitepapers/why-open-source-matters.pdf.landing.html
   d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/why-open-source-matters.pdf.landing.html
+- s: content/support/en/documentation.html
+  d: https://www.cloudera.com/content/support/en/documentation.html
+- s: content/www/en-us.html
+  d: https://www.cloudera.com/content/www/en-us.html
+- s: content/www/en-us/about/services-and-support.html
+  d: https://www.cloudera.com/content/www/en-us/about/services-and-support.html
+- s: content/www/en-us/contact-sales.html
+  d: https://www.cloudera.com/content/www/en-us/contact-sales.html
+- s: content/www/en-us/developers/get-started-with-hadoop-tutorial.html
+  d: https://www.cloudera.com/content/www/en-us/developers/get-started-with-hadoop-tutorial.html
+- s: content/www/en-us/developers/hadoop-ecosystem-books.html
+  d: https://www.cloudera.com/content/www/en-us/developers/hadoop-ecosystem-books.html
+- s: content/www/en-us/downloads.html
+  d: https://www.cloudera.com/content/www/en-us/downloads.html
+- s: content/www/en-us/downloads/cdh/6-2-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/cdh/6-2-0.html
+- s: content/www/en-us/downloads/connectors/hive/jdbc/2-5-15.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/connectors/hive/jdbc/2-5-15.html
+- s: content/www/en-us/downloads/connectors/impala/jdbc/2-5-5.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/connectors/impala/jdbc/2-5-5.html
+- s: content/www/en-us/downloads/director/1-5-2.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/director/1-5-2.html
+- s: content/www/en-us/downloads/navigator/encrypt/6-2-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/encrypt/6-2-0.html
+- s: content/www/en-us/downloads/navigator/key-hsm/6-1-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-hsm/6-1-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-kms/6-2-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-kms/6-2-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-server/5-10-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-server/5-10-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-server/5-11-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-server/5-11-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-server/5-12-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-server/5-12-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-server/5-13-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-server/5-13-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-server/5-14-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-server/5-14-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-server/5-7-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-server/5-7-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-server/5-8-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-server/5-8-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-server/6-0-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-server/6-0-0.html
+- s: content/www/en-us/downloads/navigator/key-trustee-server/6-1-0.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/navigator/key-trustee-server/6-1-0.html
+- s: content/www/en-us/downloads/quickstart_vms/5-13.html
+  d: https://www.cloudera.com/content/www/en-us/downloads/quickstart_vms/5-13.html
+- s: content/www/en-us/legal/policies.html
+  d: https://www.cloudera.com/content/www/en-us/legal/policies.html
+- s: content/www/en-us/legal/terms-and-conditions.html
+  d: https://www.cloudera.com/content/www/en-us/legal/terms-and-conditions.html
+- s: content/www/en-us/products/open-source/apache-hadoop/impala.html
+  d: https://www.cloudera.com/content/www/en-us/products/open-source/apache-hadoop/impala.html
+- s: content/www/en-us/products/product-components/cloudera-navigator.html
+  d: https://www.cloudera.com/content/www/en-us/products/product-components/cloudera-navigator.html
+- s: content/www/en-us/resources.html
+  d: https://www.cloudera.com/content/www/en-us/resources.html
+- s: content/www/en-us/resources/resources-library/dynamic-form.html
+  d: https://www.cloudera.com/content/www/en-us/resources/resources-library/dynamic-form.html
+- s: content/www/en-us/search.html
+  d: https://www.cloudera.com/content/www/en-us/search.html
+- s: content/www/en-us/solutions/cybersecurity.html
+  d: https://www.cloudera.com/content/www/en-us/solutions/cybersecurity.html
+- s: developers.html
+  d: https://www.cloudera.com/developers.html
+- s: developers/developer-admin-resources/kite-sdk.html
+  d: https://www.cloudera.com/developers/developer-admin-resources/kite-sdk.html
 - s: developers/get-started-with-hadoop-tutorial.html
   d: https://www.cloudera.com/developers/get-started-with-hadoop-tutorial.html
 - s: developers/hadoop-ecosystem-books.html
@@ -531,8 +634,20 @@
   d: https://www.cloudera.com/downloads/cdh/6-2-0.html
 - s: downloads/connectors/hive/jdbc/2-5-15.html
   d: https://www.cloudera.com/downloads/connectors/hive/jdbc/2-5-15.html
+- s: downloads/connectors/hive/jdbc/2-5-18.html
+  d: https://www.cloudera.com/downloads/connectors/hive/jdbc/2-5-18.html
+- s: downloads/connectors/hive/jdbc/2-5-20.html
+  d: https://www.cloudera.com/downloads/connectors/hive/jdbc/2-5-20.html
+- s: downloads/connectors/hive/odbc/2-5-25.html
+  d: https://www.cloudera.com/downloads/connectors/hive/odbc/2-5-25.html
+- s: downloads/connectors/impala/jdbc.html
+  d: https://www.cloudera.com/downloads/connectors/impala/jdbc.html
 - s: downloads/connectors/impala/jdbc/2-5-5.html
   d: https://www.cloudera.com/downloads/connectors/impala/jdbc/2-5-5.html
+- s: downloads/connectors/impala/odbc.html
+  d: https://www.cloudera.com/downloads/connectors/impala/odbc.html
+- s: downloads/connectors/sqoop/teradata/1-2c5.html
+  d: https://www.cloudera.com/downloads/connectors/sqoop/teradata/1-2c5.html
 - s: downloads/director.html
   d: https://www.cloudera.com/downloads/director.html
 - s: downloads/director/1-5-2.html
@@ -669,6 +784,12 @@
   d: https://www.cloudera.com/downloads/navigator/key-trustee-server/6-0-0.html
 - s: downloads/navigator/key-trustee-server/6-1-0.html
   d: https://www.cloudera.com/downloads/navigator/key-trustee-server/6-1-0.html
+- s: downloads/oracle_instant_client_hue.html
+  d: https://www.cloudera.com/downloads/oracle_instant_client_hue.html
+- s: downloads/oracle_instant_client_hue/1-0.html
+  d: https://www.cloudera.com/downloads/oracle_instant_client_hue/1-0.html
+- s: downloads/phoenix.html
+  d: https://www.cloudera.com/downloads/phoenix.html
 - s: downloads/quickstart_vms.html
   d: https://www.cloudera.com/downloads/quickstart_vms.html
 - s: downloads/quickstart_vms/5-10.html
@@ -679,10 +800,26 @@
   d: https://www.cloudera.com/downloads/quickstart_vms/5-13.html
 - s: downloads/quickstart_vms/5-8.html
   d: https://www.cloudera.com/downloads/quickstart_vms/5-8.html
+- s: downloads/spark2/2-1.html
+  d: https://www.cloudera.com/downloads/spark2/2-1.html
+- s: get-started.html
+  d: https://www.cloudera.com/get-started.html
+- s: legal/events-terms-and-conditions.html
+  d: https://www.cloudera.com/legal/events-terms-and-conditions.html
 - s: legal/policies.html
   d: https://www.cloudera.com/legal/policies.html
+- s: legal/policies/support-lifecycle-policy.html
+  d: https://www.cloudera.com/legal/policies/support-lifecycle-policy.html
+- s: legal/privacy-policy.html
+  d: https://www.cloudera.com/legal/privacy-policy.html
 - s: legal/terms-and-conditions.html
   d: https://www.cloudera.com/legal/terms-and-conditions.html
+- s: legal/terms-and-conditions/cloudera-standard-license/cloudera-standard-license-v8-2018-08-14.html
+  d: https://www.cloudera.com/legal/terms-and-conditions/cloudera-standard-license/cloudera-standard-license-v8-2018-08-14.html
+- s: more/news-and-events/press-releases/2017-05-09-cloudera-successfully-completes-soc-2-type-ii-certification-for-cloud-offerings.html
+  d: https://www.cloudera.com/more/news-and-events/press-releases/2017-05-09-cloudera-successfully-completes-soc-2-type-ii-certification-for-cloud-offerings.html
+- s: more/services-and-support.html
+  d: https://www.cloudera.com/more/services-and-support.html
 - s: partners.html
   d: https://www.cloudera.com/partners.html
 - s: products.html
@@ -697,6 +834,10 @@
   d: https://www.cloudera.com/products/altus/altus-data-engineering.html
 - s: products/altus/altus-data-warehouse.html
   d: https://www.cloudera.com/products/altus/altus-data-warehouse.html
+- s: products/apache-hadoop/apache-hbase.html
+  d: https://www.cloudera.com/products/apache-hadoop/apache-hbase.html
+- s: products/apache-hadoop/impala.html
+  d: https://www.cloudera.com/products/apache-hadoop/impala.html
 - s: products/cdf.html
   d: https://www.cloudera.com/products/cdf.html
 - s: products/data-science-and-engineering.html
@@ -731,6 +872,8 @@
   d: https://www.cloudera.com/products/pricing.html
 - s: products/pricing/product-features.html
   d: https://www.cloudera.com/products/pricing/product-features.html
+- s: products/product-components/cloudera-director.html
+  d: https://www.cloudera.com/products/product-components/cloudera-director.html
 - s: products/product-components/cloudera-navigator.html
   d: https://www.cloudera.com/products/product-components/cloudera-navigator.html
 - s: products/sdx.html
@@ -739,6 +882,14 @@
   d: https://www.cloudera.com/products/workload-xm.html
 - s: resources.html
   d: https://www.cloudera.com/resources.html
+- s: resources/resources-library.html
+  d: https://www.cloudera.com/resources/resources-library.html
+- s: resources/resources-library/dynamic-form.html
+  d: https://www.cloudera.com/resources/resources-library/dynamic-form.html
+- s: search.html
+  d: https://www.cloudera.com/search.html
+- s: services-support.html
+  d: https://www.cloudera.com/services-support.html
 - s: solutions.html
   d: https://www.cloudera.com/solutions.html
 - s: solutions/customer-insights.html
@@ -993,9 +1144,11 @@
   d: https://www.cloudera.com/support.html
 - s: system/sling/logout.html
   d: https://www.cloudera.com/system/sling/logout.html
-- s: documentation.html
-  d: /documentation/index.html
-- s: downloads.html.html
-  d: /downloads.html
-- s: documentation/enterprise/upgrade.html
-  d: /documentation/enterprise/upgrade/topics/ug_overview.html
+- s: training.html
+  d: https://www.cloudera.com/training.html
+- s: user/login.html
+  d: https://www.cloudera.com/user/login.html
+- s: user/registration.html
+  d: https://www.cloudera.com/user/registration.html
+- s: why-cloudera.html
+  d: https://www.cloudera.com/why-cloudera.html
