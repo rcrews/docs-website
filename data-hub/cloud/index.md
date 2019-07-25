@@ -76,4 +76,4 @@ sections:
       - title: Getting Started with Data Hub
         url: getting-started-tutorial/index.html
 ---
-Data Hub is a CDP service for launching and managing workload clusters powered by Cloudera Runtime. Data Hub provides a set of cluster definitions that allow you to quickly provision and access workload clusters for prescriptive use cases, and allows you to define custom cluster configurations.
+Data Hub is a service for launching and managing workload clusters powered by Cloudera Runtime. Data Hub provides a set of cluster definitions that allow you to quickly provision and access workload clusters for prescriptive use cases, and allows you to define custom cluster configurations.

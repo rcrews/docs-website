@@ -71,4 +71,4 @@ sections:
         url: getting-started-tutorial/index.html
 
 ---
-Management Console is a CDP service for administering CDP. As a CDP administrator, you can use it for managing environments, data lakes, environment resources, and users across all CDP services.
+Management Console is a ervice for administering CDP. As a CDP administrator, you can use it for managing environments, data lakes, environment resources, and users across all CDP services.
