@@ -1,16 +1,14 @@
 ---
 layout: foyer
-breadcrumb-title: Cloudera Runtime How To
+breadcrumb-title: Cloudera Runtime Concepts
 title: Cluster Management
 publications:
   - title: Cloudera Manager Overview
     url: cm-concepts/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Provides an overview of Cloudera Manager functionality, architecture, user 
+      interface, and API.
 ---
-Overview of Cloudera Runtime cluster management concepts goes here....
-Hendrerit ac velit mauris viverra mattis nisi dolor litora ullamcorper,
-placerat venenatis congue tempus tincidunt interdum metus dui feugiat,
-primis fusce fames lobortis morbi natoque torquent magna neque, class
-ultrices dis pharetra vitae ante sodales enim.
+After you create a cluster using the Management Console, you use Cloudera
+Manager to manage, configure, and monitor the cluster and its Cloudera Runtime 
+services.
