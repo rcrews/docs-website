@@ -17,9 +17,9 @@ json:
         id: overview
         sub: overview/navigation.json
 
-  # - text: Planning
-  #   id: planning
-  #   sub:
+  - text: Planning
+    id: planning
+    sub:
 
   # - text: Installation & Upgrade
   #   id: installation
@@ -79,11 +79,11 @@ json:
   #   id: reference
   #   sub:
 
-  # - text: Release Notes
-  #   id: releasenotes
-  #   sub:
+  - text: Release Notes
+    id: releasenotes
+    sub:
 
-  # - text: Learning & Training
-  #   id: learning
-  #   sub:
+  - text: Learning & Training
+    id: learning
+    sub:
 ---

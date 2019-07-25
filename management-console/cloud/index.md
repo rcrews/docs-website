@@ -5,9 +5,9 @@ version: cloud
 base-path: /management-console/cloud/
 
 sections:
-  # - title: Release Notes
-  #   name: releasenotes
-  #   books:
+  - title: Release Notes
+    name: releasenotes
+    books:
 
   - title: Concepts & Use Cases
     name: concepts
@@ -15,9 +15,9 @@ sections:
       - title: Management Console Overview
         url: overview/index.html
 
-  # - title: Planning
-  #   name: planning
-  #   books:
+  - title: Planning
+    name: planning
+    books:
 
   # - title: Installation & Upgrade
   #   name: installation
@@ -60,8 +60,9 @@ sections:
   #   name: reference
   #   books:
 
-  # - title: Learning & Training
-  #   name: learning
-  #   books:
+  - title: Learning & Training
+    name: learning
+    books:
+
 ---
 Management Console is a CDP service for administering CDP. As a CDP administrator, you can use it for managing environments, data lakes, environment resources, and users across all CDP services.
