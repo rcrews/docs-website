@@ -1,0 +1,1001 @@
+---
+  - s: about.html
+    d: https://www.cloudera.com/about.html
+  - s: about/careers.html
+    d: https://www.cloudera.com/about/careers.html
+  - s: about/customers.html
+    d: https://www.cloudera.com/about/customers.html
+  - s: about/customers/8x8.html
+    d: https://www.cloudera.com/about/customers/8x8.html
+  - s: about/customers/aci-worldwide.html
+    d: https://www.cloudera.com/about/customers/aci-worldwide.html
+  - s: about/customers/adp.html
+    d: https://www.cloudera.com/about/customers/adp.html
+  - s: about/customers/allegis.html
+    d: https://www.cloudera.com/about/customers/allegis.html
+  - s: about/customers/atb-financial.html
+    d: https://www.cloudera.com/about/customers/atb-financial.html
+  - s: about/customers/banco-santander-spain.html
+    d: https://www.cloudera.com/about/customers/banco-santander-spain.html
+  - s: about/customers/bank-danamon.html
+    d: https://www.cloudera.com/about/customers/bank-danamon.html
+  - s: about/customers/bank-mandiri.html
+    d: https://www.cloudera.com/about/customers/bank-mandiri.html
+  - s: about/customers/bank-of-england.html
+    d: https://www.cloudera.com/about/customers/bank-of-england.html
+  - s: about/customers/bcp.html
+    d: https://www.cloudera.com/about/customers/bcp.html
+  - s: about/customers/bharti-airtel.html
+    d: https://www.cloudera.com/about/customers/bharti-airtel.html
+  - s: about/customers/bidtellect.html
+    d: https://www.cloudera.com/about/customers/bidtellect.html
+  - s: about/customers/bt.html
+    d: https://www.cloudera.com/about/customers/bt.html
+  - s: about/customers/caesarsentertainment.html
+    d: https://www.cloudera.com/about/customers/caesarsentertainment.html
+  - s: about/customers/carlson-wagonlit-travel.html
+    d: https://www.cloudera.com/about/customers/carlson-wagonlit-travel.html
+  - s: about/customers/cartao-elo.html
+    d: https://www.cloudera.com/about/customers/cartao-elo.html
+  - s: about/customers/centrica.html
+    d: https://www.cloudera.com/about/customers/centrica.html
+  - s: about/customers/cerner.html
+    d: https://www.cloudera.com/about/customers/cerner.html
+  - s: about/customers/cisco.html
+    d: https://www.cloudera.com/about/customers/cisco.html
+  - s: about/customers/clearsense.html
+    d: https://www.cloudera.com/about/customers/clearsense.html
+  - s: about/customers/cloudera-engaged.html
+    d: https://www.cloudera.com/about/customers/cloudera-engaged.html
+  - s: about/customers/cloudera-support-interface.html
+    d: https://www.cloudera.com/about/customers/cloudera-support-interface.html
+  - s: about/customers/connexity.html
+    d: https://www.cloudera.com/about/customers/connexity.html
+  - s: about/customers/conversant.html
+    d: https://www.cloudera.com/about/customers/conversant.html
+  - s: about/customers/countertack.html
+    d: https://www.cloudera.com/about/customers/countertack.html
+  - s: about/customers/cox-automotive.html
+    d: https://www.cloudera.com/about/customers/cox-automotive.html
+  - s: about/customers/credit-suisse.html
+    d: https://www.cloudera.com/about/customers/credit-suisse.html
+  - s: about/customers/csc.html
+    d: https://www.cloudera.com/about/customers/csc.html
+  - s: about/customers/cybraics.html
+    d: https://www.cloudera.com/about/customers/cybraics.html
+  - s: about/customers/data-impact-awards.html
+    d: https://www.cloudera.com/about/customers/data-impact-awards.html
+  - s: about/customers/dbs-bank.html
+    d: https://www.cloudera.com/about/customers/dbs-bank.html
+  - s: about/customers/dell.html
+    d: https://www.cloudera.com/about/customers/dell.html
+  - s: about/customers/deutsche-telekom.html
+    d: https://www.cloudera.com/about/customers/deutsche-telekom.html
+  - s: about/customers/dhisco.html
+    d: https://www.cloudera.com/about/customers/dhisco.html
+  - s: about/customers/dish.html
+    d: https://www.cloudera.com/about/customers/dish.html
+  - s: about/customers/docbox.html
+    d: https://www.cloudera.com/about/customers/docbox.html
+  - s: about/customers/docomo-digital.html
+    d: https://www.cloudera.com/about/customers/docomo-digital.html
+  - s: about/customers/drawbridge.html
+    d: https://www.cloudera.com/about/customers/drawbridge.html
+  - s: about/customers/emirates-nbd.html
+    d: https://www.cloudera.com/about/customers/emirates-nbd.html
+  - s: about/customers/epsilon.html
+    d: https://www.cloudera.com/about/customers/epsilon.html
+  - s: about/customers/equifax.html
+    d: https://www.cloudera.com/about/customers/equifax.html
+  - s: about/customers/experian.html
+    d: https://www.cloudera.com/about/customers/experian.html
+  - s: about/customers/faurecia.html
+    d: https://www.cloudera.com/about/customers/faurecia.html
+  - s: about/customers/fireeye.html
+    d: https://www.cloudera.com/about/customers/fireeye.html
+  - s: about/customers/freddie-mac.html
+    d: https://www.cloudera.com/about/customers/freddie-mac.html
+  - s: about/customers/geisinger.html
+    d: https://www.cloudera.com/about/customers/geisinger.html
+  - s: about/customers/glaxosmithkline.html
+    d: https://www.cloudera.com/about/customers/glaxosmithkline.html
+  - s: about/customers/globe-telecom.html
+    d: https://www.cloudera.com/about/customers/globe-telecom.html
+  - s: about/customers/greentube.html
+    d: https://www.cloudera.com/about/customers/greentube.html
+  - s: about/customers/hellofresh.html
+    d: https://www.cloudera.com/about/customers/hellofresh.html
+  - s: about/customers/hilton.html
+    d: https://www.cloudera.com/about/customers/hilton.html
+  - s: about/customers/hotels-com.html
+    d: https://www.cloudera.com/about/customers/hotels-com.html
+  - s: about/customers/impact-radius.html
+    d: https://www.cloudera.com/about/customers/impact-radius.html
+  - s: about/customers/inova.html
+    d: https://www.cloudera.com/about/customers/inova.html
+  - s: about/customers/iqvia.html
+    d: https://www.cloudera.com/about/customers/iqvia.html
+  - s: about/customers/jido.html
+    d: https://www.cloudera.com/about/customers/jido.html
+  - s: about/customers/jobrapido.html
+    d: https://www.cloudera.com/about/customers/jobrapido.html
+  - s: about/customers/johns-hopkins-university.html
+    d: https://www.cloudera.com/about/customers/johns-hopkins-university.html
+  - s: about/customers/kasikorn-bank.html
+    d: https://www.cloudera.com/about/customers/kasikorn-bank.html
+  - s: about/customers/klarna.html
+    d: https://www.cloudera.com/about/customers/klarna.html
+  - s: about/customers/komatsu-mining.html
+    d: https://www.cloudera.com/about/customers/komatsu-mining.html
+  - s: about/customers/lufthansa-technik.html
+    d: https://www.cloudera.com/about/customers/lufthansa-technik.html
+  - s: about/customers/magnify.html
+    d: https://www.cloudera.com/about/customers/magnify.html
+  - s: about/customers/markerstudy.html
+    d: https://www.cloudera.com/about/customers/markerstudy.html
+  - s: about/customers/mastercard.html
+    d: https://www.cloudera.com/about/customers/mastercard.html
+  - s: about/customers/mbank.html
+    d: https://www.cloudera.com/about/customers/mbank.html
+  - s: about/customers/mesurio.html
+    d: https://www.cloudera.com/about/customers/mesurio.html
+  - s: about/customers/micron.html
+    d: https://www.cloudera.com/about/customers/micron.html
+  - s: about/customers/mitre.html
+    d: https://www.cloudera.com/about/customers/mitre.html
+  - s: about/customers/mitsubishi-fuso.html
+    d: https://www.cloudera.com/about/customers/mitsubishi-fuso.html
+  - s: about/customers/national-childrens-hospital.html
+    d: https://www.cloudera.com/about/customers/national-childrens-hospital.html
+  - s: about/customers/navistar.html
+    d: https://www.cloudera.com/about/customers/navistar.html
+  - s: about/customers/nissan.html
+    d: https://www.cloudera.com/about/customers/nissan.html
+  - s: about/customers/novantas.html
+    d: https://www.cloudera.com/about/customers/novantas.html
+  - s: about/customers/numberly-mille-mercis-group.html
+    d: https://www.cloudera.com/about/customers/numberly-mille-mercis-group.html
+  - s: about/customers/nyse-ice.html
+    d: https://www.cloudera.com/about/customers/nyse-ice.html
+  - s: about/customers/o2.html
+    d: https://www.cloudera.com/about/customers/o2.html
+  - s: about/customers/octo-telematics.html
+    d: https://www.cloudera.com/about/customers/octo-telematics.html
+  - s: about/customers/odyssey.html
+    d: https://www.cloudera.com/about/customers/odyssey.html
+  - s: about/customers/opower.html
+    d: https://www.cloudera.com/about/customers/opower.html
+  - s: about/customers/orwell-group.html
+    d: https://www.cloudera.com/about/customers/orwell-group.html
+  - s: about/customers/patterns-and-predictions.html
+    d: https://www.cloudera.com/about/customers/patterns-and-predictions.html
+  - s: about/customers/persol-career.html
+    d: https://www.cloudera.com/about/customers/persol-career.html
+  - s: about/customers/podo.html
+    d: https://www.cloudera.com/about/customers/podo.html
+  - s: about/customers/prgx.html
+    d: https://www.cloudera.com/about/customers/prgx.html
+  - s: about/customers/pwc-cee.html
+    d: https://www.cloudera.com/about/customers/pwc-cee.html
+  - s: about/customers/qsight-it.html
+    d: https://www.cloudera.com/about/customers/qsight-it.html
+  - s: about/customers/quaero.html
+    d: https://www.cloudera.com/about/customers/quaero.html
+  - s: about/customers/quanam.html
+    d: https://www.cloudera.com/about/customers/quanam.html
+  - s: about/customers/quest-diagnostics.html
+    d: https://www.cloudera.com/about/customers/quest-diagnostics.html
+  - s: about/customers/quotient.html
+    d: https://www.cloudera.com/about/customers/quotient.html
+  - s: about/customers/ringcentral.html
+    d: https://www.cloudera.com/about/customers/ringcentral.html
+  - s: about/customers/rocketroi.html
+    d: https://www.cloudera.com/about/customers/rocketroi.html
+  - s: about/customers/rowan-companies.html
+    d: https://www.cloudera.com/about/customers/rowan-companies.html
+  - s: about/customers/rush-university-medical-center.html
+    d: https://www.cloudera.com/about/customers/rush-university-medical-center.html
+  - s: about/customers/santander-uk.html
+    d: https://www.cloudera.com/about/customers/santander-uk.html
+  - s: about/customers/seattle-childrens.html
+    d: https://www.cloudera.com/about/customers/seattle-childrens.html
+  - s: about/customers/sfr.html
+    d: https://www.cloudera.com/about/customers/sfr.html
+  - s: about/customers/shoppermotion.html
+    d: https://www.cloudera.com/about/customers/shoppermotion.html
+  - s: about/customers/sikorsky.html
+    d: https://www.cloudera.com/about/customers/sikorsky.html
+  - s: about/customers/simply-measured.html
+    d: https://www.cloudera.com/about/customers/simply-measured.html
+  - s: about/customers/sky-bet.html
+    d: https://www.cloudera.com/about/customers/sky-bet.html
+  - s: about/customers/solocal-group.html
+    d: https://www.cloudera.com/about/customers/solocal-group.html
+  - s: about/customers/symcor.html
+    d: https://www.cloudera.com/about/customers/symcor.html
+  - s: about/customers/t-mobile-austria.html
+    d: https://www.cloudera.com/about/customers/t-mobile-austria.html
+  - s: about/customers/td-bank.html
+    d: https://www.cloudera.com/about/customers/td-bank.html
+  - s: about/customers/technipfmc.html
+    d: https://www.cloudera.com/about/customers/technipfmc.html
+  - s: about/customers/telefonica.html
+    d: https://www.cloudera.com/about/customers/telefonica.html
+  - s: about/customers/tenaris.html
+    d: https://www.cloudera.com/about/customers/tenaris.html
+  - s: about/customers/thomson-reuters.html
+    d: https://www.cloudera.com/about/customers/thomson-reuters.html
+  - s: about/customers/tmw-systems.html
+    d: https://www.cloudera.com/about/customers/tmw-systems.html
+  - s: about/customers/transamerica.html
+    d: https://www.cloudera.com/about/customers/transamerica.html
+  - s: about/customers/true-corporation.html
+    d: https://www.cloudera.com/about/customers/true-corporation.html
+  - s: about/customers/unidad-editorial.html
+    d: https://www.cloudera.com/about/customers/unidad-editorial.html
+  - s: about/customers/united-overseas-bank.html
+    d: https://www.cloudera.com/about/customers/united-overseas-bank.html
+  - s: about/customers/vizient.html
+    d: https://www.cloudera.com/about/customers/vizient.html
+  - s: about/customers/wargaming.html
+    d: https://www.cloudera.com/about/customers/wargaming.html
+  - s: about/customers/western-union.html
+    d: https://www.cloudera.com/about/customers/western-union.html
+  - s: about/customers/xl-axiata.html
+    d: https://www.cloudera.com/about/customers/xl-axiata.html
+  - s: about/customers/zoomlion.html
+    d: https://www.cloudera.com/about/customers/zoomlion.html
+  - s: about/customers/zoosk.html
+    d: https://www.cloudera.com/about/customers/zoosk.html
+  - s: about/customers/zurich-insurance.html
+    d: https://www.cloudera.com/about/customers/zurich-insurance.html
+  - s: about/events.html
+    d: https://www.cloudera.com/about/events.html
+  - s: about/events/cloudera-now.html
+    d: https://www.cloudera.com/about/events/cloudera-now.html
+  - s: about/events/cloudera-summer-school.html
+    d: https://www.cloudera.com/about/events/cloudera-summer-school.html
+  - s: about/events/edge-to-ai-city-tour.html
+    d: https://www.cloudera.com/about/events/edge-to-ai-city-tour.html
+  - s: about/events/gov-forum.html
+    d: https://www.cloudera.com/about/events/gov-forum.html
+  - s: about/events/modern-data-warehousing-fundamentals.html
+    d: https://www.cloudera.com/about/events/modern-data-warehousing-fundamentals.html
+  - s: about/events/partners-summit.html
+    d: https://www.cloudera.com/about/events/partners-summit.html
+  - s: about/events/sessions.html
+    d: https://www.cloudera.com/about/events/sessions.html
+  - s: about/events/speaker-series.html
+    d: https://www.cloudera.com/about/events/speaker-series.html
+  - s: about/events/trade-shows.html
+    d: https://www.cloudera.com/about/events/trade-shows.html
+  - s: about/events/webinars.html
+    d: https://www.cloudera.com/about/events/webinars.html
+  - s: about/investor-relations.html
+    d: https://www.cloudera.com/about/investor-relations.html
+  - s: about/leadership.html
+    d: https://www.cloudera.com/about/leadership.html
+  - s: about/locations.html
+    d: https://www.cloudera.com/about/locations.html
+  - s: about/news-and-blogs.html
+    d: https://www.cloudera.com/about/news-and-blogs.html
+  - s: about/news-and-blogs/awards.html
+    d: https://www.cloudera.com/about/news-and-blogs/awards.html
+  - s: about/news-and-blogs/blogs.html
+    d: https://www.cloudera.com/about/news-and-blogs/blogs.html
+  - s: about/news-and-blogs/edge-to-ai.html
+    d: https://www.cloudera.com/about/news-and-blogs/edge-to-ai.html
+  - s: about/news-and-blogs/media-kit.html
+    d: https://www.cloudera.com/about/news-and-blogs/media-kit.html
+  - s: about/news-and-blogs/press-releases.html
+    d: https://www.cloudera.com/about/news-and-blogs/press-releases.html
+  - s: about/partners.html
+    d: https://www.cloudera.com/about/partners.html
+  - s: about/services-and-support.html
+    d: https://www.cloudera.com/about/services-and-support.html
+  - s: about/services-and-support/fast-forward-labs.html
+    d: https://www.cloudera.com/about/services-and-support/fast-forward-labs.html
+  - s: about/services-and-support/professional-services.html
+    d: https://www.cloudera.com/about/services-and-support/professional-services.html
+  - s: about/services-and-support/support-offering.html
+    d: https://www.cloudera.com/about/services-and-support/support-offering.html
+  - s: about/training.html
+    d: https://www.cloudera.com/about/training.html
+  - s: about/training/blended-learning.html
+    d: https://www.cloudera.com/about/training/blended-learning.html
+  - s: about/training/certification.html
+    d: https://www.cloudera.com/about/training/certification.html
+  - s: about/training/classroom.html
+    d: https://www.cloudera.com/about/training/classroom.html
+  - s: about/training/cloudera-training-administrator-technical-training-requirements.html
+    d: https://www.cloudera.com/about/training/cloudera-training-administrator-technical-training-requirements.html
+  - s: about/training/cloudera-training-course-prerequisites.html
+    d: https://www.cloudera.com/about/training/cloudera-training-course-prerequisites.html
+  - s: about/training/cloudera-training-terms-and-conditions.html
+    d: https://www.cloudera.com/about/training/cloudera-training-terms-and-conditions.html
+  - s: about/training/course-listing.html
+    d: https://www.cloudera.com/about/training/course-listing.html
+  - s: about/training/courses.html
+    d: https://www.cloudera.com/about/training/courses.html
+  - s: about/training/description-of-training-services.html
+    d: https://www.cloudera.com/about/training/description-of-training-services.html
+  - s: about/training/ondemand-training.html
+    d: https://www.cloudera.com/about/training/ondemand-training.html
+  - s: about/training/private-training.html
+    d: https://www.cloudera.com/about/training/private-training.html
+  - s: about/training/roles.html
+    d: https://www.cloudera.com/about/training/roles.html
+  - s: about/training/testimonials.html
+    d: https://www.cloudera.com/about/training/testimonials.html
+  - s: about/training/training-partner-application.html
+    d: https://www.cloudera.com/about/training/training-partner-application.html
+  - s: about/training/training-partners.html
+    d: https://www.cloudera.com/about/training/training-partners.html
+  - s: about/training/virtual-classroom.html
+    d: https://www.cloudera.com/about/training/virtual-classroom.html
+  - s: careers.html
+    d: https://www.cloudera.com/careers.html
+  - s: contact-sales.html
+    d: https://www.cloudera.com/contact-sales.html
+  - s: content/dam/www/marketing/resources/analyst-reports/big-data-cybersecurity-analytics-research-report.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/analyst-reports/big-data-cybersecurity-analytics-research-report.pdf.landing.html
+  - s: content/dam/www/marketing/resources/analyst-reports/DBTA_AprMay2018_BP-evolution-of-analytics.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/analyst-reports/DBTA_AprMay2018_BP-evolution-of-analytics.pdf.landing.html
+  - s: content/dam/www/marketing/resources/analyst-reports/deep-learning-forrester.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/analyst-reports/deep-learning-forrester.pdf.landing.html
+  - s: content/dam/www/marketing/resources/analyst-reports/gartner-roadmap-for-it-to-help-drive-machine-learning.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/analyst-reports/gartner-roadmap-for-it-to-help-drive-machine-learning.landing.html
+  - s: content/dam/www/marketing/resources/analyst-reports/tdwi_checklist_2018_Cloudera_Modernizing_Data_Warehouse_Infrastructure.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/analyst-reports/tdwi_checklist_2018_Cloudera_Modernizing_Data_Warehouse_Infrastructure.pdf.landing.html
+  - s: content/dam/www/marketing/resources/analyst-reports/tdwi-checklist-report-emerging-design-patterns-for-data-management.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/analyst-reports/tdwi-checklist-report-emerging-design-patterns-for-data-management.pdf.landing.html
+  - s: content/dam/www/marketing/resources/case-studies/Cloudera_Drawbridge_Case_Study_102_A4.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/case-studies/Cloudera_Drawbridge_Case_Study_102_A4.pdf.landing.html
+  - s: content/dam/www/marketing/resources/case-studies/lufthansa-customer-success-story.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/case-studies/lufthansa-customer-success-story.pdf.landing.html
+  - s: content/dam/www/marketing/resources/datasheets/cloudera-data-science-workbench-introduction.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/datasheets/cloudera-data-science-workbench-introduction.pdf.landing.html
+  - s: content/dam/www/marketing/resources/datasheets/cloudera-enterprise-datasheet.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/datasheets/cloudera-enterprise-datasheet.pdf.landing.html
+  - s: content/dam/www/marketing/resources/datasheets/cloudera-navigator-datasheet.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/datasheets/cloudera-navigator-datasheet.pdf.landing.html
+  - s: content/dam/www/marketing/resources/datasheets/cloudera-security-datasheet.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/datasheets/cloudera-security-datasheet.pdf.landing.html
+  - s: content/dam/www/marketing/resources/datasheets/gov-proactive-and-predictive-support-overview.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/datasheets/gov-proactive-and-predictive-support-overview.pdf.landing.html
+  - s: content/dam/www/marketing/resources/datasheets/gov-support-datasheet.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/datasheets/gov-support-datasheet.pdf.landing.html
+  - s: content/dam/www/marketing/resources/demos/cloudera-data-science-workbench-demo.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/demos/cloudera-data-science-workbench-demo.png.landing.html
+  - s: content/dam/www/marketing/resources/emea/en/webinars/realism-and-real-time-in-cyber-security-machine-learning.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/emea/en/webinars/realism-and-real-time-in-cyber-security-machine-learning.png.landing.html
+  - s: content/dam/www/marketing/resources/emea/es/solution-briefs/estudio-de-la-madurez-en-el-uso-de-la-analitica-avanzada-en-el-sector-asegurador.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/emea/es/solution-briefs/estudio-de-la-madurez-en-el-uso-de-la-analitica-avanzada-en-el-sector-asegurador.pdf.landing.html
+  - s: content/dam/www/marketing/resources/solution-briefs/cloudera-and-tableau-enable-real-time-business-intelligence.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/solution-briefs/cloudera-and-tableau-enable-real-time-business-intelligence.pdf.landing.html
+  - s: content/dam/www/marketing/resources/solution-briefs/customer-360-powered-by-zero2hero.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/solution-briefs/customer-360-powered-by-zero2hero.pdf.landing.html
+  - s: content/dam/www/marketing/resources/solution-briefs/seeing-information-more-clearly-with-enterprise-data-cloud-analytics.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/solution-briefs/seeing-information-more-clearly-with-enterprise-data-cloud-analytics.pdf.landing.html
+  - s: content/dam/www/marketing/resources/solution-briefs/zwoox-data-ingestion-made-easy.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/solution-briefs/zwoox-data-ingestion-made-easy.pdf.landing.html
+  - s: content/dam/www/marketing/resources/videos/modernizing-bi-and-analytics.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/videos/modernizing-bi-and-analytics.landing.html
+  - s: content/dam/www/marketing/resources/webinars/Big-Data-Fundamentals-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Big-Data-Fundamentals-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/Big-Data-Fundamentals-recorded-webinar1.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Big-Data-Fundamentals-recorded-webinar1.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/cdsw-office-hours-series-part1.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/cdsw-office-hours-series-part1.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/cdsw-office-hours-series-part2.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/cdsw-office-hours-series-part2.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/cloud-computing-in-retail-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/cloud-computing-in-retail-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/Cloudera-Data-Science-Workbench-sparklyr-implyr-and-More-dplyr-Interfaces-to-Large-scale-Data-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Cloudera-Data-Science-Workbench-sparklyr-implyr-and-More-dplyr-Interfaces-to-Large-scale-Data-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/cloudera-fast-forward-labs-accelerate-machine-learning-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/cloudera-fast-forward-labs-accelerate-machine-learning-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/cloudera-fast-forward-labs-building-a-better-recommendation-system-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/cloudera-fast-forward-labs-building-a-better-recommendation-system-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/cloudera-sdx-consistent-security-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/cloudera-sdx-consistent-security-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/clouderas-new-cloud-native-platform.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/clouderas-new-cloud-native-platform.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/Consolidate-your-data-marts-for-fast-flexible-analytics-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Consolidate-your-data-marts-for-fast-flexible-analytics-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/data_driven_enterprises_run_the_cloudera_modern_data_warehouse.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/data_driven_enterprises_run_the_cloudera_modern_data_warehouse.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/data_in_motion_tech_launch_showcase.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/data_in_motion_tech_launch_showcase.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/data-driven-transformation-for-telcos.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/data-driven-transformation-for-telcos.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/dbta-edge-management-gaining-value-from-iot.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/dbta-edge-management-gaining-value-from-iot.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/deep-learning-with-cloudera-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/deep-learning-with-cloudera-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/Demystifying-ML-&-AI-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Demystifying-ML-&-AI-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/doing-a-180-on-customer-360-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/doing-a-180-on-customer-360-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/experience-the-first-hybrid-multi-cloud-data-warehouse-on-cdp.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/experience-the-first-hybrid-multi-cloud-data-warehouse-on-cdp.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/extending-cloudera-sdx-beyond-the-platform-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/extending-cloudera-sdx-beyond-the-platform-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/federated-learning-ml-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/federated-learning-ml-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/harnessing-the-cloud-for-big-data-insights-emea.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/harnessing-the-cloud-for-big-data-insights-emea.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/hbr-cybersecurity-for-the-c-suite.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/hbr-cybersecurity-for-the-c-suite.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/hive-impala-and-spark-oh-my-sql-on-Hadoop-in-cloudera-5-5.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/hive-impala-and-spark-oh-my-sql-on-Hadoop-in-cloudera-5-5.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/how_sdi_modernized_supply_chain_data.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/how_sdi_modernized_supply_chain_data.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/impala-unlocks-interactive-bi-on-hadoop-slide-deck.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/impala-unlocks-interactive-bi-on-hadoop-slide-deck.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/industrialize-ai-with-enterprise-scale-machine-learning-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/industrialize-ai-with-enterprise-scale-machine-learning-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/industrialize-ai-with-enterprise-scale-machine-learning-recorded-webinar1.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/industrialize-ai-with-enterprise-scale-machine-learning-recorded-webinar1.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/information-management-atscale-gsk-toyota-succeed-with-bi-on-the-data-lake.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/information-management-atscale-gsk-toyota-succeed-with-bi-on-the-data-lake.landing.html
+  - s: content/dam/www/marketing/resources/webinars/introducing-cdsw-1.6-an-new-ml-services.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/introducing-cdsw-1.6-an-new-ml-services.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/introducing-cdsw-for-hdp.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/introducing-cdsw-for-hdp.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/introducing-cloudera-dataflow.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/introducing-cloudera-dataflow.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/kafka-power-chat-challenges-in-streaming-architectures.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/kafka-power-chat-challenges-in-streaming-architectures.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/leveraging-the-cloud-for-analytics-and-ml.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/leveraging-the-cloud-for-analytics-and-ml.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/leveraging-the-cloud-for-big-data-analytics-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/leveraging-the-cloud-for-big-data-analytics-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/leveraging-the-cloud-for-precision-medicine-and-more.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/leveraging-the-cloud-for-precision-medicine-and-more.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/live-cloudera-cybersecurity-solution-demo.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/live-cloudera-cybersecurity-solution-demo.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/Machine-Learning-Models-From-Research-to-Production-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Machine-Learning-Models-From-Research-to-Production-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/Making-Self-Service-BI-a-Reality-in-the-Enterprise-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Making-Self-Service-BI-a-Reality-in-the-Enterprise-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/mit-sloan-webinar-five-strategies-for-getting-the-most-from-ai.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/mit-sloan-webinar-five-strategies-for-getting-the-most-from-ai.landing.html
+  - s: content/dam/www/marketing/resources/webinars/modern-data-strategy-for-regional-and-mid-size-banks-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/modern-data-strategy-for-regional-and-mid-size-banks-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/modern-data-warehousing-fundamentals-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/modern-data-warehousing-fundamentals-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/SDX-GDPR-webinar.jpg.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/SDX-GDPR-webinar.jpg.landing.html
+  - s: content/dam/www/marketing/resources/webinars/shortening-the-sales-cycle-with-a-modern-data-warehouse.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/shortening-the-sales-cycle-with-a-modern-data-warehouse.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/simplify-your-response-to-gdpr-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/simplify-your-response-to-gdpr-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/speed-flexibility-intelligence-beyond-the-traditional-data-warehouse.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/speed-flexibility-intelligence-beyond-the-traditional-data-warehouse.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/supercharge-splunk-with-cloudera.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/supercharge-splunk-with-cloudera.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/the-future-of-data-warehousing--etl-will-never-be-the-same.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/the-future-of-data-warehousing--etl-will-never-be-the-same.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/things-we-bet-you-didnt-know-your-cloudera-data-warehouse-can-do.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/things-we-bet-you-didnt-know-your-cloudera-data-warehouse-can-do.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/video--hadoop-security-iii---protecting-data-at-rest-and-in-moti.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/video--hadoop-security-iii---protecting-data-at-rest-and-in-moti.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/video--hadoop-security-iv---visibility-through-a-single-end-to-e.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/video--hadoop-security-iv---visibility-through-a-single-end-to-e.png.landing.html
+  - s: content/dam/www/marketing/resources/webinars/Whats-New-in-Cloudera-Enterprise-6.0-The-Inside-Scoop-recorded-webinar.png.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Whats-New-in-Cloudera-Enterprise-6.0-The-Inside-Scoop-recorded-webinar.png.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/12-requirements-for-a-modern-data-architecture-in-a-hybrid-cloud-world.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/12-requirements-for-a-modern-data-architecture-in-a-hybrid-cloud-world.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/apache-impala-incubating-analytic-database-for-apache-hadoop-technical-ebook.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/apache-impala-incubating-analytic-database-for-apache-hadoop-technical-ebook.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/Cloudera_Deep_Learning.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/Cloudera_Deep_Learning.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/cloudera-enterprise-whitepaper.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/cloudera-enterprise-whitepaper.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/cloudera-gdpr-whitepaper.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/cloudera-gdpr-whitepaper.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/cloudera-lowering-business-risk-with-data.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/cloudera-lowering-business-risk-with-data.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/cybersecurity-sourcebook-2017.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/cybersecurity-sourcebook-2017.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/five-steps-for-aligning-data-and-hybrid-cloud-architectures.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/five-steps-for-aligning-data-and-hybrid-cloud-architectures.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/idg-building-a-data-driven-enterprise.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/idg-building-a-data-driven-enterprise.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/modern-data-platform-for-cloud-cloudera-whitepaper.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/modern-data-platform-for-cloud-cloudera-whitepaper.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/operational-database-whitepaper.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/operational-database-whitepaper.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/power-your-business-transformation-with-edc.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/power-your-business-transformation-with-edc.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/Qlik_Cloudera_BigData_eBook_020818.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/Qlik_Cloudera_BigData_eBook_020818.pdf.landing.html
+  - s: content/dam/www/marketing/resources/whitepapers/why-open-source-matters.pdf.landing.html
+    d: https://www.cloudera.com/content/dam/www/marketing/resources/whitepapers/why-open-source-matters.pdf.landing.html
+  - s: developers/get-started-with-hadoop-tutorial.html
+    d: https://www.cloudera.com/developers/get-started-with-hadoop-tutorial.html
+  - s: developers/hadoop-ecosystem-books.html
+    d: https://www.cloudera.com/developers/hadoop-ecosystem-books.html
+  - s: downloads.html
+    d: https://www.cloudera.com/downloads.html
+  - s: downloads/cdf.html
+    d: https://www.cloudera.com/downloads/cdf.html
+  - s: downloads/cdf/config.html
+    d: https://www.cloudera.com/downloads/cdf/config.html
+  - s: downloads/cdf/csp-trial.html
+    d: https://www.cloudera.com/downloads/cdf/csp-trial.html
+  - s: downloads/cdf/csp.html
+    d: https://www.cloudera.com/downloads/cdf/csp.html
+  - s: downloads/cdh/6-2-0.html
+    d: https://www.cloudera.com/downloads/cdh/6-2-0.html
+  - s: downloads/connectors/hive/jdbc/2-5-15.html
+    d: https://www.cloudera.com/downloads/connectors/hive/jdbc/2-5-15.html
+  - s: downloads/connectors/impala/jdbc/2-5-5.html
+    d: https://www.cloudera.com/downloads/connectors/impala/jdbc/2-5-5.html
+  - s: downloads/director.html
+    d: https://www.cloudera.com/downloads/director.html
+  - s: downloads/director/1-5-2.html
+    d: https://www.cloudera.com/downloads/director/1-5-2.html
+  - s: downloads/director/2-5-0.html
+    d: https://www.cloudera.com/downloads/director/2-5-0.html
+  - s: downloads/director/2-5-1.html
+    d: https://www.cloudera.com/downloads/director/2-5-1.html
+  - s: downloads/director/2-6-0.html
+    d: https://www.cloudera.com/downloads/director/2-6-0.html
+  - s: downloads/director/2-6-1.html
+    d: https://www.cloudera.com/downloads/director/2-6-1.html
+  - s: downloads/director/2-7-0.html
+    d: https://www.cloudera.com/downloads/director/2-7-0.html
+  - s: downloads/director/2-7-1.html
+    d: https://www.cloudera.com/downloads/director/2-7-1.html
+  - s: downloads/director/2-8-0.html
+    d: https://www.cloudera.com/downloads/director/2-8-0.html
+  - s: downloads/director/2-8-1.html
+    d: https://www.cloudera.com/downloads/director/2-8-1.html
+  - s: downloads/director/6-0-0.html
+    d: https://www.cloudera.com/downloads/director/6-0-0.html
+  - s: downloads/director/6-0-1.html
+    d: https://www.cloudera.com/downloads/director/6-0-1.html
+  - s: downloads/director/6-1-0.html
+    d: https://www.cloudera.com/downloads/director/6-1-0.html
+  - s: downloads/director/6-2-0.html
+    d: https://www.cloudera.com/downloads/director/6-2-0.html
+  - s: downloads/director/6-2-1.html
+    d: https://www.cloudera.com/downloads/director/6-2-1.html
+  - s: downloads/manager.html
+    d: https://www.cloudera.com/downloads/manager.html
+  - s: downloads/manager/5-10-0.html
+    d: https://www.cloudera.com/downloads/manager/5-10-0.html
+  - s: downloads/manager/5-10-1.html
+    d: https://www.cloudera.com/downloads/manager/5-10-1.html
+  - s: downloads/manager/5-10-2.html
+    d: https://www.cloudera.com/downloads/manager/5-10-2.html
+  - s: downloads/manager/5-11-0.html
+    d: https://www.cloudera.com/downloads/manager/5-11-0.html
+  - s: downloads/manager/5-11-1.html
+    d: https://www.cloudera.com/downloads/manager/5-11-1.html
+  - s: downloads/manager/5-11-2.html
+    d: https://www.cloudera.com/downloads/manager/5-11-2.html
+  - s: downloads/manager/5-12-0.html
+    d: https://www.cloudera.com/downloads/manager/5-12-0.html
+  - s: downloads/manager/5-12-1.html
+    d: https://www.cloudera.com/downloads/manager/5-12-1.html
+  - s: downloads/manager/5-13-3.html
+    d: https://www.cloudera.com/downloads/manager/5-13-3.html
+  - s: downloads/manager/5-14-0.html
+    d: https://www.cloudera.com/downloads/manager/5-14-0.html
+  - s: downloads/manager/5-14-1.html
+    d: https://www.cloudera.com/downloads/manager/5-14-1.html
+  - s: downloads/manager/5-14-2.html
+    d: https://www.cloudera.com/downloads/manager/5-14-2.html
+  - s: downloads/manager/5-14-3.html
+    d: https://www.cloudera.com/downloads/manager/5-14-3.html
+  - s: downloads/manager/5-14-4.html
+    d: https://www.cloudera.com/downloads/manager/5-14-4.html
+  - s: downloads/manager/5-15-0.html
+    d: https://www.cloudera.com/downloads/manager/5-15-0.html
+  - s: downloads/manager/5-15-1.html
+    d: https://www.cloudera.com/downloads/manager/5-15-1.html
+  - s: downloads/manager/5-15-2.html
+    d: https://www.cloudera.com/downloads/manager/5-15-2.html
+  - s: downloads/manager/5-16-1.html
+    d: https://www.cloudera.com/downloads/manager/5-16-1.html
+  - s: downloads/manager/5-16-2.html
+    d: https://www.cloudera.com/downloads/manager/5-16-2.html
+  - s: downloads/manager/5-7-0.html
+    d: https://www.cloudera.com/downloads/manager/5-7-0.html
+  - s: downloads/manager/5-7-1.html
+    d: https://www.cloudera.com/downloads/manager/5-7-1.html
+  - s: downloads/manager/5-7-2.html
+    d: https://www.cloudera.com/downloads/manager/5-7-2.html
+  - s: downloads/manager/5-7-4.html
+    d: https://www.cloudera.com/downloads/manager/5-7-4.html
+  - s: downloads/manager/5-7-5.html
+    d: https://www.cloudera.com/downloads/manager/5-7-5.html
+  - s: downloads/manager/5-7-6.html
+    d: https://www.cloudera.com/downloads/manager/5-7-6.html
+  - s: downloads/manager/5-8-0.html
+    d: https://www.cloudera.com/downloads/manager/5-8-0.html
+  - s: downloads/manager/5-8-1.html
+    d: https://www.cloudera.com/downloads/manager/5-8-1.html
+  - s: downloads/manager/5-8-2.html
+    d: https://www.cloudera.com/downloads/manager/5-8-2.html
+  - s: downloads/manager/5-8-3.html
+    d: https://www.cloudera.com/downloads/manager/5-8-3.html
+  - s: downloads/manager/5-8-4.html
+    d: https://www.cloudera.com/downloads/manager/5-8-4.html
+  - s: downloads/manager/5-8-5.html
+    d: https://www.cloudera.com/downloads/manager/5-8-5.html
+  - s: downloads/manager/5-9-0.html
+    d: https://www.cloudera.com/downloads/manager/5-9-0.html
+  - s: downloads/manager/5-9-1.html
+    d: https://www.cloudera.com/downloads/manager/5-9-1.html
+  - s: downloads/manager/5-9-2.html
+    d: https://www.cloudera.com/downloads/manager/5-9-2.html
+  - s: downloads/manager/5-9-3.html
+    d: https://www.cloudera.com/downloads/manager/5-9-3.html
+  - s: downloads/manager/6-0-0.html
+    d: https://www.cloudera.com/downloads/manager/6-0-0.html
+  - s: downloads/manager/6-0-1.html
+    d: https://www.cloudera.com/downloads/manager/6-0-1.html
+  - s: downloads/manager/6-1-0.html
+    d: https://www.cloudera.com/downloads/manager/6-1-0.html
+  - s: downloads/manager/6-1-1.html
+    d: https://www.cloudera.com/downloads/manager/6-1-1.html
+  - s: downloads/manager/6-2-0.html
+    d: https://www.cloudera.com/downloads/manager/6-2-0.html
+  - s: downloads/navigator/encrypt/6-2-0.html
+    d: https://www.cloudera.com/downloads/navigator/encrypt/6-2-0.html
+  - s: downloads/navigator/key-hsm/6-1-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-hsm/6-1-0.html
+  - s: downloads/navigator/key-trustee-kms/6-2-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-kms/6-2-0.html
+  - s: downloads/navigator/key-trustee-server/5-10-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-server/5-10-0.html
+  - s: downloads/navigator/key-trustee-server/5-11-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-server/5-11-0.html
+  - s: downloads/navigator/key-trustee-server/5-12-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-server/5-12-0.html
+  - s: downloads/navigator/key-trustee-server/5-13-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-server/5-13-0.html
+  - s: downloads/navigator/key-trustee-server/5-14-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-server/5-14-0.html
+  - s: downloads/navigator/key-trustee-server/5-7-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-server/5-7-0.html
+  - s: downloads/navigator/key-trustee-server/5-8-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-server/5-8-0.html
+  - s: downloads/navigator/key-trustee-server/6-0-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-server/6-0-0.html
+  - s: downloads/navigator/key-trustee-server/6-1-0.html
+    d: https://www.cloudera.com/downloads/navigator/key-trustee-server/6-1-0.html
+  - s: downloads/quickstart_vms.html
+    d: https://www.cloudera.com/downloads/quickstart_vms.html
+  - s: downloads/quickstart_vms/5-10.html
+    d: https://www.cloudera.com/downloads/quickstart_vms/5-10.html
+  - s: downloads/quickstart_vms/5-12.html
+    d: https://www.cloudera.com/downloads/quickstart_vms/5-12.html
+  - s: downloads/quickstart_vms/5-13.html
+    d: https://www.cloudera.com/downloads/quickstart_vms/5-13.html
+  - s: downloads/quickstart_vms/5-8.html
+    d: https://www.cloudera.com/downloads/quickstart_vms/5-8.html
+  - s: legal/policies.html
+    d: https://www.cloudera.com/legal/policies.html
+  - s: legal/terms-and-conditions.html
+    d: https://www.cloudera.com/legal/terms-and-conditions.html
+  - s: partners.html
+    d: https://www.cloudera.com/partners.html
+  - s: products.html
+    d: https://www.cloudera.com/products.html
+  - s: products/altus.html
+    d: https://www.cloudera.com/products/altus.html
+  - s: products/altus/access-altus-azure.html
+    d: https://www.cloudera.com/products/altus/access-altus-azure.html
+  - s: products/altus/altus-analytic-db.html
+    d: https://www.cloudera.com/products/altus/altus-analytic-db.html
+  - s: products/altus/altus-data-engineering.html
+    d: https://www.cloudera.com/products/altus/altus-data-engineering.html
+  - s: products/altus/altus-data-warehouse.html
+    d: https://www.cloudera.com/products/altus/altus-data-warehouse.html
+  - s: products/cdf.html
+    d: https://www.cloudera.com/products/cdf.html
+  - s: products/data-science-and-engineering.html
+    d: https://www.cloudera.com/products/data-science-and-engineering.html
+  - s: products/data-science-and-engineering/data-engineering.html
+    d: https://www.cloudera.com/products/data-science-and-engineering/data-engineering.html
+  - s: products/data-science-and-engineering/data-science-workbench.html
+    d: https://www.cloudera.com/products/data-science-and-engineering/data-science-workbench.html
+  - s: products/data-science-workbench.html
+    d: https://www.cloudera.com/products/data-science-workbench.html
+  - s: products/data-warehouse.html
+    d: https://www.cloudera.com/products/data-warehouse.html
+  - s: products/data-warehouse/analytic-database.html
+    d: https://www.cloudera.com/products/data-warehouse/analytic-database.html
+  - s: products/data-warehouse/edw-optimization.html
+    d: https://www.cloudera.com/products/data-warehouse/edw-optimization.html
+  - s: products/enterprise-data-hub.html
+    d: https://www.cloudera.com/products/enterprise-data-hub.html
+  - s: products/fast-forward-labs-research.html
+    d: https://www.cloudera.com/products/fast-forward-labs-research.html
+  - s: products/fast-forward-labs-research/fast-forward-labs-research-reports.html
+    d: https://www.cloudera.com/products/fast-forward-labs-research/fast-forward-labs-research-reports.html
+  - s: products/fast-forward-labs-research/latest-research.html
+    d: https://www.cloudera.com/products/fast-forward-labs-research/latest-research.html
+  - s: products/open-source/apache-hadoop/impala.html
+    d: https://www.cloudera.com/products/open-source/apache-hadoop/impala.html
+  - s: products/operational-db.html
+    d: https://www.cloudera.com/products/operational-db.html
+  - s: products/operational-db/operational-database.html
+    d: https://www.cloudera.com/products/operational-db/operational-database.html
+  - s: products/pricing.html
+    d: https://www.cloudera.com/products/pricing.html
+  - s: products/pricing/product-features.html
+    d: https://www.cloudera.com/products/pricing/product-features.html
+  - s: products/product-components/cloudera-navigator.html
+    d: https://www.cloudera.com/products/product-components/cloudera-navigator.html
+  - s: products/sdx.html
+    d: https://www.cloudera.com/products/sdx.html
+  - s: products/workload-xm.html
+    d: https://www.cloudera.com/products/workload-xm.html
+  - s: resources.html
+    d: https://www.cloudera.com/resources.html
+  - s: solutions.html
+    d: https://www.cloudera.com/solutions.html
+  - s: solutions/customer-insights.html
+    d: https://www.cloudera.com/solutions/customer-insights.html
+  - s: solutions/cybersecurity.html
+    d: https://www.cloudera.com/solutions/cybersecurity.html
+  - s: solutions/gallery.html
+    d: https://www.cloudera.com/solutions/gallery.html
+  - s: solutions/gallery/accenture-cyber-intelligence-platform.html
+    d: https://www.cloudera.com/solutions/gallery/accenture-cyber-intelligence-platform.html
+  - s: solutions/gallery/accenture-insights-platform.html
+    d: https://www.cloudera.com/solutions/gallery/accenture-insights-platform.html
+  - s: solutions/gallery/acxiom-marketing-analytics-environment.html
+    d: https://www.cloudera.com/solutions/gallery/acxiom-marketing-analytics-environment.html
+  - s: solutions/gallery/agilelab-wide-streaming-analytics-platform.html
+    d: https://www.cloudera.com/solutions/gallery/agilelab-wide-streaming-analytics-platform.html
+  - s: solutions/gallery/amdocs-contextual-digital-engagement.html
+    d: https://www.cloudera.com/solutions/gallery/amdocs-contextual-digital-engagement.html
+  - s: solutions/gallery/anomali-threatstream.html
+    d: https://www.cloudera.com/solutions/gallery/anomali-threatstream.html
+  - s: solutions/gallery/arcadia-data-arcadia-enterprise.html
+    d: https://www.cloudera.com/solutions/gallery/arcadia-data-arcadia-enterprise.html
+  - s: solutions/gallery/arcadia-data-cybersecurity-visual-analytics.html
+    d: https://www.cloudera.com/solutions/gallery/arcadia-data-cybersecurity-visual-analytics.html
+  - s: solutions/gallery/arcadia-visual-analytics-for-iot-data.html
+    d: https://www.cloudera.com/solutions/gallery/arcadia-visual-analytics-for-iot-data.html
+  - s: solutions/gallery/atos-codex-data-lake-engine.html
+    d: https://www.cloudera.com/solutions/gallery/atos-codex-data-lake-engine.html
+  - s: solutions/gallery/atscale-shopper-behavior-analysis.html
+    d: https://www.cloudera.com/solutions/gallery/atscale-shopper-behavior-analysis.html
+  - s: solutions/gallery/autogrid-energy-internet-platform.html
+    d: https://www.cloudera.com/solutions/gallery/autogrid-energy-internet-platform.html
+  - s: solutions/gallery/axual-platform.html
+    d: https://www.cloudera.com/solutions/gallery/axual-platform.html
+  - s: solutions/gallery/bardess-customer360.html
+    d: https://www.cloudera.com/solutions/gallery/bardess-customer360.html
+  - s: solutions/gallery/bcs-technology-interactive-social-airline-automated-companion-isaac.html
+    d: https://www.cloudera.com/solutions/gallery/bcs-technology-interactive-social-airline-automated-companion-isaac.html
+  - s: solutions/gallery/bluetalon.html
+    d: https://www.cloudera.com/solutions/gallery/bluetalon.html
+  - s: solutions/gallery/booz-allen-hamilton-riskcanvas.html
+    d: https://www.cloudera.com/solutions/gallery/booz-allen-hamilton-riskcanvas.html
+  - s: solutions/gallery/brain-management-log-intelligence-management-system-lims.html
+    d: https://www.cloudera.com/solutions/gallery/brain-management-log-intelligence-management-system-lims.html
+  - s: solutions/gallery/capgemini-leap-accelerator.html
+    d: https://www.cloudera.com/solutions/gallery/capgemini-leap-accelerator.html
+  - s: solutions/gallery/cask-data-application-platform.html
+    d: https://www.cloudera.com/solutions/gallery/cask-data-application-platform.html
+  - s: solutions/gallery/cazena-big-data-as-a-service.html
+    d: https://www.cloudera.com/solutions/gallery/cazena-big-data-as-a-service.html
+  - s: solutions/gallery/centurylink-managed-services-analytics.html
+    d: https://www.cloudera.com/solutions/gallery/centurylink-managed-services-analytics.html
+  - s: solutions/gallery/claranet-as-a-service-on-ovh-sovereign-cloud.html
+    d: https://www.cloudera.com/solutions/gallery/claranet-as-a-service-on-ovh-sovereign-cloud.html
+  - s: solutions/gallery/clickfox-customer-journey-analytics-platform.html
+    d: https://www.cloudera.com/solutions/gallery/clickfox-customer-journey-analytics-platform.html
+  - s: solutions/gallery/cognizant-bigdecisions.html
+    d: https://www.cloudera.com/solutions/gallery/cognizant-bigdecisions.html
+  - s: solutions/gallery/cognizant-bigframe.html
+    d: https://www.cloudera.com/solutions/gallery/cognizant-bigframe.html
+  - s: solutions/gallery/cognizant-customer-journey-artificial-intelligence.html
+    d: https://www.cloudera.com/solutions/gallery/cognizant-customer-journey-artificial-intelligence.html
+  - s: solutions/gallery/corvil-electronic-trading-risk-and-compliance.html
+    d: https://www.cloudera.com/solutions/gallery/corvil-electronic-trading-risk-and-compliance.html
+  - s: solutions/gallery/countertack-sentinel.html
+    d: https://www.cloudera.com/solutions/gallery/countertack-sentinel.html
+  - s: solutions/gallery/data-reply-gmbh-machine-learning-platform-for-insurance-cases.html
+    d: https://www.cloudera.com/solutions/gallery/data-reply-gmbh-machine-learning-platform-for-insurance-cases.html
+  - s: solutions/gallery/datameer-network-optimization.html
+    d: https://www.cloudera.com/solutions/gallery/datameer-network-optimization.html
+  - s: solutions/gallery/datarobot-credit-card-fraudulent-transaction.html
+    d: https://www.cloudera.com/solutions/gallery/datarobot-credit-card-fraudulent-transaction.html
+  - s: solutions/gallery/datarobot-direct-marketing.html
+    d: https://www.cloudera.com/solutions/gallery/datarobot-direct-marketing.html
+  - s: solutions/gallery/datavard-sap-and-hadoop-integration.html
+    d: https://www.cloudera.com/solutions/gallery/datavard-sap-and-hadoop-integration.html
+  - s: solutions/gallery/deloitte-converge-health-miner.html
+    d: https://www.cloudera.com/solutions/gallery/deloitte-converge-health-miner.html
+  - s: solutions/gallery/deloitte-customer-next-best-offer.html
+    d: https://www.cloudera.com/solutions/gallery/deloitte-customer-next-best-offer.html
+  - s: solutions/gallery/deloitte-customer360.html
+    d: https://www.cloudera.com/solutions/gallery/deloitte-customer360.html
+  - s: solutions/gallery/deloitte-location-based-insights-lbi.html
+    d: https://www.cloudera.com/solutions/gallery/deloitte-location-based-insights-lbi.html
+  - s: solutions/gallery/denodo-data-virtualization-for-big-data.html
+    d: https://www.cloudera.com/solutions/gallery/denodo-data-virtualization-for-big-data.html
+  - s: solutions/gallery/digital-alchemy-udecide.html
+    d: https://www.cloudera.com/solutions/gallery/digital-alchemy-udecide.html
+  - s: solutions/gallery/digital-reasoning-synthesys.html
+    d: https://www.cloudera.com/solutions/gallery/digital-reasoning-synthesys.html
+  - s: solutions/gallery/dxc-analytics-platform-services.html
+    d: https://www.cloudera.com/solutions/gallery/dxc-analytics-platform-services.html
+  - s: solutions/gallery/dxc-data-workload-optimization.html
+    d: https://www.cloudera.com/solutions/gallery/dxc-data-workload-optimization.html
+  - s: solutions/gallery/dxc-iot-omnilocation.html
+    d: https://www.cloudera.com/solutions/gallery/dxc-iot-omnilocation.html
+  - s: solutions/gallery/eVariant-Healthcare-Platform.html
+    d: https://www.cloudera.com/solutions/gallery/eVariant-Healthcare-Platform.html
+  - s: solutions/gallery/fireeye-threat-intelligence.html
+    d: https://www.cloudera.com/solutions/gallery/fireeye-threat-intelligence.html
+  - s: solutions/gallery/fusionex-giant.html
+    d: https://www.cloudera.com/solutions/gallery/fusionex-giant.html
+  - s: solutions/gallery/informatica-customer-360-insights.html
+    d: https://www.cloudera.com/solutions/gallery/informatica-customer-360-insights.html
+  - s: solutions/gallery/informatica-customer-360.html
+    d: https://www.cloudera.com/solutions/gallery/informatica-customer-360.html
+  - s: solutions/gallery/informatica-data-governance.html
+    d: https://www.cloudera.com/solutions/gallery/informatica-data-governance.html
+  - s: solutions/gallery/informatica-decision-management.html
+    d: https://www.cloudera.com/solutions/gallery/informatica-decision-management.html
+  - s: solutions/gallery/informatica-recommendation-engine.html
+    d: https://www.cloudera.com/solutions/gallery/informatica-recommendation-engine.html
+  - s: solutions/gallery/informatica-tibco-transaction-security.html
+    d: https://www.cloudera.com/solutions/gallery/informatica-tibco-transaction-security.html
+  - s: solutions/gallery/information-builders-dmi-accelerator-for-payments-transaction-insights.html
+    d: https://www.cloudera.com/solutions/gallery/information-builders-dmi-accelerator-for-payments-transaction-insights.html
+  - s: solutions/gallery/information-builders-kuberre-er-360.html
+    d: https://www.cloudera.com/solutions/gallery/information-builders-kuberre-er-360.html
+  - s: solutions/gallery/information-builders-officer-analytics-accelerator.html
+    d: https://www.cloudera.com/solutions/gallery/information-builders-officer-analytics-accelerator.html
+  - s: solutions/gallery/intel-apache-spot.html
+    d: https://www.cloudera.com/solutions/gallery/intel-apache-spot.html
+  - s: solutions/gallery/keyrus-customer-experience-excellence-c2x.html
+    d: https://www.cloudera.com/solutions/gallery/keyrus-customer-experience-excellence-c2x.html
+  - s: solutions/gallery/knime-analytics-platform.html
+    d: https://www.cloudera.com/solutions/gallery/knime-analytics-platform.html
+  - s: solutions/gallery/kogentix-automated-machine-learning-platform-amp.html
+    d: https://www.cloudera.com/solutions/gallery/kogentix-automated-machine-learning-platform-amp.html
+  - s: solutions/gallery/lockheed-leidos-caads.html
+    d: https://www.cloudera.com/solutions/gallery/lockheed-leidos-caads.html
+  - s: solutions/gallery/metistream-ember.html
+    d: https://www.cloudera.com/solutions/gallery/metistream-ember.html
+  - s: solutions/gallery/metistream-Hail.html
+    d: https://www.cloudera.com/solutions/gallery/metistream-Hail.html
+  - s: solutions/gallery/microstrategy-business-intelligence-platform.html
+    d: https://www.cloudera.com/solutions/gallery/microstrategy-business-intelligence-platform.html
+  - s: solutions/gallery/nevis-doolytic.html
+    d: https://www.cloudera.com/solutions/gallery/nevis-doolytic.html
+  - s: solutions/gallery/ngdata-lily.html
+    d: https://www.cloudera.com/solutions/gallery/ngdata-lily.html
+  - s: solutions/gallery/niara-security-analytics.html
+    d: https://www.cloudera.com/solutions/gallery/niara-security-analytics.html
+  - s: solutions/gallery/nokia-customer-experience-solutions.html
+    d: https://www.cloudera.com/solutions/gallery/nokia-customer-experience-solutions.html
+  - s: solutions/gallery/onmarc-data-platform.html
+    d: https://www.cloudera.com/solutions/gallery/onmarc-data-platform.html
+  - s: solutions/gallery/oracle-big-data-appliance.html
+    d: https://www.cloudera.com/solutions/gallery/oracle-big-data-appliance.html
+  - s: solutions/gallery/oracle-big-data-cloud-service.html
+    d: https://www.cloudera.com/solutions/gallery/oracle-big-data-cloud-service.html
+  - s: solutions/gallery/paxata-adaptive-information-patform.html
+    d: https://www.cloudera.com/solutions/gallery/paxata-adaptive-information-patform.html
+  - s: solutions/gallery/pentaho-monetize-my-data.html
+    d: https://www.cloudera.com/solutions/gallery/pentaho-monetize-my-data.html
+  - s: solutions/gallery/pentaho-optimize-the-data-warehouse.html
+    d: https://www.cloudera.com/solutions/gallery/pentaho-optimize-the-data-warehouse.html
+  - s: solutions/gallery/pentaho-single-view-of-patient.html
+    d: https://www.cloudera.com/solutions/gallery/pentaho-single-view-of-patient.html
+  - s: solutions/gallery/pue-solr-datasource-for-grafana.html
+    d: https://www.cloudera.com/solutions/gallery/pue-solr-datasource-for-grafana.html
+  - s: solutions/gallery/pwc-customer-insights-platform.html
+    d: https://www.cloudera.com/solutions/gallery/pwc-customer-insights-platform.html
+  - s: solutions/gallery/qlik-analytic-platform-for-personalized-offers.html
+    d: https://www.cloudera.com/solutions/gallery/qlik-analytic-platform-for-personalized-offers.html
+  - s: solutions/gallery/qlik-customer-satisfaction-personalized-offer.html
+    d: https://www.cloudera.com/solutions/gallery/qlik-customer-satisfaction-personalized-offer.html
+  - s: solutions/gallery/qlik-modernized-analytics-for-regulatory-compliance.html
+    d: https://www.cloudera.com/solutions/gallery/qlik-modernized-analytics-for-regulatory-compliance.html
+  - s: solutions/gallery/rapidminer-radoop.html
+    d: https://www.cloudera.com/solutions/gallery/rapidminer-radoop.html
+  - s: solutions/gallery/rcg-enable-lower-business-risk.html
+    d: https://www.cloudera.com/solutions/gallery/rcg-enable-lower-business-risk.html
+  - s: solutions/gallery/rcg-enable-modernize-architecture.html
+    d: https://www.cloudera.com/solutions/gallery/rcg-enable-modernize-architecture.html
+  - s: solutions/gallery/reach-real-time-event-based-analytics-and-collaboration-hub.html
+    d: https://www.cloudera.com/solutions/gallery/reach-real-time-event-based-analytics-and-collaboration-hub.html
+  - s: solutions/gallery/red-hat-eurotech-end-to-end-open-source-architecture-for-iot.html
+    d: https://www.cloudera.com/solutions/gallery/red-hat-eurotech-end-to-end-open-source-architecture-for-iot.html
+  - s: solutions/gallery/securonix-snypr.html
+    d: https://www.cloudera.com/solutions/gallery/securonix-snypr.html
+  - s: solutions/gallery/sferanet-sentiment-analysis-plus.html
+    d: https://www.cloudera.com/solutions/gallery/sferanet-sentiment-analysis-plus.html
+  - s: solutions/gallery/sferanet-smart-xml-platform.html
+    d: https://www.cloudera.com/solutions/gallery/sferanet-smart-xml-platform.html
+  - s: solutions/gallery/simudyne.html
+    d: https://www.cloudera.com/solutions/gallery/simudyne.html
+  - s: solutions/gallery/sistematica-spa-huball.html
+    d: https://www.cloudera.com/solutions/gallery/sistematica-spa-huball.html
+  - s: solutions/gallery/streamsets-data-collector.html
+    d: https://www.cloudera.com/solutions/gallery/streamsets-data-collector.html
+  - s: solutions/gallery/striim-real-time-data-integration-from-hpe-nonstop-to-cloudera.html
+    d: https://www.cloudera.com/solutions/gallery/striim-real-time-data-integration-from-hpe-nonstop-to-cloudera.html
+  - s: solutions/gallery/striim-real-time-data-streaming-from-oracle-to-kafka.html
+    d: https://www.cloudera.com/solutions/gallery/striim-real-time-data-streaming-from-oracle-to-kafka.html
+  - s: solutions/gallery/syncsort-big-frame.html
+    d: https://www.cloudera.com/solutions/gallery/syncsort-big-frame.html
+  - s: solutions/gallery/tableau-for-it-powered-analytics.html
+    d: https://www.cloudera.com/solutions/gallery/tableau-for-it-powered-analytics.html
+  - s: solutions/gallery/tableau-trifacta-device-analytics.html
+    d: https://www.cloudera.com/solutions/gallery/tableau-trifacta-device-analytics.html
+  - s: solutions/gallery/talend-customer-abandonment-prevention.html
+    d: https://www.cloudera.com/solutions/gallery/talend-customer-abandonment-prevention.html
+  - s: solutions/gallery/talend-fast-fraud-detection.html
+    d: https://www.cloudera.com/solutions/gallery/talend-fast-fraud-detection.html
+  - s: solutions/gallery/talend-game-analytics.html
+    d: https://www.cloudera.com/solutions/gallery/talend-game-analytics.html
+  - s: solutions/gallery/talend-transaction-analysis-optimization.html
+    d: https://www.cloudera.com/solutions/gallery/talend-transaction-analysis-optimization.html
+  - s: solutions/gallery/tcs-active-archive.html
+    d: https://www.cloudera.com/solutions/gallery/tcs-active-archive.html
+  - s: solutions/gallery/tcs-customer-intelligence-and-insights.html
+    d: https://www.cloudera.com/solutions/gallery/tcs-customer-intelligence-and-insights.html
+  - s: solutions/gallery/tcs-hobs-iras.html
+    d: https://www.cloudera.com/solutions/gallery/tcs-hobs-iras.html
+  - s: solutions/gallery/tcs-sensor-data-analytics-framework.html
+    d: https://www.cloudera.com/solutions/gallery/tcs-sensor-data-analytics-framework.html
+  - s: solutions/gallery/teradata-appliance-for-hadoop-with-cloudera.html
+    d: https://www.cloudera.com/solutions/gallery/teradata-appliance-for-hadoop-with-cloudera.html
+  - s: solutions/gallery/tibco-content-spotfire-analytics.html
+    d: https://www.cloudera.com/solutions/gallery/tibco-content-spotfire-analytics.html
+  - s: solutions/gallery/tibco-spotfire-big-data-analytics.html
+    d: https://www.cloudera.com/solutions/gallery/tibco-spotfire-big-data-analytics.html
+  - s: solutions/gallery/trifacta-accurate-and-flexible-regulatory-reporting-on-hadoop.html
+    d: https://www.cloudera.com/solutions/gallery/trifacta-accurate-and-flexible-regulatory-reporting-on-hadoop.html
+  - s: solutions/gallery/trifacta-customer-service-analytics.html
+    d: https://www.cloudera.com/solutions/gallery/trifacta-customer-service-analytics.html
+  - s: solutions/gallery/trifacta-wrangler-for-banking-data.html
+    d: https://www.cloudera.com/solutions/gallery/trifacta-wrangler-for-banking-data.html
+  - s: solutions/gallery/united-consult-real-time-location-detection-and-monitoring-system.html
+    d: https://www.cloudera.com/solutions/gallery/united-consult-real-time-location-detection-and-monitoring-system.html
+  - s: solutions/gallery/unravel-data-application-performance-management.html
+    d: https://www.cloudera.com/solutions/gallery/unravel-data-application-performance-management.html
+  - s: solutions/gallery/versive-security-engine.html
+    d: https://www.cloudera.com/solutions/gallery/versive-security-engine.html
+  - s: solutions/gallery/zoomdata-ad-placement-optimizer.html
+    d: https://www.cloudera.com/solutions/gallery/zoomdata-ad-placement-optimizer.html
+  - s: solutions/gallery/zoomdata-customer-insights-solution.html
+    d: https://www.cloudera.com/solutions/gallery/zoomdata-customer-insights-solution.html
+  - s: solutions/gallery/zoomdata-real-time-network-monitor.html
+    d: https://www.cloudera.com/solutions/gallery/zoomdata-real-time-network-monitor.html
+  - s: solutions/gallery/zwoox-data-ingestion-solution.html
+    d: https://www.cloudera.com/solutions/gallery/zwoox-data-ingestion-solution.html
+  - s: solutions/improve-products-and-services.html
+    d: https://www.cloudera.com/solutions/improve-products-and-services.html
+  - s: solutions/industry-solutions.html
+    d: https://www.cloudera.com/solutions/industry-solutions.html
+  - s: solutions/lower-business-risks.html
+    d: https://www.cloudera.com/solutions/lower-business-risks.html
+  - s: solutions/lower-business-risks/general-data-protection-regulation.html
+    d: https://www.cloudera.com/solutions/lower-business-risks/general-data-protection-regulation.html
+  - s: support.html
+    d: https://www.cloudera.com/support.html
+  - s: system/sling/logout.html
+    d: https://www.cloudera.com/system/sling/logout.html
+  - s: documentation.html
+    d: /documentation/index.html
+  - s: downloads.html.html
+    d: /downloads.html
+  - s: documentation/enterprise/upgrade.html
+    d: /documentation/enterprise/upgrade/topics/ug_overview.html
