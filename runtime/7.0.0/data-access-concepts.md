@@ -21,8 +21,7 @@ publications:
         
 
 ---
-Overview of Cloudera Runtime data access concepts goes here.... Sem odio
-nascetur nibh cubilia sapien rhoncus erat conubia, primis porttitor
-tempus vehicula non dui ligula habitasse ultricies, duis nullam tortor
-nulla lobortis est vel penatibus nisi, magna risus fusce lectus lacinia
-felis turpis.
+Cloudera Data Platform Runtime data access concepts provide overview
+information about Apache Impala, Apache Hive, and Hue. These
+components provide SQL interfaces that enable you to access
+your data sets.
