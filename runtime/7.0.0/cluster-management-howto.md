@@ -6,20 +6,19 @@ publications:
   - title: Configuring Clusters
     url: configuring-clusters/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Describes how to configure Cloudera Runtime clusters and services. 
 
   - title: Managing Data Hub Clusters
     url: managing-clusters/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Describes how to use Cloudera Manager to start and stop services and role 
+      instances, and configure the Cloudera Manager Admin Console.
 
   - title: Monitoring and Diagnostics
     url: monitoring-and-diagnostics/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Describes how to use Cloudera Manager to monitor and diagnose problems
+      with a cluster or Cloudera Runtime services.
 
   - title: Managing ZooKeeper
     url: managing-zookeeper/index.html
@@ -39,8 +38,6 @@ publications:
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
 ---
-Overview of Cloudera Runtime cluster management how-tos goes here....
-Hendrerit ac velit mauris viverra mattis nisi dolor litora ullamcorper,
-placerat venenatis congue tempus tincidunt interdum metus dui feugiat,
-primis fusce fames lobortis morbi natoque torquent magna neque, class
-ultrices dis pharetra vitae ante sodales enim.
+After you create a cluster using the Management Console, you use Cloudera
+Manager to manage, configure, and monitor the cluster and Cloudera Runtime
+services.
