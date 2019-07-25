@@ -34,7 +34,7 @@ sections:
         url:
       - title: Creating data marts
         url:
-      - title: Setting autoscaling thresholds
+      - title: Autoscale thresholds
         url:
       - title: Integrating third-party tools with the Data Warehouse service
         url:
