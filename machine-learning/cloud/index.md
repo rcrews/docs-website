@@ -127,11 +127,4 @@ sections:
   #   books:
 ---
 
-Torquent semper vivamus inceptos ac penatibus auctor varius praesent,
-porttitor facilisis ad ligula leo ut finibus cras iaculis, felis
-pharetra aliquet pellentesque arcu ultricies dolor efficitur neque,
-gravida class sed integer interdum nullam in. Fringilla velit nunc
-bibendum non imperdiet vulputate risus enim nullam, duis class arcu
-feugiat adipiscing urna luctus nisl mi, egestas eget hac lectus ante
-eros phasellus nibh lorem, dictum quis felis justo nostra lacinia sit
-aliquet.
+Cloudera Machine Learning is Cloudera’s cloud-native machine learning platform built for CDP. It expands the end-to-end workflow of Cloudera Data Science Workbench (CDSW) with cloud-native benefits like rapid provisioning, elastic autoscaling, distributed dependency isolation, and distributed GPU training.
