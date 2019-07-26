@@ -25,6 +25,11 @@ json:
             id: kudu-design
             sub: kudu-design/navigation.json
 
+          - text: Apache HDFS Overview
+            href: hdfs-overview/index.html
+            id: hdfs-overview
+            sub: hdfs-overview/navigation.json
+
       - text: COMPUTE
         href: compute-concepts.html
         sub:
