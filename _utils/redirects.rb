@@ -1,4 +1,4 @@
-#!/usr/env ruby -w
+#!/usr/bin/env ruby -w
 # frozen_string_literal: true
 
 # Create client-side redirects for www.cloudera destinations referenced
