@@ -509,15 +509,17 @@ json:
         id: cm-reference
         sub: cm-reference/navigation.json
 
-      - text: Oozie Metrics and Diagnostics
-        href: oozie-metrics-diagnostics/index.html
-        id: oozie-metrics-diagnostics
-        sub: oozie-metrics-diagnostics/navigation.json
+      # Sairam removed this because the publication will no longer be required
+      # - text: Oozie Metrics and Diagnostics
+      # href: oozie-metrics-diagnostics/index.html
+      # id: oozie-metrics-diagnostics
+      # sub: oozie-metrics-diagnostics/navigation.json
 
-      - text: APIs and Metrics for Working with HDFS
-        href: hdfs-apis-metrics/index.html
-        id: hdfs-apis-metrics
-        sub: hdfs-apis-metrics/navigation.json
+      # Sairam removed this because the publication will no longer be required
+      # - text: APIs and Metrics for Working with HDFS
+      # href: hdfs-apis-metrics/index.html
+      # id: hdfs-apis-metrics
+      # sub: hdfs-apis-metrics/navigation.json
 
       - text: Apache Atlas Metadata Collection Reference
         href: atlas-metadata-collection/index.html
