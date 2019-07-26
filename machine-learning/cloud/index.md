@@ -13,22 +13,22 @@ sections:
     name: concepts
     books:
       - title: Product Overview
-        url: product-overview.html
+        url: product/index.html
 
       - title: Architecture Overview
-        url: architecture-overview.html
+        url: architecture/index.html
 
       - title: Engines Overview
-        url: engines-overview.html
+        url: engines-overview/index.html
 
       - title: Security Overview
-        url: security-overview.html
+        url: security-overview/index.html
 
       - title: Model Training and Deployment Overview
-        url: model-training-deployment-overview.html
+        url: model-training-deployment-overview/index.html
 
       - title: Collaboration Overview
-        url: collaboration-overview.html
+        url: collaboration-overview/index.html
 
   # - title: Planning
   #   name: planning
@@ -42,89 +42,96 @@ sections:
     name: howto
     books:
       - title: Quickstart
-        url: ml-quickstart.html
+        url: quickstart/index.html
 
       - title: ML Workspaces
-        url: ml-workspaces.html
+        url: workspaces/index.html
 
       - title: Projects
-        url: ml-projects.html
+        url: projects/index.html
 
       - title: Engines
-        url: ml-managing-engines.html
+        url: engines/index.html
 
       - title: Customized Engines
-        url: ml-customized-engines.html
+        url: customized-engines/index.html
 
       - title: Spark
-        url: ml-dist-comp-with-Spark.html
+        url: spark/index.html
 
       - title: GPUs
-        url: ml-gpu.html
+        url: gpu/index.html
 
       - title: Experiments
-        url: ml-experiments.html
+        url: experiments/index.html
 
       - title: Models
-        url: ml-models.html
+        url: models/index.html
 
       - title: Jobs and Pipelines
-        url: ml-jobs-pipelines.html
+        url: jobs-pipelines/index.html
 
       - title: Workbench
-        url: ml-workbench.html
+        url: workbench/index.html
 
       - title: Third-Party Editors
-        url: ml-editors.html
+        url: editors/index.html
 
       - title: Distributed Computing with Workers
-        url: ml-parallel-computing.html
+        url: distributed-computing-workers/index.html
 
       - title: Web UIs and Applications
-        url: ml-web-ui.html
+        url: web-ui/index.html
 
       - title: Git for Collaboration
-        url: ml-using-git.html
+        url: git-collaboration/index.html
 
       - title: Visualizations
-        url: ml-visualize-report.html
+        url: visualizations/index.html
 
       - title: User Accounts
-        url: ml-user-guide.html
+        url: user-accounts/index.html
 
       - title: Monitoring
-        url: ml-monitoring.html
+        url: monitoring/index.html
 
       - title: Security
-        url: ml-security.html
+        url: security/index.html
 
       - title: Backup
-        url: ml-backup.html
+        url: backup/index.html
 
       - title: Data Access
-        url: ml-import-data.html
+        url: import-data/index.html
 
   - title: Troubleshooting
     name: troubleshooting
     books:
       - title: Troubleshooting
-        url: ml-troubleshooting.html
+        url: troubleshooting/index.html
 
   - title: Reference
     name: reference
     books:
       - title: CLI
-        url: ml-cli.html
+        url: cli/index.html
 
       - title: FAQ
-        url: ml-faq.html
+        url: faq/index.html
 
       - title: Jupyter
-        url: ml-jupyter.html
+        url: jupyter/index.html
 
   # - title: Learning & Training
   #   name: learning
   #   books:
 ---
 
-Cloudera Machine Learning is Cloudera’s cloud-native machine learning platform built for CDP. It expands the end-to-end workflow of Cloudera Data Science Workbench (CDSW) with cloud-native benefits like rapid provisioning, elastic autoscaling, distributed dependency isolation, and distributed GPU training.
+Torquent semper vivamus inceptos ac penatibus auctor varius praesent,
+porttitor facilisis ad ligula leo ut finibus cras iaculis, felis
+pharetra aliquet pellentesque arcu ultricies dolor efficitur neque,
+gravida class sed integer interdum nullam in. Fringilla velit nunc
+bibendum non imperdiet vulputate risus enim nullam, duis class arcu
+feugiat adipiscing urna luctus nisl mi, egestas eget hac lectus ante
+eros phasellus nibh lorem, dictum quis felis justo nostra lacinia sit
+aliquet.
