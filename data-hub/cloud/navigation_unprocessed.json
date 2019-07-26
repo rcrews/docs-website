@@ -77,7 +77,7 @@ json:
         id: custom-properties
         sub: custom-properties/navigation.json
 
-      - text: EBS Encryption AWS
+      - text: EBS Encryption on AWS
         href: ebs-encryption-aws/index.html
         id: ebs-encryption-aws
         sub: ebs-encryption-aws/navigation.json
