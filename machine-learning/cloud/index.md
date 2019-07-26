@@ -13,22 +13,22 @@ sections:
     name: concepts
     books:
       - title: Product Overview
-        url: product/index.html
+        url: product-overview.html
 
       - title: Architecture Overview
-        url: architecture/index.html
+        url: architecture-overview.html
 
       - title: Engines Overview
-        url: engines-overview/index.html
+        url: engines-overview.html
 
       - title: Security Overview
-        url: security-overview/index.html
+        url: security-overview.html
 
       - title: Model Training and Deployment Overview
-        url: model-training-deployment-overview/index.html
+        url: model-training-deployment-overview.html
 
       - title: Collaboration Overview
-        url: collaboration-overview/index.html
+        url: collaboration-overview.html
 
   # - title: Planning
   #   name: planning
@@ -42,96 +42,89 @@ sections:
     name: howto
     books:
       - title: Quickstart
-        url: quickstart/index.html
+        url: ml-quickstart.html
 
       - title: ML Workspaces
-        url: workspaces/index.html
+        url: ml-workspaces.html
 
       - title: Projects
-        url: projects/index.html
+        url: ml-projects.html
 
       - title: Engines
-        url: engines/index.html
+        url: ml-managing-engines.html
 
       - title: Customized Engines
-        url: customized-engines/index.html
+        url: ml-customized-engines.html
 
       - title: Spark
-        url: spark/index.html
+        url: ml-dist-comp-with-Spark.html
 
       - title: GPUs
-        url: gpu/index.html
+        url: ml-gpu.html
 
       - title: Experiments
-        url: experiments/index.html
+        url: ml-experiments.html
 
       - title: Models
-        url: models/index.html
+        url: ml-models.html
 
       - title: Jobs and Pipelines
-        url: jobs-pipelines/index.html
+        url: ml-jobs-pipelines.html
 
       - title: Workbench
-        url: workbench/index.html
+        url: ml-workbench.html
 
       - title: Third-Party Editors
-        url: editors/index.html
+        url: ml-editors.html
 
       - title: Distributed Computing with Workers
-        url: distributed-computing-workers/index.html
+        url: ml-parallel-computing.html
 
       - title: Web UIs and Applications
-        url: web-ui/index.html
+        url: ml-web-ui.html
 
       - title: Git for Collaboration
-        url: git-collaboration/index.html
+        url: ml-using-git.html
 
       - title: Visualizations
-        url: visualizations/index.html
+        url: ml-visualize-report.html
 
       - title: User Accounts
-        url: user-accounts/index.html
+        url: ml-user-guide.html
 
       - title: Monitoring
-        url: monitoring/index.html
+        url: ml-monitoring.html
 
       - title: Security
-        url: security/index.html
+        url: ml-security.html
 
       - title: Backup
-        url: backup/index.html
+        url: ml-backup.html
 
       - title: Data Access
-        url: import-data/index.html
+        url: ml-import-data.html
 
   - title: Troubleshooting
     name: troubleshooting
     books:
       - title: Troubleshooting
-        url: troubleshooting/index.html
+        url: ml-troubleshooting.html
 
   - title: Reference
     name: reference
     books:
       - title: CLI
-        url: cli/index.html
+        url: ml-cli.html
 
       - title: FAQ
-        url: faq/index.html
+        url: ml-faq.html
 
       - title: Jupyter
-        url: jupyter/index.html
+        url: ml-jupyter.html
 
   # - title: Learning & Training
   #   name: learning
   #   books:
 ---
 
-Torquent semper vivamus inceptos ac penatibus auctor varius praesent,
-porttitor facilisis ad ligula leo ut finibus cras iaculis, felis
-pharetra aliquet pellentesque arcu ultricies dolor efficitur neque,
-gravida class sed integer interdum nullam in. Fringilla velit nunc
-bibendum non imperdiet vulputate risus enim nullam, duis class arcu
-feugiat adipiscing urna luctus nisl mi, egestas eget hac lectus ante
-eros phasellus nibh lorem, dictum quis felis justo nostra lacinia sit
-aliquet.
+Cloudera Machine Learning is Cloudera’s cloud-native machine learning platform built for CDP. It expands the end-to-end workflow of Cloudera Data Science Workbench (CDSW) with cloud-native benefits like rapid provisioning, elastic autoscaling, distributed dependency isolation, and distributed GPU training.
