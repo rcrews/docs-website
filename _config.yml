@@ -70,8 +70,6 @@ exclude:
 
   # Static content supporting the legacy Hortonworks pages that don't
   # need to be part of most builds
-  - common
-  - error.html
   - favicon.ico
   - google313e059f6e26cb8c.html
   - googlea675d981988e7c7a.html
