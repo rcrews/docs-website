@@ -15,6 +15,11 @@ publications:
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
 
+  - title: Apache HDFS Overview
+    url: hdfs-overview/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
 ---
 Overview of Cloudera Runtime data storage concepts goes here.... Auctor
 et elementum risus congue etiam dictumst est curae tellus, habitasse
