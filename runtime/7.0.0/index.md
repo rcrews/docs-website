@@ -114,11 +114,13 @@ sections:
       - title: Cloudera Manager Reference
         url: cm-reference/index.html
 
-      - title: Oozie Metrics and Diagnostics
-        url: oozie-metrics-diagnostics/index.html
+      # Sairam removed this because the publication will no longer be required
+      # - title: Oozie Metrics and Diagnostics
+      # url: oozie-metrics-diagnostics/index.html
 
-      - title: APIs and Metrics for Working with HDFS
-        url: hdfs-apis-metrics/index.html
+      # Sairam removed this because the publication will no longer be required
+      # - title: APIs and Metrics for Working with HDFS
+      # url: hdfs-apis-metrics/index.html
 
       - title: Apache Atlas Metadata Collection Reference
         url: atlas-metadata-collection/index.html
