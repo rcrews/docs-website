@@ -25,11 +25,6 @@ json:
             id: kudu-design
             sub: kudu-design/navigation.json
 
-          - text: Apache HBase Introduction
-            href: hbase-introduction/index.html
-            id: hbase-introduction
-            sub: hbase-introduction/navigation.json
-
       - text: COMPUTE
         href: compute-concepts.html
         sub:
@@ -55,6 +50,12 @@ json:
             href: hue-introduction/index.html
             id: hue-introduction
             sub: hue-introduction/navigation.json
+               
+          - text: Apache HBase Introduction
+            href: hbase-introduction/index.html
+            id: hbase-introduction
+            sub: hbase-introduction/navigation.json
+           
 
       - text: DATA SCIENCE
         href: data-science-concepts.html
@@ -166,66 +167,6 @@ json:
             id: hdfs-acls
             sub: hdfs-acls/navigation.json
 
-          # Gokul reomoved this because this publication is incomplete
-          # - text: Using HBase to Store and Access Data
-          #   href: hbase-getting-started/index.html
-          #   id: hbase-getting-started
-          #   sub: hbase-getting-started/navigation.json
-
-          - text: Configuring HBase
-            href: configuring-hbase/index.html
-            id: configuring-hbase
-            sub: configuring-hbase/navigation.json
-
-          - text: Using Azure Data Lake Store with HBase
-            href: hbase-adls/index.html
-            id: hbase-adls
-            sub: hbase-adls/navigation.json
-
-          - text: Using Amazon S3 with HBase
-            href: hbase-s3/index.html
-            id: hbase-s3
-            sub: hbase-s3/navigation.json
-
-          - text: Managing HBase Security
-            href: hbase-security/index.html
-            id: hbase-security
-            sub: hbase-security/navigation.json
-
-          - text: Accessing HBase by using the HBase Shell
-            href: accessing-hbase/index.html
-            id: accessing-hbase
-            sub: accessing-hbase/navigation.json
-
-          - text: Managing HBase
-            href: managing-hbase/index.html
-            id: managing-hbase
-            sub: managing-hbase/navigation.json
-
-          - text: Configuring HBase High Availability
-            href: hbase-high-availability/index.html
-            id: hbase-high-availability
-            sub: hbase-high-availability/navigation.json
-
-          - text: Using HBase Backup and Disaster Recovery
-            href: hbase-replication/index.html
-            id: hbase-replication
-            sub: hbase-replication/navigation.json
-
-          - text: Configuring HBase Snapshots
-            href: hbase-snapshots/index.html
-            id: hbase-snapshots
-            sub: hbase-snapshots/navigation.json
-
-          - text: Using HBase Health Tests
-            href: hbase-health-tests/index.html
-            id: hbase-health-tests
-            sub: hbase-health-tests/navigation.json
-
-          - text: Using HBase Metrics
-            href: hbase-metrics/index.html
-            id: hbase-metrics
-            sub: hbase-metrics/navigation.json
 
       - text: COMPUTE
         href: compute-howto.html
@@ -349,6 +290,67 @@ json:
             href: impala-manage/index.html
             id: impala-manage
             sub: impala-manage/navigation.json
+            
+          # Gokul removed this because this publication is incomplete
+          # - text: Using HBase to Store and Access Data
+          #   href: hbase-getting-started/index.html
+          #   id: hbase-getting-started
+          #   sub: hbase-getting-started/navigation.json
+
+          - text: Configuring HBase
+            href: configuring-hbase/index.html
+            id: configuring-hbase
+            sub: configuring-hbase/navigation.json
+
+          - text: Using Azure Data Lake Store with HBase
+            href: hbase-adls/index.html
+            id: hbase-adls
+            sub: hbase-adls/navigation.json
+
+          - text: Using Amazon S3 with HBase
+            href: hbase-s3/index.html
+            id: hbase-s3
+            sub: hbase-s3/navigation.json
+
+          - text: Managing HBase Security
+            href: hbase-security/index.html
+            id: hbase-security
+            sub: hbase-security/navigation.json
+
+          - text: Accessing HBase by using the HBase Shell
+            href: accessing-hbase/index.html
+            id: accessing-hbase
+            sub: accessing-hbase/navigation.json
+
+          - text: Managing HBase
+            href: managing-hbase/index.html
+            id: managing-hbase
+            sub: managing-hbase/navigation.json
+
+          - text: Configuring HBase High Availability
+            href: hbase-high-availability/index.html
+            id: hbase-high-availability
+            sub: hbase-high-availability/navigation.json
+
+          - text: Using HBase Backup and Disaster Recovery
+            href: hbase-replication/index.html
+            id: hbase-replication
+            sub: hbase-replication/navigation.json
+
+          - text: Configuring HBase Snapshots
+            href: hbase-snapshots/index.html
+            id: hbase-snapshots
+            sub: hbase-snapshots/navigation.json
+
+          - text: Using HBase Health Tests
+            href: hbase-health-tests/index.html
+            id: hbase-health-tests
+            sub: hbase-health-tests/navigation.json
+
+          - text: Using HBase Metrics
+            href: hbase-metrics/index.html
+            id: hbase-metrics
+            sub: hbase-metrics/navigation.json
 
       - text: DATA SCIENCE
         href: data-science-howto.html
