@@ -13,22 +13,22 @@ sections:
     name: concepts
     books:
       - title: Product Overview
-        url: ml-product-overview.html
+        url: product-overview.html
 
       - title: Architecture Overview
-        url: ml-architecture-overview.html
+        url: architecture-overview.html
 
       - title: Engines Overview
-        url: ml-engines-overview.html
+        url: engines-overview.html
 
       - title: Security Overview
-        url: ml-security-overview.html
+        url: security-overview.html
 
       - title: Model Training and Deployment Overview
-        url: ml-model-training-deployment-overview.html
+        url: model-training-deployment-overview.html
 
       - title: Collaboration Overview
-        url: ml-collaboration-overview.html
+        url: collaboration-overview.html
 
   # - title: Planning
   #   name: planning
