@@ -13,32 +13,32 @@ json:
     id: concepts
     sub:
       - text: Product Overview
-        href: product/index.html
+        href: ml-product-overview.html
         id: product
         sub: product/navigation.json
 
       - text: Architecture Overview
-        href: architecture/index.html
+        href: ml-architecture-overview.html
         id: architecture
         sub: architecture/navigation.json
 
       - text: Engines Overview
-        href: engines-overview/index.html
+        href: ml-engines-overview.html
         id: engines-overview
         sub: engines-overview/navigation.json
 
       - text: Security Overview
-        href: security-overview/index.html
+        href: ml-security-overview.html
         id: security-overview
         sub: security-overview/navigation.json
 
       - text: Model Training and Deployment Overview
-        href: model-training-deployment-overview/index.html
+        href: ml-model-training-deployment-overview.html
         id: model-training-deployment-overview
         sub: model-training-deployment-overview/navigation.json
 
       - text: Collaboration Overview
-        href: collaboration-overview/index.html
+        href: ml-collaboration-overview.html
         id: collaboration-overview
         sub: collaboration-overview/navigation.json
 
