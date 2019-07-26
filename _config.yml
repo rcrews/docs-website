@@ -68,8 +68,19 @@ exclude:
   - runtime/7.0.0/starting-hive/
   - runtime/7.0.0/using-hiveql/
 
-  # Boatloads of static content that doesn't need to be part of most
-  # builds
+  # Static content supporting the legacy Hortonworks pages that don't
+  # need to be part of most builds
+  - common
+  - error.html
+  - favicon.ico
+  - google313e059f6e26cb8c.html
+  - googlea675d981988e7c7a.html
+  - robots.txt
+  - sitemap.xsl
+  - wp-content
+
+  # Static content supporting the legacy Cloudera pages that don't need
+  # to be part of most builds
   - about
   - about-cloudera
   - about-cloudera.html
@@ -77,7 +88,6 @@ exclude:
   - apps
   - campaign
   - careers.html
-  - common
   - contact-sales
   - contact-sales.html
   - contact-us.html
@@ -88,14 +98,9 @@ exclude:
   - downloads
   - downloads.html
   - downloads.html.html
-  - error.html
   - etc
   - etc.clientlibs
-  - favicon.ico
-  - feed.xml
   - get-started.html
-  - google313e059f6e26cb8c.html
-  - googlea675d981988e7c7a.html
   - legal
   - libs
   - more
@@ -104,11 +109,9 @@ exclude:
   - products.html
   - resources
   - resources.html
-  - robots.txt
   - runtime
   - search.html
   - services-support.html
-  - sitemap.xsl
   - solutions
   - solutions.html
   - support.html
@@ -116,4 +119,3 @@ exclude:
   - training.html
   - user
   - why-cloudera.html
-  - wp-content
