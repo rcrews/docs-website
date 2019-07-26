@@ -21,7 +21,7 @@ publications:
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
   
-    - title: Apache HDFS Overview
+  - title: Apache HDFS Overview
     url: hdfs-overview/index.html
     description: >-
       publication description ante nec fusce varius mattis facilisis
