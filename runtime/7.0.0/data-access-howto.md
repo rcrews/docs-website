@@ -97,9 +97,9 @@ publications:
     description: >-
       Presents the task topics for configuring and managing Impala
 ---
-Cloudera Data Platform Runtime data access how-to's provide information
-about how to use Apache Impala, Apache Hive 3, and Hue to access your
-data sets. Hive and Impala provide access to data stored in the Hive
+Data access topics for Cloudera Data Platform Runtime tell you how to 
+use Apache Impala, Apache Hive 3, and Hue to access your
+data sets.  Hive and Impala provide access to data stored in the Hive
 metastore database. Hive 3 addresses enterprise data warehouse demands
 for transactional data in the ORC file format. Impala performs
 high-performance, low-latency SQL queries on data in Parquet and other
