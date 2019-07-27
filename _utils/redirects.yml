@@ -5,6 +5,12 @@
   d: /downloads.html
 - s: documentation/enterprise/upgrade.html
   d: /documentation/enterprise/upgrade/topics/ug_overview.html
+- s: documentation/enterprise/6-2.html
+  d: /documentation/enterprise/6/6.2.html
+- s: documentation/enterprise/6-1.html
+  d: /documentation/enterprise/6/6.1.html
+- s: documentation/enterprise/6.html
+  d: /documentation/enterprise/6/6.0.html
 
 # From here to the end, just redirect to the equivalent path on
 # www.cloudera.com
