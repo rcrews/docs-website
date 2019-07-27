@@ -11,6 +11,8 @@
   d: /documentation/enterprise/6/6.1.html
 - s: documentation/enterprise/6.html
   d: /documentation/enterprise/6/6.0.html
+- s: documentation/director/altus-documentation.html
+  d: /documentation/altus.html
 
 # From here to the end, just redirect to the equivalent path on
 # www.cloudera.com
