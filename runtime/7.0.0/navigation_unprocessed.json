@@ -172,6 +172,11 @@ json:
             id: hdfs-acls
             sub: hdfs-acls/navigation.json
 
+          - text: Configuring HDFS Encryption
+            href: hdfs-encryption/index.html
+            id: hdfs-encryption
+            sub: hdfs-encryption/navigation.json
+
 
       - text: COMPUTE
         href: compute-howto.html
