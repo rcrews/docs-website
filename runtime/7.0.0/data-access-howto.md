@@ -87,6 +87,11 @@ publications:
       Explains how to move data from relational databases directly to
       Hive or to the file system or object store and how to move data
       back to Hive
+      
+      
+  # Divya commented out 
+  # - title: Accessing Cloud Data
+  #   url: cloud-data-access/index.html
 
   # Removed at Kris's request
   # - title: Using the Cost-based Optimizer in Hive

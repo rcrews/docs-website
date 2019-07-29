@@ -44,6 +44,12 @@ publications:
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
+  
+  - title: Configuring HDFS Encryption
+    url: hdfs-encryption/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
 
   # - title: Using HBase to Store and Access Data
   #   url: hbase-getting-started/index.html
