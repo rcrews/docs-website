@@ -86,6 +86,11 @@ exclude:
   - apps
   - campaign
   - careers.html
+  - common/fonts/
+  - common/img/
+  - common/js/libs/
+  - common/sample-data/
+  - common/themes/pre-hdp-3.1/
   - contact-sales
   - contact-sales.html
   - contact-us.html
@@ -99,6 +104,11 @@ exclude:
   - etc
   - etc.clientlibs
   - get-started.html
+  - HDPDocuments/DPS1/DPS-1.0.0/bk_dps-installation/content/troubleshooting_dps_installation.html
+  - HDPDocuments/SMM/SMM-1.0.0/rest-api-reference/
+  - HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
+  - HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
+  - HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
   - legal
   - libs
   - more
