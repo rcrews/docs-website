@@ -104,7 +104,6 @@ exclude:
   - etc
   - etc.clientlibs
   - get-started.html
-  - HDPDocuments/DPS1/DPS-1.0.0/bk_dps-installation/content/troubleshooting_dps_installation.html
   - HDPDocuments/SMM/SMM-1.0.0/rest-api-reference/
   - HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
   - HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
