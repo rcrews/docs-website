@@ -73,6 +73,11 @@ exclude:
   - favicon.ico
   - google313e059f6e26cb8c.html
   - googlea675d981988e7c7a.html
+  - HDPDocuments/Cloudbreak/Cb-doc-resources/
+  - HDPDocuments/SMM/SMM-1.0.0/rest-api-reference/
+  - HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
+  - HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
+  - HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
   - robots.txt
   - sitemap.xsl
   - wp-content
@@ -104,10 +109,6 @@ exclude:
   - etc
   - etc.clientlibs
   - get-started.html
-  - HDPDocuments/SMM/SMM-1.0.0/rest-api-reference/
-  - HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
-  - HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
-  - HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
   - legal
   - libs
   - more
