@@ -87,12 +87,12 @@ publications:
       Explains how to move data from relational databases directly to
       Hive or to the file system or object store and how to move data
       back to Hive
-      
-	# - title: Using HBase to Store and Access Data
-  	#   url: hbase-getting-started/index.html
-  	#	description: >-
-    # 	publication description ante nec fusce varius mattis facilisis
-    #  	consectetur sit
+
+  # - title: Using HBase to Store and Access Data
+  #   url: hbase-getting-started/index.html
+  #  description: >-
+  #   publication description ante nec fusce varius mattis facilisis
+  #    consectetur sit
 
   - title: Configuring HBase
     url: configuring-hbase/index.html
@@ -147,9 +147,9 @@ publications:
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
-      
-      
-  # Divya commented out 
+
+
+  # Divya commented out
   # - title: Accessing Cloud Data
   #   url: cloud-data-access/index.html
 
@@ -162,7 +162,7 @@ publications:
     description: >-
       Presents the task topics for configuring and managing Impala
 ---
-Data access topics for Cloudera Data Platform Runtime tell you how to 
+Data access topics for Cloudera Data Platform Runtime tell you how to
 use Apache Impala, Apache Hive 3, and Hue to access your
 data sets.  Hive and Impala provide access to data stored in the Hive
 metastore database. Hive 3 addresses enterprise data warehouse demands
