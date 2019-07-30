@@ -70,6 +70,11 @@ exclude:
 
   # Static content supporting the legacy Hortonworks pages that don't
   # need to be part of most builds
+  - common/fonts/
+  - common/img/
+  - common/js/libs/
+  - common/sample-data/
+  - common/themes/pre-hdp-3.1/
   - favicon.ico
   - google313e059f6e26cb8c.html
   - googlea675d981988e7c7a.html
@@ -84,45 +89,8 @@ exclude:
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds
-  - about
-  - about-cloudera
-  - about-cloudera.html
-  - about.html
   - apps
-  - campaign
-  - careers.html
-  - common/fonts/
-  - common/img/
-  - common/js/libs/
-  - common/sample-data/
-  - common/themes/pre-hdp-3.1/
-  - contact-sales
-  - contact-sales.html
-  - contact-us.html
   - content
-  - developers
-  - developers.html
-  - documentation.html
-  - downloads
-  - downloads.html
-  - downloads.html.html
   - etc
   - etc.clientlibs
-  - get-started.html
-  - legal
   - libs
-  - more
-  - partners.html
-  - products
-  - products.html
-  - resources
-  - resources.html
-  - search.html
-  - services-support.html
-  - solutions
-  - solutions.html
-  - support.html
-  - system
-  - training.html
-  - user
-  - why-cloudera.html
