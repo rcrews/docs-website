@@ -352,16 +352,6 @@ json:
             id: hbase-snapshots
             sub: hbase-snapshots/navigation.json
 
-          - text: Using HBase Health Tests
-            href: hbase-health-tests/index.html
-            id: hbase-health-tests
-            sub: hbase-health-tests/navigation.json
-
-          - text: Using HBase Metrics
-            href: hbase-metrics/index.html
-            id: hbase-metrics
-            sub: hbase-metrics/navigation.json
-
           # Divya reomoved this because this publication is incomplete
           # - text: Accessing Cloud Data
           #   href: cr-cda-cloud-data-access/index.html
