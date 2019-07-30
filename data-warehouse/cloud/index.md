@@ -13,7 +13,7 @@ sections:
     name: concepts
     books:
       - title: Overview
-        url: dw-overview/index.html
+        url: overview/index.html
 
   # - title: Planning
   #   name: planning
@@ -27,7 +27,7 @@ sections:
     name: howto
     books:
       - title: Using
-        url: dw-using-service/index.html
+        url: using-service/index.html
 
   # - title: Troubleshooting
   #   name: troubleshooting

@@ -13,9 +13,9 @@ json:
     id: concepts
     sub:
       - text: Overview
-        href: dw-overview/index.html
-        id: dw-overview
-        sub: dw-overview/navigation.json
+        href: overview/index.html
+        id: overview
+        sub: overview/navigation.json
 
   # - text: Planning
   #   id: planning
@@ -29,9 +29,9 @@ json:
     id: howto
     sub:
       - text: Using
-        href: dw-using-service/index.html
-        id: dw-using-service
-        sub: dw-using-service/navigation.json
+        href: using-service/index.html
+        id: using-service
+        sub: using-service/navigation.json
 
   # - text: Troubleshooting
   #   id: troubleshooting
