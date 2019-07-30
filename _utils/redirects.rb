@@ -11,7 +11,7 @@ require 'erb'
 require 'fileutils'
 require 'yaml'
 
-redirects = YAML.load(File.read('_utils/redirects.yml'))
+redirects = YAML.load(File.read('/Users/rcrews/Sandbox/docs-website/_utils/redirects.yml'))
 
 template = '<meta http-equiv="refresh" content="0; URL=<%= @destination %>">'
 

@@ -13,7 +13,7 @@ json:
     id: concepts
     sub:
       - text: DATA STORAGE
-        href: data-storage-concepts.html
+        href: storage-concepts.html
         sub:
           - text: Apache Kudu Overview
             href: kudu-overview/index.html
@@ -55,12 +55,11 @@ json:
             href: hue-introduction/index.html
             id: hue-introduction
             sub: hue-introduction/navigation.json
-               
+
           - text: Apache HBase Introduction
             href: hbase-introduction/index.html
             id: hbase-introduction
             sub: hbase-introduction/navigation.json
-           
 
       - text: DATA SCIENCE
         href: data-science-concepts.html
@@ -135,7 +134,7 @@ json:
     id: howto
     sub:
       - text: DATA STORAGE
-        href: data-storage-howto.html
+        href: storage-howto.html
         sub:
           - text: Administering Apache Kudu
             href: administering-kudu/index.html
@@ -176,7 +175,6 @@ json:
             href: hdfs-encryption/index.html
             id: hdfs-encryption
             sub: hdfs-encryption/navigation.json
-
 
       - text: COMPUTE
         href: compute-howto.html
@@ -300,7 +298,7 @@ json:
             href: impala-manage/index.html
             id: impala-manage
             sub: impala-manage/navigation.json
-            
+
           # Gokul removed this because this publication is incomplete
           # - text: Using HBase to Store and Access Data
           #   href: hbase-getting-started/index.html
@@ -443,20 +441,20 @@ json:
             id: monitoring-and-diagnostics
             sub: monitoring-and-diagnostics/navigation.json
 
-      - text: Managing ZooKeeper
-        href: managing-zookeeper/index.html
-        id: managing-zookeeper
-        sub: managing-zookeeper/navigation.json
+          - text: Managing ZooKeeper
+            href: managing-zookeeper/index.html
+            id: managing-zookeeper
+            sub: managing-zookeeper/navigation.json
 
-      - text: Authenticating ZooKeeper
-        href: zookeeper-authentication/index.html
-        id: zookeeper-authentication
-        sub: zookeeper-authentication/navigation.json
+          - text: Authenticating ZooKeeper
+            href: zookeeper-authentication/index.html
+            id: zookeeper-authentication
+            sub: zookeeper-authentication/navigation.json
 
-      - text: Monitoring ZooKeeper
-        href: monitoring-zookeeper/index.html
-        id: monitoring-zookeeper
-        sub: monitoring-zookeeper/navigation.json
+          - text: Monitoring ZooKeeper
+            href: monitoring-zookeeper/index.html
+            id: monitoring-zookeeper
+            sub: monitoring-zookeeper/navigation.json
 
   - text: Troubleshooting
     id: troubleshooting
