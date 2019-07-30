@@ -41,11 +41,8 @@ sections:
   #   name: learning
   #   books:
 ---
-Amet auctor ut aenean sociosqu nibh etiam tortor vestibulum ullamcorper
-nostra, primis egestas aptent donec sagittis pharetra ipsum cubilia
-risus, magnis mattis ridiculus porttitor quam erat mus semper malesuada,
-nec nisi nascetur euismod placerat nunc venenatis laoreet parturient.
-Metus himenaeos mus consequat pharetra sem nunc sed mattis lectus, elit
-feugiat lorem nec tempus facilisis potenti hendrerit natoque, id nullam
-finibus non congue arcu condimentum maecenas ut risus, lobortis mauris
-fermentum quam magnis porta duis fusce.
+Replication Manager is a service for copying, migrating, snapshotting,
+and restoring data between environments within the enterprise data
+cloud. It is a simple, easy-to-use, and feature-rich data movement
+capability to move existing data and metadata to the cloud to fuel new
+workloads.
