@@ -15,6 +15,11 @@ json:
       - text: DATA STORAGE
         href: storage-concepts.html
         sub:
+          - text: Apache HDFS Overview
+            href: hdfs-overview/index.html
+            id: hdfs-overview
+            sub: hdfs-overview/navigation.json
+
           - text: Apache Kudu Overview
             href: kudu-overview/index.html
             id: kudu-overview
@@ -24,11 +29,6 @@ json:
             href: kudu-design/index.html
             id: kudu-design
             sub: kudu-design/navigation.json
-
-          - text: Apache HDFS Overview
-            href: hdfs-overview/index.html
-            id: hdfs-overview
-            sub: hdfs-overview/navigation.json
 
       - text: COMPUTE
         href: compute-concepts.html
@@ -122,13 +122,14 @@ json:
         id: impala-planning
         sub: impala-planning/navigation.json
 
-  - text: Installation & Upgrade
-    id: installation
-    sub:
-      - text: Apache Kudu Install and Upgrade
-        href: kudu-install-and-upgrade/index.html
-        id: kudu-install-and-upgrade
-        sub: kudu-install-and-upgrade/navigation.json
+# Priyanka: Removed since install-upgrade procedures are not needed for CDP 1.0.0.
+#  - text: Installation & Upgrade
+#    id: installation
+#    sub:
+#      - text: Apache Kudu Install and Upgrade
+#        href: kudu-install-and-upgrade/index.html
+#        id: kudu-install-and-upgrade
+#        sub: kudu-install-and-upgrade/navigation.json
 
   - text: How To
     id: howto
@@ -136,21 +137,6 @@ json:
       - text: DATA STORAGE
         href: storage-howto.html
         sub:
-          - text: Administering Apache Kudu
-            href: administering-kudu/index.html
-            id: administering-kudu
-            sub: administering-kudu/navigation.json
-
-          - text: Apache Kudu Development
-            href: kudu-development/index.html
-            id: kudu-development
-            sub: kudu-development/navigation.json
-
-          - text: Apache Kudu Integration
-            href: kudu-integration/index.html
-            id: kudu-integration
-            sub: kudu-integration/navigation.json
-
           - text: Scaling Namespaces and Optimizing Data Storage
             href: scaling-namespaces/index.html
             id: scaling-namespaces
@@ -175,6 +161,21 @@ json:
             href: hdfs-encryption/index.html
             id: hdfs-encryption
             sub: hdfs-encryption/navigation.json
+
+          - text: Administering Apache Kudu
+            href: administering-kudu/index.html
+            id: administering-kudu
+            sub: administering-kudu/navigation.json
+
+          - text: Developing Applications with Apache Kudu
+            href: kudu-development/index.html
+            id: kudu-development
+            sub: kudu-development/navigation.json
+
+          - text: Integrating with Apache Kudu
+            href: kudu-integration/index.html
+            id: kudu-integration
+            sub: kudu-integration/navigation.json
 
       - text: COMPUTE
         href: compute-howto.html
