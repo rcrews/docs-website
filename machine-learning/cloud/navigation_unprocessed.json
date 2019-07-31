@@ -74,11 +74,6 @@ json:
         id: engines
         sub: engines/navigation.json
 
-      - text: Customized Engines
-        href: customized-engines/index.html
-        id: customized-engines
-        sub: customized-engines/navigation.json
-
       - text: Spark
         href: spark/index.html
         id: spark
@@ -104,45 +99,15 @@ json:
         id: jobs-pipelines
         sub: jobs-pipelines/navigation.json
 
-      - text: Workbench
-        href: workbench/index.html
-        id: workbench
-        sub: workbench/navigation.json
+      - text: Distributed Computing
+        href: distributed-computing/index.html
+        id: distributed-computing
+        sub: distributed-computing/navigation.json
 
-      - text: Third-Party Editors
-        href: editors/index.html
-        id: editors
-        sub: editors/navigation.json
-
-      - text: Distributed Computing with Workers
-        href: distributed-computing-workers/index.html
-        id: distributed-computing-workers
-        sub: distributed-computing-workers/navigation.json
-
-      - text: Web UIs and Applications
-        href: web-ui/index.html
-        id: web-ui
-        sub: web-ui/navigation.json
-
-      - text: Git for Collaboration
-        href: git-collaboration/index.html
-        id: git-collaboration
-        sub: git-collaboration/navigation.json
-
-      - text: Visualizations
-        href: visualizations/index.html
-        id: visualizations
-        sub: visualizations/navigation.json
-
-      - text: User Accounts
-        href: user-accounts/index.html
-        id: user-accounts
-        sub: user-accounts/navigation.json
-
-      - text: Monitoring
-        href: monitoring/index.html
-        id: monitoring
-        sub: monitoring/navigation.json
+      - text: Site Administration
+        href: site-administration/index.html
+        id: site-administration
+        sub: site-administration/navigation.json
 
       - text: Security
         href: security/index.html
@@ -154,10 +119,6 @@ json:
         id: backup
         sub: backup/navigation.json
 
-      - text: Data Access
-        href: import-data/index.html
-        id: import-data
-        sub: import-data/navigation.json
 
   - text: Troubleshooting
     id: troubleshooting
@@ -175,10 +136,15 @@ json:
         id: cli
         sub: cli/navigation.json
 
-      - text: FAQ
-        href: faq/index.html
-        id: faq
-        sub: faq/navigation.json
+      - text: Data Access
+        href: import-data/index.html
+        id: import-data
+        sub: import-data/navigation.json
+
+      - text: Visualizations
+        href: visualizations/index.html
+        id: visualizations
+        sub: visualizations/navigation.json
 
       - text: Jupyter Magics
         href: jupyter/index.html

@@ -13,10 +13,10 @@ sections:
     name: concepts
     books:
       - title: Product Overview
-        url: product/index.html
+        url: product-overview/index.html
 
       - title: Architecture Overview
-        url: architecture/index.html
+        url: architecture-overview/index.html
 
       - title: Engines Overview
         url: engines-overview/index.html
@@ -53,9 +53,6 @@ sections:
       - title: Engines
         url: engines/index.html
 
-      - title: Customized Engines
-        url: customized-engines/index.html
-
       - title: Spark
         url: spark/index.html
 
@@ -71,29 +68,11 @@ sections:
       - title: Jobs and Pipelines
         url: jobs-pipelines/index.html
 
-      - title: Workbench
-        url: workbench/index.html
+      - title: Distributed Computing
+        url: distributed-computing/index.html
 
-      - title: Third-Party Editors
-        url: editors/index.html
-
-      - title: Distributed Computing with Workers
-        url: distributed-computing-workers/index.html
-
-      - title: Web UIs and Applications
-        url: web-ui/index.html
-
-      - title: Git for Collaboration
-        url: git-collaboration/index.html
-
-      - title: Visualizations
-        url: visualizations/index.html
-
-      - title: User Accounts
-        url: user-accounts/index.html
-
-      - title: Monitoring
-        url: monitoring/index.html
+      - title: Site Administration
+        url: site-administration/index.html
 
       - title: Security
         url: security/index.html
@@ -101,8 +80,6 @@ sections:
       - title: Backup
         url: backup/index.html
 
-      - title: Data Access
-        url: import-data/index.html
 
   - title: Troubleshooting
     name: troubleshooting
@@ -116,8 +93,11 @@ sections:
       - title: CLI
         url: cli/index.html
 
-      - title: FAQ
-        url: faq/index.html
+      - title: Data Access
+        url: import-data/index.html
+
+      - title: Visualizations
+        url: visualizations/index.html
 
       - title: Jupyter
         url: jupyter/index.html

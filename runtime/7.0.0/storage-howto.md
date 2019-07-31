@@ -3,23 +3,6 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Data Storage
 publications:
-  - title: Administering Apache Kudu
-    url: administering-kudu/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Kudu Development
-    url: kudu-development/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Apache Kudu Integration
-    url: kudu-integration/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
 
   - title: Scaling Namespaces and Optimizing Data Storage
     url: scaling-namespaces/index.html
@@ -50,6 +33,21 @@ publications:
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
+      
+  - title: Administering Apache Kudu
+    url: administering-kudu/index.html
+    description: >-
+      Describes common administrative tasks and Apache Kudu workflows
+
+  - title: Developing Applications with Apache Kudu
+    url: kudu-development/index.html
+    description: >-
+      Provides reference examples to use C++ and Java client APIs to develop apps using Apache Kudu
+
+  - title: Integrating with Apache Impala
+    url: kudu-integration/index.html
+    description: >-
+      Provides examples on how to use Impala to insert, query, update, and delete data from Kudu tablets using Impala's SQL syntax
 
 ---
 Overview of Cloudera Runtime data storage how-tos goes here.... Auctor
