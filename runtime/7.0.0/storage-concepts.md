@@ -8,16 +8,19 @@ publications:
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
-      
-   - title: Apache Kudu Overview
+
+  - title: Apache Kudu Overview
     url: kudu-overview/index.html
     description: >-
-      Introduces Apache Kudu, with information on using Apache Impala with Kudu, Kudu concepts, architecture, and usage limitations.
+      Introduces Apache Kudu, with information on using Apache Impala
+      with Kudu, Kudu concepts, architecture, and usage limitations.
 
   - title: Apache Kudu Design
     url: kudu-design/index.html
     description: >-
-      Outlines effective schema design philosophies for Apache Kudu, and how they differ from approaches used for traditional relational database schemas
+      Outlines effective schema design philosophies for Apache Kudu, and
+      how they differ from approaches used for traditional relational
+      database schemas
 ---
 Overview of Cloudera Runtime data storage concepts goes here.... Auctor
 et elementum risus congue etiam dictumst est curae tellus, habitasse
