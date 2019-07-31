@@ -1,3 +1,4 @@
+---
 layout: product
 title: Cloudera Runtime
 version: 7.0.0

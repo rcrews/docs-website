@@ -3,7 +3,7 @@ var NEWUX = (function($) {
 
     var WhoAmI = {
         product_name : "", // We get this from the from the URL, or the meta-tag
-        version_name : "", // We get this from the URL, or the meta tag.
+        version : "", // We get this from the URL, or the meta tag.
         latest_version : "", // We need to look this up from the versions.yaml.
         other_versions : [], // Populate this from versions.yaml
         products : [], // The full versions.yaml jsonified.
@@ -11,61 +11,6 @@ var NEWUX = (function($) {
 
             // Walk the versions.yaml tree and get the related information for this product
             // and init the related information etc
-
-        }
-    };
-
-    // Example Toolbelt Functions
-    var Utils = { 
-        store: function (namespace, data) {
-            if (arguments.length > 1) {
-				return localStorage.setItem(namespace, JSON.stringify(data));
-			} else {
-				var store = localStorage.getItem(namespace);
-				return (store && JSON.parse(store)) || [];
-			}
-		},
-        slugify: function*(str) {
-            str = str.replace(/^\s+|\s+$/g, ''); // trim
-            str = str.toLowerCase();
-
-            // remove accents, swap ñ for n, etc
-            let from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
-            let to   = "aaaaeeeeiiiioooouuuunc------";
-            for (let i=0, l=from.length ; i<l ; i++) {
-                str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
-            }
-
-            str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
-                .replace(/\s+/g, '-') // collapse whitespace and replace by -
-                .replace(/-+/g, '-'); // collapse dashes
-
-            return str;
-        },
-        flatten: function(arr, subkey) {
-            // TODO! Flatten a nested array with subs, into a consectutive array.... we'll use this to make it easier to jump forwards and backwards.
-            return [];
-        },
-        makeIdFromHref:function(href) {
-            // Clever way to parse incomplete URLs -  https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
-
-            let parser = document.createElement('a');
-            parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
-
-            // We want to turn ID into sam-overview-index
-            let chunks = parser.pathname.split('/');
-
-            let id = chunks[chunks.length - 1];
-            id = id.substring(0, id.indexOf('.'));  // dump anything after a period... .html / .php etc.
-
-            if(chunks.length > 5) {
-                if(chunks[chunks.length - 2] !== 'content') {
-                    id = chunks[chunks.length - 2] + '-' + id;
-                } else {
-                    id = chunks[chunks.length - 3] + '-' + id;
-                }
-            }
-            return id;
         }
     };
 
@@ -183,25 +128,46 @@ var NEWUX = (function($) {
             $( "#content" ).fadeTo(200, 0, function() {
                 // $('.maincontent').append("<div id='content-spinner'><i class='fas fa-circle-notch fa-spin'></i></div>");
                 // TODO... do a check to see that we're on the same domain.
+                let self = $(this),
+                    selector = "#content"; // This is the selector of the content we want to grab.
 
-                console.log(document.location.href);
-                // document.location.href = url;
+                jQuery.ajax( {
+                    url: url,
+                    type: "GET",
+                    dataType: "html"
+                }).done( function( responseText ) {
 
-                $('#content').load( url + " #content", function(response, status, xhr) {
+                    // Save response for use in complete callback
+                    let response = arguments;
+
+                    // $.parseHTML will exclude scripts to avoid IE 'Permission Denied' errors
+                    let elems = jQuery( "<div>" ).append(jQuery.parseHTML( responseText )).find( selector ).children();
+                    if(!elems.length) {
+                        let new_url = Pubnav.pagestate.children[0].href;
+                        Pubnav.loadContent(new_url);
+                        // we need to call this function again with the child url.
+                        return false;
+                    }
+
+                    self.html(elems);
+                    document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    self.fadeTo(200,1);
+                    // Update History
+                    history.pushState(null, null, url);
+                    // $('#content-spinner').detach();
+
+                }).fail(function( jqXHR, status, error) {
+                    // If the request succeeds, this function gets "data", "status", "jqXHR"
+                    // but they are ignored because response was set above.
+                    // If it fails, this function gets "jqXHR", "status", "error"
+
                     if(status === "error") {
                         let msg = "Sorry but there was an error loading that page.";
                         $( "#content" ).html( msg + " " + xhr.status + " " + xhr.statusText );
                         $(this).fadeTo(200,1);
-                    } else {
-                        document.body.scrollTop = document.documentElement.scrollTop = 0;
-                        $(this).fadeTo(200,1);
-
-                        // Update History
-                        history.pushState(null, null, url);
-
                     }
-                    // $('#content-spinner').detach();
                 });
+
 
             });
 
@@ -238,7 +204,7 @@ var NEWUX = (function($) {
                     if('href' in item) {
                         item.id = Utils.makeIdFromHref(item.href);
                     } else {
-                        item.id = slugify('item.text');
+                        item.id = Utils.slugify('item.text');
                     }
                 }
                 if('sub' in item) {
@@ -307,7 +273,9 @@ var NEWUX = (function($) {
                     this.pagestate.next = (i+1 < navarray.length) ?  navarray[i+1] : ""; // TODO!!! - This should really be the first child if the element has children!
 
                     if(typeof navarray[i].sub === 'object') {
+                        console.log(navarray[i].sub);
                         this.pagestate.children = Utils.flatten(navarray[i].sub);
+                        console.log(this.pagestate.children);
                     }
                     this.pagestate.depth = 1;
                     return true;
@@ -651,6 +619,68 @@ var NEWUX = (function($) {
         }
     };
 
+    // Example Toolbelt Functions
+    var Utils = {
+        stripAndCollapse: function(value) {
+            // Strip and collapse whitespace according to HTML spec
+            // https://infra.spec.whatwg.org/#strip-and-collapse-ascii-whitespace
+            var tokens = value.match(/[^\x20\t\r\n\f]+/g) || [];
+            return tokens.join( " " );
+        },
+        store: function (namespace, data) {
+            if (arguments.length > 1) {
+                return localStorage.setItem(namespace, JSON.stringify(data));
+            } else {
+                var store = localStorage.getItem(namespace);
+                return (store && JSON.parse(store)) || [];
+            }
+        },
+        slugify: function*(str) {
+            str = str.replace(/^\s+|\s+$/g, ''); // trim
+            str = str.toLowerCase();
+
+            // remove accents, swap ñ for n, etc
+            let from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
+            let to   = "aaaaeeeeiiiioooouuuunc------";
+            for (let i=0, l=from.length ; i<l ; i++) {
+                str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+            }
+
+            str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+                .replace(/\s+/g, '-') // collapse whitespace and replace by -
+                .replace(/-+/g, '-'); // collapse dashes
+
+            return str;
+        },
+        flatten: function(arr, subkey) {
+            // TODO! Flatten a nested array with subs, into a consecutive array....
+            //  we'll use this to make it easier to jump forwards and backwards.
+            return arr;
+        },
+        makeIdFromHref:function(href) {
+            // Clever way to parse incomplete URLs -  https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
+
+            let parser = document.createElement('a');
+            parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
+
+            // We want to turn ID into sam-overview-index
+            let chunks = parser.pathname.split('/');
+
+            let id = chunks[chunks.length - 1];
+            id = id.substring(0, id.indexOf('.'));  // dump anything after a period... .html / .php etc.
+
+            if(chunks.length > 5) {
+                if(chunks[chunks.length - 2] !== 'content') {
+                    id = chunks[chunks.length - 2] + '-' + id;
+                } else {
+                    id = chunks[chunks.length - 3] + '-' + id;
+                }
+            }
+            return id;
+        }
+    };
+
+
     // PRODUCT DRAWER
     $('.product-drawer .open-close').on('click', function() {
         if($('.product-drawer').hasClass('open')) {
@@ -697,3 +727,5 @@ var NEWUX = (function($) {
     Search.init();
 
 }(jQuery));
+
+

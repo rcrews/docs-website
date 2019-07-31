@@ -52,21 +52,46 @@ exclude:
   - HDPDocuments/SMM/SMM-2.0.0/
 
   # Testing files that should not be copied to the hortonworks staging site
-  - data-catalog/cloud/navigation.json
-  - data-hub/cloud/navigation.json
-  - machine-learning/cloud/navigation.json
-  - management-console/cloud/navigation.json
-  - replication-manager/cloud/navigation.json
-  - runtime/7.0.0/navigation.json
+#  - data-catalog/cloud/navigation.json
+#  - data-hub/cloud/navigation.json
+#  - machine-learning/cloud/navigation.json
+#  - management-console/cloud/navigation.json
+#  - replication-manager/cloud/navigation.json
+#  - runtime/7.0.0/navigation.json
 
   # Testing files that should not be copied to any s3 bucket
-  - hdf
-  - runtime/7.0.0/integrating-hive-and-bi/
-  - runtime/7.0.0/managing-a-hive-workload/
-  - runtime/7.0.0/managing-hive/
-  - runtime/7.0.0/securing-hive/
-  - runtime/7.0.0/starting-hive/
-  - runtime/7.0.0/using-hiveql/
+  #  - hdf
+  #  - runtime/7.0.0/integrating-hive-and-bi/
+  #  - runtime/7.0.0/managing-a-hive-workload/
+  #  - runtime/7.0.0/managing-hive/
+  #  - runtime/7.0.0/securing-hive/
+  #  - runtime/7.0.0/starting-hive/
+  #  - runtime/7.0.0/using-hiveql/
+
+  # Unneeded compilation that we want to remove for testing
+  - about
+  - about-cloudera
+  - apps
+  - campaign
+  - cem
+  - contact-sales
+  - content
+  - developers
+  - documentation
+  - downloads
+  - etc
+  - etc.clientlibs
+  - HDF3
+  - HDPDocuments
+  - legal
+  - libs
+  - more
+  - posts
+  - products
+  - resources
+  - solutions
+  - system
+  - user
 
   # Static content supporting the legacy Hortonworks pages that don't
   # need to be part of most builds
@@ -107,7 +132,6 @@ exclude:
   - products.html
   - resources
   - resources.html
-  - runtime
   - search.html
   - services-support.html
   - solutions
