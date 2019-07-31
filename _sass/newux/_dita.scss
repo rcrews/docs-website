@@ -567,4 +567,59 @@
   .p {
     margin-top: 1rem;
   }
+  
+  /* Task topic labels */
+  .steps::before {
+    content: "Steps";
+    font-weight: bold;
+    margin-left: -40px;
+    }
+
+    .context::before {
+    content: "About this task";
+    display: block;
+    font-weight: bold;
+    }
+
+    .context p {
+    margin-top: 0em;
+    }
+
+    .result::before {
+    content: "Result";
+    display: block;
+    font-weight: bold;
+    }
+
+    .result p {
+    margin-top: 0em;
+    }
+
+
+    .postreq::before {
+    content: "After you finish";
+    display: block;
+    font-weight: bold;
+    }
+
+    .postreq p {
+    margin-top: 0em;
+    }
+
+
+    .prereq::before {
+    content: "Before you begin";
+    display: block;
+    font-weight: bold;
+    }
+
+    .prereq p {
+    margin-top: 0em;
+    }
+
+    .example::before {
+    content: "Example";
+    display: block;
+    font-weight: bold;
+    }
 }
