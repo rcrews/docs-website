@@ -1,27 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cloudera Documentation</title>
-<link rel="stylesheet" href="homepage.css">
-</head>
-<body>
-<div class="docs-wrap">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cloudera Documentation</title>
+<style>
+.card {
+  margin: 2ex;
+}
+.cdp {
+  border: 1px solid red;
+}
+</style>
 
-<div class="layout-content docs-home">
+  </head>
+  <body>
 
-<div class="search-hero ta-center color-white container search-hero__md">
-<h1 class="page-title">Cloudera Documentation</h1>
-</div>
+    <h1>Cloudera Documentation</h1>
 
-<div class="main">
+<div class="container">
 
-<div class="home-featured container">
+<div class="cdp">
 <h2>Cloudera Data Platform</h2>
 
-<div class="row row--home-cards">
+<div class="row">
 
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">Control Plane</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">Analytic Experiences</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">Cloudera Runtime</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">Cloudera Enterprise</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">HDP Enterprise</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">Data in Motion</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">Data Science Workbench</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">Cybersecurity Platform</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">Old Cloudera Docs Homepage</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p class="card-title">Old Hortonworks Docs Homepage</p>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!--
 <div class="card card--home col-md-4 ta-center">
 <div class="card__inner"><img class="card-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzI0ODRERiIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGZpbGwtb3BhY2l0eT0iLjA1IiBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiLz48cGF0aCBkPSJNMjUuOTYzIDI2LjE5NWwtNy4zMzktNC4wMzVMMjguOSAxMi42MjNsLTIuOTM2IDEzLjU3MnptLTcuNjI4IDEuMTc3di00LjQybDEuOTUyIDEuMDczLTEuOTUyIDMuMzQ3em0tLjUxLTUuNjA3bC02LjI4OC0yLjQ0NSAxNi4wNzItNi42MzYtOS43ODQgOS4wOHptLjQ1MyA3LjM1OGwyLjc0LTQuNjk2IDUuMDM0IDIuNzY4YS40MTYuNDE2IDAgMCAwIC42MDctLjI3N2wzLjMzNS0xNS40MTR2LS4wMTFhLjM2LjM2IDAgMCAwIC4wMDUtLjFjLS4wMDEtLjAxOC0uMDAxLS4wMzYtLjAwNC0uMDUzYS41NjIuNTYyIDAgMCAwLS4wNTEtLjEzMy4yNzUuMjc1IDAgMCAwLS4wMjUtLjAzNi4zOTMuMzkzIDAgMCAwLS4xNDktLjEyNi4zOC4zOCAwIDAgMC0uMDgtLjAzMWMtLjAxNy0uMDA0LS4wMzUtLjAwNi0uMDUyLS4wMDktLjAyNC0uMDAyLS4wNDctLjAwNi0uMDcxLS4wMDVhLjM3OC4zNzggMCAwIDAtLjE1Mi4wMzZsLTE5LjE1NyA3LjkxYS40MTcuNDE3IDAgMCAwIC4wMDcuNzc0bDcuMjM2IDIuODEydjYuMzhjMCAuNDI2LjU2Mi41NzguNzc3LjIxeiIvPjwvZz48L3N2Zz4=" alt="Sending Email">
 <h3 class="card__title">Control Plane</h3>
@@ -106,14 +187,4 @@
 </div>
 
 </div>
-
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-</body>
-</html>
+-->
