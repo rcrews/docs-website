@@ -88,67 +88,6 @@ publications:
       Hive or to the file system or object store and how to move data
       back to Hive
 
-  # - title: Using HBase to Store and Access Data
-  #   url: hbase-getting-started/index.html
-  #  description: >-
-  #   publication description ante nec fusce varius mattis facilisis
-  #    consectetur sit
-
-  - title: Configuring HBase
-    url: configuring-hbase/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Using Azure Data Lake Store with HBase
-    url: hbase-adls/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Using Amazon S3 with HBase
-    url: hbase-s3/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Managing HBase Security
-    url: hbase-security/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Accessing HBase by using the HBase Shell
-    url: accessing-hbase/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Managing HBase
-    url: managing-hbase/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Configuring HBase High Availability
-    url: hbase-high-availability/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Using HBase Backup and Disaster Recovery
-    url: hbase-replication/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Configuring HBase Snapshots
-    url: hbase-snapshots/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  # Divya commented out
   # - title: Accessing Cloud Data
   #   url: cloud-data-access/index.html
 
