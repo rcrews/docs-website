@@ -148,7 +148,6 @@ publications:
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
 
-
   # Divya commented out
   # - title: Accessing Cloud Data
   #   url: cloud-data-access/index.html

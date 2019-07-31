@@ -353,9 +353,9 @@ json:
 
           # Divya reomoved this because this publication is incomplete
           # - text: Accessing Cloud Data
-          #   href: cr-cda-cloud-data-access/index.html
+          #   href: cloud-data-access/index.html
           #   id: cloud-data-access
-          #   sub: cr-cda-cloud-data-access/navigation.json
+          #   sub: cloud-data-access/navigation.json
 
       - text: DATA SCIENCE
         href: data-science-howto.html
