@@ -21,6 +21,12 @@ publications:
       Outlines effective schema design philosophies for Apache Kudu, and
       how they differ from approaches used for traditional relational
       database schemas
+
+  - title: Apache HBase Introduction
+    url: hbase-introduction/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
 ---
 Overview of Cloudera Runtime data storage concepts goes here.... Auctor
 et elementum risus congue etiam dictumst est curae tellus, habitasse
