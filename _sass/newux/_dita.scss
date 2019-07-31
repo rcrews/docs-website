@@ -13,11 +13,11 @@
   }
 
   .kwd {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .parmname {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .var {
@@ -51,7 +51,7 @@
   }
 
   .wintitle {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .numcharref {
@@ -258,20 +258,20 @@
 
   .topictitle3 {
     font-size: 1.17rem;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 0.17rem;
     margin-top: 1pc;
   }
 
   .topictitle4 {
     font-size: 1.17rem;
-    font-weight: bold;
+    font-weight: 400;
     margin-top: 0.83rem;
   }
 
   .topictitle5 {
     font-size: 1.17rem;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .topictitle6 {
@@ -282,7 +282,7 @@
   .sectiontitle {
     color: #000;
     font-size: 1.17rem;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 0;
     margin-top: 1rem;
   }
@@ -359,12 +359,12 @@
 
   // Default of bold for definition list terms
   .dlterm {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   // Use CSS to expand lists with @compact="no"
   .dltermexpand {
-    font-weight: bold;
+    font-weight: 400;
     margin-top: 1rem;
   }
 
@@ -418,17 +418,17 @@
 
   .note .notetitle, .note .notelisttitle,
   .note .note__title {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   // Various basic phrase styles
   .bold {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .bolditalic {
     font-style: italic;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .italic {
@@ -440,11 +440,11 @@
   }
 
   .uicontrol {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .defkwd {
-    font-weight: bold;
+    font-weight: 400;
     text-decoration: underline;
   }
 
@@ -489,7 +489,7 @@
   }
 
   .firstcol {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .table--pgwide-1 {
@@ -571,14 +571,14 @@
   /* Task topic labels */
   .steps::before {
     content: "Steps";
-    font-weight: bold;
+    font-weight: 400;
     margin-left: -20px;
     }
 
   .context::before {
     content: "About this task";
     display: block;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .context p {
@@ -588,7 +588,7 @@
   .result::before {
     content: "Result";
     display: block;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .result p {
@@ -598,7 +598,7 @@
   .postreq::before {
     content: "After you finish";
     display: block;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .postreq p {
@@ -608,7 +608,7 @@
   .prereq::before {
     content: "Before you begin";
     display: block;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .prereq p {
@@ -618,6 +618,6 @@
   .example::before {
     content: "Example";
     display: block;
-    font-weight: bold;
+    font-weight: 400;
   }
 }
