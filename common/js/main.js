@@ -45,8 +45,6 @@ var NEWUX = (function($) {
                                         minors: []
                                     };
 
-                                    console.log('checking.... ' + data[i].versions[j].url);
-
                                     // This should now be the key versions... let's start matching
                                     if(!found && my_product_url === data[i].versions[j].url) {
                                         // We found it at the top level
@@ -148,7 +146,8 @@ var NEWUX = (function($) {
             next: "",
             depth: 0, // How many layers deep we are.
             breadpath: [],// Array of Parents... in descending order.
-            children: [] // Flattened Array of Subs }
+            children: [], // Flattened Array of Subs }
+            pdfurl: ""
         },
         navstate: [], // Holds the list of open nav items in the menu... used to maintain state between loads.
         init: function() {
@@ -271,8 +270,8 @@ var NEWUX = (function($) {
                     }
 
                     // TODO!!! Get the PDF part working.
-                    // let pdf_url = $responseHTML.find('a.pdficon')[0].href;
-                    // We'll want to update the PDF symbol.... which I think is up in the topnav.
+                    let $pdf = $responseHTML.find('a.pdficon'); // TODO! - This seems a bit too common and prone to error.
+                    Pubnav.pagestate.current.pdfurl = ($pdf.length > 0) ? $pdf[0].href : "";
 
                     self.html(elems);
                     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -453,13 +452,25 @@ var NEWUX = (function($) {
                 $('.cpage').removeClass('hasnext');
             }
 
-            // Outer Breadcrumbs
+            // I've modified this so that the topic is the only breadcrumb at the top of the content page.
+            if(this.pagestate.breadpath.length >= 2) {
+                let output = `<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`;
+                if(this.pagestate.current.pdfurl !== "") {
+                    output += `<a href="${this.pagestate.currrent.pdfurl}" target="_blank"><i class="fa fa-file-pdf"></i></a>`
+                }
+                $('.inner-breadcrumbs').html(output).fadeTo(200, 1);
+            } else {
+                $('.inner-breadcrumbs').fadeTo(200, 0);
+            }
+
+            /* Outer Breadcrumbs... putting the topic title up top.
             if(this.pagestate.breadpath.length >= 2) {
                 let output = `<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`;
                 $('.bread-category').html(output);
             }
+            */
 
-            // Inner Breadcrumbs
+            /* Inner Breadcrumbs
             if(this.pagestate.breadpath.length >= 3) {
                 let output = "";
                 for(let i=2; i < this.pagestate.breadpath.length; i++ ) {
@@ -472,6 +483,7 @@ var NEWUX = (function($) {
             } else {
                 $('.inner-breadcrumbs').fadeTo(200, 0);
             }
+            */
 
             // Set the active item in the menu.
             $('.ctoc li').removeClass('active');
