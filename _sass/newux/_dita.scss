@@ -1,8 +1,10 @@
 #content {
   /*!
-   * Parts of this file are from the DITA Open Toolkit project.
+   * This file is part of the DITA Open Toolkit project.
+   *
    * Copyright 2004, 2005 IBM Corporation
-   * License: Apache License, Version 2.0
+   *
+   * See the accompanying LICENSE file for applicable license.
    */
   .codeblock {
     font-family: monospace;
@@ -13,11 +15,11 @@
   }
 
   .kwd {
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .parmname {
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .var {
@@ -51,7 +53,7 @@
   }
 
   .wintitle {
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .numcharref {
@@ -178,8 +180,8 @@
   }
 
   .fig {
-    // Default of italics to set apart figure captions
-    // Use @frame to create frames on figures
+    /* Default of italics to set apart figure captions */
+    /* Use @frame to create frames on figures */
   }
 
   .figcap {
@@ -226,7 +228,7 @@
     margin-top: 1rem;
   }
 
-  // Align images based on @align on topic/image
+  /* Align images based on @align on topic/image */
   div.imageleft {
     text-align: left;
   }
@@ -243,12 +245,14 @@
     text-align: justify;
   }
 
-  // Set heading sizes, getting smaller for deeper nesting
+  /* Set heading sizes, getting smaller for deeper nesting */
+  /*
   .topictitle1 {
     font-size: 1.34rem;
     margin-bottom: 0.1rem;
     margin-top: 0;
   }
+  */
 
   .topictitle2 {
     font-size: 1.17rem;
@@ -258,20 +262,20 @@
 
   .topictitle3 {
     font-size: 1.17rem;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 0.17rem;
     margin-top: 1pc;
   }
 
   .topictitle4 {
     font-size: 1.17rem;
-    font-weight: 400;
+    font-weight: bold;
     margin-top: 0.83rem;
   }
 
   .topictitle5 {
     font-size: 1.17rem;
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .topictitle6 {
@@ -282,7 +286,7 @@
   .sectiontitle {
     color: #000;
     font-size: 1.17rem;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 0;
     margin-top: 1rem;
   }
@@ -297,8 +301,7 @@
     margin-top: 1rem;
   }
 
-  // Most link groups are created with <div>.
-  // Ensure they have space before and after.
+  /* Most link groups are created with <div>. Ensure they have space before and after. */
   .ullinks {
     list-style-type: none;
   }
@@ -352,19 +355,19 @@
     margin-bottom: 1rem;
   }
 
-  // Simple lists do not get a bullet
+  /* Simple lists do not get a bullet */
   ul.simple {
     list-style-type: none;
   }
 
-  // Default of bold for definition list terms
+  /* Default of bold for definition list terms */
   .dlterm {
-    font-weight: 400;
+    font-weight: bold;
   }
 
-  // Use CSS to expand lists with @compact="no"
+  /* Use CSS to expand lists with @compact="no" */
   .dltermexpand {
-    font-weight: 400;
+    font-weight: bold;
     margin-top: 1rem;
   }
 
@@ -410,7 +413,7 @@
     margin-left: 20px;
   }
 
-  // All note formats have the same default presentation
+  /* All note formats have the same default presentation */
   .note {
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -418,17 +421,17 @@
 
   .note .notetitle, .note .notelisttitle,
   .note .note__title {
-    font-weight: 400;
+    font-weight: bold;
   }
 
-  // Various basic phrase styles
+  /* Various basic phrase styles */
   .bold {
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .bolditalic {
     font-style: italic;
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .italic {
@@ -440,11 +443,11 @@
   }
 
   .uicontrol {
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .defkwd {
-    font-weight: 400;
+    font-weight: bold;
     text-decoration: underline;
   }
 
@@ -489,7 +492,7 @@
   }
 
   .firstcol {
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .table--pgwide-1 {
@@ -557,67 +560,13 @@
     border-bottom: 0;
   }
 
-  // Add space for top level topics
+  /* Add space for top level topics */
   .nested0 {
     margin-top: 1rem;
   }
 
-  // div with class=p is used for paragraphs that contain blocks,
-  // to keep the XHTML valid
+  /* div with class=p is used for paragraphs that contain blocks, to keep the XHTML valid */
   .p {
     margin-top: 1rem;
-  }
-
-  /* Task topic labels */
-  .steps::before {
-    content: "Steps";
-    font-weight: 400;
-    margin-left: -20px;
-    }
-
-  .context::before {
-    content: "About this task";
-    display: block;
-    font-weight: 400;
-  }
-
-  .context p {
-    margin-top: 0em;
-  }
-
-  .result::before {
-    content: "Result";
-    display: block;
-    font-weight: 400;
-  }
-
-  .result p {
-    margin-top: 0em;
-  }
-
-  .postreq::before {
-    content: "After you finish";
-    display: block;
-    font-weight: 400;
-  }
-
-  .postreq p {
-    margin-top: 0em;
-  }
-
-  .prereq::before {
-    content: "Before you begin";
-    display: block;
-    font-weight: 400;
-  }
-
-  .prereq p {
-    margin-top: 0em;
-  }
-
-  .example::before {
-    content: "Example";
-    display: block;
-    font-weight: 400;
   }
 }
