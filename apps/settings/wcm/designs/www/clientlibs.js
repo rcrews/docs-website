@@ -2,7 +2,7 @@
 jQuery(function($) {
 
     $('.mobile_btn').on('click', function(e) {
-       
+
             e.preventDefault();
 
             var myIcon = $(this).find('span');
@@ -62,7 +62,7 @@ jQuery(function($) {
     if (!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))) {}
 
     function checkIt() {
-        
+
         if ($(window).width() < 768) {
             return;
         } else {
@@ -86,13 +86,13 @@ jQuery(function($) {
 jQuery(function($) {
 
     $('.mobile_btn').on('click', function(e) {
-       
+
             e.preventDefault();
 
             var myIcon = $(this).find('span');
             var target = $('#cloudera_main_nav');
             var verify = target.hasClass('hide_mobile');
-    
+
             if (!verify) {
 
                 $(this).addClass('mobile_btn_active');
@@ -128,7 +128,7 @@ jQuery(function($) {
         }
 
          if ($(this).hasClass('logout')) {
-            
+
             $('.logout-bar').slideToggle('fast');
            /* result = arr[0] + "//" + arr[2] + "/" + 'content/www/en-us/search.html';*/
         }
@@ -141,8 +141,8 @@ jQuery(function($) {
         });
 
         $('#closeSearch').click(function(event) {
-          
-            $('#searchOverlay').remove(); 
+
+            $('#searchOverlay').remove();
             $('.main-page').css({
                 'overflow': 'auto',
                 'height': 'auto'
@@ -181,7 +181,7 @@ jQuery(function($) {
 
             //The sticky-nav's distance from the top of the screen on page-load
             var stickyNavTop = $('.sticky_nav_container').position().top;
-            //Add or remove sticky-nav depending on where the sticky-nav is 
+            //Add or remove sticky-nav depending on where the sticky-nav is
             var stickyNav = function() {
                 //Current distance from the top
                 var scrollTop = $(window).scrollTop();
@@ -226,7 +226,7 @@ jQuery(function($) {
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     //if it does exist
                     if (target.length) {
-                        //if the sticky-nav is currently sticky 
+                        //if the sticky-nav is currently sticky
                         if (scrollTop >= stickyNavTop) {
                             //move the current position of the page to the target, minus 50px
 
@@ -236,7 +236,7 @@ jQuery(function($) {
                                 scrollTop: target.offset().top - $('.sticky_nav_container').height() + 50
                             }, 1000, fixHeight());
                         }
-                        //however if the sticky-nav is not currently sticky 
+                        //however if the sticky-nav is not currently sticky
                         else {
                             //move the current position of the page to the position of the target, minus the height of the sticky nav minus 40px
                             fixHeight();
@@ -260,7 +260,7 @@ jQuery(function($) {
                   }
                   $('.anchor-nav').slideToggle({duration: 'fast', easing: 'swing', step: function(){
                       fixHeight();
-                  }});           
+                  }});
               });*/
             $(window).scroll(function() {
                 stickyNav();
@@ -328,9 +328,9 @@ jQuery(function($) {
     function displayPromo(currObj) {
         var targetCompany = sessionStorage.s_dmdbase_custom1.split(':')[0];
         var company = targetCompany + ' : ';
-       
+
         if ($('div[data-target="default"]').length > 0) {
-           
+
            company = '';
         }
 
@@ -387,14 +387,14 @@ jQuery(function($) {
             currDate.setDate(currDate.getDate() + 1);
             var cookieVal = getCookie('cld_promo') != undefined ? getCookie('cld_promo') + ',left_promo' : 'left_promo';
             document.cookie = "cld_promo=" + cookieVal + "; path=/;expires=" + currDate.toGMTString();
-           
+
            var get = $(this).attr('href');
-           
+
            setTimeout(function(){
-            window.location= get; 
+            window.location= get;
         }, 50);
-          
-            
+
+
         });
 
     }
@@ -459,7 +459,7 @@ jQuery(function($) {
 
         }
     });
-    
+
     /*Navigation Speacial Button*/
     var navone = $('#cloudera-navigation').attr('data-nav-one');
     var navtwo = $('#cloudera-navigation').attr('data-nav-two');
@@ -732,7 +732,7 @@ var trainingObj = {
             }
             if(saveUrlParam['city'] != null && saveUrlParam['city'] != ""){
                 $("#city-values").val(saveUrlParam['city'].replace("+"," "));
-                $("#city-values").trigger("change");                				
+                $("#city-values").trigger("change");
             }
         }
         setTimeout(function() {
@@ -776,7 +776,7 @@ var trainingObj = {
                     	trainingObj.courseInfo(saveUrlParam['country'],saveUrlParam['city'].replace("+"," "),saveUrlParam['classType'],saveUrlParam);
                     }else if(saveUrlParam['country'] != null){
                         trainingObj.courseInfo(saveUrlParam['country'],null,saveUrlParam['classType'],saveUrlParam);
-                    } 
+                    }
 
                     trainingObj.afterLoad();
 
@@ -890,7 +890,7 @@ var trainingObj = {
             var tempParam = { 'classType' : idVal}
 			trainingObj.paramBasedCall(tempParam);
         }
-    },   
+    },
 
     populateSelect: function(jsonObj, idVal) {
         var keys = Object.keys(jsonObj).sort();
@@ -918,7 +918,7 @@ var trainingObj = {
                 text: optionText
             }));
         }
-    },        
+    },
 
     courseInfo: function(country, city, type,saveUrlParam) {
         var postBody = trainingObj.postReqBody();
@@ -962,11 +962,11 @@ var trainingObj = {
                 if(saveUrlParam != null){
                     if(result.totalResults == 0){
                         $('.noResultMsg').show();
-                    }else{               			
+                    }else{
 		                trainingObj.queryLoader(saveUrlParam);
                     }
                 }else{
-                    trainingObj.addCourseToDom(type, result.results);      
+                    trainingObj.addCourseToDom(type, result.results);
                 }
             }
         });
@@ -985,7 +985,7 @@ var trainingObj = {
             ]
         };
         return retReqBody;
-    },        
+    },
 
     addCourseToDom: function(type, courseList) {
         var chked = "checked";
@@ -1026,7 +1026,7 @@ var trainingObj = {
         }, function(objVal) {
             var divStr = objVal.data.divStr;
             var tempItems = objVal.data.items;
-            var currVal = this.id;            
+            var currVal = this.id;
             updateGetParameters("date",currVal);
             for (var i = 0; i < Math.min(5, tempItems.length); i++) {
                 if (tempItems[i].id == currVal) {
@@ -1037,7 +1037,7 @@ var trainingObj = {
 
     },
 
-    /* 
+    /*
        Dynamically building the course info html structure
        based on the learnDot API reponse.
     */
@@ -1054,9 +1054,9 @@ var trainingObj = {
         var countryName = (courseItem.location.address.country.name != undefined ? "<br>" + courseItem.location.address.country.name + "<br>" : "");
 
         var regUrl = (courseItem.sessionUrl != "" && courseItem.sessionUrl != undefined) ? courseItem.sessionUrl : trainingObj.universityClassUrl + courseItem.urlName;
-        regUrl = (!regUrl.match(/^[a-zA-Z]+:\/\//)) ? 'https://' + regUrl : regUrl; 
+        regUrl = (!regUrl.match(/^[a-zA-Z]+:\/\//)) ? 'https://' + regUrl : regUrl;
 
-        var startTime = trainingObj.getLocaleTime(courseItem.startTime.split('T')[1]);  
+        var startTime = trainingObj.getLocaleTime(courseItem.startTime.split('T')[1]);
 
         var endTime =trainingObj.getLocaleTime(courseItem.finalEndTime.split('T')[1]);
         endTime = (divStr.indexOf('blended') > -1 || divStr.indexOf('virtual') > -1) ? endTime + ' EST' :  endTime;
@@ -1086,10 +1086,10 @@ var trainingObj = {
         var nextDiv = $(divStr).next();
         nextDiv.find('a.registerUrl').removeAttr("href").attr("href", regUrl);
         if(courseItem.sessionUrl != "") {
-            nextDiv.find('a.registerUrl').attr("target", "_blank"); 
+            nextDiv.find('a.registerUrl').attr("target", "_blank");
             nextDiv.find('div.etLink').show();
         } else {
-            nextDiv.find('a.registerUrl').removeAttr("target"); 
+            nextDiv.find('a.registerUrl').removeAttr("target");
             nextDiv.find('div.etLink').hide();
         }
         nextDiv.parent().find('div.allCourseLink').remove();
@@ -1105,7 +1105,7 @@ var trainingObj = {
             retTime_1 = (retTime_1 == 12 || retTime_1 == 0) ? 12 : retTime_1;
             retTime_1 = retTime_1 +':'+retTime_2+' AM';
         }else{
-            retTime_1 = (retTime_1 == 12) ?  12 : retTime_1 - 12; 
+            retTime_1 = (retTime_1 == 12) ?  12 : retTime_1 - 12;
             retTime_1 = retTime_1 +':'+retTime_2+' PM';
         }
         return retTime_1;
@@ -1213,57 +1213,57 @@ $(document).ready(function() {
 });
 jQuery(function($) {
     if ($('.speakers_with_description_list').length > 0) {
-        
-    function leadershipGridBox() {  
-    function nameSlideUp(){ 
-    jQuery('.grid-item-container.speakers-item .speakers_with_description_metadata_company').css('opacity', '0');       
+
+    function leadershipGridBox() {
+    function nameSlideUp(){
+    jQuery('.grid-item-container.speakers-item .speakers_with_description_metadata_company').css('opacity', '0');
     $('.grid-item-container.speakers-item.unselected-speaker-grid-item').mouseenter(function(event){
     $(this).find('.speakers_with_description_metadata_name').animate({
     bottom: "+=50",
     }, 300, function() {
     // Animation complete.
-    });    
+    });
     $(this).find('.speakers_with_description_metadata_company').animate({
     opacity: 1,
     bottom: "+=25",
     }, 300, function() {
     // Animation complete.
-    });   
-    }); 
-    $('.grid-item-container.speakers-item.unselected-speaker-grid-item').mouseleave(function(event){   
+    });
+    });
+    $('.grid-item-container.speakers-item.unselected-speaker-grid-item').mouseleave(function(event){
     $(this).find('.speakers_with_description_metadata_name').animate({
     bottom: "-=50",
     }, 500, function() {
     // Animation complete.
-    }); 
+    });
     $(this).find('.speakers_with_description_metadata_company').animate({
     opacity: 0,
     bottom: "-=25",
     }, 500, function() {
     // Animation complete.
-    }); 
-    }); 
+    });
+    });
     };
-        
+
     $('.grid-item-container.speakers-item').each(function() {
     var description = $(this).find('.truncated_description_text').text()
-    var truncated_description = jQuery.trim(description).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";  
+    var truncated_description = jQuery.trim(description).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";
     $(this).find('.truncated_description_text').text(truncated_description);
-    $('<a class="open-modal speaker_read_more chevron">Read More</a>').appendTo($(this).find('.selected_speaker_grid_item_metadata'));    
+    $('<a class="open-modal speaker_read_more chevron">Read More</a>').appendTo($(this).find('.selected_speaker_grid_item_metadata'));
     });
-         
-    $('.grid-item-container.speakers-item').click(function(event){   
-    $('.grid-item-container.speakers-item').each(function() {   
+
+    $('.grid-item-container.speakers-item').click(function(event){
+    $('.grid-item-container.speakers-item').each(function() {
     $(this).addClass('unselected-speaker-grid-item');
     $(this).removeClass('selected-speaker-grid-item');
-    $(this).find('.selected_speaker_grid_item_metadata').addClass('hidden');    
+    $(this).find('.selected_speaker_grid_item_metadata').addClass('hidden');
     });
-    $(this).find('.selected_speaker_grid_item_metadata').removeClass('hidden'); 
+    $(this).find('.selected_speaker_grid_item_metadata').removeClass('hidden');
     $(this).removeClass('unselected-speaker-grid-item');
     $(this).addClass('selected-speaker-grid-item');
-         
+
     $(this).find('.speaker_read_more').click(function(event){
-    var lightbox_save = $(this).parents().eq(1).find('.lightboxed').clone();  
+    var lightbox_save = $(this).parents().eq(1).find('.lightboxed').clone();
     $(lightbox_save).lightbox_me({
         centered: true,
         appearEffect: "fadeIn",
@@ -1278,18 +1278,18 @@ jQuery(function($) {
         }
         });
     });
-        
-    $('.close_active').click(function(event){ 
-    event.stopPropagation();    
-    $('.grid-item-container.speakers-item').each(function() { 
+
+    $('.close_active').click(function(event){
+    event.stopPropagation();
+    $('.grid-item-container.speakers-item').each(function() {
     $(this).addClass('unselected-speaker-grid-item');
     $(this).removeClass('selected-speaker-grid-item');
-    $(this).find('.selected_speaker_grid_item_metadata').addClass('hidden');    
+    $(this).find('.selected_speaker_grid_item_metadata').addClass('hidden');
     });
-    });         
-    }); 
+    });
+    });
     }
-    
+
     $(window).load(function() {
         $(document).ready(leadershipGridBox);
     });
@@ -1411,7 +1411,7 @@ jQuery(function($) {
                 $self.undelegate(opts.closeSelector, "click");
                 $self.unbind('close', closeLightbox);
                 $self.unbind('repositon', setSelfPosition);
-                
+
                 $(window).unbind('resize', setOverlayHeight);
                 $(window).unbind('resize', setSelfPosition);
                 $(window).unbind('scroll', setSelfPosition);
@@ -1533,7 +1533,7 @@ jQuery(function($) {
                 items_main.slice(j, j + lisInRow).wrapAll('<li class="grid-row"><ul></ul></li>');
             }
         });
-        
+
     }
 
     function recalculate() {
@@ -1544,7 +1544,7 @@ jQuery(function($) {
     if ($('.city-items').length) {
     $(window).resize(recalculate);
     }
-    
+
     $(window).load(function() {
         if ($('.city-items').length) {
             /*SRC Tracking*/
@@ -1563,7 +1563,7 @@ jQuery(function($) {
             }
             getParameter();
         }
-        
+
     });
 });
 $(document).ready(function() {
@@ -1600,9 +1600,9 @@ $(function ( $ ) {
   //Check if .tabs exist
   if($('.tabs-section').length){
 
-    //Setting defualts: first tab and corresponding tabs area active/visible  
+    //Setting defualts: first tab and corresponding tabs area active/visible
     $('.tabs-section .tab-control:first-child').addClass('isActive');
-    $('.tabs-section .tab-contents-group .tab-0').addClass('isVisible'); 
+    $('.tabs-section .tab-contents-group .tab-0').addClass('isVisible');
 
     //feching jump location from url
     var urlTabParam = window.location.href.split('tab=');
@@ -1644,7 +1644,7 @@ $(function ( $ ) {
       $(activeTab).removeClass('isActive');
       $(chosen).addClass('isActive');
       $(visibleContent).removeClass('isVisible');
-      $(targetContent).addClass('isVisible');  
+      $(targetContent).addClass('isVisible');
     });
 
     //Change handler on select: Toggle of the tabs and content per select on mobile
@@ -1655,7 +1655,7 @@ $(function ( $ ) {
       targetTab = $(this).parent().parent().find('.tabs-group').find('[data-tab="'+target+'"]'),
       visibleContent = $(this).parent().parent().find('.tab-contents-group').find('.isVisible'),
       targetContent = $(this).parent().parent().find('.tab-contents-group').find('.'+target);
- 
+
       $(activeTab).removeClass('isActive');
       $(targetTab).addClass('isActive');
       $(visibleContent).removeClass('isVisible');
@@ -1698,57 +1698,57 @@ jQuery(function($) {
 });
 jQuery(function($) {
     if ($('.speakers_with_description_list').length > 0) {
-        
-    function leadershipGridBox() {  
-    function nameSlideUp(){ 
-    jQuery('.grid-item-container.speakers-item .leadership_company').css('opacity', '0');       
+
+    function leadershipGridBox() {
+    function nameSlideUp(){
+    jQuery('.grid-item-container.speakers-item .leadership_company').css('opacity', '0');
     $('.grid-item-container.speakers-item.unselected-speaker-grid-item').mouseenter(function(event){
     $(this).find('.leadership_name').animate({
     bottom: "+=50",
     }, 300, function() {
     // Animation complete.
-    });    
+    });
     $(this).find('.leadership_company').animate({
     opacity: 1,
     bottom: "+=25",
     }, 300, function() {
     // Animation complete.
-    });   
-    }); 
-    $('.grid-item-container.speakers-item.unselected-speaker-grid-item').mouseleave(function(event){   
+    });
+    });
+    $('.grid-item-container.speakers-item.unselected-speaker-grid-item').mouseleave(function(event){
     $(this).find('.leadership_name').animate({
     bottom: "-=50",
     }, 500, function() {
     // Animation complete.
-    }); 
+    });
     $(this).find('.leadership_company').animate({
     opacity: 0,
     bottom: "-=25",
     }, 500, function() {
     // Animation complete.
-    }); 
-    }); 
+    });
+    });
     };
-        
+
     $('.grid-item-container.speakers-item').each(function() {
     var description = $(this).find('.truncated_description_text').text()
-    var truncated_description = jQuery.trim(description).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";  
+    var truncated_description = jQuery.trim(description).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";
     $(this).find('.truncated_description_text').text(truncated_description);
-    $('<a class="open-modal speaker_read_more chevron">Read More</a>').appendTo($(this).find('.selected_speaker_grid_item_metadata'));    
+    $('<a class="open-modal speaker_read_more chevron">Read More</a>').appendTo($(this).find('.selected_speaker_grid_item_metadata'));
     });
-         
-    $('.grid-item-container.speakers-item').click(function(event){   
-    $('.grid-item-container.speakers-item').each(function() {   
+
+    $('.grid-item-container.speakers-item').click(function(event){
+    $('.grid-item-container.speakers-item').each(function() {
     $(this).addClass('unselected-speaker-grid-item');
     $(this).removeClass('selected-speaker-grid-item');
-    $(this).find('.selected_speaker_grid_item_metadata').addClass('hidden');    
+    $(this).find('.selected_speaker_grid_item_metadata').addClass('hidden');
     });
-    $(this).find('.selected_speaker_grid_item_metadata').removeClass('hidden'); 
+    $(this).find('.selected_speaker_grid_item_metadata').removeClass('hidden');
     $(this).removeClass('unselected-speaker-grid-item');
     $(this).addClass('selected-speaker-grid-item');
-         
+
     $(this).find('.speaker_read_more').click(function(event){
-    var lightbox_save = $(this).parents().eq(1).find('.lightboxed').clone();  
+    var lightbox_save = $(this).parents().eq(1).find('.lightboxed').clone();
     $(lightbox_save).lightbox_me({
         centered: true,
         appearEffect: "fadeIn",
@@ -1763,18 +1763,18 @@ jQuery(function($) {
         }
         });
     });
-        
-    $('.close_active').click(function(event){ 
-    event.stopPropagation();    
-    $('.grid-item-container.speakers-item').each(function() { 
+
+    $('.close_active').click(function(event){
+    event.stopPropagation();
+    $('.grid-item-container.speakers-item').each(function() {
     $(this).addClass('unselected-speaker-grid-item');
     $(this).removeClass('selected-speaker-grid-item');
-    $(this).find('.selected_speaker_grid_item_metadata').addClass('hidden');    
+    $(this).find('.selected_speaker_grid_item_metadata').addClass('hidden');
     });
-    });         
-    }); 
+    });
+    });
     }
-    
+
     $(window).load(function() {
         $(document).ready(leadershipGridBox);
     });
@@ -1896,7 +1896,7 @@ jQuery(function($) {
                 $self.undelegate(opts.closeSelector, "click");
                 $self.unbind('close', closeLightbox);
                 $self.unbind('repositon', setSelfPosition);
-                
+
                 $(window).unbind('resize', setOverlayHeight);
                 $(window).unbind('resize', setSelfPosition);
                 $(window).unbind('scroll', setSelfPosition);
@@ -2000,12 +2000,12 @@ jQuery(function($) {
 
    $(".moreClick").unbind('click').click(function(e){
       e.preventDefault();
- 
+
       var up = $(this).find('span').hasClass('chevron');
       var down = $(this).hasClass('.chevron-down');
 
       if(up){
-      
+
         $(this).find('span').addClass('chevron-down').html('Less');
         $(this).find('span').removeClass('chevron');
         $(this).next().slideToggle('fast');
@@ -2025,7 +2025,7 @@ var listjsObj = {
     paginationSize: 4,
 
     init: function() {
-        function Utils() {            
+        function Utils() {
 
         }
 
@@ -2260,7 +2260,7 @@ $(function ( $ ) {
 	if($(".flexible-pricing-table").length){
 
 	  $('.cell-wrapper').hover(
-	 
+
 		  	function() {
 
 		  		if (!$(this).parent().hasClass('skip')) {
@@ -2308,7 +2308,7 @@ $.fn.accordionMenu = function(options) {
    // These are the defaults.
                container: ".accordion_content",
                autoClose: "false"
-               
+
            }, options );
    $(this).each(function(){
 
@@ -2325,7 +2325,7 @@ $.fn.accordionMenu = function(options) {
     $(this).addClass('active_acc acc_border').find(con).css({display: 'block'});
 
   }
-      
+
        $(this).find('.acc-icon').addClass('acc_minus');
        //$(this).parent().parent().find('.accordian_menu').last().find('.accordion').addClass('acc_bottom_border');
 
@@ -2334,11 +2334,11 @@ $.fn.accordionMenu = function(options) {
          //////// Close Accordion by default //////
            //$(this).parent().find('.accordion').first().removeClass('acc_bottom_border');
          $(this).addClass('acc_border').find('.acc-icon').addClass('acc_plus');
-        
+
         // $(this).parent().parent().find('.accordian_menu').last().find('.accordion').addClass('acc_bottom_border');
 
        }
-     
+
      ///// Hash Tag URL - Opens a selcted accordion menu by default.
      var p = window.location.hash.substring(1);
      //remove white space from string
@@ -2375,9 +2375,9 @@ $.fn.accordionMenu = function(options) {
    //////// Accordion click function //////
 
     $(this).find('h3').click(function(e){
-     
+
       e.preventDefault();
-   
+
       var up = $(this).parent().attr('data-acc');
       var auto= settings.autoClose;
       var con = settings.container;
@@ -2389,15 +2389,15 @@ $.fn.accordionMenu = function(options) {
          $(this).parent().siblings().removeClass('active_acc');
 
       }
-     
+
       $(this).parent().find('div.accordion_content').slideToggle( "slow" );
- 
+
       if(up == 'closed'){
        //////// Close Accordion //////
           $(this).parent().attr('data-acc', 'open');
           $(this).parent().addClass('active_acc acc_border').find(con);
           $(this).parent().find('.acc-icon').removeClass('acc_plus').addClass('acc_minus');
-     
+
        }else{
          //////// Open Accordion //////
            $(this).parent().attr('data-acc', 'closed');
@@ -2466,15 +2466,15 @@ $(function($) {
         //default show the sticky bar if no target defined
         if(ctaBarData === undefined) {
             $('#cta-sticky').show();
-        } 
+        }
 
-        //if the greetTargetCo span exists on the page, then populate with the target company name from the DemandB Object (however need this to work if the element is dynamically added to the page meaning it will only work on load of the published page and not within edit mode.)   
+        //if the greetTargetCo span exists on the page, then populate with the target company name from the DemandB Object (however need this to work if the element is dynamically added to the page meaning it will only work on load of the published page and not within edit mode.)
         if ($(ctaBar_greetTargetCo_span).length) {
-            $(ctaBar_greetTargetCo_span).text('Hi '+ctaBar_targetCompany+'! '); 
+            $(ctaBar_greetTargetCo_span).text('Hi '+ctaBar_targetCompany+'! ');
         }
 
         $(window).load(function() {
-            // grab the initial top offset of the navigation 
+            // grab the initial top offset of the navigation
             var stickyNavTop = $('#cta-sticky').offset().top;
             // our function that decides weather the navigation bar should have "fixed" css position or not.
             var stickyNav = function() {
@@ -2508,27 +2508,27 @@ $(function($) {
         });
     }
 }(window.jQuery));
-//Layout Yellow Line under h4 in white box 
+//Layout Yellow Line under h4 in white box
 jQuery(function($) {
     $('.white').find("h4").append('<div class="yellow-line"></div>');
     // Make Entire box clickable in white box with linked h4
     $('.white').each(function() {
         if ($(this).find($("h4")).length > 0) {
-            // Find its associated anchor    
-            var wrapped_anchor = $(this).find('h4').find('a:first').attr('href');    
-            // Wrap the div 
+            // Find its associated anchor
+            var wrapped_anchor = $(this).find('h4').find('a:first').attr('href');
+            // Wrap the div
             $(this).wrap('<a class="wrapped_white_text_box" href="' + wrapped_anchor + '"></a>;');
             var learn_more_div = $('<div class="learn-more-div"><button class="learn-more-button www-btn"><b>Learn More</b></button></div>')
-            
-            $(this).children().first().append(learn_more_div); 
+
+            $(this).children().first().append(learn_more_div);
             $(this).hover(function() {
                 $(this).addClass("learn-more-hover");
-            }, 
+            },
                 function(){
                 $(this).removeClass("learn-more-hover");
             });
 
-           // $(this).hover($('.learn-more-div').css("visibility: visible;")); 
+           // $(this).hover($('.learn-more-div').css("visibility: visible;"));
         }
     });
 });
@@ -2540,10 +2540,10 @@ if($(".tabs").length){
   $.fn.tabbed = function(options) {
       $('.tabs .tab_default:first-child').addClass('selected_tab');
       $('.tab0').addClass('selected-content');
-     
+
     $(this).click(function(e){
             e.preventDefault();
-            
+
             var myDiv = $(this).attr('data-tab');
             var parent = $(this).parent().parent().parent();
             //alert(parent);
@@ -2555,7 +2555,7 @@ if($(".tabs").length){
 
             function hash() {
             var p = window.location.hash.substring(1);
-            if (p == ""){p = "empty"};    
+            if (p == ""){p = "empty"};
             var h = $('.tabs').find('a[ data-tab=' + p + ']');
             var i = $(h).attr('data-tab');
                 //alert(p);
@@ -2581,7 +2581,7 @@ if($(".tabs").length){
 
 
   };
-  
+
     $('.tab_control').tabbed();
 
    }// end if tabs exist
@@ -4459,13 +4459,13 @@ function developerProgramTogglePayPalButton(event) {
 var developerProgramPayPalButton = document.getElementById('developerProgramPayPalButton');
 var developerProgramTermsAndConditionsButton = document.getElementById('developerProgramTermsAndConditionsButton');
 
-if (developerProgramTermsAndConditionsButton) {   
-developerProgramPayPalButton.disabled = !developerProgramTermsAndConditionsButton.checked;    
+if (developerProgramTermsAndConditionsButton) {
+developerProgramPayPalButton.disabled = !developerProgramTermsAndConditionsButton.checked;
     if (developerProgramTermsAndConditionsButton.checked)
-        { 
+        {
             developerProgramPayPalButton.style.opacity = 1; developerProgramPayPalButton.style.filter = "alpha(opacity=100)"; }
     else
-        { 
+        {
             developerProgramPayPalButton.style.opacity = .5; developerProgramPayPalButton.style.filter = "alpha(opacity=50)"; }
     }
 }
@@ -4496,7 +4496,7 @@ if (!String.prototype.includes) {
     if (typeof start !== 'number') {
       start = 0;
     }
-    
+
     if (start + search.length > this.length) {
       return false;
     } else {
@@ -4587,7 +4587,7 @@ if (document.getElementById("mk-search") !== null){
 
 //US only
 jQuery(function($) {
-    //removes any element that has class .mk-us-only that appears on localised sites. 
+    //removes any element that has class .mk-us-only that appears on localised sites.
     if ($('.mk-us-only').length > 0) {
         var full = window.location.host;
         //window.location.host is subdomain.domain.com
@@ -6198,7 +6198,7 @@ var $ = window.$;
 
   // TODO: figure out loader
   // function addLoad() {
-  //   var loaderUrl = 'https://www.cloudera.com/content/dam/www/loader/giphy.gif';
+  //   var loaderUrl = '/content/dam/www/loader/giphy.gif';
   //   var parentEl = _sp.createEl({ cls: 'red' });
 
   //   parentEl.setAttribute('style', 'margin-left: auto; margin-right: auto;');

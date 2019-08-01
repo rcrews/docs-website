@@ -1,18 +1,20 @@
 ---
+- s: HDPDocuments/DPS1/DPS-1.0.0/bk_dps-installation/content/troubleshooting_dps_installation.html
+  d: /HDPDocuments/DP/DP-1.0.0/bk_dps-installation/content/troubleshooting_dps_installation.html
 - s: documentation.html
   d: /documentation/index.html
-- s: downloads.html.html
-  d: /downloads.html
-- s: documentation/enterprise/upgrade.html
-  d: /documentation/enterprise/upgrade/topics/ug_overview.html
-- s: documentation/enterprise/6-2.html
-  d: /documentation/enterprise/6/6.2.html
-- s: documentation/enterprise/6-1.html
-  d: /documentation/enterprise/6/6.1.html
-- s: documentation/enterprise/6.html
-  d: /documentation/enterprise/6/6.0.html
 - s: documentation/director/altus-documentation.html
   d: /documentation/altus.html
+- s: documentation/enterprise/upgrade.html
+  d: /documentation/enterprise/upgrade/topics/ug_overview.html
+- s: documentation/enterprise/6.html
+  d: /documentation/enterprise/6/6.0.html
+- s: documentation/enterprise/6-1.html
+  d: /documentation/enterprise/6/6.1.html
+- s: documentation/enterprise/6-2.html
+  d: /documentation/enterprise/6/6.2.html
+- s: downloads.html.html
+  d: /downloads.html
 
 # From here to the end, just redirect to the equivalent path on
 # www.cloudera.com

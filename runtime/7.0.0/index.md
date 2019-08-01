@@ -49,11 +49,12 @@ sections:
       - title: Planning for Apache Impala
         url: impala-planning/index.html
 
-  - title: Installation & Upgrade
-    name: installation
-    books:
-      - title: Apache Kudu Install and Upgrade
-        url: kudu-install-and-upgrade/index.html
+# Priyanka: Removed because install-upgrade procedures are not needed for CDP 1.0.0.
+#  - title: Installation & Upgrade
+#   name: installation
+#    books:
+#      - title: Apache Kudu Install and Upgrade
+#        url: kudu-install-and-upgrade/index.html
 
   - title: How To
     name: howto
@@ -91,11 +92,11 @@ sections:
       - title: Troubleshooting Hue
         url: troubleshooting-hue/index.html
 
-      - title: Troubleshooting Apache Kudu
-        url: troubleshooting-kudu/index.html
-
       - title: Troubleshooting HBase
         url: troubleshooting-hbase/index.html
+    
+      - title: Troubleshooting Apache Kudu
+        url: troubleshooting-kudu/index.html
 
   - title: Reference
     name: reference

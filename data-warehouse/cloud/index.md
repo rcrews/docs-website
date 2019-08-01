@@ -5,17 +5,17 @@ version: cloud
 base-path: /data-warehouse/cloud/
 
 sections:
-  # - title: Release Notes
-  #   name: releasenotes
-  #   books:
+  - title: Release Notes
+     name: releasenotes
+     books:
+      -title: Release Notes
+       url: release-notes/index.html
 
   - title: Concepts & Use Cases
     name: concepts
     books:
-      - title: Data Warehouse service overview
-        url: 
-      - title: AWS account requirements
-        url:
+      - title: Overview
+        url: overview/index.html
 
   # - title: Planning
   #   name: planning
@@ -28,18 +28,8 @@ sections:
   - title: How To
     name: howto
     books:
-      - title: Moving on-premises workloads to the cloud
-        url:
-      - title: Creating data warehouses
-        url:
-      - title: Creating data marts
-        url:
-      - title: Autoscale thresholds
-        url:
-      - title: Integrating third-party tools with the Data Warehouse service
-        url:
-      - title: Querying data
-        url:
+      - title: Using
+        url: using-service/index.html
 
   # - title: Troubleshooting
   #   name: troubleshooting
@@ -53,7 +43,8 @@ sections:
   #   name: learning
   #   books:
 ---
-Data Warehouse is a CDP service for self-service creation of independent data warehouses
-and data marts that autoscale up and down to meet your varying workload demands.
-The Data Warehouse service provides isolated compute instances for each data warehouse/mart,
-automatic optimization, and enables you to save costs while meeting SLAs.
+Data Warehouse is a CDP service for self-service creation of independent
+data warehouses and data marts that autoscale up and down to meet your
+varying workload demands. The Data Warehouse service provides isolated
+compute instances for each data warehouse/mart, automatic optimization,
+and enables you to save costs while meeting SLAs.

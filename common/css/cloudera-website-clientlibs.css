@@ -10137,13 +10137,13 @@ form .mk-checkbox-group .check label.error {
   position: relative;
   z-index: 2;
   /* .breadcrumb {
-       display: none; 
+       display: none;
        font-size:20px;
        @media screen and (min-width: $screen-sm) {
            display: block;
            margin:0;
        }
-       
+
        color: $color-midnight-blue;
        a {
            color: $color-midnight-blue;
@@ -24288,7 +24288,7 @@ body.mobile-menu--open {
 }
 .leftPromo .blank-promo .left-promo-box.data-line:before {
   content: "";
-  background: url("https://www.cloudera.com/content/dam/www/marketing/brand/data-line/cn01-data-line-pattern-light-grey-bg-opacity-5.png");
+  background: url("/content/dam/www/marketing/brand/data-line/cn01-data-line-pattern-light-grey-bg-opacity-5.png");
   opacity: 0.8;
   top: 0;
   left: 0;

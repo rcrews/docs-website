@@ -88,6 +88,9 @@ publications:
       Hive or to the file system or object store and how to move data
       back to Hive
 
+  # - title: Accessing Cloud Data
+  #   url: cloud-data-access/index.html
+
   # Removed at Kris's request
   # - title: Using the Cost-based Optimizer in Hive
   #   url: using-cbo-in-hive/index.html
@@ -97,7 +100,7 @@ publications:
     description: >-
       Presents the task topics for configuring and managing Impala
 ---
-Data access topics for Cloudera Data Platform Runtime tell you how to 
+Data access topics for Cloudera Data Platform Runtime tell you how to
 use Apache Impala, Apache Hive 3, and Hue to access your
 data sets.  Hive and Impala provide access to data stored in the Hive
 metastore database. Hive 3 addresses enterprise data warehouse demands

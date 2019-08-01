@@ -12,10 +12,10 @@ json:
   - text: Concepts & Use Cases
     id: concepts
     sub:
-      - text: Data Warehouse Overview
-        href: url-goes-here
-        # id: overview
-        # sub: overview/navigation.json
+      - text: Overview
+        href: overview/index.html
+        id: overview
+        sub: overview/navigation.json
 
   # - text: Planning
   #   id: planning
@@ -28,10 +28,10 @@ json:
   - text: How To
     id: howto
     sub:
-      - text: Using Data Warehouse
-        href: url-goes-here
-        # id: create-cluster-aws
-        # sub: create-cluster-aws/navigation.json
+      - text: Using
+        href: using-service/index.html
+        id: using-service
+        sub: using-service/navigation.json
 
   # - text: Troubleshooting
   #   id: troubleshooting
