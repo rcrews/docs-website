@@ -13,8 +13,7 @@ publications:
  - title: Configuring HBase
    url: configuring-hbase/index.html
    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Provides information to configure HBase to use it as your operational data store.
 
  # - title: Using Azure Data Lake Store with HBase
  #   url: hbase-adls/index.html
@@ -25,14 +24,13 @@ publications:
   - title: Using Amazon S3 with HBase
     url: hbase-s3/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Provides information about how to use use Amazon S3 as a storage layer for HBase.
 
   - title: Managing HBase Security
     url: hbase-security/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Provides information about HBase security, authentication, authorization, and
+      configuring TLS/SSL for HBase.
 
   - title: Accessing HBase by using the HBase Shell
     url: accessing-hbase/index.html
