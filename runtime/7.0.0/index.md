@@ -131,5 +131,12 @@ sections:
   #   name: learning
   #   books:
 ---
-Cloudera Runtime is the core open source software distribution within Cloudera Data Platform (CDP) that is maintained, supported, versioned, and packaged as a single entity by Cloudera. Cloudera Runtime includes approximately 50 open source projects that comprise the core distribution of data management tools within CDP.  
+Cloudera Runtime is the core open source software distribution within Cloudera Data Platform (CDP) that is maintained, supported, versioned, and packaged as a single entity by Cloudera. Cloudera Runtime includes approximately 50 open source projects that comprise the core distribution of data management tools within CDP, including Cloudera Manager. 
+
+Cloudera Runtime does not include: 
+
+* CDP cloud services such as Data Hub, DWX, and MLX
+* CDP management tools such as the Management Console, the Workload Manager, and the Replication Manager
+* Data Catalog
+* Add-on products such as CDSW, CDF, and Metron
 
