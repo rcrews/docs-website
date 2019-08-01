@@ -33,6 +33,9 @@ sections:
       - title: Getting Started
         url: getting-started/index.html
 
+      - title: User Management
+        url: user-management/index.html
+
       - title: Credentials for AWS
         url: credentials-aws/index.html
 
@@ -42,8 +45,8 @@ sections:
       - title: Environments
         url: environments/index.html
 
-      - title: User Management
-        url: user-management/index.html
+      - title: Data Lakes
+        url: data-lakes/index.html
 
       - title: Classic Clusters
         url: classic-clusters/index.html
