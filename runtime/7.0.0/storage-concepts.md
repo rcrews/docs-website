@@ -22,8 +22,8 @@ publications:
       how they differ from approaches used for traditional relational
       database schemas
 
-  - title: Apache HBase Introduction
-    url: hbase-introduction/index.html
+  - title: Apache HBase Overview
+    url: hbase-overview/index.html
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
