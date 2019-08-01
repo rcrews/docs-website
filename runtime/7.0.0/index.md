@@ -131,14 +131,5 @@ sections:
   #   name: learning
   #   books:
 ---
-Cloudera Runtime offers several tools for processing...
+Cloudera Runtime is the core open source software distribution within Cloudera Data Platform (CDP) that is maintained, supported, versioned, and packaged as a single entity by Cloudera. Cloudera Runtime includes approximately 50 open source projects that comprise the core distribution of data management tools within CDP.  
 
-Justo iaculis blandit congue malesuada pellentesque ultrices fermentum
-vel nisl nibh diam natoque montes semper nascetur rutrum faucibus ipsum
-mus enim feugiat et duis sed risus ullamcorper suspendisse fames finibus
-facilisi pulvinar fringilla lacus magnis non donec sagittis placerat
-ultricies integer aliquam vulputate amet nunc euismod tortor netus
-inceptos in habitasse elit sociosqu venenatis aptent morbi maecenas
-pretium phasellus imperdiet molestie laoreet bibendum curabitur
-parturient cubilia velit efficitur dictumst tellus condimentum auctor
-praesent accumsan consectetur at litora scelerisque lectus tincidunt

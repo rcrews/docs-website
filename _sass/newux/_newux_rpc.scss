@@ -1,6 +1,7 @@
 #content, .content {
 
-  table {
+  // http://docs-stage.cloudera.com/data-hub/cloud/recipes/topics/mc-recipe-parameters.html
+  table.table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
@@ -31,6 +32,19 @@
         color: #666;
       }
       .title {}
+    }
+  }
+
+  // http://docs-stage.cloudera.com/runtime/7.0.0/spark-overview/topics/spark-overview.html
+  .note > table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #eee;
+    margin: 1rem 0;
+
+    th, td {
+      padding: 5px;
     }
   }
 

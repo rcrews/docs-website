@@ -394,6 +394,21 @@ json:
             id: configuring-oozie
             sub: configuring-oozie/navigation.json
 
+          - text: Managing ZooKeeper
+            href: managing-zookeeper/index.html
+            id: managing-zookeeper
+            sub: managing-zookeeper/navigation.json
+
+          - text: Authenticating ZooKeeper
+            href: zookeeper-authentication/index.html
+            id: zookeeper-authentication
+            sub: zookeeper-authentication/navigation.json
+
+          - text: Monitoring ZooKeeper
+            href: monitoring-zookeeper/index.html
+            id: monitoring-zookeeper
+            sub: monitoring-zookeeper/navigation.json
+
       - text: SECURITY
         href: security-howto.html
         sub:
@@ -437,21 +452,6 @@ json:
             href: monitoring-and-diagnostics/index.html
             id: monitoring-and-diagnostics
             sub: monitoring-and-diagnostics/navigation.json
-
-          - text: Managing ZooKeeper
-            href: managing-zookeeper/index.html
-            id: managing-zookeeper
-            sub: managing-zookeeper/navigation.json
-
-          - text: Authenticating ZooKeeper
-            href: zookeeper-authentication/index.html
-            id: zookeeper-authentication
-            sub: zookeeper-authentication/navigation.json
-
-          - text: Monitoring ZooKeeper
-            href: monitoring-zookeeper/index.html
-            id: monitoring-zookeeper
-            sub: monitoring-zookeeper/navigation.json
 
   - text: Troubleshooting
     id: troubleshooting
