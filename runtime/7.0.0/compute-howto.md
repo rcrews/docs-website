@@ -34,4 +34,4 @@ publications:
       Provides information about ResourceManager High Availability. It also describes the work preserving recovery process.
 
 ---
-Apache YARN is the processing layer for managing distributed applications that run on multiple machines in a network. YARN allows you to use various data processing engines for batch, interactive, and real-time stream processing of data.
+Apache YARN manages resources for the applications running on your cluster by allocating resources through scheduling,  limiting CPU usage, and partitioning clusters. You can use Access Control Lists to use YARN with a secure cluster. Using Apache YARN, you can optimize the use of vcores and memory.
