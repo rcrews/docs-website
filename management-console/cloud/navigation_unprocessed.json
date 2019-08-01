@@ -36,6 +36,11 @@ json:
         id: getting-started
         sub: getting-started/navigation.json
 
+      - text: User Management
+        href: user-management/index.html
+        id: user-management
+        sub: user-management/navigation.json
+
       - text: Credentials for AWS
         href: credentials-aws/index.html
         id: credentials-aws
@@ -51,10 +56,10 @@ json:
         id: environments
         sub: environments/navigation.json
 
-      - text: User Management
-        href: user-management/index.html
-        id: user-management
-        sub: user-management/navigation.json
+      - text: Data Lakes
+        href: data-lakes/index.html
+        id: data-lakes
+        sub: data-lakes/navigation.json
 
       - text: Classic Clusters
         href: classic-clusters/index.html

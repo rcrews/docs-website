@@ -6,47 +6,32 @@ publications:
   - title: Managing Applications on Apache YARN
     url: yarn-application-management/index.html
     description: >-
-      Publication description sagittis mus tempor sollicitudin ridiculus
-      nascetur in enim
+      Provides information about managing applications by using the YARN REST APIs and YARN Services API.
 
   - title: Managing and Allocating Cluster Resources using Apache YARN
     url: yarn-allocate-resources/index.html
     description: >-
-      Publication description sagittis mus tempor sollicitudin ridiculus
-      nascetur in enim
+      Explains how to allocate cluster resources for the applications. In addition, describes the procedures for using Fair Scheduler and Capacity Scheduler.
 
   - title: Using Cloud Credentials with Apache YARN
     url: yarn-using-cloud-credentials/index.html
     description: >-
-      Publication description sagittis mus tempor sollicitudin ridiculus
-      nascetur in enim
+      Describes how to access data stored in a cloud service for applications that use YARN.
 
   - title: Monitoring Clusters and Apache YARN Applications
     url: yarn-monitoring-clusters-applications/index.html
     description: >-
-      Publication description sagittis mus tempor sollicitudin ridiculus
-      nascetur in enim
-
-  - title: Apache YARN Health Tests and Metrics
-    url: yarn-health-test-and-metrics/index.html
-    description: >-
-      Publication description sagittis mus tempor sollicitudin ridiculus
-      nascetur in enim
+      Describes how to monitor clusters, queues, applications, services, flow activities, and nodes using YARN web user interface and Cloudera Manager. 
 
   - title: Configuring Apache YARN Security
     url: yarn-security/index.html
     description: >-
-      Publication description sagittis mus tempor sollicitudin ridiculus
-      nascetur in enim
+      Provides information about Access Control List and how to use YARN with a secure cluster.
 
   - title: Apache YARN High Availability
     url: yarn-high-availability/index.html
     description: >-
-      Publication description sagittis mus tempor sollicitudin ridiculus
-      nascetur in enim
+      Provides information about ResourceManager High Availability. It also describes the work preserving recovery process.
+
 ---
-Overview of Cloudera Runtime compute how-tos goes here.... Hendrerit ac
-velit mauris viverra mattis nisi dolor litora ullamcorper, placerat
-venenatis congue tempus tincidunt interdum metus dui feugiat, primis
-fusce fames lobortis morbi natoque torquent magna neque, class ultrices
-dis pharetra vitae ante sodales enim.
+Apache YARN manages resources for the applications running on your cluster by allocating resources through scheduling,  limiting CPU usage, and partitioning clusters. You can use Access Control Lists to use YARN with a secure cluster. By using Apache YARN, you can optimize the use of vcores and memory.

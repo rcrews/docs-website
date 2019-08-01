@@ -1,7 +1,7 @@
 ---
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
-title: Streaming
+title: Operations
 publications:
   - title: Configuring Oozie
     url: configuring-oozie/index.html

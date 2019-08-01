@@ -74,10 +74,6 @@ json:
             id: zeppelin-overview
             sub: zeppelin-overview/navigation.json
 
-      #- text: STREAMING
-      #  href: streaming-concepts.html
-      #  sub:
-
       - text: SECURITY
         href: security-concepts.html
         sub:
@@ -390,8 +386,8 @@ json:
             id: using-zeppelin
             sub: using-zeppelin/navigation.json
 
-      - text: STREAMING
-        href: streaming-howto.html
+      - text: OPERATIONS
+        href: operations-howto.html
         sub:
           - text: Configuring Oozie
             href: configuring-oozie/index.html
