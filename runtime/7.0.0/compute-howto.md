@@ -34,4 +34,4 @@ publications:
       Provides information about ResourceManager High Availability. It also describes the work preserving recovery process.
 
 ---
-Apache YARN manages resources for the applications running on your cluster by allocating resources through scheduling,  limiting CPU usage, and partitioning clusters. You can use Access Control Lists to use YARN with a secure cluster. Using Apache YARN, you can optimize the use of vcores and memory.
+Apache YARN manages resources for the applications running on your cluster by allocating resources through scheduling,  limiting CPU usage, and partitioning clusters. You can use Access Control Lists to use YARN with a secure cluster. By using Apache YARN, you can optimize the use of vcores and memory.
