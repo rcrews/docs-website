@@ -7,8 +7,7 @@ var NEWUX = (function($) {
         latest_version : {}, // We need to look this up from the versions.yaml.
         versions : [], // Populate this from versions.yaml
         products : [], // The full versions.yaml jsonified.
-        init : function () {
-
+        bootstrap : function() {
             // Load in the versions.json
             let navfile = "/versions.json";
             fetch(navfile)
@@ -97,8 +96,43 @@ var NEWUX = (function($) {
                             break; // And break out of this loop
                         }
                     }
+                    this.setupVersions();
                 });
-                console.log(WhoAmI);
+        },
+        setupVersions : function() {
+
+            // Change 'Cloud' to the Cloud Symbol
+            if(WhoAmI.version.title === 'Cloud') $('.bread-version').html('<i class="fa fa-cloud"></i>');
+            $('.bread-version').append(' <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>');
+
+            // Create a pulldown list for all the versions.
+            let output = "";
+            WhoAmI.versions.forEach(function(el) {
+                if(el.title !== WhoAmI.version.title) {
+                    output += `<li><a href='${el.url}'>${el.title}</a></li>`;
+                    if(typeof el.minors === 'object' ) {
+                        el.minors.forEach(function(em) {
+                            output += `<li class='minor'><a href='${em.url}'>${em.title}</a></li>`;
+                        })
+                    }
+                }
+            });
+
+            $('.version-select').hide().html(output);
+
+            // Add Handlers
+            $('.bread-version .selector').click(function() {
+                let $this = $(this);
+                $this.hasClass('fa-angle-down') ? $this.removeClass('fa-angle-down').addClass('fa-angle-up') : $this.removeClass('fa-angle-up').addClass('fa-angle-down');
+                $('.version-select').toggle();
+            })
+
+
+
+
+        },
+        init : function () {
+            this.bootstrap();
 
 
         }
