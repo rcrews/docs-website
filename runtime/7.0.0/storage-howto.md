@@ -4,6 +4,62 @@ breadcrumb-title: Cloudera Runtime How To
 title: Data Storage
 publications:
 
+ - title: Using HBase to Store and Access Data
+   url: hbase-getting-started/index.html
+   description: >-
+     publication description ante nec fusce varius mattis facilisis
+     consectetur sit
+
+ - title: Configuring HBase
+   url: configuring-hbase/index.html
+   description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+ # - title: Using Azure Data Lake Store with HBase
+ #   url: hbase-adls/index.html
+ #   description: >-
+ #     publication description ante nec fusce varius mattis facilisis
+ #     consectetur sit
+
+  - title: Using Amazon S3 with HBase
+    url: hbase-s3/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Managing HBase Security
+    url: hbase-security/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Accessing HBase by using the HBase Shell
+    url: accessing-hbase/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Managing HBase
+    url: managing-hbase/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Configuring HBase High Availability
+    url: hbase-high-availability/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Using HBase Backup and Disaster Recovery
+    url: hbase-replication/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+
+
   - title: Scaling Namespaces and Optimizing Data Storage
     url: scaling-namespaces/index.html
     description: >-
@@ -49,59 +105,6 @@ publications:
     description: >-
       Provides examples on how to use Impala to insert, query, update, and delete data from Kudu tablets using Impala's SQL syntax
 
-  # - title: Using HBase to Store and Access Data
-  #   url: hbase-getting-started/index.html
-  #  description: >-
-  #   publication description ante nec fusce varius mattis facilisis
-  #    consectetur sit
-
-  - title: Configuring HBase
-    url: configuring-hbase/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
- # - title: Using Azure Data Lake Store with HBase
- #   url: hbase-adls/index.html
- #   description: >-
- #     publication description ante nec fusce varius mattis facilisis
- #     consectetur sit
-
-  - title: Using Amazon S3 with HBase
-    url: hbase-s3/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Managing HBase Security
-    url: hbase-security/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Accessing HBase by using the HBase Shell
-    url: accessing-hbase/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Managing HBase
-    url: managing-hbase/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Configuring HBase High Availability
-    url: hbase-high-availability/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
-
-  - title: Using HBase Backup and Disaster Recovery
-    url: hbase-replication/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
 
 ---
 Overview of Cloudera Runtime data storage how-tos goes here.... Auctor
