@@ -41,7 +41,7 @@ var NEWUX = (function($) {
             $('.ctoc .expand').on('click', this.handleNavContract);
 
             // Back Button Clicks.
-            $(window).bind("popstate", this.handleBackButton.bind(this));
+            $(window).bind("popstate", this.requestNewPage.bind(this));
         },
         handleNavOpen: function(evt) {
             evt.stopPropagation();
@@ -72,10 +72,6 @@ var NEWUX = (function($) {
                 console.log(Pubnav.navstate);
                 localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
             }
-        },
-        handleBackButton: function() {
-            let url = location.pathname;
-            this.loadContent(url);
         },
         loadNav: function() {
             // When we load up the JS for the page, we rely on the navigation.json file that is present in the product root.
@@ -152,8 +148,7 @@ var NEWUX = (function($) {
                     self.html(elems);
                     document.body.scrollTop = document.documentElement.scrollTop = 0;
                     self.fadeTo(200,1);
-                    // Update History
-                    history.pushState(null, null, url);
+
                     // $('#content-spinner').detach();
 
                 }).fail(function( jqXHR, status, error) {
@@ -231,8 +226,9 @@ var NEWUX = (function($) {
             $this.addClass('open');
         },
         requestNewPage: function(e) {
-            // Grab the Recommended URL
-            let url = $(e.target).attr('href');
+
+            // Can be called from link click or back button. If passed from an link, we'll look up, otherwise get from the URL.
+            let url =  e.type === 'click' ? $(e.target).attr('href') : location.pathname;
 
             // Confirm this is actually in the menu tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
@@ -242,7 +238,15 @@ var NEWUX = (function($) {
                 this.loadContent(url);
                 this.pagestate.breadpath.length = 0; // This should really be part of mapPageState, but I can't do it because I'm recursing on that function.
                 let updated_pagestate = this.mapPageState(this.nav_tree, destination.id);
+
+                // Update history so the back button works.... We don't want this to fire if we're going back in time!
+                if (!history.state || history.state.page != url) {
+                    history.pushState({"page": url}, Pubnav.pagestate.current.text, url);
+                }
+
                 this.updatePageState();
+
+
 
                 // TODO! Notify Google Analytics about the new page load.
                 e.preventDefault();
@@ -273,9 +277,7 @@ var NEWUX = (function($) {
                     this.pagestate.next = (i+1 < navarray.length) ?  navarray[i+1] : ""; // TODO!!! - This should really be the first child if the element has children!
 
                     if(typeof navarray[i].sub === 'object') {
-                        console.log(navarray[i].sub);
-                        this.pagestate.children = Utils.flatten(navarray[i].sub);
-                        console.log(this.pagestate.children);
+                        this.pagestate.children = Utils.flatten(navarray[i].sub); // Not currently being flattened.
                     }
                     this.pagestate.depth = 1;
                     return true;
@@ -300,6 +302,10 @@ var NEWUX = (function($) {
         },
         updatePageState: function() {
             // Update the page elems based on current situation!
+
+            // Title
+            document.title = this.pagestate.current.text;
+            console.log(document.title);
 
             // Prev
             if(typeof this.pagestate.prev === 'object') {
