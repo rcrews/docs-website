@@ -4,11 +4,11 @@ breadcrumb-title: Cloudera Runtime How To
 title: Data Storage
 publications:
 
- - title: Using HBase to Store and Access Data
+ - title: Getting started with HBase
    url: hbase-getting-started/index.html
    description: >-
-     publication description ante nec fusce varius mattis facilisis
-     consectetur sit
+     Provides information about the operational database cluster shape,
+     and instructions to create an operational database. Provides instructions to start, stop your HBase cluster.
 
  - title: Configuring HBase
    url: configuring-hbase/index.html
