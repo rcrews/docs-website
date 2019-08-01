@@ -3,10 +3,9 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Compute
 publications:
-  - title: Apache YARN Application Management
+  - title: Apache YARN Overview
     url: yarn-overview/index.html
     description: >-
-      Publication description orci sed nunc diam himenaeos tellus
-      ultrices porttitor
+      Provides an overview of YARN, the Hadoop operating system that enables you to manage resources and schedule jobs in     Hadoop.
 ---
 Apache YARN is the processing layer for managing distributed applications that run on multiple machines in a network. YARN allows you to use various data processing engines for batch, interactive, and real-time stream processing of data.
