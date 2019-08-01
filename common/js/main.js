@@ -271,11 +271,18 @@ var NEWUX = (function($) {
 
                     // TODO!!! Get the PDF part working.
                     let $pdf = $responseHTML.find('a.pdficon'); // TODO! - This seems a bit too common and prone to error.
-                    Pubnav.pagestate.current.pdfurl = ($pdf.length > 0) ? $pdf[0].href : "";
+                    if($pdf.length > 0) {
+                        Pubnav.pagestate.current.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
+                    } else {
+                        Pubnav.pagestate.current.pdfurl = "";
+                    }
 
                     self.html(elems);
                     document.body.scrollTop = document.documentElement.scrollTop = 0;
                     self.fadeTo(200,1);
+
+                    // We need to call this after the page has been loaded... not in the request function.
+                    Pubnav.updatePageState();
 
                     // $('#content-spinner').detach();
 
@@ -372,10 +379,6 @@ var NEWUX = (function($) {
                     history.pushState({"page": url}, Pubnav.pagestate.current.text, url);
                 }
 
-                this.updatePageState();
-
-
-
                 // TODO! Notify Google Analytics about the new page load.
                 e.preventDefault();
             }
@@ -456,7 +459,7 @@ var NEWUX = (function($) {
             if(this.pagestate.breadpath.length >= 2) {
                 let output = `<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`;
                 if(this.pagestate.current.pdfurl !== "") {
-                    output += `<a href="${this.pagestate.currrent.pdfurl}" target="_blank"><i class="fa fa-file-pdf"></i></a>`
+                    output += `<a href="${this.pagestate.current.pdfurl}" target="_blank" class="pdficon"><i class="fa fa-file-pdf"></i></a>`
                 }
                 $('.inner-breadcrumbs').html(output).fadeTo(200, 1);
             } else {
