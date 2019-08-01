@@ -6,10 +6,10 @@ base-path: /data-warehouse/cloud/
 
 sections:
   - title: Release Notes
-     name: releasenotes
-     books:
-      -title: Release Notes
-       url: release-notes/index.html
+    name: releasenotes
+    books:
+      - title: Release Notes
+        url: release-notes/index.html
 
   - title: Concepts & Use Cases
     name: concepts
