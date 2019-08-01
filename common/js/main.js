@@ -4,13 +4,103 @@ var NEWUX = (function($) {
     var WhoAmI = {
         product_name : "", // We get this from the from the URL, or the meta-tag
         version : "", // We get this from the URL, or the meta tag.
-        latest_version : "", // We need to look this up from the versions.yaml.
-        other_versions : [], // Populate this from versions.yaml
+        latest_version : {}, // We need to look this up from the versions.yaml.
+        versions : [], // Populate this from versions.yaml
         products : [], // The full versions.yaml jsonified.
         init : function () {
 
-            // Walk the versions.yaml tree and get the related information for this product
-            // and init the related information etc
+            // Load in the versions.json
+            let navfile = "/versions.json";
+            fetch(navfile)
+                .then((resp) => resp.json()) // Transform the data into json
+                .then((data) => {
+                    WhoAmI.products = data; // Save the whole thingy in case we need it again.
+
+                    // See if I can figure out what product loading page is in from the product link.
+                    let my_product_url;
+                    let $my_product = $('.bread-product a');
+                    if($my_product.length > 0) {
+                        my_product_url = new URL($my_product[0].href);
+                        my_product_url = my_product_url.pathname;
+                    } else {
+                        // TODO!!! Figure out how to determine the product root from the URL structure.
+                        my_product_url = '/data-hub/cloud/index.html'
+                    }
+
+                    // Walk the versions.yaml tree and get the related information for this product
+                    let found = false;
+                    let versions = [];
+
+                    for(let i = 0; i < data.length; i++) {
+
+                        // We only need to loop through the versions if we've not found it.
+                        if(!found) {
+
+                            versions = [];
+                            if(typeof data[i].versions !== 'undefined') {
+                                for(let j = 0; j < data[i].versions.length; j++) {
+                                    // Store the versions for our lookup table.
+                                    versions[j] = {
+                                        title: data[i].versions[j].title,
+                                        url: data[i].versions[j].url,
+                                        minors: []
+                                    };
+
+                                    console.log('checking.... ' + data[i].versions[j].url);
+
+                                    // This should now be the key versions... let's start matching
+                                    if(!found && my_product_url === data[i].versions[j].url) {
+                                        // We found it at the top level
+
+                                        WhoAmI.version = {
+                                            title: data[i].versions[j].title,
+                                            url: data[i].versions[j].url
+                                        };
+                                        found = true;
+                                    }
+
+                                    // If it doesn't match, check the minors...
+                                    if(typeof data[i].versions[j].minors !== 'undefined') {
+                                        for(let k = 0; k < data[i].versions[j].minors.length; k++) {
+
+                                            // Add the minors to our versions lookup table too.
+                                            versions[j].minors[k] = {
+                                                title: data[i].versions[j].minors[k].title,
+                                                url: data[i].versions[j].minors[k].url
+                                            };
+
+                                            // also check the minors.
+                                            if(!found && my_product_url === data[i].versions[j].url) {
+                                                // We found it at the minor level
+                                                WhoAmI.version = {
+                                                    title: data[i].versions[j].minors[k].title,
+                                                    url: data[i].versions[j].minors[k].url
+                                                };
+                                                found = true;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // It might now be found... if so, set our thingy's
+                        if(found && WhoAmI.product_name === "") {
+                            WhoAmI.product_name = data[i].name;
+                            WhoAmI.versions = versions;
+                            if(typeof data[i].latest_version !== 'undefined') {
+                                WhoAmI.latest_version = {
+                                    name: data[i].latest_version,
+                                    url: data[i].latest_url
+                                };
+                            }
+                            break; // And break out of this loop
+                        }
+                    }
+                });
+                console.log(WhoAmI);
+
+
         }
     };
 
@@ -69,7 +159,6 @@ var NEWUX = (function($) {
                 if (index > -1) {
                     Pubnav.navstate.splice(index, 1);
                 }
-                console.log(Pubnav.navstate);
                 localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
             }
         },
@@ -137,13 +226,19 @@ var NEWUX = (function($) {
                     let response = arguments;
 
                     // $.parseHTML will exclude scripts to avoid IE 'Permission Denied' errors
-                    let elems = jQuery( "<div>" ).append(jQuery.parseHTML( responseText )).find( selector ).children();
+                    let $responseHTML = jQuery( "<div>" ).append(jQuery.parseHTML( responseText ));
+                    let elems = $responseHTML.find( selector ).children();
+
                     if(!elems.length) {
                         let new_url = Pubnav.pagestate.children[0].href;
                         Pubnav.loadContent(new_url);
                         // we need to call this function again with the child url.
                         return false;
                     }
+
+                    // TODO!!! Get the PDF part working.
+                    // let pdf_url = $responseHTML.find('a.pdficon')[0].href;
+                    // We'll want to update the PDF symbol.... which I think is up in the topnav.
 
                     self.html(elems);
                     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -305,7 +400,6 @@ var NEWUX = (function($) {
 
             // Title
             document.title = this.pagestate.current.text;
-            console.log(document.title);
 
             // Prev
             if(typeof this.pagestate.prev === 'object') {
@@ -729,6 +823,7 @@ var NEWUX = (function($) {
         $('.launch-search').show();
     });
 
+    WhoAmI.init();
     Pubnav.init();
     Search.init();
 
