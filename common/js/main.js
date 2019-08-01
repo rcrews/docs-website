@@ -3,69 +3,104 @@ var NEWUX = (function($) {
 
     var WhoAmI = {
         product_name : "", // We get this from the from the URL, or the meta-tag
-        version_name : "", // We get this from the URL, or the meta tag.
-        latest_version : "", // We need to look this up from the versions.yaml.
-        other_versions : [], // Populate this from versions.yaml
+        version : "", // We get this from the URL, or the meta tag.
+        latest_version : {}, // We need to look this up from the versions.yaml.
+        versions : [], // Populate this from versions.yaml
         products : [], // The full versions.yaml jsonified.
         init : function () {
 
-            // Walk the versions.yaml tree and get the related information for this product
-            // and init the related information etc
+            // Load in the versions.json
+            let navfile = "/versions.json";
+            fetch(navfile)
+                .then((resp) => resp.json()) // Transform the data into json
+                .then((data) => {
+                    WhoAmI.products = data; // Save the whole thingy in case we need it again.
 
-        }
-    };
+                    // See if I can figure out what product loading page is in from the product link.
+                    let my_product_url;
+                    let $my_product = $('.bread-product a');
+                    if($my_product.length > 0) {
+                        my_product_url = new URL($my_product[0].href);
+                        my_product_url = my_product_url.pathname;
+                    } else {
+                        // TODO!!! Figure out how to determine the product root from the URL structure.
+                        my_product_url = '/data-hub/cloud/index.html'
+                    }
 
-    // Example Toolbelt Functions
-    var Utils = { 
-        store: function (namespace, data) {
-            if (arguments.length > 1) {
-				return localStorage.setItem(namespace, JSON.stringify(data));
-			} else {
-				var store = localStorage.getItem(namespace);
-				return (store && JSON.parse(store)) || [];
-			}
-		},
-        slugify: function*(str) {
-            str = str.replace(/^\s+|\s+$/g, ''); // trim
-            str = str.toLowerCase();
+                    // Walk the versions.yaml tree and get the related information for this product
+                    let found = false;
+                    let versions = [];
 
-            // remove accents, swap ñ for n, etc
-            let from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
-            let to   = "aaaaeeeeiiiioooouuuunc------";
-            for (let i=0, l=from.length ; i<l ; i++) {
-                str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
-            }
+                    for(let i = 0; i < data.length; i++) {
 
-            str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
-                .replace(/\s+/g, '-') // collapse whitespace and replace by -
-                .replace(/-+/g, '-'); // collapse dashes
+                        // We only need to loop through the versions if we've not found it.
+                        if(!found) {
 
-            return str;
-        },
-        flatten: function(arr, subkey) {
-            // TODO! Flatten a nested array with subs, into a consectutive array.... we'll use this to make it easier to jump forwards and backwards.
-            return [];
-        },
-        makeIdFromHref:function(href) {
-            // Clever way to parse incomplete URLs -  https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
+                            versions = [];
+                            if(typeof data[i].versions !== 'undefined') {
+                                for(let j = 0; j < data[i].versions.length; j++) {
+                                    // Store the versions for our lookup table.
+                                    versions[j] = {
+                                        title: data[i].versions[j].title,
+                                        url: data[i].versions[j].url,
+                                        minors: []
+                                    };
 
-            let parser = document.createElement('a');
-            parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
+                                    console.log('checking.... ' + data[i].versions[j].url);
 
-            // We want to turn ID into sam-overview-index
-            let chunks = parser.pathname.split('/');
+                                    // This should now be the key versions... let's start matching
+                                    if(!found && my_product_url === data[i].versions[j].url) {
+                                        // We found it at the top level
 
-            let id = chunks[chunks.length - 1];
-            id = id.substring(0, id.indexOf('.'));  // dump anything after a period... .html / .php etc.
+                                        WhoAmI.version = {
+                                            title: data[i].versions[j].title,
+                                            url: data[i].versions[j].url
+                                        };
+                                        found = true;
+                                    }
 
-            if(chunks.length > 5) {
-                if(chunks[chunks.length - 2] !== 'content') {
-                    id = chunks[chunks.length - 2] + '-' + id;
-                } else {
-                    id = chunks[chunks.length - 3] + '-' + id;
-                }
-            }
-            return id;
+                                    // If it doesn't match, check the minors...
+                                    if(typeof data[i].versions[j].minors !== 'undefined') {
+                                        for(let k = 0; k < data[i].versions[j].minors.length; k++) {
+
+                                            // Add the minors to our versions lookup table too.
+                                            versions[j].minors[k] = {
+                                                title: data[i].versions[j].minors[k].title,
+                                                url: data[i].versions[j].minors[k].url
+                                            };
+
+                                            // also check the minors.
+                                            if(!found && my_product_url === data[i].versions[j].url) {
+                                                // We found it at the minor level
+                                                WhoAmI.version = {
+                                                    title: data[i].versions[j].minors[k].title,
+                                                    url: data[i].versions[j].minors[k].url
+                                                };
+                                                found = true;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // It might now be found... if so, set our thingy's
+                        if(found && WhoAmI.product_name === "") {
+                            WhoAmI.product_name = data[i].name;
+                            WhoAmI.versions = versions;
+                            if(typeof data[i].latest_version !== 'undefined') {
+                                WhoAmI.latest_version = {
+                                    name: data[i].latest_version,
+                                    url: data[i].latest_url
+                                };
+                            }
+                            break; // And break out of this loop
+                        }
+                    }
+                });
+                console.log(WhoAmI);
+
+
         }
     };
 
@@ -96,7 +131,7 @@ var NEWUX = (function($) {
             $('.ctoc .expand').on('click', this.handleNavContract);
 
             // Back Button Clicks.
-            $(window).bind("popstate", this.handleBackButton.bind(this));
+            $(window).bind("popstate", this.requestNewPage.bind(this));
         },
         handleNavOpen: function(evt) {
             evt.stopPropagation();
@@ -124,13 +159,8 @@ var NEWUX = (function($) {
                 if (index > -1) {
                     Pubnav.navstate.splice(index, 1);
                 }
-                console.log(Pubnav.navstate);
                 localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
             }
-        },
-        handleBackButton: function() {
-            let url = location.pathname;
-            this.loadContent(url);
         },
         loadNav: function() {
             // When we load up the JS for the page, we rely on the navigation.json file that is present in the product root.
@@ -183,25 +213,51 @@ var NEWUX = (function($) {
             $( "#content" ).fadeTo(200, 0, function() {
                 // $('.maincontent').append("<div id='content-spinner'><i class='fas fa-circle-notch fa-spin'></i></div>");
                 // TODO... do a check to see that we're on the same domain.
+                let self = $(this),
+                    selector = "#content"; // This is the selector of the content we want to grab.
 
-                console.log(document.location.href);
-                // document.location.href = url;
+                jQuery.ajax( {
+                    url: url,
+                    type: "GET",
+                    dataType: "html"
+                }).done( function( responseText ) {
 
-                $('#content').load( url + " #content", function(response, status, xhr) {
+                    // Save response for use in complete callback
+                    let response = arguments;
+
+                    // $.parseHTML will exclude scripts to avoid IE 'Permission Denied' errors
+                    let $responseHTML = jQuery( "<div>" ).append(jQuery.parseHTML( responseText ));
+                    let elems = $responseHTML.find( selector ).children();
+
+                    if(!elems.length) {
+                        let new_url = Pubnav.pagestate.children[0].href;
+                        Pubnav.loadContent(new_url);
+                        // we need to call this function again with the child url.
+                        return false;
+                    }
+
+                    // TODO!!! Get the PDF part working.
+                    // let pdf_url = $responseHTML.find('a.pdficon')[0].href;
+                    // We'll want to update the PDF symbol.... which I think is up in the topnav.
+
+                    self.html(elems);
+                    document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    self.fadeTo(200,1);
+
+                    // $('#content-spinner').detach();
+
+                }).fail(function( jqXHR, status, error) {
+                    // If the request succeeds, this function gets "data", "status", "jqXHR"
+                    // but they are ignored because response was set above.
+                    // If it fails, this function gets "jqXHR", "status", "error"
+
                     if(status === "error") {
                         let msg = "Sorry but there was an error loading that page.";
                         $( "#content" ).html( msg + " " + xhr.status + " " + xhr.statusText );
                         $(this).fadeTo(200,1);
-                    } else {
-                        document.body.scrollTop = document.documentElement.scrollTop = 0;
-                        $(this).fadeTo(200,1);
-
-                        // Update History
-                        history.pushState(null, null, url);
-
                     }
-                    // $('#content-spinner').detach();
                 });
+
 
             });
 
@@ -238,7 +294,7 @@ var NEWUX = (function($) {
                     if('href' in item) {
                         item.id = Utils.makeIdFromHref(item.href);
                     } else {
-                        item.id = slugify('item.text');
+                        item.id = Utils.slugify('item.text');
                     }
                 }
                 if('sub' in item) {
@@ -265,8 +321,9 @@ var NEWUX = (function($) {
             $this.addClass('open');
         },
         requestNewPage: function(e) {
-            // Grab the Recommended URL
-            let url = $(e.target).attr('href');
+
+            // Can be called from link click or back button. If passed from an link, we'll look up, otherwise get from the URL.
+            let url =  e.type === 'click' ? $(e.target).attr('href') : location.pathname;
 
             // Confirm this is actually in the menu tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
@@ -276,7 +333,15 @@ var NEWUX = (function($) {
                 this.loadContent(url);
                 this.pagestate.breadpath.length = 0; // This should really be part of mapPageState, but I can't do it because I'm recursing on that function.
                 let updated_pagestate = this.mapPageState(this.nav_tree, destination.id);
+
+                // Update history so the back button works.... We don't want this to fire if we're going back in time!
+                if (!history.state || history.state.page != url) {
+                    history.pushState({"page": url}, Pubnav.pagestate.current.text, url);
+                }
+
                 this.updatePageState();
+
+
 
                 // TODO! Notify Google Analytics about the new page load.
                 e.preventDefault();
@@ -307,7 +372,7 @@ var NEWUX = (function($) {
                     this.pagestate.next = (i+1 < navarray.length) ?  navarray[i+1] : ""; // TODO!!! - This should really be the first child if the element has children!
 
                     if(typeof navarray[i].sub === 'object') {
-                        this.pagestate.children = Utils.flatten(navarray[i].sub);
+                        this.pagestate.children = Utils.flatten(navarray[i].sub); // Not currently being flattened.
                     }
                     this.pagestate.depth = 1;
                     return true;
@@ -332,6 +397,9 @@ var NEWUX = (function($) {
         },
         updatePageState: function() {
             // Update the page elems based on current situation!
+
+            // Title
+            document.title = this.pagestate.current.text;
 
             // Prev
             if(typeof this.pagestate.prev === 'object') {
@@ -651,6 +719,68 @@ var NEWUX = (function($) {
         }
     };
 
+    // Example Toolbelt Functions
+    var Utils = {
+        stripAndCollapse: function(value) {
+            // Strip and collapse whitespace according to HTML spec
+            // https://infra.spec.whatwg.org/#strip-and-collapse-ascii-whitespace
+            var tokens = value.match(/[^\x20\t\r\n\f]+/g) || [];
+            return tokens.join( " " );
+        },
+        store: function (namespace, data) {
+            if (arguments.length > 1) {
+                return localStorage.setItem(namespace, JSON.stringify(data));
+            } else {
+                var store = localStorage.getItem(namespace);
+                return (store && JSON.parse(store)) || [];
+            }
+        },
+        slugify: function*(str) {
+            str = str.replace(/^\s+|\s+$/g, ''); // trim
+            str = str.toLowerCase();
+
+            // remove accents, swap ñ for n, etc
+            let from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
+            let to   = "aaaaeeeeiiiioooouuuunc------";
+            for (let i=0, l=from.length ; i<l ; i++) {
+                str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+            }
+
+            str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+                .replace(/\s+/g, '-') // collapse whitespace and replace by -
+                .replace(/-+/g, '-'); // collapse dashes
+
+            return str;
+        },
+        flatten: function(arr, subkey) {
+            // TODO! Flatten a nested array with subs, into a consecutive array....
+            //  we'll use this to make it easier to jump forwards and backwards.
+            return arr;
+        },
+        makeIdFromHref:function(href) {
+            // Clever way to parse incomplete URLs -  https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
+
+            let parser = document.createElement('a');
+            parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
+
+            // We want to turn ID into sam-overview-index
+            let chunks = parser.pathname.split('/');
+
+            let id = chunks[chunks.length - 1];
+            id = id.substring(0, id.indexOf('.'));  // dump anything after a period... .html / .php etc.
+
+            if(chunks.length > 5) {
+                if(chunks[chunks.length - 2] !== 'content') {
+                    id = chunks[chunks.length - 2] + '-' + id;
+                } else {
+                    id = chunks[chunks.length - 3] + '-' + id;
+                }
+            }
+            return id;
+        }
+    };
+
+
     // PRODUCT DRAWER
     $('.product-drawer .open-close').on('click', function() {
         if($('.product-drawer').hasClass('open')) {
@@ -693,7 +823,10 @@ var NEWUX = (function($) {
         $('.launch-search').show();
     });
 
+    WhoAmI.init();
     Pubnav.init();
     Search.init();
 
 }(jQuery));
+
+

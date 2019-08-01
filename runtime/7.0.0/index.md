@@ -1,3 +1,4 @@
+---
 layout: product
 title: Cloudera Runtime
 version: 7.0.0
@@ -21,9 +22,6 @@ sections:
 
       - title: DATA SCIENCE
         url: data-science-concepts.html
-
-      - title: STREAMING
-        url: streaming-concepts.html
 
       - title: SECURITY
         url: security-concepts.html
@@ -70,8 +68,8 @@ sections:
       - title: DATA SCIENCE
         url: data-science-howto.html
 
-      - title: STREAMING
-        url: streaming-howto.html
+      - title: OPERATIONS
+        url: operations-howto.html
 
       - title: SECURITY
         url: security-howto.html
@@ -93,7 +91,7 @@ sections:
 
       - title: Troubleshooting HBase
         url: troubleshooting-hbase/index.html
-    
+
       - title: Troubleshooting Apache Kudu
         url: troubleshooting-kudu/index.html
 
