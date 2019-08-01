@@ -27,13 +27,13 @@ publications:
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
-  
+
   - title: Configuring HDFS Encryption
     url: hdfs-encryption/index.html
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
-      
+
   - title: Administering Apache Kudu
     url: administering-kudu/index.html
     description: >-
@@ -61,11 +61,11 @@ publications:
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
 
-  - title: Using Azure Data Lake Store with HBase
-    url: hbase-adls/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+ # - title: Using Azure Data Lake Store with HBase
+ #   url: hbase-adls/index.html
+ #   description: >-
+ #     publication description ante nec fusce varius mattis facilisis
+ #     consectetur sit
 
   - title: Using Amazon S3 with HBase
     url: hbase-s3/index.html
@@ -103,11 +103,6 @@ publications:
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
 
-  - title: Configuring HBase Snapshots
-    url: hbase-snapshots/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
 ---
 Overview of Cloudera Runtime data storage how-tos goes here.... Auctor
 et elementum risus congue etiam dictumst est curae tellus, habitasse
