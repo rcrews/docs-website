@@ -4,7 +4,7 @@ breadcrumb-title: Cloudera Runtime How To
 title: Data Storage
 publications:
 
-  - title: Getting started with HBase
+  - title: Getting Started with HBase
     url: hbase-getting-started/index.html
     description: >-
       Provides information about the operational database cluster shape,
@@ -106,6 +106,6 @@ publications:
       and delete data from Kudu tablets using Impala's SQL syntax.
 ---
 Cloudera Runtime provides different types of storage components that you can use depending on your data requirements.
-Apache HBase is a NoSQL database that provides real-time read/write access to those large datasets. 
+Apache HBase is a NoSQL database that provides real-time read/write access to those large datasets.
 Apache Kudu is a columnar data store that enables fast analytics on rapidly changing data.
 Apache HDFS is a distributed file system for storing large volumes of data.
