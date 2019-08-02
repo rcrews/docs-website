@@ -61,10 +61,12 @@ publications:
     description: >-
       Describes how to control the number of concurrent connections and
       parameters required by Hive 3
-      
+
   - title: Using the Cost-based Optimizer in Hive
     url: using-cbo-in-hive/index.html
-    #this is a submap, so I don't think it needs a description for the foyer page
+    description: >-
+      Velit scelerisque faucibus porttitor euismod condimentum nam
+      inceptos posuere potenti, leo viverra nisi volutpat consequat.
 
   - title: Configuring Apache Hive Metastore
     url: hive-metastore/index.html
