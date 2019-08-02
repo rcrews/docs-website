@@ -91,22 +91,21 @@ publications:
   - title: Administering Apache Kudu
     url: administering-kudu/index.html
     description: >-
-      Describes common administrative tasks and Apache Kudu workflows
+      Describes common administrative tasks and Apache Kudu workflows.
 
   - title: Developing Applications with Apache Kudu
     url: kudu-development/index.html
     description: >-
       Provides reference examples to use C++ and Java client APIs to
-      develop apps using Apache Kudu
+      develop apps using Apache Kudu.
 
   - title: Integrating with Apache Impala
     url: kudu-integration/index.html
     description: >-
       Provides examples on how to use Impala to insert, query, update,
-      and delete data from Kudu tablets using Impala's SQL syntax
+      and delete data from Kudu tablets using Impala's SQL syntax.
 ---
-Overview of Cloudera Runtime data storage how-tos goes here.... Auctor
-et elementum risus congue etiam dictumst est curae tellus, habitasse
-senectus vitae phasellus habitant ullamcorper ridiculus vestibulum
-rutrum, augue nam lacus vel at suspendisse varius nulla, mi natoque
-aenean libero sollicitudin sit potenti molestie.
+Cloudera Runtime provides different types of storage components that you can use depending on your data requirements.
+Apache HBase is a NoSQL database that provides real-time read/write access to those large datasets. 
+Apache Kudu is a columnar data store that enables fast analytics on rapidly changing data.
+Apache HDFS is a distributed file system for storing large volumes of data.
