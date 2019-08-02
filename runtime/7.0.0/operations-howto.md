@@ -26,8 +26,4 @@ publications:
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
 ---
-Overview of Cloudera Runtime streaming how-tos goes here.... Mi tellus
-sed non sem malesuada pharetra praesent quis, magnis placerat nostra
-rhoncus quisque vestibulum habitant cras vehicula, vivamus cursus vitae
-sociosqu scelerisque hendrerit dignissim commodo dictum, taciti euismod
-condimentum donec pretium fringilla penatibus.
+Apache Oozie is a workflow scheduler system to manage Apache Hadoop jobs.
