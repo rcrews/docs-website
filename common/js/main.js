@@ -252,6 +252,14 @@ var NEWUX = (function($) {
                         }
                     }
 
+                    // 3b... Figure out the PDF... TODO!! - This is repeated in LoadContent() - Make it DRY)
+                    let $pdf = $('link[type="application/pdf"]');
+                    if($pdf.length > 0) {
+                        Pubnav.pagestate.current.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
+                    } else {
+                        Pubnav.pagestate.current.pdfurl = "";
+                    }
+
                     // 4. Bind Event Handlers
                     this.bindEvents();
 
@@ -287,8 +295,8 @@ var NEWUX = (function($) {
                         return false;
                     }
 
-                    // TODO!!! Get the PDF part working.
-                    let $pdf = $responseHTML.find('a.pdficon'); // TODO! - This seems a bit too common and prone to error.
+                    // PDF Document
+                    let $pdf = $responseHTML.find('link[type="application/pdf"]'); // TODO! - This seems a bit too common and prone to error.
                     if($pdf.length > 0) {
                         Pubnav.pagestate.current.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
                     } else {
