@@ -491,6 +491,11 @@ json:
         id: impala-reference/index.html
         sub: impala-reference/navigation.json
 
+      - text: Apach Impala SQL Language Reference
+        href: impala-sql-reference/index.html
+        id: impala-sql-reference/index.html
+        sub: impala-sql-reference/navigation.json
+
       - text: Apache Hive Workload Management Commands
         href: workload-management/index.html
         id: workload-management

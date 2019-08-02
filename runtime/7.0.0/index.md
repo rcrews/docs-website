@@ -104,6 +104,9 @@ sections:
       - title: Apache Impala Reference
         url: impala-reference/index.html
 
+      - title: Apache Impala SQL Language Reference
+        url: impala-sql-reference/index.html
+
       - title: Apache Hive Workload Management Commands
         url: workload-management/index.html
 
