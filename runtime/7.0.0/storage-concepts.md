@@ -27,7 +27,7 @@ publications:
     description: >-
       Outlines effective schema design philosophies for Apache Kudu, and
       how they differ from approaches used for traditional relational
-      database schemas
+      database schemas.
 
 ---
 Overview of Cloudera Runtime data storage concepts goes here.... Auctor
