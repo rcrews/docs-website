@@ -6,8 +6,7 @@ publications:
   - title: Configuring Oozie
     url: configuring-oozie/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Provides information about performing configuration tasks using Apache Oozie and managing it.
 
   - title: Managing ZooKeeper
     url: managing-zookeeper/index.html
