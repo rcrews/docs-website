@@ -38,7 +38,7 @@ publications:
   - title: Accessing HBase
     url: accessing-hbase/index.html
     description: >-
-    Describes how to access HBase.
+    Provides information about different ways to access HBase.
 
   - title: Managing HBase
     url: managing-hbase/index.html
@@ -74,12 +74,12 @@ publications:
     description: >-
       Provides examples on how to use Impala to insert, query, update,
       and delete data from Kudu tablets using Impala's SQL syntax.
-  
+
   - title: Accessing Cloud Data
     url: cloud-data-access/index.html
     description: >-
       Describes information about the configuration parameters used to access data stored in the cloud. In addition, provides       the steps required for encrypting data and troubleshooting issues.
-      
+
   - title: Scaling Namespaces and Optimizing Data Storage
     url: scaling-namespaces/index.html
     description: >-
@@ -103,7 +103,7 @@ publications:
   - title: Configuring HDFS Encryption
     url: hdfs-encryption/index.html
     description: >-
-      Describes the procedure to configure HDFS Data at Rest encryption. 
+      Describes the procedure to configure HDFS Data at Rest encryption.
 
 ---
 Cloudera Runtime provides different types of storage components that you can use depending on your data requirements.
