@@ -3,7 +3,7 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Governance
 publications:
-  - title: Gvernance Concepts & Use Cases
+  - title: Governance Overview & Use Cases
     url: cdp-governance-overview
     description: >-
       Concepts for collecting, creating, and using metadata in Apache
