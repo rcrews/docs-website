@@ -61,6 +61,10 @@ publications:
     description: >-
       Describes how to control the number of concurrent connections and
       parameters required by Hive 3
+      
+  - title: Using the Cost-based Optimizer in Hive
+    url: using-cbo-in-hive/index.html
+    #this is a submap, so I don't think it needs a description for the foyer page
 
   - title: Configuring Apache Hive Metastore
     url: hive-metastore/index.html
@@ -90,10 +94,6 @@ publications:
 
   # - title: Accessing Cloud Data
   #   url: cloud-data-access/index.html
-
-  # Removed at Kris's request
-  # - title: Using the Cost-based Optimizer in Hive
-  #   url: using-cbo-in-hive/index.html
 
   - title: Managing Apache Impala
     url: impala-manage/index.html
