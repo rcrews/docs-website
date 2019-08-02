@@ -321,7 +321,7 @@ json:
           - text: Configuring Apache Hive Statistics
             href: using-cbo-in-hive/index.html
             id: using-cbo-in-hive
-            using-cbo-in-hive/navigation.json
+            sub: using-cbo-in-hive/navigation.json
 
           - text: Configuring Apache Hive Metastore
             href: hive-metastore/index.html
