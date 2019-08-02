@@ -38,7 +38,7 @@ publications:
   - title: Accessing HBase
     url: accessing-hbase/index.html
     description: >-
-    Provides information about different ways to access HBase.
+      Provides information about different ways to access HBase.
 
   - title: Managing HBase
     url: managing-hbase/index.html
@@ -78,35 +78,42 @@ publications:
   - title: Accessing Cloud Data
     url: cloud-data-access/index.html
     description: >-
-      Describes information about the configuration parameters used to access data stored in the cloud. In addition, provides       the steps required for encrypting data and troubleshooting issues.
+      Describes information about the configuration parameters used to
+      access data stored in the cloud. In addition, provides the
+      steps required for encrypting data and troubleshooting issues.
 
   - title: Scaling Namespaces and Optimizing Data Storage
     url: scaling-namespaces/index.html
     description: >-
-      Provides information about scaling namespaces, optimizing data storage, and optimizing performance of Apache HDFS.
+      Provides information about scaling namespaces, optimizing data
+      storage, and optimizing performance of Apache HDFS.
 
   - title: Configuring Fault Tolerance
     url: configuring-fault-tolerance/index.html
     description: >-
-      Describes the procedures to configure HDFS high availability on a cluster.
+      Describes the procedures to configure HDFS high availability on a
+      cluster.
 
   - title: Configuring Data Protection
     url: data-protection/index.html
     description: >-
-      Provides information about configuring data protection on a Hadoop cluster.
+      Provides information about configuring data protection on a Hadoop
+      cluster.
 
   - title: Configuring HDFS ACLs
     url: hdfs-acls/index.html
     description: >-
-      Describes the procedure to configure Access Control Lists (ACLs) on Apache HDFS.
+      Describes the procedure to configure Access Control Lists (ACLs)
+      on Apache HDFS.
 
   - title: Configuring HDFS Encryption
     url: hdfs-encryption/index.html
     description: >-
       Describes the procedure to configure HDFS Data at Rest encryption.
-
 ---
-Cloudera Runtime provides different types of storage components that you can use depending on your data requirements.
-Apache HBase is a NoSQL database that provides real-time read/write access to those large datasets.
-Apache Kudu is a columnar data store that enables fast analytics on rapidly changing data.
-Apache HDFS is a distributed file system for storing large volumes of data.
+Cloudera Runtime provides different types of storage components that you
+can use depending on your data requirements. Apache HBase is a NoSQL
+database that provides real-time read/write access to those large
+datasets. Apache Kudu is a columnar data store that enables fast
+analytics on rapidly changing data. Apache HDFS is a distributed file
+system for storing large volumes of data.

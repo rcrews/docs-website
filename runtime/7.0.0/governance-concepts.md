@@ -6,7 +6,8 @@ publications:
   - title: Gvernance Concepts & Use Cases
     url: cdp-governance-overview
     description: >-
-      Concepts for collecting, creating, and using metadata in Apache Atlas.
+      Concepts for collecting, creating, and using metadata in Apache
+      Atlas.
 ---
 Apache Atlas provides data governance capabilities for Hadoop. Apache
 Atlas serves as a common metadata store that is designed to exchange

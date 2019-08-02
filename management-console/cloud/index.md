@@ -16,7 +16,7 @@ sections:
     books:
       - title: Management Console Overview
         url: overview/index.html
-        
+
       - title: Security Overview
         url: security-concepts.html
 

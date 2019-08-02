@@ -136,9 +136,9 @@ json:
         sub:
 
           - text: Getting Started with HBase
-          	href: hbase-getting-started/index.html
-          	id: hbase-getting-started
-          	sub: hbase-getting-started/navigation.json
+            href: hbase-getting-started/index.html
+            id: hbase-getting-started
+            sub: hbase-getting-started/navigation.json
 
           - text: Configuring HBase
             href: configuring-hbase/index.html
@@ -238,10 +238,13 @@ json:
             id: yarn-monitoring-clusters-applications
             sub: yarn-monitoring-clusters-applications/navigation.json
 
-          - text: Apache YARN Health Tests and Metrics
-            href: yarn-health-test-and-metrics/index.html
-            id: yarn-health-test-and-metrics
-            sub: yarn-health-test-and-metrics/navigation.json
+          # Slack from Jason 8/1: "As side note, that first Yarn doc
+          # (yarn-health-test-and-metrics) linked in the issue is no
+          # longer being built. Caused a bit of confusion for me."
+          # - text: Apache YARN Health Tests and Metrics
+          #   href: yarn-health-test-and-metrics/index.html
+          #   id: yarn-health-test-and-metrics
+          #   sub: yarn-health-test-and-metrics/navigation.json
 
           - text: Configuring Apache YARN Security
             href: yarn-security/index.html

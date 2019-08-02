@@ -11,7 +11,8 @@ publications:
   - title: Apache Impala Overview
     url: impala-overview/index.html
     description: >-
-      Provides an overview and describes the key components of Apache Impala
+      Provides an overview and describes the key components of Apache
+      Impala
 
   - title: Hue Overview
     url: hue-introduction/index.html

@@ -17,10 +17,10 @@ json:
         id: overview
         sub: overview/navigation.json
 
-     - text: CDP Security Overview
-		   href: cdp-security-overview/index.html
-		   id: cdp-security-overview/index.html
-		   sub: cdp-security-overview/navigation.json
+      - text: CDP Security Overview
+        href: cdp-security-overview/index.html
+        id: cdp-security-overview/index.html
+        sub: cdp-security-overview/navigation.json
 
   - text: Planning
     id: planning
@@ -33,6 +33,7 @@ json:
   # - text: Installation & Upgrade
   #   id: installation
   #   sub:
+
   - text: How To
     id: howto
     sub:

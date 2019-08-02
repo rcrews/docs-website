@@ -6,6 +6,10 @@ publications:
   - title: Apache YARN Overview
     url: yarn-overview/index.html
     description: >-
-      Provides an overview of Apache YARN, including key features and its architecture.
+      Provides an overview of Apache YARN, including key features and
+      its architecture.
 ---
-Apache YARN is the processing layer for managing distributed applications that run on multiple machines in a network. YARN allows you to use various data processing engines for batch, interactive, and real-time stream processing of data.
+Apache YARN is the processing layer for managing distributed
+applications that run on multiple machines in a network. YARN allows you
+to use various data processing engines for batch, interactive, and
+real-time stream processing of data.
