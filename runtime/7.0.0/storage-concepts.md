@@ -3,6 +3,13 @@ layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Data Storage
 publications:
+
+  - title: Apache HBase Overview
+    url: hbase-overview/index.html
+    description: >-
+      Introduces Apache HBase, with information on using Apache HBase, use cases,
+      and currently unsupported features.
+
   - title: Apache HDFS Overview
     url: hdfs-overview/index.html
     description: >-
@@ -22,11 +29,6 @@ publications:
       how they differ from approaches used for traditional relational
       database schemas
 
-  - title: Apache HBase Overview
-    url: hbase-overview/index.html
-    description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
 ---
 Overview of Cloudera Runtime data storage concepts goes here.... Auctor
 et elementum risus congue etiam dictumst est curae tellus, habitasse
