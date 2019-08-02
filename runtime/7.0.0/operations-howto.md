@@ -26,4 +26,4 @@ publications:
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
 ---
-Apache Oozie is a workflow scheduler system to manage Apache Hadoop jobs.
+Apache Oozie is a Java Web application used to schedule Hadoop jobs. 
