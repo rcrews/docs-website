@@ -69,6 +69,14 @@ publications:
       Provides reference examples to use C++ and Java client APIs to
       develop apps using Apache Kudu.
 
+  - title: Integrating with Apache Kudu
+    url: kudu-integration/index.html
+    description: >-
+      Gravida primis lobortis posuere augue adipiscing id leo consequat
+      metus, nam in consectetur auctor libero fermentum dui inceptos
+      euismod, faucibus commodo vehicula accumsan penatibus risus
+      sodales ultricies, nisl orci sem habitant et nunc rhoncus montes
+
   - title: Integrating with Apache Impala
     url: kudu-integration/index.html
     description: >-
