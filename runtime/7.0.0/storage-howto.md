@@ -4,16 +4,18 @@ breadcrumb-title: Cloudera Runtime How To
 title: Data Storage
 publications:
 
- - title: Getting started with HBase
-   url: hbase-getting-started/index.html
-   description: >-
-     Provides information about the operational database cluster shape,
-     and instructions to create an operational database. Provides instructions to start, stop your HBase cluster.
+  - title: Getting started with HBase
+    url: hbase-getting-started/index.html
+    description: >-
+      Provides information about the operational database cluster shape,
+      and instructions to create an operational database. Provides
+      instructions to start, stop your HBase cluster.
 
- - title: Configuring HBase
-   url: configuring-hbase/index.html
-   description: >-
-      Provides information to configure HBase to use it as your operational data store.
+  - title: Configuring HBase
+    url: configuring-hbase/index.html
+    description: >-
+      Provides information to configure HBase to use it as your
+      operational data store.
 
  # - title: Using Azure Data Lake Store with HBase
  #   url: hbase-adls/index.html
@@ -24,13 +26,14 @@ publications:
   - title: Using Amazon S3 with HBase
     url: hbase-s3/index.html
     description: >-
-      Provides information about how to use use Amazon S3 as a storage layer for HBase.
+      Provides information about how to use use Amazon S3 as a storage
+      layer for HBase.
 
   - title: Managing HBase Security
     url: hbase-security/index.html
     description: >-
-      Provides information about HBase security, authentication, authorization, and
-      configuring TLS/SSL for HBase.
+      Provides information about HBase security, authentication,
+      authorization, and configuring TLS/SSL for HBase.
 
   - title: Accessing HBase by using the HBase Shell
     url: accessing-hbase/index.html
@@ -55,8 +58,6 @@ publications:
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit
-
-
 
   - title: Scaling Namespaces and Optimizing Data Storage
     url: scaling-namespaces/index.html
@@ -96,14 +97,14 @@ publications:
   - title: Developing Applications with Apache Kudu
     url: kudu-development/index.html
     description: >-
-      Provides reference examples to use C++ and Java client APIs to develop apps using Apache Kudu
+      Provides reference examples to use C++ and Java client APIs to
+      develop apps using Apache Kudu
 
   - title: Integrating with Apache Impala
     url: kudu-integration/index.html
     description: >-
-      Provides examples on how to use Impala to insert, query, update, and delete data from Kudu tablets using Impala's SQL syntax
-
-
+      Provides examples on how to use Impala to insert, query, update,
+      and delete data from Kudu tablets using Impala's SQL syntax
 ---
 Overview of Cloudera Runtime data storage how-tos goes here.... Auctor
 et elementum risus congue etiam dictumst est curae tellus, habitasse

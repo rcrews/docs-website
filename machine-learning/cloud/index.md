@@ -106,5 +106,8 @@ sections:
   #   name: learning
   #   books:
 ---
-
-Cloudera Machine Learning is Cloudera’s cloud-native machine learning platform built for CDP. It expands the end-to-end workflow of Cloudera Data Science Workbench (CDSW) with cloud-native benefits like rapid provisioning, elastic autoscaling, distributed dependency isolation, and distributed GPU training.
+Cloudera Machine Learning is Cloudera’s cloud-native machine learning
+platform built for CDP. It expands the end-to-end workflow of Cloudera
+Data Science Workbench (CDSW) with cloud-native benefits like rapid
+provisioning, elastic autoscaling, distributed dependency isolation, and
+distributed GPU training.

@@ -74,10 +74,6 @@ json:
             id: zeppelin-overview
             sub: zeppelin-overview/navigation.json
 
-      #- text: STREAMING
-      #  href: streaming-concepts.html
-      #  sub:
-
       - text: SECURITY
         href: security-concepts.html
         sub:
@@ -390,13 +386,28 @@ json:
             id: using-zeppelin
             sub: using-zeppelin/navigation.json
 
-      - text: STREAMING
-        href: streaming-howto.html
+      - text: OPERATIONS
+        href: operations-howto.html
         sub:
           - text: Configuring Oozie
             href: configuring-oozie/index.html
             id: configuring-oozie
             sub: configuring-oozie/navigation.json
+
+          - text: Managing ZooKeeper
+            href: managing-zookeeper/index.html
+            id: managing-zookeeper
+            sub: managing-zookeeper/navigation.json
+
+          - text: Authenticating ZooKeeper
+            href: zookeeper-authentication/index.html
+            id: zookeeper-authentication
+            sub: zookeeper-authentication/navigation.json
+
+          - text: Monitoring ZooKeeper
+            href: monitoring-zookeeper/index.html
+            id: monitoring-zookeeper
+            sub: monitoring-zookeeper/navigation.json
 
       - text: SECURITY
         href: security-howto.html
@@ -441,21 +452,6 @@ json:
             href: monitoring-and-diagnostics/index.html
             id: monitoring-and-diagnostics
             sub: monitoring-and-diagnostics/navigation.json
-
-          - text: Managing ZooKeeper
-            href: managing-zookeeper/index.html
-            id: managing-zookeeper
-            sub: managing-zookeeper/navigation.json
-
-          - text: Authenticating ZooKeeper
-            href: zookeeper-authentication/index.html
-            id: zookeeper-authentication
-            sub: zookeeper-authentication/navigation.json
-
-          - text: Monitoring ZooKeeper
-            href: monitoring-zookeeper/index.html
-            id: monitoring-zookeeper
-            sub: monitoring-zookeeper/navigation.json
 
   - text: Troubleshooting
     id: troubleshooting

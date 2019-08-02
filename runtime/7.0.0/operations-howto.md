@@ -1,10 +1,28 @@
 ---
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
-title: Streaming
+title: Operations
 publications:
   - title: Configuring Oozie
     url: configuring-oozie/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Managing ZooKeeper
+    url: managing-zookeeper/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Authenticating ZooKeeper
+    url: zookeeper-authentication/index.html
+    description: >-
+      publication description ante nec fusce varius mattis facilisis
+      consectetur sit
+
+  - title: Monitoring ZooKeeper
+    url: monitoring-zookeeper/index.html
     description: >-
       publication description ante nec fusce varius mattis facilisis
       consectetur sit

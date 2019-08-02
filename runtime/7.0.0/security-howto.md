@@ -6,8 +6,8 @@ publications:
   - title: Identity Management and Federation
     url: identity-management-and-federation/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      CDP identity management includes FreeIPA, identity 
+      federation via IDBroker, and Knox authentication.
 
   - title: Apache Ranger Auditing
     url: security-ranger-auditing/index.html
