@@ -35,29 +35,28 @@ publications:
       Provides information about HBase security, authentication,
       authorization, and configuring TLS/SSL for HBase.
 
-  - title: Accessing HBase by using the HBase Shell
+  - title: Accessing HBase
     url: accessing-hbase/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+    Describes how to access HBase.
 
   - title: Managing HBase
     url: managing-hbase/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Provides information about how to import data into,
+      write data to, and read data from HBase.
 
   - title: Configuring HBase High Availability
     url: hbase-high-availability/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Provides information about configuring HBase high availability for
+      applications require low-latency queries.
 
   - title: Using HBase Backup and Disaster Recovery
-    url: hbase-replication/index.html
+    url: hbase-backup-dr/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Provides information about configuring HBase snapshots, and using
+      HBase replication.
 
   - title: Scaling Namespaces and Optimizing Data Storage
     url: scaling-namespaces/index.html
