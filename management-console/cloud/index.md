@@ -18,7 +18,7 @@ sections:
         url: overview/index.html
 
       - title: Security Overview
-        url: security-management-console-security.html
+        url: security-overview/index.html
 
   - title: Planning
     name: planning
