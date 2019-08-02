@@ -20,3 +20,4 @@ publications:
 
 ---
 Apache Oozie is a Java Web application used to schedule Hadoop jobs. 
+Apache ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. 
