@@ -100,11 +100,9 @@ publications:
     description: >-
       Presents the task topics for configuring and managing Impala
 ---
-Data access topics for Cloudera Data Platform Runtime tell you how to
-use Apache Impala, Apache Hive 3, and Hue to access your
-data sets.  Hive and Impala provide access to data stored in the Hive
-metastore database. Hive 3 addresses enterprise data warehouse demands
-for transactional data in the ORC file format. Impala performs
-high-performance, low-latency SQL queries on data in Parquet and other
-formats. Hue is a web-based interactive query editor that can also be
-used to create Oozie workflows.
+Cloudera Data Platform Runtime includes Apache Hive 3 and Apache Impala
+for storing and accessing data in the Hive metastore database. Hive 3 
+addresses enterprise data warehouse demands for transactional data in 
+the ORC file format. Impala performs high-performance, low-latency SQL 
+queries on data in Parquet and other formats. Hue is a web-based interactive 
+query editor that can also be used to create Oozie workflows.
