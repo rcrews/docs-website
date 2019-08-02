@@ -431,10 +431,26 @@ json:
       - text: GOVERNANCE
         href: governance-howto.html
         sub:
+
+          - text: Searching with Metadata
+            href: atlas-searching-with-metadata/index.html
+            id: atlas-searching-with-metadata
+            sub: atlas-searching-with-metadata/navigation.json
+
           - text: Working with Classifications
             href: atlas-working-with-classifications/index.html
             id: atlas-working-with-classifications
             sub: atlas-working-with-classifications/navigation.json
+
+          - text: Exploring using Lineage
+            href: altas-exploring-using-lineage/index.html
+            id: atlas-exploring-using-lineage
+            sub: atlas-exploring-using-lineage/navigation.json
+
+          - text: Manaing Business Terms with Atlas Glossaries
+            href: atlas-managing-business-terms-with-glossaries/index.html
+            id: atlas-managing-business-terms-with-glossaries
+            sub: atlas-managing-business-terms-with-glossaries/navigation.json
 
       - text: CLUSTER MANAGEMENT
         href: cluster-management-howto.html
@@ -522,10 +538,10 @@ json:
       # id: hdfs-apis-metrics
       # sub: hdfs-apis-metrics/navigation.json
 
-      - text: Apache Atlas Metadata Collection Reference
-        href: atlas-metadata-collection/index.html
-        id: atlas-metadata-collection
-        sub: atlas-metadata-collection/navigation.json
+      - text: Apache Atlas Reference
+        href: atlas-reference/index.html
+        id: atlas-reference
+        sub: atlas-reference/navigation.json
 
       - text: Apache YARN Tuning
         href: yarn-tuning/index.html
