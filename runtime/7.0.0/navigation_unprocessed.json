@@ -135,7 +135,7 @@ json:
         href: storage-howto.html
         sub:
 
-          - text: Using HBase to Store and Access Data
+          - text: Getting Started with HBase
           	href: hbase-getting-started/index.html
           	id: hbase-getting-started
           	sub: hbase-getting-started/navigation.json
