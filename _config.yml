@@ -71,27 +71,27 @@ exclude:
 
   # Static content supporting the legacy Hortonworks pages that don't
   # need to be part of most builds
-  #- /common/fonts/
-  #- /common/img/
-  #- /common/js/libs/
-  #- /common/sample-data/
-  #- /common/themes/pre-hdp-3.1/
-  #- /favicon.ico
-  #- /google313e059f6e26cb8c.html
-  #- /googlea675d981988e7c7a.html
-  #- /HDPDocuments/Cloudbreak/Cb-doc-resources/
-  #- /HDPDocuments/SMM/SMM-1.0.0/rest-api-reference/
-  #- /HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
-  #- /HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
-  #- /HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
-  #- /robots.txt
-  #- /sitemap.xsl
-  #- /wp-content
+  - /common/fonts/
+  - /common/img/
+  - /common/js/libs/
+  - /common/sample-data/
+  - /common/themes/pre-hdp-3.1/
+  - /favicon.ico
+  - /google313e059f6e26cb8c.html
+  - /googlea675d981988e7c7a.html
+  - /HDPDocuments/Cloudbreak/Cb-doc-resources/
+  - /HDPDocuments/SMM/SMM-1.0.0/rest-api-reference/
+  - /HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
+  - /HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
+  - /HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
+  - /robots.txt
+  - /sitemap.xsl
+  - /wp-content
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds
-  #- /apps/
-  #- /content/
-  #- /etc/
-  #- /etc.clientlibs/
-  #- /libs/
+  - /apps/
+  - /content/
+  - /etc/
+  - /etc.clientlibs/
+  - /libs/
