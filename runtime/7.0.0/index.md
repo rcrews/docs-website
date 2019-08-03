@@ -86,8 +86,9 @@ sections:
       - title: Troubleshooting Apache Impala
         url: impala-troubleshooting/index.html
 
-      - title: Troubleshooting Hue
-        url: troubleshooting-hue/index.html
+      # Removed since it is not currently being built.
+      # - title: Troubleshooting Hue
+      #   url: troubleshooting-hue/index.html
 
       - title: Troubleshooting HBase
         url: troubleshooting-hbase/index.html

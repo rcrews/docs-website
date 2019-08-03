@@ -193,20 +193,22 @@ json:
             id: kudu-integration
             sub: kudu-integration/navigation.json
 
-          - text: Accessing Cloud Data
-            href: cloud-data-access/index.html
-            id: cloud-data-access
-            sub: cloud-data-access/navigation.json
+          # Removed since it is not currently being built.
+          # - text: Accessing Cloud Data
+          #   href: cloud-data-access/index.html
+          #   id: cloud-data-access
+          #   sub: cloud-data-access/navigation.json
 
           - text: Scaling Namespaces and Optimizing Data Storage
             href: scaling-namespaces/index.html
             id: scaling-namespaces
             sub: scaling-namespaces/navigation.json
 
-          - text: Configuring Fault Tolerance
-            href: configuring-fault-tolerance/index.html
-            id: configuring-fault-tolerance
-            sub: configuring-fault-tolerance/navigation.json
+          # Removed since it is not currently being built.
+          # - text: Configuring Fault Tolerance
+          #   href: configuring-fault-tolerance/index.html
+          #   id: configuring-fault-tolerance
+          #   sub: configuring-fault-tolerance/navigation.json
 
           - text: Configuring Data Protection
             href: data-protection/index.html
@@ -318,10 +320,11 @@ json:
             id: configuring-apache-hive
             sub: configuring-apache-hive/navigation.json
 
-          - text: Configuring Apache Hive Statistics
-            href: using-cbo-in-hive/index.html
-            id: using-cbo-in-hive
-            sub: using-cbo-in-hive/navigation.json
+          # Removed since it is not currently being built.
+          # - text: Configuring Apache Hive Statistics
+          #   href: using-cbo-in-hive/index.html
+          #   id: using-cbo-in-hive
+          #   sub: using-cbo-in-hive/navigation.json
 
           - text: Configuring Apache Hive Metastore
             href: hive-metastore/index.html
@@ -342,12 +345,6 @@ json:
             href: migrating-data-into-hive/index.html
             id: migrating-data-into-hive
             sub: migrating-data-into-hive/navigation.json
-
-          # Divya reomoved this because this publication is incomplete
-          # - text: Accessing Cloud Data
-          #   href: cloud-data-access/index.html
-          #   id: cloud-data-access
-          #   sub: cloud-data-access/navigation.json
 
           - text: Managing Apache Impala
             href: impala-manage/index.html
@@ -478,10 +475,11 @@ json:
         id: impala-troubleshooting
         sub: impala-troubleshooting/navigation.json
 
-      - text: Troubleshooting Hue
-        href: troubleshooting-hue/index.html
-        id: troubleshooting-hue
-        sub: troubleshooting-hue/navigation.json
+      # Removed since it is not currently being built.
+      # - text: Troubleshooting Hue
+      #   href: troubleshooting-hue/index.html
+      #   id: troubleshooting-hue
+      #   sub: troubleshooting-hue/navigation.json
 
       - text: Troubleshooting HBase
         href: troubleshooting-hbase/index.html
