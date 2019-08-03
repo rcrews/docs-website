@@ -124,7 +124,7 @@ sections:
       # - title: APIs and Metrics for Working with HDFS
       # url: hdfs-apis-metrics/index.html
 
-      - title: Apache Atlas
+      - title: Apache Atlas Reference
         url: atlas-reference/index.html
 
       - title: Apache YARN Tuning
