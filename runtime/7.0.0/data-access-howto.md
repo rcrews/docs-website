@@ -59,15 +59,15 @@ publications:
   - title: Configuring Apache Hive
     url: configuring-apache-hive/index.html
     description: >-
-      Describes how to control the number of concurrent connections and
-      parameters required by Hive 3
+      Describes how to set up Hive to generate statistics and control the number of
+      concurrent connections to Hive
 
-  # Removed since it is not currently being built.
-  # - title: Using the Cost-based Optimizer in Hive
-  #   url: using-cbo-in-hive/index.html
-  #   description: >-
-  #     Velit scelerisque faucibus porttitor euismod condimentum nam
-  #     inceptos posuere potenti, leo viverra nisi volutpat consequat.
+  # A submap of configuring-apache-hive
+  - title: Configuring Apache Hive Statistics
+    url: using-cbo-in-hive/index.html
+#    description: >-
+#      Velit scelerisque faucibus porttitor euismod condimentum nam
+#      inceptos posuere potenti, leo viverra nisi volutpat consequat.
 
   - title: Configuring Apache Hive Metastore
     url: hive-metastore/index.html
