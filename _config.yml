@@ -43,6 +43,7 @@ exclude:
   # - vendor/gems/
   # - vendor/ruby/
 
+
   # Unreleased documentation
   - /HDPDocuments/CFM/CFM-1.1.0/
   - /HDPDocuments/DAS/DAS-1.3.0/
@@ -71,12 +72,13 @@ exclude:
 
   # Static content supporting the legacy Hortonworks pages that don't
   # need to be part of most builds
-  - /common/fonts/
-  - /common/img/
-  - /common/js/libs/
+
+# - common/fonts/  - Using these -- J
+# - common/img/ - Using these -- J
+  - common/js/libs/
   - /common/sample-data/
   - /common/themes/pre-hdp-3.1/
-  - /favicon.ico
+# - favicon.ico
   - /google313e059f6e26cb8c.html
   - /googlea675d981988e7c7a.html
   - /HDPDocuments/Cloudbreak/Cb-doc-resources/
