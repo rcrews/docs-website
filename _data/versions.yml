@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 - name: Data Hub
   latest-version: 1.2.1
   latest-url: /data-hub/cloud/index.html
@@ -27,6 +28,10 @@
         - title: 1.0.0
           url: /data-hub/1.0.0/index.html
 
+=======
+# Do not add new items to the beginning of this file.
+# You can add to the end. See the comment below.
+>>>>>>> 26da613bd5c001ecc47f68a94739da3edce2d245
 
 - name: Cloudera
   latest-url: https://www.cloudera.com/documentation.html
@@ -740,3 +745,37 @@
       minors:
         - title: 2.6.5
           url: /HDPDocuments/HDPforCloud/HDPforCloud-2.6.5/index.html
+
+# Only the first 17 items will appear on the legacy Hortonworks
+# homepage. If we ever need to add or subtract from the number of tiles
+# on the legacy Hortonworks homepage, you need to edit
+# /HDPDocuments/index.html and adjust the number of tiles to render
+# there.
+
+- name: CDP Data Hub
+  latest-version: 1.2.1
+  latest-url: /data-hub/cloud/index.html
+  search-name: CDP Data Hub
+  versions:
+    - title: Cloud
+      url: /data-hub/cloud/index.html
+    - title: 1.2
+      url: /data-hub/1.2.1/index.html
+      minors:
+        - title: 1.2.1
+          type: Latest
+          url: /data-hub/1.2.1/index.html
+        - title: 1.2.0
+          url: /data-hub/1.2.0/index.html
+    - title: 1.1
+      url: /data-hub/1.1.0/index.html
+      minors:
+        - title: 1.1.0
+          url: /data-hub/1.1.0/index.html
+    - title: 1.0
+      url: /data-hub/1.0.2/index.html
+      minors:
+        - title: 1.0.2
+          url: /data-hub/1.0.2/index.html
+        - title: 1.0.0
+          url: /data-hub/1.0.0/index.html

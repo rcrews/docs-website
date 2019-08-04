@@ -62,6 +62,13 @@ publications:
       Describes how to control the number of concurrent connections and
       parameters required by Hive 3
 
+  # Removed since it is not currently being built.
+  # - title: Using the Cost-based Optimizer in Hive
+  #   url: using-cbo-in-hive/index.html
+  #   description: >-
+  #     Velit scelerisque faucibus porttitor euismod condimentum nam
+  #     inceptos posuere potenti, leo viverra nisi volutpat consequat.
+
   - title: Configuring Apache Hive Metastore
     url: hive-metastore/index.html
     description: >-
@@ -88,23 +95,14 @@ publications:
       Hive or to the file system or object store and how to move data
       back to Hive
 
-  # - title: Accessing Cloud Data
-  #   url: cloud-data-access/index.html
-
-  # Removed at Kris's request
-  # - title: Using the Cost-based Optimizer in Hive
-  #   url: using-cbo-in-hive/index.html
-
   - title: Managing Apache Impala
     url: impala-manage/index.html
     description: >-
       Presents the task topics for configuring and managing Impala
 ---
-Data access topics for Cloudera Data Platform Runtime tell you how to
-use Apache Impala, Apache Hive 3, and Hue to access your
-data sets.  Hive and Impala provide access to data stored in the Hive
-metastore database. Hive 3 addresses enterprise data warehouse demands
-for transactional data in the ORC file format. Impala performs
-high-performance, low-latency SQL queries on data in Parquet and other
-formats. Hue is a web-based interactive query editor that can also be
-used to create Oozie workflows.
+Cloudera Data Platform Runtime includes Apache Hive 3 and Apache Impala
+for storing and accessing data in the Hive metastore database. Hive 3
+addresses enterprise data warehouse demands for transactional data in
+the ORC file format. Impala performs high-performance, low-latency SQL
+queries on data in Parquet and other formats. Hue is a web-based interactive
+editor for querying the Hive metastore that also creates Oozie workflows.

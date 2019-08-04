@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Topic Description Goes Here">
+
+    <title>Topic Title</title>   <!-- %Product%: %Topic Title%  -->
+
+    <!-- STRUCTURE CSS... ASSUMING WE'RE DOING A BUNDLED CSS -->
+    <link rel="stylesheet" href="/common/css/main.css">
+
+    <!-- CONTENT SPECIFIC CSS... WE'LL WANT TO EXECUTE THIS ON PAGE CHANGE. HOW TO DEFINE THAT? -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+
+  </head>
+  <body>
+
+    <!-- HEADER BAR -->
+    <header class="chead">
+      <div class="breadcrumbs">
+        <span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span>
+        <span class="bread-product"><a href="/runtime/7.0.0/index.html">CDP Runtime</a></span> <!-- PRODUCT NAME AND URL - THIS IS REQUIRED FOR WHOAMI() TO WORK! -->
+        <span class="bread-version">7.0.0</span> <!-- A PULLDOWN WILL BE CREATED BY JS -->
+      </div>
+      <div class="launch-pubnav"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- MAIN BODY OF PAGE -->
+    <main class="cmain">
+
+      <!-- THE WHITE CONTENT AREA -->
+      <div class="cpage">
+        <article class="maincontent">
+
+          <div class="inner-breadcrumbs">
+            <a href="/" class=”topic”>Topic/Pub Name</a> <!-- TOPIC NAME GOES HERE -->
+            <a class="pdficon" href="/" target="_blank"><img src="/"></a> <!-- PDF LINK GOES HERE -->
+          </div>
+
+          <!-- BODY OF CONTENT GOES HERE -->
+          <div id="content">
+           {{ content }}
+          </div>
+          <!-- END CONTENT -->
+        </article>
+      </div>
+
+      <!-- IN PUBLICATION NAVIGATION.. THIS CAN ALL BE INJECTED BY JS. -->
+      <aside class="pubmenu">
+        <div class="product-title">
+          <img class="product-logo" src="/common/img/smaller_icons/icon-hdf.png">
+          <span class="product-name">Cloudera Data Platform</span>
+        </div>
+        <nav class="ctoc">
+          <!-- THIS WILL BE BUILT AUTOMATICALLY BY JS  -->
+        </nav>
+      </aside>
+    </main>
+
+    <!-- CORPORATE LOGO -->
+    <div class="logo">
+      <a href="/"><img src="//www.cloudera.com/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"></a> <!-- THIS IS THE ICON LOGO -->
+    </div>
+
+    <!-- PRODUCT DRAWER... this should also be built dynamically by JS. -->
+    <nav class="product-drawer"></nav>
+
+    <footer></footer> <!-- I didn't place anythinig here yet. -->
+
+    <!-- NewUX Scripts -->
+    <script src="/common/js/main.js"></script>
+  </body>
+</html>
