@@ -1,5 +1,4 @@
-// Test
-
+// Testing this.
 var NEWUX = (function($) {
     'use strict';
 
@@ -18,14 +17,16 @@ var NEWUX = (function($) {
                     WhoAmI.products = data; // Save the whole thingy in case we need it again.
 
                     // See if I can figure out what product loading page is in from the product link.
-                    let my_product_url;
+                    let my_product_url = "";
                     let $my_product = $('.bread-product a');
                     if($my_product.length > 0) {
                         my_product_url = new URL($my_product[0].href);
                         my_product_url = my_product_url.pathname;
                     } else {
-                        // TODO!!! Figure out how to determine the product root from the URL structure.
-                        my_product_url = '/data-hub/cloud/index.html'
+                        // Look for it in the path
+                        my_product_url = location.pathname.split('/');
+                        my_product_url = '/' + my_product_url[1] + '/' + my_product_url[2] + '/index.html';
+                        console.log(my_product_url);
                     }
 
                     // Walk the versions.yaml tree and get the related information for this product

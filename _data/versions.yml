@@ -1,5 +1,5 @@
 ---
-- name: CDP Data Hub
+- name: Data Hub
   latest-version: 1.2.1
   latest-url: /data-hub/cloud/index.html
   search-name: CDP Data Hub
