@@ -1,4 +1,4 @@
-// Testing this.
+// Testing this
 var NEWUX = (function($) {
     'use strict';
 
