@@ -64,6 +64,11 @@ json:
         id: workspaces
         sub: workspaces/navigation.json
 
+      - text: Personal and Team Accounts
+        href: user-accounts/index.html
+        id: user-accounts
+        sub: user-accounts/navigation.json
+
       - text: Projects
         href: projects/index.html
         id: projects

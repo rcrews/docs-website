@@ -47,6 +47,9 @@ sections:
       - title: ML Workspaces
         url: workspaces/index.html
 
+      - title: Personal and Team Accounts
+        url: user-accounts/index.html
+
       - title: Projects
         url: projects/index.html
 
