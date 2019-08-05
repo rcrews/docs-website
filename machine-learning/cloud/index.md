@@ -41,8 +41,8 @@ sections:
   - title: How To
     name: howto
     books:
-      - title: Quickstart
-        url: quickstart/index.html
+      # - title: Quickstart
+      #   url: quickstart/index.html
 
       - title: ML Workspaces
         url: workspaces/index.html
