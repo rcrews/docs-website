@@ -63,8 +63,8 @@ publications:
       concurrent connections to Hive
 
   # A submap of configuring-apache-hive
-#  - title: Configuring Apache Hive Statistics
-#    url: using-cbo-in-hive/index.html
+  - title: Configuring Apache Hive Statistics
+    url: using-cbo-in-hive/index.html
 #    description: >-
 #      Velit scelerisque faucibus porttitor euismod condimentum nam
 #      inceptos posuere potenti, leo viverra nisi volutpat consequat.
