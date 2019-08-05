@@ -207,8 +207,15 @@ var NEWUX = (function($) {
         handleNewPageRequest: function(e) {
             // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
             let url =  e.type === 'click' ? $(e.target).attr('href') : location.pathname;
-            this.requestNewPage(url);
-            if(e.type === 'click') e.preventDefault();
+            if(url.indexOf('.pdf') == -1) {
+                // We still want to allow the links to the PDF to work.
+                // TODO!!! - We should also check if they are in the same product root too.
+                this.requestNewPage(url);
+                if(e.type === 'click') {
+                    e.preventDefault();
+                }
+            }
+
         },
         setupNav: function() {
             // Inject HTML Elements necessary for paging and the pubmenu
