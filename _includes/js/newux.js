@@ -26,7 +26,6 @@ var NEWUX = (function($) {
                         // Look for it in the path
                         my_product_url = location.pathname.split('/');
                         my_product_url = '/' + my_product_url[1] + '/' + my_product_url[2] + '/index.html';
-                        console.log(my_product_url);
                     }
 
                     // Walk the versions.yaml tree and get the related information for this product
@@ -165,15 +164,15 @@ var NEWUX = (function($) {
         bindEvents: function() {
 
             // Catch Link Clicks from Pubmenu and Feed through System
-            $('.ctoc a').on('click', this.handleNewPageRequest.bind(this));
-            $('.cpage').on('click', 'a', this.handleNewPageRequest.bind(this));
+            $('.ctoc a').on('click', this.handleNewPageRequest);
+            $('.cpage').on('click', 'a', this.handleNewPageRequest);
 
             // Nav Menu Expand/Contract
             $('.ctoc li.xp').on('click', this.handleNavOpen);
             $('.ctoc .expand').on('click', this.handleNavContract);
 
             // Back Button Clicks.
-            $(window).bind("popstate", this.handleNewPageRequest.bind(this));
+            $(window).bind("popstate", this.handleNewPageRequest);
         },
         handleNavOpen: function(evt) {
             evt.stopPropagation();
@@ -206,17 +205,27 @@ var NEWUX = (function($) {
         },
         handleNewPageRequest: function(e) {
             // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
-            let url =  e.type === 'click' ? $(e.target).attr('href') : location.pathname;
-            if(url.indexOf('.pdf') == -1) {
+            let url;
+            // Check it's a valid click.....
+            if(e.type === 'click') {
+                let obj = new URL(this.href);
+                if(window.location.hostname !== obj.hostname) {
+                    return true;
+                }
+                // check we're linking in the same site.
+                url = obj.pathname;
+            } else {
+                // looking for the back button?
+                url = location.pathname;
+            }
+            if(url.indexOf('.pdf') === -1) {
                 // We still want to allow the links to the PDF to work.
                 // TODO!!! - We should also check if they are in the same product root too.
-                this.requestNewPage(url);
-                if(e.type === 'click') {
+                if(Pubnav.requestNewPage(url) && e.type === 'click') {
                     e.preventDefault();
                 }
             }
-
-        },
+       },
         setupNav: function() {
             // Inject HTML Elements necessary for paging and the pubmenu
             if(!$('.ctoc').length) $('.pubmenu').append("<div class='ctoc'></div>");
@@ -400,10 +409,8 @@ var NEWUX = (function($) {
             $this.addClass('open');
         },
         requestNewPage: function(url) {
-
             // Confirm this is actually in the menu tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
-
             if(destination) {
                 // If it's a page in the menu tree...
                 this.loadContent(url);
@@ -416,7 +423,10 @@ var NEWUX = (function($) {
                 }
 
                 // TODO! Notify Google Analytics about the new page load.
+                return true;
+
             } else {
+                confirm('going for external click, as this page could not be found in nav.json.') // TODO!!! - REMOVE THIS
                 return false;
             }
         },
