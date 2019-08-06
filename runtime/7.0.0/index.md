@@ -58,7 +58,7 @@ sections:
     name: howto
     books:
       - title: STORAGE
-        url: storage-howto.html
+        url: howto-storage.html
 
       - title: COMPUTE
         url: howto-compute.html
