@@ -30,7 +30,7 @@ body                    { margin: 0; }
         .selector       { padding-left:10px;}
     }
     .bread-category     { display:none;
-        &::before       { content:"/"; color:#ccc; padding:0 5px;}
+        &::before       { display:none; content:"/"; color:#ccc; padding:0 5px;}
     }
     .launch-pubnav      { font-size:135%; flex-grow:0; padding-left:20px;}
     .launch-search      { font-size:135%; flex-grow:0; padding-left:20px; }
@@ -210,7 +210,7 @@ body                    { margin: 0; }
 }
 
 
-.version-select         { position:absolute; z-index:10; background-color:#fff; top:0; width:100%; list-style-type:none; padding:5px 0 0; margin-left:-5px;
+.version-select         { position:absolute; z-index:10; background-color:#fff; top:10px; width:100%; list-style-type:none; padding:5px 0 0; margin-left:-5px;
     li                  { padding:0 5px;
         &:hover         { background-color:#f2f2f2; }
     }

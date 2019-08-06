@@ -20,11 +20,6 @@ json:
             id: hbase-overview
             sub: hbase-overview/navigation.json
 
-          - text: Apache HDFS Overview
-            href: hdfs-overview/index.html
-            id: hdfs-overview
-            sub: hdfs-overview/navigation.json
-
           - text: Apache Kudu Overview
             href: kudu-overview/index.html
             id: kudu-overview
@@ -34,6 +29,11 @@ json:
             href: kudu-design/index.html
             id: kudu-design
             sub: kudu-design/navigation.json
+
+          - text: Apache HDFS Overview
+            href: hdfs-overview/index.html
+            id: hdfs-overview
+            sub: hdfs-overview/navigation.json
 
       - text: COMPUTE
         href: compute-concepts.html
@@ -56,11 +56,10 @@ json:
             id: impala-overview
             sub: impala-overview/navigation.json
 
-          - text: Hue Introduction
+          - text: Hue Overview
             href: hue-introduction/index.html
             id: hue-introduction
             sub: hue-introduction/navigation.json
-
 
       - text: DATA SCIENCE
         href: data-science-concepts.html
@@ -134,7 +133,6 @@ json:
       - text: DATA STORAGE
         href: storage-howto.html
         sub:
-
           - text: Getting Started with HBase
             href: hbase-getting-started/index.html
             id: hbase-getting-started
@@ -175,15 +173,42 @@ json:
             id: hbase-backup-dr
             sub: hbase-backup-dr/navigation.json
 
+          - text: Administering Apache Kudu
+            href: administering-kudu/index.html
+            id: administering-kudu
+            sub: administering-kudu/navigation.json
+
+          - text: Developing Applications with Apache Kudu
+            href: kudu-development/index.html
+            id: kudu-development
+            sub: kudu-development/navigation.json
+
+          - text: Integrating with Apache Kudu
+            href: kudu-integration/index.html
+            id: kudu-integration
+            sub: kudu-integration/navigation.json
+
+          - text: Integrating with Apache Impala
+            href: kudu-integration/index.html
+            id: kudu-integration
+            sub: kudu-integration/navigation.json
+
+          # Removed since it is not currently being built.
+          # - text: Accessing Cloud Data
+          #   href: cloud-data-access/index.html
+          #   id: cloud-data-access
+          #   sub: cloud-data-access/navigation.json
+
           - text: Scaling Namespaces and Optimizing Data Storage
             href: scaling-namespaces/index.html
             id: scaling-namespaces
             sub: scaling-namespaces/navigation.json
 
-          - text: Configuring Fault Tolerance
-            href: configuring-fault-tolerance/index.html
-            id: configuring-fault-tolerance
-            sub: configuring-fault-tolerance/navigation.json
+          # Removed since it is not currently being built.
+          # - text: Configuring Fault Tolerance
+          #   href: configuring-fault-tolerance/index.html
+          #   id: configuring-fault-tolerance
+          #   sub: configuring-fault-tolerance/navigation.json
 
           - text: Configuring Data Protection
             href: data-protection/index.html
@@ -199,21 +224,6 @@ json:
             href: hdfs-encryption/index.html
             id: hdfs-encryption
             sub: hdfs-encryption/navigation.json
-
-          - text: Administering Apache Kudu
-            href: administering-kudu/index.html
-            id: administering-kudu
-            sub: administering-kudu/navigation.json
-
-          - text: Developing Applications with Apache Kudu
-            href: kudu-development/index.html
-            id: kudu-development
-            sub: kudu-development/navigation.json
-
-          - text: Integrating with Apache Kudu
-            href: kudu-integration/index.html
-            id: kudu-integration
-            sub: kudu-integration/navigation.json
 
       - text: COMPUTE
         href: compute-howto.html
@@ -259,25 +269,25 @@ json:
       - text: DATA ACCESS
         href: data-access-howto.html
         sub:
-          - text: Securing Hue
-            href: securing-hue/index.html
-            id: securing-hue
-            sub: securing-hue/navigation.json
+          - text: Administering Hue
+            href: administering-hue/index.html
+            id: administering-hue
+            sub: administering-hue/navigation.json
 
-          - text: Tuning Hue
-            href: tuning-hue/index.html
-            id: tuning-hue
-            sub: tuning-hue/navigation.json
+          # - text: Securing Hue
+          #   href: securing-hue/index.html
+          #   id: securing-hue
+          #   sub: securing-hue/navigation.json
+
+          # - text: Tuning Hue
+          #   href: tuning-hue/index.html
+          #   id: tuning-hue
+          #   sub: tuning-hue/navigation.json
 
           - text: Using Hue
             href: using-hue/index.html
             id: using-hue
             sub: using-hue/navigation.json
-
-          - text: Administering Hue
-            href: administering-hue/index.html
-            id: administering-hue
-            sub: administering-hue/navigation.json
 
           # Removed at Kris's request
           # - text: Apahce Hive Performance Tuning
@@ -330,22 +340,10 @@ json:
             id: migrating-data-into-hive
             sub: migrating-data-into-hive/navigation.json
 
-          # Removed at Kris's request
-          # - text: using-cbo-in-hive
-          #   href: using-cbo-in-hive/index.html
-          #   id: using-cbo-in-hive
-          #   sub: using-cbo-in-hive/navigation.json
-
           - text: Managing Apache Impala
             href: impala-manage/index.html
             id: impala-manage
             sub: impala-manage/navigation.json
-
-          # Divya reomoved this because this publication is incomplete
-          # - text: Accessing Cloud Data
-          #   href: cloud-data-access/index.html
-          #   id: cloud-data-access
-          #   sub: cloud-data-access/navigation.json
 
       - text: DATA SCIENCE
         href: data-science-howto.html
@@ -424,10 +422,26 @@ json:
       - text: GOVERNANCE
         href: governance-howto.html
         sub:
+
+          - text: Searching with Metadata
+            href: atlas-searching-with-metadata/index.html
+            id: atlas-searching-with-metadata
+            sub: atlas-searching-with-metadata/navigation.json
+
           - text: Working with Classifications
             href: atlas-working-with-classifications/index.html
             id: atlas-working-with-classifications
             sub: atlas-working-with-classifications/navigation.json
+
+          - text: Exploring using Lineage
+            href: altas-exploring-using-lineage/index.html
+            id: atlas-exploring-using-lineage
+            sub: atlas-exploring-using-lineage/navigation.json
+
+          - text: Manaing Business Terms with Atlas Glossaries
+            href: atlas-managing-business-terms-with-glossaries/index.html
+            id: atlas-managing-business-terms-with-glossaries
+            sub: atlas-managing-business-terms-with-glossaries/navigation.json
 
       - text: CLUSTER MANAGEMENT
         href: cluster-management-howto.html
@@ -455,20 +469,21 @@ json:
         id: impala-troubleshooting
         sub: impala-troubleshooting/navigation.json
 
-      - text: Troubleshooting Hue
-        href: troubleshooting-hue/index.html
-        id: troubleshooting-hue
-        sub: troubleshooting-hue/navigation.json
-
-      - text: Troubleshooting Apache Kudu
-        href: troubleshooting-kudu/index.html
-        id: troubleshooting-kudu
-        sub: troubleshooting-kudu/navigation.json
+      # Removed since it is not currently being built.
+      # - text: Troubleshooting Hue
+      #   href: troubleshooting-hue/index.html
+      #   id: troubleshooting-hue
+      #   sub: troubleshooting-hue/navigation.json
 
       - text: Troubleshooting HBase
         href: troubleshooting-hbase/index.html
         id: troubleshooting-hbase
         sub: troubleshooting-hbase/navigation.json
+
+      - text: Troubleshooting Apache Kudu
+        href: troubleshooting-kudu/index.html
+        id: troubleshooting-kudu
+        sub: troubleshooting-kudu/navigation.json
 
   - text: Reference
     id: reference
@@ -478,10 +493,15 @@ json:
         id: knox-reference/index.html
         sub: knox-reference/navigation.json
 
-      - text: Apach Impala Reference
+      - text: Apache Impala Reference
         href: impala-reference/index.html
         id: impala-reference/index.html
         sub: impala-reference/navigation.json
+
+      - text: Apache Impala SQL Language Reference
+        href: impala-sql-reference/index.html
+        id: impala-sql-reference/index.html
+        sub: impala-sql-reference/navigation.json
 
       - text: Apache Hive Workload Management Commands
         href: workload-management/index.html
@@ -510,10 +530,10 @@ json:
       # id: hdfs-apis-metrics
       # sub: hdfs-apis-metrics/navigation.json
 
-      - text: Apache Atlas Metadata Collection Reference
-        href: atlas-metadata-collection/index.html
-        id: atlas-metadata-collection
-        sub: atlas-metadata-collection/navigation.json
+      - text: Apache Atlas Reference
+        href: atlas-reference/index.html
+        id: atlas-reference
+        sub: atlas-reference/navigation.json
 
       - text: Apache YARN Tuning
         href: yarn-tuning/index.html

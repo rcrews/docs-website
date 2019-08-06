@@ -58,7 +58,7 @@ sections:
     name: howto
     books:
       - title: STORAGE
-        url: howto-storage.html
+        url: storage-howto.html
 
       - title: COMPUTE
         url: howto-compute.html
@@ -87,8 +87,9 @@ sections:
       - title: Troubleshooting Apache Impala
         url: impala-troubleshooting/index.html
 
-      - title: Troubleshooting Hue
-        url: troubleshooting-hue/index.html
+      # Removed since it is not currently being built.
+      # - title: Troubleshooting Hue
+      #   url: troubleshooting-hue/index.html
 
       - title: Troubleshooting HBase
         url: troubleshooting-hbase/index.html
@@ -104,6 +105,9 @@ sections:
 
       - title: Apache Impala Reference
         url: impala-reference/index.html
+
+      - title: Apache Impala SQL Language Reference
+        url: impala-sql-reference/index.html
 
       - title: Apache Hive Workload Management Commands
         url: workload-management/index.html
@@ -124,8 +128,8 @@ sections:
       # - title: APIs and Metrics for Working with HDFS
       #   url: hdfs-apis-metrics/index.html
 
-      - title: Apache Atlas Metadata Collection Reference
-        url: atlas-metadata-collection/index.html
+      - title: Apache Atlas Reference
+        url: atlas-reference/index.html
 
       - title: Apache YARN Tuning
         url: yarn-tuning/index.html

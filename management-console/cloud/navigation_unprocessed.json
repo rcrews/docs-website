@@ -18,9 +18,9 @@ json:
         sub: overview/navigation.json
 
       - text: CDP Security Overview
-        href: cdp-security-overview/index.html
-        id: cdp-security-overview/index.html
-        sub: cdp-security-overview/navigation.json
+        href: security-overview/index.html
+        id: security-overview
+        sub: security-overview/navigation.json
 
   - text: Planning
     id: planning

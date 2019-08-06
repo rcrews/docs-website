@@ -54,15 +54,20 @@ json:
   - text: How To
     id: howto
     sub:
-      - text: Quickstart
-        href: quickstart/index.html
-        id: quickstart
-        sub: quickstart/navigation.json
+      # - text: Quickstart
+      #   href: quickstart/index.html
+      #   id: quickstart
+      #   sub: quickstart/navigation.json
 
       - text: ML Workspaces
         href: workspaces/index.html
         id: workspaces
         sub: workspaces/navigation.json
+
+      - text: Personal and Team Accounts
+        href: user-accounts/index.html
+        id: user-accounts
+        sub: user-accounts/navigation.json
 
       - text: Projects
         href: projects/index.html

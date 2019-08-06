@@ -1,7 +1,6 @@
 ---
 ---
-
-@charset "utf-8";
+@charset "UTF-8";
 @import
   // Sass variables and settings
   "base/mixins",
@@ -14,5 +13,11 @@
 
   // DocUX specific stuff.
   "newux/newux",
-  "newux/newux_rpc"
-;
+  "newux/newux_rpc",
+
+  // FontAwesome
+  "fontawesome/fontawesome",
+  "fontawesome/solid",
+  "fontawesome/v4-shims";
+
+

@@ -7,10 +7,13 @@ title: Cloudera
 #    (Same for _includes/header.html)
 ---
 
+{% assign max_tiles = 17 %}
+
 <section class="ps mainindex">
     <div>
         <div class="section products">
             {% for product in site.data.versions %}
+                {% if forloop.index > max_tiles %}{% continue %}{% endif %}
             <div class="product">
                 <div class="icon">
                     <a href="{{ product.latest-url }}">

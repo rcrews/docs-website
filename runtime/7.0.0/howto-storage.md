@@ -69,18 +69,27 @@ publications:
       Provides reference examples to use C++ and Java client APIs to
       develop apps using Apache Kudu.
 
+  - title: Integrating with Apache Kudu
+    url: kudu-integration/index.html
+    description: >-
+      Gravida primis lobortis posuere augue adipiscing id leo consequat
+      metus, nam in consectetur auctor libero fermentum dui inceptos
+      euismod, faucibus commodo vehicula accumsan penatibus risus
+      sodales ultricies, nisl orci sem habitant et nunc rhoncus montes
+
   - title: Integrating with Apache Impala
     url: kudu-integration/index.html
     description: >-
       Provides examples on how to use Impala to insert, query, update,
       and delete data from Kudu tablets using Impala's SQL syntax.
 
-  - title: Accessing Cloud Data
-    url: cloud-data-access/index.html
-    description: >-
-      Describes information about the configuration parameters used to
-      access data stored in the cloud. In addition, provides the
-      steps required for encrypting data and troubleshooting issues.
+  # Removed since it is not currently being built.
+  # - title: Accessing Cloud Data
+  #   url: cloud-data-access/index.html
+  #   description: >-
+  #     Describes information about the configuration parameters used to
+  #     access data stored in the cloud. In addition, provides the
+  #     steps required for encrypting data and troubleshooting issues.
 
   - title: Scaling Namespaces and Optimizing Data Storage
     url: scaling-namespaces/index.html
@@ -88,11 +97,12 @@ publications:
       Provides information about scaling namespaces, optimizing data
       storage, and optimizing performance of Apache HDFS.
 
-  - title: Configuring Fault Tolerance
-    url: configuring-fault-tolerance/index.html
-    description: >-
-      Describes the procedures to configure HDFS high availability on a
-      cluster.
+  # Removed since it is not currently being built.
+  # - title: Configuring Fault Tolerance
+  #   url: configuring-fault-tolerance/index.html
+  #   description: >-
+  #     Describes the procedures to configure HDFS high availability on a
+  #     cluster.
 
   - title: Configuring Data Protection
     url: data-protection/index.html

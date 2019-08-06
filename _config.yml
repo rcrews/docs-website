@@ -34,63 +34,69 @@ markdown: kramdown
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
+  - /Gemfile
+  - /Gemfile.lock
+  - /README.md
   # - node_modules
   # - vendor/bundle/
   # - vendor/cache/
   # - vendor/gems/
   # - vendor/ruby/
 
+  # Remove for testing
+  - /HDPDocuments/
+  - /documentation/
+
   # Unreleased documentation
-  - HDPDocuments/CFM/CFM-1.1.0/
-  - HDPDocuments/DAS/DAS-1.3.0/
-  - HDPDocuments/DLM1/DLM-1.5.0/
-  - HDPDocuments/DPS/
-  - HDPDocuments/HDF3/HDF-3.5.0/
-  - HDPDocuments/SMM/SMM-2.0.0/
+  - /HDPDocuments/CFM/CFM-1.1.0/
+  - /HDPDocuments/DAS/DAS-1.3.0/
+  - /HDPDocuments/DLM1/DLM-1.5.0/
+  - /HDPDocuments/DPS/
+  - /HDPDocuments/HDF3/HDF-3.5.0/
+  - /HDPDocuments/SMM/SMM-2.0.0/
 
   # Testing files that should not be copied to the hortonworks staging site
-  - data-catalog/cloud/navigation.json
-  - data-hub/cloud/navigation.json
-  - machine-learning/cloud/navigation.json
-  - management-console/cloud/navigation.json
-  - replication-manager/cloud/navigation.json
-  - runtime/7.0.0/navigation.json
+  - /data-catalog/cloud/navigation.json
+  - /data-hub/cloud/navigation.json
+  - /machine-learning/cloud/navigation.json
+  - /management-console/cloud/navigation.json
+  - /replication-manager/cloud/navigation.json
+  - /runtime/7.0.0/navigation.json
 
   # Testing files that should not be copied to any s3 bucket
-  - hdf
-  - runtime/7.0.0/integrating-hive-and-bi/
-  - runtime/7.0.0/managing-a-hive-workload/
-  - runtime/7.0.0/managing-hive/
-  - runtime/7.0.0/securing-hive/
-  - runtime/7.0.0/starting-hive/
-  - runtime/7.0.0/using-hiveql/
+  - /hdf/
+  - /runtime/7.0.0/publication/
+  - /runtime/7.0.0/integrating-hive-and-bi/
+  - /runtime/7.0.0/managing-a-hive-workload/
+  - /runtime/7.0.0/managing-hive/
+  - /runtime/7.0.0/securing-hive/
+  - /runtime/7.0.0/starting-hive/
+  - /runtime/7.0.0/using-hiveql/
 
   # Static content supporting the legacy Hortonworks pages that don't
   # need to be part of most builds
-  - common/fonts/
-  - common/img/
+
+# - common/fonts/  - Using these -- J
+# - common/img/ - Using these -- J
   - common/js/libs/
-  - common/sample-data/
-  - common/themes/pre-hdp-3.1/
-  - favicon.ico
-  - google313e059f6e26cb8c.html
-  - googlea675d981988e7c7a.html
-  - HDPDocuments/Cloudbreak/Cb-doc-resources/
-  - HDPDocuments/SMM/SMM-1.0.0/rest-api-reference/
-  - HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
-  - HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
-  - HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
-  - robots.txt
-  - sitemap.xsl
-  - wp-content
+  - /common/sample-data/
+  - /common/themes/pre-hdp-3.1/
+# - favicon.ico
+  - /google313e059f6e26cb8c.html
+  - /googlea675d981988e7c7a.html
+  - /HDPDocuments/Cloudbreak/Cb-doc-resources/
+  - /HDPDocuments/SMM/SMM-1.0.0/rest-api-reference/
+  - /HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
+  - /HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
+  - /HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
+  - /robots.txt
+  - /sitemap.xsl
+  - /wp-content
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds
-  - apps
-  - content
-  - etc
-  - etc.clientlibs
-  - libs
+  - /apps/
+  - /content/
+  - /etc/
+  - /etc.clientlibs/
+  - /libs/
