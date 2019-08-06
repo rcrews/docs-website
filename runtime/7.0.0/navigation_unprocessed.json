@@ -238,24 +238,6 @@ json:
             id: yarn-allocate-resources
             sub: yarn-allocate-resources/navigation.json
 
-          - text: Using Cloud Credentials with Apache Hadoop YARN
-            href: yarn-using-cloud-credentials/index.html
-            id: yarn-using-cloud-credentials
-            sub: yarn-using-cloud-credentials/navigation.json
-
-          - text: Monitoring Clusters and Apache Hadoop YARN Applications
-            href: yarn-monitoring-clusters-applications/index.html
-            id: yarn-monitoring-clusters-applications
-            sub: yarn-monitoring-clusters-applications/navigation.json
-
-          # Slack from Jason 8/1: "As side note, that first Yarn doc
-          # (yarn-health-test-and-metrics) linked in the issue is no
-          # longer being built. Caused a bit of confusion for me."
-          # - text: Apache YARN Health Tests and Metrics
-          #   href: yarn-health-test-and-metrics/index.html
-          #   id: yarn-health-test-and-metrics
-          #   sub: yarn-health-test-and-metrics/navigation.json
-
           - text: Configuring Apache Hadoop YARN Security
             href: yarn-security/index.html
             id: yarn-security
@@ -265,6 +247,25 @@ json:
             href: yarn-high-availability/index.html
             id: yarn-high-availability
             sub: yarn-high-availability/navigation.json
+
+          - text: Monitoring Clusters and Apache Hadoop YARN Applications
+            href: yarn-monitoring-clusters-applications/index.html
+            id: yarn-monitoring-clusters-applications
+            sub: yarn-monitoring-clusters-applications/navigation.json
+
+          - text: Using Cloud Credentials with Apache Hadoop YARN
+            href: yarn-using-cloud-credentials/index.html
+            id: yarn-using-cloud-credentials
+            sub: yarn-using-cloud-credentials/navigation.json
+
+          # Slack from Jason 8/1: "As side note, that first Yarn doc
+          # (yarn-health-test-and-metrics) linked in the issue is no
+          # longer being built. Caused a bit of confusion for me."
+          # - text: Apache YARN Health Tests and Metrics
+          #   href: yarn-health-test-and-metrics/index.html
+          #   id: yarn-health-test-and-metrics
+          #   sub: yarn-health-test-and-metrics/navigation.json
+
 
       - text: DATA ACCESS
         href: data-access-howto.html
