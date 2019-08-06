@@ -91,7 +91,7 @@ sections:
       # - title: Troubleshooting Hue
       #   url: troubleshooting-hue/index.html
 
-      - title: Troubleshooting HBase
+      - title: Troubleshooting Apache HBase
         url: troubleshooting-hbase/index.html
 
       - title: Troubleshooting Apache Kudu
@@ -131,7 +131,7 @@ sections:
       - title: Apache Atlas Reference
         url: atlas-reference/index.html
 
-      - title: Apache YARN Tuning
+      - title: Apache Hadoop YARN Tuning
         url: yarn-tuning/index.html
 
   # - title: Learning & Training
