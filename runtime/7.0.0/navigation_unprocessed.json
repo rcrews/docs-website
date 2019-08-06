@@ -38,7 +38,7 @@ json:
       - text: COMPUTE
         href: compute-concepts.html
         sub:
-           - text: Apache YARN Overview
+           - text: Apache Hadoop YARN Overview
              href: yarn-overview/index.html
              id: yarn-overview
              sub: yarn-overview/navigation.json
@@ -133,42 +133,42 @@ json:
       - text: DATA STORAGE
         href: storage-howto.html
         sub:
-          - text: Getting Started with HBase
+          - text: Getting Started with Apache HBase
             href: hbase-getting-started/index.html
             id: hbase-getting-started
             sub: hbase-getting-started/navigation.json
 
-          - text: Configuring HBase
+          - text: Configuring Apache HBase
             href: configuring-hbase/index.html
             id: configuring-hbase
             sub: configuring-hbase/navigation.json
 
-          - text: Using Amazon S3 with HBase
+          - text: Using Amazon S3 with Apache HBase
             href: hbase-s3/index.html
             id: hbase-s3
             sub: hbase-s3/navigation.json
 
-          - text: Managing HBase Security
+          - text: Managing Apache HBase Security
             href: hbase-security/index.html
             id: hbase-security
             sub: hbase-security/navigation.json
 
-          - text: Accessing HBase
+          - text: Accessing Apache HBase
             href: accessing-hbase/index.html
             id: accessing-hbase
             sub: accessing-hbase/navigation.json
 
-          - text: Managing HBase
+          - text: Managing Apache HBase
             href: managing-hbase/index.html
             id: managing-hbase
             sub: managing-hbase/navigation.json
 
-          - text: Configuring HBase High Availability
+          - text: Configuring Apache HBase High Availability
             href: hbase-high-availability/index.html
             id: hbase-high-availability
             sub: hbase-high-availability/navigation.json
 
-          - text: Using HBase Backup and Disaster Recovery
+          - text: Using Apache HBase Backup and Disaster Recovery
             href: hbase-backup-dr/index.html
             id: hbase-backup-dr
             sub: hbase-backup-dr/navigation.json
@@ -228,22 +228,22 @@ json:
       - text: COMPUTE
         href: compute-howto.html
         sub:
-          - text: Managing Applications on Apache YARN
+          - text: Managing Applications on Apache Hadoop YARN
             href: yarn-application-management/index.html
             id: yarn-application-management
             sub: yarn-application-management/navigation.json
 
-          - text: Managing and Allocating Cluster Resources using Apache YARN
+          - text: Managing and Allocating Cluster Resources using Apache Hadoop YARN
             href: yarn-allocate-resources/index.html
             id: yarn-allocate-resources
             sub: yarn-allocate-resources/navigation.json
 
-          - text: Using Cloud Credentials with Apache YARN
+          - text: Using Cloud Credentials with Apache Hadoop YARN
             href: yarn-using-cloud-credentials/index.html
             id: yarn-using-cloud-credentials
             sub: yarn-using-cloud-credentials/navigation.json
 
-          - text: Monitoring Clusters and Apache YARN Applications
+          - text: Monitoring Clusters and Apache Hadoop YARN Applications
             href: yarn-monitoring-clusters-applications/index.html
             id: yarn-monitoring-clusters-applications
             sub: yarn-monitoring-clusters-applications/navigation.json
@@ -256,12 +256,12 @@ json:
           #   id: yarn-health-test-and-metrics
           #   sub: yarn-health-test-and-metrics/navigation.json
 
-          - text: Configuring Apache YARN Security
+          - text: Configuring Apache Hadoop YARN Security
             href: yarn-security/index.html
             id: yarn-security
             sub: yarn-security/navigation.json
 
-          - text: Apache YARN High Availability
+          - text: Apache Hadoop YARN High Availability
             href: yarn-high-availability/index.html
             id: yarn-high-availability
             sub: yarn-high-availability/navigation.json
@@ -386,20 +386,20 @@ json:
             id: configuring-oozie
             sub: configuring-oozie/navigation.json
 
-          - text: Managing ZooKeeper
+          - text: Managing Apache ZooKeeper
             href: managing-zookeeper/index.html
             id: managing-zookeeper
             sub: managing-zookeeper/navigation.json
 
-          - text: Authenticating ZooKeeper
+          - text: Authenticating Apache ZooKeeper
             href: zookeeper-authentication/index.html
             id: zookeeper-authentication
             sub: zookeeper-authentication/navigation.json
 
-          - text: Monitoring ZooKeeper
-            href: monitoring-zookeeper/index.html
-            id: monitoring-zookeeper
-            sub: monitoring-zookeeper/navigation.json
+          # - text: Monitoring ZooKeeper
+          #   href: monitoring-zookeeper/index.html
+          #   id: monitoring-zookeeper
+          #   sub: monitoring-zookeeper/navigation.json
 
       - text: SECURITY
         href: security-howto.html
@@ -535,7 +535,7 @@ json:
         id: atlas-reference
         sub: atlas-reference/navigation.json
 
-      - text: Apache YARN Tuning
+      - text: Apache Hadoop YARN Tuning
         href: yarn-tuning/index.html
         id: yarn-tuning
         sub: yarn-tuning/navigation.json
