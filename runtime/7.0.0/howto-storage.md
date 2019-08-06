@@ -4,14 +4,14 @@ breadcrumb-title: Cloudera Runtime How To
 title: Data Storage
 publications:
 
-  - title: Getting Started with HBase
+  - title: Getting Started with Apache HBase
     url: hbase-getting-started/index.html
     description: >-
       Provides information about the operational database cluster shape,
       and instructions to create an operational database. Provides
       instructions to start, stop your HBase cluster.
 
-  - title: Configuring HBase
+  - title: Configuring Apache HBase
     url: configuring-hbase/index.html
     description: >-
       Provides information to configure HBase to use it as your
@@ -23,36 +23,36 @@ publications:
  #     publication description ante nec fusce varius mattis facilisis
  #     consectetur sit
 
-  - title: Using Amazon S3 with HBase
+  - title: Using Amazon S3 with Apache HBase
     url: hbase-s3/index.html
     description: >-
       Provides information about how to use use Amazon S3 as a storage
       layer for HBase.
 
-  - title: Managing HBase Security
+  - title: Managing Apache HBase Security
     url: hbase-security/index.html
     description: >-
       Provides information about HBase security, authentication,
       authorization, and configuring TLS/SSL for HBase.
 
-  - title: Accessing HBase
+  - title: Accessing Apache HBase
     url: accessing-hbase/index.html
     description: >-
       Provides information about different ways to access HBase.
 
-  - title: Managing HBase
+  - title: Managing Apache HBase
     url: managing-hbase/index.html
     description: >-
       Provides information about how to import data into,
       write data to, and read data from HBase.
 
-  - title: Configuring HBase High Availability
+  - title: Configuring Apache HBase High Availability
     url: hbase-high-availability/index.html
     description: >-
       Provides information about configuring HBase high availability for
       applications require low-latency queries.
 
-  - title: Using HBase Backup and Disaster Recovery
+  - title: Using Apache HBase Backup and Disaster Recovery
     url: hbase-backup-dr/index.html
     description: >-
       Provides information about configuring HBase snapshots, and using
