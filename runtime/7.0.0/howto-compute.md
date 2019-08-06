@@ -28,19 +28,18 @@ publications:
       Provides information about ResourceManager High Availability. It
       also describes the work preserving recovery process.
       
- - title: Monitoring Clusters and Apache Hadoop YARN Applications
+  - title: Monitoring Clusters and Apache Hadoop YARN Applications
     url: yarn-monitoring-clusters-applications/index.html
     description: >-
       Describes how to monitor clusters, queues, applications, services,
       flow activities, and nodes using YARN web user interface and
       Cloudera Manager.
       
-     - title: Using Cloud Credentials with Apache Hadoop YARN
+  - title: Using Cloud Credentials with Apache Hadoop YARN
     url: yarn-using-cloud-credentials/index.html
     description: >-
       Describes how to access data stored in a cloud service for
       applications that use YARN.
-
 ---
 Apache YARN manages resources for the applications running on your
 cluster by allocating resources through scheduling,  limiting CPU usage,
