@@ -2,6 +2,11 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Compute
+
+# Concepts publications related to
+# * YARN
+# * ZooKeeper
+
 publications:
   - title: Apache YARN Overview
     url: yarn-overview/index.html

@@ -1,9 +1,13 @@
 ---
 layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
-title: Data Storage
-publications:
+title: Operational Datastore
 
+# Concepts publications related to
+# * HBase
+# * Kudu
+
+publications:
   - title: Apache HBase Overview
     url: hbase-overview/index.html
     description: >-
@@ -22,16 +26,13 @@ publications:
       Outlines effective schema design philosophies for Apache Kudu, and
       how they differ from approaches used for traditional relational
       database schemas.
-
-  - title: Apache HDFS Overview
-    url: hdfs-overview/index.html
-    description: >-
-      Provides an overview of Apache HDFS, its benefits, and the key
-      components.
 ---
-Cloudera Runtime provides different types of storage components that you
-can use depending on your data requirements. Apache HBase is a NoSQL
-database that provides real-time read/write access to those large
-datasets. Apache Kudu is a columnar data store that enables fast
-analytics on rapidly changing data. Apache HDFS is a distributed file
-system for storing large volumes of data.
+Montes consectetur ultricies congue suspendisse aenean fringilla quis
+neque torquent etiam orci, auctor nisi maximus risus blandit quam ex
+vehicula suscipit elit duis, arcu mollis scelerisque natoque rutrum in
+dignissim mi aptent facilisis primis, a sem per dis leo vulputate magna
+quisque volutpat velit. Egestas nullam potenti aliquet ultricies quam
+aptent mi amet neque, scelerisque pharetra platea viverra at fusce nibh
+magna magnis, sagittis tempus congue facilisi primis habitant fermentum
+taciti nostra parturient, facilisis in varius ullamcorper purus
+fringilla urna vestibulum.

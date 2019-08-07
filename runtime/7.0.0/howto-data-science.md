@@ -2,6 +2,11 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Data Science
+
+# How-to publications related to
+# * Spark
+# * Zeppelin
+
 publications:
   - title: Configuring Apache Spark
     url: configuring-spark/index.html

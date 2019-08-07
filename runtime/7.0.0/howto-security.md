@@ -2,6 +2,11 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Security
+
+# How-to publications related to
+# * Ranger
+# * Knox
+
 publications:
   - title: Identity Management and Federation
     url: identity-management-and-federation/index.html

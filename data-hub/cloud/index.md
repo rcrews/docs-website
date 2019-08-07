@@ -39,7 +39,7 @@ sections:
       - title: Accessing Clusters
         url: access-clusters/index.html
 
-      - title: Managing clusters
+      - title: Managing Clusters
         url: manage-clusters/index.html
 
       - title: Image Catalogs

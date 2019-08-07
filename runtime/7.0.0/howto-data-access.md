@@ -2,31 +2,15 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Data Access
+
+# How-to publications related to
+# * Hive
+# * Impala
+# * Hue
+# * Sqoop
+# * Search
+
 publications:
-  - title: Administering Hue
-    url: administering-hue/index.html
-    description: >-
-      Describes how to configure Hue, customize its web UI, and to
-      enable integration with Apache Atlas.
-
-  # - title: Securing Hue
-  #   url: securing-hue/index.html
-  #   description: >-
-  #     publication description ante nec fusce varius mattis facilisis
-  #     consectetur sit
-
-  # - title: Tuning Hue
-  #   url: tuning-hue/index.html
-  #   description: >-
-  #     publication description ante nec fusce varius mattis facilisis
-  #     consectetur sit
-
-  - title: Using Hue
-    url: using-hue/index.html
-    description: >-
-      Describes how to use Hue to query Apache Impala data sets and how
-      to use it to browse metadata in Apache Atlas.
-
   # Removed at Kris's request
   # - title: Apache Hive Performance Tuning
   #   url: hive-performance-tuning/index.html
@@ -88,10 +72,28 @@ publications:
       Hive or to the file system or object store and how to move data
       back to Hive
 
+  - title: Integrating with Apache Impala
+    url: kudu-integration/index.html
+    description: >-
+      Provides examples on how to use Impala to insert, query, update,
+      and delete data from Kudu tablets using Impala's SQL syntax.
+
   - title: Managing Apache Impala
     url: impala-manage/index.html
     description: >-
       Presents the task topics for configuring and managing Impala
+
+  - title: Administering Hue
+    url: administering-hue/index.html
+    description: >-
+      Describes how to configure Hue, customize its web UI, and to
+      enable integration with Apache Atlas.
+
+  - title: Using Hue
+    url: using-hue/index.html
+    description: >-
+      Describes how to use Hue to query Apache Impala data sets and how
+      to use it to browse metadata in Apache Atlas.
 ---
 Cloudera Data Platform Runtime includes Apache Hive 3 and Apache Impala
 for storing and accessing data in the Hive metastore database. Hive 3

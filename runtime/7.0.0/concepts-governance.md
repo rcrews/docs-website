@@ -2,6 +2,10 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Governance
+
+# Concepts publications related to
+# * Atlas
+
 publications:
   - title: Governance Overview & Use Cases
     url: cdp-governance-overview

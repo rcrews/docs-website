@@ -11,34 +11,29 @@ sections:
   - title: Concepts & Use Cases
     name: concepts
     books:
-      - title: STORAGE
-        url: storage-concepts.html
+      - title: Storage
+        url: concepts-storage.html
 
-      - title: COMPUTE
-        url: compute-concepts.html
+      - title: Compute
+        url: concepts-compute.html
 
-      - title: DATA ACCESS
-        url: data-access-concepts.html
+      - title: Data Access
+        url: concepts-data-access.html
 
-      - title: DATA SCIENCE
-        url: data-science-concepts.html
+      - title: Operational Datastore
+        url: concepts-operational-datastore.html
 
-      - title: SECURITY
-        url: security-concepts.html
+      - title: Data Science
+        url: concepts-data-science.html
 
-      - title: GOVERNANCE
-        url: governance-concepts.html
+      - title: Security
+        url: concepts-security.html
 
-      - title: CLUSTER MANAGEMENT
-        url: cluster-management-concepts.html
+      - title: Governance
+        url: concepts-governance.html
 
-      # Removed at Sairam's request, July 18
-      # - title: cluster-maintenance
-      #   url: cluster-maintenance/index.html
-
-      # Removed at Sairam's request, July 18
-      # - title: ports-reference
-      #   url: ports-reference/index.html
+      - title: Cluster Management
+        url: concepts-cluster-management.html
 
   - title: Planning
     name: planning
@@ -46,39 +41,39 @@ sections:
       - title: Planning for Apache Impala
         url: impala-planning/index.html
 
-# Priyanka: Removed because install-upgrade procedures are not needed for CDP 1.0.0.
-#  - title: Installation & Upgrade
-#   name: installation
-#    books:
-#      - title: Apache Kudu Install and Upgrade
-#        url: kudu-install-and-upgrade/index.html
+  # - title: Installation & Upgrade
+  #   name: installation
+  #   books:
 
   - title: How To
     name: howto
     books:
-      - title: DATA STORAGE
-        url: storage-howto.html
+      - title: Storage
+        url: howto-storage.html
 
-      - title: COMPUTE
-        url: compute-howto.html
+      - title: Compute
+        url: howto-compute.html
 
-      - title: DATA ACCESS
-        url: data-access-howto.html
+      - title: Data Access
+        url: howto-data-access.html
 
-      - title: DATA SCIENCE
-        url: data-science-howto.html
+      - title: Operational Datastore
+        url: howto-operational-datastore.html
 
-      - title: OPERATIONS
-        url: operations-howto.html
+      - title: Data Science
+        url: howto-data-science.html
 
-      - title: SECURITY
-        url: security-howto.html
+      - title: Security
+        url: howto-security.html
 
-      - title: GOVERNANCE
-        url: governance-howto.html
+      - title: Governance
+        url: howto-governance.html
 
-      - title: CLUSTER MANAGEMENT
-        url: cluster-management-howto.html
+      - title: Cluster Management
+        url: howto-cluster-management.html
+
+      - title: Jobs Management
+        url: howto-operations.html
 
   - title: Troubleshooting
     name: troubleshooting
@@ -86,11 +81,7 @@ sections:
       - title: Troubleshooting Apache Impala
         url: impala-troubleshooting/index.html
 
-      # Removed since it is not currently being built.
-      # - title: Troubleshooting Hue
-      #   url: troubleshooting-hue/index.html
-
-      - title: Troubleshooting HBase
+      - title: Troubleshooting Apache HBase
         url: troubleshooting-hbase/index.html
 
       - title: Troubleshooting Apache Kudu
@@ -117,18 +108,10 @@ sections:
       - title: Cloudera Manager Reference
         url: cm-reference/index.html
 
-      # Sairam removed this because the publication will no longer be required
-      # - title: Oozie Metrics and Diagnostics
-      # url: oozie-metrics-diagnostics/index.html
-
-      # Sairam removed this because the publication will no longer be required
-      # - title: APIs and Metrics for Working with HDFS
-      # url: hdfs-apis-metrics/index.html
-
       - title: Apache Atlas Reference
         url: atlas-reference/index.html
 
-      - title: Apache YARN Tuning
+      - title: Apache Hadoop YARN Tuning
         url: yarn-tuning/index.html
 
   # - title: Learning & Training

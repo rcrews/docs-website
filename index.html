@@ -3,7 +3,7 @@ layout: home
 ---
 <div class="home-hero">
     <div>
-        <h1>Cloudera Documentation</h1>
+        <h1><span style="display:none">Cloudera</span> Documentation</h1>
         <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
         <div class="search">
             <input type="text" placeholder="Search Documentation"><i class="fa fa-search" style=""></i>
@@ -18,40 +18,38 @@ layout: home
             <div class="card">
                 <div class="card-title">For developers</div>
                 <ul class="card-text">
-                    <li><a href="">Data in motion services</a></li>
-                    <li><a href="">Data engineering services</a></li>
-                    <li><a href="/data-warehouse/cloud/index.html">Data warehousing services</a></li>
-                    <li><a href="">Operational database services</a></li>
                     <li><a href="/machine-learning/cloud/index.html">Machine learning services</a></li>
                 </ul>
             </div>
             <div class="card">
                 <div class="card-title">For administrators</div>
                 <ul class="card-text">
-                    <li><a href="">Architecture</a></li>
-                    <li><a href="">Supported environments</a></li>
+                    <li><a href="">Overview</a></li>
+                    <li><a href="/management-console/cloud/environments/index.html">Environments</a></li>
                     <li><a href="">Migration from on prem</a></li>
                     <li><a href="">Workload management</a></li>
+                    <li><a href="/machine-learning/cloud/index.html">Data warehousing services</a></li>
                     <li><a href="/management-console/cloud/user-management/index.html">User management</a></li>
+                    <li><a href="/data-hub/cloud/index.html">Cluster creation</a></li>
                 </ul>
             </div>
             <div class="card">
                 <div class="card-title">For data stewards</div>
                 <ul class="card-text">
-                    <li><a href="">Data lake management</a></li>
-                    <li><a href="">Security</a></li>
-                    <li><a href="">Governance</a></li>
-                    <li><a href="">Backup and disaster recovery</a></li>
+                    <li><a href="/management-console/cloud/data-lakes/index.html">Data lake management</a></li>
+                    <li><a href="/runtime/7.0.0/cdp-security-overview/index.html">Security</a></li>
+                    <li><a href="/data-catalog/cloud/index.html">Governance</a></li>
+                    <li><a href="/replication-manager/cloud/index.html">Backup and disaster recovery</a></li>
                 </ul>
             </div>
         </div>
         <div class="card-group">
             <div class="card">
-                <div class="card-title">Control Plane</div>
+                <div class="card-title">Control Plane <sup style="font-size:8pt">*“Management Experiences”?</sup></div>
                 <ul class="card-text">
+                    <li><a href="/management-console/cloud/index.html">Management Console</a></li>
                     <li><a href="">Workload Manager</a></li>
                     <li><a href="/data-catalog/cloud/index.html">Data Catalog</a></li>
-                    <li><a href="/management-console/cloud/index.html">Management Console</a></li>
                     <li><a href="/replication-manager/cloud/index.html">Replication Manager</a></li>
                 </ul>
             </div>
@@ -66,7 +64,14 @@ layout: home
             <div class="card">
                 <div class="card-title">Cloudera Runtime</div>
                 <ul>
-                    <li><a href="/runtime/7.0.0/index.html">Cloudera Runtime</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-storage.html">Data storage</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-compute.html">Compute</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-data-access.html">Data access</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-operational-datastore.html">Operational datastore</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-data-science.html">Data science</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-security.html">Security</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-goverance.html">Governance</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-cluster-management.html">Cluster management</a></li>
                 </ul>
             </div>
         </div>
@@ -74,16 +79,16 @@ layout: home
 </section>
 
 <section class="std">
-    <div class="section-title">Data Products</div>
+    <div class="section-title">Edge to AI<sup style="font-size:8pt">*Noun needed?</div>
     <div class="cards">
         <div class="card-group">
             <div class="card">
                 <div class="card-title">Data in Motion</div>
                 <ul>
-                    <li><a href="/cem/1.0.0/index.html">Cloudera Edge Management</a></li>
+                    <li><a href="/HDPDocuments/CEM/CEM-1.1.0/index.html">Cloudera Edge Management</a></li>
                     <li><a href="/HDPDocuments/HDF3/HDF-3.4.1.1/index.html">Cloudera Data Flow</a></li>
-                    <li><a href="/csp/1.0.0/index.html">Cloudera Stream Processing</a></li>
-                    <li><a href="/HDPDocuments/CFM/CFM-1.0.1/index.html">Cloudera Flow Management</a></li>
+                    <li><a href="/HDPDocuments/CSP/CSP-2.0.0/index.html">Cloudera Stream Processing</a></li>
+                    <li><a href="/HDPDocuments/CFM/CFM-1.1.0/index.html">Cloudera Flow Management</a></li>
                 </ul>
             </div>
             <div class="card">
@@ -103,6 +108,20 @@ layout: home
 </section>
 
 <section class="std">
+    <div class="section-title"></div>
+    <div class="cards">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-title"><a href="/HDPDocuments/index.html">HDP Enterprise</a></div>
+            </div>
+            <div class="card">
+                <div class="card-title"><a href="/documentation/index.html">CDH Enterprise</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="std" style="display:none">
     <div class="section-title">Cloudera Enterprise</div>
     <div class="card-group">
         <div class="card">
@@ -112,7 +131,7 @@ layout: home
     </div>
 </section>
 
-<section class="std">
+<section class="std" style="display:none">
     <div class="section-title">Hortonworks</div>
     <div class="card-group">
         <div class="card">
@@ -145,5 +164,3 @@ layout: home
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-</body>
-</html>

@@ -2,6 +2,14 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Data Access
+
+# Concepts publications related to
+# * Hive
+# * Impala
+# * Hue
+# * Sqoop
+# * Search
+
 publications:
   - title: Apache Hive Overview
     url: hive-introduction/index.html

@@ -91,7 +91,7 @@
 
 
         .callout                { padding:5px 10px; margin-bottom:10px; overflow:auto;
-            &:before            { font-family: FontAwesome; font-size:250%; padding-right:10px; padding-left:5px; float:left;}
+            &:before            { font-family: 'Font Awesome 5 Free'; font-size:250%; padding-right:10px; padding-left:5px; float:left;}
             &>div               { padding-left:50px; padding-top:10px; }
             &.warning           { background-color:#FFFCDE; color:#EBB255;
                 &:before        { content: "\f071"; color: #F5BA6C; }

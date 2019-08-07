@@ -2,6 +2,10 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Governance
+
+# How-to publications related to
+# * Atlas
+
 publications:
   - title: Searching with Metadata
     url: atlas-searching-with-metadata/index.html

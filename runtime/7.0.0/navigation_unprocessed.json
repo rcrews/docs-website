@@ -12,39 +12,35 @@ json:
   - text: Concepts & Use Cases
     id: concepts
     sub:
-      - text: DATA STORAGE
-        href: storage-concepts.html
+    # Here's the final list:
+    #   Storage: HDFS
+    #   Compute: YARN, ZooKeeper
+    #   Data Access: Hive, Impala, Hue, Sqoop, Search
+    #   Operational Datastore: HBase, Kudu
+    #   Data Science: Spark, Zeppelin
+    #   Security: Ranger, Knox
+    #   Governance: Atlas
+    #   Cluster Managment: Cloudera Manager
+    #   Jobs Managment: Oozie
+
+      - text: Storage
+        href: concepts-storage.html
         sub:
-          - text: Apache HBase Overview
-            href: hbase-overviewn/index.html
-            id: hbase-overview
-            sub: hbase-overview/navigation.json
-
-          - text: Apache Kudu Overview
-            href: kudu-overview/index.html
-            id: kudu-overview
-            sub: kudu-overview/navigation.json
-
-          - text: Apache Kudu Design
-            href: kudu-design/index.html
-            id: kudu-design
-            sub: kudu-design/navigation.json
-
           - text: Apache HDFS Overview
             href: hdfs-overview/index.html
             id: hdfs-overview
             sub: hdfs-overview/navigation.json
 
-      - text: COMPUTE
-        href: compute-concepts.html
+      - text: Compute
+        href: concepts-compute.html
         sub:
-           - text: Apache YARN Overview
+           - text: Apache Hadoop YARN Overview
              href: yarn-overview/index.html
              id: yarn-overview
              sub: yarn-overview/navigation.json
 
-      - text: DATA ACCESS
-        href: data-access-concepts.html
+      - text: Data Access
+        href: concepts-data-access.html
         sub:
           - text: Apache Hive Overview
             href: hive-introduction/index.html
@@ -61,8 +57,26 @@ json:
             id: hue-introduction
             sub: hue-introduction/navigation.json
 
-      - text: DATA SCIENCE
-        href: data-science-concepts.html
+      - text: Operational Datastore
+        href: concepts-operational-datastore.html
+        sub:
+          - text: Apache HBase Overview
+            href: hbase-overviewn/index.html
+            id: hbase-overview
+            sub: hbase-overview/navigation.json
+
+          - text: Apache Kudu Overview
+            href: kudu-overview/index.html
+            id: kudu-overview
+            sub: kudu-overview/navigation.json
+
+          - text: Apache Kudu Design
+            href: kudu-design/index.html
+            id: kudu-design
+            sub: kudu-design/navigation.json
+
+      - text: Data Science
+        href: concepts-data-science.html
         sub:
           - text: Apache Spark Overview
             href: spark-overview/index.html
@@ -74,41 +88,29 @@ json:
             id: zeppelin-overview
             sub: zeppelin-overview/navigation.json
 
-      - text: SECURITY
-        href: security-concepts.html
+      - text: Security
+        href: concepts-security.html
         sub:
           - text: CDP Security Overview
             href: cdp-security-overview/index.html
             id: cdp-security-overview/index.html
             sub: cdp-security-overview/navigation.json
 
-      - text: GOVERNANCE
-        href: governance-concepts.html
+      - text: Governance
+        href: concepts-governance.html
         sub:
           - text: Governance Overview & Use Cases
             href: cdp-governance-overview/index.html
             id: cdp-governance-overview
             sub: cdp-governance-overview/navigation.json
 
-      - text: CLUSTER MANAGEMENT
-        href: cluster-management-concepts.html
+      - text: Cluster Managment
+        href: concepts-cluster-management.html
         sub:
           - text: Cloudera Manager Overview
             href: cm-concepts/index.html
             id: cm-concepts
             sub: cm-concepts/navigation.json
-
-      # Removed at Sairam's request, July 18
-      # - text: cluster-maintenance
-      #   href: cluster-maintenance/index.html
-      #   id: cluster-maintenance
-      #   sub: cluster-maintenance/navigation.json
-
-      # Removed at Sairam's request, July 18
-      # - text: ports-reference
-      #   href: ports-reference/index.html
-      #   id: ports-reference
-      #   sub: ports-reference/navigation.json
 
   - text: Planning
     id: planning
@@ -118,97 +120,16 @@ json:
         id: impala-planning
         sub: impala-planning/navigation.json
 
-# Priyanka: Removed since install-upgrade procedures are not needed for CDP 1.0.0.
-#  - text: Installation & Upgrade
-#    id: installation
-#    sub:
-#      - text: Apache Kudu Install and Upgrade
-#        href: kudu-install-and-upgrade/index.html
-#        id: kudu-install-and-upgrade
-#        sub: kudu-install-and-upgrade/navigation.json
-
   - text: How To
     id: howto
     sub:
-      - text: DATA STORAGE
-        href: storage-howto.html
+      - text: Storage
+        href: howto-storage.html
         sub:
-          - text: Getting Started with HBase
-            href: hbase-getting-started/index.html
-            id: hbase-getting-started
-            sub: hbase-getting-started/navigation.json
-
-          - text: Configuring HBase
-            href: configuring-hbase/index.html
-            id: configuring-hbase
-            sub: configuring-hbase/navigation.json
-
-          - text: Using Amazon S3 with HBase
-            href: hbase-s3/index.html
-            id: hbase-s3
-            sub: hbase-s3/navigation.json
-
-          - text: Managing HBase Security
-            href: hbase-security/index.html
-            id: hbase-security
-            sub: hbase-security/navigation.json
-
-          - text: Accessing HBase
-            href: accessing-hbase/index.html
-            id: accessing-hbase
-            sub: accessing-hbase/navigation.json
-
-          - text: Managing HBase
-            href: managing-hbase/index.html
-            id: managing-hbase
-            sub: managing-hbase/navigation.json
-
-          - text: Configuring HBase High Availability
-            href: hbase-high-availability/index.html
-            id: hbase-high-availability
-            sub: hbase-high-availability/navigation.json
-
-          - text: Using HBase Backup and Disaster Recovery
-            href: hbase-backup-dr/index.html
-            id: hbase-backup-dr
-            sub: hbase-backup-dr/navigation.json
-
-          - text: Administering Apache Kudu
-            href: administering-kudu/index.html
-            id: administering-kudu
-            sub: administering-kudu/navigation.json
-
-          - text: Developing Applications with Apache Kudu
-            href: kudu-development/index.html
-            id: kudu-development
-            sub: kudu-development/navigation.json
-
-          - text: Integrating with Apache Kudu
-            href: kudu-integration/index.html
-            id: kudu-integration
-            sub: kudu-integration/navigation.json
-
-          - text: Integrating with Apache Impala
-            href: kudu-integration/index.html
-            id: kudu-integration
-            sub: kudu-integration/navigation.json
-
-          # Removed since it is not currently being built.
-          # - text: Accessing Cloud Data
-          #   href: cloud-data-access/index.html
-          #   id: cloud-data-access
-          #   sub: cloud-data-access/navigation.json
-
           - text: Scaling Namespaces and Optimizing Data Storage
             href: scaling-namespaces/index.html
             id: scaling-namespaces
             sub: scaling-namespaces/navigation.json
-
-          # Removed since it is not currently being built.
-          # - text: Configuring Fault Tolerance
-          #   href: configuring-fault-tolerance/index.html
-          #   id: configuring-fault-tolerance
-          #   sub: configuring-fault-tolerance/navigation.json
 
           - text: Configuring Data Protection
             href: data-protection/index.html
@@ -225,70 +146,52 @@ json:
             id: hdfs-encryption
             sub: hdfs-encryption/navigation.json
 
-      - text: COMPUTE
-        href: compute-howto.html
+      - text: Compute
+        href: howto-compute.html
         sub:
-          - text: Managing Applications on Apache YARN
+          - text: Managing Applications on Apache Hadoop YARN
             href: yarn-application-management/index.html
             id: yarn-application-management
             sub: yarn-application-management/navigation.json
 
-          - text: Managing and Allocating Cluster Resources using Apache YARN
+          - text: Managing and Allocating Cluster Resources using Apache Hadoop YARN
             href: yarn-allocate-resources/index.html
             id: yarn-allocate-resources
             sub: yarn-allocate-resources/navigation.json
 
-          - text: Using Cloud Credentials with Apache YARN
-            href: yarn-using-cloud-credentials/index.html
-            id: yarn-using-cloud-credentials
-            sub: yarn-using-cloud-credentials/navigation.json
-
-          - text: Monitoring Clusters and Apache YARN Applications
-            href: yarn-monitoring-clusters-applications/index.html
-            id: yarn-monitoring-clusters-applications
-            sub: yarn-monitoring-clusters-applications/navigation.json
-
-          # Slack from Jason 8/1: "As side note, that first Yarn doc
-          # (yarn-health-test-and-metrics) linked in the issue is no
-          # longer being built. Caused a bit of confusion for me."
-          # - text: Apache YARN Health Tests and Metrics
-          #   href: yarn-health-test-and-metrics/index.html
-          #   id: yarn-health-test-and-metrics
-          #   sub: yarn-health-test-and-metrics/navigation.json
-
-          - text: Configuring Apache YARN Security
+          - text: Configuring Apache Hadoop YARN Security
             href: yarn-security/index.html
             id: yarn-security
             sub: yarn-security/navigation.json
 
-          - text: Apache YARN High Availability
+          - text: Apache Hadoop YARN High Availability
             href: yarn-high-availability/index.html
             id: yarn-high-availability
             sub: yarn-high-availability/navigation.json
 
-      - text: DATA ACCESS
-        href: data-access-howto.html
+          - text: Monitoring Clusters and Apache Hadoop YARN Applications
+            href: yarn-monitoring-clusters-applications/index.html
+            id: yarn-monitoring-clusters-applications
+            sub: yarn-monitoring-clusters-applications/navigation.json
+
+          - text: Using Cloud Credentials with Apache Hadoop YARN
+            href: yarn-using-cloud-credentials/index.html
+            id: yarn-using-cloud-credentials
+            sub: yarn-using-cloud-credentials/navigation.json
+
+          - text: Managing Apache ZooKeeper
+            href: managing-zookeeper/index.html
+            id: managing-zookeeper
+            sub: managing-zookeeper/navigation.json
+
+          - text: Authenticating Apache ZooKeeper
+            href: zookeeper-authentication/index.html
+            id: zookeeper-authentication
+            sub: zookeeper-authentication/navigation.json
+
+      - text: Data Access
+        href: howto-data-access.html
         sub:
-          - text: Administering Hue
-            href: administering-hue/index.html
-            id: administering-hue
-            sub: administering-hue/navigation.json
-
-          # - text: Securing Hue
-          #   href: securing-hue/index.html
-          #   id: securing-hue
-          #   sub: securing-hue/navigation.json
-
-          # - text: Tuning Hue
-          #   href: tuning-hue/index.html
-          #   id: tuning-hue
-          #   sub: tuning-hue/navigation.json
-
-          - text: Using Hue
-            href: using-hue/index.html
-            id: using-hue
-            sub: using-hue/navigation.json
-
           # Removed at Kris's request
           # - text: Apahce Hive Performance Tuning
           #   href: hive-performance-tuning/index.html
@@ -340,13 +243,86 @@ json:
             id: migrating-data-into-hive
             sub: migrating-data-into-hive/navigation.json
 
+          - text: Integrating with Apache Impala
+            href: kudu-integration/index.html
+            id: kudu-integration
+            sub: kudu-integration/navigation.json
+
           - text: Managing Apache Impala
             href: impala-manage/index.html
             id: impala-manage
             sub: impala-manage/navigation.json
 
-      - text: DATA SCIENCE
-        href: data-science-howto.html
+          - text: Administering Hue
+            href: administering-hue/index.html
+            id: administering-hue
+            sub: administering-hue/navigation.json
+
+          - text: Using Hue
+            href: using-hue/index.html
+            id: using-hue
+            sub: using-hue/navigation.json
+
+      - text: Operational Datastore
+        href: howto-operational-datastore.html
+        sub:
+          - text: Getting Started with Apache HBase
+            href: hbase-getting-started/index.html
+            id: hbase-getting-started
+            sub: hbase-getting-started/navigation.json
+
+          - text: Configuring Apache HBase
+            href: configuring-hbase/index.html
+            id: configuring-hbase
+            sub: configuring-hbase/navigation.json
+
+          - text: Using Amazon S3 with Apache HBase
+            href: hbase-s3/index.html
+            id: hbase-s3
+            sub: hbase-s3/navigation.json
+
+          - text: Managing Apache HBase Security
+            href: hbase-security/index.html
+            id: hbase-security
+            sub: hbase-security/navigation.json
+
+          - text: Accessing Apache HBase
+            href: accessing-hbase/index.html
+            id: accessing-hbase
+            sub: accessing-hbase/navigation.json
+
+          - text: Managing Apache HBase
+            href: managing-hbase/index.html
+            id: managing-hbase
+            sub: managing-hbase/navigation.json
+
+          - text: Configuring Apache HBase High Availability
+            href: hbase-high-availability/index.html
+            id: hbase-high-availability
+            sub: hbase-high-availability/navigation.json
+
+          - text: Using Apache HBase Backup and Disaster Recovery
+            href: hbase-backup-dr/index.html
+            id: hbase-backup-dr
+            sub: hbase-backup-dr/navigation.json
+
+          - text: Administering Apache Kudu
+            href: administering-kudu/index.html
+            id: administering-kudu
+            sub: administering-kudu/navigation.json
+
+          - text: Developing Applications with Apache Kudu
+            href: kudu-development/index.html
+            id: kudu-development
+            sub: kudu-development/navigation.json
+
+          - text: Integrating with Apache Kudu
+            href: kudu-integration/index.html
+            id: kudu-integration
+            sub: kudu-integration/navigation.json
+
+      - text: Data Science
+        href: howto-data-science.html
         sub:
           - text: Configuring Apache Spark
             href: configuring-spark/index.html
@@ -378,31 +354,8 @@ json:
             id: using-zeppelin
             sub: using-zeppelin/navigation.json
 
-      - text: OPERATIONS
-        href: operations-howto.html
-        sub:
-          - text: Configuring Oozie
-            href: configuring-oozie/index.html
-            id: configuring-oozie
-            sub: configuring-oozie/navigation.json
-
-          - text: Managing ZooKeeper
-            href: managing-zookeeper/index.html
-            id: managing-zookeeper
-            sub: managing-zookeeper/navigation.json
-
-          - text: Authenticating ZooKeeper
-            href: zookeeper-authentication/index.html
-            id: zookeeper-authentication
-            sub: zookeeper-authentication/navigation.json
-
-          - text: Monitoring ZooKeeper
-            href: monitoring-zookeeper/index.html
-            id: monitoring-zookeeper
-            sub: monitoring-zookeeper/navigation.json
-
-      - text: SECURITY
-        href: security-howto.html
+      - text: Security
+        href: howto-security.html
         sub:
           - text: Identity Management and Federation
             ref: identity-management-and-federation/index.html
@@ -419,8 +372,8 @@ json:
             id: security-ranger-authorization
             sub: security-ranger-authorization/navigation.json
 
-      - text: GOVERNANCE
-        href: governance-howto.html
+      - text: Governance
+        href: howto-governance.html
         sub:
 
           - text: Searching with Metadata
@@ -443,8 +396,8 @@ json:
             id: atlas-managing-business-terms-with-glossaries
             sub: atlas-managing-business-terms-with-glossaries/navigation.json
 
-      - text: CLUSTER MANAGEMENT
-        href: cluster-management-howto.html
+      - text: Cluster Management
+        href: howto-cluster-management.html
         sub:
           - text: Configuring Clusters
             href: configuring-clusters/index.html
@@ -461,6 +414,14 @@ json:
             id: monitoring-and-diagnostics
             sub: monitoring-and-diagnostics/navigation.json
 
+      - text: Jobs Management
+        href: howto-jobs-management.html
+        sub:
+          - text: Configuring Oozie
+            href: configuring-oozie/index.html
+            id: configuring-oozie
+            sub: configuring-oozie/navigation.json
+
   - text: Troubleshooting
     id: troubleshooting
     sub:
@@ -468,12 +429,6 @@ json:
         href: impala-troubleshooting/index.html
         id: impala-troubleshooting
         sub: impala-troubleshooting/navigation.json
-
-      # Removed since it is not currently being built.
-      # - text: Troubleshooting Hue
-      #   href: troubleshooting-hue/index.html
-      #   id: troubleshooting-hue
-      #   sub: troubleshooting-hue/navigation.json
 
       - text: Troubleshooting HBase
         href: troubleshooting-hbase/index.html
@@ -493,12 +448,12 @@ json:
         id: knox-reference/index.html
         sub: knox-reference/navigation.json
 
-      - text: Apach Impala Reference
+      - text: Apache Impala Reference
         href: impala-reference/index.html
         id: impala-reference/index.html
         sub: impala-reference/navigation.json
 
-      - text: Apach Impala SQL Language Reference
+      - text: Apache Impala SQL Language Reference
         href: impala-sql-reference/index.html
         id: impala-sql-reference/index.html
         sub: impala-sql-reference/navigation.json
@@ -518,24 +473,12 @@ json:
         id: cm-reference
         sub: cm-reference/navigation.json
 
-      # Sairam removed this because the publication will no longer be required
-      # - text: Oozie Metrics and Diagnostics
-      # href: oozie-metrics-diagnostics/index.html
-      # id: oozie-metrics-diagnostics
-      # sub: oozie-metrics-diagnostics/navigation.json
-
-      # Sairam removed this because the publication will no longer be required
-      # - text: APIs and Metrics for Working with HDFS
-      # href: hdfs-apis-metrics/index.html
-      # id: hdfs-apis-metrics
-      # sub: hdfs-apis-metrics/navigation.json
-
       - text: Apache Atlas Reference
         href: atlas-reference/index.html
         id: atlas-reference
         sub: atlas-reference/navigation.json
 
-      - text: Apache YARN Tuning
+      - text: Apache Hadoop YARN Tuning
         href: yarn-tuning/index.html
         id: yarn-tuning
         sub: yarn-tuning/navigation.json
