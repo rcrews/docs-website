@@ -16,12 +16,20 @@ sections:
     books:
       - title: Schema Registry Overview
         url: schema-registry-overview/content/schema_registry_overview.html
+      - title: Streams Replication Manager Overview
+        url: srm-overview/index.html
+      - title: Understanding Replication Flows
+        url: understanding-replication-flows/index.html
+      - title: SRM Use Cases
+        url: srm-use-cases/index.html
 
-  - title: Installation
+  - title: Installation & Upgrade
     name: install
     books:
       - title: Installation
         url: installation/index.html
+      - title: Upgrade
+        url: upgrade/index.html
 
   - title: How To
     name: how-to
@@ -34,7 +42,14 @@ sections:
 
       - title: Using Schema Registry
         url: using-schema-registry/content/adding_a_new_schema.html
-
+      
+      - title: Configuring SRM
+        url: configuration/index.html
+      - title: Securing SRM
+        url: srm-security/index.html
+      - title: Using SRM
+        url: srm-using/index.html
+        
       - title: Monitoring Kafka Clusters
         url: monitoring-kafka-clusters/index.html
       - title: Managing Alert Policies
