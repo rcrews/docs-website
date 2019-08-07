@@ -2,6 +2,11 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Compute
+
+# How-to publications related to
+# * YARN
+# * ZooKeeper
+
 publications:
   - title: Managing Applications on Apache Hadoop YARN
     url: yarn-application-management/index.html
@@ -15,7 +20,7 @@ publications:
       Explains how to allocate cluster resources for the applications.
       In addition, describes the procedures for using Fair Scheduler and
       Capacity Scheduler.
-      
+
   - title: Configuring Apache Hadoop YARN Security
     url: yarn-security/index.html
     description: >-
@@ -27,19 +32,32 @@ publications:
     description: >-
       Provides information about ResourceManager High Availability. It
       also describes the work preserving recovery process.
-      
+
   - title: Monitoring Clusters and Apache Hadoop YARN Applications
     url: yarn-monitoring-clusters-applications/index.html
     description: >-
       Describes how to monitor clusters, queues, applications, services,
       flow activities, and nodes using YARN web user interface and
       Cloudera Manager.
-      
+
   - title: Using Cloud Credentials with Apache Hadoop YARN
     url: yarn-using-cloud-credentials/index.html
     description: >-
       Describes how to access data stored in a cloud service for
       applications that use YARN.
+
+  - title: Managing Apache ZooKeeper
+    url: managing-zookeeper/index.html
+    description: >-
+      Provides information about adding and managing the Apache
+      ZooKeeper service and replacing an Apache ZooKeeper role.
+
+  - title: Authenticating Apache ZooKeeper
+    url: zookeeper-authentication/index.html
+    description: >-
+      Describes the configuration of the ZooKeeper server and the
+      ZooKeeper client shell for Kerberos authentication. It also
+      describes the verification of the ZooKeeper authentication.
 ---
 Apache YARN manages resources for the applications running on your
 cluster by allocating resources through scheduling,  limiting CPU usage,

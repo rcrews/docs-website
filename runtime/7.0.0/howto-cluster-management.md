@@ -2,6 +2,10 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
 title: Cluster Management
+
+# How-to publications related to
+# * Cloudera Manager
+
 publications:
   - title: Configuring Clusters
     url: configuring-clusters/index.html

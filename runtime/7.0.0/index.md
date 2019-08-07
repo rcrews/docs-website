@@ -11,34 +11,29 @@ sections:
   - title: Concepts & Use Cases
     name: concepts
     books:
-      - title: STORAGE
+      - title: Storage
         url: concepts-storage.html
 
-      - title: COMPUTE
+      - title: Compute
         url: concepts-compute.html
 
-      - title: DATA ACCESS
+      - title: Data Access
         url: concepts-data-access.html
 
-      - title: DATA SCIENCE
+      - title: Operational Datastore
+        url: concepts-operational-datastore.html
+
+      - title: Data Science
         url: concepts-data-science.html
 
-      - title: SECURITY
+      - title: Security
         url: concepts-security.html
 
-      - title: GOVERNANCE
+      - title: Governance
         url: concepts-governance.html
 
-      - title: CLUSTER MANAGEMENT
+      - title: Cluster Management
         url: concepts-cluster-management.html
-
-      # Removed at Sairam's request, July 18
-      # - title: cluster-maintenance
-      #   url: cluster-maintenance/index.html
-
-      # Removed at Sairam's request, July 18
-      # - title: ports-reference
-      #   url: ports-reference/index.html
 
   - title: Planning
     name: planning
@@ -47,49 +42,44 @@ sections:
         url: impala-planning/index.html
 
   # - title: Installation & Upgrade
-  #  name: installation
+  #   name: installation
   #   books:
-      # Priyanka: Removed because install-upgrade procedures are not
-      # needed for CDP 1.0.0.
-      # - title: Apache Kudu Install and Upgrade
-      #   url: kudu-install-and-upgrade/index.html
 
   - title: How To
     name: howto
     books:
-      - title: DATA STORAGE
+      - title: Storage
         url: howto-storage.html
 
-      - title: COMPUTE
+      - title: Compute
         url: howto-compute.html
 
-      - title: DATA ACCESS
+      - title: Data Access
         url: howto-data-access.html
 
-      - title: DATA SCIENCE
+      - title: Operational Datastore
+        url: howto-operational-datastore.html
+
+      - title: Data Science
         url: howto-data-science.html
 
-      - title: OPERATIONS
-        url: howto-operations.html
-
-      - title: SECURITY
+      - title: Security
         url: howto-security.html
 
-      - title: GOVERNANCE
+      - title: Governance
         url: howto-governance.html
 
-      - title: CLUSTER MANAGEMENT
+      - title: Cluster Management
         url: howto-cluster-management.html
+
+      - title: Jobs Management
+        url: howto-operations.html
 
   - title: Troubleshooting
     name: troubleshooting
     books:
       - title: Troubleshooting Apache Impala
         url: impala-troubleshooting/index.html
-
-      # Removed since it is not currently being built.
-      # - title: Troubleshooting Hue
-      #   url: troubleshooting-hue/index.html
 
       - title: Troubleshooting Apache HBase
         url: troubleshooting-hbase/index.html
@@ -117,16 +107,6 @@ sections:
 
       - title: Cloudera Manager Reference
         url: cm-reference/index.html
-
-      # Sairam removed this because the publication will no longer be
-      # required
-      # - title: Oozie Metrics and Diagnostics
-      #   url: oozie-metrics-diagnostics/index.html
-
-      # Sairam removed this because the publication will no longer be
-      # required
-      # - title: APIs and Metrics for Working with HDFS
-      #   url: hdfs-apis-metrics/index.html
 
       - title: Apache Atlas Reference
         url: atlas-reference/index.html

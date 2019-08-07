@@ -2,6 +2,10 @@
 layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts
 title: Cluster Management
+
+# Concepts publications related to
+# * Cloudera Manager
+
 publications:
   - title: Cloudera Manager Overview
     url: cm-concepts/index.html
