@@ -196,7 +196,7 @@ nav .main-menu.mobile-menu > li > a	{ margin-left:30px; }
 .titlebar .versions             { vertical-align:top; text-align:left; font-family:$header-font;
     .selector                   { position:absolute;  z-index:100; display:none; border:1px solid #666;}
     .this                       { margin-top:-5px; font-size:130%; color:#fff; padding:1px 8px 2px 0px; margin-bottom:2px; cursor:pointer;
-        &:after                 { content: "\F107";  font-family: FontAwesome; margin-left:15px; font-size:140%; }
+        &:after                 { content: "\F107";  font-family: 'Font Awesome 5 Free'; margin-left:15px; font-size:140%; }
         &.active                { }
         &.active:after          { content: "\00D7"; margin-top:-2px;  }
     }

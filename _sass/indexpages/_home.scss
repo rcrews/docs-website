@@ -46,7 +46,7 @@ body.indexpages .titlebar   		{ background:#000;
 		}
 
 		.this-no-fa						{ margin-top:-5px; font-size:130%; padding:1px 8px 2px 0px; margin-bottom:2px; cursor:pointer;
-			&:after						{ visibility:hidden; content: "\F107";	font-family: FontAwesome; margin-left:15px; font-size:140%; }
+			&:after						{ visibility:hidden; content: "\F107";	font-family: 'Font Awesome 5 Free'; margin-left:15px; font-size:140%; }
 			&.active:after				{ visibility:hidden; content: "\00D7"; margin-top:-2px;	}
 		}
 

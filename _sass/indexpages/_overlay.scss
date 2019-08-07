@@ -81,7 +81,7 @@
 		.book 							{ position:absolute; top:-36px; left:8px; font-weight:bold; font-size:90%; padding:3px 10px 8px; border-top-left-radius: 2px; background-color:$super-light-grey; border-top-right-radius: 2px;  border:1px solid #e9e9e9; border-bottom:0;
 			a 							{ color:#555; }
 			a:hover 					{ text-decoration:underline; }
-			&:before 					{ font-family: FontAwesome; content: "\f02d";  padding-right:8px; font-weight:normal; }
+			&:before 					{ font-family: 'Font Awesome 5 Free'; content: "\f02d";  padding-right:8px; font-weight:normal; }
 		}
 		.product						{ position:absolute; top:-30px; right:10px; font-weight:bold; color:#999; font-size:90%;}
 	}
