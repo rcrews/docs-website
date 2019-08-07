@@ -1,4 +1,5 @@
 // Testing this
+var hello = "hello";
 var NEWUX = (function($) {
     'use strict';
 
@@ -8,6 +9,7 @@ var NEWUX = (function($) {
         latest_version : {}, // We need to look this up from the versions.yaml.
         versions : [], // Populate this from versions.yaml
         products : [], // The full versions.yaml jsonified.
+
         bootstrap : function() {
             // Load in the versions.json
             let navfile = "/versions.json";
@@ -18,10 +20,13 @@ var NEWUX = (function($) {
 
                     // See if I can figure out what product loading page is in from the product link.
                     let my_product_url = "";
+
                     let $my_product = $('.bread-product a');
                     if($my_product.length > 0) {
                         my_product_url = new URL($my_product[0].href);
                         my_product_url = my_product_url.pathname;
+                        WhoAmI.product_name = $my_product[0].text;
+                        console.log(my_product_title);
                     } else {
                         // Look for it in the path
                         my_product_url = location.pathname.split('/');
@@ -94,8 +99,15 @@ var NEWUX = (function($) {
                                 };
                             }
                             break; // And break out of this loop
+                        } else if($('.bread-version').length) {
+                            // Might be able to get it from the HTML...
+                            WhoAmI.version = {
+                                title: $('.bread-version').length ? $('.bread-version').text() : "",
+                                url: $('.bread-product a').length ? $('.bread-product a')[0].href : ""
+                            }
                         }
                     }
+
                     this.setupVersions();
                 });
         },
@@ -104,25 +116,27 @@ var NEWUX = (function($) {
             $('.bread-product').html(`<a href='${WhoAmI.version.url}'>${WhoAmI.product_name}</a>`);
 
             // Change 'Cloud' to the Cloud Symbol
-            if(WhoAmI.version.title === 'Cloud')
+            if (WhoAmI.version.title.trim().toLowerCase() === 'cloud') {
                 $('.bread-version').html('<i class="fa fa-cloud"></i>');
-            else {
+            } else {
                 $('.bread-version').html(WhoAmI.version.title);
             }
-            $('.bread-version').append(' <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>');
 
             // Create a pulldown list for all the versions.
             let output = "";
-            WhoAmI.versions.forEach(function(el) {
-                if(el.title !== WhoAmI.version.title) {
-                    output += `<li><a href='${el.url}'>${el.title}</a></li>`;
-                    if(typeof el.minors === 'object' ) {
-                        el.minors.forEach(function(em) {
-                            output += `<li class='minor'><a href='${em.url}'>${em.title}</a></li>`;
-                        })
+            if(WhoAmI.versions.length) {
+                $('.bread-version').append(' <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>');
+                WhoAmI.versions.forEach(function(el) {
+                    if(el.title !== WhoAmI.version.title) {
+                        output += `<li><a href='${el.url}'>${el.title}</a></li>`;
+                        if(typeof el.minors === 'object' ) {
+                            el.minors.forEach(function(em) {
+                                output += `<li class='minor'><a href='${em.url}'>${em.title}</a></li>`;
+                            })
+                        }
                     }
-                }
-            });
+                });
+            }
 
             $('.version-select').hide().html(output);
 
@@ -139,8 +153,6 @@ var NEWUX = (function($) {
             if(!$('.bread-version').length) $('.chead .breadcrumbs').append('<span class="bread-version"></span>');
 
             this.bootstrap();
-
-
         }
     };
 
@@ -671,7 +683,6 @@ var NEWUX = (function($) {
             // solr_url = "//localhost:8983/solr/corehw/query?";
 
             // Build the Query from the searchterm and filters that are in the HTML.
-
             params = {
                 'wt':'json',
                 'q':q
