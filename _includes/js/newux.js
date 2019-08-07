@@ -562,19 +562,30 @@ var NEWUX = (function($) {
 
     var Search = {
 
+        cpage: "", // This will hold the page info when detached.
         init: function() {
-            // Inject Search Functionality...
-
-            let search_html = '<div class="search"><i class="search-close fas fa-times"></i><input type="text" placeholder="Search Documentation"><i class="fas fa-search"></i></div>' +
+            // Inject Search Containers...
+            let search_html = '<div class="search"><i class="search-close fas fa-times"></i><form class="searchform"><input type="text" placeholder="Search Documentation" class="searchterm"><i class="fas fa-search" class="submit"></i></form></div>' +
                 '<div class="launch-search"><i class="fas fa-search"></i></div>' +
                 '<div class="launch-pubnav"><i class="fas fa-bars"></i></div>';
 
+            let overlay_html = '<div class="lucene-overlay">\n' +
+                '    <div class="lucene-results">\n' +
+                '        <div class="close-search"><a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a></div>' +
+                '        <h1>Search Results</h1>\n' +
+                '        <div class="fail"></div>\n' +
+                '        <div class="results"></div>\n' +
+                '        <div class="waiting"><img src="/common/img/spinner.svg"></div>\n' +
+                '        <div class="more-results"><a href="" data-nextcursormark="" data-searchterm="" class="more-link"><i class="fa fa-arrow-circle-o-down"></i>More</a></div>\n' +
+                '    </div>\n' +
+                '</div>';
+
             if(!$('.chead .search').length) $('.chead').append(search_html);
+            if(!$('.cmain .lucene-overlay').length) $('.cmain').append(overlay_html);
 
             // Figure out what product I am... else
             this.query = null;
             this.bindEvents();
-
         },
 
         // Configs the search functionality...
@@ -592,15 +603,12 @@ var NEWUX = (function($) {
                 $(this).closest('.searchform').trigger('submit');
             });
 
-
-            $('.lucene-container .close-btn').on( 'click', this.hideSearch.bind(this));
-            $('.lucene-results .filter').on('click', this.updateFilters.bind(this));
-            $('.lucene-results .versions>i').on('click', this.showVersionOptions.bind(this))
-            $('.lucene-results .filterversion').on('click', this.updateFilterVersion.bind(this));
+            $('.lucene-overlay .close-btn').on( 'click', this.hideSearch.bind(this));
             $('.lucene-results .more-link').on('click', this.loadMoreResults.bind(this));
         },
 
         formatReleaseNumber: function(version, shorten) {
+            // TODO!!! - How to handle cloud?
             // Bi-way formatting of release number.
             shorten = shorten ? true : false;
             var release = version.toString().split('.');
@@ -631,72 +639,19 @@ var NEWUX = (function($) {
             evt.preventDefault();
             var current = evt ? evt.currentTarget : false;
             var search_term = this.filterSearchTerm($(current).find('.searchterm').val());
-            $('#overlay-search .searchterm').val(search_term);
-            if (!$('body').hasClass('lucene-active')) {
-                $('body').addClass('lucene-active');
-            }
+
+            // For better or worse, hide the content and show the search overlay.
+            $('.cpage').hide();
+            $('.lucene-overlay').show();
+
             this.fireQuery(search_term);
         },
 
         hideSearch: function() {
-            console.log('hideSearch()');
-            $('body').removeClass('lucene-active');
+            $('.lucene-overlay').hide();
+            $('.cpage').show()
         },
 
-        updateFilters: function(evt) {
-            var current = evt ? evt.currentTarget : false;
-            if(current) {
-                if ($(current).closest('.product').hasClass('inactive')) {
-                    $(current).closest('.product').removeClass('inactive');
-                    $(current).html('<i class="fa fa-times"></i>');
-                    this.fireQuery();
-
-                } else {
-                    if($(".filters .product:not(.inactive)").length > 1) {
-                        $(current).closest('.product').addClass('inactive');
-                        $(current).html('<i class="fa fa-plus"></i>');
-                        this.fireQuery();
-                    } else {
-                        console.log('beep');
-                        // ToDo : Vibrate or beep?
-                    }
-                }
-            }
-        },
-
-        updateFilterVersion: function(evt) {
-            evt.preventDefault();
-            var current = evt ? evt.currentTarget : false;
-            var new_version = $(current).data('version');
-            var $the_product =  $(current).closest('.product');
-
-            $the_product.data('filterversion', new_version);
-            $the_product.find('.this').html(new_version);
-            $the_product.find('.selector').hide();
-
-            this.fireQuery();
-        },
-
-        showVersionOptions: function(evt) {
-            var current = evt ? evt.currentTarget : false;
-            current = $(current).closest('.versions');
-
-            if ($(current).hasClass('active')) {
-                // ALREADY ACTIVE
-                $(current).removeClass('active');
-                $(current).find('.selector').hide();
-            } else {
-                // NOT YET ACTIVE... HIDE ANY OTHERS.
-                $('.selector').hide();
-                $('.versions .this').removeClass('active');
-
-                // CALCULATE OFFSET OF THE CURRENT TO THE LIST
-
-                // NOW SHOW THIS ONE
-                $(current).addClass('active');
-                $(current).find('.selector').show();
-            }
-        },
 
         loadMoreResults:function(evt) {
             evt.preventDefault();
@@ -705,10 +660,10 @@ var NEWUX = (function($) {
         },
 
         fireQuery: function(searchterm, nextCursorMark) {
-
             var that = this;
             var q  = searchterm == null ? filterSearchTerm($('#overlay-search .searchterm').val()) : searchterm,
-                fq = "",
+                fq = "((product:\\\"Ambari\\\" AND release:2.7.3.0))",
+                // For Example: fq = WhoAmI.product_name ? "(product:\"" + WhoAmI.product_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
                 rows = 10,
                 params = {},
                 defaults = "&sort=score desc,id asc&facet=true&facet.field=product&facet.field=release&facet.field=booktitle&hl=true&hl.fl=text&fl=id,score,url,product,release,booktitle,title",
@@ -716,17 +671,17 @@ var NEWUX = (function($) {
             // solr_url = "//localhost:8983/solr/corehw/query?";
 
             // Build the Query from the searchterm and filters that are in the HTML.
-            $('.filters .product').each(function(index) {
-                if(!$(this).hasClass('inactive')) {
-                    if(fq !== "") {
-                        fq += " OR ";
-                    }
-                    fq += "(product:\"" + $(this).data('filterproduct') + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber($(this).data('filterversion'))) + ")";
-                }
-            });
-            fq = "(" + fq + ")";
 
-            params = {'wt':'json', 'q':q, 'fq':fq};
+            params = {
+                'wt':'json',
+                'q':q
+            };
+
+            if(fq) {
+                fq = "(" + fq + ")";
+                params.fq = fq;
+            }
+
             if(nextCursorMark) {
                 params.cursorMark = nextCursorMark;
             }
@@ -757,11 +712,12 @@ var NEWUX = (function($) {
 
                             // First add in the highlighting to the item list. Escape HTML,
                             item.text = response.highlighting[item.url].text.join("").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
                             // Add back in <b> tags which are there for highlighting
                             item.text = item.text.replace(/&lt;b&gt;/g, "<b>").replace(/&lt;\/b&gt;/g, "</b>");
 
                             result = "";
-                            result += ' <div class="product">' + item.product + ' ' + item.release +'</div>';
+                            // result += ' <div class="product">' + item.product + ' ' + item.release +'</div>';
                             result += ' <div class="result">'
                             result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
                             result += '     <div class="excerpt">' + item.text + '</div>';
@@ -773,10 +729,10 @@ var NEWUX = (function($) {
                         });
 
                         for(var book in output_holder) {
+                            // TODO!!! - Sort by book is nice, but we need to integrate with DITA structure, and make sure the book is readable
                             if (output_holder.hasOwnProperty(book)) {
                                 result = "";
                                 result += '<div class="book-group">';
-                                console.log(book);
                                 result += ' <div class="book">' + (book !== 'undefined' ? book : "")  + '</div>';
                                 for(var i=0; i < output_holder[book].length; i++) {
                                     result += output_holder[book][i];
@@ -788,7 +744,6 @@ var NEWUX = (function($) {
 
                         $('.lucene-results .waiting').hide();
                         if('cursorMark' in response.responseHeader.params) {
-                            console.log('cursor mark found... appending');
                             $('.lucene-results .results').append(output);
                         } else {
                             $('.lucene-results .results').html(output).show();

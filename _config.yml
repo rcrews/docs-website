@@ -44,7 +44,6 @@ exclude:
   # - vendor/ruby/
 
   # Remove for testing
-  - /HDPDocuments/
   - /documentation/
 
   # Unreleased documentation
