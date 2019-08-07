@@ -58,7 +58,7 @@ json:
             sub: hue-introduction/navigation.json
 
       - text: Operational Datastore
-        href: data-operational-datastore.html
+        href: concepts-operational-datastore.html
         sub:
           - text: Apache HBase Overview
             href: hbase-overviewn/index.html
