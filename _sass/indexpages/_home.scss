@@ -41,7 +41,7 @@ body.indexpages .titlebar   		{ background:#000;
 	.versions							{ display:none; margin-top:-20px; vertical-align:top; font-family:$header-font;
 		i.fa							{ }
 		.this							{ margin-top:-5px; font-size:130%; padding:1px 8px 2px 0px; margin-bottom:2px; cursor:pointer;
-			&:after						{ content: "\F107";	font-family: 'Font Awesome 5 Free' margin-left:15px; font-size:140%; }
+			&:after						{ content: "\F107";	font-family: 'Font Awesome 5 Free'; margin-left:15px; font-size:140%; }
 			&.active:after				{ content: "\00D7"; margin-top:-2px;	}
 		}
 
