@@ -4,13 +4,13 @@ title: Management Console
 version: cloud
 base-path: /management-console/cloud/
 
-# sections:
-#   - title: Release Notes
-#     name: releasenotes
-#     books:
-#       - title: Release Notes
-#         url: release-notes/index.html
-#
+sections:
+  - title: Release Notes
+    name: releasenotes
+    books:
+      - title: Release Notes
+        url: release-notes/index.html
+
 #   - title: Concepts & Use Cases
 #     name: concepts
 #     books:

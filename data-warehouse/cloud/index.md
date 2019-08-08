@@ -4,13 +4,13 @@ title: Cloudera Data Warehouse
 version: cloud
 base-path: /data-warehouse/cloud/
 
-# sections:
-#   - title: Release Notes
-#     name: releasenotes
-#     books:
-#       - title: Release Notes
-#         url: release-notes/index.html
-#
+sections:
+  - title: Release Notes
+    name: releasenotes
+    books:
+      - title: Release Notes
+        url: release-notes/index.html
+
 #   - title: Concepts & Use Cases
 #     name: concepts
 #     books:
