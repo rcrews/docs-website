@@ -45,10 +45,8 @@ publications:
   - title: Using Apache Impala with Apache Kudu
     url: kudu-integration/index.html
     description: >-
-      Gravida primis lobortis posuere augue adipiscing id leo consequat
-      metus, nam in consectetur auctor libero fermentum dui inceptos
-      euismod, faucibus commodo vehicula accumsan penatibus risus
-      sodales ultricies, nisl orci sem habitant et nunc rhoncus montes
+      Provides information about how to use use Kudu as a storage
+      for Apache Impala.
 ---
 Cloudera Runtime provides different types of storage components that you
 can use depending on your data requirements. Apache HBase is a NoSQL
