@@ -60,20 +60,6 @@
 
   }
 
-  // http://docs-stage.cloudera.com/runtime/7.0.0/spark-overview/topics/spark-overview.html
-  .note > table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    margin: 1rem 0;
-    border: 1px solid #7aa57b;
-
-    th, td {
-      padding: 5px;
-    }
-  }
-
   pre {
     color: #444;
     background-color: #fafafa;
@@ -82,7 +68,6 @@
     margin: 10px 0;
     padding: 8px;
     overflow-x: auto;
-    font-size: .9rem;
   }
 
   .note {
@@ -90,8 +75,8 @@
     margin-bottom: 1em;
     background-color: white;
     padding: 5pt;
-    border: 1px solid #7aa57b;
-    border-radius: 5px;
+    border: 1px solid #999;
+    border-radius: 2px;
   }
   .admon-title-text {
     color: #555;
@@ -122,7 +107,7 @@
 
   .note.tip {
     background-color: #f1f6d3;
-    border: 1px solid #bed62f
+    border: 1px solid #999
   }
 
   note.important .admon-title-text:before {
@@ -135,7 +120,11 @@
   }
   .note.important {
     background-color: #fefaee;
-    border: 1px solid #f0b310;
+    border: 1px solid #999;
+  }
+
+  aside, blockquote, dl, h1, h2, h3, h4, h5, h6, ol, p, ul, .p {
+    max-width: 52rem;
   }
 
 }
@@ -147,4 +136,8 @@
       color: #999;
     }
   }
+}
+
+pre, kbd, samp, code {
+  font-size: .9rem;
 }

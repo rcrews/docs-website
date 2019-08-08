@@ -55,10 +55,5 @@ publications:
       Provides information about configuring HBase snapshots, and using
       HBase replication.
 ---
-Erat mauris et neque netus vitae quam taciti luctus, ullamcorper platea
-condimentum purus dolor mollis ipsum faucibus senectus, tristique
-maecenas curabitur non ligula finibus torquent blandit parturient, felis
-nulla integer mattis leo laoreet suscipit. Per est dui nullam fringilla
-quis donec fermentum laoreet, leo congue ridiculus hac litora orci
-mollis erat arcu, vitae eget enim porta nam integer porttitor duis
-habitant, magnis neque cursus ornare inceptos vivamus eu.
+Apache HBase is a NoSQL database that provides real-time read/write
+access to those large datasets.
