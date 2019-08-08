@@ -14,7 +14,7 @@ sections:
   - title: Concepts & Use Cases
     name: concepts
     books:
-      - title: Overview
+      - title: Data Warehouse Overview
         url: overview/index.html
 
   # - title: Planning
@@ -28,7 +28,7 @@ sections:
   - title: How To
     name: howto
     books:
-      - title: Using
+      - title: Administering and Using
         url: using-service/index.html
 
   # - title: Troubleshooting
