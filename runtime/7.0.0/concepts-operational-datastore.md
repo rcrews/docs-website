@@ -5,7 +5,6 @@ title: Operational Datastore
 
 # Concepts publications related to
 # * HBase
-# * Kudu
 
 publications:
   - title: Apache HBase Overview
@@ -15,4 +14,4 @@ publications:
       use cases, and currently unsupported features.
 ---
 Apache HBase is a NoSQL database that provides real-time read/write
-access to those large datasets.
+access to large datasets.

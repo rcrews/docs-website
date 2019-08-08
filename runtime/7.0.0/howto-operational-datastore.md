@@ -56,4 +56,4 @@ publications:
       HBase replication.
 ---
 Apache HBase is a NoSQL database that provides real-time read/write
-access to those large datasets.
+access to large datasets.
