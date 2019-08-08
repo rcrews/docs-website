@@ -3,11 +3,13 @@ layout: product
 title: Cloudera Runtime
 version: 7.0.0
 base-path: /runtime/7.0.0/
-# sections:
-#   # - title: Release Notes
-#   #   name: releasenotes
-#   #   books:
-#
+sections:
+  - title: Release Notes
+    name: releasenotes
+    books:
+      - title: Release Notes
+        url: release-notes/index.html
+        
 #   - title: Concepts & Use Cases
 #     name: concepts
 #     books:
