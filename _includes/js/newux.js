@@ -1,5 +1,4 @@
 // Testing this
-var hello = "hello";
 var NEWUX = (function($) {
     'use strict';
 
@@ -26,7 +25,6 @@ var NEWUX = (function($) {
                         my_product_url = new URL($my_product[0].href);
                         my_product_url = my_product_url.pathname;
                         WhoAmI.product_name = $my_product[0].text;
-                        console.log(my_product_title);
                     } else {
                         // Look for it in the path
                         my_product_url = location.pathname.split('/');
@@ -204,15 +202,9 @@ var NEWUX = (function($) {
         handleNavContract: function(evt) {
             if(!($(this).text() === '\uf107')) {
                 evt.stopPropagation();
-                $(this).text('\uf107').siblings('ul').slideUp().parent('li').removeClass('open');
-
-                // Update State
                 let id = $(this).parent('li').data('navid');
-                let index = Pubnav.navstate.indexOf(id);
-                if (index > -1) {
-                    Pubnav.navstate.splice(index, 1);
-                }
-                localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
+                Pubnav.contractNavElem(id);
+
             }
         },
         handleNewPageRequest: function(e) {
@@ -257,7 +249,7 @@ var NEWUX = (function($) {
             let navfile = url_chunks.join('/') + "/navigation.json";
 
             // Let's also define the product code for saving the navstate and the product bar lookup.
-            this.product = url_chunks[0].toLowerCase();
+            this.product = url_chunks[1].toLowerCase();
             this.navstate = localStorage.getItem(this.product + '_navstate') ? localStorage.getItem(this.product + '_navstate').split(',') : [];
 
             // Now, get the JSON, and then build out a shadow structure and insert it into the DOM.
@@ -280,13 +272,15 @@ var NEWUX = (function($) {
                     // 3. Now build out the tree in HTML
                     let html = this.createHtmlTree(this.nav_tree);
                     $('.ctoc').append(html);
+
+                    // 3b. Expand the active elems.
                     if(this.navstate.length > 0) {
                         for(let id of this.navstate) {
                             this.expandNavElem(id);
                         }
                     }
 
-                    // 3b... Figure out the PDF... TODO!! - This is repeated in LoadContent() - Make it DRYer)
+                    // 4... Figure out the PDF... TODO!! - This is repeated in LoadContent() - Make it DRYer)
                     let $pdf = $('link[type="application/pdf"]');
                     if($pdf.length > 0) {
                         Pubnav.pagestate.current.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
@@ -294,10 +288,10 @@ var NEWUX = (function($) {
                         Pubnav.pagestate.current.pdfurl = "";
                     }
 
-                    // 4. Bind Event Handlers
+                    // 5. Bind Event Handlers
                     this.bindEvents();
 
-                    // 5. Update Page Links and Breadcrumbs
+                    // 6. Update Page Links and Breadcrumbs
                     this.updatePageState();
                 });
         },
@@ -386,7 +380,10 @@ var NEWUX = (function($) {
 
             return data;
         },
-        createHtmlTree: function(tree) {
+        createHtmlTree: function(tree, level) {
+            if(typeof level === 'undefined') {
+                level = 1;
+            }
             let html = "<ul>";
             tree.forEach((item) => {
                 let css = "";
@@ -401,13 +398,13 @@ var NEWUX = (function($) {
                     css += "xp ";
                 }
                 if('href' in item) {
-                    html += `<li class='${css}' data-navid='${item.id}'><span class='item'><a href='${item.href}'>${item.text}</a></span>`;
+                    html += `<li class='${css}' data-navid='${item.id}' data-level='${level}'><span class='item'><a href='${item.href}'>${item.text}</a></span>`;
                 } else {
-                    html += `<li class='${css}' data-navid='${item.id}'><span class='item'>${item.text}</span>`;
+                    html += `<li class='${css}' data-navid='${item.id}' data-level='${level}'><span class='item'>${item.text}</span>`;
                 }
                 if('sub' in item && typeof item.sub === 'object') {
                     html += "<span class='expand'>&#xf107;</span>";  // NOTE, BE CAREFUL ABOUT CHANGING THE ICON. IT'S USED IN THE CONTROL STRUCTURE
-                    html += this.createHtmlTree(item.sub);
+                    html += this.createHtmlTree(item.sub, level + 1);
                 }
                 html += '</li>';
             });
@@ -415,10 +412,37 @@ var NEWUX = (function($) {
             return html;
         },
         expandNavElem: function(id) {
-            let $this = $('.ctoc li').find(`[data-navid='${id}']`);
-            $this.children('ul').slideDown();
+            let $this = $('.ctoc').find(`li[data-navid='${id}']`);
+
+            // Collapse other menu items at the same level as this one:
+            let level = $this.data('level');
+            $('.ctoc').find(`li.open[data-level='${level}']`).each(function() {
+                let id = $(this).data('navid');
+                Pubnav.contractNavElem(id);
+            });
+
+            // Now expand this so that it opens any parent element.
             $this.children('.expand').text('\uf106');
             $this.addClass('open');
+            setTimeout(function() { $this.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
+
+            // TODO!!! and work our way up the tree to get parent elems
+        },
+        contractNavElem: function(id) {
+            // Contract the elem....
+            // $(this).text('\uf107').siblings('ul').parent('li').removeClass('open sesame');
+            let $elem = $('.ctoc').find(`li[data-navid=${id}`);
+            $elem.removeClass('sesame').children('.expand').text('\uf107');
+
+            // Again the hack to hide the item after compression.... I think we could do this with keyframes instead. https://jsfiddle.net/jalbertbowdenii/mHRb8/
+            setTimeout(function() { $elem.removeClass('open')}, 320);
+
+            // Update State
+            let index = Pubnav.navstate.indexOf(id);
+            if (index > -1) {
+                Pubnav.navstate.splice(index, 1);
+            }
+            localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         },
         requestNewPage: function(url) {
             // Confirm this is actually in the menu tree...

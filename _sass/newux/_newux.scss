@@ -169,18 +169,22 @@ body                    { margin: 0; }
             &:hover     { color:$bright-blue;}
         }
 
-        &>ul            { padding-left:0; }
+        .open > ul      { display:block; }
+        .open.sesame > ul > li  { line-height:1.5; opacity:1; transition: all 0.3s ease-in-out; }
+
+        &>ul                    { padding-left:0; }
         &>ul>li                 { color:#555; padding-bottom:10px; font-weight:bold;  // First Level
             &>.expand           { display:none; } // Hide First Level Control Structure
 
             &>ul>li             { font-size:100%; font-weight:300;  // Second Level
-                &>ul            { display:none; }
-                &>ul>li         { font-size:85%; color:#999; padding-left:15px;
-                    &>ul        { display:none; }// Third Level
+                ul              { display:none; }
+                li              { line-height:0; opacity:0; transition: all 0.3s ease-in-out;}
+                &>ul>li         { font-size:90%; color:#999; padding-left:15px;
+                    &>ul        {  }// Third Level
                     &>ul>li     { padding-left:15px;
-                        &>ul    { display:none; }// Fourth Level
+                        &>ul    {  }// Fourth Level
                         &>ul>li { padding-left:15px;
-                            &>ul{ display:none; }}// Fifth Level
+                            &>ul{  }}// Fifth Level
                     }
                 }
             }
@@ -253,13 +257,13 @@ body                    { margin: 0; }
 }
 
 .product-home                           {
-    .product-section                    { box-shadow: 0 0 10px #d6d6d6; padding:30px 20px; margin:20px 0;
+    .product-section                    {  margin:20px 0;
         .icon                           { display:none; }
         .section-title                  { margin:0 0 15px; }
         .book .title                    { margin-bottom:3px; }
     }
 
-    #section-releasenotes               { box-shadow:none; background-color:#686b79; padding:10px 30px;
+    #section-releasenotes               { box-shadow:none; background-color:#686b79; padding:10px 20px;
         .section-title                  { display:none;  }
         a                               { color:#fff; text-decoration:underline; }
     }
