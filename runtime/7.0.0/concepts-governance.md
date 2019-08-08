@@ -8,7 +8,7 @@ title: Governance
 
 publications:
   - title: Governance Overview & Use Cases
-    url: cdp-governance-overview
+    url: cdp-governance-overview/index.html
     description: >-
       Concepts for collecting, creating, and using metadata in Apache
       Atlas.
