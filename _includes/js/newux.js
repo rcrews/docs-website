@@ -26,7 +26,7 @@ var NEWUX = (function($) {
                         my_product_url = new URL($my_product[0].href);
                         my_product_url = my_product_url.pathname;
                         WhoAmI.product_name = $my_product[0].text;
-                        console.log(my_product_title);
+                        // console.log(my_product_title);
                     } else {
                         // Look for it in the path
                         my_product_url = location.pathname.split('/');
@@ -576,9 +576,8 @@ var NEWUX = (function($) {
         init: () => {
           let rights = $('meta[name="rights"]').content; // Querying wrong DOM?
           if (!rights) { rights = `&copy; ${new Date().getFullYear()} Cloudera, Inc.` }
-          $('.cpage').append(document.createElement('footer'))
-                     .append('<p class="copyright"><a href="/common/html/legal.html">' +
-                             rights + ' All rights reserved.</a></p>');
+          $('.cpage').append('<footer><p class="copyright"><a href="/common/html/legal.html">' +
+                             rights + ' All rights reserved.</a></p></footer>');
         },
         bindEvents: () => {},
         renderMenu: () => {},
