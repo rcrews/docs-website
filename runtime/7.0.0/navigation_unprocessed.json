@@ -243,7 +243,7 @@ json:
             id: migrating-data-into-hive
             sub: migrating-data-into-hive/navigation.json
 
-          - text: Integrating with Apache Impala
+          - text: Using Apache Impala with Apache Kudu
             href: kudu-integration/index.html
             id: kudu-integration
             sub: kudu-integration/navigation.json
