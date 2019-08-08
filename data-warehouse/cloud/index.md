@@ -4,44 +4,44 @@ title: Cloudera Data Warehouse
 version: cloud
 base-path: /data-warehouse/cloud/
 
-sections:
-  - title: Release Notes
-    name: releasenotes
-    books:
-      - title: Release Notes
-        url: release-notes/index.html
-
-  - title: Concepts & Use Cases
-    name: concepts
-    books:
-      - title: Data Warehouse Overview
-        url: overview/index.html
-
-  # - title: Planning
-  #   name: planning
-  #   books:
-
-  # - title: Installation & Upgrade
-  #   name: installation
-  #   books:
-
-  - title: How To
-    name: howto
-    books:
-      - title: Administering and Using
-        url: using-service/index.html
-
-  # - title: Troubleshooting
-  #   name: troubleshooting
-  #   books:
-
-  # - title: Reference
-  #   name: reference
-  #   books:
-
-  # - title: Learning & Training
-  #   name: learning
-  #   books:
+# sections:
+#   - title: Release Notes
+#     name: releasenotes
+#     books:
+#       - title: Release Notes
+#         url: release-notes/index.html
+#
+#   - title: Concepts & Use Cases
+#     name: concepts
+#     books:
+#       - title: Data Warehouse Overview
+#         url: overview/index.html
+#
+#   # - title: Planning
+#   #   name: planning
+#   #   books:
+#
+#   # - title: Installation & Upgrade
+#   #   name: installation
+#   #   books:
+#
+#   - title: How To
+#     name: howto
+#     books:
+#       - title: Administering and Using
+#         url: using-service/index.html
+#
+#   # - title: Troubleshooting
+#   #   name: troubleshooting
+#   #   books:
+#
+#   # - title: Reference
+#   #   name: reference
+#   #   books:
+#
+#   # - title: Learning & Training
+#   #   name: learning
+#   #   books:
 ---
 Data Warehouse is a CDP service for self-service creation of independent
 data warehouses and data marts that autoscale up and down to meet your

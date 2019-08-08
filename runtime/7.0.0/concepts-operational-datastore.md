@@ -13,19 +13,6 @@ publications:
     description: >-
       Introduces Apache HBase, with information on using Apache HBase,
       use cases, and currently unsupported features.
-
-  - title: Apache Kudu Overview
-    url: kudu-overview/index.html
-    description: >-
-      Introduces Apache Kudu, with information on using Apache Impala
-      with Kudu, Kudu concepts, architecture, and usage limitations.
-
-  - title: Apache Kudu Design
-    url: kudu-design/index.html
-    description: >-
-      Outlines effective schema design philosophies for Apache Kudu, and
-      how they differ from approaches used for traditional relational
-      database schemas.
 ---
 Montes consectetur ultricies congue suspendisse aenean fringilla quis
 neque torquent etiam orci, auctor nisi maximus risus blandit quam ex

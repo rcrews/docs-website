@@ -5,6 +5,7 @@ title: Storage
 
 # Concepts publications related to
 # * HDFS
+# * Kudu
 
 publications:
   - title: Apache HDFS Overview
@@ -12,6 +13,19 @@ publications:
     description: >-
       Provides an overview of Apache HDFS, its benefits, and the key
       components.
+
+  - title: Apache Kudu Overview
+    url: kudu-overview/index.html
+    description: >-
+      Introduces Apache Kudu, with information on using Apache Impala
+      with Kudu, Kudu concepts, architecture, and usage limitations.
+
+  - title: Apache Kudu Design
+    url: kudu-design/index.html
+    description: >-
+      Outlines effective schema design philosophies for Apache Kudu, and
+      how they differ from approaches used for traditional relational
+      database schemas.
 ---
 Cloudera Runtime provides different types of storage components that you
 can use depending on your data requirements. Apache HBase is a NoSQL

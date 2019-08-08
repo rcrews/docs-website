@@ -12,7 +12,7 @@ json:
   - text: Concepts & Use Cases
     id: concepts
     sub:
-      - text: Overview
+      - text: Data Warehouse Overview
         href: overview/index.html
         id: overview
         sub: overview/navigation.json
@@ -28,7 +28,7 @@ json:
   - text: How To
     id: howto
     sub:
-      - text: Using
+      - text: Administering and Using
         href: using-service/index.html
         id: using-service
         sub: using-service/navigation.json
