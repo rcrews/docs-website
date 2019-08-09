@@ -65,16 +65,16 @@ json:
         sub: monitoring-kafka-cluster-replications/navigation.json
 
       - text: Using CDK
-        href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_using.html
+        href: /documentation/kafka/latest/topics/kafka_using.html
 
       - text: Using Kafka Streams
-        href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_streams.html
+        href: /documentation/kafka/latest/topics/kafka_streams.html
 
   - text: Reference
     name: reference
     sub:
       - text: Administering CDK
-        href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_admin.html
+        href: /documentation/kafka/latest/topics/kafka_admin.html
 
   - text: Release Notes
     name: releasenotes

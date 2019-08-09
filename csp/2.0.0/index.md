@@ -2,7 +2,7 @@
 layout: hwx_product
 title: Stream Processing
 version: 2.0.0
-base-path: /HDPDocuments/CSP/CSP-2.0.0/
+base-path: /csp/2.0.0/
 
 sections:
   - title: Release Notes
@@ -42,14 +42,14 @@ sections:
 
       - title: Using Schema Registry
         url: using-schema-registry/content/adding_a_new_schema.html
-      
+
       - title: Configuring SRM
         url: configuration/index.html
       - title: Securing SRM
         url: srm-security/index.html
       - title: Using SRM
         url: srm-using/index.html
-        
+
       - title: Monitoring Kafka Clusters
         url: monitoring-kafka-clusters/index.html
       - title: Managing Alert Policies
@@ -62,16 +62,16 @@ sections:
         url: monitoring-kafka-cluster-replications/index.html
 
       - title: Using CDK
-        url: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_using.html
+        url: /documentation/kafka/latest/topics/kafka_using.html
 
       - title: Using Kafka Streams
-        url: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_streams.html
+        url: /documentation/kafka/latest/topics/kafka_streams.html
 
   - title: Reference
     name: reference
     books:
       - title: Administering CDK
-        url: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_admin.html
+        url: /documentation/kafka/latest/topics/kafka_admin.html
 ---
 
 This is the content below YAML.

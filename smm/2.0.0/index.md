@@ -2,7 +2,7 @@
 layout: hwx_product
 title: Streams Messaging Manager
 version: 2.0.0
-base-path: /HDPDocuments/SMM/SMM-2.0.0/
+base-path: /smm/2.0.0/
 
 sections:
   - title: Release Notes
@@ -17,7 +17,7 @@ sections:
     name: installation-upgrade
     books:
       - title: Getting Started
-        url: ../../HDF3/HDF-3.4.1.1/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
+        url: /HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
       - title: Installation
         url: installation/index.html
       - title: Upgrade

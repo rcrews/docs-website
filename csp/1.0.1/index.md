@@ -2,7 +2,7 @@
 layout: hwx_product
 title: Flow Management
 version: 1.0.1
-base-path: /HDPDocuments/CFM/CFM-1.0.1/
+base-path: /cfm/1.0.1/
 
 sections:
   - title: Release Notes
@@ -15,7 +15,7 @@ sections:
     name: concepts
     books:
       - title: Apache NiFi Overview
-        url: ../../HDF3/HDF-3.4.1.1/apache-nifi-overview/index.html
+        url: /HDPDocuments/HDF3/HDF-3.4.1.1/apache-nifi-overview/index.html
 
   - title: Installation & Upgrade
     name: install
@@ -35,7 +35,7 @@ sections:
       - title: Using Apache NiFi
         url: howto.html
       - title: Using Apache NiFi Registry
-        url: ../../HDF3/HDF-3.4.1.1/using-nifi-registry/index.html
+        url: /HDPDocuments/HDF3/HDF-3.4.1.1/using-nifi-registry/index.html
 
   - title: Reference
     name: reference
@@ -45,15 +45,15 @@ sections:
       - title: Administering Apache NiFi
         url: admin-nifi.html
       - title: Administering Apache NiFi Registry
-        url: ../../HDF3/HDF-3.4.1.1/administering-nifi-registry/index.html
+        url: /HDPDocuments/HDF3/HDF-3.4.1.1/administering-nifi-registry/index.html
 
   - title: Learning & Training
     name: learning-training
     books:
       - title: Getting Started with Apache NiFi
-        url: ../../HDF3/HDF-3.4.1.1/getting-started-with-apache-nifi/index.html
+        url: /HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-apache-nifi/index.html
       - title: Getting Started with Apache NiFi Registry
-        url: ../../HDF3/HDF-3.4.1.1/getting-started-with-nifi-registry/index.html
+        url: /HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-nifi-registry/index.html
 
 ---
 

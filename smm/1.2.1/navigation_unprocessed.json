@@ -13,7 +13,7 @@ json:
     id: concepts
     sub:
       - text: Getting Started
-        href: ../../HDF3/HDF-3.4.1.1/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
+        href: /HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
 
   - text: Installation & Upgrade
     id: installation-upgrade

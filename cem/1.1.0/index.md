@@ -2,7 +2,7 @@
 layout: hwx_product
 title: Edge Management
 version: 1.1.0
-base-path: /HDPDocuments/CEM/CEM-1.1.0/
+base-path: /cem/1.1.0/
 
 sections:
   - title: Release Notes
