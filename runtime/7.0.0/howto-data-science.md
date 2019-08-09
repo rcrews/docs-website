@@ -11,41 +11,36 @@ publications:
   - title: Configuring Apache Spark
     url: configuring-spark/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Instructions for configuring Apache Spark in Cloudera Data Platform.
 
   - title: Developing Apache Spark Applications
     url: developing-spark-applications/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Instructions and examples for creating Apache Spark applications to run on
+      Cloudera Data Platform.
 
   - title: Running Apache Spark Applications
     url: running-spark-applications/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Instructions and examples for running Apache Spark applications on
+      Cloudera Data Platform.
 
   - title: Tuning Apache Spark
     url: tuning-spark/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Advice and recommendations for optimizing the performance of Apache Spark
+      and Spark applications for Cloudera Data Platform.
 
   - title: Configuring Apache Zeppelin
     url: configuring-zeppelin/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Instructions for configuring Apache Zeppelin in Cloudera Data Platform.
 
   - title: Using Apache Zepppelin
     url: using-zeppelin/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Instructions and examples for using Apache Zeppelin in Cloudera Data
+      Platform
 ---
-Overview of Cloudera Runtime data science how-tos goes here.... Neque
-mi fermentum urna mus sit phasellus auctor enim, sem torquent litora
-quis turpis at accumsan metus, rhoncus volutpat habitant hendrerit
-dictum dui consequat massa, convallis purus varius ligula tincidunt
-ullamcorper habitasse.
+Instructions and examples for Apache Spark and Apache Zeppelin in Cloudera Data
+Platform.
