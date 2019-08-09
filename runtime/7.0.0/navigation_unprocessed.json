@@ -9,20 +9,23 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
-  - text: Concepts & Use Cases
-    id: concepts
-    sub:
+
+    # Foyer Pages
     # Here's the final list:
-    #   Storage: HDFS
+    #   Storage: HDFS, Kudu
     #   Compute: YARN, ZooKeeper
     #   Data Access: Hive, Impala, Hue, Sqoop, Search
-    #   Operational Datastore: HBase, Kudu
+    #   Operational Datastore: HBase
     #   Data Science: Spark, Zeppelin
     #   Security: Ranger, Knox
     #   Governance: Atlas
     #   Cluster Managment: Cloudera Manager
     #   Jobs Managment: Oozie
+    # -> Kudo moved from operational db to storage Mitra 8/7
 
+  - text: Concepts & Use Cases
+    id: concepts
+    sub:
       - text: Storage
         href: concepts-storage.html
         sub:
@@ -30,6 +33,16 @@ json:
             href: hdfs-overview/index.html
             id: hdfs-overview
             sub: hdfs-overview/navigation.json
+
+          - text: Apache Kudu Overview
+            href: kudu-overview/index.html
+            id: kudu-overview
+            sub: kudu-overview/navigation.json
+
+          - text: Apache Kudu Design
+            href: kudu-design/index.html
+            id: kudu-design
+            sub: kudu-design/navigation.json
 
       - text: Compute
         href: concepts-compute.html
@@ -64,16 +77,6 @@ json:
             href: hbase-overviewn/index.html
             id: hbase-overview
             sub: hbase-overview/navigation.json
-
-          - text: Apache Kudu Overview
-            href: kudu-overview/index.html
-            id: kudu-overview
-            sub: kudu-overview/navigation.json
-
-          - text: Apache Kudu Design
-            href: kudu-design/index.html
-            id: kudu-design
-            sub: kudu-design/navigation.json
 
       - text: Data Science
         href: concepts-data-science.html
@@ -145,6 +148,21 @@ json:
             href: hdfs-encryption/index.html
             id: hdfs-encryption
             sub: hdfs-encryption/navigation.json
+
+          - text: Administering Apache Kudu
+            href: administering-kudu/index.html
+            id: administering-kudu
+            sub: administering-kudu/navigation.json
+
+          - text: Developing Applications with Apache Kudu
+            href: kudu-development/index.html
+            id: kudu-development
+            sub: kudu-development/navigation.json
+
+          - text: Using Apache Impala with Apache Kudu
+            href: kudu-integration/index.html
+            id: kudu-integration
+            sub: kudu-integration/navigation.json
 
       - text: Compute
         href: howto-compute.html
@@ -243,11 +261,6 @@ json:
             id: migrating-data-into-hive
             sub: migrating-data-into-hive/navigation.json
 
-          - text: Integrating with Apache Impala
-            href: kudu-integration/index.html
-            id: kudu-integration
-            sub: kudu-integration/navigation.json
-
           - text: Managing Apache Impala
             href: impala-manage/index.html
             id: impala-manage
@@ -305,21 +318,6 @@ json:
             href: hbase-backup-dr/index.html
             id: hbase-backup-dr
             sub: hbase-backup-dr/navigation.json
-
-          - text: Administering Apache Kudu
-            href: administering-kudu/index.html
-            id: administering-kudu
-            sub: administering-kudu/navigation.json
-
-          - text: Developing Applications with Apache Kudu
-            href: kudu-development/index.html
-            id: kudu-development
-            sub: kudu-development/navigation.json
-
-          - text: Integrating with Apache Kudu
-            href: kudu-integration/index.html
-            id: kudu-integration
-            sub: kudu-integration/navigation.json
 
       - text: Data Science
         href: howto-data-science.html
@@ -483,9 +481,13 @@ json:
         id: yarn-tuning
         sub: yarn-tuning/navigation.json
 
-  # - text: Release Notes
-  #   id: releasenotes
-  #   sub:
+  - text: Release Notes
+    id: releasenotes
+    sub:
+      - text: Release Notes
+        href: release-notes/index.html
+        id: release-notes
+        sub: release-notes/navigation.json
 
   # - text: Learning & Training
   #   id: learning

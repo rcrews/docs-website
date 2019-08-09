@@ -480,7 +480,7 @@ var NEWUX = (function($) {
                 return true;
 
             } else {
-                confirm('going for external click, as this page could not be found in nav.json.') // TODO!!! - REMOVE THIS
+                confirm('Debug: Outside click: URL not in navigation.json.') // TODO!!! - REMOVE THIS
                 return false;
             }
         },
@@ -568,12 +568,8 @@ var NEWUX = (function($) {
                 $('.inner-breadcrumbs').fadeTo(200, 0);
             }
 
-            console.log(Pubnav.navstate);
-            console.log('this page id is ' + Pubnav.pagestate.current.id)
-
             // Ensure the navigation menu is expanded and highlighting this page.
             if(!Pubnav.navstate.includes(Pubnav.pagestate.parent.id)) {
-                console.log('the page parent isnt in the navstate, so lets add it.');
                 Pubnav.navstate.push(Pubnav.pagestate.parent.id);
             }
             for(let id of Pubnav.navstate) {
@@ -625,6 +621,19 @@ var NEWUX = (function($) {
         slideClose: function() {
 
         }
+    };
+
+    var Footer = {
+        init: () => {
+          let rights = $('meta[name="rights"]').content; // Querying wrong DOM?
+          if (!rights) { rights = `&copy; ${new Date().getFullYear()} Cloudera, Inc.` }
+          $('.cpage').append('<footer><p class="copyright"><a href="/common/html/legal.html">' +
+                             rights + ' All rights reserved.</a></p></footer>');
+        },
+        bindEvents: () => {},
+        renderMenu: () => {},
+        slideOpen:  () => {},
+        slideClose: () => {}
     };
 
     var Search = {
@@ -939,7 +948,7 @@ var NEWUX = (function($) {
         }
     });
 
-    // SEARCH DRAWER  
+    // SEARCH DRAWER
     $('.launch-search').on('click', function() {
         $(this).hide();
         $('.search').show().addClass('open');
@@ -952,6 +961,7 @@ var NEWUX = (function($) {
     WhoAmI.init();
     Pubnav.init();
     ProductDrawer.init();
+    Footer.init();
     Search.init();
 
 }(jQuery));

@@ -1,6 +1,10 @@
 ---
 layout: legal
 title: Documentation Legal Language
+
+# Cut/pasted 2019-08-07 from
+# https://docs.google.com/document/d/1MSlfN5YkTAM7UOTojEGS28-6EocNgy6FymDmOsWyelQ
+
 ---
 
 The documentation is and contains Cloudera proprietary information
