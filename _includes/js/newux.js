@@ -273,13 +273,6 @@ var NEWUX = (function($) {
                     let html = this.createHtmlTree(this.nav_tree);
                     $('.ctoc').append(html);
 
-                    // 3b. Expand the active elems.
-                    if(this.navstate.length > 0) {
-                        for(let id of this.navstate) {
-                            this.expandNavElem(id);
-                        }
-                    }
-
                     // 4... Figure out the PDF... TODO!! - This is repeated in LoadContent() - Make it DRYer)
                     let $pdf = $('link[type="application/pdf"]');
                     if($pdf.length > 0) {
@@ -293,6 +286,7 @@ var NEWUX = (function($) {
 
                     // 6. Update Page Links and Breadcrumbs
                     this.updatePageState();
+
                 });
         },
         loadContent: function(url) {
@@ -416,19 +410,31 @@ var NEWUX = (function($) {
 
             // Collapse other menu items at the same level as this one:
             let level = $this.data('level');
-            $('.ctoc').find(`li.open[data-level='${level}']`).each(function() {
-                let id = $(this).data('navid');
-                Pubnav.contractNavElem(id);
-            });
+            if(level >= 1) {
+                $('.ctoc').find(`li.open[data-level='${level}']`).each(function() {
+                    let id = $(this).data('navid');
+                    console.log('... and found this open item: ' + id);
+                    Pubnav.contractNavElem(id);
+                });
+            }
 
-            // Now expand this so that it opens any parent element.
+            // Now expand this one..
             $this.children('.expand').text('\uf106');
             $this.addClass('open');
             setTimeout(function() { $this.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
-            // TODO!!! and work our way up the tree to get parent elems
+            $this.parents('.ctoc li:not(.open)').each(function() {
+                let $parent = $(this);
+                $parent.children('.expand').text('\uf106');
+                $parent.addClass('open');
+                setTimeout(function() { $parent.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
+
+            })
+
         },
         contractNavElem: function(id) {
+            console.log('Contracting:' + id);
+
             // Contract the elem....
             // $(this).text('\uf107').siblings('ul').parent('li').removeClass('open sesame');
             let $elem = $('.ctoc').find(`li[data-navid=${id}`);
@@ -549,6 +555,16 @@ var NEWUX = (function($) {
                 $('.inner-breadcrumbs').fadeTo(200, 0);
             }
 
+            // Ensure the navigation menu is expanded and highlighting this page.
+            if(!Pubnav.navstate.includes(Pubnav.pagestate.current.id)) {
+                Pubnav.navstate.push(Pubnav.pagestate.current.id);
+            }
+
+            if(Pubnav.navstate.length > 0) {
+                for(let id of this.navstate) {
+                    this.expandNavElem(id);
+                }
+            }
             /* Outer Breadcrumbs... putting the topic title up top.
             if(this.pagestate.breadpath.length >= 2) {
                 let output = `<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`;
