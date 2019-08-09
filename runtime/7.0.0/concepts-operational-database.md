@@ -1,7 +1,7 @@
 ---
 layout: foyer
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
-title: Operational Datastore
+title: Operational Database
 
 # Concepts publications related to
 # * HBase

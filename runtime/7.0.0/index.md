@@ -9,7 +9,7 @@ sections:
     books:
       - title: Release Notes
         url: release-notes/index.html
-        
+
 #   - title: Concepts & Use Cases
 #     name: concepts
 #     books:
@@ -59,8 +59,8 @@ sections:
 #       - title: Data Access
 #         url: howto-data-access.html
 #
-#       - title: Operational Datastore
-#         url: howto-operational-datastore.html
+#       - title: Operational Database
+#         url: howto-operational-database.html
 #
 #       - title: Data Science
 #         url: howto-data-science.html

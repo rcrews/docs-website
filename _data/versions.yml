@@ -757,6 +757,38 @@
 # /HDPDocuments/index.html and adjust the number of tiles to render
 # there.
 
+- name: Management Console
+  latest-version: cloud
+  latest-url: /management-console/cloud/index.html
+  search-name: Management Console
+  versions:
+    - title: Cloud
+      url: /management-console/cloud/index.html
+
+- name: Workload Manager
+  latest-version: cloud
+  latest-url: /workload-manager/cloud/index.html
+  search-name: Workload Manager
+  versions:
+    - title: Cloud
+      url: /workload-manager/cloud/index.html
+
+- name: Data Catalog
+  latest-version: cloud
+  latest-url: /data-catalog/cloud/index.html
+  search-name: Data Catalog
+  versions:
+    - title: Cloud
+      url: /data-catalog/cloud/index.html
+
+- name: Replication Manager
+  latest-version: cloud
+  latest-url: /replication-manager/cloud/index.html
+  search-name: Replication Manager
+  versions:
+    - title: Cloud
+      url: /replication-manager/cloud/index.html
+
 - name: CDP Data Hub
   latest-version: 1.2.1
   latest-url: /data-hub/cloud/index.html
@@ -784,6 +816,34 @@
           url: /data-hub/1.0.2/index.html
         - title: 1.0.0
           url: /data-hub/1.0.0/index.html
+
+- name: Data Warehouse
+  latest-version: cloud
+  latest-url: /data-warehouse/cloud/index.html
+  search-name: Data Warehouse
+  versions:
+    - title: Cloud
+      url: /data-warehouse/cloud/index.html
+
+- name: Machine Learning
+  latest-version: cloud
+  latest-url: /machine-learning/cloud/index.html
+  search-name: Machine Learning
+  versions:
+    - title: Cloud
+      url: /machine-learning/cloud/index.html
+
+- name: Runtime
+  latest-version: cloud
+  latest-url: /runtime/7.0.0/index.html
+  search-name: Runtime
+  versions:
+    - title: 7.0
+      url: /runtime/7.0.0/index.html
+      minors:
+        - title: 7.0.0
+          type: Latest
+          url: /runtime/7.0.0/index.html
 
 - name: Altus
   latest-version: Cloud

@@ -1,7 +1,7 @@
 ---
 layout: foyer
 breadcrumb-title: Cloudera Runtime How To
-title: Operational Datastore
+title: Operational Database
 
 # How-to publications related to
 # * HBase
