@@ -789,10 +789,18 @@
     - title: Cloud
       url: /replication-manager/cloud/index.html
 
-- name: CDP Data Hub
+#- name: Data Hub
+#  latest-version: cloud
+#  latest-url: /data-hub/cloud/index.html
+#  search-name: Data Hub
+#  versions:
+#    - title: Cloud
+#      url: /data-hub/cloud/index.html
+
+- name: Data Hub
   latest-version: 1.2.1
   latest-url: /data-hub/cloud/index.html
-  search-name: CDP Data Hub
+  search-name: Data Hub
   versions:
     - title: Cloud
       url: /data-hub/cloud/index.html

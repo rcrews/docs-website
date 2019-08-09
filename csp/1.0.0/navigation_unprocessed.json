@@ -13,9 +13,9 @@ json:
     name: concepts
     sub:
       - text: Schema Registry Overview
-        href: ../hdf/3.4.0/schema-registry-overview/content/schema_registry_overview.html
+        href: schema-registry-overview/content/schema_registry_overview.html
         id: schema-registry-overview
-        sub: ../hdf/3.4.0/schema-registry-overview/navigation.json
+        sub: schema-registry-overview/navigation.json
 
   - text: Installation
     name: install
@@ -34,26 +34,26 @@ json:
       #   sub: installation/navigation.json
 
       - text: Integrating with Schema Registry
-        href: ../hdf/3.4.0/integrating-with-schema-registry/content/integrating_with_nifi.html
+        href: integrating-with-schema-registry/content/integrating_with_nifi.html
         id: integrating-with-schema-registry
-        sub: ../hdf/3.4.0/integrating-with-schema-registry/navigation.json
+        sub: integrating-with-schema-registry/navigation.json
 
       - text: Using Schema Registry
-        href: ../hdf/3.4.0/using-schema-registry/content/adding_a_new_schema.html
+        href: using-schema-registry/content/adding_a_new_schema.html
         id: using-schema-registry
-        sub: ../hdf/3.4.0/using-schema-registry/navigation.json
+        sub: using-schema-registry/navigation.json
 
       - text: Using CDK
-        href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_using.html
+        href: /documentation/kafka/latest/topics/kafka_using.html
 
       - text: Using Kafka Streams
-        href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_streams.html
+        href: /documentation/kafka/latest/topics/kafka_streams.html
 
   - text: Reference
     name: reference
     sub:
       - text: Administering CDK
-        href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_admin.html
+        href: /documentation/kafka/latest/topics/kafka_admin.html
 
   - text: Release Notes
     name: releasenotes
