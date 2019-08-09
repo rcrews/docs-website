@@ -27,7 +27,7 @@ publications:
       on Apache Hadoop HDFS.
 
   - title: Configuring Fault Tolerance
-    url: fault-tolerance/index.html
+    url: configuring-fault-tolerance/index.html
     description: >-
       Describes the procedure to configure HDFS high availability on a cluster.
 
