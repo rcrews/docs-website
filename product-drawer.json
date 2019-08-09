@@ -1,52 +1,41 @@
 ---
+# maybe we can combine with versions.yaml?
 layout: json
 json:
 - text: Management Console
   href: /management-console/cloud/index.html
-  icon: /common/img/product-drawer/management-console.png
+  icon: /common/img/mini_icons/icon-studio.png
 - text: Workload Manager
   href: /workload-manager/cloud/index.html
-  icon: /common/img/product-drawer/workload-manager.png
 - text: Data Catalog
   href: /data-catalog/cloud/index.html
-  icon: /common/img/product-drawer/data-catalog.png
 - text: Replication Manager
   href: /replication-manager/cloud/index.html
-  icon: /common/img/product-drawer/replication-manager.png
 - text: Data Hub
   href: /data-hub/cloud/index.html
-  icon: /common/img/product-drawer/data-hub.png
 - text: Data Warehouse
   href: /data-warehouse/cloud/index.html
-  icon: /common/img/product-drawer/data-warehouse.png
 - text: Machine Learning
   href: /machine-learning/cloud/index.html
-  icon: /common/img/product-drawer/machine-learning.png
 - text: Cloudera Runtime
   href: /runtime/7.0.0/index.html
-  icon: /common/img/product-drawer/runtime.png
 - text: Cloudera Edge Management
   href: /cem/1.0.0/index.html
-  icon: /common/img/product-drawer/cem.png
 - text: Cloudera Data Flow
   href: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
-  icon: /common/img/product-drawer/hdf.png
+  icon: /common/img/mini_icons/icon-hdf.png
 - text: Cloudera Stream Processing
   href: /csp/1.0.0/index.html
-  icon: /common/img/product-drawer/csp.png
 - text: Cloudera Flow Management
   href: /HDPDocuments/CFM/CFM-1.0.1/index.html
-  icon: /common/img/product-drawer/cfm.png
 - text: Data Science Workbench
   href: /documentation/data-science-workbench/1-6-x.html
-  icon: /common/img/product-drawer/data-science-workbench.png
 - text: Cybersecurity Platform
   href: /HDPDocuments/HCP1/HCP-1.9.1/index.html
-  icon: /common/img/product-drawer/hcp.png
+  icon: /common/img/mini_icons/icon-cybersecurity.png
 - text: HDP Enterprise
   href: /HDPDocuments/index.html
-  icon: /common/img/product-drawer/hdp.png
+  icon: /common/img/mini_icons/icon-hdp.png
 - text: CDH Enterprise
   href: /documentation/index.html
-  icon: /common/img/product-drawer/cdh.png
 ---

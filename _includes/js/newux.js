@@ -429,9 +429,10 @@ var NEWUX = (function($) {
             setTimeout(function() { $this.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
             // Ensure the parents are open too.
-            if(level > 2) {
-                $this.parents('.ctoc li:not(.open)').each(function() {
-                    let $parent = $(this);
+
+            $this.parents('.ctoc li:not(.open)').each(function() {
+                let $parent = $(this);
+                if($parent.data('level') > 2) {
                     $parent.children('.expand').text('\uf106');
                     $parent.addClass('open');
                     setTimeout(function() { $parent.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
@@ -443,8 +444,9 @@ var NEWUX = (function($) {
                         localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
                         console.log(Pubnav.navstate);
                     }
-                });
-            }
+                }
+            });
+
         },
         contractNavElem: function(id) {
             // Contract the elem....
@@ -534,8 +536,6 @@ var NEWUX = (function($) {
         },
         updatePageState: function() {
             // Update the page elems based on current situation!
-            console.log('Running Update Pagestate');
-
             // Title
             document.title = this.pagestate.current.text;
 
@@ -569,7 +569,7 @@ var NEWUX = (function($) {
             }
 
             // Ensure the navigation menu is expanded and highlighting this page.
-            if(!Pubnav.navstate.includes(Pubnav.pagestate.parent.id)) {
+            if(typeof Pubnav.pagestate.parent !== 'undefined' && !Pubnav.navstate.includes(Pubnav.pagestate.parent.id)) {
                 Pubnav.navstate.push(Pubnav.pagestate.parent.id);
             }
             for(let id of Pubnav.navstate) {
@@ -605,12 +605,50 @@ var NEWUX = (function($) {
     };
 
     var ProductDrawer = {
+        data : {},
         init: function () {
             if(!$('.product-drawer .products').length) $('.product-drawer').append('<ul class="products"></ul>');
             if(!$('.product-drawer .open-close').length) $('.product-drawer').append('<div class="open-close">»</div>');
+            this.bootstrap();
+        },
+        bootstrap : function() {
+            // Load in the versions.json
+            let navfile = "/product-drawer.json";
+            fetch(navfile)
+                .then((resp) => resp.json()) // Transform the data into json
+                .then((data) => {
+                    ProductDrawer.data = data; // Save the whole thingy in case we need it again.
+
+                    let output = "";
+                    output += '<li class="cat">Data Platform (CDP)</li>';
+                    data.forEach(function(el) {
+                        let active = (WhoAmI.version.url === el.href) ? "active " : "";
+                        output += `<li class="${active}"><a href="${el.href}"><img src="${el.icon ? el.icon : '/common/img/mini_icons/icon-studio.png'}"><span class="text">${el.text}</span></a></li>`;
+                    });
+
+                    $('.product-drawer .products').append(output);
+                    this.bindEvents();
+                });
+
         },
         bindEvents: function() {
+            $('.product-drawer .open-close').on('click', function() {
+                if($('.product-drawer').hasClass('open')) {
+                    $('.product-drawer').css('width', '50px').removeClass('open');
+                    $('.cmain').removeAttr('style'); // TODO!!! - A bit brittle if something else codes styles to this element!
+                    $('.chead').removeAttr('style');
+                    $('.logo').show();
+                    $(this).html('&raquo;'); // TODO... delay this .5s
 
+                } else {
+                    $('.product-drawer').css('width', '210px').addClass('open');
+                    // setTimeout(function() { $('.product-drawer').addClass('open')}, 500);
+                    $('.logo').hide();
+                    $('.cmain').css('marginLeft', '210px');
+                    $('.chead').css('left', '210px');
+                    $(this).html('&laquo;');
+                }
+            });
         },
         renderMenu: function() {
 
@@ -625,19 +663,15 @@ var NEWUX = (function($) {
 
     var Footer = {
         init: () => {
-          let rights = $('meta[name="rights"]').content; // Querying wrong DOM?
-          if (!rights) { rights = `&copy; ${new Date().getFullYear()} Cloudera, Inc.` }
-          $('.cpage').append('<footer><p class="copyright"><a href="/common/html/legal.html">' +
-                             rights + ' All rights reserved.</a></p></footer>');
-        },
-        bindEvents: () => {},
-        renderMenu: () => {},
-        slideOpen:  () => {},
-        slideClose: () => {}
+          let rights = $('meta[name="rights"]').attr('content'); // Querying wrong DOM... perhaps. This is querying the initial page load. If that's good enough, let's keep it. If you need it to query the copyright of each subsequent page import, we'd need to move this code into the Pubnav structure.
+          if (rights !== 'undefined') {
+              rights = `&copy; ${new Date().getFullYear()} Cloudera, Inc.`
+          }
+          $('cpage').append('<div class="copyright"><a href="/common/html/legal.html">' + rights + ' All rights reserved.</a></div>');
+        }
     };
 
     var Search = {
-
         cpage: "", // This will hold the page info when detached.
         init: function() {
             // Inject Search Containers...
@@ -915,25 +949,6 @@ var NEWUX = (function($) {
         }
     };
 
-
-    // PRODUCT DRAWER
-    $('.product-drawer .open-close').on('click', function() {
-        if($('.product-drawer').hasClass('open')) {
-            $('.product-drawer').css('width', '50px').removeClass('open');
-            $('.cmain').removeAttr('style'); // TODO!!! - A bit brittle if something else codes styles to this element!
-            $('.chead').removeAttr('style');
-            $('.logo').show();
-            $(this).html('&raquo;'); // TODO... delay this .5s
-
-        } else {
-            $('.product-drawer').css('width', '210px').addClass('open');
-            // setTimeout(function() { $('.product-drawer').addClass('open')}, 500);
-            $('.logo').hide();
-            $('.cmain').css('marginLeft', '210px');
-            $('.chead').css('left', '210px');
-            $(this).html('&laquo;');
-        }
-    });
 
     // PUBNAV FOR MOBILE
     $('.launch-pubnav').on('click', function () {
