@@ -192,11 +192,11 @@ var NEWUX = (function($) {
             if(!($this).hasClass('open')) {
                 let id = $(this).data('navid');
                 // Update the state
+                if(!Pubnav.navstate.includes(id)) {
+                    Pubnav.navstate.push(id);
+                    localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
+                }
                 Pubnav.expandNavElem(id);
-
-                // Update state
-                Pubnav.navstate.push(id);
-                localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
             }
         },
         handleNavContract: function(evt) {
@@ -290,7 +290,6 @@ var NEWUX = (function($) {
                 });
         },
         loadContent: function(url) {
-
             $( "#content" ).fadeTo(200, 0, function() {
                 // $('.maincontent').append("<div id='content-spinner'><i class='fas fa-circle-notch fa-spin'></i></div>");
                 // TODO... do a check to see that we're on the same domain.
@@ -312,9 +311,9 @@ var NEWUX = (function($) {
 
                     if(!elems.length && Pubnav.pagestate.children.length) {
                         // If there's no content returned..... sometimes happens for root pages.... get the first child page.
-                        let new_url = Pubnav.pagestate.children[0].href;
+                            let new_url = Pubnav.pagestate.children[0].href;
                         Pubnav.requestNewPage(new_url);
-
+                        return false;
                     }
 
                     // PDF Document
@@ -406,14 +405,20 @@ var NEWUX = (function($) {
             return html;
         },
         expandNavElem: function(id) {
-            let $this = $('.ctoc').find(`li[data-navid='${id}']`);
+
+            let $this = $(`.ctoc li[data-navid='${id}']`);
+
+            // If it's already open, ignore.
+            if($this.hasClass('open')) {
+                return true;
+            }
 
             // Collapse other menu items at the same level as this one:
             let level = $this.data('level');
-            if(level >= 1) {
-                $('.ctoc').find(`li.open[data-level='${level}']`).each(function() {
+            if(level > 1) {
+                $(`.ctoc li.open[data-level='${level}']`).each(function() {
                     let id = $(this).data('navid');
-                    console.log('... and found this open item: ' + id);
+                    console.log('This item is open: ' + id + ' Lets collapse it...');
                     Pubnav.contractNavElem(id);
                 });
             }
@@ -423,18 +428,25 @@ var NEWUX = (function($) {
             $this.addClass('open');
             setTimeout(function() { $this.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
-            $this.parents('.ctoc li:not(.open)').each(function() {
-                let $parent = $(this);
-                $parent.children('.expand').text('\uf106');
-                $parent.addClass('open');
-                setTimeout(function() { $parent.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
+            // Ensure the parents are open too.
+            if(level > 2) {
+                $this.parents('.ctoc li:not(.open)').each(function() {
+                    let $parent = $(this);
+                    $parent.children('.expand').text('\uf106');
+                    $parent.addClass('open');
+                    setTimeout(function() { $parent.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
-            })
-
+                    let parent_id = $parent.data('navid');
+                    console.log('We found this parent item, which wasnt open: ' + parent_id);
+                    if(!Pubnav.navstate.indexOf(parent_id)) {
+                        Pubnav.navstate.push(parent_id);
+                        localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
+                        console.log(Pubnav.navstate);
+                    }
+                });
+            }
         },
         contractNavElem: function(id) {
-            console.log('Contracting:' + id);
-
             // Contract the elem....
             // $(this).text('\uf107').siblings('ul').parent('li').removeClass('open sesame');
             let $elem = $('.ctoc').find(`li[data-navid=${id}`);
@@ -522,6 +534,7 @@ var NEWUX = (function($) {
         },
         updatePageState: function() {
             // Update the page elems based on current situation!
+            console.log('Running Update Pagestate');
 
             // Title
             document.title = this.pagestate.current.text;
@@ -555,16 +568,18 @@ var NEWUX = (function($) {
                 $('.inner-breadcrumbs').fadeTo(200, 0);
             }
 
+            console.log(Pubnav.navstate);
+            console.log('this page id is ' + Pubnav.pagestate.current.id)
+
             // Ensure the navigation menu is expanded and highlighting this page.
-            if(!Pubnav.navstate.includes(Pubnav.pagestate.current.id)) {
-                Pubnav.navstate.push(Pubnav.pagestate.current.id);
+            if(!Pubnav.navstate.includes(Pubnav.pagestate.parent.id)) {
+                console.log('the page parent isnt in the navstate, so lets add it.');
+                Pubnav.navstate.push(Pubnav.pagestate.parent.id);
+            }
+            for(let id of Pubnav.navstate) {
+                this.expandNavElem(id);
             }
 
-            if(Pubnav.navstate.length > 0) {
-                for(let id of this.navstate) {
-                    this.expandNavElem(id);
-                }
-            }
             /* Outer Breadcrumbs... putting the topic title up top.
             if(this.pagestate.breadpath.length >= 2) {
                 let output = `<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`;
