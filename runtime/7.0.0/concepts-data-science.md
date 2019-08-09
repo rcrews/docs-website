@@ -11,17 +11,13 @@ publications:
   - title: Apache Spark Overview
     url: spark-overview/index.html
     description: >-
-      publication description ante nec fusce varius mattis facilisis
-      consectetur sit
+      Provides an overview of Apache Spark and lists upstream features that are
+      not supported in CDP.
 
   - title: Apache Zeppelin Overview
     url: zeppelin-overview/index.html
     description: >-
-      publication description dictumst vestibulum morbi aliquam libero
-      dui ipsum lectus
+      Provides a brief overview of Apache Zeppelin, a notebook application
+      included in Cloudera Data Platform.
 ---
-Overview of Cloudera Runtime data science concepts goes here.... Neque
-mi fermentum urna mus sit phasellus auctor enim, sem torquent litora
-quis turpis at accumsan metus, rhoncus volutpat habitant hendrerit
-dictum dui consequat massa, convallis purus varius ligula tincidunt
-ullamcorper habitasse.
+Overview of Apache Spark and Apache Zeppelin.

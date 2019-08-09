@@ -144,10 +144,10 @@ json:
             id: hdfs-acls
             sub: hdfs-acls/navigation.json
 
-          - text: Configuring HDFS Encryption
-            href: hdfs-encryption/index.html
-            id: hdfs-encryption
-            sub: hdfs-encryption/navigation.json
+          - text: Configuring Fault Tolerance
+            href: configuring-fault-tolerance/index.html
+            id: configuring-fault-tolerance
+            sub: configuring-fault-tolerance/navigation.json
 
           - text: Administering Apache Kudu
             href: administering-kudu/index.html

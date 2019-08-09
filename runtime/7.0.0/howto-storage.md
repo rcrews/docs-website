@@ -26,10 +26,10 @@ publications:
       Describes the procedure to configure Access Control Lists (ACLs)
       on Apache Hadoop HDFS.
 
-  - title: Configuring HDFS Encryption
-    url: hdfs-encryption/index.html
+  - title: Configuring Fault Tolerance
+    url: configuring-fault-tolerance/index.html
     description: >-
-      Describes the procedure to configure HDFS Data at Rest encryption.
+      Describes the procedure to configure HDFS high availability on a cluster.
 
   - title: Administering Apache Kudu
     url: administering-kudu/index.html
