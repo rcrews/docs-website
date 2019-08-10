@@ -47,13 +47,5 @@ sections:
 #      - title: Administering CDK
 #        url: /documentation/kafka/latest/topics/kafka_admin.html
 ---
-This is the 2.0.0 content, and will be replaced with 1.0.0 content when available.
 
-Cloudera Stream Processing (CSP) provides advanced messaging, stream
-processing and analytics capabilities powered by Apache Kafka as the
-core stream processing engine. It also provides streams management
-capabilities. Two streams management services have been added for Kafka
-monitoring and replication. Streams Messaging Manager (SMM) provides a
-single monitoring dashboard for a Kafka cluster. Streams Replication
-Manager (SRM) provides enterprises with the ability to implement
-cross-cluster Kafka topic replication.
+[overview text needed...]
