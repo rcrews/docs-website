@@ -1,5 +1,5 @@
 ---
-layout: hwx_product
+layout: product
 title: Flow Management
 version: 1.0.0
 base-path: /cfm/1.0.0/

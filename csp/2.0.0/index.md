@@ -1,5 +1,5 @@
 ---
-layout: hwx_product
+layout: product
 title: Stream Processing
 version: 2.0.0
 base-path: /csp/2.0.0/

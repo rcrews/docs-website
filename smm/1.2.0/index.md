@@ -1,5 +1,5 @@
 ---
-layout: hwx_product
+layout: product
 title: Streams Messaging Manager
 version: 1.2.0
 base-path: /smm/1.2.0/

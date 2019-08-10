@@ -1,5 +1,5 @@
 ---
-layout: hwx_product
+layout: product
 title: Edge Management
 version: 1.1.0
 base-path: /cem/1.1.0/
