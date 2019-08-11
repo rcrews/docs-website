@@ -29,5 +29,5 @@ publications:
       and analyze SQL queries and design Oozie workflows.
 ---
 Cloudera Data Platform Runtime data access concepts provide overview
-information about Apache Impala, Apache Hive, and Hue. These components
-provide SQL interfaces that enable you to access your data sets.
+information about Apache Impala, Apache Hive, and Hue. Using the 
+familiar SQL interfaces of these components, you access your data.
