@@ -202,10 +202,10 @@ json:
             id: managing-zookeeper
             sub: managing-zookeeper/navigation.json
 
-          - text: Authenticating Apache ZooKeeper
-            href: zookeeper-authentication/index.html
-            id: zookeeper-authentication
-            sub: zookeeper-authentication/navigation.json
+          - text: Managing Apache ZooKeeper Security
+            href: zookeeper-security/index.html
+            id: zookeeper-security
+            sub: zookeeper-security/navigation.json
 
       - text: Data Access
         href: howto-data-access.html
