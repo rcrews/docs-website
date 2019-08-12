@@ -428,7 +428,7 @@ json:
         id: impala-troubleshooting
         sub: impala-troubleshooting/navigation.json
 
-      - text: Troubleshooting HBase
+      - text: Troubleshooting Apache HBase
         href: troubleshooting-hbase/index.html
         id: troubleshooting-hbase
         sub: troubleshooting-hbase/navigation.json
