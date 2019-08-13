@@ -20,7 +20,7 @@ section.std 		{ max-width:1220px; padding:15px 25px; margin:auto; display: grid;
 }
 
 .card-group	 		{ display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 1.5rem; border-radius:3px; margin:5px 0 20px;
-	.card 			{ padding:5px 10px; }
+	.card 			{ padding:5px 10px; background-color:#fefefe; border-radius: 2px; }
 	.card-title		{ font-weight:600; font-size:110%; margin-bottom:8px;  }
 	ul 				{ list-style-type:none; padding-left:0;
 		li 			{ margin-bottom:2px;
@@ -28,8 +28,8 @@ section.std 		{ max-width:1220px; padding:15px 25px; margin:auto; display: grid;
 		}
 	}
 
-	&.by-role  		{  }
-	&.by-role .card { background-color:#f9f9f9; }
+	// &.by-role  		{  }
+	// &.by-role .card { background-color:#f9f9f9; }
 }
 
 .segments 			{ max-width:1220px; background-color:#fff;  text-align:center; list-style-type:none; margin:-55px auto 0; padding:30px 10px 10px;

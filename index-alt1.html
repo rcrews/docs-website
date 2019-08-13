@@ -3,7 +3,7 @@ layout: home
 ---
 <div class="home-hero">
     <div>
-        <h1>Cloudera Documentation</h1>
+        <h1><span style="display:none">Cloudera</span> Documentation</h1>
         <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
         <div class="search">
             <input type="text" placeholder="Search Documentation"><i class="fa fa-search" style=""></i>
@@ -11,52 +11,45 @@ layout: home
     </div>
 </div>
 
-<ul class="segments">
-    <li class="active"><a href="" data-target="by-product">By Product</a></li>
-    <li><a href="" data-target="by-role">By Task</a></li>
-</ul>
-
 <section class="std white">
     <div class="section-title">Cloudera Data Platform</div>
     <div class="cards">
-        <div class="card-group by-role">
+        <div class="card-group">
             <div class="card">
                 <div class="card-title">For developers</div>
                 <ul class="card-text">
-                    <li><a href="">Data in motion services</a></li>
-                    <li><a href="">Data engineering services</a></li>
-                    <li><a href="/data-warehouse/cloud/index.html">Data warehousing services</a></li>
-                    <li><a href="">Operational database services</a></li>
                     <li><a href="/machine-learning/cloud/index.html">Machine learning services</a></li>
                 </ul>
             </div>
             <div class="card">
                 <div class="card-title">For administrators</div>
                 <ul class="card-text">
-                    <li><a href="">Architecture</a></li>
-                    <li><a href="">Supported environments</a></li>
+                    <li><a href="">Overview</a></li>
+                    <li><a href="/management-console/cloud/environments/index.html">Environments</a></li>
                     <li><a href="">Migration from on prem</a></li>
                     <li><a href="">Workload management</a></li>
+                    <li><a href="/machine-learning/cloud/index.html">Data warehousing services</a></li>
                     <li><a href="/management-console/cloud/user-management/index.html">User management</a></li>
+                    <li><a href="/data-hub/cloud/index.html">Cluster creation</a></li>
                 </ul>
             </div>
             <div class="card">
                 <div class="card-title">For data stewards</div>
                 <ul class="card-text">
-                    <li><a href="">Data lake management</a></li>
-                    <li><a href="">Security</a></li>
-                    <li><a href="">Governance</a></li>
-                    <li><a href="">Backup and disaster recovery</a></li>
+                    <li><a href="/management-console/cloud/data-lakes/index.html">Data lake management</a></li>
+                    <li><a href="/runtime/7.0.0/cdp-security-overview/index.html">Security</a></li>
+                    <li><a href="/data-catalog/cloud/index.html">Governance</a></li>
+                    <li><a href="/replication-manager/cloud/index.html">Backup and disaster recovery</a></li>
                 </ul>
             </div>
         </div>
-        <div class="card-group by-product">
+        <div class="card-group">
             <div class="card">
-                <div class="card-title">Control Plane</div>
+                <div class="card-title">Control Plane <sup style="font-size:8pt">*“Management Experiences”?</sup></div>
                 <ul class="card-text">
+                    <li><a href="/management-console/cloud/index.html">Management Console</a></li>
                     <li><a href="">Workload Manager</a></li>
                     <li><a href="/data-catalog/cloud/index.html">Data Catalog</a></li>
-                    <li><a href="/management-console/cloud/index.html">Management Console</a></li>
                     <li><a href="/replication-manager/cloud/index.html">Replication Manager</a></li>
                 </ul>
             </div>
@@ -71,24 +64,33 @@ layout: home
             <div class="card">
                 <div class="card-title">Cloudera Runtime</div>
                 <ul>
-                    <li><a href="/runtime/7.0.0/index.html">Cloudera Runtime</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-storage.html">Storage</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-compute.html">Compute</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-data-access.html">Data Access</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-operational-datastore.html">Operational Database</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-data-science.html">Data Science</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-security.html">Security</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-governance.html">Governance</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-cluster-management.html">Cluster Management</a></li>
+                    <li><a href="/runtime/7.0.0/concepts-jobs-management.html">Jobs Management</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section class="std">
-    <div class="section-title">Data Products</div>
+<section class="std" style="background-color: white">
+    <div class="section-title">Edge to AI<sup style="font-size:8pt">*Noun needed?</div>
     <div class="cards">
-        <div class="card-group  by-product">
+        <div class="card-group">
             <div class="card">
                 <div class="card-title">Data in Motion</div>
                 <ul>
-                    <li><a href="/cem/1.0.0/index.html">Cloudera Edge Management</a></li>
-                    <li><a href="/HDPDocuments/HDF3/HDF-3.4.1.1/index.html">Cloudera Data Flow</a></li>
-                    <li><a href="/csp/1.0.0/index.html">Cloudera Stream Processing</a></li>
-                    <li><a href="/HDPDocuments/CFM/CFM-1.0.1/index.html">Cloudera Flow Management</a></li>
+                    <li><a href="/cem/1.1.0/index.html">Cloudera Edge Management</a></li>
+                    <li><a href="/cfm/1.0.1/index.html">Cloudera Flow Management</a></li>
+                    <li><a href="/csp/2.0.0/index.html">Cloudera Stream Processing</a></li>
+                    <li><a href="/smm/2.0.0/index.html">Streams Messaging Manager</a></li>
+                    <li><a href="/srm/1.0.0/index.html">Stream Replication Manager</a></li>
                 </ul>
             </div>
             <div class="card">
@@ -107,92 +109,22 @@ layout: home
     </div>
 </section>
 
-<section class="std">
-    <div class="section-title">Cloudera</div>
-    <div class="card-group by-product">
-        <div class="card">
-            <div class="card-title">Cloudera Enterprise</div>
-            <ul>
-                <li><a href="/documentation/enterprise/6/6.3.html" class="btn-sm btn-primary">Cloudera Enterprise 6.x</a></li>
-                <li><a href="">Release Notes</a></li>
-                <li><a href="">Version and Download Information</a></li>
-                <li><a href="">Connectors Documentation</a></li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-title">Cloudera in the Cloud</div>
-            <ul>
-                <li><a href="">Altus</a></li>
-                <li><a href="/documentation/director/latest.html" class="btn-sm btn-primary">Altus Director</a></li>
-                <li><a href="">Cloud Overview & Best Practices</a></li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-title">Other</div>
-            <ul>
-                <li><a href="">Apache Spark</a></li>
-                <li><a href="">Apache Accumulo</a></li>
-                <li><a href="">Apache Kafka</a></li>
-                <li><a href="">Apache Kudu</a></li>
-                <li><a href="">Workload XM</a></li>
-                <li><a href="">Navigator Optimizer</a></li>
-            </ul>
+<section class="std" style="background-color: #eee; margin-bottom: 2ex;">
+    <div class="section-title"></div>
+    <div class="cards">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-title"><a href="/HDPDocuments/index.html">HDP Enterprise</a></div>
+            </div>
+            <div class="card">
+                <div class="card-title"><a href="/HDPDocuments/HDF3/HDF-3.4.1.1/index.html">HDF Enterprise</a></div>
+            </div>
+            <div class="card">
+                <div class="card-title"><a href="/documentation/index.html">CDH Enterprise</a></div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="std">
-    <div class="section-title">Hortonworks</div>
-    <div class="card-group by-product">
-        <div class="card">
-            <div class="card-title">HDP</div>
-            <ul class="card-text">
-                <li><a href="/HDPDocuments/HDP3/HDP-3.1.0/index.html">HDP Core</a></li>
-                <li><a href="/HDPDocuments/HDPforCloud/HDPforCloud-3.0.1/index.html">HDP for Cloud</a></li>
-                <li><a href="/HDPDocuments/Ambari/Ambari-2.7.3.0/index.html">Ambari</a></li>
-                <li><a href="/HDPDocuments/SS1/SmartSense-1.5.1/index.html">SmartSense</a></li>
-                <li><a href="/HDPDocuments/HDPS/HDPS-4.0.0/index.html">HDP Search</a></li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-title">Data Plane</div>
-            <ul>
-                <li><a href="/HDPDocuments/DP/DP-1.2.2/index.html">DataPlane Platform</a></li>
-                <li><a href="/HDPDocuments/DLM1/DLM-1.4.0/index.html">Data Lifecycle Manager</a></li>
-                <li><a href="/HDPDocuments/DSS1/DSS-1.5.0/index.html">Data Steward Studio</a></li>
-                <li><a href="/HDPDocuments/SMM/SMM-1.2.1/index.html">Streams Messaging Manager</a></li>
-                <li><a href="/HDPDocuments/DAS/DAS-1.2.1/index.html">Data Analytics Studio</a></li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-title">Other</div>
-            <ul>
-                <li><a href="/HDPDocuments/HDF3/HDF-3.4.1.1/index.html">HDF</a></li>
-                <li><a href="/HDPDocuments/HDF3/HDF-3.4.1.1/index.html">Cloudbreak</a></li>
-                <li></li>
-            </ul>
-        </div>
-    </div>
-</section>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
-<script>
-    (function($) {
-        $('.segments a').click(function(e) {
-            e.preventDefault();
-            let target = $(this).data('target');
-            $('.segments li').removeClass('active');
-            $(this).parent('li').addClass('active');
-            $('.card-group').hide();
-            $('.card-group.' + target).show();
-
-
-        })
-        $('.card-group.by-role').hide();
-    }(jQuery));
-
-</script>
-
-</body>
-</html>

@@ -1,0 +1,57 @@
+---
+layout: json
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+json:
+  #- text: Concepts
+  #  id: concepts
+  #  sub:
+  #    - text: Overview
+  #      href: overview/index.html
+  #      id: overview
+  #      sub: overview/navigation.json
+
+  - text: Installation
+    id: installation
+    sub:
+      - text: Installation
+        href: installation/index.html
+        id: installation
+        sub: installation/navigation.json
+
+      # - text: Quick Start
+      #   href: quick-start/index.html
+      #   id: quick-start
+      #   sub: quick-start/navigation.json
+
+  - text: How To
+    id: howto
+    sub:
+      - text: Using CEM
+        href: using-cem/index.html
+        id: using-cem
+        sub: using-cem/navigation.json
+
+  - text: Reference
+    id: reference
+    sub:
+      - text: REST API Reference
+        href: rest-api-reference/index.html
+        id: rest-api-reference
+        # sub: rest-api-reference/navigation.json
+
+  - text: Release Notes
+    id: release-notes
+    sub:
+      - text: Release Notes
+        href: release-notes/index.html
+        id: release-notes
+        sub: release-notes/navigation.json
+
+---

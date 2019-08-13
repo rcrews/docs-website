@@ -17,9 +17,13 @@ json:
         id: overview
         sub: overview/navigation.json
 
-  # - text: Planning
-  #   id: planning
-  #   sub:
+  - text: Planning
+    id: planning
+    sub:
+      - text: Resource Planning
+        href: planning/index.html
+        id: planning
+        sub: planning/navigation.json
 
   # - text: Installation & Upgrade
   #   id: installation
@@ -28,10 +32,20 @@ json:
   - text: How To
     id: howto
     sub:
-      - text: Administering and Using
+      - text: Moving Workloads to the Cloud
         href: using-service/index.html
         id: using-service
         sub: using-service/navigation.json
+
+      - text: Querying Data
+        href: querying-data/index.html
+        id: querying-data
+        sub: querying-data/navigation.json
+
+      - text: Managing Virtual Warehouses
+        href: managing-warehouses/index.html
+        id: managing-warehouses
+        sub: managing-warehouses/navigation.json
 
   # - text: Troubleshooting
   #   id: troubleshooting

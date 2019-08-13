@@ -26,10 +26,11 @@ publications:
       Describes the procedure to configure Access Control Lists (ACLs)
       on Apache Hadoop HDFS.
 
-  - title: Configuring HDFS Encryption
-    url: hdfs-encryption/index.html
+  - title: Configuring Fault Tolerance
+    url: fault-tolerance/index.html
     description: >-
-      Describes the procedure to configure HDFS Data at Rest encryption.
+      Describes the procedure to configure HDFS high availability on a
+      cluster.
 
   - title: Administering Apache Kudu
     url: administering-kudu/index.html
@@ -45,13 +46,12 @@ publications:
   - title: Using Apache Impala with Apache Kudu
     url: kudu-integration/index.html
     description: >-
-      Gravida primis lobortis posuere augue adipiscing id leo consequat
-      metus, nam in consectetur auctor libero fermentum dui inceptos
-      euismod, faucibus commodo vehicula accumsan penatibus risus
-      sodales ultricies, nisl orci sem habitant et nunc rhoncus montes
+      Provides information about how to use use Kudu as a storage
+      for Apache Impala.
 ---
 Cloudera Runtime provides different types of storage components that you
-can use depending on your data requirements. Apache Hadoop HDFS is a
-distributed file system for storing large volumes of data. Apache Kudu
-is a columnar data store that enables fast analytics on rapidly changing
-data.
+can use depending on your data requirements. Apache HBase is a NoSQL
+database that provides real-time read/write access to those large
+datasets. Apache Kudu is a columnar data store that enables fast
+analytics on rapidly changing data. Apache HDFS is a distributed file
+system for storing large volumes of data.
