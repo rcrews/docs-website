@@ -1,0 +1,421 @@
+{
+  "swagger" : "2.0",
+  "info" : { },
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/replications" : {
+      "get" : {
+        "operationId" : "replicationInfo",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "source",
+          "in" : "query",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          },
+          "collectionFormat" : "multi"
+        }, {
+          "name" : "minutes",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "hours",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "headers" : { },
+            "schema" : {
+              "type" : "object",
+              "additionalProperties" : {
+                "$ref" : "#/definitions/ReplicationInfo"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/remote-topics/{source}" : {
+      "get" : {
+        "operationId" : "remoteTopics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "source",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "minutes",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "hours",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "headers" : { },
+            "schema" : {
+              "type" : "object",
+              "additionalProperties" : {
+                "$ref" : "#/definitions/TopicInfo"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/topic-metrics-local/{topic}/{metric}" : {
+      "get" : {
+        "operationId" : "topicMetricsLocal",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topic",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "metric",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "minutes",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "hours",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "headers" : { },
+            "schema" : {
+              "$ref" : "#/definitions/TimeSeriesResponse"
+            }
+          }
+        }
+      }
+    },
+    "/cluster-metrics-local/{cluster}/{metric}" : {
+      "get" : {
+        "operationId" : "clusterMetricsLocal",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "cluster",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "metric",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "minutes",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "hours",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "headers" : { },
+            "schema" : {
+              "$ref" : "#/definitions/TimeSeriesResponse"
+            }
+          }
+        }
+      }
+    },
+    "/topic-metrics/{topic}/{metric}" : {
+      "get" : {
+        "operationId" : "topicMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topic",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "metric",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "minutes",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "hours",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "samples",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 1000,
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "headers" : { },
+            "schema" : {
+              "$ref" : "#/definitions/TimeSeriesResponse"
+            }
+          }
+        }
+      }
+    },
+    "/cluster-metrics/{cluster}/{metric}" : {
+      "get" : {
+        "operationId" : "clusterMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "cluster",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "metric",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "minutes",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "hours",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "samples",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 1000,
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "headers" : { },
+            "schema" : {
+              "$ref" : "#/definitions/TimeSeriesResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ReplicationInfo" : {
+      "type" : "object",
+      "properties" : {
+        "source" : {
+          "type" : "string"
+        },
+        "target" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "replicationLatencyMs" : {
+          "$ref" : "#/definitions/Stats"
+        },
+        "checkpointLatencyMs" : {
+          "$ref" : "#/definitions/Stats"
+        },
+        "throughputBps" : {
+          "$ref" : "#/definitions/Stats"
+        },
+        "status" : {
+          "type" : "string",
+          "enum" : [ "ACTIVE", "WARNING", "INACTIVE" ]
+        },
+        "numConsumerGroups" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "numTopics" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Stats" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "min" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "max" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "sum" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "avg" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "samples" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "latestTimestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "latestValue" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "range" : {
+          "$ref" : "#/definitions/TimeRange"
+        },
+        "groups" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "topics" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "partitions" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "TimeRange" : {
+      "type" : "object",
+      "properties" : {
+        "start" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "end" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "midpoint" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "TopicInfo" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "replicationLatencyMs" : {
+          "$ref" : "#/definitions/Stats"
+        },
+        "checkpointLatencyMs" : {
+          "$ref" : "#/definitions/Stats"
+        },
+        "throughputBps" : {
+          "$ref" : "#/definitions/Stats"
+        },
+        "source" : {
+          "type" : "string"
+        },
+        "numPartitions" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "numConsumerGroups" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "upstreamTopic" : {
+          "type" : "string"
+        },
+        "originalTopic" : {
+          "type" : "string"
+        }
+      }
+    },
+    "TimeSeriesResponse" : {
+      "type" : "object",
+      "properties" : {
+        "metrics" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Stats"
+          }
+        },
+        "errors" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "range" : {
+          "$ref" : "#/definitions/TimeRange"
+        }
+      }
+    }
+  }
+}
