@@ -7,11 +7,24 @@ title: Governance
 # * Atlas
 
 publications:
-  - title: Governance Overview & Use Cases
+  - title: Governance Overview
     url: cdp-governance-overview/index.html
     description: >-
       Concepts for collecting, creating, and using metadata in Apache
       Atlas.
+  
+  - title: Controlling Data Access with Tags
+    url: cdp-governance-controlling-access-tags/index.html
+    description: >-
+      Add tags in Atlas to drive data access policies in Ranger.
+
+  - title: Extending Atlas to Manage Metadata from Additional Sources
+    url: cdp-governance-extending-metadata/index.html
+    description: >-
+      Atlas's flexible metadata model allows you to define entity
+      types to represent data assets, operations, or any other 
+      object you want to catalog.
+
 ---
 Apache Atlas provides data governance capabilities for Hadoop. Apache
 Atlas serves as a common metadata store that is designed to exchange

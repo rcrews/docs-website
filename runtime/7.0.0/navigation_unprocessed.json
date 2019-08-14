@@ -103,10 +103,21 @@ json:
       - text: Governance
         href: concepts-governance.html
         sub:
-          - text: Governance Overview & Use Cases
+          - text: Governance Overview
             href: cdp-governance-overview/index.html
             id: cdp-governance-overview
             sub: cdp-governance-overview/navigation.json
+          
+          - text: Controlling Data Access with Tags
+            href: cdp-governance-control-access-tags/index.html
+            id: cdp-governance-control-access-tags
+            sub: cdp-governance-control-access-tags/navigation.json
+
+          - text: Extending Atlas to Manage Metadata from Additional Sources
+            href: cdp-governance-extending-metadata/index.html
+            id: cdp-governance-extending-metadata
+            sub: cdp-governance-extending-metadata/navigation.json
+
 
       - text: Cluster Managment
         href: concepts-cluster-management.html
