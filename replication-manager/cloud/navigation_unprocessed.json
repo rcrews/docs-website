@@ -25,10 +25,10 @@ json:
   #   id: installation
   #   sub:
 
- - text: How To
-   id: howto
-   sub:
-     - text: Operations
+  - text: How To
+    id: howto
+    sub:
+      - text: Operations
         href: operations/index.html
         id: operations
         sub: operations/navigation.json
