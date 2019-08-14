@@ -52,25 +52,25 @@ json:
         id: manage-clusters
         sub: manage-clusters/navigation.json
 
-      - text: Image Catalogs
-        href: image-catalogs/index.html
-        id: image-catalogs
-        sub: image-catalogs/navigation.json
-
       - text: Cluster Definitions
         href: cluster-definitions/index.html
         id: cluster-definitions
         sub: cluster-definitions/navigation.json
 
-      - text: Blueprints
-        href: blueprints/index.html
-        id: blueprints
-        sub: blueprints/navigation.json
+      - text: Cluster Templates
+        href: cluster-templates/index.html
+        id: cluster-templates
+        sub: cluster-templates/navigation.json
 
       - text: Recipes
         href: recipes/index.html
         id: recipes
         sub: recipes/navigation.json
+
+      - text: Image Catalogs
+        href: image-catalogs/index.html
+        id: image-catalogs
+        sub: image-catalogs/navigation.json
 
       - text: Custom Properties
         href: custom-properties/index.html
