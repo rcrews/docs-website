@@ -75,7 +75,7 @@ json:
         href: concepts-operational-datastore.html
         sub:
           - text: Apache HBase Overview
-            href: hbase-overviewn/index.html
+            href: hbase-overview/index.html
             id: hbase-overview
             sub: hbase-overview/navigation.json
 
