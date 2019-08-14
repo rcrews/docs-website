@@ -387,7 +387,7 @@ json:
             sub: atlas-working-with-classifications/navigation.json
 
           - text: Exploring using Lineage
-            href: altas-exploring-using-lineage/index.html
+            href: atlas-exploring-using-lineage/index.html
             id: atlas-exploring-using-lineage
             sub: atlas-exploring-using-lineage/navigation.json
 
