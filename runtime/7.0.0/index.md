@@ -86,8 +86,8 @@ sections:
 #       - title: Troubleshooting Apache HBase
 #         url: troubleshooting-hbase/index.html
 #
-#       - title: Troubleshooting Apache Kudu
-#         url: troubleshooting-kudu/index.html
+#       # - title: Troubleshooting Apache Kudu
+#       #   url: troubleshooting-kudu/index.html
 #
 #   - title: Reference
 #     name: reference
