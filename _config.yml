@@ -98,6 +98,7 @@ exclude:
   - /smm/1.1.0/rest-api-reference/
   - /smm/1.2.0/rest-api-reference/
   - /smm/1.2.1/rest-api-reference/
+  - /srm/1.0.0/rest-api-reference/
   - /wp-content/
 
   # Static content supporting the legacy Cloudera pages that don't need
