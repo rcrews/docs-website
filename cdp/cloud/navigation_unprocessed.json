@@ -12,7 +12,7 @@ json:
   - text: Concepts & Use Cases
     id: concepts
     sub:
-      - text: Overview
+      - text: CDP Overview
         href: overview/index.html
         id: overview
         sub: overview/navigation.json

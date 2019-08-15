@@ -12,7 +12,7 @@ base-path: /cdp/cloud/
 #   - title: Concepts & Use Cases
 #     name: concepts
 #     books:
-#       - title: Overview
+#       - title: CDP Overview
 #         url: overview/index.html
 #
 #   # - title: Planning
