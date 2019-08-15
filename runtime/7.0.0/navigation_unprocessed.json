@@ -383,6 +383,11 @@ json:
             id: security-ranger-authorization
             sub: security-ranger-authorization/navigation.json
 
+          - text: Configuring Ranger Authentication with UNIX, LDAP, or AD
+            href: security-ranger-authentication-unix-ldap-ad/index.html
+            id: security-ranger-authentication-unix-ldap-ad
+            sub: security-ranger-authentication-unix-ldap-ad/navigation.json
+
       - text: Governance
         href: howto-governance.html
         sub:
