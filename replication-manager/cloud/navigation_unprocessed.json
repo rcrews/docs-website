@@ -17,11 +17,6 @@ json:
         id: core-concepts
         sub: core-concepts/navigation.json
 
-      - text: Operations
-        href: operations/index.html
-        id: operations
-        sub: operations/navigation.json
-
   # - text: Planning
   #   id: planning
   #   sub:
@@ -30,9 +25,13 @@ json:
   #   id: installation
   #   sub:
 
-  # - text: How To
-  #   id: howto
-  #   sub:
+  - text: How To
+    id: howto
+    sub:
+      - text: Operations
+        href: operations/index.html
+        id: operations
+        sub: operations/navigation.json
 
   # - text: Troubleshooting
   #   id: troubleshooting

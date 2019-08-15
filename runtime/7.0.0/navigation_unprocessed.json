@@ -34,15 +34,16 @@ json:
             id: hdfs-overview
             sub: hdfs-overview/navigation.json
 
-          - text: Apache Kudu Overview
-            href: kudu-overview/index.html
-            id: kudu-overview
-            sub: kudu-overview/navigation.json
-
-          - text: Apache Kudu Design
-            href: kudu-design/index.html
-            id: kudu-design
-            sub: kudu-design/navigation.json
+# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
+#          - text: Apache Kudu Overview
+#            href: kudu-overview/index.html
+#            id: kudu-overview
+#            sub: kudu-overview/navigation.json
+#
+#          - text: Apache Kudu Design
+#            href: kudu-design/index.html
+#            id: kudu-design
+#            sub: kudu-design/navigation.json
 
       - text: Compute
         href: concepts-compute.html
@@ -74,7 +75,7 @@ json:
         href: concepts-operational-datastore.html
         sub:
           - text: Apache HBase Overview
-            href: hbase-overviewn/index.html
+            href: hbase-overview/index.html
             id: hbase-overview
             sub: hbase-overview/navigation.json
 
@@ -102,10 +103,21 @@ json:
       - text: Governance
         href: concepts-governance.html
         sub:
-          - text: Governance Overview & Use Cases
+          - text: Governance Overview
             href: cdp-governance-overview/index.html
             id: cdp-governance-overview
             sub: cdp-governance-overview/navigation.json
+          
+          - text: Controlling Data Access with Tags
+            href: cdp-governance-control-access-tags/index.html
+            id: cdp-governance-control-access-tags
+            sub: cdp-governance-control-access-tags/navigation.json
+
+          - text: Extending Atlas to Manage Metadata from Additional Sources
+            href: cdp-governance-extending-metadata/index.html
+            id: cdp-governance-extending-metadata
+            sub: cdp-governance-extending-metadata/navigation.json
+
 
       - text: Cluster Managment
         href: concepts-cluster-management.html
@@ -149,20 +161,21 @@ json:
             id: fault-tolerance
             sub: fault-tolerance/navigation.json
 
-          - text: Administering Apache Kudu
-            href: administering-kudu/index.html
-            id: administering-kudu
-            sub: administering-kudu/navigation.json
+# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
+#          - text: Administering Apache Kudu
+#            href: administering-kudu/index.html
+#            id: administering-kudu
+#            sub: administering-kudu/navigation.json
 
-          - text: Developing Applications with Apache Kudu
-            href: kudu-development/index.html
-            id: kudu-development
-            sub: kudu-development/navigation.json
+#          - text: Developing Applications with Apache Kudu
+#            href: kudu-development/index.html
+#            id: kudu-development
+#            sub: kudu-development/navigation.json
 
-          - text: Using Apache Impala with Apache Kudu
-            href: kudu-integration/index.html
-            id: kudu-integration
-            sub: kudu-integration/navigation.json
+#          - text: Using Apache Impala with Apache Kudu
+#            href: kudu-integration/index.html
+#            id: kudu-integration
+#            sub: kudu-integration/navigation.json
 
       - text: Compute
         href: howto-compute.html
@@ -385,7 +398,7 @@ json:
             sub: atlas-working-with-classifications/navigation.json
 
           - text: Exploring using Lineage
-            href: altas-exploring-using-lineage/index.html
+            href: atlas-exploring-using-lineage/index.html
             id: atlas-exploring-using-lineage
             sub: atlas-exploring-using-lineage/navigation.json
 
@@ -433,10 +446,11 @@ json:
         id: troubleshooting-hbase
         sub: troubleshooting-hbase/navigation.json
 
-      - text: Troubleshooting Apache Kudu
-        href: troubleshooting-kudu/index.html
-        id: troubleshooting-kudu
-        sub: troubleshooting-kudu/navigation.json
+# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
+#      - text: Troubleshooting Apache Kudu
+#        href: troubleshooting-kudu/index.html
+#        id: troubleshooting-kudu
+#        sub: troubleshooting-kudu/navigation.json
 
   - text: Reference
     id: reference

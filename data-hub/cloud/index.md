@@ -42,17 +42,17 @@ sections:
 #       - title: Managing Clusters
 #         url: manage-clusters/index.html
 #
-#       - title: Image Catalogs
-#         url: image-catalogs/index.html
-#
 #       - title: Cluster Definitions
 #         url: cluster-definitions/index.html
 #
-#       - title: Blueprints
-#         url: blueprints/index.html
+#       - title: Cluster Templates
+#         url: cluster-templates/index.html
 #
 #       - title: Recipes
 #         url: recipes/index.html
+#
+#       - title: Image Catalogs
+#         url: image-catalogs/index.html
 #
 #       - title: Custom Properties
 #         url: custom-properties/index.html

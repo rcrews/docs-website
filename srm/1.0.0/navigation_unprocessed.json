@@ -1,0 +1,70 @@
+---
+layout: json
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+json:
+  - text: Concepts
+    id: concepts
+    sub:
+      - text: Overview
+        href: overview/index.html
+        id: overview
+        sub: overview/navigation.json
+
+      - text: Understanding Replication Flows
+        href: understanding-replication-flows/index.html
+        id: understanding-replication-flows
+        sub: understanding-replication-flows/navigation.json
+
+      - text: Main Use Cases and Use Case Architectures
+        href: use-cases/index.html
+        id: use-cases
+        sub: use-cases/navigation.json
+
+  - text: Installation & Upgrade
+    id: installation-upgrade
+    sub:
+      - text: Installation
+        href: installation/index.html
+        id: installation
+        sub: installation/navigation.json
+
+  - text: How To
+    id: how-to
+    sub:
+      - text: Configuring SRM
+        href: configuration/index.html
+        id: configuration
+        sub: configuration/navigation.json
+
+      - text: Securing SRM
+        href: security/index.html
+        id: security
+        sub: security/navigation.json
+
+      - text: Using SRM
+        href: using/index.html
+        id: using
+        sub: using/navigation.json
+
+  - text: Release Notes
+    id: releasenotes
+    books:
+      - text: Release Notes
+        href: release-notes/index.html
+        id: using
+        sub: using/navigation.json
+
+  - text: Reference
+    id: reference
+    books:
+      - text: REST API Reference
+        href: rest-api-reference/index.html
+        id: rest-api-reference
+---

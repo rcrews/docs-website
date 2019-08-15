@@ -1,41 +1,63 @@
 ---
 # maybe we can combine with versions.yaml?
+# ✔️ Sounds great to me! --Robert
 layout: json
 json:
 - text: Management Console
   href: /management-console/cloud/index.html
   icon: /common/img/mini_icons/icon-studio.png
+
 - text: Workload Manager
   href: /workload-manager/cloud/index.html
+
 - text: Data Catalog
   href: /data-catalog/cloud/index.html
+
 - text: Replication Manager
   href: /replication-manager/cloud/index.html
+
 - text: Data Hub
   href: /data-hub/cloud/index.html
+
 - text: Data Warehouse
   href: /data-warehouse/cloud/index.html
+
 - text: Machine Learning
   href: /machine-learning/cloud/index.html
+
 - text: Cloudera Runtime
   href: /runtime/7.0.0/index.html
+
 - text: Cloudera Edge Management
-  href: /cem/1.0.0/index.html
-- text: Cloudera Data Flow
-  href: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
-  icon: /common/img/mini_icons/icon-hdf.png
-- text: Cloudera Stream Processing
-  href: /csp/1.0.0/index.html
+  href: /cem/1.1.0/index.html
+
 - text: Cloudera Flow Management
-  href: /HDPDocuments/CFM/CFM-1.0.1/index.html
+  href: /cfm/1.0.1/index.html
+
+- text: Cloudera Stream Processing
+  href: /csp/2.0.0/index.html
+
+- text: Streams Messaging Manager
+  href: /smm/2.0.0/index.html
+
+- text: Streams Replication Manager
+  href: /srm/1.0.0/index.html
+
 - text: Data Science Workbench
   href: /documentation/data-science-workbench/1-6-x.html
+
 - text: Cybersecurity Platform
   href: /HDPDocuments/HCP1/HCP-1.9.1/index.html
   icon: /common/img/mini_icons/icon-cybersecurity.png
+
+- text: CDH Enterprise
+  href: /documentation/index.html
+
 - text: HDP Enterprise
   href: /HDPDocuments/index.html
   icon: /common/img/mini_icons/icon-hdp.png
-- text: CDH Enterprise
-  href: /documentation/index.html
+
+- text: HDF Enterprise
+  href: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
+  icon: /common/img/mini_icons/icon-hdf.png
 ---

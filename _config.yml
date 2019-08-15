@@ -75,14 +75,18 @@ exclude:
   # Static content supporting the legacy Hortonworks pages that don't
   # need to be part of most builds
 
-# - common/fonts/  - Using these -- J
-# - common/img/ - Using these -- J
-  - common/js/libs/
+  - /cem/1.0.0/rest-api-reference/
+  - /cem/1.1.0/rest-api-reference/
+  # - /common/fonts/  - Using these -- J
+  # - /common/img/ - Using these -- J
+  - /common/js/libs/
   - /common/sample-data/
   - /common/themes/pre-hdp-3.1/
-# - favicon.ico
+  # - /favicon.ico
   - /google313e059f6e26cb8c.html
   - /googlea675d981988e7c7a.html
+  - /HDPDocuments/CEM/CEM-1.0.0/rest-api-reference/
+  - /HDPDocuments/CEM/CEM-1.1.0/rest-api-reference/
   - /HDPDocuments/Cloudbreak/Cb-doc-resources/
   - /HDPDocuments/SMM/SMM-1.0.0/rest-api-reference/
   - /HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
@@ -90,7 +94,12 @@ exclude:
   - /HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
   - /robots.txt
   - /sitemap.xsl
-  - /wp-content
+  - /smm/1.0.0/rest-api-reference/
+  - /smm/1.1.0/rest-api-reference/
+  - /smm/1.2.0/rest-api-reference/
+  - /smm/1.2.1/rest-api-reference/
+  - /srm/1.0.0/rest-api-reference/
+  - /wp-content/
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds
