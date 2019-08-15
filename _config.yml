@@ -51,7 +51,6 @@ exclude:
   - /HDPDocuments/DAS/DAS-1.3.0/
   - /HDPDocuments/DLM1/DLM-1.5.0/
   - /HDPDocuments/DPS/
-  - /HDPDocuments/HDF3/HDF-3.5.0/
   - /HDPDocuments/SMM/SMM-2.0.0/
 
   # Testing files that should not be copied to the hortonworks staging site
@@ -61,20 +60,10 @@ exclude:
   - /management-console/cloud/navigation.json
   - /replication-manager/cloud/navigation.json
   - /runtime/7.0.0/navigation.json
-
-  # Testing files that should not be copied to any s3 bucket
-  - /hdf/
   - /runtime/7.0.0/publication/
-  - /runtime/7.0.0/integrating-hive-and-bi/
-  - /runtime/7.0.0/managing-a-hive-workload/
-  - /runtime/7.0.0/managing-hive/
-  - /runtime/7.0.0/securing-hive/
-  - /runtime/7.0.0/starting-hive/
-  - /runtime/7.0.0/using-hiveql/
 
   # Static content supporting the legacy Hortonworks pages that don't
   # need to be part of most builds
-
   - /cem/1.0.0/rest-api-reference/
   - /cem/1.1.0/rest-api-reference/
   # - /common/fonts/  - Using these -- J
@@ -99,7 +88,7 @@ exclude:
   - /smm/1.2.0/rest-api-reference/
   - /smm/1.2.1/rest-api-reference/
   - /srm/1.0.0/rest-api-reference/
-  - /wp-content/
+  # - /wp-content/
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds
