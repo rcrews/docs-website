@@ -27,9 +27,12 @@ var NEWUX = (function($) {
                         WhoAmI.product_name = $my_product[0].text;
                     } else {
                         // Look for it in the path
-                        my_product_url = location.pathname.split('/');
-                        my_product_url = '/' + my_product_url[1] + '/' + my_product_url[2] + '/index.html';
+                        my_product_url = location.pathname;
                     }
+
+                    // Make sure there's an index.html at the end of the url.
+                    let my_product_url_parts = my_product_url.split('/');
+                    my_product_url = '/' + my_product_url_parts[1] + '/' + my_product_url_parts[2] + '/index.html';
 
                     // Walk the versions.yaml tree and get the related information for this product
                     let found = false;
@@ -86,9 +89,11 @@ var NEWUX = (function($) {
                             }
                         }
 
+
+
                         // It might now be found... if so, set our thingy's
-                        if(found && WhoAmI.product_name === "") {
-                            WhoAmI.product_name = data[i].name;
+                        if(found) {
+                            if(WhoAmI.product_name === "") WhoAmI.product_name = data[i].name;
                             WhoAmI.versions = versions;
                             if(typeof data[i].latest_version !== 'undefined') {
                                 WhoAmI.latest_version = {
@@ -97,12 +102,14 @@ var NEWUX = (function($) {
                                 };
                             }
                             break; // And break out of this loop
-                        } else if($('.bread-version').length) {
-                            // Might be able to get it from the HTML...
-                            WhoAmI.version = {
-                                title: $('.bread-version').length ? $('.bread-version').text() : "",
-                                url: $('.bread-product a').length ? $('.bread-product a')[0].href : ""
-                            }
+                        }
+                    }
+
+                    if($('.bread-version').length && WhoAmI.version.length === 0) {
+                        // If we couldn't find a version in versions.yaml, might still be able to get it from the HTML...
+                        WhoAmI.version = {
+                            title: $('.bread-version').length ? $('.bread-version').text() : "",
+                            url: $('.bread-product a').length ? $('.bread-product a')[0].href : ""
                         }
                     }
 
@@ -165,7 +172,8 @@ var NEWUX = (function($) {
             depth: 0, // How many layers deep we are.
             breadpath: [],// Array of Parents... in descending order.
             children: [], // Flattened Array of Subs }
-            pdfurl: ""
+            pdfurl: "",
+            copyright: "&copy; " + new Date().getFullYear() + " Cloudera, Inc."
         },
         navstate: [], // Holds the list of open nav items in the menu... used to maintain state between loads.
         init: function() {
@@ -240,6 +248,11 @@ var NEWUX = (function($) {
             if(!$('.prev').length)  $('.cpage').append('<div class="prev"><a href=""></a></div>');
             if(!$('.next').length)  $('.cpage').append('<div class="next"><a href=""></a></div>');
 
+
+            if(!$('.copyright').length) {
+                $('.cpage').append('<div class="copyright"><a href="/common/html/legal.html">' + Pubnav.pagestate.copyright + ' All rights reserved.</a></div>');
+            }
+
             // When we load up the JS for the page, we rely on the navigation.json file that is present in the product root.
 
             // Normally, we expect this to be in the third folder... so for example. /HDF3/hdf-3.0.4/navigation.json
@@ -276,11 +289,11 @@ var NEWUX = (function($) {
                     // 4... Figure out the PDF... TODO!! - This is repeated in LoadContent() - Make it DRYer)
                     let $pdf = $('link[type="application/pdf"]');
                     if($pdf.length > 0) {
-                        Pubnav.pagestate.current.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
+                        Pubnav.pagestate.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
                     } else {
-                        Pubnav.pagestate.current.pdfurl = "";
+                        Pubnav.pagestate.pdfurl = "";
                     }
-
+                    
                     // 5. Bind Event Handlers
                     this.bindEvents();
 
@@ -290,65 +303,91 @@ var NEWUX = (function($) {
                 });
         },
         loadContent: function(url) {
-            $( "#content" ).fadeTo(200, 0, function() {
-                // $('.maincontent').append("<div id='content-spinner'><i class='fas fa-circle-notch fa-spin'></i></div>");
-                // TODO... do a check to see that we're on the same domain.
-                let self = $(this),
-                    selector = "#content"; // This is the selector of the content we want to grab.
 
-                jQuery.ajax( {
-                    url: url,
-                    type: "GET",
-                    dataType: "html"
-                }).done( function( responseText ) {
+            // Start by fading out the existing content....
+            let complete = false,
+                faded = false,
+                elems = [],
+                $content = $( "#content" );
 
-                    // Save response for use in complete callback
-                    let response = arguments;
-
-                    // $.parseHTML will exclude scripts to avoid IE 'Permission Denied' errors
-                    let $responseHTML = jQuery( "<div>" ).append(jQuery.parseHTML( responseText ));
-                    let elems = $responseHTML.find( selector ).children();
-
-                    if(!elems.length && Pubnav.pagestate.children.length) {
-                        // If there's no content returned..... sometimes happens for root pages.... get the first child page.
-                            let new_url = Pubnav.pagestate.children[0].href;
-                        Pubnav.requestNewPage(new_url);
-                        return false;
-                    }
-
-                    // PDF Document
-                    let $pdf = $responseHTML.find('link[type="application/pdf"]'); // TODO! - This seems a bit too common and prone to error.
-                    if($pdf.length > 0) {
-                        Pubnav.pagestate.current.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
-                    } else {
-                        Pubnav.pagestate.current.pdfurl = "";
-                    }
-
-                    self.html(elems);
+            // Define what we're going to do when the content comes back.
+            function swapContent() {
+                if(faded && complete) {
+                    $content.html(elems);
                     document.body.scrollTop = document.documentElement.scrollTop = 0;
-                    self.fadeTo(200,1);
-
-                    // We need to call this after the page has been loaded... not in the request function.
+                    $content.fadeTo(200,1);
                     Pubnav.updatePageState();
+                } else {
+                    // We're not ready yet.
+                    return false;
+                }
+            }
 
-                    // $('#content-spinner').detach();
-
-                }).fail(function( jqXHR, status, error) {
-                    // If the request succeeds, this function gets "data", "status", "jqXHR"
-                    // but they are ignored because response was set above.
-                    // If it fails, this function gets "jqXHR", "status", "error"
-
-                    if(status === "error") {
-                        let msg = "Sorry but there was an error loading that page.";
-                        $( "#content" ).html( msg + " " + status + " " + jqXHR.statusText );
-                        $(this).fadeTo(200,1);
-                    }
-                });
-
-
+            // $('.maincontent').append("<div id='content-spinner'><i class='fas fa-circle-notch fa-spin'></i></div>");
+            // Fade out the current content.
+            $content.fadeTo(200, 0, function() {
+                faded = true;
+                swapContent();
             });
 
-            // TODO! If script tags are included within the content, I think that they'll be removed. We might want to figure out how to execute them!
+            // TODO... do a check to see that we're on the same domain.
+            let selector = "#content"; // This is the selector of the content we want to grab.
+
+            jQuery.ajax( {
+                url: url,
+                type: "GET",
+                dataType: "html"
+            }).done( function( responseText ) {
+
+                // Save response for use in complete callback
+                let response = arguments;
+
+                // $.parseHTML will exclude scripts to avoid IE 'Permission Denied' errors
+                let $responseHTML = jQuery( "<div>" ).append(jQuery.parseHTML( responseText ));
+                elems = $responseHTML.find( selector ).children();
+
+                // If no content.....
+                if(!elems.length ) {
+                    if(Pubnav.pagestate.children.length) {
+                        // sometimes happens for root pages.... look for the first child page.
+                        let new_url = Pubnav.pagestate.children[0].href;
+                        Pubnav.requestNewPage(new_url);
+                        return false;
+                    } else {
+                        // Fire an error?
+                        return false;
+                    }
+                } else {
+                    // Success....
+
+                    // PDF Document
+                    let $pdf = $responseHTML.find('link[type="application/pdf"]');
+                    if($pdf.length > 0) {
+                        Pubnav.pagestate.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
+                    } else {
+                        Pubnav.pagestate.pdfurl = "";
+                    }
+
+                    // Copyright
+                    let copyright = $responseHTML.find('meta[name="rights"]').attr('content');
+                    if (copyright !== 'undefined') {
+                        Pubnav.pagestate.copyright = copyright;
+
+                    }
+                    // copyright = `&copy; ${new Date().getFullYear()} Cloudera, Inc.`
+
+
+                    complete = true;
+                    swapContent();
+                }
+            }).fail(function( jqXHR, status, error) {
+                // If the request succeeds, this function gets "data", "status", "jqXHR"
+                // but they are ignored because response was set above.
+                // If it fails, this function gets "jqXHR", "status", "error"
+                let msg = "<p>Sorry but there was an error loading that page. " + status + " " + jqXHR.statusText + "</p>";
+                elems[0] = msg;
+                swapContent();
+            });
         },
         cleanNavData(data) {
             // Let's ensure a good ID for every item in the nav.
@@ -363,6 +402,9 @@ var NEWUX = (function($) {
                         // Use the text to build the ID... this might occur for menu items that have no page.
                         data[i].id = Utils.slugify(data[i].text);
                     }
+                } else {
+                    // We should still clean the ID.. just in case there are periods, slashes and stuff in it.
+                    data[i].id = data[i].id.replace(/([^a-z0-9-]+)/gi, '-');
                 }
                 // Now the ID has been defined... if the item has kids, let's iterate through those.
                 if (typeof data[i].sub === 'object') {
@@ -418,7 +460,6 @@ var NEWUX = (function($) {
             if(level > 1) {
                 $(`.ctoc li.open[data-level='${level}']`).each(function() {
                     let id = $(this).data('navid');
-                    console.log('This item is open: ' + id + ' Lets collapse it...');
                     Pubnav.contractNavElem(id);
                 });
             }
@@ -429,7 +470,6 @@ var NEWUX = (function($) {
             setTimeout(function() { $this.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
             // Ensure the parents are open too.
-
             $this.parents('.ctoc li:not(.open)').each(function() {
                 let $parent = $(this);
                 if($parent.data('level') > 2) {
@@ -438,11 +478,9 @@ var NEWUX = (function($) {
                     setTimeout(function() { $parent.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
                     let parent_id = $parent.data('navid');
-                    console.log('We found this parent item, which wasnt open: ' + parent_id);
                     if(!Pubnav.navstate.indexOf(parent_id)) {
                         Pubnav.navstate.push(parent_id);
                         localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
-                        console.log(Pubnav.navstate);
                     }
                 }
             });
@@ -451,7 +489,7 @@ var NEWUX = (function($) {
         contractNavElem: function(id) {
             // Contract the elem....
             // $(this).text('\uf107').siblings('ul').parent('li').removeClass('open sesame');
-            let $elem = $('.ctoc').find(`li[data-navid=${id}`);
+            let $elem = $('.ctoc').find(`li[data-navid=${id}]`);
             $elem.removeClass('sesame').children('.expand').text('\uf107');
 
             // Again the hack to hide the item after compression.... I think we could do this with keyframes instead. https://jsfiddle.net/jalbertbowdenii/mHRb8/
@@ -482,7 +520,6 @@ var NEWUX = (function($) {
                 return true;
 
             } else {
-                confirm('Debug: Outside click: URL not in navigation.json.') // TODO!!! - REMOVE THIS
                 return false;
             }
         },
@@ -560,12 +597,12 @@ var NEWUX = (function($) {
             // I've modified this so that the topic is the only breadcrumb at the top of the content page.
             if(this.pagestate.breadpath.length >= 2) {
                 let output = `<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`;
-                if(this.pagestate.current.pdfurl !== "") {
-                    output += `<a href="${this.pagestate.current.pdfurl}" target="_blank" class="pdficon"><i class="fa fa-file-pdf"></i></a>`
+                if(this.pagestate.pdfurl !== "") {
+                    output += `<a href="${this.pagestate.pdfurl}" target="_blank" class="pdficon"><i class="fa fa-file-pdf"></i></a>`
                 }
                 $('.inner-breadcrumbs').html(output).fadeTo(200, 1);
             } else {
-                $('.inner-breadcrumbs').fadeTo(200, 0);
+                $('.inner-breadcrumbs').fadeTo(200, 0).html("");
             }
 
             // Ensure the navigation menu is expanded and highlighting this page.
@@ -575,6 +612,9 @@ var NEWUX = (function($) {
             for(let id of Pubnav.navstate) {
                 this.expandNavElem(id);
             }
+
+            // Put the right copyright at the bottom of the page.
+            $('.copyright').html('<a href="/common/html/legal.html">' + Pubnav.pagestate.copyright + ' All rights reserved.</a>');
 
             /* Outer Breadcrumbs... putting the topic title up top.
             if(this.pagestate.breadpath.length >= 2) {
@@ -658,16 +698,6 @@ var NEWUX = (function($) {
         },
         slideClose: function() {
 
-        }
-    };
-
-    var Footer = {
-        init: () => {
-          let rights = $('meta[name="rights"]').attr('content'); // Querying wrong DOM... perhaps. This is querying the initial page load. If that's good enough, let's keep it. If you need it to query the copyright of each subsequent page import, we'd need to move this code into the Pubnav structure.
-          if (rights !== 'undefined') {
-              rights = `&copy; ${new Date().getFullYear()} Cloudera, Inc.`
-          }
-          $('cpage').append('<div class="copyright"><a href="/common/html/legal.html">' + rights + ' All rights reserved.</a></div>');
         }
     };
 
@@ -871,8 +901,6 @@ var NEWUX = (function($) {
                 .done(function(data) {
                 })
                 .fail(function(jqXHR, textStatus) {
-
-                    // alert( "Uh-oh, Search Request Failed" );
                     $('.lucene-results .waiting').hide();
                     $('.lucene-results .results').hide();
                     $('.lucene-results .fail').show();
@@ -976,7 +1004,6 @@ var NEWUX = (function($) {
     WhoAmI.init();
     Pubnav.init();
     ProductDrawer.init();
-    Footer.init();
     Search.init();
 
 }(jQuery));
