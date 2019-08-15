@@ -470,7 +470,7 @@ json:
         id: impala-reference/index.html
         sub: impala-reference/navigation.json
 
-      - text: Apache Impala SQL Language Reference
+      - text: Apache Impala SQL Reference
         href: impala-sql-reference/index.html
         id: impala-sql-reference/index.html
         sub: impala-sql-reference/navigation.json
