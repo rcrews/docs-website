@@ -28,8 +28,5 @@ publications:
 #      how they differ from approaches used for traditional relational
 #      database schemas.
 ---
-Cloudera Runtime provides different types of storage components that you
-can use depending on your data requirements. Apache Hadoop HDFS is a
-distributed file system for storing large volumes of data. Apache Kudu
-is a columnar data store that enables fast analytics on rapidly changing
-data.
+Apache Hadoop HDFS is a distributed file system for storing large volumes of data. 
+# Apache Kudu is a columnar data store that enables fast analytics on rapidly changing data.
