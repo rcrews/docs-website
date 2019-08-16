@@ -16,14 +16,30 @@ json:
         href: schema-registry-overview/content/schema_registry_overview.html
         id: schema-registry-overview
         sub: schema-registry-overview/navigation.json
+      - text: Streams Replication Manager Overview
+        href: srm-overview/index.html
+        id: srm-overview
+        sub: srm-overview/navigation.json
+      - text: Understanding Replication Flows
+        href: understanding-replication-flows/index.html
+        id: understanding-replication-flows
+        sub: understanding-replication-flows/navigation.json
+      - text: SRM Use Cases
+        href: srm-use-cases/index.html
+        id: srm-use-cases
+        sub: srm-use-cases/navigation.json
 
-  - text: Installation
+  - text: Installation & Upgrade
     name: install
     sub:
       - text: Installation
         href: installation/index.html
         id: installation
         sub: installation/navigation.json
+      - text: Upgrade
+        href: upgrade/index.html
+        id: upgrade
+        sub: upgrade/navigation.json
 
   - text: How To
     name: how-to
@@ -42,6 +58,19 @@ json:
         href: using-schema-registry/content/adding_a_new_schema.html
         id: using-schema-registry
         sub: using-schema-registry/navigation.json
+
+      - text: Configuring SRM
+        href: configuration/index.html
+        id: configuration
+        sub: configuration/navigation.json
+      - text: Securing SRM
+        href: srm-security/index.html
+        id: srm-security
+        sub: srm-security/navigation.json
+      - text: Using SRM
+        href: srm-using/index.html
+        id: srm-using-registry
+        sub: srm-using/navigation.json
 
       - text: Monitoring Kafka Clusters
         href: monitoring-kafka-clusters/index.html
@@ -65,16 +94,16 @@ json:
         sub: monitoring-kafka-cluster-replications/navigation.json
 
       - text: Using CDK
-        href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_using.html
+        href: /documentation/kafka/latest/topics/kafka_using.html
 
       - text: Using Kafka Streams
-        href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_streams.html
+        href: /documentation/kafka/latest/topics/kafka_streams.html
 
   - text: Reference
     name: reference
     sub:
       - text: Administering CDK
-        href: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_admin.html
+        href: /documentation/kafka/latest/topics/kafka_admin.html
 
   - text: Release Notes
     name: releasenotes
