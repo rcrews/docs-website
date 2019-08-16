@@ -42,7 +42,6 @@ json:
         id: collaboration-overview
         sub: collaboration-overview/navigation.json
 
-
   # - text: Planning
   #   id: planning
   #   sub:
@@ -123,7 +122,6 @@ json:
         href: backup/index.html
         id: backup
         sub: backup/navigation.json
-
 
   - text: Troubleshooting
     id: troubleshooting
