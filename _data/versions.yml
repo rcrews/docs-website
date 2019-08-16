@@ -763,6 +763,14 @@
 # /HDPDocuments/index.html and adjust the number of tiles to render
 # there.
 
+- name: Cloudera Data Platform
+  latest-version: cloud
+  latest-url: /cdp/cloud/index.html
+  search-name: cdp
+  versions:
+    - title: Cloud
+      url: /cdp/cloud/index.html
+
 - name: Management Console
   latest-version: cloud
   latest-url: /management-console/cloud/index.html

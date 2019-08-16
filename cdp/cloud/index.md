@@ -12,7 +12,7 @@ base-path: /cdp/cloud/
 #   - title: Concepts & Use Cases
 #     name: concepts
 #     books:
-#       - title: Overview
+#       - title: CDP Overview
 #         url: overview/index.html
 #
 #   # - title: Planning
@@ -40,7 +40,20 @@ base-path: /cdp/cloud/
 #   #   books:
 
 ---
-[product overview needed...]
+Cloudera Data Platform (CDP) is a secure and governed cloud service
+platform that offers a broad set of enterprise data cloud services with
+the key data analytics and artificial intelligence functionality that
+enterprises require.
+
+Addressing real-world business problems generally requires the
+application of multiple analytic functions working together on the same
+data; For example, autonomous vehicles require the application of both
+real-time data streaming and machine learning algorithms. CDP addresses
+this by offering multi-function data management and analytics that allow
+solving an enterprise’s most pressing data and analytic challenges in a
+streamlined fashion.
+
+CDP consists of the following services:
 
 * [Management Console](/management-console/cloud/index.html)
 * [Workload Manager](/workload-manager/cloud/index.html)

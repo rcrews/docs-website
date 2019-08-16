@@ -109,9 +109,9 @@ json:
             sub: cdp-governance-overview/navigation.json
           
           - text: Controlling Data Access with Tags
-            href: cdp-governance-control-access-tags/index.html
-            id: cdp-governance-control-access-tags
-            sub: cdp-governance-control-access-tags/navigation.json
+            href: cdp-governance-controlling-access-tags/index.html
+            id: cdp-governance-controlling-access-tags
+            sub: cdp-governance-controlling-access-tags/navigation.json
 
           - text: Extending Atlas to Manage Metadata from Additional Sources
             href: cdp-governance-extending-metadata/index.html
@@ -383,6 +383,11 @@ json:
             id: security-ranger-authorization
             sub: security-ranger-authorization/navigation.json
 
+          - text: Configuring Ranger Authentication with UNIX, LDAP, or AD
+            href: security-ranger-authentication-unix-ldap-ad/index.html
+            id: security-ranger-authentication-unix-ldap-ad
+            sub: security-ranger-authentication-unix-ldap-ad/navigation.json
+
       - text: Governance
         href: howto-governance.html
         sub:
@@ -465,7 +470,7 @@ json:
         id: impala-reference/index.html
         sub: impala-reference/navigation.json
 
-      - text: Apache Impala SQL Language Reference
+      - text: Apache Impala SQL Reference
         href: impala-sql-reference/index.html
         id: impala-sql-reference/index.html
         sub: impala-sql-reference/navigation.json
