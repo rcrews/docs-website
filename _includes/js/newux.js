@@ -167,13 +167,14 @@ var NEWUX = (function($) {
         product: '', // Holds a unique name for the product we're in, which is used as a key for saving the menu.
         pagestate: { // Will hold the current state of the page.
             current: {},
-            prev: "",
-            next: "",
+            prev: {},
+            next: {},
             depth: 0, // How many layers deep we are.
             breadpath: [],// Array of Parents... in descending order.
             children: [], // Flattened Array of Subs }
             pdfurl: "",
-            copyright: "&copy; " + new Date().getFullYear() + " Cloudera, Inc."
+            copyright: "&copy; " + new Date().getFullYear() + " Cloudera, Inc.",
+            count: 0
         },
         navstate: [], // Holds the list of open nav items in the menu... used to maintain state between loads.
         is_hash_link: false, // Used as a flag to work around the hashlinks also firing the popstate.
@@ -220,7 +221,6 @@ var NEWUX = (function($) {
             // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
             let url;
 
-            console.log(e);
             // Check it's a valid click.....
             if(e.type === 'click') {
 
@@ -252,8 +252,10 @@ var NEWUX = (function($) {
                 }
 
             } else if(e.type === 'popstate') {
+
+
                 if(Pubnav.is_hash_link) { // Hashes also fire popstate, and we only want to capture back/forward
-                    Pubnav.is_hash_link = false;
+                    Pubnav.is_hash_link = false; // reset
                     return true;
                 }
                 // the page history is changing... happens with back/forward button, but also hash links!
@@ -271,10 +273,10 @@ var NEWUX = (function($) {
             // Inject HTML Elements necessary for paging and the pubmenu
             if(!$('.ctoc').length) $('.pubmenu').append("<div class='ctoc'></div>");
 
-            if(!$('.short-prev').length)  $('.cpage').append('<div class="short-prev"><a href="">«</a></div>');
+            // if(!$('.short-prev').length)  $('.cpage').append('<div class="short-prev"><a href="">«</a></div>');
             if(!$('.short-next').length)  $('.cpage').append('<div class="short-next"><a href="">»</a></div>');
             // if(!$('up').length)  $('.cpage').append('<div class="up"></div>');
-            if(!$('.prev').length)  $('.cpage').append('<div class="prev"><a href=""></a></div>');
+            // if(!$('.prev').length)  $('.cpage').append('<div class="prev"><a href=""></a></div>');
             if(!$('.next').length)  $('.cpage').append('<div class="next"><a href=""></a></div>');
 
 
@@ -309,7 +311,7 @@ var NEWUX = (function($) {
                     let active_id = item.id;
 
                     // TODO! - We're looking for the page based on an id which we made up, but really we should just base it on the href which is always correct.
-                    let figured_pagestate = this.mapPageState(this.nav_tree, active_id);
+                    this.mapPageState(this.nav_tree, active_id);
 
                     // 3. Now build out the tree in HTML
                     let html = this.createHtmlTree(this.nav_tree);
@@ -401,12 +403,11 @@ var NEWUX = (function($) {
 
                     // Copyright
                     let copyright = $responseHTML.find('meta[name="rights"]').attr('content');
-                    if (copyright !== 'undefined') {
+                    if (typeof copyright !== 'undefined') {
                         Pubnav.pagestate.copyright = copyright;
-
+                    } else {
+                        Pubnav.pagestate.copyright = new Date().getFullYear()  + ' Cloudera, Inc.';
                     }
-                    // copyright = `&copy; ${new Date().getFullYear()} Cloudera, Inc.`
-
 
                     complete = true;
                     swapContent();
@@ -491,11 +492,15 @@ var NEWUX = (function($) {
             }
 
             // Collapse other menu items at the same level as this one:
+            // TODO!!! - Don't collapse an active navigation item.
             let level = $this.data('level');
             if(level > 1) {
                 $(`.ctoc li.open[data-level='${level}']`).each(function() {
-                    let id = $(this).data('navid');
-                    Pubnav.contractNavElem(id);
+                    if($(this).find('.active').length === 0) {
+                        // As long as it's not the parent of an active element.
+                        let id = $(this).data('navid');
+                        Pubnav.contractNavElem(id);
+                    }
                 });
             }
 
@@ -507,7 +512,7 @@ var NEWUX = (function($) {
             // Ensure the parents are open too.
             $this.parents('.ctoc li:not(.open)').each(function() {
                 let $parent = $(this);
-                if($parent.data('level') > 2) {
+                if($parent.data('level') > 1) {
                     $parent.children('.expand').text('\uf106');
                     $parent.addClass('open');
                     setTimeout(function() { $parent.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
@@ -545,6 +550,7 @@ var NEWUX = (function($) {
                 // If it's a page in the menu tree...
                 this.loadContent(url);
                 this.pagestate.breadpath.length = 0; // This should really be part of mapPageState, but I can't do it because I'm recursing on that function.
+                this.pagestate.next = {};
                 this.mapPageState(this.nav_tree, destination.id);
 
                 // Update history so the back button works.... We don't want this to fire if we're going back in time!
@@ -575,16 +581,23 @@ var NEWUX = (function($) {
         mapPageState: function(navarray, id) {
             // This searches for the id in the nav tree, and then sets up the back, forward etc.
 
+            let last_parent = [];
+            Pubnav.pagestate.count++;
             for(let i = 0; i < navarray.length; i++) {
                 if(navarray[i].id === id) {
                     // We found it!
                     this.pagestate.current = navarray[i];
 
-                    this.pagestate.prev = (i-1 >= 0) ? navarray[i-1] : ""; // TODO!!! - This should really be the parent if there is no sibling.
-                    this.pagestate.next = (i+1 < navarray.length) ?  navarray[i+1] : ""; // TODO!!! - This should really be the first child if the element has children!
+                    this.pagestate.prev = (i-1 >= 0) ? navarray[i-1] : ""; // TODO!!! - This should really be the parent if there is no prior sibling, but watch out for the autoredirection down on empty parents.
 
                     if(typeof navarray[i].sub === 'object') {
                         this.pagestate.children = Utils.flatten(navarray[i].sub); // Not currently being flattened.
+                        this.pagestate.next = navarray[i].sub[0];
+                        console.log('Found it, and the next is the first child: ' + navarray[i].sub[0].text)
+                    } else if(i+1 < navarray.length) {
+                        // no kids, so look for next item at the same level
+                        this.pagestate.next = navarray[i+1] ;
+                        console.log('Found it, and next is the next sibling: ' + navarray[i+1].text)
                     }
                     this.pagestate.depth = 1;
                     return true;
@@ -592,6 +605,11 @@ var NEWUX = (function($) {
                     // Check if the item has kids....
                     if(typeof navarray[i].sub === 'object') {
                         if(this.mapPageState(navarray[i].sub, id)) { // If the kid was it!
+                            if(i+1 < navarray.length && Utils.isEmpty(this.pagestate.next)) {
+                                // This sets the next page at the parent level by default.. which will probably get overridden again at the lower level.
+                                this.pagestate.next = navarray[i+1] ;
+                                console.log('Prepare parent next at level ' + Pubnav.pagestate.count + ' as: ' + this.pagestate.next.text);
+                            }
                             this.pagestate.breadpath.unshift(navarray[i]);
                             if(this.pagestate.depth === 1) {
                                 this.pagestate.parent = navarray[i];
@@ -599,10 +617,15 @@ var NEWUX = (function($) {
                             this.pagestate.depth++;
                             return true;
                         }
+                        else {
+                            Pubnav.pagestate.count--;
+                        }
                     }
 
                 }
+
             }
+
             return false; // didn't find a matching id?
 
 
@@ -612,7 +635,7 @@ var NEWUX = (function($) {
             // Title
             document.title = this.pagestate.current.text;
 
-            // Prev
+            /* Prev
             if(typeof this.pagestate.prev === 'object') {
                 $('.cpage').addClass('hasprev');
                 $('.cpage .prev a').attr('href', this.pagestate.prev.href).html('&laquo; ' + this.pagestate.prev.text);
@@ -620,6 +643,7 @@ var NEWUX = (function($) {
             } else {
                 $('.cpage').removeClass('hasprev');
             }
+            */
 
             // Next
             if(typeof this.pagestate.next === 'object') {
@@ -645,6 +669,7 @@ var NEWUX = (function($) {
             if(typeof Pubnav.pagestate.parent !== 'undefined' && !Pubnav.navstate.includes(Pubnav.pagestate.parent.id)) {
                 Pubnav.navstate.push(Pubnav.pagestate.parent.id);
             }
+
             for(let id of Pubnav.navstate) {
                 this.expandNavElem(id);
             }
@@ -1009,6 +1034,13 @@ var NEWUX = (function($) {
                 }
             }
             return id;
+        },
+        isEmpty:function(obj) {
+            for(var key in obj) {
+                if(obj.hasOwnProperty(key))
+                    return false;
+            }
+            return true;
         }
     };
 
