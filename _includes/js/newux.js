@@ -492,11 +492,15 @@ var NEWUX = (function($) {
             }
 
             // Collapse other menu items at the same level as this one:
+            // TODO!!! - Don't collapse an active navigation item.
             let level = $this.data('level');
             if(level > 1) {
                 $(`.ctoc li.open[data-level='${level}']`).each(function() {
-                    let id = $(this).data('navid');
-                    Pubnav.contractNavElem(id);
+                    if($(this).find('.active').length === 0) {
+                        // As long as it's not the parent of an active element.
+                        let id = $(this).data('navid');
+                        Pubnav.contractNavElem(id);
+                    }
                 });
             }
 
@@ -508,7 +512,7 @@ var NEWUX = (function($) {
             // Ensure the parents are open too.
             $this.parents('.ctoc li:not(.open)').each(function() {
                 let $parent = $(this);
-                if($parent.data('level') > 2) {
+                if($parent.data('level') > 1) {
                     $parent.children('.expand').text('\uf106');
                     $parent.addClass('open');
                     setTimeout(function() { $parent.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
@@ -601,7 +605,6 @@ var NEWUX = (function($) {
                     // Check if the item has kids....
                     if(typeof navarray[i].sub === 'object') {
                         if(this.mapPageState(navarray[i].sub, id)) { // If the kid was it!
-                            console.log('Found it and cleaning up' );
                             if(i+1 < navarray.length && Utils.isEmpty(this.pagestate.next)) {
                                 // This sets the next page at the parent level by default.. which will probably get overridden again at the lower level.
                                 this.pagestate.next = navarray[i+1] ;
@@ -666,6 +669,7 @@ var NEWUX = (function($) {
             if(typeof Pubnav.pagestate.parent !== 'undefined' && !Pubnav.navstate.includes(Pubnav.pagestate.parent.id)) {
                 Pubnav.navstate.push(Pubnav.pagestate.parent.id);
             }
+
             for(let id of Pubnav.navstate) {
                 this.expandNavElem(id);
             }
