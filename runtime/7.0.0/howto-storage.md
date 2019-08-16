@@ -51,9 +51,3 @@ publications:
 #      for Apache Impala.
 ---
 Apache HDFS is a distributed file system for storing large volumes of data.
-
-#Cloudera Runtime provides different types of storage components that you
-#can use depending on your data requirements. Apache HBase is a NoSQL
-#database that provides real-time read/write access to those large
-#datasets. Apache Kudu is a columnar data store that enables fast
-#analytics on rapidly changing data. 
