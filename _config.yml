@@ -20,7 +20,7 @@ email: docs@cloudera.com
 description: >- # this means to ignore newlines until "baseurl:"
   Cloudera technical documentation
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://docs-stage.cloudera.com"
+url: "http://docs-stage.cloudera.com"
 twitter_username: cloudera
 github_username:  cloudera
 
