@@ -121,7 +121,7 @@ var NEWUX = (function($) {
             $('.bread-product').html(`<a href='${WhoAmI.version.url}'>${WhoAmI.product_name}</a>`);
 
             // Change 'Cloud' to the Cloud Symbol
-            if (WhoAmI.version.title.trim().toLowerCase() === 'cloud') {
+            if (typeof WhoAmI.version.title === 'string' && WhoAmI.version.title.trim().toLowerCase() === 'cloud') {
                 $('.bread-version').html('<i class="fa fa-cloud"></i>');
             } else {
                 $('.bread-version').html(WhoAmI.version.title);
@@ -176,6 +176,7 @@ var NEWUX = (function($) {
             copyright: "&copy; " + new Date().getFullYear() + " Cloudera, Inc."
         },
         navstate: [], // Holds the list of open nav items in the menu... used to maintain state between loads.
+        is_hash_link: false, // Used as a flag to work around the hashlinks also firing the popstate.
         init: function() {
             this.setupNav();
         },
@@ -218,26 +219,54 @@ var NEWUX = (function($) {
         handleNewPageRequest: function(e) {
             // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
             let url;
+
+            console.log(e);
             // Check it's a valid click.....
             if(e.type === 'click') {
-                let obj = new URL(this.href);
-                if(window.location.hostname !== obj.hostname) {
+
+                // If it's designated with a class of external.
+                if($(this).closest('li').hasClass('external')) {
                     return true;
                 }
-                // check we're linking in the same site.
-                url = obj.pathname;
-            } else {
-                // looking for the back button?
-                url = location.pathname;
-            }
-            if(url.indexOf('.pdf') === -1) {
-                // We still want to allow the links to the PDF to work.
-                // TODO!!! - We should also check if they are in the same product root too.
-                if(Pubnav.requestNewPage(url) && e.type === 'click') {
-                    e.preventDefault();
+
+                url = this.getAttribute('href');
+
+                // If it starts with a hash, assume it's an in-page reference and bail..
+                if(!url.indexOf('#')) {
+                    Pubnav.is_hash_link = true;
+                    // Also add some spacing so that it doesn't get covered up by the nav.
+                    let anchor = url.substr(url.indexOf('#'));
+                    $(anchor).addClass('hashpad');
+                    return true;
                 }
+
+                // If a protoocol is specified, assume it's an external link, and don't intercept.
+                if(!url.indexOf('http')) {
+                    // will return if http is at the beginning of the string.
+                    return true;
+                }
+
+                // If it's a PDF document, pass on it too....
+                if(url.indexOf('.pdf') !== -1) {
+                    return true;
+                }
+
+            } else if(e.type === 'popstate') {
+                if(Pubnav.is_hash_link) { // Hashes also fire popstate, and we only want to capture back/forward
+                    Pubnav.is_hash_link = false;
+                    return true;
+                }
+                // the page history is changing... happens with back/forward button, but also hash links!
+                url = location.pathname;
+                console.log(url);
             }
-       },
+
+            Pubnav.requestNewPage(url);
+
+            if(e.type === 'click') {
+                e.preventDefault();
+            }
+        },
         setupNav: function() {
             // Inject HTML Elements necessary for paging and the pubmenu
             if(!$('.ctoc').length) $('.pubmenu').append("<div class='ctoc'></div>");
@@ -293,7 +322,7 @@ var NEWUX = (function($) {
                     } else {
                         Pubnav.pagestate.pdfurl = "";
                     }
-                    
+
                     // 5. Bind Event Handlers
                     this.bindEvents();
 
@@ -303,6 +332,8 @@ var NEWUX = (function($) {
                 });
         },
         loadContent: function(url) {
+
+            console.log('loading new content...');
 
             // Start by fading out the existing content....
             let complete = false,
@@ -384,6 +415,7 @@ var NEWUX = (function($) {
                 // If the request succeeds, this function gets "data", "status", "jqXHR"
                 // but they are ignored because response was set above.
                 // If it fails, this function gets "jqXHR", "status", "error"
+                complete = true;
                 let msg = "<p>Sorry but there was an error loading that page. " + status + " " + jqXHR.statusText + "</p>";
                 elems[0] = msg;
                 swapContent();
@@ -431,6 +463,9 @@ var NEWUX = (function($) {
                 }
                 if('sub' in item) {
                     css += "xp ";
+                }
+                if('external' in item) {
+                    css += "external ";
                 }
                 if('href' in item) {
                     html += `<li class='${css}' data-navid='${item.id}' data-level='${level}'><span class='item'><a href='${item.href}'>${item.text}</a></span>`;
@@ -503,6 +538,7 @@ var NEWUX = (function($) {
             localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         },
         requestNewPage: function(url) {
+            console.log('requesting a new page');
             // Confirm this is actually in the menu tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
             if(destination) {
@@ -802,8 +838,8 @@ var NEWUX = (function($) {
         fireQuery: function(searchterm, nextCursorMark) {
             var that = this;
             var q  = searchterm == null ? filterSearchTerm($('#overlay-search .searchterm').val()) : searchterm,
-                fq = "((product:\\\"Ambari\\\" AND release:2.7.3.0))",
-                // For Example: fq = WhoAmI.product_name ? "(product:\"" + WhoAmI.product_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
+                // For Example: fq = "((product:\\\"Ambari\\\" AND release:2.7.3.0))",
+                fq = WhoAmI.product_name ? "(product:\"" + WhoAmI.product_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
                 rows = 10,
                 params = {},
                 defaults = "&sort=score desc,id asc&facet=true&facet.field=product&facet.field=release&facet.field=booktitle&hl=true&hl.fl=text&fl=id,score,url,product,release,booktitle,title",
@@ -898,21 +934,20 @@ var NEWUX = (function($) {
                     }
                 }
             })
-                .done(function(data) {
-                })
-                .fail(function(jqXHR, textStatus) {
-                    $('.lucene-results .waiting').hide();
-                    $('.lucene-results .results').hide();
-                    $('.lucene-results .fail').show();
-                    var err_msg = '<h2><i class="fa fa-frown-o"></i> Uh-oh, the search request failed</h2>';
-                    err_msg += '<p>' + textStatus + '</p>';
+            .done(function(data) {
+            })
+            .fail(function(jqXHR, textStatus) {
+                $('.lucene-results .waiting').hide();
+                $('.lucene-results .results').hide();
+                $('.lucene-results .fail').show();
+                var err_msg = '<h2><i class="fa fa-frown-o"></i> Uh-oh, the search request failed</h2>';
+                err_msg += '<p>' + textStatus + '</p>';
 
-                    $('.lucene-results .fail').html(err_msg);
-                })
-                .always(function() {
-                    // complete
-                });
-
+                $('.lucene-results .fail').html(err_msg);
+            })
+            .always(function() {
+                // complete
+            });
         }
     };
 
