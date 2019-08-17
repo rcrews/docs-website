@@ -141,7 +141,7 @@ json:
       - text: Storage
         href: howto-storage.html
         sub:
-          - text: Scaling Namespaces and Optimizing Data Storage
+          - text: Managing Data Storage
             href: scaling-namespaces/index.html
             id: scaling-namespaces
             sub: scaling-namespaces/navigation.json
