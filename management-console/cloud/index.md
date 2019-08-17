@@ -6,7 +6,7 @@ base-path: /management-console/cloud/
 
 sections:
   - title: Release Notes
-    name: releasenotes
+    name: release-notes
     books:
       - title: Release Notes
         url: release-notes/index.html
