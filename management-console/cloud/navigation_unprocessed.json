@@ -95,7 +95,7 @@ json:
   #   sub:
 
   - text: Release Notes
-    id: releasenotes
+    id: release-notes
     sub:
       - text: Release Notes
         href: release-notes/index.html
