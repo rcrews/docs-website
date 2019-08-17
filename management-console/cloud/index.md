@@ -61,10 +61,10 @@ sections:
 #         url: sdk/index.html
 #
 #   - title: Troubleshooting
-#     name: troubleshooting
+#     name: troubleshoot
 #     books:
 #       - title: Troubleshooting
-#         url: troubleshooting/index.html
+#         url: troubleshoot/index.html
 #
 #   # - title: Reference
 #   #   name: reference
