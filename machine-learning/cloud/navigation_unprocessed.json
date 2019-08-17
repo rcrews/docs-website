@@ -42,9 +42,14 @@ json:
         id: collaboration-overview
         sub: collaboration-overview/navigation.json
 
-  # - text: Planning
-  #   id: planning
-  #   sub:
+
+  - text: Planning
+    id: planning
+    sub:
+      - text: AWS Requirements
+        href: requirements-aws/index.html
+        id: requirements-aws
+        sub: requirements-aws/navigation.json
 
   # - text: Installation & Upgrade
   #   id: installation
