@@ -12,7 +12,7 @@ json:
   - text: Concepts & Use Cases
     id: concepts
     sub:
-      - text: Core Concepts
+      - text: Overview
         href: core-concepts/index.html
         id: core-concepts
         sub: core-concepts/navigation.json
@@ -41,9 +41,13 @@ json:
   #   id: reference
   #   sub:
 
-  # - text: Release Notes
-  #   id: releasenotes
-  #   sub:
+  - text: Release Notes
+    id: releasenotes
+    sub:
+      - text: Release Notes
+        href: release-notes/index.html
+        id: release-notes
+        sub: release-notes/navigation.json
 
   # - text: Learning & Training
   #   id: learning

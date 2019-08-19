@@ -86,16 +86,16 @@ json:
     id: troubleshooting
     sub:
       - text: Troubleshooting
-        href: troubleshooting/index.html
-        id: troubleshooting
-        sub: troubleshooting/navigation.json
+        href: troubleshoot/index.html
+        id: troubleshoot
+        sub: troubleshoot/navigation.json
 
   # - text: Reference
   #   id: reference
   #   sub:
 
   - text: Release Notes
-    id: releasenotes
+    id: release-notes
     sub:
       - text: Release Notes
         href: release-notes/index.html

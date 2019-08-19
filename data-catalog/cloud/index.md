@@ -4,15 +4,17 @@ title: Cloudera Data Catalog
 version: cloud
 base-path: /data-catalog/cloud/
 
-# sections:
-#   # - title: Release Notes
-#   #   name: releasenotes
-#   #   books:
-#
+sections:
+  - title: Release Notes
+    name: releasenotes
+    books:
+      - title: Release Notes
+        url: release-notes/index.html
+
 #   - title: Concepts & Use Cases
 #     name: concepts
 #     books:
-#       - title: Core Concepts
+#       - title: Overview
 #         url: core-concepts/index.html
 #
 #   # - title: Planning
