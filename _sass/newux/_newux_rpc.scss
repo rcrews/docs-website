@@ -1,5 +1,8 @@
 #content, .content {
 
+  .parentlink       { margin-top:20px; } // Add a bit of space between content and the parent link.
+
+
   // http://docs-stage.cloudera.com/data-hub/cloud/recipes/topics/mc-recipe-parameters.html
   table.table {
     table-layout: fixed;

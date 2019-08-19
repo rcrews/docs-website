@@ -48,7 +48,7 @@ var NEWUX = (function($) {
                                 for(let j = 0; j < data[i].versions.length; j++) {
                                     // Store the versions for our lookup table.
                                     versions[j] = {
-                                        title: data[i].versions[j].title,
+                                        title:  Number.isInteger(data[i].versions[j].title) ? data[i].versions[j].title.toFixed(1) : data[i].versions[j].title,
                                         url: data[i].versions[j].url,
                                         minors: []
                                     };
@@ -81,6 +81,7 @@ var NEWUX = (function($) {
                                                     title: data[i].versions[j].minors[k].title,
                                                     url: data[i].versions[j].minors[k].url
                                                 };
+                                                console.log(WhoAmI.version);
                                                 found = true;
                                             }
                                         }
@@ -90,9 +91,13 @@ var NEWUX = (function($) {
                         }
 
 
-
                         // It might now be found... if so, set our thingy's
                         if(found) {
+                            // If versions.yaml didn't quote the version number they might now be integers missing the decimal point versus strings
+                            if(Number.isInteger(WhoAmI.version.title)) {
+                                WhoAmI.version.title = WhoAmI.version.title.toFixed(1);
+                            }
+
                             if(WhoAmI.product_name === "") WhoAmI.product_name = data[i].name;
                             WhoAmI.versions = versions;
                             if(typeof data[i].latest_version !== 'undefined') {
@@ -129,7 +134,7 @@ var NEWUX = (function($) {
 
             // Create a pulldown list for all the versions.
             let output = "";
-            if(WhoAmI.versions.length) {
+            if(WhoAmI.versions.length > 1) {
                 $('.bread-version').append(' <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>');
                 WhoAmI.versions.forEach(function(el) {
                     if(el.title !== WhoAmI.version.title) {
@@ -191,8 +196,27 @@ var NEWUX = (function($) {
             $('.ctoc li.xp').on('click', this.handleNavOpen);
             $('.ctoc .expand').on('click', this.handleNavContract);
 
+            // Collapse/Expand All
+            $('.collapse-ctoc').on('click', this.handleCollapseAll);
+
             // Back Button Clicks.
             $(window).bind("popstate", this.handleNewPageRequest);
+        },
+        handleCollapseAll: function(e) {
+          //
+          let $this = $(this);
+          if($this.hasClass('collapse')) {
+              $this.removeClass('collapse');
+              $this.find('i').removeClass('fa-angle-double-up').addClass('fa-angle-double-down');
+              $('li.xp').removeClass('open sesame');
+              localStorage.setItem(Pubnav.product + '_navstate', '');
+          } else {
+              $this.addClass('collapse');
+              $this.find('i').removeClass('fa-angle-double-down').addClass('fa-angle-double-up')
+              $('li.xp').addClass('open sesame');
+              localStorage.setItem(Pubnav.product + '_navstate', '');
+          }
+
         },
         handleNavOpen: function(evt) {
             evt.stopPropagation();
@@ -219,7 +243,8 @@ var NEWUX = (function($) {
         },
         handleNewPageRequest: function(e) {
             // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
-            let url;
+            let url, hash = "";
+            console.log('handle new page request');
 
             // Check it's a valid click.....
             if(e.type === 'click') {
@@ -251,19 +276,21 @@ var NEWUX = (function($) {
                     return true;
                 }
 
+                // normalize the URL path for future use...
+                let obj = new URL(this.href);
+                url = obj.pathname;
+                hash = obj.hash;
+
             } else if(e.type === 'popstate') {
-
-
                 if(Pubnav.is_hash_link) { // Hashes also fire popstate, and we only want to capture back/forward
                     Pubnav.is_hash_link = false; // reset
                     return true;
                 }
                 // the page history is changing... happens with back/forward button, but also hash links!
                 url = location.pathname;
-                console.log(url);
             }
 
-            Pubnav.requestNewPage(url);
+            Pubnav.requestNewPage(url, hash);
 
             if(e.type === 'click') {
                 e.preventDefault();
@@ -272,6 +299,9 @@ var NEWUX = (function($) {
         setupNav: function() {
             // Inject HTML Elements necessary for paging and the pubmenu
             if(!$('.ctoc').length) $('.pubmenu').append("<div class='ctoc'></div>");
+            if(!$('.collapse-ctoc').length) $('.ctoc').append("<div class='collapse-ctoc collapse'><i class='fa fa-angle-double-up'></i></div>");
+            if(!$('.bread-category').length) $('.breadcrumbs').append('<span class="bread-category"></span>');
+
 
             // if(!$('.short-prev').length)  $('.cpage').append('<div class="short-prev"><a href="">«</a></div>');
             if(!$('.short-next').length)  $('.cpage').append('<div class="short-next"><a href="">»</a></div>');
@@ -333,10 +363,7 @@ var NEWUX = (function($) {
 
                 });
         },
-        loadContent: function(url) {
-
-            console.log('loading new content...');
-
+        loadContent: function(url, hash) {
             // Start by fading out the existing content....
             let complete = false,
                 faded = false,
@@ -347,7 +374,14 @@ var NEWUX = (function($) {
             function swapContent() {
                 if(faded && complete) {
                     $content.html(elems);
-                    document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    if(hash !== "") {
+                        hash = hash.substr(1);
+                        let el = document.getElementById(hash);
+                        el.className += ' hashpad';
+                        el.scrollIntoView();
+                    } else {
+                        document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    }
                     $content.fadeTo(200,1);
                     Pubnav.updatePageState();
                 } else {
@@ -542,13 +576,16 @@ var NEWUX = (function($) {
             }
             localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         },
-        requestNewPage: function(url) {
-            console.log('requesting a new page');
-            // Confirm this is actually in the menu tree...
+        requestNewPage: function(url, hash) {
+
+            // Only load if the url is actually in the nav tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
             if(destination) {
                 // If it's a page in the menu tree...
-                this.loadContent(url);
+
+                this.loadContent(url, hash);
+
+                // Watch out. Everything after this, will run before the content has finished loading.
                 this.pagestate.breadpath.length = 0; // This should really be part of mapPageState, but I can't do it because I'm recursing on that function.
                 this.pagestate.next = {};
                 this.mapPageState(this.nav_tree, destination.id);
@@ -593,11 +630,9 @@ var NEWUX = (function($) {
                     if(typeof navarray[i].sub === 'object') {
                         this.pagestate.children = Utils.flatten(navarray[i].sub); // Not currently being flattened.
                         this.pagestate.next = navarray[i].sub[0];
-                        console.log('Found it, and the next is the first child: ' + navarray[i].sub[0].text)
                     } else if(i+1 < navarray.length) {
                         // no kids, so look for next item at the same level
                         this.pagestate.next = navarray[i+1] ;
-                        console.log('Found it, and next is the next sibling: ' + navarray[i+1].text)
                     }
                     this.pagestate.depth = 1;
                     return true;
@@ -608,8 +643,21 @@ var NEWUX = (function($) {
                             if(i+1 < navarray.length && Utils.isEmpty(this.pagestate.next)) {
                                 // This sets the next page at the parent level by default.. which will probably get overridden again at the lower level.
                                 this.pagestate.next = navarray[i+1] ;
-                                console.log('Prepare parent next at level ' + Pubnav.pagestate.count + ' as: ' + this.pagestate.next.text);
                             }
+                            // Detect if it's a foyer page
+                            // Look at the URL.... if the file is in the third slot add a foyer flag.
+                            let foyer = false;
+                            if(navarray[i].href !== undefined) {
+                                let url = new URL(navarray[i].href, window.location.origin);
+                                let chunks = url.pathname.split('/');
+                                if(chunks.length === 4) {
+                                    //topic foyer for the topic, product foyer for the product page.
+                                    foyer = (chunks[3].indexOf('index.html') === -1) ? "section-foyer" : "product-foyer";
+                                }
+                            }
+                            navarray[i].foyer = foyer;
+
+                            // Add item to breadpath.
                             this.pagestate.breadpath.unshift(navarray[i]);
                             if(this.pagestate.depth === 1) {
                                 this.pagestate.parent = navarray[i];
@@ -621,14 +669,9 @@ var NEWUX = (function($) {
                             Pubnav.pagestate.count--;
                         }
                     }
-
                 }
-
             }
-
             return false; // didn't find a matching id?
-
-
         },
         updatePageState: function() {
             // Update the page elems based on current situation!
@@ -646,7 +689,7 @@ var NEWUX = (function($) {
             */
 
             // Next
-            if(typeof this.pagestate.next === 'object') {
+            if(typeof this.pagestate.next === 'object' && !Utils.isEmpty(this.pagestate.next)) {
                 $('.cpage').addClass('hasnext');
                 $('.cpage .next a').attr('href', this.pagestate.next.href).html(this.pagestate.next.text + ' &raquo;');
                 $('.cpage .short-next a').attr('href', this.pagestate.next.href);
@@ -656,7 +699,8 @@ var NEWUX = (function($) {
 
             // I've modified this so that the topic is the only breadcrumb at the top of the content page.
             if(this.pagestate.breadpath.length >= 2) {
-                let output = `<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`;
+                let x = this.pagestate.breadpath[1].foyer ? 2 : 1;
+                let output = `<a href="${this.pagestate.breadpath[x].href}">${this.pagestate.breadpath[x].text}</a>`;
                 if(this.pagestate.pdfurl !== "") {
                     output += `<a href="${this.pagestate.pdfurl}" target="_blank" class="pdficon"><i class="fa fa-file-pdf"></i></a>`
                 }
@@ -664,26 +708,6 @@ var NEWUX = (function($) {
             } else {
                 $('.inner-breadcrumbs').fadeTo(200, 0).html("");
             }
-
-            // Ensure the navigation menu is expanded and highlighting this page.
-            if(typeof Pubnav.pagestate.parent !== 'undefined' && !Pubnav.navstate.includes(Pubnav.pagestate.parent.id)) {
-                Pubnav.navstate.push(Pubnav.pagestate.parent.id);
-            }
-
-            for(let id of Pubnav.navstate) {
-                this.expandNavElem(id);
-            }
-
-            // Put the right copyright at the bottom of the page.
-            $('.copyright').html('<a href="/common/html/legal.html">' + Pubnav.pagestate.copyright + ' All rights reserved.</a>');
-
-            /* Outer Breadcrumbs... putting the topic title up top.
-            if(this.pagestate.breadpath.length >= 2) {
-                let output = `<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`;
-                $('.bread-category').html(output);
-            }
-            */
-
             /* Inner Breadcrumbs
             if(this.pagestate.breadpath.length >= 3) {
                 let output = "";
@@ -698,6 +722,29 @@ var NEWUX = (function($) {
                 $('.inner-breadcrumbs').fadeTo(200, 0);
             }
             */
+
+            // Ensure the navigation menu is expanded and highlighting this page.
+            if(typeof Pubnav.pagestate.parent !== 'undefined' && !Pubnav.navstate.includes(Pubnav.pagestate.parent.id)) {
+                Pubnav.navstate.push(Pubnav.pagestate.parent.id);
+            }
+
+            for(let id of Pubnav.navstate) {
+                this.expandNavElem(id);
+            }
+
+            // Put the right copyright at the bottom of the page.
+            $('.copyright').html('<a href="/common/html/legal.html">' + Pubnav.pagestate.copyright + ' All rights reserved.</a>');
+
+            // Outer Breadcrumbs... putting the topic title up top.
+            if(this.pagestate.breadpath.length >= 2) {
+                // Only if it's a topic title. Breadpath[0] is likely to be a category. Breadpath[1] Might be the topic title.
+                if(this.pagestate.breadpath[1].foyer === 'section-foyer') {
+                    $('.bread-category').html(`<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`);
+                }
+            }
+
+
+
 
             // Set the active item in the menu.
             $('.ctoc li').removeClass('active');

@@ -6,6 +6,7 @@
    */
   .codeblock {
     font-family: monospace;
+    white-space: pre-wrap;
   }
 
   .codeph {
@@ -253,31 +254,22 @@
   */
 
   .topictitle2 {
-    font-size: 1.17rem;
-    margin-bottom: 0.45rem;
-    margin-top: 1pc;
+    @extend h2;
   }
 
   .topictitle3 {
-    font-size: 1.17rem;
-    font-weight: 400;
-    margin-bottom: 0.17rem;
-    margin-top: 1pc;
+    @extend h3;
   }
 
   .topictitle4 {
-    font-size: 1.17rem;
-    font-weight: 400;
-    margin-top: 0.83rem;
+    @extend h4;
   }
 
   .topictitle5 {
-    font-size: 1.17rem;
-    font-weight: 400;
+    font-weight:bold;
   }
 
   .topictitle6 {
-    font-size: 1.17rem;
     font-style: italic;
   }
 
