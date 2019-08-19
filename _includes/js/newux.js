@@ -1,4 +1,9 @@
-// Testing this
+/**
+ * NEWUX - Functionality associated with the 2019 Rework of the Cloudera Documentation.
+ *
+ * @link   http://docs.cloudera.com
+ * @author James Dilworth - james@jamesdilworth.com
+ */
 var NEWUX = (function($) {
     'use strict';
 
@@ -183,6 +188,7 @@ var NEWUX = (function($) {
         },
         navstate: [], // Holds the list of open nav items in the menu... used to maintain state between loads.
         is_hash_link: false, // Used as a flag to work around the hashlinks also firing the popstate.
+        clicktrack: 0, // Used to stop the loadContent function from racing if the nav.json and fiiles are incorrect.
         init: function() {
             this.setupNav();
         },
@@ -244,6 +250,7 @@ var NEWUX = (function($) {
         handleNewPageRequest: function(e) {
             // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
             let url, hash = "";
+            Pubnav.clicktrack = 0;
             // Check it's a valid click.....
             if(e.type === 'click') {
 
@@ -362,6 +369,8 @@ var NEWUX = (function($) {
                 });
         },
         loadContent: function(url, hash) {
+            Pubnav.clicktrack++; // This is just used to prevent runaway clicks. 
+
             // Start by fading out the existing content....
             let complete = false,
                 faded = false,
@@ -414,7 +423,7 @@ var NEWUX = (function($) {
 
                 // If no content.....
                 if(!elems.length ) {
-                    if(Pubnav.pagestate.children.length) {
+                    if(Pubnav.pagestate.children.length && Pubnav.clicktrack < 4) {
                         // sometimes happens for root pages.... look for the first child page.
                         let new_url = Pubnav.pagestate.children[0].href;
                         Pubnav.requestNewPage(new_url);
@@ -576,7 +585,6 @@ var NEWUX = (function($) {
             localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         },
         requestNewPage: function(url, hash) {
-
             // Only load if the url is actually in the nav tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
             if(destination) {
@@ -623,7 +631,6 @@ var NEWUX = (function($) {
                 if(navarray[i].id === id) {
                     // We found it!
                     this.pagestate.current = navarray[i];
-
                     this.pagestate.prev = (i-1 >= 0) ? navarray[i-1] : ""; // TODO!!! - This should really be the parent if there is no prior sibling, but watch out for the autoredirection down on empty parents.
 
                     if(typeof navarray[i].sub === 'object') {
