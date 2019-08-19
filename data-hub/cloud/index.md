@@ -6,7 +6,7 @@ base-path: /data-hub/cloud/
 
 sections:
   - title: Release Notes
-    name: releasenotes
+    name: release-notes
     books:
       - title: Release Notes
         url: release-notes/index.html

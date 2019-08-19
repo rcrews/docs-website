@@ -12,7 +12,7 @@ base-path: /data-catalog/cloud/
 #   - title: Concepts & Use Cases
 #     name: concepts
 #     books:
-#       - title: Core Concepts
+#       - title: Overview
 #         url: core-concepts/index.html
 #
 #   # - title: Planning

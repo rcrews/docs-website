@@ -6,7 +6,7 @@ base-path: /management-console/cloud/
 
 sections:
   - title: Release Notes
-    name: releasenotes
+    name: release-notes
     books:
       - title: Release Notes
         url: release-notes/index.html
@@ -61,10 +61,10 @@ sections:
 #         url: sdk/index.html
 #
 #   - title: Troubleshooting
-#     name: troubleshooting
+#     name: troubleshoot
 #     books:
 #       - title: Troubleshooting
-#         url: troubleshooting/index.html
+#         url: troubleshoot/index.html
 #
 #   # - title: Reference
 #   #   name: reference
