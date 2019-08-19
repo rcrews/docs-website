@@ -244,8 +244,6 @@ var NEWUX = (function($) {
         handleNewPageRequest: function(e) {
             // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
             let url, hash = "";
-            console.log('handle new page request');
-
             // Check it's a valid click.....
             if(e.type === 'click') {
 
@@ -374,7 +372,8 @@ var NEWUX = (function($) {
             function swapContent() {
                 if(faded && complete) {
                     $content.html(elems);
-                    if(hash !== "") {
+                    if(hash !== "" && typeof hash !== 'undefined') {
+                        console.log(hash);
                         hash = hash.substr(1);
                         let el = document.getElementById(hash);
                         el.className += ' hashpad';
@@ -700,8 +699,11 @@ var NEWUX = (function($) {
             // I've modified this so that the topic is the only breadcrumb at the top of the content page.
             if(this.pagestate.breadpath.length >= 2) {
                 let x = this.pagestate.breadpath[1].foyer ? 2 : 1;
-                let output = `<a href="${this.pagestate.breadpath[x].href}">${this.pagestate.breadpath[x].text}</a>`;
-                if(this.pagestate.pdfurl !== "") {
+                let output = "";
+                if(typeof this.pagestate.breadpath[x] !== 'undefined') {
+                    output += `<a href="${this.pagestate.breadpath[x].href}">${this.pagestate.breadpath[x].text}</a>`;
+                }
+                 if(this.pagestate.pdfurl !== "") {
                     output += `<a href="${this.pagestate.pdfurl}" target="_blank" class="pdficon"><i class="fa fa-file-pdf"></i></a>`
                 }
                 $('.inner-breadcrumbs').html(output).fadeTo(200, 1);
