@@ -43,9 +43,13 @@ json:
         sub: collaboration-overview/navigation.json
 
 
-  # - text: Planning
-  #   id: planning
-  #   sub:
+  - text: Planning
+    id: planning
+    sub:
+      - text: AWS Requirements
+        href: requirements-aws/index.html
+        id: requirements-aws
+        sub: requirements-aws/navigation.json
 
   # - text: Installation & Upgrade
   #   id: installation
@@ -124,7 +128,6 @@ json:
         id: backup
         sub: backup/navigation.json
 
-
   - text: Troubleshooting
     id: troubleshooting
     sub:
@@ -156,9 +159,13 @@ json:
         id: jupyter
         sub: jupyter/navigation.json
 
-  # - text: Release Notes
-  #   id: releasenotes
-  #   sub:
+  - text: Release Notes
+    id: releasenotes
+    sub:
+      - text: Release Notes
+        href: release-notes/index.html
+        id: release-notes
+        sub: release-notes/navigation.json
 
   # - text: Learning & Training
   #   id: learning

@@ -4,22 +4,22 @@ breadcrumb-title: HDP
 title: Upgrade
 publications:
   - title: Apache Ambari Major Upgrade
-    url: ../../Ambari-2.7.3.0/bk_ambari-upgrade-major/index.html
+    url: ../../Ambari-2.7.4.0/bk_ambari-upgrade-major/index.html
     description: >-
       Describes upgrading Ambari and stack components from HDP 2.6.x to
       the latest versions.
   - title: Apache Ambari Minor Upgrade
-    url: ../../Ambari-2.7.3.0/bk_ambari-upgrade/index.html
+    url: ../../Ambari-2.7.4.0/bk_ambari-upgrade/index.html
     description: >-
       Describes upgrading Ambari and stack components from HDP 3.0.0 to
       the latest versions.
   - title: Apache Ambari Major Upgrade for IBM Power Systems
-    url: ../../Ambari-2.7.3.0/bk_ambari-upgrade-major-ppc/index.html
+    url: ../../Ambari-2.7.4.0/bk_ambari-upgrade-major-ppc/index.html
     description: >-
       Describes upgrading Ambari and stack components from HDP 2.6.x to
       the latest versions on IBM Power Systems.
   - title: Apache Ambari Minor Upgrade for IBM Power Systems
-    url: ../../Ambari-2.7.3.0/bk_ambari-upgrade-ppc/index.html
+    url: ../../Ambari-2.7.4.0/bk_ambari-upgrade-ppc/index.html
     description: >-
       Describes upgrading Ambari and stack components from HDP 3.0.0 to
       the latest versions on IBM Power Systems.

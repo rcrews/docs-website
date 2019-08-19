@@ -107,7 +107,7 @@ json:
             href: cdp-governance-overview/index.html
             id: cdp-governance-overview
             sub: cdp-governance-overview/navigation.json
-          
+
           - text: Controlling Data Access with Tags
             href: cdp-governance-controlling-access-tags/index.html
             id: cdp-governance-controlling-access-tags
@@ -141,7 +141,7 @@ json:
       - text: Storage
         href: howto-storage.html
         sub:
-          - text: Scaling Namespaces and Optimizing Data Storage
+          - text: Managing Data Storage
             href: scaling-namespaces/index.html
             id: scaling-namespaces
             sub: scaling-namespaces/navigation.json
@@ -415,15 +415,15 @@ json:
       - text: Cluster Management
         href: howto-cluster-management.html
         sub:
-          - text: Configuring Clusters
-            href: configuring-clusters/index.html
-            id: configuring-clusters
-            sub: configuring-clusters/navigation.json
-
           - text: Managing Data Hub Clusters
             href: managing-clusters/index.html
             id: managing-clusters
             sub: managing-clusters/navigation.json
+
+          - text: Configuring Data Hub Clusters
+            href: configuring-clusters/index.html
+            id: configuring-clusters
+            sub: configuring-clusters/navigation.json
 
           - text: Monitoring and Diagnostics
             href: monitoring-and-diagnostics/index.html

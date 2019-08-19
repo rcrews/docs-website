@@ -8,11 +8,11 @@ title: Storage
 # * Kudu
 
 publications:
-  - title: Scaling Namespaces and Optimizing Data Storage
+  - title: Managing Data Storage
     url: scaling-namespaces/index.html
     description: >-
-      Provides information about scaling namespaces, optimizing data
-      storage, and optimizing performance of Apache Hadoop HDFS.
+      Provides information about optimizing data storage, 
+      APIs and services for accessing data, and managing data across clusters.
 
   - title: Configuring Data Protection
     url: data-protection/index.html
@@ -50,9 +50,4 @@ publications:
 #      Provides information about how to use use Kudu as a storage
 #      for Apache Impala.
 ---
-Cloudera Runtime provides different types of storage components that you
-can use depending on your data requirements. Apache HBase is a NoSQL
-database that provides real-time read/write access to those large
-datasets. Apache Kudu is a columnar data store that enables fast
-analytics on rapidly changing data. Apache HDFS is a distributed file
-system for storing large volumes of data.
+Apache Hadoop HDFS is a distributed file system for storing large volumes of data.

@@ -4,12 +4,12 @@ breadcrumb-title: HDP
 title: Installation
 publications:
   - title: Apache Ambari Installation
-    url: ../../Ambari-2.7.3.0/bk_ambari-installation/index.html
+    url: ../../Ambari-2.7.4.0/bk_ambari-installation/index.html
     description: >-
       Describes how to install the latest Ambari version and use it to
       deploy stack components.
   - title: Apache Ambari Installation for IBM Power Systems
-    url: ../../Ambari-2.7.3.0/bk_ambari-installation-ppc/index.html
+    url: ../../Ambari-2.7.4.0/bk_ambari-installation-ppc/index.html
     description: >-
       Describes how to install the latest Ambari version and use it to
       deploy stack components on IBM Power Systems.
