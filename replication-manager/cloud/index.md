@@ -4,11 +4,13 @@ title: Cloudera Replication Manager
 version: cloud
 base-path: /replication-manager/cloud/
 
-# sections:
-#   # - title: Release Notes
-#   #   name: releasenotes
-#   #   books:
-#
+sections:
+  - title: Release Notes
+    name: releasenotes
+    books:
+      - title: Release Notes
+        url: release-notes/index.html
+
 #   - title: Concepts & Use Cases
 #     name: concepts
 #     books:
