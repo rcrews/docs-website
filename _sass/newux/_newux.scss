@@ -21,7 +21,7 @@ body                    { margin: 0; }
         a               { color:#646977; }
         .sep            { color:#ccc; }
     }
-    .bread-home         {
+    .bread-home         { display:none;
         i               { display:none; font-size:115%; padding-right:10px;  }
         &::after        { content:"/"; color:#ccc; padding:0 5px; }
         .text-home      {  }
@@ -29,13 +29,13 @@ body                    { margin: 0; }
     .bread-version      { padding-left:7px; position:relative; display:inline-block;
         .selector       { padding-left:10px;}
     }
-    .bread-category     {
+    .bread-category     { display:none;
         a::before       { content:"/"; color:#ccc; padding:0 5px;}
     }
     .launch-pubnav      { font-size:135%; flex-grow:0; padding-left:20px;}
     .launch-search      { font-size:135%; flex-grow:0; padding-left:20px; }
 
-    .version-select         { position:absolute; z-index:10; background-color:#686b79; top:18px; width:100%; list-style-type:none; padding:0; margin-left:-5px;
+    .version-select         { position:absolute; z-index:10; background-color:#686b79; top:18px; width:78px; list-style-type:none; padding:0; margin-left:-5px;
         li                  { padding:0 7px; position:relative; color:#fff; width:78px;
             a               { color:#fff; display:inline-block; width:100%;
                 &:hover     { color:$bright-orange; }
@@ -48,14 +48,13 @@ body                    { margin: 0; }
         }
     }
 
-
     @include breakpoint(small) {
 
     }
 
     @include breakpoint(medium) {
         &               { left:50px; overflow-y:initial; }
-        .bread-home     {
+        .bread-home     { display:inline;
             i           { display:inline; }
             .text-home  {  }
         }
@@ -164,6 +163,12 @@ body                    { margin: 0; }
 }
 
 .pubmenu                { position:absolute; transition:transform 0.5s; transform:scale(0); transform-origin:top right; top:0px; left:0px; right:0px; box-sizing: border-box; padding:30px 20px 20px 20px; background-color:rgba(255,255,255,0.9);
+
+
+    .collapse-ctoc      { position: absolute; top: 45px; right: 38px; z-index: 3; color:$light-grey;
+        &:hover         { cursor:pointer; color:$bright-orange;}
+    }
+
     .product-title      { display:none; font-size:150%; color:#303d54; font-family:"Roboto Condensed", sans-serif; margin-bottom: 20px; overflow:auto; } /* DUPLICATE OF THE BREADCRUMBS! */
     .product-name       { display:block; margin-left:50px; padding-top:5px;  }
     .product-logo       { width:40px; float:left; }
@@ -183,6 +188,7 @@ body                    { margin: 0; }
         }
         .expand         { cursor:pointer; position:absolute; font-family: 'Font Awesome 5 Free'; font-weight:900;  right:10px; top:-5px; z-index:5;  padding:8px; font-weight:bold; font-size:18px; color:#e0e0e0;
             &:hover     { color:$bright-blue; }
+            &::before   { content: "\f107";}
         }
         a               { color:#555;
             &:hover     { color:$bright-blue;}
@@ -190,6 +196,7 @@ body                    { margin: 0; }
 
         .open > ul      { display:block; }
         .open.sesame > ul > li  { line-height:1.5; opacity:1; transition: all 0.3s ease-in-out; }
+        .open>.expand::before { content: "\f106";}
 
         &>ul                    { padding-left:0; }
         &>ul>li                 { color:#555; padding-bottom:10px; font-weight:bold;  // First Level
@@ -213,7 +220,7 @@ body                    { margin: 0; }
     &.open            { transform:scale(1); }
 
     @include breakpoint(desktop) { transform:scale(1); grid-area: pubnav; background-color:#f0f0f0; position:relative; z-index:0; height:auto; padding:35px 20px 20px;
-
+        .collapse-ctoc  { top:5px; right:28px;}
         .product-title  { max-width:300px;  }
         .product-name   { margin-left:70px; padding-top:0; }
         .product-logo   { width:60px; }
@@ -348,6 +355,3 @@ body                    { margin: 0; }
 }
 
 .hashpad:before                         { content: ""; display: block; height: 70px; margin: -50px 0 0; } // Used to create some padding before hashed links.
-.collapse-ctoc                          { position: relative; float:right; top: 5px; right: 37px; z-index: 3; color:$light-grey;
-    &:hover                             { cursor:pointer; color:$bright-orange;}
-}

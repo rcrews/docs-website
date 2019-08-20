@@ -243,7 +243,7 @@ var NEWUX = (function($) {
             }
         },
         handleNavContract: function(evt) {
-            if(!($(this).text() === '\uf107')) {
+            if($(this).parent('li').hasClass('open')) {
                 evt.stopPropagation();
                 let id = $(this).parent('li').data('navid');
                 Pubnav.contractNavElem(id);
@@ -546,7 +546,7 @@ var NEWUX = (function($) {
                     html += `<li class='${css}' data-navid='${item.id}' data-level='${level}'><span class='item'>${item.text}</span>`;
                 }
                 if('sub' in item && typeof item.sub === 'object') {
-                    html += "<span class='expand'>&#xf107;</span>";  // NOTE, BE CAREFUL ABOUT CHANGING THE ICON. IT'S USED IN THE CONTROL STRUCTURE
+                    html += "<span class='expand'></span>";
                     html += this.createHtmlTree(item.sub, level + 1);
                 }
                 html += '</li>';
@@ -564,7 +564,6 @@ var NEWUX = (function($) {
             }
 
             // Collapse other menu items at the same level as this one:
-            // TODO!!! - Don't collapse an active navigation item.
             let level = $this.data('level');
             if(level > 1) {
                 $(`.ctoc li.open[data-level='${level}']`).each(function() {
@@ -577,7 +576,6 @@ var NEWUX = (function($) {
             }
 
             // Now expand this one..
-            $this.children('.expand').text('\uf106');
             $this.addClass('open');
             setTimeout(function() { $this.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
@@ -585,7 +583,6 @@ var NEWUX = (function($) {
             $this.parents('.ctoc li:not(.open)').each(function() {
                 let $parent = $(this);
                 if($parent.data('level') > 1) {
-                    $parent.children('.expand').text('\uf106');
                     $parent.addClass('open');
                     setTimeout(function() { $parent.addClass('sesame'); }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
@@ -602,7 +599,7 @@ var NEWUX = (function($) {
             // Contract the elem....
             // $(this).text('\uf107').siblings('ul').parent('li').removeClass('open sesame');
             let $elem = $('.ctoc').find(`li[data-navid=${id}]`);
-            $elem.removeClass('sesame').children('.expand').text('\uf107');
+            $elem.removeClass('sesame'); 
 
             // Again the hack to hide the item after compression.... I think we could do this with keyframes instead. https://jsfiddle.net/jalbertbowdenii/mHRb8/
             setTimeout(function() { $elem.removeClass('open')}, 320);
@@ -615,7 +612,6 @@ var NEWUX = (function($) {
             localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         },
         requestNewPage: function(url, hash) {
-            console.log('request new page');
             // Only load if the url is actually in the nav tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
             if(destination) {
@@ -812,7 +808,7 @@ var NEWUX = (function($) {
                         let open = "";
                         cat.products.forEach(function(el) {
                             let active = "";
-                            if (WhoAmI.version.url === el.href) {
+                            if (WhoAmI.version.url.split('/')[1] === el.href.split('/')[1]) {
                                 active = 'active ';
                                 open = 'expanded '
                             }
