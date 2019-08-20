@@ -368,10 +368,10 @@ json:
       - text: Security
         href: howto-security.html
         sub:
-          - text: Identity Management and Federation
-            ref: identity-management-and-federation/index.html
-            id: identity-management-and-federation-and-federation/index.html
-            sub: identity-management-and-federation/navigation.json
+          # - text: Identity Management and Federation
+          #   ref: identity-management-and-federation/index.html
+          #   id: identity-management-and-federation-and-federation/index.html
+          #   sub: identity-management-and-federation/navigation.json
 
           - text: Apache Ranger Auditing
             href: security-ranger-auditing/index.html
@@ -460,10 +460,10 @@ json:
   - text: Reference
     id: reference
     sub:
-      - text: Knox Reference
-        href: knox-reference/index.html
-        id: knox-reference/index.html
-        sub: knox-reference/navigation.json
+      # - text: Knox Reference
+      #   href: knox-reference/index.html
+      #   id: knox-reference/index.html
+      #   sub: knox-reference/navigation.json
 
       - text: Apache Impala Reference
         href: impala-reference/index.html
