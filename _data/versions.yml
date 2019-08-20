@@ -662,16 +662,16 @@
         - title: 1.0.0
           url: /csp/1.0.0/index.html
 
- name: Streams Replication Manager
- latest-version: 1.0.0
- latest-url: /srm/1.0.0/index.html
- search-name: Streams Replication Manager
- versions:
-   - title: "1.0"
-     url: /srm/1.0.0/index.html
-     minors:
-       - title: 1.0.0
-         url: /srm/1.0.0/index.html
+- name: Streams Replication Manager
+  latest-version: 1.0.0
+  latest-url: /srm/1.0.0/index.html
+  search-name: Streams Replication Manager
+  versions:
+    - title: "1.0"
+      url: /srm/1.0.0/index.html
+      minors:
+        - title: 1.0.0
+          url: /srm/1.0.0/index.html
 
 - name: Cloudbreak
   latest-version: 2.9.1
