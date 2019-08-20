@@ -32,11 +32,11 @@ json:
   - text: How To
     id: howto
     sub:
-      - text: Moving Workloads to the Cloud
-        href: using-service/index.html
-        id: using-service
-        sub: using-service/navigation.json
-
+  #    - text: Moving Workloads to the Cloud
+  #      href: using-service/index.html
+  #      id: using-service
+  #      sub: using-service/navigation.json
+  #
       - text: Querying Data
         href: querying-data/index.html
         id: querying-data
