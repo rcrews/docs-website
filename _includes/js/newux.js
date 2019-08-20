@@ -44,7 +44,6 @@ var NEWUX = (function($) {
                     let versions = [];
 
                     for(let i = 0; i < data.length; i++) {
-
                         // We only need to loop through the versions if we've not found it.
                         if(!found) {
 
@@ -58,18 +57,13 @@ var NEWUX = (function($) {
                                         minors: []
                                     };
 
-                                    // This should now be the key versions... let's start matching
-                                    // Actually, no... we should always be looking in the minors to figure out where we are.
-                                    /* if(!found && my_product_url === data[i].versions[j].url) {
-                                        // We found it at the top level
-
+                                    if(!found && my_product_url === data[i].versions[j].url) {
                                         WhoAmI.version = {
                                             title: data[i].versions[j].title,
                                             url: data[i].versions[j].url
                                         };
-                                        found = true;
+                                        found = true;  // We found it at the top level.. but the version we want is probably still at the lower level
                                     }
-                                    */
 
                                     // If it doesn't match, check the minors...
                                     if(typeof data[i].versions[j].minors !== 'undefined') {
@@ -82,7 +76,7 @@ var NEWUX = (function($) {
                                             };
 
                                             // also check the minors.
-                                            if(!found && my_product_url === data[i].versions[j].url) {
+                                            if(my_product_url === data[i].versions[j].minors[k].url) {
                                                 // We found it at the minor level
                                                 WhoAmI.version = {
                                                     title: data[i].versions[j].minors[k].title,
@@ -793,8 +787,6 @@ var NEWUX = (function($) {
                         });
                         output += `<li class="cat ${open}"><span class="cat-title">${cat.title}</span><ul class="items">${inner_output}</ul></li>`;
                    });
-
-                    console.log(WhoAmI.version.url);
 
                     $('.product-drawer .products').append(output);
                     this.bindEvents();
