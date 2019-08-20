@@ -30,9 +30,9 @@ sections:
   - title: How To
     name: howto
     books:
-      - title: Moving Workloads to the Cloud
-        url: using-service/index.html
-
+#      - title: Moving Workloads to the Cloud
+#        url: using-service/index.html
+#
       - title: Querying Data
         url: querying-data/index.html
 
