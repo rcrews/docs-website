@@ -120,7 +120,7 @@ body                    { margin: 0; }
     .short-prev         { font-size:180%; position:absolute; top:2rem; right:3.6rem; }
     .short-next         { font-size:180%; position:absolute; top:2rem; right:1.6rem; }
 
-    .copyright          { font-size:85%; text-align:right; margin-top:10px; margin-right:-25px;
+    .copyright          { font-size:85%; text-align:right; margin-top:10px; clear:both;
         a               { color:#999; }
         a:hover         { color:$primary-blue;}
     }

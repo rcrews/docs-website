@@ -160,10 +160,6 @@ var NEWUX = (function($) {
                 let $this = $(this);
                 $this.hasClass('fa-angle-down') ? $this.removeClass('fa-angle-down').addClass('fa-angle-up') : $this.removeClass('fa-angle-up').addClass('fa-angle-down');
                 $('.version-select').toggle();
-
-                let timer = setTimeout(function() {
-                    
-                },500);
             })
 
         },
@@ -211,6 +207,9 @@ var NEWUX = (function($) {
 
             // Back Button Clicks.
             $(window).bind("popstate", this.handleNewPageRequest);
+
+            // PUBNAV FOR MOBILE
+            $('.launch-pubnav').on('click', this.handleMobileToggle);
         },
         handleCollapseAll: function(e) {
           //
@@ -253,6 +252,8 @@ var NEWUX = (function($) {
         },
         handleNewPageRequest: function(e) {
             // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
+            Pubnav.mobileClose(); // Close the mobile nav if it was open.
+
             let url, hash = "";
             Pubnav.clicktrack = 0;
             // Check it's a valid click.....
@@ -263,11 +264,11 @@ var NEWUX = (function($) {
                     return true;
                 }
 
-                url = this.getAttribute('href');
+                url = this.getAttribute('href'); // First start working with the relative URL.
 
                 // If it starts with a hash, assume it's an in-page reference and bail..
                 if(!url.indexOf('#')) {
-                    Pubnav.is_hash_link = true;
+                    // Pubnav.is_hash_link = true;
                     // Also add some spacing so that it doesn't get covered up by the nav.
                     let anchor = url.substr(url.indexOf('#'));
                     $(anchor).addClass('hashpad');
@@ -290,19 +291,46 @@ var NEWUX = (function($) {
                 url = obj.pathname;
                 hash = obj.hash;
 
+                // If this is the same page... might be a hash, also don't do anything.
+                if(obj.pathname === location.pathname) {
+                    return true;
+                }
+
+
             } else if(e.type === 'popstate') {
-                if(Pubnav.is_hash_link) { // Hashes also fire popstate, and we only want to capture back/forward
-                    Pubnav.is_hash_link = false; // reset
+                if(location.hash !== '') { // Hashes also fire popstate, and we only want to capture back/forward
+                    hash = location.hash.substr(1);
+                    let el = document.getElementById(hash);
+                    el.className += ' hashpad';
+                    el.scrollIntoView();
                     return true;
                 }
                 // the page history is changing... happens with back/forward button, but also hash links!
                 url = location.pathname;
             }
 
-
-            if(e.type === 'click' && Pubnav.requestNewPage(url, hash)) {
+            if(Pubnav.requestNewPage(url, hash) && e.type === 'click') {
                 e.preventDefault();
             }
+        },
+        handleMobileToggle(e) {
+            if($('.pubmenu').hasClass('open')) {
+                // Nav closed... open it.
+                Pubnav.mobileClose();
+            } else {
+                // Nav is open. Close it....
+                Pubnav.mobileOpen();
+            }
+        },
+        mobileOpen: function() {
+            $('.pubmenu').addClass('open');
+            $('.cpage').fadeOut();
+            $('.launch-pubnav i').removeClass('fa-bars').addClass('fa-times');
+        },
+        mobileClose: function() {
+            $('.pubmenu').removeClass('open');
+            $('.cpage').fadeIn();
+            $('.launch-pubnav i').removeClass('fa-times').addClass('fa-bars');
         },
         setupNav: function() {
             // Inject HTML Elements necessary for paging and the pubmenu
@@ -385,7 +413,6 @@ var NEWUX = (function($) {
                 if(faded && complete) {
                     $content.html(elems);
                     if(hash !== "" && typeof hash !== 'undefined') {
-                        console.log(hash);
                         hash = hash.substr(1);
                         let el = document.getElementById(hash);
                         el.className += ' hashpad';
@@ -427,7 +454,7 @@ var NEWUX = (function($) {
                 // If no content.....
                 if(!elems.length ) {
                     if(Pubnav.pagestate.children.length && Pubnav.clicktrack < 4) {
-                        // sometimes happens for root pages.... look for the first child page.
+                        // sometimes foyer pages are empty. If so, look for the first child page.
                         let new_url = Pubnav.pagestate.children[0].href;
                         Pubnav.requestNewPage(new_url);
                         return false;
@@ -588,6 +615,7 @@ var NEWUX = (function($) {
             localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         },
         requestNewPage: function(url, hash) {
+            console.log('request new page');
             // Only load if the url is actually in the nav tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
             if(destination) {
@@ -601,8 +629,9 @@ var NEWUX = (function($) {
                 this.mapPageState(this.nav_tree, destination.id);
 
                 // Update history so the back button works.... We don't want this to fire if we're going back in time!
-                if (!history.state || history.state.page != url) {
-                    history.pushState({"page": url}, Pubnav.pagestate.current.text, url);
+                if (!history.state || history.state.page !== url) {
+                    if(typeof hash === 'undefined') hash = "";
+                    history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
                 }
 
                 // TODO! Notify Google Analytics about the new page load.
@@ -1107,20 +1136,6 @@ var NEWUX = (function($) {
             return true;
         }
     };
-
-
-    // PUBNAV FOR MOBILE
-    $('.launch-pubnav').on('click', function () {
-        if($('aside').hasClass('open')) {
-            // Nav closed... open it.
-            $('.pubmenu').removeClass('open');
-            $('.cpage').fadeIn();
-        } else {
-            // Nav is open. Close it....
-            $('.pubmenu').addClass('open');
-            $('.cpage').fadeOut();
-        }
-    });
 
     // SEARCH DRAWER
     $('.launch-search').on('click', function() {
