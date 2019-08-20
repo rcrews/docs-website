@@ -92,8 +92,8 @@ sections:
 #   - title: Reference
 #     name: reference
 #     books:
-#       - title: Knox Reference
-#         url: knox-reference/index.html
+#       # - title: Knox Reference
+#       #   url: knox-reference/index.html
 #
 #       - title: Apache Impala Reference
 #         url: impala-reference/index.html
