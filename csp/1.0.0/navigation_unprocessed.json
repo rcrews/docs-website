@@ -13,7 +13,7 @@ json:
     name: concepts
     sub:
       - text: Schema Registry Overview
-        href: schema-registry-overview/content/schema_registry_overview.html
+        href: schema-registry-overview/index.html
         id: schema-registry-overview
         sub: schema-registry-overview/navigation.json
 
@@ -34,12 +34,12 @@ json:
       #   sub: installation/navigation.json
 
       - text: Integrating with Schema Registry
-        href: integrating-with-schema-registry/content/integrating_with_nifi.html
+        href: integrating-with-schema-registry/index.html
         id: integrating-with-schema-registry
         sub: integrating-with-schema-registry/navigation.json
 
       - text: Using Schema Registry
-        href: using-schema-registry/content/adding_a_new_schema.html
+        href: using-schema-registry/index.html
         id: using-schema-registry
         sub: using-schema-registry/navigation.json
 
