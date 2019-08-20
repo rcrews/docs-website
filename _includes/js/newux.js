@@ -160,6 +160,10 @@ var NEWUX = (function($) {
                 let $this = $(this);
                 $this.hasClass('fa-angle-down') ? $this.removeClass('fa-angle-down').addClass('fa-angle-up') : $this.removeClass('fa-angle-up').addClass('fa-angle-down');
                 $('.version-select').toggle();
+
+                let timer = setTimeout(function() {
+                    
+                },500);
             })
 
         },
