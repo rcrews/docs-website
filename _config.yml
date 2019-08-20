@@ -43,9 +43,6 @@ exclude:
   # - vendor/gems/
   # - vendor/ruby/
 
-  # Remove for testing
-  - /documentation/
-
   # Unreleased documentation
   - /HDPDocuments/CFM/CFM-1.1.0/
   - /HDPDocuments/DPS/
