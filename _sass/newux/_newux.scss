@@ -225,21 +225,23 @@ body                    { margin: 0; }
     }
 }
 
-.product-drawer         { width:50px; height:100%; display:none; position: fixed; z-index: 12; top: 0; overflow: hidden; color:#b6bcc3; transition: 0.5s; background-color:#323544; color:#fff;
-    ul                  { list-style-type:none; margin-left:0; padding-left:0; }
-    .full-logo          { display:none; }
+.product-drawer             { width:50px; height:100%; display:none; position: fixed; z-index: 12; top: 0; overflow: hidden; color:#b6bcc3; transition: 0.5s; background-color:#323544; color:#fff;
+    ul                      { list-style-type:none; margin-left:0; padding-left:0; }
+    .full-logo              { display:none; }
 
-    .products           { padding-top:50px;
-        li              { padding:7px 2px;
-           &.active,
-           &:hover      { background-color:#3F4250; }
+    .products               { padding-top:50px; // This is the higher ul
+        ul                  { display:none; } // By default, inner items are collapsed.
+        .cat                { margin-left:0; font-size:75%; font-weight:bold; text-transform:uppercase;
+            .cat-title      { display:none; }
+            &.expanded ul   { display:block; }
+            li              { padding:5px 0;
+                &.active,
+                &:hover     { background-color:#3F4250; }
+            }
+            &:hover         { background-color:#323544; }
         }
-
-        img             { width:28px; height:28px; padding:5px 2px 5px 9px; }
-        .text           { display:none; font-size:90%;  }
-        .cat            { margin-left:0; display:none; font-size:75%; font-weight:bold; text-transform:uppercase; background-color:#272A35;
-           &:hover      { background-color:#323544; }
-        }
+        img                 { width:28px; height:28px; padding:5px 2px 5px 9px; }
+        .text               { display:none; font-size:90%;  }
     }
 
     @include breakpoint(medium) {
@@ -248,10 +250,15 @@ body                    { margin: 0; }
 
     &.open              {
         .products       { padding-top:0;
-            li          { padding:5px; }
+            ul          { margin:0;
+                li      { overflow:auto; padding:5px; padding-left:10px;  }
+            }
+            .cat-title  { cursor:pointer; padding:5px; background-color:#272A35; display:block; padding-left:10px; margin-bottom:1px;
+                &:hover { background-color:#1e2026}
+            }
+
             .text       { display:inline; }
-            .cat        { display:block; padding-left:10px; margin-bottom:1px; }
-            img         { padding:5px; padding-right:10px; }
+            img         { float:left; padding:0 5px 0 0; }
         }
         .full-logo      { display:block; padding:13px; height:24px; background-color:#272A35;
             img         { max-height:25px;  }

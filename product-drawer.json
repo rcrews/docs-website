@@ -1,75 +1,85 @@
 ---
 layout: json
 json:
-- text: Management Console
-  href: /management-console/cloud/index.html
-  icon: /common/img/mini_icons/icon-mc.png
 
-- text: Workload Manager
-  href: /workload-manager/cloud/index.html
-  icon: /common/img/mini_icons/icon-wm.png
+- title: Cloudera Data Platform
+  products:
+    - text: Management Console
+      href: /management-console/cloud/index.html
+      icon: /common/img/mini_icons/icon-mc.png
 
-- text: Data Catalog
-  href: /data-catalog/cloud/index.html
-  icon: /common/img/mini_icons/icon-dc.png
+    - text: Workload Manager
+      href: /workload-manager/cloud/index.html
+      icon: /common/img/mini_icons/icon-wm.png
 
-- text: Replication Manager
-  href: /replication-manager/cloud/index.html
-  icon: /common/img/mini_icons/icon-rm.png
+    - text: Data Catalog
+      href: /data-catalog/cloud/index.html
+      icon: /common/img/mini_icons/icon-dc.png
 
-- text: Data Hub
-  href: /data-hub/cloud/index.html
-  icon: /common/img/mini_icons/icon-dh.png
+    - text: Replication Manager
+      href: /replication-manager/cloud/index.html
+      icon: /common/img/mini_icons/icon-rm.png
 
-- text: Data Warehouse
-  href: /data-warehouse/cloud/index.html
-  icon: /common/img/mini_icons/icon-dw.png
+    - text: Data Hub
+      href: /data-hub/cloud/index.html
+      icon: /common/img/mini_icons/icon-dh.png
 
-- text: Machine Learning
-  href: /machine-learning/cloud/index.html
-  icon: /common/img/mini_icons/icon-ml.png
+    - text: Data Warehouse
+      href: /data-warehouse/cloud/index.html
+      icon: /common/img/mini_icons/icon-dw.png
 
-- text: Cloudera Runtime
-  href: /runtime/7.0.0/index.html
-  icon: /common/img/mini_icons/icon-cr.png
+    - text: Machine Learning
+      href: /machine-learning/cloud/index.html
+      icon: /common/img/mini_icons/icon-ml.png
 
-- text: Cloudera Edge Management
-  href: /cem/1.1.0/index.html
-  icon: /common/img/mini_icons/icon-cem.png
+    - text: Cloudera Runtime
+      href: /runtime/7.0.0/index.html
+      icon: /common/img/mini_icons/icon-cr.png
 
-- text: Cloudera Flow Management
-  href: /cfm/1.0.1/index.html
-  icon: /common/img/mini_icons/icon-cfm.png
+- title : Edge to AI
+  products:
+    - text: Cloudera Edge Management
+      href: /cem/1.1.0/index.html
+      icon: /common/img/mini_icons/icon-cem.png
 
-- text: Cloudera Stream Processing
-  href: /csp/2.0.0/index.html
-  icon: /common/img/mini_icons/icon-csp.png
+    - text: Cloudera Flow Management
+      href: /cfm/1.0.1/index.html
+      icon: /common/img/mini_icons/icon-cfm.png
 
-- text: Streams Messaging Manager
-  href: /smm/2.0.0/index.html
-  icon: /common/img/mini_icons/icon-smm.png
+    - text: Cloudera Stream Processing
+      href: /csp/2.0.0/index.html
+      icon: /common/img/mini_icons/icon-csp.png
 
-- text: Streams Replication Manager
-  href: /srm/1.0.0/index.html
-  icon: /common/img/mini_icons/icon-srm.png
+    - text: Streams Messaging Manager
+      href: /smm/2.0.0/index.html
+      icon: /common/img/mini_icons/icon-smm.png
 
-- text: Data Science Workbench
-  href: /documentation/data-science-workbench/1-6-x.html
-  icon: /common/img/mini_icons/icon-dsw.png
+    - text: Streams Replication Manager
+      href: /srm/1.0.0/index.html
+      icon: /common/img/mini_icons/icon-srm.png
 
-- text: Cybersecurity Platform
-  href: /HDPDocuments/HCP1/HCP-1.9.1/index.html
-  icon: /common/img/mini_icons/icon-cybersecurity.png
+- title : Applications
+  products:
+    - text: Data Science Workbench
+      href: /documentation/data-science-workbench/1-6-x.html
+      icon: /common/img/mini_icons/icon-dsw.png
 
-- text: CDH Enterprise
-  href: /documentation/index.html
-  icon: /common/img/mini_icons/icon-cdh.png
+    - text: Cybersecurity Platform
+      href: /HDPDocuments/HCP1/HCP-1.9.1/index.html
+      icon: /common/img/mini_icons/icon-cybersecurity.png
 
-- text: HDP Enterprise
-  href: /HDPDocuments/index.html
-  icon: /common/img/mini_icons/icon-hdp.png
+- title : Enterprise
+  products:
+    - text: CDH Enterprise
+      href: /documentation/index.html
+      icon: /common/img/mini_icons/icon-cdh.png
 
-- text: HDF Enterprise
-  href: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
-  icon: /common/img/mini_icons/icon-hdf.png
+    - text: HDP Enterprise
+      href: /HDPDocuments/index.html
+      icon: /common/img/mini_icons/icon-hdp.png
+
+    - text: HDF Enterprise
+      href: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
+      icon: /common/img/mini_icons/icon-hdf.png
+
 ---

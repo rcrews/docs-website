@@ -59,7 +59,8 @@ var NEWUX = (function($) {
                                     };
 
                                     // This should now be the key versions... let's start matching
-                                    if(!found && my_product_url === data[i].versions[j].url) {
+                                    // Actually, no... we should always be looking in the minors to figure out where we are.
+                                    /* if(!found && my_product_url === data[i].versions[j].url) {
                                         // We found it at the top level
 
                                         WhoAmI.version = {
@@ -68,6 +69,7 @@ var NEWUX = (function($) {
                                         };
                                         found = true;
                                     }
+                                    */
 
                                     // If it doesn't match, check the minors...
                                     if(typeof data[i].versions[j].minors !== 'undefined') {
@@ -86,7 +88,6 @@ var NEWUX = (function($) {
                                                     title: data[i].versions[j].minors[k].title,
                                                     url: data[i].versions[j].minors[k].url
                                                 };
-                                                console.log(WhoAmI.version);
                                                 found = true;
                                             }
                                         }
@@ -94,7 +95,6 @@ var NEWUX = (function($) {
                                 }
                             }
                         }
-
 
                         // It might now be found... if so, set our thingy's
                         if(found) {
@@ -139,19 +139,22 @@ var NEWUX = (function($) {
 
             // Create a pulldown list for all the versions.
             let output = "";
-            if(WhoAmI.versions.length > 1) {
-                $('.bread-version').append(' <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>');
-                WhoAmI.versions.forEach(function(el) {
-                    if(el.title !== WhoAmI.version.title) {
-                        output += `<li><a href='${el.url}'>${el.title}</a></li>`;
-                        if(typeof el.minors === 'object' ) {
-                            el.minors.forEach(function(em) {
-                                output += `<li class='minor'><a href='${em.url}'>${em.title}</a></li>`;
-                            })
-                        }
+
+            $('.bread-version').append(' <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>');
+            WhoAmI.versions.forEach(function(el) {
+                if(el.title !== WhoAmI.version.title) {
+                    output += `<li class="major"><a href='${el.url}'>${el.title}</a>`;
+                    if(typeof el.minors === 'object' ) {
+                        output += "<ul class='minors'>";
+                        el.minors.forEach(function(em) {
+                            output += `<li class='minor'><a href='${em.url}'>${em.title}</a></li>`;
+                        });
+                        output += "</ul>";
                     }
-                });
-            }
+                    output += '</li>';
+                }
+            });
+
 
             $('.version-select').hide().html(output);
 
@@ -295,9 +298,8 @@ var NEWUX = (function($) {
                 url = location.pathname;
             }
 
-            Pubnav.requestNewPage(url, hash);
 
-            if(e.type === 'click') {
+            if(e.type === 'click' && Pubnav.requestNewPage(url, hash)) {
                 e.preventDefault();
             }
         },
@@ -369,7 +371,7 @@ var NEWUX = (function($) {
                 });
         },
         loadContent: function(url, hash) {
-            Pubnav.clicktrack++; // This is just used to prevent runaway clicks. 
+            Pubnav.clicktrack++; // This is just used to prevent runaway clicks.
 
             // Start by fading out the existing content....
             let complete = false,
@@ -606,6 +608,7 @@ var NEWUX = (function($) {
                 return true;
 
             } else {
+                console.log('couldnt find in tree?');
                 return false;
             }
         },
@@ -777,18 +780,31 @@ var NEWUX = (function($) {
                     ProductDrawer.data = data; // Save the whole thingy in case we need it again.
 
                     let output = "";
-                    output += '<li class="cat">Data Platform (CDP)</li>';
-                    data.forEach(function(el) {
-                        let active = (WhoAmI.version.url === el.href) ? "active " : "";
-                        output += `<li class="${active}"><a href="${el.href}"><img src="${el.icon ? el.icon : '/common/img/mini_icons/icon-studio.png'}"><span class="text">${el.text}</span></a></li>`;
-                    });
+                    data.forEach(function(cat) {
+                        let inner_output = "";
+                        let open = "";
+                        cat.products.forEach(function(el) {
+                            let active = "";
+                            if (WhoAmI.version.url === el.href) {
+                                active = 'active ';
+                                open = 'expanded '
+                            }
+                            inner_output += `<li class="${active}"><a href="${el.href}"><img src="${el.icon ? el.icon : '/common/img/mini_icons/icon-studio.png'}"><span class="text">${el.text}</span></a></li>`;
+                        });
+                        output += `<li class="cat ${open}"><span class="cat-title">${cat.title}</span><ul class="items">${inner_output}</ul></li>`;
+                   });
+
+                    console.log(WhoAmI.version.url);
 
                     $('.product-drawer .products').append(output);
                     this.bindEvents();
                 });
-
         },
         bindEvents: function() {
+            $('.cat').on('click', function() {
+               $('.cat').removeClass('expanded');
+               $(this).addClass('expanded');
+            });
             $('.product-drawer .open-close').on('click', function() {
                 if($('.product-drawer').hasClass('open')) {
                     $('.product-drawer').css('width', '50px').removeClass('open');

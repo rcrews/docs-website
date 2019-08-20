@@ -176,7 +176,7 @@
   pre 							    { white-space:pre-wrap; color:#444; background-color:#fafafa; border:1px solid #dcdcdc; border-radius:2px; margin:10px 0; padding:8px; overflow-x:auto; font-size:13px;  }
 
   .note 								{ margin-top:1em; margin-bottom:1em; background-color:#eef4f7; padding:10px 20px; border-radius:2px;  }
-  .admon-title-text 					{ color:#555; font-weight:bold; text-transform:capitalize;  }
+  .admon-title-text 					{ color:#555; font-weight:bold; text-transform:capitalize; margin-bottom:10px; }
   .note.note .admon-title-text:before   { font-family:'Font Awesome 5 Free'; color:#555; content:"\f044"; display:inline-block; padding-right:3px; vertical-align:middle;  }
   .note.warning span.title:before,
   #beta_message p.lines:before 		    { font-family:'Font Awesome 5 Free'; color:#555; content:"\f071"; display:inline-block; padding-right:3px; vertical-align:middle  }
