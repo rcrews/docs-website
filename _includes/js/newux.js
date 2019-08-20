@@ -734,6 +734,7 @@ var NEWUX = (function($) {
                 Pubnav.navstate.push(Pubnav.pagestate.parent.id);
             }
 
+            console.log(Pubnav.navstate);
             for(let id of Pubnav.navstate) {
                 this.expandNavElem(id);
             }
@@ -1080,23 +1081,20 @@ var NEWUX = (function($) {
         },
         makeIdFromHref:function(href) {
             // Clever way to parse incomplete URLs -  https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
-
             let parser = document.createElement('a');
             parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
-
-            // We want to turn ID into sam-overview-index
             let chunks = parser.pathname.split('/');
 
             let id = chunks[chunks.length - 1];
             id = id.substring(0, id.indexOf('.'));  // dump anything after a period... .html / .php etc.
 
             if(chunks.length > 5) {
-                if(chunks[chunks.length - 2] !== 'content') {
-                    id = chunks[chunks.length - 2] + '-' + id;
-                } else {
-                    id = chunks[chunks.length - 3] + '-' + id;
-                }
+                id = chunks[chunks.length - 3] + '-' + id;
             }
+            if(parser.hash) {
+                id = id + '-' + parser.hash.substr(1);
+            }
+            console.log(id);
             return id;
         },
         isEmpty:function(obj) {
