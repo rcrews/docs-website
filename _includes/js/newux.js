@@ -134,7 +134,7 @@ var NEWUX = (function($) {
             // Create a pulldown list for all the versions.
             let output = "";
 
-            $('.bread-version').append(' <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>');
+            let x = 0;
             WhoAmI.versions.forEach(function(el) {
                 if(el.title !== WhoAmI.version.title) {
                     output += `<li class="major"><a href='${el.url}'>${el.title}</a>`;
@@ -142,15 +142,18 @@ var NEWUX = (function($) {
                         output += "<ul class='minors'>";
                         el.minors.forEach(function(em) {
                             output += `<li class='minor'><a href='${em.url}'>${em.title}</a></li>`;
+                            x++
                         });
                         output += "</ul>";
                     }
                     output += '</li>';
                 }
             });
-
-
-            $('.version-select').hide().html(output);
+            if(x > 1) {
+                // There are some other versions to show...
+                $('.bread-version').append(' <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>');
+                $('.version-select').hide().html(output);
+            }
 
             // Add Handlers
             $('.bread-version .selector').click(function() {
@@ -734,7 +737,6 @@ var NEWUX = (function($) {
                 Pubnav.navstate.push(Pubnav.pagestate.parent.id);
             }
 
-            console.log(Pubnav.navstate);
             for(let id of Pubnav.navstate) {
                 this.expandNavElem(id);
             }
@@ -749,9 +751,6 @@ var NEWUX = (function($) {
                     $('.bread-category').html(`<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`);
                 }
             }
-
-
-
 
             // Set the active item in the menu.
             $('.ctoc li').removeClass('active');
@@ -1094,7 +1093,6 @@ var NEWUX = (function($) {
             if(parser.hash) {
                 id = id + '-' + parser.hash.substr(1);
             }
-            console.log(id);
             return id;
         },
         isEmpty:function(obj) {
