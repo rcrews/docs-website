@@ -15,7 +15,7 @@ sections:
 #    name: concepts
 #    books:
 #      - title: Schema Registry Overview
-#        url: schema-registry-overview/content/schema_registry_overview.html
+#        url: schema-registry-overview/index.html
 #      - title: Streams Replication Manager Overview
 #        url: srm-overview/index.html
 #      - title: Understanding Replication Flows
@@ -38,10 +38,10 @@ sections:
 #      #   url: securing-csp/index.html
 #
 #      - title: Integrating with Schema Registry
-#        url: integrating-with-schema-registry/content/integrating_with_nifi.html
+#        url: integrating-with-schema-registry/index.html
 #
 #      - title: Using Schema Registry
-#        url: using-schema-registry/content/adding_a_new_schema.html
+#        url: using-schema-registry/index.html
 #
 #      - title: Configuring SRM
 #        url: configuration/index.html
