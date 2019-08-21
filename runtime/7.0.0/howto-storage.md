@@ -11,7 +11,7 @@ publications:
   - title: Managing Data Storage
     url: scaling-namespaces/index.html
     description: >-
-      Provides information about optimizing data storage, 
+      Provides information about optimizing data storage,
       APIs and services for accessing data, and managing data across clusters.
 
   - title: Configuring Data Protection
@@ -50,4 +50,5 @@ publications:
 #      Provides information about how to use use Kudu as a storage
 #      for Apache Impala.
 ---
-Apache Hadoop HDFS is a distributed file system for storing large volumes of data.
+Apache Hadoop HDFS is a distributed file system for storing large
+volumes of data.
