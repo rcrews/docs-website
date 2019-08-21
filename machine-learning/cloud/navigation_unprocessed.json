@@ -17,11 +17,6 @@ json:
         id: product
         sub: product/navigation.json
 
-      - text: Architecture Overview
-        href: architecture/index.html
-        id: architecture
-        sub: architecture/navigation.json
-
       - text: Engines Overview
         href: engines-overview/index.html
         id: engines-overview
