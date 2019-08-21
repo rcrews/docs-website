@@ -162,6 +162,9 @@ var NEWUX = (function($) {
                 $('.version-select').toggle();
             })
 
+            // And now that's all done, let's set up the product drawer too.
+            ProductDrawer.init();
+
         },
         init : function () {
             if(!$('.bread-product').length) $('.chead .breadcrumbs').append('<span class="bread-product"></span>');
@@ -481,6 +484,12 @@ var NEWUX = (function($) {
                         Pubnav.pagestate.copyright = new Date().getFullYear()  + ' Cloudera, Inc.';
                     }
 
+                    // Update history so the back button works.... We don't want this to fire if we're going back in time!
+                    if (!history.state || history.state.page !== url) {
+                        if(typeof hash === 'undefined') hash = "";
+                        history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
+                    }
+
                     complete = true;
                     swapContent();
                 }
@@ -624,12 +633,6 @@ var NEWUX = (function($) {
                 this.pagestate.next = {};
                 this.mapPageState(this.nav_tree, destination.id);
 
-                // Update history so the back button works.... We don't want this to fire if we're going back in time!
-                if (!history.state || history.state.page !== url) {
-                    if(typeof hash === 'undefined') hash = "";
-                    history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
-                }
-
                 // TODO! Notify Google Analytics about the new page load.
                 return true;
 
@@ -714,7 +717,7 @@ var NEWUX = (function($) {
             if(typeof this.pagestate.current.text !== 'undefined') {
                 document.title = this.pagestate.current.text;
             } else {
-                document.title = $('h1').text();
+                document.title = $('#content h1').text();
             }
 
             /* Prev
@@ -796,7 +799,8 @@ var NEWUX = (function($) {
         init: function () {
             if(!$('.product-drawer .products').length) $('.product-drawer').append('<ul class="products"></ul>');
             if(!$('.product-drawer .open-close').length) $('.product-drawer').append('<div class="open-close">»</div>');
-            this.bootstrap();
+
+            this.bootstrap(); // Actually, we can't fire this until the WhoAmI function has fired, so moved the init call over there.
         },
         bootstrap : function() {
             // Load in the versions.json
@@ -848,15 +852,6 @@ var NEWUX = (function($) {
                     $(this).html('&laquo;');
                 }
             });
-        },
-        renderMenu: function() {
-
-        },
-        slideOpen: function() {
-
-        },
-        slideClose: function() {
-
         }
     };
 
@@ -1150,7 +1145,7 @@ var NEWUX = (function($) {
 
     WhoAmI.init();
     Pubnav.init();
-    ProductDrawer.init();
+    // ProductDrawer.init(); Actually, we can't fire this until the WhoAmI function has fired, so moved the init call over there.
     Search.init();
 
 }(jQuery));
