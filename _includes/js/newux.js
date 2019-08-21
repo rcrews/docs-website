@@ -599,7 +599,7 @@ var NEWUX = (function($) {
             // Contract the elem....
             // $(this).text('\uf107').siblings('ul').parent('li').removeClass('open sesame');
             let $elem = $('.ctoc').find(`li[data-navid=${id}]`);
-            $elem.removeClass('sesame'); 
+            $elem.removeClass('sesame');
 
             // Again the hack to hide the item after compression.... I think we could do this with keyframes instead. https://jsfiddle.net/jalbertbowdenii/mHRb8/
             setTimeout(function() { $elem.removeClass('open')}, 320);
@@ -808,7 +808,8 @@ var NEWUX = (function($) {
                         let open = "";
                         cat.products.forEach(function(el) {
                             let active = "";
-                            if (WhoAmI.version.url.split('/')[1] === el.href.split('/')[1]) {
+                            if (WhoAmI.version.url &&
+                                (WhoAmI.version.url.split('/')[1] === el.href.split('/')[1])) {
                                 active = 'active ';
                                 open = 'expanded '
                             }
