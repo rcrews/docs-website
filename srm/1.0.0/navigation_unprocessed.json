@@ -58,8 +58,8 @@ json:
     books:
       - text: Release Notes
         href: release-notes/index.html
-        id: using
-        sub: using/navigation.json
+        id: release-notes
+        sub: release-notes/navigation.json
 
   - text: Reference
     id: reference
