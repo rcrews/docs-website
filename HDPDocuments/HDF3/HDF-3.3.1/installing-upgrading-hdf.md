@@ -1,6 +1,6 @@
 ---
 layout: hwx_foyer
-breadcrumb-title: DataFlow
+breadcrumb-title: HDF
 title: Installing & Upgrading HDF
 icon: hdf
 publications:

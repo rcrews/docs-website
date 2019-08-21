@@ -812,7 +812,8 @@ var NEWUX = (function($) {
                         let open = "";
                         cat.products.forEach(function(el) {
                             let active = "";
-                            if (WhoAmI.version.url.split('/')[1] === el.href.split('/')[1]) {
+                            if (WhoAmI.version.url &&
+                                (WhoAmI.version.url.split('/')[1] === el.href.split('/')[1])) {
                                 active = 'active ';
                                 open = 'expanded '
                             }

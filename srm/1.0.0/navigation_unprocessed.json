@@ -55,16 +55,17 @@ json:
 
   - text: Release Notes
     id: releasenotes
-    books:
+    sub:
       - text: Release Notes
         href: release-notes/index.html
-        id: using
-        sub: using/navigation.json
+        id: release-notes
+        sub: release-notes/navigation.json
 
   - text: Reference
     id: reference
-    books:
+    sub:
       - text: REST API Reference
         href: rest-api-reference/index.html
         id: rest-api-reference
+        external: external
 ---

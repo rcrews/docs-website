@@ -2,6 +2,8 @@
 </div> <!-- // End mainbody -->
 <section class="ps docs-footer">
     <div>
+        <p style="font-size:9pt"><a style="color:#666" href="/common/html/legal.html">© 2019, Cloudera, Inc. All rights reserved.</a></p>
+{% comment -%}
         <div class="product-section community">
             <div>
                 <div class="section_content">
@@ -17,7 +19,6 @@
         <div class="product-section blog">
             <div>
                 <div class="section_content">
-{% comment -%}
                     <h2>Documentation: What’s New</h2>
                     <ul class="blog-posts">
                         {% for post in site.posts %}
@@ -27,10 +28,10 @@
                         </li>
                         {% endfor %}
                     </ul>
-{% endcomment %}
                 </div>
             </div>
         </div>
+{% endcomment %}
     </div>
 </section>
 {% include get_started_overlay.html %}

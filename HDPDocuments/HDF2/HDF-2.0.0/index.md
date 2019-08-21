@@ -1,6 +1,6 @@
 ---
 layout: hwx_product
-title: DataFlow
+title: HDF
 version: 2.0.0
 base-path: /HDPDocuments/HDF2/HDF-2.0.0/
 
@@ -29,7 +29,7 @@ sections:
             url: bk_ambari-installation/content/ch_enabling-ssl-for-nifi.html
           - chapter: Installing and Using Ranger
             url: bk_ambari-installation/content/ch_installing-and-using-ranger.html
-          - chapter: Enabling Kerberos 
+          - chapter: Enabling Kerberos
             url: bk_ambari-installation/content/ch_enabling-kerberos.html
 
       - title: Command Line Installation
@@ -67,7 +67,7 @@ sections:
         url: bk_minifi-quick-start/index.html
         pdf: bk_minifi-quick-start/bk_minifi-quick-start.pdf
         contents:
-          - chapter: MiNiFi Java Agent Quick Start 
+          - chapter: MiNiFi Java Agent Quick Start
             url: bk_minifi-quick-start/content/ch_minifi-quick-start.html
 
       - title: Overview

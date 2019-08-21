@@ -1,6 +1,6 @@
 ---
 layout: hwx_product
-title: DataFlow
+title: HDF
 version: 1.2
 base-path: /HDPDocuments/HDF1/HDF-1.2/
 

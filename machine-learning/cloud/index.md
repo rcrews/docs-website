@@ -17,9 +17,6 @@ sections:
 #       - title: Product Overview
 #         url: product-overview/index.html
 #
-#       - title: Architecture Overview
-#         url: architecture-overview/index.html
-#
 #       - title: Engines Overview
 #         url: engines-overview/index.html
 #

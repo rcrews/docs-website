@@ -1,6 +1,6 @@
 ---
 layout: hwx_foyer
-breadcrumb-title: DataFlow
+breadcrumb-title: HDF
 title: Installing & Upgrading HDF on Power PC Systems
 icon: hdf
 publications:

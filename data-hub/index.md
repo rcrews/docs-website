@@ -1,4 +1,4 @@
 ---
 layout: indexredirect
-product: HDF
+product: Data Hub
 ---
