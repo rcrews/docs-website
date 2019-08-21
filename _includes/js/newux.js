@@ -599,7 +599,7 @@ var NEWUX = (function($) {
             // Contract the elem....
             // $(this).text('\uf107').siblings('ul').parent('li').removeClass('open sesame');
             let $elem = $('.ctoc').find(`li[data-navid=${id}]`);
-            $elem.removeClass('sesame'); 
+            $elem.removeClass('sesame');
 
             // Again the hack to hide the item after compression.... I think we could do this with keyframes instead. https://jsfiddle.net/jalbertbowdenii/mHRb8/
             setTimeout(function() { $elem.removeClass('open')}, 320);
@@ -711,7 +711,11 @@ var NEWUX = (function($) {
         updatePageState: function() {
             // Update the page elems based on current situation!
             // Title
-            document.title = this.pagestate.current.text;
+            if(typeof this.pagestate.current.text !== 'undefined') {
+                document.title = this.pagestate.current.text;
+            } else {
+                document.title = $('h1').text();
+            }
 
             /* Prev
             if(typeof this.pagestate.prev === 'object') {
