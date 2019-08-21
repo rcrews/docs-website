@@ -92,8 +92,8 @@ exclude:
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds
-  # - /apps/
-  # - /content/
-  # - /etc/
-  # - /etc.clientlibs/
-  # - /libs/
+  - /apps/
+  - /content/
+  - /etc/
+  - /etc.clientlibs/
+  - /libs/

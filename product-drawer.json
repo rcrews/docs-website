@@ -2,7 +2,7 @@
 layout: json
 json:
 
-- title: Cloudera Data Platform
+- title: Data Platform
   products:
     - text: Management Console
       href: /management-console/cloud/index.html
@@ -36,7 +36,7 @@ json:
       href: /runtime/7.0.0/index.html
       icon: /common/img/mini_icons/icon-cr.png
 
-- title : Edge to AI
+- title: DataFlow
   products:
     - text: Cloudera Edge Management
       href: /cem/1.1.0/index.html
@@ -58,7 +58,7 @@ json:
       href: /srm/1.0.0/index.html
       icon: /common/img/mini_icons/icon-srm.png
 
-- title : Applications
+- title: Applications
   products:
     - text: Data Science Workbench
       href: /documentation/data-science-workbench/1-6-x.html
@@ -68,7 +68,7 @@ json:
       href: /HDPDocuments/HCP1/HCP-1.9.1/index.html
       icon: /common/img/mini_icons/icon-cybersecurity.png
 
-- title : Enterprise
+- title: Enterprise
   products:
     - text: CDH Enterprise
       href: /documentation/index.html
