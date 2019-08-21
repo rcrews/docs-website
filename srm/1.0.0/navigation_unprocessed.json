@@ -67,4 +67,5 @@ json:
       - text: REST API Reference
         href: rest-api-reference/index.html
         id: rest-api-reference
+        external: external
 ---
