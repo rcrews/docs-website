@@ -6,38 +6,13 @@ base-path: /smm/1.2.0/
 
 sections:
   - title: Release Notes
+    # "name" here below must be "releasenotes" to get the black background
     name: releasenotes
     books:
       - title: Release Notes
         url: release-notes/index.html
       - title: Support Matrix
         url: https://supportmatrix.hortonworks.com/
-
-#  - title: Installation & Upgrade
-#    name: installation-upgrade
-#    books:
-#      - title: Getting Started
-#        url: /HDPDocuments/HDF3/HDF-3.3.0/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
-#      - title: Installation
-#        url: installation/index.html
-#      - title: Upgrade
-#        url: upgrading-smm/index.html
-#
-#  - title: How To
-#    name: how-to
-#    books:
-#      - title: Monitoring Kafka Clusters
-#        url: monitoring-kafka-clusters/index.html
-#      - title: Managing Alert Policies
-#        url: managing-alert-policies/index.html
-#      - title: Managing Topics
-#        url: managing-topics/index.html
-#
-#  - title: Reference
-#    name: reference
-#    books:
-#      - title: REST API Reference
-#        url: rest-api-reference/index.html
 
 ---
 
