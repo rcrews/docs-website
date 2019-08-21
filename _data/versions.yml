@@ -518,7 +518,7 @@
 # - name: Cloudera
 #   latest-url: https://www.cloudera.com/documentation.html
 
-- name: DataFlow
+- name: HDF
   latest-version: 3.4.1.1
   latest-url: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
   search-name: DataFlow

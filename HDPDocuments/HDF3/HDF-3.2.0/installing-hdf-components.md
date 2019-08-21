@@ -1,6 +1,6 @@
 ---
 layout: hwx_foyer
-breadcrumb-title: DataFlow
+breadcrumb-title: HDF
 title: Installing HDF Components
 icon: hdf
 publications:

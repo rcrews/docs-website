@@ -1,4 +1,4 @@
 ---
 layout: indexredirect
-product: DataFlow
+product: HDF
 ---

@@ -1,6 +1,6 @@
 ---
 layout: hwx_foyer
-breadcrumb-title: DataFlow
+breadcrumb-title: HDF
 title: Flow Management
 icon: hdf
 publications:
