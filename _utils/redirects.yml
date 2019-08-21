@@ -13,6 +13,8 @@
   d: /documentation/enterprise/6/6.1.html
 - s: documentation/enterprise/6-2.html
   d: /documentation/enterprise/6/6.2.html
+- s: documentation/enterprise/6-3.html
+  d: /documentation/enterprise/6/6.3.html
 - s: downloads.html.html
   d: /downloads.html
 
