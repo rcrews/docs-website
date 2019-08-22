@@ -13,8 +13,5 @@ sections:
         url: release-notes/index.html
 
 ---
-Replication Manager is a service for copying, migrating, snapshotting,
-and restoring data between environments within the enterprise data
-cloud. It is a simple, easy-to-use, and feature-rich data movement
-capability to move existing data and metadata to the cloud to fuel new
-workloads.
+Replication Manager is a service for copying and migrating data between environments within the enterprise data
+cloud. It is a simple, easy-to-use, and feature-rich data movement capability to move existing data and metadata to the cloud to fuel new workloads.
