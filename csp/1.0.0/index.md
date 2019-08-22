@@ -14,4 +14,6 @@ sections:
 
 ---
 
-[overview text needed...]
+Cloudera Stream Processing (CSP) provides advanced messaging, stream processing and analytics capabilities powered by Apache Kafka as the core stream processing engine.
+
+CSP is fully integrated with the enterprise platform services including Cloudera Manager (CM) for cluster management and monitoring, Apache Ranger or Sentry for role based authorization and a new Schema Registry service that provide governance and schema management capabilities.
