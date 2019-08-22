@@ -10,62 +10,62 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts
-    id: concepts
+    id: cat-concepts
     sub:
       - text: Overview
         href: overview/index.html
-        id: overview
+        id: pub-overview
         sub: overview/navigation.json
 
       - text: Understanding Replication Flows
         href: understanding-replication-flows/index.html
-        id: understanding-replication-flows
+        id: pub-understanding-replication-flows
         sub: understanding-replication-flows/navigation.json
 
       - text: Main Use Cases and Use Case Architectures
         href: use-cases/index.html
-        id: use-cases
+        id: pub-use-cases
         sub: use-cases/navigation.json
 
   - text: Installation & Upgrade
-    id: installation-upgrade
+    id: cat-installation-upgrade
     sub:
       - text: Installation
         href: installation/index.html
-        id: installation
+        id: pub-installation
         sub: installation/navigation.json
 
   - text: How To
-    id: how-to
+    id: cat-how-to
     sub:
       - text: Configuring SRM
         href: configuration/index.html
-        id: configuration
+        id: pub-configuration
         sub: configuration/navigation.json
 
       - text: Securing SRM
         href: security/index.html
-        id: security
+        id: pub-security
         sub: security/navigation.json
 
       - text: Using SRM
         href: using/index.html
-        id: using
+        id: pub-using
         sub: using/navigation.json
 
   - text: Release Notes
-    id: releasenotes
+    id: cat-releasenotes
     sub:
       - text: Release Notes
         href: release-notes/index.html
-        id: release-notes
+        id: pub-release-notes
         sub: release-notes/navigation.json
 
   - text: Reference
-    id: reference
+    id: cat-reference
     sub:
       - text: REST API Reference
         href: rest-api-reference/index.html
-        id: rest-api-reference
+        id: pub-rest-api-reference
         external: external
 ---

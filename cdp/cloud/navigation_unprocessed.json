@@ -10,38 +10,38 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts & Use Cases
-    id: concepts
+    id: cat-concepts
     sub:
       - text: CDP Overview
         href: overview/index.html
-        id: overview
+        id: pub-overview
         sub: overview/navigation.json
 
   # - text: Planning
-  #   id: planning
+  #   id: cat-planning
   #   sub:
 
   # - text: Installation & Upgrade
-  #   id: installation
+  #   id: cat-installation
   #   sub:
 
   # - text: How To
-  #   id: howto
+  #   id: cat-howto
   #   sub:
 
   # - text: Troubleshooting
-  #   id: troubleshooting
+  #   id: cat-troubleshooting
   #   sub:
 
   # - text: Reference
-  #   id: reference
+  #   id: cat-reference
   #   sub:
 
   # - text: Release Notes
-  #   id: releasenotes
+  #   id: cat-releasenotes
   #   sub:
 
   # - text: Learning & Training
-  #   id: learning
+  #   id: cat-learning
   #   sub:
 ---

@@ -10,60 +10,60 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts & Use Cases
-    id: concepts
+    id: cat-concepts
     sub:
       - text: Data Warehouse Overview
         href: overview/index.html
-        id: overview
+        id: pub-overview
         sub: overview/navigation.json
 
   - text: Planning
-    id: planning
+    id: cat-planning
     sub:
       - text: Resource Planning
         href: planning/index.html
-        id: planning
+        id: pub-planning
         sub: planning/navigation.json
 
   # - text: Installation & Upgrade
-  #   id: installation
+  #   id: cat-installation
   #   sub:
 
   - text: How To
-    id: howto
+    id: cat-howto
     sub:
   #    - text: Moving Workloads to the Cloud
   #      href: using-service/index.html
-  #      id: using-service
+  #      id: pub-using-service
   #      sub: using-service/navigation.json
   #
       - text: Querying Data
         href: querying-data/index.html
-        id: querying-data
+        id: pub-querying-data
         sub: querying-data/navigation.json
 
       - text: Managing Virtual Warehouses
         href: managing-warehouses/index.html
-        id: managing-warehouses
+        id: pub-managing-warehouses
         sub: managing-warehouses/navigation.json
 
   # - text: Troubleshooting
-  #   id: troubleshooting
+  #   id: cat-troubleshooting
   #   sub:
 
   # - text: Reference
-  #   id: reference
+  #   id: cat-reference
   #   sub:
 
   - text: Release Notes
-    id: releasenotes
+    id: cat-releasenotes
     sub:
       - text: Release Notes
         href: release-notes/index.html
-        id: release-notes
+        id: pub-release-notes
         sub: release-notes/navigation.json
 
   # - text: Learning & Training
-  #   id: learning
+  #   id: cat-learning
   #   sub:
 ---

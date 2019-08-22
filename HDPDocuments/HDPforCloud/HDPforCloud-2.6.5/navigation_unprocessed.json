@@ -10,15 +10,15 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Release Notes
-    id: releasenotes
+    id: cat-releasenotes
     sub:
       - text: HDP Release Notes
-        id: hdp-release-notes
+        id: pub-hdp-release-notes
         href: hdp-release-notes/index.html
         sub: hdp-release-notes/navigation.json
 
       - text: Ambari Release Notes
-        id: ambari-release-notes
+        id: pub-ambari-release-notes
         href: ambari-release-notes/index.html
         sub: ambari-release-notes/navigation.json
 ---

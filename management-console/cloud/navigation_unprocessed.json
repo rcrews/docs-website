@@ -10,103 +10,103 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts & Use Cases
-    id: concepts
+    id: cat-concepts
     sub:
       - text: Management Console Overview
         href: overview/index.html
-        id: overview
+        id: pub-overview
         sub: overview/navigation.json
 
       - text: CDP Security Overview
         href: security-overview/index.html
-        id: security-overview
+        id: pub-security-overview
         sub: security-overview/navigation.json
 
   - text: Planning
-    id: planning
+    id: cat-planning
     sub:
       - text: AWS Requirements
         href: requirements-aws/index.html
-        id: requirements-aws
+        id: pub-requirements-aws
         sub: requirements-aws/navigation.json
 
   # - text: Installation & Upgrade
-  #   id: installation
+  #   id: cat-installation
   #   sub:
 
   - text: How To
-    id: howto
+    id: cat-howto
     sub:
       - text: Getting Started
         href: getting-started/index.html
-        id: getting-started
+        id: pub-getting-started
         sub: getting-started/navigation.json
 
       - text: User Management
         href: user-management/index.html
-        id: user-management
+        id: pub-user-management
         sub: user-management/navigation.json
 
       - text: Credentials for AWS
         href: credentials-aws/index.html
-        id: credentials-aws
+        id: pub-credentials-aws
         sub: credentials-aws/navigation.json
 
       # - text: Credentials for Azure
       #   href: credentials-azure/index.html
-      #   id: credentials-azure
+      #   id: pub-credentials-azure
       #   sub: credentials-azure/navigation.json
 
       - text: Environments
         href: environments/index.html
-        id: environments
+        id: pub-environments
         sub: environments/navigation.json
 
       - text: Data Lakes
         href: data-lakes/index.html
-        id: data-lakes
+        id: pub-data-lakes
         sub: data-lakes/navigation.json
 
       - text: Classic Clusters
         href: classic-clusters/index.html
-        id: classic-clusters
+        id: pub-classic-clusters
         sub: classic-clusters/navigation.json
 
       - text: CLI
         href: cli/index.html
-        id: cli
+        id: pub-cli
         sub: cli/navigation.json
 
       - text: SDK
         href: sdk/index.html
-        id: sdk
+        id: pub-sdk
         sub: sdk/navigation.json
 
   - text: Troubleshooting
-    id: troubleshooting
+    id: cat-troubleshooting
     sub:
       - text: Troubleshooting
         href: troubleshoot/index.html
-        id: troubleshoot
+        id: pub-troubleshoot
         sub: troubleshoot/navigation.json
 
   # - text: Reference
-  #   id: reference
+  #   id: cat-reference
   #   sub:
 
   - text: Release Notes
-    id: release-notes
+    id: cat-release-notes
     sub:
       - text: Release Notes
         href: release-notes/index.html
-        id: release-notes
+        id: pub-release-notes
         sub: release-notes/navigation.json
 
   - text: Learning & Training
-    id: learning
+    id: cat-learning
     sub:
       - text: Getting Started with Management Console
         href: getting-started-tutorial/index.html
-        id: getting-started-tutorial
+        id: pub-getting-started-tutorial
         sub: getting-started-tutorial/navigation.json
 ---

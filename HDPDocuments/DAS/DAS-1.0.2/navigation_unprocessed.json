@@ -10,26 +10,26 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Installation & Upgrade
-    id: installation-upgrade
+    id: cat-installation-upgrade
     sub:
       - text: Installation
-        id: installation
+        id: pub-installation
         href: installation/index.html
         sub: installation/navigation.json
 
   - text: How To
-    id: how-to
+    id: cat-how-to
     sub:
       - text: Operations
-        id: operations
+        id: pub-operations
         href: operations/index.html
         sub: operations/navigation.json
 
   - text: Release Notes
-    id: releasenotes
+    id: cat-releasenotes
     sub:
       - text: Release Notes
-        id: release-notes
+        id: pub-release-notes
         href: release-notes/index.html
         sub: release-notes/navigation.json
 
