@@ -49,9 +49,13 @@ json:
         id: reference
         sub: reference/navigation.json
 
-  # - text: Release Notes
-  #   id: releasenotes
-  #   sub:
+  - text: Release Notes
+    id: releasenotes
+    sub:
+      - text: Release Notes
+        href: release-notes/index.html
+        id: release-notes
+        sub: release-notes/navigation.json
 
   # - text: Learning & Training
   #   id: learning
