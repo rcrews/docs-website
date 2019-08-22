@@ -136,7 +136,7 @@ var NEWUX = (function($) {
 
             let x = 0;
             WhoAmI.versions.forEach(function(el) {
-                if(el.title !== WhoAmI.version.title) {
+                if(el && (el.title !== WhoAmI.version.title)) {
                     output += `<li class="major"><a href='${el.url}'>${el.title}</a>`;
                     if(typeof el.minors === 'object' ) {
                         output += "<ul class='minors'>";
@@ -304,8 +304,10 @@ var NEWUX = (function($) {
                 if(location.hash !== '') { // Hashes also fire popstate, and we only want to capture back/forward
                     hash = location.hash.substr(1);
                     let el = document.getElementById(hash);
-                    el.className += ' hashpad';
-                    el.scrollIntoView();
+                    if (el) {
+                        el.className += ' hashpad';
+                        el.scrollIntoView();
+                    }
                     return true;
                 }
                 // the page history is changing... happens with back/forward button, but also hash links!
@@ -418,8 +420,10 @@ var NEWUX = (function($) {
                     if(hash !== "" && typeof hash !== 'undefined') {
                         hash = hash.substr(1);
                         let el = document.getElementById(hash);
-                        el.className += ' hashpad';
-                        el.scrollIntoView();
+                        if (el) {
+                            el.className += ' hashpad';
+                            el.scrollIntoView();
+                        }
                     } else {
                         document.body.scrollTop = document.documentElement.scrollTop = 0;
                     }
@@ -816,12 +820,14 @@ var NEWUX = (function($) {
                         let open = "";
                         cat.products.forEach(function(el) {
                             let active = "";
-                            if (WhoAmI.version.url &&
-                                (WhoAmI.version.url.split('/')[1] === el.href.split('/')[1])) {
-                                active = 'active ';
-                                open = 'expanded '
+                            if(el) {
+                                if (WhoAmI.version.url &&
+                                    (WhoAmI.version.url.split('/')[1] === el.href.split('/')[1])) {
+                                    active = 'active ';
+                                    open = 'expanded '
+                                }
+                                inner_output += `<li class="${active}"><a href="${el.href}"><img src="${el.icon ? el.icon : '/common/img/mini_icons/icon-studio.png'}"><span class="text">${el.text}</span></a></li>`;
                             }
-                            inner_output += `<li class="${active}"><a href="${el.href}"><img src="${el.icon ? el.icon : '/common/img/mini_icons/icon-studio.png'}"><span class="text">${el.text}</span></a></li>`;
                         });
                         output += `<li class="cat ${open}"><span class="cat-title">${cat.title}</span><ul class="items">${inner_output}</ul></li>`;
                    });
