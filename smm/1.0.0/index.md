@@ -6,6 +6,7 @@ base-path: /smm/1.0.0/
 
 sections:
   - title: Release Notes
+    # "name" here below must be "releasenotes" to get the black background
     name: releasenotes
     books:
       - title: Release Notes
@@ -13,26 +14,8 @@ sections:
       - title: Support Matrix
         url: https://supportmatrix.hortonworks.com/
 
-#  - title: Install
-#    name: install
-#    books:
-#      - title: Getting Started
-#        url: /HDPDocuments/HDF3/HDF-3.2.0/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
-#      - title: Installation
-#        url: installation/index.html
-#
-#  - title: Administration
-#    name: admin
-#    books:
-#      - title: User Guide
-#        url: user-guide/index.html
-#
-#  - title: Reference
-#    name: reference
-#    books:
-#      - title: REST API Reference
-#        url: rest-api-reference/index.html
-
 ---
 
-[overview text needed...]
+Streams Messaging Manager is an operations monitoring/ management tool that provides end-to-end visibility in an enterprise Apache Kafka environment.
+
+With SMM, you can gain clear insights about your Kafka clusters. You can understand the end-to-end flow of message streams from producers to topics to consumers. SMM helps you troubleshoot your Kafka environment to identify bottlenecks, throughputs, consumer patterns, and traffic flow. SMM enables you to analyze the stream dynamics between producers and consumers using various filters. You can optimize your Kafka environment based on the key performance insights gathered from various brokers and topics. With the tight integration of Apache Atlas, you can gain complete data lineage across multiple Kafka hops, producers, and consumers with powerful data flow visualization.

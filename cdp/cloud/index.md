@@ -5,39 +5,12 @@ version: cloud
 base-path: /cdp/cloud/
 
 # sections:
-#   # - title: Release Notes
-#   #   name: releasenotes
-#   #   books:
-#
-#   - title: Concepts & Use Cases
-#     name: concepts
+#   - title: Release Notes
+#     # "name" here below must be "releasenotes" to get the black background
+#     name: releasenotes
 #     books:
-#       - title: CDP Overview
-#         url: overview/index.html
-#
-#   # - title: Planning
-#   #   name: planning
-#   #   books:
-#
-#   # - title: Installation & Upgrade
-#   #   name: installation
-#   #   books:
-#
-#   # - title: How To
-#   #   name: howto
-#   #   books:
-#
-#   # - title: Troubleshooting
-#   #   name: troubleshooting
-#   #   books:
-#
-#   # - title: Reference
-#   #   name: reference
-#   #   books:
-#
-#   # - title: Learning & Training
-#   #   name: learning
-#   #   books:
+#       - title: Release Notes
+#         url: release-notes/index.html
 
 ---
 Cloudera Data Platform (CDP) is a secure and governed cloud service

@@ -13,6 +13,8 @@
   d: /documentation/enterprise/6/6.1.html
 - s: documentation/enterprise/6-2.html
   d: /documentation/enterprise/6/6.2.html
+- s: documentation/enterprise/6-3.html
+  d: /documentation/enterprise/6/6.3.html
 - s: downloads.html.html
   d: /downloads.html
 
@@ -376,6 +378,8 @@
   d: https://www.cloudera.com/contact-sales/thank-you.html
 - s: contact-us.html
   d: https://www.cloudera.com/contact-us.html
+- s: content/cloudera/en/developers/home/developer-admin-resources/get-started-with-hadoop-tutorial.html
+  d: https://www.cloudera.com/developers/get-started-with-hadoop-tutorial.html
 - s: content/cloudera-content/cloudera-docs/CDH5/latest/CDH5-Security-Guide/CDH5-Security-Guide.html
   d: https://www.cloudera.com/content/cloudera-content/cloudera-docs/CDH5/latest/CDH5-Security-Guide/CDH5-Security-Guide.html
 - s: content/cloudera-content/cloudera-docs/CDH5/latest/Search/Cloudera-Search-User-Guide/csug_mapreduce_batch_index_ref.html

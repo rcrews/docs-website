@@ -20,7 +20,7 @@ email: docs@cloudera.com
 description: >- # this means to ignore newlines until "baseurl:"
   Cloudera technical documentation
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://docs-stage.cloudera.com"
+url: "http://docs.cloudera.com"
 twitter_username: cloudera
 github_username:  cloudera
 
@@ -44,9 +44,10 @@ exclude:
   # - vendor/ruby/
 
   # Unreleased documentation
-  - /HDPDocuments/CFM/CFM-1.1.0/
-  - /HDPDocuments/DPS/
+  - /HDPDocuments/CEM/CEM-1.1.0/
+  - /HDPDocuments/CSP/CSP-2.0.0/
   - /HDPDocuments/SMM/SMM-2.0.0/
+  - /HDPDocuments/SRM/SRM-2.0.0/
 
   # Testing files that should not be copied to the hortonworks staging site
   - /data-catalog/cloud/navigation.json
@@ -92,8 +93,8 @@ exclude:
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds
-  # - /apps/
-  # - /content/
-  # - /etc/
-  # - /etc.clientlibs/
-  # - /libs/
+  - /apps/
+  - /content/
+  - /etc/
+  - /etc.clientlibs/
+  - /libs/

@@ -407,7 +407,7 @@ json:
             id: atlas-exploring-using-lineage
             sub: atlas-exploring-using-lineage/navigation.json
 
-          - text: Manaing Business Terms with Atlas Glossaries
+          - text: Managing Business Terms with Atlas Glossaries
             href: atlas-managing-business-terms-with-glossaries/index.html
             id: atlas-managing-business-terms-with-glossaries
             sub: atlas-managing-business-terms-with-glossaries/navigation.json
