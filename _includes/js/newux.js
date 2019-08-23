@@ -830,7 +830,7 @@ var NEWUX = (function($) {
                                     active = 'active ';
                                     open = 'expanded '
                                 }
-                                inner_output += `<li class="${active}"><a href="${el.href}"><img src="${el.icon ? el.icon : '/common/img/mini_icons/icon-studio.png'}"><span class="text">${el.text}</span></a></li>`;
+                                inner_output += `<li class="${active}"><a href="${el.href}"><img src="${el.icon ? el.icon : '/common/img/mini_icons/icon-studio.png'}" title="${el.text}"><span class="text">${el.text}</span></a></li>`;
                             }
                         });
                         output += `<li class="cat ${open}"><span class="cat-title">${cat.title}</span><ul class="items">${inner_output}</ul></li>`;
@@ -1156,6 +1156,7 @@ var NEWUX = (function($) {
     WhoAmI.init();
     Pubnav.init();
     // ProductDrawer.init(); Actually, we can't fire this until the WhoAmI function has fired, so moved the init call over there.
-    Search.init();
+    // Search.init();
+    $('.search').html(''); // Remove search box until ready.
 
 }(jQuery));
