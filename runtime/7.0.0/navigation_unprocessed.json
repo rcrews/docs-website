@@ -29,7 +29,7 @@ json:
       - text: Storage
         href: concepts-storage.html
         sub:
-          - text: Apache HDFS Overview
+          - text: HDFS Overview
             href: hdfs-overview/index.html
             id: pub-hdfs-overview
             sub: hdfs-overview/navigation.json
