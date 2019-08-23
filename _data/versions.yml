@@ -803,41 +803,13 @@
     - title: Cloud
       url: /replication-manager/cloud/index.html
 
-#- name: Data Hub
-#  latest-version: cloud
-#  latest-url: /data-hub/cloud/index.html
-#  search-name: Data Hub
-#  versions:
-#    - title: Cloud
-#      url: /data-hub/cloud/index.html
-
 - name: Data Hub
-  latest-version: 1.2.1
+  latest-version: cloud
   latest-url: /data-hub/cloud/index.html
   search-name: Data Hub
   versions:
     - title: Cloud
       url: /data-hub/cloud/index.html
-    - title: "1.2"
-      url: /data-hub/1.2.1/index.html
-      minors:
-        - title: 1.2.1
-          type: Latest
-          url: /data-hub/1.2.1/index.html
-        - title: 1.2.0
-          url: /data-hub/1.2.0/index.html
-    - title: "1.1"
-      url: /data-hub/1.1.0/index.html
-      minors:
-        - title: 1.1.0
-          url: /data-hub/1.1.0/index.html
-    - title: "1.0"
-      url: /data-hub/1.0.2/index.html
-      minors:
-        - title: 1.0.2
-          url: /data-hub/1.0.2/index.html
-        - title: 1.0.0
-          url: /data-hub/1.0.0/index.html
 
 - name: Data Warehouse
   latest-version: cloud
