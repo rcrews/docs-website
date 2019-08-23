@@ -725,21 +725,25 @@ var NEWUX = (function($) {
             }
 
             /* Prev
-            if(typeof this.pagestate.prev === 'object') {
-                $('.cpage').addClass('hasprev');
-                $('.cpage .prev a').attr('href', this.pagestate.prev.href).html('&laquo; ' + this.pagestate.prev.text);
-                $('.cpage .short-prev a').attr('href', this.pagestate.prev.href);
-            } else {
-                $('.cpage').removeClass('hasprev');
-            }
+                if(typeof this.pagestate.prev === 'object') {
+                    $('.cpage').addClass('hasprev');
+                    $('.cpage .prev a').attr('href', this.pagestate.prev.href).html('&laquo; ' + this.pagestate.prev.text);
+                    $('.cpage .short-prev a').attr('href', this.pagestate.prev.href);
+                } else {
+                    $('.cpage').removeClass('hasprev');
+                }
             */
 
             // Next
             if(typeof this.pagestate.next === 'object' && !Utils.isEmpty(this.pagestate.next)) {
+                // Edge case... sometimes the 'next' item might be a parent category... without a URL.. in which case, the first subchild is probably what we want.
+                if(typeof this.pagestate.next.href === 'undefined' && typeof this.pagestate.next.sub === 'object') this.pagestate.next = this.pagestate.next.sub[0];
+
                 $('.cpage').addClass('hasnext');
                 $('.cpage .next a').attr('href', this.pagestate.next.href).html(this.pagestate.next.text + ' &raquo;');
                 $('.cpage .short-next a').attr('href', this.pagestate.next.href);
-            } else {
+
+             } else {
                 $('.cpage').removeClass('hasnext');
             }
 
