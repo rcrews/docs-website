@@ -8,7 +8,7 @@ title: Storage
 # * Kudu
 
 publications:
-  - title: Apache HDFS Overview
+  - title: HDFS Overview
     url: hdfs-overview/index.html
     description: >-
       Provides an overview of Apache Hadoop HDFS, its benefits, and the
