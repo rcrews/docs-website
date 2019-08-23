@@ -472,14 +472,6 @@ var NEWUX = (function($) {
                 } else {
                     // Success....
 
-                    // PDF Document
-                    let $pdf = $responseHTML.find('link[type="application/pdf"]');
-                    if($pdf.length > 0) {
-                        Pubnav.pagestate.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
-                    } else {
-                        Pubnav.pagestate.pdfurl = "";
-                    }
-
                     // Copyright
                     let copyright = $responseHTML.find('meta[name="rights"]').attr('content');
                     if (typeof copyright !== 'undefined') {
@@ -493,6 +485,16 @@ var NEWUX = (function($) {
                         if(typeof hash === 'undefined') hash = "";
                         history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
                     }
+
+                    // PDF Document
+                    let $pdf = $responseHTML.find('link[type="application/pdf"]');
+                    if($pdf.length > 0) {
+                        console.log($pdf[0].href);
+                        Pubnav.pagestate.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
+                    } else {
+                        Pubnav.pagestate.pdfurl = "";
+                    }
+
 
                     complete = true;
                     swapContent();
