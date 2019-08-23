@@ -10,46 +10,46 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts & Use Cases
-    id: concepts
+    id: cat-concepts
     sub:
       - text: Overview
         href: core-concepts/index.html
-        id: core-concepts
+        id: pub-core-concepts
         sub: core-concepts/navigation.json
 
   # - text: Planning
-  #   id: planning
+  #   id: cat-planning
   #   sub:
 
   # - text: Installation & Upgrade
-  #   id: installation
+  #   id: cat-installation
   #   sub:
 
   - text: How To
-    id: howto
+    id: cat-howto
     sub:
       - text: Managing
         href: managing/index.html
-        id: managing
+        id: pub-managing
         sub: managing/navigation.json
 
   # - text: Troubleshooting
-  #   id: troubleshooting
+  #   id: cat-troubleshooting
   #   sub:
 
   # - text: Reference
-  #   id: reference
+  #   id: cat-reference
   #   sub:
 
   - text: Release Notes
-    id: releasenotes
+    id: cat-releasenotes
     sub:
       - text: Release Notes
         href: release-notes/index.html
-        id: release-notes
+        id: pub-release-notes
         sub: release-notes/navigation.json
 
   # - text: Learning & Training
-  #   id: learning
+  #   id: cat-learning
   #   sub:
 ---

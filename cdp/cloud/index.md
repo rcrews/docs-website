@@ -35,4 +35,4 @@ CDP consists of the following services:
 * [Data Hub](/data-hub/cloud/index.html)
 * [Data Warehouse](/data-warehouse/cloud/index.html)
 * [Machine Learning](/machine-learning/cloud/index.html)
-* [Cloudera Runtime](/runtime/cloud/index.html)
+* [Cloudera Runtime](/runtime/7.0.0/index.html)

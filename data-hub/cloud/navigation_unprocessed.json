@@ -10,103 +10,103 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts & Use Cases
-    id: concepts
+    id: cat-concepts
     sub:
       - text: Data Hub Overview
         href: overview/index.html
-        id: overview
+        id: pub-overview
         sub: overview/navigation.json
 
   - text: Planning
-    id: planning
+    id: cat-planning
     sub:
       - text: Cluster Planning
         href: cluster-planning/index.html
-        id: cluster-planning
+        id: pub-cluster-planning
         sub: cluster-planning/navigation.json
 
   # - text: Installation & Upgrade
-  #   id: installation
+  #   id: cat-installation
   #   sub:
 
   - text: How To
-    id: howto
+    id: cat-howto
     sub:
       - text: Creating a Cluster on AWS
         href: create-cluster-aws/index.html
-        id: create-cluster-aws
+        id: pub-create-cluster-aws
         sub: create-cluster-aws/navigation.json
 
       # - text: Creating a Cluster on Azure
       #   href: create-cluster-azure/index.html
-      #   id: create-cluster-azure
+      #   id: pub-create-cluster-azure
       #   sub: create-cluster-azure/navigation.json
 
       - text: Accessing Clusters
         href: access-clusters/index.html
-        id: access-clusters
+        id: pub-access-clusters
         sub: access-clusters/navigation.json
 
       - text: Managing Clusters
         href: manage-clusters/index.html
-        id: manage-clusters
+        id: pub-manage-clusters
         sub: manage-clusters/navigation.json
 
       - text: Cluster Definitions
         href: cluster-definitions/index.html
-        id: cluster-definitions
+        id: pub-cluster-definitions
         sub: cluster-definitions/navigation.json
 
       - text: Cluster Templates
         href: cluster-templates/index.html
-        id: cluster-templates
+        id: pub-cluster-templates
         sub: cluster-templates/navigation.json
 
       - text: Recipes
         href: recipes/index.html
-        id: recipes
+        id: pub-recipes
         sub: recipes/navigation.json
 
       - text: Image Catalogs
         href: image-catalogs/index.html
-        id: image-catalogs
+        id: pub-image-catalogs
         sub: image-catalogs/navigation.json
 
       - text: Custom Properties
         href: custom-properties/index.html
-        id: custom-properties
+        id: pub-custom-properties
         sub: custom-properties/navigation.json
 
       - text: EBS Encryption on AWS
         href: ebs-encryption-aws/index.html
-        id: ebs-encryption-aws
+        id: pub-ebs-encryption-aws
         sub: ebs-encryption-aws/navigation.json
 
   - text: Troubleshooting
-    id: troubleshooting
+    id: cat-troubleshooting
     sub:
       - text: Troubleshooting Clusters
         href: troubleshooting-clusters/index.html
-        id: troubleshooting-clusters
+        id: pub-troubleshooting-clusters
         sub: troubleshooting-clusters/navigation.json
 
   # - text: Reference
-  #   id: reference
+  #   id: cat-reference
   #   sub:
 
   - text: Release Notes
-    id: release-notes
+    id: cat-release-notes
     sub:
       - text: Release Notes
         href: release-notes/index.html
-        id: release-notes
+        id: pub-release-notes
         sub: release-notes/navigation.json
 
   - text: Learning & Training
-    id: learning
+    id: cat-learning
     sub:
       - text: Getting Started with Data Hub
         href: getting-started-tutorial/index.html
-        id: getting-started-tutorial
+        id: pub-getting-started-tutorial
         sub: getting-started-tutorial/navigation.json
 ---

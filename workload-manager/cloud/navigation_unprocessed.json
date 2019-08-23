@@ -10,50 +10,54 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts & Use Cases
-    id: concepts
+    id: cat-concepts
     sub:
       - text: Overview
         href: overview/index.html
-        id: overview
+        id: pub-overview
         sub: overview/navigation.json
 
   # - text: Planning
-  #   id: planning
+  #   id: cat-planning
   #   sub:
 
   # - text: Installation & Upgrade
-  #   id: installation
+  #   id: cat-installation
   #   sub:
 
   - text: How To
-    id: howto
+    id: cat-howto
     sub:
       - text: Cluster Management
         href: cluster-management/index.html
-        id: cluster-management
+        id: pub-cluster-management
         sub: cluster-management/navigation.json
 
   - text: Troubleshooting
-    id: troubleshooting
+    id: cat-troubleshooting
     sub:
       - text: Troubleshooting Jobs
         href: troubleshooting-jobs/index.html
-        id: troubleshooting-jobs
+        id: pub-troubleshooting-jobs
         sub: troubleshooting-jobs/navigation.json
 
   - text: Reference
-    id: reference
+    id: cat-reference
     sub:
       - text: Reference
         href: reference/index.html
-        id: reference
+        id: pub-reference
         sub: reference/navigation.json
 
-  # - text: Release Notes
-  #   id: releasenotes
-  #   sub:
+  - text: Release Notes
+    id: cat-releasenotes
+    sub:
+      - text: Release Notes
+        href: release-notes/index.html
+        id: pub-release-notes
+        sub: release-notes/navigation.json
 
   # - text: Learning & Training
-  #   id: learning
+  #   id: cat-learning
   #   sub:
 ---

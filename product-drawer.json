@@ -4,6 +4,10 @@ json:
 
 - title: Data Platform
   products:
+    - text: Cloudera Data Platform
+      href: /cdp/cloud/index.html
+      icon: /common/img/mini_icons/icon-cdp.png
+
     - text: Management Console
       href: /management-console/cloud/index.html
       icon: /common/img/mini_icons/icon-mc.png

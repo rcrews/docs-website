@@ -10,42 +10,42 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts
-    id: concepts
+    id: cat-concepts
     sub:
       - text: Core Concepts
-        id: core-concepts
+        id: pub-core-concepts
         href: core-concepts/index.html
         sub: core-concepts/navigation.json
 
   - text: Installation & Upgrade
-    id: installation-upgrade
+    id: cat-installation-upgrade
     sub:
       - text: Installation
-        id: installation
+        id: pub-installation
         href: installation/index.html
         sub: installation/navigation.json
       - text: Upgrade
-        id: upgrade
+        id: pub-upgrade
         href: upgrade/index.html
         sub: upgrade/navigation.json
       - text: Troubleshooting
-        id: troubleshooting
+        id: pub-troubleshooting
         href: troubleshooting/index.html
         sub: troubleshooting/navigation.json
 
   - text: How To
-    id: how-to
+    id: cat-how-to
     sub:
       - text: Operations
-        id: operations
+        id: pub-operations
         href: operations/index.html
         sub: operations/navigation.json
 
   - text: Release Notes
-    id: releasenotes
+    id: cat-releasenotes
     sub:
       - text: Release Notes
-        id: release-notes
+        id: pub-release-notes
         href: release-notes/index.html
         sub: release-notes/navigation.json
 

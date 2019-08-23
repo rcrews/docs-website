@@ -10,52 +10,52 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts
-    id: concepts
+    id: cat-concepts
     sub:
       - text: Getting Started
         href: /HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
 
   - text: Installation & Upgrade
-    id: installation-upgrade
+    id: cat-installation-upgrade
     sub:
       - text: Installation
         href: installation/index.html
-        id: installation
+        id: pub-installation
         sub: installation/navigation.json
       - text: Upgrade
         href: upgrading-smm/index.html
-        id: upgrading-smm
+        id: pub-upgrading-smm
         sub: upgrading-smm/navigation.json
 
   - text: How To
-    id: how-to
+    id: cat-how-to
     sub:
       - text: Monitoring Kafka Clusters
         href: monitoring-kafka-clusters/index.html
-        id: monitoring-kafka-clusters
+        id: pub-monitoring-kafka-clusters
         sub: monitoring-kafka-clusters/navigation.json
       - text: Managing Alert Policies
         href: managing-alert-policies/index.html
-        id: managing-alert-policies
+        id: pub-managing-alert-policies
         sub: managing-alert-policies/navigation.json
       - text: Managing Topics
         href: managing-topics/index.html
-        id: managing-topics
+        id: pub-managing-topics
         sub: managing-topics/navigation.json
 
   - text: Reference
-    id: reference
+    id: cat-reference
     sub:
       - text: REST API Reference
         href: rest-api-reference/index.html
-        id: rest-api-reference
+        id: pub-rest-api-reference
         external: external
 
   - text: Release Notes
-    id: releasenotes
+    id: cat-releasenotes
     sub:
       - text: Release Notes
         href: release-notes/index.html
-        id: release-notes
+        id: pub-release-notes
         sub: release-notes/navigation.json
 ---

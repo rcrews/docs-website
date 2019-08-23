@@ -10,159 +10,159 @@ layout: json
 #- text: Learning & Training
 json:
   - text: Concepts & Use Cases
-    id: concepts
+    id: cat-concepts
     sub:
       - text: Product Overview
         href: product/index.html
-        id: product
+        id: pub-product
         sub: product/navigation.json
 
       - text: Engines Overview
         href: engines-overview/index.html
-        id: engines-overview
+        id: pub-engines-overview
         sub: engines-overview/navigation.json
 
       - text: Security Overview
         href: security-overview/index.html
-        id: security-overview
+        id: pub-security-overview
         sub: security-overview/navigation.json
 
       - text: Model Training and Deployment Overview
         href: model-training-deployment-overview/index.html
-        id: model-training-deployment-overview
+        id: pub-model-training-deployment-overview
         sub: model-training-deployment-overview/navigation.json
 
       - text: Collaboration Overview
         href: collaboration-overview/index.html
-        id: collaboration-overview
+        id: pub-collaboration-overview
         sub: collaboration-overview/navigation.json
 
 
   - text: Planning
-    id: planning
+    id: cat-planning
     sub:
       - text: AWS Requirements
         href: requirements-aws/index.html
-        id: requirements-aws
+        id: pub-requirements-aws
         sub: requirements-aws/navigation.json
 
   # - text: Installation & Upgrade
-  #   id: installation
+  #   id: cat-installation
   #   sub:
 
   - text: How To
-    id: howto
+    id: cat-howto
     sub:
       # - text: Quickstart
       #   href: quickstart/index.html
-      #   id: quickstart
+      #   id: pub-quickstart
       #   sub: quickstart/navigation.json
 
       - text: ML Workspaces
         href: workspaces/index.html
-        id: workspaces
+        id: pub-workspaces
         sub: workspaces/navigation.json
 
       - text: Personal and Team Accounts
         href: user-accounts/index.html
-        id: user-accounts
+        id: pub-user-accounts
         sub: user-accounts/navigation.json
 
       - text: Projects
         href: projects/index.html
-        id: projects
+        id: pub-projects
         sub: projects/navigation.json
 
       - text: Engines
         href: engines/index.html
-        id: engines
+        id: pub-engines
         sub: engines/navigation.json
 
       - text: Spark
         href: spark/index.html
-        id: spark
+        id: pub-spark
         sub: spark/navigation.json
 
       - text: GPUs
         href: gpu/index.html
-        id: gpu
+        id: pub-gpu
         sub: gpu/navigation.json
 
       - text: Experiments
         href: experiments/index.html
-        id: experiments
+        id: pub-experiments
         sub: experiments/navigation.json
 
       - text: Models
         href: models/index.html
-        id: models
+        id: pub-models
         sub: models/navigation.json
 
       - text: Jobs and Pipelines
         href: jobs-pipelines/index.html
-        id: jobs-pipelines
+        id: pub-jobs-pipelines
         sub: jobs-pipelines/navigation.json
 
       - text: Distributed Computing
         href: distributed-computing/index.html
-        id: distributed-computing
+        id: pub-distributed-computing
         sub: distributed-computing/navigation.json
 
       - text: Site Administration
         href: site-administration/index.html
-        id: site-administration
+        id: pub-site-administration
         sub: site-administration/navigation.json
 
       - text: Security
         href: security/index.html
-        id: security
+        id: pub-security
         sub: security/navigation.json
 
       - text: Backup
         href: backup/index.html
-        id: backup
+        id: pub-backup
         sub: backup/navigation.json
 
   - text: Troubleshooting
-    id: troubleshooting
+    id: cat-troubleshooting
     sub:
       - text: Troubleshooting
         href: troubleshooting/index.html
-        id: troubleshooting
+        id: pub-troubleshooting
         sub: troubleshooting/navigation.json
 
   - text: Reference
-    id: reference
+    id: cat-reference
     sub:
       - text: CLI
         href: cli/index.html
-        id: cli
+        id: pub-cli
         sub: cli/navigation.json
 
       - text: Data Access
         href: import-data/index.html
-        id: import-data
+        id: pub-import-data
         sub: import-data/navigation.json
 
       - text: Visualizations
         href: visualizations/index.html
-        id: visualizations
+        id: pub-visualizations
         sub: visualizations/navigation.json
 
       - text: Jupyter Magics
         href: jupyter/index.html
-        id: jupyter
+        id: pub-jupyter
         sub: jupyter/navigation.json
 
   - text: Release Notes
-    id: releasenotes
+    id: cat-releasenotes
     sub:
       - text: Release Notes
         href: release-notes/index.html
-        id: release-notes
+        id: pub-release-notes
         sub: release-notes/navigation.json
 
   # - text: Learning & Training
-  #   id: learning
+  #   id: cat-learning
   #   sub:
 ---
