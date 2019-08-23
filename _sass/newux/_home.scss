@@ -1,6 +1,6 @@
 body 				{ background-color:#fff; background-image:none;}
 
-.home-hero          { background:url(/common/img/docs_home_bg.png); background-position:right bottom; background-size:cover; padding:0 0 80px;
+.home-hero          { background:url(/common/img/docs_home_bg.png); background-position:center bottom; background-size:cover; padding:0 20px 80px;
 	&>div 			{ max-width:1170px; margin:auto; }
 	h1 				{ max-width:500px; color:$primary-blue; font-size:250%; padding:30px 0 10px;   }
 	p 				{ max-width:600px;   }
@@ -8,36 +8,60 @@ body 				{ background-color:#fff; background-image:none;}
 		input 		{ font-size:110%; padding:5px 10px; width:100%; }
 		i.fa 		{ position:absolute; right:25px; top:10px; }
 	}
+	@include breakpoint(medium) { background-position:right bottom; }
 }
 
 .home-hero+section.std	{ margin-top:-40px;}
 
-section.std 		{ max-width:1220px; padding:15px 25px; margin:auto; display: grid; grid-template-columns: 240px 1fr; grid-gap:2rem; grid-template-areas: "header body";
-	.section-title 	{ grid-area:header; font-size:200%;  }
+section.std 		{ max-width:1220px; padding:15px 25px; margin:auto;
+	.section-title 	{ grid-area:header; font-size:200%; margin-bottom:20px; }
 	.cards 			{ grid-area: body;  }
 
 	&.white 		{ background-color:#fff; }
+	&.grey 			{ background-color:#e6e6e6;}
+
+	@include breakpoint(medium) { display: grid; grid-template-columns: 240px 1fr; grid-gap:2rem; grid-template-areas: "header body";
+	}
+
 }
 
 .card-group	 		{ display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 1.5rem; border-radius:3px; margin:5px 0 20px;
-	.card 			{ padding:5px 10px; background-color:#fefefe; border-radius: 2px; }
-	.card-title		{ font-weight:600; font-size:110%; margin-bottom:8px;  }
+	.card 			{ background-color:#fefefe; border-radius: 2px; }
+	.card-title		{ font-weight:600; font-size:110%; margin-bottom:8px; padding-top:7px; }
 	ul 				{ list-style-type:none; padding-left:0;
 		li 			{ margin-bottom:2px;
 
 		}
 	}
 
-	// &.by-role  		{  }
+	@include breakpoint(medium) {
+		.card 		{ padding:5px 10px; }
+	}
+
+		// &.by-role  		{  }
 	// &.by-role .card { background-color:#f9f9f9; }
 }
 
-.segments 			{ max-width:1220px; background-color:#fff;  text-align:center; list-style-type:none; margin:-55px auto 0; padding:30px 10px 10px;
+.segments 			{ max-width:1220px; background-color:#fff;   list-style-type:none; margin:-55px auto 0; padding:30px 10px 10px;
 	li 				{ font-weight:600; text-transform:uppercase; font-size:95%; border-radius:15px; padding:2px 5px; display:inline-block; background-color:#f6f6f6; border:1px solid $primary-blue; margin:0 10px;
 		a 			{ color:$primary-blue; padding:3px 8px; }
 		&.active	{ background-color:$primary-blue; color:#fff;
 			a 		{ color:#fff; }
 		}
 	}
+
+	@include breakpoint(medium) { text-align : center;
+
+	}
 }
+
+@media (min-width: 768px) {
+	.container, .body-container { max-width:1170px; }
+}
+
+@media (min-width: 992px) {
+	.container, .body_container { max-width:1170px; }
+}
+
+
 
