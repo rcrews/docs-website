@@ -456,7 +456,7 @@
       url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/index.html
       minors:
         - title: 2.9.1
-          type: latest
+          type: Latest
           url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/index.html
         - title: 2.9.0
           url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.0/index.html
@@ -527,7 +527,7 @@
       url: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
       minors:
         - title: 3.4.1.1
-          type: latest
+          type: Latest
           url: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
         - title: 3.4.0
           url: /HDPDocuments/HDF3/HDF-3.4.0/index.html
@@ -730,7 +730,7 @@
       url: /cfm/1.0.1/index.html
       minors:
         - title: 1.0.1
-          type: latest
+          type: Latest
           url: /cfm/1.0.1/index.html
         - title: 1.0.0
           url: /cfm/1.0.0/index.html
