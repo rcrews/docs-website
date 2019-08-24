@@ -10,8 +10,8 @@ publications:
   - title: Apache HBase Overview
     url: hbase-overview/index.html
     description: >-
-      Introduces Apache HBase, with information about Apache HBase use cases,
-      and unsupported features.
+      Introduces Apache HBase, with information about Apache HBase use cases.
+
 ---
 Apache HBase is a NoSQL database that provides real-time read/write
 access to large datasets.
