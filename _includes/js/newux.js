@@ -489,7 +489,6 @@ var NEWUX = (function($) {
                     // PDF Document
                     let $pdf = $responseHTML.find('link[type="application/pdf"]');
                     if($pdf.length > 0) {
-                        console.log($pdf[0].href);
                         Pubnav.pagestate.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
                     } else {
                         Pubnav.pagestate.pdfurl = "";
