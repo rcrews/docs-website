@@ -659,6 +659,19 @@ var NEWUX = (function($) {
             }
             return false; // Defaults to false if we couldn't find anything.
         },
+        isFoyer: function(navitem) {
+            // Detects whether the page is a foyer page.
+            let foyer = false;
+            if(navitem.href !== undefined) {
+                let url = new URL(navitem.href, window.location.origin);
+                let chunks = url.pathname.split('/');
+                if(chunks.length === 4) {
+                    //topic foyer for the topic, product foyer for the product page.
+                    foyer = (chunks[3].indexOf('index.html') === -1) ? "section-foyer" : "product-foyer";
+                }
+            }
+            return foyer;
+        },
         mapPageState: function(navarray, id) {
             // This searches for the id in the nav tree, and then sets up the back, forward etc.
 
@@ -669,6 +682,7 @@ var NEWUX = (function($) {
                     // We found it!
                     this.pagestate.current = navarray[i];
                     this.pagestate.prev = (i-1 >= 0) ? navarray[i-1] : ""; // TODO!!! - This should really be the parent if there is no prior sibling, but watch out for the autoredirection down on empty parents.
+                    navarray[i].foyer = this.isFoyer(navarray[i]);
 
                     if(typeof navarray[i].sub === 'object') {
                         this.pagestate.children = Utils.flatten(navarray[i].sub); // Not currently being flattened.
@@ -678,6 +692,7 @@ var NEWUX = (function($) {
                         this.pagestate.next = navarray[i+1] ;
                     }
                     this.pagestate.depth = 1;
+                    this.pagestate.breadpath.unshift(navarray[i]);
                     return true;
                 } else {
                     // Check if the item has kids....
@@ -688,17 +703,7 @@ var NEWUX = (function($) {
                                 this.pagestate.next = navarray[i+1] ;
                             }
                             // Detect if it's a foyer page
-                            // Look at the URL.... if the file is in the third slot add a foyer flag.
-                            let foyer = false;
-                            if(navarray[i].href !== undefined) {
-                                let url = new URL(navarray[i].href, window.location.origin);
-                                let chunks = url.pathname.split('/');
-                                if(chunks.length === 4) {
-                                    //topic foyer for the topic, product foyer for the product page.
-                                    foyer = (chunks[3].indexOf('index.html') === -1) ? "section-foyer" : "product-foyer";
-                                }
-                            }
-                            navarray[i].foyer = foyer;
+                            navarray[i].foyer = this.isFoyer(navarray[i]);
 
                             // Add item to breadpath.
                             this.pagestate.breadpath.unshift(navarray[i]);
@@ -718,6 +723,9 @@ var NEWUX = (function($) {
         },
         updatePageState: function() {
             // Update the page elems based on current situation!
+
+            console.log(this.pagestate.breadpath);
+
             // Title
             if(typeof this.pagestate.current.text !== 'undefined') {
                 document.title = this.pagestate.current.text;
@@ -792,6 +800,7 @@ var NEWUX = (function($) {
             // Outer Breadcrumbs... putting the topic title up top.
             if(this.pagestate.breadpath.length >= 2) {
                 // Only if it's a topic title. Breadpath[0] is likely to be a category. Breadpath[1] Might be the topic title.
+                console.log('outer breadcrumbs');
                 if(this.pagestate.breadpath[1].foyer === 'section-foyer') {
                     $('.bread-category').html(`<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`);
                 }
