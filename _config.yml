@@ -55,6 +55,5 @@ exclude:
   - /HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
   - /HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
   - /HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
-  - /robots.txt
   - /sitemap.xsl
   - /wp-content
