@@ -724,8 +724,6 @@ var NEWUX = (function($) {
         updatePageState: function() {
             // Update the page elems based on current situation!
 
-            console.log(this.pagestate.breadpath);
-
             // Title
             if(typeof this.pagestate.current.text !== 'undefined') {
                 document.title = this.pagestate.current.text;
@@ -800,7 +798,6 @@ var NEWUX = (function($) {
             // Outer Breadcrumbs... putting the topic title up top.
             if(this.pagestate.breadpath.length >= 2) {
                 // Only if it's a topic title. Breadpath[0] is likely to be a category. Breadpath[1] Might be the topic title.
-                console.log('outer breadcrumbs');
                 if(this.pagestate.breadpath[1].foyer === 'section-foyer') {
                     $('.bread-category').html(`<a href="${this.pagestate.breadpath[1].href}">${this.pagestate.breadpath[1].text}</a>`);
                 }
