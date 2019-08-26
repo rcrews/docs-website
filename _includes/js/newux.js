@@ -454,13 +454,15 @@ var NEWUX = (function($) {
                 // Save response for use in complete callback
                 let response = arguments;
 
-                // $.parseHTML will exclude scripts to avoid IE 'Permission Denied' errors
-                let $responseHTML = jQuery( "<div>" ).append(jQuery.parseHTML( responseText ));
-                elems = $responseHTML.find( selector ).children();
+                // Parse the response..
+                // First, create a virtual DOM that we can set the location correctly with.
+                let virtualDOM = document.implementation.createHTMLDocument('virtual').body;
+                virtualDOM.innerHTML = responseText;
+                elems = $(virtualDOM).find( selector ).children();
 
-                // If no content.....
+                // And check whether there is any content in there......
                 if(!elems.length ) {
-                    if(Pubnav.pagestate.children.length && Pubnav.clicktrack < 4) {
+                    if(Pubnav.pagestate.children.length && Pubnav.clicktrack < 3) {
                         // sometimes foyer pages are empty. If so, look for the first child page.
                         let new_url = Pubnav.pagestate.children[0].href;
                         Pubnav.requestNewPage(new_url);
@@ -472,22 +474,22 @@ var NEWUX = (function($) {
                 } else {
                     // Success....
 
-                    // Copyright
-                    let copyright = $responseHTML.find('meta[name="rights"]').attr('content');
-                    if (typeof copyright !== 'undefined') {
-                        Pubnav.pagestate.copyright = copyright;
-                    } else {
-                        Pubnav.pagestate.copyright = new Date().getFullYear()  + ' Cloudera, Inc.';
-                    }
-
                     // Update history so the back button works.... We don't want this to fire if we're going back in time!
                     if (!history.state || history.state.page !== url) {
                         if(typeof hash === 'undefined') hash = "";
                         history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
                     }
 
+                    // Copyright
+                    let copyright = $(virtualDOM).find('meta[name="rights"]').attr('content');
+                    if (typeof copyright !== 'undefined') {
+                        Pubnav.pagestate.copyright = copyright;
+                    } else {
+                        Pubnav.pagestate.copyright = new Date().getFullYear()  + ' Cloudera, Inc.';
+                    }
+
                     // PDF Document
-                    let $pdf = $responseHTML.find('link[type="application/pdf"]');
+                    let $pdf = $(virtualDOM).find('link[type="application/pdf"]');
                     if($pdf.length > 0) {
                         Pubnav.pagestate.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
                     } else {
@@ -659,6 +661,19 @@ var NEWUX = (function($) {
             }
             return false; // Defaults to false if we couldn't find anything.
         },
+        isFoyer: function(navitem) {
+            // Detects whether the page is a foyer page.
+            let foyer = false;
+            if(navitem.href !== undefined) {
+                let url = new URL(navitem.href, window.location.origin);
+                let chunks = url.pathname.split('/');
+                if(chunks.length === 4) {
+                    //topic foyer for the topic, product foyer for the product page.
+                    foyer = (chunks[3].indexOf('index.html') === -1) ? "section-foyer" : "product-foyer";
+                }
+            }
+            return foyer;
+        },
         mapPageState: function(navarray, id) {
             // This searches for the id in the nav tree, and then sets up the back, forward etc.
 
@@ -669,6 +684,7 @@ var NEWUX = (function($) {
                     // We found it!
                     this.pagestate.current = navarray[i];
                     this.pagestate.prev = (i-1 >= 0) ? navarray[i-1] : ""; // TODO!!! - This should really be the parent if there is no prior sibling, but watch out for the autoredirection down on empty parents.
+                    navarray[i].foyer = this.isFoyer(navarray[i]);
 
                     if(typeof navarray[i].sub === 'object') {
                         this.pagestate.children = Utils.flatten(navarray[i].sub); // Not currently being flattened.
@@ -678,6 +694,7 @@ var NEWUX = (function($) {
                         this.pagestate.next = navarray[i+1] ;
                     }
                     this.pagestate.depth = 1;
+                    this.pagestate.breadpath.unshift(navarray[i]);
                     return true;
                 } else {
                     // Check if the item has kids....
@@ -688,17 +705,7 @@ var NEWUX = (function($) {
                                 this.pagestate.next = navarray[i+1] ;
                             }
                             // Detect if it's a foyer page
-                            // Look at the URL.... if the file is in the third slot add a foyer flag.
-                            let foyer = false;
-                            if(navarray[i].href !== undefined) {
-                                let url = new URL(navarray[i].href, window.location.origin);
-                                let chunks = url.pathname.split('/');
-                                if(chunks.length === 4) {
-                                    //topic foyer for the topic, product foyer for the product page.
-                                    foyer = (chunks[3].indexOf('index.html') === -1) ? "section-foyer" : "product-foyer";
-                                }
-                            }
-                            navarray[i].foyer = foyer;
+                            navarray[i].foyer = this.isFoyer(navarray[i]);
 
                             // Add item to breadpath.
                             this.pagestate.breadpath.unshift(navarray[i]);
@@ -718,6 +725,7 @@ var NEWUX = (function($) {
         },
         updatePageState: function() {
             // Update the page elems based on current situation!
+
             // Title
             if(typeof this.pagestate.current.text !== 'undefined') {
                 document.title = this.pagestate.current.text;
