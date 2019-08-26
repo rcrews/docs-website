@@ -36,16 +36,16 @@ sections:
         url: using-schema-registry/content/adding_a_new_schema.html
 
       - title: Using CDK
-        url: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_using.html
+        url: /documentation/kafka/latest/topics/kafka_using.html
 
       - title: Using Kafka Streams
-        url: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_streams.html
+        url: /documentation/kafka/latest/topics/kafka_streams.html
 
   - title: Reference
     name: reference
     books:
       - title: Administering CDK
-        url: https://www.cloudera.com/documentation/kafka/latest/topics/kafka_admin.html
+        url: /documentation/kafka/latest/topics/kafka_admin.html
 ---
 
 This is the content below YAML.

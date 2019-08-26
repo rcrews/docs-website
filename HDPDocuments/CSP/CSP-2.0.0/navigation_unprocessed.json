@@ -95,15 +95,18 @@ json:
 
       - text: Using CDK
         href: /documentation/kafka/latest/topics/kafka_using.html
+        external: external
 
       - text: Using Kafka Streams
         href: /documentation/kafka/latest/topics/kafka_streams.html
+        external: external
 
   - text: Reference
     name: reference
     sub:
       - text: Administering CDK
         href: /documentation/kafka/latest/topics/kafka_admin.html
+        external: external
 
   - text: Release Notes
     name: releasenotes
