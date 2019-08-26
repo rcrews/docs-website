@@ -454,13 +454,15 @@ var NEWUX = (function($) {
                 // Save response for use in complete callback
                 let response = arguments;
 
-                // $.parseHTML will exclude scripts to avoid IE 'Permission Denied' errors
-                let $responseHTML = jQuery( "<div>" ).append(jQuery.parseHTML( responseText ));
-                elems = $responseHTML.find( selector ).children();
+                // Parse the response..
+                // First, create a virtual DOM that we can set the location correctly with.
+                let virtualDOM = document.implementation.createHTMLDocument('virtual').body;
+                virtualDOM.innerHTML = responseText;
+                elems = $(virtualDOM).find( selector ).children();
 
-                // If no content.....
+                // And check whether there is any content in there......
                 if(!elems.length ) {
-                    if(Pubnav.pagestate.children.length && Pubnav.clicktrack < 4) {
+                    if(Pubnav.pagestate.children.length && Pubnav.clicktrack < 3) {
                         // sometimes foyer pages are empty. If so, look for the first child page.
                         let new_url = Pubnav.pagestate.children[0].href;
                         Pubnav.requestNewPage(new_url);
@@ -472,22 +474,22 @@ var NEWUX = (function($) {
                 } else {
                     // Success....
 
-                    // Copyright
-                    let copyright = $responseHTML.find('meta[name="rights"]').attr('content');
-                    if (typeof copyright !== 'undefined') {
-                        Pubnav.pagestate.copyright = copyright;
-                    } else {
-                        Pubnav.pagestate.copyright = new Date().getFullYear()  + ' Cloudera, Inc.';
-                    }
-
                     // Update history so the back button works.... We don't want this to fire if we're going back in time!
                     if (!history.state || history.state.page !== url) {
                         if(typeof hash === 'undefined') hash = "";
                         history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
                     }
 
+                    // Copyright
+                    let copyright = $(virtualDOM).find('meta[name="rights"]').attr('content');
+                    if (typeof copyright !== 'undefined') {
+                        Pubnav.pagestate.copyright = copyright;
+                    } else {
+                        Pubnav.pagestate.copyright = new Date().getFullYear()  + ' Cloudera, Inc.';
+                    }
+
                     // PDF Document
-                    let $pdf = $responseHTML.find('link[type="application/pdf"]');
+                    let $pdf = $(virtualDOM).find('link[type="application/pdf"]');
                     if($pdf.length > 0) {
                         Pubnav.pagestate.pdfurl = (typeof $pdf[0].href !== 'undefined') ? $pdf[0].href : "";
                     } else {
