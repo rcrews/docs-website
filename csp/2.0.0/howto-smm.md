@@ -22,10 +22,7 @@ publications:
   - title: Monitoring End to End Latency
     url: monitoring-end-to-end-latency/index.html
     description: >-
-      Describes how you can use Streams Messaging Manager to monitor end-to-end latency in topics. Use the latency feature to achieve the following goals:
-- Verify whether consumers are consuming the messages produced in a topic within the time SLA.
-- Identify the slow consuming applications that might occur due to an external or process bottleneck.
-- Verify whether the consumers are consuming all the messages.
+      Describes how you can use Streams Messaging Manager to monitor end-to-end latency in topics. Use the latency feature to verify whether consumers are consuming the messages produced in a topic within the time SLA, identify the slow consuming applications that might occur due to an external or process bottleneck, and verify whether the consumers are consuming all the messages.
 
   - title: Monitoring Kafka Cluster Replications
     url: monitoring-kafka-cluster-replications/index.html
