@@ -31,6 +31,10 @@ json:
   - text: Installation & Upgrade
     name: install
     sub:
+      - text: Support Matrix
+        href: support-matrix/index.html
+        id: pub-support-matrix
+        sub: support-matrix/navigation.json
       - text: Planning Your Deployment
         href: planning-your-deployment/index.html
         id: pub-planning-your-deployment
