@@ -106,7 +106,7 @@ json:
             id: pub-monitoring-kafka-cluster-replications
             sub: monitoring-kafka-cluster-replications/navigation.json
 
-      - text: Kafka
+      - text: Apache Kafka
         id: cat-kafka
         href: howto-kafka.html
         sub:
