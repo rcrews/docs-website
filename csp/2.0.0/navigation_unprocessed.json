@@ -24,14 +24,6 @@ json:
         href: srm-overview/index.html
         id: pub-srm-overview
         sub: srm-overview/navigation.json
-      - text: Understanding Replication Flows
-        href: understanding-replication-flows/index.html
-        id: pub-understanding-replication-flows
-        sub: understanding-replication-flows/navigation.json
-      - text: SRM Use Cases
-        href: srm-use-cases/index.html
-        id: pub-srm-use-cases
-        sub: srm-use-cases/navigation.json
 
   - text: Installation & Upgrade
     name: install
