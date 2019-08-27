@@ -17,8 +17,8 @@ json:
   #      id: pub-overview
   #      sub: overview/navigation.json
 
-  - text: Installation
-    id: cat-installation
+  - text: Installation & Upgrade
+    id: cat-installation-upgrade
     sub:
       - text: Installation
         href: installation/index.html
