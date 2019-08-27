@@ -25,6 +25,11 @@ json:
         id: pub-installation
         sub: installation/navigation.json
 
+      - text: Upgrade
+        href: upgrade/index.html
+        id: pub-upgrade
+        sub: upgrade/navigation.json
+
       # - text: Quick Start
       #   href: quick-start/index.html
       #   id: pub-quick-start
