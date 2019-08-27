@@ -5,7 +5,7 @@ title: SMM
 
 publications:
   - title: Monitoring Kafka Clusters
-    url: yarn-application-management/index.html
+    url: monitoring-kafka-clusters/index.html
     description: >-
       [Publication description needed....]
 
@@ -15,12 +15,12 @@ publications:
       [Publication description needed....]
 
   - title: Managing Topics
-    url: yarn-application-management/index.html
+    url: managing-alert-policies/index.html
     description: >-
       [Publication description needed....]
 
   - title: Monitoring End to End Latency
-    url: yarn-application-management/index.html
+    url: monitoring-end-to-end-latency/index.html
     description: >-
       [Publication description needed....]
 

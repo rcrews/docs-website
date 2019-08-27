@@ -5,17 +5,17 @@ title: SRM
 
 publications:
   - title: Configuring SRM
-    url: yarn-application-management/index.html
+    url: configuration/index.html
     description: >-
       [Publication description needed....]
 
   - title: Securing SRM
-    url: yarn-application-management/index.html
+    url: srm-security/index.html
     description: >-
       [Publication description needed....]
 
   - title: Using SRM
-    url: yarn-application-management/index.html
+    url: srm-using/index.html
     description: >-
       [Publication description needed....]
 
