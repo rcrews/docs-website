@@ -113,8 +113,20 @@ json:
         id: cat-kafka
         href: howto-kafka.html
         sub:
-          - text: Using CDK
-            href: /documentation/kafka/latest/topics/kafka_using.html
+          - text: Setting up Kafka
+            href: /documentation/enterprise/6/6.3/topics/kafka_setup.html
+            external: external
+
+          - text: Integrating with Kafka
+            href: /documentation/enterprise/6/6.3/topics/kafka_integration.html
+            external: external
+
+          - text: Administering Kafka
+            href: /documentation/enterprise/6/6.3/topics/kafka_admin.html
+            external: external
+
+          - text: Kafka Performance Tuning
+            href: /documentation/enterprise/6/6.3/topics/kafka_performance.html
             external: external
 
           - text: Using Kafka Streams
@@ -124,8 +136,12 @@ json:
   - text: Reference
     name: reference
     sub:
-      - text: Administering CDK
-        href: /documentation/kafka/latest/topics/kafka_admin.html
+      - text: Kafka Reference
+        href: /documentation/enterprise/6/6.3/topics/kafka_reference.html
+        external: external
+
+      - text: Kafka Public APIs
+        href: /documentation/enterprise/6/6.3/topics/kafka_api.html
         external: external
 
   - text: Release Notes
