@@ -3,2227 +3,2227 @@
 <!-- created with Scrutiny from http://peacockmedia.software -->
 
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/index.html</loc>
 		<lastmod>2018-07-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/hortonworks_cybersecurity_package_information_roadmap.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/hortonworks_cybersecurity_package_information_roadmap.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/introduction_to_metron.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/introduction_to_metron.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/infrastructure_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/infrastructure_requirements.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/software_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/software_requirements.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/preparing_to_install.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/preparing_to_install.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/browser_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/browser_requirements.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/operating_system_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/operating_system_requirements.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/specifications_for_hadoop_cluster.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/specifications_for_hadoop_cluster.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/memory_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/memory_requirements.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/specifications_for_metron_nodes.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/specifications_for_metron_nodes.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing_hcp_on_an_ambari-managed_cluster_using_ambari.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing_hcp_on_an_ambari-managed_cluster_using_ambari.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/prerequisites_for_an_existing_cluster.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/prerequisites_for_an_existing_cluster.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/maximum_open_file_descriptors.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/maximum_open_file_descriptors.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing_hcp_ambari_management_pack.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing_hcp_ambari_management_pack.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/starting_the_ambari_server.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/starting_the_ambari_server.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/setting_up_the_rest_application_database.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/setting_up_the_rest_application_database.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/launching_the_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/launching_the_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing_hcp_on_an_ambari_cluster.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing_hcp_on_an_ambari_cluster.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing__configuring__and_deploying_a_hdp_cluster_with_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing__configuring__and_deploying_a_hdp_cluster_with_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/switching_from_elasticsearch_to_solr.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/switching_from_elasticsearch_to_solr.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/verifying_that_hcp_deployed_successfully_for_ambari_install.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/verifying_that_hcp_deployed_successfully_for_ambari_install.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/launching_hcp_management_module_user_interface.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/launching_hcp_management_module_user_interface.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing_solr.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/installing_solr.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/streaming_data_into_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/streaming_data_into_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/enabling_kerberos.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/enabling_kerberos.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/kerberos_installing_and_configuring_the_kdc.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/kerberos_installing_and_configuring_the_kdc.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/importing_zeppelin_notebook_using_ambari.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/importing_zeppelin_notebook_using_ambari.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/kerberos_optional_install_a_new_mit_kdc.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/kerberos_optional_install_a_new_mit_kdc.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/kerberos_launching_the_kerberos_wizard_automated_setup.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/kerberos_launching_the_kerberos_wizard_automated_setup.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/creating_a_nifi_flow_to_stream_events_to_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/creating_a_nifi_flow_to_stream_events_to_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/kkerberos_installing_the_jce.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/kkerberos_installing_the_jce.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/optimization_guidelines.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/optimization_guidelines.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/hortonworks_cybersecurity_platform_1_5_0_release_notes.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/hortonworks_cybersecurity_platform_1_5_0_release_notes.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/new_features.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/new_features.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/jdk_support_matrix.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/jdk_support_matrix.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/operating_system_support_matrix.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/operating_system_support_matrix.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/apache_component_support.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/apache_component_support.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/upgrading_to_hcp_1_5_0.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/upgrading_to_hcp_1_5_0.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/unsupported_features.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/unsupported_features.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/technical_preview_features.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/technical_preview_features.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/hcp_1_5_0_repositories.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/hcp_1_5_0_repositories.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/type_mapping_changes.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/type_mapping_changes.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/third-party_licenses.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/third-party_licenses.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/known_differences_between_hcp_1_5_0_and_apache_metron_0_4_2.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/known_differences_between_hcp_1_5_0_and_apache_metron_0_4_2.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/community_features.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/community_features.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/switching_to_unified_enrichment_topology_(technical_preview).html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/switching_to_unified_enrichment_topology_(technical_preview).html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/upgrading_to_elasticsearch_5_6_2.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/upgrading_to_elasticsearch_5_6_2.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/known_differences_between_hcp_1_5_0_and_hcp_1_4_2.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/known_differences_between_hcp_1_5_0_and_hcp_1_4_2.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/known_issues.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/release-notes/content/known_issues.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/hcp_information_roadmap.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/hcp_information_roadmap.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/hcp_architecture.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/hcp_architecture.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_hcp_terminology.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_hcp_terminology.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/data_services_and_integration_layer.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/data_services_and_integration_layer.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/telemetry_data_collectors.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/telemetry_data_collectors.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/real-time_processing_security_engine.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/real-time_processing_security_engine.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/telemetry_data_source_parsers_bundled_with_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/telemetry_data_source_parsers_bundled_with_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/adding_a_new_telemetry_data_source.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/adding_a_new_telemetry_data_source.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/bro.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/bro.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/snort.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/snort.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/yaf_(netflow).html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/yaf_(netflow).html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/pcap.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/pcap.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/streaming_data_using_nifi.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/streaming_data_using_nifi.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/indexing.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/indexing.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_streaming_data_into_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_streaming_data_into_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/prerequisites_to_adding_a_new_telemetry_data_source.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/prerequisites_to_adding_a_new_telemetry_data_source.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/create_a_parser_for_your_new_data_source_by_using_the_cli.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/create_a_parser_for_your_new_data_source_by_using_the_cli.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/verifying_that_events_are_indexed.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/verifying_that_events_are_indexed.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/creating_a_parser_for_your_new_data_source_by_using_the_management_module.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/creating_a_parser_for_your_new_data_source_by_using_the_management_module.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/setting_up_enrichment_configurations.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/setting_up_enrichment_configurations.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/tuning_storm_parameters.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/tuning_storm_parameters.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/bulk_loading_sources.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/bulk_loading_sources.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/enriching_telemetry_events.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/enriching_telemetry_events.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_element-to-enrichment_mapping.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_element-to-enrichment_mapping.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/mapping_fields_to_hbase_enrichments_using_the_management_module.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/mapping_fields_to_hbase_enrichments_using_the_management_module.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/running_the_enrichment_loader.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/running_the_enrichment_loader.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_parsing_a_new_data_source_to_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_parsing_a_new_data_source_to_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/mapping_fields_to_hbase_enrichments_using_cli.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/mapping_fields_to_hbase_enrichments_using_cli.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_global_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_global_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/creating_global_configurations_.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/creating_global_configurations_.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/streaming_enrichment_information.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/streaming_enrichment_information.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_indexing.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_indexing.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/specifying_index_parameters_by_using_the_management_module.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/specifying_index_parameters_by_using_the_management_module.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/default_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/default_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/transform_your_new_data_source_parser_information_by_using_the_management_module.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/transform_your_new_data_source_parser_information_by_using_the_management_module.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/sensor_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/sensor_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_indexing.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_indexing.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/specifying_index_parameters_by_using_the_cli.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/specifying_index_parameters_by_using_the_cli.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/indexing_hdfs_tuning.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/indexing_hdfs_tuning.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/updating_elasticsearch_templates_to_work_with_elasticsearch_5_x.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/updating_elasticsearch_templates_to_work_with_elasticsearch_5_x.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/support_for_elasticsearch_5_x.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/support_for_elasticsearch_5_x.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/elasticsearch_type_mapping_changes.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/elasticsearch_type_mapping_changes.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_an_extractor_configuration_file.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_an_extractor_configuration_file.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/turning_off_hdfs_writer.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/turning_off_hdfs_writer.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/preparing_to_configure_threat_intelligence.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/preparing_to_configure_threat_intelligence.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/updating_existing_indexes_to_work_with_elasticsearch_5x.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/updating_existing_indexes_to_work_with_elasticsearch_5x.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/troubleshooting_indexing.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/troubleshooting_indexing.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/bulk_loading_threat_intelligence_sources.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/bulk_loading_threat_intelligence_sources.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/adding_x-pack_extension_to_elasticsearch.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/adding_x-pack_extension_to_elasticsearch.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_an_extractor_configuration_file-1.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_an_extractor_configuration_file-1.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/mapping_fields_to_hbase_threat_intel_by_using_the_management_module.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/mapping_fields_to_hbase_threat_intel_by_using_the_management_module.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/running_the_threat_intel_loader.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/running_the_threat_intel_loader.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configure_mapping_for_the_intelligence_feed.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configure_mapping_for_the_intelligence_feed.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/mapping_fields_to_hbase_threat_intel_by_using_the_cli.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/mapping_fields_to_hbase_threat_intel_by_using_the_cli.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/prioritizing_threat_intelligence.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/prioritizing_threat_intelligence.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/performing_threat_triage_using_the_management_module.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/performing_threat_triage_using_the_management_module.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/creating_a_streaming_threat_intel_feed_source.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/creating_a_streaming_threat_intel_feed_source.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/creating_an_index_template.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/creating_an_index_template.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/uploading_the_threat_triage_configuration_to_zookeeper.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/uploading_the_threat_triage_configuration_to_zookeeper.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_the_metron_dashboard_to_view_the_new_data_source_telemetry_events.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/configuring_the_metron_dashboard_to_view_the_new_data_source_telemetry_events.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/syncing_with_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/syncing_with_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_threat_triage_rule_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_threat_triage_rule_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/viewing_triaged_or_scored_alerts.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/viewing_triaged_or_scored_alerts.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/setting_up_pcap_to_view_your_raw_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/setting_up_pcap_to_view_your_raw_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/setting_up_pycapa.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/setting_up_pycapa.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/installing_fastcapa.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/installing_fastcapa.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/installing_fastcapa_automatically.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/installing_fastcapa_automatically.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/install_librdkafka.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/install_librdkafka.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/installing_fastcapa_manually_.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/installing_fastcapa_manually_.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/requirements_for_installing_fastcapa.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/requirements_for_installing_fastcapa.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/install_fastcapa.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/install_fastcapa.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/enable_transparent_huge_pages.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/enable_transparent_huge_pages.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/install_dpdk.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/install_dpdk.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/environmental_abstraction_layer_parameters.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/environmental_abstraction_layer_parameters.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/fastcapa-kafka_configuration_file.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/fastcapa-kafka_configuration_file.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/troubleshooting_parsers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/troubleshooting_parsers.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_fastcapa_in_a_kerberized_environment.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_fastcapa_in_a_kerberized_environment.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_pcap.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_pcap.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/fastcapa-core_parameters.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/fastcapa-core_parameters.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/fastcapa_counters_output.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/fastcapa_counters_output.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_fastcapa.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_fastcapa.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/determining_which_events_are_not_being_processed.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/determining_which_events_are_not_being_processed.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_throughput.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_throughput.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/updating_properties.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/updating_properties.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/monitor_and_manage.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/monitor_and_manage.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/modifying_a_sensor.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/modifying_a_sensor.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_zookeeper_configurations.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_zookeeper_configurations.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/managing_sensors.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/managing_sensors.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_a_sensor.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_a_sensor.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/deleting_a_sensor.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/deleting_a_sensor.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/displaying_the_metron_error_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/displaying_the_metron_error_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/stopping_a_sensor.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/stopping_a_sensor.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/storm_is_not_receiving_data_from_a_new_data_source.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/storm_is_not_receiving_data_from_a_new_data_source.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_and_stopping_parsers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_and_stopping_parsers.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/monitoring_sensors.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/monitoring_sensors.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/reloading_metron_templates.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/reloading_metron_templates.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/default_metron_error_dashboard_section_descriptions.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/default_metron_error_dashboard_section_descriptions.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/pruning_data_from_elasticsearch.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/pruning_data_from_elasticsearch.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/metron_error_dashboard_information.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/metron_error_dashboard_information.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/tuning_apache_solr.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/tuning_apache_solr.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_and_stopping_enrichments.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_and_stopping_enrichments.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/restoring_your_metron_dashboard_backup.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/restoring_your_metron_dashboard_backup.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_the_profiler.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_the_profiler.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_and_stopping_indexing.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/starting_and_stopping_indexing.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_parsers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/understanding_parsers.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/general_purpose_parsers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/general_purpose_parsers.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/backing_up_the_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/backing_up_the_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/parser_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/parser_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/concepts.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/concepts.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/java_parsers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/java_parsers.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/sensor_enrichment_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/sensor_enrichment_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/individual_sensor_enrichments.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/individual_sensor_enrichments.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/threat_intelligence_enrichments.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/threat_intelligence_enrichments.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_stellar_to_set_up_threat_triage_configurations.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_stellar_to_set_up_threat_triage_configurations.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/example__fieldtransformation_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/example__fieldtransformation_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/enrichment_framework.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/enrichment_framework.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/stellar_enrichments.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/stellar_enrichments.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_stellar_to_transform_sensor_data_elements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_stellar_to_transform_sensor_data_elements.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/management_utility.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/management_utility.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/global_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/global_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_stellar_for_queries.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/using_stellar_for_queries.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/fastcapa.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/administration/content/fastcapa.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/preparing_to_upgrade.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/preparing_to_upgrade.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/mandatory_post-upgrade_tasks.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/mandatory_post-upgrade_tasks.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/backing_up_your_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/backing_up_your_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/upgrading_metron.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/upgrading_metron.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/stopping_all_metron_services.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/stopping_all_metron_services.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/changes_to_stellar_language.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/changes_to_stellar_language.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/checking_the_status_of_the_parsers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/checking_the_status_of_the_parsers.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/upgrading_your_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/upgrading_your_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/introduction_to_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/introduction_to_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/troubleshooting.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/upgrade/content/troubleshooting.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/functionality_of_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/functionality_of_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/events.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/events.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/yaf.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/yaf.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/web_request_header.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/web_request_header.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/snort.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/snort.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/metron_default_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/metron_default_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/customizing_your_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/customizing_your_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/enrichment.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/enrichment.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/configuring_a_new_data_source_index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/configuring_a_new_data_source_index.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/changing_the_metron_dashboard_background_color.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/changing_the_metron_dashboard_background_color.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/launching_the_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/launching_the_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/dns.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/dns.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/sharing_the_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/sharing_the_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/querying__filtering__and_visualizing_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/querying__filtering__and_visualizing_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/adding_a_new_data_source.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/adding_a_new_data_source.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/reviewing_the_new_data_source_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/reviewing_the_new_data_source_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/viewing_alerts.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/viewing_alerts.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/launching_the_alerts_user_interface.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/launching_the_alerts_user_interface.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/triaging_alerts.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/triaging_alerts.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/customizing_your_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/customizing_your_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/configure_table_columns.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/configure_table_columns.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/using_the_alerts_table.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/using_the_alerts_table.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/escalating_alert.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/escalating_alert.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/searching_alerts.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/searching_alerts.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/displaying_additional_alerts_information.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/displaying_additional_alerts_information.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/filtering_alerts.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/filtering_alerts.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/pcap.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/pcap.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/viewing_your_recent_and_saved_searches.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/viewing_your_recent_and_saved_searches.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/grouping_alerts.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/grouping_alerts.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/saving_your_searches.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/saving_your_searches.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/creating_a_meta_alert.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/creating_a_meta_alert.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/viewing_pcap_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/viewing_pcap_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/capturing_pcap_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/capturing_pcap_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/managing_alert_status.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/managing_alert_status.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/filtering_pcap_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/filtering_pcap_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/query_pcap_data_using_query_filter.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/query_pcap_data_using_query_filter.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/query_pcap_data_using_fixed_filter.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/query_pcap_data_using_fixed_filter.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/porting_pcap_data_to_another_application.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/porting_pcap_data_to_another_application.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/processing_pcap_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/processing_pcap_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/using_rest_api_to_query_pcap_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/user-guide/content/using_rest_api_to_query_pcap_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/component_tuning_levers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/component_tuning_levers.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/kafka_tuning.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/kafka_tuning.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/general_tuning_suggestions.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/general_tuning_suggestions.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/enrichment_tuning.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/enrichment_tuning.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/overview.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/modifying_enrichments_properties_flux.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/modifying_enrichments_properties_flux.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/modifying_enrichments_properties_ambari.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/modifying_enrichments_properties_ambari.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/storm_tuning.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/storm_tuning.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/index_tuning.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/index_tuning.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/parser_tuning.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/parser_tuning.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/modifying_index_parameters_ambari.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/modifying_index_parameters_ambari.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/use_case_specific_tuning_suggestions.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/use_case_specific_tuning_suggestions.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/modifying_index_parameters_flux.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/modifying_index_parameters_flux.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/performance_monitoring_tools.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/performance_monitoring_tools.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/parser_tuning_example.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/parser_tuning_example.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/tooling.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/tooling.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/indexing_(hdfs)_tuning.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/indexing_(hdfs)_tuning.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/viewing_kafka_offset_lags_example.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/viewing_kafka_offset_lags_example.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/pcap_tuning.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/pcap_tuning.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/issues.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/issues.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/debugging.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/tuning/content/debugging.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/overview.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/installing_apache_zeppelin.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/installing_apache_zeppelin.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/installing_zeppelin.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/installing_zeppelin.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/using_zeppelin_interpreters.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/using_zeppelin_interpreters.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/setting_up_zeppelin_to_run_with_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/setting_up_zeppelin_to_run_with_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/importing_the_apache_zeppelin_notebook_manually.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/importing_the_apache_zeppelin_notebook_manually.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/creating_and_running_a_note.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/creating_and_running_a_note.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/exporting_a_note.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/exporting_a_note.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/working_with_notes.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/working_with_notes.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/loading_telemetry_information_into_zeppelin.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/loading_telemetry_information_into_zeppelin.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/using_the_note_toolbar.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/using_the_note_toolbar.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/importing_a_note.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/zeppelin/content/importing_a_note.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_comparisons.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_comparisons.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_keywords.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_keywords.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_equality_check_(==__!=).html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_equality_check_(==__!=).html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_lambda_expressions.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_lambda_expressions.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_match_expression.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_match_expression.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_benchmarks.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_benchmarks.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_inclusion_checks_(in_and_not_in).html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_inclusion_checks_(in_and_not_in).html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/introduction_to_stellar_language.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/introduction_to_stellar_language.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_functions.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/stellar-quick-ref/content/stellar_language_functions.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/adding_a_new_telemetry_data_source.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/adding_a_new_telemetry_data_source.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/overview.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/prerequisites.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/prerequisites.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/stream_data_into_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/stream_data_into_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/optional__install_the_squid_package.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/optional__install_the_squid_package.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/parse_the_squid_data_source_to_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/parse_the_squid_data_source_to_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/verify_that_the_events_are_indexed.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/verify_that_the_events_are_indexed.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/parse_the_squid_telemetry_event.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/parse_the_squid_telemetry_event.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/create_a_nifi_flow_to_stream_events_to_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/create_a_nifi_flow_to_stream_events_to_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/install_nifi.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/install_nifi.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/transform_squid_message.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/transform_squid_message.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/create_an_index_template.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/create_an_index_template.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_a_new_data_source_index_in_the_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_a_new_data_source_index_in_the_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/reviewing_the_new_data_source_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/reviewing_the_new_data_source_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/optional__create_a_mock_enrichment_source.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/optional__create_a_mock_enrichment_source.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/add_new_data_source_to_the_metron_dashboard.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/add_new_data_source_to_the_metron_dashboard.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_an_extractor_configuration_file.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_an_extractor_configuration_file.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_element-to-enrichment_mapping.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_element-to-enrichment_mapping.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/running_the_enrichment_loader.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/running_the_enrichment_loader.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/enriching_telemetry_events.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/enriching_telemetry_events.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/verify_that_the_events_are_enriched.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/verify_that_the_events_are_enriched.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/mapping_fields_to_hbase_enrichments.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/mapping_fields_to_hbase_enrichments.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/optional__global_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/optional__global_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/bulk_loading_enrichment_information.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/bulk_loading_enrichment_information.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_element-to-threat_intel_feed_mapping.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_element-to-threat_intel_feed_mapping.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/optional__create_a_mock_threat_intel_feed_source.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/optional__create_a_mock_threat_intel_feed_source.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/enriching_threat_intelligence_information.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/enriching_threat_intelligence_information.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/run_the_threat_intelligence_loader.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/run_the_threat_intelligence_loader.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/mapping_fields_to_hbase_enrichments_threat_intel.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/mapping_fields_to_hbase_enrichments_threat_intel.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/verify_that_the_threat_intel_events_are_enriched.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/verify_that_the_threat_intel_events_are_enriched.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/prerequisites-1.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/prerequisites-1.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/prioritizing_threat_intelligence.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/prioritizing_threat_intelligence.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/threat_triage_examples.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/threat_triage_examples.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/performing_threat_triage.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/performing_threat_triage.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_an_extractor_configuration_file_threat_intel.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_an_extractor_configuration_file_threat_intel.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/threat_triage_alert_panel.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/threat_triage_alert_panel.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/hcp_metron_dashboard_view_of_alerts.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/hcp_metron_dashboard_view_of_alerts.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_indexing.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_indexing.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/default_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/default_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/turning_off_hdfs_writer.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/turning_off_hdfs_writer.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/setting_up_a_profile.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/setting_up_a_profile.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/specifying_index_parameters.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/specifying_index_parameters.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/creating_a_profile.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/creating_a_profile.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/installing_profiler.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/installing_profiler.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_the_profiler.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/configuring_the_profiler.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/developing_profiles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/developing_profiles.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/starting_the_profiler.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/starting_the_profiler.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/testing.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/runbook/content/testing.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/overview.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/configuring_the_profiler.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/configuring_the_profiler.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/profiler_properties.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/profiler_properties.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/developing_profiles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/developing_profiles.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/creating_profiles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/creating_profiles.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/selecting_profile_measurements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/selecting_profile_measurements.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/starting_and_stopping_the_profiler.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/starting_and_stopping_the_profiler.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/client_profile_example.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/client_profile_example.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/profile_examples.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/profile_examples.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/accessing_profiles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/accessing_profiles.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/specifying_profile_time_and_duration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/specifying_profile_time_and_duration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/installing_the_yarn_application.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/installing_the_yarn_application.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/profile_selector_language.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/profile_selector_language.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/creating_models.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/creating_models.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/adding_the_maas_stellar_function_to_the_sensor_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/adding_the_maas_stellar_function_to_the_sensor_configuration.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/starting_topologies_and_sending_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/starting_topologies_and_sending_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/using_zeppelin_interpreters.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/using_zeppelin_interpreters.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/deploying_models.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/deploying_models.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/setting_up_zeppelin_to_run_with_hcp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/setting_up_zeppelin_to_run_with_hcp.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/analyzing_enriched_data_using_apache_zeppelin.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/analyzing_enriched_data_using_apache_zeppelin.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/working_with_zeppelin.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/working_with_zeppelin.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/modifying_a_model.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/modifying_a_model.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/loading_telemetry_information_into_zeppelin.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/loading_telemetry_information_into_zeppelin.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/using_zeppelin_to_analyze_data.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/using_zeppelin_to_analyze_data.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/working_with_notes.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/working_with_notes.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/importing_a_note.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/importing_a_note.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/creating_runbooks_using_apache_zeppelin.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/creating_runbooks_using_apache_zeppelin.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/exporting_a_note.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/exporting_a_note.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/using_the_note_toolbar.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/using_the_note_toolbar.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/setting_up_zeppelin_to_run_with_hcp-1.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/setting_up_zeppelin_to_run_with_hcp-1.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/creating_and_running_a_note.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/creating_and_running_a_note.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/using_zeppelin_to_create_runbooks.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/using_zeppelin_to_create_runbooks.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/mathematical_functions.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/mathematical_functions.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/loading_telemetry_information_into_zeppelin-2.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/loading_telemetry_information_into_zeppelin-2.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/working_with_zeppelin-3.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/working_with_zeppelin-3.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/analyzing_data_using_statistical_and_mathematical_functions.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/analyzing_data_using_statistical_and_mathematical_functions.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/statistical_outlier_detection.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/statistical_outlier_detection.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/outlier_analysis.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/outlier_analysis.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/median_absolution_deviation.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/median_absolution_deviation.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/example.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/example.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/approximation_statistics.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/approximation_statistics.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/the_parser.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/the_parser.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/the_profiler.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/the_profiler.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/execute_the_flow.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/execute_the_flow.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/distributional_statistics.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/distributional_statistics.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/data_generator.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/data_generator.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/enrichment_and_threat_intelligence.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/enrichment_and_threat_intelligence.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/index_example.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/analytics/content/index_example.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/preparing_to_install.html.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.5.1/installation/content/preparing_to_install.html.html</loc>
 		<lastmod>2018-07-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>

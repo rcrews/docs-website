@@ -3,499 +3,499 @@
 <!-- created with Scrutiny from https://peacockmedia.software -->
 
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/index.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/index.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/index.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/index.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/index.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/content/das_unsupported_features.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/content/das_unsupported_features.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/content/das_release_notes.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/content/das_release_notes.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/content/das_whats_new_in_this_release.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/content/das_whats_new_in_this_release.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_troubleshooting_das_installation.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_troubleshooting_das_installation.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_problem_area_queries_section.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_problem_area_queries_section.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/content/das_known_issues.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/content/das_known_issues.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_queries_not_appearing.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_queries_not_appearing.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_cannot_view_new_databases_and_tables_or_cannot_alter_tables.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_cannot_view_new_databases_and_tables_or_cannot_alter_tables.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_cannot_see_databases_or_the_query_editor.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_cannot_see_databases_or_the_query_editor.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_problem_area_compose_page.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_problem_area_compose_page.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_query_column_not_empty_cannot_see_dag_or_app_id.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_query_column_not_empty_cannot_see_dag_or_app_id.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_query_column_empty_can_see_dag_and_app_id.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_query_column_empty_can_see_dag_and_app_id.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_problem_area_reports_page.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_problem_area_reports_page.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/content/das_data_analytics_studio_overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/content/das_data_analytics_studio_overview.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_cannot_view_the_reports_tab.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_cannot_view_the_reports_tab.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_cannot_view_queries_from_other_users.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/troubleshooting/content/das_cannot_view_queries_from_other_users.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/content/das_installation_roadmap.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/content/das_installation_roadmap.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_installation_roadmap.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_installation_roadmap.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_version_recommendation_for_das.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_version_recommendation_for_das.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/content/das_obtaining_das_binaries.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/content/das_obtaining_das_binaries.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_data_analytics_studio_support_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_data_analytics_studio_support_requirements.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_obtaining_das_binaries.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_obtaining_das_binaries.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/content/das_architecture.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/core-concepts/content/das_architecture.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_pre_installation_tasks.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_pre_installation_tasks.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_check_minimal_cluster_reqs.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_check_minimal_cluster_reqs.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_check_cluster_configurations_for_hive_tez.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_check_cluster_configurations_for_hive_tez.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_prepare_the_web_server_for_the_local_repository.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_prepare_the_web_server_for_the_local_repository.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_set_up_a_local_repository.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_set_up_a_local_repository.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_evaluate_your_database_options.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_evaluate_your_database_options.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_postgres_debian.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_postgres_debian.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_create_and_set_up_a_local_repository.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_create_and_set_up_a_local_repository.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_create_the_repository_configuration_file.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_create_the_repository_configuration_file.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_check_cluster_configuration_for_hive_and_tez_hdp_2.6.5.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_check_cluster_configuration_for_hive_and_tez_hdp_2.6.5.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_postgres_external_database.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_postgres_external_database.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_postgres_centos.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_postgres_centos.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_adding_the_das_service_through_the_ambari_ui.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_adding_the_das_service_through_the_ambari_ui.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_additional_configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_additional_configuration.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_installing_and_configuring_das_in_your_cluster.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_installing_and_configuring_das_in_your_cluster.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_set_up_tmp_directory.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_set_up_tmp_directory.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_postgres_ubuntu.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_postgres_ubuntu.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_tls_with_cacertificate.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_tls_with_cacertificate.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_post_installation_tasks.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_post_installation_tasks.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_install_the_das_engine.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_install_the_das_engine.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_knox_sso_for_data_analytics_studio.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_knox_sso_for_data_analytics_studio.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_tls_with_sscertificate.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_tls_with_sscertificate.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_knox_sso_for_ha_clusters.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_knox_sso_for_ha_clusters.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_tls_in_ambari.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_tls_in_ambari.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_install_das_in_dp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_install_das_in_dp.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_enable_das_in_dp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_enable_das_in_dp.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_install_the_das_service.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_install_the_das_service.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_ssl.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_configure_ssl.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_add_users_and_assign_roles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_add_users_and_assign_roles.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_overview.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_save_the_search.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_save_the_search.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_compare_queries.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_compare_queries.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_upgrade_from_das_lite_to_das.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/content/das_upgrade_from_das_lite_to_das.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_manage_queries.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_manage_queries.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_refine_search_using_filters.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_refine_search_using_filters.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_search_for_queries.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_search_for_queries.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_compose_queries.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_compose_queries.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_manage_databases.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_manage_databases.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_creating_tables.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_creating_tables.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_deleting_tables.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_deleting_tables.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_using_the_database_explorer.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_using_the_database_explorer.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_searching_for_tables.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_searching_for_tables.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_managing_tables.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_managing_tables.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_uploading_tables.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_uploading_tables.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_editing_tables.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_editing_tables.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_viewing_storage_information.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_viewing_storage_information.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_viewing_detailed_information.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_viewing_detailed_information.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_viewing_table_and_column_statistics.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_viewing_table_and_column_statistics.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_previewing_tables_using_data_preview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_previewing_tables_using_data_preview.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_managing_columns.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_managing_columns.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_view_join_report.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_view_join_report.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_manage_reports.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_manage_reports.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_run_query_on_a_different_hive_instance.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_run_query_on_a_different_hive_instance.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_view_read_and_write_reports.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_view_read_and_write_reports.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_managing_partitions.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/operations/content/das_managing_partitions.html</loc>
 		<lastmod>2019-03-09</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
