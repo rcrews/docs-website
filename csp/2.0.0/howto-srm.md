@@ -1,7 +1,7 @@
 ---
 layout: foyer
 breadcrumb-title: Stream Processing How To
-title: SRM
+title: Stream Replication Manager
 
 publications:
   - title: Configuring SRM

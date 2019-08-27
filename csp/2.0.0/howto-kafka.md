@@ -1,7 +1,7 @@
 ---
 layout: foyer
 breadcrumb-title: Stream Processing How To
-title: Kafka
+title: Apache Kafka
 
 publications:
   - title: Using CDK

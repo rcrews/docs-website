@@ -1,7 +1,7 @@
 ---
 layout: foyer
 breadcrumb-title: Stream Processing How To
-title: SMM
+title: Stream Messaging Manager
 
 publications:
   - title: Monitoring Kafka Clusters
@@ -25,6 +25,10 @@ publications:
       [Publication description needed....]
 
   - title: Monitoring Kafka Cluster Replications
+    url: monitoring-kafka-cluster-replications/index.html
+    description: >-
+      [Publication description needed....]
+
 ---
 
 [ Foyer page description needed... ]
