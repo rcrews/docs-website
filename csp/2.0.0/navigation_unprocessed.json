@@ -58,7 +58,7 @@ json:
             id: pub-using-schema-registry
             sub: using-schema-registry/navigation.json
 
-      - text: Stream Replication Manager
+      - text: Streams Replication Manager
         id: cat-srm
         href: howto-srm.html
         sub:
@@ -77,7 +77,7 @@ json:
             id: pub-srm-using-registry
             sub: srm-using/navigation.json
 
-      - text: Stream Messaging Manager
+      - text: Streams Messaging Manager
         id: cat-smm
         href: howto-smm.html
         sub:

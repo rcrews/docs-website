@@ -1,7 +1,7 @@
 ---
 layout: foyer
 breadcrumb-title: Stream Processing How To
-title: Stream Messaging Manager
+title: Streams Messaging Manager
 
 publications:
   - title: Monitoring Kafka Clusters
