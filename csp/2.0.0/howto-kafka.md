@@ -7,23 +7,26 @@ publications:
   - title: Setting up Kafka
     url: /documentation/enterprise/6/6.3/topics/kafka_setup.html
     description: >-
-      Describes how to set up Kafka after installation. 
+      Describes how to set up Kafka after installation.
 
   - title: Integrating with Kafka
     url: /documentation/enterprise/6/6.3/topics/kafka_integration.html
     description: >-
-    Describes how to configure security, manage mulitple Kafka versions, manage topics across multiple Kafka clusters, set up an end-to-end streaming pipeline, develop Kafka clients, and manage metrics.
+      Describes how to configure security, manage mulitple Kafka
+      versions, manage topics across multiple Kafka clusters, set up an
+      end-to-end streaming pipeline, develop Kafka clients, and manage
+      metrics.
 
-  - title: Administering Kafka 
+  - title: Administering Kafka
     url: /documentation/enterprise/6/6.3/topics/kafka_admin.html
     description: >-
       Describes how to administer Kafka.
-  
+
     - title: Kafka Performance Tuning
     url: /documentation/enterprise/6/6.3/topics/kafka_performance.html
     description: >-
-      Describes best practices for Kafka performance tuning. 
-  
+      Describes best practices for Kafka performance tuning.
+
   - title: Using Kafka Streams
     url: /documentation/kafka/latest/topics/kafka_streams.html
     description: >-
