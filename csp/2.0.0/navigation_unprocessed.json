@@ -46,6 +46,7 @@ json:
     sub:
       - text: Schema Registry
         id: cat-schema-registry
+        href: schema-registry.html
         sub:
           - text: Integrating with Schema Registry
             href: integrating-with-schema-registry/index.html
@@ -59,6 +60,7 @@ json:
 
       - text: Stream Replication Manager
         id: cat-srm
+        href: srm.html
         sub:
           - text: Configuring SRM
             href: configuration/index.html
@@ -77,6 +79,7 @@ json:
 
       - text: Stream Messaging Manager
         id: cat-smm
+        href: smm.html
         sub:
           - text: Monitoring Kafka Clusters
             href: monitoring-kafka-clusters/index.html
@@ -105,6 +108,7 @@ json:
 
       - text: Kafka
         id: cat-kafka
+        href: kafka.html
         sub:
           - text: Using CDK
             href: /documentation/kafka/latest/topics/kafka_using.html
