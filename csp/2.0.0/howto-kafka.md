@@ -22,7 +22,7 @@ publications:
     description: >-
       Describes how to administer Kafka.
 
-    - title: Kafka Performance Tuning
+  - title: Kafka Performance Tuning
     url: /documentation/enterprise/6/6.3/topics/kafka_performance.html
     description: >-
       Describes best practices for Kafka performance tuning.
