@@ -1,10 +1,10 @@
-# //docs.hortonworks.com/robots.txt
+# //docs.cloudera.com/robots.txt
 # Test at https://www.google.com/webmasters/tools/robots-testing-tool
 #         https://technicalseo.com/seo-tools/robots-txt/
 # Updated: 2019-08-26
 # Questions: Robert Crews
 
-Sitemap: https://docs.hortonworks.com/sitemap.xml
+Sitemap: https://docs.cloudera.com/sitemap.xml
 
 # http://searchengineland.com/a-deeper-look-at-robotstxt-17573
 User-agent: Googlebot
