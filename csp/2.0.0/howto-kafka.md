@@ -6,11 +6,13 @@ title: Apache Kafka
 publications:
   - title: Setting up Kafka
     url: /documentation/enterprise/6/6.3/topics/kafka_setup.html
+    external: external
     description: >-
       Describes how to set up Kafka after installation.
 
   - title: Integrating with Kafka
     url: /documentation/enterprise/6/6.3/topics/kafka_integration.html
+    external: external
     description: >-
       Describes how to configure security, manage mulitple Kafka
       versions, manage topics across multiple Kafka clusters, set up an
@@ -19,16 +21,19 @@ publications:
 
   - title: Administering Kafka
     url: /documentation/enterprise/6/6.3/topics/kafka_admin.html
+    external: external
     description: >-
       Describes how to administer Kafka.
 
   - title: Kafka Performance Tuning
     url: /documentation/enterprise/6/6.3/topics/kafka_performance.html
+    external: external
     description: >-
       Describes best practices for Kafka performance tuning.
 
   - title: Using Kafka Streams
     url: /documentation/kafka/latest/topics/kafka_streams.html
+    external: external
     description: >-
       [Publication description needed....]
 

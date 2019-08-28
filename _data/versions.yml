@@ -839,496 +839,916 @@
           type: Latest
           url: /runtime/7.0.0/index.html
 
+#
+# For search, Altus content:
+# - /documentation/altus/
+# But there is a Japanese version inside it at
+# - /documentation/altus/ja/
+#
+
 - name: Altus
   latest-version: Cloud
-  latest-url: /altus/cloud/index.html
+  latest-url: /documentation/altus.html
   search-name: altus
   versions:
     - title: Cloud
-      url: /altus/cloud/index.html
+      url: /documentation/altus.html
 
-- name: CDH
-  latest-version: "5.1"
-  latest-url: /cdh/latest/index.html
-  search-name: cdh
-  versions:
-    - title: "5.0"
-      url: /cdh/5.1/index.html
-      minors:
-        - title: "5.1"
-          label: Latest
-          url: /cdh/5.1/index.html
-        - title: "5.0"
-          url: /cdh/5.0/index.html
+#
+# For search, Data Science Workbench content:
+# - /documentation/data-science-workbench/1-0-x/
+# - /documentation/data-science-workbench/1-1-x/
+# - /documentation/data-science-workbench/1-2-x/
+# - /documentation/data-science-workbench/1-3-x/
+# - /documentation/data-science-workbench/1-4-x/
+# - /documentation/data-science-workbench/1-5-x/
+# - /documentation/data-science-workbench/1-6-x/
+#
 
 - name: Data Science Workbench
   latest-version: "1.6"
-  latest-url: /cdsw/latest/index.html
+  latest-url: /documentation/data-science-workbench/latest.html
   search-name: cdsw
   versions:
-    - title: "1.0"
-      url: /cdsw/1.6/index.html
+    - title: "1"
+      url: /documentation/data-science-workbench/1-6-x.html
       minors:
         - title: "1.6"
           label: Latest
-          url: /cdsw/1.6/index.html
+          url: /documentation/data-science-workbench/1-6-x.html
         - title: "1.5"
-          url: /cdsw/1.5/index.html
+          url: /documentation/data-science-workbench/1-5-x.html
         - title: "1.4"
-          url: /cdsw/1.4/index.html
+          url: /documentation/data-science-workbench/1-4-x.html
         - title: "1.3"
-          url: /cdsw/1.3/index.html
+          url: /documentation/data-science-workbench/1-3-x.html
         - title: "1.2"
-          url: /cdsw/1.2/index.html
+          url: /documentation/data-science-workbench/1-2-x.html
         - title: "1.1"
-          url: /cdsw/1.1/index.html
+          url: /documentation/data-science-workbench/1-1-x.html
         - title: "1.0"
-          url: /cdsw/1.0/index.html
+          url: /documentation/data-science-workbench/1-0-x.html
+
+#
+# For search, Director content:
+# - /documentation/director/1-0-x/
+# - /documentation/director/1-1-x/
+# - /documentation/director/1-5-x/
+# - /documentation/director/2-0-x/
+# - /documentation/director/2-1-x/
+# - /documentation/director/2-2-x/
+# - /documentation/director/2-3-x/
+# - /documentation/director/2-4-x/
+# - /documentation/director/2-5-x/
+# - /documentation/director/2-6-x/
+# - /documentation/director/2-7-x/
+# - /documentation/director/2-8-x/
+# - /documentation/director/6-0-x/
+# - /documentation/director/cloud/
+#
 
 - name: Director
   latest-version: Cloud
-  latest-url: /director/cloud/index.html
+  latest-url: /documentation/director/cloud/index.html
   search-name: director
   versions:
     - title: Cloud
-      url: /director/cloud/index.html
-    - title: "6.0"
-      url: /director/latest/index.html
-      minors:
-        - title: "6.0"
-          label: Latest
-          url: /director/6.0/index.html
-    - title: "2.0"
-      url: /director/2.8/index.html
-      minors:
-        - title: "2.8"
-          url: /director/2.8/index.html
-        - title: "2.7"
-          url: /director/2.7/index.html
-        - title: "2.6"
-          url: /director/2.6/index.html
-        - title: "2.5"
-          url: /director/2.5/index.html
-        - title: "2.4"
-          url: /director/2.4/index.html
-        - title: "2.3"
-          url: /director/2.3/index.html
-        - title: "2.2"
-          url: /director/2.2/index.html
-        - title: "2.1"
-          url: /director/2.1/index.html
-        - title: "2.0"
-          url: /director/2.0/index.html
-    - title: "1.0"
-      url: /director/1.5/index.html
-      minors:
-        - title: "1.5"
-          url: /director/1.5/index.html
-        - title: "1.1"
-          url: /director/1.1/index.html
-        - title: "1.0"
-          url: /director/1.0/index.html
-
-- name: Enterprise
-  latest-version: "6.2"
-  latest-url: /enterprise/latest/index.html
-  search-name: enterprise
-  versions:
-    - title: "6.0"
-      url: /enterprise/latest/index.html
+      url: /documentation/director/cloud/index.html
+    - title: "6"
+      url: /documentation/director/latest.html
       minors:
         - title: "6.2"
           label: Latest
-          url: /enterprise/6.2/index.html
+          url: /documentation/director/latest.html
         - title: "6.1"
-          url: /enterprise/6.1/index.html
+          url: /documentation/director/6-1-x.html
         - title: "6.0"
-          url: /enterprise/6.0/index.html
-    - title: "5.0"
-      url: /enterprise/5.16/index.html
+          url: /documentation/director/6-0-x.html
+    - title: "2"
+      url: /documentation/director/2-8-x.html
+      minors:
+        - title: "2.8"
+          url: /documentation/director/2-8-x.html
+        - title: "2.7"
+          url: /documentation/director/2-7-x.html
+        - title: "2.6"
+          url: /documentation/director/2-6-x.html
+        - title: "2.5"
+          url: /documentation/director/2-5-x.html
+        - title: "2.4"
+          url: /documentation/director/2-4-x.html
+        - title: "2.3"
+          url: /documentation/director/2-3-x.html
+        - title: "2.2"
+          url: /documentation/director/2-2-x.html
+        - title: "2.1"
+          url: /documentation/director/2-1-x.html
+        - title: "2.0"
+          url: /documentation/director/2-0-x.html
+    - title: "1"
+      url: /documentation/director/1-5-x.html
+      minors:
+        - title: "1.5"
+          url: /documentation/director/1-5-x.html
+        - title: "1.1"
+          url: /documentation/director/1-1-x.html
+        - title: "1.0"
+          url: /documentation/director/1-0-x.html
+
+#
+# For search, Enterprise content:
+
+# - /documentation/enterprise/6/6.3/
+# - /documentation/enterprise/6/release-notes/
+# - /documentation/enterprise/6/properties/6.3/
+
+# - /documentation/enterprise/6/6.2/
+# - /documentation/enterprise/6/release-notes/
+# - /documentation/enterprise/6/properties/6.2/
+
+# - /documentation/enterprise/6/6.1/
+# - /documentation/enterprise/6/release-notes/
+# - /documentation/enterprise/6/properties/6.1/
+
+# - /documentation/enterprise/6/6.0/
+# - /documentation/enterprise/6/release-notes/
+# - /documentation/enterprise/6/properties/6.0/
+
+# - /documentation/enterprise/5-16-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-16-x/
+
+# - /documentation/enterprise/5-15-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-15-x/
+
+# - /documentation/enterprise/5-14-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-14-x/
+
+# - /documentation/enterprise/5-13-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-13-x/
+
+# - /documentation/enterprise/5-12-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-12-x/
+
+# - /documentation/enterprise/5-11-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-11-x/
+
+# - /documentation/enterprise/5-10-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-10-x/
+
+# - /documentation/enterprise/5-9-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-9-x/
+
+# - /documentation/enterprise/5-8-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-8-x/
+
+# - /documentation/enterprise/5-7-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-7-x/
+
+# - /documentation/enterprise/5-6-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-6-x/
+
+# - /documentation/enterprise/5-5-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-5-x/
+
+# - /documentation/enterprise/5-4-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-4-x/
+
+# - /documentation/enterprise/5-3-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-3-x/
+
+# - /documentation/enterprise/5-2-x/
+# - /documentation/enterprise/release-notes/
+# - /documentation/other/tutorial/CDH5/
+# - /documentation/enterprise/properties/5-2-x/
+
+# - /documentation/cdh/5-1-x/
+# - /documentation/cdh/5-0-x/
+#
+
+- name: Enterprise
+  latest-version: "6.3"
+  latest-url: /documentation/enterprise/6/6.3.html
+  search-name: enterprise
+  versions:
+    - title: "6"
+      url: /documentation/enterprise/6/6.3.html
+      minors:
+        - title: "6.3"
+          label: Latest
+          url: /documentation/enterprise/6/6.3.html
+        - title: "6.2"
+          url: /documentation/enterprise/6/6.2.html
+        - title: "6.1"
+          url: /documentation/enterprise/6/6.1.html
+        - title: "6.0"
+          url: /documentation/enterprise/6/6.0.html
+    - title: "5"
+      url: /documentation/enterprise/5-16-x.html
       minors:
         - title: "5.16"
-          url: /enterprise/5.16/index.html
+          url: /documentation/enterprise/5-16-x.html
         - title: "5.15"
-          url: /enterprise/5.15/index.html
+          url: /documentation/enterprise/5-15-x.html
         - title: "5.14"
-          url: /enterprise/5.14/index.html
+          url: /documentation/enterprise/5-14-x.html
         - title: "5.13"
-          url: /enterprise/5.13/index.html
+          url: /documentation/enterprise/5-13-x.html
         - title: "5.12"
-          url: /enterprise/5.12/index.html
+          url: /documentation/enterprise/5-12-x.html
         - title: "5.11"
-          url: /enterprise/5.11/index.html
+          url: /documentation/enterprise/5-11-x.html
         - title: "5.10"
-          url: /enterprise/5.10/index.html
+          url: /documentation/enterprise/5-10-x.html
         - title: "5.9"
-          url: /enterprise/5.9/index.html
+          url: /documentation/enterprise/5-9-x.html
         - title: "5.8"
-          url: /enterprise/5.8/index.html
+          url: /documentation/enterprise/5-8-x.html
         - title: "5.7"
-          url: /enterprise/5.7/index.html
+          url: /documentation/enterprise/5-7-x.html
         - title: "5.6"
-          url: /enterprise/5.6/index.html
+          url: /documentation/enterprise/5-6-x.html
         - title: "5.5"
-          url: /enterprise/5.5/index.html
+          url: /documentation/enterprise/5-5-x.html
         - title: "5.4"
-          url: /enterprise/5.4/index.html
+          url: /documentation/enterprise/5-4-x.html
         - title: "5.3"
-          url: /enterprise/5.3/index.html
+          url: /documentation/enterprise/5-3-x.html
         - title: "5.2"
-          url: /enterprise/5.2/index.html
+          url: /documentation/enterprise/5-2-x.html
+        - title: "5.1"
+          url: /documentation/cdh/5-1-x.html
+        - title: "5.0"
+          url: /documentation/cdh/5-0-x.html
+
+# Don't know what to do with guru-howto
+# - /documentation/guru-howto/data_science.html
+# - /documentation/guru-howto/data_science/
+# - /documentation/guru-howto/data_warehouse.html
+# - /documentation/guru-howto/data_warehouse/
+
+#
+# For search, Kafka content:
+# - /documentation/kafka/4-0-x/
+# - /documentation/kafka/3-1-x/
+# - /documentation/kafka/3-0-x/
+# - /documentation/kafka/2-2-x/
+# - /documentation/kafka/2-1-x/
+# - /documentation/kafka/2-0-x/
+# - /documentation/kafka/1-4-x/
+# - /documentation/kafka/1-3-x/
+# - /documentation/kafka/1-2-x/
+#
 
 - name: Kafka
-  latest-version: "3.0"
-  latest-url: /kafka/latest/index.html
+  latest-version: "4.0"
+  latest-url: /documentation/kafka/latest.html
   search-name: kafka
   versions:
-    - title: "3.0"
-      url: /kafka/latest/index.html
+    - title: "4"
+      url: /documentation/kafka/latest.html
       minors:
-        - title: "3.0"
+        - title: "4.0"
           label: Latest
-          url: /kafka/3.0/index.html
-    - title: "2.0"
-      url: /kafka/2.2/index.html
+          url: /documentation/kafka/latest.html
+    - title: "3"
+      url: /documentation/kafka/3-1-x.html
+      minors:
+        - title: "3.1"
+          url: /documentation/kafka/3-1-x.html
+        - title: "3.0"
+          url: /documentation/kafka/3-0-x.html
+    - title: "2"
+      url: /documentation/kafka/2-2-x.html
       minors:
         - title: "2.2"
-          url: /kafka/2.2/index.html
+          url: /documentation/kafka/2-2-x.html
         - title: "2.1"
-          url: /kafka/2.1/index.html
+          url: /documentation/kafka/2-1-x.html
         - title: "2.0"
-          url: /kafka/2.0/index.html
-    - title: "1.0"
-      url: /kafka/1.4/index.html
+          url: /documentation/kafka/2-0-x.html
+    - title: "1"
+      url: /documentation/kafka/1-4-x.html
       minors:
         - title: "1.4"
-          url: /kafka/1.4/index.html
+          url: /documentation/kafka/1-4-x.html
         - title: "1.3"
-          url: /kafka/1.3/index.html
+          url: /documentation/kafka/1-3-x.html
         - title: "1.2"
-          url: /kafka/1.2/index.html
+          url: /documentation/kafka/1-2-x.html
+
+#
+# For search, Kudu content:
+# - /documentation/kudu/5-12-x/
+# - /documentation/kudu/5-11-x/
+# - /documentation/kudu/5-10-x/
+#
 
 - name: Kudu
   latest-version: "5.12"
-  latest-url: /kudu/latest/index.html
+  latest-url: /documentation/kudu/5-12-x.html
   search-name: kudu
   versions:
-    - title: "5.0"
-      url: /kudu/latest/index.html
+    - title: "5"
+      url: /documentation/kudu/5-12-x.html
       minors:
         - title: "5.12"
           label: Latest
-          url: /kudu/5.12/index.html
+          url: /documentation/kudu/5-12-x.html
         - title: "5.11"
-          url: /kudu/5.11/index.html
+          url: /documentation/kudu/5-11-x.html
         - title: "5.10"
-          url: /kudu/5.10/index.html
+          url: /documentation/kudu/5-10-x.html
+
+#
+# For search, (old) Manager content:
+# - /documentation/manager/5-1-x/
+# - /documentation/manager/5-0-x/
+#
 
 - name: Manager
   latest-version: "5.1"
-  latest-url: /manager/latest/index.html
+  latest-url: /documentation/manager/5-1-x.html
   search-name: manager
   versions:
-    - title: "5.0"
-      url: /manager/latest/index.html
+    - title: "5"
+      url: /documentation/manager/5-1-x.html
       minors:
         - title: "5.1"
           label: Latest
-          url: /manager/5.1/index.html
+          url: /documentation/manager/5-1-x.html
         - title: "5.0"
-          url: /manager/5.0/index.html
+          url: /documentation/manager/5-0-x.html
+
+#
+# For search, (old) Manager content:
+# - /documentation/navopt/
+#
 
 - name: Navigator Optimizer
   latest-version: Cloud
-  latest-url: /navopt/cloud/index.html
+  latest-url: /documentation/navopt/index.html
   search-name: navopt
   versions:
     - title: Cloud
-      url: /navopt/cloud/index.html
+      url: /documentation/navopt/index.html
+
+#
+# For search, Accumulo content:
+# - /documentation/other/accumulo/
+#
 
 - name: Accumulo
   latest-version: 1.7.2
-  latest-url: /accumulo/latest/index.html
+  latest-url: /documentation/other/accumulo/1-7-2.html
   search-name: accumulo
   versions:
     - title: "1.7"
-      url: /accumulo/1.7.2/index.html
+      url: /documentation/other/accumulo/1-7-2.html
       minors:
         - title: 1.7.2
           label: Latest
-          url: /accumulo/1.7.2/index.html
+          url: /documentation/other/accumulo/1-7-2.html
     - title: "1.6"
-      url: /accumulo/1.6.0/index.html
+      url: /documentation/other/accumulo/1-6-0.html
       minors:
         - title: 1.6.0
-          url: /accumulo/1.6.0/index.html
+          url: /documentation/other/accumulo/1-6-0.html
+
+#
+# For search, Hive JDBC content:
+# - /documentation/other/connectors/hive-jdbc/2-6-2/
+# - /documentation/other/connectors/hive-jdbc/2-6-1/
+# - /documentation/other/connectors/hive-jdbc/2-5-20/
+# - /documentation/other/connectors/hive-jdbc/2-5-19/
+# - /documentation/other/connectors/hive-jdbc/2-5-18/
+# - /documentation/other/connectors/hive-jdbc/2-5-17/
+# - /documentation/other/connectors/hive-jdbc/2-5-16/
+# - /documentation/other/connectors/hive-jdbc/2-5-15/
+# - /documentation/other/connectors/hive-jdbc/2-5-12/
+# - /documentation/other/connectors/hive-jdbc/2-5-10/
+# - /documentation/other/connectors/hive-jdbc/2-5-9/
+# - /documentation/other/connectors/hive-jdbc/2-5-6/
+# - /documentation/other/connectors/hive-jdbc/2-5-4/
+#
 
 - name: Hive JDBC
   latest-version: 2.6.2
-  latest-url: /hive-jdbc/latest/index.html
+  latest-url: /documentation/other/connectors/hive-jdbc/latest.html
   search-name: hive-jdbc
   versions:
     - title: "2.6"
-      url: /hive-jdbc/2.6.2/index.html
+      url: /documentation/other/connectors/hive-jdbc/latest.html
       minors:
         - title: 2.6.2
           label: Latest
-          url: /hive-jdbc/2.6.2/index.html
+          url: /documentation/other/connectors/hive-jdbc/latest.html
+        - title: 2.6.1
+          url: /documentation/other/connectors/hive-jdbc/2-6-1.html
     - title: "2.5"
-      url: /hive-jdbc/2.5.20/index.html
+      url: /documentation/other/connectors/hive-jdbc/2-5-20.html
       minors:
         - title: 2.5.20
-          url: /hive-jdbc/2.5.20/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-20.html
         - title: 2.5.19
-          url: /hive-jdbc/2.5.19/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-19.html
         - title: 2.5.18
-          url: /hive-jdbc/2.5.18/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-18.html
         - title: 2.5.17
-          url: /hive-jdbc/2.5.17/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-17.html
         - title: 2.5.16
-          url: /hive-jdbc/2.5.16/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-16.html
         - title: 2.5.15
-          url: /hive-jdbc/2.5.15/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-15.html
         - title: 2.5.12
-          url: /hive-jdbc/2.5.12/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-12.html
         - title: 2.5.10
-          url: /hive-jdbc/2.5.10/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-10.html
         - title: 2.5.9
-          url: /hive-jdbc/2.5.9/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-9.html
         - title: 2.5.6
-          url: /hive-jdbc/2.5.6/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-6.html
         - title: 2.5.4
-          url: /hive-jdbc/2.5.4/index.html
+          url: /documentation/other/connectors/hive-jdbc/2-5-4.html
+
+#
+# For search, Hive JDBC HDP content:
+# - /HDPDocuments/other/connectors/hive-jdbc/2.6.7/
+#
+
+- name: Hive JDBC HDP
+  latest-version: 2.6.7
+  latest-url: /HDPDocuments/other/connectors/hive-jdbc/2.6.7/index.html
+  search-name: hive-jdbc-hdp
+  versions:
+    - title: "2.6"
+      url: /HDPDocuments/other/connectors/hive-jdbc/2.6.7/index.html
+      minors:
+        - title: 2.6.7
+          label: Latest
+          url: /HDPDocuments/other/connectors/hive-jdbc/2.6.7/index.html
+
+#
+# For search, Hive ODBC content:
+# - /documentation/other/connectors/hive-odbc/2-6-1/
+# - /documentation/other/connectors/hive-odbc/2-5-25/
+# - /documentation/other/connectors/hive-odbc/2-5-24/
+# - /documentation/other/connectors/hive-odbc/2-5-23/
+# - /documentation/other/connectors/hive-odbc/2-5-21/
+# - /documentation/other/connectors/hive-odbc/2-5-20/
+# - /documentation/other/connectors/hive-odbc/2-5-19/
+# - /documentation/other/connectors/hive-odbc/2-5-18/
+# - /documentation/other/connectors/hive-odbc/2-5-17/
+# - /documentation/other/connectors/hive-odbc/2-5-16/
+# - /documentation/other/connectors/hive-odbc/2-5-15/
+# - /documentation/other/connectors/hive-odbc/2-5-14/
+# - /documentation/other/connectors/hive-odbc/2-5-13/
+# - /documentation/other/connectors/hive-odbc/2-5-12/
+# - /documentation/other/connectors/hive-odbc/2-5-10/
+# - /documentation/other/connectors/hive-odbc/2-5-9/
+# - /documentation/other/connectors/hive-odbc/2-5-5/
+# - /documentation/other/connectors/hive-odbc/2-5-0/
+# - /documentation/other/connectors/hive-odbc/2-0-0/
+#
 
 - name: Hive ODBC
-  latest-version: 2.5.25
-  latest-url: /hive-odbc/latest/index.html
+  latest-version: 2.6.1
+  latest-url: /documentation/other/connectors/hive-odbc/latest.html
   search-name: hive-odbc
   versions:
+    - title: "2.6"
+      url: /documentation/other/connectors/hive-odbc/latest.html
+      minors:
+        - title: 2.6.1
+          label: Latest
+          url: /documentation/other/connectors/hive-odbc/latest.html
     - title: "2.5"
-      url: /hive-odbc/2.5.25/index.html
+      url: /documentation/other/connectors/hive-odbc/2-5-25.html
       minors:
         - title: 2.5.25
-          label: Latest
-          url: /hive-odbc/2.5.25/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-25.html
         - title: 2.5.24
-          url: /hive-odbc/2.5.24/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-24.html
         - title: 2.5.22
-          url: /hive-odbc/2.5.23/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-23.html
         - title: 2.5.21
-          url: /hive-odbc/2.5.21/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-21.html
         - title: 2.5.20
-          url: /hive-odbc/2.5.20/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-20.html
         - title: 2.5.19
-          url: /hive-odbc/2.5.19/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-19.html
         - title: 2.5.18
-          url: /hive-odbc/2.5.18/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-18.html
         - title: 2.5.17
-          url: /hive-odbc/2.5.17/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-17.html
         - title: 2.5.16
-          url: /hive-odbc/2.5.16/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-16.html
         - title: 2.5.15
-          url: /hive-odbc/2.5.15/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-15.html
         - title: 2.5.14
-          url: /hive-odbc/2.5.14/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-14.html
         - title: 2.5.13
-          url: /hive-odbc/2.5.13/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-13.html
         - title: 2.5.12
-          url: /hive-odbc/2.5.12/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-12.html
         - title: 2.5.10
-          url: /hive-odbc/2.5.10/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-10.html
         - title: 2.5.9
-          url: /hive-odbc/2.5.9/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-9.html
         - title: 2.5.5
-          url: /hive-odbc/2.5.5/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-5.html
         - title: 2.5.0
-          url: /hive-odbc/2.5.0/index.html
+          url: /documentation/other/connectors/hive-odbc/2-5-0.html
     - title: "2.0"
-      url: /hive-odbc/2.0.0/index.html
+      url: /documentation/other/connectors/hive-odbc/2-0-0.html
       minors:
         - title: 2.0.0
-          url: /hive-odbc/2.0.0/index.html
+          url: /documentation/other/connectors/hive-odbc/2-0-0.html
+
+#
+# For search, Impala JDBC content:
+# - /documentation/other/connectors/impala-jdbc/2-6-11.html
+# - /documentation/other/connectors/impala-jdbc/2-6-9.html
+# - /documentation/other/connectors/impala-jdbc/2-6-4.html
+# - /documentation/other/connectors/impala-jdbc/2-6-3.html
+# - /documentation/other/connectors/impala-jdbc/2-6-2.html
+# - /documentation/other/connectors/impala-jdbc/2-6-1.html
+# - /documentation/other/connectors/impala-jdbc/2-5-45.html
+# - /documentation/other/connectors/impala-jdbc/2-5-43.html
+# - /documentation/other/connectors/impala-jdbc/2-5-42.html
+# - /documentation/other/connectors/impala-jdbc/2-5-41.html
+# - /documentation/other/connectors/impala-jdbc/2-5-38.html
+# - /documentation/other/connectors/impala-jdbc/2-5-37.html
+# - /documentation/other/connectors/impala-jdbc/2-5-36.html
+# - /documentation/other/connectors/impala-jdbc/2-5-35.html
+# - /documentation/other/connectors/impala-jdbc/2-5-34.html
+# - /documentation/other/connectors/impala-jdbc/2-5-32.html
+# - /documentation/other/connectors/impala-jdbc/2-5-31.html
+# - /documentation/other/connectors/impala-jdbc/2-5-30.html
+# - /documentation/other/connectors/impala-jdbc/2-5-29.html
+# - /documentation/other/connectors/impala-jdbc/2-5-28.html
+# - /documentation/other/connectors/impala-jdbc/2-5-24.html
+# - /documentation/other/connectors/impala-jdbc/2-5-22.html
+# - /documentation/other/connectors/impala-jdbc/2-5-21.html
+# - /documentation/other/connectors/impala-jdbc/2-5-16.html
+# - /documentation/other/connectors/impala-jdbc/2-5-14.html
+# - /documentation/other/connectors/impala-jdbc/2-6-9.html
+# - /documentation/other/connectors/impala-jdbc/2-6-4.html
+# - /documentation/other/connectors/impala-jdbc/2-6-3.html
+# - /documentation/other/connectors/impala-jdbc/2-6-2.html
+# - /documentation/other/connectors/impala-jdbc/2-5-5.html
+#
 
 - name: Impala JDBC
-  latest-version: 2.6.9
-  latest-url: /impala-jdbc/latest/index.html
+  latest-version: 2.6.2
+  latest-url: /documentation/other/connectors/impala-jdbc/latest.html
   search-name: impala-jdbc
   versions:
     - title: "2.6"
-      url: /impala-jdbc/2.6.9/index.html
+      url: /documentation/other/connectors/impala-jdbc/latest.html
       minors:
-        - title: 2.6.9
+        - title: 2.6.11
           label: Latest
-          url: /impala-jdbc/2.6.9/index.html
+          url: /documentation/other/connectors/impala-jdbc/latest.html
+        - title: 2.6.9
+          url: /documentation/other/connectors/impala-jdbc/2-6-9.html
         - title: 2.6.4
-          url: /impala-jdbc/2.6.4/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-6-4.html
         - title: 2.6.3
-          url: /impala-jdbc/2.6.3/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-6-3.html
         - title: 2.6.2
-          url: /impala-jdbc/2.6.2/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-6-2.html
+        - title: 2.6.1
+          url: /documentation/other/connectors/impala-jdbc/2-6-1.html
     - title: "2.5"
-      url: /impala-jdbc/2.5.45/index.html
+      url: /documentation/other/connectors/impala-jdbc/2-5-45.html
       minors:
         - title: 2.5.45
-          url: /impala-jdbc/2.5.45/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-45.html
         - title: 2.5.43
-          url: /impala-jdbc/2.5.43/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-43.html
         - title: 2.5.42
-          url: /impala-jdbc/2.5.42/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-42.html
         - title: 2.5.41
-          url: /impala-jdbc/2.5.41/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-41.html
         - title: 2.5.38
-          url: /impala-jdbc/2.5.38/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-38.html
         - title: 2.5.37
-          url: /impala-jdbc/2.5.37/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-37.html
         - title: 2.5.36
-          url: /impala-jdbc/2.5.36/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-36.html
         - title: 2.5.35
-          url: /impala-jdbc/2.5.35/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-35.html
         - title: 2.5.34
-          url: /impala-jdbc/2.5.34/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-34.html
         - title: 2.5.32
-          url: /impala-jdbc/2.5.32/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-32.html
         - title: 2.5.31
-          url: /impala-jdbc/2.5.31/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-31.html
         - title: 2.5.30
-          url: /impala-jdbc/2.5.30/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-30.html
         - title: 2.5.29
-          url: /impala-jdbc/2.5.29/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-29.html
         - title: 2.5.28
-          url: /impala-jdbc/2.5.28/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-28.html
         - title: 2.5.24
-          url: /impala-jdbc/2.5.24/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-24.html
         - title: 2.5.22
-          url: /impala-jdbc/2.5.22/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-22.html
         - title: 2.5.21
-          url: /impala-jdbc/2.5.21/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-21.html
         - title: 2.5.16
-          url: /impala-jdbc/2.5.16/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-16.html
         - title: 2.5.14
-          url: /impala-jdbc/2.5.14/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-14.html
         - title: 2.5.5
-          url: /impala-jdbc/2.5.5/index.html
+          url: /documentation/other/connectors/impala-jdbc/2-5-5.html
+
+#
+# For search, Impala ODBC content:
+# - /documentation/other/connectors/impala-odbc/2-6-4/
+# - /documentation/other/connectors/impala-odbc/2-6-2/
+# - /documentation/other/connectors/impala-odbc/2-6-0/
+# - /documentation/other/connectors/impala-odbc/2-5-5/
+# - /documentation/other/connectors/impala-odbc/2-5-44/
+# - /documentation/other/connectors/impala-odbc/2-5-43/
+# - /documentation/other/connectors/impala-odbc/2-5-42/
+# - /documentation/other/connectors/impala-odbc/2-5-41/
+# - /documentation/other/connectors/impala-odbc/2-5-40/
+# - /documentation/other/connectors/impala-odbc/2-5-39/
+# - /documentation/other/connectors/impala-odbc/2-5-37/
+# - /documentation/other/connectors/impala-odbc/2-5-36/
+# - /documentation/other/connectors/impala-odbc/2-5-35/
+# - /documentation/other/connectors/impala-odbc/2-5-34/
+# - /documentation/other/connectors/impala-odbc/2-5-33/
+# - /documentation/other/connectors/impala-odbc/2-5-32/
+# - /documentation/other/connectors/impala-odbc/2-5-31/
+# - /documentation/other/connectors/impala-odbc/2-5-30/
+# - /documentation/other/connectors/impala-odbc/2-5-29/
+# - /documentation/other/connectors/impala-odbc/2-5-28/
+# - /documentation/other/connectors/impala-odbc/2-5-26/
+# - /documentation/other/connectors/impala-odbc/2-5-23/
+# - /documentation/other/connectors/impala-odbc/2-5-22/
+# - /documentation/other/connectors/impala-odbc/2-5-20/
+# - /documentation/other/connectors/impala-odbc/2-5-2/
+# - /documentation/other/connectors/impala-odbc/2-5-17/
+# - /documentation/other/connectors/impala-odbc/2-5-15/
+# - /documentation/other/connectors/impala-odbc/2-5-13/
+# - /documentation/other/connectors/impala-odbc/2-0-0/
+# - /documentation/other/connectors/impala-odbc/1-2-0/
+#
 
 - name: Impala ODBC
-  latest-version: 2.6.0
-  latest-url: /impala-odbc/latest/index.html
+  latest-version: 2.6.2
+  latest-url: /documentation/other/connectors/impala-odbc/latest.html
   search-name: impala-odbc
   versions:
     - title: "2.6"
-      url: /impala-odbc/2.6.0/index.html
+      url: /documentation/other/connectors/impala-odbc/latest.html
       minors:
-        - title: 2.6.0
+        - title: 2.6.4
           label: Latest
-          url: /impala-odbc/2.6.0/index.html
+          url: /documentation/other/connectors/impala-odbc/latest.html
+        - title: 2.6.2
+          url: /documentation/other/connectors/impala-odbc/2-6-2.html
+        - title: 2.6.0
+          url: /documentation/other/connectors/impala-odbc/2-6-0.html
     - title: "2.5"
-      url: /impala-odbc/2.5.44/index.html
+      url: /documentation/other/connectors/impala-odbc/2-5-44.html
       minors:
         - title: 2.5.44
-          url: /impala-odbc/2.5.44/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-44.html
         - title: 2.5.43
-          url: /impala-odbc/2.5.43/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-43.html
         - title: 2.5.42
-          url: /impala-odbc/2.5.42/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-42.html
         - title: 2.5.41
-          url: /impala-odbc/2.5.41/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-41.html
         - title: 2.5.40
-          url: /impala-odbc/2.5.40/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-40.html
         - title: 2.5.39
-          url: /impala-odbc/2.5.39/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-39.html
         - title: 2.5.37
-          url: /impala-odbc/2.5.37/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-37.html
         - title: 2.5.36
-          url: /impala-odbc/2.5.36/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-36.html
         - title: 2.5.35
-          url: /impala-odbc/2.5.35/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-35.html
         - title: 2.5.34
-          url: /impala-odbc/2.5.34/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-34.html
         - title: 2.5.33
-          url: /impala-odbc/2.5.33/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-33.html
         - title: 2.5.32
-          url: /impala-odbc/2.5.32/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-32.html
         - title: 2.5.31
-          url: /impala-odbc/2.5.31/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-31.html
         - title: 2.5.30
-          url: /impala-odbc/2.5.30/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-30.html
         - title: 2.5.29
-          url: /impala-odbc/2.5.29/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-29.html
         - title: 2.5.28
-          url: /impala-odbc/2.5.28/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-28.html
         - title: 2.5.26
-          url: /impala-odbc/2.5.26/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-26.html
         - title: 2.5.23
-          url: /impala-odbc/2.5.23/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-23.html
         - title: 2.5.22
-          url: /impala-odbc/2.5.22/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-22.html
         - title: 2.5.20
-          url: /impala-odbc/2.5.20/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-20.html
         - title: 2.5.17
-          url: /impala-odbc/2.5.17/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-17.html
         - title: 2.5.15
-          url: /impala-odbc/2.5.15/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-15.html
         - title: 2.5.13
-          url: /impala-odbc/2.5.13/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-13.html
         - title: 2.5.5
-          url: /impala-odbc/2.5.5/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-5.html
         - title: 2.5.2
-          url: /impala-odbc/2.5.2/index.html
+          url: /documentation/other/connectors/impala-odbc/2-5-2.html
     - title: "2.0"
-      url: /impala-odbc/2.0.0/index.html
+      url: /documentation/other/connectors/impala-odbc/2-0-0.html
       minors:
         - title: 2.0.0
-          url: /impala-odbc/2.0.0/index.html
+          url: /documentation/other/connectors/impala-odbc/2-0-0.html
     - title: "1.2"
-      url: /impala-odbc/1.2.0/index.html
+      url: /documentation/other/connectors/impala-odbc/1-2-0.html
       minors:
         - title: 1.2.0
-          url: /impala-odbc/1.2.0/index.html
+          url: /documentation/other/connectors/impala-odbc/1-2-0.html
+
+#
+# For search, Netezza Connector content:
+# - /documentation/other/connectors/netezza/1-x/
+#
 
 - name: Netezza Connector
   latest-version: "1.0"
-  latest-url: /netezza-connector/latest/index.html
+  latest-url: /documentation/other/connectors/netezza/1-x.html
   search-name: netezza-connector
   versions:
     - title: "1.0"
-      url: /netezza-connector/1.0/index.html
+      url: /documentation/other/connectors/netezza/1-x.html
       minors:
         - title: "1.0"
           label: Latest
-          url: /netezza-connector/1.0/index.html
+          url: /documentation/other/connectors/netezza/1-x.html
+
+#
+# For search, Teradata Connector content:
+# - /documentation/other/connectors/teradata/1-x/
+#
 
 - name: Teradata Connector
   latest-version: "1.0"
-  latest-url: /teradata-connector/latest/index.html
+  latest-url: /documentation/other/connectors/teradata/1-x.html
   search-name: teradata-connector
   versions:
     - title: "1.0"
-      url: /teradata-connector/1.0/index.html
+      url: /documentation/other/connectors/teradata/1-x.html
       minors:
         - title: "1.0"
           label: Latest
-          url: /teradata-connector/1.0/index.html
+          url: /documentation/other/connectors/teradata/1-x.html
+
+#
+# For search, Licenses content:
+# - /documentation/other/Licenses/
+# - /documentation/other/shared/licensefiles/
+#
 
 - name: Licenses
   latest-version: Latest
-  latest-url: /licenses/latest/index.html
+  latest-url: /documentation/other/Licenses/index.html
   search-name: licenses
   versions:
     - title: Latest
-      url: /licenses/latest/index.html
+      url: /documentation/other/Licenses/index.html
+
+#
+# For search, Spark content:
+# - /documentation/spark2/2-0-x/
+# - /documentation/spark2/2-1-x/
+# - /documentation/spark2/2-2-x/
+# - /documentation/spark2/2-3-x/
+#
+
+- name: Spark
+  latest-version: "2.3"
+  latest-url: /documentation/spark2/2-3-x.html
+  search-name: spark
+  versions:
+    - title: "2"
+      url: /documentation/spark2/2-3-x.html
+      minors:
+        - title: "2.3"
+          label: Latest
+          url: /documentation/spark2/2-3-x.html
+        - title: "2.2"
+          url: /documentation/spark2/2-2-x.html
+        - title: "2.1"
+          url: /documentation/spark2/2-1-x.html
+        - title: "2.0"
+          url: /documentation/spark2/2-0-x.html
+
+#
+# For search, Matrix content:
+# - /documentation/other/Matrix/
+#
+
+- name: Matrix
+  latest-version: Latest
+  latest-url: /documentation/other/Matrix/topics/Product_Compatibility_Matrix.html
+  search-name: licenses
+  versions:
+    - title: Latest
+      url: /documentation/other/Matrix/topics/Product_Compatibility_Matrix.html
+
+#
+# For search, Reference Architecture content:
+# - /documentation/other/reference-architecture/
+#
+
+- name: Reference Architecture
+  latest-version: Latest
+  latest-url: /documentation/other/reference-architecture.html
+  search-name: licenses
+  versions:
+    - title: Latest
+      url: /documentation/other/reference-architecture.html
+
+#
+# For search, Security Bulletins content:
+# - /documentation/other/security-bulletins/
+# There are only a couple HTML files:
+#  - /documentation/other/security-bulletins/categories/hub_apache_hadoop.html
+#  - /documentation/other/security-bulletins/categories/hub_cloudera_data_science_workbench.html
+#  - /documentation/other/security-bulletins/categories/hub_cloudera_distribution_of_apache_spark_2.html
+#  - /documentation/other/security-bulletins/categories/hub_cloudera_enterprise.html
+#  - /documentation/other/security-bulletins/categories/hub_cloudera_manager.html
+#  - /documentation/other/security-bulletins/categories/hub_cloudera_navigator_key_trustee.html
+#  - /documentation/other/security-bulletins/categories/hub_cloudera_navigator.html
+#  - /documentation/other/security-bulletins/categories/hub_cloudera_search.html
+#  - /documentation/other/security-bulletins/categories/hub_hbase.html
+#  - /documentation/other/security-bulletins/categories/hub_hive.html
+#  - /documentation/other/security-bulletins/categories/hub_hue.html
+#  - /documentation/other/security-bulletins/categories/hub_impala.html
+#  - /documentation/other/security-bulletins/categories/hub_oozie.html
+#  - /documentation/other/security-bulletins/categories/hub_security_bulletins.html
+#  - /documentation/other/security-bulletins/categories/hub_sentry.html
+#  - /documentation/other/security-bulletins/categories/hub_spark.html
+#  - /documentation/other/security-bulletins/categories/hub_vulnerabilities.html
+#  - /documentation/other/security-bulletins/categories/hub_zookeeper.html
+#  - /documentation/other/security-bulletins/categories/hub.html
+#  - /documentation/other/security-bulletins/topics/csb_all_product_issues.html
+#  - /documentation/other/security-bulletins/topics/csb_topic_1.html
+#
 
 - name: Security Bulletins
   latest-version: Latest
-  latest-url: /security-bulletins/latest/index.html
+  latest-url: /documentation/other/security-bulletins/topics/Security-Bulletin.html
   search-name: security-bulletins
   versions:
     - title: Latest
-      url: /security-bulletins/latest/index.html
+      url: /documentation/other/security-bulletins/topics/Security-Bulletin.html
+
+#
+# For search, Reference Architecture content:
+# - /documentation/wxm/latest/
+# Note that /documentation/wxm/latest/ is not a URL alias
+#
 
 - name: Workload XM
   latest-version: Cloud
-  latest-url: /wxm/cloud/index.html
+  latest-url: /documentation/wxm/latest.html
   search-name: wxm
   versions:
     - title: Cloud
-      url: /wxm/cloud/index.html
+      url: /documentation/wxm/latest.html

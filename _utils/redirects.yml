@@ -17,6 +17,8 @@
   d: /documentation/enterprise/6/6.3.html
 - s: downloads.html.html
   d: /downloads.html
+- s: documentation/other/connectors.html.html
+  d: /documentation/other/connectors.html
 
 # From here to the end, just redirect to the equivalent path on
 # www.cloudera.com
