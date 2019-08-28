@@ -14,8 +14,8 @@ json:
     sub:
       - text: Cloudera Stream Processing Overview
         href: csp-overview/index.html
-        id: pub-schema-registry-overview
-        sub: schema-registry-overview/navigation.json
+        id: pub-csp-overview
+        sub: csp-overview/navigation.json
       - text: Kafka Overview
         href: /documentation/enterprise/6/6.3/topics/kafka.html#kafka_intro
         external: external
