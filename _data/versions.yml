@@ -862,15 +862,17 @@
           url: /cdh/5.0/index.html
 
 - name: Data Science Workbench
-  latest-version: "1.5"
+  latest-version: "1.6"
   latest-url: /cdsw/latest/index.html
   search-name: cdsw
   versions:
     - title: "1.0"
-      url: /cdsw/1.5/index.html
+      url: /cdsw/1.6/index.html
       minors:
-        - title: "1.5"
+        - title: "1.6"
           label: Latest
+          url: /cdsw/1.6/index.html
+        - title: "1.5"
           url: /cdsw/1.5/index.html
         - title: "1.4"
           url: /cdsw/1.4/index.html

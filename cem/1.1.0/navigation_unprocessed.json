@@ -17,13 +17,18 @@ json:
   #      id: pub-overview
   #      sub: overview/navigation.json
 
-  - text: Installation
-    id: cat-installation
+  - text: Installation & Upgrade
+    id: cat-installation-upgrade
     sub:
       - text: Installation
         href: installation/index.html
         id: pub-installation
         sub: installation/navigation.json
+
+      - text: Upgrade
+        href: upgrade/index.html
+        id: pub-upgrade
+        sub: upgrade/navigation.json
 
       # - text: Quick Start
       #   href: quick-start/index.html

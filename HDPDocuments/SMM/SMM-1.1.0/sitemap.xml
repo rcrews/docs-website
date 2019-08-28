@@ -3,283 +3,283 @@
 <!-- created with Scrutiny from https://peacockmedia.software -->
 
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/index.html</loc>
 		<lastmod>2018-10-18</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/index.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/index.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/index.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/index.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/index.html</loc>
 		<lastmod>2018-10-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/content/new-features.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/content/new-features.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/content/fixed-issues.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/content/fixed-issues.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/content/known-issues.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/content/known-issues.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/content/smm-legal.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/release-notes/content/smm-legal.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-install-overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-install-overview.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-installation-steps.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-installation-steps.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-cluster-requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-cluster-requirements.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-component-requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-component-requirements.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-architecture-overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-architecture-overview.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/obtaining-software-container.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/obtaining-software-container.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/installation-artifacts.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/installation-artifacts.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/set_up_a_local_repository.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/set_up_a_local_repository.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/create_the_repository_configuration_file.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/create_the_repository_configuration_file.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/install-app-on-dp-container.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/install-app-on-dp-container.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/set-up-dp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/set-up-dp.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/install_the_service.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/install_the_service.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-prepare-cluster-for-smm.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-prepare-cluster-for-smm.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-getting-ready.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-getting-ready.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-security-setup.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-security-setup.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-mandatory-security-tasks.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-mandatory-security-tasks.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-recommended-security-configuration.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-recommended-security-configuration.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-install-rest-server.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-install-rest-server.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-configure-database.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-configure-database.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-configure-knox.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-configure-knox.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-install-management-pack.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-install-management-pack.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-update-base-url.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-update-base-url.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-add-rest-admin-service.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-add-rest-admin-service.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-integrating-your-cluster-with-dp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-integrating-your-cluster-with-dp.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-users-roles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-users-roles.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-tls-public-key.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-tls-public-key.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-enable-service-in-dp.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-enable-service-in-dp.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-ranger-kafka-config.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/installation/content/smm-ranger-kafka-config.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/content/upgrade-rest-server-mpack.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/content/upgrade-rest-server-mpack.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/content/update-smm-base-url.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/content/update-smm-base-url.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/content/upgrade-smm-server.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/content/upgrade-smm-server.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/content/upgrade-smm-app.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/upgrading-smm/content/upgrade-smm-app.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-clusters.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-clusters.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-producers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-producers.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-topics.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-topics.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-brokers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-brokers.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-consumers.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SMM/SMM-1.1.0/user-guide/content/smm-monitoring-consumers.html</loc>
 		<lastmod>2018-10-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>

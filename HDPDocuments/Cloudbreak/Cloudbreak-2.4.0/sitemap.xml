@@ -3,553 +3,553 @@
 <!-- created with Scrutiny from http://peacockmedia.software -->
 
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/index.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/ch_relnotes_smartsense.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/ch_relnotes_smartsense.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/index.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/index.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/smartsense_doc_overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/smartsense_doc_overview.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/architecture_overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/architecture_overview.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/install_parent.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/install_parent.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/uninstall_parent.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/uninstall_parent.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/upgrade_scenarios.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/upgrade_scenarios.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ports_and_flow.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ports_and_flow.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/troubleshooting.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/troubleshooting.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/index.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/index.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch_smartsense_doc_overview.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch_smartsense_doc_overview.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch_smartsense_using_with_ambari.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch_smartsense_using_with_ambari.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch_smartsense_configuring_ss.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch_smartsense_configuring_ss.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch_smartsense_performance.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch_smartsense_performance.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/index.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/index.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/smartsense_relnotes-new-features.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/smartsense_relnotes-new-features.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/smartsense_relnotes-fixed-issues.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/smartsense_relnotes-fixed-issues.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/smartsense_relnotes-known-issues.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_release-notes/content/smartsense_relnotes-known-issues.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/cluster_diagnostic_collection.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/cluster_diagnostic_collection.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/bundle_content.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/bundle_content.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/bundle_security.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/bundle_security.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/bundle_transport.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/bundle_transport.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/automated_upload.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/automated_upload.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/manual_upload.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/manual_upload.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/activity_analysis.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/activity_analysis.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/system_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/system_requirements.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/os_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/os_requirements.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/software_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/software_requirements.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/jdk_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/jdk_requirements.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/browser_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/browser_requirements.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ambari_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ambari_requirements.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/activity_analysis_requirements.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/activity_analysis_requirements.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ambari_ss_installation.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ambari_ss_installation.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ambari_install.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ambari_install.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/downloading_binaries.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/downloading_binaries.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/manual_server_placement.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/manual_server_placement.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/activity_analyzer_placement.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/activity_analyzer_placement.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_installation.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_installation.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_placement.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_placement.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_install.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_install.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ambari_gateway_integrating.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/ambari_gateway_integrating.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/uninstall_gateway.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/uninstall_gateway.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/upgrade_in_place.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/upgrade_in_place.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/upgrade_in_place2.5.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/upgrade_in_place2.5.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/upgrade_in_place2.4.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/upgrade_in_place2.4.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_upgrade.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_upgrade.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_https_update.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/gateway_https_update.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/portflow_ambari_to_hst_server.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/portflow_ambari_to_hst_server.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/portflow_hst_agent_to_hst_server.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/portflow_hst_agent_to_hst_server.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/portflow_hst_server_to_smartsense_gateway.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/portflow_hst_server_to_smartsense_gateway.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/portflow_smartsense_gateway_to_hortonworks.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/portflow_smartsense_gateway_to_hortonworks.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/SSL_troubleshooting.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/SSL_troubleshooting.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/reporting_issues.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_installation/content/reporting_issues.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ss-roles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ss-roles.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_capturing_bundles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_capturing_bundles.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_capturing_analysis.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_capturing_analysis.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_capturing_trouble.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_capturing_trouble.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/auto_upload_bundles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/auto_upload_bundles.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/creating_capture_schedule.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/creating_capture_schedule.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/updating_capture_schedule.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/updating_capture_schedule.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_viewing_downloading_bundles.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_viewing_downloading_bundles.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_recommendations.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_recommendations.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_recommendations_list.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ambari_recommendations_list.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/rec-review.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/rec-review.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/apply_recommendation.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/apply_recommendation.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/rec-revert.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/rec-revert.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/rec-export.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/rec-export.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/activity_explorer.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/activity_explorer.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/chargeback_notebook.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/chargeback_notebook.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/hdfs_notebook.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/hdfs_notebook.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/mr_notebook.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/mr_notebook.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/yarn_notebook.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/yarn_notebook.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/appendix_data_anonymization.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/appendix_data_anonymization.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/anonymization-rule-types.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/anonymization-rule-types.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/anonymization-fields.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/anonymization-fields.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/pattern-rules.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/pattern-rules.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/pattern_examples.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/pattern_examples.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/property-rules.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/property-rules.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/property_examples.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/property_examples.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/xpath-rules.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/xpath-rules.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/xpath_examples.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/xpath_examples.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/jsonpath-rules.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/jsonpath-rules.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/jsonpath_examples.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/jsonpath_examples.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/configuring_bundle_upload.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/configuring_bundle_upload.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/SFTP_upload.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/SFTP_upload.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/HTTPS_upload.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/HTTPS_upload.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/config-guidelines.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/config-guidelines.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch04s01.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/ch04s01.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/bundle-cleanup.html</loc>
+		<loc>https://docs.cloudera.com/HDPDocuments/SS1/SmartSense-1.4.4/bk_user-guide/content/bundle-cleanup.html</loc>
 		<lastmod>2018-01-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>

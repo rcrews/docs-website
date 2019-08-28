@@ -37,37 +37,28 @@ exclude:
   - /Gemfile
   - /Gemfile.lock
   - /README.md
-  # - node_modules
-  # - vendor/bundle/
-  # - vendor/cache/
-  # - vendor/gems/
-  # - vendor/ruby/
 
-  # Unreleased documentation
-  - /HDPDocuments/CEM/CEM-1.1.0/
-  - /HDPDocuments/CSP/CSP-2.0.0/
-  - /HDPDocuments/SMM/SMM-2.0.0/
-  - /HDPDocuments/SRM/SRM-2.0.0/
-
-  # Testing files that should not be copied to the hortonworks staging site
-  - /data-catalog/cloud/navigation.json
-  - /data-hub/cloud/navigation.json
-  - /machine-learning/cloud/navigation.json
-  - /management-console/cloud/navigation.json
-  - /replication-manager/cloud/navigation.json
-  - /runtime/7.0.0/navigation.json
-  - /runtime/7.0.0/publication/
-
-  # Static content supporting the legacy Hortonworks pages that don't
-  # need to be part of most builds
+  # Static content that doesn't need to be part of most builds
   - /cem/1.0.0/rest-api-reference/
   - /cem/1.1.0/rest-api-reference/
-  # - /common/fonts/  - Using these -- J
-  # - /common/img/ - Using these -- J
+  - /common/fonts/
+  - /common/img/
   - /common/js/libs/
   - /common/sample-data/
   - /common/themes/pre-hdp-3.1/
-  # - /favicon.ico
+  - /csp/2.0.0/smm-rest-api-reference/
+  - /csp/2.0.0/srm-rest-api-reference/
+  - /favicon.ico
+  - /sitemap.xsl
+  - /smm/1.0.0/rest-api-reference/
+  - /smm/1.1.0/rest-api-reference/
+  - /smm/1.2.0/rest-api-reference/
+  - /smm/1.2.1/rest-api-reference/
+  - /smm/2.0.0/rest-api-reference/
+  - /srm/1.0.0/rest-api-reference/
+
+  # Static content supporting the legacy Hortonworks pages that don't
+  # need to be part of most builds
   - /google313e059f6e26cb8c.html
   - /googlea675d981988e7c7a.html
   - /HDPDocuments/CEM/CEM-1.0.0/rest-api-reference/
@@ -77,19 +68,7 @@ exclude:
   - /HDPDocuments/SMM/SMM-1.1.0/rest-api-reference/
   - /HDPDocuments/SMM/SMM-1.2.0/rest-api-reference/
   - /HDPDocuments/SMM/SMM-1.2.1/rest-api-reference/
-  - /robots.txt
-  - /sitemap.xsl
-  - /cem/1.0.0/rest-api-reference/
-  - /cem/1.1.0/rest-api-reference/
-  - /csp/2.0.0/smm-rest-api-reference/
-  - /csp/2.0.0/srm-rest-api-reference/
-  - /smm/1.0.0/rest-api-reference/
-  - /smm/1.1.0/rest-api-reference/
-  - /smm/1.2.0/rest-api-reference/
-  - /smm/1.2.1/rest-api-reference/
-  - /smm/2.0.0/rest-api-reference/
-  - /srm/1.0.0/rest-api-reference/
-  # - /wp-content/
+  - /wp-content
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds
