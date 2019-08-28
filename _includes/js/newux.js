@@ -262,6 +262,11 @@ var NEWUX = (function($) {
             // Check it's a valid click.....
             if(e.type === 'click') {
 
+                // If it's an actual anchor link with external.
+                if($(this).hasClass('external')) {
+                    return true;
+                }
+
                 // If it's designated with a class of external.
                 if($(this).closest('li').hasClass('external')) {
                     return true;
@@ -468,7 +473,12 @@ var NEWUX = (function($) {
                         Pubnav.requestNewPage(new_url);
                         return false;
                     } else {
-                        // Fire an error?
+                        // Page doesn't have kids, and still doesn't have content... maybe it should be external?
+                        elems = [];
+                        elems[0] = "<h1>Uh-oh!</h1><p>There was a problem loading that page. <a href='" + url + "' class='external'>Try this instead.</a></p><p style='font-size:85%'>Error: Request was expecting a page in the newux format, but it doesn't have a content section?</p>";
+                        // Fire GA Logger?
+                        complete = true;
+                        swapContent();
                         return false;
                     }
                 } else {
@@ -496,17 +506,16 @@ var NEWUX = (function($) {
                         Pubnav.pagestate.pdfurl = "";
                     }
 
-
                     complete = true;
                     swapContent();
+
                 }
             }).fail(function( jqXHR, status, error) {
                 // If the request succeeds, this function gets "data", "status", "jqXHR"
                 // but they are ignored because response was set above.
                 // If it fails, this function gets "jqXHR", "status", "error"
                 complete = true;
-                let msg = "<p>Sorry but there was an error loading that page. " + status + " " + jqXHR.statusText + "</p>";
-                elems[0] = msg;
+                elems[0] =  "<h1>Uh-oh!</h1><p>Sorry but there was an error loading that page. " + status + " " + jqXHR.statusText + "</p>";
                 swapContent();
             });
         },
