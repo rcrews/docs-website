@@ -2,20 +2,18 @@
 # frozen_string_literal: true
 
 #
-#
+# <%= @destination %>
 #
 
 require 'erb'
-require 'fileutils'
 require 'yaml'
 
-aliases = YAML.load(File.read('/Users/rcrews/Sandbox/docs-website/_utils/aliases.yml'))
+ALIASES = '/Users/rcrews/Sandbox/docs-website/_utils/aliases.yml'
+@aliases = YAML.safe_load(File.read(ALIASES))
 
-template = '<meta http-equiv="refresh" content="0; URL=<%= @destination %>">'
-
-aliases.each do |redirect|
-  # @destination = redirect['d']
-  # html = ERB.new(template, trim_mode: '%<>')
-  # FileUtils.mkdir_p File.dirname(redirect['s'])
-  # File.write(redirect['s'], html.result)
+def regexp_esc(string)
+  string.gsub(/([?.()\[\]*+])/, '[\1]')
 end
+
+template = File.read('aliases.erb')
+puts ERB.new(template, trim_mode: '%<>').result.sub("\n;", ';')
