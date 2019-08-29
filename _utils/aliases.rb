@@ -14,12 +14,17 @@
 require 'erb'
 require 'yaml'
 
-ALIASES = 'aliases.yml'
+ALIASES  = 'aliases.yml'
+TEMPLATE = 'aliases.erb'
+NODEJS   = 'aliases.js'
+
 @aliases = YAML.safe_load(File.read(File.expand_path(ALIASES, __dir__)))
 
 def regexp_esc(string)
   string.gsub(/([?.()\[\]{}*^+|$])/, '[\1]')
 end
 
-template = File.read(File.expand_path('aliases.erb', __dir__))
-puts ERB.new(template, trim_mode: '%<>').result
+template = File.read(File.expand_path(TEMPLATE, __dir__))
+js = ERB.new(template, trim_mode: '%<>').result
+File.write(NODEJS, js)
+puts js
