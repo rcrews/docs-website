@@ -1,9 +1,24 @@
+/**
+ * Lambda/Lambda@Edge function for
+ * - http://docs-dev.cloudera.com/
+ * - http://docs-stage.cloudera.com/
+ * - https://docs.cloudera.com/
+ * Aliases URLs
+ * - from URLs with version=latest to actual latest
+ * - that end with / to /index.html
+ * This script is generated from YAML data by _utils/aliases.rb
+ * - https://github.infra.cloudera.com/cloudera-docs/docs-website/blob/playbranch/_utils/aliases.rb
+ * Based on example code:
+ * - https://aws.amazon.com/blogs/compute/implementing-default-directory-indexes-in-amazon-s3-backed-amazon-cloudfront-origins-using-lambdaedge/
+ * - https://stackoverflow.com/questions/49101162/cloudfront-url-rewriting-remapping-so-content-has-two-urls
+ */
 exports.handler = (event, context, callback) => {
     "use strict";
     const request = event.Records[0].cf.request;
     request.uri = request.uri
 <% @aliases.each do |a| %>
-        .replace(new RegExp("^<%= regexp_esc(a['alias']) %>"), "<%= a['exist'] %>")
-<% end %>;
+        .replace("<%= a['alias'] %>", "<%= a['exist'] %>")
+<% end %>
+        .replace(/\/$/, "/index.html");
     return callback(null, request);
 };
