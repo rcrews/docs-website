@@ -1,10 +1,11 @@
 #
 # Hortonworks Tech Docs .gitignore
 # Questions: Robert Crews <rcrews@hortonworks.com>
-# Last Update: 2018-02-09
+# Last Update: 2019-09-01
 #
 
 _utils/tinycc/urls.json
+_utils/lambdas/dcc-url-aliases.js
 
 ########
 
