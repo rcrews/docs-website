@@ -3,10 +3,39 @@ layout: newux
 ---
 <h1>{{ page.title }}</h1>
 <div class="product-home">
+
+    {% for section in page.sections -%}
+      {% if section.name == "releasenotes" -%}
+  <div class="product-section" id="section-{{ section.name }}">
+    <h2 class="section-title">{{ section.title }}</h2>
+    <div class="books">
+        {% for book in section.books -%}
+          {% if book.url contains '//' -%}
+            {% assign full_url = book.url -%}
+          {% else -%}
+            {% assign full_url = page.base-path | append:book.url -%}
+          {% endif -%}
+      <div class="book">
+        <div class="title">
+          <a href="{{ full_url }}">{{ book.title }}</a>
+        </div>
+      </div>
+        {% endfor -%}
+    </div>
+  </div>
+      {% endif -%}
+    {% endfor -%}
+
     <div class="product-content">
         {{ content }}
     </div>
+
     {% for section in page.sections -%}
+
+      {% if section.name == "releasenotes" -%}
+        {% continue -%}
+      {% endif -%}
+
     <div class="product-section" id="section-{{ section.name }}">
         <div class="icon"><img src="/common/img/section_icons/icon-{{ section.name | downcase }}.png" onerror='this.onerror = null; this.src="/common/img/section_icons/icon-empty.png"'></div>
         <h2 class="section-title">{{ section.title }}</h2>

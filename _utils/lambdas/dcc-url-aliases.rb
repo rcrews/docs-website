@@ -7,16 +7,16 @@
 # - http://docs-stage.cloudera.com/
 # - https://docs.cloudera.com/
 # Depends on
-# - aliases.yml
-# - aliases.erb
+# - dcc-url-aliases.yml
+# - dcc-url-aliases.erb
 #
 
 require 'erb'
 require 'yaml'
 
-ALIASES  = 'aliases.yml'
-TEMPLATE = 'aliases.erb'
-NODEJS   = 'aliases.js'
+ALIASES  = 'dcc-url-aliases.yml'
+TEMPLATE = 'dcc-url-aliases.erb'
+NODEJS   = 'dcc-url-aliases.js'
 
 @aliases = YAML.safe_load(File.read(File.expand_path(ALIASES, __dir__)))
 

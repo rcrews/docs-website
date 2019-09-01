@@ -11,8 +11,10 @@
  * Based on example code:
  * - https://aws.amazon.com/blogs/compute/implementing-default-directory-indexes-in-amazon-s3-backed-amazon-cloudfront-origins-using-lambdaedge/
  * - https://stackoverflow.com/questions/49101162/cloudfront-url-rewriting-remapping-so-content-has-two-urls
+ *
+ * CloudFront Event: Viewer Request
  */
-exports.handler = (event, context, callback) => {
+exports.handler = async (event, context, callback) => {
     "use strict";
     const request = event.Records[0].cf.request;
     request.uri = request.uri
