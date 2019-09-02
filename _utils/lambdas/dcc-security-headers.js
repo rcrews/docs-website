@@ -26,14 +26,16 @@ exports.handler = async (event, context, callback) => {
      * Content-Security-Policy: default-src https: "self"
      */
     response.headers["content-security-policy"] = [{ value:
-      "default-src 'self' cloudera.com hortonworks.com;" +
-      "font-src 'self' cloudera.com hortonworks.com " +
+      "default-src 'self' cloudera.com *.cloudera.com hortonworks.com;" +
+      "img-src 'self' cloudera.com *.cloudera.com hortonworks.com data:;" +
+      "font-src 'self' cloudera.com *.cloudera.com hortonworks.com " +
         "https://fonts.gstatic.com https://fonts.googleapis.com;" +
-      "style-src 'self' cloudera.com hortonworks.com " +
-        "https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com" +
-        "https://fonts.googleapis.com;" +
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' cloudera.com hortonworks.com " +
-        "*.google.com *.jquery.com " +
+      "style-src 'self' 'unsafe-inline' cloudera.com *.cloudera.com hortonworks.com " +
+        "https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com " +
+        "https://fonts.googleapis.com https://www.google.com;" +
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' cloudera.com *.cloudera.com hortonworks.com " +
+        "https://www.google.com https://code.jquery.com https://assets.adobetm.com " +
+        "https://www.google-analytics.com https://www.googletagmanager.com" +
         "https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com"
      }];
      // probably will add cdn.fontawesome.com

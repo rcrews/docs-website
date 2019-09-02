@@ -39,7 +39,7 @@ exports.handler = async (event, context, callback) => {
         headers: {
             location: [{
                 key: "Location",
-                value: `https://docs.cloudera.com/HDPDocuments${request.uri}`,
+                value: `https://docs.cloudera.com${request.uri}`,
             }],
         },
     };
