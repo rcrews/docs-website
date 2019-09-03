@@ -25,26 +25,53 @@ exports.handler = async (event, context, callback) => {
      *
      * Content-Security-Policy: default-src https: "self"
      */
-    response.headers["content-security-policy"] = [{ value:
-      "default-src 'self' cloudera.com *.cloudera.com hortonworks.com;" +
-      "img-src 'self' cloudera.com *.cloudera.com hortonworks.com data:;" +
-      "font-src 'self' cloudera.com *.cloudera.com hortonworks.com " +
-        "https://fonts.gstatic.com https://fonts.googleapis.com " +
-        "https://stackpath.bootstrapcdn.com;" +
-      "style-src 'self' 'unsafe-inline' " +
-        "cloudera.com *.cloudera.com hortonworks.com " +
-        "https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com " +
-        "https://fonts.googleapis.com https://www.google.com;" +
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' " +
-        "cloudera.com *.cloudera.com hortonworks.com " +
-        "https://www.google.com https://cse.google.com " +
-        "https://www.google-analytics.com https://www.googletagmanager.com " +
-        "https://assets.adobedtm.com https://api.demandbase.com " +
-        "https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com " +
-        "https://code.jquery.com"
-     }];
+    let globalSrc = [
+        "'self'",
+        "*.cloudera.com",
+        "*.hortonworks.com",
+        "cloudera.com",
+        "hortonworks.com"];
+    let imgSrc = [
+        "data:",
+        "https://clients1.google.com",
+        "https://www.google.com",
+        "https://www.googleapis.com"];
+    let fontSrc = [
+        "https://fonts.googleapis.com",
+        "https://fonts.gstatic.com",
+        "https://maxcdn.bootstrapcdn.com",
+        "https://stackpath.bootstrapcdn.com",
+        "https://use.typekit.net"];
+    let styleSrc = [
+        "'unsafe-inline'",
+        "https://cdn.jsdelivr.net",
+        "https://cdnjs.cloudflare.com",
+        "https://code.jquery.com",
+        "https://fonts.googleapis.com",
+        "https://maxcdn.bootstrapcdn.com",
+        "https://p.typekit.net",
+        "https://stackpath.bootstrapcdn.com",
+        "https://use.typekit.net",
+        "https://www.google.com"];
+    let scriptSrc = [
+        "'unsafe-eval'",
+        "'unsafe-inline'",
+        "https://api.demandbase.com",
+        "https://assets.adobedtm.com",
+        "https://cdnjs.cloudflare.com",
+        "https://code.jquery.com",
+        "https://cse.google.com",
+        "https://stackpath.bootstrapcdn.com",
+        "https://www.google-analytics.com",
+        "https://www.google.com",
+        "https://www.googletagmanager.com"];
 
-     // probably will add cdn.fontawesome.com
+    response.headers["content-security-policy"] = [{value:
+        `default-src ${globalSrc.join(" ")};` +
+        `img-src ${globalSrc.concat(imgSrc).join(" ")};` +
+        `font-src ${globalSrc.concat(fontSrc).join(" ")};` +
+        `style-src ${globalSrc.concat(styleSrc).join(" ")};` +
+        `script-src ${globalSrc.concat(scriptSrc).join(" ")}`}];
 
     /* Add browser side XSS protection (for older browsers without CSP)
      * See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
