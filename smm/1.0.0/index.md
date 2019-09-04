@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Streams Messaging Manager
+title: Streams Messaging Manager for HDF and HDP
 version: 1.0.0
 base-path: /smm/1.0.0/
 

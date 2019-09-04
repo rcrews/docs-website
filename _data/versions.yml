@@ -678,7 +678,7 @@
         - title: 1.1.0
           url: /HDPDocuments/HCP1/HCP-1.1.0/index.html
 
-- name: Streams Messaging Manager
+- name: Streams Messaging Manager for HDF and HDP
   latest-version: 2.0.0
   latest-url: /smm/2.0.0/index.html
   search-name: Streams Messaging Manager
@@ -688,7 +688,7 @@
       minors:
         - title: "2.0.0"
           type: Latest
-          url: /smm/2.0.0/index.html
+          url: /smm/latest/index.html
     - title: "1.2"
       url: /smm/1.2.1/index.html
       minors:
@@ -752,7 +752,7 @@
         - title: 1.0.0
           url: /csp/1.0.0/index.html
 
-- name: Streams Replication Manager
+- name: Streams Replication Manager for HDF and HDP
   latest-version: 1.0.0
   latest-url: /srm/1.0.0/index.html
   search-name: Streams Replication Manager

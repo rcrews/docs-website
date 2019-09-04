@@ -904,6 +904,8 @@
   d: https://www.cloudera.com/resources/resources-library/dynamic-form.html
 - s: search.html
   d: https://www.cloudera.com/search.html
+- s: search.html.html
+  d: https://www.cloudera.com/search.html
 - s: services-support.html
   d: https://www.cloudera.com/services-support.html
 - s: solutions.html

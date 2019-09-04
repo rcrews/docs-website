@@ -25,6 +25,11 @@ exports.handler = async (event, context, callback) => {
      *
      * Content-Security-Policy: default-src https: "self"
      */
+
+/*
+ * 2019-09-03 rpc I give up. Doesn't seem reasonable to correctly set up
+ * CSP on a site that wasn't initially designed for it.
+ *
     let globalSrc = [
         "'self'",
         "*.cloudera.com",
@@ -34,6 +39,8 @@ exports.handler = async (event, context, callback) => {
     let imgSrc = [
         "data:",
         "https://clients1.google.com",
+        "https://cloudera.sc.omtrdc.net",
+        "https://www.google-analytics.com",
         "https://www.google.com",
         "https://www.googleapis.com"];
     let fontSrc = [
@@ -60,18 +67,43 @@ exports.handler = async (event, context, callback) => {
         "https://assets.adobedtm.com",
         "https://cdnjs.cloudflare.com",
         "https://code.jquery.com",
+        "https://content.atomz.com",
         "https://cse.google.com",
+        "https://nool.td.hortonworks.com:8983",
         "https://stackpath.bootstrapcdn.com",
         "https://www.google-analytics.com",
         "https://www.google.com",
-        "https://www.googletagmanager.com"];
+        "https://www.googletagmanager.com",
+        "https://yoop.td.hortonworks.com:8983"];
+    let scriptSrcElem = [
+        "https://connect.facebook.net",
+        "https://js.driftt.com",
+        "https://js.idio.co",
+        "https://ml314.com",
+        "https://pi.pardot.com",
+        "https://s.adroll.com",
+        "https://scripts.demandbase.com",
+        "https://siteimproveanalytics.com",
+        "https://sjs.bizographics.com",
+        "https://up.amp.live",
+        "https://web-analytics.engagio.com",
+        "https://www.googleadservices.com"];
+    let connectSrc = [
+        "https://cloudera.tt.omtrdc.net",
+        "https://dpm.demdex.net"];
+    let frameSrc = [
+        "https://assets.adobedtm.com"];
 
     response.headers["content-security-policy"] = [{value:
         `default-src ${globalSrc.join(" ")};` +
         `img-src ${globalSrc.concat(imgSrc).join(" ")};` +
         `font-src ${globalSrc.concat(fontSrc).join(" ")};` +
         `style-src ${globalSrc.concat(styleSrc).join(" ")};` +
-        `script-src ${globalSrc.concat(scriptSrc).join(" ")}`}];
+        `script-src ${globalSrc.concat(scriptSrc).join(" ")}` +
+        `script-src-elem ${globalSrc.concat(scriptSrcElem).join(" ")}` +
+        `connect-src ${globalSrc.concat(connectSrc).join(" ")}` +
+        `frame-src ${globalSrc.concat(frameSrc).join(" ")}`}];
+ */
 
     /* Add browser side XSS protection (for older browsers without CSP)
      * See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection

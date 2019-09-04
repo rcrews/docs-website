@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Streams Replication Manager
+title: Streams Replication Manager for HDF and HDP
 version: 1.0.0
 base-path: /srm/1.0.0/
 
