@@ -27,3 +27,6 @@ Cloudera Runtime does not include:
   Manager, and the Replication Manager
 * Data Catalog
 * Add-on products such as CDSW, CDF, and Metron
+
+To learn about installing, configuring, and managing clusters, refer
+to the [Cloudera Manager documentation](/cloudera-manager/7.0.0/index.html).
