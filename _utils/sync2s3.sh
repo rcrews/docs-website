@@ -7,12 +7,6 @@ bundle exec jekyll build
 aws s3 sync --size-only _site/ s3://docs.cloudera.com
 
 cd /Users/rcrews/Sandbox/docs-website
-git checkout master
-git fetch
-bundle exec jekyll build
-aws s3 sync --size-only _site/ s3://docs.hortonworks.com
-
-cd /Users/rcrews/Sandbox/docs-website
 git checkout playbranch
 git fetch public playbranch
 git fetch cloudera playbranch

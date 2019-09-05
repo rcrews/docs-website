@@ -1,8 +1,8 @@
 ---
 layout: product
-title: Cloudera Data Platform
+title: Cloudera Manager
 version: cloud
-base-path: /cdp/cloud/
+base-path: /cloudera-manager/cloud/
 
 # sections:
 #   - title: Release Notes
