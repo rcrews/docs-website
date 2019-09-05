@@ -122,15 +122,6 @@ json:
             id: pub-cdp-governance-extending-metadata
             sub: cdp-governance-extending-metadata/navigation.json
 
-
-      - text: Cluster Managment
-        href: concepts-cluster-management.html
-        sub:
-          - text: Cloudera Manager Overview
-            href: cm-concepts/index.html
-            id: pub-cm-concepts
-            sub: cm-concepts/navigation.json
-
   - text: Planning
     id: cat-planning
     sub:
@@ -416,24 +407,6 @@ json:
             id: pub-atlas-managing-business-terms-with-glossaries
             sub: atlas-managing-business-terms-with-glossaries/navigation.json
 
-      - text: Cluster Management
-        href: howto-cluster-management.html
-        sub:
-          - text: Managing Data Hub Clusters
-            href: managing-clusters/index.html
-            id: pub-managing-clusters
-            sub: managing-clusters/navigation.json
-
-          - text: Configuring Data Hub Clusters
-            href: configuring-clusters/index.html
-            id: pub-configuring-clusters
-            sub: configuring-clusters/navigation.json
-
-          - text: Monitoring and Diagnostics
-            href: monitoring-and-diagnostics/index.html
-            id: pub-monitoring-and-diagnostics
-            sub: monitoring-and-diagnostics/navigation.json
-
       - text: Jobs Management
         href: howto-jobs-management.html
         sub:
@@ -488,11 +461,6 @@ json:
         href: materialized-view-commands/index.html
         id: pub-materialized-view-commands
         sub: materialized-view-commands/navigation.json
-
-      - text: Cloudera Manager Reference
-        href: cm-reference/index.html
-        id: pub-cm-reference
-        sub: cm-reference/navigation.json
 
       - text: Apache Atlas Reference
         href: atlas-reference/index.html
