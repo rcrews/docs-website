@@ -257,7 +257,10 @@ var NEWUX = (function($) {
             // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
             Pubnav.mobileClose(); // Close the mobile nav if it was open.
 
-            let url, hash = "";
+            let url,
+                hash = "",
+                update_history = true;
+
             Pubnav.clicktrack = 0;
             // Check it's a valid click.....
             if(e.type === 'click') {
@@ -317,9 +320,10 @@ var NEWUX = (function($) {
                 }
                 // the page history is changing... happens with back/forward button, but also hash links!
                 url = location.pathname;
+                update_history = false;
             }
 
-            if(Pubnav.requestNewPage(url, hash) && e.type === 'click') {
+            if(Pubnav.requestNewPage(url, hash, update_history) && e.type === 'click') {
                 e.preventDefault();
             }
         },
@@ -409,7 +413,7 @@ var NEWUX = (function($) {
 
                 });
         },
-        loadContent: function(url, hash) {
+        loadContent: function(url, hash, update_history) {
             Pubnav.clicktrack++; // This is just used to prevent runaway clicks.
 
             // Start by fading out the existing content....
@@ -485,7 +489,9 @@ var NEWUX = (function($) {
                     // Success....
 
                     // Update history so the back button works.... We don't want this to fire if we're going back in time!
-                    if (!history.state || history.state.page !== url) {
+                    console.log(history.state);
+                    if (update_history) {
+                        console.log('adding ' + url + ' to state');
                         if(typeof hash === 'undefined') hash = "";
                         history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
                     }
@@ -636,13 +642,12 @@ var NEWUX = (function($) {
             }
             localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         },
-        requestNewPage: function(url, hash) {
+        requestNewPage: function(url, hash, update_history) {
             // Only load if the url is actually in the nav tree...
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
             if(destination) {
                 // If it's a page in the menu tree...
-
-                this.loadContent(url, hash);
+                this.loadContent(url, hash, update_history);
 
                 // Watch out. Everything after this, will run before the content has finished loading.
                 this.pagestate.breadpath.length = 0; // This should really be part of mapPageState, but I can't do it because I'm recursing on that function.
