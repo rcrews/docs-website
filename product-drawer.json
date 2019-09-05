@@ -40,6 +40,10 @@ json:
       href: /runtime/7.0.0/index.html
       icon: /common/img/mini_icons/icon-cr.png
 
+    - text: Cloudera Manager
+      href: /cloudera-manager/7.0.0/index.html
+      icon: /common/img/mini_icons/icon-cm.png
+
 - title: DataFlow
   products:
     - text: Cloudera Edge Management
@@ -85,5 +89,4 @@ json:
     - text: HDF Enterprise
       href: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
       icon: /common/img/mini_icons/icon-hdf.png
-
 ---
