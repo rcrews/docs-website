@@ -9,8 +9,13 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
+  - text: Cloudera Stream Processing
+    id: landing-cloudera-stream-processing
+    href: /csp/2.0.0/index.html
+    display: none
+
   - text: Concepts
-    name: concepts
+    name: cat-concepts
     sub:
       - text: Cloudera Stream Processing Overview
         href: csp-overview/index.html
@@ -29,7 +34,7 @@ json:
         sub: srm-overview/navigation.json
 
   - text: Installation & Upgrade
-    name: install
+    name: cat-install
     sub:
       - text: Support Matrix
         href: support-matrix/index.html
@@ -49,7 +54,7 @@ json:
         sub: upgrade/navigation.json
 
   - text: How To
-    name: how-to
+    name: cat-how-to
     sub:
       - text: Schema Registry
         id: cat-schema-registry
@@ -138,7 +143,7 @@ json:
             external: external
 
   - text: Reference
-    name: reference
+    name: cat-reference
     sub:
       - text: Kafka Reference
         href: /documentation/enterprise/6/6.3/topics/kafka_reference.html
@@ -149,7 +154,7 @@ json:
         external: external
 
   - text: Release Notes
-    name: releasenotes
+    name: cat-releasenotes
     sub:
       - text: Release Notes
         href: release-notes/index.html

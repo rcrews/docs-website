@@ -9,6 +9,11 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
+  - text: Management Console
+    id: landing-management-console
+    href: /management-console/cloud/index.html
+    display: none
+
   - text: Concepts & Use Cases
     id: cat-concepts
     sub:

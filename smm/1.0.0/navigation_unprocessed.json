@@ -9,6 +9,11 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
+  - text: Streams Messaging Manager
+    id: landing-streams-messaging-manager
+    href: /smm/1.0.0/index.html
+    display: none
+
   - text: Concepts
     id: cat-concepts
     sub:

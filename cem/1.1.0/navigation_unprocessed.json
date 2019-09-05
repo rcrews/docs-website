@@ -9,6 +9,11 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
+  - text: Cloudera Edge Management
+    id: landing-cloudera-edge-management
+    href: /cem/1.1.0/index.html
+    display: none
+
   #- text: Concepts
   #  id: cat-concepts
   #  sub:

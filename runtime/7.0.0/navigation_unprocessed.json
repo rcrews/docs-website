@@ -9,7 +9,6 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
-
     # Foyer Pages
     # Here's the final list:
     #   Storage: HDFS, Kudu
@@ -22,6 +21,11 @@ json:
     #   Cluster Managment: Cloudera Manager
     #   Jobs Managment: Oozie
     # -> Kudo moved from operational db to storage Mitra 8/7
+
+  - text: Cloudera Runtime
+    id: landing-runtime
+    href: /runtime/7.0.0/index.html
+    display: none
 
   - text: Concepts & Use Cases
     id: cat-concepts

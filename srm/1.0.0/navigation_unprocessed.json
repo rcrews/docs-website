@@ -9,6 +9,11 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
+  - text: Stream Replication Manager for HDF and HDP
+    id: landing-stream-replication-manager
+    href: /srm/1.0.0/index.html
+    display: none
+
   - text: Concepts
     id: cat-concepts
     sub:
