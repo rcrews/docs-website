@@ -489,7 +489,7 @@ var NEWUX = (function($) {
                     // Success....
 
                     // Update history so the back button works.... We don't want this to fire if we're going back in time!
-                    console.log(history.state);
+                    
                     if (update_history) {
                         console.log('adding ' + url + ' to state');
                         if(typeof hash === 'undefined') hash = "";
