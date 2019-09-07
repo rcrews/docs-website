@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="sitemap.xsl" type="text/xsl"?>
+<!-- https://www.sitemaps.org/ -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                      https://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
+{%- assign sorted_sitemaps = page.sitemaps | sort_natural %}
+{%- for sitemap in sorted_sitemaps %}
+  <sitemap>
+    <loc>{{ sitemap }}</loc>
+  </sitemap>
+{%- endfor %}
+</sitemapindex>
