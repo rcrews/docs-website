@@ -9,6 +9,11 @@ layout: json
 #- text: Release Notes
 #- text: Learning & Training
 json:
+  - text: Machine Learning
+    id: landing-machine-learning
+    href: /machine-learning/cloud/index.html
+    display: none
+
   - text: Concepts & Use Cases
     id: cat-concepts
     sub:

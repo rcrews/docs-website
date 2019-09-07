@@ -50,6 +50,8 @@
 
 - exist: /runtime/7.0.0/
   alias: /runtime/latest/
+- exist: /cloudera-manager/7.0.0/
+  alias: /cloudera-manager/latest/
 
 - exist: /documentation/data-science-workbench/1-6-x/
   alias: /documentation/data-science-workbench/latest/

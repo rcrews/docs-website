@@ -827,8 +827,8 @@
     - title: Cloud
       url: /machine-learning/cloud/index.html
 
-- name: Runtime
-  latest-version: cloud
+- name: Cloudera Runtime
+  latest-version: 7.0.0
   latest-url: /runtime/7.0.0/index.html
   search-name: Runtime
   versions:
@@ -838,6 +838,18 @@
         - title: 7.0.0
           type: Latest
           url: /runtime/7.0.0/index.html
+
+- name: Cloudera Manager
+  latest-version: 7.0.0
+  latest-url: /cloudera-manager/7.0.0/index.html
+  search-name: Cloudera Manager
+  versions:
+    - title: "7.0"
+      url: /cloudera-manager/7.0.0/index.html
+      minors:
+        - title: 7.0.0
+          type: Latest
+          url: /cloudera-manager/7.0.0/index.html
 
 #
 # For search, Altus content:

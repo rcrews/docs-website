@@ -1,0 +1,19 @@
+# //docs.cloudera.com/robots.txt
+# Test at https://www.google.com/webmasters/tools/robots-testing-tool
+#         https://technicalseo.com/seo-tools/robots-txt/
+# Updated: {{ page.updated }}
+# Questions: Robert Crews
+
+Sitemap: https://docs.cloudera.com/sitemap.xml
+
+# http://searchengineland.com/a-deeper-look-at-robotstxt-17573
+User-agent: Googlebot
+{%- assign sorted_patterns = page.patterns | sort_natural %}
+{%- for pattern in sorted_patterns %}
+Noindex: {{ pattern }}
+{%- endfor %}
+
+User-agent: *
+{%- for pattern in sorted_patterns %}
+Disallow: {{ pattern }}
+{%- endfor %}
