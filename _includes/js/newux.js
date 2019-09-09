@@ -58,7 +58,6 @@ var NEWUX = (function($) {
 
                     // Make sure there's an index.html at the end of the url.
                     my_product_url = '/' + my_product_url_parts[1] + '/' + my_product_url_parts[2] + '/index.html';
-
                     // Walk the versions.yaml tree, figure out what product/version I am based on the URL, and get the related information for that product
                     let found = false;
                     let versions = [];
@@ -67,12 +66,11 @@ var NEWUX = (function($) {
                         // We only need to loop through the versions if we've not found it.
                         if(WhoAmI.is_latest) {
                             // Special lookup based on the latest flag.
-                            if(typeof data['latest-url'] !== 'undefined' && data['latest-url'] === my_product_url) {
+                            if(typeof data[i]['latest-url'] !== 'undefined' && data[i]['latest-url'] === my_product_url) {
                                 // Ok, we found the right product, and from this can deduce the right version.
-                                my_product_url = '/' + my_product_url_parts[1] + '/' + data.latest-version + '/index.html';
+                                my_product_url = '/' + my_product_url_parts[1] + '/' + data[i]['latest-version'] + '/index.html';
                             }
                         }
-
                         if(!found) {
                             versions = [];
                             if(typeof data[i].versions !== 'undefined') {
