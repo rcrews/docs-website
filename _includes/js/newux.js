@@ -11,7 +11,7 @@ var NEWUX = (function($) {
         product_name : "", // We get this from the from the URL, or the meta-tag
         version : "", // We get this from the URL, or the meta tag.
         is_latest : false, // This gets flagged if we are using the 'latest' url.
-        latest_version : {}, // We need to look this up from the versions.yaml and use it to highlight the latest version.
+        // latest_version : {}, // We need to look this up from the versions.yaml and use it to highlight the latest version.
         versions : [], // Populate this from versions.yaml
         products : [], // The full versions.yaml jsonified.
 
@@ -79,6 +79,7 @@ var NEWUX = (function($) {
                                 for(let j = 0; j < data[i].versions.length; j++) {
                                     // Store the versions for our lookup table.
                                     versions[j] = {
+                                        type: typeof data[i].versions[j].type === 'undefined' ? '' : data[i].versions[j].type,
                                         title:  Number.isInteger(data[i].versions[j].title) ? data[i].versions[j].title.toFixed(1) : data[i].versions[j].title,
                                         url: data[i].versions[j].url,
                                         minors: []
@@ -86,6 +87,7 @@ var NEWUX = (function($) {
 
                                     if(!found && my_product_url === data[i].versions[j].url) {
                                         WhoAmI.version = {
+                                            type: typeof data[i].versions[j].type === 'undefined' ? '' : data[i].versions[j].type,
                                             title: data[i].versions[j].title,
                                             url: data[i].versions[j].url
                                         };
@@ -98,6 +100,7 @@ var NEWUX = (function($) {
 
                                             // Add the minors to our versions lookup table too.
                                             versions[j].minors[k] = {
+                                                type: typeof data[i].versions[j].minors[k].type === 'undefined' ? '' : data[i].versions[j].minors[k].type,
                                                 title: data[i].versions[j].minors[k].title,
                                                 url: data[i].versions[j].minors[k].url
                                             };
@@ -106,6 +109,7 @@ var NEWUX = (function($) {
                                             if(my_product_url === data[i].versions[j].minors[k].url) {
                                                 // We found it at the minor level
                                                 WhoAmI.version = {
+                                                    type: typeof data[i].versions[j].minors[k].type === 'undefined' ? '' : data[i].versions[j].minors[k].type,
                                                     title: data[i].versions[j].minors[k].title,
                                                     url: data[i].versions[j].minors[k].url
                                                 };
@@ -126,12 +130,15 @@ var NEWUX = (function($) {
 
                             if(WhoAmI.product_name === "") WhoAmI.product_name = data[i].name;
                             WhoAmI.versions = versions;
-                            if(typeof data[i].latest_version !== 'undefined') {
+
+                            // I don't think this is being used elsewhere?
+                            /* if(typeof data[i].latest_version !== 'undefined') {
                                 WhoAmI.latest_version = {
                                     name: data[i].latest_version,
                                     url: data[i].latest_url
                                 };
                             }
+                            */
                             break; // And break out of this loop
                         }
                     }
@@ -155,7 +162,12 @@ var NEWUX = (function($) {
             if (typeof WhoAmI.version.title === 'string' && WhoAmI.version.title.trim().toLowerCase() === 'cloud') {
                 $('.bread-version').html('<i class="fa fa-cloud"></i>');
             } else {
-                $('.bread-version').html(WhoAmI.version.title);
+                if(WhoAmI.version.type !== '') {
+                    $('.bread-version').html(WhoAmI.version.title + ` (${WhoAmI.version.type})`);
+                } else {
+                    $('.bread-version').html(WhoAmI.version.title);
+                }
+
             }
 
             // Create a pulldown list for all the versions.
