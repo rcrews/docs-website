@@ -39,8 +39,6 @@ exclude:
   - /README.md
 
   # Static content that doesn't need to be part of most builds
-  - /cem/1.0.0/rest-api-reference/
-  - /cem/1.1.0/rest-api-reference/
   - /common/fonts/
   - /common/img/
   - /common/js/libs/
@@ -50,6 +48,10 @@ exclude:
   - /csp/2.0.0/srm-rest-api-reference/
   - /favicon.ico
   - /sitemap.xsl
+
+  # REST API Pages
+  - /cem/1.0.0/rest-api-reference/
+  - /cem/1.1.0/rest-api-reference/
   - /smm/1.0.0/rest-api-reference/
   - /smm/1.1.0/rest-api-reference/
   - /smm/1.2.0/rest-api-reference/
@@ -77,3 +79,7 @@ exclude:
   - /etc/
   - /etc.clientlibs/
   - /libs/
+
+  # For development to speed up jekyll compile times, uncomment the following....
+  # - /HDPDocuments/
+  # - /documentation/

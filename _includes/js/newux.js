@@ -10,7 +10,8 @@ var NEWUX = (function($) {
     var WhoAmI = {
         product_name : "", // We get this from the from the URL, or the meta-tag
         version : "", // We get this from the URL, or the meta tag.
-        latest_version : {}, // We need to look this up from the versions.yaml.
+        is_latest : false, // This gets flagged if we are using the 'latest' url.
+        latest_version : {}, // We need to look this up from the versions.yaml and use it to highlight the latest version.
         versions : [], // Populate this from versions.yaml
         products : [], // The full versions.yaml jsonified.
 
@@ -25,6 +26,7 @@ var NEWUX = (function($) {
                     // See if I can figure out what product loading page is in from the product link.
                     let my_product_url = "";
 
+                    // Initially, we used the newux template to inject the product name into the index pages. I don't think we're doing this anymore
                     let $my_product = $('.bread-product a');
                     if($my_product.length > 0) {
                         my_product_url = new URL($my_product[0].href);
@@ -35,18 +37,43 @@ var NEWUX = (function($) {
                         my_product_url = location.pathname;
                     }
 
-                    // Make sure there's an index.html at the end of the url.
+                    // Let's do a little more work to this url...
+                    // The url structure should be /product-name/product-version/index.html
                     let my_product_url_parts = my_product_url.split('/');
+
+                    // If we're on a latest branch, we need to identify what we really are.
+                    WhoAmI.is_latest = false;
+                    if(my_product_url_parts[2] === 'latest') {
+                        WhoAmI.is_latest = true;
+                        // This will not be found in the lookup below, because the latest url doesn't existing in the versions. So can we lookup based on something else?
+
+                        // Sub-pages have the version baked into the meta....
+                        // Product home pages also have the version in them, but in a different place....
+                        // And foyer pages don't have a version in them at all.
+
+                        // We could do the lookup through the versions.yaml
+                        // Each product has a 'latest-version' and a 'latest-url' parameter.
+                        // We can do that in the loop below.
+                    }
+
+                    // Make sure there's an index.html at the end of the url.
                     my_product_url = '/' + my_product_url_parts[1] + '/' + my_product_url_parts[2] + '/index.html';
 
-                    // Walk the versions.yaml tree and get the related information for this product
+                    // Walk the versions.yaml tree, figure out what product/version I am based on the URL, and get the related information for that product
                     let found = false;
                     let versions = [];
 
                     for(let i = 0; i < data.length; i++) {
                         // We only need to loop through the versions if we've not found it.
-                        if(!found) {
+                        if(WhoAmI.is_latest) {
+                            // Special lookup based on the latest flag.
+                            if(typeof data['latest-url'] !== 'undefined' && data['latest-url'] === my_product_url) {
+                                // Ok, we found the right product, and from this can deduce the right version.
+                                my_product_url = '/' + my_product_url_parts[1] + '/' + data.latest-version + '/index.html';
+                            }
+                        }
 
+                        if(!found) {
                             versions = [];
                             if(typeof data[i].versions !== 'undefined') {
                                 for(let j = 0; j < data[i].versions.length; j++) {
@@ -489,9 +516,8 @@ var NEWUX = (function($) {
                     // Success....
 
                     // Update history so the back button works.... We don't want this to fire if we're going back in time!
-                    
+
                     if (update_history) {
-                        console.log('adding ' + url + ' to state');
                         if(typeof hash === 'undefined') hash = "";
                         history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
                     }
@@ -643,7 +669,9 @@ var NEWUX = (function($) {
             localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         },
         requestNewPage: function(url, hash, update_history) {
+            console.log('called requestNew Page with url:' + url + ', hash:' + hash + ' , and update_history set to ' + update_history);
             // Only load if the url is actually in the nav tree...
+            if(typeof update_history === 'undefined') update_history = true;
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
             if(destination) {
                 // If it's a page in the menu tree...
