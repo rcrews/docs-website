@@ -598,6 +598,7 @@ var NEWUX = (function($) {
                     css += "external ";
                 }
                 if('href' in item) {
+                    if(WhoAmI.is_latest) item.href = this.makeLatestURL(item.href);
                     html += `<li class='${css}' data-navid='${item.id}' data-level='${level}'><span class='item'><a href='${item.href}'>${item.text}</a></span>`;
                 } else {
                     html += `<li class='${css}' data-navid='${item.id}' data-level='${level}'><span class='item'>${item.text}</span>`;
@@ -612,7 +613,6 @@ var NEWUX = (function($) {
             return html;
         },
         expandNavElem: function(id) {
-
             let $this = $(`.ctoc li[data-navid='${id}']`);
 
             // If it's already open, ignore.
@@ -650,7 +650,6 @@ var NEWUX = (function($) {
                     }
                 }
             });
-
         },
         contractNavElem: function(id) {
             // Contract the elem....
@@ -669,7 +668,7 @@ var NEWUX = (function($) {
             localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         },
         requestNewPage: function(url, hash, update_history) {
-            console.log('called requestNew Page with url:' + url + ', hash:' + hash + ' , and update_history set to ' + update_history);
+            // console.log('called requestNew Page with url:' + url + ', hash:' + hash + ' , and update_history set to ' + update_history);
             // Only load if the url is actually in the nav tree...
             if(typeof update_history === 'undefined') update_history = true;
             let destination = this.getNestedItemBy('href', url, this.nav_tree);
@@ -702,6 +701,12 @@ var NEWUX = (function($) {
                 }
             }
             return false; // Defaults to false if we couldn't find anything.
+        },
+        makeLatestURL(url) {
+            // Take a URL like /runtime/7.0.0/topic/item_name.html and convert it to runtime/latest/topic/item_name.html
+            let url_parts = url.split('/');
+            url_parts[2] = 'latest';
+            return url_parts.join('/');
         },
         isFoyer: function(navitem) {
             // Detects whether the page is a foyer page.
