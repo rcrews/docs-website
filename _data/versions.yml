@@ -709,7 +709,7 @@
 
 - name: Edge Management
   latest-version: 1.1.0
-  latest-url: /cem/1.1.0/index.html
+  latest-url: /cem/latest/index.html
   search-name: Edge Management
   versions:
     - title: "1.0"
@@ -723,7 +723,7 @@
 
 - name: Flow Management
   latest-version: 1.0.1
-  latest-url: /cfm/1.0.1/index.html
+  latest-url: /cfm/latest/index.html
   search-name: Flow Management
   versions:
     - title: "1.0"
@@ -737,7 +737,7 @@
 
 - name: Stream Processing
   latest-version: 2.0.0
-  latest-url: /csp/2.0.0/index.html
+  latest-url: /csp/latest/index.html
   search-name: Stream Processing
   versions:
     - title: "2.0"
@@ -754,7 +754,7 @@
 
 - name: Streams Replication Manager for HDF and HDP
   latest-version: 1.0.0
-  latest-url: /srm/1.0.0/index.html
+  latest-url: /srm/latest/index.html
   search-name: Streams Replication Manager
   versions:
     - title: "1.0"
@@ -841,7 +841,7 @@
 
 - name: Cloudera Manager
   latest-version: 7.0.0
-  latest-url: /cloudera-manager/7.0.0/index.html
+  latest-url: /cloudera-manager/latest/index.html
   search-name: Cloudera Manager
   versions:
     - title: "7.0"
