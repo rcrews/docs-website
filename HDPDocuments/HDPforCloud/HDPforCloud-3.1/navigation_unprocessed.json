@@ -53,12 +53,12 @@ json:
       - text: Installation
         href: ../../HDP3/HDP-3.1.4/installation.html
         sub:
-          - text: Apache Ambari Installation
-            id: pub-bk_ambari-installation
-            href: ../../HDP3/HDP-3.1.4/../../Ambari-2.7.4.0/bk_ambari-installation/index.html
-          - text: Apache Ambari Installation for IBM Power Systems
-            id: pub-bk_ambari-installation-ppc
-            href: ../../HDP3/HDP-3.1.4/../../Ambari-2.7.4.0/bk_ambari-installation-ppc/index.html
+          # - text: Apache Ambari Installation
+          #   id: pub-bk_ambari-installation
+          #   href: ../../Ambari-2.7.4.0/bk_ambari-installation/index.html
+          # - text: Apache Ambari Installation for IBM Power Systems
+          #   id: pub-bk_ambari-installation-ppc
+          #   href: ../../Ambari-2.7.4.0/bk_ambari-installation-ppc/index.html
           - text: Installing Apache Atlas
             id: pub-installing-atlas
             href: ../../HDP3/HDP-3.1.4/installing-atlas/index.html
@@ -97,13 +97,13 @@ json:
         sub:
           - text: Apache Ambari Major Upgrade
             id: pub-bk_ambari-upgrade-major
-            href: ../../HDP3/HDP-3.1.4/../../Ambari-2.7.4.0/bk_ambari-upgrade-major/index.html
+            href: ../../Ambari-2.7.4.0/bk_ambari-upgrade-major/index.html
           - text: Apache Ambari Minor Upgrade
             id: pub-bk_ambari-upgrade
-            href: ../../HDP3/HDP-3.1.4/../../Ambari-2.7.4.0/bk_ambari-upgrade/index.html
+            href: ../../Ambari-2.7.4.0/bk_ambari-upgrade/index.html
           - text: Apache Ambari Upgrade for IBM Power Systems
             id: pub-bk_ambari-upgrade-ppc
-            href: ../../HDP3/HDP-3.1.4/../../Ambari-2.7.4.0/bk_ambari-upgrade-ppc/index.html
+            href: ../../Ambari-2.7.4.0/bk_ambari-upgrade-ppc/index.html
 
   - text: How To
     id: cat-how-to
@@ -360,11 +360,6 @@ json:
         id: pub-materialized-view
         href: ../../HDP3/HDP-3.1.4/materialized-view/index.html
         sub: ../../HDP3/HDP-3.1.4/materialized-view/navigation.json
-
-#      - text: Apache Atlas APIs
-#        id: pub-atlas-apis
-#        href: ../../HDP3/HDP-3.1.4/atlas-apis/index.html
-#        sub: ../../HDP3/HDP-3.1.4/atlas-apis/navigation.json
 
       - text: HDFS ACLs
         id: pub-hdfs-acls
