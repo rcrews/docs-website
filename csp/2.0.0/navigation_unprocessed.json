@@ -48,10 +48,6 @@ json:
         href: installation/index.html
         id: pub-installation
         sub: installation/navigation.json
-      - text: Upgrade
-        href: upgrade/index.html
-        id: pub-upgrade
-        sub: upgrade/navigation.json
 
   - text: How To
     name: cat-how-to
