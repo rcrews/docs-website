@@ -493,16 +493,15 @@
           url: /HDPDocuments/Cloudbreak/Cloudbreak-1.16.1/index.html
 
 - name: HDP for Cloud
-  latest-version: 3.0.1
-  latest-url: /HDPDocuments/HDPforCloud/HDPforCloud-3.0.1/index.html
+  latest-version: 3.1
+  latest-url: /HDPDocuments/HDPforCloud/HDPforCloud-3.1/index.html
   search-name: HDPforCloud
   versions:
-    - title: "3.0"
-      url: /HDPDocuments/HDPforCloud/HDPforCloud-3.0.1/index.html
+    - title: "3.1"
+      url: /HDPDocuments/HDPforCloud/HDPforCloud-3.1/index.html
       minors:
-        - title: 3.0.1
-          type: Latest
-          url: /HDPDocuments/HDPforCloud/HDPforCloud-3.0.1/index.html
+        - title: 3.1
+          url: /HDPDocuments/HDPforCloud/HDPforCloud-3.1/index.html
     - title: "2.0"
       url: /HDPDocuments/HDPforCloud/HDPforCloud-2.6.5/index.html
       minors:
@@ -722,15 +721,20 @@
           url: /cem/1.0.0/index.html
 
 - name: Flow Management
-  latest-version: 1.0.1
+  latest-version: 2.0.0
   latest-url: /cfm/latest/index.html
   search-name: Flow Management
   versions:
+    - title: "2.0"
+      url: /cfm/2.0.0/index.html
+      minors:
+        - title: 2.0.0
+          type: Latest
+          url: /cfm/2.0.0/index.html
     - title: "1.0"
       url: /cfm/1.0.1/index.html
       minors:
         - title: 1.0.1
-          type: Latest
           url: /cfm/1.0.1/index.html
         - title: 1.0.0
           url: /cfm/1.0.0/index.html

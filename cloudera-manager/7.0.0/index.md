@@ -2,7 +2,7 @@
 layout: product
 title: Cloudera Manager
 version: cloud
-base-path: /cloudera-manager/cloud/
+base-path: /cloudera-manager/7.0.0/
 
 sections:
   - title: Release Notes
