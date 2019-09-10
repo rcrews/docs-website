@@ -13,11 +13,11 @@ json:
     id: cat-releasenotes
     sub:
       - text: HDP Release Notes
-        id: cat-pub-hdp-release-notes
+        id: pub-hdp-release-notes
         href: hdp-release-notes/index.html
         sub: hdp-release-notes/navigation.json
       - text: Ambari Release Notes
-        id: cat-pub-ambari-release-notes
+        id: pub-ambari-release-notes
         href: ambari-release-notes/index.html
         sub: ambari-release-notes/navigation.json
 
