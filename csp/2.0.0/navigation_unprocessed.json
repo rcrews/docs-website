@@ -21,6 +21,10 @@ json:
         href: csp-overview/index.html
         id: pub-csp-overview
         sub: csp-overview/navigation.json
+      - text: Streams Messaging Manager Overview
+        href: smm-overview/index.html
+        id: pub-smm-overview
+        sub: smm-overview/navigation.json
       - text: Kafka Overview
         href: /documentation/enterprise/6/6.3/topics/kafka.html#kafka_intro
         external: external
@@ -40,10 +44,6 @@ json:
         href: support-matrix/index.html
         id: pub-support-matrix
         sub: support-matrix/navigation.json
-      - text: Planning Your Deployment
-        href: planning-your-deployment/index.html
-        id: pub-planning-your-deployment
-        sub: planning-your-deployment/navigation.json
       - text: Installation
         href: installation/index.html
         id: pub-installation
