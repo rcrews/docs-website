@@ -1,4 +1,4 @@
 ---
 layout: indexredirect
-product: Streams Replication Management
+product: Streams Replication Manager for HDF and HDP
 ---

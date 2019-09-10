@@ -1,4 +1,4 @@
 ---
 layout: indexredirect
-product: Cloudera Edge Management
+product: Edge Management
 ---

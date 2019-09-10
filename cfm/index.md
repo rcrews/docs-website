@@ -1,4 +1,4 @@
 ---
 layout: indexredirect
-product: Cloudera Flow Management
+product: Flow Management
 ---

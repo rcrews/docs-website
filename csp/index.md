@@ -1,4 +1,4 @@
 ---
 layout: indexredirect
-product: Cloudera Streams Processing
+product: Stream Processing
 ---
