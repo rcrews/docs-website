@@ -1209,6 +1209,18 @@ var NEWUX = (function($) {
         }
     };
 
+    var LoadScripts = {
+        // This loads up external scripts including analytics.
+        // Note that loads after jQuery, but before the DOM has been configured with the latest setup.
+        init : function() {
+            /*
+            // Doesn't work because the script uses document.write
+            $.getScript("//assets.adobedtm.com/98a3a1c24ee5de4297f8ae77cf444e0c86ff2f04/satelliteLib-2b934fee5c4cb90dad47c223f80ea9c99e9761b2.js", function(data, textStatus, jqxhr) {
+                // console.log(textStatus);
+            }); */
+        }
+    };
+
     // SEARCH DRAWER
     $('.launch-search').on('click', function() {
         $(this).hide();
@@ -1219,8 +1231,10 @@ var NEWUX = (function($) {
         $('.launch-search').show();
     });
 
+    LoadScripts.init();
     WhoAmI.init();
     Pubnav.init();
+
     // ProductDrawer.init(); Actually, we can't fire this until the WhoAmI function has fired, so moved the init call over there.
     // Search.init();
     $('.search').html(''); // Remove search box until ready.
