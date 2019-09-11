@@ -63,7 +63,7 @@ json:
   - text: Release Notes
     id: cat-releasenotes
     sub:
-      - text: Cloudera Manager Release Notes
+      - text: Release Notes
         href: release-notes/index.html
         id: pub-reference
         sub: release-notes/navigation.json

@@ -16,6 +16,7 @@ json:
         id: pub-hdp-release-notes
         href: hdp-release-notes/index.html
         sub: hdp-release-notes/navigation.json
+
       - text: Ambari Release Notes
         id: pub-ambari-release-notes
         href: ambari-release-notes/index.html
