@@ -65,7 +65,7 @@ json:
     sub:
       - text: Release Notes
         href: release-notes/index.html
-        id: pub-reference
+        id: pub-release-notes
         sub: release-notes/navigation.json
 
   # - text: Learning & Training
