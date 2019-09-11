@@ -44,10 +44,10 @@ json:
         href: support-matrix/index.html
         id: pub-support-matrix
         sub: support-matrix/navigation.json
-      - text: Installation
-        href: installation/index.html
-        id: pub-installation
-        sub: installation/navigation.json
+      - text: Deployment
+        href: deployment/index.html
+        id: pub-deployment
+        sub: deployment/navigation.json
 
   - text: How To
     name: cat-how-to
@@ -74,11 +74,6 @@ json:
             href: configuration/index.html
             id: pub-configuration
             sub: configuration/navigation.json
-
-          - text: Securing SRM
-            href: srm-security/index.html
-            id: pub-srm-security
-            sub: srm-security/navigation.json
 
           - text: Using SRM
             href: srm-using/index.html
