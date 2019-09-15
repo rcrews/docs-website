@@ -44,14 +44,14 @@ exclude:
   - /common/js/libs/
   - /common/sample-data/
   - /common/themes/pre-hdp-3.1/
-  - /csp/2.0.0/smm-rest-api-reference/
-  - /csp/2.0.0/srm-rest-api-reference/
   - /favicon.ico
   - /sitemap.xsl
 
   # REST API Pages
   - /cem/1.0.0/rest-api-reference/
   - /cem/1.1.0/rest-api-reference/
+  # - /csp/2.0.0/smm-rest-api-reference/
+  # - /csp/2.0.0/srm-rest-api-reference/
   - /smm/1.0.0/rest-api-reference/
   - /smm/1.1.0/rest-api-reference/
   - /smm/1.2.0/rest-api-reference/

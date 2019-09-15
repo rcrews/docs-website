@@ -45,7 +45,7 @@
   alias: /cem/latest/
 - exist: /cfm/1.0.1/
   alias: /cfm/latest/
-- exist: /csp/1.0.0/
+- exist: /csp/2.0.0/
   alias: /csp/latest/
 
 - exist: /runtime/7.0.0/
