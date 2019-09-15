@@ -38,6 +38,23 @@ exclude:
   - /Gemfile.lock
   - /README.md
 
+  # "master" version for docs-dev only
+  - /cdp/master/
+  - /data-catalog/master/
+  - /data-hub/master/
+  - /data-warehouse/master/
+  - /machine-learning/master/
+  - /management-console/master/
+  - /replication-manager/master/
+  - /workload-manager/master/
+  - /runtime/master/
+  - /cloudera-manager/master/
+  - /cem/master/
+  - /cfm/master/
+  - /csp/master/
+  - /smm/master/
+  - /srm/master/
+
   # Static content that doesn't need to be part of most builds
   - /common/fonts/
   - /common/img/
