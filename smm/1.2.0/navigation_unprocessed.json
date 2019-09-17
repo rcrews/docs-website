@@ -1,6 +1,6 @@
 ---
 layout: json
-#- text: Concepts
+#- text: Concepts & Use Cases
 #- text: Planning
 #- text: Installation & Upgrade
 #- text: How To
@@ -14,7 +14,7 @@ json:
     href: /smm/1.2.0/index.html
     display: none
 
-  - text: Concepts
+  - text: Concepts & Use Cases
     id: cat-concepts
     sub:
       - text: Getting Started

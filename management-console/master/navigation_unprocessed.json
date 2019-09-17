@@ -11,7 +11,7 @@ layout: json
 json:
   - text: Management Console
     id: landing-management-console
-    href: /management-console/cloud/index.html
+    href: /management-console/master/index.html
     display: none
 
   - text: Concepts & Use Cases

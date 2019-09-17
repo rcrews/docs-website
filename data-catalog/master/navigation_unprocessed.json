@@ -11,7 +11,7 @@ layout: json
 json:
   - text: Data Catalog
     id: landing-data-catalog
-    href: /data-catalog/cloud/index.html
+    href: /data-catalog/master/index.html
     display: none
 
   - text: Concepts & Use Cases

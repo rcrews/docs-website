@@ -24,7 +24,7 @@ json:
 
   - text: Cloudera Runtime
     id: landing-runtime
-    href: /runtime/7.0.0/index.html
+    href: /runtime/masterindex.html
     display: none
 
   - text: Concepts & Use Cases

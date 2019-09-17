@@ -11,7 +11,7 @@ layout: json
 json:
   - text: Replication Manager
     id: landing-replication-manager
-    href: /replication-manager/cloud/index.html
+    href: /replication-manager/master/index.html
     display: none
 
   - text: Concepts & Use Cases

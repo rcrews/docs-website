@@ -11,7 +11,7 @@ layout: json
 json:
   - text: Workload Manager
     id: landing-workload-manager
-    href: /workload-manager/cloud/index.html
+    href: /workload-manager/master/index.html
     display: none
 
   - text: Concepts & Use Cases
