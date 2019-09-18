@@ -4,6 +4,7 @@
 require 'fileutils'
 require 'find'
 require 'pathname'
+require 'psych'
 
 # module
 module SwitchSite
@@ -35,6 +36,7 @@ module SwitchSite
   JEKYLL = self.scan_up_for('_config.yml')
   DEV = File.absolute_path(DEV_REL, JEKYLL)
   PROD = File.absolute_path(PROD_REL, JEKYLL)
+  URL = Psych.load_file(File.join(JEKYLL, '_config.yml'))['url']
 
   # Encapsulates a better practice for using File::find than illustrated
   # in the ruby-docs summary example. Maybe not a best practice, but at
@@ -74,8 +76,9 @@ module SwitchSite
   end
 end
 
-if $PROGRAM_NAME == __FILE__
-  if `git diff-index --quiet HEAD`
+if $PROGRAM_NAME ==  __FILE__
+  if SwitchSite::URL.match(/docs-stage/) &&
+     ! system('git diff-index --quiet HEAD --')
     puts 'Uncommitted changes found. No switch made. Exiting.'
     exit 1
   end
