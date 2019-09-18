@@ -75,7 +75,7 @@ module SwitchSite
 end
 
 if $PROGRAM_NAME == __FILE__
-  if ``
+  if `git diff-index --quiet HEAD`
     puts 'Uncommitted changes found. No switch made. Exiting.'
     exit 1
   end
