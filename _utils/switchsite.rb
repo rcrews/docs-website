@@ -88,4 +88,6 @@ if $PROGRAM_NAME == __FILE__
   when /^(?:prod|docs\.)/i
     SwitchSite.copy_out_for(SwitchSite::PROD)
   end
+
+  exit 0
 end
