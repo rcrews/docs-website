@@ -1,20 +1,16 @@
 #!/bin/sh
 
-cd /Users/rcrews/Sandbox/docs-website
-git checkout prod
 git fetch
-bundle exec jekyll build
-aws s3 sync --size-only _site/ s3://docs.cloudera.com
-
-cd /Users/rcrews/Sandbox/docs-website
-git checkout playbranch
 git fetch public playbranch
-git fetch cloudera playbranch
-bundle exec jekyll build
-aws s3 sync --size-only _site/ s3://docs-stage.cloudera.com
 
-cd /Users/rcrews/Sandbox/docs-website
-git checkout dev
-git fetch
+_utils/switchsite.rb stage
 bundle exec jekyll build
-aws s3 sync --size-only _site/ s3://docs-dev.cloudera.com
+java -jar ../s3sync/s3sync.jar -d _site -b 'docs-stage.cloudera.com'
+
+_utils/switchsite.rb dev
+bundle exec jekyll build
+java -jar ../s3sync/s3sync.jar -d _site  -b 'docs-dev.cloudera.com'
+
+_utils/switchsite.rb prod
+bundle exec jekyll build
+java -jar ../s3sync/s3sync.jar -d _site  -b 'docs.cloudera.com'
