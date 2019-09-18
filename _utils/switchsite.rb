@@ -75,12 +75,11 @@ module SwitchSite
 end
 
 if $PROGRAM_NAME == __FILE__
+  `git reset --hard HEAD`
   case ARGV[0]
   when /^(?:dev|docs-d)/i
     SwitchSite.copy_out_for(SwitchSite::DEV)
   when /^(?:prod|docs\.)/i
     SwitchSite.copy_out_for(SwitchSite::PROD)
-  else
-    `git reset --hard HEAD`
   end
 end
