@@ -75,7 +75,13 @@ module SwitchSite
 end
 
 if $PROGRAM_NAME == __FILE__
+  if ``
+    puts 'Uncommitted changes found. No switch made. Exiting.'
+    exit 1
+  end
+
   `git reset --hard HEAD`
+
   case ARGV[0]
   when /^(?:dev|docs-d)/i
     SwitchSite.copy_out_for(SwitchSite::DEV)
