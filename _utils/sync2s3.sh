@@ -3,17 +3,23 @@
 git fetch
 git fetch public playbranch
 
-if [[ !$(_utils/switchsite.rb stage) ]] ; then
+_utils/switchsite.rb stage
+RESULT=$?
+if [[ RESULT == 0 ]] ; then
     bundle exec jekyll build
-    java -jar ../s3sync/s3sync.jar -d _site -b 'docs-stage.cloudera.com'
+    java -jar ../s3sync/s3sync.jar upload --directory _site --bucket 'docs-stage.cloudera.com'
 fi
 
-if [[ !$(_utils/switchsite.rb dev) ]] ; then
+_utils/switchsite.rb dev
+RESULT=$?
+if [[ RESULT == 0 ]] ; then
     bundle exec jekyll build
-    java -jar ../s3sync/s3sync.jar -d _site  -b 'docs-dev.cloudera.com'
+    java -jar ../s3sync/s3sync.jar upload --directory _site --bucket 'docs-dev.cloudera.com'
 fi
 
-if [[ !$(_utils/switchsite.rb prod) ]] ; then
+_utils/switchsite.rb prod
+RESULT=$?
+if [[ RESULT == 0 ]] ; then
     bundle exec jekyll build
-    java -jar ../s3sync/s3sync.jar -d _site  -b 'docs.cloudera.com'
+    java -jar ../s3sync/s3sync.jar upload --directory _site --bucket 'docs.cloudera.com'
 fi
