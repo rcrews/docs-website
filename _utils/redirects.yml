@@ -1746,6 +1746,8 @@
   d: https://www.cloudera.com/downloads/director/6-2-0.html
 - s: downloads/director/6-2-1.html
   d: https://www.cloudera.com/downloads/director/6-2-1.html
+- s: downloads/director/6-3-0.html
+  d: https://www.cloudera.com/downloads/director/6-3-0.html
 - s: downloads/manager.html
   d: https://www.cloudera.com/downloads/manager.html
 - s: downloads/manager/5-10-0.html
@@ -1828,6 +1830,8 @@
   d: https://www.cloudera.com/downloads/manager/6-1-1.html
 - s: downloads/manager/6-2-0.html
   d: https://www.cloudera.com/downloads/manager/6-2-0.html
+- s: downloads/manager/6-3-0.html
+  d: https://www.cloudera.com/downloads/manager/6-3-0.html
 - s: downloads/navigator/encrypt/6-2-0.html
   d: https://www.cloudera.com/downloads/navigator/encrypt/6-2-0.html
 - s: downloads/navigator/key-hsm/6-1-0.html
