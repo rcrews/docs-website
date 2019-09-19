@@ -12,12 +12,6 @@ title: Data Access
 
 publications:
 
-  - title: Apache Hive Performance Tuning
-    url: hive-performance-tuning/index.html
-    description: >-
-     Explains low-latency analytical processing, caching, 
-     and tuning options.
-
   - title: Starting Apache Hive
     url: starting-hive/index.html
     description: >-
