@@ -20,7 +20,7 @@ json:
     #   Governance: Atlas
     #   Cluster Managment: Cloudera Manager
     #   Jobs Managment: Oozie
-    # -> Kudo moved from operational db to storage Mitra 8/7
+    # -> Kudu moved from operational db to storage Mitra 8/7
 
   - text: Cloudera Runtime
     id: landing-runtime
@@ -38,16 +38,15 @@ json:
             id: pub-hdfs-overview
             sub: hdfs-overview/navigation.json
 
-# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
-#          - text: Apache Kudu Overview
-#            href: kudu-overview/index.html
-#            id: pub-kudu-overview
-#            sub: kudu-overview/navigation.json
-#
-#          - text: Apache Kudu Design
-#            href: kudu-design/index.html
-#            id: pub-kudu-design
-#            sub: kudu-design/navigation.json
+          - text: Apache Kudu Overview
+            href: kudu-overview/index.html
+            id: pub-kudu-overview
+            sub: kudu-overview/navigation.json
+
+          - text: Apache Kudu Design
+            href: kudu-design/index.html
+            id: pub-kudu-design
+            sub: kudu-design/navigation.json
 
       - text: Compute
         href: concepts-compute.html
@@ -156,21 +155,20 @@ json:
             id: pub-fault-tolerance
             sub: fault-tolerance/navigation.json
 
-# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
-#          - text: Administering Apache Kudu
-#            href: administering-kudu/index.html
-#            id: pub-administering-kudu
-#            sub: administering-kudu/navigation.json
+          - text: Administering Apache Kudu
+            href: administering-kudu/index.html
+            id: pub-administering-kudu
+            sub: administering-kudu/navigation.json
 
-#          - text: Developing Applications with Apache Kudu
-#            href: kudu-development/index.html
-#            id: pub-kudu-development
-#            sub: kudu-development/navigation.json
+          - text: Developing Applications with Apache Kudu
+            href: kudu-development/index.html
+            id: pub-kudu-development
+            sub: kudu-development/navigation.json
 
-#          - text: Using Apache Impala with Apache Kudu
-#            href: kudu-integration/index.html
-#            id: pub-kudu-integration
-#            sub: kudu-integration/navigation.json
+          - text: Using Apache Impala with Apache Kudu
+            href: kudu-integration/index.html
+            id: pub-kudu-integration
+            sub: kudu-integration/navigation.json
 
       - text: Compute
         href: howto-compute.html
@@ -428,11 +426,10 @@ json:
         id: pub-troubleshooting-hbase
         sub: troubleshooting-hbase/navigation.json
 
-# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
-#      - text: Troubleshooting Apache Kudu
-#        href: troubleshooting-kudu/index.html
-#        id: pub-troubleshooting-kudu
-#        sub: troubleshooting-kudu/navigation.json
+      - text: Troubleshooting Apache Kudu
+        href: troubleshooting-kudu/index.html
+        id: pub-troubleshooting-kudu
+        sub: troubleshooting-kudu/navigation.json
 
   - text: Reference
     id: cat-reference
