@@ -42,10 +42,10 @@ json:
         id: pub-create-cluster-aws
         sub: create-cluster-aws/navigation.json
 
-      # - text: Creating a Cluster on Azure
-      #   href: create-cluster-azure/index.html
-      #   id: pub-create-cluster-azure
-      #   sub: create-cluster-azure/navigation.json
+      - text: Creating a Cluster on Azure
+        href: create-cluster-azure/index.html
+        id: pub-create-cluster-azure
+        sub: create-cluster-azure/navigation.json
 
       - text: Accessing Clusters
         href: access-clusters/index.html
