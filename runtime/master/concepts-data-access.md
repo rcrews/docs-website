@@ -15,6 +15,12 @@ publications:
     url: hive-introduction/index.html
     description: >-
       Presents key features of Hive and Hive 3 architecture
+      
+  - title: Apache Hive Performance Tuning
+    url: hive-performance-tuning/index.html
+    description: >-
+     Explains low-latency analytical processing, caching, 
+     and tuning options.
 
   - title: Apache Impala Overview
     url: impala-overview/index.html
