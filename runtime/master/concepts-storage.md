@@ -28,4 +28,4 @@ publications:
       database schemas.
 ---
 Apache Hadoop HDFS is a distributed file system for storing large
-volumes of data.
+volumes of data. Apache Kudu completes Apache Hadoop's storage layer, enabling fast analytics on fast data.
