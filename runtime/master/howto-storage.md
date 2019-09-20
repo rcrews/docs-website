@@ -49,7 +49,7 @@ publications:
       Provides information about how to use use Kudu as a storage
       for Apache Impala.
   
-    - title: Accessing Cloud Data
+  - title: Accessing Cloud Data
     url: cloud-data-access/index.html
     description: >-
       Describes information about the configuration parameters used to access data stored in the cloud.
