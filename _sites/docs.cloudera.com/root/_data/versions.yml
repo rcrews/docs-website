@@ -678,15 +678,20 @@
           url: /HDPDocuments/HCP1/HCP-1.1.0/index.html
 
 - name: Streams Messaging Manager for HDF and HDP
-  latest-version: 1.2.1
+  latest-version: 2.0.0
   latest-url: /smm/latest/index.html
   search-name: Streams Messaging Manager
   versions:
+    - title: "2.0"
+      url: /smm/2.0.0/index.html
+      minors:
+        - title: "2.0.0"
+          type: Latest
+          url: /smm/2.0.0/index.html
     - title: "1.2"
       url: /smm/1.2.1/index.html
       minors:
         - title: 1.2.1
-          type: Latest
           url: /smm/1.2.1/index.html
         - title: 1.2.0
           url: /smm/1.2.0/index.html
@@ -743,6 +748,17 @@
       minors:
         - title: 1.0.0
           url: /csp/1.0.0/index.html
+
+- name: Streams Replication Manager for HDF and HDP
+  latest-version: 1.0.0
+  latest-url: /srm/latest/index.html
+  search-name: Streams Replication Manager
+  versions:
+    - title: "1.0"
+      url: /srm/1.0.0/index.html
+      minors:
+        - title: 1.0.0
+          url: /srm/1.0.0/index.html
 
 - name: Cloudera Data Platform
   latest-version: cloud
