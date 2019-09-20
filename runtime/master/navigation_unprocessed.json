@@ -170,6 +170,11 @@ json:
             id: pub-kudu-integration
             sub: kudu-integration/navigation.json
 
+          - text: Accessing Cloud Data
+            href: cloud-data-access/index.html
+            id: pub-cloud-data-access
+            sub: cloud-data-access/navigation.json
+
       - text: Compute
         href: howto-compute.html
         sub:
