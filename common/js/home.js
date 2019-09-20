@@ -297,7 +297,7 @@ var CHOME = (function($) {
         }
     };
 
-    // Headers.initDcxa();
+    Headers.initDcxa();
     Search.init();
 
     $('.segments a').click(function (e) {
