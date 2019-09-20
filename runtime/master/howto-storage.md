@@ -48,14 +48,15 @@ publications:
     description: >-
       Provides information about how to use use Kudu as a storage
       for Apache Impala.
-  
+
   - title: Accessing Cloud Data
     url: cloud-data-access/index.html
     description: >-
-      Describes information about the configuration parameters used to access data stored in the cloud.
-      
-      
+      Describes information about the configuration parameters used to
+      access data stored in the cloud.
 ---
-Cloudera Runtime provides different types of storage components that you can use depending on your data requirements. Apache Kudu completes Apache Hadoop's storage layer, enabling fast analytics on fast data. Apache Hadoop HDFS is a distributed file system for storing large volumes of data.
- 
-
+Cloudera Runtime provides different types of storage components that you
+can use depending on your data requirements. Apache Kudu completes
+Apache Hadoop's storage layer, enabling fast analytics on fast data.
+Apache Hadoop HDFS is a distributed file system for storing large
+volumes of data.

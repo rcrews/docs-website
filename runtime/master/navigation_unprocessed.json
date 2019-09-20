@@ -24,7 +24,7 @@ json:
 
   - text: Cloudera Runtime
     id: landing-runtime
-    href: /runtime/masterindex.html
+    href: /runtime/master/index.html
     display: none
 
   - text: Concepts & Use Cases
@@ -63,6 +63,11 @@ json:
             href: hive-introduction/index.html
             id: pub-hive-introduction
             sub: hive-introduction/navigation.json
+
+          - text: Apache Hive Performance Tuning
+            href: hive-performance-tuning/index.html
+            id: pub-hive-performance-tuning
+            sub: hive-performance-tuning/navigation.json
 
           - text: Apache Impala Overview
             href: impala-overview/index.html
