@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{% page.title %}</title>
+</head>
+<body>
+<h1>Link Checking Page</h1>
+<p>This library contains the following publicatons:</p>
+<ul>
+{% for product in site.data.versions -%}
+{% if product.name == page.title -%}
+<li><a href></a></li>
+{% endfor -%}
+<ul>
+</body>
+</html>

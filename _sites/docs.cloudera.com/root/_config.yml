@@ -44,8 +44,6 @@ exclude:
   - /cloudera-manager/7.0.1/
   - /HDPDocuments/DAS/DAS-1.4.0/
   - /runtime/7.0.1/
-  - /smm/2.0.0/
-  - /srm/
 
   # "master" version for docs-dev only
   - /cdp/master/
