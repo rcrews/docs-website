@@ -41,7 +41,9 @@ exclude:
   # Unreleased documentation
   - /cem/1.1.0/
   - /cfm/2.0.0/
+  - /cloudera-manager/7.0.1/
   - /HDPDocuments/DAS/DAS-1.4.0/
+  - /runtime/7.0.1/
   - /smm/2.0.0/
   - /srm/
 
