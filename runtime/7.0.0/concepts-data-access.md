@@ -14,7 +14,7 @@ publications:
   - title: Apache Hive Overview
     url: hive-introduction/index.html
     description: >-
-      Presents key features of Hive and Hive 3 architecture
+      Presents key features of Hive and Hive 3 architecture.
 
   - title: Apache Hive Performance Tuning
     url: hive-performance-tuning/index.html
@@ -26,7 +26,7 @@ publications:
     url: impala-overview/index.html
     description: >-
       Provides an overview and describes the key components of Apache
-      Impala
+      Impala.
 
   - title: Hue Overview
     url: hue-introduction/index.html
