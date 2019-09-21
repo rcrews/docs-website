@@ -3,8 +3,8 @@
 # You can add to the end. See the comment below.
 
 - name: HDP
-  latest-version: 3.1.4
-  latest-url: /HDPDocuments/HDP3/HDP-3.1.4/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/HDP3/HDP-master/index.html
   search-name: Data Platform
   versions:
     - title: master
@@ -141,8 +141,8 @@
         url: /HDPDocuments/HDP1/HDP-1.3.0/index.html
 
 - name: Ambari
-  latest-version: 2.7.4.0
-  latest-url: /HDPDocuments/Ambari/Ambari-2.7.4.0/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/Ambari/Ambari-master/index.html
   search-name: Ambari
   versions:
     - title: master
@@ -256,8 +256,8 @@
           url: /HDPDocuments/Ambari/Ambari-1.4.4/index.html
 
 - name: SmartSense
-  latest-version: 1.5.1
-  latest-url: /HDPDocuments/SS1/SmartSense-1.5.1/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/SS1/SmartSense-master/index.html
   search-name: SmartSense
   versions:
     - title: master
@@ -309,8 +309,8 @@
           url: /HDPDocuments/SS1/SmartSense-1.1.0/index.html
 
 - name: DataPlane Platform
-  latest-version: 1.2.2
-  latest-url: /HDPDocuments/DP/DP-1.2.2/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/DP/DP-master/index.html
   search-name: DataPlane
   versions:
     - title: master
@@ -340,8 +340,8 @@
           url: /HDPDocuments/DP/DP-1.0.0/index.html
 
 - name: Data Lifecycle Manager
-  latest-version: 1.5.0
-  latest-url: /HDPDocuments/DLM1/DLM-1.5.0/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/DLM1/DLM-master/index.html
   search-name: Data Lifecycle Manager
   versions:
     - title: master
@@ -384,8 +384,8 @@
           url: /HDPDocuments/DLM1/DLM-1.0.0/index.html
 
 - name: Data Steward Studio
-  latest-version: 1.5.0
-  latest-url: /HDPDocuments/DSS1/DSS-1.5.0/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/DSS1/DSS-master/index.html
   search-name: Data Steward Studio
   versions:
     - title: master
@@ -425,8 +425,8 @@
           url: /HDPDocuments/DSS1/DSS-1.0.0/index.html
 
 - name: Data Analytics Studio
-  latest-version: 1.4.0
-  latest-url: /HDPDocuments/DAS/DAS-1.4.0/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/DAS/DAS-master/index.html
   search-name: Data Analytics Studio
   versions:
     - title: master
@@ -467,8 +467,8 @@
           url: /HDPDocuments/DAS/DAS-1.0.0/index.html
 
 - name: Data Platform Search
-  latest-version: 5.0.0
-  latest-url: /HDPDocuments/HDPS/HDPS-5.0.0/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/HDPS/HDPS-master/index.html
   search-name: HDP Search
   versions:
     - title: master
@@ -494,8 +494,8 @@
           url: /HDPDocuments/HDPS/HDPS-3.0.0/index.html
 
 - name: Cloudbreak
-  latest-version: 2.9.1
-  latest-url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/Cloudbreak/Cloudbreak-master/index.html
   search-name: Cloudbreak
   versions:
     - title: master
@@ -544,8 +544,8 @@
           url: /HDPDocuments/Cloudbreak/Cloudbreak-1.16.1/index.html
 
 - name: HDP for Cloud
-  latest-version: 3.1
-  latest-url: /HDPDocuments/HDPforCloud/HDPforCloud-3.1/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/HDPforCloud/HDPforCloud-master/index.html
   search-name: HDPforCloud
   versions:
     - title: master
@@ -574,8 +574,8 @@
 #   latest-url: https://www.cloudera.com/documentation.html
 
 - name: HDF
-  latest-version: 3.4.1.1
-  latest-url: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/HDF3/HDF-master/index.html
   search-name: DataFlow
   versions:
     - title: master
@@ -667,8 +667,8 @@
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
 - name: Cybersecurity
-  latest-version: 1.9.1
-  latest-url: /HDPDocuments/HCP1/HCP-1.9.1/index.html
+  latest-version: master
+  latest-url: /HDPDocuments/HCP1/HCP-master/index.html
   search-name: Cybersecurity
   versions:
     - title: master
@@ -744,8 +744,8 @@
           url: /HDPDocuments/HCP1/HCP-1.1.0/index.html
 
 - name: Streams Messaging Manager for HDF and HDP
-  latest-version: 2.0.0
-  latest-url: /smm/latest/index.html
+  latest-version: master
+  latest-url: /smm/master/index.html
   search-name: Streams Messaging Manager
   versions:
     - title: master
@@ -778,8 +778,8 @@
           url: /smm/1.0.0/index.html
 
 - name: Edge Management
-  latest-version: 1.1.0
-  latest-url: /cem/latest/index.html
+  latest-version: master
+  latest-url: /cem/master/index.html
   search-name: Edge Management
   versions:
     - title: master
@@ -797,8 +797,8 @@
           url: /cem/1.0.0/index.html
 
 - name: Flow Management
-  latest-version: 2.0.0
-  latest-url: /cfm/latest/index.html
+  latest-version: master
+  latest-url: /cfm/master/index.html
   search-name: Flow Management
   versions:
     - title: master
@@ -821,8 +821,8 @@
           url: /cfm/1.0.0/index.html
 
 - name: Stream Processing
-  latest-version: 2.0.0
-  latest-url: /csp/latest/index.html
+  latest-version: master
+  latest-url: /csp/master/index.html
   search-name: Stream Processing
   versions:
     - title: master
@@ -843,8 +843,8 @@
           url: /csp/1.0.0/index.html
 
 - name: Streams Replication Manager for HDF and HDP
-  latest-version: 1.0.0
-  latest-url: /srm/latest/index.html
+  latest-version: master
+  latest-url: /srm/master/index.html
   search-name: Streams Replication Manager
   versions:
     - title: master
@@ -859,8 +859,8 @@
           url: /srm/1.0.0/index.html
 
 - name: Cloudera Data Platform
-  latest-version: cloud
-  latest-url: /cdp/cloud/index.html
+  latest-version: master
+  latest-url: /cdp/master/index.html
   search-name: cdp
   versions:
     - title: master
@@ -869,8 +869,8 @@
       url: /cdp/cloud/index.html
 
 - name: Management Console
-  latest-version: cloud
-  latest-url: /management-console/cloud/index.html
+  latest-version: master
+  latest-url: /management-console/master/index.html
   search-name: Management Console
   versions:
     - title: master
@@ -879,8 +879,8 @@
       url: /management-console/cloud/index.html
 
 - name: Workload Manager
-  latest-version: cloud
-  latest-url: /workload-manager/cloud/index.html
+  latest-version: master
+  latest-url: /workload-manager/master/index.html
   search-name: Workload Manager
   versions:
     - title: master
@@ -889,8 +889,8 @@
       url: /workload-manager/cloud/index.html
 
 - name: Data Catalog
-  latest-version: cloud
-  latest-url: /data-catalog/cloud/index.html
+  latest-version: master
+  latest-url: /data-catalog/master/index.html
   search-name: Data Catalog
   versions:
     - title: master
@@ -899,8 +899,8 @@
       url: /data-catalog/cloud/index.html
 
 - name: Replication Manager
-  latest-version: cloud
-  latest-url: /replication-manager/cloud/index.html
+  latest-version: master
+  latest-url: /replication-manager/master/index.html
   search-name: Replication Manager
   versions:
     - title: master
@@ -909,8 +909,8 @@
       url: /replication-manager/cloud/index.html
 
 - name: Data Hub
-  latest-version: cloud
-  latest-url: /data-hub/cloud/index.html
+  latest-version: master
+  latest-url: /data-hub/master/index.html
   search-name: Data Hub
   versions:
     - title: master
@@ -919,8 +919,8 @@
       url: /data-hub/cloud/index.html
 
 - name: Data Warehouse
-  latest-version: cloud
-  latest-url: /data-warehouse/cloud/index.html
+  latest-version: master
+  latest-url: /data-warehouse/master/index.html
   search-name: Data Warehouse
   versions:
     - title: master
@@ -929,8 +929,8 @@
       url: /data-warehouse/cloud/index.html
 
 - name: Machine Learning
-  latest-version: cloud
-  latest-url: /machine-learning/cloud/index.html
+  latest-version: master
+  latest-url: /machine-learning/master/index.html
   search-name: Machine Learning
   versions:
     - title: master
@@ -939,31 +939,41 @@
       url: /machine-learning/cloud/index.html
 
 - name: Cloudera Runtime
-  latest-version: 7.0.0
-  latest-url: /runtime/latest/index.html
+  latest-version: master
+  latest-url: /runtime/master/index.html
   search-name: Runtime
   versions:
     - title: master
       url: /runtime/master/index.html
-    - title: "7.0"
-      url: /runtime/7.0.0/index.html
       minors:
-        - title: 7.0.0
+        - title: master
+          url: /runtime/master/index.html
+    - title: "7.0"
+      url: /runtime/7.0.1/index.html
+      minors:
+        - title: 7.0.1
           type: Latest
+          url: /runtime/7.0.1/index.html
+        - title: 7.0.0
           url: /runtime/7.0.0/index.html
 
 - name: Cloudera Manager
-  latest-version: 7.0.0
-  latest-url: /cloudera-manager/latest/index.html
+  latest-version: master
+  latest-url: /cloudera-manager/master/index.html
   search-name: Cloudera Manager
   versions:
     - title: master
       url: /cloudera-manager/master/index.html
-    - title: "7.0"
-      url: /cloudera-manager/7.0.0/index.html
       minors:
-        - title: 7.0.0
+        - title: master
+          url: /cloudera-manager/master/index.html
+    - title: "7.0"
+      url: /cloudera-manager/7.0.1/index.html
+      minors:
+        - title: 7.0.1
           type: Latest
+          url: /cloudera-manager/7.0.1/index.html
+        - title: 7.0.0
           url: /cloudera-manager/7.0.0/index.html
 
 #
