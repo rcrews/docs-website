@@ -11,7 +11,7 @@ layout: json
 json:
   - text: Cloudera Manager
     id: landing-cloudera-manager
-    href: /cloudera-manager/7.0.0/index.html
+    href: /cloudera-manager/7.0.1/index.html
     display: none
 
   - text: Concepts & Use Cases
