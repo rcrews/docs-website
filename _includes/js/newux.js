@@ -165,15 +165,15 @@ var NEWUX = (function($) {
                 } else {
                     $('.bread-version').html(WhoAmI.version.title);
                 }
-
             }
 
             // Create a pulldown list for all the versions.
             let output = "";
 
             let x = 0;
+            console.log(WhoAmI.versions);
             WhoAmI.versions.forEach(function(el) {
-                if(el && (el.title !== WhoAmI.version.title)) {
+                if(el) {
                     output += `<li class="major"><a href='${el.url}'>${el.title}</a>`;
                     if(typeof el.minors === 'object' ) {
                         output += "<ul class='minors'>";
@@ -184,6 +184,7 @@ var NEWUX = (function($) {
                         output += "</ul>";
                     }
                     output += '</li>';
+                    x++
                 }
             });
             if(x > 1) {
