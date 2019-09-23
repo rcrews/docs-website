@@ -52,17 +52,17 @@ json:
         id: pub-user-management
         sub: user-management/navigation.json
 
-      - text: Credentials for AWS
+      - text: AWS Credentials
         href: credentials-aws/index.html
         id: pub-credentials-aws
         sub: credentials-aws/navigation.json
 
-      - text: Credentials for Azure
+      - text: Azure Credentials
         href: credentials-azure/index.html
         id: pub-credentials-azure
         sub: credentials-azure/navigation.json
 
-      - text: Environments
+      - text: AWS Environments
         href: environments/index.html
         id: pub-environments
         sub: environments/navigation.json
@@ -110,7 +110,7 @@ json:
   - text: Learning & Training
     id: cat-learning
     sub:
-      - text: Getting Started with Management Console
+      - text: Getting Started with Management Console on AWS
         href: getting-started-tutorial/index.html
         id: pub-getting-started-tutorial
         sub: getting-started-tutorial/navigation.json
