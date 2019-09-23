@@ -11,7 +11,7 @@ layout: json
 json:
   - text: Cloudera Data Platform
     id: landing-cloudera-data-platform
-    href: /cdp/cloud/index.html
+    href: /cdp/master/index.html
     display: none
 
   - text: Concepts & Use Cases

@@ -51,7 +51,7 @@ json:
       icon: /common/img/mini_icons/icon-cem.png
 
     - text: Cloudera Flow Management
-      href: /cfm/1.0.1/index.html
+      href: /cfm/2.0.0/index.html
       icon: /common/img/mini_icons/icon-cfm.png
 
     - text: Cloudera Stream Processing

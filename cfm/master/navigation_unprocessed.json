@@ -1,6 +1,6 @@
 ---
 layout: json
-#- text: Concepts
+#- text: Concepts & Use Cases
 #- text: Planning
 #- text: Installation & Upgrade
 #- text: How To
@@ -11,10 +11,10 @@ layout: json
 json:
   - text: Cloudera Flow Management
     id: landing-cloudera-flow-management
-    href: /cem/1.0.1/index.html
+    href: /cem/master/index.html
     display: none
 
-  - text: Concepts
+  - text: Concepts & Use Cases
     id: cat-concepts
     sub:
       - text: Apache NiFi Overview
@@ -29,14 +29,6 @@ json:
         href: installation/index.html
         id: pub-installation
         sub: installation/navigation.json
-      - text: Upgrade
-        href: upgrading-cfm/index.html
-        id: pub-upgrading-cfm
-        sub: upgrading-cfm/navigation.json
-      # - text: Installing NiFi and NiFi Registry
-      #   href: installing-nifi/index.html
-      #   id: pub-installing-nifi
-      #   sub: installing-nifi/navigation.json
 
   - text: How To
     name: how-to
@@ -112,11 +104,7 @@ json:
       - text: Flow Management in Data Hub
         href: howto-cfm-in-data-hub.html
         id: foyer-cfm-in-data-hub
-        sub:
-          - text: Publication TBD
-            href: pubication-tbd/index.html
-            id: pub-pubication-tbd
-            sub: pubication-tbd/navigation.json
+        # sub:
 
   - text: Reference
     name: reference
@@ -165,6 +153,4 @@ json:
         href: /HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-nifi-registry/index.html
         id: pub-getting-started-with-nifi-registry
         sub: /HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-nifi-registry/navigation.json
-
-
 ---

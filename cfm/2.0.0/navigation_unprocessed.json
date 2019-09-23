@@ -14,7 +14,7 @@ json:
     href: /cem/1.0.1/index.html
     display: none
 
-  - text: Concepts
+  - text: Concepts & Use Cases
     id: cat-concepts
     sub:
       - text: Apache NiFi Overview

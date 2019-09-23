@@ -1,6 +1,6 @@
 ---
 layout: json
-#- text: Concepts
+#- text: Concepts & Use Cases
 #- text: Planning
 #- text: Installation & Upgrade
 #- text: How To
@@ -11,10 +11,10 @@ layout: json
 json:
   - text: Stream Replication Manager for HDF and HDP
     id: landing-stream-replication-manager
-    href: /srm/1.0.0/index.html
+    href: /srm/master/index.html
     display: none
 
-  - text: Concepts
+  - text: Concepts & Use Cases
     id: cat-concepts
     sub:
       - text: Overview

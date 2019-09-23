@@ -31,24 +31,6 @@ publications:
     description: >-
       Describes the procedure to configure HDFS high availability on a
       cluster.
-
-# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
-#  - title: Administering Apache Kudu
-#    url: administering-kudu/index.html
-#    description: >-
-#      Describes common administrative tasks and Apache Kudu workflows.
-
-#  - title: Developing Applications with Apache Kudu
-#    url: kudu-development/index.html
-#    description: >-
-#      Provides reference examples to use C++ and Java client APIs to
-#      develop apps using Apache Kudu.
-
-#  - title: Using Apache Impala with Apache Kudu
-#    url: kudu-integration/index.html
-#    description: >-
-#      Provides information about how to use use Kudu as a storage
-#      for Apache Impala.
 ---
 Apache Hadoop HDFS is a distributed file system for storing large
 volumes of data.

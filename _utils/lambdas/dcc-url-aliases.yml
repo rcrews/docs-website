@@ -48,9 +48,9 @@
 - exist: /csp/2.0.0/
   alias: /csp/latest/
 
-- exist: /runtime/7.0.0/
+- exist: /runtime/7.0.1/
   alias: /runtime/latest/
-- exist: /cloudera-manager/7.0.0/
+- exist: /cloudera-manager/7.0.1/
   alias: /cloudera-manager/latest/
 
 - exist: /documentation/data-science-workbench/1-6-x/

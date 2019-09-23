@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Cloudera Manager
-version: cloud
+version: 7.0.0
 base-path: /cloudera-manager/7.0.0/
 
 sections:

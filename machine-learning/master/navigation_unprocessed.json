@@ -11,7 +11,7 @@ layout: json
 json:
   - text: Machine Learning
     id: landing-machine-learning
-    href: /machine-learning/cloud/index.html
+    href: /machine-learning/master/index.html
     display: none
 
   - text: Concepts & Use Cases

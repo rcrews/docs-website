@@ -38,17 +38,6 @@ json:
             id: pub-hdfs-overview
             sub: hdfs-overview/navigation.json
 
-# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
-#          - text: Apache Kudu Overview
-#            href: kudu-overview/index.html
-#            id: pub-kudu-overview
-#            sub: kudu-overview/navigation.json
-#
-#          - text: Apache Kudu Design
-#            href: kudu-design/index.html
-#            id: pub-kudu-design
-#            sub: kudu-design/navigation.json
-
       - text: Compute
         href: concepts-compute.html
         sub:
@@ -64,6 +53,11 @@ json:
             href: hive-introduction/index.html
             id: pub-hive-introduction
             sub: hive-introduction/navigation.json
+
+          - text: Apache Hive Performance Tuning
+            href: hive-performance-tuning/index.html
+            id: pub-hive-performance-tuning
+            sub: hive-performance-tuning/navigation.json
 
           - text: Apache Impala Overview
             href: impala-overview/index.html
@@ -156,22 +150,6 @@ json:
             id: pub-fault-tolerance
             sub: fault-tolerance/navigation.json
 
-# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
-#          - text: Administering Apache Kudu
-#            href: administering-kudu/index.html
-#            id: pub-administering-kudu
-#            sub: administering-kudu/navigation.json
-
-#          - text: Developing Applications with Apache Kudu
-#            href: kudu-development/index.html
-#            id: pub-kudu-development
-#            sub: kudu-development/navigation.json
-
-#          - text: Using Apache Impala with Apache Kudu
-#            href: kudu-integration/index.html
-#            id: pub-kudu-integration
-#            sub: kudu-integration/navigation.json
-
       - text: Compute
         href: howto-compute.html
         sub:
@@ -218,12 +196,6 @@ json:
       - text: Data Access
         href: howto-data-access.html
         sub:
-          # Removed at Kris's request
-          # - text: Apahce Hive Performance Tuning
-          #   href: hive-performance-tuning/index.html
-          #   id: pub-hive-performance-tuning
-          #   sub: hive-performance-tuning/navigation.json
-
           - text: Starting Apache Hive
             href: starting-hive/index.html
             id: pub-starting-hive
@@ -427,12 +399,6 @@ json:
         href: troubleshooting-hbase/index.html
         id: pub-troubleshooting-hbase
         sub: troubleshooting-hbase/navigation.json
-
-# Priyanka: Commenting Kudu docs. Not a part of Aug 22 release
-#      - text: Troubleshooting Apache Kudu
-#        href: troubleshooting-kudu/index.html
-#        id: pub-troubleshooting-kudu
-#        sub: troubleshooting-kudu/navigation.json
 
   - text: Reference
     id: cat-reference
