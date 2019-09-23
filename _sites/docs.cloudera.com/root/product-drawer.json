@@ -37,11 +37,11 @@ json:
       icon: /common/img/mini_icons/icon-ml.png
 
     - text: Cloudera Runtime
-      href: /runtime/7.0.0/index.html
+      href: /runtime/7.0.1/index.html
       icon: /common/img/mini_icons/icon-cr.png
 
     - text: Cloudera Manager
-      href: /cloudera-manager/7.0.0/index.html
+      href: /cloudera-manager/7.0.1/index.html
       icon: /common/img/mini_icons/icon-cm.png
 
 - title: DataFlow
