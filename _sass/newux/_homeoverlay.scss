@@ -1,11 +1,8 @@
 /* GENERAL OVERRIDES TO THE OVERLAY */
-.search-header 							{ height:130px; background:url(https://www.cloudera.com/content/dam/www/marketing/brand/data-line/pattern-slate-305868-op70.png); background-size: 10%;
+.search-header 							{ height:160px; background:url(https://www.cloudera.com/content/dam/www/marketing/brand/data-line/pattern-slate-305868-op70.png); background-size: 10%;
 	.h1-substitute						{ font-family:$header-font; font-size:270%; font-weight:900; padding-top:50px; text-align:center; color:#fff;
 		&:after 						{ content:""; margin:10px auto; display:block; border-bottom:2px solid #fff; max-width:500px; }
 	}
-
-
-
 
 	@include breakpoint(desktop) 		{ height:200px; }
 }
@@ -26,14 +23,16 @@
 	.close-btn span     				{ position: relative; top: -36px; float: left; background: url(//hortonworks.com/wp-content/themes/hortonworks/images/close-icon.png); height: 64px; width: 100%; }
 }
 
-.lucene-overlay 						{ position: fixed; z-index: 1; left: 0; top: 0; bottom: 0; right: 0; background: white; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; -moz-transform: translateY(100%); -o-transform: translateY(100%); -ms-transform: translateY(100%); -webkit-transform: translateY(100%); transform: translateY(100%); visibility: hidden;
-	.lucene-results						{ padding-top:20px; }
+.lucene-overlay 						{ box-sizing: border-box; position: fixed; z-index: 1; left: 0; top: 0; bottom: 0; right: 0; background: white; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; -moz-transform: translateY(100%); -o-transform: translateY(100%); -ms-transform: translateY(100%); -webkit-transform: translateY(100%); transform: translateY(100%); visibility: hidden;
+	.lucene-results						{ padding:20px 10px;}
 
 	.search								{ margin:auto;  position:relative; display:block; margin-bottom:20px; padding:0 10px;
 		form 							{ margin-top:0; text-align:left; }
-		input 							{ border:1px solid #e6e6e6; width:100%;  }
+		input 							{ border:1px solid #e6e6e6; width:100%; box-sizing: border-box; }
 		.submit 						{ right:25px; }
-		i.submit                        { font-size:120%; position:absolute; top:10px; right:20px; color:$primary-green; cursor:pointer;}
+		i.submit                        { font-size:120%; position:absolute; top:10px; right:165px; color:$primary-green; cursor:pointer;}
+
+		.search-product-filter			{ position:absolute; top:5px; right:15px; border-radius:4px;  background-color:$primary-green; color:#fff; font-weight:400; padding:3px 5px;}
 
 	}
 
@@ -45,28 +44,28 @@
 		i 								{ display:block; font-size:300%; }
 	}
 
-	.filters							{ margin:auto; margin-bottom:60px; font-size:90%; color:#777; padding:0 10px;
-		.product 						{ background-color:$super-light-grey; padding:2px 5px; margin-right:5px; margin-bottom:5px;   border:1px solid #ccc; border-radius:3px; display:inline-block; position:relative;
+	.filters							{ position:absolute; right:0; top:40px; border-radius:4px; background-color:#0b818ae3; width:242px; margin-bottom:60px; font-size:90%; color:#777; padding:10px; display:none; z-index:100;
+		.product 						{ background-color:#297175; color:$super-light-grey; padding:2px 5px; margin-right:5px; margin-bottom:5px;  border-radius:3px; display:table; position:relative;
 			&.active 					{ border-color:$hilite; }
-			&.inactive 					{ background-color:#fff; color:#bbb; border-color:#f6f6f6; }
+			&.inactive 					{ color:#ffffff55; border-color:#ffffff55; }
 		}
-		.name							{ display:inline-block; }
+		.name							{ display:inline-block; padding-right:5px; }
 		.versions						{ display:inline-block; position:relative; }
-		.this 							{ display:inline; }
-		.selector						{ position:absolute; top:0; left:-2px; background-color:#fff; border:1px solid #e6e6e6; display:none; z-index:15;
-			ul.major                    { margin-left:0px; color:#444; border-top:0px; margin-bottom:0px; padding:0; width:50px;
+		.this 							{ display:inline; padding-right:3px;}
+		.selector						{ position:absolute; top:0; left:-2px;  display:none; z-index:15;
+			ul.major                    { margin-left:0px; color:#444; border-top:0px; margin-bottom:0px; margin-top:0; padding:0; width:50px;
 				>li                     { position:relative;
 					>a                  { }
 					.expand 			{ display:inline; padding:0 4px; color:#fff; }
-					.minor				{ display:none; border-left:1px solid #999; margin-left:0px; position:absolute; top:0px; left:50px; margin-left:0px;  margin-bottom:0px; font-weight:normal;
+					.minor				{ display:none; margin-left:0px; position:absolute; top:0px; left:11px; margin-left:0px;  margin-bottom:0px; font-weight:normal;
 						li a			{ padding:5px 7px; }
 					}
 					&:hover .minor      { display:block; }
 				}
 
-				li                      { list-style-type:none; border-bottom: 1px solid #444; padding:0 2px; background-color:#555;
+				li                      { list-style-type:none; border-bottom: 1px solid #c4dfe0; padding:0 2px; background-color:#1f585b;
 					a                   { color:#fff; padding:5px 3px; margin:0;}
-					&:hover             { background-color:#333;
+					&:hover             { background-color:#1d4648;
 						a 				{ color:$hilite; }
 					}
 					&.current 			{ font-weight:bold; }
@@ -75,11 +74,11 @@
 
 			}
 		}
-		.filter 						{ display:inline-block; border-left:1px solid #e6e6e6; padding-left:5px;  }
+		.filter 						{ display:inline-block; border-left:1px solid #e6e6e6; margin-left:5px; padding-left:5px;  }
 	}
 
 
-	.results							{ margin:auto; padding:0 10px; }
+	.results							{ margin:auto; padding:20px 10px; }
 
 	.book-group							{ position:relative; border-radius:2px; border-top-left-radius:0; background-color:$super-light-grey; margin:30px 0 60px; border:1px solid #e9e9e9; padding:20px;
 		.book 							{ position:absolute; top:-36px; left:8px; font-weight:bold; font-size:90%; padding:3px 10px 8px; border-top-left-radius: 2px; background-color:$super-light-grey; border-top-right-radius: 2px;  border:1px solid #e9e9e9; border-bottom:0;
@@ -106,9 +105,7 @@
 
 	@include breakpoint(desktop) 		{
 		.bg-img 						{ height:auto;}
-		.search,
-		.filters,
-		.results						{ width:75%; max-width:1000px;}
+		.lucene-results					{ width:75%; max-width:1000px; margin:auto; }
 	}
 
 }

@@ -14,7 +14,6 @@ var CHOME = (function($) {
         init: function() {
             this.query = null;
             this.bindEvents();
-            this.set
         },
 
         bindEvents: function() {
@@ -23,11 +22,39 @@ var CHOME = (function($) {
                 $(this).closest('.searchform').trigger('submit');
             });
 
+            $('body').on('click', this.clearVersionFilters); // Miscellaneous clicks on the body should reset the filters.
+
+            $('.search-product-filter').on('click', this.toggleProductFilters);
+            $('.filters').on('click', this.clearVersionFilters);
+            $('.filters .product').on('click', this.setOnlyThis);
+
             $('.lucene-container .close-btn').on( 'click', this.hideSearch.bind(this));
             $('.lucene-results .filter').on('click', this.updateFilters.bind(this));
+
             $('.lucene-results .versions>i').on('click', this.showVersionOptions.bind(this))
             $('.lucene-results .filterversion').on('click', this.updateFilterVersion.bind(this));
             $('.lucene-results .more-link').on('click', this.loadMoreResults.bind(this));
+        },
+        setOnlyThis: function(evt) {
+            // Unselect all
+            // Select this one.
+        },
+        toggleProductFilters: function(evt) {
+            let $filters = $('.filters');
+            $filters.toggle();
+            if($filters.css('display') === 'block') {
+                $filters.addClass('visible');
+                $('.search-product-filter>i').removeClass('fa-angle-down').addClass('fa-angle-up');
+            } else {
+                $filters.removeClass('visible');
+                $('.search-product-filter>i').removeClass('fa-angle-up').addClass('fa-angle-down');
+            }
+            evt.stopPropagation();
+        },
+        clearVersionFilters: function(evt) {
+            // console.log('clear filters');
+            $('.selector').hide();
+            evt.stopPropagation();
         },
 
         filterSearchTerm: function(term) {
@@ -79,7 +106,6 @@ var CHOME = (function($) {
                     $(current).closest('.product').removeClass('inactive');
                     $(current).html('<i class="fa fa-times"></i>');
                     this.fireQuery();
-
                 } else {
                     if($(".filters .product:not(.inactive)").length > 1) {
                         $(current).closest('.product').addClass('inactive');
@@ -91,6 +117,7 @@ var CHOME = (function($) {
                     }
                 }
             }
+            evt.stopPropagation();
         },
 
         updateFilterVersion: function(evt) {
@@ -125,6 +152,7 @@ var CHOME = (function($) {
                 $(current).addClass('active');
                 $(current).find('.selector').show();
             }
+            evt.stopPropagation();
         },
 
         loadMoreResults:function(evt) {
