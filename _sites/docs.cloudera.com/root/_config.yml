@@ -39,7 +39,7 @@ exclude:
   - /README.md
 
   # Unreleased documentation
-  - /ccp/2.0.0/
+  - /ccp/
   - /cem/1.1.0/
   - /cfm/2.0.0/
   - /HDPDocuments/DAS/DAS-1.4.1/
