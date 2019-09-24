@@ -402,7 +402,7 @@
     - title: "1.4"
       url: /HDPDocuments/DAS/DAS-1.4.1/index.html
       minors:
-        - title: 1.4.0
+        - title: 1.4.1
           type: Latest
           url: /HDPDocuments/DAS/DAS-1.4.1/index.html
     - title: "1.3"
