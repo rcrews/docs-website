@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git fetch
+git fetch cloudera master
 git fetch public playbranch
 
 _utils/switchsite.rb stage
