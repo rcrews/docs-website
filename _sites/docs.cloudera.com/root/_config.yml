@@ -39,26 +39,28 @@ exclude:
   - /README.md
 
   # Unreleased documentation
+  - /ccp/2.0.0/
   - /cem/1.1.0/
   - /cfm/2.0.0/
-  - /HDPDocuments/DAS/DAS-1.4.0/
+  - /HDPDocuments/DAS/DAS-1.4.1/
 
   # "master" version for docs-dev only
+  - /ccp/master/
   - /cdp/master/
+  - /cem/master/
+  - /cfm/master/
+  - /cloudera-manager/master/
+  - /csp/master/
   - /data-catalog/master/
   - /data-hub/master/
   - /data-warehouse/master/
   - /machine-learning/master/
   - /management-console/master/
   - /replication-manager/master/
-  - /workload-manager/master/
   - /runtime/master/
-  - /cloudera-manager/master/
-  - /cem/master/
-  - /cfm/master/
-  - /csp/master/
   - /smm/master/
   - /srm/master/
+  - /workload-manager/master/
 
   # Static content that doesn't need to be part of most builds
   - /common/fonts/
