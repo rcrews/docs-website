@@ -27,11 +27,6 @@ json:
         id: pub-engines-overview
         sub: engines-overview/navigation.json
 
-      - text: Security Overview
-        href: security-overview/index.html
-        id: pub-security-overview
-        sub: security-overview/navigation.json
-
       - text: Model Training and Deployment Overview
         href: model-training-deployment-overview/index.html
         id: pub-model-training-deployment-overview
@@ -122,11 +117,6 @@ json:
         href: security/index.html
         id: pub-security
         sub: security/navigation.json
-
-      - text: Backup
-        href: backup/index.html
-        id: pub-backup
-        sub: backup/navigation.json
 
   - text: Troubleshooting
     id: cat-troubleshooting
