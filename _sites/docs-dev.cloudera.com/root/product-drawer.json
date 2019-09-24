@@ -37,33 +37,33 @@ json:
       icon: /common/img/mini_icons/icon-ml.png
 
     - text: Cloudera Runtime
-      href: /runtime/7.0.0/index.html
+      href: /runtime/master/index.html
       icon: /common/img/mini_icons/icon-cr.png
 
     - text: Cloudera Manager
-      href: /cloudera-manager/7.0.0/index.html
+      href: /cloudera-manager/master/index.html
       icon: /common/img/mini_icons/icon-cm.png
 
 - title: DataFlow
   products:
     - text: Cloudera Edge Management
-      href: /cem/1.1.0/index.html
+      href: /cem/master/index.html
       icon: /common/img/mini_icons/icon-cem.png
 
     - text: Cloudera Flow Management
-      href: /cfm/2.0.0/index.html
+      href: /cfm/master/index.html
       icon: /common/img/mini_icons/icon-cfm.png
 
     - text: Cloudera Stream Processing
-      href: /csp/2.0.0/index.html
+      href: /csp/master/index.html
       icon: /common/img/mini_icons/icon-csp.png
 
     - text: Streams Messaging Manager
-      href: /smm/2.0.0/index.html
+      href: /smm/master/index.html
       icon: /common/img/mini_icons/icon-smm.png
 
     - text: Streams Replication Manager
-      href: /srm/1.0.0/index.html
+      href: /srm/master/index.html
       icon: /common/img/mini_icons/icon-srm.png
 
 - title: Applications
@@ -73,7 +73,7 @@ json:
       icon: /common/img/mini_icons/icon-dsw.png
 
     - text: Cybersecurity Platform
-      href: /ccp/2.0.0/index.html
+      href: /ccp/master/index.html
       icon: /common/img/mini_icons/icon-cybersecurity.png
 
 - title: Enterprise
