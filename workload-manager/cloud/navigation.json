@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/workload-manager/cloud/navigation.yml
+---
+{{ site.data.productid.workload-manager.cloud.navigation | jsonify }}

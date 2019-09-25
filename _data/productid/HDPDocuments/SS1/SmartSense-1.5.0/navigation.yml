@@ -1,0 +1,50 @@
+---
+- text: Concepts
+  id: cat-concepts
+  sub:
+    - text: SmartSense Overview
+      id: pub-introduction
+      href: introduction/index.html
+      sub: introduction/navigation.json
+
+- text: Installation & Upgrade
+  id: cat-installation-upgrade
+  sub:
+    - text: Installing SmartSense on HDP
+      id: pub-installation-hdp
+      href: installation-hdp/index.html
+      sub: installation-hdp/navigation.json
+
+    - text: Installing SmartSense on HDF
+      id: pub-installation-hdf
+      href: installation-hdf/index.html
+      sub: installation-hdf/navigation.json
+
+- text: How To
+  id: cat-how-to
+  sub:
+    - text: Using SmartSense
+      id: pub-using
+      href: using/index.html
+      sub: using/navigation.json
+
+    - text: Configuring SmartSense
+      id: pub-configuration
+      href: configuration/index.html
+      sub: configuration/navigation.json
+
+- text: Reference
+  id: cat-reference
+  sub:
+    - text: SmartSense Configuration Guidelines
+      id: pub-reference
+      href: reference/index.html
+      sub: reference/navigation.json
+
+- text: Release Notes
+  id: cat-releasenotes
+  sub:
+    - text: Release Notes
+      id: pub-release-notes
+      href: release-notes/index.html
+      sub: release-notes/navigation.json

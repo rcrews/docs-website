@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/runtime/7.0.0/navigation.yml
+---
+{{ site.data.productid.runtime["700"].navigation | jsonify }}

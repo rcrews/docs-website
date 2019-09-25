@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/smm/1.2.1/navigation.yml
+---
+{{ site.data.productid.smm["121"].navigation | jsonify }}

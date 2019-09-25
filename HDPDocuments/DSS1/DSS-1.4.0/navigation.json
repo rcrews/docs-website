@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/HDPDocuments/DSS/DSS-1.4.0/navigation.yml
+---
+{{ site.data.productid.HDPDocuments.DSS["DSS-140"].navigation | jsonify }}

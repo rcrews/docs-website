@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/cfm/1.0.1/navigation.yml
+---
+{{ site.data.productid.cfm["101"].navigation | jsonify }}

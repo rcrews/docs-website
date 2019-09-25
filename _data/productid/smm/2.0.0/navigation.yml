@@ -1,0 +1,71 @@
+---
+#- text: Concepts & Use Cases
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+- text: Streams Messaging Manager
+  id: landing-streams-messaging-manager
+  href: /smm/2.0.0/index.html
+  display: none
+
+- text: Concepts & Use Cases
+  id: cat-concepts
+  sub:
+    - text: Getting Started
+      href: /HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
+
+- text: Installation & Upgrade
+  id: cat-installation-upgrade
+  sub:
+    - text: Installation
+      href: installation/index.html
+      id: pub-installation
+      sub: installation/navigation.json
+    - text: Upgrade
+      href: upgrading-smm/index.html
+      id: pub-upgrading-smm
+      sub: upgrading-smm/navigation.json
+
+- text: How To
+  id: cat-how-to
+  sub:
+    - text: Monitoring Kafka Clusters
+      href: monitoring-kafka-clusters/index.html
+      id: pub-monitoring-kafka-clusters
+      sub: monitoring-kafka-clusters/navigation.json
+    - text: Managing Alert Policies
+      href: managing-alert-policies/index.html
+      id: pub-managing-alert-policies
+      sub: managing-alert-policies/navigation.json
+    - text: Managing Topics
+      href: managing-topics/index.html
+      id: pub-managing-topics
+      sub: managing-topics/navigation.json
+    - text: Monitoring End to End Latency
+      href: monitoring-end-to-end-latency/index.html
+      id: pub-monitoring-end-to-end-latency
+      sub: monitoring-end-to-end-latency/navigation.json
+    - text: Monitoring Kafka Cluster Replications
+      href: monitoring-kafka-cluster-replications/index.html
+      id: pub-monitoring-kafka-cluster-replications
+      sub: monitoring-kafka-cluster-replications/navigation.json
+
+- text: Reference
+  id: cat-reference
+  sub:
+    - text: REST API Reference
+      href: rest-api-reference/index.html
+      id: pub-rest-api-reference
+      external: external
+
+- text: Release Notes
+  id: cat-releasenotes
+  sub:
+    - text: Release Notes
+      href: release-notes/index.html
+      id: pub-release-notes
+      sub: release-notes/navigation.json

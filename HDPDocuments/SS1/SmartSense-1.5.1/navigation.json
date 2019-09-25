@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/HDPDocuments/SS1/SmartSense-1.5.1/navigation.yml
+---
+{{ site.data.productid.HDPDocuments.SS1["SmartSense-151"].navigation | jsonify }}

@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/cem/1.0.0/navigation.yml
+---
+{{ site.data.productid.cem["100"].navigation | jsonify }}

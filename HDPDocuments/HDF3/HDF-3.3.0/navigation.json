@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/HDPDocuments/HDF3/HDF-3.2.0/navigation.yml
+---
+{{ site.data.productid.HDPDocuments.HDF3["HDF-320"].navigation | jsonify }}

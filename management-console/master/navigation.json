@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/management-console/master/navigation.yml
+---
+{{ site.data.productid.management-console.master.navigation | jsonify }}

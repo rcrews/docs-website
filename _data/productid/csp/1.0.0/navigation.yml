@@ -1,0 +1,70 @@
+---
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+- text: Cloudera Stream Processing
+  id: landing-cloudera-stream-processing
+  href: /csp/1.0.0/index.html
+  display: none
+
+- text: Concepts
+  id: cat-concepts
+  sub:
+    - text: Schema Registry Overview
+      href: schema-registry-overview/index.html
+      id: pub-schema-registry-overview
+      sub: schema-registry-overview/navigation.json
+
+- text: Installation
+  id: cat-install
+  sub:
+    - text: Installation
+      href: installation/index.html
+      id: pub-installation
+      sub: installation/navigation.json
+
+- text: How To
+  id: cat-how-to
+  sub:
+    # - text: Securing CSP
+    #   href: securing-csp/index.html
+    #   id: pub-installation
+    #   sub: installation/navigation.json
+
+    - text: Integrating with Schema Registry
+      href: integrating-with-schema-registry/index.html
+      id: pub-integrating-with-schema-registry
+      sub: integrating-with-schema-registry/navigation.json
+
+    - text: Using Schema Registry
+      href: using-schema-registry/index.html
+      id: pub-using-schema-registry
+      sub: using-schema-registry/navigation.json
+
+    - text: Using CDK
+      href: /documentation/kafka/latest/topics/kafka_using.html
+      external: external
+
+    - text: Using Kafka Streams
+      href: /documentation/kafka/latest/topics/kafka_streams.html
+      external: external
+
+- text: Reference
+  id: cat-reference
+  sub:
+    - text: Administering CDK
+      href: /documentation/kafka/latest/topics/kafka_admin.html
+      external: external
+
+- text: Release Notes
+  id: cat-releasenotes
+  sub:
+    - text: Release Notes
+      href: release-notes/index.html
+      id: pub-release-notes
+      sub: release-notes/navigation.json

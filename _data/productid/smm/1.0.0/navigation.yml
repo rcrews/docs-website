@@ -1,0 +1,51 @@
+---
+#- text: Concepts & Use Cases
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+- text: Streams Messaging Manager
+  id: landing-streams-messaging-manager
+  href: /smm/1.0.0/index.html
+  display: none
+
+- text: Concepts & Use Cases
+  id: cat-concepts
+  sub:
+    - text: Getting Started
+      href: /HDPDocuments/HDF3/HDF-3.2.0/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
+
+- text: Installation & Upgrade
+  id: cat-installation-upgrade
+  sub:
+    - text: Installation
+      href: installation/index.html
+      id: pub-installation
+      sub: installation/navigation.json
+
+- text: How To
+  id: cat-how-to
+  sub:
+    - text: User Guide
+      href: user-guide/index.html
+      id: pub-user-guide
+      sub: user-guide/navigation.json
+
+- text: Reference
+  id: cat-reference
+  sub:
+    - text: REST API Reference
+      href: rest-api-reference/index.html
+      id: pub-rest-api-reference
+      external: external
+
+- text: Release Notes
+  id: cat-releasenotes
+  sub:
+    - text: Release Notes
+      href: release-notes/index.html
+      id: pub-release-notes
+      sub: release-notes/navigation.json

@@ -1,0 +1,71 @@
+---
+#- text: Concepts & Use Cases
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+- text: Cloudera Manager
+  id: landing-cloudera-manager
+  href: /cloudera-manager/7.0.0/index.html
+  display: none
+
+- text: Concepts & Use Cases
+  id: cat-concepts
+  sub:
+    - text: Overview
+      href: concepts/index.html
+      id: pub-concepts
+      sub: concepts/navigation.json
+
+# - text: Planning
+#   id: cat-planning
+#   sub:
+
+# - text: Installation & Upgrade
+#   id: cat-installation
+#   sub:
+
+- text: How To
+  id: cat-howto
+  sub:
+    - text: Managing Data Hub Clusters
+      href: managing-clusters/index.html
+      id: pub-managing-clusters
+      sub: managing-clusters/navigation.json
+
+    - text: Configuring Data Hub Clusters
+      href: configuring-clusters/index.html
+      id: pub-configuring-clusters
+      sub: configuring-clusters/navigation.json
+
+    - text: Monitoring and Diagnostics
+      href: monitoring-and-diagnostics/index.html
+      id: pub-monitoring-and-diagnostics
+      sub: monitoring-and-diagnostics/navigation.json
+
+# - text: Troubleshooting
+#   id: cat-troubleshooting
+#   sub:
+
+- text: Reference
+  id: cat-reference
+  sub:
+    - text: Reference
+      href: reference/index.html
+      id: pub-reference
+      sub: reference/navigation.json
+
+- text: Release Notes
+  id: cat-releasenotes
+  sub:
+    - text: Release Notes
+      href: release-notes/index.html
+      id: pub-release-notes
+      sub: release-notes/navigation.json
+
+# - text: Learning & Training
+#   id: cat-learning
+#   sub:

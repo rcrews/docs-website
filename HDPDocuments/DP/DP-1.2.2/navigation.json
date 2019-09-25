@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/HDPDocuments/DP/DP-1.2.2/navigation.yml
+---
+{{ site.data.productid.HDPDocuments.DP["DP-122"].navigation | jsonify }}

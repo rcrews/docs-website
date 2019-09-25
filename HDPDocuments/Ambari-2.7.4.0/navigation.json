@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/HDPDocuments/Ambari-2.7.4.0/navigation.yml
+---
+{{ site.data.productid.HDPDocuments["Ambari-2740"].navigation | jsonify }}

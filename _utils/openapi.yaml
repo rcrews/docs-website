@@ -34,8 +34,7 @@ paths:
         '200':
           description: A rating object
           content:
-            application/json:
-              schema:
+            application/              schema:
                 type: object
                 properties:
                   averageRating:
@@ -54,8 +53,7 @@ paths:
       requestBody:
         required: true
         content:
-          application/json:
-            schema:
+          application/            schema:
               type: object
               properties:
                 path:
@@ -70,15 +68,13 @@ paths:
         '200':
           description: Updated
           content:
-            application/json:
-              schema:
+            application/              schema:
                 $ref: >-
                   #/paths/~1rating/get/responses/200/content/application~1json/schema
         '201':
           description: Created
           content:
-            application/json:
-              schema:
+            application/              schema:
                 $ref: >-
                   #/paths/~1rating/get/responses/200/content/application~1json/schema
   /comment:
@@ -89,8 +85,7 @@ paths:
       requestBody:
         required: true
         content:
-          application/json:
-            schema:
+          application/            schema:
               type: object
               properties:
                 path:

@@ -1,0 +1,5 @@
+---
+# navigation_unprocessed.json has moved to
+#   _data/productid/machine-learning/cloud/navigation.yml
+---
+{{ site.data.productid.machine-learning.cloud.navigation | jsonify }}
