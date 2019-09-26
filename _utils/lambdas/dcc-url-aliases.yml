@@ -58,9 +58,9 @@
 - exist: /documentation/data-science-workbench/1-6-x.html
   alias: /documentation/data-science-workbench/latest.html
 
-- exist: /documentation/director/6-2-x/
+- exist: /documentation/director/6-3-x/
   alias: /documentation/director/latest/
-- exist: /documentation/director/6-2-x.html
+- exist: /documentation/director/6-3-x.html
   alias: /documentation/director/latest.html
 
 - exist: /documentation/enterprise/5-9-x/
@@ -68,9 +68,9 @@
 - exist: /documentation/enterprise/6/6.3/
   alias: /documentation/enterprise/6/latest/
 
-- exist: /documentation/kafka/4-0-x/
+- exist: /documentation/kafka/4-1-x/
   alias: /documentation/kafka/latest/
-- exist: /documentation/kafka/4-0-x.html
+- exist: /documentation/kafka/4-1-x.html
   alias: /documentation/kafka/latest.html
 
 - exist: /documentation/other/accumulo/1-7-2/
@@ -78,32 +78,32 @@
 - exist: /documentation/other/accumulo/1-7-2.html
   alias: /documentation/other/accumulo/latest.html
 
-- exist: /documentation/other/connectors/hive-jdbc/2-6-2/
+- exist: /documentation/other/connectors/hive-jdbc/2-6-5/
   alias: /documentation/other/connectors/hive-jdbc/latest/
-- exist: /documentation/other/connectors/hive-jdbc/2-6-2.html
+- exist: /documentation/other/connectors/hive-jdbc/2-6-5.html
   alias: /documentation/other/connectors/hive-jdbc/latest.html
 
-- exist: /documentation/other/connectors/hive-odbc/2-6-1/
+- exist: /documentation/other/connectors/hive-odbc/2-6-5/
   alias: /documentation/other/connectors/hive-odbc/latest/
-- exist: /documentation/other/connectors/hive-odbc/2-6-1.html
+- exist: /documentation/other/connectors/hive-odbc/2-6-5.html
   alias: /documentation/other/connectors/hive-odbc/latest.html
 
 # Check to assure we have content for
 #   /documentation/other/connectors/hive-odbc/2-6-1/
 
-- exist: /documentation/other/connectors/impala-jdbc/2-6-9/
+- exist: /documentation/other/connectors/impala-jdbc/2-6-12/
   alias: /documentation/other/connectors/impala-jdbc/latest/
-- exist: /documentation/other/connectors/impala-jdbc/2-6-9.html
+- exist: /documentation/other/connectors/impala-jdbc/2-6-12.html
   alias: /documentation/other/connectors/impala-jdbc/latest.html
 
-- exist: /documentation/other/connectors/impala-odbc/2-6-4/
+- exist: /documentation/other/connectors/impala-odbc/2-6-5/
   alias: /documentation/other/connectors/impala-odbc/latest/
-- exist: /documentation/other/connectors/impala-odbc/2-6-4.html
+- exist: /documentation/other/connectors/impala-odbc/2-6-5.html
   alias: /documentation/other/connectors/impala-odbc/latest.html
 
-- exist: /documentation/spark2/2-3-x/
+- exist: /documentation/spark2/2-4-x/
   alias: /documentation/spark2/latest/
-- exist: /documentation/spark2/2-3-x.html
+- exist: /documentation/spark2/2-4-x.html
   alias: /documentation/spark2/latest.html
 
 # /documentation/wxm/latest/ is not an alias
