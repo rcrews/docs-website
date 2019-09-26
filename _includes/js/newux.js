@@ -171,7 +171,6 @@ var NEWUX = (function($) {
             let output = "";
 
             let x = 0;
-            console.log(WhoAmI.versions);
             WhoAmI.versions.forEach(function(el) {
                 if(el) {
                     output += `<li class="major"><a href='${el.url}'>${el.title}</a>`;
@@ -503,8 +502,8 @@ var NEWUX = (function($) {
 
                 // Parse the response..
                 // First, create a virtual DOM that we can set the location correctly with.
-                let virtualDOM = document.implementation.createHTMLDocument('virtual').body;
-                virtualDOM.innerHTML = responseText;
+                let virtualDOM = document.implementation.createHTMLDocument('virtual');
+                virtualDOM.body.innerHTML = responseText;
                 elems = $(virtualDOM).find( selector ).children();
 
                 // And check whether there is any content in there......
@@ -527,11 +526,12 @@ var NEWUX = (function($) {
                     // Success....
 
                     // Update history so the back button works.... We don't want this to fire if we're going back in time!
-
                     if (update_history) {
                         if(typeof hash === 'undefined') hash = "";
                         history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
                     }
+
+                    $(virtualDOM).find('head').append(`<base href="${url}" />`);
 
                     // Copyright
                     let copyright = $(virtualDOM).find('meta[name="rights"]').attr('content');
