@@ -395,7 +395,7 @@
           url: /HDPDocuments/DSS1/DSS-1.0.0/index.html
 
 - name: Data Analytics Studio
-  latest-version: 1.4.0
+  latest-version: 1.4.1
   latest-url: /HDPDocuments/DAS/DAS-1.4.1/index.html
   search-name: Data Analytics Studio
   versions:
