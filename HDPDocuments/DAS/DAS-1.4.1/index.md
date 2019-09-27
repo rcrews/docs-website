@@ -1,7 +1,7 @@
 ---
 layout: hwx_product
 title: Data Analytics Studio
-version: 1.4.0
+version: 1.4.1
 base-path: /HDPDocuments/DAS/DAS-1.4.1/
 
 sections:

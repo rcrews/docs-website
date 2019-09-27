@@ -8,33 +8,33 @@ json:
       href: /cdp/master/index.html
       icon: /common/img/mini_icons/icon-cdp.png
 
-    - text: Management Console
-      href: /management-console/master/index.html
-      icon: /common/img/mini_icons/icon-mc.png
-
-    - text: Workload Manager
-      href: /workload-manager/master/index.html
-      icon: /common/img/mini_icons/icon-wm.png
-
-    - text: Data Catalog
+    - text: Cloudera Data Catalog
       href: /data-catalog/master/index.html
       icon: /common/img/mini_icons/icon-dc.png
 
-    - text: Replication Manager
-      href: /replication-manager/master/index.html
-      icon: /common/img/mini_icons/icon-rm.png
-
-    - text: Data Hub
+    - text: Cloudera Data Hub
       href: /data-hub/master/index.html
       icon: /common/img/mini_icons/icon-dh.png
 
-    - text: Data Warehouse
+    - text: Cloudera Data Warehouse
       href: /data-warehouse/master/index.html
       icon: /common/img/mini_icons/icon-dw.png
 
-    - text: Machine Learning
+    - text: Cloudera Machine Learning
       href: /machine-learning/master/index.html
       icon: /common/img/mini_icons/icon-ml.png
+
+    - text: Cloudera Management Console
+      href: /management-console/master/index.html
+      icon: /common/img/mini_icons/icon-mc.png
+
+    - text: Cloudera Replication Manager
+      href: /replication-manager/master/index.html
+      icon: /common/img/mini_icons/icon-rm.png
+
+    - text: Cloudera Workload Manager
+      href: /workload-manager/master/index.html
+      icon: /common/img/mini_icons/icon-wm.png
 
     - text: Cloudera Runtime
       href: /runtime/master/index.html
@@ -54,27 +54,27 @@ json:
       href: /cfm/master/index.html
       icon: /common/img/mini_icons/icon-cfm.png
 
+    - text: Cloudera Streams Messaging Manager for HDF and HDP
+      href: /smm/master/index.html
+      icon: /common/img/mini_icons/icon-smm.png
+
+    - text: Cloudera Streams Replication Manager for HDF and HDP
+      href: /srm/master/index.html
+      icon: /common/img/mini_icons/icon-srm.png
+
     - text: Cloudera Stream Processing
       href: /csp/master/index.html
       icon: /common/img/mini_icons/icon-csp.png
 
-    - text: Streams Messaging Manager
-      href: /smm/master/index.html
-      icon: /common/img/mini_icons/icon-smm.png
-
-    - text: Streams Replication Manager
-      href: /srm/master/index.html
-      icon: /common/img/mini_icons/icon-srm.png
-
 - title: Applications
   products:
-    - text: Data Science Workbench
-      href: /documentation/data-science-workbench/1-6-x.html
-      icon: /common/img/mini_icons/icon-dsw.png
-
-    - text: Cybersecurity Platform
+    - text: Cloudera Cybersecurity Platform
       href: /ccp/master/index.html
       icon: /common/img/mini_icons/icon-cybersecurity.png
+
+    - text: Cloudera Data Science Workbench
+      href: /documentation/data-science-workbench/1-6-x.html
+      icon: /common/img/mini_icons/icon-dsw.png
 
 - title: Enterprise
   products:
@@ -82,11 +82,11 @@ json:
       href: /documentation/index.html
       icon: /common/img/mini_icons/icon-cdh.png
 
-    - text: HDP Enterprise
-      href: /HDPDocuments/index.html
-      icon: /common/img/mini_icons/icon-hdp.png
-
-    - text: HDF Enterprise
+    - text: Cloudera HDF Enterprise
       href: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
       icon: /common/img/mini_icons/icon-hdf.png
+
+    - text: Cloudera HDP Enterprise
+      href: /HDPDocuments/index.html
+      icon: /common/img/mini_icons/icon-hdp.png
 ---
