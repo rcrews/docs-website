@@ -2,7 +2,7 @@
   "swagger" : "2.0",
   "info" : {
     "description" : "This REST API provides remote access to the EFM Server.\n                                            Endpoints that are marked as [BETA] are subject to change in future releases of the application without backwards compatibility and without a major version change.",
-    "version" : "1.0.0-SNAPSHOT",
+    "version" : "1.1.0-SNAPSHOT",
     "title" : "Cloudera Edge Flow Manager REST API",
     "license" : {
       "name" : "GNU Affero General Public License (AGPL), Version 3",
@@ -32,8 +32,9 @@
     "name" : "Events",
     "description" : "Retrieval of events"
   }, {
-    "name" : "Flow Designer",
-    "description" : "Design flows to deploy to agents."
+    "name" : "Flow Designer"
+  }, {
+    "name" : "Flow Designer Parameters"
   }, {
     "name" : "Flow Mappings",
     "description" : "Creating and retrieval of flow mappings. These are BETA endpoints as flow mappings are expected to be internally managed by the server."
@@ -43,6 +44,8 @@
   }, {
     "name" : "Heartbeats",
     "description" : "View heartbeats from agents"
+  }, {
+    "name" : "Monitoring"
   }, {
     "name" : "Operations",
     "description" : "Submit and manage C2 operations targeting MiNiFi Agents"
@@ -375,6 +378,86 @@
             "description" : "successful operation",
             "schema" : {
               "$ref" : "#/definitions/Agent"
+            }
+          }
+        }
+      }
+    },
+    "/agents/{id}/parameters" : {
+      "get" : {
+        "tags" : [ "Agents" ],
+        "summary" : "Retrieve the parameter context for a MiNiFi agent with the specified id",
+        "description" : "",
+        "operationId" : "getAgentParameters",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "The identifier of the agent to retrieve parameters for",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ParameterContext"
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Agents" ],
+        "summary" : "Register a set of Parameters to use with this agent.",
+        "description" : "",
+        "operationId" : "createAgentParameters",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "The identifier of the agent to provide parameters for",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "description" : "The metadata of the agent to register",
+          "required" : false,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/Parameter"
+            }
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ParameterContext"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Agents" ],
+        "summary" : "Delete an instance specific parameter context",
+        "description" : "",
+        "operationId" : "deleteAgentParameters",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentId",
+          "in" : "path",
+          "description" : "The identifier of the agent to delete its parameter context",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ParameterContext"
             }
           }
         }
@@ -972,7 +1055,7 @@
     "/designer/flows/{flowId}/process-groups/{pgId}" : {
       "get" : {
         "tags" : [ "Flow Designer" ],
-        "summary" : "Retrieves the process group with the given id in the given flow. The alias of 'root' may be used to retrieve the root process group for the given flow.",
+        "summary" : "Retrieves the process group with the given id. The alias of 'root' may be used to retrieve the root process group for the given flow.",
         "description" : "",
         "operationId" : "getProcessGroup",
         "produces" : [ "application/json" ],
@@ -996,7 +1079,40 @@
           "200" : {
             "description" : "successful operation",
             "schema" : {
-              "$ref" : "#/definitions/FDProcessGroupFlow"
+              "$ref" : "#/definitions/FDProcessGroup"
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Flow Designer" ],
+        "summary" : "Updates the configuration of a process group. The alias of 'root' may be used to retrieve the root process group for the given flow.",
+        "description" : "",
+        "operationId" : "updateProcessGroup",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "flowId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "pgId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "processGroup",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/FDProcessGroup"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FDProcessGroup"
             }
           }
         }
@@ -1575,6 +1691,175 @@
         }
       }
     },
+    "/designer/parameter-contexts" : {
+      "get" : {
+        "tags" : [ "Flow Designer Parameters" ],
+        "summary" : "Gets all available parameter contexts",
+        "description" : "",
+        "operationId" : "getParameterContexts",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNum",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "rows",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ListContainer"
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Flow Designer Parameters" ],
+        "summary" : "Create a parameter context",
+        "description" : "",
+        "operationId" : "createParameterContext",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "The new parameter context",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/FDParameterContext"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FDParameterContext"
+            }
+          }
+        }
+      }
+    },
+    "/designer/parameter-contexts/update-requests" : {
+      "post" : {
+        "tags" : [ "Flow Designer Parameters" ],
+        "summary" : "Initiate a update request to apply a proposed change to a context",
+        "description" : "This will initiate the process of updating all components that reference the specified Parameter Context. Performing update against an arbitrary number of components may be expensive and take significantly more time than many other REST API actions. As a result, this endpoint will immediately return a request resource, and the process of updating the necessary components will occur asynchronously in the background. The client may then periodically poll the status of the request by issuing a GET request to .../parameter-contexts/update-requests/{requestId}. Once the request is completed, the client is expected to issue a DELETE request to .../parameter-contexts/update-requests/{requestId}.",
+        "operationId" : "submitUpdateRequest",
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "The update request",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/FDParameterContextUpdateRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FDParameterContextUpdateRequest"
+            }
+          }
+        }
+      }
+    },
+    "/designer/parameter-contexts/update-requests/{requestId}" : {
+      "get" : {
+        "tags" : [ "Flow Designer Parameters" ],
+        "summary" : "Retrieve the status of a update request",
+        "description" : "",
+        "operationId" : "getUpdateRequest",
+        "parameters" : [ {
+          "name" : "requestId",
+          "in" : "path",
+          "description" : "The update request id",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FDParameterContextUpdateRequest"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Flow Designer Parameters" ],
+        "summary" : "Delete a completed request or cancel an in-progress request",
+        "description" : "",
+        "operationId" : "deleteUpdateRequest",
+        "parameters" : [ {
+          "name" : "requestId",
+          "in" : "path",
+          "description" : "The update request id",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FDParameterContextUpdateRequest"
+            }
+          }
+        }
+      }
+    },
+    "/designer/parameter-contexts/{id}" : {
+      "get" : {
+        "tags" : [ "Flow Designer Parameters" ],
+        "summary" : "Gets a parameter context",
+        "description" : "",
+        "operationId" : "getParameterContext",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "The id of the parameter context",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FDParameterContext"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Flow Designer Parameters" ],
+        "summary" : "Delete a parameter context",
+        "description" : "",
+        "operationId" : "deleteParameterContext",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "The id of the parameter context",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FDParameterContext"
+            }
+          }
+        }
+      }
+    },
     "/events" : {
       "get" : {
         "tags" : [ "Events" ],
@@ -1862,6 +2147,12 @@
           "description" : "The id of a flow to retrieve",
           "required" : true,
           "type" : "string"
+        }, {
+          "name" : "aid",
+          "in" : "query",
+          "description" : "The specific context to use with the requested flow.  This is overlaid over any class values.",
+          "required" : false,
+          "type" : "string"
         } ],
         "responses" : {
           "200" : {
@@ -1896,6 +2187,105 @@
           },
           "404" : {
             "description" : "The specified resource could not be found."
+          }
+        }
+      }
+    },
+    "/monitor/agent-classes/{agentClass}" : {
+      "get" : {
+        "tags" : [ "Monitoring" ],
+        "summary" : "Get agent class monitoring data",
+        "description" : "",
+        "operationId" : "getAgentClassDetail",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentClass",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentClassDetail"
+            }
+          }
+        }
+      }
+    },
+    "/monitor/agents/{agentId}" : {
+      "get" : {
+        "tags" : [ "Monitoring" ],
+        "summary" : "Get agent monitoring data",
+        "description" : "",
+        "operationId" : "getAgentDetail",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentDetail"
+            }
+          }
+        }
+      }
+    },
+    "/monitor/summaries" : {
+      "get" : {
+        "tags" : [ "Monitoring" ],
+        "summary" : "Get summaries of all agent classes",
+        "description" : "",
+        "operationId" : "getAgentClassSummaries",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNum",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "rows",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ListContainer"
+            }
+          }
+        }
+      }
+    },
+    "/monitor/summaries/{agentClass}" : {
+      "get" : {
+        "tags" : [ "Monitoring" ],
+        "summary" : "Get summaries of all agent classes",
+        "description" : "",
+        "operationId" : "getAgentClassSummary",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentClass",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentClassSummary"
+            }
           }
         }
       }
@@ -2019,7 +2409,7 @@
       "properties" : {
         "identifier" : {
           "type" : "string",
-          "description" : "A unique identifier for the Agent"
+          "description" : "A unique identifier for the agent"
         },
         "name" : {
           "type" : "string",
@@ -2037,9 +2427,18 @@
           "type" : "string",
           "description" : "The id of the agent manifest that applies to this agent."
         },
+        "flowId" : {
+          "type" : "string",
+          "description" : "The id of the flow currently running on the agent"
+        },
         "status" : {
           "description" : "A summary of the runtime status of the agent",
           "$ref" : "#/definitions/AgentStatus"
+        },
+        "state" : {
+          "type" : "string",
+          "description" : "The current state of the agent",
+          "enum" : [ "ONLINE", "MISSING" ]
         },
         "firstSeen" : {
           "type" : "integer",
@@ -2078,6 +2477,221 @@
           },
           "maxItems" : 1,
           "minItems" : 0
+        }
+      }
+    },
+    "AgentClassDetail" : {
+      "type" : "object",
+      "required" : [ "name" ],
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the class"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "agentManifests" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "flowSummary" : {
+          "description" : "Metadata about the flow assigned to the agent class",
+          "$ref" : "#/definitions/FlowSummary"
+        },
+        "detailMetrics" : {
+          "description" : "Detailed monitoring metrics for the agent class (all values averages)",
+          "$ref" : "#/definitions/DetailMetrics"
+        },
+        "links" : {
+          "$ref" : "#/definitions/AgentClassDetailLinks"
+        }
+      }
+    },
+    "AgentClassDetailLinks" : {
+      "type" : "object",
+      "properties" : {
+        "agents" : {
+          "description" : "Link to the event details, if applicable",
+          "$ref" : "#/definitions/Link"
+        },
+        "events" : {
+          "description" : "Link to the events associated with this agent class",
+          "$ref" : "#/definitions/Link"
+        },
+        "dashboard" : {
+          "description" : "Link to the external dashboard associated with this agent class",
+          "$ref" : "#/definitions/Link"
+        },
+        "flow" : {
+          "description" : "Link to the flow mapped to this agent class",
+          "$ref" : "#/definitions/Link"
+        },
+        "self" : {
+          "description" : "Link to this resource entity",
+          "$ref" : "#/definitions/Link"
+        },
+        "other" : {
+          "type" : "array",
+          "description" : "List of other rel links that have been set",
+          "items" : {
+            "$ref" : "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "AgentClassMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "agentCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "missingAgentCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "AgentClassSummary" : {
+      "type" : "object",
+      "required" : [ "name" ],
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the class"
+        },
+        "flowSummary" : {
+          "description" : "Metadata about the flow assigned to the agent class",
+          "$ref" : "#/definitions/FlowSummary"
+        },
+        "agentClassMetrics" : {
+          "$ref" : "#/definitions/AgentClassMetrics"
+        },
+        "latestOperation" : {
+          "$ref" : "#/definitions/BulkOperation"
+        },
+        "links" : {
+          "$ref" : "#/definitions/AgentClassSummaryLinks"
+        }
+      }
+    },
+    "AgentClassSummaryLinks" : {
+      "type" : "object",
+      "properties" : {
+        "flow" : {
+          "description" : "Link to the flow mapped to this agent class",
+          "$ref" : "#/definitions/Link"
+        },
+        "alerts" : {
+          "description" : "Link to the alerts for the agent class",
+          "$ref" : "#/definitions/Link"
+        },
+        "details" : {
+          "description" : "Link to the detailed agent class monitoring data",
+          "$ref" : "#/definitions/Link"
+        },
+        "self" : {
+          "description" : "Link to this resource entity",
+          "$ref" : "#/definitions/Link"
+        },
+        "other" : {
+          "type" : "array",
+          "description" : "List of other rel links that have been set",
+          "items" : {
+            "$ref" : "#/definitions/Link"
+          }
+        }
+      }
+    },
+    "AgentDetail" : {
+      "type" : "object",
+      "required" : [ "identifier" ],
+      "properties" : {
+        "identifier" : {
+          "type" : "string",
+          "description" : "A unique identifier for the agent"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "An optional, human-friendly name or alias for the agent"
+        },
+        "agentClass" : {
+          "type" : "string",
+          "description" : "The class or category label of the agent, e.g., 'sensor-collector'"
+        },
+        "agentManifestId" : {
+          "type" : "string",
+          "description" : "The id of the manifest that applies to this agent."
+        },
+        "firstSeen" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "A timestamp (milliseconds since Epoch) for the first time the agent was seen by this C2 server"
+        },
+        "lastSeen" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "A timestamp (milliseconds since Epoch) for the most recent time the was seen by this C2 server"
+        },
+        "location" : {
+          "description" : "The last reported location of agent",
+          "$ref" : "#/definitions/Location"
+        },
+        "agentType" : {
+          "type" : "string",
+          "description" : "The type of the agent binary, e.g., Java or C++ or NanoFi"
+        },
+        "deviceInfo" : {
+          "description" : "Details about the device on which the agent is running",
+          "$ref" : "#/definitions/DeviceInfo"
+        },
+        "flowSummary" : {
+          "description" : "Metadata about the flow running the agent",
+          "$ref" : "#/definitions/FlowSummary"
+        },
+        "detailMetrics" : {
+          "description" : "Detailed monitoring metrics for the agent",
+          "$ref" : "#/definitions/DetailMetrics"
+        },
+        "links" : {
+          "description" : "Links to related entities",
+          "$ref" : "#/definitions/AgentDetailLinks"
+        }
+      }
+    },
+    "AgentDetailLinks" : {
+      "type" : "object",
+      "properties" : {
+        "events" : {
+          "description" : "Link to the events associated with this agent",
+          "$ref" : "#/definitions/Link"
+        },
+        "dashboard" : {
+          "description" : "Link to the external dashboard associated with this agent",
+          "$ref" : "#/definitions/Link"
+        },
+        "flow" : {
+          "description" : "Link to the flow deployed to this agent",
+          "$ref" : "#/definitions/Link"
+        },
+        "agentClass" : {
+          "description" : "Link to the agent class",
+          "$ref" : "#/definitions/Link"
+        },
+        "self" : {
+          "description" : "Link to this resource entity",
+          "$ref" : "#/definitions/Link"
+        },
+        "other" : {
+          "type" : "array",
+          "description" : "List of other rel links that have been set",
+          "items" : {
+            "$ref" : "#/definitions/Link"
+          }
         }
       }
     },
@@ -2159,27 +2773,6 @@
           "description" : "The number of items in the repository",
           "minimum" : 0,
           "maximum" : 9223372036854775807
-        },
-        "sizeMax" : {
-          "type" : "integer",
-          "format" : "int64",
-          "description" : "The maximum number of items that the repository is configured to hold",
-          "minimum" : 0,
-          "maximum" : 9223372036854775807
-        },
-        "dataSize" : {
-          "type" : "integer",
-          "format" : "int64",
-          "description" : "The size (in Bytes) of the data in the repository",
-          "minimum" : 0,
-          "maximum" : 9223372036854775807
-        },
-        "dataSizeMax" : {
-          "type" : "integer",
-          "format" : "int64",
-          "description" : "The maximum size (in Bytes) that the repository is configured to hold",
-          "minimum" : 0,
-          "maximum" : 9223372036854775807
         }
       }
     },
@@ -2222,6 +2815,46 @@
         }
       }
     },
+    "Bucket" : {
+      "type" : "object",
+      "required" : [ "name" ],
+      "properties" : {
+        "link" : {
+          "description" : "An WebLink to this entity.",
+          "readOnly" : true,
+          "$ref" : "#/definitions/JaxbLink"
+        },
+        "identifier" : {
+          "type" : "string",
+          "description" : "An ID to uniquely identify this object.",
+          "readOnly" : true
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the bucket."
+        },
+        "createdTimestamp" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The timestamp of when the bucket was first created. This is set by the server at creation time.",
+          "readOnly" : true,
+          "minimum" : 1
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "A description of the bucket."
+        },
+        "allowBundleRedeploy" : {
+          "type" : "boolean",
+          "description" : "Indicates if this bucket allows the same version of an extension bundle to be redeployed and thus overwrite the existing artifact. By default this is false."
+        },
+        "permissions" : {
+          "description" : "The access that the current user has to this bucket.",
+          "readOnly" : true,
+          "$ref" : "#/definitions/Permissions"
+        }
+      }
+    },
     "BuildInfo" : {
       "type" : "object",
       "properties" : {
@@ -2249,6 +2882,63 @@
         "compilerFlags" : {
           "type" : "string",
           "description" : "The compiler flags used for the build."
+        }
+      }
+    },
+    "BulkOperation" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "The id of the bulk operation"
+        },
+        "agentClass" : {
+          "type" : "string",
+          "description" : "The target agent class for the bulk operation"
+        },
+        "state" : {
+          "type" : "string",
+          "description" : "The current state of the bulk operation",
+          "enum" : [ "NEW", "READY", "IN_PROGRESS", "DONE", "FAILED", "CANCELLED" ]
+        },
+        "progress" : {
+          "description" : "The current progress of the bulk operation",
+          "$ref" : "#/definitions/BulkOperationProgress"
+        }
+      }
+    },
+    "BulkOperationProgress" : {
+      "type" : "object",
+      "properties" : {
+        "total" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The target number of deployment operations to complete"
+        },
+        "successful" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The number of deployment operations that have completed successfully"
+        },
+        "failed" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The number of deployment operations that have failed"
+        },
+        "canceled" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The number of deployment operations that have been canceled"
+        },
+        "completed" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The total number of completed operations (successful + failed + canceled)"
+        },
+        "progress" : {
+          "type" : "number",
+          "format" : "double",
+          "description" : "The ratio of completed operations to total operations represented as a decimal between 0 and 1"
         }
       }
     },
@@ -2426,6 +3116,65 @@
         }
       }
     },
+    "ConnectionDetails" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "sourceId" : {
+          "type" : "string"
+        },
+        "sourceName" : {
+          "type" : "string"
+        },
+        "sourceType" : {
+          "type" : "string"
+        },
+        "sourceVersion" : {
+          "type" : "string"
+        },
+        "destinationId" : {
+          "type" : "string"
+        },
+        "destinationName" : {
+          "type" : "string"
+        },
+        "destinationType" : {
+          "type" : "string"
+        },
+        "destinationVersion" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ConnectionMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "dataSize" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "dataSizeMax" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "size" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "sizeMax" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    },
     "ControllerServiceAPI" : {
       "type" : "object",
       "properties" : {
@@ -2544,6 +3293,38 @@
         }
       }
     },
+    "DetailMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "connectionDetails" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ConnectionDetails"
+          }
+        },
+        "connectionMetrics" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ConnectionMetrics"
+          }
+        },
+        "repositoryDetails" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/RepositoryDetails"
+          }
+        },
+        "repositoryMetrics" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/RepositoryMetrics"
+          }
+        },
+        "empty" : {
+          "type" : "boolean"
+        }
+      }
+    },
     "DeviceInfo" : {
       "type" : "object",
       "required" : [ "identifier" ],
@@ -2654,12 +3435,12 @@
     "EventLinks" : {
       "type" : "object",
       "properties" : {
-        "source" : {
-          "description" : "Link to the source of the event, if applicable",
-          "$ref" : "#/definitions/Link"
-        },
         "detail" : {
           "description" : "Link to the event details, if applicable",
+          "$ref" : "#/definitions/Link"
+        },
+        "source" : {
+          "description" : "Link to the source of the event, if applicable",
           "$ref" : "#/definitions/Link"
         },
         "agentClass" : {
@@ -2676,6 +3457,40 @@
           "items" : {
             "$ref" : "#/definitions/Link"
           }
+        }
+      }
+    },
+    "ExternalControllerServiceReference" : {
+      "type" : "object",
+      "properties" : {
+        "identifier" : {
+          "type" : "string",
+          "description" : "The identifier of the controller service"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the controller service"
+        }
+      }
+    },
+    "FDComponentSummary" : {
+      "type" : "object",
+      "properties" : {
+        "identifier" : {
+          "type" : "string"
+        },
+        "uri" : {
+          "type" : "string"
+        },
+        "groupId" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "category" : {
+          "type" : "string",
+          "enum" : [ "CONNECTION", "PROCESSOR", "PROCESS_GROUP", "REMOTE_PROCESS_GROUP", "INPUT_PORT", "OUTPUT_PORT", "REMOTE_INPUT_PORT", "REMOTE_OUTPUT_PORT", "FUNNEL", "LABEL", "CONTROLLER_SERVICE" ]
         }
       }
     },
@@ -2805,6 +3620,14 @@
           "readOnly" : true,
           "$ref" : "#/definitions/VersionedProcessGroup"
         },
+        "parameterContexts" : {
+          "type" : "array",
+          "description" : "Information about the parameter contexts used in this flow",
+          "uniqueItems" : true,
+          "items" : {
+            "$ref" : "#/definitions/FDParameterContext"
+          }
+        },
         "versionInfo" : {
           "description" : "The version information for the flow",
           "readOnly" : true,
@@ -2882,32 +3705,135 @@
         }
       }
     },
-    "FDProcessGroupFlow" : {
+    "FDParameterContext" : {
       "type" : "object",
-      "required" : [ "flowContent", "flowMetadata", "localFlowRevision" ],
+      "required" : [ "name" ],
       "properties" : {
-        "flowMetadata" : {
-          "description" : "The flow metadata",
-          "readOnly" : true,
-          "$ref" : "#/definitions/FDFlowMetadata"
+        "id" : {
+          "type" : "string",
+          "description" : "The id of the context"
         },
-        "flowContent" : {
-          "description" : "The flow content of the process group",
-          "$ref" : "#/definitions/FDProcessGroupFlowContent"
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the context"
         },
-        "versionInfo" : {
-          "description" : "The version information for the flow",
-          "readOnly" : true,
-          "$ref" : "#/definitions/FDVersionInfo"
+        "agentClass" : {
+          "type" : "string",
+          "description" : "The agent class this context applies to"
         },
-        "localFlowRevision" : {
-          "type" : "integer",
-          "description" : "The local revision number for the given flow used to order flow events per flow",
-          "readOnly" : true
+        "agentId" : {
+          "type" : "string",
+          "description" : "The id of the agent this context applies to if overriding the defaults for that class"
+        },
+        "parameters" : {
+          "type" : "array",
+          "description" : "The parameters in this context",
+          "uniqueItems" : true,
+          "items" : {
+            "$ref" : "#/definitions/Parameter"
+          }
+        },
+        "usage" : {
+          "description" : "Information about the usage of parameters in flow components",
+          "$ref" : "#/definitions/FDParameterUsage"
         }
       }
     },
-    "FDProcessGroupFlowContent" : {
+    "FDParameterContextUpdateRequest" : {
+      "type" : "object",
+      "properties" : {
+        "requestId" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string",
+          "description" : "The current state of the request"
+        },
+        "complete" : {
+          "type" : "boolean",
+          "description" : "Whether or not the request is completed"
+        },
+        "failureReason" : {
+          "type" : "string",
+          "description" : "Indicates both if the request has failed and the reason if so. Or null if the request has not failed."
+        },
+        "created" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The time (millis since Epoch) that the request was submitted"
+        },
+        "updated" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The time (millis since Epoch) that the request was last updated"
+        },
+        "proposedContext" : {
+          "description" : "The updated parameter context containing all changes to apply",
+          "$ref" : "#/definitions/FDParameterContext"
+        }
+      }
+    },
+    "FDParameterReference" : {
+      "type" : "object",
+      "properties" : {
+        "parameter" : {
+          "type" : "string",
+          "description" : "The name of the parameter that is referenced"
+        },
+        "componentId" : {
+          "type" : "string",
+          "description" : "The id of the component referencing the parameter"
+        }
+      }
+    },
+    "FDParameterUsage" : {
+      "type" : "object",
+      "properties" : {
+        "components" : {
+          "type" : "array",
+          "description" : "Details about the components referencing parameters",
+          "uniqueItems" : true,
+          "items" : {
+            "$ref" : "#/definitions/FDComponentSummary"
+          }
+        },
+        "references" : {
+          "type" : "array",
+          "description" : "List of all parameter references",
+          "uniqueItems" : true,
+          "items" : {
+            "$ref" : "#/definitions/FDParameterReference"
+          }
+        }
+      }
+    },
+    "FDProcessGroup" : {
+      "type" : "object",
+      "properties" : {
+        "uri" : {
+          "type" : "string",
+          "description" : "The URI for future requests to the component.",
+          "readOnly" : true
+        },
+        "revision" : {
+          "description" : "The revision for this request/response. The revision is required for any mutable flow requests and is included in all responses.",
+          "$ref" : "#/definitions/FDRevision"
+        },
+        "componentConfiguration" : {
+          "description" : "The configuration of the component.",
+          "$ref" : "#/definitions/FDProcessGroupContent"
+        },
+        "validationErrors" : {
+          "type" : "array",
+          "description" : "Zero or more reasons that the component is currently invalid as-configured. The component is said to be valid if the returned Collection is empty.",
+          "readOnly" : true,
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "FDProcessGroupContent" : {
       "type" : "object",
       "properties" : {
         "identifier" : {
@@ -2926,26 +3852,21 @@
           "description" : "The component's position on the graph",
           "$ref" : "#/definitions/Position"
         },
-        "uri" : {
+        "parameterContextId" : {
           "type" : "string",
-          "description" : "The URI for future requests to the component.",
-          "readOnly" : true
-        },
-        "revision" : {
-          "description" : "The revision for this request/response. The revision is required for any mutable flow requests and is included in all responses.",
-          "$ref" : "#/definitions/FDRevision"
+          "description" : "The id of the parameter context currently mapped to this process group"
         },
         "processGroups" : {
           "type" : "array",
-          "description" : "The child Process Groups",
+          "description" : "The child process groups of this process group",
           "uniqueItems" : true,
           "items" : {
-            "$ref" : "#/definitions/FDProcessGroupFlowContent"
+            "$ref" : "#/definitions/FDProcessGroup"
           }
         },
         "remoteProcessGroups" : {
           "type" : "array",
-          "description" : "The Remote Process Groups",
+          "description" : "The remote process groups in this process group",
           "uniqueItems" : true,
           "items" : {
             "$ref" : "#/definitions/FDRemoteProcessGroup"
@@ -2953,7 +3874,7 @@
         },
         "processors" : {
           "type" : "array",
-          "description" : "The Processors",
+          "description" : "The processors in this process group",
           "uniqueItems" : true,
           "items" : {
             "$ref" : "#/definitions/FDProcessor"
@@ -2961,7 +3882,7 @@
         },
         "connections" : {
           "type" : "array",
-          "description" : "The Connections",
+          "description" : "The connections in this process group",
           "uniqueItems" : true,
           "items" : {
             "$ref" : "#/definitions/FDConnection"
@@ -2969,7 +3890,7 @@
         },
         "funnels" : {
           "type" : "array",
-          "description" : "The Funnels",
+          "description" : "The funnels in this process group",
           "uniqueItems" : true,
           "items" : {
             "$ref" : "#/definitions/FDFunnel"
@@ -2977,11 +3898,15 @@
         },
         "controllerServices" : {
           "type" : "array",
-          "description" : "The Controller Services",
+          "description" : "The controller services in this process group",
           "uniqueItems" : true,
           "items" : {
             "$ref" : "#/definitions/FDControllerService"
           }
+        },
+        "componentType" : {
+          "type" : "string",
+          "enum" : [ "CONNECTION", "PROCESSOR", "PROCESS_GROUP", "REMOTE_PROCESS_GROUP", "INPUT_PORT", "OUTPUT_PORT", "REMOTE_INPUT_PORT", "REMOTE_OUTPUT_PORT", "FUNNEL", "LABEL", "CONTROLLER_SERVICE" ]
         },
         "groupIdentifier" : {
           "type" : "string",
@@ -3086,6 +4011,10 @@
           "type" : "string",
           "description" : "The bucket id in the NiFi Registry instance that this flow was last published to"
         },
+        "registryBucketName" : {
+          "type" : "string",
+          "description" : "The bucket name in the NiFi Registry instance that this flow was last published to"
+        },
         "registryFlowId" : {
           "type" : "string",
           "description" : "The flow id in the NiFi Registry instance that this flow was last published to"
@@ -3156,20 +4085,28 @@
           "format" : "int32",
           "description" : "The version of the NiFi Registry flow this flow was retrieved from, or null if the flow came from direct upload"
         },
+        "designerFlowId" : {
+          "type" : "string",
+          "description" : "The id of the Flow Designer flow that this flow is based on, or null if the flow came from another source"
+        },
+        "designerFlowRevision" : {
+          "type" : "integer",
+          "description" : "The revision of the Flow Designer flow that this flow is based on, or null if the flow came from another source"
+        },
         "flowFormat" : {
           "type" : "string",
           "description" : "The format of the flow indicating how the content should be interpreted when retrieving the flow content",
           "enum" : [ "YAML_V2_TYPE", "FLOW_SNAPSHOT_JSON_V1_TYPE" ]
         },
-        "created" : {
-          "type" : "string",
-          "format" : "date-time",
-          "description" : "The date this flow was created in the C2 server"
+        "createdTime" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "A timestamp (ms since epoch) for when this flow was created in the C2 server"
         },
-        "updated" : {
-          "type" : "string",
-          "format" : "date-time",
-          "description" : "The date this flow was updated in the C2 server"
+        "updatedTime" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "A timestamp (ms since epoch) for when this flow was updated in the C2 server"
         },
         "uri" : {
           "type" : "string",
@@ -3179,6 +4116,16 @@
         "flowContent" : {
           "type" : "string",
           "description" : "The content of the flow according to the flow format"
+        },
+        "updated" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The date this flow was updated in the C2 server. DEPRECATED: use updatedTime"
+        },
+        "created" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The date this flow was created in the C2 server. DEPRECATED: use createdTime"
         }
       }
     },
@@ -3194,9 +4141,19 @@
           "description" : "The URI to the Versioned Flow Snapshot, when the flow corresponds to a Versioned Flow in a NiFi Registry.",
           "$ref" : "#/definitions/FlowUri"
         },
-        "status" : {
-          "description" : "Current flow status and metrics",
-          "$ref" : "#/definitions/FlowStatus"
+        "components" : {
+          "type" : "object",
+          "description" : "Status and for each component that is part of the flow (e.g., processors)",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/ComponentStatus"
+          }
+        },
+        "queues" : {
+          "type" : "object",
+          "description" : "Status and metrics for each flow connection queue",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/FlowQueueStatus"
+          }
         }
       }
     },
@@ -3271,28 +4228,17 @@
           "description" : "The flow URI containing the location of the flow in a NiFi Registry instance",
           "$ref" : "#/definitions/FlowUri"
         },
+        "designerFlowId" : {
+          "type" : "string",
+          "description" : "The id of the flow from the flow designer"
+        },
+        "designerFlowRevision" : {
+          "type" : "integer",
+          "description" : "The revision of the flow from the flow designer"
+        },
         "versionedFlowSnapshot" : {
           "description" : "The snapshot containing the contents of the flow",
-          "$ref" : "#/definitions/versionedFlowSnapshot"
-        }
-      }
-    },
-    "FlowStatus" : {
-      "type" : "object",
-      "properties" : {
-        "components" : {
-          "type" : "object",
-          "description" : "Status and for each component that is part of the flow (e.g., processors)",
-          "additionalProperties" : {
-            "$ref" : "#/definitions/ComponentStatus"
-          }
-        },
-        "queues" : {
-          "type" : "object",
-          "description" : "Status and metrics for each flow connection queue",
-          "additionalProperties" : {
-            "$ref" : "#/definitions/FlowQueueStatus"
-          }
+          "$ref" : "#/definitions/VersionedFlowSnapshot"
         }
       }
     },
@@ -3333,25 +4279,43 @@
           "format" : "int32",
           "description" : "The version of the NiFi Registry flow this flow was retrieved from, or null if the flow came from direct upload"
         },
+        "designerFlowId" : {
+          "type" : "string",
+          "description" : "The id of the Flow Designer flow that this flow is based on, or null if the flow came from another source"
+        },
+        "designerFlowRevision" : {
+          "type" : "integer",
+          "description" : "The revision of the Flow Designer flow that this flow is based on, or null if the flow came from another source"
+        },
         "flowFormat" : {
           "type" : "string",
           "description" : "The format of the flow indicating how the content should be interpreted when retrieving the flow content",
           "enum" : [ "YAML_V2_TYPE", "FLOW_SNAPSHOT_JSON_V1_TYPE" ]
         },
-        "created" : {
-          "type" : "string",
-          "format" : "date-time",
-          "description" : "The date this flow was created in the C2 server"
+        "createdTime" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "A timestamp (ms since epoch) for when this flow was created in the C2 server"
         },
-        "updated" : {
-          "type" : "string",
-          "format" : "date-time",
-          "description" : "The date this flow was updated in the C2 server"
+        "updatedTime" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "A timestamp (ms since epoch) for when this flow was updated in the C2 server"
         },
         "uri" : {
           "type" : "string",
           "format" : "uri",
           "description" : "The URI to retrieve this flow"
+        },
+        "updated" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The date this flow was updated in the C2 server. DEPRECATED: use updatedTime"
+        },
+        "created" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The date this flow was created in the C2 server. DEPRECATED: use createdTime"
         }
       }
     },
@@ -3372,6 +4336,26 @@
         }
       },
       "description" : "Uniform Resource Identifier for NiFi Versioned Flows saved to a NiFi Registry"
+    },
+    "JaxbLink" : {
+      "type" : "object",
+      "properties" : {
+        "href" : {
+          "type" : "string",
+          "format" : "uri",
+          "xml" : {
+            "attribute" : true
+          },
+          "description" : "The href for the link"
+        },
+        "params" : {
+          "type" : "object",
+          "description" : "The params for the link",
+          "additionalProperties" : {
+            "type" : "string"
+          }
+        }
+      }
     },
     "Link" : {
       "type" : "object",
@@ -3417,6 +4401,19 @@
         }
       },
       "description" : "A container for a list of elements"
+    },
+    "Location" : {
+      "type" : "object",
+      "properties" : {
+        "latitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "longitude" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
     },
     "NetworkInfo" : {
       "type" : "object",
@@ -3527,16 +4524,16 @@
           "description" : "Link to the next page",
           "$ref" : "#/definitions/Link"
         },
-        "last" : {
-          "description" : "Link to the last page",
+        "prev" : {
+          "description" : "Link to the previous page",
           "$ref" : "#/definitions/Link"
         },
         "new" : {
           "description" : "Link to newer results, in the case that the resource type supports it",
           "$ref" : "#/definitions/Link"
         },
-        "prev" : {
-          "description" : "Link to the previous page",
+        "last" : {
+          "description" : "Link to the last page",
           "$ref" : "#/definitions/Link"
         },
         "self" : {
@@ -3557,19 +4554,95 @@
       "properties" : {
         "size" : {
           "type" : "integer",
-          "format" : "int64"
+          "format" : "int64",
+          "description" : "The page size being used (may be larger than the number of elements returned, e.g., a partial, last page)"
         },
         "number" : {
           "type" : "integer",
-          "format" : "int64"
+          "format" : "int64",
+          "description" : "The index (zero-based) of the current page"
         },
         "totalElements" : {
           "type" : "integer",
-          "format" : "int64"
+          "format" : "int64",
+          "description" : "The total number of elements across all pages"
         },
         "totalPages" : {
           "type" : "integer",
-          "format" : "int64"
+          "format" : "int64",
+          "description" : "The total number of pages"
+        }
+      }
+    },
+    "Parameter" : {
+      "type" : "object",
+      "required" : [ "name" ],
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the parameter"
+        },
+        "sensitive" : {
+          "type" : "boolean",
+          "description" : "Whether or not the parameter value is sensitive"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "A brief explanation of how the parameter is used"
+        },
+        "value" : {
+          "type" : "string",
+          "description" : "The value of the parameter in this context"
+        }
+      }
+    },
+    "ParameterContext" : {
+      "type" : "object",
+      "required" : [ "name" ],
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "The id of the context"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the context"
+        },
+        "agentClass" : {
+          "type" : "string",
+          "description" : "The agent class this context applies to"
+        },
+        "agentId" : {
+          "type" : "string",
+          "description" : "The id of the agent this context applies to if overriding the defaults for that class"
+        },
+        "parameters" : {
+          "type" : "array",
+          "description" : "The parameters in this context",
+          "uniqueItems" : true,
+          "items" : {
+            "$ref" : "#/definitions/Parameter"
+          }
+        }
+      }
+    },
+    "Permissions" : {
+      "type" : "object",
+      "properties" : {
+        "canRead" : {
+          "type" : "boolean",
+          "description" : "Indicates whether the user can read a given resource.",
+          "readOnly" : true
+        },
+        "canWrite" : {
+          "type" : "boolean",
+          "description" : "Indicates whether the user can write a given resource.",
+          "readOnly" : true
+        },
+        "canDelete" : {
+          "type" : "boolean",
+          "description" : "Indicates whether the user can delete a given resource.",
+          "readOnly" : true
         }
       }
     },
@@ -3733,7 +4806,7 @@
           "readOnly" : true
         },
         "typeProvidedByValue" : {
-          "description" : "Indicates that this property is for selecting a controller service of the specificed type",
+          "description" : "Indicates that this property is for selecting a controller service of the specified type",
           "$ref" : "#/definitions/DefinedType"
         },
         "validRegex" : {
@@ -3845,6 +4918,33 @@
         }
       }
     },
+    "RepositoryDetails" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RepositoryMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "size" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "sizeMax" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
     "ResourceReference" : {
       "type" : "object",
       "properties" : {
@@ -3906,6 +5006,11 @@
           "minLength" : 0,
           "maxLength" : 100
         },
+        "operatingSystem" : {
+          "type" : "string",
+          "minLength" : 0,
+          "maxLength" : 100
+        },
         "physicalMem" : {
           "type" : "integer",
           "format" : "int64",
@@ -3921,9 +5026,6 @@
           "maximum" : 2147483647
         }
       }
-    },
-    "UriBuilder" : {
-      "type" : "object"
     },
     "VersionedConnection" : {
       "type" : "object",
@@ -4083,6 +5185,70 @@
         }
       }
     },
+    "VersionedFlow" : {
+      "type" : "object",
+      "required" : [ "bucketIdentifier", "name", "type" ],
+      "properties" : {
+        "link" : {
+          "description" : "An WebLink to this entity.",
+          "readOnly" : true,
+          "$ref" : "#/definitions/JaxbLink"
+        },
+        "identifier" : {
+          "type" : "string",
+          "description" : "An ID to uniquely identify this object.",
+          "readOnly" : true
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the item."
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "A description of the item."
+        },
+        "bucketIdentifier" : {
+          "type" : "string",
+          "description" : "The identifier of the bucket this items belongs to. This cannot be changed after the item is created."
+        },
+        "bucketName" : {
+          "type" : "string",
+          "description" : "The name of the bucket this items belongs to.",
+          "readOnly" : true
+        },
+        "createdTimestamp" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The timestamp of when the item was created, as milliseconds since epoch.",
+          "readOnly" : true,
+          "minimum" : 1
+        },
+        "modifiedTimestamp" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The timestamp of when the item was last modified, as milliseconds since epoch.",
+          "readOnly" : true,
+          "minimum" : 1
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "The type of item.",
+          "enum" : [ "Flow", "Bundle" ]
+        },
+        "permissions" : {
+          "description" : "The access that the current user has to the bucket containing this item.",
+          "readOnly" : true,
+          "$ref" : "#/definitions/Permissions"
+        },
+        "versionCount" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The number of versions of this flow.",
+          "readOnly" : true,
+          "minimum" : 0
+        }
+      }
+    },
     "VersionedFlowCoordinates" : {
       "type" : "object",
       "properties" : {
@@ -4106,6 +5272,92 @@
         "latest" : {
           "type" : "boolean",
           "description" : "Whether or not these coordinates point to the latest version of the flow"
+        }
+      }
+    },
+    "VersionedFlowSnapshot" : {
+      "type" : "object",
+      "required" : [ "flowContents", "snapshotMetadata" ],
+      "properties" : {
+        "snapshotMetadata" : {
+          "description" : "The metadata for this snapshot",
+          "$ref" : "#/definitions/VersionedFlowSnapshotMetadata"
+        },
+        "flowContents" : {
+          "description" : "The contents of the versioned flow",
+          "$ref" : "#/definitions/VersionedProcessGroup"
+        },
+        "externalControllerServices" : {
+          "type" : "object",
+          "description" : "The information about controller services that exist outside this versioned flow, but are referenced by components within the versioned flow.",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/ExternalControllerServiceReference"
+          }
+        },
+        "parameterContexts" : {
+          "type" : "object",
+          "description" : "The parameter contexts referenced by process groups in the flow contents. The mapping is from the name of the context to the context instance, and it is expected that any context in this map is referenced by at least one process group in this flow.",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/VersionedParameterContext"
+          }
+        },
+        "flowEncodingVersion" : {
+          "type" : "string",
+          "description" : "The optional encoding version of the flow contents."
+        },
+        "flow" : {
+          "description" : "The flow this snapshot is for",
+          "readOnly" : true,
+          "$ref" : "#/definitions/VersionedFlow"
+        },
+        "bucket" : {
+          "description" : "The bucket where the flow is located",
+          "readOnly" : true,
+          "$ref" : "#/definitions/Bucket"
+        },
+        "latest" : {
+          "type" : "boolean"
+        }
+      }
+    },
+    "VersionedFlowSnapshotMetadata" : {
+      "type" : "object",
+      "required" : [ "bucketIdentifier", "flowIdentifier", "version" ],
+      "properties" : {
+        "link" : {
+          "description" : "An WebLink to this entity.",
+          "readOnly" : true,
+          "$ref" : "#/definitions/JaxbLink"
+        },
+        "bucketIdentifier" : {
+          "type" : "string",
+          "description" : "The identifier of the bucket this snapshot belongs to."
+        },
+        "flowIdentifier" : {
+          "type" : "string",
+          "description" : "The identifier of the flow this snapshot belongs to."
+        },
+        "version" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "The version of this snapshot of the flow.",
+          "minimum" : -1
+        },
+        "timestamp" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The timestamp when the flow was saved, as milliseconds since epoch.",
+          "readOnly" : true,
+          "minimum" : 1
+        },
+        "author" : {
+          "type" : "string",
+          "description" : "The user that created this snapshot of the flow.",
+          "readOnly" : true
+        },
+        "comments" : {
+          "type" : "string",
+          "description" : "The comments provided by the user when creating the snapshot."
         }
       }
     },
@@ -4188,6 +5440,44 @@
         }
       }
     },
+    "VersionedParameter" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the parameter"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "The description of the param"
+        },
+        "sensitive" : {
+          "type" : "boolean",
+          "description" : "Whether or not the parameter value is sensitive"
+        },
+        "value" : {
+          "type" : "string",
+          "description" : "The value of the parameter"
+        }
+      }
+    },
+    "VersionedParameterContext" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "description" : "The name of the context"
+        },
+        "parameters" : {
+          "type" : "array",
+          "description" : "The parameters in the context",
+          "uniqueItems" : true,
+          "items" : {
+            "$ref" : "#/definitions/VersionedParameter"
+          }
+        }
+      }
+    },
     "VersionedPort" : {
       "type" : "object",
       "properties" : {
@@ -4216,6 +5506,15 @@
           "type" : "integer",
           "format" : "int32",
           "description" : "The number of tasks that should be concurrently scheduled for the port."
+        },
+        "scheduledState" : {
+          "type" : "string",
+          "description" : "The scheduled state of the component",
+          "enum" : [ "ENABLED", "DISABLED" ]
+        },
+        "allowRemoteAccess" : {
+          "type" : "boolean",
+          "description" : "Whether or not this port allows remote access for site-to-site"
         },
         "componentType" : {
           "type" : "string",
@@ -4329,6 +5628,10 @@
             "type" : "string"
           }
         },
+        "parameterContextName" : {
+          "type" : "string",
+          "description" : "The name of the parameter context used by this process group"
+        },
         "componentType" : {
           "type" : "string",
           "enum" : [ "CONNECTION", "PROCESSOR", "PROCESS_GROUP", "REMOTE_PROCESS_GROUP", "INPUT_PORT", "OUTPUT_PORT", "REMOTE_INPUT_PORT", "REMOTE_OUTPUT_PORT", "FUNNEL", "LABEL", "CONTROLLER_SERVICE" ]
@@ -4433,6 +5736,11 @@
             "type" : "string"
           }
         },
+        "scheduledState" : {
+          "type" : "string",
+          "description" : "The scheduled state of the component",
+          "enum" : [ "ENABLED", "DISABLED" ]
+        },
         "componentType" : {
           "type" : "string",
           "enum" : [ "CONNECTION", "PROCESSOR", "PROCESS_GROUP", "REMOTE_PROCESS_GROUP", "INPUT_PORT", "OUTPUT_PORT", "REMOTE_INPUT_PORT", "REMOTE_OUTPUT_PORT", "FUNNEL", "LABEL", "CONTROLLER_SERVICE" ]
@@ -4507,6 +5815,11 @@
         "targetId" : {
           "type" : "string",
           "description" : "The ID of the port on the target NiFi instance"
+        },
+        "scheduledState" : {
+          "type" : "string",
+          "description" : "The scheduled state of the component",
+          "enum" : [ "ENABLED", "DISABLED" ]
         },
         "groupIdentifier" : {
           "type" : "string",
@@ -4591,194 +5904,6 @@
         "groupIdentifier" : {
           "type" : "string",
           "description" : "The ID of the Process Group that this component belongs to"
-        }
-      }
-    },
-    "bucket" : {
-      "type" : "object",
-      "required" : [ "name" ],
-      "properties" : {
-        "link" : {
-          "description" : "An WebLink to this entity.",
-          "readOnly" : true,
-          "$ref" : "#/definitions/Link"
-        },
-        "identifier" : {
-          "type" : "string",
-          "description" : "An ID to uniquely identify this object.",
-          "readOnly" : true
-        },
-        "name" : {
-          "type" : "string",
-          "description" : "The name of the bucket."
-        },
-        "createdTimestamp" : {
-          "type" : "integer",
-          "format" : "int64",
-          "description" : "The timestamp of when the bucket was first created. This is set by the server at creation time.",
-          "readOnly" : true,
-          "minimum" : 1
-        },
-        "description" : {
-          "type" : "string",
-          "description" : "A description of the bucket."
-        },
-        "permissions" : {
-          "description" : "The access that the current user has to this bucket.",
-          "readOnly" : true,
-          "$ref" : "#/definitions/permissions"
-        }
-      }
-    },
-    "permissions" : {
-      "type" : "object",
-      "properties" : {
-        "canRead" : {
-          "type" : "boolean",
-          "description" : "Indicates whether the user can read a given resource.",
-          "readOnly" : true
-        },
-        "canWrite" : {
-          "type" : "boolean",
-          "description" : "Indicates whether the user can write a given resource.",
-          "readOnly" : true
-        },
-        "canDelete" : {
-          "type" : "boolean",
-          "description" : "Indicates whether the user can delete a given resource.",
-          "readOnly" : true
-        }
-      }
-    },
-    "versionedFlow" : {
-      "type" : "object",
-      "required" : [ "bucketIdentifier", "name", "type" ],
-      "properties" : {
-        "link" : {
-          "description" : "An WebLink to this entity.",
-          "readOnly" : true,
-          "$ref" : "#/definitions/Link"
-        },
-        "identifier" : {
-          "type" : "string",
-          "description" : "An ID to uniquely identify this object.",
-          "readOnly" : true
-        },
-        "name" : {
-          "type" : "string",
-          "description" : "The name of the item."
-        },
-        "description" : {
-          "type" : "string",
-          "description" : "A description of the item."
-        },
-        "bucketIdentifier" : {
-          "type" : "string",
-          "description" : "The identifier of the bucket this items belongs to. This cannot be changed after the item is created."
-        },
-        "bucketName" : {
-          "type" : "string",
-          "description" : "The name of the bucket this items belongs to.",
-          "readOnly" : true
-        },
-        "createdTimestamp" : {
-          "type" : "integer",
-          "format" : "int64",
-          "description" : "The timestamp of when the item was created, as milliseconds since epoch.",
-          "readOnly" : true,
-          "minimum" : 1
-        },
-        "modifiedTimestamp" : {
-          "type" : "integer",
-          "format" : "int64",
-          "description" : "The timestamp of when the item was last modified, as milliseconds since epoch.",
-          "readOnly" : true,
-          "minimum" : 1
-        },
-        "type" : {
-          "type" : "string",
-          "description" : "The type of item.",
-          "enum" : [ "Flow" ]
-        },
-        "permissions" : {
-          "description" : "The access that the current user has to the bucket containing this item.",
-          "readOnly" : true,
-          "$ref" : "#/definitions/permissions"
-        },
-        "versionCount" : {
-          "type" : "integer",
-          "format" : "int64",
-          "description" : "The number of versions of this flow.",
-          "readOnly" : true,
-          "minimum" : 0
-        }
-      }
-    },
-    "versionedFlowSnapshot" : {
-      "type" : "object",
-      "required" : [ "flowContents", "snapshotMetadata" ],
-      "properties" : {
-        "snapshotMetadata" : {
-          "description" : "The metadata for this snapshot",
-          "$ref" : "#/definitions/versionedFlowSnapshotMetadata"
-        },
-        "flowContents" : {
-          "description" : "The contents of the versioned flow",
-          "$ref" : "#/definitions/VersionedProcessGroup"
-        },
-        "flow" : {
-          "description" : "The flow this snapshot is for",
-          "readOnly" : true,
-          "$ref" : "#/definitions/versionedFlow"
-        },
-        "bucket" : {
-          "description" : "The bucket where the flow is located",
-          "readOnly" : true,
-          "$ref" : "#/definitions/bucket"
-        },
-        "latest" : {
-          "type" : "boolean"
-        }
-      }
-    },
-    "versionedFlowSnapshotMetadata" : {
-      "type" : "object",
-      "required" : [ "bucketIdentifier", "flowIdentifier", "version" ],
-      "properties" : {
-        "link" : {
-          "description" : "An WebLink to this entity.",
-          "readOnly" : true,
-          "$ref" : "#/definitions/Link"
-        },
-        "bucketIdentifier" : {
-          "type" : "string",
-          "description" : "The identifier of the bucket this snapshot belongs to."
-        },
-        "flowIdentifier" : {
-          "type" : "string",
-          "description" : "The identifier of the flow this snapshot belongs to."
-        },
-        "version" : {
-          "type" : "integer",
-          "format" : "int32",
-          "description" : "The version of this snapshot of the flow.",
-          "minimum" : 1
-        },
-        "timestamp" : {
-          "type" : "integer",
-          "format" : "int64",
-          "description" : "The timestamp when the flow was saved, as milliseconds since epoch.",
-          "readOnly" : true,
-          "minimum" : 1
-        },
-        "author" : {
-          "type" : "string",
-          "description" : "The user that created this snapshot of the flow.",
-          "readOnly" : true
-        },
-        "comments" : {
-          "type" : "string",
-          "description" : "The comments provided by the user when creating the snapshot."
         }
       }
     }
