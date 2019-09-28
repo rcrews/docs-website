@@ -14,12 +14,6 @@ publications:
     description: >-
       Describes how to use Streams Replication Manager.
 
-  - title: SRM REST API Reference
-    url: /srm/1.0.0/rest-api-reference/index.html
-    external: external
-    description: >-
-      REST API documentation for Streams Replication Manager.
-
 ---
 
 Streams Replication Manager (SRM) is an enterprise-grade replication
