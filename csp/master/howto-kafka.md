@@ -35,7 +35,7 @@ publications:
     url: /documentation/kafka/latest/topics/kafka_streams.html
     external: external
     description: >-
-      [Publication description needed....]
+      Describes where to get information about using Kafka Streams.
 
 ---
 
