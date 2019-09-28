@@ -1,21 +1,10 @@
 <!DOCTYPE html>
-<html class="main-page">
+<html class="main-page" lang="en">
 <head>
 <!-- Meta -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Cloudera Product Documentation">
-<meta name="keywords">
-<meta name="lang" content="en">
-<meta name="industry">
-<meta name="usecase">
-<meta name="usecasetagid">
-<meta name="product">
-<meta name="thumbnail">
-<meta name="mimetype" content="webpage">
-<meta name="created" content="2019-07-19T08:59:19.267Z">
-<meta name="date" content="2019-07-19T08:56:31.938Z">
-<meta name="doctype">
 <meta name="searchexclude" content="false"><!-- Robots No Index -->
 <!-- Canonical -->
 <!-- next -->
@@ -36,14 +25,15 @@
 <link rel="icon" type="image/png" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/android-chrome-192x192.png" sizes="192x192">
 <link rel="icon" type="image/png" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/favicon-96x96.png" sizes="96x96">
 <link rel="icon" type="image/png" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <script>
-    window.set_mbox_variables=function(e){if(e)try{var n="",t=["company_name","industry","sub_industry","audience","watch_list_active_oppty","watch_list_account_type","watch_list_entitled_component","watch_list_cust_prosp_comp","watch_list_cdf_cdh","watch_list_cdsw_hdp","watch_list_fy20_target","watch_list_workloadxm","watch_list_trainingcredits"];for(var o in e)if("object"==typeof e[o]&&null!==e[o]){for(var a in e[o])e[o+"_"+a]=e[o][a];delete e[o]}for(var r in e)if(e.hasOwnProperty(r))if(-1!=t.indexOf(r)&&e[r]){var c="profile."+r+"="+encodeURIComponent(e[r])+",";n+=c}else t.indexOf(r);for(i=0;i<=t.length-1;i++){-1==n.indexOf(t[i])&&(n+="profile."+t[i]+"=none,")}n=n.split(","),window.targetPageParams=function(){return n},window.targetPageParams()}catch(e){console.log(e)}};
+window.set_mbox_variables=function(e){if(e)try{var n="",t=["company_name","industry","sub_industry","audience","watch_list_active_oppty","watch_list_account_type","watch_list_entitled_component","watch_list_cust_prosp_comp","watch_list_cdf_cdh","watch_list_cdsw_hdp","watch_list_fy20_target","watch_list_workloadxm","watch_list_trainingcredits"];for(var o in e)if("object"==typeof e[o]&&null!==e[o]){for(var a in e[o])e[o+"_"+a]=e[o][a];delete e[o]}for(var r in e)if(e.hasOwnProperty(r))if(-1!=t.indexOf(r)&&e[r]){var c="profile."+r+"="+encodeURIComponent(e[r])+",";n+=c}else t.indexOf(r);for(i=0;i<=t.length-1;i++){-1==n.indexOf(t[i])&&(n+="profile."+t[i]+"=none,")}n=n.split(","),window.targetPageParams=function(){return n},window.targetPageParams()}catch(e){console.log(e)}};
 </script>
-<script src="//api.demandbase.com/api/v2/ip.json?key=643d57360c3745d79d30a63cfbe970e8&amp;callback=set_mbox_variables"></script><!--Injects custom datalayer.js for use with Adobe Analytics, DTM-->
+<script src="//api.demandbase.com/api/v2/ip.json?key=643d57360c3745d79d30a63cfbe970e8&amp;callback=set_mbox_variables"></script>
+
+<!--Injects custom datalayer.js for use with Adobe Analytics, DTM-->
 <!-- The datalayer needs to be loaded before the dtm load on the next line -->
 <title></title>
 
@@ -63,15 +53,16 @@
  iframe.c1 {display:none;visibility:hidden}
 </style>
 </head>
+
 <body>
-<div id="dataLayerId" data-currentpage="/content/www/en-us/documentation"></div>
+<div id="dataLayerId" data-currentpage="/documentation/index.html"></div>
 <script>
 var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
     if (jcrPath === "/content/www/en-us/resources/resources-library/dynamic-form") {
         jcrPath = window.location.pathname;
     }
 </script>
-<script type="text/javascript" src="/apps/settings/wcm/designs/www/clientlibs/js/datalayer.js"></script> <!--Based on config in /etc/cloudservices/dtm, the following line injects the dtm JS -->
+<script src="/apps/settings/wcm/designs/www/clientlibs/js/datalayer.js"></script> <!--Based on config in /etc/cloudservices/dtm, the following line injects the dtm JS -->
 <script src="//assets.adobedtm.com/98a3a1c24ee5de4297f8ae77cf444e0c86ff2f04/satelliteLib-2b934fee5c4cb90dad47c223f80ea9c99e9761b2.js"></script> <!-- Add Typekit Font -->
 <link rel="stylesheet" href="https://use.typekit.net/qkd3ogh.css"><!-- Add WWW ClientLibs CSS -->
 <link rel="stylesheet" href="/etc.clientlibs/clientlibs/granite/jquery-ui.css" type="text/css">
@@ -87,41 +78,49 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <link rel="alternate" hreflang="en-US" href="https://www.cloudera.com/documentation.html">
 <title>Cloudera Product Documentation</title>
 <!-- Google Tag Manager -->
-<noscript>
-<p><iframe src="//www.googletagmanager.com/ns.html?id=GTM-96SB" height="0" width="0" class="c1"></iframe></p>
-</noscript>
-<script>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-96SB');
-</script> <!-- End Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-96SB" height="0" width="0" class="c1"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-96SB');</script>
+<!-- End Google Tag Manager -->
+
 <div id="outdated">
 <h6>Your browser is out of date</h6>
 <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now</a></p>
 <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p>
 </div>
+
 <header>
 <div class="section new"></div>
 <div class="iparys_inherited ipar iparsys parsys globalHeader section">
 <nav class="mk-navigation">
 <div class="container main-menu" id="cloudera-navigation" data-nav-one="2" data-nav-two="2"><!--Moblie Hamburger-->
+
+<!--Moblie Hamburger-->
 <div class="mk-mobile-menu">
 <ul>
 <li class=""><a class="mk-mobile-menu-toggle" href="#"></a></li>
 </ul>
 </div>
+
 <!-- Brand -->
-<div class="cloudera-brand"><a href="/"><img src="/content/dam/www/marketing/images/logos/cloudera/cloudera-newco-logo.png" alt="Cloudera"></a></div>
-<!--Moblie User Account-->
-<div class="mk-mobile-menu"><!--Mobile Logged Out-->
-<ul>
-<li class="loggedoutUser"><a class="mk-user" href="https://sso.cloudera.com/"></a></li>
-<!--Mobile Logged In-->
-<li class="loggedinUser"><a class="mk-user mobile-loggedin-user" href="#"></a></li>
-</ul>
+<div class="cloudera-brand">
+<a href="/"><img src="/content/dam/www/marketing/images/logos/cloudera/cloudera-newco-logo.png" alt="Cloudera"></a>
 </div>
+
+<!--Moblie User Account-->
+<div class="mk-mobile-menu">
+    <!--Mobile Logged Out-->
+    <ul>
+    <li class="loggedoutUser"><a class="mk-user" href="https://sso.cloudera.com/"></a></li>
+
+    <!--Mobile Logged In-->
+    <li class="loggedinUser"><a class="mk-user mobile-loggedin-user" href="#"></a></li>
+    </ul>
+</div>
+
 <!-- Main Desktop Navagation  -->
 <div class="cl-main-nav">
 <ul>
@@ -200,7 +199,7 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li class="main_li close_nav child" data-tab="mdmcustomer360"><a href="/solutions/gallery/informatica-customer-360.html">MDM Customer 360</a></li>
 <li class="main_li close_nav child" data-tab="oraclebigdataappliance"><a href="/solutions/gallery/oracle-big-data-appliance.html">Oracle Big Data Appliance</a></li>
 <li class="main_li close_nav child" data-tab="bigframemainframemigration"><a href="/solutions/gallery/cognizant-bigframe.html">BigFrame Mainframe Migration</a></li>
-<li class="main_li close_nav child" data-tab="collaborativeadvancedanalyticsdatasharingplatformcaadstrade"><a href="/solutions/gallery/lockheed-leidos-caads.html">Collaborative Advanced Analytics & Data Sharing Platform (CAADS™)</a></li>
+<li class="main_li close_nav child" data-tab="collaborativeadvancedanalyticsdatasharingplatformcaadstrade"><a href="/solutions/gallery/lockheed-leidos-caads.html">Collaborative Advanced Analytics &amp; Data Sharing Platform (CAADS™)</a></li>
 <li class="main_li close_nav child" data-tab="cognizantbigdecisions"><a href="/solutions/gallery/cognizant-bigdecisions.html">Cognizant BigDecisions</a></li>
 <li class="main_li close_nav child" data-tab="iotanalyticsomnilocationplatform"><a href="/solutions/gallery/dxc-iot-omnilocation.html">IoT Analytics/OmniLocation Platform</a></li>
 <li class="main_li close_nav child" data-tab="rcg|enableregdata"><a href="/solutions/gallery/rcg-enable-modernize-architecture.html">RCG|enable® Data</a></li>
@@ -570,30 +569,34 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 </li>
 </ul>
 </div>
+
 <!--Desktop Util-->
 <div class="cloudera-util">
-<ul class="cl-util-desktop">
-<li><a class="mk-contact util-menu npar" href="tel:18887891488"></a></li>
-<!--Desktop Logged Out-->
-<li class="loggedoutUser npar"><a class="mk-account util-menu"></a>
-<div class="mk-connect"></div>
-<ul class="mk-user-menu">
-<li><a class="util-nav" href="https://sso.cloudera.com/" id="oktaSignIn">Sign In</a></li>
-<li><a class="util-nav" href="https://sso.cloudera.com/register.html" id="oktaSignIn">Register</a></li>
-</ul>
-</li>
-<!--Desktop Logged In-->
-<li class="loggedinUser npar"><a class="mk-account util-menu" href="#"></a>
-<div class="mk-connect"></div>
-<ul class="mk-user-menu">
-<li><a id="mk-signOut" class="util-nav logout" href="/system/sling/logout.html">Sign Out</a></li>
-</ul>
-</li>
-<li><a class="mkSearchBtn npar util-menu" href="#"></a></li>
-</ul>
+    <ul class="cl-util-desktop">
+    <li><a class="mk-contact util-menu npar" href="tel:18887891488"></a></li>
+    <!--Desktop Logged Out-->
+    <li class="loggedoutUser npar"><a class="mk-account util-menu"></a>
+    <div class="mk-connect"></div>
+    <ul class="mk-user-menu">
+    <li><a class="util-nav" href="https://sso.cloudera.com/" id="oktaSignIn">Sign In</a></li>
+    <li><a class="util-nav" href="https://sso.cloudera.com/register.html" id="oktaSignIn">Register</a></li>
+    </ul>
+    </li>
+
+    <!--Desktop Logged In-->
+    <li class="loggedinUser npar"><a class="mk-account util-menu" href="#"></a>
+    <div class="mk-connect"></div>
+    <ul class="mk-user-menu">
+    <li><a id="mk-signOut" class="util-nav logout" href="/system/sling/logout.html">Sign Out</a></li>
+    </ul>
+    </li>
+    <li><a class="mkSearchBtn npar util-menu" href="#"></a></li>
+    </ul>
 </div>
+
 </div>
 </nav>
+
 <!--User Menu Mobile-->
 <div class="mk-overlay container mk-contact-overlay">
 <div class="phone-numbers">
@@ -619,9 +622,10 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <div class="col-sm-3"></div>
 </div>
 </div>
+
 <!--User Menu Mobile-->
 <div class="cloudera-user txt-right container">- <a href="/system/sling/logout.html">Log Out</a></div>
-<!--Search-->
+
 <!--Search-->
 <div class="cloudera-search container">
 <form id="site-search" autocomplete="off" name="site-search">
@@ -629,8 +633,10 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 </form>
 </div>
 <script>
-    window._spProtectedKeywords = "{\x22keyword\x22:[\x22accumulo\x22,\x22altus\x22,\x22anaconda\x22,\x22apache hadoop\x22,\x22apache spark\x22,\x22api\x22,\x22architecture\x22,\x22artificial intelligence\x22,\x22avro\x22,\x22aws\x22,\x22azure\x22,\x22bdr\x22,\x22big data\x22,\x22big data fundamentals\x22,\x22bigdata\x22,\x22blockchain\x22,\x22blog\x22,\x22bootcamp\x22,\x22career\x22,\x22careers\x22,\x22case\x22,\x22case study\x22,\x22cases\x22,\x22cassandra\x22,\x22cca\x22,\x22CCA 175\x22,\x22CCA131\x22,\x22cca175\x22,\x22CCAH\x22,\x22ccdh\x22,\x22ccp\x22,\x22cdh\x22,\x22cdh 6\x22,\x22CDH4\x22,\x22CDH5\x22,\x22CDS\x22,\x22CDSW\x22,\x22certificate\x22,\x22certification\x22,\x22certifications\x22,\x22character sets\x22,\x22cloud\x22,\x22cloudera\x22,\x22cloudera 101\x22,\x22cloudera director\x22,\x22cloudera enterprise\x22,\x22cloudera essentials\x22,\x22cloudera express\x22,\x22cloudera live\x22,\x22cloudera manager\x22,\x22Cloudera Navigator\x22,\x22cloudera search\x22,\x22community\x22,\x22connector\x22,\x22connectors\x22,\x22courses\x22,\x22Data Analyst\x22,\x22data engineer\x22,\x22data lake\x22,\x22data science\x22,\x22data science workbench\x22,\x22data scientist\x22,\x22Data warehouse\x22,\x22demo\x22,\x22devops\x22,\x22director\x22,\x22distcp\x22,\x22docker\x22,\x22document\x22,\x22Documentation\x22,\x22driver\x22,\x22drivers\x22,\x22elasticsearch\x22,\x22essentials\x22,\x22express\x22,\x22fast forward labs\x22,\x22flink\x22,\x22flume\x22,\x22free\x22,\x22gartner\x22,\x22gdpr\x22,\x22google\x22,\x22google cloud\x22,\x22hadoop\x22,\x22hadoop certification\x22,\x22hadoop essentials\x22,\x22hbase\x22,\x22HDFS\x22,\x22Hive\x22,\x22Hive JDBC\x22,\x22Hive JDBC driver\x22,\x22hive odbc\x22,\x22hive odbc driver\x22,\x22hive on spark\x22,\x22HTTPFS\x22,\x22Hue\x22,\x22impala\x22,\x22impala driver\x22,\x22Impala jdbc\x22,\x22impala jdbc driver\x22,\x22impala odbc\x22,\x22impala odbc driver\x22,\x22informatica\x22,\x22install\x22,\x22intern\x22,\x22internship\x22,\x22iot\x22,\x22isilon\x22,\x22java\x22,\x22jdbc\x22,\x22jdbc driver\x22,\x22jdk\x22,\x22jobs\x22,\x22kafka\x22,\x22kerberos\x22,\x22komatsu\x22,\x22kudu\x22,\x22license\x22,\x22live\x22,\x22livy\x22,\x22location\x22,\x22locations\x22,\x22machine learning\x22,\x22manager\x22,\x22mapreduce\x22,\x22maven\x22,\x22microsoft\x22,\x22MySQl\x22,\x22navigator\x22,\x22navistar\x22,\x22nifi\x22,\x22nutanix\x22,\x22odbc\x22,\x22ODBC and JDBC Drivers\x22,\x22odbc driver\x22,\x22odbc drivers\x22,\x22offices\x22,\x22oozie\x22,\x22oracle\x22,\x22oraoop\x22,\x22parcel\x22,\x22parcels\x22,\x22Parquet\x22,\x22partner\x22,\x22partner portal\x22,\x22partners\x22,\x22phoenix\x22,\x22pig\x22,\x22ports\x22,\x22price\x22,\x22pricing\x22,\x22pyspark\x22,\x22python\x22,\x22qlik\x22,\x22quick start vm\x22,\x22quickstart\x22,\x22quickstart vm\x22,\x22RecordService\x22,\x22reference architecture\x22,\x22salesforce\x22,\x22sandbox\x22,\x22sap\x22,\x22SAS\x22,\x22scala\x22,\x22sdx\x22,\x22security\x22,\x22sentry\x22,\x22siemens\x22,\x22snappy\x22,\x22solr\x22,\x22spark\x22,\x22spark 2\x22,\x22spark2\x22,\x22splunk\x22,\x22sql\x22,\x22sqoop\x22,\x22streamsets\x22,\x22support\x22,\x22tableau\x22,\x22talend\x22,\x22teradata\x22,\x22terms and conditions\x22,\x22test\x22,\x22training\x22,\x22tutorial\x22,\x22uninstall\x22,\x22video\x22,\x22vm\x22,\x22vmware\x22,\x22webinar\x22,\x22webinars\x22,\x22wordcount\x22,\x22workload xm\x22,\x22Yarn\x22,\x22zookeeper\x22],\x22links\x22:[{\x22linkText\x22:\x22https:\/\/my.cloudera.com\/search?*\x26collection=community\x26start=0\x26rows=10\x22,\x22linkUrlPrefix\x22:\x22Community\x22},{\x22linkText\x22:\x22https:\/\/my.cloudera.com\/search?*\x26collection=documentation\x26start=0\x26rows=10\x22,\x22linkUrlPrefix\x22:\x22Documentation\x22},{\x22linkText\x22:\x22https:\/\/my.cloudera.com\/search?*\x26collection=kb\x26start=0\x26rows=10\x22,\x22linkUrlPrefix\x22:\x22Knowledge Base\x22}]}";
-</script> <!--Mobile Navaigation-->
+window._spProtectedKeywords = "{\x22keyword\x22:[\x22accumulo\x22,\x22altus\x22,\x22anaconda\x22,\x22apache hadoop\x22,\x22apache spark\x22,\x22api\x22,\x22architecture\x22,\x22artificial intelligence\x22,\x22avro\x22,\x22aws\x22,\x22azure\x22,\x22bdr\x22,\x22big data\x22,\x22big data fundamentals\x22,\x22bigdata\x22,\x22blockchain\x22,\x22blog\x22,\x22bootcamp\x22,\x22career\x22,\x22careers\x22,\x22case\x22,\x22case study\x22,\x22cases\x22,\x22cassandra\x22,\x22cca\x22,\x22CCA 175\x22,\x22CCA131\x22,\x22cca175\x22,\x22CCAH\x22,\x22ccdh\x22,\x22ccp\x22,\x22cdh\x22,\x22cdh 6\x22,\x22CDH4\x22,\x22CDH5\x22,\x22CDS\x22,\x22CDSW\x22,\x22certificate\x22,\x22certification\x22,\x22certifications\x22,\x22character sets\x22,\x22cloud\x22,\x22cloudera\x22,\x22cloudera 101\x22,\x22cloudera director\x22,\x22cloudera enterprise\x22,\x22cloudera essentials\x22,\x22cloudera express\x22,\x22cloudera live\x22,\x22cloudera manager\x22,\x22Cloudera Navigator\x22,\x22cloudera search\x22,\x22community\x22,\x22connector\x22,\x22connectors\x22,\x22courses\x22,\x22Data Analyst\x22,\x22data engineer\x22,\x22data lake\x22,\x22data science\x22,\x22data science workbench\x22,\x22data scientist\x22,\x22Data warehouse\x22,\x22demo\x22,\x22devops\x22,\x22director\x22,\x22distcp\x22,\x22docker\x22,\x22document\x22,\x22Documentation\x22,\x22driver\x22,\x22drivers\x22,\x22elasticsearch\x22,\x22essentials\x22,\x22express\x22,\x22fast forward labs\x22,\x22flink\x22,\x22flume\x22,\x22free\x22,\x22gartner\x22,\x22gdpr\x22,\x22google\x22,\x22google cloud\x22,\x22hadoop\x22,\x22hadoop certification\x22,\x22hadoop essentials\x22,\x22hbase\x22,\x22HDFS\x22,\x22Hive\x22,\x22Hive JDBC\x22,\x22Hive JDBC driver\x22,\x22hive odbc\x22,\x22hive odbc driver\x22,\x22hive on spark\x22,\x22HTTPFS\x22,\x22Hue\x22,\x22impala\x22,\x22impala driver\x22,\x22Impala jdbc\x22,\x22impala jdbc driver\x22,\x22impala odbc\x22,\x22impala odbc driver\x22,\x22informatica\x22,\x22install\x22,\x22intern\x22,\x22internship\x22,\x22iot\x22,\x22isilon\x22,\x22java\x22,\x22jdbc\x22,\x22jdbc driver\x22,\x22jdk\x22,\x22jobs\x22,\x22kafka\x22,\x22kerberos\x22,\x22komatsu\x22,\x22kudu\x22,\x22license\x22,\x22live\x22,\x22livy\x22,\x22location\x22,\x22locations\x22,\x22machine learning\x22,\x22manager\x22,\x22mapreduce\x22,\x22maven\x22,\x22microsoft\x22,\x22MySQl\x22,\x22navigator\x22,\x22navistar\x22,\x22nifi\x22,\x22nutanix\x22,\x22odbc\x22,\x22ODBC and JDBC Drivers\x22,\x22odbc driver\x22,\x22odbc drivers\x22,\x22offices\x22,\x22oozie\x22,\x22oracle\x22,\x22oraoop\x22,\x22parcel\x22,\x22parcels\x22,\x22Parquet\x22,\x22partner\x22,\x22partner portal\x22,\x22partners\x22,\x22phoenix\x22,\x22pig\x22,\x22ports\x22,\x22price\x22,\x22pricing\x22,\x22pyspark\x22,\x22python\x22,\x22qlik\x22,\x22quick start vm\x22,\x22quickstart\x22,\x22quickstart vm\x22,\x22RecordService\x22,\x22reference architecture\x22,\x22salesforce\x22,\x22sandbox\x22,\x22sap\x22,\x22SAS\x22,\x22scala\x22,\x22sdx\x22,\x22security\x22,\x22sentry\x22,\x22siemens\x22,\x22snappy\x22,\x22solr\x22,\x22spark\x22,\x22spark 2\x22,\x22spark2\x22,\x22splunk\x22,\x22sql\x22,\x22sqoop\x22,\x22streamsets\x22,\x22support\x22,\x22tableau\x22,\x22talend\x22,\x22teradata\x22,\x22terms and conditions\x22,\x22test\x22,\x22training\x22,\x22tutorial\x22,\x22uninstall\x22,\x22video\x22,\x22vm\x22,\x22vmware\x22,\x22webinar\x22,\x22webinars\x22,\x22wordcount\x22,\x22workload xm\x22,\x22Yarn\x22,\x22zookeeper\x22],\x22links\x22:[{\x22linkText\x22:\x22https:\/\/my.cloudera.com\/search?*\x26collection=community\x26start=0\x26rows=10\x22,\x22linkUrlPrefix\x22:\x22Community\x22},{\x22linkText\x22:\x22https:\/\/my.cloudera.com\/search?*\x26collection=documentation\x26start=0\x26rows=10\x22,\x22linkUrlPrefix\x22:\x22Documentation\x22},{\x22linkText\x22:\x22https:\/\/my.cloudera.com\/search?*\x26collection=kb\x26start=0\x26rows=10\x22,\x22linkUrlPrefix\x22:\x22Knowledge Base\x22}]}";
+</script>
+
+<!--Mobile Navaigation-->
 <div class="cloudera-mobile-nav mobile-hide container">
 <ul>
 <li class="main_li close_nav npar" data-tab="products-tab"><a href="/products.html" class="parent">Products</a>
@@ -1077,11 +1083,11 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 </ul>
 </li>
 </ul>
-<a href="tel:18887891488">
-<div class="orange-btn">Contact Us</div>
-</a></div>
+<a href="tel:18887891488"><div class="orange-btn">Contact Us</div></a>
+</div>
 </div>
 </header>
+
 <main>
 <div class="docsIntro parbase section">
 <div class="row">
@@ -1216,8 +1222,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/other/Licenses/topics/Third-Party-Licenses.html">Third-party Licenses</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 <div class="col-sm-4 col col_three parsys">
 <div class="quickLinks parbase section">
 <div class="quick-link container quick-link-list">
@@ -1229,8 +1235,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/other/tutorial/CDH5/topics/Hadoop-Tutorial.html">Hadoop Tutorial</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 <div class="quickLinks parbase section">
 <div class="quick-link container quick-link-list">
 <h3>Cloudera DataFlow</h3>
@@ -1241,8 +1247,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="https://docs.hortonworks.com/HDPDocuments/CSP/CSP-1.0.0/index.html">Cloudera Stream Processing</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 <div class="quickLinks parbase section">
 <div class="quick-link container quick-link-list">
 <h3>Workload XM</h3>
@@ -1251,8 +1257,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/wxm/latest.html">Workload XM Guide</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 <div class="quickLinks parbase section">
 <div class="quick-link container quick-link-list">
 <h3>Navigator Optimizer</h3>
@@ -1261,8 +1267,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/navopt/topics/navopt.html">Navigator Optimizer Guide</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 <div class="quickLinks parbase section">
 <div class="quick-link container quick-link-list">
 <h3>How To's for Gurus</h3>
@@ -1272,8 +1278,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/guru-howto/data_science.html">Data Science</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 </div>
 <div class="col-sm-4 col col_four parsys">
 <div class="quickLinks parbase section">
@@ -1284,8 +1290,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/spark2/latest.html">Apache Spark 2 User Guide</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 <div class="quickLinks parbase section">
 <div class="quick-link container quick-link-list">
 <h3>Apache Kudu 1.4</h3>
@@ -1294,8 +1300,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/kudu/5-12-x.html">Apache Kudu User Guide</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 <div class="quickLinks parbase section">
 <div class="quick-link container quick-link-list">
 <h3>Apache Kafka</h3>
@@ -1304,8 +1310,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/kafka/latest.html">Apache Kafka User Guide</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 <div class="quickLinks parbase section">
 <div class="quick-link container quick-link-list">
 <h3>Apache Accumulo</h3>
@@ -1314,8 +1320,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/other/accumulo/latest.html">Apache Accumulo Documentation</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 <div class="quickLinks parbase section">
 <div class="quick-link container quick-link-list">
 <h3>Previous Versions</h3>
@@ -1327,11 +1333,11 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 <li><a href="/documentation/cdh/5-0-x.html">CDH 5.0</a></li>
 </ul>
 </div>
+</div><!-- End Link Bar -->
 </div>
-<!--End Link Bar--></div>
 </div>
+</div><!--End col_control -->
 </div>
-<!--End col_control --></div>
 </div>
 </section>
 </div>
@@ -1343,8 +1349,8 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 </section>
 </div>
 <div class="quickLinks parbase section">
-<div class="quick-link container quick-link-list link-bar-list"></div>
-<!--End Link Bar--></div>
+<div class="quick-link container quick-link-list link-bar-list"></div><!-- End Link Bar -->
+</div>
 <div class="section parbase">
 <section class="section_padding">
 <div class="body_container"></div>
@@ -1493,54 +1499,56 @@ var jcrPath = document.getElementById("dataLayerId").dataset.currentpage;
 </div>
 </div>
 </footer>
-<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/utils.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery/granite.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery-ui.js"></script>
-<script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery-ui.js"></script>
-<script type="text/javascript" src="/apps/settings/wcm/designs/www/clientlibs-vendor.js"></script>
-<script type="text/javascript" src="/apps/settings/wcm/designs/www/clientlibs.js"></script>
-<script type="text/javascript" src="/apps/settings/wcm/designs/www/clientlibs-support.js"></script>
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery-ui.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery-ui.js"></script>
+<script src="/apps/settings/wcm/designs/www/clientlibs-vendor.js"></script>
+<script src="/apps/settings/wcm/designs/www/clientlibs.js"></script>
+<script src="/apps/settings/wcm/designs/www/clientlibs-support.js"></script>
 <div class="section new"></div>
 <div class="iparys_inherited loginAwareIpar iparsys parsys loginStateAwareContainer section">
 <script>
-        $(window).load(function(){
-            if (userInfoHandler){
-                if (userInfoHandler.status == "OK"){
-                    if (userInfoHandler.loggedIn == true) {
-                    var relayState="";
-                    $("a[href*='community.cloudera.com']")
-                       .each(function()
-                       {
-                          relayState = encodeURIComponent(this.href);
-                          var redirect = 'https://cloudera-production.okta.com/app/template_saml_2_0/exk1az52keQqZWEnE0x7/sso/saml';
-                          var separator = redirect.indexOf('?') !== -1 ? "&" : "?";
-                          this.href= redirect + separator + 'RelayState=' + relayState;
-                       });
-                    }
-                }
+$(window).load(function(){
+    if (userInfoHandler){
+        if (userInfoHandler.status == "OK"){
+            if (userInfoHandler.loggedIn == true) {
+            var relayState="";
+            $("a[href*='community.cloudera.com']")
+               .each(function()
+               {
+                  relayState = encodeURIComponent(this.href);
+                  var redirect = 'https://cloudera-production.okta.com/app/template_saml_2_0/exk1az52keQqZWEnE0x7/sso/saml';
+                  var separator = redirect.indexOf('?') !== -1 ? "&" : "?";
+                  this.href= redirect + separator + 'RelayState=' + relayState;
+               });
             }
-        });
-</script></div>
-<script type="text/javascript">
-_satellite.pageBottom();
-</script> <!-- begin SnapEngage code -->
- <!-- <script type="text/javascript">
-     (function() {
-     var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
-     se.src = '//storage.googleapis.com/code.snapengage.com/js/05f7fc74-62d6-4544-a5b0-c32655d351dd.js';
-     var done = false;
-     se.onload = se.onreadystatechange = function() {
-     if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
-     done = true;
-     /* Place your SnapEngage JS API code below */
-     /* SnapEngage.allowChatSound(true); Example JS API: Enable sounds for Visitors. */
-     }
-     };
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
-     })();
-     </script>-->
- <!-- end SnapEngage code -->
+        }
+    }
+});
+</script>
+</div>
+
+<script>_satellite.pageBottom();</script>
+<!-- begin SnapEngage code -->
+<!-- <script>
+(function() {
+var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+se.src = '//storage.googleapis.com/code.snapengage.com/js/05f7fc74-62d6-4544-a5b0-c32655d351dd.js';
+var done = false;
+se.onload = se.onreadystatechange = function() {
+if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
+done = true;
+/* Place your SnapEngage JS API code below */
+/* SnapEngage.allowChatSound(true); Example JS API: Enable sounds for Visitors. */
+}
+};
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+})();
+</script> -->
+<!-- end SnapEngage code -->
 </body>
 </html>
