@@ -145,12 +145,12 @@ json:
         external: external
 
       - text: SMM REST API Reference
-        href: /documentation/smm/2.0.0/rest-api-reference/index.html
+        href: /smm/2.0.0/rest-api-reference/index.html
         id: pub-smm-rest-api-reference
         external: external
 
       - text: SRM REST API Reference
-        href: /documentation/srm/1.0.0/rest-api-reference/index.html
+        href: /srm/1.0.0/rest-api-reference/index.html
         id: pub-srm-rest-api-reference
         external: external
 
