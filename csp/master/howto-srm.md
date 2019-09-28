@@ -16,6 +16,7 @@ publications:
 
   - title: SRM REST API Reference
     url: /srm/1.0.0/rest-api-reference/index.html
+    external: external
     description: >-
       REST API documentation for Streams Replication Manager.
 
