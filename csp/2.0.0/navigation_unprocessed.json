@@ -144,6 +144,16 @@ json:
         href: /documentation/enterprise/6/6.3/topics/kafka_api.html
         external: external
 
+      - text: SMM REST API Reference
+        href: /documentation/smm/2.0.0/rest-api-reference/index.html
+        id: pub-smm-rest-api-reference
+        external: external
+
+      - text: SRM REST API Reference
+        href: /documentation/srm/1.0.0/rest-api-reference/index.html
+        id: pub-srm-rest-api-reference
+        external: external
+
   - text: Release Notes
     name: cat-releasenotes
     sub:

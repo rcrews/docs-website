@@ -38,6 +38,11 @@ publications:
       implement cross-cluster Kafka topic replication in Streams
       Messaging Manager.
 
+  - title: SMM REST API Reference
+    url: /documentation/smm/2.0.0/rest-api-reference/index.html
+    description: >-
+      REST API documentation for Streams Messaging Manager.
+
 ---
 
 Streams Messaging Manager is an operations monitoring and management
