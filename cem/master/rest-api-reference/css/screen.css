@@ -265,7 +265,7 @@
 .swagger-section .ic-error{background-position:-30px 0;width:18px;margin-top:-6px;margin-left:4px}
 .swagger-section .ic-off{background-position:-90px 0;width:58px;margin-top:-4px;cursor:pointer}
 .swagger-section .ic-on{background-position:-160px 0;width:58px;margin-top:-4px;cursor:pointer}
-.swagger-section #header{background-color:#89bf04;padding:9px 14px 19px;height:23px;min-width:775px}
+.swagger-section #header{background-color:#f26822;padding:9px 14px 19px;height:23px;min-width:775px}
 .swagger-section #input_baseUrl{width:400px}
 .swagger-section #api_selector{display:block;clear:none;float:right}
 .swagger-section #api_selector .input{display:inline-block;clear:none;margin:0 10px 0 0}
