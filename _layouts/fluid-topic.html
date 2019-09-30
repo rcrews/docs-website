@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>{{ page.title }}</title>
+{%- if page.description %}
+<meta name="description" content="{{ page.description }}">
+{%- endif %}
+{%- if page.keywords %}
+<meta name="keywords" content="{{ page.keywords | join: ', ' }}">
+{%- endif %}
+<link rel="stylesheet" href="/common/css/main.css">
+{%- if page.copyright.years and page.copyright.holder %}
+<meta name="copyright" content="© {% page.copyright.years | join: ', ' %} by {{ page.copyright.holder }}">
+{%- endif %}
+{%- if page.pdf %}
+<link rel="alternate" type="application/pdf" href="{{ page.pdf }}">
+{%- endif %}
+</head>
+<body class="hg">
+<header class="chead">
+  <div class="breadcrumbs">
+    <span class="bread-home"><a href="/"><i class="fas fa-home"></i><span class="text-home">Cloudera Docs</span></a></span><span class="bread-product"></span><span class="bread-version"></span>
+  </div>
+</header>
+<main class="cmain">
+  <div class="cpage">
+    <article class="maincontent">
+      <div class="inner-breadcrumbs"></div>
+      <div id="content">
+{{ content }}
+
+{%- if page.familylinks or page.relinfo %}
+        <nav role="navigation" class="related-links">
+
+{%- if page.familylinks %}
+          <div class="familylinks">
+{%- if page.familylinks.parent %}
+            <div class="parentlink">
+              <strong>Parent topic:</strong>
+              <a class="link" href="{{ page.familylinks.parent.href }}" {% if page.familylinks.parent.title %}title="{{ page.familylinks.parent.title }}"{% endif %}>{{ page.familylinks.parent.text }}</a>
+            </div>
+{%- endif %}
+          </div>
+{%- endif %}
+
+{%- if page.relinfo %}
+          <div class="linklist relinfo">
+            <strong>Related information</strong><br>
+{%- for topic in page.relinfo %}
+            <div>
+              <a class="link" href="{{ page.topic.href }}" {% if page.topic.title %}title="{{ page.topic.title }}"{% endif %}>{{ page.topic.text }}</a>
+            </div>
+{%- endfor %}
+          </div>
+{%- endif %}
+
+        </nav>
+{%- endif %}
+
+      </div>
+    </article>
+  </div>
+  <aside class="pubmenu"></aside>
+</main>
+<div class="logo"><a href="http://www.cloudera.com/"><img src="/common/img/cloudera_short_logo.png"></a></div>
+<nav class="product-drawer">
+  <div class="full-logo"><a href="http://www.cloudera.com/"><img src="/common/img/cloudera.png"></a></div>
+</nav>
+<footer></footer>
+<script src="/common/js/main.js"></script>
+</body>
+</html>

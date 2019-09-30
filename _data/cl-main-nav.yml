@@ -1,0 +1,1169 @@
+---
+- text: Products
+  href: /products.html
+  data-tab: products-tab
+  sub:
+  - text: DataFlow
+    href: /products/cdf.html
+    data-tab: dataflow
+    sub:
+    - text: Data Warehouse
+      href: /products/data-warehouse.html
+      data-tab: datawarehouse-tab
+      sub:
+      - text: Cloud-Native BI and Analytics
+        href: /products/data-warehouse/analytic-database.html
+        data-tab: cloud-nativebiandanalytics
+      - text: EDW Optimization
+        href: /products/data-warehouse/edw-optimization.html
+        data-tab: edwoptimization
+  - text: Data Science Workbench
+    href: /products/data-science-workbench.html
+    data-tab: datascienceworkbench
+  - text: Enterprise Data Hub
+    href: /products/enterprise-data-hub.html
+    data-tab: enterprisedatahub
+  - text: SDX Technologies
+    href: /products/sdx.html
+    data-tab: sdxtechnologies
+  - text: Workload XM
+    href: /products/workload-xm.html
+    data-tab: workloadxm
+    sub:
+    - text: Operational DB
+      href: /products/operational-db.html
+      data-tab: operationaldb-tab
+      sub:
+      - text: Operational Database
+        href: /products/operational-db/operational-database.html
+        data-tab: operationaldatabase
+    - text: Data Engineering
+      href: /products/data-science-and-engineering.html
+      data-tab: dataengineering-tab
+      sub:
+      - text: Data Engineering
+        href: /products/data-science-and-engineering/data-engineering.html
+        data-tab: dataengineering
+      - text: Data Science Workbench
+        href: /products/data-science-and-engineering/data-science-workbench.html
+        data-tab: datascienceworkbench
+    - text: Fast Forward Labs Research
+      href: /products/fast-forward-labs-research.html
+      data-tab: fastforwardlabsresearch-tab
+      sub:
+      - text: Cloudera Fast Forward Labs Research Previews
+        href: /products/fast-forward-labs-research/fast-forward-labs-research-reports.html
+        data-tab: clouderafastforwardlabsresearchpreviews
+      - text: Cloudera Fast Forward Labs Latest Research
+        href: /products/fast-forward-labs-research/latest-research.html
+        data-tab: clouderafastforwardlabslatestresearch
+    - text: Altus Cloud
+      href: /products/altus.html
+      data-tab: altuscloud-tab
+      sub:
+      - text: Altus Data Engineering
+        href: /products/altus/altus-data-engineering.html
+        data-tab: altusdataengineering
+      - text: Cloudera Altus Analytic DB
+        href: /products/altus/altus-analytic-db.html
+        data-tab: clouderaaltusanalyticdb
+      - text: Altus Data Warehouse
+        href: /products/altus/altus-data-warehouse.html
+        data-tab: altusdatawarehouse
+      - text: Access Request for Cloudera Altus on Azure Beta
+        href: /products/altus/access-altus-azure.html
+        data-tab: accessrequestforclouderaaltusonazurebeta
+    - text: Pricing
+      href: /products/pricing.html
+      data-tab: pricing-tab
+      sub:
+      - text: Product Features and Pricing
+        href: /products/pricing/product-features.html
+        data-tab: productfeaturesandpricing
+- text: Solutions
+  href: /solutions.html
+  data-tab: solutions-tab
+  sub:
+  - text: Grow business
+    href: /solutions/customer-insights.html
+    data-tab: growbusiness
+  - text: Connect Business (IOT)
+    href: /solutions/improve-products-and-services.html
+    data-tab: connectbusinessiot
+    sub:
+    - text: Protect Business
+      href: /solutions/lower-business-risks.html
+      data-tab: protectbusiness-tab
+      sub:
+      - text: General Data Protection Regulation
+        href: /solutions/lower-business-risks/general-data-protection-regulation.html
+        data-tab: generaldataprotectionregulation
+  - text: Industry Solutions
+    href: /solutions/industry-solutions.html
+    data-tab: industrysolutions
+    sub:
+    - text: Solutions Gallery
+      href: /solutions/gallery.html
+      data-tab: solutionsgallery-tab
+      sub:
+      - text: Real Time Location Detection and Monitoring System (RTLS)
+        href: /solutions/gallery/united-consult-real-time-location-detection-and-monitoring-system.html
+        data-tab: realtimelocationdetectionandmonitoringsystemrtls
+      - text: Big Data Security
+        href: /solutions/gallery/bluetalon.html
+        data-tab: bigdatasecurity
+      - text: Doolytic Big Data Platform
+        href: /solutions/gallery/nevis-doolytic.html
+        data-tab: doolyticbigdataplatform
+      - text: Real-Time Data Streaming from Oracle to Kafka
+        href: /solutions/gallery/striim-real-time-data-streaming-from-oracle-to-kafka.html
+        data-tab: real-timedatastreamingfromoracletokafka
+      - text: Customer Journey Analytics Platform with Clickfox
+        href: /solutions/gallery/clickfox-customer-journey-analytics-platform.html
+        data-tab: customerjourneyanalyticsplatformwithclickfox
+      - text: Securonix Cybersecurity Analytics Platform
+        href: /solutions/gallery/securonix-snypr.html
+        data-tab: securonixcybersecurityanalyticsplatform
+      - text: Apache Spot for Cybersecurity
+        href: /solutions/gallery/intel-apache-spot.html
+        data-tab: apachespotforcybersecurity
+      - text: Automated Machine Learning Platform (AMP)
+        href: /solutions/gallery/kogentix-automated-machine-learning-platform-amp.html
+        data-tab: automatedmachinelearningplatformamp
+      - text: Energy Internet Platform (EIP)
+        href: /solutions/gallery/autogrid-energy-internet-platform.html
+        data-tab: energyinternetplatformeip
+      - text: eVariant Healthcare Analytics Platform
+        href: /solutions/gallery/eVariant-Healthcare-Platform.html
+        data-tab: evarianthealthcareanalyticsplatform
+      - text: Sentinel Endpoint Protection
+        href: /solutions/gallery/countertack-sentinel.html
+        data-tab: sentinelendpointprotection
+      - text: RCG|enable® Credit Analytics on Microsoft Azure
+        href: /solutions/gallery/rcg-enable-lower-business-risk.html
+        data-tab: rcg|enableregcreditanalyticsonmicrosoftazure
+      - text: TCS Active Archive
+        href: /solutions/gallery/tcs-active-archive.html
+        data-tab: tcsactivearchive
+      - text: Sensor Data Analytics Framework (SDAF)
+        href: /solutions/gallery/tcs-sensor-data-analytics-framework.html
+        data-tab: sensordataanalyticsframeworksdaf
+      - text: Shopper Behavior Analysis
+        href: /solutions/gallery/atscale-shopper-behavior-analysis.html
+        data-tab: shopperbehavioranalysis
+      - text: MDM Customer 360
+        href: /solutions/gallery/informatica-customer-360.html
+        data-tab: mdmcustomer360
+      - text: Oracle Big Data Appliance
+        href: /solutions/gallery/oracle-big-data-appliance.html
+        data-tab: oraclebigdataappliance
+      - text: BigFrame Mainframe Migration
+        href: /solutions/gallery/cognizant-bigframe.html
+        data-tab: bigframemainframemigration
+      - text: Collaborative Advanced Analytics & Data Sharing Platform (CAADS™)
+        href: /solutions/gallery/lockheed-leidos-caads.html
+        data-tab: collaborativeadvancedanalyticsdatasharingplatformcaadstrade
+      - text: Cognizant BigDecisions
+        href: /solutions/gallery/cognizant-bigdecisions.html
+        data-tab: cognizantbigdecisions
+      - text: IoT Analytics/OmniLocation Platform
+        href: /solutions/gallery/dxc-iot-omnilocation.html
+        data-tab: iotanalyticsomnilocationplatform
+      - text: RCG|enable® Data
+        href: /solutions/gallery/rcg-enable-modernize-architecture.html
+        data-tab: rcg|enableregdata
+      - text: Teradata Analytics Appliance
+        href: /solutions/gallery/teradata-appliance-for-hadoop-with-cloudera.html
+        data-tab: teradataanalyticsappliance
+      - text: Analytics Platform Services
+        href: /solutions/gallery/dxc-analytics-platform-services.html
+        data-tab: analyticsplatformservices
+      - text: Accenture Cyber Intelligence Platform
+        href: /solutions/gallery/accenture-cyber-intelligence-platform.html
+        data-tab: accenturecyberintelligenceplatform
+      - text: Insights Platform
+        href: /solutions/gallery/accenture-insights-platform.html
+        data-tab: insightsplatform
+      - text: CapGemini LEAP Accelerator
+        href: /solutions/gallery/capgemini-leap-accelerator.html
+        data-tab: capgeminileapaccelerator
+      - text: Customer Next Best Offer Accelerator (CNBO)
+        href: /solutions/gallery/deloitte-customer-next-best-offer.html
+        data-tab: customernextbestofferacceleratorcnbo
+      - text: Transaction Cybersecurity
+        href: /solutions/gallery/informatica-tibco-transaction-security.html
+        data-tab: transactioncybersecurity
+      - text: Customer Satisfaction Solution
+        href: /solutions/gallery/qlik-customer-satisfaction-personalized-offer.html
+        data-tab: customersatisfactionsolution
+      - text: Location Based Insights (LBI)
+        href: /solutions/gallery/deloitte-location-based-insights-lbi.html
+        data-tab: locationbasedinsightslbi
+      - text: Nokia Motive Customer eXperience Solutions (CXS)
+        href: /solutions/gallery/nokia-customer-experience-solutions.html
+        data-tab: nokiamotivecustomerexperiencesolutionscxs
+      - text: Fusionex GIANT Big Data Analytics Platform
+        href: /solutions/gallery/fusionex-giant.html
+        data-tab: fusionexgiantbigdataanalyticsplatform
+      - text: Threat Intelligence Platform
+        href: /solutions/gallery/fireeye-threat-intelligence.html
+        data-tab: threatintelligenceplatform
+      - text: Niara Cybersecurity Analyzer
+        href: /solutions/gallery/niara-security-analytics.html
+        data-tab: niaracybersecurityanalyzer
+      - text: Big Data as a Service - CenturyLink
+        href: /solutions/gallery/centurylink-managed-services-analytics.html
+        data-tab: bigdataasaservice-centurylink
+      - text: Marketing Analytics Environment Solution
+        href: /solutions/gallery/acxiom-marketing-analytics-environment.html
+        data-tab: marketinganalyticsenvironmentsolution
+      - text: Data Application Platform
+        href: /solutions/gallery/cask-data-application-platform.html
+        data-tab: dataapplicationplatform
+      - text: Monetize My Data
+        href: /solutions/gallery/pentaho-monetize-my-data.html
+        data-tab: monetizemydata
+      - text: Threatstream Threat Intelligence Platform
+        href: /solutions/gallery/anomali-threatstream.html
+        data-tab: threatstreamthreatintelligenceplatform
+      - text: Single View of Patient
+        href: /solutions/gallery/pentaho-single-view-of-patient.html
+        data-tab: singleviewofpatient
+      - text: Optimize the Data Warehouse
+        href: /solutions/gallery/pentaho-optimize-the-data-warehouse.html
+        data-tab: optimizethedatawarehouse
+      - text: TIBCO Spotfire Big Data Analytics
+        href: /solutions/gallery/tibco-spotfire-big-data-analytics.html
+        data-tab: tibcospotfirebigdataanalytics
+      - text: Big Data as a Managed Service - Cazena
+        href: /solutions/gallery/cazena-big-data-as-a-service.html
+        data-tab: bigdataasamanagedservice-cazena
+      - text: TIBCO Spotfire for Content Analytics
+        href: /solutions/gallery/tibco-content-spotfire-analytics.html
+        data-tab: tibcospotfireforcontentanalytics
+      - text: Business Intelligence Platform
+        href: /solutions/gallery/microstrategy-business-intelligence-platform.html
+        data-tab: businessintelligenceplatform
+      - text: Qlik Analytics Platform
+        href: /solutions/gallery/qlik-analytic-platform-for-personalized-offers.html
+        data-tab: qlikanalyticsplatform
+      - text: Modernized Analytics for Regulatory Compliance
+        href: /solutions/gallery/qlik-modernized-analytics-for-regulatory-compliance.html
+        data-tab: modernizedanalyticsforregulatorycompliance
+      - text: IT-powered Analytics Platform
+        href: /solutions/gallery/tableau-for-it-powered-analytics.html
+        data-tab: it-poweredanalyticsplatform
+      - text: RapidMiner Radoop for Data Science
+        href: /solutions/gallery/rapidminer-radoop.html
+        data-tab: rapidminerradoopfordatascience
+      - text: Fast Fraud Detection
+        href: /solutions/gallery/talend-fast-fraud-detection.html
+        data-tab: fastfrauddetection
+      - text: Game Analytics
+        href: /solutions/gallery/talend-game-analytics.html
+        data-tab: gameanalytics
+      - text: Trifacta Wrangler for Banking Data
+        href: /solutions/gallery/trifacta-wrangler-for-banking-data.html
+        data-tab: trifactawranglerforbankingdata
+      - text: Transaction Analysis Optimization
+        href: /solutions/gallery/talend-transaction-analysis-optimization.html
+        data-tab: transactionanalysisoptimization
+      - text: Visual Analytics for Cybersecurity
+        href: /solutions/gallery/arcadia-data-cybersecurity-visual-analytics.html
+        data-tab: visualanalyticsforcybersecurity
+      - text: Self Service Analytics Platform
+        href: /solutions/gallery/datameer-network-optimization.html
+        data-tab: selfserviceanalyticsplatform
+      - text: Patient Decision Management
+        href: /solutions/gallery/informatica-decision-management.html
+        data-tab: patientdecisionmanagement
+      - text: Data Virtualization for Big Data
+        href: /solutions/gallery/denodo-data-virtualization-for-big-data.html
+        data-tab: datavirtualizationforbigdata
+      - text: Machine Learning for Cybersecurity
+        href: /solutions/gallery/digital-reasoning-synthesys.html
+        data-tab: machinelearningforcybersecurity
+      - text: StreamSets Data Collector
+        href: /solutions/gallery/streamsets-data-collector.html
+        data-tab: streamsetsdatacollector
+      - text: Device Analytics Solution
+        href: /solutions/gallery/tableau-trifacta-device-analytics.html
+        data-tab: deviceanalyticssolution
+      - text: Direct Marketing Solution
+        href: /solutions/gallery/datarobot-direct-marketing.html
+        data-tab: directmarketingsolution
+      - text: Data Governance with Informatica
+        href: /solutions/gallery/informatica-data-governance.html
+        data-tab: datagovernancewithinformatica
+      - text: Syncsort BIGFrame Mainframe Migration
+        href: /solutions/gallery/syncsort-big-frame.html
+        data-tab: syncsortbigframemainframemigration
+      - text: Recommendation Engine
+        href: /solutions/gallery/informatica-recommendation-engine.html
+        data-tab: recommendationengine
+      - text: Analytics Platform
+        href: /solutions/gallery/knime-analytics-platform.html
+        data-tab: analyticsplatform
+      - text: Native Visual Analytics
+        href: /solutions/gallery/arcadia-data-arcadia-enterprise.html
+        data-tab: nativevisualanalytics
+      - text: "Electronic Trading: Risk & Compliance"
+        href: /solutions/gallery/corvil-electronic-trading-risk-and-compliance.html
+        data-tab: electronictradingriskcompliance
+      - text: Contextual Digital Engagement
+        href: /solutions/gallery/amdocs-contextual-digital-engagement.html
+        data-tab: contextualdigitalengagement
+      - text: Adaptive Information Platform
+        href: /solutions/gallery/paxata-adaptive-information-patform.html
+        data-tab: adaptiveinformationplatform
+      - text: SAP and Hadoop Integration
+        href: /solutions/gallery/datavard-sap-and-hadoop-integration.html
+        data-tab: sapandhadoopintegration
+      - text: Customer Insights Solution
+        href: /solutions/gallery/zoomdata-customer-insights-solution.html
+        data-tab: customerinsightssolution
+      - text: Ad Placement Optimizer
+        href: /solutions/gallery/zoomdata-ad-placement-optimizer.html
+        data-tab: adplacementoptimizer
+      - text: Real-time Network Monitor
+        href: /solutions/gallery/zoomdata-real-time-network-monitor.html
+        data-tab: real-timenetworkmonitor
+      - text: Visual Analytics for IoT
+        href: /solutions/gallery/arcadia-visual-analytics-for-iot-data.html
+        data-tab: visualanalyticsforiot
+      - text: Credit Card Fraud Detection
+        href: /solutions/gallery/datarobot-credit-card-fraudulent-transaction.html
+        data-tab: creditcardfrauddetection
+      - text: Customer Intelligence & Insight (CI&I)
+        href: /solutions/gallery/tcs-customer-intelligence-and-insights.html
+        data-tab: customerintelligenceinsightcii
+      - text: EMBER Healthcare Analytics Solution
+        href: /solutions/gallery/metistream-ember.html
+        data-tab: emberhealthcareanalyticssolution
+      - text: Interactive Social Airline Automated Companion (ISAAC)
+        href: /solutions/gallery/bcs-technology-interactive-social-airline-automated-companion-isaac.html
+        data-tab: interactivesocialairlineautomatedcompanionisaac
+      - text: uDecide Decisioning Engine
+        href: /solutions/gallery/digital-alchemy-udecide.html
+        data-tab: udecidedecisioningengine
+      - text: Customer Service Analytics
+        href: /solutions/gallery/trifacta-customer-service-analytics.html
+        data-tab: customerserviceanalytics
+      - text: Flexible Regulatory Reporting
+        href: /solutions/gallery/trifacta-accurate-and-flexible-regulatory-reporting-on-hadoop.html
+        data-tab: flexibleregulatoryreporting
+      - text: Hail - Genomic Processing Tool
+        href: /solutions/gallery/metistream-Hail.html
+        data-tab: hail-genomicprocessingtool
+      - text: Customer Abandonment Prevention
+        href: /solutions/gallery/talend-customer-abandonment-prevention.html
+        data-tab: customerabandonmentprevention
+      - text: Real-Time Data Integration from HPE NonStop to Cloudera
+        href: /solutions/gallery/striim-real-time-data-integration-from-hpe-nonstop-to-cloudera.html
+        data-tab: real-timedataintegrationfromhpenonstoptocloudera
+      - text: Deloitte ConvergeHEALTH Miner
+        href: /solutions/gallery/deloitte-converge-health-miner.html
+        data-tab: deloitteconvergehealthminer
+      - text: Computational Simulation
+        href: /solutions/gallery/simudyne.html
+        data-tab: computationalsimulation
+      - text: Customer Insights Platform by PwC
+        href: /solutions/gallery/pwc-customer-insights-platform.html
+        data-tab: customerinsightsplatformbypwc
+      - text: Data Application Performance Management
+        href: /solutions/gallery/unravel-data-application-performance-management.html
+        data-tab: dataapplicationperformancemanagement
+      - text: Oracle Big Data Cloud Service
+        href: /solutions/gallery/oracle-big-data-cloud-service.html
+        data-tab: oraclebigdatacloudservice
+      - text: An End-to-End Open Architecture for IoT
+        href: /solutions/gallery/red-hat-eurotech-end-to-end-open-source-architecture-for-iot.html
+        data-tab: anend-to-endopenarchitectureforiot
+      - text: Next Generation Financial Crimes with riskCanvas
+        href: /solutions/gallery/booz-allen-hamilton-riskcanvas.html
+        data-tab: nextgenerationfinancialcrimeswithriskcanvas
+      - text: Lily™ Customer Data Platform
+        href: /solutions/gallery/ngdata-lily.html
+        data-tab: lilytradecustomerdataplatform
+      - text: Cognizant Customer Journey Artificial Intelligence (CJAI)
+        href: /solutions/gallery/cognizant-customer-journey-artificial-intelligence.html
+        data-tab: cognizantcustomerjourneyartificialintelligencecjai
+      - text: Customer 360 - Deloitte
+        href: /solutions/gallery/deloitte-customer360.html
+        data-tab: customer360-deloitte
+      - text: Wide Streaming Analytics Platform (WASP)
+        href: /solutions/gallery/agilelab-wide-streaming-analytics-platform.html
+        data-tab: widestreaminganalyticsplatformwasp
+      - text: Informatica Customer 360 Insight
+        href: /solutions/gallery/informatica-customer-360-insights.html
+        data-tab: informaticacustomer360insight
+      - text: Solr Datasource for Grafana
+        href: /solutions/gallery/pue-solr-datasource-for-grafana.html
+        data-tab: solrdatasourceforgrafana
+      - text: HOBS Integrated Revenue Assurance Solution (HOBS - iRAS)
+        href: /solutions/gallery/tcs-hobs-iras.html
+        data-tab: hobsintegratedrevenueassurancesolutionhobs-iras
+      - text: Portfolio Risk Management
+        href: /solutions/gallery/information-builders-kuberre-er-360.html
+        data-tab: portfolioriskmanagement
+      - text: Officer Analytics Accelerator
+        href: /solutions/gallery/information-builders-officer-analytics-accelerator.html
+        data-tab: officeranalyticsaccelerator
+      - text: "Accelerator for Payments: Transaction Insights"
+        href: /solutions/gallery/information-builders-dmi-accelerator-for-payments-transaction-insights.html
+        data-tab: acceleratorforpaymentstransactioninsights
+      - text: Huball - IoT Data Acquisition
+        href: /solutions/gallery/sistematica-spa-huball.html
+        data-tab: huball-iotdataacquisition
+      - text: Data Workload Optimization
+        href: /solutions/gallery/dxc-data-workload-optimization.html
+        data-tab: dataworkloadoptimization
+      - text: Log Intelligence Management System (LIMS)
+        href: /solutions/gallery/brain-management-log-intelligence-management-system-lims.html
+        data-tab: logintelligencemanagementsystemlims
+      - text: Real-time Event-based Analytics and Collaboration Hub (REACH)
+        href: /solutions/gallery/reach-real-time-event-based-analytics-and-collaboration-hub.html
+        data-tab: real-timeevent-basedanalyticsandcollaborationhubreach
+      - text: Smart XML Platform
+        href: /solutions/gallery/sferanet-smart-xml-platform.html
+        data-tab: smartxmlplatform
+      - text: Sentiment Analysis Plus
+        href: /solutions/gallery/sferanet-sentiment-analysis-plus.html
+        data-tab: sentimentanalysisplus
+      - text: Customer 360 on Microsoft Azure, powered by Bardess Zero2Hero
+        href: /solutions/gallery/bardess-customer360.html
+        data-tab: customer360onmicrosoftazurepoweredbybardesszero2hero
+      - text: Data Reply GmbHMachine Learning Platform for Insurance Cases
+        href: /solutions/gallery/data-reply-gmbh-machine-learning-platform-for-insurance-cases.html
+        data-tab: datareplygmbhmachinelearningplatformforinsurancecases
+      - text: Versive Security Engine
+        href: /solutions/gallery/versive-security-engine.html
+        data-tab: versivesecurityengine
+      - text: Customer Experience Excellence – C2X
+        href: /solutions/gallery/keyrus-customer-experience-excellence-c2x.html
+        data-tab: customerexperienceexcellencendashc2x
+      - text: Claranet-as-a-Service on OVH Sovereign Cloud
+        href: /solutions/gallery/claranet-as-a-service-on-ovh-sovereign-cloud.html
+        data-tab: claranet-as-a-serviceonovhsovereigncloud
+      - text: OnMarc Data Platform (ODP)
+        href: /solutions/gallery/onmarc-data-platform.html
+        data-tab: onmarcdataplatformodp
+      - text: Axual Platform
+        href: /solutions/gallery/axual-platform.html
+        data-tab: axualplatform
+      - text: Atos CODEX Data Lake Engine
+        href: /solutions/gallery/atos-codex-data-lake-engine.html
+        data-tab: atoscodexdatalakeengine
+      - text: Zwoox Data Ingestion Solution
+        href: /solutions/gallery/zwoox-data-ingestion-solution.html
+        data-tab: zwooxdataingestionsolution
+- text: Downloads
+  href: /downloads.html
+  data-tab: downloads-tab
+  sub:
+  - text: QuickStart VMs
+    href: /downloads/quickstart_vms.html
+    data-tab: quickstartvms-tab
+    sub:
+    - text: QuickStarts for CDH 5.13
+      href: /downloads/quickstart_vms/5-13.html
+      data-tab: quickstartsforcdh513
+    - text: QuickStarts for CDH 5.12
+      href: /downloads/quickstart_vms/5-12.html
+      data-tab: quickstartsforcdh512
+    - text: QuickStarts for CDH 5.10
+      href: /downloads/quickstart_vms/5-10.html
+      data-tab: quickstartsforcdh510
+    - text: QuickStarts for CDH 5.8
+      href: /downloads/quickstart_vms/5-8.html
+      data-tab: quickstartsforcdh58
+  - text: Cloudera DataFlow
+    href: /downloads/cdf.html
+    data-tab: clouderadataflow-tab
+    sub:
+    - text: config
+      href: /downloads/cdf/config.html
+      data-tab: config
+    - text: CSP
+      href: /downloads/cdf/csp.html
+      data-tab: csp
+    - text: CSP Trial
+      href: /downloads/cdf/csp-trial.html
+      data-tab: csptrial
+  - text: Cloudera Manager
+    href: /downloads/manager.html
+    data-tab: clouderamanager-tab
+    sub:
+    - text: Cloudera Manager 6.3.0
+      href: /downloads/manager/6-3-0.html
+      data-tab: clouderamanager630
+    - text: Cloudera Manager 6.2.0
+      href: /downloads/manager/6-2-0.html
+      data-tab: clouderamanager620
+    - text: Cloudera Manager 6.1.1
+      href: /downloads/manager/6-1-1.html
+      data-tab: clouderamanager611
+    - text: Cloudera Manager 6.1.0
+      href: /downloads/manager/6-1-0.html
+      data-tab: clouderamanager610
+    - text: Cloudera Manager 6.0.1
+      href: /downloads/manager/6-0-1.html
+      data-tab: clouderamanager601
+    - text: Cloudera Manager 6.0.0
+      href: /downloads/manager/6-0-0.html
+      data-tab: clouderamanager600
+    - text: Cloudera Manager 5.16.2
+      href: /downloads/manager/5-16-2.html
+      data-tab: clouderamanager5162
+    - text: Cloudera Manager 5.16.1
+      href: /downloads/manager/5-16-1.html
+      data-tab: clouderamanager5161
+    - text: Cloudera Manager 5.15.2
+      href: /downloads/manager/5-15-2.html
+      data-tab: clouderamanager5152
+    - text: Cloudera Manager 5.15.1
+      href: /downloads/manager/5-15-1.html
+      data-tab: clouderamanager5151
+    - text: Cloudera Manager 5.15.0
+      href: /downloads/manager/5-15-0.html
+      data-tab: clouderamanager5150
+    - text: Cloudera Manager 5.14.4
+      href: /downloads/manager/5-14-4.html
+      data-tab: clouderamanager5144
+    - text: Cloudera Manager 5.14.3
+      href: /downloads/manager/5-14-3.html
+      data-tab: clouderamanager5143
+    - text: Cloudera Manager 5.14.2
+      href: /downloads/manager/5-14-2.html
+      data-tab: clouderamanager5142
+    - text: Cloudera Manager 5.14.1
+      href: /downloads/manager/5-14-1.html
+      data-tab: clouderamanager5141
+    - text: Cloudera Manager 5.14.0
+      href: /downloads/manager/5-14-0.html
+      data-tab: clouderamanager5140
+    - text: Cloudera Manager 5.13.3
+      href: /downloads/manager/5-13-3.html
+      data-tab: clouderamanager5133
+    - text: Cloudera Manager 5.12.1
+      href: /downloads/manager/5-12-1.html
+      data-tab: clouderamanager5121
+    - text: Cloudera Manager 5.12.0
+      href: /downloads/manager/5-12-0.html
+      data-tab: clouderamanager5120
+    - text: Cloudera Manager 5.11.2
+      href: /downloads/manager/5-11-2.html
+      data-tab: clouderamanager5112
+    - text: Cloudera Manager 5.11.1
+      href: /downloads/manager/5-11-1.html
+      data-tab: clouderamanager5111
+    - text: Cloudera Manager 5.11.0
+      href: /downloads/manager/5-11-0.html
+      data-tab: clouderamanager5110
+    - text: Cloudera Manager 5.10.2
+      href: /downloads/manager/5-10-2.html
+      data-tab: clouderamanager5102
+    - text: Cloudera Manager 5.10.1
+      href: /downloads/manager/5-10-1.html
+      data-tab: clouderamanager5101
+    - text: Cloudera Manager 5.10.0
+      href: /downloads/manager/5-10-0.html
+      data-tab: clouderamanager5100
+    - text: Cloudera Manager 5.9.3
+      href: /downloads/manager/5-9-3.html
+      data-tab: clouderamanager593
+    - text: Cloudera Manager 5.9.2
+      href: /downloads/manager/5-9-2.html
+      data-tab: clouderamanager592
+    - text: Cloudera Manager 5.9.1
+      href: /downloads/manager/5-9-1.html
+      data-tab: clouderamanager591
+    - text: Cloudera Manager 5.9.0
+      href: /downloads/manager/5-9-0.html
+      data-tab: clouderamanager590
+    - text: Cloudera Manager 5.8.5
+      href: /downloads/manager/5-8-5.html
+      data-tab: clouderamanager585
+    - text: Cloudera Manager 5.8.4
+      href: /downloads/manager/5-8-4.html
+      data-tab: clouderamanager584
+    - text: Cloudera Manager 5.8.3
+      href: /downloads/manager/5-8-3.html
+      data-tab: clouderamanager583
+    - text: Cloudera Manager 5.8.2
+      href: /downloads/manager/5-8-2.html
+      data-tab: clouderamanager582
+    - text: Cloudera Manager 5.8.1
+      href: /downloads/manager/5-8-1.html
+      data-tab: clouderamanager581
+    - text: Cloudera Manager 5.8.0
+      href: /downloads/manager/5-8-0.html
+      data-tab: clouderamanager580
+    - text: Cloudera Manager 5.7.6
+      href: /downloads/manager/5-7-6.html
+      data-tab: clouderamanager576
+    - text: Cloudera Manager 5.7.5
+      href: /downloads/manager/5-7-5.html
+      data-tab: clouderamanager575
+    - text: Cloudera Manager 5.7.4
+      href: /downloads/manager/5-7-4.html
+      data-tab: clouderamanager574
+    - text: Cloudera Manager 5.7.2
+      href: /downloads/manager/5-7-2.html
+      data-tab: clouderamanager572
+    - text: Cloudera Manager 5.7.1
+      href: /downloads/manager/5-7-1.html
+      data-tab: clouderamanager571
+    - text: Cloudera Manager 5.7.0
+      href: /downloads/manager/5-7-0.html
+      data-tab: clouderamanager570
+  - text: Cloudera Altus Director
+    href: /downloads/director.html
+    data-tab: clouderaaltusdirector-tab
+    sub:
+    - text: Cloudera Altus Director 6.3.0
+      href: /downloads/director/6-3-0.html
+      data-tab: clouderaaltusdirector630
+    - text: Cloudera Altus Director 6.2.1
+      href: /downloads/director/6-2-1.html
+      data-tab: clouderaaltusdirector621
+    - text: Cloudera Altus Director 6.2.0
+      href: /downloads/director/6-2-0.html
+      data-tab: clouderaaltusdirector620
+    - text: Cloudera Altus Director 6.1.0
+      href: /downloads/director/6-1-0.html
+      data-tab: clouderaaltusdirector610
+    - text: Cloudera Altus Director 6.0.1
+      href: /downloads/director/6-0-1.html
+      data-tab: clouderaaltusdirector601
+    - text: Cloudera Altus Director 6.0.0
+      href: /downloads/director/6-0-0.html
+      data-tab: clouderaaltusdirector600
+    - text: Cloudera Altus Director 2.8.1
+      href: /downloads/director/2-8-1.html
+      data-tab: clouderaaltusdirector281
+    - text: Cloudera Altus Director 2.8.0
+      href: /downloads/director/2-8-0.html
+      data-tab: clouderaaltusdirector280
+    - text: Cloudera Altus Director 2.7.1
+      href: /downloads/director/2-7-1.html
+      data-tab: clouderaaltusdirector271
+    - text: Cloudera Altus Director 2.7.0
+      href: /downloads/director/2-7-0.html
+      data-tab: clouderaaltusdirector270
+    - text: Cloudera Altus Director 2.6.1
+      href: /downloads/director/2-6-1.html
+      data-tab: clouderaaltusdirector261
+    - text: Cloudera Altus Director 2.6.0
+      href: /downloads/director/2-6-0.html
+      data-tab: clouderaaltusdirector260
+    - text: Cloudera Altus Director 2.5.1
+      href: /downloads/director/2-5-1.html
+      data-tab: clouderaaltusdirector251
+    - text: Cloudera Altus Director 2.5.0
+      href: /downloads/director/2-5-0.html
+      data-tab: clouderaaltusdirector250
+- text: About
+  href: /about.html
+  data-tab: about-tab
+  sub:
+  - text: Careers
+    href: /about/careers.html
+    data-tab: careers
+    sub:
+    - text: Customers
+      href: /about/customers.html
+      data-tab: customers-tab
+      sub:
+      - text: DocBox
+        href: /about/customers/docbox.html
+        data-tab: docbox
+      - text: ATB Financial
+        href: /about/customers/atb-financial.html
+        data-tab: atbfinancial
+      - text: T-Mobile Austria
+        href: /about/customers/t-mobile-austria.html
+        data-tab: t-mobileaustria
+      - text: Zurich Insurance
+        href: /about/customers/zurich-insurance.html
+        data-tab: zurichinsurance
+      - text: Micron
+        href: /about/customers/micron.html
+        data-tab: micron
+      - text: Persol Career
+        href: /about/customers/persol-career.html
+        data-tab: persolcareer
+      - text: Hilton
+        href: /about/customers/hilton.html
+        data-tab: hilton
+      - text: Hotels.com
+        href: /about/customers/hotels-com.html
+        data-tab: hotelscom
+      - text: Quanam
+        href: /about/customers/quanam.html
+        data-tab: quanam
+      - text: O2
+        href: /about/customers/o2.html
+        data-tab: o2
+      - text: Nissan
+        href: /about/customers/nissan.html
+        data-tab: nissan
+      - text: QSight IT
+        href: /about/customers/qsight-it.html
+        data-tab: qsightit
+      - text: Vizient
+        href: /about/customers/vizient.html
+        data-tab: vizient
+      - text: Freddie Mac
+        href: /about/customers/freddie-mac.html
+        data-tab: freddiemac
+      - text: Trimble (TMW Systems)
+        href: /about/customers/tmw-systems.html
+        data-tab: trimbletmwsystems
+      - text: Banco Santander
+        href: /about/customers/banco-santander-spain.html
+        data-tab: bancosantander
+      - text: Orwell Group
+        href: /about/customers/orwell-group.html
+        data-tab: orwellgroup
+      - text: TechnipFMC
+        href: /about/customers/technipfmc.html
+        data-tab: technipfmc
+      - text: Emirates NBD
+        href: /about/customers/emirates-nbd.html
+        data-tab: emiratesnbd
+      - text: JIDO
+        href: /about/customers/jido.html
+        data-tab: jido
+      - text: Dhisco
+        href: /about/customers/dhisco.html
+        data-tab: dhisco
+      - text: Symcor
+        href: /about/customers/symcor.html
+        data-tab: symcor
+      - text: Johns Hopkins University
+        href: /about/customers/johns-hopkins-university.html
+        data-tab: johnshopkinsuniversity
+      - text: ACI Worldwide
+        href: /about/customers/aci-worldwide.html
+        data-tab: aciworldwide
+      - text: Klarna
+        href: /about/customers/klarna.html
+        data-tab: klarna
+      - text: Rowan Companies
+        href: /about/customers/rowan-companies.html
+        data-tab: rowancompanies
+      - text: Mitsubishi Fuso
+        href: /about/customers/mitsubishi-fuso.html
+        data-tab: mitsubishifuso
+      - text: Clearsense
+        href: /about/customers/clearsense.html
+        data-tab: clearsense
+      - text: Mitre
+        href: /about/customers/mitre.html
+        data-tab: mitre
+      - text: Geisinger
+        href: /about/customers/geisinger.html
+        data-tab: geisinger
+      - text: Centrica
+        href: /about/customers/centrica.html
+        data-tab: centrica
+      - text: Bank of England
+        href: /about/customers/bank-of-england.html
+        data-tab: bankofengland
+      - text: HelloFresh
+        href: /about/customers/hellofresh.html
+        data-tab: hellofresh
+      - text: United Overseas Bank
+        href: /about/customers/united-overseas-bank.html
+        data-tab: unitedoverseasbank
+      - text: Lufthansa Technik
+        href: /about/customers/lufthansa-technik.html
+        data-tab: lufthansatechnik
+      - text: Kasikorn Bank
+        href: /about/customers/kasikorn-bank.html
+        data-tab: kasikornbank
+      - text: Carlson Wagonlit Travel
+        href: /about/customers/carlson-wagonlit-travel.html
+        data-tab: carlsonwagonlittravel
+      - text: Dell
+        href: /about/customers/dell.html
+        data-tab: dell
+      - text: Globe Telecom
+        href: /about/customers/globe-telecom.html
+        data-tab: globetelecom
+      - text: TD Bank
+        href: /about/customers/td-bank.html
+        data-tab: tdbank
+      - text: GlaxoSmithKline
+        href: /about/customers/glaxosmithkline.html
+        data-tab: glaxosmithkline
+      - text: ADP
+        href: /about/customers/adp.html
+        data-tab: adp
+      - text: Allegis Group
+        href: /about/customers/allegis.html
+        data-tab: allegisgroup
+      - text: Bidtellect
+        href: /about/customers/bidtellect.html
+        data-tab: bidtellect
+      - text: BT
+        href: /about/customers/bt.html
+        data-tab: bt
+      - text: Cerner
+        href: /about/customers/cerner.html
+        data-tab: cerner
+      - text: Cisco
+        href: /about/customers/cisco.html
+        data-tab: cisco
+      - text: Cloudera Support Interface
+        href: /about/customers/cloudera-support-interface.html
+        data-tab: clouderasupportinterface
+      - text: Connexity
+        href: /about/customers/connexity.html
+        data-tab: connexity
+      - text: CounterTack
+        href: /about/customers/countertack.html
+        data-tab: countertack
+      - text: Cox Automotive
+        href: /about/customers/cox-automotive.html
+        data-tab: coxautomotive
+      - text: CSC
+        href: /about/customers/csc.html
+        data-tab: csc
+      - text: Dish
+        href: /about/customers/dish.html
+        data-tab: dish
+      - text: Epsilon
+        href: /about/customers/epsilon.html
+        data-tab: epsilon
+      - text: Equifax
+        href: /about/customers/equifax.html
+        data-tab: equifax
+      - text: Impact Radius
+        href: /about/customers/impact-radius.html
+        data-tab: impactradius
+      - text: Magnify
+        href: /about/customers/magnify.html
+        data-tab: magnify
+      - text: Markerstudy
+        href: /about/customers/markerstudy.html
+        data-tab: markerstudy
+      - text: MasterCard
+        href: /about/customers/mastercard.html
+        data-tab: mastercard
+      - text: mBank
+        href: /about/customers/mbank.html
+        data-tab: mbank
+      - text: National Children's Hospital
+        href: /about/customers/national-childrens-hospital.html
+        data-tab: nationalchildrenshospital
+      - text: Novantas
+        href: /about/customers/novantas.html
+        data-tab: novantas
+      - text: Odyssey
+        href: /about/customers/odyssey.html
+        data-tab: odyssey
+      - text: Opower
+        href: /about/customers/opower.html
+        data-tab: opower
+      - text: Patterns and Predictions
+        href: /about/customers/patterns-and-predictions.html
+        data-tab: patternsandpredictions
+      - text: PRGX
+        href: /about/customers/prgx.html
+        data-tab: prgx
+      - text: Quaero
+        href: /about/customers/quaero.html
+        data-tab: quaero
+      - text: Quest Diagnostics
+        href: /about/customers/quest-diagnostics.html
+        data-tab: questdiagnostics
+      - text: Quotient
+        href: /about/customers/quotient.html
+        data-tab: quotient
+      - text: Simply Measured
+        href: /about/customers/simply-measured.html
+        data-tab: simplymeasured
+      - text: Shoppermotion
+        href: /about/customers/shoppermotion.html
+        data-tab: shoppermotion
+      - text: Solocal Group
+        href: /about/customers/solocal-group.html
+        data-tab: solocalgroup
+      - text: SFR
+        href: /about/customers/sfr.html
+        data-tab: sfr
+      - text: Sky Bet
+        href: /about/customers/sky-bet.html
+        data-tab: skybet
+      - text: Sikorsky
+        href: /about/customers/sikorsky.html
+        data-tab: sikorsky
+      - text: Transamerica
+        href: /about/customers/transamerica.html
+        data-tab: transamerica
+      - text: True Corporation
+        href: /about/customers/true-corporation.html
+        data-tab: truecorporation
+      - text: "Wargaming.net: Analyzing 550 Million Daily Events to Increase Customer Lifetime Value"
+        href: /about/customers/wargaming.html
+        data-tab: wargamingnetanalyzing550milliondailyeventstoincreasecustomerlifetimevalue
+      - text: Western Union
+        href: /about/customers/western-union.html
+        data-tab: westernunion
+      - text: REDIRECT
+        href: /about/customers/zoosk.html
+        data-tab: redirect
+      - text: Cloudera Engaged
+        href: /about/customers/cloudera-engaged.html
+        data-tab: clouderaengaged
+      - text: Drawbridge
+        href: /about/customers/drawbridge.html
+        data-tab: drawbridge
+      - text: PwC CEE
+        href: /about/customers/pwc-cee.html
+        data-tab: pwccee
+      - text: NYSE/ICE
+        href: /about/customers/nyse-ice.html
+        data-tab: nyseice
+      - text: mesur.io
+        href: /about/customers/mesurio.html
+        data-tab: mesurio
+      - text: Jobrapido
+        href: /about/customers/jobrapido.html
+        data-tab: jobrapido
+      - text: Rocket ROI
+        href: /about/customers/rocketroi.html
+        data-tab: rocketroi
+      - text: DBS Bank
+        href: /about/customers/dbs-bank.html
+        data-tab: dbsbank
+      - text: Inova
+        href: /about/customers/inova.html
+        data-tab: inova
+      - text: Bharti Airtel
+        href: /about/customers/bharti-airtel.html
+        data-tab: bhartiairtel
+      - text: Podo
+        href: /about/customers/podo.html
+        data-tab: podo
+      - text: FireEye
+        href: /about/customers/fireeye.html
+        data-tab: fireeye
+      - text: RingCentral
+        href: /about/customers/ringcentral.html
+        data-tab: ringcentral
+      - text: Komatsu Mining
+        href: /about/customers/komatsu-mining.html
+        data-tab: komatsumining
+      - text: Octo Telematics
+        href: /about/customers/octo-telematics.html
+        data-tab: octotelematics
+      - text: Bank Mandiri
+        href: /about/customers/bank-mandiri.html
+        data-tab: bankmandiri
+      - text: Cartao Elo
+        href: /about/customers/cartao-elo.html
+        data-tab: cartaoelo
+      - text: Cybraics
+        href: /about/customers/cybraics.html
+        data-tab: cybraics
+      - text: Navistar
+        href: /about/customers/navistar.html
+        data-tab: navistar
+      - text: Conversant
+        href: /about/customers/conversant.html
+        data-tab: conversant
+      - text: Thomson Reuters
+        href: /about/customers/thomson-reuters.html
+        data-tab: thomsonreuters
+      - text: Rush University Medical Center
+        href: /about/customers/rush-university-medical-center.html
+        data-tab: rushuniversitymedicalcenter
+      - text: Numberly 1000 Mercis Group
+        href: /about/customers/numberly-mille-mercis-group.html
+        data-tab: numberly1000mercisgroup
+      - text: Tenaris
+        href: /about/customers/tenaris.html
+        data-tab: tenaris
+      - text: Faurecia
+        href: /about/customers/faurecia.html
+        data-tab: faurecia
+      - text: Docomo Digital
+        href: /about/customers/docomo-digital.html
+        data-tab: docomodigital
+      - text: Telefonica
+        href: /about/customers/telefonica.html
+        data-tab: telefonica
+      - text: Unidad Editorial
+        href: /about/customers/unidad-editorial.html
+        data-tab: unidadeditorial
+      - text: Caesars Entertainment ML
+        href: /about/customers/caesarsentertainment.html
+        data-tab: caesarsentertainmentml
+      - text: Bank Danamon
+        href: /about/customers/bank-danamon.html
+        data-tab: bankdanamon
+      - text: Deutsche Telekom
+        href: /about/customers/deutsche-telekom.html
+        data-tab: deutschetelekom
+      - text: XL Axiata
+        href: /about/customers/xl-axiata.html
+        data-tab: xlaxiata
+      - text: Banco de Crédito del Perú
+        href: /about/customers/bcp.html
+        data-tab: bancodecreacuteditodelperuacute
+      - text: Greentube
+        href: /about/customers/greentube.html
+        data-tab: greentube
+      - text: Zoomlion
+        href: /about/customers/zoomlion.html
+        data-tab: zoomlion
+      - text: Credit Suisse
+        href: /about/customers/credit-suisse.html
+        data-tab: creditsuisse
+      - text: 8x8
+        href: /about/customers/8x8.html
+        data-tab: 8x8
+      - text: Seattle Children’s
+        href: /about/customers/seattle-childrens.html
+        data-tab: seattlechildrenrsquos
+      - text: IQVIA
+        href: /about/customers/iqvia.html
+        data-tab: iqvia
+      - text: Santander UK
+        href: /about/customers/santander-uk.html
+        data-tab: santanderuk
+      - text: Data Impact Awards
+        href: /about/customers/data-impact-awards.html
+        data-tab: dataimpactawards
+    - text: Events
+      href: /about/events.html
+      data-tab: events-tab
+      sub:
+      - text: Sessions
+        href: /about/events/sessions.html
+        data-tab: sessions
+      - text: Webinars
+        href: /about/events/webinars.html
+        data-tab: webinars
+      - text: Cloudera Now
+        href: /about/events/cloudera-now.html
+        data-tab: clouderanow
+      - text: Gov Forum
+        href: /about/events/gov-forum.html
+        data-tab: govforum
+      - text: Partner Summit
+        href: /about/events/partners-summit.html
+        data-tab: partnersummit
+      - text: Cloudera Distinguished Speaker Series
+        href: /about/events/speaker-series.html
+        data-tab: clouderadistinguishedspeakerseries
+      - text: Cloudera Summer School
+        href: /about/events/cloudera-summer-school.html
+        data-tab: clouderasummerschool
+      - text: Trade Shows
+        href: /about/events/trade-shows.html
+        data-tab: tradeshows
+      - text: Modern Data Warehousing Fundamentals
+        href: /about/events/modern-data-warehousing-fundamentals.html
+        data-tab: moderndatawarehousingfundamentals
+      - text: From the edge to AI City Tour
+        href: /about/events/edge-to-ai-city-tour.html
+        data-tab: fromtheedgetoaicitytour
+  - text: Investor Relations
+    href: /about/investor-relations.html
+    data-tab: investorrelations
+  - text: Leadership
+    href: /about/leadership.html
+    data-tab: leadership
+    sub:
+    - text: Newsroom
+      href: /about/news-and-blogs.html
+      data-tab: newsroom-tab
+      sub:
+      - text: Awards
+        href: /about/news-and-blogs/awards.html
+        data-tab: awards
+      - text: Blogs
+        href: /about/news-and-blogs/blogs.html
+        data-tab: blogs
+      - text: Press Releases
+        href: /about/news-and-blogs/press-releases.html
+        data-tab: pressreleases
+      - text: Edge to AI
+        href: /about/news-and-blogs/edge-to-ai.html
+        data-tab: edgetoai
+      - text: Cloudera Media Kit
+        href: /about/news-and-blogs/media-kit.html
+        data-tab: clouderamediakit
+  - text: Partners
+    href: /about/partners.html
+    data-tab: partners
+    sub:
+    - text: Services & Support
+      href: /about/services-and-support.html
+      data-tab: servicessupport-tab
+      sub:
+      - text: Support Offering
+        href: /about/services-and-support/support-offering.html
+        data-tab: supportoffering
+      - text: Professional Services
+        href: /about/services-and-support/professional-services.html
+        data-tab: professionalservices
+      - text: Machine Learning Advisory Services
+        href: /about/services-and-support/fast-forward-labs.html
+        data-tab: machinelearningadvisoryservices
+    - text: Training
+      href: /about/training.html
+      data-tab: training-tab
+      sub:
+      - text: Roles
+        href: /about/training/roles.html
+        data-tab: roles
+      - text: Courses
+        href: /about/training/courses.html
+        data-tab: courses
+      - text: Certification
+        href: /about/training/certification.html
+        data-tab: certification
+      - text: Private Training
+        href: /about/training/private-training.html
+        data-tab: privatetraining
+      - text: Testimonials
+        href: /about/training/testimonials.html
+        data-tab: testimonials
+      - text: Instructor-Led Course Listing & Registration
+        href: /about/training/course-listing.html
+        data-tab: instructor-ledcourselistingregistration
+      - text: Training Partners
+        href: /about/training/training-partners.html
+        data-tab: trainingpartners
+      - text: OnDemand Training
+        href: /about/training/ondemand-training.html
+        data-tab: ondemandtraining
+      - text: Terms and Conditions
+        href: /about/training/cloudera-training-terms-and-conditions.html
+        data-tab: termsandconditions
+      - text: Course Prerequisites
+        href: /about/training/cloudera-training-course-prerequisites.html
+        data-tab: courseprerequisites
+      - text: Administrator Technical Classroom Requirements
+        href: /about/training/cloudera-training-administrator-technical-training-requirements.html
+        data-tab: administratortechnicalclassroomrequirements
+      - text: Description of Training Services
+        href: /about/training/description-of-training-services.html
+        data-tab: descriptionoftrainingservices
+      - text: Blended Learning
+        href: /about/training/blended-learning.html
+        data-tab: blendedlearning
+      - text: Classroom
+        href: /about/training/classroom.html
+        data-tab: classroom
+      - text: Virtual Classroom
+        href: /about/training/virtual-classroom.html
+        data-tab: virtualclassroom
+      - text: Training Partner Application
+        href: /about/training/training-partner-application.html
+        data-tab: trainingpartnerapplication
