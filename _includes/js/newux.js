@@ -609,7 +609,8 @@ var NEWUX = (function($) {
                     css += "external ";
                 }
                 if('href' in item) {
-                    if(WhoAmI.is_latest) item.href = this.makeLatestURL(item.href);
+                    console.log(!('external' in item));
+                    if(WhoAmI.is_latest && !('external' in item)) item.href = this.makeLatestURL(item.href);
                     html += `<li class='${css}' data-navid='${item.id}' data-level='${level}'><span class='item'><a href='${item.href}'>${item.text}</a></span>`;
                 } else {
                     html += `<li class='${css}' data-navid='${item.id}' data-level='${level}'><span class='item'>${item.text}</span>`;
