@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git fetch
+git fetch cloudera master
 git fetch public playbranch
 
 _utils/switchsite.rb stage
@@ -25,3 +25,5 @@ if [[ RESULT != 1 ]] ; then
 fi
 
 _utils/switchsite.rb stage
+
+aws cloudfront create-invalidation --distribution-id E8CUP7Y9RHWIX --paths '/*'

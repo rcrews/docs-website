@@ -1,6 +1,6 @@
 ---
 layout: json
-#- text: Concepts
+#- text: Concepts & Use Cases
 #- text: Planning
 #- text: Installation & Upgrade
 #- text: How To
@@ -142,6 +142,16 @@ json:
 
       - text: Kafka Public APIs
         href: /documentation/enterprise/6/6.3/topics/kafka_api.html
+        external: external
+
+      - text: SMM REST API Reference
+        href: /smm/2.0.0/rest-api-reference/index.html
+        id: pub-smm-rest-api-reference
+        external: external
+
+      - text: SRM REST API Reference
+        href: /srm/1.0.0/rest-api-reference/index.html
+        id: pub-srm-rest-api-reference
         external: external
 
   - text: Release Notes

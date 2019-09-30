@@ -20,6 +20,26 @@
 - s: documentation/other/connectors.html.html
   d: /documentation/other/connectors.html
 
+# https://jira.cloudera.com/browse/DOCS-5135
+- s: documentation/cdh4/v4-2-0/CDH4-Installation-Guide/cdh4ig_topic_31.html
+  d: /index.html
+- s: documentation/cdh4/latest/CDH4-Requirements-and-Supported-Versions/CDH4-Requirements-and-Supported-Versions.html
+  d: /index.html
+#- s: content/www/en-us/documentation/betas/kudu/1-0-x/pdf/cloudera-kudu.pdf
+#  d: /index.html
+#- s: content/www/en-us/documentation/kudu/1-1-x/PDF/cloudera-kudu.pdf
+#  d: /index.html
+#- s: content/www/en-us/documentation/enterprise/5-8-x/PDF/cloudera-upgrade.pdf
+#  d: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+#- s: content/www/en-us/documentation/enterprise/5-9-x/PDF/cloudera-upgrade.pdf
+#  d: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+#- s: content/www/en-us/documentation/enterprise/5-10-x/PDF/cloudera-upgrade.pdf
+#  d: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+#- s: content/www/en-us/documentation/enterprise/5-11-x/PDF/cloudera-upgrade.pdf
+#  d: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+#- s: content/www/en-us/documentation/enterprise/5-15-x/PDF/cloudera-upgrade.pdf
+#  d: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+
 # Moving Data In Motion libraries
 - s: HDPDocuments/CEM/CEM-1.0.0/administering-cem/index.html
   d: /cem/1.0.0/administering-cem/index.html

@@ -395,16 +395,16 @@
           url: /HDPDocuments/DSS1/DSS-1.0.0/index.html
 
 - name: Data Analytics Studio
-  latest-version: 1.4.0
-  latest-url: /HDPDocuments/DAS/DAS-1.4.0/index.html
+  latest-version: 1.4.1
+  latest-url: /HDPDocuments/DAS/DAS-1.4.1/index.html
   search-name: Data Analytics Studio
   versions:
     - title: "1.4"
-      url: /HDPDocuments/DAS/DAS-1.4.0/index.html
+      url: /HDPDocuments/DAS/DAS-1.4.1/index.html
       minors:
-        - title: 1.4.0
+        - title: 1.4.1
           type: Latest
-          url: /HDPDocuments/DAS/DAS-1.4.0/index.html
+          url: /HDPDocuments/DAS/DAS-1.4.1/index.html
     - title: "1.3"
       url: /HDPDocuments/DAS/DAS-1.3.0/index.html
       minors:
@@ -611,15 +611,20 @@
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
 - name: Cybersecurity
-  latest-version: 1.9.1
-  latest-url: /HDPDocuments/HCP1/HCP-1.9.1/index.html
+  latest-version: 2.0.0
+  latest-url: /ccp/2.0.0/index.html
   search-name: Cybersecurity
   versions:
+    - title: "2.0"
+      url: /ccp/2.0.0/index.html
+      minors:
+        - title: 2.0.0
+          type: Latest
+          url: /ccp/2.0.0/index.html
     - title: "1.9"
       url: /HDPDocuments/HCP1/HCP-1.9.1/index.html
       minors:
         - title: 1.9.1
-          type: Latest
           url: /HDPDocuments/HCP1/HCP-1.9.1/index.html
         - title: 1.9.0
           url: /HDPDocuments/HCP1/HCP-1.9.0/index.html
