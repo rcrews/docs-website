@@ -29,4 +29,4 @@ Cloudera Runtime does not include:
 * Add-on products such as CDSW, CDF, and Metron
 
 To learn about installing, configuring, and managing clusters, refer
-to the [Cloudera Manager documentation](/cloudera-manager/7.0.0/index.html).
+to the [Cloudera Manager documentation](/cloudera-manager/{{ page.version }}/index.html).

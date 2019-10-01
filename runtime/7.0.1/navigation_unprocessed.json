@@ -18,9 +18,9 @@ json:
     #   Data Science: Spark, Zeppelin
     #   Security: Ranger, Knox
     #   Governance: Atlas
-    #   Cluster Managment: Cloudera Manager
-    #   Jobs Managment: Oozie
-    # -> Kudo moved from operational db to storage Mitra 8/7
+    #   Cluster Management: Cloudera Manager
+    #   Jobs Management: Oozie
+    # -> Kudu moved from operational db to storage Mitra 8/7
 
   - text: Cloudera Runtime
     id: landing-runtime
@@ -276,15 +276,15 @@ json:
             id: pub-impala-manage
             sub: impala-manage/navigation.json
 
-          - text: Administering Hue
-            href: administering-hue/index.html
-            id: pub-administering-hue
-            sub: administering-hue/navigation.json
-
           - text: Using Hue
             href: using-hue/index.html
             id: pub-using-hue
             sub: using-hue/navigation.json
+
+          - text: Administering Hue
+            href: administering-hue/index.html
+            id: pub-administering-hue
+            sub: administering-hue/navigation.json
 
       - text: Operational Datastore
         href: howto-operational-database.html

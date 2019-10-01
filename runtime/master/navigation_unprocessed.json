@@ -18,8 +18,8 @@ json:
     #   Data Science: Spark, Zeppelin
     #   Security: Ranger, Knox
     #   Governance: Atlas
-    #   Cluster Managment: Cloudera Manager
-    #   Jobs Managment: Oozie
+    #   Cluster Management: Cloudera Manager
+    #   Jobs Management: Oozie
     # -> Kudu moved from operational db to storage Mitra 8/7
 
   - text: Cloudera Runtime
@@ -226,12 +226,6 @@ json:
       - text: Data Access
         href: howto-data-access.html
         sub:
-          # Removed at Kris's request
-          # - text: Apahce Hive Performance Tuning
-          #   href: hive-performance-tuning/index.html
-          #   id: pub-hive-performance-tuning
-          #   sub: hive-performance-tuning/navigation.json
-
           - text: Starting Apache Hive
             href: starting-hive/index.html
             id: pub-starting-hive
@@ -282,15 +276,15 @@ json:
             id: pub-impala-manage
             sub: impala-manage/navigation.json
 
-          - text: Administering Hue
-            href: administering-hue/index.html
-            id: pub-administering-hue
-            sub: administering-hue/navigation.json
-
           - text: Using Hue
             href: using-hue/index.html
             id: pub-using-hue
             sub: using-hue/navigation.json
+
+          - text: Administering Hue
+            href: administering-hue/index.html
+            id: pub-administering-hue
+            sub: administering-hue/navigation.json
 
       - text: Operational Datastore
         href: howto-operational-database.html
