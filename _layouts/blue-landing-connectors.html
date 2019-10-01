@@ -15,7 +15,7 @@
             <p class="homeLink">
 {%- if page.breadcrumbs %}
   {%- for crumb in page.breadcrumbs %}
-  {%- unless page.breadcrumbs[0].text ==  crumb.text %}&gt;{% endunless %}
+  {% unless page.breadcrumbs[0].text == crumb.text %}&gt;{% endunless %}
               <a href="{{ crumb.href }}">{{ crumb.text }}</a>
   {%- endfor %}
 {%- endif %}
@@ -31,43 +31,42 @@
 </div>
 
 <div class="column_control parbase section">
-<div class="">
-<div class="body_container">
-<div class="row top">
-<div class="col_control ">
-<div class="col-sm-6 col">
-<div class="col_two parsys">
-<div class="docList parbase section">
+  <div class="">
+    <div class="body_container">
+      <div class="row top">
+        <div class="col_control">
+          <div class="col-sm-6 col">
+            <div class="col_two parsys">
+              <div class="docList parbase section">
 
 <!-- Doclist-->
 <div class="doc-list">
-<div class="container">
-<div class="doc-link-list">
-<div class="">
+  <div class="container">
+    <div class="doc-link-list">
+      <div class="">
 {% if page.titlepdf %}<a href="{{page.titlepdf}}"><img alt="PDF" src="/content/dam/www/Documentation/icons/pdf-icon.png" style="float:left; margin-right:10px; height:30px;"></a>{% endif %}
-<h4>{% if page.titlehref %}<a href="{{page.titlehref}}">{{page.title}} Documentation</a>{% else %}{{page.title}} Documentation{% endif %}</h4>
-<hr>
-<div class="link-bar-list">
-<ul>
+        <h4>{% if page.titlehref %}<a href="{{page.titlehref}}">{{page.title}} Documentation</a>{% else %}{{page.title}} Documentation{% endif %}</h4>
+        <hr>
+        <div class="link-bar-list">
+          <ul>
 {%- for link in page.links %}
-<li><a href="{{link.href}}">{{link.text}}</a></li>
+            <li><a href="{{link.href}}">{{link.text}}</a></li>
 {%- endfor %}
-</ul>
-
-</div>
-</div>
-</div>
-</div>
+         </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div><!-- End Doclist -->
 
-</div>
-</div>
-</div>
-<div class="col-sm-6 col"><div class="col_three parsys"></div></div>
-</div>
-</div>
-</div>
-</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col"><div class="col_three parsys"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </main>
 {% include blue-footer.html %}
