@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Cloudera Cybersecurity Platform
-version: cloud
+version: master
 base-path: /ccp/master/
 
 sections:
