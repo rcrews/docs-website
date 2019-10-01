@@ -42,6 +42,7 @@ exclude:
   - /ccp/
   - /cem/1.1.0/
   - /cfm/2.0.0/
+  - /csp/2.0.1/
   - /HDPDocuments/DAS/DAS-1.4.1/
 
   # "master" version for docs-dev only
