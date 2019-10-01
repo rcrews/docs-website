@@ -5,22 +5,31 @@
 {% include blue-preheader.html %}
 {% include blue-header.html %}
 <main>
+
 <div class="section parbase">
-<section class="section_padding grey">
-<div class="body_container">
-<div class="text parbase section">
-<div>
-<div class="inner-text-div">
-<p><a href="/documentation.html">Documentation Home</a> &gt; <a href="/documentation/other.html">Other</a> &gt; <a href="/documentation/other/connectors.html">Connectors</a></p>
+  <section class="section_padding grey">
+    <div class="body_container">
+      <div class="text parbase section">
+        <div>
+          <div class="inner-text-div">
+            <p class="homeLink">
+{%- if page.breadcrumbs %}
+  {%- for crumb in page.breadcrumbs %}
+  {%- unless page.breadcrumbs[0].text ==  crumb.text %}&gt;{% endunless %}
+              <a href="{{ crumb.href }}">{{ crumb.text }}</a>
+  {%- endfor %}
+{%- endif %}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="title section">
+        <h2>{{page.title}}</h2>
+      </div>
+    </div>
+  </section>
 </div>
-</div>
-</div>
-<div class="title section">
-<h2>{{page.title}}</h2>
-</div>
-</div>
-</section>
-</div>
+
 <div class="column_control parbase section">
 <div class="">
 <div class="body_container">
