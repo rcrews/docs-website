@@ -106,6 +106,9 @@
 - exist: /documentation/spark2/2-4-x.html
   alias: /documentation/spark2/latest.html
 
+- exist: /documentation/
+  alias: /content/www/en-us/documentation/
+
 # /documentation/wxm/latest/ is not an alias
 
 # aws s3 rm --recursive /documentation/data-science-workbench/latest/
