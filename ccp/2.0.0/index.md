@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Cloudera Cybersecurity Platform
-version: cloud
+version: 2.0.0
 base-path: /ccp/2.0.0/
 
 sections:
