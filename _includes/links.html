@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>{{ page.title }}</title>
-</head>
-<body>
-<main>
-<article>
-<h1>{{ page.title }}</h1>
+<section>
+<h2>Link Checking Section</h2>
 <p>Use the following URLs to check the links in this library:</p>
 <ul>
 {%- assign base = include.nav[0].href %}
@@ -16,12 +8,12 @@
 <li><a href="{{ pub.href }}">{{ pub.text }}</a></li>
   {%- elsif pub.sub %}
     {%- for subpub in pub.sub %}
-<li><a href="{{ subpub.href | prepend: base | remove_first: 'index.html' }}">{{ subpub.text }}</a></li>
+      {%- if subpub.href contains "https://" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/HDPDocuments/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/documentation/" %}{% continue %}{% endif %}
+  <li><a href="{{ subpub.href | prepend: base | remove_first: 'index.html' }}">{{ subpub.text }}</a></li>
     {%- endfor %}
   {%- endif %}
 {%- endfor %}
-<ul>
-</article>
-</main>
-</body>
-</html>
+</ul>
+</section>
