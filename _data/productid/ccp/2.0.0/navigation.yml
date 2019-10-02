@@ -7,6 +7,7 @@
 #- text: Reference
 #- text: Release Notes
 #- text: Learning & Training
+
 - text: Cloudera Cybersecurity Platform
   id: landing-cloudera-cybersecurity-platform
   href: /ccp/2.0.0/index.html
@@ -49,7 +50,7 @@
   id: cat-installation-upgrade
   sub:
     - text: Installation
-      href: installation.html
+      href: instup-installation.html
       sub:
         - text: Preparing to Install
           id: pub-prepare-to-install
@@ -77,7 +78,7 @@
           sub: install-zeppelin/navigation.json
 
     - text: Upgrade
-      href: upgrade.html
+      href: instup-upgrade.html
       sub:
         - text: Preparing to Upgrade
           id: pub-prepare-upgrade
@@ -108,7 +109,7 @@
   id: cat-how-to
   sub:
     - text: Configure
-      href: configure.html
+      href: howto-configure.html
       sub:
         - text: Management User Interface
           id: pub-management-user-interface
@@ -146,7 +147,7 @@
           sub: setting-up-pcap/navigation.json
 
     - text: Metron Dashboard
-      href: metron-dashboard.html
+      href: howto-metron-dashboard.html
       sub:
         - text: Introduction to Metron Dashboard
           id: pub-intro-metron-dashboard
@@ -184,7 +185,7 @@
       sub: monitoring/navigation.json
 
     - text: Zeppelin
-      href: zeppelin.html
+      href: howto-zeppelin.html
       sub:
         - text: Installing Zeppelin
           id: pub-install-zeppelin
@@ -202,7 +203,7 @@
           sub: working-with-notes/navigation.json
 
     - text: Tuning
-      href: tuning.html
+      href: howto-tuning.html
       sub:
         - text: General Tuning Suggestions
           id: pub-general-tuning-suggestions
@@ -225,7 +226,7 @@
           sub: use-case-specific-tuning-suggestions/navigation.json
 
     - text: Analytics
-      href: analytics.html
+      href: howto-analytics.html
       sub:
         - text: Creating Profiles
           id: pub-creating-profiles
