@@ -2,6 +2,6 @@
 # Navigation data previously in this file
 # has been centralized into the _data folder.
 # Data that used to be here is now at
-#   _data/productid/HDPDocuments/DSS/DSS-1.3.0/navigation.yml
+#   _data/HDPDocuments/DSS/DSS-1.3.0/navigation.yml
 ---
-{{ site.data.productid.HDPDocuments.DSS["DSS-130"].navigation | jsonify }}
+{{ site.data.HDPDocuments.DSS["DSS-130"].navigation | jsonify }}

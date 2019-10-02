@@ -2,6 +2,6 @@
 # Navigation data previously in this file
 # has been centralized into the _data folder.
 # Data that used to be here is now at
-#   _data/productid/machine-learning/cloud/navigation.yml
+#   _data/machine-learning/cloud/navigation.yml
 ---
-{{ site.data.productid.machine-learning.cloud.navigation | jsonify }}
+{{ site.data.machine-learning.cloud.navigation | jsonify }}

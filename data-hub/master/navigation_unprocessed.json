@@ -2,6 +2,6 @@
 # Navigation data previously in this file
 # has been centralized into the _data folder.
 # Data that used to be here is now at
-#   _data/productid/data-hub/master/navigation.yml
+#   _data/data-hub/master/navigation.yml
 ---
-{{ site.data.productid.data-hub.master.navigation | jsonify }}
+{{ site.data.data-hub.master.navigation | jsonify }}

@@ -2,4 +2,4 @@
 layout: html5
 title: Link Checking Page
 ---
-{% include links.html nav=site.data.productid.cem.100.navigation -%}
+{% include links.html nav=site.data.cem.100.navigation -%}

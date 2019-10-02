@@ -2,4 +2,4 @@
 layout: html5
 title: Link Checking Page
 ---
-{% include links.html nav=site.data.productid.data-warehouse.cloud.navigation -%}
+{% include links.html nav=site.data.data-warehouse.cloud.navigation -%}
