@@ -1,5 +1,7 @@
 ---
-# navigation_unprocessed.json has moved to
+# Navigation data previously in this file
+# has been centralized into the _data folder.
+# Data that used to be here is now at
 #   _data/productid/HDPDocuments/DAS/DAS-1.1.0/navigation.yml
 ---
 {{ site.data.productid.HDPDocuments.DAS["DAS-110"].navigation | jsonify }}
