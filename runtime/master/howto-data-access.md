@@ -89,11 +89,17 @@ publications:
   - title: Administering Hue
     url: administering-hue/index.html
     description: >-
-      Describes how to configure Hue, customize its web UI, and to
-      enable integration with Apache Atlas.
+      Describes how to configure Hue, customize its web UI,
+      enable integration with Apache Atlas, and manage the Hue
+      service with Cloudera Manager.
 
+  - title: Securing Hue
+    url: securing-hue/index.html
+    description: >-
+      Describes how to set Hue user and application permissions, configure
+      ssl connections, LDAP authentication, and integration with Apache
+      Ranger and Knox.
 ---
-
 Cloudera Data Platform Runtime includes Apache Hive 3 and Apache Impala
 for storing and accessing data in the Hive metastore database. Hive 3
 addresses enterprise data warehouse demands for transactional data in
