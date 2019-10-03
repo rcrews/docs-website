@@ -7,6 +7,7 @@
 #- text: Reference
 #- text: Release Notes
 #- text: Learning & Training
+
 - text: Cloudera Data Platform
   id: landing-cloudera-data-platform
   href: /cdp/cloud/index.html

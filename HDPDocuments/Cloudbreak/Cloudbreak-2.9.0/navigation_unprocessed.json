@@ -2,6 +2,6 @@
 # Navigation data previously in this file
 # has been centralized into the _data folder.
 # Data that used to be here is now at
-#   _data/HDPDocuments/Cloudbreak/Cloudbreak-2.9.0/navigation.yml
+#   _data/cloudbreak/2.9.0/navigation.yml
 ---
-{{ site.data.HDPDocuments.Cloudbreak["Cloudbreak-290"].navigation | jsonify }}
+{{ site.data.cloudbreak["290"].navigation | jsonify }}

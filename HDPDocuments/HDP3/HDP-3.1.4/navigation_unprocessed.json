@@ -2,6 +2,6 @@
 # Navigation data previously in this file
 # has been centralized into the _data folder.
 # Data that used to be here is now at
-#   _data/HDPDocuments/HDP3/HDP-3.1.4/navigation.yml
+#   _data/hdp/3.1.4/navigation.yml
 ---
-{{ site.data.HDPDocuments.HDP3["HDP-314"].navigation | jsonify }}
+{{ site.data.hdp["314"].navigation | jsonify }}
