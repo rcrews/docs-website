@@ -2,7 +2,7 @@
 #content, .content 				{
 
   .codeblock 					{ font-family:monospace; white-space:pre-wrap; font-size:14.4px; }
-  .codeph 						{ font-family:monospace; font-size:14.4px;  }
+  .codeph, .filepath			{ font-family:monospace; font-size:14.4px;  }
   pre 							{ white-space:pre-wrap; color:#444; background-color:#fafafa; border:1px solid #dcdcdc; border-radius:2px; margin:10px 0; padding:8px; overflow-x:auto; font-size:14.4px;  }
 
   .kwd 							{ font-weight:400;  }
