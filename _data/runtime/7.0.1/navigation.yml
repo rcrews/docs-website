@@ -230,7 +230,7 @@
           id: pub-starting-hive
           sub: starting-hive/navigation.json
 
-        - text: Using HiveQL
+        - text: Using Hive
           href: using-hiveql/index.html
           id: pub-using-hiveql
           sub: using-hiveql/navigation.json

@@ -21,7 +21,7 @@ publications:
   - title: Using Hive
     url: using-hiveql/index.html
     description: >-
-      Covers how to use Hive to query flat and
+      Covers how to use Hive 3 to query flat and
       transactional data using SQL statements.
 
   - title: Managing Apache Hive
