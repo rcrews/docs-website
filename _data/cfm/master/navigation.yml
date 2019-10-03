@@ -10,7 +10,7 @@
 
 - text: Cloudera Flow Management
   id: landing-cloudera-flow-management
-  href: /cem/master/index.html
+  href: /cfm/master/index.html
   display: none
 
 - text: Concepts & Use Cases
