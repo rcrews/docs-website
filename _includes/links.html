@@ -9,8 +9,24 @@
   {%- elsif pub.sub %}
     {%- for subpub in pub.sub %}
       {%- if subpub.href contains "https://" %}{% continue %}{% endif %}
-      {%- if subpub.href contains "/HDPDocuments/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/ccp/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/cdp/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/cem/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/cfm/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/cloudera-manager/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/csp/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/data-catalog/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/data-hub/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/data-warehouse/" %}{% continue %}{% endif %}
       {%- if subpub.href contains "/documentation/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/HDPDocuments/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/machine-learning/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/management-console/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/replication-manager/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/runtime/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/smm/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/srm/" %}{% continue %}{% endif %}
+      {%- if subpub.href contains "/workload-manager/" %}{% continue %}{% endif %}
   <li><a href="{{ subpub.href | prepend: base | remove_first: 'index.html' }}">{{ subpub.text }}</a></li>
     {%- endfor %}
   {%- endif %}
