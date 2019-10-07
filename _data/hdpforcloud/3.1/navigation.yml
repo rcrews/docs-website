@@ -138,7 +138,7 @@
           href: ../../HDP3/HDP-3.1.4/starting-hive/index.html
           sub: ../../HDP3/HDP-3.1.4/starting-hive/navigation.json
 
-        - text: Using Apache HiveQL
+        - text: Using Apache Hive
           id: pub-using-hiveql
           href: ../../HDP3/HDP-3.1.4/using-hiveql/index.html
           sub: ../../HDP3/HDP-3.1.4/using-hiveql/navigation.json

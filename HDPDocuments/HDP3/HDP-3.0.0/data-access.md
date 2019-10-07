@@ -8,11 +8,11 @@ publications:
     description: >-
       Describes how to launch Hive, execute Hive commands, and issue
       Hive queries from Beeline
-  - title: Using Apache HiveQL
+  - title: Using Apache Hive
     url: using-hiveql/index.html
     description: >-
       Covers how to use Hive 3 revised semantics for querying flat and
-      transactional data using the SQL-like, Hive Query Language
+      transactional data using SQL
   - title: Managing Apache Hive
     url: managing-hive/index.html
     description: >-

@@ -135,7 +135,7 @@
           href: starting-hive/index.html
           sub: starting-hive/navigation.json
 
-        - text: Using Apache HiveQL
+        - text: Using Apache Hive
           id: pub-using-hiveql
           href: using-hiveql/index.html
           sub: using-hiveql/navigation.json
