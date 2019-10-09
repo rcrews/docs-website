@@ -1,102 +1,102 @@
-- exist: /HDPDocuments/Ambari/Ambari-2.7.4.0/
-  alias: /HDPDocuments/Ambari/latest/
-- exist: /HDPDocuments/Ambari-2.7.4.0/
-  alias: /HDPDocuments/Ambari-latest/
-- exist: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/
-  alias: /HDPDocuments/Cloudbreak/latest/
-- exist: /HDPDocuments/DAS/DAS-1.3.0/
-  alias: /HDPDocuments/DAS/latest/
-- exist: /HDPDocuments/DLM1/DLM-1.5.0/
-  alias: /HDPDocuments/DLM1/latest/
-- exist: /HDPDocuments/DP/DP-1.2.2/
-  alias: /HDPDocuments/DP/latest/
-- exist: /HDPDocuments/DSS1/DSS-1.5.0/
-  alias: /HDPDocuments/DSS1/latest/
-- exist: /HDPDocuments/HCP1/HCP-1.9.1/
-  alias: /HDPDocuments/HCP1/latest/
-- exist: /HDPDocuments/HDF1/HDF-1.2.1/
-  alias: /HDPDocuments/HDF1/latest/
-- exist: /HDPDocuments/HDF2/HDF-2.1.4/
-  alias: /HDPDocuments/HDF2/latest/
-- exist: /HDPDocuments/HDF3/HDF-3.4.1.1/
-  alias: /HDPDocuments/HDF3/latest/
-- exist: /HDPDocuments/HDP1/HDP-1.3.10/
-  alias: /HDPDocuments/HDP1/latest/
-- exist: /HDPDocuments/HDP2/HDP-2.6.5/
-  alias: /HDPDocuments/HDP2/latest/
-- exist: /HDPDocuments/HDP3/HDP-3.1.4/
-  alias: /HDPDocuments/HDP3/latest/
-- exist: /HDPDocuments/HDPforCloud/HDPforCloud-3.0.1/
-  alias: /HDPDocuments/HDPforCloud/latest/
-- exist: /HDPDocuments/HDPS/HDPS-5.0.0/
-  alias: /HDPDocuments/HDPS/latest/
-- exist: /HDPDocuments/SS1/SmartSense-1.5.1/
-  alias: /HDPDocuments/SS1/latest/
+- alias: /HDPDocuments/Ambari/latest/
+  exist: /HDPDocuments/Ambari/Ambari-2.7.4.0/
+- alias: /HDPDocuments/Ambari-latest/
+  exist: /HDPDocuments/Ambari-2.7.4.0/
+- alias: /HDPDocuments/Cloudbreak/latest/
+  exist: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/
+- alias: /HDPDocuments/DAS/latest/
+  exist: /HDPDocuments/DAS/DAS-1.3.0/
+- alias: /HDPDocuments/DLM1/latest/
+  exist: /HDPDocuments/DLM1/DLM-1.5.0/
+- alias: /HDPDocuments/DP/latest/
+  exist: /HDPDocuments/DP/DP-1.2.2/
+- alias: /HDPDocuments/DSS1/latest/
+  exist: /HDPDocuments/DSS1/DSS-1.5.0/
+- alias: /HDPDocuments/HCP1/latest/
+  exist: /HDPDocuments/HCP1/HCP-1.9.1/
+- alias: /HDPDocuments/HDF1/latest/
+  exist: /HDPDocuments/HDF1/HDF-1.2.1/
+- alias: /HDPDocuments/HDF2/latest/
+  exist: /HDPDocuments/HDF2/HDF-2.1.4/
+- alias: /HDPDocuments/HDF3/latest/
+  exist: /HDPDocuments/HDF3/HDF-3.4.1.1/
+- alias: /HDPDocuments/HDP1/latest/
+  exist: /HDPDocuments/HDP1/HDP-1.3.10/
+- alias: /HDPDocuments/HDP2/latest/
+  exist: /HDPDocuments/HDP2/HDP-2.6.5/
+- alias: /HDPDocuments/HDP3/latest/
+  exist: /HDPDocuments/HDP3/HDP-3.1.4/
+- alias: /HDPDocuments/HDPforCloud/latest/
+  exist: /HDPDocuments/HDPforCloud/HDPforCloud-3.0.1/
+- alias: /HDPDocuments/HDPS/latest/
+  exist: /HDPDocuments/HDPS/HDPS-5.0.0/
+- alias: /HDPDocuments/SS1/latest/
+  exist: /HDPDocuments/SS1/SmartSense-1.5.1/
 
-- exist: /cem/1.0.0/
-  alias: /cem/latest/
-- exist: /cfm/1.0.1/
-  alias: /cfm/latest/
-- exist: /cloudera-manager/7.0.1/
-  alias: /cloudera-manager/latest/
-- exist: /csp/2.0.0/
-  alias: /csp/latest/
+- alias: /cem/latest/
+  exist: /cem/1.0.0/
+- alias: /cfm/latest/
+  exist: /cfm/1.0.1/
+- alias: /cloudera-manager/latest/
+  exist: /cloudera-manager/7.0.1/
+- alias: /csp/latest/
+  exist: /csp/2.0.0/
 
-- exist: /documentation/data-science-workbench/1-6-x/
-  alias: /documentation/data-science-workbench/latest/
-- exist: /documentation/data-science-workbench/1-6-x.html
-  alias: /documentation/data-science-workbench/latest.html
+- alias: /documentation/data-science-workbench/latest/
+  exist: /documentation/data-science-workbench/1-6-x/
+- alias: /documentation/data-science-workbench/latest.html
+  exist: /documentation/data-science-workbench/1-6-x.html
 
-- exist: /documentation/director/6-3-x/
-  alias: /documentation/director/latest/
-- exist: /documentation/director/6-3-x.html
-  alias: /documentation/director/latest.html
+- alias: /documentation/director/latest/
+  exist: /documentation/director/6-3-x/
+- alias: /documentation/director/latest.html
+  exist: /documentation/director/6-3-x.html
 
-- exist: /documentation/enterprise/5-9-x/
-  alias: /documentation/enterprise/5/latest/
-- exist: /documentation/enterprise/6/6.3/
-  alias: /documentation/enterprise/6/latest/
+- alias: /documentation/enterprise/5/latest/
+  exist: /documentation/enterprise/5-16-x/
+- alias: /documentation/enterprise/6/latest/
+  exist: /documentation/enterprise/6/6.3/
 
-- exist: /documentation/kafka/4-1-x/
-  alias: /documentation/kafka/latest/
-- exist: /documentation/kafka/4-1-x.html
-  alias: /documentation/kafka/latest.html
+- alias: /documentation/kafka/latest/
+  exist: /documentation/kafka/4-1-x/
+- alias: /documentation/kafka/latest.html
+  exist: /documentation/kafka/4-1-x.html
 
-- exist: /documentation/other/accumulo/1-7-2/
-  alias: /documentation/other/accumulo/latest/
-- exist: /documentation/other/accumulo/1-7-2.html
-  alias: /documentation/other/accumulo/latest.html
+- alias: /documentation/other/accumulo/latest/
+  exist: /documentation/other/accumulo/1-7-2/
+- alias: /documentation/other/accumulo/latest.html
+  exist: /documentation/other/accumulo/1-7-2.html
 
-- exist: /documentation/other/connectors/hive-jdbc/2-6-5/
-  alias: /documentation/other/connectors/hive-jdbc/latest/
-- exist: /documentation/other/connectors/hive-jdbc/2-6-5.html
-  alias: /documentation/other/connectors/hive-jdbc/latest.html
+- alias: /documentation/other/connectors/hive-jdbc/latest/
+  exist: /documentation/other/connectors/hive-jdbc/2-6-5/
+- alias: /documentation/other/connectors/hive-jdbc/latest.html
+  exist: /documentation/other/connectors/hive-jdbc/2-6-5.html
 
-- exist: /documentation/other/connectors/hive-odbc/2-6-5/
-  alias: /documentation/other/connectors/hive-odbc/latest/
-- exist: /documentation/other/connectors/hive-odbc/2-6-5.html
-  alias: /documentation/other/connectors/hive-odbc/latest.html
+- alias: /documentation/other/connectors/hive-odbc/latest/
+  exist: /documentation/other/connectors/hive-odbc/2-6-5/
+- alias: /documentation/other/connectors/hive-odbc/latest.html
+  exist: /documentation/other/connectors/hive-odbc/2-6-5.html
 
 # Check to assure we have content for
 #   /documentation/other/connectors/hive-odbc/2-6-1/
 
-- exist: /documentation/other/connectors/impala-jdbc/2-6-12/
-  alias: /documentation/other/connectors/impala-jdbc/latest/
-- exist: /documentation/other/connectors/impala-jdbc/2-6-12.html
-  alias: /documentation/other/connectors/impala-jdbc/latest.html
+- alias: /documentation/other/connectors/impala-jdbc/latest/
+  exist: /documentation/other/connectors/impala-jdbc/2-6-12/
+- alias: /documentation/other/connectors/impala-jdbc/latest.html
+  exist: /documentation/other/connectors/impala-jdbc/2-6-12.html
 
-- exist: /documentation/other/connectors/impala-odbc/2-6-5/
-  alias: /documentation/other/connectors/impala-odbc/latest/
-- exist: /documentation/other/connectors/impala-odbc/2-6-5.html
-  alias: /documentation/other/connectors/impala-odbc/latest.html
+- alias: /documentation/other/connectors/impala-odbc/latest/
+  exist: /documentation/other/connectors/impala-odbc/2-6-5/
+- alias: /documentation/other/connectors/impala-odbc/latest.html
+  exist: /documentation/other/connectors/impala-odbc/2-6-5.html
 
-- exist: /documentation/spark2/2-4-x/
-  alias: /documentation/spark2/latest/
-- exist: /documentation/spark2/2-4-x.html
-  alias: /documentation/spark2/latest.html
+- alias: /documentation/spark2/latest/
+  exist: /documentation/spark2/2-4-x/
+- alias: /documentation/spark2/latest.html
+  exist: /documentation/spark2/2-4-x.html
 
-- exist: /documentation/
-  alias: /content/www/en-us/documentation/
+- alias: /content/www/en-us/documentation/
+  exist: /documentation/
 
 # /documentation/wxm/latest/ is not an alias
 
@@ -113,9 +113,9 @@
 # aws s3 rm --recursive /documentation/other/connectors/impala-odbc/latest/
 # aws s3 rm --recursive /documentation/spark2/latest/
 
-- exist: /runtime/7.0.1/
-  alias: /runtime/latest/
-- exist: /smm/1.2.1/
-  alias: /smm/latest/
-- exist: /srm/1.0.0/
-  alias: /srm/latest/
+- alias: /runtime/latest/
+  exist: /runtime/7.0.1/
+- alias: /smm/latest/
+  exist: /smm/1.2.1/
+- alias: /srm/latest/
+  exist: /srm/1.0.0/
