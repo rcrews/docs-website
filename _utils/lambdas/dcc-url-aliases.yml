@@ -27,7 +27,7 @@
 - alias: /HDPDocuments/HDP3/latest/
   exist: /HDPDocuments/HDP3/HDP-3.1.4/
 - alias: /HDPDocuments/HDPforCloud/latest/
-  exist: /HDPDocuments/HDPforCloud/HDPforCloud-3.0.1/
+  exist: /HDPDocuments/HDPforCloud/HDPforCloud-3.1/
 - alias: /HDPDocuments/HDPS/latest/
   exist: /HDPDocuments/HDPS/HDPS-5.0.0/
 - alias: /HDPDocuments/SS1/latest/
@@ -55,6 +55,8 @@
 - alias: /documentation/enterprise/5/latest/
   exist: /documentation/enterprise/5-16-x/
 - alias: /documentation/enterprise/6/latest/
+  exist: /documentation/enterprise/6/6.3/
+- alias: /documentation/enterprise/latest/
   exist: /documentation/enterprise/6/6.3/
 
 - alias: /documentation/kafka/latest/
@@ -99,19 +101,6 @@
   exist: /documentation/
 
 # /documentation/wxm/latest/ is not an alias
-
-# aws s3 rm --recursive /documentation/data-science-workbench/latest/
-# aws s3 rm --recursive /documentation/director/latest/
-# aws s3 rm --recursive /documentation/enterprise/5/
-# aws s3 rm --recursive /documentation/enterprise/6/latest/
-# aws s3 rm --recursive /documentation/enterprise/latest/
-# aws s3 rm --recursive /documentation/kafka/latest/
-# aws s3 rm --recursive /documentation/other/accumulo/latest/
-# aws s3 rm --recursive /documentation/other/connectors/hive-jdbc/latest/
-# aws s3 rm --recursive /documentation/other/connectors/hive-odbc/latest/
-# aws s3 rm --recursive /documentation/other/connectors/impala-jdbc/latest/
-# aws s3 rm --recursive /documentation/other/connectors/impala-odbc/latest/
-# aws s3 rm --recursive /documentation/spark2/latest/
 
 - alias: /runtime/latest/
   exist: /runtime/7.0.1/
