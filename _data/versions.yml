@@ -1240,7 +1240,7 @@
           url: /documentation/manager/5-0-x.html
 
 #
-# For search, (old) Manager content:
+# For search, Navigator Optimizer content:
 # - /documentation/navopt/
 #
 
@@ -1772,7 +1772,7 @@
       url: /documentation/other/security-bulletins/topics/Security-Bulletin.html
 
 #
-# For search, Reference Architecture content:
+# For search, Workload XM content:
 # - /documentation/wxm/latest/
 # Note that /documentation/wxm/latest/ is not a URL alias
 #
