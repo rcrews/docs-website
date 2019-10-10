@@ -19,6 +19,7 @@
 #   Governance: Atlas
 #   Cluster Management: Cloudera Manager
 #   Jobs Management: Oozie
+#   Streaming: Kafka
 # -> Kudu moved from operational db to storage Mitra 8/7
 
 - text: Cloudera Runtime
@@ -124,6 +125,14 @@
           href: cdp-governance-extending-metadata/index.html
           id: pub-cdp-governance-extending-metadata
           sub: cdp-governance-extending-metadata/navigation.json
+
+    - text: Streaming
+      href: concepts-streaming.html
+      sub:
+        - text: Apache Kafka Overview
+          href: kafka-overview/index.html
+          id: pub-kafka-overview
+          sub: kafka-overview/navigation.json
 
 - text: Planning
   id: cat-planning
@@ -425,6 +434,34 @@
           href: configuring-oozie/index.html
           id: pub-configuring-oozie
           sub: configuring-oozie/navigation.json
+
+    - text: Streaming
+      href: howto-streaming.html
+      sub:
+        - text: Configuring Apache Kafka
+          href: kafka-configuring/index.html
+          id: pub-kafka-configuring
+          sub: kafka-configuring/navigation.json
+
+        - text: Securing Apache Kafka
+          href: kafka-securing/index.html
+          id: pub-kafka-securing
+          sub: kafka-securing/navigation.json
+
+        - text: Tuning Apache Kafka Performance
+          href: kafka-performance-tuning/index.html
+          id: pub-kafka-performance-tuning
+          sub: kafka-performance-tuning/navigation.json
+
+        - text: Managing Apache Kafka
+          href: kafka-managing/index.html
+          id: pub-kafka-managing
+          sub: kafka-managing/navigation.json
+
+        - text: Developing Apache Kafka Applications
+          href: kafka-developing-applications/index.html
+          id: pub-kafka-developing-applications
+          sub: kafka-developing-applications/navigation.json
 
 - text: Troubleshooting
   id: cat-troubleshooting
