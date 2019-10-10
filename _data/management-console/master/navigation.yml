@@ -34,6 +34,11 @@
       id: pub-requirements-aws
       sub: requirements-aws/navigation.json
 
+    - text: Azure Requirements
+      href: requirements-azure/index.html
+      id: pub-requirements-azure
+      sub: requirements-azure/navigation.json
+
 # - text: Installation & Upgrade
 #   id: cat-installation
 #   sub:
@@ -65,6 +70,11 @@
       href: environments/index.html
       id: pub-environments
       sub: environments/navigation.json
+
+    - text: Azure Environments
+      href: environments-azure/index.html
+      id: pub-environments-azure
+      sub: environments-azure/navigation.json
 
     - text: Data Lakes
       href: data-lakes/index.html
