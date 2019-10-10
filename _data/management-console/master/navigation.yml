@@ -61,15 +61,15 @@
       id: pub-credentials-aws
       sub: credentials-aws/navigation.json
 
-    - text: Azure Credentials
-      href: credentials-azure/index.html
-      id: pub-credentials-azure
-      sub: credentials-azure/navigation.json
-
     - text: AWS Environments
       href: environments/index.html
       id: pub-environments
       sub: environments/navigation.json
+
+    - text: Azure Credentials
+      href: credentials-azure/index.html
+      id: pub-credentials-azure
+      sub: credentials-azure/navigation.json
 
     - text: Azure Environments
       href: environments-azure/index.html
