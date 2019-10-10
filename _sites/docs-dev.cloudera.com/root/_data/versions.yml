@@ -319,10 +319,12 @@
       - title: master
         url: /HDPDocuments/DP/DP-master/index.html
     - title: "1.2"
-      url: /HDPDocuments/DP/DP-1.2.2/index.html
+      url: /HDPDocuments/DP/DP-1.2.3/index.html
       minors:
-        - title: 1.2.2
+        - title: 1.2.3
           type: Latest
+          url: /HDPDocuments/DP/DP-1.2.3/index.html
+        - title: 1.2.2
           url: /HDPDocuments/DP/DP-1.2.2/index.html
         - title: 1.2.1
           url: /HDPDocuments/DP/DP-1.2.1/index.html
@@ -393,11 +395,16 @@
       minors:
       - title: master
         url: /HDPDocuments/DSS1/DSS-master/index.html
+    - title: "1.6"
+      url: /HDPDocuments/DSS1/DSS-1.6.0/index.html
+      minors:
+        - title: 1.6.0
+          type: Latest
+          url: /HDPDocuments/DSS1/DSS-1.6.0/index.html
     - title: "1.5"
       url: /HDPDocuments/DSS1/DSS-1.5.0/index.html
       minors:
         - title: 1.5.0
-          type: Latest
           url: /HDPDocuments/DSS1/DSS-1.5.0/index.html
     - title: "1.4"
       url: /HDPDocuments/DSS1/DSS-1.4.0/index.html
