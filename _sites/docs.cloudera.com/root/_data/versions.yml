@@ -606,15 +606,20 @@
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
 - name: Cybersecurity
-  latest-version: 1.9.1
-  latest-url: /HDPDocuments/HCP1/HCP-1.9.1/index.html
+  latest-version: 2.0.0
+  latest-url: /ccp/2.0.0/index.html
   search-name: Cybersecurity
   versions:
+    - title: "2.0"
+      url: /ccp/2.0.0/index.html
+      minors:
+        - title: 2.0.0
+          type: Latest
+          url: /ccp/2.0.0/index.html
     - title: "1.9"
       url: /HDPDocuments/HCP1/HCP-1.9.1/index.html
       minors:
         - title: 1.9.1
-          type: Latest
           url: /HDPDocuments/HCP1/HCP-1.9.1/index.html
         - title: 1.9.0
           url: /HDPDocuments/HCP1/HCP-1.9.0/index.html

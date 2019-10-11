@@ -65,7 +65,7 @@ json:
 - title: Applications
   products:
     - text: Cloudera Cybersecurity Platform
-      href: /HDPDocuments/HCP1/HCP-1.9.1/index.html
+      href: /ccp/2.0.0/index.html
       icon: /common/img/mini_icons/icon-cybersecurity.png
 
     - text: Cloudera Data Science Workbench

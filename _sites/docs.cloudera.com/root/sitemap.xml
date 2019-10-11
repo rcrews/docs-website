@@ -1,6 +1,7 @@
 ---
 layout: sitemap
 sitemaps:
+  - https://docs.cloudera.com/ccp/2.0.0/sitemap.xml
   - https://docs.cloudera.com/cdp/cloud/sitemap.xml
   - https://docs.cloudera.com/cem/1.0.0/sitemap.xml
   - https://docs.cloudera.com/cfm/1.0.1/sitemap.xml
@@ -38,7 +39,6 @@ sitemaps:
   - https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.2/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.5.0/sitemap.xml
-  - https://docs.cloudera.com/HDPDocuments/HCP1/HCP-1.9.1/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/HDF3/HDF-3.4.1.1/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/HDP3/HDP-3.1.4/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-5.0.0/sitemap.xml

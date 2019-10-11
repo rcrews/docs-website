@@ -39,7 +39,6 @@ exclude:
   - /README.md
 
   # Unreleased documentation
-  - /ccp/
   - /cem/1.1.0/
   - /cfm/2.0.0/
   - /csp/2.0.1/
