@@ -13,19 +13,19 @@ publications:
   - title: Component Tuning Variables
     url: component-tuning-levers/index.html
     description: >-
-      Lists and defines variables you can use to tune HCP components.
+      Lists and defines variables you can use to tune CCP components.
 
   - title: Tuning Topologies
     url: tuning-topologies/index.html
     description: >-
-      Provides suggestions and best practices for tuning HCP components.
+      Provides suggestions and best practices for tuning CCP components.
 
   - title: Use Case Specific Tuning Suggestions
     url: use-case-specific-tuning-suggestions/index.html
     description: >-
-      Provides use case examples for HCP component tuning.
+      Provides use case examples for CCP component tuning.
 
 ---
 
-Provides recommendations and best practices for tuning HCP to maximize
+Provides recommendations and best practices for tuning CCP to maximize
 performance.

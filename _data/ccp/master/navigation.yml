@@ -16,12 +16,12 @@
 - text: Concepts & Use Cases
   id: cat-concepts
   sub:
-    - text: HCP Architecture
+    - text: CCP Architecture
       id: pub-architecture
       href: architecture/index.html
       sub: architecture/navigation.json
 
-    - text: HCP Terminology
+    - text: CCP Terminology
       id: pub-terminology
       href: terminology/index.html
       sub: terminology/navigation.json
@@ -192,10 +192,10 @@
           href: install-zeppelin/index.html
           sub: install-zeppelin/navigation.json
 
-        - text: Setting up Zeppelin to Run with HCP
-          id: pub-set-up-zeppelin-with-hcp
-          href: set-up-zeppelin-with-hcp/index.html
-          sub: set-up-zeppelin-with-hcp/navigation.json
+        - text: Setting up Zeppelin to Run with CCP
+          id: pub-set-up-zeppelin-with-ccp
+          href: set-up-zeppelin-with-ccp/index.html
+          sub: set-up-zeppelin-with-ccp/navigation.json
 
         - text: Working with Zeppelin Notes
           id: pub-working-with-notes
@@ -283,7 +283,7 @@
 - text: Learning & Training
   id: cat-learning-training
   sub:
-    - text: Introduction to the HCP Runbook
+    - text: Introduction to the CCP Runbook
       id: pub-runbook-overview
       href: runbook-overview/index.html
       sub: runbook-overview/navigation.json

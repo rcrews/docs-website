@@ -1,7 +1,7 @@
 ---
 layout: foyer
 breadcrumb-title: Cybersecurity How To
-title: Configure HCP
+title: Configure CCP
 
 publications:
   - title: Management User Interface

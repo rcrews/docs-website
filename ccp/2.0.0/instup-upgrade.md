@@ -7,7 +7,7 @@ publications:
   - title: Preparing to Upgrade
     url: prepare-upgrade/index.html
     description: >-
-      Describes the steps you need to perform in preparation for an HCP
+      Describes the steps you need to perform in preparation for an CCP
       upgrade.
 
   - title: Upgrading Metron
@@ -19,7 +19,7 @@ publications:
     url: post-upgrade/index.html
     description: >-
       Provides the steps to you need to update your configuration and
-      the Stellar language after your HCP upgrade.
+      the Stellar language after your CCP upgrade.
 
   - title: Upgrading Elasticsearch
     url: upgrade-elasticsearch/index.html
@@ -29,9 +29,9 @@ publications:
   - title: Troubleshooting Upgrade
     url: upgrade-troubleshooting/index.html
     description: >-
-      Provides resolutions for issues you might see after your HCP
+      Provides resolutions for issues you might see after your CCP
       upgrade.
 
 ---
 
-Provides steps to prepare for and perform an HCP upgrade.
+Provides steps to prepare for and perform an CCP upgrade.
