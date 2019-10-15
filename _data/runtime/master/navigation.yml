@@ -476,6 +476,11 @@
       id: pub-impala-troubleshooting
       sub: impala-troubleshooting/navigation.json
 
+    - text: Troubleshooting Apache Hadoop YARN
+      href: yarn-troubleshooting/index.html
+      id: pub-yarn-troubleshooting
+      sub: yarn-troubleshooting/navigation.json
+
     - text: Troubleshooting Apache HBase
       href: troubleshooting-hbase/index.html
       id: pub-troubleshooting-hbase
