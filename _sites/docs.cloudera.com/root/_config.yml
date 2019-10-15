@@ -44,7 +44,6 @@ exclude:
   - /csp/2.0.1/
   - /dp/1.2.3/
   - /dss/1.6.0/
-  - /HDPDocuments/DAS/DAS-1.4.1/
 
   # "master" version for docs-dev only
   - /ccp/master/
