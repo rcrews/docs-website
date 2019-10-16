@@ -34,10 +34,10 @@
       id: pub-upgrade
       sub: upgrade/navigation.json
 
-    # - text: Quick Start
-    #   href: quick-start/index.html
-    #   id: pub-quick-start
-    #   sub: quick-start/navigation.json
+    - text: Support Matrix
+      href: support-matrix/index.html
+      id: pub-support-matrix
+      sub: support-matrix/navigation.json
 
 - text: How To
   id: cat-howto
