@@ -25,6 +25,8 @@ var CHOME = (function($) {
             $('body').on('click', this.clearVersionFilters); // Miscellaneous clicks on the body should reset the filters.
 
             $('.search-product-filter').on('click', this.toggleProductFilters);
+            $('body').on('click', this.toggleProductFilters); // Cancel it out.
+
             $('.filters').on('click', this.clearVersionFilters);
             $('.filters .product').on('click', this.setOnlyThis);
 
@@ -41,7 +43,16 @@ var CHOME = (function($) {
         },
         toggleProductFilters: function(evt) {
             let $filters = $('.filters');
-            $filters.toggle();
+
+            if(typeof(evt) === 'undefined') {
+                $filters.hide();
+            } else if (evt.currentTarget.nodeName === 'BODY') {
+                $filters.hide();
+            } else {
+                $filters.toggle();
+                evt.stopPropagation();
+            }
+
             if($filters.css('display') === 'block') {
                 $filters.addClass('visible');
                 $('.search-product-filter>i').removeClass('fa-angle-down').addClass('fa-angle-up');
@@ -49,7 +60,7 @@ var CHOME = (function($) {
                 $filters.removeClass('visible');
                 $('.search-product-filter>i').removeClass('fa-angle-up').addClass('fa-angle-down');
             }
-            evt.stopPropagation();
+
         },
         clearVersionFilters: function(evt) {
             // console.log('clear filters');
@@ -217,8 +228,11 @@ var CHOME = (function($) {
                             // Add back in <b> tags which are there for highlighting
                             item.text = item.text.replace(/&lt;b&gt;/g, "<b>").replace(/&lt;\/b&gt;/g, "</b>");
 
+                            item.release = Array.isArray(item.release) ? item.release[0] : item.release;
+                            if(item.release.toLowerCase() === 'cloud') item.release = '';
+
                             result = "";
-                            result += ' <div class="product">' + item.product + ' ' + item.release +'</div>';
+                            result += ' <div class="product">' + item.product + ' ' + item.release  +'</div>';
                             result += ' <div class="result">'
                             result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
                             result += '     <div class="excerpt">' + item.text + '</div>';
@@ -244,12 +258,13 @@ var CHOME = (function($) {
 
                         $('.lucene-results .waiting').hide();
                         if('cursorMark' in response.responseHeader.params) {
-                            console.log('cursor mark found... appending');
+                            // console.log('cursor mark found... appending');
                             $('.lucene-results .results').append(output);
                         } else {
                             $('.lucene-results .results').html(output).show();
                         }
                         $('.lucene-results .more-link').data('nextCursorMark',response.nextCursorMark).data('searchTerm',response.responseHeader.params.q);
+                        Search.toggleProductFilters();
                     } else {
                         $('.lucene-results .waiting').hide();
                         $('.lucene-results .results').hide();

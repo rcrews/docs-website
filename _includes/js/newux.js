@@ -1045,7 +1045,6 @@ var NEWUX = (function($) {
                 'q':q
             };
 
-            console.log(fq);
             if(fq) {
                 fq = "(" + fq + ")";
                 params.fq = fq;
