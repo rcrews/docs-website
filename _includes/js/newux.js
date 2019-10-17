@@ -9,6 +9,7 @@ var NEWUX = (function($) {
 
     var WhoAmI = {
         product_name : "", // We get this from the from the URL, or the meta-tag
+        search_name : "", // This is used to pass the query on to the search engine.
         version : "", // We get this from the URL, or the meta tag.
         is_latest : false, // This gets flagged if we are using the 'latest' url.
         // latest_version : {}, // We need to look this up from the versions.yaml and use it to highlight the latest version.
@@ -127,16 +128,9 @@ var NEWUX = (function($) {
                             }
 
                             if(WhoAmI.product_name === "") WhoAmI.product_name = data[i].name;
+                            if(typeof data[i]['search-name'] !== 'undefined') WhoAmI.search_name = data[i]['search-name'];
                             WhoAmI.versions = versions;
 
-                            // I don't think this is being used elsewhere?
-                            /* if(typeof data[i].latest_version !== 'undefined') {
-                                WhoAmI.latest_version = {
-                                    name: data[i].latest_version,
-                                    url: data[i].latest_url
-                                };
-                            }
-                            */
                             break; // And break out of this loop
                         }
                     }
@@ -980,7 +974,10 @@ var NEWUX = (function($) {
         },
 
         formatReleaseNumber: function(version, shorten) {
-            // TODO!!! - How to handle cloud?
+
+            // Ignore cloud versions.
+            if(version.toLowerCase() === 'cloud') return version;
+
             // Bi-way formatting of release number.
             shorten = shorten ? true : false;
             var release = version.toString().split('.');
@@ -1035,7 +1032,7 @@ var NEWUX = (function($) {
             var that = this;
             var q  = searchterm == null ? filterSearchTerm($('#overlay-search .searchterm').val()) : searchterm,
                 // For Example: fq = "((product:\\\"Ambari\\\" AND release:2.7.3.0))",
-                fq = WhoAmI.product_name ? "(product:\"" + WhoAmI.product_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
+                fq = WhoAmI.search_name ? "(product:\"" + WhoAmI.search_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
                 rows = 10,
                 params = {},
                 defaults = "&sort=score desc,id asc&facet=true&facet.field=product&facet.field=release&facet.field=booktitle&hl=true&hl.fl=text&fl=id,score,url,product,release,booktitle,title",
@@ -1048,6 +1045,7 @@ var NEWUX = (function($) {
                 'q':q
             };
 
+            console.log(fq);
             if(fq) {
                 fq = "(" + fq + ")";
                 params.fq = fq;
