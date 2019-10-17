@@ -12,7 +12,7 @@
 # Here's the final list:
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
-#   Data Access: Hive, Impala, Hue, Sqoop, Search
+#   Data Access: Hive, Impala, Hue, Sqoop, Search, DAS
 #   Operational Datastore: HBase
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox
@@ -59,6 +59,11 @@
     - text: Data Access
       href: concepts-data-access.html
       sub:
+        - text: Data Analytics Studio Overview
+          href: das-introduction/index.html
+          id: pub-das-core-concepts
+          sub: das-introduction/navigation.json
+          
         - text: Apache Hive Overview
           href: hive-introduction/index.html
           id: pub-hive-introduction
@@ -77,7 +82,7 @@
         - text: Hue Overview
           href: hue-introduction/index.html
           id: pub-hue-introduction
-          sub: hue-introduction/navigation.json
+          sub: hue-introduction/navigation.json          
 
     - text: Operational Datastore
       href: concepts-operational-database.html
@@ -239,10 +244,15 @@
     - text: Data Access
       href: howto-data-access.html
       sub:
+        - text: Using Data Analytics Studio
+          href: using-das/index.html
+          id: pub-das-using-das
+          sub: das-using-das/navigation.json
+          
         - text: Starting Apache Hive
           href: starting-hive/index.html
           id: pub-starting-hive
-          sub: starting-hive/navigation.json
+          sub: starting-hive/navigation.json  
 
         - text: Using Hive
           href: using-hiveql/index.html
