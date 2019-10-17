@@ -9,9 +9,14 @@ title: Data Access
 # * Hue
 # * Sqoop
 # * Search
+# * DAS
 
 publications:
-
+  - title: Using Data Analytics Studio
+    url: using-das/index.html
+    description: >-
+      Describes how to work with queries, manage databases and tables, and generate reports.
+      
   - title: Starting Apache Hive
     url: starting-hive/index.html
     description: >-
