@@ -9,8 +9,14 @@ title: Data Access
 # * Hue
 # * Sqoop
 # * Search
+# * DAS
 
 publications:
+  - title: Data Analytics Studio Overview
+    url: das-introduction/index.html
+    description: >-
+      Provides an overview and architecture of the Data Analytics Studio environment.
+      
   - title: Apache Hive Overview
     url: hive-introduction/index.html
     description: >-
