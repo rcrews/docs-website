@@ -1225,6 +1225,5 @@ var NEWUX = (function($) {
     Pubnav.init();
     // ProductDrawer.init(); Actually, we can't fire this until the WhoAmI function has fired, so moved the init call over there.
     Search.init();
-    // $('.search').html(''); // Remove search box until ready.
 
 }(jQuery));
