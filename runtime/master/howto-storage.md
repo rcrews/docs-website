@@ -54,7 +54,9 @@ publications:
     description: >-
       Describes information about the configuration parameters used to
       access data stored in the cloud.
+
 ---
+
 Cloudera Runtime provides different types of storage components that you
 can use depending on your data requirements. Apache Kudu completes
 Apache Hadoop's storage layer, enabling fast analytics on fast data.

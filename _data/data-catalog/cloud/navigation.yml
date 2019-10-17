@@ -1,0 +1,58 @@
+---
+#- text: Concepts & Use Cases
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+
+- text: Data Catalog
+  id: landing-data-catalog
+  href: /data-catalog/cloud/index.html
+  display: none
+
+- text: Concepts & Use Cases
+  id: cat-concepts
+  sub:
+    - text: Overview
+      href: core-concepts/index.html
+      id: pub-core-concepts
+      sub: core-concepts/navigation.json
+
+# - text: Planning
+#   id: cat-planning
+#   sub:
+
+# - text: Installation & Upgrade
+#   id: cat-installation
+#   sub:
+
+- text: How To
+  id: cat-howto
+  sub:
+    - text: Managing
+      href: managing/index.html
+      id: pub-managing
+      sub: managing/navigation.json
+
+# - text: Troubleshooting
+#   id: cat-troubleshooting
+#   sub:
+
+# - text: Reference
+#   id: cat-reference
+#   sub:
+
+- text: Release Notes
+  id: cat-releasenotes
+  sub:
+    - text: Release Notes
+      href: release-notes/index.html
+      id: pub-release-notes
+      sub: release-notes/navigation.json
+
+# - text: Learning & Training
+#   id: cat-learning
+#   sub:

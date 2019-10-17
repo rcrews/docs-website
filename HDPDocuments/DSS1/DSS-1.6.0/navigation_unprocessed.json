@@ -1,0 +1,7 @@
+---
+# Navigation data previously in this file
+# has been centralized into the _data folder.
+# Data that used to be here is now at
+#   _data/dss/1.6.0/navigation.yml
+---
+{{ site.data.dss["160"].navigation | jsonify }}

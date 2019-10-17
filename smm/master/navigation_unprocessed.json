@@ -1,42 +1,7 @@
 ---
-layout: json
-#- text: Concepts & Use Cases
-#- text: Planning
-#- text: Installation & Upgrade
-#- text: How To
-#- text: Troubleshooting
-#- text: Reference
-#- text: Release Notes
-#- text: Learning & Training
-json:
-  - text: Streams Messaging Manager
-    id: landing-streams-messaging-manager
-    href: /smm/master/index.html
-    display: none
-
-  - text: Concepts & Use Cases
-    id: cat-concepts
-    sub:
-      - text: Getting Started
-        href: /HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-streaming-analytics/content/hdf-managing-kafka-with-smm.html
-
-  - text: Installation & Upgrade
-    id: cat-installation-upgrade
-    # sub:
-
-  - text: How To
-    id: cat-how-to
-    # sub:
-
-  - text: Reference
-    id: cat-reference
-    sub:
-      - text: REST API Reference
-        href: rest-api-reference/index.html
-        id: pub-rest-api-reference
-        external: external
-
-  - text: Release Notes
-    id: cat-releasenotes
-    # sub:
+# Navigation data previously in this file
+# has been centralized into the _data folder.
+# Data that used to be here is now at
+#   _data/smm/master/navigation.yml
 ---
+{{ site.data.smm.master.navigation | jsonify }}

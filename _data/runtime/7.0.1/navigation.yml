@@ -1,0 +1,485 @@
+---
+#- text: Concepts & Use Cases
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+
+# Foyer Pages
+# Here's the final list:
+#   Storage: HDFS, Kudu
+#   Compute: YARN, ZooKeeper
+#   Data Access: Hive, Impala, Hue, Sqoop, Search
+#   Operational Datastore: HBase
+#   Data Science: Spark, Zeppelin
+#   Security: Ranger, Knox
+#   Governance: Atlas
+#   Cluster Management: Cloudera Manager
+#   Jobs Management: Oozie
+# -> Kudu moved from operational db to storage Mitra 8/7
+
+- text: Cloudera Runtime
+  id: landing-runtime
+  href: /runtime/7.0.1/index.html
+  display: none
+
+- text: Concepts & Use Cases
+  id: cat-concepts
+  sub:
+    - text: Storage
+      href: concepts-storage.html
+      sub:
+        - text: HDFS Overview
+          href: hdfs-overview/index.html
+          id: pub-hdfs-overview
+          sub: hdfs-overview/navigation.json
+
+        - text: Apache Kudu Overview
+          href: kudu-overview/index.html
+          id: pub-kudu-overview
+          sub: kudu-overview/navigation.json
+
+        - text: Apache Kudu Design
+          href: kudu-design/index.html
+          id: pub-kudu-design
+          sub: kudu-design/navigation.json
+
+    - text: Compute
+      href: concepts-compute.html
+      sub:
+         - text: Apache Hadoop YARN Overview
+           href: yarn-overview/index.html
+           id: pub-yarn-overview
+           sub: yarn-overview/navigation.json
+
+    - text: Data Access
+      href: concepts-data-access.html
+      sub:
+        - text: Apache Hive Overview
+          href: hive-introduction/index.html
+          id: pub-hive-introduction
+          sub: hive-introduction/navigation.json
+
+        - text: Apache Hive Performance Tuning
+          href: hive-performance-tuning/index.html
+          id: pub-hive-performance-tuning
+          sub: hive-performance-tuning/navigation.json
+
+        - text: Apache Impala Overview
+          href: impala-overview/index.html
+          id: pub-impala-overview
+          sub: impala-overview/navigation.json
+
+        - text: Hue Overview
+          href: hue-introduction/index.html
+          id: pub-hue-introduction
+          sub: hue-introduction/navigation.json
+
+    - text: Operational Datastore
+      href: concepts-operational-database.html
+      sub:
+        - text: Apache HBase Overview
+          href: hbase-overview/index.html
+          id: pub-hbase-overview
+          sub: hbase-overview/navigation.json
+
+    - text: Data Science
+      href: concepts-data-science.html
+      sub:
+        - text: Apache Spark Overview
+          href: spark-overview/index.html
+          id: pub-spark-overview
+          sub: spark-overview/navigation.json
+
+        - text: Apache Zeppelin Overview
+          href: zeppelin-overview/index.html
+          id: pub-zeppelin-overview
+          sub: zeppelin-overview/navigation.json
+
+    - text: Security
+      href: concepts-security.html
+      sub:
+        - text: CDP Security Overview
+          href: cdp-security-overview/index.html
+          id: pub-cdp-security-overview/index.html
+          sub: cdp-security-overview/navigation.json
+
+    - text: Governance
+      href: concepts-governance.html
+      sub:
+        - text: Governance Overview
+          href: cdp-governance-overview/index.html
+          id: pub-cdp-governance-overview
+          sub: cdp-governance-overview/navigation.json
+
+        - text: Controlling Data Access with Tags
+          href: cdp-governance-controlling-access-tags/index.html
+          id: pub-cdp-governance-controlling-access-tags
+          sub: cdp-governance-controlling-access-tags/navigation.json
+
+        - text: Extending Atlas to Manage Metadata from Additional Sources
+          href: cdp-governance-extending-metadata/index.html
+          id: pub-cdp-governance-extending-metadata
+          sub: cdp-governance-extending-metadata/navigation.json
+
+- text: Planning
+  id: cat-planning
+  sub:
+    - text: Planning for Apache Impala
+      href: impala-planning/index.html
+      id: pub-impala-planning
+      sub: impala-planning/navigation.json
+
+- text: How To
+  id: cat-howto
+  sub:
+    - text: Storage
+      href: howto-storage.html
+      sub:
+        - text: Managing Data Storage
+          href: scaling-namespaces/index.html
+          id: pub-scaling-namespaces
+          sub: scaling-namespaces/navigation.json
+
+        - text: Configuring Data Protection
+          href: data-protection/index.html
+          id: pub-data-protection
+          sub: data-protection/navigation.json
+
+        - text: Configuring HDFS ACLs
+          href: hdfs-acls/index.html
+          id: pub-hdfs-acls
+          sub: hdfs-acls/navigation.json
+
+        - text: Configuring Fault Tolerance
+          href: fault-tolerance/index.html
+          id: pub-fault-tolerance
+          sub: fault-tolerance/navigation.json
+
+        - text: Administering Apache Kudu
+          href: administering-kudu/index.html
+          id: pub-administering-kudu
+          sub: administering-kudu/navigation.json
+
+        - text: Developing Applications with Apache Kudu
+          href: kudu-development/index.html
+          id: pub-kudu-development
+          sub: kudu-development/navigation.json
+
+        - text: Using Apache Impala with Apache Kudu
+          href: kudu-integration/index.html
+          id: pub-kudu-integration
+          sub: kudu-integration/navigation.json
+
+        - text: Accessing Cloud Data
+          href: cloud-data-access/index.html
+          id: pub-cloud-data-access
+          sub: cloud-data-access/navigation.json
+
+    - text: Compute
+      href: howto-compute.html
+      sub:
+        - text: Managing Applications on Apache Hadoop YARN
+          href: yarn-application-management/index.html
+          id: pub-yarn-application-management
+          sub: yarn-application-management/navigation.json
+
+        - text: Managing and Allocating Cluster Resources using Apache Hadoop YARN
+          href: yarn-allocate-resources/index.html
+          id: pub-yarn-allocate-resources
+          sub: yarn-allocate-resources/navigation.json
+
+        - text: Configuring Apache Hadoop YARN Security
+          href: yarn-security/index.html
+          id: pub-yarn-security
+          sub: yarn-security/navigation.json
+
+        - text: Apache Hadoop YARN High Availability
+          href: yarn-high-availability/index.html
+          id: pub-yarn-high-availability
+          sub: yarn-high-availability/navigation.json
+
+        - text: Monitoring Clusters and Apache Hadoop YARN Applications
+          href: yarn-monitoring-clusters-applications/index.html
+          id: pub-yarn-monitoring-clusters-applications
+          sub: yarn-monitoring-clusters-applications/navigation.json
+
+        - text: Using Cloud Credentials with Apache Hadoop YARN
+          href: yarn-using-cloud-credentials/index.html
+          id: pub-yarn-using-cloud-credentials
+          sub: yarn-using-cloud-credentials/navigation.json
+
+        - text: Managing Apache ZooKeeper
+          href: managing-zookeeper/index.html
+          id: pub-managing-zookeeper
+          sub: managing-zookeeper/navigation.json
+
+        - text: Managing Apache ZooKeeper Security
+          href: zookeeper-security/index.html
+          id: pub-zookeeper-security
+          sub: zookeeper-security/navigation.json
+
+    - text: Data Access
+      href: howto-data-access.html
+      sub:
+        - text: Starting Apache Hive
+          href: starting-hive/index.html
+          id: pub-starting-hive
+          sub: starting-hive/navigation.json
+
+        - text: Using Hive
+          href: using-hiveql/index.html
+          id: pub-using-hiveql
+          sub: using-hiveql/navigation.json
+
+        - text: Managing Apache Hive
+          href: managing-hive/index.html
+          id: pub-managing-hive
+          sub: managing-hive/navigation.json
+
+        - text: Managing Apache Hive Workloads
+          href: managing-a-hive-workload/index.html
+          id: pub-managing-a-hive-workload
+          sub: managing-a-hive-workload/navigation.json
+
+        - text: Configuring Apache Hive
+          href: configuring-apache-hive/index.html
+          id: pub-configuring-apache-hive
+          sub: configuring-apache-hive/navigation.json
+
+        - text: Configuring Apache Hive Metastore
+          href: hive-metastore/index.html
+          id: pub-hive-metastore
+          sub: hive-metastore/navigation.json
+
+        - text: Securing Apache Hive
+          href: securing-hive/index.html
+          id: pub-securing-hive
+          sub: securing-hive/navigation.json
+
+        - text: Integrating Apache Hive with Apache Spark and BI
+          href: integrating-hive-and-bi/index.html
+          id: pub-integrating-hive-and-bi
+          sub: integrating-hive-and-bi/navigation.json
+
+        - text: Migrating Data to Apache Hive
+          href: migrating-data-into-hive/index.html
+          id: pub-migrating-data-into-hive
+          sub: migrating-data-into-hive/navigation.json
+
+        - text: Managing Apache Impala
+          href: impala-manage/index.html
+          id: pub-impala-manage
+          sub: impala-manage/navigation.json
+
+        - text: Using Hue
+          href: using-hue/index.html
+          id: pub-using-hue
+          sub: using-hue/navigation.json
+
+        - text: Administering Hue
+          href: administering-hue/index.html
+          id: pub-administering-hue
+          sub: administering-hue/navigation.json
+
+    - text: Operational Datastore
+      href: howto-operational-database.html
+      sub:
+        - text: Getting Started with Apache HBase
+          href: hbase-getting-started/index.html
+          id: pub-hbase-getting-started
+          sub: hbase-getting-started/navigation.json
+
+        - text: Configuring Apache HBase
+          href: configuring-hbase/index.html
+          id: pub-configuring-hbase
+          sub: configuring-hbase/navigation.json
+
+        - text: Using Amazon S3 with Apache HBase
+          href: hbase-s3/index.html
+          id: pub-hbase-s3
+          sub: hbase-s3/navigation.json
+
+        - text: Managing Apache HBase Security
+          href: hbase-security/index.html
+          id: pub-hbase-security
+          sub: hbase-security/navigation.json
+
+        - text: Accessing Apache HBase
+          href: accessing-hbase/index.html
+          id: pub-accessing-hbase
+          sub: accessing-hbase/navigation.json
+
+        - text: Managing Apache HBase
+          href: managing-hbase/index.html
+          id: pub-managing-hbase
+          sub: managing-hbase/navigation.json
+
+        - text: Configuring Apache HBase High Availability
+          href: hbase-high-availability/index.html
+          id: pub-hbase-high-availability
+          sub: hbase-high-availability/navigation.json
+
+        - text: Using Apache HBase Backup and Disaster Recovery
+          href: hbase-backup-dr/index.html
+          id: pub-hbase-backup-dr
+          sub: hbase-backup-dr/navigation.json
+
+    - text: Data Science
+      href: howto-data-science.html
+      sub:
+        - text: Configuring Apache Spark
+          href: configuring-spark/index.html
+          id: pub-configuring-spark
+          sub: configuring-spark/navigation.json
+
+        - text: Developing Apache Spark Applications
+          href: developing-spark-applications/index.html
+          id: pub-developing-spark-applications
+          sub: developing-spark-applications/navigation.json
+
+        - text: Running Apache Spark Applications
+          href: running-spark-applications/index.html
+          id: pub-running-spark-applications
+          sub: running-spark-applications/navigation.json
+
+        - text: Tuning Apache Spark
+          href: tuning-spark/index.html
+          id: pub-tuning-spark
+          sub: tuning-spark/navigation.json
+
+        - text: Configuring Apache Zeppelin
+          href: configuring-zeppelin/index.html
+          id: pub-configuring-zeppelin
+          sub: configuring-zeppelin/navigation.json
+
+        - text: Using Apache Zeppelin
+          href: using-zeppelin/index.html
+          id: pub-using-zeppelin
+          sub: using-zeppelin/navigation.json
+
+    - text: Security
+      href: howto-security.html
+      sub:
+        # - text: Identity Management and Federation
+        #   ref: identity-management-and-federation/index.html
+        #   id: pub-identity-management-and-federation-and-federation/index.html
+        #   sub: identity-management-and-federation/navigation.json
+
+        - text: Apache Ranger Auditing
+          href: security-ranger-auditing/index.html
+          id: pub-security-ranger-auditing
+          sub: security-ranger-auditing/navigation.json
+
+        - text: Apache Ranger Authorization
+          href: security-ranger-authorization/index.html
+          id: pub-security-ranger-authorization
+          sub: security-ranger-authorization/navigation.json
+
+        - text: Configuring Ranger Authentication with UNIX, LDAP, or AD
+          href: security-ranger-authentication-unix-ldap-ad/index.html
+          id: pub-security-ranger-authentication-unix-ldap-ad
+          sub: security-ranger-authentication-unix-ldap-ad/navigation.json
+
+    - text: Governance
+      href: howto-governance.html
+      sub:
+
+        - text: Searching with Metadata
+          href: atlas-searching-with-metadata/index.html
+          id: pub-atlas-searching-with-metadata
+          sub: atlas-searching-with-metadata/navigation.json
+
+        - text: Working with Classifications
+          href: atlas-working-with-classifications/index.html
+          id: pub-atlas-working-with-classifications
+          sub: atlas-working-with-classifications/navigation.json
+
+        - text: Exploring using Lineage
+          href: atlas-exploring-using-lineage/index.html
+          id: pub-atlas-exploring-using-lineage
+          sub: atlas-exploring-using-lineage/navigation.json
+
+        - text: Managing Business Terms with Atlas Glossaries
+          href: atlas-managing-business-terms-with-glossaries/index.html
+          id: pub-atlas-managing-business-terms-with-glossaries
+          sub: atlas-managing-business-terms-with-glossaries/navigation.json
+
+    - text: Jobs Management
+      href: howto-jobs-management.html
+      sub:
+        - text: Configuring Oozie
+          href: configuring-oozie/index.html
+          id: pub-configuring-oozie
+          sub: configuring-oozie/navigation.json
+
+- text: Troubleshooting
+  id: cat-troubleshooting
+  sub:
+    - text: Troubleshooting Apache Impala
+      href: impala-troubleshooting/index.html
+      id: pub-impala-troubleshooting
+      sub: impala-troubleshooting/navigation.json
+
+    - text: Troubleshooting Apache HBase
+      href: troubleshooting-hbase/index.html
+      id: pub-troubleshooting-hbase
+      sub: troubleshooting-hbase/navigation.json
+
+    - text: Troubleshooting Apache Kudu
+      href: troubleshooting-kudu/index.html
+      id: pub-troubleshooting-kudu
+      sub: troubleshooting-kudu/navigation.json
+
+- text: Reference
+  id: cat-reference
+  sub:
+    # - text: Knox Reference
+    #   href: knox-reference/index.html
+    #   id: pub-knox-reference/index.html
+    #   sub: knox-reference/navigation.json
+
+    - text: Apache Impala Reference
+      href: impala-reference/index.html
+      id: pub-impala-reference/index.html
+      sub: impala-reference/navigation.json
+
+    - text: Apache Impala SQL Reference
+      href: impala-sql-reference/index.html
+      id: pub-impala-sql-reference/index.html
+      sub: impala-sql-reference/navigation.json
+
+    - text: Apache Hive Workload Management Commands
+      href: workload-management/index.html
+      id: pub-workload-management
+      sub: workload-management/navigation.json
+
+    - text: Apache Hive Materialized View Commands
+      href: materialized-view-commands/index.html
+      id: pub-materialized-view-commands
+      sub: materialized-view-commands/navigation.json
+
+    - text: Apache Atlas Reference
+      href: atlas-reference/index.html
+      id: pub-atlas-reference
+      sub: atlas-reference/navigation.json
+
+    - text: Apache Hadoop YARN Tuning
+      href: yarn-tuning/index.html
+      id: pub-yarn-tuning
+      sub: yarn-tuning/navigation.json
+
+- text: Release Notes
+  id: cat-releasenotes
+  sub:
+    - text: Release Notes
+      href: release-notes/index.html
+      id: pub-release-notes
+      sub: release-notes/navigation.json
+
+# - text: Learning & Training
+#   id: cat-learning
+#   sub:

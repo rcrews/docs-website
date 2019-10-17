@@ -1,0 +1,43 @@
+<div class="cloudera-mobile-nav mobile-hide">
+<div class="container">
+{%- if site.data.cloudera-mobile-nav %}
+<ul>
+{%- for item in site.data.cloudera-mobile-nav %}
+  <li class="main_li close_nav npar" data-tab="{{ item.data-tab }}">
+    <a href="{{ item.href }}" class="parent">{{ item.text }}<span class="glyphicon glyphicon-chevron-down"/></a>
+{%- if item.sub %}
+    <ul>
+{%- for subitem in item.sub %}
+      <li class="main_li close_nav child" data-tab="{{ subitem.data-tab }}">
+        <a href="{{ subitem.href }}">{{ subitem.text }}</a>
+{%- if subitem.sub %}
+        <ul>
+{%- for sub2item in subitem.sub %}
+          <li class="main_li close_nav child" data-tab="{{ sub2item.data-tab }}">
+            <a href="{{ sub2item.href }}">{{ sub2item.text }}</a>
+{%- if sub2item.sub %}
+            <ul>
+{%- for sub3item in sub2item.sub %}
+              <li class="main_li close_nav child" data-tab="{{ sub3item.data-tab }}">
+                <a href="{{ sub3item.href }}">{{ sub3item.text }}</a>
+{%- if sub3item.sub %}
+{%- endif -%}
+              </li>
+{%- endfor %}
+            </ul>
+{%- endif -%}
+          </li>
+{%- endfor %}
+        </ul>
+{%- endif -%}
+      </li>
+{%- endfor %}
+    </ul>
+{%- endif -%}
+  </li>
+{%- endfor %}
+</ul>
+<a href="tel:18887891488"><div class="orange-btn"><span class="glyphicon icon-phone1"></span>Contact Us</div></a>
+{%- endif %}
+</div>
+</div>

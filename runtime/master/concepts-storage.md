@@ -26,7 +26,9 @@ publications:
       Outlines effective schema design philosophies for Apache Kudu, and
       how they differ from approaches used for traditional relational
       database schemas.
+
 ---
+
 Cloudera Runtime provides different types of storage components that you
 can use depending on your data requirements. Apache Kudu completes
 Apache Hadoop's storage layer, enabling fast analytics on fast data.

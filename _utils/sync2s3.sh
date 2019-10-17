@@ -1,7 +1,37 @@
 #!/bin/sh
 
-git fetch
+git fetch cloudera master
 git fetch public playbranch
+
+# https://stackoverflow.com/questions/3878624
+require_clean_work_tree () {
+    # Update the index
+    git update-index -q --ignore-submodules --refresh
+    err=0
+
+    # Disallow unstaged changes in the working tree
+    if ! git diff-files --quiet --ignore-submodules --
+    then
+        echo >&2 "You have unstaged changes."
+        git diff-files --name-status -r --ignore-submodules -- >&2
+        err=1
+    fi
+
+    # Disallow uncommitted changes in the index
+    if ! git diff-index --cached --quiet HEAD --ignore-submodules --
+    then
+        echo >&2 "Your index contains uncommitted changes."
+        git diff-index --cached --name-status -r --ignore-submodules HEAD -- >&2
+        err=1
+    fi
+
+    if [[ $err = 1 ]]
+    then
+        echo >&2 "Please commit or stash them."
+        exit 1
+    fi
+}
+require_clean_work_tree
 
 _utils/switchsite.rb stage
 RESULT=$?
@@ -25,3 +55,5 @@ if [[ RESULT != 1 ]] ; then
 fi
 
 _utils/switchsite.rb stage
+
+aws cloudfront create-invalidation --distribution-id E8CUP7Y9RHWIX --paths '/*'

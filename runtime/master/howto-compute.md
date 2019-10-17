@@ -51,6 +51,12 @@ publications:
     description: >-
       Provides information about adding and managing the Apache
       ZooKeeper service and replacing an Apache ZooKeeper role.
+ 
+  - title: Configuring Apache ZooKeeper
+    url: zookeeper-configuring/index.html
+    description: >-
+      Provides information about configuring the Apache
+      ZooKeeper service.
 
   - title: Managing Apache ZooKeeper Security
     url: zookeeper-security/index.html

@@ -18,10 +18,10 @@ publications:
       Describes how to launch Hive, execute Hive commands, and issue
       Hive queries from Beeline.
 
-  - title: Using HiveQL
+  - title: Using Hive
     url: using-hiveql/index.html
     description: >-
-      Covers how to use Hive 3 semantics for querying flat and
+      Covers how to use Hive 3 to query flat and
       transactional data using SQL statements.
 
   - title: Managing Apache Hive
@@ -80,17 +80,33 @@ publications:
     description: >-
       Presents the task topics for configuring and managing Impala.
 
-  - title: Administering Hue
-    url: administering-hue/index.html
-    description: >-
-      Describes how to configure Hue, customize its web UI, and to
-      enable integration with Apache Atlas.
-
   - title: Using Hue
     url: using-hue/index.html
     description: >-
       Describes how to use Hue to query Apache Impala data sets and how
       to use it to browse metadata in Apache Atlas.
+
+  - title: Administering Hue
+    url: administering-hue/index.html
+    description: >-
+      Describes how to configure Hue, customize its web UI,
+      enable integration with Apache Atlas, and manage the Hue
+      service with Cloudera Manager.
+
+  - title: Securing Hue
+    url: securing-hue/index.html
+    description: >-
+      Describes how to set Hue user and application permissions, configure
+      ssl connections, LDAP authentication, and integration with Apache
+      Ranger and Knox.
+
+  - title: Tuning Hue
+    url: tuning-hue/index.html
+    description: >-
+      Describes how to add a load balancer and configure high availability
+      for hue and between hue and other components, such as Hive, Impala,
+      and HDFS.
+ 
 ---
 Cloudera Data Platform Runtime includes Apache Hive 3 and Apache Impala
 for storing and accessing data in the Hive metastore database. Hive 3

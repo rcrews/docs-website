@@ -124,7 +124,12 @@ exports.handler = async (event, context, callback) => {
      *
      * X-Frame-Options: DENY
      */
-    response.headers["x-frame-options"] = [{ value: "DENY" }];
+    /*
+     * Disabled because it prevents the How To for Gurus from working:
+     *     https://www.cloudera.com/campaign/how-tos-for-gurus/chapters/chapter-2.html
+     *
+     * response.headers["x-frame-options"] = [{ value: "DENY" }];
+     */
 
     return callback(null, response);
 };
