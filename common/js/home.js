@@ -74,7 +74,10 @@ var CHOME = (function($) {
         },
 
         formatReleaseNumber: function(version, shorten) {
-            // Bi-way formatting of release number.
+
+            /* IGNORE THIS
+             * Bi-way formatting of release number.
+
             shorten = shorten ? true : false;
             var release = version.toString().split('.');
             if(release.length == 4 && shorten) {
@@ -91,6 +94,8 @@ var CHOME = (function($) {
                 }
             }
             version = release.join('.');
+            */
+            
             return version;
         },
 
@@ -263,15 +268,25 @@ var CHOME = (function($) {
                         } else {
                             $('.lucene-results .results').html(output).show();
                         }
+                        $('.more-results').show();
                         $('.lucene-results .more-link').data('nextCursorMark',response.nextCursorMark).data('searchTerm',response.responseHeader.params.q);
                         Search.toggleProductFilters();
                     } else {
+                        // No results... this could be because there were none, or there were no more.
                         $('.lucene-results .waiting').hide();
-                        $('.lucene-results .results').hide();
-                        $('.lucene-results .fail').show();
-                        var err_msg = '<h2><i class="fa fa-frown-o"></i> Sorry, No results were returned</h2>';
-                        err_msg += '<p>Check your search term, and ensure that you have the appropriate product filter selected';
-                        $('.lucene-results .fail').html(err_msg);
+                        $('.more-results').hide();
+                        let err_msg = "";
+                        if(response.response.numFound > 0) {
+                            // There's no more.
+                            err_msg = '<h2><i class="fa fa-frown-o"></i> Sorry, No more results were found</h2>';
+                            err_msg += '<p>Check your search term, and ensure that you have the appropriate product filter selected';
+                        } else {
+                            // There's none.
+                            $('.lucene-results .results').hide();
+                            err_msg = '<h2><i class="fa fa-frown-o"></i> Sorry, No results were found</h2>';
+                            err_msg += '<p>Check your search term, and ensure that you have the appropriate product filter selected';
+                        }
+                        $('.lucene-results .fail').html(err_msg).show();
                     }
                 }
             })
