@@ -182,5 +182,12 @@
 
   aside, blockquote, dl, h1, h2, h3,
   h4, h5, h6, ol, p, ul, .p 			{ max-width:52rem;  }
+  
+  /* Style for known issues and fixed issues */
+  .ki-item { border-top: 1px solid black; margin-bottom: 24px;  }
+  .ki-jira { margin-bottom: 12px;  }
+  .ki-workaround::before { content: "Workaround: "; display: inline; font-weight: 400;  }
+  .fi-item { border-top: 1px solid black; margin-bottom: 24px;  }
+  .fi-jira { margin-bottom: 12px; }
 
 }
