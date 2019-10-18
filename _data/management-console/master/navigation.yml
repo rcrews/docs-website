@@ -120,6 +120,12 @@
   id: cat-learning
   sub:
     - text: Getting Started with Management Console on AWS
-      href: getting-started-tutorial/index.html
-      id: pub-getting-started-tutorial
-      sub: getting-started-tutorial/navigation.json
+      href: getting-started-tutorial-aws/index.html
+      id: pub-getting-started-tutorial-aws
+      sub: getting-started-tutorial-aws/navigation.json
+
+    - text: Getting Started with Management Console on Azure
+      href: getting-started-tutorial-azure/index.html
+      id: pub-getting-started-tutorial-azure
+      sub: getting-started-tutorial-azure/navigation.json
+
