@@ -242,9 +242,9 @@ var CHOME = (function($) {
                                 result = "";
                                 result += ' <div class="product">' + item.product + ' ' + item.release  +'</div>';
                                 result += ' <div class="result">'
-                                result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
+                                result += '     <div class="title"><a href="https://docs.cloudera.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
                                 result += '     <div class="excerpt">' + item.text + '</div>';
-                                result += '     <div class="url"><a href="https://docs.hortonworks.com' + item.url + '">' + item.url + '</a></div>';
+                                result += '     <div class="url"><a href="https://docs.cloudera.com' + item.url + '">' + item.url + '</a></div>';
                                 result += ' </div>';
 
                                 output_holder[item.booktitle] = output_holder[item.booktitle] || [];
@@ -340,12 +340,12 @@ var CHOME = (function($) {
             if (window.jQuery) {
                 // console.log('jQuery found, loading DCXA files.');
                 // window.$ = window.jQuery;
-                this.getScript('https://my.staging-upgrade.aem.cloudera.com/apps/settings/wcm/designs/support/clientlibs/dcxa.core.deps.js', function() {
-                    this.getScript('https://my.staging-upgrade.aem.cloudera.com/apps/settings/wcm/designs/support/clientlibs/dcxa.core.js', function() {
-                        this.getScript('https://my.staging-upgrade.aem.cloudera.com/apps/settings/wcm/designs/support/clientlibs/dcxa.vue.deps.js', function() {
-                            this.getScript('https://my.staging-upgrade.aem.cloudera.com/apps/settings/wcm/designs/support/clientlibs/dcxa.vue.js', function() {
-                                this.getScript('https://my.staging-upgrade.aem.cloudera.com/apps/settings/wcm/designs/support/clientlibs/dcxa.sso.header.js', function() {
-                                    this.getScript('https://my.staging-upgrade.aem.cloudera.com/apps/settings/wcm/designs/support/clientlibs/dcxa.sso.footer.js', function() {
+                this.getScript('/apps/settings/wcm/designs/support/clientlibs/dcxa.core.deps.js', function() {
+                    this.getScript('/apps/settings/wcm/designs/support/clientlibs/dcxa.core.js', function() {
+                        this.getScript('/apps/settings/wcm/designs/support/clientlibs/dcxa.vue.deps.js', function() {
+                            this.getScript('/apps/settings/wcm/designs/support/clientlibs/dcxa.vue.js', function() {
+                                this.getScript('/apps/settings/wcm/designs/support/clientlibs/dcxa.sso.header.js', function() {
+                                    this.getScript('/apps/settings/wcm/designs/support/clientlibs/dcxa.sso.footer.js', function() {
                                         console.log('DCXA files loaded.');
                                     });
                                 });
@@ -359,9 +359,10 @@ var CHOME = (function($) {
         }
     };
 
-    Headers.initDcxa();
+    // Headers.initDcxa();
     Search.init();
 
+    // Switch between the role and product views.
     $('.segments a').click(function (e) {
         e.preventDefault();
         let target = $(this).data('target');

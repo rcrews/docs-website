@@ -4,9 +4,11 @@ layout: home
 <div class="home-hero">
     <div>
         <h1><span style="display:none">Cloudera</span> Documentation</h1>
-        <p>Central launch pad for documentation on all Cloudera and former Hortonworks products.</p>
+        <p class="subtitle">Central launch pad for documentation on all Cloudera and former Hortonworks products.</p>
         <div class="search">
-            <input type="text" placeholder="Search Documentation"><i class="fa fa-search" style=""></i>
+            <form id="cta-search" class="searchform">
+                <input type="text" placeholder="Search Documentation"  class="searchterm" name="searchterm"><i class="fa fa-search submit" ></i>
+            </form>
         </div>
     </div>
 </div>
@@ -136,18 +138,3 @@ layout: home
     </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script>
-    (function ($) {
-        $('.segments a').click(function (e) {
-            e.preventDefault();
-            let target = $(this).data('target');
-            $('.segments li').removeClass('active');
-            $(this).parent('li').addClass('active');
-            $('.role-toggle .card-group').hide();
-            $('.role-toggle .card-group.' + target).show();
-        })
-        $('.role-toggle .card-group.by-role').hide();
-    }(jQuery));
-</script>
