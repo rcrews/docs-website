@@ -205,6 +205,14 @@ input[type="text"] { border: 1px solid #ccc; border-radius: 4px; padding:10px; c
     &:hover { background-color:$bright-orange; }
     .subtext { color:$pale-orange; }
   }
+
+  &.grey {
+    background-color:#f0f0f0;
+    color:#999;
+
+    &:hover { background-color:#e6e6e6; }
+  }
+
 }
 
 /* New Buttons */

@@ -95,7 +95,7 @@ var CHOME = (function($) {
             }
             version = release.join('.');
             */
-            
+
             return version;
         },
 
@@ -228,24 +228,28 @@ var CHOME = (function($) {
                     if(response.response.docs.length) {
                         $.each(response.response.docs, function(index, item) {
 
-                            // First add in the highlighting to the item list. Escape HTML,
-                            item.text = response.highlighting[item.url].text.join("").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-                            // Add back in <b> tags which are there for highlighting
-                            item.text = item.text.replace(/&lt;b&gt;/g, "<b>").replace(/&lt;\/b&gt;/g, "</b>");
+                            // Check there is an associated entry with the result.
+                            if(!$.isEmptyObject(response.highlighting[item.url])) {
 
-                            item.release = Array.isArray(item.release) ? item.release[0] : item.release;
-                            if(item.release.toLowerCase() === 'cloud') item.release = '';
+                                // First add in the highlighting to the item list. Escape HTML,
+                                item.text = response.highlighting[item.url].text.join("").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                                // Add back in <b> tags which are there for highlighting
+                                item.text = item.text.replace(/&lt;b&gt;/g, "<b>").replace(/&lt;\/b&gt;/g, "</b>");
 
-                            result = "";
-                            result += ' <div class="product">' + item.product + ' ' + item.release  +'</div>';
-                            result += ' <div class="result">'
-                            result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
-                            result += '     <div class="excerpt">' + item.text + '</div>';
-                            result += '     <div class="url"><a href="https://docs.hortonworks.com' + item.url + '">' + item.url + '</a></div>';
-                            result += ' </div>';
+                                item.release = Array.isArray(item.release) ? item.release[0] : item.release;
+                                if(item.release.toLowerCase() === 'cloud') item.release = '';
 
-                            output_holder[item.booktitle] = output_holder[item.booktitle] || [];
-                            output_holder[item.booktitle].push(result);
+                                result = "";
+                                result += ' <div class="product">' + item.product + ' ' + item.release  +'</div>';
+                                result += ' <div class="result">'
+                                result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
+                                result += '     <div class="excerpt">' + item.text + '</div>';
+                                result += '     <div class="url"><a href="https://docs.hortonworks.com' + item.url + '">' + item.url + '</a></div>';
+                                result += ' </div>';
+
+                                output_holder[item.booktitle] = output_holder[item.booktitle] || [];
+                                output_holder[item.booktitle].push(result);
+                            }
                         });
 
                         for(var book in output_holder) {

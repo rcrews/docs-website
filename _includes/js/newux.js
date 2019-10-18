@@ -939,10 +939,11 @@ var NEWUX = (function($) {
                 '    <div class="lucene-results">\n' +
                 '        <div class="close-search"><a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a></div>' +
                 '        <h1>Search Results</h1>\n' +
-                '        <div class="fail"></div>\n' +
                 '        <div class="results"></div>\n' +
+                '        <div class="fail"></div>\n' +
                 '        <div class="waiting"><img src="/common/img/spinner.svg"></div>\n' +
                 '        <div class="more-results"><a href="" data-nextcursormark="" data-searchterm="" class="more-link"><i class="fa fa-arrow-circle-o-down"></i>More</a></div>\n' +
+                '        <p style="text-align:center;"><a href="" class="close-search-results grey btn">Close Search Results.</a></p>\n' +
                 '    </div>\n' +
                 '</div>';
 
@@ -969,7 +970,7 @@ var NEWUX = (function($) {
                 $(this).closest('.searchform').trigger('submit');
             });
 
-            $('.lucene-overlay .close-btn').on( 'click', this.hideSearch.bind(this));
+            $('.lucene-overlay .close-btn, .close-search-results').on( 'click', this.hideSearch.bind(this));
             $('.lucene-results .more-link').on('click', this.loadMoreResults.bind(this));
         },
 
@@ -996,7 +997,7 @@ var NEWUX = (function($) {
             version = release.join('.');
             */
 
-            return version.toLowerCase();
+            return version;
         },
 
         filterSearchTerm(term) {
@@ -1017,9 +1018,10 @@ var NEWUX = (function($) {
             this.fireQuery(search_term);
         },
 
-        hideSearch: function() {
+        hideSearch: function(evt) {
+            console.log('hideSearch');
             $('.lucene-overlay').hide();
-            $('.cpage').show()
+            $('.cpage').show();
         },
 
 
@@ -1079,22 +1081,26 @@ var NEWUX = (function($) {
                     if(response.response.docs.length) {
                         $.each(response.response.docs, function(index, item) {
 
-                            // First add in the highlighting to the item list. Escape HTML,
-                            item.text = response.highlighting[item.url].text.join("").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            // Check there is an associated entry with the result.
+                            if(!$.isEmptyObject(response.highlighting[item.url])) {
 
-                            // Add back in <b> tags which are there for highlighting
-                            item.text = item.text.replace(/&lt;b&gt;/g, "<b>").replace(/&lt;\/b&gt;/g, "</b>");
+                                // First add in the highlighting to the item list. Escape HTML,
+                                item.text = response.highlighting[item.url].text.join("").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-                            result = "";
-                            // result += ' <div class="product">' + item.product + ' ' + item.release +'</div>';
-                            result += ' <div class="result">'
-                            result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
-                            result += '     <div class="excerpt">' + item.text + '</div>';
-                            result += '     <div class="url"><a href="https://docs.hortonworks.com' + item.url + '">' + item.url + '</a></div>';
-                            result += ' </div>';
+                                // Add back in <b> tags which are there for highlighting
+                                item.text = item.text.replace(/&lt;b&gt;/g, "<b>").replace(/&lt;\/b&gt;/g, "</b>");
 
-                            output_holder[item.booktitle] = output_holder[item.booktitle] || [];
-                            output_holder[item.booktitle].push(result);
+                                result = "";
+                                // result += ' <div class="product">' + item.product + ' ' + item.release +'</div>';
+                                result += ' <div class="result">'
+                                result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
+                                result += '     <div class="excerpt">' + item.text + '</div>';
+                                result += '     <div class="url"><a href="https://docs.hortonworks.com' + item.url + '">' + item.url + '</a></div>';
+                                result += ' </div>';
+
+                                output_holder[item.booktitle] = output_holder[item.booktitle] || [];
+                                output_holder[item.booktitle].push(result);
+                            }
                         });
 
                         for(var book in output_holder) {
@@ -1117,6 +1123,7 @@ var NEWUX = (function($) {
                         } else {
                             $('.lucene-results .results').html(output).show();
                         }
+                        $('.more-results').show();
                         $('.lucene-results .more-link').data('nextCursorMark',response.nextCursorMark).data('searchTerm',response.responseHeader.params.q);
                     } else {
                         // No results... this could be because there were none, or there were no more.
@@ -1127,6 +1134,7 @@ var NEWUX = (function($) {
                             // There's no more.
                             err_msg = '<h2><i class="fa fa-frown-o"></i> Sorry, No more results were found</h2>';
                             err_msg += '<p>Check your search term, and ensure that you have the appropriate product filter selected';
+
                         } else {
                             // There's none.
                             $('.lucene-results .results').hide();
