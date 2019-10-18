@@ -60,9 +60,9 @@
       href: concepts-data-access.html
       sub:
         - text: Data Analytics Studio Overview
-          href: das-introduction/index.html
-          id: pub-das-core-concepts
-          sub: das-introduction/navigation.json
+          href: core-concepts/index.html
+          id: pub-core-concepts
+          sub: core-concepts/navigation.json
           
         - text: Apache Hive Overview
           href: hive-introduction/index.html
@@ -246,8 +246,8 @@
       sub:
         - text: Using Data Analytics Studio
           href: using-das/index.html
-          id: pub-das-using-das
-          sub: das-using-das/navigation.json
+          id: pub-using-das
+          sub: using-das/navigation.json
           
         - text: Starting Apache Hive
           href: starting-hive/index.html
