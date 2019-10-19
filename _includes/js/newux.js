@@ -1035,7 +1035,7 @@ var NEWUX = (function($) {
             var that = this;
             var q  = searchterm == null ? filterSearchTerm($('#overlay-search .searchterm').val()) : searchterm,
                 // For Example: fq = "((product:\\\"Ambari\\\" AND release:2.7.3.0))",
-                fq = WhoAmI.search_name ? "(product:\"" + WhoAmI.search_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
+                fq = WhoAmI.search_name ? "(search-name:\"" + WhoAmI.search_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
                 rows = 10,
                 params = {},
                 defaults = "&sort=score desc,id asc&facet=true&facet.field=product&facet.field=release&facet.field=booktitle&hl=true&hl.fl=text&fl=id,score,url,product,release,booktitle,title",
