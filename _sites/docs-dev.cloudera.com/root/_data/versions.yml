@@ -589,7 +589,7 @@
 - name: Management Console
   latest-version: master
   latest-url: /management-console/master/index.html
-  search-name: Management Console
+  search-name: management-console
   versions:
     - title: master
       url: /management-console/master/index.html
@@ -599,7 +599,7 @@
 - name: Workload Manager
   latest-version: master
   latest-url: /workload-manager/master/index.html
-  search-name: Workload Manager
+  search-name: workload-manager
   versions:
     - title: master
       url: /workload-manager/master/index.html
@@ -609,7 +609,7 @@
 - name: Data Catalog
   latest-version: master
   latest-url: /data-catalog/master/index.html
-  search-name: Data Catalog
+  search-name: data-catalog
   versions:
     - title: master
       url: /data-catalog/master/index.html
@@ -619,7 +619,7 @@
 - name: Replication Manager
   latest-version: master
   latest-url: /replication-manager/master/index.html
-  search-name: Replication Manager
+  search-name: replication-manager
   versions:
     - title: master
       url: /replication-manager/master/index.html
@@ -629,7 +629,7 @@
 - name: Data Hub
   latest-version: master
   latest-url: /data-hub/master/index.html
-  search-name: Data Hub
+  search-name: data-hub
   versions:
     - title: master
       url: /data-hub/master/index.html
@@ -639,7 +639,7 @@
 - name: Data Warehouse
   latest-version: master
   latest-url: /data-warehouse/master/index.html
-  search-name: Data Warehouse
+  search-name: data-warehouse
   versions:
     - title: master
       url: /data-warehouse/master/index.html
@@ -649,7 +649,7 @@
 - name: Machine Learning
   latest-version: master
   latest-url: /machine-learning/master/index.html
-  search-name: Machine Learning
+  search-name: machine-learning
   versions:
     - title: master
       url: /machine-learning/master/index.html
@@ -1238,7 +1238,7 @@
 - name: Streams Messaging Manager for HDF and HDP
   latest-version: master
   latest-url: /smm/master/index.html
-  search-name: Streams Messaging Manager
+  search-name: smm
   versions:
     - title: master
       url: /smm/master/index.html
@@ -1272,7 +1272,7 @@
 - name: Edge Management
   latest-version: master
   latest-url: /cem/master/index.html
-  search-name: Edge Management
+  search-name: cem
   versions:
     - title: master
       url: /cem/master/index.html
@@ -1291,7 +1291,7 @@
 - name: Flow Management
   latest-version: master
   latest-url: /cfm/master/index.html
-  search-name: Flow Management
+  search-name: cfm
   versions:
     - title: master
       url: /cfm/master/index.html
@@ -1315,7 +1315,7 @@
 - name: Stream Processing
   latest-version: master
   latest-url: /csp/master/index.html
-  search-name: Stream Processing
+  search-name: csp
   versions:
     - title: master
       url: /csp/master/index.html
@@ -1339,7 +1339,7 @@
 - name: Streams Replication Manager for HDF and HDP
   latest-version: master
   latest-url: /srm/master/index.html
-  search-name: Streams Replication Manager
+  search-name: srm
   versions:
     - title: master
       url: /srm/master/index.html
