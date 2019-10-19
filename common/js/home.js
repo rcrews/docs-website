@@ -194,7 +194,7 @@ var CHOME = (function($) {
                     if(fq !== "") {
                         fq += " OR ";
                     }
-                    fq += "(product:\"" + $(this).data('filterproduct') + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber($(this).data('filterversion'))) + ")";
+                    fq += "(search-name:\"" + $(this).data('filterproduct') + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber($(this).data('filterversion'))) + ")";
                 }
             });
             fq = "(" + fq + ")";
