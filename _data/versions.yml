@@ -791,7 +791,7 @@
   latest-url: /cdp/cloud/index.html
   search-name: cdp
   versions:
-    - title: Cloud
+    - title: cloud
       url: /cdp/cloud/index.html
 
 - name: Management Console
@@ -799,7 +799,7 @@
   latest-url: /management-console/cloud/index.html
   search-name: Management Console
   versions:
-    - title: Cloud
+    - title: cloud
       url: /management-console/cloud/index.html
 
 - name: Workload Manager
@@ -807,7 +807,7 @@
   latest-url: /workload-manager/cloud/index.html
   search-name: Workload Manager
   versions:
-    - title: Cloud
+    - title: cloud
       url: /workload-manager/cloud/index.html
 
 - name: Data Catalog
@@ -815,7 +815,7 @@
   latest-url: /data-catalog/cloud/index.html
   search-name: Data Catalog
   versions:
-    - title: Cloud
+    - title: cloud
       url: /data-catalog/cloud/index.html
 
 - name: Replication Manager
@@ -823,7 +823,7 @@
   latest-url: /replication-manager/cloud/index.html
   search-name: Replication Manager
   versions:
-    - title: Cloud
+    - title: cloud
       url: /replication-manager/cloud/index.html
 
 - name: Data Hub
@@ -831,7 +831,7 @@
   latest-url: /data-hub/cloud/index.html
   search-name: Data Hub
   versions:
-    - title: Cloud
+    - title: cloud
       url: /data-hub/cloud/index.html
 
 - name: Data Warehouse
@@ -839,7 +839,7 @@
   latest-url: /data-warehouse/cloud/index.html
   search-name: Data Warehouse
   versions:
-    - title: Cloud
+    - title: cloud
       url: /data-warehouse/cloud/index.html
 
 - name: Machine Learning
@@ -847,7 +847,7 @@
   latest-url: /machine-learning/cloud/index.html
   search-name: Machine Learning
   versions:
-    - title: Cloud
+    - title: cloud
       url: /machine-learning/cloud/index.html
 
 - name: Cloudera Runtime
@@ -886,11 +886,11 @@
 #
 
 - name: Altus
-  latest-version: Cloud
+  latest-version: cloud
   latest-url: /documentation/altus.html
   search-name: altus
   versions:
-    - title: Cloud
+    - title: cloud
       url: /documentation/altus.html
 
 #
@@ -947,11 +947,11 @@
 #
 
 - name: Director
-  latest-version: Cloud
+  latest-version: cloud
   latest-url: /documentation/director/cloud/index.html
   search-name: director
   versions:
-    - title: Cloud
+    - title: cloud
       url: /documentation/director/cloud/index.html
     - title: "6"
       url: /documentation/director/latest.html
@@ -1252,11 +1252,11 @@
 #
 
 - name: Navigator Optimizer
-  latest-version: Cloud
+  latest-version: cloud
   latest-url: /documentation/navopt/index.html
   search-name: navopt
   versions:
-    - title: Cloud
+    - title: cloud
       url: /documentation/navopt/index.html
 
 #
@@ -1785,9 +1785,9 @@
 #
 
 - name: Workload XM
-  latest-version: Cloud
+  latest-version: cloud
   latest-url: /documentation/wxm/latest.html
   search-name: wxm
   versions:
-    - title: Cloud
+    - title: cloud
       url: /documentation/wxm/latest.html
