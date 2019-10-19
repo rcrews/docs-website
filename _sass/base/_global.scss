@@ -8,7 +8,7 @@ select,
 textarea 	{ color: #333; }
 body, table { 
 	font-size: 1em; 
-	line-height: 1.5;  
+	line-height: 1.6;
 	font-family:$base-font; 
 	font-weight:300; 
 }
@@ -33,11 +33,10 @@ a { color:$bright-blue;
 figcaption { text-align:center; color:#999; font-size:80%; }
 
 h1 {
-  font-size:250%;
+  font-size:320%;
   font-weight:bold;
   line-height: 1.125em;
   margin:0px 0px 20px;
-  text-transform:uppercase;
   font-family:$header-font;
 
   @include breakpoint( medium ) {
@@ -130,6 +129,11 @@ img {
   }
 }
 
+input[type="text"] { border: 1px solid #ccc; border-radius: 4px; padding:10px; color:$text-color;}
+::-webkit-input-placeholder { color:#aaa; font-weight:100; } /* Chrome/Opera/Safari */
+::-moz-placeholder { color:#aaa; font-weight:100;  } /* Firefox 19+ */
+
+
 // BUTTONS
 .btn {
   display:inline-block;
@@ -201,6 +205,14 @@ img {
     &:hover { background-color:$bright-orange; }
     .subtext { color:$pale-orange; }
   }
+
+  &.grey {
+    background-color:#f0f0f0;
+    color:#999;
+
+    &:hover { background-color:#e6e6e6; }
+  }
+
 }
 
 /* New Buttons */

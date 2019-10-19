@@ -1,3 +1,155 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3760142, 2019-05-14T17:00:25-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed ../fonts/www_fonts/Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: NeuePlakText-Italic by Monotype
+ * URL: https://www.myfonts.com/fonts/mti/neue-plak/text-italic/
+ *
+ * Webfont: NeuePlak-ExtendedBold by Monotype
+ * URL: https://www.myfonts.com/fonts/mti/neue-plak/extended-bold/
+ *
+ * Webfont: NeuePlak-ExtendedRegular by Monotype
+ * URL: https://www.myfonts.com/fonts/mti/neue-plak/extended-regular/
+ *
+ * Webfont: NeuePlakText-Bold by Monotype
+ * URL: https://www.myfonts.com/fonts/mti/neue-plak/text-bold/
+ *
+ * Webfont: NeuePlakText-Regular by Monotype
+ * URL: https://www.myfonts.com/fonts/mti/neue-plak/text-regular/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3760142
+ * Licensed pageviews: 50,000,000
+ * ../fonts/www_fonts/Webfonts copyright: Copyright &#x00A9; 2018 Monotype Imaging Inc. All rights reserved.
+ *
+ * © 2019 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+
+@font-face {
+  font-family: 'NeuePlakText-Regular';
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Regular.eot");
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Regular.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Regular.woff2") format("woff2"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Regular.woff") format("woff"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Regular.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeuePlakText-Italic';
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Italic.eot");
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Italic.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Italic.woff2") format("woff2"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Italic.woff") format("woff"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Italic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeuePlakText-Bold';
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.eot");
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.woff2") format("woff2"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.woff") format("woff"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeuePlak-ExtendedRegular';
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedRegular.eot");
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedRegular.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedRegular.woff2") format("woff2"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedRegular.woff") format("woff"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedRegular.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeuePlak-ExtendedBold';
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedBold.eot");
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedBold.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedBold.woff2") format("woff2"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedBold.woff") format("woff"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlak-ExtendedBold.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeuePlakText-Bold';
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.eot");
+  src: url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.woff2") format("woff2"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.woff") format("woff"), url("clientlibs/fonts/www_fonts/webfonts/NeuePlakText-Bold.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreWeb-Light';
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Light.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/CalibreWeb-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'CalibreWeb-Regular';
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Regular.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/CalibreWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'CalibreWeb-Medium';
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Medium.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/CalibreWeb-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'CalibreWeb-Semibold';
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Semibold.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/CalibreWeb-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'CalibreWeb-Thin';
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Thin.eot");
+  /* IE9 Compat Modes */
+  src: url("clientlibs/fonts/www_fonts/CalibreWeb-Thin.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/www_fonts/CalibreWeb-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("clientlibs/fonts/fontello/fontello.eot?68187275");
+  src: url("clientlibs/fonts/fontello/fontello.eot?68187275#iefix") format("embedded-opentype"), url("clientlibs/fonts/fontello/fontello.woff?68187275") format("woff"), url("clientlibs/fonts/fontello/fontello.ttf?68187275") format("truetype"), url("clientlibs/fonts/fontello/fontello.svg?68187275#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cloudera-Display';
+  src: url("clientlibs/fonts/cloudera-display/ClouderaDisplay-50Striped.eot");
+  /* IE9 Compat Modes */
+  src: url("clientlibs/fonts/cloudera-display/ClouderaDisplay-50Striped.eot?#iefix") format("embedded-opentype"), url("clientlibs/fonts/cloudera-display/ClouderaDisplay-50Striped.woff") format("woff");
+}
+
+/*Akzidenz-Grotesk Next Extended - Typekit*/
+.akzidenz-light, .mk-contact-overlay .mk-us-phone {
+  font-family: 'akzidenz-grotesk-next-extend', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.akzidenz-regular, .mk-navigation #cloudera-navigation li, .mk-navigation #cloudera-navigation li a, .cloudera-mobile-nav .orange-btn {
+  font-family: 'akzidenz-grotesk-next-extend', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.akzidenz-medium {
+  font-family: 'akzidenz-grotesk-next-extend', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
   /* latin-ext */
   @font-face {
     font-family: 'Roboto Condensed';

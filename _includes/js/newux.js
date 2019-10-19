@@ -9,6 +9,7 @@ var NEWUX = (function($) {
 
     var WhoAmI = {
         product_name : "", // We get this from the from the URL, or the meta-tag
+        search_name : "", // This is used to pass the query on to the search engine.
         version : "", // We get this from the URL, or the meta tag.
         is_latest : false, // This gets flagged if we are using the 'latest' url.
         // latest_version : {}, // We need to look this up from the versions.yaml and use it to highlight the latest version.
@@ -127,16 +128,9 @@ var NEWUX = (function($) {
                             }
 
                             if(WhoAmI.product_name === "") WhoAmI.product_name = data[i].name;
+                            if(typeof data[i]['search-name'] !== 'undefined') WhoAmI.search_name = data[i]['search-name'];
                             WhoAmI.versions = versions;
 
-                            // I don't think this is being used elsewhere?
-                            /* if(typeof data[i].latest_version !== 'undefined') {
-                                WhoAmI.latest_version = {
-                                    name: data[i].latest_version,
-                                    url: data[i].latest_url
-                                };
-                            }
-                            */
                             break; // And break out of this loop
                         }
                     }
@@ -945,10 +939,11 @@ var NEWUX = (function($) {
                 '    <div class="lucene-results">\n' +
                 '        <div class="close-search"><a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a></div>' +
                 '        <h1>Search Results</h1>\n' +
-                '        <div class="fail"></div>\n' +
                 '        <div class="results"></div>\n' +
+                '        <div class="fail"></div>\n' +
                 '        <div class="waiting"><img src="/common/img/spinner.svg"></div>\n' +
                 '        <div class="more-results"><a href="" data-nextcursormark="" data-searchterm="" class="more-link"><i class="fa fa-arrow-circle-o-down"></i>More</a></div>\n' +
+                '        <p style="text-align:center;"><a href="" class="close-search-results grey btn">Close Search Results.</a></p>\n' +
                 '    </div>\n' +
                 '</div>';
 
@@ -975,13 +970,15 @@ var NEWUX = (function($) {
                 $(this).closest('.searchform').trigger('submit');
             });
 
-            $('.lucene-overlay .close-btn').on( 'click', this.hideSearch.bind(this));
+            $('.lucene-overlay .close-btn, .close-search-results').on( 'click', this.hideSearch.bind(this));
             $('.lucene-results .more-link').on('click', this.loadMoreResults.bind(this));
         },
 
         formatReleaseNumber: function(version, shorten) {
-            // TODO!!! - How to handle cloud?
-            // Bi-way formatting of release number.
+
+            /* IGNORE THIS in transition to Cloudera
+             * Bi-way formatting of release number.
+
             shorten = shorten ? true : false;
             var release = version.toString().split('.');
             if(release.length == 4 && shorten) {
@@ -998,6 +995,8 @@ var NEWUX = (function($) {
                 }
             }
             version = release.join('.');
+            */
+
             return version;
         },
 
@@ -1019,9 +1018,10 @@ var NEWUX = (function($) {
             this.fireQuery(search_term);
         },
 
-        hideSearch: function() {
+        hideSearch: function(evt) {
+            console.log('hideSearch');
             $('.lucene-overlay').hide();
-            $('.cpage').show()
+            $('.cpage').show();
         },
 
 
@@ -1035,7 +1035,7 @@ var NEWUX = (function($) {
             var that = this;
             var q  = searchterm == null ? filterSearchTerm($('#overlay-search .searchterm').val()) : searchterm,
                 // For Example: fq = "((product:\\\"Ambari\\\" AND release:2.7.3.0))",
-                fq = WhoAmI.product_name ? "(product:\"" + WhoAmI.product_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
+                fq = WhoAmI.search_name ? "(product:\"" + WhoAmI.search_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
                 rows = 10,
                 params = {},
                 defaults = "&sort=score desc,id asc&facet=true&facet.field=product&facet.field=release&facet.field=booktitle&hl=true&hl.fl=text&fl=id,score,url,product,release,booktitle,title",
@@ -1081,22 +1081,26 @@ var NEWUX = (function($) {
                     if(response.response.docs.length) {
                         $.each(response.response.docs, function(index, item) {
 
-                            // First add in the highlighting to the item list. Escape HTML,
-                            item.text = response.highlighting[item.url].text.join("").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            // Check there is an associated entry with the result.
+                            if(!$.isEmptyObject(response.highlighting[item.url])) {
 
-                            // Add back in <b> tags which are there for highlighting
-                            item.text = item.text.replace(/&lt;b&gt;/g, "<b>").replace(/&lt;\/b&gt;/g, "</b>");
+                                // First add in the highlighting to the item list. Escape HTML,
+                                item.text = response.highlighting[item.url].text.join("").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-                            result = "";
-                            // result += ' <div class="product">' + item.product + ' ' + item.release +'</div>';
-                            result += ' <div class="result">'
-                            result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
-                            result += '     <div class="excerpt">' + item.text + '</div>';
-                            result += '     <div class="url"><a href="https://docs.hortonworks.com' + item.url + '">' + item.url + '</a></div>';
-                            result += ' </div>';
+                                // Add back in <b> tags which are there for highlighting
+                                item.text = item.text.replace(/&lt;b&gt;/g, "<b>").replace(/&lt;\/b&gt;/g, "</b>");
 
-                            output_holder[item.booktitle] = output_holder[item.booktitle] || [];
-                            output_holder[item.booktitle].push(result);
+                                result = "";
+                                // result += ' <div class="product">' + item.product + ' ' + item.release +'</div>';
+                                result += ' <div class="result">'
+                                result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
+                                result += '     <div class="excerpt">' + item.text + '</div>';
+                                result += '     <div class="url"><a href="https://docs.hortonworks.com' + item.url + '">' + item.url + '</a></div>';
+                                result += ' </div>';
+
+                                output_holder[item.booktitle] = output_holder[item.booktitle] || [];
+                                output_holder[item.booktitle].push(result);
+                            }
                         });
 
                         for(var book in output_holder) {
@@ -1119,14 +1123,25 @@ var NEWUX = (function($) {
                         } else {
                             $('.lucene-results .results').html(output).show();
                         }
+                        $('.more-results').show();
                         $('.lucene-results .more-link').data('nextCursorMark',response.nextCursorMark).data('searchTerm',response.responseHeader.params.q);
                     } else {
+                        // No results... this could be because there were none, or there were no more.
                         $('.lucene-results .waiting').hide();
-                        $('.lucene-results .results').hide();
-                        $('.lucene-results .fail').show();
-                        var err_msg = '<h2><i class="fa fa-frown-o"></i> Sorry, No results were returned</h2>';
-                        err_msg += '<p>Check your search term, and ensure that you have the appropriate product filter selected';
-                        $('.lucene-results .fail').html(err_msg);
+                        $('.more-results').hide();
+                        let err_msg = "";
+                        if(response.response.numFound > 0) {
+                            // There's no more.
+                            err_msg = '<h2><i class="fa fa-frown-o"></i> Sorry, No more results were found</h2>';
+                            err_msg += '<p>Check your search term, and ensure that you have the appropriate product filter selected';
+
+                        } else {
+                            // There's none.
+                            $('.lucene-results .results').hide();
+                            err_msg = '<h2><i class="fa fa-frown-o"></i> Sorry, No results were found</h2>';
+                            err_msg += '<p>Check your search term, and ensure that you have the appropriate product filter selected';
+                        }
+                        $('.lucene-results .fail').html(err_msg).show();
                     }
                 }
             })
@@ -1224,7 +1239,6 @@ var NEWUX = (function($) {
     WhoAmI.init();
     Pubnav.init();
     // ProductDrawer.init(); Actually, we can't fire this until the WhoAmI function has fired, so moved the init call over there.
-    // Search.init();
-    $('.search').html(''); // Remove search box until ready.
+    Search.init();
 
 }(jQuery));

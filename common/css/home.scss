@@ -6,6 +6,14 @@
 // Sass variables and settings
 "base/mixins",
 "base/settings",
+"base/base",  // Boilerplate etc.
+"base/global",
 
-// DocUX specific stuff.
-"newux/home";
+// Cloudera Home specific stuff.
+"newux/home",
+"newux/homeoverlay",
+
+// FontAwesome
+"fontawesome/fontawesome",
+"fontawesome/solid",
+"fontawesome/v4-shims";

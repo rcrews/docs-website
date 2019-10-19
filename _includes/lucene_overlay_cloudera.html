@@ -1,0 +1,61 @@
+<div class="lucene-overlay">
+    <div class="lucene-container">
+        <a href="#" class="close-btn">
+            <span><!-- --></span>
+        </a>
+        <div class="top-form">
+            <section class="search-header">
+                <div class="h1-substitute">Search Results</div>
+            </section>
+            <section class="lucene-results">
+                <div class="search">
+                    <form id="overlay-search" class="searchform">
+                        <input type="text" placeholder="Search Docs" value="" class="searchterm">
+                        <i class="fa fa-search submit"></i>
+                        <div class="search-product-filter">Filter Products &nbsp; <i class="fa fa-angle-down"></i>
+                            <div class="filters">
+                                {% for product in site.data.versions -%}
+                                <div class="product {% if page.version and product.name != page.title %}inactive{% endif %}" data-pdn="{{ product.name }}" data-pgv="{{ page.version }}" data-pgn="{{ page.title }}" data-filterproduct="{{ product.search-name }}" data-filterversion="{% if page.version and product.name == page.title %}{{ page.version }}{% else %}{{ product.latest-version }}{% endif %}">
+                                    <div class="name">{{ product.name }}</div>
+                                    <div class="versions">
+                                        <div class="this">{% if page.version and product.name == page.title %}{{ page.version }}{% else %}{{ product.latest-version }}{% endif %}</div>
+                                        <i class="fa fa-angle-right"><!-- --></i>
+                                        <div class="selector">
+                                            <ul class="major">
+                                                {% for version in product.versions -%}
+                                                <li class="{% if version.title == product.latest-version %}current {% endif %}">
+                                                    <a href="" class="filterversion" data-version="{{ version.title }}">{{ version.title }}</a>
+                                                    {% if version.minors -%}
+                                                    <div class="expand"><i class="fa fa-angle-right"></i>
+                                                        <ul class="minor">
+                                                            {% for minor in version.minors -%}
+                                                            <li>
+                                                                <a href="" class="filterversion" data-version="{{ minor.title }}">{{ minor.title }}</a>
+                                                            </li>
+                                                            {% endfor -%}
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                {% else -%}
+                                                </li>
+                                                {% endif -%}
+                                                {% endfor -%}
+                                            </ul>
+                                        </div>
+                                        <div class="filter">{% if page.version and product.name != page.title %}<i class="fa fa-plus"></i>{% else %}<i class="fa fa-times"></i>{% endif %}</div>
+                                    </div>
+                                </div>
+                                {% endfor -%}
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="results"></div>
+                <div class="fail"></div>
+                <div class="waiting"><img src="/common/img/spinner.svg"></div>
+                <div class="more-results"><a href="" data-nextCursorMark="" data-searchTerm="" class="more-link"><i class="fa fa-arrow-circle-o-down"></i>More</a></div>
+            </section>
+        </div>
+    </div>
+</div>
