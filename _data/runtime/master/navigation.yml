@@ -192,6 +192,17 @@
           href: cloud-data-access/index.html
           id: pub-cloud-data-access
           sub: cloud-data-access/navigation.json
+        
+        - text: Storing Data Using Ozone
+          href: ozone-storing-data/index.html
+          id: pub-ozone-storing-data
+          sub: ozone-storing-data/navigation.json
+          
+        - text: Configuring Ozone Security
+          href: ozone-security/index.html
+          id: pub-ozone-security
+          sub: ozone-security/navigation.json
+          
 
     - text: Compute
       href: howto-compute.html
