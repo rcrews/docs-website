@@ -69,12 +69,6 @@ publications:
       Hive or to the file system or object store and how to move data
       back to Hive.
 
-  - title: Integrating with Apache Impala
-    url: kudu-integration/index.html
-    description: >-
-      Provides examples on how to use Impala to insert, query, update,
-      and delete data from Kudu tablets using Impala's SQL syntax.
-
   - title: Managing Apache Impala
     url: impala-manage/index.html
     description: >-
