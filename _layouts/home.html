@@ -1,105 +1,14 @@
 <!DOCTYPE html>
-<html class="main-page">
-<head>
-    <!-- Meta -->
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1"/>
-    <meta name="description" content="Cloudera Product Documentation"/>
-    <meta name="keywords"/>
-    <meta name="lang" content="en"/>
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/favicon.ico" type="image/x-icon"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-57x57.png"/>
-    <link rel="apple-touch-icon" sizes="60x60" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-60x60.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-72x72.png"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-76x76.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-114x114.png"/>
-    <link rel="apple-touch-icon" sizes="120x120" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-120x120.png"/>
-    <link rel="apple-touch-icon" sizes="144x144" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-144x144.png"/>
-    <link rel="apple-touch-icon" sizes="152x152" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-152x152.png"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/apple-touch-icon-180x180.png"/>
-    <link rel="icon" type="image/png" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/favicon-32x32.png" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/android-chrome-192x192.png" sizes="192x192"/>
-    <link rel="icon" type="image/png" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/favicon-96x96.png" sizes="96x96"/>
-    <link rel="icon" type="image/png" href="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/favicon-16x16.png" sizes="16x16"/>
-    <!-- Windows Tiles -->
-    <meta name="msapplication-TileColor" content="#da532c"/>
-    <meta name="msapplication-TileImage" content="/apps/settings/wcm/designs/www/clientlibs/css/assets/icons/favicon/mstile-144x144.png"/>
-    <meta name="theme-color" content="#ffffff"/>
-
-    <!-- Add akzidenz-grotesk-next-extend Typekit Font -->
-    <link rel="stylesheet" href="https://use.typekit.net/qkd3ogh.css"/>
-
-    <!-- Base Original CSS -->
-
-    <!-- CSS we know we need -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" type="text/css">
-    <link rel="stylesheet" href="/common/css/home.css" type="text/css">
-
-    <title>Cloudera Product Documentation</title>
-</head>
+<html class="main-page" {% if page.lang %}lang="{{ page.lang }}"{% else %}lang="en-US"{% endif %}>
+{% include home_head.html -%}
 <body>
-    <header>
-        <div class="logo">
-          <a href="https://www.cloudera.com/"><img src="/common/img/cloudera.png" alt="Cloudera homepage"></a>
-        </div>
-        <ul class="navlinks">
-            <li><a href="https://docs.cloudera.com/products.html">Products</a></li>
-            <li><a href="https://docs.cloudera.com/solutions.html">Solutions</a></li>
-            <li><a href="https://docs.cloudera.com/downloads.html">Downloads</a></li>
-            <li><a href="https://my.cloudera.com/support.html">Support</a></li>
-            <li><a href="https://community.cloudera.com/">Community</a></li>
-        </ul>
-
-        <!-- Inject MyCloudera Header ... uncomment this, and uncomment dcxa.init in home.js
-        <div id="micro_header" class="header-loading">
-            <style>
-                .header-loading {
-                    height: 136px;
-                }
-            </style>
-        </div>
-        -->
-    </header>
-
-    {{ content }}
-
-    <footer>
-        <ul class="footerlinks">
-            <li><a href="https://www.youtube.com/user/clouderahadoop" target="_blank">Videos</a></li>
-            <li><a href="http://vision.cloudera.com/" target="_blank">Blog</a></li>
-            <li><a href="https://www.cloudera.com/resources.html">Resources</a></li>
-            <li><a href="https://www.cloudera.com/partners.html">Partners</a></li>
-            <li><a href="https://www.cloudera.com/about/services-and-support.html">Services &amp; Support</a></li>
-            <li><a href="https://www.cloudera.com/about/training.html">Training</a></li>
-            <li><a href="http://community.cloudera.com">Community</a></li>
-            <li class="sociallinks">
-                <a href="https://www.facebook.com/cloudera/"><i class="fa fa-facebook-f"></i></a>
-                <a href="https://twitter.com/cloudera"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/company/cloudera"><i class="fa fa-linkedin"></i></a>
-            </li>
-        </ul>
-
-        <div class="legalese">
-            <div>© 2019 Cloudera, Inc. All rights reserved.</div>
-            <div>
-                <a href="https://www.cloudera.com/content/www/en-us/legal/terms-and-conditions.html" target="_self">Terms &amp; Conditions</a> |
-                <a href="https://www.cloudera.com/content/www/en-us/legal/policies.html" target="_self">Privacy Policy and Data Policy</a> |
-                <a href="https://www.cloudera.com/content/support/my/en-us/supported-browsers.html" target="_self">Supported Browsers Policy</a>
-            </div>
-            <div><a href="http://hadoop.apache.org/" target="_self">Apache Hadoop</a> and associated open source project names are trademarks of the <a href="http://apache.org/" target="_self">Apache Software Foundation</a>. For a complete list of trademarks, <a href="https://www.cloudera.com/legal/terms-and-conditions.html#trademarks" target="_self">click here</a>.</div>
-        </div>
-        <!-- Inject MyCloudera Footer -->
-        <div id="micro_footer"></div>
-    </footer>
-
-    {% include lucene_overlay_cloudera.html -%}
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
-    <!--  Tooltips and so on... I don't think we're using this? -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="/common/js/home.js"></script>
+{% include home_header.html -%}
+{{ content }}
+{% include home_footer.html -%}
+{% include lucene_overlay_cloudera.html -%}
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!--  Tooltips and so on... I don't think we're using this? -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="/common/js/home.js"></script>
 </body>
 </html>
