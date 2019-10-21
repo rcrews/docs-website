@@ -428,6 +428,11 @@
           href: security-ranger-authentication-unix-ldap-ad/index.html
           id: pub-security-ranger-authentication-unix-ldap-ad
           sub: security-ranger-authentication-unix-ldap-ad/navigation.json
+          
+        - text: Configuring Advanced Security Options for Apache Ranger
+          href: security-ranger-configuring-advanced/index.html
+          id: pub-security-ranger-configuring-advanced
+          sub: security-ranger-configuring-advanced/navigation.json
 
     - text: Governance
       href: howto-governance.html
