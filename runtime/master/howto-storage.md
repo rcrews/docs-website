@@ -58,14 +58,14 @@ publications:
     - title: Storing Data Using Ozone
     url: ozone-storing-data/index.html
     description: >-
-      Provides information about configuring and managing data using 
+      Provides information about configuring and managing data using
       the Ozone object store.    
 
     - title: Configuring Ozone Security
     url: ozone-security/index.html
     description: >-
-      Provides information about securing data in Ozone clusters and 
-      the access to this data.  
+      Provides information about securing data in Ozone clusters
+      and securing access to this data.  
 ---
 
 Cloudera Runtime provides different types of storage components that you
