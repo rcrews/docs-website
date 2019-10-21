@@ -46,6 +46,20 @@
       href: monitoring-and-diagnostics/index.html
       id: pub-monitoring-and-diagnostics
       sub: monitoring-and-diagnostics/navigation.json
+   
+    - text: Security
+      href: howto-security.html
+      sub:
+
+        - text: Cloudera Authorization
+          href: cm-security-authorization/index.html
+          id: cm-security-authorization
+          sub: cm-security-authorization/navigation.json
+
+        - text: Configuring Kerberos Authentication in Cloudera Manager
+          href: cm-security-kerberos-authentication.html/index.html
+          id: cm-security-kerberos-authentication.html
+          sub: cm-security-kerberos-authentication.html/navigation.json   
 
 # - text: Troubleshooting
 #   id: cat-troubleshooting
