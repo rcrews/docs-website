@@ -52,14 +52,14 @@
       sub:
 
         - text: Cloudera Authorization
-          href: cm-security-authorization/index.html
-          id: cm-security-authorization
-          sub: cm-security-authorization/navigation.json
+          href: security-authorization/index.html
+          id: security-authorization
+          sub: security-authorization/navigation.json
 
         - text: Configuring Kerberos Authentication in Cloudera Manager
-          href: cm-security-kerberos-authentication.html/index.html
-          id: cm-security-kerberos-authentication.html
-          sub: cm-security-kerberos-authentication.html/navigation.json   
+          href: security-kerberos-authentication/index.html
+          id: security-kerberos-authentication.html
+          sub: security-kerberos-authentication/navigation.json   
 
 # - text: Troubleshooting
 #   id: cat-troubleshooting
