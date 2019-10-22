@@ -31,8 +31,8 @@ module SwitchSite
     end
   end
 
-  DEV_REL = '_sites/docs-dev.cloudera.com/root'
-  PROD_REL = '_sites/docs.cloudera.com/root'
+  DEV_REL = '_sites/docs-dev.cloudera.com'
+  PROD_REL = '_sites/docs.cloudera.com'
   JEKYLL = self.scan_up_for('_config.yml')
   DEV = File.absolute_path(DEV_REL, JEKYLL)
   PROD = File.absolute_path(PROD_REL, JEKYLL)
