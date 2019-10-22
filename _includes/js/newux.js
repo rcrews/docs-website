@@ -510,7 +510,7 @@ var NEWUX = (function($) {
                     } else {
                         // Page doesn't have kids, and still doesn't have content... maybe it should be external?
                         elems = [];
-                        elems[0] = `<h1>Load error</h1><p>We're not able to load the page you requested. Most likely we planned to put a page here, but it's not ready yet. Rarely, the page exists but couldn't be loaded. <a href="${url}" class="external">Try loading it directly.</a> Otherwise, choose a topic from the left or find one using search.</p>`;
+                        elems[0] = "<h1>Uh-oh!</h1><p>There was a problem loading that page. <a href='" + url + "' class='external'>Try this instead.</a></p><p style='font-size:85%'>Error: Request was expecting a page in the newux format, but it doesn't have a content section?</p>";
                         // Fire GA Logger?
                         complete = true;
                         swapContent();
