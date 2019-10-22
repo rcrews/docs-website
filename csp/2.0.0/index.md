@@ -11,6 +11,8 @@ sections:
     books:
       - title: Release Notes
         url: release-notes/index.html
+      - title: Support Matrix
+        url: support-matrix/index.html
 
 ---
 
