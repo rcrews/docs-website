@@ -28,6 +28,10 @@
       href: installation/index.html
       id: pub-installation
       sub: installation/navigation.json
+    - text: Upgrade
+      href: upgrading-cfm/index.html
+      id: pub-upgrading-cfm
+      sub: upgrading-cfm/navigation.json
 
 - text: How To
   name: how-to
@@ -100,10 +104,10 @@
           id: pub-using-nifi-registry
           sub: /HDPDocuments/HDF3/HDF-3.4.1.1/using-nifi-registry/navigation.json
 
-    - text: Flow Management in Data Hub
-      href: howto-cfm-in-data-hub.html
-      id: foyer-cfm-in-data-hub
-      # sub:
+    # - text: Flow Management in Data Hub
+    #   href: howto-cfm-in-data-hub.html
+    #   id: foyer-cfm-in-data-hub
+    #   sub:
 
 - text: Reference
   name: reference
@@ -132,6 +136,10 @@
       href: /HDPDocuments/HDF3/HDF-3.4.1.1/administering-nifi-registry/index.html
       id: pub-administering-nifi-registry
       sub: /HDPDocuments/HDF3/HDF-3.4.1.1/administering-nifi-registry/navigation.json
+    - text: Operator API
+      href: operator-api/index.html
+      id: pub-operator-api
+      sub: operator-api/navigation.json
 
 - text: Release Notes
   name: releasenotes

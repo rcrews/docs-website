@@ -28,10 +28,6 @@
       href: installation/index.html
       id: pub-installation
       sub: installation/navigation.json
-    # - text: Installing NiFi and NiFi Registry
-    #   href: installing-nifi/index.html
-    #   id: pub-installing-nifi
-    #   sub: installing-nifi/navigation.json
 
 - text: How To
   name: how-to
