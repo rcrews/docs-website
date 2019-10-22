@@ -12,10 +12,13 @@
 {%- endif %}
 <link rel="stylesheet" href="/common/css/main.css">
 {%- if page.copyright.years and page.copyright.holder %}
-<meta name="copyright" content="© {% page.copyright.years | join: ', ' %} by {{ page.copyright.holder }}">
+<meta name="copyright" content="© {{ page.copyright.years | join: ', ' }} by {{ page.copyright.holder }}">
 {%- endif %}
 {%- if page.pdf %}
 <link rel="alternate" type="application/pdf" href="{{ page.pdf }}">
+{%- endif %}
+{%- if page.css %}
+<link rel="stylesheet" type="text/css" href="{{ page.css }}">
 {%- endif %}
 </head>
 <body class="hg">
