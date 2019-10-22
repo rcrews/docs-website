@@ -54,23 +54,23 @@ publications:
     description: >-
       Describes information about the configuration parameters used to
       access data stored in the cloud.
-      
-    - title: Storing Data Using Ozone
+
+  - title: Storing Data Using Ozone
     url: ozone-storing-data/index.html
     description: >-
       Provides information about configuring and managing data using
-      the Ozone object store.    
+      the Ozone object store.
 
-    - title: Configuring Ozone Security
+  - title: Configuring Ozone Security
     url: ozone-security/index.html
     description: >-
       Provides information about securing data in Ozone clusters
-      and securing access to this data.  
+      and securing access to this data.
 ---
 
 Cloudera Runtime provides different types of storage components that you
 can use depending on your data requirements. Apache Kudu completes
 Apache Hadoop's storage layer, enabling fast analytics on fast data.
 Apache Hadoop HDFS is a distributed file system for storing large
-volumes of data. Apache Hadoop Ozone is a redundant, distributed object 
-store optimized for big data workloads. 
+volumes of data. Apache Hadoop Ozone is a redundant, distributed object
+store optimized for big data workloads.
