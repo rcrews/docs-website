@@ -510,7 +510,7 @@ var NEWUX = (function($) {
                     } else {
                         // Page doesn't have kids, and still doesn't have content... maybe it should be external?
                         elems = [];
-                        elems[0] = "<h1>Uh-oh!</h1><p>There was a problem loading that page. <a href='" + url + "' class='external'>Try this instead.</a></p><p style='font-size:85%'>Error: Request was expecting a page in the newux format, but it doesn't have a content section?</p>";
+                        elems[0] = `<h1>Format error</h1><p>We found the page you requested but can't identify the main content of the page to render within this page. <a href="${url}" class="external">Try loading it directly.</a> Otherwise, choose a different topic from the left or find one using search.</p>`;
                         // Fire GA Logger?
                         complete = true;
                         swapContent();
@@ -552,7 +552,7 @@ var NEWUX = (function($) {
                 // but they are ignored because response was set above.
                 // If it fails, this function gets "jqXHR", "status", "error"
                 complete = true;
-                elems[0] =  "<h1>Uh-oh!</h1><p>Sorry but there was an error loading that page. " + status + " " + jqXHR.statusText + "</p>";
+                elems[0] =  `<h1>Load error</h1><p>We're not able to get the page you requested. Most likely we planned a page for this location, but it's not ready yet.</p><p style="font-size: 85%">${status} ${jqXHR.statusText}</p><p>Choose a different topic from the left or find one using search.</p>`;
                 swapContent();
             });
         },
@@ -1226,6 +1226,13 @@ var NEWUX = (function($) {
         }
     };
 
+    var Transforms = {
+        [].slice.call(document.querySelectorAll("a[target]")).forEach( at => {
+            if (at.href.includes('docs.cloudera.com') || !at.href.includes('//')) { return; }
+            at.removeAttribute('target');
+        });
+    };
+
     // SEARCH DRAWER
     $('.launch-search').on('click', function() {
         $(this).hide();
@@ -1236,6 +1243,7 @@ var NEWUX = (function($) {
         $('.launch-search').show();
     });
 
+    Transforms.init();
     WhoAmI.init();
     Pubnav.init();
     // ProductDrawer.init(); Actually, we can't fire this until the WhoAmI function has fired, so moved the init call over there.
