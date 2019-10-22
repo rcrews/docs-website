@@ -38,6 +38,9 @@ exclude:
   - /Gemfile.lock
   - /README.md
 
+  # Jason's tab-win goes on dev only for now
+  - _includes/js/tab-win.js
+
   # Unreleased documentation
   - /cem/1.1.0/
   - /cfm/2.0.0/
