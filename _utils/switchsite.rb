@@ -27,7 +27,7 @@ module SwitchSite
       dest = File.expand_path(
         Pathname.new(path).relative_path_from(Pathname.new(root)), JEKYLL
       )
-      FileUtils.mkpath(File.dirname(dest), verbose: true)
+      FileUtils.mkpath(File.dirname(dest))
       FileUtils.cp(path, dest, verbose: true)
     end
   end
