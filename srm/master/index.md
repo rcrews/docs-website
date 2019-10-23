@@ -11,6 +11,8 @@ sections:
     books:
       - title: Release Notes
         url: release-notes/index.html
+      - title: Support Matrix
+        url: https://supportmatrix.hortonworks.com/
 
 ---
 Streams Replication Manager (SRM) is an enterprise-grade replication
