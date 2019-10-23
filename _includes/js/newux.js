@@ -525,7 +525,7 @@ var NEWUX = (function($) {
                         history.pushState({"page": url}, Pubnav.pagestate.current.text, url + hash);
                     }
 
-                    $(virtualDOM).find('head').append(`<base href="${url}" />`);
+                    $(virtualDOM).find('head').append(`<base href="${url}">`);
 
                     // Copyright
                     let copyright = $(virtualDOM).find('meta[name="rights"]').attr('content');
