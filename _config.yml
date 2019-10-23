@@ -41,6 +41,9 @@ exclude:
   # Jason's tab-win goes on dev only for now
   - _includes/js/tab-win.js
 
+  # Sarah's special API reference only on dev for now
+  - /cfm/2.0.0/operator-api/
+
   # "master" version for docs-dev only
   - /ccp/master/
   - /cdp/master/

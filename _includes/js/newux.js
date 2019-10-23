@@ -1227,10 +1227,15 @@ var NEWUX = (function($) {
     };
 
     var Transforms = {
-        [].slice.call(document.querySelectorAll("a[target]")).forEach( at => {
-            if (at.href.includes('docs.cloudera.com') || !at.href.includes('//')) { return; }
-            at.removeAttribute('target');
-        });
+        deTarget: function() {
+            [].slice.call(document.querySelectorAll("a[target]")).forEach( at => {
+                if (!at.href.includes('docs.cloudera.com') && at.href.includes('//')) { return; }
+                at.removeAttribute('target');
+            });
+        },
+        init: function() {
+            this.deTarget();
+        }
     };
 
     // SEARCH DRAWER
