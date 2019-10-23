@@ -1,7 +1,7 @@
 /**
  * NEWUX - Functionality associated with the 2019 Rework of the Cloudera Documentation.
  *
- * @link   http://docs.cloudera.com
+ * @link http://docs.cloudera.com
  * @author James Dilworth - james@jamesdilworth.com
  */
 var NEWUX = (function($) {
@@ -1201,7 +1201,7 @@ var NEWUX = (function($) {
             return arr;
         },
         makeIdFromHref:function(href) {
-            // Clever way to parse incomplete URLs -  https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
+            // Clever way to parse incomplete URLs - https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
             let parser = document.createElement('a');
             parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
             let chunks = parser.pathname.split('/');
@@ -1229,7 +1229,7 @@ var NEWUX = (function($) {
     var Transforms = {
         deTarget: function() {
             [].slice.call(document.querySelectorAll("a[target]")).forEach( at => {
-                if (!at.href.includes('docs.cloudera.com') && at.href.includes('//')) { return; }
+                if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes('//')) { return; }
                 at.removeAttribute('target');
             });
         },
