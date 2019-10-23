@@ -13,10 +13,11 @@ title: Data Access
 
 publications:
   - title: Data Analytics Studio Overview
-    url: das-introduction/index.html
+    url: das-overview/index.html
     description: >-
-      Provides an overview and architecture of the Data Analytics Studio environment.
-      
+      Provides an overview and architecture of the Data Analytics Studio
+      environment.
+
   - title: Apache Hive Overview
     url: hive-introduction/index.html
     description: >-

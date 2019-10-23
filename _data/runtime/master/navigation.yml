@@ -60,10 +60,10 @@
       href: concepts-data-access.html
       sub:
         - text: Data Analytics Studio Overview
-          href: core-concepts/index.html
-          id: pub-core-concepts
-          sub: core-concepts/navigation.json
-          
+          href: das-overview/index.html
+          id: pub-das-overview
+          sub: das-overview/navigation.json
+
         - text: Apache Hive Overview
           href: hive-introduction/index.html
           id: pub-hive-introduction
@@ -82,7 +82,7 @@
         - text: Hue Overview
           href: hue-introduction/index.html
           id: pub-hue-introduction
-          sub: hue-introduction/navigation.json          
+          sub: hue-introduction/navigation.json
 
     - text: Operational Datastore
       href: concepts-operational-database.html
@@ -192,17 +192,17 @@
           href: cloud-data-access/index.html
           id: pub-cloud-data-access
           sub: cloud-data-access/navigation.json
-        
+
         - text: Storing Data Using Ozone
           href: ozone-storing-data/index.html
           id: pub-ozone-storing-data
           sub: ozone-storing-data/navigation.json
-          
+
         - text: Configuring Ozone Security
           href: ozone-security/index.html
           id: pub-ozone-security
           sub: ozone-security/navigation.json
-          
+
 
     - text: Compute
       href: howto-compute.html
@@ -259,11 +259,11 @@
           href: using-das/index.html
           id: pub-using-das
           sub: using-das/navigation.json
-          
+
         - text: Starting Apache Hive
           href: starting-hive/index.html
           id: pub-starting-hive
-          sub: starting-hive/navigation.json  
+          sub: starting-hive/navigation.json
 
         - text: Using Hive
           href: using-hiveql/index.html
@@ -428,7 +428,7 @@
           href: security-ranger-authentication-unix-ldap-ad/index.html
           id: pub-security-ranger-authentication-unix-ldap-ad
           sub: security-ranger-authentication-unix-ldap-ad/navigation.json
-          
+
         - text: Configuring Advanced Security Options for Apache Ranger
           href: security-ranger-configuring-advanced/index.html
           id: pub-security-ranger-configuring-advanced

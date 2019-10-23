@@ -15,8 +15,9 @@ publications:
   - title: Using Data Analytics Studio
     url: using-das/index.html
     description: >-
-      Describes how to work with queries, manage databases and tables, and generate reports.
-      
+      Describes how to work with queries, manage databases and tables,
+      and generate reports.
+
   - title: Starting Apache Hive
     url: starting-hive/index.html
     description: >-
@@ -45,8 +46,8 @@ publications:
   - title: Configuring Apache Hive
     url: configuring-apache-hive/index.html
     description: >-
-      Describes how to set up Hive to generate statistics and control the number of
-      concurrent connections to Hive.
+      Describes how to set up Hive to generate statistics and control
+      the number of concurrent connections to Hive.
 
   - title: Configuring Apache Hive Metastore
     url: hive-metastore/index.html
@@ -111,7 +112,7 @@ publications:
       Describes how to add a load balancer and configure high availability
       for hue and between hue and other components, such as Hive, Impala,
       and HDFS.
- 
+
 ---
 Cloudera Data Platform Runtime includes Apache Hive 3 and Apache Impala
 for storing and accessing data in the Hive metastore database. Hive 3
