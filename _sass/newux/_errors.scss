@@ -1,0 +1,28 @@
+.error-page {
+  main {
+    margin: 2ex 2em;
+    article {
+      margin: 0 14rem;
+      h1 {
+        color: #305868;
+      }
+      .search {
+        input {
+          font-size: 110%;
+          padding: 10px;
+          width: 100%;
+        }
+        i.fa {
+          position: absolute;
+          right: 0;
+          top: 12px;
+          color: #00a3af;
+          font-size: 130%;
+        }
+        .fa-search::before {
+          content=" "
+        }
+      }
+    }
+  }
+}
