@@ -1,6 +1,6 @@
 <header>
 <div class="logo">
-  <a href="{{ page.logourl }}"><img src="/common/img/cloudera.png" alt="Cloudera homepage">{{ page.logokicker }}</a>
+  <a href="{% if page.logourl %}{{ page.logourl }}{% else %}{{ 'https://www.cloudera.com/' }}{% endif %}"><img src="/common/img/cloudera.png" alt="Cloudera homepage">{{ page.logokicker }}</a>
 </div>
 <ul class="navlinks">
 <li><a href="/products.html">Products</a></li>

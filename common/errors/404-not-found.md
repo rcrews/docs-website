@@ -6,7 +6,7 @@ logokicker: Documentation
 ---
 # {{page.title}}
 
-The page you requested is not available. Try
+The page you requested is not available. Instead, try
 * The Cloudera [Documentation home page](https://docs.cloudera.com/)
 * The Cloudera [home page](https://www.cloudera.com/)
 * The latest documentation by product:
