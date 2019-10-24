@@ -591,29 +591,33 @@
       url: /machine-learning/cloud/index.html
 
 - name: Cloudera Runtime
-  latest-version: 7.0.1
-  latest-url: /runtime/latest/index.html
+  latest-version: 7.0.2
+  latest-url: /runtime/7.0.2/index.html
   search-name: Runtime
   versions:
     - title: "7.0"
-      url: /runtime/7.0.1/index.html
+      url: /runtime/7.0.2/index.html
       minors:
-        - title: 7.0.1
+        - title: 7.0.2
           type: Latest
+          url: /runtime/7.0.2/index.html
+        - title: 7.0.1
           url: /runtime/7.0.1/index.html
         - title: 7.0.0
           url: /runtime/7.0.0/index.html
 
 - name: Cloudera Manager
-  latest-version: 7.0.1
-  latest-url: /cloudera-manager/latest/index.html
+  latest-version: 7.0.2
+  latest-url: /cloudera-manager/7.0.2/index.html
   search-name: Cloudera Manager
   versions:
     - title: "7.0"
-      url: /cloudera-manager/7.0.1/index.html
+      url: /cloudera-manager/7.0.2/index.html
       minors:
-        - title: 7.0.1
+        - title: 7.0.2
           type: Latest
+          url: /cloudera-manager/7.0.2/index.html
+        - title: 7.0.1
           url: /cloudera-manager/7.0.1/index.html
         - title: 7.0.0
           url: /cloudera-manager/7.0.0/index.html
@@ -1151,7 +1155,7 @@
 
 - name: Streams Messaging Manager for HDF and HDP
   latest-version: 2.0.0
-  latest-url: /smm/latest/index.html
+  latest-url: /smm/2.0.0/index.html
   search-name: smm
   versions:
     - title: "2.0"
@@ -1180,7 +1184,7 @@
 
 - name: Edge Management
   latest-version: 1.1.0
-  latest-url: /cem/latest/index.html
+  latest-url: /cem/1.1.0/index.html
   search-name: cem
   versions:
     - title: "1.0"
@@ -1194,7 +1198,7 @@
 
 - name: Flow Management
   latest-version: 2.0.0
-  latest-url: /cfm/latest/index.html
+  latest-url: /cfm/2.0.0/index.html
   search-name: cfm
   versions:
     - title: "2.0"
@@ -1213,7 +1217,7 @@
 
 - name: Stream Processing
   latest-version: 2.0.1
-  latest-url: /csp/latest/index.html
+  latest-url: /csp/2.0.1/index.html
   search-name: csp
   versions:
     - title: "2.0"
@@ -1232,7 +1236,7 @@
 
 - name: Streams Replication Manager for HDF and HDP
   latest-version: 1.0.0
-  latest-url: /srm/latest/index.html
+  latest-url: /srm/1.0.0/index.html
   search-name: srm
   versions:
     - title: "1.0"

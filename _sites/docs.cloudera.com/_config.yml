@@ -42,11 +42,16 @@ exclude:
   - _includes/js/tab-win.js
 
   # Unreleased documentation
+  - /ccp/2.0.1/
   - /cem/1.1.0/
   - /cfm/2.0.0/
+  - /cloudera-manager/7.0.2/
+  - /cloudera-manager/7.0.3/
   - /csp/2.0.1/
   - /dp/1.2.3/
   - /dss/1.6.0/
+  - /runtime/7.0.2/
+  - /runtime/7.0.3/
 
   # "master" version for docs-dev only
   - /ccp/master/
