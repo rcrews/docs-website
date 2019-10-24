@@ -79,7 +79,7 @@ var NEWUX = (function($) {
                                     // Store the versions for our lookup table.
                                     versions[j] = {
                                         type: typeof data[i].versions[j].type === 'undefined' ? '' : data[i].versions[j].type,
-                                        title:  Number.isInteger(data[i].versions[j].title) ? data[i].versions[j].title.toFixed(1) : data[i].versions[j].title,
+                                        title: Number.isInteger(data[i].versions[j].title) ? data[i].versions[j].title.toFixed(1) : data[i].versions[j].title,
                                         url: data[i].versions[j].url,
                                         minors: []
                                     };
@@ -90,7 +90,7 @@ var NEWUX = (function($) {
                                             title: data[i].versions[j].title,
                                             url: data[i].versions[j].url
                                         };
-                                        found = true;  // We found it at the top level.. but the version we want is probably still at the lower level
+                                        found = true; // We found it at the top level.. but the version we want is probably still at the lower level
                                     }
 
                                     // If it doesn't match, check the minors...
@@ -384,11 +384,11 @@ var NEWUX = (function($) {
             if(!$('.bread-category').length) $('.breadcrumbs').append('<span class="bread-category"></span>');
 
 
-            // if(!$('.short-prev').length)  $('.cpage').append('<div class="short-prev"><a href="">«</a></div>');
-            if(!$('.short-next').length)  $('.cpage').append('<div class="short-next"><a href="">»</a></div>');
-            // if(!$('up').length)  $('.cpage').append('<div class="up"></div>');
-            // if(!$('.prev').length)  $('.cpage').append('<div class="prev"><a href=""></a></div>');
-            if(!$('.next').length)  $('.cpage').append('<div class="next"><a href=""></a></div>');
+            // if(!$('.short-prev').length) $('.cpage').append('<div class="short-prev"><a href="">«</a></div>');
+            if(!$('.short-next').length) $('.cpage').append('<div class="short-next"><a href="">»</a></div>');
+            // if(!$('up').length) $('.cpage').append('<div class="up"></div>');
+            // if(!$('.prev').length) $('.cpage').append('<div class="prev"><a href=""></a></div>');
+            if(!$('.next').length) $('.cpage').append('<div class="next"><a href=""></a></div>');
 
 
             if(!$('.copyright').length) {
@@ -398,7 +398,7 @@ var NEWUX = (function($) {
             // When we load up the JS for the page, we rely on the navigation.json file that is present in the product root.
 
             // Normally, we expect this to be in the third folder... so for example. /HDF3/hdf-3.0.4/navigation.json
-            let url =  new URL(window.location.href);
+            let url = new URL(window.location.href);
             let url_chunks = url.pathname.split('/'); // This will include the first item as an empty item.
             url_chunks.length = 3; // This will dump any extra url stuff for nested files.
             let navfile = url_chunks.join('/') + "/navigation.json";
@@ -532,7 +532,7 @@ var NEWUX = (function($) {
                     if (typeof copyright !== 'undefined') {
                         Pubnav.pagestate.copyright = copyright;
                     } else {
-                        Pubnav.pagestate.copyright = new Date().getFullYear()  + ' Cloudera, Inc.';
+                        Pubnav.pagestate.copyright = new Date().getFullYear() + ' Cloudera, Inc.';
                     }
 
                     // PDF Document
@@ -552,7 +552,7 @@ var NEWUX = (function($) {
                 // but they are ignored because response was set above.
                 // If it fails, this function gets "jqXHR", "status", "error"
                 complete = true;
-                elems[0] =  `<h1>Load error</h1><p>We're not able to get the page you requested. Most likely we planned a page for this location, but it's not ready yet.</p><p style="font-size: 85%">${status} ${jqXHR.statusText}</p><p>Choose a different topic from the left or find one using search.</p>`;
+                elems[0] = `<h1>Load error</h1><p>We're not able to get the page you requested. Most likely we planned a page for this location, but it's not ready yet.</p><p style="font-size: 85%">${status} ${jqXHR.statusText}</p><p>Choose a different topic from the left or find one using search.</p>`;
                 swapContent();
             });
         },
@@ -603,7 +603,7 @@ var NEWUX = (function($) {
                     css += "external ";
                 }
                 if('href' in item) {
-                    console.log(!('external' in item));
+                    // console.log(!('external' in item));
                     if(WhoAmI.is_latest && !('external' in item)) item.href = this.makeLatestURL(item.href);
                     html += `<li class='${css}' data-navid='${item.id}' data-level='${level}'><span class='item'><a href='${item.href}'>${item.text}</a></span>`;
                 } else {
@@ -691,7 +691,7 @@ var NEWUX = (function($) {
                 return true;
 
             } else {
-                console.log('couldnt find in tree?');
+                // console.log('couldnt find in tree?');
                 return false;
             }
         },
@@ -1019,7 +1019,7 @@ var NEWUX = (function($) {
         },
 
         hideSearch: function(evt) {
-            console.log('hideSearch');
+            // console.log('hideSearch');
             $('.lucene-overlay').hide();
             $('.cpage').show();
         },
@@ -1033,7 +1033,7 @@ var NEWUX = (function($) {
 
         fireQuery: function(searchterm, nextCursorMark) {
             var that = this;
-            var q  = searchterm == null ? filterSearchTerm($('#overlay-search .searchterm').val()) : searchterm,
+            var q = searchterm == null ? filterSearchTerm($('#overlay-search .searchterm').val()) : searchterm,
                 // For Example: fq = "((product:\\\"Ambari\\\" AND release:2.7.3.0))",
                 fq = WhoAmI.search_name ? "(search-name:\"" + WhoAmI.search_name + "\" AND release:" + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ")" : "",
                 rows = 10,
@@ -1108,7 +1108,7 @@ var NEWUX = (function($) {
                             if (output_holder.hasOwnProperty(book)) {
                                 result = "";
                                 result += '<div class="book-group">';
-                                result += ' <div class="book">' + (book !== 'undefined' ? book : "")  + '</div>';
+                                result += ' <div class="book">' + (book !== 'undefined' ? book : "") + '</div>';
                                 for(var i=0; i < output_holder[book].length; i++) {
                                     result += output_holder[book][i];
                                 }
@@ -1184,7 +1184,7 @@ var NEWUX = (function($) {
 
             // remove accents, swap ñ for n, etc
             let from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
-            let to   = "aaaaeeeeiiiioooouuuunc------";
+            let to = "aaaaeeeeiiiioooouuuunc------";
             for (let i=0, l=from.length ; i<l ; i++) {
                 str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
             }
@@ -1197,7 +1197,7 @@ var NEWUX = (function($) {
         },
         flatten: function(arr, subkey) {
             // TODO! Flatten a nested array with subs, into a consecutive array....
-            //  we'll use this to make it easier to jump forwards and backwards.
+            // we'll use this to make it easier to jump forwards and backwards.
             return arr;
         },
         makeIdFromHref:function(href) {
@@ -1207,7 +1207,7 @@ var NEWUX = (function($) {
             let chunks = parser.pathname.split('/');
 
             let id = chunks[chunks.length - 1];
-            id = id.substring(0, id.indexOf('.'));  // dump anything after a period... .html / .php etc.
+            id = id.substring(0, id.indexOf('.')); // dump anything after a period... .html / .php etc.
 
             if(chunks.length > 5) {
                 id = chunks[chunks.length - 3] + '-' + id;
