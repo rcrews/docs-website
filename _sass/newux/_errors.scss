@@ -2,11 +2,15 @@
   main {
     margin: 2ex 2em;
     article {
+      max-width: 45em;
       margin: 0 14rem;
       h1 {
         color: #305868;
       }
       .search {
+        width: 500px;
+        margin: 20px 0;
+        position: relative;
         input {
           font-size: 110%;
           padding: 10px;
@@ -20,9 +24,12 @@
           font-size: 130%;
         }
         .fa-search::before {
-          content=" "
+          content: "\f002";
         }
       }
     }
+  }
+  footer {
+    margin-top: 36ex;
   }
 }
