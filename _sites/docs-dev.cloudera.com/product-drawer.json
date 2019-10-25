@@ -2,7 +2,7 @@
 layout: json
 json:
 
-- title: Data Platform
+- title: CDP Cloud
   products:
     - text: Cloudera Data Platform
       href: /cdp/master/index.html
@@ -35,6 +35,20 @@ json:
     - text: Cloudera Workload Manager
       href: /workload-manager/master/index.html
       icon: /common/img/mini_icons/icon-wm.png
+
+    - text: Cloudera Runtime
+      href: /runtime/master/index.html
+      icon: /common/img/mini_icons/icon-cr.png
+
+    - text: Cloudera Manager
+      href: /cloudera-manager/master/index.html
+      icon: /common/img/mini_icons/icon-cm.png
+
+- title: CDP Data Center
+  products:
+    - text: Cloudera Data Platform
+      href: /cdp/master/index.html
+      icon: /common/img/mini_icons/icon-cdp.png
 
     - text: Cloudera Runtime
       href: /runtime/master/index.html
