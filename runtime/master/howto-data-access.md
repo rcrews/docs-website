@@ -103,14 +103,14 @@ publications:
     url: securing-hue/index.html
     description: >-
       Describes how to set Hue user and application permissions, configure
-      ssl connections, LDAP authentication, and integration with Apache
+      SSL connections, LDAP authentication, and integration with Apache
       Ranger and Knox.
 
   - title: Tuning Hue
     url: tuning-hue/index.html
     description: >-
       Describes how to add a load balancer and configure high availability
-      for hue and between hue and other components, such as Hive, Impala,
+      for Hue and between Hue and other components, such as Hive, Impala,
       and HDFS.
 
 ---
