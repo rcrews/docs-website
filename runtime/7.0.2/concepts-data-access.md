@@ -4,6 +4,7 @@ breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Data Access
 
 # Concepts publications related to
+# * DAS
 # * Hive
 # * Impala
 # * Hue
@@ -11,6 +12,11 @@ title: Data Access
 # * Search
 
 publications:
+  - title: Data Analytics Studio Overview
+    url: das-overview/index.html
+    description: >-
+      Provides an overview and architecture of the Data Analytics Studio
+      environment.
   - title: Apache Hive Overview
     url: hive-introduction/index.html
     description: >-

@@ -4,6 +4,7 @@ breadcrumb-title: Cloudera Runtime How To
 title: Data Access
 
 # How-to publications related to
+# * DAS
 # * Hive
 # * Impala
 # * Hue
@@ -11,6 +12,11 @@ title: Data Access
 # * Search
 
 publications:
+  - title: Using Data Analytics Studio
+    url: using-das/index.html
+    description: >-
+      Describes how to work with queries, manage databases and tables,
+      and generate reports.
 
   - title: Starting Apache Hive
     url: starting-hive/index.html
