@@ -7,7 +7,7 @@ urls:
 
   - custom_hash: dps110_h0001a
     note: DataPlane landing page
-    long_url: https://docs.hortonworks.com/HDPDocuments/DP/DP-1.1.0/index.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DP/DP-1.1.0/index.html
 
   #
   # DLM 1.5.0
@@ -15,35 +15,35 @@ urls:
 
   - custom_hash: dlm150_h0001a
     note: Data Lifecycle Manager landing page
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.5.0/index.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/index.html
 
   - custom_hash: dlm150_h0002a
     note: How Pairing Works in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.5.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
 
   - custom_hash: dlm150_h0003a
     note: Pairing Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.5.0/administration/content/dlm_pairing_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/administration/content/dlm_pairing_guidelines_and_considerations.html
 
   - custom_hash: dlm150_h0004a
     note: How Policies Work in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.5.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
 
   - custom_hash: dlm150_h0005a
     note: Policy Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.5.0/administration/content/dlm_policy_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/administration/content/dlm_policy_guidelines_and_considerations.html
 
   - custom_hash: dlm150_h0006a
     note: Create Snapshot Enabled Directories
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.5.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
 
   - custom_hash: dlm150_h0007a
     note: Manage Cluster Roles (Ambari)
-    long_url: https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/administering-ambari/content/amb_managing_cluster_roles.html
+    long_url: https://docs.cloudera.com/HDPDocuments/Ambari-2.7.3.0/administering-ambari/content/amb_managing_cluster_roles.html
 
   - custom_hash: dlm150_h0008a
     note: Hive data cannot be replicated
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.5.0/administration/content/dlm_cannot_replicate_hive_data.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/administration/content/dlm_cannot_replicate_hive_data.html
 
   #
   # DLM 1.4.0
@@ -51,35 +51,35 @@ urls:
 
   - custom_hash: dlm140_h0001a
     note: Data Lifecycle Manager landing page
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.4.0/index.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/index.html
 
   - custom_hash: dlm140_h0002a
     note: How Pairing Works in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.4.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
 
   - custom_hash: dlm140_h0003a
     note: Pairing Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.4.0/administration/content/dlm_pairing_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/administration/content/dlm_pairing_guidelines_and_considerations.html
 
   - custom_hash: dlm140_h0004a
     note: How Policies Work in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.4.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
 
   - custom_hash: dlm140_h0005a
     note: Policy Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.4.0/administration/content/dlm_policy_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/administration/content/dlm_policy_guidelines_and_considerations.html
 
   - custom_hash: dlm140_h0006a
     note: Create Snapshot Enabled Directories
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.4.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
 
   - custom_hash: dlm140_h0007a
     note: Manage Cluster Roles (Ambari)
-    long_url: https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/administering-ambari/content/amb_managing_cluster_roles.html
+    long_url: https://docs.cloudera.com/HDPDocuments/Ambari-2.7.3.0/administering-ambari/content/amb_managing_cluster_roles.html
 
   - custom_hash: dlm140_h0008a
     note: Hive data cannot be replicated
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.4.0/administration/content/dlm_cannot_replicate_hive_data.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/administration/content/dlm_cannot_replicate_hive_data.html
 
   #
   # DLM 1.3.0
@@ -87,35 +87,35 @@ urls:
 
   - custom_hash: dlm130_h0001a
     note: Data Lifecycle Manager landing page
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.3.0/index.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/index.html
 
   - custom_hash: dlm130_h0002a
     note: How Pairing Works in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.3.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
 
   - custom_hash: dlm130_h0003a
     note: Pairing Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.3.0/administration/content/dlm_pairing_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/administration/content/dlm_pairing_guidelines_and_considerations.html
 
   - custom_hash: dlm130_h0004a
     note: How Policies Work in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.3.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
 
   - custom_hash: dlm130_h0005a
     note: Policy Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.3.0/administration/content/dlm_policy_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/administration/content/dlm_policy_guidelines_and_considerations.html
 
   - custom_hash: dlm130_h0006a
     note: Create Snapshot Enabled Directories
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.3.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
 
   - custom_hash: dlm130_h0007a
     note: Manage Cluster Roles (Ambari)
-    long_url: https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.3.0/administering-ambari/content/amb_managing_cluster_roles.html
+    long_url: https://docs.cloudera.com/HDPDocuments/Ambari-2.7.3.0/administering-ambari/content/amb_managing_cluster_roles.html
 
   - custom_hash: dlm130_h0008a
     note: Hive data cannot be replicated
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.3.0/administration/content/dlm_cannot_replicate_hive_data.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/administration/content/dlm_cannot_replicate_hive_data.html
 
   #
   # DLM 1.2.0
@@ -123,35 +123,35 @@ urls:
 
   - custom_hash: dlm120_h0001a
     note: Data Lifecycle Manager landing page
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.2.0/index.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/index.html
 
   - custom_hash: dlm120_h0002a
     note: How Pairing Works in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.2.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
 
   - custom_hash: dlm120_h0003a
     note: Pairing Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.2.0/administration/content/dlm_pairing_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/administration/content/dlm_pairing_guidelines_and_considerations.html
 
   - custom_hash: dlm120_h0004a
     note: How Policies Work in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.2.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
 
   - custom_hash: dlm120_h0005a
     note: Policy Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.2.0/administration/content/dlm_policy_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/administration/content/dlm_policy_guidelines_and_considerations.html
 
   - custom_hash: dlm120_h0006a
     note: Create Snapshot Enabled Directories
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.2.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
 
   - custom_hash: dlm120_h0007a
     note: Manage Cluster Roles (Ambari)
-    long_url: https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.1.0/administering-ambari/content/amb_managing_cluster_roles.html
+    long_url: https://docs.cloudera.com/HDPDocuments/Ambari-2.7.1.0/administering-ambari/content/amb_managing_cluster_roles.html
 
   - custom_hash: dlm120_h0008a
     note: Hive data cannot be replicated
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.2.0/administration/content/dlm_cannot_replicate_hive_data.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/administration/content/dlm_cannot_replicate_hive_data.html
 
   #
   # DLM 1.1.2
@@ -159,35 +159,35 @@ urls:
 
   - custom_hash: dlm112_h0001a
     note: Data Lifecycle Manager landing page
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.2/index.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/index.html
 
   - custom_hash: dlm112_h0002a
     note: How Pairing Works in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.2/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
 
   - custom_hash: dlm112_h0003a
     note: Pairing Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.2/administration/content/dlm_pairing_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/administration/content/dlm_pairing_guidelines_and_considerations.html
 
   - custom_hash: dlm112_h0004a
     note: How Policies Work in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.2/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
 
   - custom_hash: dlm112_h0005a
     note: Policy Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.2/administration/content/dlm_policy_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/administration/content/dlm_policy_guidelines_and_considerations.html
 
   - custom_hash: dlm112_h0006a
     note: Create Snapshot Enabled Directories
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.2/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
 
   - custom_hash: dlm112_h0007a
     note: Manage Cluster Roles (Ambari)
-    long_url: https://docs.hortonworks.com/HDPDocuments/Ambari-2.7.1.0/administering-ambari/content/amb_managing_cluster_roles.html
+    long_url: https://docs.cloudera.com/HDPDocuments/Ambari-2.7.1.0/administering-ambari/content/amb_managing_cluster_roles.html
 
   - custom_hash: dlm112_h0008a
     note: Hive data cannot be replicated
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.2/administration/content/dlm_cannot_replicate_hive_data.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/administration/content/dlm_cannot_replicate_hive_data.html
 
   #
   # DLM 1.1.0
@@ -195,32 +195,32 @@ urls:
 
   - custom_hash: dlm110_h0001a
     note: Data Lifecycle Manager landing page
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.0/index.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.0/index.html
 
   - custom_hash: dlm110_h0002a
     note: How Pairing Works in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.0/getting-started/content/dlm_how_pairing_works_in_data_lifecycle_manager.html
 
   - custom_hash: dlm110_h0003a
     note: Pairing Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.0/administration/content/dlm_pairing_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.0/administration/content/dlm_pairing_guidelines_and_considerations.html
 
   - custom_hash: dlm110_h0004a
     note: How Policies Work in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.0/getting-started/content/dlm_how_policies_work_in_data_lifecycle_manager.html
 
   - custom_hash: dlm110_h0005a
     note: Policy Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.0/administration/content/dlm_policy_guidelines_and_considerations.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.0/administration/content/dlm_policy_guidelines_and_considerations.html
 
   - custom_hash: dlm110_h0006a
     note: Create Snapshot Enabled Directories
     # Topic changed for dlm 1.1.0 because enabling snapshots was integrated into the UI
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.1.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.0/getting-started/content/dlm_snapshot_replication_between_hdp_clusters.html
 
   - custom_hash: dlm110_h0007a
     note: Manage Cluster Roles (Ambari)
-    long_url: https://docs.hortonworks.com/HDPDocuments/Ambari-2.6.0.0/bk_ambari-administration/content/managing_cluster_roles.html
+    long_url: https://docs.cloudera.com/HDPDocuments/Ambari-2.6.0.0/bk_ambari-administration/content/managing_cluster_roles.html
 
   #
   # DLM 1.0.0
@@ -228,24 +228,24 @@ urls:
 
   - custom_hash: dlm100_h0001a
     note: Help page (left nav link)
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/index.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/index.html
 
   - custom_hash: dlm100_h0002a
     note: How Pairing Works in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/how_pairing_works.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/how_pairing_works.html
 
   - custom_hash: dlm100_h0003a
     note: Pairing Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/pairing_guidelines.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/pairing_guidelines.html
 
   - custom_hash: dlm100_h0004a
     note: How Policies Work in DLM
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/how_policies_work_dlm.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/how_policies_work_dlm.html
 
   - custom_hash: dlm100_h0005a
     note: Policy Guidelines
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/policy_guidelines.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/policy_guidelines.html
 
   - custom_hash: dlm100_h0006a
     note: Create Snapshot Enabled Directories
-    long_url: https://docs.hortonworks.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/create_snaphot_enabled_directories.html
+    long_url: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.0.0/bk_dlm-administration/content/create_snaphot_enabled_directories.html

@@ -11,10 +11,10 @@
   <xsl:template match="/sitemap:sitemapindex">
     <html xml:lang="en">
       <head>
-        <title>Sitemap Index for docs.hortonworks.com</title>
+        <title>Sitemap Index for docs.cloudera.com</title>
       </head>
       <body>
-        <h1>Sitemap Index for docs.hortonworks.com</h1>
+        <h1>Sitemap Index for docs.cloudera.com</h1>
         <p>This site contains the following sitemap files:</p>
         <ul>
           <xsl:apply-templates select="sitemap:sitemap/sitemap:loc"/>
@@ -26,10 +26,10 @@
   <xsl:template match="/sitemap:urlset">
     <html xml:lang="en">
       <head>
-        <title>Sub-sitemap for docs.hortonworks.com</title>
+        <title>Sub-sitemap for docs.cloudera.com</title>
       </head>
       <body>
-        <h1>Sub-sitemap for docs.hortonworks.com</h1>
+        <h1>Sub-sitemap for docs.cloudera.com</h1>
         <p>This site area contains the following files:</p>
         <ul>
           <xsl:apply-templates select="sitemap:url/sitemap:loc"/>

@@ -140,13 +140,13 @@ sections:
           - chapter: Apache Atlas REST API
             url: bk_data-governance/content/ch_atlas_rest_api.html
 
-    subprojects:
-      - name: Falcon
-        url: //hortonworks.com/hadoop/falcon/
-      - name: Atlas
-        url: //hortonworks.com/hadoop/atlas/
-      - name: Sqoop
-        url: //hortonworks.com/hadoop/sqoop/
+    # subprojects:
+    #   - name: Falcon
+    #     url: //hortonworks.com/hadoop/falcon/
+    #   - name: Atlas
+    #     url: //hortonworks.com/hadoop/atlas/
+    #   - name: Sqoop
+    #     url: //hortonworks.com/hadoop/sqoop/
 
   - title: Security
     name: security
@@ -170,11 +170,11 @@ sections:
           - chapter: Addendum
             url: bk_security/content/ch_security_addendum.html
 
-    subprojects:
-      - name: Knox
-        url: //hortonworks.com/hadoop/knox-gateway/
-      - name: Ranger
-        url: //hortonworks.com/hadoop/ranger/
+    # subprojects:
+    #   - name: Knox
+    #     url: //hortonworks.com/hadoop/knox-gateway/
+    #   - name: Ranger
+    #     url: //hortonworks.com/hadoop/ranger/
 
   - title: Data Access
     name: data_access
@@ -202,7 +202,7 @@ sections:
         url: bk_hive-performance-tuning/index.html
         pdf: bk_hive-performance-tuning/bk_hive-performance-tuning.pdf
         contents:
-          - chapter: Optimizing an Apache Hive Data Warehouse  
+          - chapter: Optimizing an Apache Hive Data Warehouse
             url: bk_hive-performance-tuning/content/ch_hive-perf-tuning-intro.html
           - chapter: Hive LLAP on Your Cluster
             url: bk_hive-performance-tuning/content/ch_llap-on-cluster.html
@@ -245,23 +245,23 @@ sections:
           - chapter: Tuning an Apache Storm Topology
             url: bk_storm-component-guide/content/ch_storm-topology-tuning.html
 
-    subprojects:
-      - name: Apache Pig
-        url: //hortonworks.com/hadoop/pig/
-      - name: Apache Hive
-        url: //hortonworks.com/hadoop/hive/
-      - name: Apache Tez
-        url: //hortonworks.com/hadoop/tez/
-      - name: Apache Solr
-        url: //hortonworks.com/hadoop/solr/
-      - name: Apache Slider
-        url: //hortonworks.com/hadoop/slider/
-      - name: Apache HBase
-        url: //hortonworks.com/hadoop/hbase/
-      - name: Apache Accumulo
-        url: //hortonworks.com/hadoop/accumulo/
-      - name: Apache Storm
-        url: //hortonworks.com/hadoop/storm/
+    # subprojects:
+    #   - name: Apache Pig
+    #     url: //hortonworks.com/hadoop/pig/
+    #   - name: Apache Hive
+    #     url: //hortonworks.com/hadoop/hive/
+    #   - name: Apache Tez
+    #     url: //hortonworks.com/hadoop/tez/
+    #   - name: Apache Solr
+    #     url: //hortonworks.com/hadoop/solr/
+    #   - name: Apache Slider
+    #     url: //hortonworks.com/hadoop/slider/
+    #   - name: Apache HBase
+    #     url: //hortonworks.com/hadoop/hbase/
+    #   - name: Apache Accumulo
+    #     url: //hortonworks.com/hadoop/accumulo/
+    #   - name: Apache Storm
+    #     url: //hortonworks.com/hadoop/storm/
 
   - title: Data Science
     name: data_science
@@ -308,9 +308,9 @@ sections:
           - chapter: Stopping the Zeppelin Server and Livy Server
             url: bk_zeppelin-component-guide/content/ch_stop-services.html
 
-    subprojects:
-      - name: Spark
-        url: //hortonworks.com/hadoop/spark/
+    # subprojects:
+    #   - name: Spark
+    #     url: //hortonworks.com/hadoop/spark/
 
   - title: Cluster Management
     name: data_mgt
@@ -442,19 +442,19 @@ sections:
           - chapter: Supported Database Matrix for the Hortonworks Data Platform
             url: bk_reference/content/ch_supported_db_matrix_hdp.html
 
-    subprojects:
-      - name: Ambari
-        url: //hortonworks.com/hadoop/ambari/
-      - name: Hadoop
-        url: //hortonworks.com/hadoop/
-      - name: YARN
-        url: //hortonworks.com/hadoop/yarn/
-      - name: Cloudbreak
-        url: //hortonworks.com/hadoop/cloudbreak/
-      - name: ZooKeeper
-        url: //hortonworks.com/hadoop/zookeeper/
-      - name: Oozie
-        url: //hortonworks.com/hadoop/oozie/
+    # subprojects:
+    #   - name: Ambari
+    #     url: //hortonworks.com/hadoop/ambari/
+    #   - name: Hadoop
+    #     url: //hortonworks.com/hadoop/
+    #   - name: YARN
+    #     url: //hortonworks.com/hadoop/yarn/
+    #   - name: Cloudbreak
+    #     url: //hortonworks.com/hadoop/cloudbreak/
+    #   - name: ZooKeeper
+    #     url: //hortonworks.com/hadoop/zookeeper/
+    #   - name: Oozie
+    #     url: //hortonworks.com/hadoop/oozie/
 
   - title: Data Movement
     name: movement
@@ -469,11 +469,11 @@ sections:
             url: bk_workflow-management/content/ch_wfm_content_roadmap.html
           - chapter: Quick Start
             url: bk_workflow-management/content/ch_wfm_quick_start.html
-          - chapter: Designing Workflows Using the Design Component 
+          - chapter: Designing Workflows Using the Design Component
             url: bk_workflow-management/content/ch_wfm_using_graph_tool.html
           - chapter: Monitoring Jobs Using the Dashboard
             url: bk_workflow-management/content/ch_wfm_using_dashboard.html
-          - chapter: Sample ETL Use Case 
+          - chapter: Sample ETL Use Case
             url: bk_workflow-management/content/ch_wfm_sample_etl_use_case.html
           - chapter: Workflow  Parameters
             url: bk_workflow-management/content/ch_wfm_parameters.html
@@ -560,19 +560,19 @@ sections:
         url: bk_cloud-data-access/index.html
         pdf: bk_cloud-data-access/bk_cloud-data-access.pdf
         contents:
-          - chapter: About This Guide 
+          - chapter: About This Guide
             url: bk_cloud-data-access/content/about.html
-          - chapter: Introducing the Cloud Storage Connectors 
+          - chapter: Introducing the Cloud Storage Connectors
             url: bk_cloud-data-access/content/intro.html
-          - chapter: Getting Started with Amazon S3 
+          - chapter: Getting Started with Amazon S3
             url: bk_cloud-data-access/content/s3-get-started.html
           - chapter: Getting Started with ADLS
             url: bk_cloud-data-access/content/adls-get-started.html
-          - chapter: Getting Started with WASB 
+          - chapter: Getting Started with WASB
             url: bk_cloud-data-access/content/wasb-get-started.html
           - chapter: Accessing Cloud Data in Hive
             url: bk_cloud-data-access/content/hive.html
-          - chapter: Accessing Cloud Data in Spark 
+          - chapter: Accessing Cloud Data in Spark
             url: bk_cloud-data-access/content/spark.html
           - chapter: Copying Cloud Data with Hadoop
             url: bk_cloud-data-access/content/hadoop.html
@@ -609,11 +609,11 @@ sections:
           - chapter: Installing HDP Search Manually
             url: bk_solr-search-installation/content/ch_hdp-search-install-nonambari.html
 
-    subprojects:
-      - name: Flume
-        url: //hortonworks.com/hadoop/flume/
-      - name: Kafka
-        url: //hortonworks.com/hadoop/kafka/
+    # subprojects:
+    #   - name: Flume
+    #     url: //hortonworks.com/hadoop/flume/
+    #   - name: Kafka
+    #     url: //hortonworks.com/hadoop/kafka/
 
 ---
 

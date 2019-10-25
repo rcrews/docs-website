@@ -4,8 +4,8 @@ info:
   description: Ratings and comments for Hortonworks doc URLs
   contact:
     name: Robert Crews
-    url: 'https://docs.hortonworks.com/'
-    email: docs@hortonworks.com
+    url: 'https://docs.cloudera.com/'
+    email: rcrews@cloudera.com
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'

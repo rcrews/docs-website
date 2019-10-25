@@ -76,6 +76,9 @@ publications="
     # bk_hive-performance-tuning
     # bk_teradata-connector-user-guide
 buckets="
+    docs-dev.cloudera.com
+    docs-stage.cloudera.com
+    docs.cloudera.com
     dev.hortonworks.com
     docs-dev.hortonworks.com
     docs-stage.hortonworks.com

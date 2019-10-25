@@ -27,28 +27,28 @@
             "product": "HDP",
             "title": "Hive Authorization | Storage-Based Authorization in Hive",
             "text": "In addition to the traditional POSIX permissions model, HDFS also provides ACLs, or access control lists, as described in ACLs on HDFS. An ACL consists of a set of ACL entries, and each entry names a specific user or group and grants or denies read, write, and execute permissions for the specified user or group.",
-            "url": "https://docs.hortonworks.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
+            "url": "https://docs.cloudera.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
         },{
             "booktitle": "Hadoop Security Guide",
             "release": "2.4.2",
             "product": "HDP",
             "title": "Configuring HDP for Kerberos | Adding Security Information to Configuration Files",
             "text": "ACL for who all can view the default servlets in the HDFS....",
-            "url": "https://docs.hortonworks.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
+            "url": "https://docs.cloudera.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
         },{
             "booktitle": "Data Governance Guide",
             "release": "2.4.2",
             "product": "HDP",
             "title": "Mirroring Data (Falcon)",
             "text": "Expand the Advanced Options section of the page to configure how often the target cluster is updated, throttle distcp operations, set a retry policy, and specify the ACL for the mirror entity",
-            "url": "https://docs.hortonworks.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
+            "url": "https://docs.cloudera.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
         },{
             "booktitle": "Release Notes",
             "release": "2.2.2.0",
             "product": "Ambari",
             "title": "Known Issues",
             "text": "The issue is with the ZooKeeper principal generated for AMS. For example, if the principal is called amszk/<HOSTNAME>@<REALM>, without proper ACL setup ZooKeeper does not work with custom principal name. Switch to u anse existing keytab if present on that host or create a new keytab as zookeeper/<HOSTNAME>@<REALM>",
-            "url": "https://docs.hortonworks.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
+            "url": "https://docs.cloudera.com/hdp/2.2.4/hdfs-administration-guide#acl-on-hdfs"
         }
     ]
 }

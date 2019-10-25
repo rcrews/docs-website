@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """Create Solr JSON from a directory of HTML and text files.
 
-Takes about 2 hours to run on docs.hortonworks.com content.
+Takes about 2 hours to run on docs.cloudera.com content.
 
 For usage, run:
     python3 jsonify.py --help
 
-Questions: Robert Crews <rcrews@hortonworks.com>
+Questions: Robert Crews <rcrews@cloudera.com>
 
 Use tar.bz2 to compress the resulting JSON:
-    $ tar cfy docs.hortonworks.com-json.tar.bz2 docs.hortonworks.com-json
+    $ tar cfy docs.cloudera.com-json.tar.bz2 docs.cloudera.com-json
 """
 
 import argparse
@@ -920,7 +920,7 @@ if __name__ == '__main__':
     ARGS = ARGPARSER.parse_args()
 
     # In JSON, include the URL only from the web root. We can add the
-    # authority (e.g., the domain, i.e., docs.hortonworks.com) in
+    # authority (e.g., the domain, i.e., docs.cloudera.com) in
     # JavaScript when reading the JSON
     if ARGS.in_dir.endswith('/'):
         ARGS.in_dir = ARGS.in_dir[:-1]  # Remove last character

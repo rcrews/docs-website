@@ -183,23 +183,23 @@ sections:
           - chapter: "Example: RollingTopWords Topology"
             url: bk_storm-user-guide/content/ch_storm-rollingtopwords.html
 
-    subprojects:
-      - name: Apache Pig
-        url: //hortonworks.com/hadoop/pig/
-      - name: Apache Hive
-        url: //hortonworks.com/hadoop/hive/
-      - name: Apache Tez
-        url: //hortonworks.com/hadoop/tez/
-      - name: Apache Solr
-        url: //hortonworks.com/hadoop/solr/
-      - name: Apache Slider
-        url: //hortonworks.com/hadoop/slider/
-      - name: Apache HBase
-        url: //hortonworks.com/hadoop/hbase/
-      - name: Apache Accumulo
-        url: //hortonworks.com/hadoop/accumulo/
-      - name: Apache Storm
-        url: //hortonworks.com/hadoop/storm/
+    # subprojects:
+    #   - name: Apache Pig
+    #     url: //hortonworks.com/hadoop/pig/
+    #   - name: Apache Hive
+    #     url: //hortonworks.com/hadoop/hive/
+    #   - name: Apache Tez
+    #     url: //hortonworks.com/hadoop/tez/
+    #   - name: Apache Solr
+    #     url: //hortonworks.com/hadoop/solr/
+    #   - name: Apache Slider
+    #     url: //hortonworks.com/hadoop/slider/
+    #   - name: Apache HBase
+    #     url: //hortonworks.com/hadoop/hbase/
+    #   - name: Apache Accumulo
+    #     url: //hortonworks.com/hadoop/accumulo/
+    #   - name: Apache Storm
+    #     url: //hortonworks.com/hadoop/storm/
 
   - title: Data Science
     name: data_science
@@ -231,9 +231,9 @@ sections:
           - chapter: Tuning and Troubleshooting Spark
             url: bk_spark-guide/content/ch_tuning-spark.html
 
-    subprojects:
-      - name: Spark
-        url: //hortonworks.com/hadoop/spark/
+    # subprojects:
+    #   - name: Spark
+    #     url: //hortonworks.com/hadoop/spark/
 
   - title: Data Management and Operations
     name: data_mgt
@@ -359,19 +359,19 @@ sections:
           - chapter: Supported Database Matrix for the Hortonworks Data Platform
             url: bk_HDP_Reference_Guide/content/ch_supported_db_matrix_hdp.html
 
-    subprojects:
-      - name: Ambari
-        url: //hortonworks.com/hadoop/ambari/
-      - name: Hadoop
-        url: //hortonworks.com/hadoop/
-      - name: YARN
-        url: //hortonworks.com/hadoop/yarn/
-      - name: Cloudbreak
-        url: //hortonworks.com/hadoop/cloudbreak/
-      - name: ZooKeeper
-        url: //hortonworks.com/hadoop/zookeeper/
-      - name: Oozie
-        url: //hortonworks.com/hadoop/oozie/
+    # subprojects:
+    #   - name: Ambari
+    #     url: //hortonworks.com/hadoop/ambari/
+    #   - name: Hadoop
+    #     url: //hortonworks.com/hadoop/
+    #   - name: YARN
+    #     url: //hortonworks.com/hadoop/yarn/
+    #   - name: Cloudbreak
+    #     url: //hortonworks.com/hadoop/cloudbreak/
+    #   - name: ZooKeeper
+    #     url: //hortonworks.com/hadoop/zookeeper/
+    #   - name: Oozie
+    #     url: //hortonworks.com/hadoop/oozie/
 
   - title: Security
     name: security
@@ -433,11 +433,11 @@ sections:
           - chapter: Known Issues
             url: bk_secure-storm-ambari/content/ch_secure-storm-known-issues.html
 
-    subprojects:
-      - name: Knox
-        url: //hortonworks.com/hadoop/knox-gateway/
-      - name: Ranger
-        url: //hortonworks.com/hadoop/ranger/
+    # subprojects:
+    #   - name: Knox
+    #     url: //hortonworks.com/hadoop/knox-gateway/
+    #   - name: Ranger
+    #     url: //hortonworks.com/hadoop/ranger/
 
   - title: Data Governance and Integration
     name: gov
@@ -477,17 +477,17 @@ sections:
           - chapter: Mirroring Data Between Clusters
             url: bk_kafka-user-guide/content/ch_kafka_mirrormaker.html
 
-    subprojects:
-      - name: Falcon
-        url: //hortonworks.com/hadoop/falcon/
-      - name: Atlas
-        url: //hortonworks.com/hadoop/atlas/
-      - name: Sqoop
-        url: //hortonworks.com/hadoop/sqoop/
-      - name: Flume
-        url: //hortonworks.com/hadoop/flume/
-      - name: Kafka
-        url: //hortonworks.com/hadoop/kafka/
+    # subprojects:
+    #   - name: Falcon
+    #     url: //hortonworks.com/hadoop/falcon/
+    #   - name: Atlas
+    #     url: //hortonworks.com/hadoop/atlas/
+    #   - name: Sqoop
+    #     url: //hortonworks.com/hadoop/sqoop/
+    #   - name: Flume
+    #     url: //hortonworks.com/hadoop/flume/
+    #   - name: Kafka
+    #     url: //hortonworks.com/hadoop/kafka/
 
   - title: Add-Ons
     name: addons

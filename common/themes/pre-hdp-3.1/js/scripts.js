@@ -187,9 +187,9 @@ var HWXDOCS = (function($) {
                             result = "";
                             result += ' <div class="product">' + item.product + ' ' + item.release +'</div>';
                             result += ' <div class="result">'
-                            result += '     <div class="title"><a href="https://docs.hortonworks.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
+                            result += '     <div class="title"><a href="https://docs.cloudera.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
                             result += '     <div class="excerpt">' + item.text + '</div>';
-                            result += '     <div class="url"><a href="https://docs.hortonworks.com' + item.url + '">' + item.url + '</a></div>';
+                            result += '     <div class="url"><a href="https://docs.cloudera.com' + item.url + '">' + item.url + '</a></div>';
                             result += ' </div>';
 
                             output_holder[item.booktitle] = output_holder[item.booktitle] || [];

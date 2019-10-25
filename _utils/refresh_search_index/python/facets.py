@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Create JSON for Solr from a directory of HTML and text
 
-Takes 2-15 minutes to run on docs.hortonworks.com content.
+Takes 2-15 minutes to run on docs.cloudera.com content.
 Resulting file is about 23 KB.
 
 For usage, run:
     python3 facets.py --help
 
-Questions: Robert Crews <rcrews@hortonworks.com>
+Questions: Robert Crews <rcrews@cloudera.com>
 
 When complete, the resulting file can be pretty-printed by running this
 command:

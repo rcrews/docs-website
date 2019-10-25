@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   DITA HTML TOC to JSON Transformer
-  author: rcrews@hortonworks.com
+  author: rcrews@cloudera.com
   date: 2018-01-16
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:output method="text" encoding="UTF-8"/>
-	
+
   <!--
     Used the ugly local-name business so the stylesheet would work with
     both HTML and XHTML. The provided sample output has

@@ -4,7 +4,7 @@
 
 import textwrap
 
-def redirect_html(new_url='//docs.hortonworks.com'):
+def redirect_html(new_url='//docs.cloudera.com'):
     """Set up JSON struct, delegate its creation, then write the JSON file to disk."""
     assert isinstance(url, str), (
         'new_url is not a string: %r' % new_url)

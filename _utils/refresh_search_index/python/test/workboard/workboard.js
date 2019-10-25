@@ -164,7 +164,7 @@ function displayResponse(request) {
 
     function processJson(key, value) {
         if (key === "url") {
-            return "https://docs.hortonworks.com" + value;
+            return "https://docs.cloudera.com" + value;
         }
         return value;
     }
