@@ -43,7 +43,6 @@ exclude:
 
   # Unreleased documentation
   - /ccp/2.0.1/
-  - /cem/1.1.0/
   - /cfm/2.0.0/
   - /cloudera-manager/7.0.2/
   - /cloudera-manager/7.0.3/

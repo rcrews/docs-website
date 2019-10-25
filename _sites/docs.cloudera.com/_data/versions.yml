@@ -1172,15 +1172,17 @@
           url: /smm/1.0.0/index.html
 
 - name: Edge Management
-  latest-version: 1.0.0
+  latest-version: 1.1.0
   latest-url: /cem/latest/index.html
   search-name: cem
   versions:
     - title: "1.0"
-      url: /cem/1.0.0/index.html
+      url: /cem/1.1.0/index.html
       minors:
-        - title: 1.0.0
+        - title: 1.1.0
           type: Latest
+          url: /cem/1.1.0/index.html
+        - title: 1.0.0
           url: /cem/1.0.0/index.html
 
 - name: Flow Management
