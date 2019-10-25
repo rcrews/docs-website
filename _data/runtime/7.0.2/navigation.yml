@@ -295,6 +295,16 @@
           id: pub-administering-hue
           sub: administering-hue/navigation.json
 
+        - text: Securing Hue
+          href: securing-hue/index.html
+          id: pub-securing-hue
+          sub: securing-hue/navigation.json
+
+        - text: Tuning Hue
+          href: tuning-hue/index.html
+          id: pub-tuning-hue
+          sub: tuning-hue/navigation.json
+
     - text: Operational Datastore
       href: howto-operational-database.html
       sub:
