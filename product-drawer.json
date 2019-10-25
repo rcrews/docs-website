@@ -47,14 +47,14 @@ json:
 - title: CDP Data Center
   products:
     - text: Cloudera Data Platform
-      href: /cdpdc/7.0.3/index.html
+      href: /cdpdc/cloud/index.html
       icon: /common/img/mini_icons/icon-cdp.png
 
     - text: Cloudera Runtime
       href: /runtime/7.0.3/index.html
       icon: /common/img/mini_icons/icon-cr.png
 
-- text: Cloudera Manager
+    - text: Cloudera Manager
       href: /cloudera-manager/7.0.3/index.html
       icon: /common/img/mini_icons/icon-cm.png
 
