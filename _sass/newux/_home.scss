@@ -68,7 +68,7 @@ section.std 		{ max-width:1160px; padding:15px 25px; margin:auto;
 
 .segments 			{ max-width:1220px; background-color:#fff;   list-style-type:none; margin:-55px auto 0; padding:30px 10px 10px;
 	li 				{ font-weight:600; text-transform:uppercase; font-size:95%; border-radius:15px; padding:2px 5px; display:inline-block; background-color:#f6f6f6; border:1px solid $primary-blue; margin:0 10px;
-		a 			{ color:$primary-blue; padding:3px 8px; }
+		a 			{ color:$primary-blue; padding:3px 8px; cursor: pointer; }
 		&.active	{ background-color:$primary-blue; color:#fff;
 			a 		{ color:#fff; }
 		}
