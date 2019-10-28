@@ -17,7 +17,7 @@ function formatCopyright(content) {
            .forEach((v, i, s) => {
                if (i > 0) {
                    if (parseInt(v) === parseInt(s[i - 1]) + 1) {
-                       out = `${out}-${v}`;
+                       out = `${out}\u2013${v}`;
                    } else {
                        out = `${out}, ${v}`;
                    }
@@ -25,9 +25,9 @@ function formatCopyright(content) {
                    out = v;
                }
            });
-    out = out.replace(/(?:^(\d{4})-(\d{4},))/, "$1, $2");
-    out = out.replace(/(?:(\s\d{4})-(\d{4},))/g, "$1, $2");
-    out = out.replace(/(?:(\d{4})(?:-\d{4})+(-\d{4}))/g, "$1$2");
+    out = out.replace(/(?:^(\d{4})\u2013(\d{4},))/, "$1, $2");
+    out = out.replace(/(?:(\s\d{4})\u2013(\d{4},))/g, "$1, $2");
+    out = out.replace(/(?:(\d{4})(?:\u2013\d{4})+(\u2013\d{4}))/g, "$1$2");
     return `© ${out} by Cloudera, Inc. All rights reserved.`;
 }
 
