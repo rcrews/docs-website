@@ -104,10 +104,14 @@
           id: pub-using-nifi-registry
           sub: /HDPDocuments/HDF3/HDF-3.4.1.1/using-nifi-registry/navigation.json
 
-    # - text: Flow Management in Data Hub
-    #   href: howto-cfm-in-data-hub.html
-    #   id: foyer-cfm-in-data-hub
-    #   sub:
+    - text: CFM in Data Hub
+      href: howto-cfm-in-data-hub.html
+      id: foyer-cfm-in-data-hub
+      sub:
+        - text: Publication TBD
+          href: publication-tbd/index.html
+          id: pub-publication-tbd
+          sub: publication-tbd/navigation.json
 
 - text: Reference
   name: reference
