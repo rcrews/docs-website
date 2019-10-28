@@ -44,6 +44,9 @@ exclude:
   # Sarah's special API reference only on dev for now
   - /cfm/2.0.0/operator-api/
 
+  # Work on copyright line
+  - _includes/js/newerux.js
+
   # "master" version for docs-dev only
   - /ccp/master/
   - /cdp/master/
@@ -76,7 +79,7 @@ exclude:
   - /google313e059f6e26cb8c.html
   - /googlea675d981988e7c7a.html
   - /HDPDocuments/Cloudbreak/Cb-doc-resources/
-  - /wp-content
+  # - /wp-content/
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds

@@ -84,7 +84,7 @@ exclude:
   - /google313e059f6e26cb8c.html
   - /googlea675d981988e7c7a.html
   - /HDPDocuments/Cloudbreak/Cb-doc-resources/
-  - /wp-content
+  # - /wp-content/
 
   # Static content supporting the legacy Cloudera pages that don't need
   # to be part of most builds
