@@ -352,10 +352,12 @@
       - title: master
         url: /HDPDocuments/DLM1/DLM-master/index.html
     - title: "1.5"
-      url: /HDPDocuments/DLM1/DLM-1.5.0/index.html
+      url: /HDPDocuments/DLM1/DLM-1.5.1/index.html
       minors:
-        - title: 1.5.0
+        - title: 1.5.1
           type: Latest
+          url: /HDPDocuments/DLM1/DLM-1.5.1/index.html
+        - title: 1.5.0
           url: /HDPDocuments/DLM1/DLM-1.5.0/index.html
     - title: "1.4"
       url: /HDPDocuments/DLM1/DLM-1.4.0/index.html

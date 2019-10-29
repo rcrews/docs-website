@@ -49,6 +49,7 @@ exclude:
   - /csp/2.0.1/
   - /dp/1.2.3/
   - /dss/1.6.0/
+  - /HDPDocuments/DLM1/DLM-1.5.1/
   - /runtime/7.0.2/
   - /runtime/7.0.3/
 
