@@ -18,3 +18,5 @@ const tabbedWindows = evt => {
 document.querySelectorAll(".tablinks").forEach(tab => {
   tab.addEventListener('click', tabbedWindows, false);
 });
+
+document.querySelector(".tablinks").click();
