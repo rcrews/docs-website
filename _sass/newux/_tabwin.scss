@@ -4,15 +4,14 @@
 /* Style the tab */
 .tab-win {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab-win button {
-  background-color: inherit;
+  border: 1px solid #ccc;
+  border-bottom: none;
   float: left;
-  border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -27,6 +26,7 @@
 /* Create an active/current tablink class */
 .tab-win button.active {
   background-color: #ccc;
+  border-bottom-color: transparent;
 }
 
 /* Style the tab content */
