@@ -19,4 +19,9 @@ document.querySelectorAll(".tablinks").forEach(tab => {
   tab.addEventListener('click', tabbedWindows, false);
 });
 
-document.querySelector(".tablinks").click();
+/*
+ * This change broke site navigation Wednesday morning
+ * Uncaught TypeError: Cannot read property 'click' of null
+ *  at main.js:26
+ */
+// document.querySelector(".tablinks").click();
