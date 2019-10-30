@@ -14,8 +14,10 @@
                         <i class="fa fa-search submit"></i>
                         <div class="search-product-filter">Filter Products &nbsp; <i class="fa fa-angle-down"></i>
                             <div class="filters">
-                                {% for product in site.data.versions -%}
-                                <div class="product {% if page.version and product.name != page.title %}inactive{% endif %}" data-pdn="{{ product.name }}" data-pgv="{{ page.version }}" data-pgn="{{ page.title }}" data-filterproduct="{{ product.search-name }}" data-filterversion="{% if page.version and product.name == page.title %}{{ page.version }}{% else %}{{ product.latest-version }}{% endif %}">
+                                <div class="select-controls"><span class="select-all">Select All</span> &middot; <span class="deselect-all">Deselect All</span></div>
+                                {% assign sorted_products = site.data.versions | sort: "name" -%}
+                                {% for product in sorted_products -%}
+                                <div class="product " data-pdn="{{ product.name }}" data-pgv="{{ page.version }}" data-pgn="{{ page.title }}" data-filterproduct="{{ product.search-name }}" data-filterversion="{% if page.version and product.name == page.title %}{{ page.version }}{% else %}{{ product.latest-version }}{% endif %}">
                                     <div class="name">{{ product.name }}</div>
                                     <div class="versions">
                                         <div class="this">{% if page.version and product.name == page.title %}{{ page.version }}{% else %}{{ product.latest-version }}{% endif %}</div>

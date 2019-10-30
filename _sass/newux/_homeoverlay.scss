@@ -76,6 +76,8 @@
 
 			}
 		}
+		.select-controls				{ color: white; font-size: smaller; text-align: right; }
+		.deselect-all, .select-all		{ cursor: pointer; }
 		.filter 						{ display:inline-block; border-left:1px solid #e6e6e6; margin-left:5px; padding-left:5px;  }
 	}
 

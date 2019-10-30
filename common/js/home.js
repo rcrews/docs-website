@@ -27,6 +27,9 @@ var CHOME = (function($) {
             $('.search-product-filter').on('click', this.toggleProductFilters);
             $('body').on('click', this.toggleProductFilters); // Cancel it out.
 
+            $('.deselect-all').on('click', this.deselectAll);
+            $('.select-all').on('click', this.selectAll);
+
             $('.filters').on('click', this.clearVersionFilters);
             $('.filters .product').on('click', this.setOnlyThis);
 
@@ -36,6 +39,18 @@ var CHOME = (function($) {
             $('.lucene-results .versions>i').on('click', this.showVersionOptions.bind(this))
             $('.lucene-results .filterversion').on('click', this.updateFilterVersion.bind(this));
             $('.lucene-results .more-link').on('click', this.loadMoreResults.bind(this));
+        },
+        selectAll: function(evt) {
+          let products = $('.product');
+          [].slice.call(products).forEach(p => {
+                p.className = p.className.replace(/(\s|^)inactive(\s|$)/, ' ');
+          });
+        },
+        deselectAll: function(evt) {
+          let products = $('.product');
+          [].slice.call(products).forEach(p => {
+                p.className += ' inactive';
+          });
         },
         setOnlyThis: function(evt) {
             // Unselect all
