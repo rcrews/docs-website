@@ -928,7 +928,7 @@ var NEWUX = (function($) {
                             let active = "";
                             if (el) {
                                 if (WhoAmI.version.url &&
-                                    (WhoAmI.version.url.split("/")[1] === el.href.split("/")[1])) {
+                                    (WhoAmI.version.url.split("/").slice(1, 3).join("/") === el.href.split("/").slice(1, 3).join("/"))) {
                                     active = "active ";
                                     open = "expanded ";
                                 }
@@ -936,7 +936,7 @@ var NEWUX = (function($) {
                             }
                         });
                         output += `<li class="cat ${open}"><span class="cat-title">${cat.title}</span><ul class="items">${inner_output}</ul></li>`;
-                   });
+                    });
 
                     $(".product-drawer .products").append(output);
                     this.bindEvents();
