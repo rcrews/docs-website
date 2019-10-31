@@ -46,7 +46,7 @@
 		i 								{ display:block; font-size:300%; }
 	}
 
-	.filters							{ position:absolute; right:0; top:40px; border-radius:4px; background-color:#0b818ae3; width:242px; margin-bottom:60px; font-size:90%; color:#777; padding:10px; display:none; z-index:100;
+	.filters							{ position:absolute; right:0; top:40px; border-radius:4px; background-color:#0b818ae3; max-width:80vw; width:26rem; margin-bottom:60px; font-size:90%; color:#777; padding:10px; display:none; z-index:100;
 		.product 						{ background-color:#297175; color:$super-light-grey; padding:2px 5px; margin-right:5px; margin-bottom:5px;  border-radius:3px; display:table; position:relative;
 			&.active 					{ border-color:$hilite; }
 			&.inactive 					{ color:#ffffff55; border-color:#ffffff55; }
