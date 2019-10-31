@@ -99,4 +99,6 @@ for storing and accessing data in the Hive metastore database. Hive 3
 addresses enterprise data warehouse demands for transactional data in
 the ORC file format. Impala performs high-performance, low-latency SQL
 queries on data in Parquet and other formats. Hue is a web-based interactive
-editor for querying the Hive metastore that also creates Oozie workflows.
+editor for querying the Hive metastore that also creates Oozie workflows. DAS
+is a web application for performing operations on Hive tables and also 
+provides recommendations for optimizing the performance of your queries.
