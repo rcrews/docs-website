@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Cloudera Data Platform
+title: Overview
 version: cloud
 base-path: /cdp/cloud/
 

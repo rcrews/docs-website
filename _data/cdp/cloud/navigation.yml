@@ -8,8 +8,8 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Cloudera Data Platform
-  id: landing-cloudera-data-platform
+- text: Overview
+  id: landing-overview
   href: /cdp/cloud/index.html
   display: none
 
