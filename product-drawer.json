@@ -4,7 +4,7 @@ json:
 
 - title: CDP Cloud
   products:
-    - text: Cloudera Data Platform
+    - text: Overview
       href: /cdp/cloud/index.html
       icon: /common/img/mini_icons/icon-cdp.png
 
@@ -46,7 +46,7 @@ json:
 
 - title: CDP Data Center
   products:
-    - text: Cloudera Data Platform
+    - text: Overview & Installation
       href: /cdpdc/cloud/index.html
       icon: /common/img/mini_icons/icon-cdp.png
 
