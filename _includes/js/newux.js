@@ -32,6 +32,28 @@ function formatCopyright(content) {
 }
 
 /**
+ * Transforms DITA/HTML4 object element to YouTube-preferred iframe markup.
+ * DITA: &lt;object data="https://www.youtube.com/embed/WhOyVz3VJ7c">&lt;/object>
+ */
+function objectForYouTube() {
+    const ALLOW = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+    const WIDTH = 560;
+    const HEIGHT = 315;
+    document.querySelectorAll("object").forEach(o => {
+        if (o.data.match(/\/\/www\.youtube\.com\//)) {
+            iframe = document.createElement("iframe");
+            iframe.setAttribute("frameborder", 0);
+            iframe.setAttribute("allow", ALLOW);
+            iframe.setAttribute("allowfullscreen", "allowfullscreen");
+            iframe.src = o.data;
+            o.width ? iframe.width = o.width : iframe.width = WIDTH;
+            o.height ? iframe.height = o.height : iframe.height = HEIGHT;
+            o.parentNode.replaceChild(iframe, o);
+        }
+    });
+}
+
+/**
  * NEWUX - Functionality associated with the 2019 Rework of the Cloudera Documentation.
  *
  * @link http://docs.cloudera.com
@@ -1130,12 +1152,13 @@ var NEWUX = (function($) {
                                 // Add back in <b> tags which are there for highlighting
                                 item.text = item.text.replace(/&lt;b&gt;/g, "<b>").replace(/&lt;\/b&gt;/g, "</b>");
 
+                                let url = item.url[0];
+                                if (!url.match(/^http/)) { url = `https://docs.cloudera.com${item.url}`; }
                                 result = "";
-                                // result += ' <div class="product">' + item.product + ' ' + item.release +'</div>';
                                 result += ' <div class="result">'
-                                result += '     <div class="title"><a href="https://docs.cloudera.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
+                                result += '     <div class="title"><a href="' + url + '"><span class="chapter">' + item.title + '</span></a></div>';
                                 result += '     <div class="excerpt">' + item.text + '</div>';
-                                result += '     <div class="url"><a href="https://docs.cloudera.com' + item.url + '">' + item.url + '</a></div>';
+                                result += '     <div class="url"><a href="' + url + '">' + item.url + '</a></div>';
                                 result += ' </div>';
 
                                 output_holder[item.booktitle] = output_holder[item.booktitle] || [];
@@ -1268,13 +1291,15 @@ var NEWUX = (function($) {
 
     var Transforms = {
         deTarget: function() {
-            [].slice.call(document.querySelectorAll("a[target]")).forEach( at => {
+            Array.from(document.querySelectorAll("a[target]")).forEach(at => {
                 if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes("//")) { return; }
                 at.removeAttribute("target");
             });
         },
+        objectForYouTube: objectForYouTube,
         init: function() {
             this.deTarget();
+            this.objectForYouTube();
         }
     };
 

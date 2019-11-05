@@ -252,12 +252,13 @@ var CHOME = (function($) {
                                 item.release = Array.isArray(item.release) ? item.release[0] : item.release;
                                 if (item.release.toLowerCase() === "cloud") item.release = "";
 
+                                let url = item.url[0];
+                                if (!url.match(/^http/)) { url = `https://docs.cloudera.com${item.url}`; }
                                 result = "";
-                                result += ' <div class="product">' + item.product + " " + item.release  +"</div>";
                                 result += ' <div class="result">'
-                                result += '     <div class="title"><a href="https://docs.cloudera.com' + item.url + '"><span class="chapter">' + item.title + '</span></a></div>';
+                                result += '     <div class="title"><a href="' + url + '"><span class="chapter">' + item.title + '</span></a></div>';
                                 result += '     <div class="excerpt">' + item.text + '</div>';
-                                result += '     <div class="url"><a href="https://docs.cloudera.com' + item.url + '">' + item.url + '</a></div>';
+                                result += '     <div class="url"><a href="' + url + '">' + item.url + '</a></div>';
                                 result += ' </div>';
 
                                 output_holder[item.booktitle] = output_holder[item.booktitle] || [];
