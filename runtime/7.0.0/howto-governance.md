@@ -13,10 +13,10 @@ publications:
       Use the metadata Atlas collects and metadata you add to
       effectively find entities.
 
-  - title: Working with Classifications and Labels
+  - title: Working with Classifications
     url: atlas-working-with-classifications/index.html
     description: >-
-      How to use Apache Atlas to search for, annotate, classify, and manage data.
+      How to use Apache Atlas to search for, classify, and manage data.
 
   - title: Exploring using Lineage
     url: atlas-exploring-using-lineage/index.html
