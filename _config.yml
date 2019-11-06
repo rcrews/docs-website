@@ -47,6 +47,7 @@ exclude:
   # "master" version for docs-dev only
   - /ccp/master/
   - /cdp/master/
+  - /cdpdc/master/
   - /cem/master/
   - /cfm/master/
   - /cloudera-manager/master/
