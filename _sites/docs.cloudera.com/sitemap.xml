@@ -17,6 +17,7 @@ sitemaps:
   - https://docs.cloudera.com/documentation/guru-howto/data_warehouse/sitemap.xml
   - https://docs.cloudera.com/documentation/kafka/4-0-x/sitemap.xml
   - https://docs.cloudera.com/documentation/kudu/5-12-x/sitemap.xml
+  - https://docs.cloudera.com/documentation/navopt/sitemap.xml
   - https://docs.cloudera.com/documentation/other/accumulo/1-7-2/sitemap.xml
   - https://docs.cloudera.com/documentation/other/connectors/hive-jdbc/2-6-2/sitemap.xml
   - https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-1/sitemap.xml
@@ -30,7 +31,6 @@ sitemaps:
   # - https://docs.cloudera.com/documentation/other/security-bulletins/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/shared/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/tutorial/CDH5/sitemap.xml
-  - https://docs.cloudera.com/documentation/navopt/sitemap.xml
   - https://docs.cloudera.com/documentation/spark2/2-3-x/sitemap.xml
   - https://docs.cloudera.com/documentation/wxm/latest/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/Ambari/Ambari-2.7.4.0/sitemap.xml

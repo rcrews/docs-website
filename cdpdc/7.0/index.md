@@ -1,8 +1,8 @@
 ---
 layout: product
 title: Overview & Installation
-version: cloud
-base-path: /cdp/cloud/
+version: 7.0
+base-path: /cdpdc/7.0/
 
 # sections:
 #   - title: Release Notes
@@ -35,4 +35,4 @@ CDP consists of the following services:
 * [Data Hub](/data-hub/cloud/index.html)
 * [Data Warehouse](/data-warehouse/cloud/index.html)
 * [Machine Learning](/machine-learning/cloud/index.html)
-* [Cloudera Runtime](/runtime/7.0.0/index.html)
+* [Cloudera Runtime](/runtime/7.0.3/index.html)
