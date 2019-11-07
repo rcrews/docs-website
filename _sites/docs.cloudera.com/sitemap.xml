@@ -13,9 +13,11 @@ sitemaps:
   - https://docs.cloudera.com/documentation/altus/sitemap.xml
   - https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/sitemap.xml
   - https://docs.cloudera.com/documentation/enterprise/6/6.3/sitemap.xml
+  - https://docs.cloudera.com/documentation/enterprise/6/properties/6.3/sitemap.xml
+  - https://docs.cloudera.com/documentation/enterprise/6/release-notes/sitemap.xml
   - https://docs.cloudera.com/documentation/guru-howto/data_science/sitemap.xml
   - https://docs.cloudera.com/documentation/guru-howto/data_warehouse/sitemap.xml
-  - https://docs.cloudera.com/documentation/kafka/4-0-x/sitemap.xml
+  - https://docs.cloudera.com/documentation/kafka/4-1-x/sitemap.xml
   - https://docs.cloudera.com/documentation/kudu/5-12-x/sitemap.xml
   - https://docs.cloudera.com/documentation/navopt/sitemap.xml
   - https://docs.cloudera.com/documentation/other/accumulo/1-7-2/sitemap.xml
@@ -31,7 +33,7 @@ sitemaps:
   # - https://docs.cloudera.com/documentation/other/security-bulletins/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/shared/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/tutorial/CDH5/sitemap.xml
-  - https://docs.cloudera.com/documentation/spark2/2-3-x/sitemap.xml
+  - https://docs.cloudera.com/documentation/spark2/2-4-x/sitemap.xml
   - https://docs.cloudera.com/documentation/wxm/latest/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/Ambari/Ambari-2.7.4.0/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/sitemap.xml
@@ -47,7 +49,7 @@ sitemaps:
   - https://docs.cloudera.com/management-console/cloud/sitemap.xml
   - https://docs.cloudera.com/replication-manager/cloud/sitemap.xml
   - https://docs.cloudera.com/runtime/7.0.1/sitemap.xml
-  - https://docs.cloudera.com/smm/1.2.1/sitemap.xml
+  - https://docs.cloudera.com/smm/2.0.0/sitemap.xml
   - https://docs.cloudera.com/srm/1.0.0/sitemap.xml
   - https://docs.cloudera.com/workload-manager/cloud/sitemap.xml
 ---
