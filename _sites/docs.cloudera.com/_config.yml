@@ -43,7 +43,7 @@ exclude:
 
   # Unreleased documentation
   - /ccp/2.0.1/
-  - /cdpdc/7.0/
+  - /cdpdc/
   - /cfm/2.0.0/
   - /cloudera-manager/7.0.2/
   - /cloudera-manager/7.0.3/
@@ -56,6 +56,7 @@ exclude:
   # "master" version for docs-dev only
   - /ccp/master/
   - /cdp/master/
+  - /cdpdc/master/
   - /cem/master/
   - /cfm/master/
   - /cloudera-manager/master/

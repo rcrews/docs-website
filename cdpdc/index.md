@@ -1,4 +1,4 @@
 ---
 layout: indexredirect
-product: Cloudera Data Platform
+product: Cloudera Data Platform Data Center
 ---
