@@ -1,0 +1,51 @@
+<div class="section parbase">
+  <section class="section_padding brilliant">
+    <div class="body_container">
+      <div class="text parbase section">
+        <div>
+          <div class="inner-text-div">
+            <p class="homeLink">
+{%- if page.breadcrumbs %}
+  {%- for crumb in page.breadcrumbs %}
+  {%- unless page.breadcrumbs[0].text ==  crumb.text %}&gt;{% endunless %}
+              <a href="{{ crumb.href }}">{{ crumb.text }}</a>
+  {%- endfor %}
+{%- endif %}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="title section">
+        <img class="image-centered" src="/content/dam/www/Documentation/Product%20Icons/icon-documentation.png">
+        <h2>{{page.title}}</h2>
+        <p>CDH, Cloudera Manager, Apache Impala, Apache Kafka, Apache Kudu, Apache Spark, and Cloudera Navigator</p>
+      </div>
+      <div class="docSelectChip parbase section">
+        <div class="brilliant">
+          <div class="docChipH">
+            <div>
+              <div class="dropdown">
+                <button data-toggle="dropdown" class="www-btn dropdown-toggle" href="#" aria-expanded="false">
+                  <span class="ddSelect">Select a Different Version</span>
+                  <span class="caret"/>
+                </button>
+                <ul aria-labelledby="dropdown" role="menu" class="dropdown-menu">
+{%- for product in site.data.versions %}
+  {%- unless product.name == "Enterprise" %}{% continue %}{% endunless %}
+  {%- for version in product.versions %}
+    {%- for minor in version.minors %}
+                  <li class="VersionSelect">
+                    <a href="{{ minor.url }}">Cloudera Enterprise {{ minor.title }} Documentation</a>
+                  </li>
+    {%- endfor %}
+  {%- endfor %}
+{%- endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

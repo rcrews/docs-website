@@ -28,7 +28,7 @@
 <script>
 window.set_mbox_variables=function(e){if(e)try{var n="",t=["company_name","industry","sub_industry","audience","watch_list_active_oppty","watch_list_account_type","watch_list_entitled_component","watch_list_cust_prosp_comp","watch_list_cdf_cdh","watch_list_cdsw_hdp","watch_list_fy20_target","watch_list_workloadxm","watch_list_trainingcredits"];for(var o in e)if("object"==typeof e[o]&&null!==e[o]){for(var a in e[o])e[o+"_"+a]=e[o][a];delete e[o]}for(var r in e)if(e.hasOwnProperty(r))if(-1!=t.indexOf(r)&&e[r]){var c="profile."+r+"="+encodeURIComponent(e[r])+",";n+=c}else t.indexOf(r);for(i=0;i<=t.length-1;i++){-1==n.indexOf(t[i])&&(n+="profile."+t[i]+"=none,")}n=n.split(","),window.targetPageParams=function(){return n},window.targetPageParams()}catch(e){console.log(e)}};
 </script>
-<script src="//api.demandbase.com/api/v2/ip.json?key=643d57360c3745d79d30a63cfbe970e8&callback=set_mbox_variables"></script>
+<script src="//api.demandbase.com/api/v2/ip.json?key=643d57360c3745d79d30a63cfbe970e8&amp;callback=set_mbox_variables"></script>
 
 <!--Injects custom datalayer.js for use with Adobe Analytics, DTM-->
 <!-- The datalayer needs to be loaded before the dtm load on the next line -->
@@ -58,6 +58,22 @@ if (jcrPath === "/content/www/en-us/resources/resources-library/dynamic-form") {
 <!--[if lt IE 9]>
 <sly data-sly-call="">
 <![endif]-->
+
+<style type="text/css">
+ footer.c13 {padding:0;}
+ p.c12 {text-align: right;}
+ h3.c11 {text-align: right;}
+ p.c10 {text-align: right;font-size: 30.0px;}
+ div.c9 {background-image:url('');}
+ h4.c8 {color: rgb(154,154,154); font-weight: bold}
+ div.c7 {background-color:#2b353c;}
+ button.c6 {font-style: italic}
+ input.c5 {display:none;}
+ div.c4 {background-image:url('/content/dam/www/marketing/brand/data-line/cn01-data-line-pattern-light-grey-bg.png');}
+ i.c3 {color:#828282; cursor:pointer;}
+ span.c2 {padding-right:10px;}
+ iframe.c1 {display:none;visibility:hidden}
+</style>
 
 <link rel="alternate" hreflang="en-US" href="/documentation/other/connectors/hive-jdbc/latest.html">
 

@@ -59,7 +59,7 @@ json:
       icon: /common/img/mini_icons/icon-smm.png
 
     - text: Cloudera Stream Processing
-      href: /csp/2.0.0/index.html
+      href: /csp/2.0.1/index.html
       icon: /common/img/mini_icons/icon-csp.png
 
 - title: Applications

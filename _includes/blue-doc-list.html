@@ -1,0 +1,21 @@
+{%- if page.doclist %}
+<!-- Doclist-->
+<div class="doc-list">
+  <div class="container">
+    <div class="doc-link-list">
+      <div class="">
+{% if page.doclist.titlepdf %}<a href="{{page.doclist.titlepdf}}"><img alt="PDF" src="/content/dam/www/Documentation/icons/pdf-icon.png" style="float:left; margin-right:10px; height:30px;"></a>{% endif %}
+        <h4>{% if page.doclist.titlehref %}<a href="{{page.titlehref}}">{{page.title}} Documentation</a>{% else %}{{page.title}} Documentation{% endif %}</h4>
+        <hr>
+        <div class="link-bar-list">
+          <ul>
+{%- for link in page.doclist.links %}
+            <li><a href="{{link.href}}">{{link.text}}</a></li>
+{%- endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- End Doclist -->
+{%- endif %}
