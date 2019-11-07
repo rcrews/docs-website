@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html class="main-page">
+{% include blue-head.html %}
+<body>
+{% include blue-preheader.html %}
+{% include blue-header.html %}
+<main>
+
+<div class="section parbase">
+  <section class="section_padding grey">
+    <div class="body_container">
+      <div class="text parbase section">
+        <div>
+          <div class="inner-text-div">
+            <p class="homeLink">
+{%- if page.breadcrumbs %}
+  {%- for crumb in page.breadcrumbs %}
+  {% unless page.breadcrumbs[0].text == crumb.text %}&gt;{% endunless %}
+              <a href="{{ crumb.href }}">{{ crumb.text }}</a>
+  {%- endfor %}
+{%- endif %}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="title section">
+        <h2>{{page.title}}</h2>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="column_control parbase section">
+  <div class="">
+    <div class="body_container">
+      <div class="row top bottom">
+        <div class="col_control">
+          <div class="col-sm-6 col">
+            <div class="col_two parsys">
+              <div class="title section">
+                <h3>Cloudera ODBC Drivers for Hive</h3>
+              </div>
+              <div class="listChildrenDropDown section">
+                <div>
+                  <div class="lstchildren">
+                    <div class="dropdown">
+                      <button data-toggle="dropdown" id="" class="www-btn dropdown-toggle left" aria-expanded="false">
+                        <span class="ddSelect">Select a Version</span>
+                        <span class="caret"/>
+                      </button>
+                      <ul aria-labelledby="dropdown" role="menu" class="dropdown-menu">
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/latest.html">Cloudera ODBC 2.6.4 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-6-1.html">Cloudera ODBC 2.6.1 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-25.html">Cloudera ODBC 2.5.25 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-24.html">Cloudera ODBC 2.5.24 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-22.html">Cloudera ODBC 2.5.22 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-21.html">Cloudera ODBC 2.5.21 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-20.html">Cloudera ODBC 2.5.20 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-19.html">Cloudera ODBC 2.5.19 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-18.html">Cloudera ODBC 2.5.18 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-17.html">Cloudera ODBC 2.5.17 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-16.html">Cloudera ODBC 2.5.16 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-15.html">Cloudera ODBC 2.5.15 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-14.html">Cloudera ODBC 2.5.14 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-13.html">Cloudera ODBC 2.5.13 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-12.html">Cloudera ODBC 2.5.12 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-10.html">Cloudera ODBC 2.5.10 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-9.html">Cloudera ODBC 2.5.9 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-5.html">Cloudera ODBC 2.5.5 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-5-0.html">Cloudera ODBC 2.5.0 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/2-0-0.html">Cloudera ODBC 2.0.0 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/Release%20Notes.pdf.html"/>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-odbc/Release-Notes-Hive-ODBC.pdf.html"/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="title section">
+                <h3 class="top">Cloudera ODBC Drivers for Impala</h3>
+              </div>
+              <div class="listChildrenDropDown section">
+                <div>
+                  <div class="lstchildren">
+                    <div class="dropdown">
+                      <button data-toggle="dropdown" id="" class="www-btn dropdown-toggle left" aria-expanded="false">
+                        <span class="ddSelect">Select a Version</span>
+                        <span class="caret"/>
+                      </button>
+                      <ul aria-labelledby="dropdown" role="menu" class="dropdown-menu">
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/latest.html">Cloudera ODBC 2.6.5 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-6-4.html">Cloudera ODBC 2.6.4 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-6-2.html">Cloudera ODBC 2.6.2 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-6-0.html">Cloudera ODBC 2.6.0 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-44.html">Cloudera ODBC 2.5.44 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-43.html">Cloudera ODBC 2.5.43 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-42.html">Cloudera ODBC 2.5.42 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-41.html">Cloudera ODBC 2.5.41 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-40.html">Cloudera ODBC 2.5.40 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-39.html">Cloudera ODBC 2.5.39 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-37.html">Cloudera ODBC 2.5.37 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-36-0030.html">Cloudera ODBC 2.5.36-0030 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-36.html">Cloudera ODBC 2.5.36 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-35.html">Cloudera ODBC 2.5.35 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-34.html">Cloudera ODBC 2.5.34 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-33.html">Cloudera ODBC 2.5.33 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-32.html">Cloudera ODBC 2.5.32 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-31.html">Cloudera ODBC 2.5.31 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-30.html">Cloudera ODBC 2.5.30 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-29.html">Cloudera ODBC 2.5.29 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-28.html">Cloudera ODBC 2.5.28 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-26.html">Cloudera ODBC 2.5.26 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-23.html">Cloudera ODBC 2.5.23 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-22.html">Cloudera ODBC 2.5.22 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-20.html">Cloudera ODBC 2.5.20 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-17.html">Cloudera ODBC 2.5.17 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-15.html">Cloudera ODBC 2.5.15 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-13.html">Cloudera ODBC 2.5.13 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-5.html">Cloudera ODBC 2.5.5 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-5-2.html">Cloudera ODBC 2.5.2 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/2-0-0.html">Cloudera ODBC 2.0.0 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/1-2-0.html">Cloudera ODBC 1.2.0 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-odbc/Release-Notes-Impala-ODBC.pdf.html"/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="title section">
+                <h3 class="top">Cloudera Connector Powered by Teradata</h3>
+              </div>
+              <div class="listChildrenDropDown section">
+                <div>
+                  <div class="lstchildren">
+                    <div class="dropdown">
+                      <button data-toggle="dropdown" id="" class="www-btn dropdown-toggle left" aria-expanded="false">
+                        <span class="ddSelect">Select a Version</span>
+                        <span class="caret"/>
+                      </button>
+                      <ul aria-labelledby="dropdown" role="menu" class="dropdown-menu">
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/teradata/1-x.html">Cloudera Connector 1.x for Teradata</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col">
+            <div class="col_three parsys">
+              <div class="title section">
+                <h3>Cloudera JDBC Drivers for Hive</h3>
+              </div>
+              <div class="listChildrenDropDown section">
+                <div>
+                  <div class="lstchildren">
+                    <div class="dropdown">
+                      <button data-toggle="dropdown" id="" class="www-btn dropdown-toggle left" aria-expanded="false">
+                        <span class="ddSelect">Select a Version</span>
+                        <span class="caret"/>
+                      </button>
+                      <ul aria-labelledby="dropdown" role="menu" class="dropdown-menu">
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/latest.html">Cloudera JDBC 2.6.5 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-6-2.html">Cloudera JDBC 2.6.2 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-6-1.html">Cloudera JDBC 2.6.1 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-20.html">Cloudera JDBC 2.5.20 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-19.html">Cloudera JDBC 2.5.19 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-18.html">Cloudera JDBC 2.5.18 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-17.html">Cloudera JDBC 2.5.17 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-16.html">Cloudera JDBC 2.5.16 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-15.html">Cloudera JDBC 2.5.15 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-12.html">Cloudera JDBC 2.5.12 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-10.html">Cloudera JDBC 2.5.10 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-9.html">Cloudera JDBC 2.5.9 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-6.html">Cloudera JDBC 2.5.6 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/2-5-4.html">Cloudera JDBC 2.5.4 Driver for Apache Hive</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/Cloudera-JDBC-Driver-for-Apache-Hive-Release-Notes.pdf.html"/>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/Cloudera-JDBC-Driver-for-Apache-Hive-Release-Notes.txt.html"/>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/hive-jdbc/third-party-licenses.txt.html"/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="title section">
+                <h3 class="top">Cloudera JDBC Drivers for Impala</h3>
+              </div>
+              <div class="listChildrenDropDown section">
+                <div>
+                  <div class="lstchildren">
+                    <div class="dropdown">
+                      <button data-toggle="dropdown" id="" class="www-btn dropdown-toggle left" aria-expanded="false">
+                        <span class="ddSelect">Select a Version</span>
+                        <span class="caret"/>
+                      </button>
+                      <ul aria-labelledby="dropdown" role="menu" class="dropdown-menu">
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/latest.html">Cloudera JDBC 2.6.12 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-6-11.html">Cloudera JDBC 2.6.11 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-6-9.html">Cloudera JDBC 2.6.9 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-6-4.html">Cloudera JDBC 2.6.4 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-6-3.html">Cloudera JDBC 2.6.3 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-6-2.html">Cloudera JDBC 2.6.2 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-45.html">Cloudera JDBC 2.5.45 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-43.html">Cloudera JDBC 2.5.43 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-42.html">Cloudera JDBC 2.5.42 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-41.html">Cloudera JDBC 2.5.41 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-38.html">Cloudera JDBC 2.5.38 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-37.html">Cloudera JDBC 2.5.37 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-36.html">Cloudera JDBC 2.5.36 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-35.html">Cloudera JDBC 2.5.35 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-34.html">Cloudera JDBC 2.5.34 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-32.html">Cloudera JDBC 2.5.32 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-31.html">Cloudera JDBC 2.5.31 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-30.html">Cloudera JDBC 2.5.30 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-29.html">Cloudera JDBC 2.5.29 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-28.html">Cloudera JDBC 2.5.28 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-24.html">Cloudera JDBC 2.5.24 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-22.html">Cloudera JDBC 2.5.22 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-21.html">Cloudera JDBC 2.5.21 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-16.html">Cloudera JDBC 2.5.16 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-14.html">Cloudera JDBC 2.5.14 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/2-5-5.html">Cloudera JDBC 2.5.5 Driver for Impala</a>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/Cloudera-JDBC-Driver-for-Impala-Release-Notes.pdf.html"/>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/Cloudera-JDBC-Driver-for-Impala-Release-Notes.txt.html"/>
+                        </li>
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/impala-jdbc/third-party-licenses.txt.html"/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="title section">
+                <h3 class="top">Cloudera Connector for Netezza</h3>
+              </div>
+              <div class="listChildrenDropDown section">
+                <div>
+                  <div class="lstchildren">
+                    <div class="dropdown">
+                      <button data-toggle="dropdown" id="" class="www-btn dropdown-toggle left" aria-expanded="false">
+                        <span class="ddSelect">Select a Version</span>
+                        <span class="caret"/>
+                      </button>
+                      <ul aria-labelledby="dropdown" role="menu" class="dropdown-menu">
+                        <li class="VersionSelect">
+                          <a href="/documentation/other/connectors/netezza/1-x.html">Cloudera Connector 1.x for Netezza Documentation</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+{% include blue-footer.html %}
+{% include blue-postfooter.html %}
+</body>
+</html>
