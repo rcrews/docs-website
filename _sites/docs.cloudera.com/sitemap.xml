@@ -13,20 +13,20 @@ sitemaps:
   - https://docs.cloudera.com/documentation/altus/sitemap.xml
   - https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/sitemap.xml
   - https://docs.cloudera.com/documentation/enterprise/6/6.3/sitemap.xml
-  - https://docs.cloudera.com/documentation/enterprise/6/properties/6.3/sitemap.xml
-  - https://docs.cloudera.com/documentation/enterprise/6/release-notes/sitemap.xml
+  # - https://docs.cloudera.com/documentation/enterprise/6/properties/6.3/sitemap.xml
+  # - https://docs.cloudera.com/documentation/enterprise/6/release-notes/sitemap.xml
   - https://docs.cloudera.com/documentation/guru-howto/data_science/sitemap.xml
   - https://docs.cloudera.com/documentation/guru-howto/data_warehouse/sitemap.xml
   - https://docs.cloudera.com/documentation/kafka/4-1-x/sitemap.xml
   - https://docs.cloudera.com/documentation/kudu/5-12-x/sitemap.xml
   - https://docs.cloudera.com/documentation/navopt/sitemap.xml
-  - https://docs.cloudera.com/documentation/other/accumulo/1-7-2/sitemap.xml
-  - https://docs.cloudera.com/documentation/other/connectors/hive-jdbc/2-6-2/sitemap.xml
-  - https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-1/sitemap.xml
-  - https://docs.cloudera.com/documentation/other/connectors/impala-jdbc/2-6-11/sitemap.xml
-  - https://docs.cloudera.com/documentation/other/connectors/impala-odbc/2-6-4/sitemap.xml
-  - https://docs.cloudera.com/documentation/other/connectors/netezza/1-x/sitemap.xml
-  - https://docs.cloudera.com/documentation/other/connectors/teradata/1-x/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/accumulo/1-7-2/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/hive-jdbc/2-6-2/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-1/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/impala-jdbc/2-6-11/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/impala-odbc/2-6-4/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/netezza/1-x/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/teradata/1-x/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/Licences/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/Matrix/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/reference-architecture/sitemap.xml
