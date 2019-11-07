@@ -1297,9 +1297,11 @@ var NEWUX = (function($) {
             });
         },
         objectForYouTube: objectForYouTube,
+        tabWindows: tabWindows,
         init: function() {
             this.deTarget();
             this.objectForYouTube();
+            this.tabWindows();
         }
     };
 

@@ -1,27 +1,38 @@
-const tabbedWindows = evt => {
-  const contentId = evt.currentTarget.getAttribute('data-target');
+function tabWindows() {
+    "use strict";
+
+const tabLinks = document.querySelectorAll(".tablinks");
+const tabContents = document.querySelectorAll(".tabcontent");
+
+const activateTab = target => {
+  const contentId = target.getAttribute('data-target');
 
   // Get all elements with class="tabcontent" and hide them, and show the current tab
-  document.querySelectorAll(".tabcontent").forEach(tabContent => {
+  tabContents.forEach(tabContent => {
     tabContent.style.display = tabContent.id === contentId ? 'block' : 'none';
   });
 
   // Get all elements with class="tablinks" and remove the class "active"
-  document.querySelectorAll(".tablinks").forEach(tablink => {
+  tabLinks.forEach(tablink => {
     tablink.classList.remove('active');
   });
 
   // Add an "active" class to the button that opened the tab
-  evt.currentTarget.classList.add('active');
+  target.classList.add('active');
+};
+
+
+const tabbedWindows = evt => {
+  const target = evt.currentTarget;
+
+  activateTab(target);
 }
 
+
 document.querySelectorAll(".tablinks").forEach(tab => {
-  tab.addEventListener('click', tabbedWindows, false);
+    tab.addEventListener('click', tabbedWindows, false);
+    console.log(tab);
 });
 
-/*
- * This change broke site navigation Wednesday morning
- * Uncaught TypeError: Cannot read property 'click' of null
- *  at main.js:26
- */
-// document.querySelector(".tablinks").click();
+activateTab(tabLinks[0]);
+}
