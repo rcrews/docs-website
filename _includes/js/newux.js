@@ -607,7 +607,8 @@ var NEWUX = (function($) {
 
                     complete = true;
                     swapContent();
-
+                    objectForYouTube();
+                    tabWindows();
                 }
             }).fail(function( jqXHR, status, error) {
                 // If the request succeeds, this function gets "data", "status", "jqXHR"
