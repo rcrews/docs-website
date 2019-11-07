@@ -818,10 +818,12 @@
       - title: master
         url: /ccp/master/index.html
     - title: "2.0"
-      url: /ccp/2.0.0/index.html
+      url: /ccp/2.0.1/index.html
       minors:
-        - title: 2.0.0
+        - title: 2.0.1
           type: Latest
+          url: /ccp/2.0.1/index.html
+        - title: 2.0.0
           url: /ccp/2.0.0/index.html
     - title: "1.9"
       url: /HDPDocuments/HCP1/HCP-1.9.1/index.html

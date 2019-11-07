@@ -16,7 +16,7 @@
 - text: Concepts & Use Cases
   id: cat-concepts
   sub:
-    - text: CDP Data Center Overview
+    - text: Overview
       href: overview/index.html
       id: pub-overview
       sub: overview/navigation.json
@@ -25,9 +25,13 @@
 #   id: cat-planning
 #   sub:
 
-# - text: Installation & Upgrade
-#   id: cat-installation
-#   sub:
+- text: Installation & Upgrade
+  id: cat-installation
+  sub:
+    - text: Installation
+      href: installation/index.html
+      id: pub-installation
+      sub: installation/navigation.json
 
 # - text: How To
 #   id: cat-howto
