@@ -47,7 +47,7 @@ json:
 - title: CDP Data Center
   products:
     - text: Overview & Installation
-      href: /cdpdc/cloud/index.html
+      href: /cdpdc/7.0/index.html
       icon: /common/img/mini_icons/icon-cdp.png
 
     - text: Cloudera Runtime
