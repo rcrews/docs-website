@@ -363,7 +363,7 @@
           id: pub-atlas-searching-with-metadata
           sub: atlas-searching-with-metadata/navigation.json
 
-        - text: Working with Classifications
+        - text: Working with Classifications and Labels
           href: atlas-working-with-classifications/index.html
           id: pub-atlas-working-with-classifications
           sub: atlas-working-with-classifications/navigation.json
