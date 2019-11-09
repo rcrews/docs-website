@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Cloudera Manager
+title: Cloudera Manager Data Center
 version: 7.0.3
 base-path: /cloudera-manager/7.0.3/
 

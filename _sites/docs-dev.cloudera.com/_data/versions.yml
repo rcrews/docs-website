@@ -679,19 +679,55 @@
         - title: master
           url: /runtime/master/index.html
     - title: "7.0"
-      url: /runtime/7.0.3/index.html
+      url: /runtime/7.0.2/index.html
       minors:
-        - title: 7.0.3
-          type: Latest
-          url: /runtime/7.0.3/index.html
         - title: 7.0.2
+          type: Latest
           url: /runtime/7.0.2/index.html
         - title: 7.0.1
           url: /runtime/7.0.1/index.html
         - title: 7.0.0
           url: /runtime/7.0.0/index.html
 
+- name: Cloudera Runtime Data Center
+  latest-version: master
+  latest-url: /runtime/master/index.html
+  search-name: Runtime
+  versions:
+    - title: master
+      url: /runtime/master/index.html
+      minors:
+        - title: master
+          url: /runtime/master/index.html
+    - title: "7.0"
+      url: /runtime/7.0.3/index.html
+      minors:
+        - title: 7.0.3
+          type: Latest
+          url: /runtime/7.0.3/index.html
+
 - name: Cloudera Manager
+  latest-version: master
+  latest-url: /cloudera-manager/master/index.html
+  search-name: Cloudera Manager
+  versions:
+    - title: master
+      url: /cloudera-manager/master/index.html
+      minors:
+        - title: master
+          url: /cloudera-manager/master/index.html
+    - title: "7.0"
+      url: /cloudera-manager/7.0.2/index.html
+      minors:
+        - title: 7.0.2
+          type: Latest
+          url: /cloudera-manager/7.0.2/index.html
+        - title: 7.0.1
+          url: /cloudera-manager/7.0.1/index.html
+        - title: 7.0.0
+          url: /cloudera-manager/7.0.0/index.html
+
+- name: Cloudera Manager Data Center
   latest-version: master
   latest-url: /cloudera-manager/master/index.html
   search-name: Cloudera Manager
@@ -707,12 +743,6 @@
         - title: 7.0.3
           type: Latest
           url: /cloudera-manager/7.0.3/index.html
-        - title: 7.0.2
-          url: /cloudera-manager/7.0.2/index.html
-        - title: 7.0.1
-          url: /cloudera-manager/7.0.1/index.html
-        - title: 7.0.0
-          url: /cloudera-manager/7.0.0/index.html
 
 - name: HDF
   latest-version: master

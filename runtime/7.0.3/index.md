@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Cloudera Runtime
+title: Cloudera Runtime Data Center
 version: 7.0.3
 base-path: /runtime/7.0.3/
 

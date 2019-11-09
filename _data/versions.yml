@@ -600,7 +600,23 @@
     - title: cloud
       url: /machine-learning/cloud/index.html
 
-- name: Cloudera Runtime
+- name: Cloudera Runtime Cloud
+  latest-version: 7.0.2
+  latest-url: /runtime/7.0.2/index.html
+  search-name: Runtime
+  versions:
+    - title: "7.0"
+      url: /runtime/7.0.2/index.html
+      minors:
+        - title: 7.0.2
+          type: Latest
+          url: /runtime/7.0.2/index.html
+        - title: 7.0.1
+          url: /runtime/7.0.1/index.html
+        - title: 7.0.0
+          url: /runtime/7.0.0/index.html
+
+- name: Cloudera Runtime Data Center
   latest-version: 7.0.3
   latest-url: /runtime/7.0.3/index.html
   search-name: Runtime
@@ -611,14 +627,24 @@
         - title: 7.0.3
           type: Latest
           url: /runtime/7.0.3/index.html
-        - title: 7.0.2
-          url: /runtime/7.0.2/index.html
-        - title: 7.0.1
-          url: /runtime/7.0.1/index.html
-        - title: 7.0.0
-          url: /runtime/7.0.0/index.html
 
-- name: Cloudera Manager
+- name: Cloudera Manager Cloud
+  latest-version: 7.0.2
+  latest-url: /cloudera-manager/7.0.2/index.html
+  search-name: Cloudera Manager
+  versions:
+    - title: "7.0"
+      url: /cloudera-manager/7.0.2/index.html
+      minors:
+        - title: 7.0.2
+          type: Latest
+          url: /cloudera-manager/7.0.2/index.html
+        - title: 7.0.1
+          url: /cloudera-manager/7.0.1/index.html
+        - title: 7.0.0
+          url: /cloudera-manager/7.0.0/index.html
+
+- name: Cloudera Manager Data Center
   latest-version: 7.0.3
   latest-url: /cloudera-manager/7.0.3/index.html
   search-name: Cloudera Manager
@@ -629,12 +655,6 @@
         - title: 7.0.3
           type: Latest
           url: /cloudera-manager/7.0.3/index.html
-        - title: 7.0.2
-          url: /cloudera-manager/7.0.2/index.html
-        - title: 7.0.1
-          url: /cloudera-manager/7.0.1/index.html
-        - title: 7.0.0
-          url: /cloudera-manager/7.0.0/index.html
 
 - name: HDF
   latest-version: 3.4.1.1
