@@ -600,7 +600,7 @@
     - title: cloud
       url: /machine-learning/cloud/index.html
 
-- name: Cloudera Runtime Cloud
+- name: Cloudera Runtime
   latest-version: 7.0.2
   latest-url: /runtime/7.0.2/index.html
   search-name: Runtime
@@ -628,7 +628,7 @@
           type: Latest
           url: /runtime/7.0.3/index.html
 
-- name: Cloudera Manager Cloud
+- name: Cloudera Manager
   latest-version: 7.0.2
   latest-url: /cloudera-manager/7.0.2/index.html
   search-name: Cloudera Manager

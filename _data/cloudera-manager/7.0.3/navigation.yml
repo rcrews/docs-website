@@ -8,7 +8,7 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Cloudera Manager
+- text: Cloudera Manager Data Center
   id: landing-cloudera-manager
   href: /cloudera-manager/7.0.3/index.html
   display: none

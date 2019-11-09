@@ -21,7 +21,7 @@
 #   Jobs Management: Oozie
 # -> Kudu moved from operational db to storage Mitra 8/7
 
-- text: Cloudera Runtime
+- text: Cloudera Runtime Data Center
   id: landing-runtime
   href: /runtime/7.0.3/index.html
   display: none
