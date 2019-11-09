@@ -3,6 +3,14 @@ layout: json
 json:
 
 - title: CDP Cloud
+  cloudera-manager-history:
+    - cloudera-manager/7.0.2
+    - cloudera-manager/7.0.1
+    - cloudera-manager/7.0.0
+  runtime-history:
+    - runtime/7.0.2
+    - runtime/7.0.1
+    - runtime/7.0.0
   products:
     - text: Overview
       href: /cdp/cloud/index.html
@@ -45,6 +53,10 @@ json:
       icon: /common/img/mini_icons/icon-cm.png
 
 - title: CDP Data Center
+  cloudera-manager-history:
+    - cloudera-manager/7.0.3
+  runtime-history:
+    - runtime/7.0.3
   products:
     - text: Overview & Installation
       href: /cdpdc/7.0/index.html
