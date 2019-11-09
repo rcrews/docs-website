@@ -120,7 +120,7 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
                 $self.undelegate(opts.closeSelector, "click");
                 $self.unbind('close', closeLightbox);
                 $self.unbind('repositon', setSelfPosition);
-                
+
                 $(window).unbind('resize', setOverlayHeight);
                 $(window).unbind('resize', setSelfPosition);
                 $(window).unbind('scroll', setSelfPosition);
@@ -227,23 +227,23 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
 
 /*  Customizations for data-value in span.current
  *  by Christine Murray christine@infielddigital.com */
- 
+
 (function($) {
 
   $.fn.niceSelect = function(method) {
-    
+
     // Methods
-    if (typeof method == 'string') {      
+    if (typeof method == 'string') {
       if (method == 'update') {
         this.each(function() {
           var $select = $(this);
           var $dropdown = $(this).next('.nice-select');
           var open = $dropdown.hasClass('open');
-          
+
           if ($dropdown.length) {
             $dropdown.remove();
             create_nice_select($select);
-            
+
             if (open) {
               $select.next().trigger('click');
             }
@@ -253,7 +253,7 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
         this.each(function() {
           var $select = $(this);
           var $dropdown = $(this).next('.nice-select');
-          
+
           if ($dropdown.length) {
             $dropdown.remove();
             $select.css('display', '');
@@ -267,19 +267,19 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
       }
       return this;
     }
-      
+
     // Hide native select
     //this.hide();
-    
+
     // Create custom markup
     this.each(function() {
       var $select = $(this);
-      
+
       if (!$select.next().hasClass('nice-select')) {
         create_nice_select($select);
       }
     });
-    
+
     function create_nice_select($select) {
       $select.after($('<div></div>')
         .addClass('nice-select')
@@ -288,18 +288,18 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
         .attr('tabindex', $select.attr('disabled') ? null : '0')
         .html('<span class="current" data-value="default"></span><ul class="list"></ul>')
       );
-        
+
       var $dropdown = $select.next();
       var $options = $select.find('option');
       var $selected = $select.find('option:selected');
       var selectedValue = $selected.val();
-      
+
       $dropdown.find('.current').html($selected.data('display') || $selected.text());
 
       if (selectedValue != '') {
         $dropdown.find('.current').attr('data-value', selectedValue);
       }
-      
+
       $options.each(function(i) {
         var $option = $(this);
         var display = $option.data('display');
@@ -314,35 +314,35 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
         );
       });
     }
-    
+
     /* Event listeners */
-    
+
     // Unbind existing events in case that the plugin has been initialized before
     $(document).off('.nice_select');
-    
+
     // Open/close
     $(document).on('click.nice_select', '.nice-select', function(event) {
       var $dropdown = $(this);
-      
+
       $('.nice-select').not($dropdown).removeClass('open');
       $dropdown.toggleClass('open');
-      
+
       if ($dropdown.hasClass('open')) {
-        $dropdown.find('.option');  
+        $dropdown.find('.option');
         $dropdown.find('.focus').removeClass('focus');
         $dropdown.find('.selected').addClass('focus');
       } else {
         $dropdown.focus();
       }
     });
-    
+
     // Close when clicking outside
     $(document).on('click.nice_select', function(event) {
       if ($(event.target).closest('.nice-select').length === 0) {
-        $('.nice-select').removeClass('open').find('.option');  
+        $('.nice-select').removeClass('open').find('.option');
       }
     });
-    
+
     // Option click
     $(document).on('click.nice_select', '.nice-select .option:not(.disabled)', function(event) {
       var $option = $(this);
@@ -352,21 +352,21 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
       if (dropdownValue === '') {
         dropdownValue = 'default';
       }
-      
+
       $dropdown.find('.selected').removeClass('selected');
       $option.addClass('selected');
-      
+
       var text = $option.data('display') || $option.text();
       $dropdown.find('.current').text(text).attr('data-value', dropdownValue);
-      
+
       $dropdown.prev('select').val($option.data('value')).trigger('change');
     });
 
     // Keyboard events
-    $(document).on('keydown.nice_select', '.nice-select', function(event) {    
+    $(document).on('keydown.nice_select', '.nice-select', function(event) {
       var $dropdown = $(this);
       var $focused_option = $($dropdown.find('.focus') || $dropdown.find('.list .option.selected'));
-      
+
       // Space or Enter
       if (event.keyCode == 32 || event.keyCode == 13) {
         if ($dropdown.hasClass('open')) {
@@ -418,7 +418,7 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
     if (style.pointerEvents !== 'auto') {
       $('html').addClass('no-csspointerevents');
     }
-    
+
     return this;
 
   };
@@ -427,17 +427,17 @@ if(e.trigger(f),b.trigger(g),!g.isDefaultPrevented()&&!f.isDefaultPrevented()){v
 jQuery(function ($) {
 
         tabcordion();
-    
+
 function tabcordion(){
-    
+
     var hash = window.location.hash.substring(1);
     var historyApi = !!(window.history && history.replaceState);
 
-    
-    
- //HORIZONTAL TABS   
-    if ($('div#hor_1').length) { 
-        
+
+
+ //HORIZONTAL TABS
+    if ($('div#hor_1').length) {
+
         var tabIndex = $('.tc-list.hor_1').find('ul.tc-list li').text();
         if (hash != '') {
            $('div#hor_1').find('.tc-active').removeClass('tc-active');
@@ -447,13 +447,13 @@ function tabcordion(){
             $('.tc-list.hor_1').find('[data-tc="' + hash + '"]').addClass('tc-active').siblings().removeClass('tc-active');
             $('div[data-tc="' + hash + '"]').addClass('tc-content-active').siblings().removeClass('tc-content-active');
         } else{
-        
+
         //Default to first TAB on LOAD
         $('div#hor_1').find('ul.tc-list li').first().addClass('tc-active');
         $('div#hor_1').find('.tc-container.hor_1 div').first().addClass('tc-content-active');
         $('div#hor_1').find('.tc-container.hor_1 h2').first().addClass('tc-active');
         }
-        
+
         //Tab Click Binding
             $('h2.tc-accordion.hor_1, li.tc-item.hor_1').bind("click", function(){
                 //If Active Accordion
@@ -463,11 +463,11 @@ function tabcordion(){
                     $('div#hor_1').find('.hor_1.tc-content-active').slideUp('', function () {
                        $(this).addClass('tc-accordion-closed');
                     });
-                    
+
                     $(this).removeClass('tc-active');
                     return false;
-                          
-                } 
+
+                }
                 //end if
                 //If inactive Accordion
                 if (!$(this).hasClass('tc-active') && $(this).hasClass('tc-accordion')){
@@ -475,24 +475,24 @@ function tabcordion(){
                     $('div#hor_1').find('.hor_1.tc-content-active').slideUp().removeClass('tc-content-active tc-accordion-closed');
                      $('div#hor_1').find("[aria-controls=" + target + "]").addClass('tc-active').siblings().removeClass('tc-active');
                     $('div#hor_1').find("[aria-labelledby=" + target + "]").slideDown().addClass('tc-content-active');
-                } 
-                
+                }
+
                 //end if
                 //ELSE NON-RESPONSIVE View
                 else {
-                    
+
                     $('div#hor_1').find('.hor_1.tc-active').removeClass('tc-active');
-                    
-                    
+
+
                     $('div#hor_1 .tc-container.hor_1').find('.hor_1.tc-content-active').removeAttr('style').removeClass('tc-content-active').removeClass('tc-accordion-closed');
                     //Show the selected tabs content
                     $('div#hor_1').find("[aria-controls=" + target + "]").addClass('tc-active');
                     $('div#hor_1').find("[aria-labelledby=" + target + "]").addClass('tc-content-active');
-                    
+
                     $(this).addClass('tc-active').siblings().removeClass('tc-active');
                 }
-                 
-                
+
+
                 //End ELSE
                 //Update Browser History
                 /*        if (historyApi) {
@@ -511,21 +511,21 @@ function tabcordion(){
                             }
                             history.replaceState(null, null, newHash);
                         */
-                 //Window resize function                   
+                 //Window resize function
                 $(window).resize(function () {
                     $('div#hor_1').find('.resp-accordion-closed').removeAttr('style');
                 });
-                
+
             });
     }
-    
+
     //VERTICAL TABS
-    if ($('div#ver_1').length) { 
+    if ($('div#ver_1').length) {
         //Default to first TAB on LOAD
         $('div#ver_1').find('ul.tc-list li').first().addClass('tc-active');
         $('div#ver_1').find('.tc-container.ver_1 div').first().addClass('tc-content-active');
         $('div#ver_1').find('.tc-container.ver_1 h2').first().addClass('tc-active');
-        
+
         //Tab Click Binding
             $('h2.tc-accordion.ver_1, li.tc-item.ver_1').bind("click", function(){
                 //If Active Accordion
@@ -534,11 +534,11 @@ function tabcordion(){
                     $('div#ver_1').find('.tc-content-active').slideUp('', function () {
                        $(this).addClass('tc-accordion-closed');
                     });
-                    
+
                     $(this).removeClass('tc-active');
                     return false;
-                          
-                } 
+
+                }
                 //end if
                 //If inactive Accordion
                 if (!$(this).hasClass('tc-active') && $(this).hasClass('tc-accordion')){
@@ -547,39 +547,39 @@ function tabcordion(){
                     var target = $(this).attr('aria-controls');
                      $('div#ver_1').find("[aria-controls=" + target + "]").addClass('tc-active').siblings().removeClass('tc-active');
                     $('div#ver_1').find("[aria-labelledby=" + target + "]").slideDown().addClass('tc-content-active');
-                } 
-                
+                }
+
                 //end if
                 //ELSE NON-RESPONSIVE View
                 else {
-                    
+
                     $('div#ver_1').find('.tc-active').removeClass('tc-active');
-                    
-                    
+
+
                     $('div#ver_1').find('.tc-content-active').removeAttr('style').removeClass('tc-content-active').removeClass('tc-accordion-closed');
                     //Show the selected tabs content
                     var target = $(this).attr('aria-controls');
                     $('div#ver_1').find("[aria-controls=" + target + "]").addClass('tc-active');
                     $('div#ver_1').find("[aria-labelledby=" + target + "]").addClass('tc-content-active');
-                    
+
                     $(this).addClass('tc-active').siblings().removeClass('tc-active');
                 }
-                 
-                
+
+
                 //End ELSE
-                 //Window resize function                   
+                 //Window resize function
                 $(window).resize(function () {
                     $('div#ver_1').find('.resp-accordion-closed').removeAttr('style');
                 });
-                
+
             });
     }
 
-    
 
-    
-}    
-    
+
+
+}
+
 
 });
 jQuery(function(){
@@ -589,8 +589,8 @@ jQuery(function(){
 function comGap(){
     if (window.location.href.indexOf("sqoop") > 0){
          $('div.community').css("margin-top", "0px");
-    }    
-         
+    }
+
 }
 
 
@@ -665,7 +665,7 @@ var unboundMobile = true;
 var unboundDesktop = true;
 
 function detectSize() {
-    
+
     if(isMobile() && unboundMobile) {
         resetScrollTo()
         setTimeout(function(){
@@ -699,22 +699,22 @@ if (isIE == true) {
     window.onload = function() {
         detectSize();
     }
-    
+
     window.onresize = function() {
         detectSize();
     }
-    
+
 } else {
-    
+
     $(window).on('load resize', function() {
         detectSize();
     });
 }
 
 $(document).ready(function(){
-    
+
     detectSize();
-    
+
     //Reset elements
     $('.js-scrolltotop').hide();
     $('#acceptTerms').prop('checked', false);
@@ -752,7 +752,7 @@ $(document).ready(function(){
         e.preventDefault();
 
         toggleAcceptModal();
-        
+
         $('button[type="submit"]').removeClass('processing');
     });
 
@@ -798,7 +798,7 @@ $(document).ready(function(){
         var $form = $(this),
             postLocation = $form.attr('action'),
             formData = $form.serialize();
-        
+
         // Add process styles to submit button
         setTimeout(function() {
             $form.find('button[type="submit"]').addClass('processing');
@@ -877,7 +877,7 @@ function customerData() {
         type:'POST',
         crossDomain: true,
         contentType: "application/json; charset=UTF-8",
-        data: JSON.stringify(payload), 
+        data: JSON.stringify(payload),
         dataType: 'json',
         success: function(data) {
 
@@ -948,7 +948,7 @@ function getComponentList() {
         type:'POST',
         crossDomain: true,
         contentType : "application/json; charset=utf-8",
-        data: JSON.stringify(payload), 
+        data: JSON.stringify(payload),
         dataType: 'json',
         success: function(data) {
 
@@ -1002,9 +1002,9 @@ function getComponentList() {
                         dropdownUpdate(componentList, true, '[data-js-subcomponent]', 'Sub-Component', true, component);
                     }
                 });
-                
+
             }
-            
+
             $('.cloud-case__loading').addClass('loading--finished');
             getRequestTypes();
 
@@ -1030,7 +1030,7 @@ function getRequestTypes() {
         type:'POST',
         crossDomain: true,
         contentType : "application/json; charset=utf-8",
-        data: JSON.stringify(payload), 
+        data: JSON.stringify(payload),
         dataType: 'json',
         success: function(data) {
 
@@ -1061,14 +1061,14 @@ function getRequestTypes() {
 
             } else {
                 dropdownUpdate(requestTypeList, false, '[data-js-request]', 'Request Type', true);
-                
+
                 $('[data-js-request]').on('change', function() {
                     requestType = $(this).val();
                     dropdownUpdate(requestTypeList, true, '[data-js-requestsub]', 'Request Sub-Type', true, requestType);
                     getPerformanceImpact();
                 });
             }
-            
+
         },
         error: function(data) {
             $('.cloud-case__errorTitle').text(data.errorCode);
@@ -1091,7 +1091,7 @@ function getPerformanceImpact() {
         type:'POST',
         crossDomain: true,
         contentType : "application/json; charset=utf-8",
-        data: JSON.stringify(payload), 
+        data: JSON.stringify(payload),
         dataType: 'json',
         success: function(data) {
 
@@ -1115,7 +1115,7 @@ function getPerformanceImpact() {
         complete: function(data) {
 
             dropdownUpdate(performanceList, false, '[data-js-performance]', 'Performance Impact', true, requestType);
-            
+
         },
         error: function(data) {
             $('.cloud-case__errorTitle').text(data.errorCode);
@@ -1141,11 +1141,11 @@ function dropdownUpdate(list, alpha, dropdown, title, enabled, selected) {
 
         // secondary list (paired with primary list)
         if(alpha == true) {
-            // alphabetized 
+            // alphabetized
             var sorted = list.pickListMapping[selected].sort(function(a, b) {
                 a = a.toLowerCase();
                 b = b.toLowerCase();
-                
+
                 return (a < b) ? -1 : (a > b) ? 1 : 0;
             });
 
@@ -1155,21 +1155,21 @@ function dropdownUpdate(list, alpha, dropdown, title, enabled, selected) {
 
         } else {
 
-            // not alphabetized 
+            // not alphabetized
             $.each(list.pickListMapping[selected], function(i, value) {
                 $(dropdown).append($('<option>').text(value).attr('value', value));
             });
         }
 
     } else {
-        
+
         // primary list
         if(alpha == true) {
-            //alphabetized 
+            //alphabetized
             var sorted = Object.keys(list.pickListMapping).sort(function(a, b) {
                 a = a.toLowerCase();
                 b = b.toLowerCase();
-                
+
                 return (a < b) ? -1 : (a > b) ? 1 : 0;
             });
 
@@ -1178,7 +1178,7 @@ function dropdownUpdate(list, alpha, dropdown, title, enabled, selected) {
             });
 
         } else {
-            // not alphabetized 
+            // not alphabetized
             $.each(Object.keys(list.pickListMapping), function(i, value) {
                 $(dropdown).append($('<option>').text(value).attr('value', value));
             });
@@ -1216,7 +1216,7 @@ function caseSubmit(formID) {
         type:'POST',
         crossDomain: true,
         contentType : "application/json; charset=utf-8",
-        data: JSON.stringify(caseData), 
+        data: JSON.stringify(caseData),
         dataType: 'json',
         success: function(data) {
 
@@ -1337,14 +1337,14 @@ function cloudCaseValidate(formID) {
                 $('.box--error').slideUp();
             }
         }
-    }); 
+    });
 
     $(document).on('click', '.nice-select .option:not(.disabled)', function(event) {
         var $dropdown = $(this).closest('.nice-select');
 
         setTimeout(function() {
             $dropdown.prev('select').valid();
-        }, 50);   
+        }, 50);
     });
 }
 
@@ -1419,7 +1419,7 @@ $(window).load(function() {
 
         $('[data-js-formreset]').on('click', function() {
             $(this).hide();
-            
+
             $('#cloudCaseForm').find('select:not([disabled])').niceSelect('destroy');
             setTimeout(function() {
                 $('#cloudCaseForm').find('select:not([disabled])').niceSelect();
@@ -1429,7 +1429,7 @@ $(window).load(function() {
 });
 
 //INIITALIZE DL FORM
-function InitDLForm(){    
+function InitDLForm(){
    	var terms = "/legal/terms-and-conditions/ClouderaStandardLicense.html .bucket"
    	if (document.location.href.indexOf('beta') > -1){
    		terms = "/legal/terms-and-conditions/ClouderaBetaLicense.html .bucket"
@@ -1439,8 +1439,8 @@ function InitDLForm(){
     //$('div.dlprompt').hide();
     $('div.row.col_control.dlComplete').hide();
     $('th.pkgs, td.pkgs').hide();
-    $('#gate').hide();  
-    $('#dlGate').hide();     
+    $('#gate').hide();
+    $('#dlGate').hide();
     $('#dlTerms').hide();
     if (typeof $('#customTermsPath') == 'undefined') {
         $( "#agreement" ).load(terms, function(){
@@ -1456,7 +1456,7 @@ function InitDLForm(){
     $("input[name='cid']").val(eqcid);
     var eqlsd = $("input[name='eqlsd']").val();
     $("input[name='LeadSourceDetail']").val(eqlsd);
-    var src = $.urlParam('src'); 
+    var src = $.urlParam('src');
     $("input[name='src']").val(src);
 }
 
@@ -1464,7 +1464,7 @@ function InitDLForm(){
 function DisplayEqGate(e){
     e.preventDefault();
     e.stopPropagation();
-    $('#dlGate').hide();     
+    $('#dlGate').hide();
     $('#dlTerms').hide();
     $('#gate').lightbox_me();
     $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -1474,7 +1474,7 @@ function DisplayEqGate(e){
 //REFRESH GATE WITH TERMS AFTER EQ FORM COMPLETION
 function activateTerms(e){
     e.preventDefault();
-    e.stopPropagation(); 
+    e.stopPropagation();
     //HIDE FORM LightBox
     $('#dlGate').hide();
     //SHOW TERMS in LIGHTBOX
@@ -1485,14 +1485,14 @@ function activateTerms(e){
 //SHOW TERMS TO AUTHENTICATED USERS
 function DisplayTerms(e){
     e.preventDefault();
-    e.stopPropagation();    
+    e.stopPropagation();
     $('#dlTerms').hide();
-    $('#gate').lightbox_me(); 
+    $('#gate').lightbox_me();
     $("html, body").animate({ scrollTop: 0 }, "slow");
     $('#dlTerms').show();
     $('#hemailAddress').attr("value",userInfoHandler.email);
     $('#hfirstName').attr("value",userInfoHandler.givenName);
-    $('#hlastName').attr("value",userInfoHandler.familyName);  
+    $('#hlastName').attr("value",userInfoHandler.familyName);
     chkTerms();
 }
 
@@ -1500,7 +1500,7 @@ function DisplayTerms(e){
 function eqFormCancel(e){
     e.preventDefault();
     e.stopPropagation();
-    $('#dlGate').hide();     
+    $('#dlGate').hide();
     $('#dlTerms').hide();
     $('#dlGate').hide();
     $('#gate').trigger('close');
@@ -1511,11 +1511,11 @@ function dlComplete(e){
     var loc = $('a.dlComplete').attr('href');
     jQuery.validator.setDefaults({debug:true});
     //FORM VALIDATION FUNCTION CALL
-    
+
     //BEGIN SUBMIT FORM
         console.log('initiating request');
         var request = $.ajax({
-        	//url: 'https://s1465054361.t.eloqua.com/e/f2', 
+        	//url: 'https://s1465054361.t.eloqua.com/e/f2',
         	url: '/bin/services/content/cloudera/pardot.2018-11-13/21d2wjs',
             type:'POST',
             crossDomain: true,
@@ -1526,20 +1526,20 @@ function dlComplete(e){
     if ($('a.dlComplete').hasClass('link')){
         window.location = loc;
     }
-    
+
     $('div.row.col_control.dlComplete, #download_text_section').show();
     $('div.row.col_control.dlPrompt').hide();
-    $("html, body").animate({ 
+    $("html, body").animate({
         scrollTop: $(".dlComplete, #download_text_section").offset().top
         }, 1000);
     $('#gate').trigger('close');
-    
+
     if (loc.indexOf("/dam/www/Downloads") >= 0 || loc.indexOf("downloads.cloudera.com") >= 0 || loc.indexOf("archive.cloudera.com") >= 0 || loc.indexOf("hub.docker.com") >= 0) {
         window.location.href = loc;
     } else {
         return;
     }
-    
+
 }
 
 
@@ -1554,9 +1554,9 @@ function idForm(e){
     }else if ($("#register").length > 0){
         DisplayEqGate(e);
     }else{
-        DisplayTerms(e); 
+        DisplayTerms(e);
     }
-    
+
 }
 
 // Enable Submit button on Terms Acceptance
@@ -1567,8 +1567,8 @@ function chkTerms(){
             $("#dlSubmit").prop("disabled", false);
         }else{
             $("#dlSubmit").addClass("disabled");
-            $("#dlSubmit").prop("disabled", true); 
-        }      
+            $("#dlSubmit").prop("disabled", true);
+        }
     });
 }
 
@@ -1624,7 +1624,7 @@ function ktServerDelOptions(dltype){
     $('a#dlcta button').prop('disabled',true);
 
     if (dltype == 'prc'){
-        $('th.prc').css("width","65%");  
+        $('th.prc').css("width","65%");
         $('td span.ddSelect.type').text('Parcels');
         $('th.pkgs, td.pkgs').hide();
         var durl = $("input[name='parcels']").val();
@@ -1633,9 +1633,9 @@ function ktServerDelOptions(dltype){
         $('a#dlcta button').removeClass("disabled");
         $('a#dlcta button').prop("disabled", false);
     } else {
-        $('td span.ddSelect.type').text('Packages');   
+        $('td span.ddSelect.type').text('Packages');
         $('th.pkgs, td.pkgs').show();
-        $('th.prc').css("width","35%");       
+        $('th.prc').css("width","35%");
     }
 
 }
@@ -1696,7 +1696,7 @@ $(document).ready(function(){
     //Initialize Page
     InitDLForm();
     setComponentAndVersion();
-    
+
     // Show/Hide Form Field Labels
     $('#gate input').each(function() {
         var value = $(this).val();
@@ -1708,7 +1708,7 @@ $(document).ready(function(){
             $(label).removeClass('sr-only');
         }
     });
-    
+
     $('#gate input').on('keyup change',function() {
         var value = $(this).val();
         var name = $(this).attr('name');
@@ -1728,7 +1728,7 @@ $(document).ready(function(){
         }
         idForm(e);
     });
-    
+
     //Progress to Terms Form EQ Form (Unauthenticated Flow)
     $('#continue').click(function(e){
         e.preventDefault();
@@ -1737,16 +1737,16 @@ $(document).ready(function(){
         }
         activateTerms(e);
     });
-    
+
     //Close From from Glyphicon & overlay
     $(document).on("click", ".lbClose, .dlCancel, .js_lb_overlay", function(e){
         e.preventDefault();
         $("input[name='dlterms']").attr('checked', false);
         $("#dlSubmit").addClass("disabled");
-        $("#dlSubmit").prop("disabled", true); 
+        $("#dlSubmit").prop("disabled", true);
         eqFormCancel(e);
     });
-    
+
     //POPULATE EQ Form Dropdowns
     $(".dropdown-menu.dl li a").click(function(e){
         e.preventDefault();
@@ -1754,10 +1754,10 @@ $(document).ready(function(){
         $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
         $(this).parents('.btn-group.dl').find('input').val(selText).trigger('change');
         $(this).closest('.dropdown-menu').siblings('button').addClass('selection-made');
-        
+
         var name = $(this).closest('.control-group').find('input[type="hidden"]').attr('name'),
             label = 'label[for="' + name + '"]';
-        
+
         if(selText != '') {
             $(label).removeClass('sr-only');
         } else {
@@ -1796,7 +1796,7 @@ $(document).ready(function(){
     $("#asset a").click(function(e){
         $('input[id=downloadType]').val('asset');
     });
-    
+
     //Process Eloqua Form
     $('a.dlComplete').click(function(e){
         e.preventDefault();
@@ -1805,7 +1805,7 @@ $(document).ready(function(){
         }
         dlComplete(e);
     });
-    
+
     //DISPLAY HASH AND LINK TO BITS For VM Downloads
     $('a#dlvm').click(function(e){
         e.preventDefault();
@@ -1822,26 +1822,26 @@ $(document).ready(function(){
         url = $(this).attr('href');
         vmDownload('vbSha', url);
     });
-    
+
     //ACTIVATE ODBC CONNECTOR DOWNLOAD BUTTON ON CONNECTOR SELECT
     $('li.osSelect a').click(function(e){
         e.preventDefault();
         odbcSelect(e);
     });
-    
+
     //ACTIVATE QUICKSTART DOWNLOAD BUTTON ON PLATFORM SELECT
     $('li.plSelect a').click(function(e){
         e.preventDefault();
         plSelect(e);
     });
-    
+
     //--Navigator Key Trustee Download --//
     //ACTIVATE Parcel DOWNLOAD BUTTON Or Package SELECT
     $('li.dlType a').click(function(e){
         e.preventDefault();
         var dltype = $(this).attr('id');
         ktServerDelOptions(dltype);
-    
+
     });
     //ACTIVATE Parcel DOWNLOAD BUTTON Or Package SELECT
      $('li.dlos a').click(function(e){
@@ -1849,20 +1849,20 @@ $(document).ready(function(){
         var dltype = $(this).attr('id');
         var dlName = $(this).html();
         ktServerOS(dltype,dlName);
-    
+
     });
-    
+
 });
 
 // Eloqua Form JS
 $(function() {
-    
+
     var numFields = 8;
-    
+
     if ( $('.whydownload').length > 0 ) {
         numFields = 7;
     }
-    
+
     var validationInputs = {
         "dlTabs-1": {
             valid: [],
@@ -1877,7 +1877,7 @@ $(function() {
             tab: 0
         },
     };
-    
+
       //phone load
         $("#phoneNumber").intlTelInput({
             // allowDropdown: false,
@@ -1908,7 +1908,7 @@ $(function() {
             separateDialCode: true,
             utilsScript: "/apps/settings/wcm/designs/www/clientlibs/js/utils.js"
         });
-         
+
 
         $('.country').click(function(event) {
             var getCountryVal = $(this).attr('data-country-code').toUpperCase();
@@ -1930,7 +1930,7 @@ $(function() {
     jQuery.validator.addMethod("valueNotEmpty", function (value) {
         return value !== "";
     }, "Please select a value.");
-    
+
     // Phone Number allow only numbers, spaces, hyphens, and plus sign
     jQuery.validator.addMethod('customPhone', function (value, element) {
         return this.optional(element) || /^\(?\+?[\.\d\(\-\s\)]+$/.test(value);
@@ -2000,7 +2000,7 @@ $(function() {
                 // so we add it
 
                 validationInputs[tabId].valid.push(id);
-                
+
             }
         } else {
             // Input is wrong, so we remove it from the array
@@ -2013,22 +2013,22 @@ $(function() {
                 validationInputs[tabId].valid.splice(index, 1);
             }
         }
-        
+
          var tabsValid = true;
         for ( var i in validationInputs ) {
 
             if ( validationInputs[i].valid.length === validationInputs[i].num ) {
                 // enable next tab
-              
+
                 // show submit button for this tab
 
                 if ( validationInputs[i].button ) {
-                    
+
                     // The tab contains a "continue" button
                     validationInputs[i].button.removeClass("disabled");
                     validationInputs[i].button.prop("disabled", false);
                 }
-                
+
             } else {
 
                 tabsValid = false;
@@ -2039,30 +2039,30 @@ $(function() {
                     validationInputs[i].button.prop("disabled", true);
                 }
             };
-        
+
         };
     });
-    
+
     // Error JobRole if skipped
     $('#phoneNumber').on('keydown change',function() {
         $('#jobTitle').valid();
         //$("#country").valid();
     });
-    
+
     // Reformat Phone Number to a string of numbers when leaving tab
     $('#tabs-2 a.next, .business a').on('click', function() {
-        
+
         var phoneEntry = $('input#phoneNumber').val();
         var phoneString = phoneEntry.replace(/[^a-z0-9]/g, '');
-        
+
         $('input#phoneNumber').val(phoneString).valid();
     });
-        
-        
+
+
     // Change DemandBase country field on select of country
   /*  $('#country').on('change blur',function() {
         var userCountry = $(this).val();
-        
+
         $('#db_country').val(userCountry);
     });*/
 

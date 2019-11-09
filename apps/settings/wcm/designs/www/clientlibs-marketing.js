@@ -10,7 +10,7 @@ if (document.getElementById("mk-language-picker") !== null) {
 
         window.location.href = getLanguageVal;
 
-       
+
 
     });
 
@@ -81,17 +81,17 @@ jQuery(function($) {
                 if (!emailReg.test(field1)) {
                     $('#email').css('border', '1px solid red');
                     $('.boomiFormSubmit #email').append('<p style="font-size:12px; padding:5px 0; margin:0; color:red;">Please enter valid email</p>');
-                   
+
                 } else if (field1 === "") {
                     $('#email').css('border', '1px solid red');
                     $('.boomiFormSubmit #email').append('<p style="font-size:12px; padding:5px 0; margin:0; color:red;">You must enter a valid email.</p>');
-                    
+
                 } else {
-                    
+
                     var formemail = $('#email').val();
                     var formcourse = $('#course').val();
                      var formkeyboard = $('#keyboard').val();
-       
+
                    $.post( "https://connect.boomi.com/ws/simple/createOnDemandVM;boomi_auth=V2ViVGVhbUBjbG91ZGVyYS1WSENDWFkuVzk0NERZOmEwM2E2N2ViLTgzYWEtNDBjNi04YmM0LTcxNTZjNTc2ZDgzNA==", JSON.stringify({"email": formemail, "keyboard": formkeyboard, "course": formcourse }));
                    // $('#boomiForm').submit();
 
@@ -101,7 +101,7 @@ jQuery(function($) {
                     $('.training-wrap').append('<div class="brilliant" style="width:500px;"><a href="http://www.cloudera.com"><img src="/apps/settings/wcm/designs/www/clientlibs/assets/logo/cloudera-white.png"></a></div><div class="training-ondemand-thankyou"><h1>Activate ' + onDemandCourse + ' Exercise Environment</h1><p><b>Thank You:</b> Your request has been received. Please check your email for the Access URL. The email should arrive within 5 minutes.</p><p>If you do not see the email, please check your spam folder. The email will arrive from <a href="mailto:ondemand-team@cloudera.com" target="_top">ondemand-team@cloudera.com.</a></p></div>');
                     $('.brilliant').css('min-height', 'auto');
 
-                   
+
                 }
 
             });
@@ -186,7 +186,7 @@ if (document.getElementById("pmi") !== null) {
                     $('.pmi #submit').prop('disabled', 'disabled').addClass('disabled');
                 }
             });
-           
+
            /* $("#pmi input[name='consent5']").click(function() {
                 $this.addClass('valid');
             });*/
@@ -203,7 +203,7 @@ if (document.getElementById("pmi") !== null) {
                  }
 
             });
-            
+
             $(".pmi #pmi-donation-type").on("change", function() {
                 var value = $(this).valid();
                 if ($(this).val() === "software-training") {
@@ -870,7 +870,7 @@ if (document.getElementById("events-registration") !== null) {
    if(campaignCID != undefined){
     $('#mk-cid').val(campaignCID);
   }
-  
+
   //////// Close Accordion //////a
   $(function($) {
     if ($('.webinar').length) {
@@ -914,7 +914,7 @@ if (document.getElementById("events-registration") !== null) {
    if(campaignCID != undefined){
     $('#mk-cid').val(campaignCID);
   }
-  
+
   //////// Close Accordion //////a
   $(function($) {
     if ($('.webinar').length) {
@@ -955,7 +955,7 @@ if (document.getElementById("mk-resource-campaign-form") !== null) {
 	var campaignSRC = getParameter('src');
 	$('#mk-src').val( campaignSRC);
 	$('#mk-cid').val( campaignCID);
-	
+
     $('#mk-country').val('US');
     //$('select.form-control').selectToAutocomplete();
     $("#mk-phone").intlTelInput({
@@ -987,7 +987,7 @@ if (document.getElementById("mk-resource-campaign-form") !== null) {
         var getVal = $(this).html();
         //var getCountryVal = $('.country-name').html();
 
-        //var countryName = getCountryVal.substr(0, getCountryVal.indexOf(':')); 
+        //var countryName = getCountryVal.substr(0, getCountryVal.indexOf(':'));
 
 
         $("#mk-phone").val(getVal);
@@ -1023,7 +1023,7 @@ if (document.getElementById("events-registration") !== null) {
    if(campaignCID != undefined){
     $('#mk-cid').val(campaignCID);
   }
-  
+
   //////// Close Accordion //////a
   $(function($) {
     if ($('.webinar').length) {
@@ -1058,7 +1058,7 @@ if (document.getElementById("events-registration") !== null) {
   }(window.jQuery));
 }
 jQuery(function($) {
-    
+
     // configure your validation
     $(".contact").validate({
 
@@ -1208,10 +1208,10 @@ $('div .filters li.item input[type=checkbox]').on( "change", filterList );
     jQuery.validator.addMethod("postalcode", function(value, element) {
         return this.optional(element) || /\d{5}-\d{4}$|^\d{5}$|^[a-zA-Z][0-9][a-zA-Z](| )?[0-9][a-zA-Z][0-9]$/.test(value);
     }, "Please provide a valid postal code.");
-    
-     jQuery.validator.addMethod("customrule", function(value, element, param) { 
-  return this.optional(element) || value === param; 
-}, "You must enter the correct #"); 
+
+     jQuery.validator.addMethod("customrule", function(value, element, param) {
+  return this.optional(element) || value === param;
+}, "You must enter the correct #");
 
 
 
@@ -1346,7 +1346,7 @@ jQuery(function() {
 
             jQuery('.slideResourceFilters .resourceSearch-megaMenu').each(function() {
                 var leftMargin = jQuery(this).parent().position();
-                
+
                 jQuery(this).css('left', (leftMargin.left * -1) );
             });
         };
@@ -1367,12 +1367,12 @@ jQuery(function() {
                     jQuery(currentParent).addClass('active');
                 }
             });
-            
+
             jQuery('div').click(function(event) {
-                
+
                 if(!$(event.target).closest('.slideResourceFilters .category .group, .slideResourceFilters .category legend').length) {
                     var $this = jQuery('.slideResourceFilters .category .group');
-                
+
                     if($this.hasClass('open') === true) {
 
                         $this.slideUp().removeClass('open');
@@ -1380,14 +1380,14 @@ jQuery(function() {
                     }
                 }
             });
-            
+
             $('input[data-mediatype]').siblings('label').on('click', function(e) {
-                
+
                 $(e.target).closest('.group').slideUp().removeClass('open');
                 $(e.target).closest('.category').removeClass('active');
             });
         };
-        
+
         filterPosition();
         slideResourceFilters();
     };
@@ -1396,7 +1396,7 @@ jQuery(function() {
 $(function() {
     //Only interprete this code if there is actually this form on the page.
     if ($("form#partnerRegMember").length === 1) {
-    
+
         $("form#partnerRegMember").validate();
 
         $('#partnerRegMember input, #partnerRegMember textarea, #partnerRegMember select').on('blur keyup change', function(){
@@ -1421,7 +1421,7 @@ $(function() {
        jQuery.validator.addMethod("postalcode", function(value, element) {
          return this.optional(element) || /^\d{5}(?:-\d{4})?$/.test(value);
        }, "Please provide a valid postal code.");
-        
+
         // Simple URL validation
         $.validator.addMethod("simpleURL", function(value, element) {
             return this.optional(element) || /^(http:\/\/|https:\/\/)?((([\w-]+\.)+[\w-]+)|localhost)(\/[\w- .\/?%&=]*)?/i.test(value);
@@ -1765,7 +1765,7 @@ $(function() {
                     "internet-email": true
                 }
             }
-        });     
+        });
         $('#partnerDealReg input[type="text"], #partnerDealReg select, #partnerDealReg textarea').on('blur', function() {
             $(this).valid();
             if($('#partnerDealReg').valid = true) {
@@ -1787,7 +1787,7 @@ $(function() {
                 event.preventDefault();
                 $('#partnerDealReg #submit').addClass('disabled');
                 $('#partnerDealReg #submit').prop('disabled');
-            }  
+            }
          });
     };
      $(".partnerDealReg #00N80000003SaUg").on("change", function() {
@@ -2016,7 +2016,7 @@ jQuery(function($) {
         }
 
     });
-                       
+
     $('.streamline input, .streamline select').on('blur keyup', function() {
         if ($("form.streamline").valid()) {
             $('.streamline .onDemandTrainingFormSubmit').removeAttr('disabled').removeClass('disabled');
@@ -2052,11 +2052,11 @@ jQuery(function($) {
         }
 
     });
-                       
+
     $('.training-contact input, .training-contact select, .training-contact textarea').on('blur keyup', function() {
         if ($("form.training-contact").valid()) {
             $('.training-contact .btn-primary').removeAttr('disabled').removeClass('disabled');
-           
+
         } else {
             $('.training-contact .btn-primary').prop('disabled', 'disabled').addClass('disabled');
         }
@@ -2160,9 +2160,9 @@ jQuery(function($) {
 $(function() {
 
     if($('.damEventsGrid').length) {
-        
+
         $('.damSearchGrid-eventDate').each(function() {
-            var $this = $(this), 
+            var $this = $(this),
                 str = $(this).text();
 
             if(str.includes('May.')) {
@@ -2263,7 +2263,7 @@ function leadershipModal() {
                 '<button class="leadership-grid__modalClose" data-leadership-close><i class="icon-close" aria-hidden="true"></i><span class="sr-only">Close modal</span></button>' +
                 '<div class="leadership-grid__modalHeader ' + bkgrd +'">' +
                     '<img class="leadership-grid__modalPhoto" src="' + image + '" alt="'+ name +', '+ title +'">' +
-                    '<h3 class="leadership-grid__modalName">' + name + 
+                    '<h3 class="leadership-grid__modalName">' + name +
                     '<span class="leadership-grid__modalTitle">' + title + '</span></h3>' +
                 '</div>' +
                 '<div class="leadership-grid__modalContent">' +
