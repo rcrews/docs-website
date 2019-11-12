@@ -82,6 +82,10 @@ json:
       href: /cfm/master/index.html
       icon: /common/img/mini_icons/icon-cfm.png
 
+    - text: Cloudera Stream Processing
+      href: /csp/master/index.html
+      icon: /common/img/mini_icons/icon-csp.png
+
     - text: Cloudera Streams Messaging Manager for HDF and HDP
       href: /smm/master/index.html
       icon: /common/img/mini_icons/icon-smm.png
@@ -89,10 +93,6 @@ json:
     - text: Cloudera Streams Replication Manager for HDF and HDP
       href: /srm/master/index.html
       icon: /common/img/mini_icons/icon-srm.png
-
-    - text: Cloudera Stream Processing
-      href: /csp/master/index.html
-      icon: /common/img/mini_icons/icon-csp.png
 
 - title: Applications
   products:
