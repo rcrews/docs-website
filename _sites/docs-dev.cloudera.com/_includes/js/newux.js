@@ -608,7 +608,7 @@ var NEWUX = (function($) {
                     complete = true;
                     swapContent();
                     objectForYouTube();
-                    tabWindows();
+                    tabWindows(virtualDOM);
                 }
             }).fail(function( jqXHR, status, error) {
                 // If the request succeeds, this function gets "data", "status", "jqXHR"
@@ -1302,7 +1302,9 @@ var NEWUX = (function($) {
         init: function() {
             this.deTarget();
             this.objectForYouTube();
-            this.tabWindows();
+console.log("before");
+            this.tabWindows(document);
+console.log("after");
         }
     };
 
