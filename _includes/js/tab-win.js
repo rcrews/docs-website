@@ -1,6 +1,7 @@
 function tabWindows() {
     "use strict";
 
+/*
 const tabLinks = document.querySelectorAll(".tablinks");
 const tabContents = document.querySelectorAll(".tabcontent");
 
@@ -35,4 +36,5 @@ document.querySelectorAll(".tablinks").forEach(tab => {
 });
 
 activateTab(tabLinks[0]);
+*/
 }

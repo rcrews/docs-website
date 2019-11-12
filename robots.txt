@@ -36,7 +36,7 @@ patterns:
   - /documentation/kafka/2-2
   - /documentation/kafka/3-0
 
-  - /documentation/kudu/1-1-x/
+  - /documentation/kudu/
 
   - /documentation/manager/
 
