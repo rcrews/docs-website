@@ -94,10 +94,11 @@
           id: pub-spark-overview
           sub: spark-overview/navigation.json
 
-        - text: Apache Zeppelin Overview
-          href: zeppelin-overview/index.html
-          id: pub-zeppelin-overview
-          sub: zeppelin-overview/navigation.json
+# Commenting out Zeppelin for 7.0.3 release, because CDP-DC does not support Zeppelin initially
+#        - text: Apache Zeppelin Overview
+#          href: zeppelin-overview/index.html
+#          id: pub-zeppelin-overview
+#          sub: zeppelin-overview/navigation.json
 
     - text: Security
       href: concepts-security.html
@@ -359,15 +360,16 @@
           id: pub-tuning-spark
           sub: tuning-spark/navigation.json
 
-        - text: Configuring Apache Zeppelin
-          href: configuring-zeppelin/index.html
-          id: pub-configuring-zeppelin
-          sub: configuring-zeppelin/navigation.json
-
-        - text: Using Apache Zeppelin
-          href: using-zeppelin/index.html
-          id: pub-using-zeppelin
-          sub: using-zeppelin/navigation.json
+# Commenting out Zeppelin for 7.0.3 release, because CDP-DC does not support Zeppelin initially
+#        - text: Configuring Apache Zeppelin
+#          href: configuring-zeppelin/index.html
+#          id: pub-configuring-zeppelin
+#          sub: configuring-zeppelin/navigation.json
+#
+#        - text: Using Apache Zeppelin
+#          href: using-zeppelin/index.html
+#          id: pub-using-zeppelin
+#          sub: using-zeppelin/navigation.json
 
     - text: Security
       href: howto-security.html

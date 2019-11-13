@@ -31,16 +31,17 @@ publications:
       Advice and recommendations for optimizing the performance of Apache Spark
       and Spark applications for Cloudera Data Platform.
 
-  - title: Configuring Apache Zeppelin
-    url: configuring-zeppelin/index.html
-    description: >-
-      Instructions for configuring Apache Zeppelin in Cloudera Data Platform.
-
-  - title: Using Apache Zepppelin
-    url: using-zeppelin/index.html
-    description: >-
-      Instructions and examples for using Apache Zeppelin in Cloudera Data
-      Platform
+# Commenting out Zeppelin for 7.0.3 release, because CDP-DC does not support Zeppelin initially
+#  - title: Configuring Apache Zeppelin
+#    url: configuring-zeppelin/index.html
+#    description: >-
+#      Instructions for configuring Apache Zeppelin in Cloudera Data Platform.
+#
+#  - title: Using Apache Zepppelin
+#    url: using-zeppelin/index.html
+#    description: >-
+#      Instructions and examples for using Apache Zeppelin in Cloudera Data
+#      Platform
 ---
-Instructions and examples for Apache Spark and Apache Zeppelin in Cloudera Data
+Instructions and examples for Apache Spark in Cloudera Data
 Platform.
