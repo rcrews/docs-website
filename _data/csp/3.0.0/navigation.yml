@@ -36,7 +36,7 @@
       id: pub-srm-overview
       sub: srm-overview/navigation.json
 
-- text: Installation & Upgrade
+- text: Installation
   name: cat-install
   sub:
     - text: Support Matrix
@@ -131,6 +131,15 @@
         - text: Using Kafka Streams
           href: /documentation/kafka/latest/topics/kafka_streams.html
           external: external
+
+    - text: CSP in Data Hub
+      href: howto-csp-in-data-hub.html
+      id: foyer-csp-in-data-hub
+      sub:
+        - text: Publication TBD
+          href: publication-tbd/index.html
+          id: pub-publication-tbd
+          sub: publication-tbd/navigation.json
 
 - text: Reference
   name: cat-reference
