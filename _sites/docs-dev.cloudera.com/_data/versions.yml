@@ -1374,11 +1374,16 @@
       minors:
       - title: master
         url: /csp/master/index.html
+    - title: "3.0"
+      url: /csp/3.0.0/index.html
+      minors:
+        - title: 3.0.0
+          type: Latest
+          url: /csp/3.0.0/index.html
     - title: "2.0"
       url: /csp/2.0.1/index.html
       minors:
         - title: 2.0.1
-          type: Latest
           url: /csp/2.0.1/index.html
         - title: 2.0.0
           url: /csp/2.0.0/index.html
