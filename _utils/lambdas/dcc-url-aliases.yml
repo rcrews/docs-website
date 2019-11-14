@@ -70,9 +70,9 @@
   exist: /documentation/other/accumulo/1-7-2.html
 
 - alias: /documentation/other/connectors/hive-jdbc/latest/
-  exist: /documentation/other/connectors/hive-jdbc/2-6-5/
+  exist: /documentation/other/connectors/hive-jdbc/2-6-9/
 - alias: /documentation/other/connectors/hive-jdbc/latest.html
-  exist: /documentation/other/connectors/hive-jdbc/2-6-5.html
+  exist: /documentation/other/connectors/hive-jdbc/2-6-9.html
 
 - alias: /documentation/other/connectors/hive-odbc/latest/
   exist: /documentation/other/connectors/hive-odbc/2-6-5/

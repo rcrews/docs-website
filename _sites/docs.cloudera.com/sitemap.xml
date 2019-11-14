@@ -21,10 +21,10 @@ sitemaps:
   - https://docs.cloudera.com/documentation/kudu/5-12-x/sitemap.xml
   - https://docs.cloudera.com/documentation/navopt/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/accumulo/1-7-2/sitemap.xml
-  # - https://docs.cloudera.com/documentation/other/connectors/hive-jdbc/2-6-2/sitemap.xml
-  # - https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-1/sitemap.xml
-  # - https://docs.cloudera.com/documentation/other/connectors/impala-jdbc/2-6-11/sitemap.xml
-  # - https://docs.cloudera.com/documentation/other/connectors/impala-odbc/2-6-4/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/hive-jdbc/2-6-9/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/hive-odbc/2-6-5/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/impala-jdbc/2-6-12/sitemap.xml
+  # - https://docs.cloudera.com/documentation/other/connectors/impala-odbc/2-6-8/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/connectors/netezza/1-x/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/connectors/teradata/1-x/sitemap.xml
   # - https://docs.cloudera.com/documentation/other/Licences/sitemap.xml
