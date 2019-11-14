@@ -33,6 +33,11 @@
       id: pub-installation
       sub: installation/navigation.json
 
+    - text: Release Guide
+      href: release-guide/index.html
+      id: pub-release-guide
+      sub: release-guide/navigation.json
+
 # - text: How To
 #   id: cat-howto
 #   sub:

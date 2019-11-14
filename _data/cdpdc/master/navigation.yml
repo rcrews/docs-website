@@ -10,7 +10,7 @@
 
 - text: Overview & Installation
   id: landing-overview-installation
-  href: /cdpdc/7.0/index.html
+  href: /cdpdc/master/index.html
   display: none
 
 - text: Concepts & Use Cases
@@ -32,6 +32,11 @@
       href: installation/index.html
       id: pub-installation
       sub: installation/navigation.json
+
+    - text: Release Guide
+      href: release-guide/index.html
+      id: pub-release-guide
+      sub: release-guide/navigation.json
 
 # - text: How To
 #   id: cat-howto
