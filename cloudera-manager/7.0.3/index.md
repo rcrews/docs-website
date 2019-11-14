@@ -13,6 +13,16 @@ sections:
         url: release-notes/index.html
 
 ---
-After you create a cluster using the Management Console, you use
-Cloudera Manager to manage, configure, and monitor the cluster and
-Cloudera Runtime services.
+You use Cloudera Manager to:
+
+
+- Create clusters
+- Configure clusters
+- Manage clusters
+- Monitor clusters
+- Save and move data among clusters
+- Configure security
+- Upgrade clusters
+
+
+
