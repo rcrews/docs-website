@@ -13,7 +13,7 @@ base-path: /cdpdc/7.0/
 #         url: release-notes/index.html
 
 ---
-Cloudera Data Platform (CDP) is a secure and governed cloud service
+Cloudera Data Platform - Data Center is a secure and governed on-premise
 platform that offers a broad set of enterprise data cloud services with
 the key data analytics and artificial intelligence functionality that
 enterprises require.
@@ -21,18 +21,9 @@ enterprises require.
 Addressing real-world business problems generally requires the
 application of multiple analytic functions working together on the same
 data; For example, autonomous vehicles require the application of both
-real-time data streaming and machine learning algorithms. CDP addresses
+real-time data streaming and machine learning algorithms. CDP Data Center addresses
 this by offering multi-function data management and analytics that allow
 solving an enterprise’s most pressing data and analytic challenges in a
 streamlined fashion.
 
-CDP consists of the following services:
 
-* [Management Console](/management-console/cloud/index.html)
-* [Workload Manager](/workload-manager/cloud/index.html)
-* [Data Catalog](/data-catalog/cloud/index.html)
-* [Replication Manager](/replication-manager/cloud/index.html)
-* [Data Hub](/data-hub/cloud/index.html)
-* [Data Warehouse](/data-warehouse/cloud/index.html)
-* [Machine Learning](/machine-learning/cloud/index.html)
-* [Cloudera Runtime](/runtime/7.0.3/index.html)
