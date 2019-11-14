@@ -4,4 +4,4 @@
 # Data that used to be here is now at
 #   _data/cloudera-manager/7.0.3/navigation.yml
 ---
-{{ site.data.cloudera-manager["701"].navigation | jsonify }}
+{{ site.data.cloudera-manager["703"].navigation | jsonify }}
