@@ -584,29 +584,33 @@
       url: /machine-learning/cloud/index.html
 
 - name: Cloudera Runtime
-  latest-version: 7.0.1
+  latest-version: 7.0.2
   latest-url: /runtime/latest/index.html
   search-name: Runtime
   versions:
     - title: "7.0"
-      url: /runtime/7.0.1/index.html
+      url: /runtime/7.0.2/index.html
       minors:
-        - title: 7.0.1
+        - title: 7.0.2
           type: Latest
+          url: /runtime/7.0.2/index.html
+        - title: 7.0.1
           url: /runtime/7.0.1/index.html
         - title: 7.0.0
           url: /runtime/7.0.0/index.html
 
 - name: Cloudera Manager
-  latest-version: 7.0.1
+  latest-version: 7.0.2
   latest-url: /cloudera-manager/latest/index.html
   search-name: Cloudera Manager
   versions:
     - title: "7.0"
-      url: /cloudera-manager/7.0.1/index.html
+      url: /cloudera-manager/7.0.2/index.html
       minors:
-        - title: 7.0.1
+        - title: 7.0.2
           type: Latest
+          url: /cloudera-manager/7.0.2/index.html
+        - title: 7.0.1
           url: /cloudera-manager/7.0.1/index.html
         - title: 7.0.0
           url: /cloudera-manager/7.0.0/index.html

@@ -38,7 +38,7 @@
 - alias: /cfm/latest/
   exist: /cfm/1.0.1/
 - alias: /cloudera-manager/latest/
-  exist: /cloudera-manager/7.0.1/
+  exist: /cloudera-manager/7.0.2/
 - alias: /csp/latest/
   exist: /csp/2.0.0/
 
@@ -103,7 +103,7 @@
 # /documentation/wxm/latest/ is not an alias
 
 - alias: /runtime/latest/
-  exist: /runtime/7.0.1/
+  exist: /runtime/7.0.2/
 - alias: /smm/latest/
   exist: /smm/1.2.1/
 - alias: /srm/latest/

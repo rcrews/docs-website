@@ -5,7 +5,7 @@ sitemaps:
   - https://docs.cloudera.com/cdp/cloud/sitemap.xml
   - https://docs.cloudera.com/cem/1.1.0/sitemap.xml
   - https://docs.cloudera.com/cfm/1.0.1/sitemap.xml
-  - https://docs.cloudera.com/cloudera-manager/7.0.1/sitemap.xml
+  - https://docs.cloudera.com/cloudera-manager/7.0.2/sitemap.xml
   - https://docs.cloudera.com/csp/2.0.1/sitemap.xml
   - https://docs.cloudera.com/data-catalog/cloud/sitemap.xml
   - https://docs.cloudera.com/data-hub/cloud/sitemap.xml
@@ -48,7 +48,7 @@ sitemaps:
   - https://docs.cloudera.com/machine-learning/cloud/sitemap.xml
   - https://docs.cloudera.com/management-console/cloud/sitemap.xml
   - https://docs.cloudera.com/replication-manager/cloud/sitemap.xml
-  - https://docs.cloudera.com/runtime/7.0.1/sitemap.xml
+  - https://docs.cloudera.com/runtime/7.0.2/sitemap.xml
   - https://docs.cloudera.com/smm/2.0.0/sitemap.xml
   - https://docs.cloudera.com/srm/1.0.0/sitemap.xml
   - https://docs.cloudera.com/workload-manager/cloud/sitemap.xml
