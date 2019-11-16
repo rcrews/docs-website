@@ -52,6 +52,20 @@
       id: pub-replication-manager
       sub: replication-manager/navigation.json
 
+    - text: Security
+      href: howto-security.html
+      sub:
+
+        - text: Cloudera Authorization
+          href: security-authorization/index.html
+          id: security-authorization
+          sub: security-authorization/navigation.json
+
+        - text: Configuring Authentication in Cloudera Manager
+          href: security-kerberos-authentication/index.html
+          id: security-kerberos-authentication.html
+          sub: security-kerberos-authentication/navigation.json
+
 # - text: Troubleshooting
 #   id: cat-troubleshooting
 #   sub:
