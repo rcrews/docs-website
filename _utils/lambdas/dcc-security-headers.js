@@ -69,12 +69,12 @@ exports.handler = async (event, context, callback) => {
         "https://code.jquery.com",
         "https://content.atomz.com",
         "https://cse.google.com",
-        "https://nool.td.hortonworks.com:8983",
+        "https://nool.td.hortonworks.com",
         "https://stackpath.bootstrapcdn.com",
         "https://www.google-analytics.com",
         "https://www.google.com",
         "https://www.googletagmanager.com",
-        "https://yoop.td.hortonworks.com:8983"];
+        "https://yoop.td.hortonworks.com"];
     let scriptSrcElem = [
         "https://connect.facebook.net",
         "https://js.driftt.com",

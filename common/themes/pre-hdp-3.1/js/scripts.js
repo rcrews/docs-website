@@ -4,9 +4,10 @@ var HWXDOCS = (function($) {
     var Search = {
         // Configs the search functionality...
         searchURL: function() {
-            let sserver = ["nool", "yoop"];
+            let sserver = ["nool"];
+            // let sserver = ["nool", "yoop"];
             return "https://" + sserver[Math.floor(Math.random() * sserver.length)] +
-                ".td.hortonworks.com:8983/solr/dhc/query";
+                ".td.hortonworks.com/solr/dhc/query";
             // return "/common/sample-data/handpicked.json"
             // return "/common/sample-data/solr1.json"
         },
