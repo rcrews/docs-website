@@ -1041,8 +1041,7 @@ var NEWUX = (function($) {
 
         // Configs the search functionality...
         searchURL: function() {
-            let sserver = ["nool"];
-            // let sserver = ["nool", "yoop"];
+            let sserver = ["nool", "yoop"];
             return "https://" + sserver[Math.floor(Math.random() * sserver.length)] +
                 ".td.hortonworks.com/solr/dhc/query";
             // return "/common/sample-data/handpicked.json"

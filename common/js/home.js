@@ -4,8 +4,7 @@ var CHOME = (function($) {
     var Search = {
         // Configs the search functionality... this is a fork of the HWXDOCS stuff.
         searchURL: function() {
-            let sserver = ["nool"];
-            // let sserver = ["nool", "yoop"];
+            let sserver = ["nool", "yoop"];
             return "https://" + sserver[Math.floor(Math.random() * sserver.length)] +
                 ".td.hortonworks.com/solr/dhc/query";
             // return "/common/sample-data/handpicked.json"
