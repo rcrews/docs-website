@@ -42,7 +42,7 @@ if [[ RESULT != 1 ]] ; then
 
     # start tomcat with
     # brew services start tomcat
-    LOCAL_ROOT=${HOME}/Library/Application\ Support/tomcat@9/webapps/ROOT
+    LOCAL_ROOT="${HOME}/Library/Application Support/tomcat@9/webapps/ROOT"
     git checkout my-master
     bundle exec jekyll build --trace
     aws s3 sync s3://docs-stage.cloudera.com/apps ${LOCAL_ROOT}/apps
