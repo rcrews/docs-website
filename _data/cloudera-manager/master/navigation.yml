@@ -20,6 +20,11 @@
       href: concepts/index.html
       id: pub-concepts
       sub: concepts/navigation.json
+      
+    - text: Security Overview
+      href: security-overview/index.html
+      id: security-overview
+      sub: security-overview/navigation.json 
 
 # - text: Planning
 #   id: cat-planning
@@ -56,14 +61,29 @@
           id: security-authorization
           sub: security-authorization/navigation.json
 
-        - text: Configuring Kerberos Authentication in Cloudera Manager
+        - text: Configuring Authentication in Cloudera Manager
           href: security-kerberos-authentication/index.html
           id: security-kerberos-authentication.html
           sub: security-kerberos-authentication/navigation.json
+          
+        - text: Encrypting Data in Transit
+          href: security-encrypting-data-in-transit/index.html
+          id: security-encrypting-data-in-transit.html
+          sub: security-encrypting-data-in-transit/navigation.json
 
-# - text: Troubleshooting
-#   id: cat-troubleshooting
-#   sub:
+        - text: Encrypting Data at Rest
+          href: security-encrypting-data-at-rest/index.html
+          id: security-encrypting-data-at-rest.html
+          sub: security-encrypting-data-at-rest/navigation.json
+
+ - text: Troubleshooting
+   id: cat-troubleshooting
+   sub:
+   
+        - text: Troubleshooting Security Issues
+          href: security-troubleshooting/index.html
+          id: security-troubleshooting.html
+          sub: security-troubleshooting/navigation.json
 
 - text: Reference
   id: cat-reference
