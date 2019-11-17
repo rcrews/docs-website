@@ -1,5 +1,6 @@
 #!/bin/sh
 
+git checkout master
 git fetch cloudera master
 git fetch public playbranch
 
