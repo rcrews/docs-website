@@ -6,7 +6,7 @@ going:
 
     gem install bundler
     cd docs-website
-    bundle exec jekyll build
+    bundle exec jekyll build --trace
 
 You only need to run `gem install bundler` once. After that, running
 `bundle exec` in front of your `jekyll` command keeps your
