@@ -38,6 +38,11 @@ RESULT=$?
 if [[ RESULT != 1 ]] ; then
     bundle exec jekyll build --trace
     java -jar ../s3sync/s3sync.jar upload --directory _site --bucket 'docs-stage.cloudera.com'
+
+    git checkout my-master
+    bundle exec jekyll build --trace
+    rsync -ChivaHAXc _site/ ${HOME}/Library/Application\ Support/tomcat@9/webapps/ROOT
+    git checkout master
 fi
 
 _utils/switchsite.rb dev
