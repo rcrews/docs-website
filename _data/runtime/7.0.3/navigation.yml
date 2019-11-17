@@ -12,7 +12,7 @@
 # Here's the final list:
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
-#   Data Access: DAS, Hive, Impala, Hue, Sqoop, Search
+#   Data Access: DAS, Hive, Impala, Hue, Sqoop, Search, Phoenix
 #   Operational Datastore: HBase
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox
@@ -20,6 +20,7 @@
 #   Cluster Management: Cloudera Manager
 #   Jobs Management: Oozie
 # -> Kudu moved from operational db to storage Mitra 8/7
+#   Add Phoenix to data access in CR 7.0.3 Gokul 11/17
 
 - text: Cloudera Runtime Data Center
   id: landing-runtime
@@ -62,7 +63,7 @@
           href: das-overview/index.html
           id: pub-das-overview
           sub: das-overview/navigation.json
-          
+
         - text: Apache Hive Overview
           href: hive-introduction/index.html
           id: pub-hive-introduction
@@ -82,6 +83,11 @@
           href: hue-introduction/index.html
           id: pub-hue-introduction
           sub: hue-introduction/navigation.json
+
+        - text: Phoenix Overview
+          href: phoenix-overview/index.html
+          id: pub-phoenix-overview
+          sub: phoenix-overview/navigation.json
 
     - text: Operational Datastore
       href: concepts-operational-database.html
@@ -146,7 +152,7 @@
       href: impala-planning/index.html
       id: pub-impala-planning
       sub: impala-planning/navigation.json
-      
+
 - text: Installation & Upgrade
   id: cat-install
   sub:
@@ -195,12 +201,12 @@
           href: kudu-integration/index.html
           id: pub-kudu-integration
           sub: kudu-integration/navigation.json
-          
+
         - text: Storing Data using Ozone
           href: ozone-storing-data/index.html
           id: pub-ozone-storing-data
           sub: ozone-storing-data/navigation.json
-          
+
         - text: Configuring Ozone Security
           href: ozone-security/index.html
           id: pub-ozone-security
@@ -261,7 +267,7 @@
           href: using-das/index.html
           id: pub-using-das
           sub: using-das/navigation.json
-          
+
         - text: Starting Apache Hive
           href: starting-hive/index.html
           id: pub-starting-hive
@@ -321,6 +327,17 @@
           href: administering-hue/index.html
           id: pub-administering-hue
           sub: administering-hue/navigation.json
+
+        - text: Using Phoenix to Store and Access Data
+          href: phoenix-access-data/index.html
+          id: pub-phoenix-access-data
+          sub: phoenix-access-data/navigation.json
+
+        - text: Apache Phoenix-Spark Connector
+          href: phoenix-spark-connector/index.html
+          id: pub-phoenix-spark-connector
+          sub: phoenix-spark-connector/navigation.json
+
 
     - text: Operational Datastore
       href: howto-operational-database.html
@@ -537,6 +554,16 @@
       href: yarn-tuning/index.html
       id: pub-yarn-tuning
       sub: yarn-tuning/navigation.json
+
+    - text: Pheonix Performance Tuning
+      href: phoenix-performance-tuning/index.html
+      id: pub-phoenix-performance-tuning
+      sub: phoenix-performance-tuning/navigation.json
+
+    - text: Phoenix Frequently Asked Questions
+      href: phoenix-faq/index.html
+      id: pub-phoenix-faq
+      sub: phoenix-faq/navigation.json
 
 - text: Release Notes
   id: cat-releasenotes
