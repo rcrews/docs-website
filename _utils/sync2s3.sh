@@ -39,9 +39,14 @@ if [[ RESULT != 1 ]] ; then
     bundle exec jekyll build --trace
     java -jar ../s3sync/s3sync.jar upload --directory _site --bucket 'docs-stage.cloudera.com'
 
+    LOCAL_ROOT=${HOME}/Library/Application\ Support/tomcat@9/webapps/ROOT
     git checkout my-master
     bundle exec jekyll build --trace
-    rsync -ChivaHAXc _site/ ${HOME}/Library/Application\ Support/tomcat@9/webapps/ROOT
+    aws s3 sync s3://docs-stage.cloudera.com/apps ${LOCAL_ROOT}/apps
+    aws s3 sync s3://docs-stage.cloudera.com/cdp ${LOCAL_ROOT}/cdp
+    aws s3 sync s3://docs-stage.cloudera.com/common/fonts ${LOCAL_ROOT}/common/fonts
+    aws s3 sync s3://docs-stage.cloudera.com/common/img ${LOCAL_ROOT}/common/img
+    rsync -ChivaHAXc _site/ ${LOCAL_ROOT}
     git checkout master
 fi
 
