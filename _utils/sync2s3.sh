@@ -70,3 +70,5 @@ fi
 _utils/switchsite.rb stage
 
 aws cloudfront create-invalidation --distribution-id E8CUP7Y9RHWIX --paths '/*'
+
+git checkout my-master
