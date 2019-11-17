@@ -39,6 +39,8 @@ if [[ RESULT != 1 ]] ; then
     bundle exec jekyll build --trace
     java -jar ../s3sync/s3sync.jar upload --directory _site --bucket 'docs-stage.cloudera.com'
 
+    # start tomcat with
+    # brew services start tomcat
     LOCAL_ROOT=${HOME}/Library/Application\ Support/tomcat@9/webapps/ROOT
     git checkout my-master
     bundle exec jekyll build --trace
