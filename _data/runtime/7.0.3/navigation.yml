@@ -328,7 +328,7 @@
           id: pub-administering-hue
           sub: administering-hue/navigation.json
 
-         - text: Configuring HBase for use with Phoenix
+        - text: Configuring HBase for use with Phoenix
           href: phoenix-configure-hbase/index.html
           id: pub-phoenix-configure-hbase
           sub: phoenix-configure-hbase/navigation.json
