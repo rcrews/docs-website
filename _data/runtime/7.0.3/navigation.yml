@@ -308,7 +308,7 @@
           id: pub-securing-hive
           sub: securing-hive/navigation.json
 
-        - text: Integrating Apache Hive with Apache Spark and BI
+        - text: Integrating Apache Hive with Apache Spark, Apache Kafka, and BI
           href: integrating-hive-and-bi/index.html
           id: pub-integrating-hive-and-bi
           sub: integrating-hive-and-bi/navigation.json
