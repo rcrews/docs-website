@@ -55,12 +55,12 @@ publications:
       Discusses how to choose an authorization model based on how your
       organization uses Hive.
 
-  - title: Integrating Apache Hive with Apache Spark and BI
+  - title: Integrating Apache Hive with Apache Spark, Apache Kafka, and BI
     url: integrating-hive-and-bi/index.html
     description: >-
-      Covers accessing Spark data to and from Hive and using the
-      JdbcStorageHandler to access an external data source, such as
-      Business Intelligence (BI) tools.
+      Covers accessing Spark data to and from Hive, accessing data in Kafka
+      from Hive, and using the JdbcStorageHandler to access an external data source, 
+      such as Business Intelligence (BI) tools.
 
   - title: Migrating Data to Apache Hive
     url: migrating-data-into-hive/index.html
