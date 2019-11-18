@@ -62,7 +62,7 @@
           href: das-overview/index.html
           id: pub-das-overview
           sub: das-overview/navigation.json
-                
+
         - text: Apache Hive Overview
           href: hive-introduction/index.html
           id: pub-hive-introduction
@@ -222,6 +222,11 @@
           id: pub-managing-zookeeper
           sub: managing-zookeeper/navigation.json
 
+        - text: Configuring Apache ZooKeeper
+          href: zookeeper-configuring/index.html
+          id: pub-zookeeper-configuring
+          sub: zookeeper-configuring/navigation.json
+
         - text: Managing Apache ZooKeeper Security
           href: zookeeper-security/index.html
           id: pub-zookeeper-security
@@ -234,7 +239,7 @@
           href: using-das/index.html
           id: pub-using-das
           sub: using-das/navigation.json
-          
+
         - text: Starting Apache Hive
           href: starting-hive/index.html
           id: pub-starting-hive
@@ -444,6 +449,11 @@
       id: pub-impala-troubleshooting
       sub: impala-troubleshooting/navigation.json
 
+    - text: Troubleshooting Apache Hadoop YARN
+      href: yarn-troubleshooting/index.html
+      id: pub-yarn-troubleshooting
+      sub: yarn-troubleshooting/navigation.json
+
     - text: Troubleshooting Apache HBase
       href: troubleshooting-hbase/index.html
       id: pub-troubleshooting-hbase
@@ -491,11 +501,11 @@
       href: yarn-tuning/index.html
       id: pub-yarn-tuning
       sub: yarn-tuning/navigation.json
-      
+
     - text: Encryption Reference
       href: security-encryption-reference/index.html
       id: security-encryption-reference
-      sub: security-encryption-reference/navigation.json      
+      sub: security-encryption-reference/navigation.json
 
 - text: Release Notes
   id: cat-releasenotes
