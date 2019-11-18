@@ -255,6 +255,11 @@
           id: pub-managing-zookeeper
           sub: managing-zookeeper/navigation.json
 
+        - text: Configuring Apache ZooKeeper
+          href: zookeeper-configuring/index.html
+          id: pub-zookeeper-configuring
+          sub: zookeeper-configuring/navigation.json
+
         - text: Managing Apache ZooKeeper Security
           href: zookeeper-security/index.html
           id: pub-zookeeper-security
@@ -511,6 +516,11 @@
       href: impala-troubleshooting/index.html
       id: pub-impala-troubleshooting
       sub: impala-troubleshooting/navigation.json
+
+    - text: Troubleshooting Apache Hadoop YARN
+      href: yarn-troubleshooting/index.html
+      id: pub-yarn-troubleshooting
+      sub: yarn-troubleshooting/navigation.json
 
     - text: Troubleshooting Apache HBase
       href: troubleshooting-hbase/index.html
