@@ -570,12 +570,12 @@
       id: pub-yarn-tuning
       sub: yarn-tuning/navigation.json
 
-    - text: Pheonix Performance Tuning
+    - text: Apache Pheonix Performance Tuning
       href: phoenix-performance-tuning/index.html
       id: pub-phoenix-performance-tuning
       sub: phoenix-performance-tuning/navigation.json
 
-    - text: Phoenix Frequently Asked Questions
+    - text: Apache Phoenix Frequently Asked Questions
       href: phoenix-faq/index.html
       id: pub-phoenix-faq
       sub: phoenix-faq/navigation.json
