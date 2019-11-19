@@ -59,11 +59,11 @@ publications:
     description: >-
       Describes how to store and manage data using Apache Hadoop Ozone.
 
-  - title: Accessing Cloud Data
-    url: cloud-data-access/index.html
-    description: >-
-      Describes information about the configuration parameters used to
-      access data stored in the cloud.
+  #- title: Accessing Cloud Data
+  #  url: cloud-data-access/index.html
+  #  description: >-
+  #  Describes information about the configuration parameters used to
+  #  access data stored in the cloud.
 
 ---
 
