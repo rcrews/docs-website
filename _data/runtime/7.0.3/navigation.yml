@@ -473,6 +473,11 @@
           id: pub-atlas-managing-business-terms-with-glossaries
           sub: atlas-managing-business-terms-with-glossaries/navigation.json
 
+        - text: Securing Atlas
+          href: atlas-securing/index.html
+          id: pub-atlas-securing
+          sub: atlas-securing/navigation.json
+
     - text: Jobs Management
       href: howto-jobs-management.html
       sub:

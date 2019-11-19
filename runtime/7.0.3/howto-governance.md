@@ -29,6 +29,12 @@ publications:
     description: >-
       Collecting your organization's terms in Atlas helps you build a
       search index to easily find the data assets you are looking for.
+
+  - title: Securing Atlas
+    url: atlas-securing/index.html
+    description: >-
+      Configure Atlas' authentication and authorization through Cloudera Manager
+      and using access policies in Apache Ranger.
 ---
 Apache Atlas provides data governance capabilities for Hadoop. Apache
 Atlas serves as a common metadata store that is designed to exchange
