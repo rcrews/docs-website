@@ -212,10 +212,11 @@
           id: pub-ozone-security
           sub: ozone-security/navigation.json
 
-        - text: Accessing Cloud Data
-          href: cloud-data-access/index.html
-          id: pub-cloud-data-access
-          sub: cloud-data-access/navigation.json
+        # Commenting out Cloud Data Access content for 7.0.3 because S3 and ADLS are not supported for the initial release
+        # - text: Accessing Cloud Data
+        # href: cloud-data-access/index.html
+        # id: pub-cloud-data-access
+        # sub: cloud-data-access/navigation.json
 
     - text: Compute
       href: howto-compute.html
