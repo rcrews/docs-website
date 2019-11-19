@@ -21,7 +21,7 @@ For more information, see the following topics:
 * [Overview of CDP Data Center](/cdpdc/{{ page.version }}/overview/topics/cdpdc-overview.html)
 * [Cloudera Manager Documentation](/cloudera-manager/7.0.3/index.html)
 * [Cloudera Manager Release Notes](/cloudera-manager/7.0.3/release-notes/topics/cm-release-notes.html)
-* [Cloudera Runtime Documentation](/rumtime/7.0.3/index.html)
+* [Cloudera Runtime Documentation](/runtime/7.0.3/index.html)
 * [Cloudera Runtime Release Notes](/runtime/7.0.3/release-notes/topics/cr-release-notes-overview.html)
 * [Cloudera Runtime Component Documentation Quick Links](/cdpdc/{{ page.version }}/overview/topics/cm-component-links.html 
 
