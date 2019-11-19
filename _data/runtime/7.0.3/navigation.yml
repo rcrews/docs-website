@@ -153,14 +153,6 @@
       id: pub-impala-planning
       sub: impala-planning/navigation.json
 
-- text: Installation & Upgrade
-  id: cat-install
-  sub:
-    - text: Installing Data Analytics Studio
-      href: das-installation/index.html
-      id: das-installation
-      sub: das-installation/navigation.json
-
 - text: How To
   id: cat-howto
   sub:
