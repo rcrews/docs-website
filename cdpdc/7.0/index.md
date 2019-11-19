@@ -13,17 +13,19 @@ base-path: /cdpdc/7.0/
 #         url: release-notes/index.html
 
 ---
-Cloudera Data Platform - Data Center is a secure and governed on-premise
-platform that offers a broad set of enterprise data cloud services with
-the key data analytics and artificial intelligence functionality that
-enterprises require.
+Cloudera Data Platform (CDP) Data Center is the on-premises version of Cloudera Data Platform. This new product combines the best of Cloudera Enterprise Data Hub and Hortonworks Enterprise Plus along with new features and enhancements across the stack . This unified distribution is a scalable and customizable platform where you can securely run many types of workloads.
 
-Addressing real-world business problems generally requires the
-application of multiple analytic functions working together on the same
-data; For example, autonomous vehicles require the application of both
-real-time data streaming and machine learning algorithms. CDP Data Center addresses
-this by offering multi-function data management and analytics that allow
-solving an enterprise’s most pressing data and analytic challenges in a
-streamlined fashion.
+For more information, see the following topics:
+
+ 
+* [Overview of CDP Data Center](/cdpdc/{{ page.version }}/overview/topics/cdpdc-overview.html)
+* [Cloudera Manager Documentation](/cloudera-manager/7.0.3/index.html)
+* [Cloudera Manager Release Notes](/cloudera-manager/7.0.3/release-notes/topics/cm-release-notes.html)
+* [Cloudera Runtime Documentation](/rumtime/7.0.3/index.html)
+* [Cloudera Runtime Release Notes](/runtime/7.0.3/release-notes/topics/cr-release-notes-overview.html)
+* [Cloudera Runtime Component Documentation Quick Links](/cdpdc/{{ page.version }}/overview/topics/cm-component-links.html 
+
+
+
 
 
