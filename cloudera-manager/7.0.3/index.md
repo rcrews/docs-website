@@ -13,8 +13,11 @@ sections:
         url: release-notes/index.html
 
 ---
-You use Cloudera Manager to:
+Cloudera Manager is an application you use together with the Cloudera Management
+Admin Console to manage clusters. Cloudera Manager also provides an API for
+programmatic access. 
 
+You use Cloudera Manager to:
 
 - Create clusters
 - Configure clusters
