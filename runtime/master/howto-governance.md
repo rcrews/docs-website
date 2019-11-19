@@ -13,10 +13,10 @@ publications:
       Use the metadata Atlas collects and metadata you add to
       effectively find entities.
 
-  - title: Working with Classifications
+  - title: Working with Classifications and Labels
     url: atlas-working-with-classifications/index.html
     description: >-
-      How to use Apache Atlas to search for, classify, and manage data.
+      How to use Apache Atlas to search for, annotate, classify, and manage data.
 
   - title: Exploring using Lineage
     url: atlas-exploring-using-lineage/index.html
@@ -29,6 +29,12 @@ publications:
     description: >-
       Collecting your organization's terms in Atlas helps you build a
       search index to easily find the data assets you are looking for.
+
+  - title: Securing Atlas
+    url: atlas-securing/index.html
+    description: >-
+      Configure Atlas' authentication and authorization through Cloudera Manager
+      and using access policies in Apache Ranger.
 ---
 Apache Atlas provides data governance capabilities for Hadoop. Apache
 Atlas serves as a common metadata store that is designed to exchange
