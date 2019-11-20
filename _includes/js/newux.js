@@ -948,9 +948,31 @@ var NEWUX = (function($) {
                         let open = "";
                         cat.products.forEach(function(el) {
                             let active = "";
-                            if (el) {
-                                if (WhoAmI.version.url &&
-                                    (WhoAmI.version.url.split("/").slice(1, 3).join("/") === el.href.split("/").slice(1, 3).join("/"))) {
+                            if (WhoAmI.version.url && el) {
+                                let pageLink = WhoAmI.version.url.split("/").slice(1, 3).join("/");
+
+                                if (data[0]["runtime-history"]) {
+                                    if (data[0]["runtime-history"].includes(pageLink)) {
+                                        pageLink = data[0]["runtime-history"][0];
+                                    }
+                                }
+                                if (data[0]["cloudera-manager-history"]) {
+                                    if (data[0]["cloudera-manager-history"].includes(pageLink)) {
+                                        pageLink = data[0]["cloudera-manager-history"][0];
+                                    }
+                                }
+                                if (data[1]["runtime-history"]) {
+                                    if (data[1]["runtime-history"].includes(pageLink)) {
+                                        pageLink = data[1]["runtime-history"][0];
+                                    }
+                                }
+                                if (data[1]["cloudera-manager-history"]) {
+                                    if (data[1]["cloudera-manager-history"].includes(pageLink)) {
+                                        pageLink = data[1]["cloudera-manager-history"][0];
+                                    }
+                                }
+
+                                if (el.href.split("/").slice(1, 3).join("/") === pageLink) {
                                     active = "active ";
                                     open = "expanded ";
                                 }
