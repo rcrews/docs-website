@@ -33,6 +33,11 @@ publications:
     description: >-
       Introduces Hue, which is a query editor that can be used to submit
       and analyze SQL queries and design Oozie workflows.
+
+  - title: Cloudera Search Overview
+    url: search-overview/index.html
+    description: >-
+      Provides an overview of Cloudera Search, based on Apache Solr.
 ---
 Cloudera Data Platform Runtime data access concepts provide overview
 information about Apache Impala, Apache Hive, Data Analytics Studio, and Hue. 

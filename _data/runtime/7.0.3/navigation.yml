@@ -89,6 +89,11 @@
           id: pub-phoenix-overview
           sub: phoenix-overview/navigation.json
 
+        - text: Cloudera Search Overview
+          href: search-overview/index.html
+          id: pub-search-overview
+          sub: search-overview/navigation.json
+
     - text: Operational Datastore
       href: concepts-operational-database.html
       sub:
@@ -148,6 +153,11 @@
 - text: Planning
   id: cat-planning
   sub:
+    - text: Deployment Planning for Cloudera Search
+      href: search-deployment-planning/index.html
+      id: pub-search-deployment-planning
+      sub: search-deployment-planning/navigation.json
+
     - text: Planning for Apache Impala
       href: impala-planning/index.html
       id: pub-impala-planning
@@ -218,7 +228,7 @@
           id: pub-yarn-application-management
           sub: yarn-application-management/navigation.json
 
-        - text: Managing and Allocating Cluster Resources using Apache Hadoop YARN
+        - text: Managing and Allocating Cluster Resources using Capacity Scheduler
           href: yarn-allocate-resources/index.html
           id: pub-yarn-allocate-resources
           sub: yarn-allocate-resources/navigation.json
@@ -341,6 +351,30 @@
           id: pub-phoenix-spark-connector
           sub: phoenix-spark-connector/navigation.json
 
+        - text: Search Tutorial
+          href: search-tutorial/index.html
+          id: pub-search-tutorial
+          sub: search-tutorial/navigation.json
+
+        - text: Deploying Cloudera Search
+          href: search-deploying/index.html
+          id: pub-search-deploying
+          sub: search-deploying/navigation.json
+
+        - text: Managing Cloudera Search
+          href: search-managing/index.html
+          id: pub-search-managing
+          sub: search-managing/navigation.json
+
+        - text: Cloudera Search ETL
+          href: search-etl-morphlines/index.html
+          id: pub-search-etl-morphlines
+          sub: search-etl-morphlines/navigation.json
+
+        - text: Indexing Data Using Cloudera Search
+          href: search-indexing/index.html
+          id: pub-search-indexing
+          sub: search-indexing/navigation.json
 
     - text: Operational Datastore
       href: howto-operational-database.html
@@ -530,6 +564,11 @@
       id: pub-troubleshooting-kudu
       sub: troubleshooting-kudu/navigation.json
 
+    - text: Troubleshooting Cloudera Search
+      href: search-troubleshooting/index.html
+      id: pub-search-troubleshooting
+      sub: search-troubleshooting/navigation.json
+
 - text: Reference
   id: cat-reference
   sub:
@@ -577,6 +616,11 @@
       href: phoenix-faq/index.html
       id: pub-phoenix-faq
       sub: phoenix-faq/navigation.json
+
+    - text: Cloudera Search Frequently Asked Questions
+      href: search-faq/index.html
+      id: pub-search-faq
+      sub: search-faq/navigation.json
 
 - text: Release Notes
   id: cat-releasenotes

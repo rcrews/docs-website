@@ -92,6 +92,32 @@ publications:
       Describes how to configure Hue, customize its web UI, and to
       enable integration with Apache Atlas.
 
+  - title: Search Tutorial
+    url: search-tutorial/index.html
+    description: >-
+      A tutorial on using Cloudera Search.
+
+  - title: Deploying Cloudera Search
+    url: search-deploying/index.html
+    description: >-
+      Describes how to deploy Cloudera Search.
+
+  - title: Managing Cloudera Search
+    url: search-managing/index.html
+    description: >-
+      Describes how to configure and manage Cloudera Search.
+
+  - title: Cloudera Search ETL
+    url: search-etl-morphlines/index.html
+    description: >-
+      Describes how to perform ETL using Cloudera Search and
+      Morphlines.
+
+  - title: Indexing Data Using Cloudera Search
+    url: search-indexing/index.html
+    description: >-
+      Describes how to index data using Cloudera Search.
+
 ---
 
 Cloudera Data Platform Runtime includes Apache Hive 3 and Apache Impala

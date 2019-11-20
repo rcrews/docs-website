@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="main-page">
+<html class="main-page" {% if page.lang %}lang="{{ page.lang }}"{% else %}lang="en-US"{% endif %}>
 {% include home_head.html -%}
 <body>
 {% include home_header.html -%}

@@ -15632,6 +15632,8 @@
   d: topics/kudu.html
 - s: documentation/kudu/5-12-x/index.html
   d: topics/kudu.html
+- s: documentation/kudu/latest.html
+  d: 5-12-x/topics/kudu.html
 - s: documentation/navopt/index.html
   d: topics/navopt.html
 - s: documentation/other/Licenses/topics/csb_all_product_issues.html
@@ -16568,7 +16570,7 @@
 - s: solutions/gallery/accenture-insights-platform.html
   d: https://www.cloudera.com/solutions/gallery/accenture-insights-platform.html
 - s: solutions/gallery/acxiom-marketing-analytics-environment.html
-  d: https://www.cloudera.com/solutions/gallery/acxiom-marketing-analytics-environment.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/agilelab-wide-streaming-analytics-platform.html
   d: https://www.cloudera.com/solutions/gallery/agilelab-wide-streaming-analytics-platform.html
 - s: solutions/gallery/amdocs-contextual-digital-engagement.html
@@ -16576,15 +16578,15 @@
 - s: solutions/gallery/anomali-threatstream.html
   d: https://www.cloudera.com/solutions/gallery/anomali-threatstream.html
 - s: solutions/gallery/arcadia-data-arcadia-enterprise.html
-  d: https://www.cloudera.com/solutions/gallery/arcadia-data-arcadia-enterprise.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/arcadia-data-cybersecurity-visual-analytics.html
-  d: https://www.cloudera.com/solutions/gallery/arcadia-data-cybersecurity-visual-analytics.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/arcadia-visual-analytics-for-iot-data.html
-  d: https://www.cloudera.com/solutions/gallery/arcadia-visual-analytics-for-iot-data.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/atos-codex-data-lake-engine.html
   d: https://www.cloudera.com/solutions/gallery/atos-codex-data-lake-engine.html
 - s: solutions/gallery/atscale-shopper-behavior-analysis.html
-  d: https://www.cloudera.com/solutions/gallery/atscale-shopper-behavior-analysis.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/autogrid-energy-internet-platform.html
   d: https://www.cloudera.com/solutions/gallery/autogrid-energy-internet-platform.html
 - s: solutions/gallery/axual-platform.html
@@ -16602,7 +16604,7 @@
 - s: solutions/gallery/capgemini-leap-accelerator.html
   d: https://www.cloudera.com/solutions/gallery/capgemini-leap-accelerator.html
 - s: solutions/gallery/cask-data-application-platform.html
-  d: https://www.cloudera.com/solutions/gallery/cask-data-application-platform.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/cazena-big-data-as-a-service.html
   d: https://www.cloudera.com/solutions/gallery/cazena-big-data-as-a-service.html
 - s: solutions/gallery/centurylink-managed-services-analytics.html
@@ -16618,9 +16620,9 @@
 - s: solutions/gallery/cognizant-customer-journey-artificial-intelligence.html
   d: https://www.cloudera.com/solutions/gallery/cognizant-customer-journey-artificial-intelligence.html
 - s: solutions/gallery/corvil-electronic-trading-risk-and-compliance.html
-  d: https://www.cloudera.com/solutions/gallery/corvil-electronic-trading-risk-and-compliance.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/countertack-sentinel.html
-  d: https://www.cloudera.com/solutions/gallery/countertack-sentinel.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/data-reply-gmbh-machine-learning-platform-for-insurance-cases.html
   d: https://www.cloudera.com/solutions/gallery/data-reply-gmbh-machine-learning-platform-for-insurance-cases.html
 - s: solutions/gallery/datameer-network-optimization.html
@@ -16640,7 +16642,7 @@
 - s: solutions/gallery/deloitte-location-based-insights-lbi.html
   d: https://www.cloudera.com/solutions/gallery/deloitte-location-based-insights-lbi.html
 - s: solutions/gallery/denodo-data-virtualization-for-big-data.html
-  d: https://www.cloudera.com/solutions/gallery/denodo-data-virtualization-for-big-data.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/digital-alchemy-udecide.html
   d: https://www.cloudera.com/solutions/gallery/digital-alchemy-udecide.html
 - s: solutions/gallery/digital-reasoning-synthesys.html
@@ -16668,7 +16670,7 @@
 - s: solutions/gallery/informatica-recommendation-engine.html
   d: https://www.cloudera.com/solutions/gallery/informatica-recommendation-engine.html
 - s: solutions/gallery/informatica-tibco-transaction-security.html
-  d: https://www.cloudera.com/solutions/gallery/informatica-tibco-transaction-security.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/information-builders-dmi-accelerator-for-payments-transaction-insights.html
   d: https://www.cloudera.com/solutions/gallery/information-builders-dmi-accelerator-for-payments-transaction-insights.html
 - s: solutions/gallery/information-builders-kuberre-er-360.html
@@ -16676,7 +16678,7 @@
 - s: solutions/gallery/information-builders-officer-analytics-accelerator.html
   d: https://www.cloudera.com/solutions/gallery/information-builders-officer-analytics-accelerator.html
 - s: solutions/gallery/intel-apache-spot.html
-  d: https://www.cloudera.com/solutions/gallery/intel-apache-spot.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/keyrus-customer-experience-excellence-c2x.html
   d: https://www.cloudera.com/solutions/gallery/keyrus-customer-experience-excellence-c2x.html
 - s: solutions/gallery/knime-analytics-platform.html
@@ -16772,9 +16774,9 @@
 - s: solutions/gallery/tcs-sensor-data-analytics-framework.html
   d: https://www.cloudera.com/solutions/gallery/tcs-sensor-data-analytics-framework.html
 - s: solutions/gallery/teradata-appliance-for-hadoop-with-cloudera.html
-  d: https://www.cloudera.com/solutions/gallery/teradata-appliance-for-hadoop-with-cloudera.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/tibco-content-spotfire-analytics.html
-  d: https://www.cloudera.com/solutions/gallery/tibco-content-spotfire-analytics.html
+  d: https://www.cloudera.com/solutions.html
 - s: solutions/gallery/tibco-spotfire-big-data-analytics.html
   d: https://www.cloudera.com/solutions/gallery/tibco-spotfire-big-data-analytics.html
 - s: solutions/gallery/trifacta-accurate-and-flexible-regulatory-reporting-on-hadoop.html
