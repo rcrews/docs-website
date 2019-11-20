@@ -80,6 +80,11 @@
           href: security-encrypting-data-at-rest/index.html
           id: security-encrypting-data-at-rest.html
           sub: security-encrypting-data-at-rest/navigation.json
+          
+        - text: How-to Guides
+          href: security-how-to-guides/index.html
+          id: security-how-to-guides.html
+          sub: security-how-to-guides/navigation.json          
 
 - text: Troubleshooting
   id: cat-troubleshooting
