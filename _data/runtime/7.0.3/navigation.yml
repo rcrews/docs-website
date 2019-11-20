@@ -228,7 +228,7 @@
           id: pub-yarn-application-management
           sub: yarn-application-management/navigation.json
 
-        - text: Managing and Allocating Cluster Resources using Apache Hadoop YARN
+        - text: Managing and Allocating Cluster Resources using Capacity Scheduler
           href: yarn-allocate-resources/index.html
           id: pub-yarn-allocate-resources
           sub: yarn-allocate-resources/navigation.json
