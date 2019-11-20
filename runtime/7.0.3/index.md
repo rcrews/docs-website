@@ -20,13 +20,7 @@ approximately 50 open source projects that comprise the core
 distribution of data management tools within CDP, including Cloudera
 Manager, which is used to configure and monitor clusters managed in CDP.
 
-Cloudera Runtime does not include:
 
-* CDP cloud services such as Data Hub, DWX, and MLX
-* CDP management tools such as the Management Console, the Workload
-  Manager, and the Replication Manager
-* Data Catalog
-* Add-on products such as CDSW, CDF, and Metron
 
 To learn about installing, configuring, and managing clusters, refer
 to the [Cloudera Manager documentation](/cloudera-manager/{{ page.version }}/index.html).
