@@ -30,7 +30,7 @@ publications:
       Collecting your organization's terms in Atlas helps you build a
       search index to easily find the data assets you are looking for.
 
-  - title: Securing Atlas
+  - title: Configuring and Securing Atlas using Cloudera Manager
     url: atlas-securing/index.html
     description: >-
       Configure Atlas' authentication and authorization through Cloudera Manager
