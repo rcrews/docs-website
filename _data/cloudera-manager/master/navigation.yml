@@ -56,15 +56,15 @@
       href: howto-security.html
       sub:
 
-        - text: Cloudera Authorization
-          href: security-authorization/index.html
-          id: security-authorization
-          sub: security-authorization/navigation.json
-
         - text: Configuring Authentication in Cloudera Manager
           href: security-kerberos-authentication/index.html
           id: security-kerberos-authentication.html
           sub: security-kerberos-authentication/navigation.json
+          
+        - text: Cloudera Authorization
+          href: security-authorization/index.html
+          id: security-authorization
+          sub: security-authorization/navigation.json 
 
         - text: Encrypting Data in Transit
           href: security-encrypting-data-in-transit/index.html
