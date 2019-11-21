@@ -1,0 +1,13 @@
+---
+- text: Other
+  id: landing-other
+  href: /documentation/other/index.html
+  display: none
+
+- text: Concepts & Use Cases
+  id: cat-concepts
+  sub:
+    - text: Third-party Licenses
+      href: Licenses/index.html
+      id: pub-Licenses
+      sub: Licenses/navigation.json
