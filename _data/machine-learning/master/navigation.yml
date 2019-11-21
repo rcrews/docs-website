@@ -97,6 +97,11 @@
       id: pub-models
       sub: models/navigation.json
 
+    - text: Applications
+      href: applications/index.html
+      id: pub-applications
+      sub: applications/navigation.json      
+
     - text: Jobs and Pipelines
       href: jobs-pipelines/index.html
       id: pub-jobs-pipelines
