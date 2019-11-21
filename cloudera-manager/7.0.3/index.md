@@ -13,19 +13,22 @@ sections:
         url: release-notes/index.html
 
 ---
-Cloudera Manager is an application you use together with the Cloudera Management
-Admin Console to manage clusters. Cloudera Manager also provides an API for
-programmatic access. 
-
-You use Cloudera Manager to:
+Cloudera Manager is an application you use to manage clusters in CDP Data Center. 
+Cloudera Manager provides the Cloudera Management Admin Console web user
+interface where you can:  
 
 - Create clusters
 - Configure clusters
 - Manage clusters
 - Monitor clusters
-- Save and move data among clusters
+- Replicate data among clusters
 - Configure security
 - Upgrade clusters
+- Manage upgrades
 
+Cloudera Manager also provides an API for programmatic access.
 
+See also:
 
+- [Installation](/cdpdc/7.0/installation/topics/cdpdc-installation.html)
+- [Release Guide](/cdpdc/7.0/release-guide/topics/cdpdc-release-guide-overview.html)
