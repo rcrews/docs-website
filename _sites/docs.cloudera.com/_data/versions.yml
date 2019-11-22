@@ -1791,6 +1791,14 @@
 # - /documentation/guru-howto/data_warehouse.html
 # - /documentation/guru-howto/data_warehouse/
 
+- name: YouTube Videos
+  latest-version: cloud
+  latest-url: https://www.youtube.com/user/clouderahadoop
+  search-name: youtube
+  versions:
+    - title: cloud
+      url: https://www.youtube.com/user/clouderahadoop
+
 - name: Documentation
   latest-version: other
   latest-url: /documentation/other/index.html

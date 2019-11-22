@@ -1820,3 +1820,10 @@
     - title: cloud
       url: https://www.youtube.com/user/clouderahadoop
 
+- name: Documentation
+  latest-version: other
+  latest-url: /documentation/other/index.html
+  search-name: documentation-other
+  versions:
+    - title: other
+      url: /documentation/other/index.html
