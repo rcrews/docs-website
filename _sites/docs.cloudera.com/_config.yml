@@ -43,14 +43,11 @@ exclude:
 
   # Unreleased documentation
   - /ccp/2.0.1/
-  - /cdpdc/
   - /cfm/2.0.0/
-  - /cloudera-manager/7.0.3/
   - /csp/3.0.0/
   - /dp/1.2.3/
   - /dss/1.6.0/
   - /HDPDocuments/DLM1/DLM-1.5.1/
-  - /runtime/7.0.3/
 
   # "master" version for docs-dev only
   - /ccp/master/

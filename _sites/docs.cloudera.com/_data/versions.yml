@@ -527,6 +527,14 @@
     - title: cloud
       url: /cdp/cloud/index.html
 
+- name: Cloudera Data Platform Data Center
+  latest-version: 7.0
+  latest-url: /cdpdc/7.0/index.html
+  search-name: cdpdc
+  versions:
+    - title: 7.0
+      url: /cdpdc/7.0/index.html
+
 - name: Management Console
   latest-version: cloud
   latest-url: /management-console/cloud/index.html
@@ -599,6 +607,18 @@
         - title: 7.0.0
           url: /runtime/7.0.0/index.html
 
+- name: Cloudera Runtime Data Center
+  latest-version: 7.0.3
+  latest-url: /runtime/7.0.3/index.html
+  search-name: Runtime
+  versions:
+    - title: "7.0"
+      url: /runtime/7.0.3/index.html
+      minors:
+        - title: 7.0.3
+          type: Latest
+          url: /runtime/7.0.3/index.html
+
 - name: Cloudera Manager
   latest-version: 7.0.2
   latest-url: /cloudera-manager/latest/index.html
@@ -614,6 +634,18 @@
           url: /cloudera-manager/7.0.1/index.html
         - title: 7.0.0
           url: /cloudera-manager/7.0.0/index.html
+
+- name: Cloudera Manager Data Center
+  latest-version: 7.0.3
+  latest-url: /cloudera-manager/7.0.3/index.html
+  search-name: Cloudera Manager
+  versions:
+    - title: "7.0"
+      url: /cloudera-manager/7.0.3/index.html
+      minors:
+        - title: 7.0.3
+          type: Latest
+          url: /cloudera-manager/7.0.3/index.html
 
 - name: HDF
   latest-version: 3.4.1.1
@@ -1758,3 +1790,11 @@
 # - /documentation/guru-howto/data_science/
 # - /documentation/guru-howto/data_warehouse.html
 # - /documentation/guru-howto/data_warehouse/
+
+- name: Documentation
+  latest-version: other
+  latest-url: /documentation/other/index.html
+  search-name: documentation-other
+  versions:
+    - title: other
+      url: /documentation/other/index.html
