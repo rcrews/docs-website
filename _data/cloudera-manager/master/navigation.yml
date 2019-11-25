@@ -53,7 +53,7 @@
       sub: monitoring-and-diagnostics/navigation.json
 
     - text: Security
-      href: howto-security.html
+      id: cat-howto-security
       sub:
 
         - text: Configuring Authentication in Cloudera Manager
