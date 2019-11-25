@@ -379,10 +379,12 @@
     - text: Operational Datastore
       href: howto-operational-database.html
       sub:
-        - text: Getting Started with Apache HBase
-          href: hbase-getting-started/index.html
-          id: pub-hbase-getting-started
-          sub: hbase-getting-started/navigation.json
+
+# Commenting out this topic for 7.0.3 release, because CDP-DC does not support this
+#        - text: Getting Started with Apache HBase
+#          href: hbase-getting-started/index.html
+#          id: pub-hbase-getting-started
+#          sub: hbase-getting-started/navigation.json
 
         - text: Configuring Apache HBase
           href: configuring-hbase/index.html
