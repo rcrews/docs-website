@@ -58,7 +58,7 @@
       sub: replication-manager/navigation.json
 
     - text: Security
-      href: howto-security.html
+      id: cat-howto-security.html
       sub:
 
         - text: Configuring Authentication in Cloudera Manager
