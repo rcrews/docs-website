@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 git checkout master
 git fetch cloudera master
