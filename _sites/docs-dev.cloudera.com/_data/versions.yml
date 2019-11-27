@@ -444,10 +444,12 @@
       - title: master
         url: /HDPDocuments/DAS/DAS-master/index.html
     - title: "1.4"
-      url: /HDPDocuments/DAS/DAS-1.4.1/index.html
+      url: /HDPDocuments/DAS/DAS-1.4.4/index.html
       minors:
-        - title: 1.4.1
+        - title: 1.4.4
           type: Latest
+          url: /HDPDocuments/DAS/DAS-1.4.4/index.html
+        - title: 1.4.1
           url: /HDPDocuments/DAS/DAS-1.4.1/index.html
     - title: "1.3"
       url: /HDPDocuments/DAS/DAS-1.3.0/index.html
@@ -1363,6 +1365,23 @@
           url: /cfm/1.0.1/index.html
         - title: 1.0.0
           url: /cfm/1.0.0/index.html
+
+- name: Stream Analytics
+  latest-version: master
+  latest-url: /csa/master/index.html
+  search-name: csa
+  versions:
+    - title: master
+      url: /csa/master/index.html
+      minors:
+      - title: master
+        url: /csa/master/index.html
+    - title: "1.0"
+      url: /csa/1.0.0/index.html
+      minors:
+        - title: 1.0.0
+          type: Latest
+          url: /csa/1.0.0/index.html
 
 - name: Stream Processing
   latest-version: master

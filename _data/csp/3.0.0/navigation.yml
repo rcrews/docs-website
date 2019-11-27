@@ -25,16 +25,12 @@
       id: pub-smm-overview
       sub: smm-overview/navigation.json
     - text: Kafka Overview
-      href: /documentation/enterprise/6/6.3/topics/kafka.html#kafka_intro
+      href: /runtime/7.0.3/concepts-streaming.html
       external: external
     - text: Schema Registry Overview
       href: schema-registry-overview/index.html
       id: pub-schema-registry-overview
       sub: schema-registry-overview/navigation.json
-    - text: Streams Replication Manager Overview
-      href: srm-overview/index.html
-      id: pub-srm-overview
-      sub: srm-overview/navigation.json
 
 - text: Installation
   name: cat-install
@@ -47,6 +43,10 @@
       href: deployment/index.html
       id: pub-deployment
       sub: deployment/navigation.json
+    - text: Planning Your Deployment
+      href: deployment-planning/index.html
+      id: pub-deployment-planning
+      sub: deployment-planning/navigation.json
 
 - text: How To
   name: cat-how-to
@@ -64,20 +64,6 @@
           href: using-schema-registry/index.html
           id: pub-using-schema-registry
           sub: using-schema-registry/navigation.json
-
-    - text: Streams Replication Manager
-      id: cat-srm
-      href: howto-srm.html
-      sub:
-        - text: Configuring SRM
-          href: configuration/index.html
-          id: pub-configuration
-          sub: configuration/navigation.json
-
-        - text: Using SRM
-          href: srm-using/index.html
-          id: pub-srm-using-registry
-          sub: srm-using/navigation.json
 
     - text: Streams Messaging Manager
       id: cat-smm
@@ -110,28 +96,10 @@
 
     - text: Apache Kafka
       id: cat-kafka
-      href: howto-kafka.html
-      sub:
-        - text: Setting up Kafka
-          href: /documentation/enterprise/6/6.3/topics/kafka_setup.html
-          external: external
+      href: runtime/7.0.3/howto-streaming.html
+      external: external
 
-        - text: Integrating with Kafka
-          href: /documentation/enterprise/6/6.3/topics/kafka_integration.html
-          external: external
-
-        - text: Administering Kafka
-          href: /documentation/enterprise/6/6.3/topics/kafka_admin.html
-          external: external
-
-        - text: Kafka Performance Tuning
-          href: /documentation/enterprise/6/6.3/topics/kafka_performance.html
-          external: external
-
-        - text: Using Kafka Streams
-          href: /documentation/kafka/latest/topics/kafka_streams.html
-          external: external
-
+    # Nov 26: Sarah says she's going to add 3 or 4 pubs here
     - text: CSP in Data Hub
       href: howto-csp-in-data-hub.html
       id: foyer-csp-in-data-hub
@@ -155,11 +123,6 @@
     - text: SMM REST API Reference
       href: /smm/2.0.0/rest-api-reference/index.html
       id: pub-smm-rest-api-reference
-      external: external
-
-    - text: SRM REST API Reference
-      href: /srm/1.0.0/rest-api-reference/index.html
-      id: pub-srm-rest-api-reference
       external: external
 
 - text: Release Notes
