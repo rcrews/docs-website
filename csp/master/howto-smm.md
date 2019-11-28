@@ -17,7 +17,7 @@ publications:
       and monitor alert policies and alerts.
 
   - title: Managing Topics
-    url: managing-alert-policies/index.html
+    url: managing-topics/index.html
     description: >-
       Describes how to create, moidify, and delete Kafka topics.
 
