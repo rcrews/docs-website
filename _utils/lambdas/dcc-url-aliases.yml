@@ -33,6 +33,9 @@
 - alias: /HDPDocuments/SS1/latest/
   exist: /HDPDocuments/SS1/SmartSense-1.5.1/
 
+- alias: /HDPDocuments/ccp/latest/
+  exist: /HDPDocuments/ccp/2.0.1/
+
 - alias: /cem/latest/
   exist: /cem/1.0.0/
 - alias: /cfm/latest/

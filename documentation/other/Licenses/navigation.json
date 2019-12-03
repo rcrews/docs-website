@@ -6,102 +6,102 @@ json:
   sub:
   - text: CDP-DC 7.0
     href: topics/ctpl_cdpdc70html
-- text: HDP
-  href: topics/ctpl_hdp_overview.html
-  sub:
-  - text: HDP 3
-    href: topics/ctpl_hdp3.html
-- text: CDH
-  href: topics/ctpl_cdh_overview.html
-  sub:
-  - text: CDH 6
-    href: topics/ctpl_cdh6.html
-  - text: CDH 5
-    href: topics/ctpl_cdh5.html
-  - text: CDH 4
-    href: topics/ctpl_topic_2.html
-  - text: CDH 3
-    href: topics/ctpl_topic_3.html
-  - text: Apache Kudu 1.x
-    href: topics/ctpl_kudu1.html
-  - text: Cloudera Impala for CDH 4
-    href: topics/ctpl_impala.html
-  - text: Cloudera Search for CDH 4
-    href: topics/ctpl_search.html
-  - text: Apache Accumulo
-    href: topics/ctpl_accumulo.html
-- text: Cloudera Altus
-  href: topics/ctpl_altus.html
-- text: Cloudera Altus Director
-  href: topics/ctpl_director_overview.html
-  sub:
-  - text: Cloudera Altus Director 6
-    href: topics/ctpl_director6.html
-  - text: Cloudera Director 2
-    href: topics/ctpl_director2.html
-  - text: Cloudera Director 1
-    href: topics/ctpl_director1.html
-- text: Cloudera Connector for MicroStrategy
-  href: topics/ctpl_topic_6.html
-- text: Cloudera Cybersecurity Platform
-  href: topics/ctpl_CCP.html
-- text: Cloudera Data Science Workbench
-  href: topics/ctpl_cdsw1.html
-- text: Cloudera Manager
-  href: topics/ctpl_cm_overview.html
-  sub:
-  - text: Cloudera Manager 6
-    href: topics/ctpl_cm6.html
-  - text: Cloudera Manager 5
-    href: topics/ctpl_cm5.html
-- text: Cloudera Manager 4.6
-  href: topics/ctpl_topic_4.html
-  sub:
-  - text: Cloudera Manager Java Components
-    href: topics/ctpl_topic_4_2.html
-  - text: Frontend/JavaScript
-    href: topics/ctpl_topic_4_3.html
-  - text: Cloudera Manager Agent (Python components)
-    href: topics/ctpl_topic_4_4.html
-- text: Cloudera Manager 3.7
-  href: topics/ctpl_topic_5.html
-  sub:
-  - text: Cloudera Manager Java Components
-    href: topics/ctpl_topic_5_2.html
-  - text: Frontend/JavaScript
-    href: topics/ctpl_topic_5_3.html
-  - text: Cloudera Manager Agent (Python components)
-    href: topics/ctpl_topic_5_4.html
-  - text: Authorization Manager
-    href: topics/ctpl_topic_5_5.html
-- text: Cloudera Navigator Optimizer
-  href: topics/ctpl_navopt.html
-- text: Cloudera Navigator Key Trustee
-  href: topics/ctpl_keytrustee_overview.html
-  sub:
-  - text: Cloudera Navigator Key Trustee 6
-    href: topics/ctpl_key_trustee6.html
-  - text: Cloudera Navigator Key Trustee 5
-    href: topics/ctpl_key_trustee.html
-- text: Cloudera Workload XM
-  href: ctpl_workloadxm.html
-- text: JDBC/ODBC Drivers
-  href: topics/ctpl_jdbcodbc_drivers.html
-- text: Optional Separate Downloads
-  href: topics/ctpl_optional_downloads.html
-- text: QuickStart Demo VM
-  href: topics/ctpl_quickstartvm.html
-- text: Streams Messaging Manager
-  href: topics/ctpl_SMM.html
-- text: Streams Messaging Manager App
-  href: topics/ctpl_SMM_APP.html
-- text: MirrorMaker 2
-  href: topics/ctpl_mirrormaker2.html
-- text: Cloudera Edge Management
-  href: topics/ctpl_CEM_overview.html
-  sub:
-  - text: Cloudera Edge Management Edge Flow Manager 1.1.0.0
-    href: topics/ctpl_EFM-CEM.html
-  - text: Cloudera Edge Management Minifi 1.0.0.0
-    href: topics/ctpl_Minifi-CEM.html
+  - text: HDP
+    href: topics/ctpl_hdp_overview.html
+    sub:
+    - text: HDP 3
+      href: topics/ctpl_hdp3.html
+  - text: CDH
+    href: topics/ctpl_cdh_overview.html
+    sub:
+    - text: CDH 6
+      href: topics/ctpl_cdh6.html
+    - text: CDH 5
+      href: topics/ctpl_cdh5.html
+    - text: CDH 4
+      href: topics/ctpl_topic_2.html
+    - text: CDH 3
+      href: topics/ctpl_topic_3.html
+    - text: Apache Kudu 1.x
+      href: topics/ctpl_kudu1.html
+    - text: Cloudera Impala for CDH 4
+      href: topics/ctpl_impala.html
+    - text: Cloudera Search for CDH 4
+      href: topics/ctpl_search.html
+    - text: Apache Accumulo
+      href: topics/ctpl_accumulo.html
+  - text: Cloudera Altus
+    href: topics/ctpl_altus.html
+  - text: Cloudera Altus Director
+    href: topics/ctpl_director_overview.html
+    sub:
+    - text: Cloudera Altus Director 6
+      href: topics/ctpl_director6.html
+    - text: Cloudera Director 2
+      href: topics/ctpl_director2.html
+    - text: Cloudera Director 1
+      href: topics/ctpl_director1.html
+  - text: Cloudera Connector for MicroStrategy
+    href: topics/ctpl_topic_6.html
+  - text: Cloudera Cybersecurity Platform
+    href: topics/ctpl_ccp.html
+  - text: Cloudera Data Science Workbench
+    href: topics/ctpl_cdsw1.html
+  - text: Cloudera Manager
+    href: topics/ctpl_cm_overview.html
+    sub:
+    - text: Cloudera Manager 6
+      href: topics/ctpl_cm6.html
+    - text: Cloudera Manager 5
+      href: topics/ctpl_cm5.html
+  - text: Cloudera Manager 4.6
+    href: topics/ctpl_topic_4.html
+    sub:
+    - text: Cloudera Manager Java Components
+      href: topics/ctpl_topic_4_2.html
+    - text: Frontend/JavaScript
+      href: topics/ctpl_topic_4_3.html
+    - text: Cloudera Manager Agent (Python components)
+      href: topics/ctpl_topic_4_4.html
+  - text: Cloudera Manager 3.7
+    href: topics/ctpl_topic_5.html
+    sub:
+    - text: Cloudera Manager Java Components
+      href: topics/ctpl_topic_5_2.html
+    - text: Frontend/JavaScript
+      href: topics/ctpl_topic_5_3.html
+    - text: Cloudera Manager Agent (Python components)
+      href: topics/ctpl_topic_5_4.html
+    - text: Authorization Manager
+      href: topics/ctpl_topic_5_5.html
+  - text: Cloudera Navigator Optimizer
+    href: topics/ctpl_navopt.html
+  - text: Cloudera Navigator Key Trustee
+    href: topics/ctpl_keytrustee_overview.html
+    sub:
+    - text: Cloudera Navigator Key Trustee 6
+      href: topics/ctpl_key_trustee6.html
+    - text: Cloudera Navigator Key Trustee 5
+      href: topics/ctpl_key_trustee.html
+  - text: Cloudera Workload XM
+    href: ctpl_workloadxm.html
+  - text: JDBC/ODBC Drivers
+    href: topics/ctpl_jdbcodbc_drivers.html
+  - text: Optional Separate Downloads
+    href: topics/ctpl_optional_downloads.html
+  - text: QuickStart Demo VM
+    href: topics/ctpl_quickstartvm.html
+  - text: Streams Messaging Manager
+    href: topics/ctpl_SMM.html
+  - text: Streams Messaging Manager App
+    href: topics/ctpl_SMM_APP.html
+  - text: MirrorMaker 2
+    href: topics/ctpl_mirrormaker2.html
+  - text: Cloudera Edge Management
+    href: topics/ctpl_CEM_overview.html
+    sub:
+    - text: Cloudera Edge Management Edge Flow Manager 1.1.0.0
+      href: topics/ctpl_EFM-CEM.html
+    - text: Cloudera Edge Management Minifi 1.0.0.0
+      href: topics/ctpl_Minifi-CEM.html
 ---

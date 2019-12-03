@@ -3,15 +3,17 @@
 # You can add to the end. See the comment below.
 
 - name: HDP
-  latest-version: 3.1.4
-  latest-url: /HDPDocuments/HDP3/HDP-3.1.4/index.html
+  latest-version: 3.1.5
+  latest-url: /HDPDocuments/HDP3/HDP-3.1.5/index.html
   search-name: Data Platform
   versions:
     - title: "3.1"
-      url: /HDPDocuments/HDP3/HDP-3.1.4/index.html
+      url: /HDPDocuments/HDP3/HDP-3.1.5/index.html
       minors:
-      - title: 3.1.4
+      - title: 3.1.5
         type: Latest
+        url: /HDPDocuments/HDP3/HDP-3.1.5/index.html
+      - title: 3.1.4
         url: /HDPDocuments/HDP3/HDP-3.1.4/index.html
       - title: 3.1.0
         url: /HDPDocuments/HDP3/HDP-3.1.0/index.html

@@ -529,7 +529,7 @@
 
 - name: Cloudera Data Platform Data Center
   latest-version: 7.0
-  latest-url: /cdpdc/7.0/index.html
+  latest-url: /cdpdc/latest/index.html
   search-name: cdpdc
   versions:
     - title: 7.0
@@ -593,7 +593,7 @@
 
 - name: Cloudera Runtime
   latest-version: 7.0.2
-  latest-url: /runtime/latest/index.html
+  latest-url: /runtime/7.0.2/index.html
   search-name: Runtime
   versions:
     - title: "7.0"
@@ -621,7 +621,7 @@
 
 - name: Cloudera Manager
   latest-version: 7.0.2
-  latest-url: /cloudera-manager/latest/index.html
+  latest-url: /cloudera-manager/7.0.2/index.html
   search-name: Cloudera Manager
   versions:
     - title: "7.0"
@@ -736,15 +736,17 @@
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
 - name: Cybersecurity
-  latest-version: 2.0.0
-  latest-url: /ccp/2.0.0/index.html
+  latest-version: 2.0.1
+  latest-url: /ccp/latest/index.html
   search-name: Cybersecurity
   versions:
     - title: "2.0"
-      url: /ccp/2.0.0/index.html
+      url: /ccp/2.0.1/index.html
       minors:
-        - title: 2.0.0
+        - title: 2.0.1
           type: Latest
+          url: /ccp/2.0.1/index.html
+        - title: 2.0.0
           url: /ccp/2.0.0/index.html
     - title: "1.9"
       url: /HDPDocuments/HCP1/HCP-1.9.1/index.html
@@ -1237,7 +1239,7 @@
 
 # - name: Stream Analytics
 #   latest-version: 1.0.0
-#   latest-url: /csa/1.0.0/index.html
+#   latest-url: /csa/latest/index.html
 #   search-name: csa
 #   versions:
 #     - title: "1.0"

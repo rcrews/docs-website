@@ -38,18 +38,21 @@ exclude:
   - /Gemfile.lock
   - /README.md
 
+  # Sarah's special API reference only on dev for now
+  - /cfm/2.0.0/operator-api/
+
   # Jason's tab-win goes on dev only for now
   - _includes/js/tab-win.js
 
   # Unreleased documentation
-  - /ccp/2.0.1/
+  - /HDPDocuments/DAS/DAS-1.4.4/
+  - /HDPDocuments/DLM1/DLM-1.5.1/
+  - /HDPDocuments/HDP3/HDP-3.1.5/
   - /cfm/2.0.0/
   - /csa/1.0.0/
   - /csp/3.0.0/
   - /dp/1.2.3/
   - /dss/1.6.0/
-  - /HDPDocuments/DAS/DAS-1.4.4/
-  - /HDPDocuments/DLM1/DLM-1.5.1/
 
   # "master" version for docs-dev only
   - /ccp/master/

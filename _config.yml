@@ -41,8 +41,8 @@ exclude:
   # Sarah's special API reference only on dev for now
   - /cfm/2.0.0/operator-api/
 
-  # Work on copyright line
-  - _includes/js/newerux.js
+  # Jason's tab-win goes on dev only for now
+  - _includes/js/tab-win.js
 
   # "master" version for docs-dev only
   - /ccp/master/
@@ -51,6 +51,7 @@ exclude:
   - /cem/master/
   - /cfm/master/
   - /cloudera-manager/master/
+  - /csa/master/
   - /csp/master/
   - /data-catalog/master/
   - /data-hub/master/
