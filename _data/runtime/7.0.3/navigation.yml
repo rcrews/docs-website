@@ -116,13 +116,14 @@
 #          id: pub-zeppelin-overview
 #          sub: zeppelin-overview/navigation.json
 
-    - text: Security
-      href: concepts-security.html
-      sub:
-        - text: CDP Security Overview
-          href: cdp-security-overview/index.html
-          id: pub-cdp-security-overview/index.html
-          sub: cdp-security-overview/navigation.json
+# Commenting out CDP cloud security overview content until a CDP-DC specific topic is written.
+#    - text: Security
+#      href: concepts-security.html
+#      sub:
+#        - text: CDP Security Overview
+#          href: cdp-security-overview/index.html
+#          id: pub-cdp-security-overview/index.html
+#          sub: cdp-security-overview/navigation.json
 
     - text: Governance
       href: concepts-governance.html
