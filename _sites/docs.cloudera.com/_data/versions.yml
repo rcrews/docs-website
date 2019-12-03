@@ -528,12 +528,16 @@
       url: /cdp/cloud/index.html
 
 - name: Cloudera Data Platform Data Center
-  latest-version: 7.0
+  latest-version: latest
   latest-url: /cdpdc/latest/index.html
   search-name: cdpdc
   versions:
-    - title: 7.0
+    - title: "7.0"
       url: /cdpdc/7.0/index.html
+      minors:
+      - title: "7.0"
+        type: latest
+        url: /cdpdc/7.0/index.html
 
 - name: Management Console
   latest-version: cloud

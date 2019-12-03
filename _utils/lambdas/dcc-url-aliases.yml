@@ -33,11 +33,9 @@
 - alias: /HDPDocuments/SS1/latest/
   exist: /HDPDocuments/SS1/SmartSense-1.5.1/
 
-- alias: /HDPDocuments/ccp/latest/
-  exist: /HDPDocuments/ccp/2.0.1/
+- alias: /cdpdc/latest/
+  exist: /cdpdc/7.0/
 
-- alias: /cdbdc/latest/
-  exist: /cdbdc/7.0/
 - alias: /cem/latest/
   exist: /cem/1.0.0/
 - alias: /cfm/latest/
@@ -46,6 +44,9 @@
   exist: /cloudera-manager/7.0.3/
 - alias: /csp/latest/
   exist: /csp/2.0.0/
+
+- alias: /ccp/latest/
+  exist: /ccp/2.0.1/
 
 - alias: /documentation/data-science-workbench/latest/
   exist: /documentation/data-science-workbench/1-6-x/
