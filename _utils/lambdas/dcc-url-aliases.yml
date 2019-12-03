@@ -36,6 +36,8 @@
 - alias: /HDPDocuments/ccp/latest/
   exist: /HDPDocuments/ccp/2.0.1/
 
+- alias: /cdbdc/latest/
+  exist: /cdbdc/7.0/
 - alias: /cem/latest/
   exist: /cem/1.0.0/
 - alias: /cfm/latest/
