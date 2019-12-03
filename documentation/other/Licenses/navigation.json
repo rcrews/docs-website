@@ -43,6 +43,8 @@ json:
     href: topics/ctpl_director1.html
 - text: Cloudera Connector for MicroStrategy
   href: topics/ctpl_topic_6.html
+- text: Cloudera Cybersecurity Platform
+  href: topics/ctpl_CCP.html
 - text: Cloudera Data Science Workbench
   href: topics/ctpl_cdsw1.html
 - text: Cloudera Manager
