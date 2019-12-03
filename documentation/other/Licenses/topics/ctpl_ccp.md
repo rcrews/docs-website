@@ -1,6 +1,6 @@
 ---
 layout: fluid-topic
-title: Third-party Licenses, Streams Messaging Manager
+title: Third-party Licenses, Cloudera Cybersecurity Platform
 copyright:
   holder: Cloudera, Inc.
   years:
@@ -16,4 +16,8 @@ css: ../Licenses.css
 ---
 # {{ page.title }}
 
-To be added....
+Cloudera Cybersecurity Platform 2.0.1.0
+
+This page shows the third-party license for Cloudera Cybersecurity
+Platform (CCP) 2.0.1.0:
+[Cybersecurity Notice File](/documentation/other/shared/licensefiles/CCP_2.0.1.0_Notices.txt)
