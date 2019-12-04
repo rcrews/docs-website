@@ -534,12 +534,15 @@
   versions:
     - title: latest
       url: /cdpdc/latest/index.html
+      minors:
+        - title: latest
+          url: /cdpdc/latest/index.html
     - title: "7.0"
       url: /cdpdc/7.0/index.html
       minors:
-      - title: "7.0"
-        type: latest
-        url: /cdpdc/7.0/index.html
+        - title: "7.0"
+          type: latest
+          url: /cdpdc/7.0/index.html
 
 - name: Management Console
   latest-version: cloud
@@ -748,6 +751,9 @@
   versions:
     - title: latest
       url: /ccp/latest/index.html
+      minors:
+        - title: latest
+          url: /ccp/latest/index.html
     - title: "2.0"
       url: /ccp/2.0.1/index.html
       minors:
@@ -1195,6 +1201,9 @@
   versions:
     - title: latest
       url: /smm/latest/index.html
+      minors:
+        - title: latest
+          url: /smm/latest/index.html
     - title: "2.0"
       url: /smm/2.0.0/index.html
       minors:
@@ -1226,6 +1235,9 @@
   versions:
     - title: latest
       url: /cem/latest/index.html
+      minors:
+        - title: latest
+          url: /cem/latest/index.html
     - title: "1.0"
       url: /cem/1.1.0/index.html
       minors:
@@ -1242,6 +1254,9 @@
   versions:
     - title: latest
       url: /cfm/latest/index.html
+      minors:
+        - title: latest
+          url: /cfm/latest/index.html
     - title: "1.0"
       url: /cfm/1.0.1/index.html
       minors:
@@ -1258,6 +1273,9 @@
 #   versions:
 #     - title: latest
 #       url: /csa/latest/index.html
+#       minors:
+#         - title: latest
+#           url: /csa/latest/index.html
 #     - title: "1.0"
 #       url: /csa/1.0.0/index.html
 #       minors:
@@ -1272,6 +1290,9 @@
   versions:
     - title: latest
       url: /csp/latest/index.html
+      minors:
+        - title: latest
+          url: /csp/latest/index.html
     - title: "2.0"
       url: /csp/2.0.1/index.html
       minors:
@@ -1293,6 +1314,9 @@
   versions:
     - title: latest
       url: /srm/latest/index.html
+      minors:
+        - title: latest
+          url: /srm/latest/index.html
     - title: "1.0"
       url: /srm/1.0.0/index.html
       minors:
