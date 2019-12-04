@@ -528,12 +528,16 @@
       url: /cdp/cloud/index.html
 
 - name: Cloudera Data Platform Data Center
-  latest-version: 7.0
-  latest-url: /cdpdc/latest/index.html
+  latest-version: latest
+  latest-url: /cdpdc/7.0/index.html
   search-name: cdpdc
   versions:
-    - title: 7.0
+    - title: "7.0"
       url: /cdpdc/7.0/index.html
+      minors:
+      - title: "7.0"
+        type: latest
+        url: /cdpdc/7.0/index.html
 
 - name: Management Console
   latest-version: cloud
@@ -737,7 +741,7 @@
 
 - name: Cybersecurity
   latest-version: 2.0.1
-  latest-url: /ccp/latest/index.html
+  latest-url: /ccp/2.0.1/index.html
   search-name: Cybersecurity
   versions:
     - title: "2.0"
@@ -1182,7 +1186,7 @@
 
 - name: Streams Messaging Manager for HDF and HDP
   latest-version: 2.0.0
-  latest-url: /smm/latest/index.html
+  latest-url: /smm/2.0.0/index.html
   search-name: smm
   versions:
     - title: "2.0"
@@ -1211,7 +1215,7 @@
 
 - name: Edge Management
   latest-version: 1.1.0
-  latest-url: /cem/latest/index.html
+  latest-url: /cem/1.1.0/index.html
   search-name: cem
   versions:
     - title: "1.0"
@@ -1225,7 +1229,7 @@
 
 - name: Flow Management
   latest-version: 1.0.1
-  latest-url: /cfm/latest/index.html
+  latest-url: /cfm/1.0.1/index.html
   search-name: cfm
   versions:
     - title: "1.0"
@@ -1239,7 +1243,7 @@
 
 # - name: Stream Analytics
 #   latest-version: 1.0.0
-#   latest-url: /csa/latest/index.html
+#   latest-url: /csa/1.0.0/index.html
 #   search-name: csa
 #   versions:
 #     - title: "1.0"
@@ -1251,7 +1255,7 @@
 
 - name: Stream Processing
   latest-version: 2.0.1
-  latest-url: /csp/latest/index.html
+  latest-url: /csp/2.0.1/index.html
   search-name: csp
   versions:
     - title: "2.0"
@@ -1270,7 +1274,7 @@
 
 - name: Streams Replication Manager for HDF and HDP
   latest-version: 1.0.0
-  latest-url: /srm/latest/index.html
+  latest-url: /srm/1.0.0/index.html
   search-name: srm
   versions:
     - title: "1.0"
