@@ -59,7 +59,7 @@ json:
     - runtime/7.0.3
   products:
     - text: Overview & Installation
-      href: /cdpdc/latest/index.html
+      href: /cdpdc/7.0/index.html
       icon: /common/img/mini_icons/icon-cdp.png
 
     - text: Cloudera Runtime
@@ -73,29 +73,29 @@ json:
 - title: DataFlow
   products:
     - text: Cloudera Edge Management
-      href: /cem/latest/index.html
+      href: /cem/1.1.0/index.html
       icon: /common/img/mini_icons/icon-cem.png
 
     - text: Cloudera Flow Management
-      href: /cfm/latest/index.html
+      href: /cfm/1.0.1/index.html
       icon: /common/img/mini_icons/icon-cfm.png
 
     - text: Cloudera Stream Processing
-      href: /csp/latest/index.html
+      href: /csp/2.0.1/index.html
       icon: /common/img/mini_icons/icon-csp.png
 
     - text: Cloudera Streams Messaging Manager for HDF and HDP
-      href: /smm/latest/index.html
+      href: /smm/2.0.0/index.html
       icon: /common/img/mini_icons/icon-smm.png
 
     - text: Streams Replication Manager for HDF and HDP
-      href: /srm/latest/index.html
+      href: /srm/1.0.0/index.html
       icon: /common/img/mini_icons/icon-srm.png
 
 - title: Applications
   products:
     - text: Cloudera Cybersecurity Platform
-      href: /ccp/latest/index.html
+      href: /ccp/2.0.1/index.html
       icon: /common/img/mini_icons/icon-cybersecurity.png
 
     - text: Cloudera Data Science Workbench
