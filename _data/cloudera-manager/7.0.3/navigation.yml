@@ -80,6 +80,11 @@
           href: security-encrypting-data-at-rest/index.html
           id: security-encrypting-data-at-rest.html
           sub: security-encrypting-data-at-rest/navigation.json
+          
+        - text: Key Trustee Server
+          href: security-key-trustee-server/index.html
+          id: security-key-trustee-server.html
+          sub: security-key-trustee-server/navigation.json          
 
         - text: How-to Guides
           href: security-how-to-guides/index.html
