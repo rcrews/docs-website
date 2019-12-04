@@ -950,30 +950,28 @@ var NEWUX = (function($) {
                             let active = "";
                             if (el) {
                                 if (WhoAmI.version.url) {
-                                    let pageLink = WhoAmI.version.url.split("/").slice(1, 3).join("/");
+                                    let productOnly = (WhoAmI.version.url.split("/"))[1];
+                                    let productVersion = WhoAmI.version.url.split("/").slice(1, 3).join("/");
 
-                                    if (data[0]["runtime-history"]) {
-                                        if (data[0]["runtime-history"].includes(pageLink)) {
-                                            pageLink = data[0]["runtime-history"][0];
-                                        }
+                                    if (data[0]["runtime-history"] &&
+                                        data[0]["runtime-history"].includes(productVersion)) {
+                                        productVersion = data[0]["runtime-history"][0];
                                     }
-                                    if (data[0]["cloudera-manager-history"]) {
-                                        if (data[0]["cloudera-manager-history"].includes(pageLink)) {
-                                            pageLink = data[0]["cloudera-manager-history"][0];
-                                        }
+                                    if (data[0]["cloudera-manager-history"] &&
+                                        data[0]["cloudera-manager-history"].includes(productVersion)) {
+                                        productVersion = data[0]["cloudera-manager-history"][0];
                                     }
-                                    if (data[1]["runtime-history"]) {
-                                        if (data[1]["runtime-history"].includes(pageLink)) {
-                                            pageLink = data[1]["runtime-history"][0];
-                                        }
+                                    if (data[1]["runtime-history"] &&
+                                        data[1]["runtime-history"].includes(productVersion)) {
+                                        productVersion = data[1]["runtime-history"][0];
                                     }
-                                    if (data[1]["cloudera-manager-history"]) {
-                                        if (data[1]["cloudera-manager-history"].includes(pageLink)) {
-                                            pageLink = data[1]["cloudera-manager-history"][0];
-                                        }
+                                    if (data[1]["cloudera-manager-history"] &&
+                                        data[1]["cloudera-manager-history"].includes(productVersion)) {
+                                        productVersion = data[1]["cloudera-manager-history"][0];
                                     }
-
-                                    if (el.href.split("/").slice(1, 3).join("/") === pageLink) {
+                                    if ((productOnly !== "runtime" && productOnly !== "cloudera-manager" &&
+                                        productOnly === (el.href.split("/"))[1]) ||
+                                        productVersion === el.href.split("/").slice(1, 3).join("/")) {
                                         active = "active ";
                                         open = "expanded ";
                                     }
