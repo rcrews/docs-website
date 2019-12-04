@@ -948,33 +948,35 @@ var NEWUX = (function($) {
                         let open = "";
                         cat.products.forEach(function(el) {
                             let active = "";
-                            if (WhoAmI.version.url && el) {
-                                let pageLink = WhoAmI.version.url.split("/").slice(1, 3).join("/");
+                            if (el) {
+                                if (WhoAmI.version.url) {
+                                    let pageLink = WhoAmI.version.url.split("/").slice(1, 3).join("/");
 
-                                if (data[0]["runtime-history"]) {
-                                    if (data[0]["runtime-history"].includes(pageLink)) {
-                                        pageLink = data[0]["runtime-history"][0];
+                                    if (data[0]["runtime-history"]) {
+                                        if (data[0]["runtime-history"].includes(pageLink)) {
+                                            pageLink = data[0]["runtime-history"][0];
+                                        }
                                     }
-                                }
-                                if (data[0]["cloudera-manager-history"]) {
-                                    if (data[0]["cloudera-manager-history"].includes(pageLink)) {
-                                        pageLink = data[0]["cloudera-manager-history"][0];
+                                    if (data[0]["cloudera-manager-history"]) {
+                                        if (data[0]["cloudera-manager-history"].includes(pageLink)) {
+                                            pageLink = data[0]["cloudera-manager-history"][0];
+                                        }
                                     }
-                                }
-                                if (data[1]["runtime-history"]) {
-                                    if (data[1]["runtime-history"].includes(pageLink)) {
-                                        pageLink = data[1]["runtime-history"][0];
+                                    if (data[1]["runtime-history"]) {
+                                        if (data[1]["runtime-history"].includes(pageLink)) {
+                                            pageLink = data[1]["runtime-history"][0];
+                                        }
                                     }
-                                }
-                                if (data[1]["cloudera-manager-history"]) {
-                                    if (data[1]["cloudera-manager-history"].includes(pageLink)) {
-                                        pageLink = data[1]["cloudera-manager-history"][0];
+                                    if (data[1]["cloudera-manager-history"]) {
+                                        if (data[1]["cloudera-manager-history"].includes(pageLink)) {
+                                            pageLink = data[1]["cloudera-manager-history"][0];
+                                        }
                                     }
-                                }
 
-                                if (el.href.split("/").slice(1, 3).join("/") === pageLink) {
-                                    active = "active ";
-                                    open = "expanded ";
+                                    if (el.href.split("/").slice(1, 3).join("/") === pageLink) {
+                                        active = "active ";
+                                        open = "expanded ";
+                                    }
                                 }
                                 inner_output += `<li class="${active}"><a href="${el.href}"><img src="${el.icon ? el.icon : '/common/img/mini_icons/icon-studio.png'}" title="${el.text}"><span class="text">${el.text}</span></a></li>`;
                             }
