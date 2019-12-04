@@ -711,7 +711,7 @@
 - name: Cloudera Manager
   latest-version: master
   latest-url: /cloudera-manager/master/index.html
-  search-name: Cloudera Manager
+  search-name: manager
   versions:
     - title: master
       url: /cloudera-manager/master/index.html
@@ -732,7 +732,7 @@
 - name: Cloudera Manager Data Center
   latest-version: master
   latest-url: /cloudera-manager/master/index.html
-  search-name: Cloudera Manager
+  search-name: manager
   versions:
     - title: master
       url: /cloudera-manager/master/index.html

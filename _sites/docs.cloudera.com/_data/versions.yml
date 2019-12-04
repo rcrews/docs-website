@@ -626,7 +626,7 @@
 - name: Cloudera Manager
   latest-version: 7.0.2
   latest-url: /cloudera-manager/7.0.2/index.html
-  search-name: Cloudera Manager
+  search-name: manager
   versions:
     - title: "7.0"
       url: /cloudera-manager/7.0.2/index.html
@@ -642,7 +642,7 @@
 - name: Cloudera Manager Data Center
   latest-version: 7.0.3
   latest-url: /cloudera-manager/7.0.3/index.html
-  search-name: Cloudera Manager
+  search-name: manager
   versions:
     - title: "7.0"
       url: /cloudera-manager/7.0.3/index.html
