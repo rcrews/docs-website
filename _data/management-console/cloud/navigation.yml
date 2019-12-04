@@ -106,10 +106,10 @@
       id: pub-release-notes
       sub: release-notes/navigation.json
 
-- text: Learning & Training
-  id: cat-learning
-  sub:
-    - text: Getting Started with Management Console on AWS
-      href: getting-started-tutorial/index.html
-      id: pub-getting-started-tutorial
-      sub: getting-started-tutorial/navigation.json
+# - text: Learning & Training
+#   id: cat-learning
+#   sub:
+#     - text: Getting Started with Management Console on AWS
+#       href: getting-started-tutorial/index.html
+#       id: pub-getting-started-tutorial
+#       sub: getting-started-tutorial/navigation.json
