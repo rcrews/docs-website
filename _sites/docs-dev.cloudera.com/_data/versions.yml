@@ -839,6 +839,23 @@
         - title: 1.1.0
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
+- name: Data Flow for Data Hub
+  latest-version: master
+  latest-url: /cdf-datahub/master/index.html
+  search-name: cdf-datahub
+  versions:
+    - title: master
+      url: /cdf-datahub/master/index.html
+      minors:
+        - title: master
+          url: /cdf-datahub/master/index.html
+    - title: "7.0"
+      url: /cdf-datahub/7.0.2/index.html
+      minors:
+        - title: 7.0.2
+          type: Latest
+          url: /cdf-datahub/7.0.2/index.html
+
 - name: Cybersecurity
   latest-version: master
   latest-url: /ccp/master/index.html

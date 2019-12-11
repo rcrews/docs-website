@@ -50,6 +50,7 @@ exclude:
   - /HDPDocuments/DAS/DAS-1.4.4/
   - /HDPDocuments/DLM1/DLM-1.5.1/
   - /HDPDocuments/HDP3/HDP-3.1.5/
+  - /cdf-datahub/7.0.2/
   - /cfm/2.0.0/
   - /csa/1.0.0/
   - /csp/3.0.0/
