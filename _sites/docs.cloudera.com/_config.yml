@@ -45,6 +45,8 @@ exclude:
   - _includes/js/tab-win.js
 
   # Unreleased documentation
+  - /HDPDocuments/Ambari-2.7.5.0/
+  - /HDPDocuments/Ambari/Ambari-2.7.5.0/
   - /HDPDocuments/DAS/DAS-1.4.4/
   - /HDPDocuments/DLM1/DLM-1.5.1/
   - /HDPDocuments/HDP3/HDP-3.1.5/
