@@ -19,6 +19,7 @@ css: ../Licenses.css
 The following pages list the third-party license files for Cloudera
 Manager:
 
+* [Cloudera Manager 7](ctpl_cm7.html)
 * [Cloudera Manager 6](ctpl_cm6.html)
 * [Cloudera Manager 5](ctpl_cm5.html)
 * [Cloudera Manager 4.6](ctpl_topic_4.html)
