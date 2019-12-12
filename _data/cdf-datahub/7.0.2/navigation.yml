@@ -177,7 +177,7 @@
     - text: REST API Reference
       href: rest-api-reference/index.html
       id: pub-rest-api-reference
-      sub: rest-api-reference/navigation.json
+      external: external
 
 # Anticipated to be added soon
 # - text: Learning & Training

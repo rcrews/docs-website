@@ -11,8 +11,6 @@ sections:
     books:
       - title: Release Notes
         url: release-notes/index.html
-      - title: Support Matrix
-        url: https://supportmatrix.hortonworks.com/
 
 ---
 Eget quisque non dictum justo diam sodales sagittis nibh, donec
