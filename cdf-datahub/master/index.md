@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Data Flow for Data Hub
+title: Cloudera Data Flow for Data Hub
 version: master
 base-path: /cdf-datahub/master/
 

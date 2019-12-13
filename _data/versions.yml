@@ -750,7 +750,7 @@
         - title: 1.1.0
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
-- name: Data Flow for Data Hub
+- name: Cloudera Data Flow for Data Hub
   latest-version: 7.0.2
   latest-url: /cdf-datahub/7.0.2/index.html
   search-name: cdf-datahub

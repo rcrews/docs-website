@@ -1,4 +1,4 @@
 ---
 layout: indexredirect
-product: Data Flow for Data Hub
+product: Cloudera Data Flow for Data Hub
 ---

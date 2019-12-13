@@ -8,7 +8,7 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Cloudera Stream Processing
+- text: Cloudera Stream Analytics
   id: landing-cloudera-stream-analytics
   href: /csa/1.0.0/index.html
   display: none

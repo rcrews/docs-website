@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Data Flow for Data Hub
+title: Cloudera Data Flow for Data Hub
 version: 7.0.2
 base-path: /cdf-datahub/7.0.2/
 

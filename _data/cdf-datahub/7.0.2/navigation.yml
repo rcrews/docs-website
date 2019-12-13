@@ -8,7 +8,7 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Data Flow for Data Hub
+- text: Cloudera Data Flow for Data Hub
   id: landing-data-flow-for-data-hub
   href: /cdf-datahub/7.0.2/index.html
   display: none

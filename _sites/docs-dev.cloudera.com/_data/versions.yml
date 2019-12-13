@@ -839,7 +839,7 @@
         - title: 1.1.0
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
-- name: Data Flow for Data Hub
+- name: Cloudera Data Flow for Data Hub
   latest-version: master
   latest-url: /cdf-datahub/master/index.html
   search-name: cdf-datahub

@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title: Data Flow for Data Hub How To
+breadcrumb-title: Cloudera Data Flow for Data Hub How To
 title: Flow Management
 
 publications:
