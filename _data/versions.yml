@@ -759,7 +759,7 @@
       url: /cdf-datahub/7.0.2/index.html
       minors:
         - title: 7.0.2
-          type: Latest
+          type: Technical Preview
           url: /cdf-datahub/7.0.2/index.html
 
 - name: Cybersecurity
