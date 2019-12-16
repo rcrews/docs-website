@@ -13,12 +13,10 @@ publications:
   - title: Schema Registry Overview
     url: srm-overview/index.html
     description: >-
-      Purus finibus tortor aliquam nec suscipit duis fermentum amet
-      sollicitudin, risus nisl auctor senectus aptent sociosqu aenean.
+      Provides an overview of Schema Registry features, functionality, and use cases. 
 
   - title: SMM Overview
     url: smm-overview/index.html
     description: >-
-      Purus finibus tortor aliquam nec suscipit duis fermentum amet
-      sollicitudin, risus nisl auctor senectus aptent sociosqu aenean.
+      Provides an overview of Streams Messaging Manager key features. 
 ---
