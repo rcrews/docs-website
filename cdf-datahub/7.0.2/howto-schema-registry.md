@@ -7,12 +7,10 @@ publications:
   - title: Integrating with Schema Registry
     url: integrating-with-schema-registry/index.html
     description: >-
-      Purus finibus tortor aliquam nec suscipit duis fermentum amet
-      sollicitudin, risus nisl auctor senectus aptent sociosqu aenean.
+      Describes how to integrate components with Schema Registry.
 
   - title: Using Schema Registry
     url: using-schema-registry/index.html
     description: >-
-      Purus finibus tortor aliquam nec suscipit duis fermentum amet
-      sollicitudin, risus nisl auctor senectus aptent sociosqu aenean.
+      Describes how to use Schema Registry. 
 ---
