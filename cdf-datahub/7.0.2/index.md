@@ -13,7 +13,9 @@ sections:
         url: release-notes/index.html
 
 ---
-Eget quisque non dictum justo diam sodales sagittis nibh, donec
-convallis parturient at tortor augue integer fusce mattis, amet fames
-metus taciti himenaeos erat euismod dignissim leo, accumsan gravida
-cursus elementum fermentum dolor dictumst.
+Cloudera Data Flow delivers Streams Messaging cluster definitions for installation using Data Hub.
+
+The Streams Messaging Heavy Duty and Streams Messaging Light Duty cluster templates and definitions are now available in Data Hub with advanced messaging and real-time processing on streaming data using Apache Kafka, centralized schema management using Schema Registry, and management and monitoring capabilities powered by Streams Messaging Manager.
+
+NOTE:
+Cloudera Data Flow for Data Hub is  available for Technical Preview. Cloudera encourages you to explore these technical preview features in non-production environments and provide feedback on your experiences through the Cloudera Support Portal.
