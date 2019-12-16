@@ -17,9 +17,9 @@
   id: cat-concepts
   sub:
     - text: CDF for Data Hub Overview
-      href: cdf-for-data-hub-overview/index.html
-      id: pub-cdf-for-data-hub-overview
-      sub: cdf-for-data-hub-overview/navigation.json
+      href: cdf-datahub-overview/index.html
+      id: pub-cdf-datahub-overview
+      sub: cdf-datahub-overview/navigation.json
 
     - text: Streams Messaging
       href: concepts-streams-messaging.html
@@ -30,9 +30,9 @@
           sub: /runtime/7.0.2/kafka-overview/navigation.json
 
         - text: Schema Registry Overview
-          href: srm-overview/index.html
-          id: pub-srm-overview
-          sub: srm-overview/navigation.json
+          href: schema-registry-overview/index.html
+          id: pub-schema-registry-overview
+          sub: schema-registry-overview/navigation.json
 
         - text: SMM Overview
           href: smm-overview/index.html
@@ -52,9 +52,9 @@
   id: cat-planning
   sub:
     - text: Planning Your Deployment
-      href: deployment-planning/index.html
-      id: pub-deployment-planning
-      sub: deployment-planning/navigation.json
+      href: planning-your-deployment/index.html
+      id: pub-planning-your-deployment
+      sub: planning-your-deployment/navigation.json
 
 # Possibly no installation or upgrade ever? Still investigating...
 # - text: Installation & Upgrade
@@ -145,10 +145,10 @@
           id: pub-monitoring-end-to-end-latency
           sub: monitoring-end-to-end-latency/navigation.json
 
-        - text: Monitoring Kafka Cluster Replications
-          href: monitoring-kafka-cluster-replications/index.html
-          id: pub-monitoring-kafka-cluster-replications
-          sub: monitoring-kafka-cluster-replications/navigation.json
+        # - text: Monitoring Kafka Cluster Replications
+        #   href: monitoring-kafka-cluster-replications/index.html
+        #   id: pub-monitoring-kafka-cluster-replications
+        #   sub: monitoring-kafka-cluster-replications/navigation.json
 
     - text: Schema Registry
       href: howto-schema-registry.html
