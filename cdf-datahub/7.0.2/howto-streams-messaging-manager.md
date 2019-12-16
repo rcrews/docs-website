@@ -7,30 +7,22 @@ publications:
   - title: Monitoring Kafka Clusters
     url: monitoring-kafka-clusters/index.html
     description: >-
-      Purus finibus tortor aliquam nec suscipit duis fermentum amet
-      sollicitudin, risus nisl auctor senectus aptent sociosqu aenean.
+      Describes how to use Streams Messaging Manager to monitor Apache Kafka clusters, producers, topics, brokers, and               consumers.
 
   - title: Managing Alert Policies
     url: managing-alert-policies/index.html
     description: >-
-      Purus finibus tortor aliquam nec suscipit duis fermentum amet
-      sollicitudin, risus nisl auctor senectus aptent sociosqu aenean.
+      Describes how to use Streams Messaging Manager to create, modify, and monitor alert policies and alerts.
 
   - title: Managing Topics
     url: managing-topics/index.html
     description: >-
-      Purus finibus tortor aliquam nec suscipit duis fermentum amet
-      sollicitudin, risus nisl auctor senectus aptent sociosqu aenean.
+      Describes how to create, moidify, and delete Kafka topics.
 
   - title: Monitoring End to End Latency
     url: monitoring-end-to-end-latency/index.html
     description: >-
-      Purus finibus tortor aliquam nec suscipit duis fermentum amet
-      sollicitudin, risus nisl auctor senectus aptent sociosqu aenean.
+      Describes how you can use Streams Messaging Manager to monitor end-to-end latency in topics. Use the latency feature to       verify whether consumers are consuming the messages produced in a topic within the time SLA, identify the slow consuming       applications that might occur due to an external or process bottleneck, and verify whether the consumers are consuming         all the messages.
 
-  - title: Monitoring Kafka Cluster Replications
-    url: monitoring-kafka-cluster-replications/index.html
-    description: >-
-      Purus finibus tortor aliquam nec suscipit duis fermentum amet
-      sollicitudin, risus nisl auctor senectus aptent sociosqu aenean.
+
 ---
