@@ -12,5 +12,5 @@ publications:
   - title: Using Schema Registry
     url: using-schema-registry/index.html
     description: >-
-      Describes how to use Schema Registry. 
+      Describes how to use Schema Registry.
 ---
