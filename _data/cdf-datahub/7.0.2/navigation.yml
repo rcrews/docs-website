@@ -56,11 +56,11 @@
       id: pub-planning-your-deployment
       sub: planning-your-deployment/navigation.json
       
-#    - text: Connecting Kafka Clients to Data Hub Clusters
-#     href: /runtime/7.0.2/kafka-configuring/topics/kafka-dh-connect-clients-outside-vpc.html
-#      id: pub-kafka-configuring
-#      sub: /runtime/7.0.2/kafka-configuring/navigation.json
-
+    - text: Connecting Kafka Clients to Data Hub Clusters
+      href: connecting-kafka/index.html
+      id: pub-connecting-kafka
+      sub: connecting-kafka/navigation.json
+      
 # Possibly no installation or upgrade ever? Still investigating...
 # - text: Installation & Upgrade
 #   id: cat-installation-upgrade
