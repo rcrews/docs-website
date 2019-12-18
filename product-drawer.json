@@ -103,7 +103,7 @@ json:
 - title: Applications
   products:
     - text: Cloudera Cybersecurity Platform
-      href: /ccp/2.0.0/index.html
+      href: /ccp/2.0.1/index.html
       icon: /common/img/mini_icons/icon-cybersecurity.png
 
     - text: Cloudera Data Science Workbench
