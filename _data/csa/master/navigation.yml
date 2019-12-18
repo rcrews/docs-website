@@ -9,7 +9,7 @@
 #- text: Learning & Training
 
 - text: Cloudera Streaming Analytics
-  id: landing-cloudera-stream-analytics
+  id: landing-cloudera-streaming-analytics
   href: /csa/master/index.html
   display: none
 
@@ -80,3 +80,15 @@
       href: csa-learning-overview/index.html
       id: pub-csa-learning-overview
       sub: csa-learning-overview/navigation.json
+    - text: Simple
+      href: csa-simple-tutorial/index.html
+      id: pub-csa-simple-tutorial
+      sub: csa-simple-tutorial/navigation.json
+    - text: Securing
+      href: csa-secure-tutorial/index.html
+      id: pub-csa-secure-tutorial
+      sub: csa-secure-tutorial/navigation.json
+    - text: Stateful
+      href: csa-stateful-tutorial/index.html
+      id: pub-csa-stateful-tutorial
+      sub: csa-stateful-tutorial/navigation.json

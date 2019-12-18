@@ -11,13 +11,10 @@ sections:
     books:
       - title: Release Notes
         url: release-notes/index.html
-  - title: Support Matrix
-    # "name" here below must be "supportmatrix" to get the black background
-    name: supportmatrix
-    books:
       - title: Support Matrix
-        url: support-matrix/index.html
-
+        url: csa-support-matrix/index.html
 ---
-
-Cloudera Streaming Analytics powered by Apache Flink offers a framework for real-time stream processing and streaming analytics. Connected with Kafka, CSA provides monitoring and logging solutions as Schema Registry, Streams Messaging Manager and Kafka Metrics Reporter.
+Cloudera Streaming Analytics powered by Apache Flink offers a framework
+for real-time stream processing and streaming analytics. Connected with
+Kafka, CSA provides monitoring and logging solutions as Schema Registry,
+Streams Messaging Manager and Kafka Metrics Reporter.

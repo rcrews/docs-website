@@ -8,8 +8,8 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Cloudera Stream Analytics
-  id: landing-cloudera-stream-analytics
+- text: Cloudera Streaming Analytics
+  id: landing-cloudera-streaming-analytics
   href: /csa/1.0.0/index.html
   display: none
 
@@ -32,6 +32,10 @@
 - text: Installation
   id: cat-install
   sub:
+    - text: Support Matrix
+      href: csa-support-matrix/index.html
+      id: pub-csa-support-matrix
+      sub: csa-support-matrix/navigation.json
     - text: Installation
       href: csa-installation/index.html
       id: pub-csa-installation
@@ -40,26 +44,26 @@
 - text: How To
   id: cat-how-to
   sub:
-    - text: Developing an application
-      href: csa-build-application/index.html
-      id: pub-csa-build-application
-      sub: csa-build-application/navigation.json
-    - text: Testing and validating your application
-      href: csa-validating/index.html
-      id: pub-csa-validating
-      sub: csa-validating/navigation.json
-    - text: Configuring
-      href: csa-configuring/index.html
-      id: pub-csa-configuring/index.html
-      sub: csa-configuring/navigation.json
-    - text: Securing
-      href: csa-securing/index.html
-      id: pub-csa-securing/index.html
-      sub: csa-securing/navigation.json
-    - text: Monitoring
-      href: csa-monitoring/index.html
-      id: pub-csa-monitoring/index.html
-      sub: csa-monitoring/navigation.json
+    - text: Development
+      href: csa-development/index.html
+      id: pub-csa-development
+      sub: csa-development/navigation.json
+    - text: Customization
+      href: csa-customization/index.html
+      id: pub-csa-customization
+      sub: csa-customization/navigation.json
+    - text: Configuration
+      href: csa-configuration/index.html
+      id: pub-csa-configuration/index.html
+      sub: csa-configuration/navigation.json
+    - text: Security
+      href: csa-security/index.html
+      id: pub-csa-security/index.html
+      sub: csa-security/navigation.json
+    - text: Operation
+      href: csa-operation/index.html
+      id: pub-csa-operation/index.html
+      sub: csa-operation/navigation.json
 
 - text: Release Notes
   id: cat-releasenotes
@@ -72,7 +76,19 @@
 - text: Learning & Training
   id: cat-learning-training
   sub:
-    - text: Stateful tutorial
+    - text: Learning & Training Overview
+      href: csa-learning-overview/index.html
+      id: pub-csa-learning-overview
+      sub: csa-learning-overview/navigation.json
+    - text: Simple
+      href: csa-simple-tutorial/index.html
+      id: pub-csa-simple-tutorial
+      sub: csa-simple-tutorial/navigation.json
+    - text: Securing
+      href: csa-secure-tutorial/index.html
+      id: pub-csa-secure-tutorial
+      sub: csa-secure-tutorial/navigation.json
+    - text: Stateful
       href: csa-stateful-tutorial/index.html
       id: pub-csa-stateful-tutorial
       sub: csa-stateful-tutorial/navigation.json
