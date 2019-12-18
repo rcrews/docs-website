@@ -80,7 +80,7 @@ json:
       href: /cfm/2.0.0/index.html
       icon: /common/img/mini_icons/icon-cfm.png
 
-    - text: Cloudera Stream Analytics
+    - text: Cloudera Streaming Analytics
       href: /csa/1.0.0/index.html
       icon: /common/img/mini_icons/icon-csa.png
 

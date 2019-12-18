@@ -1383,7 +1383,7 @@
         - title: 1.0.0
           url: /cfm/1.0.0/index.html
 
-- name: Stream Analytics
+- name: Streaming Analytics
   latest-version: master
   latest-url: /csa/master/index.html
   search-name: csa
