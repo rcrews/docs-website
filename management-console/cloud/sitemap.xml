@@ -4,7 +4,7 @@
 
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/links.html</loc>
-		<lastmod>2019-10-02</lastmod>
+		<lastmod>2019-12-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -15,908 +15,956 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/getting-started/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/getting-started/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/sdk/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/troubleshoot/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/release-notes/index.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/getting-started-tutorial/index.html</loc>
-		<lastmod>2019-10-17</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/getting-started/topics/mc-getting-started-admin.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/getting-started/topics/mc-getting-started-user.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/sdk/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-identity-management-in-cdp.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-management-console-security.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-how-identity-management-works-in-cdp.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security_how_identity_federation_works_in_cdp.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-authentication-with-knox.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/mc-security-customer-resources.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/mc-access-to-clusters.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-data-lake-security.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-management-console.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-interfaces.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-core-concepts.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-environment.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-credential.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-data-lake.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-shared-resources.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-classic-cluster.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-datahub-cluster.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-data-warehouse.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-mlworkspace.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-credential.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-create-cloudbreak-credential-aws.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-iam-permissions.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-create-cred-aws-role.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-create-credentialrole.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-create-role-based-credential.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-create-role-based-credential-CLI.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-credentials-list.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-credential-modify.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-credential-delete.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-managing-user-access.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-onboarding-users.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-configuring-identity-providers.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-generating-identity-provider-metadata.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-setting-up-the-identity-provider-in-cdp.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-configuring-your-enterprise-idp-to-work-with-cdp-as-a-service-provider.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-synchronizing-group-membership.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-updating-an-identity-provider.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-disabling-the-cloudera-sso-login.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-importing-or-uploading-users.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-understanding-cdp-user-accounts.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-cdp-account-administrator.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-cdp-user.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-um-workload-user.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-machine-user.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-understanding-roles-resource-roles.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-cdp-role.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-cdp-resource-role.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-roles-to-users.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-resources-to-users.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-generating-an-api-access-key.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-accessing-non-sso-interfaces-using-ipa-credentials.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-setting-the-ipa-password.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-access-paths-to-cdp.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-understanding-cdp-groups.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-working-with-groups-on-the-console.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-creating-a-group.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-adding-a-user-to-a-group.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-role-to-a-group.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-resource-role-to-a-group.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-group-membership-administrator.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-working-with-groups-on-the-command-line.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-creating-and-deleting-a-group-through-cli.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-managing-users-in-a-group-through-cli.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-role-to-a-group-through-cli.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-resource-role-to-a-group-through-cli.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-group-membership-administrator-through-cli.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-enabling-admin-access-to-environments.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-requirements-aws.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-services.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-region.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-vpc.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-security-groups.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-ec2.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-credential.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-s3.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-ssh.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-permissions.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-reqs-reference.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-regions.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-security-groups.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-resources-list.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-limits.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-scale.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-repair.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-info.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-access.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-ssh.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-administer.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-dl-sync.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-dl-retry.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-repairing.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-credential.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environments.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-prereqs-aws.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-credential.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/troubleshoot/index.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-aws-ssh-key.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-aws-vpc.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-aws-security-groups.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-aws-logs.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-idbroker-minimum-setup.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-edit-idb-mappings.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-idbroker-encryption.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-register-aws-ui.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-register-aws-cli.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-access.html</loc>
-		<lastmod>2019-10-18</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-credential-change.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-delete.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-idbroker-minimum-setup.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-edit-idb-mappings.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-aws-vpc.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-aws-ssh-key.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-register-aws-ui.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-aws-logs.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-aws-dynamodb.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-idbroker-encryption.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-credential.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-access.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-credential-change.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-create-credentialrole.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/environments/topics/mc-environment-cleanup.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-cli-client-setup.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-create-cloudbreak-credential-aws.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-installing-cdp-client.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-create-cred-aws-role.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-on-linux.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-iam-permissions.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-on-macos.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-managing-user-access.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-python-on-macos.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-credentials-list.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-after-python-on-macos.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-credential-delete.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-on-windows.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-create-role-based-credential.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-python-and-pip-on-windows.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-credential-modify.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-after-python-on-windows.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-configuring-identity-providers.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-cli-generating-an-api-access-key.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-onboarding-users.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-configuring-cdp-client-with-the-api-access-key.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-setting-up-the-identity-provider-in-cdp.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/troubleshoot/topics/mc-logs.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-generating-identity-provider-metadata.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/troubleshoot/topics/mc-accessing-cm-logs.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-configuring-your-enterprise-idp-to-work-with-cdp-as-a-service-provider.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/troubleshoot/topics/mc-troubleshooting-cloudbreak-on-aws.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/credentials-aws/topics/mc-environment-credential-change.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/sdk/topics/mc-overview-of-the-cdp-sdk-for-java.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-updating-an-identity-provider.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/sdk/topics/mc-prerequisites-for-using-the-cdp-sdk-for-java.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-disabling-the-cloudera-sso-login.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/sdk/topics/mc-using-the-cdp-sdk-for-java.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-synchronizing-group-membership.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-managing-classic-clusters.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-um-workload-user.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-prerequisites-for-adding-classic-clusters.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-importing-or-uploading-users.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-adding-your-classic-clusters.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-understanding-cdp-user-accounts.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-add-a-hdp-or-hdf-cluster.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-understanding-roles-resource-roles.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-add-a-cdh-cluster.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-machine-user.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/getting-started-tutorial/topics/mc-getting-started.html</loc>
-		<lastmod>2019-10-17</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-cdp-user.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/management-console/cloud/release-notes/topics/mc-whats-new.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-cdp-account-administrator.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-enabling-admin-access-to-environments.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-understanding-cdp-groups.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-setting-the-ipa-password.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-roles-to-users.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-generating-an-api-access-key.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-resources-to-users.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-accessing-non-sso-interfaces-using-ipa-credentials.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-access-paths-to-cdp.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-working-with-groups-on-the-console.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-working-with-groups-on-the-command-line.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-adding-a-user-to-a-group.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-resource-role-to-a-group.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-group-membership-administrator.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-role-to-a-group.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-creating-a-group.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-creating-and-deleting-a-group-through-cli.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-management-console.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-core-concepts.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-group-membership-administrator-through-cli.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-role-to-a-group-through-cli.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-interfaces.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-managing-users-in-a-group-through-cli.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-assigning-a-resource-role-to-a-group-through-cli.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-environment.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-credential.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-data-warehouse.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-mlworkspace.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-shared-resources.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-classic-cluster.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-identity-management-in-cdp.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-datahub-cluster.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-how-identity-management-works-in-cdp.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/mc-security-customer-resources.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security_how_identity_federation_works_in_cdp.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/overview/topics/mc-concept-data-lake.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-management-console-security.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-tls-encryption-using-auto-tls.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-requirements-aws.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-authentication-with-knox.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/mc-data-encryption.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-credential.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-region.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-services.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/mc-access-to-clusters.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/security-overview/topics/security-data-lake-security.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-vpc.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-s3.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-security-groups.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-dynamodb.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-regions.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-default-security-groups.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-permissions.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-ec2.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-reqs-reference.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-req-ssh.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/getting-started/topics/mc-getting-started-admin.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-limits.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/requirements-aws/topics/mc-aws-resources-list.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/getting-started/topics/mc-getting-started-user.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-storage.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-scale.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-repair.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-access.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-ssh.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-administer.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-info.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-monitor.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-dl-retry.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-dl-sync.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/release-notes/topics/mc-whats-new-02.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/release-notes/topics/mc-whats-new.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/release-notes/topics/mc-whats-new-01.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/release-notes/topics/mc-whats-new-03.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/management-console/cloud/release-notes/topics/mc-known-issues.html</loc>
-		<lastmod>2019-10-18</lastmod>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-managing-classic-clusters.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/data-lakes/topics/mc-data-lake-repairing.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-prerequisites-for-adding-classic-clusters.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-add-a-hdp-or-hdf-cluster.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-adding-your-classic-clusters.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-cli-client-setup.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-add-a-cdh-cluster.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-resume-cluster-registration.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-troubleshoot-cdh-cluster-addition.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-register-cdh-private-ip.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-installing-cdp-client.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-python-on-macos.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-on-linux.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-on-macos.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-after-python-on-macos.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-on-windows.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-cli-generating-an-api-access-key.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-python-and-pip-on-windows.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-install-cdp-client-after-python-on-windows.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/sdk/topics/mc-overview-of-the-cdp-sdk-for-java.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/sdk/topics/mc-using-the-cdp-sdk-for-java.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-cli-modules.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-cli-help.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/cli/topics/mc-configuring-cdp-client-with-the-api-access-key.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/troubleshoot/topics/mc-env-idb-role-resolution.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/sdk/topics/mc-prerequisites-for-using-the-cdp-sdk-for-java.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/troubleshoot/topics/mc-accessing-cm-logs.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/troubleshoot/topics/mc-troubleshooting-cloudbreak-on-aws.html</loc>
+		<lastmod>2019-12-13</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/management-console/cloud/troubleshoot/topics/mc-logs.html</loc>
+		<lastmod>2019-12-13</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
