@@ -16,10 +16,10 @@
 - text: Concepts & Use Cases
   id: cat-concepts
   sub:
-    - text: CDF for Data Hub Overview
-      href: cdf-datahub-overview/index.html
-      id: pub-cdf-datahub-overview
-      sub: cdf-datahub-overview/navigation.json
+    # - text: CDF for Data Hub Overview
+    #   href: cdf-datahub-overview/index.html
+    #   id: pub-cdf-datahub-overview
+    #   sub: cdf-datahub-overview/navigation.json
 
     - text: Streams Messaging
       href: concepts-streams-messaging.html
@@ -55,12 +55,12 @@
       href: planning-your-deployment/index.html
       id: pub-planning-your-deployment
       sub: planning-your-deployment/navigation.json
-      
+
     - text: Connecting Kafka Clients to Data Hub Clusters
       href: connecting-kafka/index.html
       id: pub-connecting-kafka
       sub: connecting-kafka/navigation.json
-      
+
 # Possibly no installation or upgrade ever? Still investigating...
 # - text: Installation & Upgrade
 #   id: cat-installation-upgrade
