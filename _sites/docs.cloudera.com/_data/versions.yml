@@ -743,6 +743,18 @@
         - title: 1.1.0
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
+- name: Cloudera Data Flow for Data Hub
+  latest-version: 7.0.2
+  latest-url: /cdf-datahub/7.0.2/index.html
+  search-name: cdf-datahub
+  versions:
+    - title: "7.0"
+      url: /cdf-datahub/7.0.2/index.html
+      minors:
+        - title: 7.0.2
+          type: Technical Preview
+          url: /cdf-datahub/7.0.2/index.html
+
 - name: Cybersecurity
   latest-version: 2.0.1
   latest-url: /ccp/2.0.1/index.html

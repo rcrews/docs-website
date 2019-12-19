@@ -96,7 +96,7 @@ json:
       href: /srm/1.0.0/index.html
       icon: /common/img/mini_icons/icon-srm.png
 
-    - text: Data Flow in Data Hub
+    - text: Cloudera Data Flow in Data Hub
       href: /cdf-datahub/7.0.2/index.html
       icon: /common/img/mini_icons/icon-cdf-datahub.png
 
