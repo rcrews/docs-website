@@ -11,7 +11,7 @@ publications:
       capabilities, and architecture.
 
   - title: Schema Registry Overview
-    url: srm-overview/index.html
+    url: schema-registry-overview/index.html
     description: >-
       Provides an overview of Schema Registry features, functionality,
       and use cases.
