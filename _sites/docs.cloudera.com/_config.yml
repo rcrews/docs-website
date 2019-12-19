@@ -55,6 +55,7 @@ exclude:
 
   # "master" version for docs-dev only
   - /ccp/master/
+  - /cdf-datahub/master/
   - /cdp/master/
   - /cdpdc/master/
   - /cem/master/
