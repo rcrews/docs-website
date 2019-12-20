@@ -71,9 +71,9 @@
   exist: /documentation/kafka/4-1-x.html
 
 - alias: /documentation/other/accumulo/latest/
-  exist: /documentation/other/accumulo/1-7-2/
+  exist: /documentation/other/accumulo/1-9-2/
 - alias: /documentation/other/accumulo/latest.html
-  exist: /documentation/other/accumulo/1-7-2.html
+  exist: /documentation/other/accumulo/1-9-2.html
 
 - alias: /documentation/other/connectors/hive-jdbc/latest/
   exist: /documentation/other/connectors/hive-jdbc/2-6-9/
