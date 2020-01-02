@@ -17,53 +17,53 @@
   id: cat-concepts
   sub:
     - text: Overview
-      href: csa-overview/index.html
-      id: pub-csa-overview
-      sub: csa-overview/navigation.json
+      href: overview/index.html
+      id: pub-overview
+      sub: overview/navigation.json
     - text: Apache Flink Overview
-      href: csa-flink-overview/index.html
-      id: pub-csa-flink-overview
-      sub: csa-flink-overview/navigation.json
+      href: flink-overview/index.html
+      id: pub-flink-overview
+      sub: flink-overview/navigation.json
     - text: Security Overview
-      href: csa-security-overview/index.html
+      href: security-overview/index.html
       id: pub-security-flink-overview
-      sub: csa-security-overview/navigation.json
+      sub: security-overview/navigation.json
 
 - text: Installation
   id: cat-install
   sub:
     - text: Support Matrix
-      href: csa-support-matrix/index.html
-      id: pub-csa-support-matrix
-      sub: csa-support-matrix/navigation.json
+      href: support-matrix/index.html
+      id: pub-support-matrix
+      sub: support-matrix/navigation.json
     - text: Installation
-      href: csa-installation/index.html
-      id: pub-csa-installation
-      sub: csa-installation/navigation.json
+      href: installation/index.html
+      id: pub-installation
+      sub: installation/navigation.json
 
 - text: How To
   id: cat-how-to
   sub:
     - text: Development
-      href: csa-development/index.html
-      id: pub-csa-development
-      sub: csa-development/navigation.json
+      href: development/index.html
+      id: pub-development
+      sub: development/navigation.json
     - text: Customization
-      href: csa-customization/index.html
-      id: pub-csa-customization
-      sub: csa-customization/navigation.json
+      href: customization/index.html
+      id: pub-customization
+      sub: customization/navigation.json
     - text: Configuration
-      href: csa-configuration/index.html
-      id: pub-csa-configuration/index.html
-      sub: csa-configuration/navigation.json
+      href: configuration/index.html
+      id: pub-configuration/index.html
+      sub: configuration/navigation.json
     - text: Security
-      href: csa-security/index.html
-      id: pub-csa-security/index.html
-      sub: csa-security/navigation.json
+      href: security/index.html
+      id: pub-security/index.html
+      sub: security/navigation.json
     - text: Operation
-      href: csa-operation/index.html
-      id: pub-csa-operation/index.html
-      sub: csa-operation/navigation.json
+      href: operation/index.html
+      id: pub-operation/index.html
+      sub: operation/navigation.json
 
 - text: Release Notes
   id: cat-releasenotes
@@ -77,18 +77,6 @@
   id: cat-learning-training
   sub:
     - text: Learning & Training Overview
-      href: csa-learning-overview/index.html
-      id: pub-csa-learning-overview
-      sub: csa-learning-overview/navigation.json
-    - text: Simple
-      href: csa-simple-tutorial/index.html
-      id: pub-csa-simple-tutorial
-      sub: csa-simple-tutorial/navigation.json
-    - text: Securing
-      href: csa-secure-tutorial/index.html
-      id: pub-csa-secure-tutorial
-      sub: csa-secure-tutorial/navigation.json
-    - text: Stateful
-      href: csa-stateful-tutorial/index.html
-      id: pub-csa-stateful-tutorial
-      sub: csa-stateful-tutorial/navigation.json
+      href: learning-overview/index.html
+      id: pub-learning-overview
+      sub: learning-overview/navigation.json
