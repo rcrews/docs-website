@@ -10,7 +10,7 @@
 
 - text: Cloudera Streaming Analytics
   id: landing-cloudera-streaming-analytics
-  href: /csa/master/index.html
+  href: /csa/1.0.0/index.html
   display: none
 
 - text: Concepts
