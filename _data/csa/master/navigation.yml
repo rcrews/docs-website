@@ -79,16 +79,4 @@
     - text: Learning & Training
       id: cat-learning-overview
       href: learning-and-training.html
-      sub:
-        - text: Simple Tutorial
-          href: simple-tutorial/index.html
-          id: pub-simple-tutorial
-          sub: simple-tutorial/navigation.json
-        - text: Secure Tutorial
-          href: secure-tutorial/index.html
-          id: pub-secure-tutorial
-          sub: secure-tutorial/navigation.json
-        - text: Stateful Tutorial
-          href: stateful-tutorial/index.html
-          id: pub-stateful-tutorial
-          sub: stateful-tutorial/navigation.json
+      sub: learning-and-training/navigation.json
