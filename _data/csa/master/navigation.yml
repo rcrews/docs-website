@@ -77,8 +77,8 @@
   name: cat-learning-training
   sub:
     - text: Learning & Training
+      id: cat-learning-overview
       href: learning-and-training.html
-      id: pub-learning-overview
       sub:
         - text: Simple Tutorial
           href: simple-tutorial/index.html
