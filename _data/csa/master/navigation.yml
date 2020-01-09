@@ -74,9 +74,21 @@
       sub: release-notes/navigation.json
 
 - text: Learning & Training
-  id: cat-learning-training
+  name: cat-learning-training
   sub:
-    - text: Learning & Training Overview
-      href: learning-overview/index.html
+    - text: Learning & Training
+      href: learning-and-training.html
       id: pub-learning-overview
-      sub: learning-overview/navigation.json
+      sub:
+        - text: Simple Tutorial
+          href: simple-tutorial/index.html
+          id: pub-simple-tutorial
+          sub: simple-tutorial/navigation.json
+        - text: Secure Tutorial
+          href: secure-tutorial/index.html
+          id: pub-secure-tutorial
+          sub: secure-tutorial/navigation.json
+        - text: Stateful Tutorial
+          href: stateful-tutorial/index.html
+          id: pub-stateful-tutorial
+          sub: stateful-tutorial/navigation.json
