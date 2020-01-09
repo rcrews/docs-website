@@ -1,0 +1,82 @@
+---
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+
+- text: Cloudera Streaming Analytics
+  id: landing-cloudera-streaming-analytics
+  href: /csa/1.1.0/index.html
+  display: none
+
+- text: Concepts
+  id: cat-concepts
+  sub:
+    - text: Overview
+      href: overview/index.html
+      id: pub-overview
+      sub: overview/navigation.json
+    - text: Apache Flink Overview
+      href: flink-overview/index.html
+      id: pub-flink-overview
+      sub: flink-overview/navigation.json
+    - text: Security Overview
+      href: security-overview/index.html
+      id: pub-security-flink-overview
+      sub: security-overview/navigation.json
+
+- text: Installation
+  id: cat-install
+  sub:
+    - text: Support Matrix
+      href: support-matrix/index.html
+      id: pub-support-matrix
+      sub: support-matrix/navigation.json
+    - text: Installation
+      href: installation/index.html
+      id: pub-installation
+      sub: installation/navigation.json
+
+- text: How To
+  id: cat-how-to
+  sub:
+    - text: Development
+      href: development/index.html
+      id: pub-development
+      sub: development/navigation.json
+    - text: Customization
+      href: customization/index.html
+      id: pub-customization
+      sub: customization/navigation.json
+    - text: Configuration
+      href: configuration/index.html
+      id: pub-configuration/index.html
+      sub: configuration/navigation.json
+    - text: Security
+      href: security/index.html
+      id: pub-security/index.html
+      sub: security/navigation.json
+    - text: Operation
+      href: operation/index.html
+      id: pub-operation/index.html
+      sub: operation/navigation.json
+
+- text: Release Notes
+  id: cat-releasenotes
+  sub:
+    - text: Release Notes
+      href: release-notes/index.html
+      id: pub-release-notes
+      sub: release-notes/navigation.json
+
+- text: Learning & Training
+  id: cat-learning-training
+  sub:
+    - text: Learning & Training Overview
+      href: learning-overview/index.html
+      id: pub-learning-overview
+      sub: learning-overview/navigation.json
