@@ -13,10 +13,12 @@
       - title: master
         url: /HDPDocuments/HDP3/HDP-master/index.html
     - title: "3.1"
-      url: /HDPDocuments/HDP3/HDP-3.1.4/index.html
+      url: /HDPDocuments/HDP3/HDP-3.1.5/index.html
       minors:
-      - title: 3.1.4
+      - title: 3.1.5
         type: Latest
+        url: /HDPDocuments/HDP3/HDP-3.1.5/index.html
+      - title: 3.1.4
         url: /HDPDocuments/HDP3/HDP-3.1.4/index.html
       - title: 3.1.0
         url: /HDPDocuments/HDP3/HDP-3.1.0/index.html
@@ -151,10 +153,12 @@
       - title: master
         url: /HDPDocuments/Ambari-master/index.html
     - title: "2.7"
-      url: /HDPDocuments/Ambari/Ambari-2.7.4.0/index.html
+      url: /HDPDocuments/Ambari/Ambari-2.7.5.0/index.html
       minors:
-        - title: 2.7.4.0
+        - title: 2.7.5.0
           type: Latest
+          url: /HDPDocuments/Ambari/Ambari-2.7.5.0/index.html
+        - title: 2.7.4.0
           url: /HDPDocuments/Ambari/Ambari-2.7.4.0/index.html
         - title: 2.7.3.0
           url: /HDPDocuments/Ambari/Ambari-2.7.3.0/index.html
@@ -1394,10 +1398,12 @@
       - title: master
         url: /csa/master/index.html
     - title: "1.0"
-      url: /csa/1.0.0/index.html
+      url: /csa/1.1.0/index.html
       minors:
-        - title: 1.0.0
+        - title: 1.1.0
           type: Latest
+          url: /csa/1.1.0/index.html
+        - title: 1.0.0
           url: /csa/1.0.0/index.html
 
 - name: Stream Processing
