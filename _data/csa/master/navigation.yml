@@ -74,9 +74,9 @@
       sub: release-notes/navigation.json
 
 - text: Learning & Training
-  name: cat-learning-overview
+  id: cat-learning-training
   sub:
-    - text: Learning & Training
-      id: cat-learning-overview
-      href: learning-and-training.html
-      sub: learning-and-training/navigation.json
+    - text: Learning & Training Overview
+      href: learning-overview/index.html
+      id: pub-learning-overview
+      sub: learning-overview/navigation.json
