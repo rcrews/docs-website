@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Streaming Analytics
+title: Cloudera Streaming Analytics
 version: 1.1.0
 base-path: /csa/1.1.0/
 
