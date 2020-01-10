@@ -326,7 +326,7 @@
           url: /HDPDocuments/DP/DP-1.0.0/index.html
 
 - name: Data Lifecycle Manager
-  latest-version: 1.5.0
+  latest-version: 1.5.1
   latest-url: /HDPDocuments/DLM1/DLM-1.5.1/index.html
   search-name: Data Lifecycle Manager
   versions:
@@ -543,11 +543,11 @@
       url: /cdp/cloud/index.html
 
 - name: Cloudera Data Platform Data Center
-  latest-version: 7.0
+  latest-version: "7.0"
   latest-url: /cdpdc/7.0/index.html
   search-name: cdpdc
   versions:
-    - title: 7.0
+    - title: "7.0"
       url: /cdpdc/7.0/index.html
 
 - name: Management Console

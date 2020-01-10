@@ -1,8 +1,8 @@
 ---
 layout: product
 title: Streaming Analytics
-version: 1.0.0
-base-path: /csa/1.0.0/
+version: master
+base-path: /csa/master/
 
 sections:
   - title: Release Notes
