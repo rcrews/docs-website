@@ -12,7 +12,7 @@ sections:
       - title: Release Notes
         url: release-notes/index.html
       - title: Support Matrix
-        url: support-matrix/topics/csa-system-req.html
+        url: support-matrix/index.html
 ---
 Cloudera Streaming Analytics powered by Apache Flink offers a framework
 for real-time stream processing and streaming analytics. Connected with
