@@ -42,13 +42,14 @@ exclude:
   - /cfm/2.0.0/operator-api/
 
   # Unreleased documentation
+  - /HDPDocuments/Cloudbreak/Cloudbreak-1.10.0/
   - /HDPDocuments/DAS/DAS-1.4.4/
   - /HDPDocuments/DLM1/DLM-1.5.1/
+  - /HDPDocuments/DP/DP-1.2.3/
+  - /HDPDocuments/DSS1/DSS-1.6.0/
   - /cfm/2.0.0/
   - /csa/1.0.0/
   - /csp/3.0.0/
-  - /dp/1.2.3/
-  - /dss/1.6.0/
 
   # "master" version for docs-dev only
   - /ccp/master/
