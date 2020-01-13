@@ -77,6 +77,6 @@
   id: cat-learning-training
   sub:
     - text: Learning & Training Overview
-      id: cat-learning-overview
-      href: learning-and-training.html
+      href: learning-overview/index.html
+      id: pub-learning-overview
       sub: learning-overview/navigation.json
