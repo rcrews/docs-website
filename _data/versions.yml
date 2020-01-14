@@ -468,15 +468,20 @@
           url: /HDPDocuments/HDPS/HDPS-3.0.0/index.html
 
 - name: Cloudbreak
-  latest-version: 2.9.1
-  latest-url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/index.html
+  latest-version: 2.10.0
+  latest-url: /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/index.html
   search-name: Cloudbreak
   versions:
+    - title: "2.10"
+      url: /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/index.html
+      minors:
+        - title: 2.10.0
+          type: Latest
+          url: /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/index.html
     - title: "2.9"
       url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/index.html
       minors:
         - title: 2.9.1
-          type: Latest
           url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/index.html
         - title: 2.9.0
           url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.0/index.html

@@ -517,11 +517,16 @@
       minors:
       - title: master
         url: /HDPDocuments/Cloudbreak/Cloudbreak-master/index.html
+    - title: "2.10"
+      url: /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/index.html
+      minors:
+        - title: 2.10.0
+          type: Latest
+          url: /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/index.html
     - title: "2.9"
       url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/index.html
       minors:
         - title: 2.9.1
-          type: Latest
           url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/index.html
         - title: 2.9.0
           url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.0/index.html
