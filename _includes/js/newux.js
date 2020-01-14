@@ -1348,7 +1348,7 @@ var NEWUX = (function($) {
             $(".tab-win a").click(function(e) {
                 e.preventDefault();
                 var p = $(this).closest('.tab-win');
-                var i = '#'+$(this).attr('data-target');
+                var i = $(this).attr('data-target');
   
                 $(this).closest('ul').find('li').removeClass("active");
                 $(this).parent().addClass('active');
