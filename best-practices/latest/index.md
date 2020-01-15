@@ -13,8 +13,4 @@ base-path: /best-practices/latest/
 #         url: release-notes/index.html
 
 ---
-Sociosqu elit in convallis proin lobortis tellus erat curabitur
-imperdiet maecenas, ornare ultrices pulvinar dis taciti purus penatibus
-elementum facilisi, urna litora etiam vulputate integer aptent
-ullamcorper tortor rhoncus, venenatis non dapibus at consectetur montes
-amet nisi pretium.
+The Best Practices library is a collection of tips, tricks, and proven practices contributed by our talented Cloudera engineers working in house and in the field world-wide. These recommendations represent the rich experience obtained working with customers to solve some of the most complex technical problems related to enterprise-class data management in the industries of financial services, telco, healthcare, public sector, technology, and manufacturing. 
