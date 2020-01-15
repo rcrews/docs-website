@@ -1,0 +1,7 @@
+---
+# Navigation data previously in this file
+# has been centralized into the _data folder.
+# Data that used to be here is now at
+#   _data/best-practices/master/navigation.yml
+---
+{{ site.data.best-practices.master.navigation | jsonify }}

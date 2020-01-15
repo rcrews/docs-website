@@ -2,6 +2,12 @@
 layout: json
 json:
 
+- title: Best Practices
+  products:
+    - text: Best Practices
+      href: /best-practices/master/index.html
+      icon: /common/img/mini_icons/icon-bp.png
+
 - title: CDP Cloud
   cloudera-manager-history:
     - cloudera-manager/master

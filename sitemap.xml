@@ -1,6 +1,7 @@
 ---
 layout: sitemap
 sitemaps:
+  - https://docs.cloudera.com/best-practices/latest/sitemap.xml
   - https://docs.cloudera.com/common/sitemap.xml
   - https://docs.cloudera.com/ccp/2.0.1/sitemap.xml
   - https://docs.cloudera.com/cdf-datahub/7.0.2/sitemap.xml

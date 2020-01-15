@@ -42,6 +42,7 @@ exclude:
   - /cfm/2.0.0/operator-api/
 
   # "master" version for docs-dev only
+  - /best-practices/master/
   - /ccp/master/
   - /cdf-datahub/master/
   - /cdp/master/
