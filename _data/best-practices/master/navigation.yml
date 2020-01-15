@@ -28,10 +28,10 @@
 - text: How To
   id: cat-howto
   sub:
-    - text: Impala Partioning
-      href: impala-partioning/index.html
-      id: pub-impala-partioning
-      sub: impala-partioning/navigation.json
+    - text: Impala Partitioning
+      href: impala-partitioning/index.html
+      id: pub-impala-partitioning
+      sub: impala-partitioning/navigation.json
 
     - text: Impala Performance
       href: impala-performance/index.html
