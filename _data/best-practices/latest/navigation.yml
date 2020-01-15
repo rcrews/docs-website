@@ -8,7 +8,7 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Data Warehouse
+- text: Best Practices
   id: landing-best-practices
   href: /best-practices/latest/index.html
   display: none
