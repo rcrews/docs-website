@@ -28,12 +28,12 @@
 - text: How To
   id: cat-howto
   sub:
-    - text: Apache Impala Partioning
+    - text: Impala Partioning
       href: impala-partioning/index.html
       id: pub-impala-partioning
       sub: impala-partioning/navigation.json
 
-    - text: Apache Impala Performance
+    - text: Impala Performance
       href: impala-performance/index.html
       id: pub-impala-performance
       sub: impala-performance/navigation.json
