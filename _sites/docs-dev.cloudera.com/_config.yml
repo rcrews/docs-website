@@ -37,6 +37,7 @@ exclude:
   - /Gemfile
   - /Gemfile.lock
   - /README.md
+  - "*.bbprojectd"
 
   # Static content that doesn't need to be part of most builds
   - /common/fonts/

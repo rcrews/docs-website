@@ -37,6 +37,7 @@ exclude:
   - /Gemfile
   - /Gemfile.lock
   - /README.md
+  - "*.bbprojectd"
 
   # Sarah's special API reference only on dev for now
   - /cfm/2.0.0/operator-api/
