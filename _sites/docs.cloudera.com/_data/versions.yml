@@ -523,6 +523,14 @@
 # /HDPDocuments/index.html and adjust the number of tiles to render
 # there.
 
+- name: Best Practices
+  latest-version: latest
+  latest-url: /best-practices/latest/index.html
+  search-name: best-practices
+  versions:
+    - title: latest
+      url: /best-practices/latest/index.html
+
 - name: Cloudera Data Platform
   latest-version: cloud
   latest-url: /cdp/cloud/index.html
