@@ -384,8 +384,11 @@ var CHOME = (function($) {
         $(this).parent("li").addClass("active");
         $(".role-toggle .card-group").hide();
         $(".role-toggle .card-group." + target).show();
+        if (target !== "by-product") $("#e2ai").hide();
+        if (target === "by-product") $("#e2ai").show();
     })
-    $(".role-toggle .card-group.by-role").hide();
+    $(".role-toggle .card-group.by-task").hide();
+    $(".role-toggle .card-group.best-practices").hide();
 }(jQuery));
 
 
