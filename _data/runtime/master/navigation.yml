@@ -369,6 +369,11 @@
           id: pub-search-deploying
           sub: search-deploying/navigation.json
 
+        - text: Tuning Cloudera Search
+          href: search-tuning/index.html
+          id: pub-search-tuning
+          sub: search-tuning/navigation.json
+
         - text: Managing Cloudera Search
           href: search-managing/index.html
           id: pub-search-managing
