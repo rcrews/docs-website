@@ -38,6 +38,11 @@
       id: pub-impala-performance
       sub: impala-performance/navigation.json
 
+    - text: Accelerating Spark ML Apps
+      href: accelerating-spark-ml-applications/index.html
+      id: pub-accelerating-spark-ml-applications
+      sub: accelerating-spark-ml-applications/navigation.json
+
     - text: Authors
       href: authors/index.html
       id: pub-authors
