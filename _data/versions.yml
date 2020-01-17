@@ -1287,12 +1287,15 @@
   latest-url: /csa/1.1.0/index.html
   search-name: csa
   versions:
-    - title: "1.0"
+    - title: "1.1"
       url: /csa/1.1.0/index.html
       minors:
         - title: 1.1.0
           type: Latest
           url: /csa/1.1.0/index.html
+    - title: "1.0"
+      url: /csa/1.0.0/index.html
+      minors:
         - title: 1.0.0
           url: /csa/1.0.0/index.html
 
