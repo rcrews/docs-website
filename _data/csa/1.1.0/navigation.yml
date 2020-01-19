@@ -10,13 +10,13 @@
 
 - text: Cloudera Streaming Analytics
   id: landing-cloudera-streaming-analytics
-  href: /csa/1.1.0/index.html
+  href: csa/1.1.0/index.html
   display: none
 
 - text: Concepts
   id: cat-concepts
   sub:
-    - text: Overview
+    - text: Cloudera Streaming Analytics Overview
       href: overview/index.html
       id: pub-overview
       sub: overview/navigation.json
@@ -54,15 +54,15 @@
       sub: customization/navigation.json
     - text: Configuration
       href: configuration/index.html
-      id: pub-configuration/index.html
+      id: pub-configuration
       sub: configuration/navigation.json
     - text: Security
       href: security/index.html
-      id: pub-security/index.html
+      id: pub-security
       sub: security/navigation.json
     - text: Operation
       href: operation/index.html
-      id: pub-operation/index.html
+      id: pub-operation
       sub: operation/navigation.json
 
 - text: Release Notes
