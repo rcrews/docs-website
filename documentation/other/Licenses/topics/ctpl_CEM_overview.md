@@ -23,4 +23,4 @@ Management:
 
 * [EFM](ctpl_EFM-CEM.html)
 * [MiNiFi](ctpl_Minifi-CEM.html)
-* [NiFi MiNiFi CPP](ctpl_Nifi-minif-CPP.html) 
+* [NiFi MiNiFi CPP](ctpl_Nifi-minifi-CPP.html) 
