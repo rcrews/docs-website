@@ -2,6 +2,12 @@
 layout: json
 json:
 
+- title: Best Practices
+  products:
+    - text: Best Practices
+      href: /best-practices/latest/index.html
+      icon: /common/img/mini_icons/icon-bp.png
+
 - title: CDP Cloud
   cloudera-manager-history:
     - cloudera-manager/7.0.2
@@ -80,6 +86,10 @@ json:
       href: /cfm/1.0.1/index.html
       icon: /common/img/mini_icons/icon-cfm.png
 
+    - text: Cloudera Streaming Analytics
+      href: /csa/1.1.0/index.html
+      icon: /common/img/mini_icons/icon-csa.png
+
     - text: Cloudera Stream Processing
       href: /csp/2.0.1/index.html
       icon: /common/img/mini_icons/icon-csp.png
@@ -91,6 +101,10 @@ json:
     - text: Streams Replication Manager for HDF and HDP
       href: /srm/1.0.0/index.html
       icon: /common/img/mini_icons/icon-srm.png
+
+    - text: Cloudera Data Flow in Data Hub
+      href: /cdf-datahub/7.0.2/index.html
+      icon: /common/img/mini_icons/icon-cdf-datahub.png
 
 - title: Applications
   products:

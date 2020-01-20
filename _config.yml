@@ -37,15 +37,15 @@ exclude:
   - /Gemfile
   - /Gemfile.lock
   - /README.md
+  - "*.bbprojectd"
 
   # Sarah's special API reference only on dev for now
   - /cfm/2.0.0/operator-api/
 
-  # Jason's tab-win goes on dev only for now
-  - _includes/js/tab-win.js
-
   # "master" version for docs-dev only
+  - /best-practices/master/
   - /ccp/master/
+  - /cdf-datahub/master/
   - /cdp/master/
   - /cdpdc/master/
   - /cem/master/

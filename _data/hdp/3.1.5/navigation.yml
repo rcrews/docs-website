@@ -54,10 +54,10 @@
       sub:
         - text: Apache Ambari Installation
           id: pub-bk_ambari-installation
-          href: ../../Ambari-2.7.4.0/bk_ambari-installation/index.html
+          href: ../../Ambari-2.7.5.0/bk_ambari-installation/index.html
         - text: Apache Ambari Installation for IBM Power Systems
           id: pub-bk_ambari-installation-ppc
-          href: ../../Ambari-2.7.4.0/bk_ambari-installation-ppc/index.html
+          href: ../../Ambari-2.7.5.0/bk_ambari-installation-ppc/index.html
         - text: Installing Apache Atlas
           id: pub-installing-atlas
           href: installing-atlas/index.html
@@ -96,13 +96,13 @@
       sub:
         - text: Apache Ambari Major Upgrade
           id: pub-bk_ambari-upgrade-major
-          href: ../../Ambari-2.7.4.0/bk_ambari-upgrade-major/index.html
+          href: ../../Ambari-2.7.5.0/bk_ambari-upgrade-major/index.html
         - text: Apache Ambari Minor Upgrade
           id: pub-bk_ambari-upgrade
-          href: ../../Ambari-2.7.4.0/bk_ambari-upgrade/index.html
+          href: ../../Ambari-2.7.5.0/bk_ambari-upgrade/index.html
         - text: Apache Ambari Upgrade for IBM Power Systems
           id: pub-bk_ambari-upgrade-ppc
-          href: ../../Ambari-2.7.4.0/bk_ambari-upgrade-ppc/index.html
+          href: ../../Ambari-2.7.5.0/bk_ambari-upgrade-ppc/index.html
 
 - text: How To
   id: cat-how-to

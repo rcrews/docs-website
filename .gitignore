@@ -1,7 +1,7 @@
 #
 # cloudera_docs/docs-website .gitignore
 # Questions: Robert Crews <rcrews@cloudera.com>
-# Last Update: 2019-09-17
+# Last Update: 2020-01-15
 #
 
 _utils/tinycc/urls.json
@@ -19,6 +19,7 @@ dcc-url-aliases.js
 *\ copy.*
 untitled\ folder/
 *.textClipping
+*.bbprojectd
 
 # Below are some "best practice" gitignore settings from various sources
 ###############################################################################

@@ -42,6 +42,8 @@
   exist: /cfm/1.0.1/
 - alias: /cloudera-manager/latest/
   exist: /cloudera-manager/7.0.3/
+- alias: /csa/latest/
+  exist: /csa/1.1.0/
 - alias: /csp/latest/
   exist: /csp/2.0.0/
 
@@ -71,9 +73,9 @@
   exist: /documentation/kafka/4-1-x.html
 
 - alias: /documentation/other/accumulo/latest/
-  exist: /documentation/other/accumulo/1-7-2/
+  exist: /documentation/other/accumulo/1-9-2/
 - alias: /documentation/other/accumulo/latest.html
-  exist: /documentation/other/accumulo/1-7-2.html
+  exist: /documentation/other/accumulo/1-9-2.html
 
 - alias: /documentation/other/connectors/hive-jdbc/latest/
   exist: /documentation/other/connectors/hive-jdbc/2-6-9/
@@ -114,3 +116,34 @@
   exist: /smm/1.2.1/
 - alias: /srm/latest/
   exist: /srm/1.0.0/
+
+# Cloudera Enterprise Upgrade Guide
+
+- alias: /documentation/enterprise/5-3-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-4-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-5-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-6-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-7-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-8-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-9-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-10-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-11-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-12-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-13-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-14-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-15-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf
+- alias: /documentation/enterprise/5-16-x/PDF/cloudera-upgrade.pdf
+  exist: /documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf

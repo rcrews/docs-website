@@ -36,6 +36,11 @@
       id: pub-collaboration-overview
       sub: collaboration-overview/navigation.json
 
+    - text: Autoscaling Overview
+      href: autoscaling-overview/index.html
+      id: pub-autoscaling-overview
+      sub: autoscaling-overview/navigation.json
+
 
 - text: Planning
   id: cat-planning
@@ -100,7 +105,7 @@
     - text: Applications
       href: applications/index.html
       id: pub-applications
-      sub: applications/navigation.json      
+      sub: applications/navigation.json
 
     - text: Jobs and Pipelines
       href: jobs-pipelines/index.html

@@ -1,5 +1,5 @@
 ---
-layout: home_dev
+layout: home
 title: Cloudera Product Documentation
 description: Cloudera Product Documentation
 ---
@@ -19,64 +19,13 @@ description: Cloudera Product Documentation
 
 <ul class="segments">
   <li class="active"><a data-target="by-product">By Product</a></li>
-  <li><a data-target="by-role">By Task</a></li>
+  <li><a data-target="by-task">By Task</a></li>
+  <li><a data-target="best-practices">Best Practices</a></li>
 </ul>
 
 <section class="std white role-toggle">
   <div class="section-title">Cloudera Data Platform</div>
   <div class="cards">
-    <div class="card-group by-role">
-      <div class="card">
-        <div class="card-title">For developers</div>
-        <ul class="card-text">
-          <li><a href="/machine-learning/master/index.html">Machine learning services</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-title">For administrators</div>
-        <ul class="card-text">
-          <li><a href="/cdp/master/overview/topics/cdp-overview.html">Overview</a></li>
-          <li><a href="/management-console/master/environments/index.html">Environments</a></li>
-          <li><a href="/management-console/master/classic-clusters/topics/mc-managing-classic-clusters.html">Migration from on prem</a></li>
-          <li><a href="/workload-manager/master/index.html">Workload management</a></li>
-          <li><a href="/data-warehouse/master/index.html">Data warehousing services</a></li>
-          <li><a href="/machine-learning/master/index.html">Machine learning services</a></li>
-          <li><a href="/management-console/master/user-management/index.html">User management</a></li>
-          <li><a href="/data-hub/master/index.html">Data Hub cluster creation</a></li>
-          <li><a href="/cloudera-manager/master/index.html">Cluster management</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-title">For data stewards</div>
-        <ul class="card-text">
-          <li><a href="/management-console/master/data-lakes/index.html">Data lake management</a></li>
-          <li><a href="/runtime/master/howto-security.html">Security</a></li>
-          <li><a href="/data-catalog/master/index.html">Governance</a></li>
-          <li><a href="/replication-manager/master/index.html">Data replication</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card-group by-role">
-      <div class="card">
-        <div class="card-title">Data Center</div>
-        <ul class="card-text">
-          <li><a href="/cdpdc/7.0/index.html">Overview</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-title"></div>
-        <ul>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-title">&nbsp;</div>
-        <ul>
-          <li><a href="/runtime/7.0.3/index.html">Cloudera Runtime</a></li>
-        </ul>
-      </div>
-    </div>
-
     <div class="card-group by-product">
       <div class="card">
         <div class="card-title">Management Services</div>
@@ -123,22 +72,86 @@ description: Cloudera Product Documentation
       </div>
     </div>
 
+    <div class="card-group by-task">
+      <div class="card">
+        <div class="card-title">For developers</div>
+        <ul class="card-text">
+          <li><a href="/machine-learning/master/index.html">Machine learning services</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">For administrators</div>
+        <ul class="card-text">
+          <li><a href="/cdp/master/overview/topics/cdp-overview.html">Overview</a></li>
+          <li><a href="/management-console/master/environments/index.html">Environments</a></li>
+          <li><a href="/management-console/master/classic-clusters/topics/mc-managing-classic-clusters.html">Migration from on prem</a></li>
+          <li><a href="/workload-manager/master/index.html">Workload management</a></li>
+          <li><a href="/data-warehouse/master/index.html">Data warehousing services</a></li>
+          <li><a href="/machine-learning/master/index.html">Machine learning services</a></li>
+          <li><a href="/management-console/master/user-management/index.html">User management</a></li>
+          <li><a href="/data-hub/master/index.html">Data Hub cluster creation</a></li>
+          <li><a href="/cloudera-manager/master/index.html">Cluster management</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">For data stewards</div>
+        <ul class="card-text">
+          <li><a href="/management-console/master/data-lakes/index.html">Data lake management</a></li>
+          <li><a href="/runtime/master/howto-security.html">Security</a></li>
+          <li><a href="/data-catalog/master/index.html">Governance</a></li>
+          <li><a href="/replication-manager/master/index.html">Data replication</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-group best-practices">
+      <div class="card">
+        <div class="card-title">Query tuning</div>
+        <ul class="card-text">
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-debugging-queries-with-query-profiles.html">Impala query profiles</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-troubleshooting-slow-running-queries.html">Slow-running Impala queries</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-tuning-sql-queries.html">Impala SQL queries</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-setup-dedicated-coordinators.html">Using dedicated coordinators</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Partitioning</div>
+        <ul class="card-text">
+          <li><a href="/best-practices/master/impala-partitioning/topics/bp-impala-partitioning-best-practices-overview.html">Impala/Hive strategies</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-partitioning-granularity-recommendations.html">Granularity recommendations</a></li>
+          <li><a href="/best-practices/master/impala-partitioning/topics/bp-impala-partitioning-file-counts-size.html">File count/size</a></li>
+          <li><a href="/best-practices/master/impala-partitioning/topics/bp-impala-partitioning-compacting.html">Compacting partitions</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Impala Performance Tuning</div>
+        <ul class="card-text">
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-performance-tuning-guidelines-overview.html">Tuning reference</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-recommended-set-options.html">Recommended SET options</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-on-demand-metadata-and-mgmt.html">Metadata management</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-recommended-configurations.html">Recommended configurations</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-table-column-statistics.html">Table/column stats</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-resource-pool-design.html">Resource pool design</a></li>
+          <li><a href="/best-practices/master/impala-performance/topics/bp-impala-minimizing-overhead-transmitting-results-to-clients.html">Client connections</a></li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<section class="std white">
+<section id="e2ai" class="std white role-toggle">
   <div class="section-title">Edge to AI</div>
   <div class="cards">
-    <div class="card-group">
+    <div class="card-group by-product">
       <div class="card">
         <div class="card-title">DataFlow</div>
         <ul>
           <li><a href="/cem/master/index.html">Cloudera Edge Management</a></li>
           <li><a href="/cfm/master/index.html">Cloudera Flow Management</a></li>
-          <li><a href="/csa/master/index.html">Cloudera Stream Analytics</a></li>
+          <li><a href="/csa/master/index.html">Cloudera Streaming Analytics</a></li>
           <li><a href="/csp/master/index.html">Cloudera Stream Processing</a></li>
-          <li><a href="/smm/master/index.html">Streams Messaging Manager for HDF and HDP</a></li>
-          <li><a href="/srm/master/index.html">Streams Replication Manager for HDF and HDP</a></li>
+          <li><a href="/cdf-datahub/master/index.html">Cloudera Data Flow for Data Hub</a></li>
         </ul>
       </div>
       <div class="card">
@@ -154,6 +167,7 @@ description: Cloudera Product Documentation
         </ul>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -168,7 +182,7 @@ description: Cloudera Product Documentation
       </div>
       <div class="card">
         <div class="card-title">
-          <a href="/HDPDocuments/HDF3/HDF-3.4.1.1/index.html">HDF Enterprise</a>
+          <a href="/HDPDocuments/index-hdf.html">HDF Enterprise</a>
         </div>
       </div>
       <div class="card">
@@ -177,5 +191,6 @@ description: Cloudera Product Documentation
         </div>
       </div>
     </div>
+
   </div>
 </section>

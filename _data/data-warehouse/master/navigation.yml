@@ -51,6 +51,11 @@
       id: pub-managing-warehouses
       sub: managing-warehouses/navigation.json
 
+    - text: Setting Up Private Networking
+      href: private-networking-deployments/index.html
+      id: pub-private-networking-deployments
+      sub: private-networking-deployments/navigation.json
+
 # - text: Troubleshooting
 #   id: cat-troubleshooting
 #   sub:

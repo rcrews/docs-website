@@ -1,59 +1,4 @@
 /**
- * Formats a copyright string.
- * Assumes digit groups are 4-digit years.
- * Sorts years, removes duplicates, then formats for Cloudera, Inc.
- * @param {String} content - Copyright statement, possibly broken
- * @returns {String} Copyright string for Cloudera, Inc.
- */
-function formatCopyright(content) {
-    let out = "";
-    if (!content || !content.match(/20\d\d/)) {
-        content = `${new Date().getFullYear()}`;
-    }
-    content.split(/\D+/)
-           .filter(v => { return v.length > 1; })
-           .filter((v, i, s) => { return s.indexOf(v) === i; })
-           .sort()
-           .forEach((v, i, s) => {
-               if (i > 0) {
-                   if (parseInt(v) === parseInt(s[i - 1]) + 1) {
-                       out = `${out}\u2013${v}`;
-                   } else {
-                       out = `${out}, ${v}`;
-                   }
-               } else {
-                   out = v;
-               }
-           });
-    out = out.replace(/(?:^(\d{4})\u2013(\d{4},))/, "$1, $2");
-    out = out.replace(/(?:(\s\d{4})\u2013(\d{4},))/g, "$1, $2");
-    out = out.replace(/(?:(\d{4})(?:\u2013\d{4})+(\u2013\d{4}))/g, "$1$2");
-    return `© ${out} by Cloudera, Inc. All rights reserved.`;
-}
-
-/**
- * Transforms DITA/HTML4 object element to YouTube-preferred iframe markup.
- * DITA: &lt;object data="https://www.youtube.com/embed/WhOyVz3VJ7c">&lt;/object>
- */
-function objectForYouTube() {
-    const ALLOW = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
-    const WIDTH = 560;
-    const HEIGHT = 315;
-    document.querySelectorAll("object").forEach(o => {
-        if (o.data.match(/\/\/www\.youtube\.com\//)) {
-            iframe = document.createElement("iframe");
-            iframe.setAttribute("frameborder", 0);
-            iframe.setAttribute("allow", ALLOW);
-            iframe.setAttribute("allowfullscreen", "allowfullscreen");
-            iframe.src = o.data;
-            o.width ? iframe.width = o.width : iframe.width = WIDTH;
-            o.height ? iframe.height = o.height : iframe.height = HEIGHT;
-            o.parentNode.replaceChild(iframe, o);
-        }
-    });
-}
-
-/**
  * NEWUX - Functionality associated with the 2019 Rework of the Cloudera Documentation.
  *
  * @link http://docs.cloudera.com
@@ -448,7 +393,7 @@ var NEWUX = (function($) {
             // Copyright
             let copyright = $(document).find("meta[name='rights']").attr("content");
             if (typeof copyright !== "undefined") {
-                Pubnav.pagestate.copyright = formatCopyright(copyright);
+                Pubnav.pagestate.copyright = Utils.formatCopyright(copyright);
             } else {
                 Pubnav.pagestate.copyright = COPYRIGHT;
             }
@@ -518,7 +463,7 @@ var NEWUX = (function($) {
             // Define what we're going to do when the content comes back.
             function swapContent() {
                 if (faded && complete) {
-                    $content.html(elems);
+                    $content.html(elems); // should I be using html() here?
                     if (hash !== "" && typeof hash !== "undefined") {
                         hash = hash.substr(1);
                         let el = document.getElementById(hash);
@@ -530,6 +475,7 @@ var NEWUX = (function($) {
                         document.body.scrollTop = document.documentElement.scrollTop = 0;
                     }
                     $content.fadeTo(200,1);
+                    Transforms.run($content); // Re-apply filters and event handlers to the new content.
                     Pubnav.updatePageState();
                 } else {
                     // We're not ready yet.
@@ -592,7 +538,7 @@ var NEWUX = (function($) {
                     // Copyright
                     let copyright = $(virtualDOM).find("meta[name='rights']").attr("content");
                     if (typeof copyright !== "undefined") {
-                        Pubnav.pagestate.copyright = formatCopyright(copyright);
+                        Pubnav.pagestate.copyright = Utils.formatCopyright(copyright);
                     } else {
                         Pubnav.pagestate.copyright = `&copy; ${new Date().getFullYear()} by Cloudera, Inc. All rights reserved.`;
                     }
@@ -607,7 +553,7 @@ var NEWUX = (function($) {
 
                     complete = true;
                     swapContent();
-                    objectForYouTube();
+
                 }
             }).fail(function( jqXHR, status, error) {
                 // If the request succeeds, this function gets "data", "status", "jqXHR"
@@ -1056,6 +1002,16 @@ var NEWUX = (function($) {
 
             $(".lucene-overlay .close-btn, .close-search-results").on("click", this.hideSearch.bind(this));
             $(".lucene-results .more-link").on("click", this.loadMoreResults.bind(this));
+
+            // SEARCH DRAWER
+            $(".launch-search").on("click", function() {
+                $(this).hide();
+                $(".search").show().addClass("open");
+            });
+            $(".search-close").on("click", function() {
+                $(".search").hide().removeClass("open");
+                $(".launch-search").show();
+            });
         },
 
         formatReleaseNumber: function(version, shorten) {
@@ -1308,37 +1264,120 @@ var NEWUX = (function($) {
                     return false;
             }
             return true;
+        },
+        formatCopyright: function(content) {
+            /**
+             * Formats a copyright string.
+             * Assumes digit groups are 4-digit years.
+             * Sorts years, removes duplicates, then formats for Cloudera, Inc.
+             * @param {String} content - Copyright statement, possibly broken
+             * @returns {String} Copyright string for Cloudera, Inc.
+             */
+            let out = "";
+            if (!content || !content.match(/20\d\d/)) {
+                content = `${new Date().getFullYear()}`;
+            }
+            content.split(/\D+/)
+                .filter(v => { return v.length > 1; })
+                .filter((v, i, s) => { return s.indexOf(v) === i; })
+                .sort()
+                .forEach((v, i, s) => {
+                    if (i > 0) {
+                        if (parseInt(v) === parseInt(s[i - 1]) + 1) {
+                            out = `${out}\u2013${v}`;
+                        } else {
+                            out = `${out}, ${v}`;
+                        }
+                    } else {
+                        out = v;
+                    }
+                });
+            out = out.replace(/(?:^(\d{4})\u2013(\d{4},))/, "$1, $2");
+            out = out.replace(/(?:(\s\d{4})\u2013(\d{4},))/g, "$1, $2");
+            out = out.replace(/(?:(\d{4})(?:\u2013\d{4})+(\u2013\d{4}))/g, "$1$2");
+            return `© ${out} by Cloudera, Inc. All rights reserved.`;
         }
     };
 
+    // Series of functions and event handlers to be attached to content on the page.
     var Transforms = {
+        bindEvents: function($content) {
+            // Add in event handlers here..
+
+            // Example...
+            // $content.find('a').on('click', function(evt) {
+            //     evt.preventDefault();
+            //     console.log('I clicked a link');
+            // });
+        },
         deTarget: function() {
             Array.from(document.querySelectorAll("a[target]")).forEach(at => {
                 if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes("//")) { return; }
                 at.removeAttribute("target");
             });
         },
-        objectForYouTube: objectForYouTube,
-        init: function() {
+        objectForYouTube: function() {
+            /**
+             * Transforms DITA/HTML4 object element to YouTube-preferred iframe markup.
+             * DITA: &lt;object data="https://www.youtube.com/embed/WhOyVz3VJ7c">&lt;/object>
+             */
+
+            const ALLOW = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+            const WIDTH = 560;
+            const HEIGHT = 315;
+            document.querySelectorAll("object").forEach(o => {
+                if (o.data.match(/\/\/www\.youtube\.com\//)) {
+                    iframe = document.createElement("iframe");
+                    iframe.setAttribute("frameborder", 0);
+                    iframe.setAttribute("allow", ALLOW);
+                    iframe.setAttribute("allowfullscreen", "allowfullscreen");
+                    iframe.src = o.data;
+                    o.width ? iframe.width = o.width : iframe.width = WIDTH;
+                    o.height ? iframe.height = o.height : iframe.height = HEIGHT;
+                    o.parentNode.replaceChild(iframe, o);
+                }
+            });
+        },
+        tabs: function() {
+            $(document).ready(function() {
+	           $('.tab-win').find('ul li:first').addClass('active');
+	           $('.tab-win').find('.tabcontent').hide();
+	           $('.tab-win').find('.tabcontent:first').show(); 
+            });
+            
+            $(".tab-win a").click(function(e) {
+                e.preventDefault();
+                var p = $(this).closest('.tab-win');
+                var i = $(this).attr('data-target');
+  
+                $(this).closest('ul').find('li').removeClass("active");
+                $(this).parent().addClass('active');
+                $(p).find('.tabcontents div').hide();
+                $(p).find(i).fadeIn('slow');
+            });
+        },
+        test: function($content) {
+            $content.find('a').css('backgroundColor', 'red');
+        },
+        run: function($content) {
+            /*
+             * Accepts a jQuery element as a parameter, and applies the following filters to it.
+             *
+             * If you want to reference just the element id directly without using jQuery, it will probably be #content,
+             * but to be safe you might want to use $content[0].id;
+             */
+            // this.test($content);
+            // this.bindEvents($content);
             this.deTarget();
             this.objectForYouTube();
+            this.tabs();
         }
     };
 
-    // SEARCH DRAWER
-    $(".launch-search").on("click", function() {
-        $(this).hide();
-        $(".search").show().addClass("open");
-    });
-    $(".search-close").on("click", function() {
-        $(".search").hide().removeClass("open");
-        $(".launch-search").show();
-    });
-
-    Transforms.init();
     WhoAmI.init();
     Pubnav.init();
-    // ProductDrawer.init(); Actually, we can't fire this until the WhoAmI function has fired, so moved the init call over there.
+    // ProductDrawer.init(); - we can't fire this until the WhoAmI function has fired, so moved the init call over there.
     Search.init();
+    Transforms.run($('#content')); // Execute any filters we need to make to the body content. (Code formatting, tabs, JS highlighting, Youtube Embeds etc)
 
 }(jQuery));

@@ -12,6 +12,7 @@ copyright:
     - 2017
     - 2018
     - 2019
+    - 2020
 css: ../Licenses.css
 ---
 # {{ page.title }}

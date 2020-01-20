@@ -1,4 +1,4 @@
 ---
 layout: indexredirect
-product: SmartSense
+product: Data Lifecycle Manager
 ---

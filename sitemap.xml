@@ -1,13 +1,16 @@
 ---
 layout: sitemap
 sitemaps:
+  - https://docs.cloudera.com/best-practices/latest/sitemap.xml
   - https://docs.cloudera.com/common/sitemap.xml
   - https://docs.cloudera.com/ccp/2.0.1/sitemap.xml
+  - https://docs.cloudera.com/cdf-datahub/7.0.2/sitemap.xml
   - https://docs.cloudera.com/cdp/cloud/sitemap.xml
-  - https://docs.cloudera.com/cdpdc/cloud/sitemap.xml
+  - https://docs.cloudera.com/cdpdc/7.0/sitemap.xml
   - https://docs.cloudera.com/cem/1.1.0/sitemap.xml
   - https://docs.cloudera.com/cfm/2.0.0/sitemap.xml
   - https://docs.cloudera.com/cloudera-manager/7.0.3/sitemap.xml
+  - https://docs.cloudera.com/csa/1.1.0/sitemap.xml
   - https://docs.cloudera.com/csp/3.0.0/sitemap.xml
   - https://docs.cloudera.com/data-catalog/cloud/sitemap.xml
   - https://docs.cloudera.com/data-hub/cloud/sitemap.xml
@@ -37,8 +40,8 @@ sitemaps:
   - https://docs.cloudera.com/documentation/other/tutorial/CDH5/sitemap.xml
   - https://docs.cloudera.com/documentation/spark2/2-4-x/sitemap.xml
   - https://docs.cloudera.com/documentation/wxm/latest/sitemap.xml
-  - https://docs.cloudera.com/HDPDocuments/Ambari/Ambari-2.7.4.0/sitemap.xml
-  - https://docs.cloudera.com/HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/sitemap.xml
+  - https://docs.cloudera.com/HDPDocuments/Ambari/Ambari-2.7.5.0/sitemap.xml
+  - https://docs.cloudera.com/HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.4.1/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.1/sitemap.xml
   - https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.3/sitemap.xml
