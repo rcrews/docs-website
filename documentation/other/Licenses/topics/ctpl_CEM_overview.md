@@ -21,4 +21,5 @@ The following pages list the third-party license files for Cloudera Edge
 Management:
 
 * [EFM](ctpl_EFM-CEM.html)
-* [Minifi](ctpl_Minifi-CEM.html)
+* [MiNiFi](ctpl_Minifi-CEM.html)
+* [NiFi MiNiFi CPP](ctpl_Nifi-minif-CPP.html) 
