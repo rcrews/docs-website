@@ -54,15 +54,15 @@
       sub: customization/navigation.json
     - text: Configuration
       href: configuration/index.html
-      id: pub-configuration/index.html
+      id: pub-configuration
       sub: configuration/navigation.json
     - text: Security
       href: security/index.html
-      id: pub-security/index.html
+      id: pub-security
       sub: security/navigation.json
     - text: Operation
       href: operation/index.html
-      id: pub-operation/index.html
+      id: pub-operation
       sub: operation/navigation.json
 
 - text: Release Notes
