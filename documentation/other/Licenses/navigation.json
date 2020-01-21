@@ -74,32 +74,32 @@ json:
 - text: Cloudera Manager
   href: topics/ctpl_cm_overview.html
   sub:
+  - text: Cloudera Manager 7
+    href: topics/ctpl_cm7.html
   - text: Cloudera Manager 6
     href: topics/ctpl_cm6.html
   - text: Cloudera Manager 5
     href: topics/ctpl_cm5.html
-
-- text: Cloudera Manager 4.6
-  href: topics/ctpl_topic_4.html
-  sub:
-  - text: Cloudera Manager Java Components
-    href: topics/ctpl_topic_4_2.html
-  - text: Frontend/JavaScript
-    href: topics/ctpl_topic_4_3.html
-  - text: Cloudera Manager Agent (Python components)
-    href: topics/ctpl_topic_4_4.html
-
-- text: Cloudera Manager 3.7
-  href: topics/ctpl_topic_5.html
-  sub:
-  - text: Cloudera Manager Java Components
-    href: topics/ctpl_topic_5_2.html
-  - text: Frontend/JavaScript
-    href: topics/ctpl_topic_5_3.html
-  - text: Cloudera Manager Agent (Python components)
-    href: topics/ctpl_topic_5_4.html
-  - text: Authorization Manager
-    href: topics/ctpl_topic_5_5.html
+  - text: Cloudera Manager 4.6
+    href: topics/ctpl_topic_4.html
+    sub:
+    - text: Cloudera Manager Java Components
+      href: topics/ctpl_topic_4_2.html
+    - text: Frontend/JavaScript
+      href: topics/ctpl_topic_4_3.html
+    - text: Cloudera Manager Agent (Python components)
+      href: topics/ctpl_topic_4_4.html
+  - text: Cloudera Manager 3.7
+    href: topics/ctpl_topic_5.html
+    sub:
+    - text: Cloudera Manager Java Components
+      href: topics/ctpl_topic_5_2.html
+    - text: Frontend/JavaScript
+      href: topics/ctpl_topic_5_3.html
+    - text: Cloudera Manager Agent (Python components)
+      href: topics/ctpl_topic_5_4.html
+    - text: Authorization Manager
+      href: topics/ctpl_topic_5_5.html
 
 - text: Cloudera Navigator Optimizer
   href: topics/ctpl_navopt.html
