@@ -17,6 +17,10 @@ css: ../Licenses.css
 ---
 # {{ page.title }}
 
-View the full list of third-party licenses for Cloudera Workload XM in
-the following file:
-[Cloudera Workload XM Notice](/documentation/other/shared/licensefiles/WorkloadXM_tpl.txt).
+## Workload XM On Prem 2.0.0, January 2020
+
+* [Cloudera Workload XM On Prem 2.0.0.0 Notice](/documentation/other/shared/licensefiles/wxm_onprem_tpl.txt)
+
+## Workload XM
+
+* [Cloudera Workload XM Notice](/documentation/other/shared/licensefiles/WorkloadXM_tpl.txt)
