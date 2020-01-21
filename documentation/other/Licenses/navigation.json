@@ -114,8 +114,8 @@ json:
 
 # For https://jira.cloudera.com/browse/DOCS-5463
 # Ask Casey Volk if https://jira.cloudera.com/browse/CSP-797 affects this
-# - text: Cloudera Stream Processing
-#   href: topics/ctpl_csp.html
+- text: Cloudera Stream Processing
+  href: topics/ctpl_csp.html
 
 - text: Cloudera Workload XM
   href: topics/ctpl_workloadxm.html
