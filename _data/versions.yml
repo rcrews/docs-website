@@ -562,6 +562,10 @@
   versions:
     - title: "7.0"
       url: /cdpdc/7.0/index.html
+      minors:
+      - title: "7.0"
+        type: latest
+        url: /cdpdc/7.0/index.html
 
 - name: Management Console
   latest-version: cloud
