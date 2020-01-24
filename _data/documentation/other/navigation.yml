@@ -1,4 +1,13 @@
 ---
+#- text: Concepts & Use Cases
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+
 - text: Other
   id: landing-other
   href: /documentation/other/index.html
