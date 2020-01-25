@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  New JDBC Driver v2.6.9 for Apache Hive Released
-date:   11-15-2019 02:40:00 -0800
+date:   2019-11-15 02:40:00 -0800
 ---
 
 We are pleased to announce the release of Cloudera JDBC 2.6.9 driver

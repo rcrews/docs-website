@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  HDP 3.1.5 / Ambari 2.7.5 is now Generally Available
-date:   12-20-2019 02:07:00 -0800
+date:   2019-12-20 02:07:00 -0800
 ---
 
 Greetings!

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  New ODBC Driver v2.6.8 for Apache Impala Released
-date:   11-01-2019 04:41:00 -0800
+date:   2019-11-01 04:41:00 -0800
 ---
 
 We are pleased to announce the release of Cloudera ODBC 2.6.8 driver for
