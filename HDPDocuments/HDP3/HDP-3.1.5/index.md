@@ -13,6 +13,8 @@ sections:
         url: release-notes/index.html
       - title: Support Matrix
         url: https://supportmatrix.hortonworks.com/
+      - title: Release Announcement
+        url: announcement.html
 
   - title: Concepts
     name: concepts

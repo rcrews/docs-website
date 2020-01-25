@@ -12,6 +12,8 @@ sections:
         url: ambari-release-notes/index.html
       - title: Support Matrix
         url: https://supportmatrix.hortonworks.com/
+      - title: Release Announcement
+        url: announcement.html
 
   - title: Installation & Upgrade
     name: installation-upgrade

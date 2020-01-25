@@ -11,7 +11,7 @@ sections:
     books:
       # - title: Release Notes
       #   url: release-notes/index.html
-      - title: Release Announcemnt
+      - title: Release Announcement
         url: announcement.html
 
 ---
