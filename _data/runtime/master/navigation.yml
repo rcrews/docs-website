@@ -369,6 +369,11 @@
           id: pub-search-deploying
           sub: search-deploying/navigation.json
 
+        - text: Cloudera Search Security
+          href: search-security/index.html
+          id: pub-search-security
+          sub: search-security/navigation.json
+
         - text: Tuning Cloudera Search
           href: search-tuning/index.html
           id: pub-search-tuning
