@@ -618,6 +618,10 @@
       url: /cdpdc/master/index.html
     - title: 7.0
       url: /cdpdc/7.0/index.html
+      minors:
+      - title: "7.0"
+        type: latest
+        url: /cdpdc/7.0/index.html
 
 - name: Management Console
   latest-version: master
@@ -700,10 +704,12 @@
         - title: master
           url: /runtime/master/index.html
     - title: "7.0"
-      url: /runtime/7.0.2/index.html
+      url: /runtime/7.1.0/index.html
       minors:
-        - title: 7.0.2
+        - title: 7.1.0
           type: Latest
+          url: /runtime/7.1.0/index.html
+        - title: 7.0.2
           url: /runtime/7.0.2/index.html
         - title: 7.0.1
           url: /runtime/7.0.1/index.html
@@ -738,10 +744,12 @@
         - title: master
           url: /cloudera-manager/master/index.html
     - title: "7.0"
-      url: /cloudera-manager/7.0.2/index.html
+      url: /cloudera-manager/7.1.0/index.html
       minors:
-        - title: 7.0.2
+        - title: 7.1.0
           type: Latest
+          url: /cloudera-manager/7.1.0/index.html
+        - title: 7.0.2
           url: /cloudera-manager/7.0.2/index.html
         - title: 7.0.1
           url: /cloudera-manager/7.0.1/index.html
@@ -1370,10 +1378,12 @@
       - title: master
         url: /cem/master/index.html
     - title: "1.0"
-      url: /cem/1.1.0/index.html
+      url: /cem/1.1.1/index.html
       minors:
-        - title: 1.1.0
+        - title: 1.1.1
           type: Latest
+          url: /cem/1.1.1/index.html
+        - title: 1.1.0
           url: /cem/1.1.0/index.html
         - title: 1.0.0
           url: /cem/1.0.0/index.html

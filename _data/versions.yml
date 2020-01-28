@@ -624,15 +624,17 @@
       url: /machine-learning/cloud/index.html
 
 - name: Cloudera Runtime
-  latest-version: 7.0.2
-  latest-url: /runtime/7.0.2/index.html
+  latest-version: 7.1.0
+  latest-url: /runtime/7.1.0/index.html
   search-name: Runtime
   versions:
     - title: "7.0"
-      url: /runtime/7.0.2/index.html
+      url: /runtime/7.1.0/index.html
       minors:
-        - title: 7.0.2
+        - title: 7.1.0
           type: Latest
+          url: /runtime/7.1.0/index.html
+        - title: 7.0.2
           url: /runtime/7.0.2/index.html
         - title: 7.0.1
           url: /runtime/7.0.1/index.html
@@ -652,15 +654,17 @@
           url: /runtime/7.0.3/index.html
 
 - name: Cloudera Manager
-  latest-version: 7.0.2
-  latest-url: /cloudera-manager/7.0.2/index.html
+  latest-version: 7.1.0
+  latest-url: /cloudera-manager/7.1.0/index.html
   search-name: manager
   versions:
     - title: "7.0"
-      url: /cloudera-manager/7.0.2/index.html
+      url: /cloudera-manager/7.1.0/index.html
       minors:
-        - title: 7.0.2
+        - title: 7.1.0
           type: Latest
+          url: /cloudera-manager/7.1.0/index.html
+        - title: 7.0.2
           url: /cloudera-manager/7.0.2/index.html
         - title: 7.0.1
           url: /cloudera-manager/7.0.1/index.html
@@ -1254,15 +1258,17 @@
           url: /smm/1.0.0/index.html
 
 - name: Edge Management
-  latest-version: 1.1.0
-  latest-url: /cem/1.1.0/index.html
+  latest-version: 1.1.1
+  latest-url: /cem/1.1.1/index.html
   search-name: cem
   versions:
     - title: "1.0"
-      url: /cem/1.1.0/index.html
+      url: /cem/1.1.1/index.html
       minors:
-        - title: 1.1.0
+        - title: 1.1.1
           type: Latest
+          url: /cem/1.1.1/index.html
+        - title: 1.1.0
           url: /cem/1.1.0/index.html
         - title: 1.0.0
           url: /cem/1.0.0/index.html

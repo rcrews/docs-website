@@ -11,11 +11,13 @@ json:
 - title: CDP Cloud
   cloudera-manager-history:
     - cloudera-manager/master
+    - cloudera-manager/7.1.0
     - cloudera-manager/7.0.2
     - cloudera-manager/7.0.1
     - cloudera-manager/7.0.0
   runtime-history:
     - runtime/master
+    - runtime/7.1.0
     - runtime/7.0.2
     - runtime/7.0.1
     - runtime/7.0.0
