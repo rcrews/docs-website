@@ -116,7 +116,7 @@ json:
   href: topics/ctpl_csp.html
 
 - text: Cloudera Streaming Analytics
-  href: topics/ctpl_SMM.html
+  href: topics/ctpl_csa.html
 
 - text: Cloudera Streams Messaging Manager
   href: topics/ctpl_SMM.html
