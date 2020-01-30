@@ -1,0 +1,270 @@
+- product: Cloudera DataPlane Platform
+  releases:
+  - version: 1.2.3
+    landing: https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.3/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.3/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.3/installation/index.html
+
+  - version: 1.2.1
+    landing: https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.1/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.1/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.1/installation/index.html
+
+  - version: 1.2.0
+    landing: https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DP/DP-1.2.0/installation/index.html
+
+  - version: 1.1.0
+    landing: https://docs.cloudera.com/HDPDocuments/DP/DP-1.1.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DP/DP-1.1.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DP/DP-1.1.0/installation/index.html
+
+  - version: 1.0.0
+    landing: https://docs.cloudera.com/HDPDocuments/DP/DP-1.0.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DP/DP-1.0.0/bk_dps-release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DP/DP-1.0.0/bk_dps-installation/index.html
+
+- product: Cloudera Data Analytics Studio
+  releases:
+  - version: 1.4.4
+    landing: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.4.4/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.4.4/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.4.4/installation/index.html
+    upgrade: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.4.4/upgrade/index.html
+
+  - version: 1.4.1
+    landing: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.4.1/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.4.1/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.4.1/installation/index.html
+    upgrade: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.4.1/upgrade/index.html
+
+  - version: 1.3.0
+    landing: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.3.1/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.3.1/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.3.1/installation/index.html
+    upgrade: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.3.1/upgrade/index.html
+
+  - version: 1.2.1
+    landing: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.1/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.1/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.1/installation/index.html
+    upgrade: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.1/upgrade/index.html
+
+  - version: 1.2.0
+    landing: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.2.0/installation/index.html
+
+  - version: 1.1.0
+    landing: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.1.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.1.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.1.0/installation/index.html
+
+  - version: 1.0.2
+    landing: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.0.2/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.0.2/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.0.2/installation/index.html
+
+  - version: 1.0.0
+    landing: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.0.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.0.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.0.0/installation/index.html
+
+- product: Cloudera Data Flow for Data Hub
+  releases:
+  - version: 7.0.2
+    landing: https://docs.cloudera.com/cdf-datahub/7.0.2/index.html
+    relnote: https://docs.cloudera.com/cdf-datahub/7.0.2/release-notes/index.html
+
+- product: Cloudera Data Lifecycle Manager
+  releases:
+  - version: 1.5.1
+    landing: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.1/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.1/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.1/installation/index.html
+
+  - version: 1.5.0
+    landing: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.5.0/installation/index.html
+
+  - version: 1.4.0
+    landing: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.4.0/installation/index.html
+
+  - version: 1.3.0
+    landing: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.3.0/installation/index.html
+
+  - version: 1.2.0
+    landing: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.2.0/installation/index.html
+
+  - version: 1.1.2
+    landing: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.2/installation/index.html
+
+  - version: 1.1.0
+    landing: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.1.0/installation/index.html
+
+  - version: 1.0.0
+    landing: https://docs.cloudera.com/HDPDocuments/DLM1/DLM-1.0.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DP/DP-1.0.0/bk_dps-release-notes/content/dps_relnotes.html
+
+- product: Cloudera Data Steward Studio
+  releases:
+  - version: 1.6.0
+    landing: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.6.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.6.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.6.0/installation/index.html
+
+  - version: 1.5.0
+    landing: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.5.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.5.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.5.0/installation/index.html
+
+  - version: 1.4.0
+    landing: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.4.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.4.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.4.0/installation/index.html
+
+  - version: 1.3.1
+    landing: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.3.1/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.3.1/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.3.1/installation/index.html
+
+  - version: 1.3.0
+    landing: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.3.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.3.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.3.0/installation/index.html
+
+  - version: 1.2.2
+    landing: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.2.2/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.2.2/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.2.2/installation/index.html
+
+  - version: 1.2.1
+    landing: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.2.1/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.2.1/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.2.1/installation/index.html
+
+  - version: 1.0.0
+    landing: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.0.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.0.0/release-notes/index.html
+    install: https://docs.cloudera.com/HDPDocuments/DSS1/DSS-1.0.0/installation/index.html
+
+- product: Cloudera Edge Management
+  releases:
+  # - version: 1.1.1
+  #   landing: https://docs.cloudera.com/cem/1.1.1/index.html
+  #   relnote: https://docs.cloudera.com/cem/1.1.1/release-notes/index.html
+  #   install: https://docs.cloudera.com/cem/1.1.1/installation/index.html
+  #   upgrade: https://docs.cloudera.com/cem/1.1.1/upgrade/index.html
+
+  - version: 1.1.0
+    landing: https://docs.cloudera.com/cem/1.1.0/index.html
+    relnote: https://docs.cloudera.com/cem/1.1.0/release-notes/index.html
+    install: https://docs.cloudera.com/cem/1.1.0/installation/index.html
+    upgrade: https://docs.cloudera.com/cem/1.1.0/upgrade/index.html
+
+  - version: 1.0.0
+    landing: https://docs.cloudera.com/cem/1.0.0/index.html
+    relnote: https://docs.cloudera.com/cem/1.0.0/release-notes/index.html
+    install: https://docs.cloudera.com/cem/1.0.0/installation/index.html
+
+- product: Cloudera Flow Management
+  releases:
+  - version: 1.1.0
+    landing: https://docs.cloudera.com/cfm/1.1.0/index.html
+    relnote: https://docs.cloudera.com/cfm/1.1.0/release-notes/index.html
+    install: https://docs.cloudera.com/cfm/1.1.0/installation/index.html
+    upgrade: https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/index.html
+
+  - version: 1.0.0
+    landing: https://docs.cloudera.com/cfm/1.0.0/index.html
+    relnote: https://docs.cloudera.com/cfm/1.0.0/release-notes/index.html
+    install: https://docs.cloudera.com/cfm/1.0.0/installation/index.html
+
+- product: Cloudera HDP Search
+  releases:
+  - version: 5.0.0
+    landing: https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-5.0.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-5.0.0/bk_solr-search-installation/content/hdp-search-50-release-notes.html
+    install: https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-5.0.0/bk_solr-search-installation/index.html
+  - version: 4.0.0
+    landing: https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-4.0.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-4.0.0/bk_solr-search-installation/content/hdp-search-40-relnotes.html
+    install: https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-4.0.0/bk_solr-search-installation/index.html
+  - version: 3.0.0
+    landing: https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-3.0.0/index.html
+    relnote: https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-3.0.0/bk_solr-search-installation/content/hdp-search-30-relnotes.html
+    install: https://docs.cloudera.com/HDPDocuments/HDPS/HDPS-3.0.0/bk_solr-search-installation/index.html
+
+- product: Cloudera Streaming Analytics
+  releases:
+  - version: 2.0.1
+    landing: https://docs.cloudera.com/csa/1.1.0/index.html
+    relnote: https://docs.cloudera.com/csa/1.1.0/release-notes/index.html
+    install: https://docs.cloudera.com/csa/1.1.0/installation/index.html
+
+- product: Cloudera Stream Processing
+  releases:
+  - version: 2.0.1
+    landing: https://docs.cloudera.com/csp/2.0.1/index.html
+    relnote: https://docs.cloudera.com/csp/2.0.1/release-notes/index.html
+    install: https://docs.cloudera.com/csp/2.0.1/deployment/index.html
+
+  - version: 2.0.0
+    landing: https://docs.cloudera.com/csp/2.0.0/index.html
+    relnote: https://docs.cloudera.com/csp/2.0.0/release-notes/index.html
+    install: https://docs.cloudera.com/csp/2.0.0/deployment/index.html
+
+  - version: 1.0.0
+    landing: https://docs.cloudera.com/csp/1.0.0/index.html
+    relnote: https://docs.cloudera.com/csp/1.0.0/release-notes/index.html
+    install: https://docs.cloudera.com/csp/1.0.0/installation/index.html
+
+- product: Cloudera Streams Messaging Manager for HDF and HDP
+  releases:
+  - version: 2.0.0
+    landing: https://docs.cloudera.com/smm/2.0.0/index.html
+    relnote: https://docs.cloudera.com/smm/2.0.0/release-notes/index.html
+    install: https://docs.cloudera.com/smm/2.0.0/installation/index.html
+    upgrade: https://docs.cloudera.com/smm/2.0.0/upgrading-smm/index.html
+
+  - version: 1.2.1
+    landing: https://docs.cloudera.com/smm/1.2.1/index.html
+    relnote: https://docs.cloudera.com/smm/1.2.1/release-notes/index.html
+    install: https://docs.cloudera.com/smm/1.2.1/installation/index.html
+    upgrade: https://docs.cloudera.com/smm/1.2.1/upgrading-smm/index.html
+
+  - version: 1.2.0
+    landing: https://docs.cloudera.com/smm/1.2.0/index.html
+    relnote: https://docs.cloudera.com/smm/1.2.0/release-notes/index.html
+    install: https://docs.cloudera.com/smm/1.2.0/installation/index.html
+    upgrade: https://docs.cloudera.com/smm/1.2.0/upgrading-smm/index.html
+
+  - version: 1.1.0
+    landing: https://docs.cloudera.com/smm/1.1.0/index.html
+    relnote: https://docs.cloudera.com/smm/1.1.0/release-notes/index.html
+    install: https://docs.cloudera.com/smm/1.1.0/installation/index.html
+    upgrade: https://docs.cloudera.com/smm/1.1.0/upgrading-smm/index.html
+
+  - version: 1.0.0
+    landing: https://docs.cloudera.com/smm/1.0.0/index.html
+    relnote: https://docs.cloudera.com/smm/1.0.0/release-notes/index.html
+    install: https://docs.cloudera.com/smm/1.0.0/installation/index.html
+
+- product: Cloudera Streams Replication Manager for HDF and HDP
+  releases:
+  - version: 1.0.0
+    landing: https://docs.cloudera.com/srm/1.0.0/index.html
+    relnote: https://docs.cloudera.com/srm/1.0.0/release-notes/index.html
+    install: https://docs.cloudera.com/srm/1.0.0/installation/index.html
