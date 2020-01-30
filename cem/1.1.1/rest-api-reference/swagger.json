@@ -49,6 +49,10 @@
   }, {
     "name" : "Operations",
     "description" : "Submit and manage C2 operations targeting MiNiFi Agents"
+  }, {
+    "name" : "Parameter Mappings"
+  }, {
+    "name" : "Parameters"
   } ],
   "schemes" : [ "http", "https" ],
   "paths" : {
@@ -447,7 +451,7 @@
         "operationId" : "deleteAgentParameters",
         "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "agentId",
+          "name" : "id",
           "in" : "path",
           "description" : "The identifier of the agent to delete its parameter context",
           "required" : true,
@@ -2150,7 +2154,7 @@
         }, {
           "name" : "aid",
           "in" : "query",
-          "description" : "The specific context to use with the requested flow.  This is overlaid over any class values.",
+          "description" : "The specific agent context to use with the requested flow.  This is overlaid over any class or flow values.",
           "required" : false,
           "type" : "string"
         } ],
@@ -2400,6 +2404,364 @@
           }
         }
       }
+    },
+    "/parameter-context-mappings/agent-classes/{agentClass}" : {
+      "get" : {
+        "tags" : [ "Parameter Mappings" ],
+        "summary" : "Gets the parameter context mapping for a given agent class",
+        "description" : "",
+        "operationId" : "getAgentClassParameterContextMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentClass",
+          "in" : "path",
+          "description" : "The name of the agent class",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentClassParametersMapping"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Parameter Mappings" ],
+        "summary" : "Clear a parameter context mapping for a given agent class",
+        "description" : "",
+        "operationId" : "deleteAgentClassParameterContextMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentClass",
+          "in" : "path",
+          "description" : "The name of the agent class",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentClassParametersMapping"
+            }
+          }
+        }
+      }
+    },
+    "/parameter-context-mappings/agent-classes/{agentClass}/{parameterContextId}" : {
+      "put" : {
+        "tags" : [ "Parameter Mappings" ],
+        "summary" : "Assign a parameter context to an agent class",
+        "description" : "",
+        "operationId" : "putAgentClassParameterContextMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentClass",
+          "in" : "path",
+          "description" : "The name of the agent class",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "parameterContextId",
+          "in" : "path",
+          "description" : "The id of the parameter context",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentClassParametersMapping"
+            }
+          }
+        }
+      }
+    },
+    "/parameter-context-mappings/agents/{agentId}" : {
+      "get" : {
+        "tags" : [ "Parameter Mappings" ],
+        "summary" : "Gets the parameter context mapping for a given agent",
+        "description" : "",
+        "operationId" : "getAgentParameterContextMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentId",
+          "in" : "path",
+          "description" : "The id of the agent",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentParametersMapping"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Parameter Mappings" ],
+        "summary" : "Clear a parameter context mapping for a given agent",
+        "description" : "",
+        "operationId" : "deleteAgentParameterContextMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentId",
+          "in" : "path",
+          "description" : "The id of the agent",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentParametersMapping"
+            }
+          }
+        }
+      }
+    },
+    "/parameter-context-mappings/agents/{agentId}/{parameterContextId}" : {
+      "put" : {
+        "tags" : [ "Parameter Mappings" ],
+        "summary" : "Assign a parameter context to an agent",
+        "description" : "",
+        "operationId" : "putAgentParameterContextMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentId",
+          "in" : "path",
+          "description" : "The id of the agent",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "parameterContextId",
+          "in" : "path",
+          "description" : "The id of the parameter context",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentParametersMapping"
+            }
+          }
+        }
+      }
+    },
+    "/parameter-context-mappings/flows/{flowId}" : {
+      "get" : {
+        "tags" : [ "Parameter Mappings" ],
+        "summary" : "Gets the parameter context mapping for a given flow",
+        "description" : "",
+        "operationId" : "getFlowParameterContextMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "flowId",
+          "in" : "path",
+          "description" : "The id of the flow",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FlowParametersMapping"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Parameter Mappings" ],
+        "summary" : "Clear a parameter context mapping for a given flow",
+        "description" : "",
+        "operationId" : "deleteFlowParameterContextMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "flowId",
+          "in" : "path",
+          "description" : "The id of the flow",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FlowParametersMapping"
+            }
+          }
+        }
+      }
+    },
+    "/parameter-context-mappings/flows/{flowId}/{parameterContextId}" : {
+      "put" : {
+        "tags" : [ "Parameter Mappings" ],
+        "summary" : "Assign a parameter context to a flow",
+        "description" : "",
+        "operationId" : "putFlowParameterContextMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "flowId",
+          "in" : "path",
+          "description" : "The id of the flow",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "parameterContextId",
+          "in" : "path",
+          "description" : "The id of the parameter context",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FlowParametersMapping"
+            }
+          }
+        }
+      }
+    },
+    "/parameter-contexts" : {
+      "get" : {
+        "tags" : [ "Parameters" ],
+        "summary" : "Gets all available parameter contexts",
+        "description" : "",
+        "operationId" : "getParameterContexts",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "pageNum",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "rows",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ListContainer"
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Parameters" ],
+        "summary" : "Create a parameter context",
+        "description" : "",
+        "operationId" : "createParameterContext",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "The new parameter context",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ParameterContext"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ParameterContext"
+            }
+          }
+        }
+      }
+    },
+    "/parameter-contexts/{id}" : {
+      "get" : {
+        "tags" : [ "Parameters" ],
+        "summary" : "Gets a parameter context",
+        "description" : "",
+        "operationId" : "getParameterContext",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "The id of the parameter context",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ParameterContext"
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Parameters" ],
+        "summary" : "Update a parameter context",
+        "description" : "",
+        "operationId" : "updateParameterContext",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "The id of the parameter context",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "description" : "The parameter context",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/ParameterContext"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ParameterContext"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Parameters" ],
+        "summary" : "Delete a parameter context",
+        "description" : "",
+        "operationId" : "deleteParameterContext",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "The id of the parameter context",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ParameterContext"
+            }
+          }
+        }
+      }
     }
   },
   "definitions" : {
@@ -2430,6 +2792,10 @@
         "flowId" : {
           "type" : "string",
           "description" : "The id of the flow currently running on the agent"
+        },
+        "deviceId" : {
+          "type" : "string",
+          "description" : "The id of the device on which the agent resides"
         },
         "status" : {
           "description" : "A summary of the runtime status of the agent",
@@ -2514,6 +2880,10 @@
     "AgentClassDetailLinks" : {
       "type" : "object",
       "properties" : {
+        "flow" : {
+          "description" : "Link to the flow mapped to this agent class",
+          "$ref" : "#/definitions/Link"
+        },
         "agents" : {
           "description" : "Link to the event details, if applicable",
           "$ref" : "#/definitions/Link"
@@ -2524,10 +2894,6 @@
         },
         "dashboard" : {
           "description" : "Link to the external dashboard associated with this agent class",
-          "$ref" : "#/definitions/Link"
-        },
-        "flow" : {
-          "description" : "Link to the flow mapped to this agent class",
           "$ref" : "#/definitions/Link"
         },
         "self" : {
@@ -2553,6 +2919,17 @@
         "missingAgentCount" : {
           "type" : "integer",
           "format" : "int64"
+        }
+      }
+    },
+    "AgentClassParametersMapping" : {
+      "type" : "object",
+      "properties" : {
+        "agentClass" : {
+          "type" : "string"
+        },
+        "parameterContextId" : {
+          "type" : "string"
         }
       }
     },
@@ -2666,16 +3043,16 @@
     "AgentDetailLinks" : {
       "type" : "object",
       "properties" : {
+        "flow" : {
+          "description" : "Link to the flow deployed to this agent",
+          "$ref" : "#/definitions/Link"
+        },
         "events" : {
           "description" : "Link to the events associated with this agent",
           "$ref" : "#/definitions/Link"
         },
         "dashboard" : {
           "description" : "Link to the external dashboard associated with this agent",
-          "$ref" : "#/definitions/Link"
-        },
-        "flow" : {
-          "description" : "Link to the flow deployed to this agent",
           "$ref" : "#/definitions/Link"
         },
         "agentClass" : {
@@ -2753,6 +3130,17 @@
         }
       }
     },
+    "AgentParametersMapping" : {
+      "type" : "object",
+      "properties" : {
+        "agentId" : {
+          "type" : "string"
+        },
+        "parameterContextId" : {
+          "type" : "string"
+        }
+      }
+    },
     "AgentRepositories" : {
       "type" : "object",
       "properties" : {
@@ -2771,6 +3159,27 @@
           "type" : "integer",
           "format" : "int64",
           "description" : "The number of items in the repository",
+          "minimum" : 0,
+          "maximum" : 9223372036854775807
+        },
+        "sizeMax" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The maximum number of items the repository is capable of storing",
+          "minimum" : 0,
+          "maximum" : 9223372036854775807
+        },
+        "dataSize" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The data size (in Bytes) of all items in the repository",
+          "minimum" : 0,
+          "maximum" : 9223372036854775807
+        },
+        "dataSizeMax" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "The maximum data size (in Bytes) that the repository is capable of storing",
           "minimum" : 0,
           "maximum" : 9223372036854775807
         }
@@ -2944,23 +3353,18 @@
     },
     "Bundle" : {
       "type" : "object",
-      "required" : [ "artifact", "group" ],
       "properties" : {
         "group" : {
           "type" : "string",
-          "description" : "The group id of the bundle"
+          "description" : "The group of the bundle"
         },
         "artifact" : {
           "type" : "string",
-          "description" : "The artifact id of the bundle"
+          "description" : "The artifact of the bundle"
         },
         "version" : {
           "type" : "string",
-          "description" : "The version of the bundle artifact"
-        },
-        "componentManifest" : {
-          "description" : "The full specification of the bundle contents",
-          "$ref" : "#/definitions/ComponentManifest"
+          "description" : "The version of the bundle"
         }
       }
     },
@@ -3045,6 +3449,27 @@
         "operationId" : {
           "type" : "string",
           "description" : "The id of the requested operation that is being acknowledged"
+        },
+        "operationState" : {
+          "description" : "The agent's status response for this operation ID",
+          "$ref" : "#/definitions/C2OperationState"
+        }
+      }
+    },
+    "C2OperationState" : {
+      "type" : "object",
+      "required" : [ "state" ],
+      "properties" : {
+        "state" : {
+          "type" : "string",
+          "example" : "FULLY_APPLIED",
+          "description" : "State of the operation performed",
+          "enum" : [ "FULLY_APPLIED", "PARTIALLY_APPLIED", "OPERATION_NOT_UNDERSTOOD", "NOT_APPLIED" ]
+        },
+        "details" : {
+          "type" : "string",
+          "example" : "Operation failed due to missing processor(s)",
+          "description" : "Additional details about the state"
         }
       }
     },
@@ -3157,21 +3582,21 @@
         "id" : {
           "type" : "string"
         },
-        "dataSize" : {
-          "type" : "number",
-          "format" : "double"
-        },
-        "dataSizeMax" : {
-          "type" : "number",
-          "format" : "double"
-        },
         "size" : {
-          "type" : "number",
-          "format" : "double"
+          "type" : "integer",
+          "format" : "int64"
         },
         "sizeMax" : {
-          "type" : "number",
-          "format" : "double"
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "dataSize" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "dataSizeMax" : {
+          "type" : "integer",
+          "format" : "int64"
         }
       }
     },
@@ -3439,12 +3864,12 @@
           "description" : "Link to the event details, if applicable",
           "$ref" : "#/definitions/Link"
         },
-        "source" : {
-          "description" : "Link to the source of the event, if applicable",
-          "$ref" : "#/definitions/Link"
-        },
         "agentClass" : {
           "description" : "Link to the event details, if applicable",
+          "$ref" : "#/definitions/Link"
+        },
+        "source" : {
+          "description" : "Link to the source of the event, if applicable",
           "$ref" : "#/definitions/Link"
         },
         "self" : {
@@ -3716,14 +4141,6 @@
         "name" : {
           "type" : "string",
           "description" : "The name of the context"
-        },
-        "agentClass" : {
-          "type" : "string",
-          "description" : "The agent class this context applies to"
-        },
-        "agentId" : {
-          "type" : "string",
-          "description" : "The id of the agent this context applies to if overriding the defaults for that class"
         },
         "parameters" : {
           "type" : "array",
@@ -4117,15 +4534,15 @@
           "type" : "string",
           "description" : "The content of the flow according to the flow format"
         },
-        "updated" : {
-          "type" : "string",
-          "format" : "date-time",
-          "description" : "The date this flow was updated in the C2 server. DEPRECATED: use updatedTime"
-        },
         "created" : {
           "type" : "string",
           "format" : "date-time",
           "description" : "The date this flow was created in the C2 server. DEPRECATED: use createdTime"
+        },
+        "updated" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The date this flow was updated in the C2 server. DEPRECATED: use updatedTime"
         }
       }
     },
@@ -4185,6 +4602,17 @@
           "items" : {
             "$ref" : "#/definitions/FlowMapping"
           }
+        }
+      }
+    },
+    "FlowParametersMapping" : {
+      "type" : "object",
+      "properties" : {
+        "flowId" : {
+          "type" : "string"
+        },
+        "parameterContextId" : {
+          "type" : "string"
         }
       }
     },
@@ -4307,15 +4735,15 @@
           "format" : "uri",
           "description" : "The URI to retrieve this flow"
         },
-        "updated" : {
-          "type" : "string",
-          "format" : "date-time",
-          "description" : "The date this flow was updated in the C2 server. DEPRECATED: use updatedTime"
-        },
         "created" : {
           "type" : "string",
           "format" : "date-time",
           "description" : "The date this flow was created in the C2 server. DEPRECATED: use createdTime"
+        },
+        "updated" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The date this flow was updated in the C2 server. DEPRECATED: use updatedTime"
         }
       }
     },
@@ -4496,6 +4924,10 @@
           "readOnly" : true,
           "enum" : [ "NEW", "READY", "QUEUED", "DEPLOYED", "DONE", "FAILED", "CANCELLED" ]
         },
+        "details" : {
+          "type" : "string",
+          "description" : "Additional details about the state of this operation (such as an error message)."
+        },
         "createdBy" : {
           "type" : "string",
           "description" : "The verified identity of the C2 server client that created the operation",
@@ -4516,16 +4948,12 @@
     "PageLinks" : {
       "type" : "object",
       "properties" : {
-        "first" : {
-          "description" : "Link to the first page",
-          "$ref" : "#/definitions/Link"
-        },
-        "next" : {
-          "description" : "Link to the next page",
-          "$ref" : "#/definitions/Link"
-        },
         "prev" : {
           "description" : "Link to the previous page",
+          "$ref" : "#/definitions/Link"
+        },
+        "first" : {
+          "description" : "Link to the first page",
           "$ref" : "#/definitions/Link"
         },
         "new" : {
@@ -4534,6 +4962,10 @@
         },
         "last" : {
           "description" : "Link to the last page",
+          "$ref" : "#/definitions/Link"
+        },
+        "next" : {
+          "description" : "Link to the next page",
           "$ref" : "#/definitions/Link"
         },
         "self" : {
@@ -4607,14 +5039,6 @@
         "name" : {
           "type" : "string",
           "description" : "The name of the context"
-        },
-        "agentClass" : {
-          "type" : "string",
-          "description" : "The agent class this context applies to"
-        },
-        "agentId" : {
-          "type" : "string",
-          "description" : "The id of the agent this context applies to if overriding the defaults for that class"
         },
         "parameters" : {
           "type" : "array",
@@ -4940,6 +5364,14 @@
           "format" : "int64"
         },
         "sizeMax" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "dataSize" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "dataSizeMax" : {
           "type" : "integer",
           "format" : "int64"
         }
