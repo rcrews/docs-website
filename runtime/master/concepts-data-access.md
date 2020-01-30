@@ -21,7 +21,7 @@ publications:
   - title: Apache Hive Overview
     url: hive-introduction/index.html
     description: >-
-      Presents key features of Hive and Hive 3 architecture.
+      Presents key features of Hive and Hive Metastore, and covers Hive 3 architecture.
 
   - title: Apache Hive Performance Tuning
     url: hive-performance-tuning/index.html
