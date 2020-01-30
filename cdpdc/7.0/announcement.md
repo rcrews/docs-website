@@ -46,6 +46,6 @@ resources:
 * [CDP Data Center Release Notes](/cdpdc/7.0/release-guide/topics/cdpdc-release-guide-overview.html)
 
 As always, we welcome your feedback. Please send your comments and
-suggestions to the user group through ourcommunity forums. You can also
+suggestions to the user group through our community forums. You can also
 report issues through our external Jira projects on
 [issues.cloudera.org](http://issues.cloudera.org/).
