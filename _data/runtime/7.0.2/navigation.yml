@@ -12,7 +12,7 @@
 # Here's the final list:
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
-#   Data Access: Hive, Impala, Hue, Sqoop, Search, DAS
+#   Data Access: DAS, Hive, Impala, Hue, Sqoop, Search
 #   Operational Datastore: HBase
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox

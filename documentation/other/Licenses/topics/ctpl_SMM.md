@@ -22,3 +22,9 @@ Streams Messaging Manager, 2019
 This page shows the third-party license for the Streams Messaging
 Manager:
 [Streams Messaging Manager Notice File](/documentation/other/shared/licensefiles/SMM_2.0.0.0_tpl.txt).
+
+Streams Messaging Manager App, 2019
+
+This page shows the third-party license for the Streams Messaging
+Manager App:
+[Streams Messaging Manager App Notice File](/documentation/other/shared/licensefiles/SMM_APP_2.0.0.0_tpl.txt).
