@@ -18,8 +18,7 @@ publications:
     url: yarn-allocate-resources/index.html
     description: >-
       Explains how to allocate cluster resources for the applications.
-      In addition, describes the procedures for using Fair Scheduler and
-      Capacity Scheduler.
+      In addition, describes the procedures for using Capacity Scheduler.
 
   - title: Configuring Apache Hadoop YARN Security
     url: yarn-security/index.html
