@@ -9,1208 +9,1232 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/product/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/index.html</loc>
 		<lastmod>2019-10-23</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/product/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/model-training-deployment-overview/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/collaboration-overview/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/autoscaling-overview/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/requirements-aws/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/gpu/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/applications/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/models/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/applications/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/jobs-pipelines/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/distributed-computing/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/security/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/cli/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/index.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/jupyter/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/release-notes/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/product/topics/ml-product-overview.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/product/topics/ml-apache-spark-overview.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/product/topics/ml-cdsw-key-differences.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/jobs-pipelines/index.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engines-models-experiments.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engine-dependencies.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engines-snapshot-code.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engines-build-image.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-basic-concepts-and-terminology.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-environmental-variables.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engines-run-deploy.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/model-training-deployment-overview/topics/ml-model-training-deployment.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/model-training-deployment-overview/topics/ml-experiments.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/model-training-deployment-overview/topics/ml-models.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/model-training-deployment-overview/topics/ml-experiment-concepts.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/model-training-deployment-overview/topics/ml-models.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/model-training-deployment-overview/topics/ml-model-concepts-and-terminology.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-managing-engine-profiles.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/product/topics/ml-product-overview.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-configuring-the-engine-environment.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/product/topics/ml-apache-spark-overview.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-managing-engines.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-install-pkg-lib.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-using-conda.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-create-a-dockerfile-for-the-new-custom-image.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-creating-a-customized-engine-image.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-customized-engines.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-accessing-environmental-variables-from-projects.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-environment-variables.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-engine-environment-variables.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-build-the-new-image.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-distribute-the-image.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-custom-engine-limitations.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-whitelist-the-image-in-cloudera-data-science-workbench.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-end-to-end-example--mecab.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-engines-packaging.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-proxy-setup.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-managing-dependencies-for-spark-2-jobs.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-spark-configuration-files.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-spark-logging-configuration.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-spark-webui.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-managing-memory-available-for-spark-drivers.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-pyspark.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-adding--spark-scala-packages-jars.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-installing-sparklyr.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-example--locating-and-adding-jars-to-spark-2-configuration.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/collaboration-overview/topics/ml-sharing-job-and-session-console-outputs.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-example--distributing-dependencies-on-a-pyspark-cluster.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-spark-and-scala.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-managing-your-personal-account.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-example--montecarlo-estimation.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/collaboration-overview/topics/ml-collaborate.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-creating-a-team.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-modifying-team-account-settings.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-provision-workspaces.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-env-access.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-remote-access.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-grant-user-access.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-kerberos.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-socks-proxy.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-upgrade-workspaces.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-remove-workspaces.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/requirements-aws/topics/ml-requirements-aws.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/product/topics/ml-cdsw-key-differences.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/autoscaling-overview/topics/ml-autoscaling-overview.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/autoscaling-overview/topics/ml-critical-and-noncritical-pods.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-creating-a-project.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-adding-collaborators.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-modifying-project-settings.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-projects.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/autoscaling-overview/topics/ml-autoscale-groups.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-custom-template-projects.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/autoscaling-overview/topics/ml-critical-and-noncritical-pods.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-managing-files.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-deleting-a-project.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-launch-a-session.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-execute-code.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-access-the-terminal.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-workbench.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-stop-a-session.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-browser.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-configuration-modes.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-test-browser-ide.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-browser-project.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-browser-engine.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-local-ide-configure.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-linking-an-existing-project-to-a-git-remote.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-sync-workbench-pycharm.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-remote-console-workbench-pycharm.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-local-ide-pycharm.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-workbench-interpretor-pycharm.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-using-git.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-running-an-experiment.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-embedded-web-apps.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-limitations.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-saving-files.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-tracking-metrics.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-example--a-shiny-application.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/gpu/topics/ml-test-the-custom-cuda-engine.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/gpu/topics/ml-gpu.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-experiments-debug.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/applications/topics/ml-applications-limitations.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/applications/topics/ml-applications.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-creating-and-deploying-a-model.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-model-access-key.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-calling-a-model.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-usage-guidelines.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-models-known-issues-and-limitations.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-testing-model-calls.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-updating-active-models.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-models-debug.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-monitoring-active-models.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-deleting-a-model.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-models-examples.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-train-the-model.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-deploy-the-model.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/distributed-computing/topics/ml-worker-network-communication.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/distributed-computing/topics/ml-workers-api.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/requirements-aws/topics/ml-requirements-aws.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/distributed-computing/topics/ml-parallel-computing.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-managing-users-as-a-site-administrator.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/distributed-computing/topics/ml-workers-api.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-quotas.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/distributed-computing/topics/ml-worker-network-communication.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-monitoring-tracked-events.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/collaboration-overview/topics/ml-collaborate.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-monitoring-user-events.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/collaboration-overview/topics/ml-sharing-job-and-session-console-outputs.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-site-admin-model-monitoring.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-basic-concepts-and-terminology.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-feature-control.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engine-dependencies.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-monitoring.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engines-models-experiments.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-email.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engines-snapshot-code.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-support-diagnostic-bundle.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engines-build-image.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-troubleshooting.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-engines-run-deploy.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-troubleshooting-kerberos-errors.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines-overview/topics/ml-environmental-variables.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-external-authentication.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-projects.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-troubleshooting-issues-with-workloads.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-creating-a-project.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-kerberos.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-adding-collaborators.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-test-ldap-configuration.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-modifying-project-settings.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-configuring-saml-authentication.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-managing-files.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-configuring-ldap-active-directory-authentication.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-custom-template-projects.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-ldap-group-settings.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-deleting-a-project.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-configuration-options.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-workbench.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-enable-http-strict-transport-security--hsts-.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-launch-a-session.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-ldap-general-settings.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-execute-code.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-enable-http-security-headers.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-access-the-terminal.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-http-headers.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-stop-a-session.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-ssh-keys.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-personal-key.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-configuration-modes.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-enable-cross-origin-resource-sharing--cors-.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-browser.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-team-key.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-test-browser-ide.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-adding-ssh-key-to-github.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-browser-project.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-ssh-tunnels.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-browser-engine.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-user-created-pods.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-local-ide-configure.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/cli/topics/ml-cli.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-local-ide-pycharm.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/cli/topics/ml-create-ssh-endpoint.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-workbench-interpretor-pycharm.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/cli/topics/ml-cli-client-config.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-remote-console-workbench-pycharm.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/cli/topics/ml-cli-client.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-sync-workbench-pycharm.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-simple-plots.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-using-git.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-saved-images.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-linking-an-existing-project-to-a-git-remote.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-iframe-visualizations.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-embedded-web-apps.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-html-visualizations.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-example--a-shiny-application.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-grid-displays.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-managing-your-personal-account.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-from-hdfs.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-creating-a-team.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-local-data-from-your-computer.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-modifying-team-account-settings.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-documenting-your-analysis.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-provision-workspaces.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-from-apache-hbase.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-grant-user-access.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-from-apache-hive.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-env-access.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-from-apache-impala.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-remote-access.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-running-queries-on-impala-tables.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-socks-proxy.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-in-amazon-s3-buckets.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-kerberos.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/jupyter/topics/ml-jupyter.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-monitoring-workspaces.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-external-sql-databases.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-remove-workspaces.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/release-notes/topics/ml-known-issues-limitations.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-upgrade-workspaces.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-loading-csv-data-into-an-impala-table.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-managing-engines.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/jupyter/topics/ml-scala.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-managing-engine-profiles.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/jupyter/topics/ml-python.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-configuring-the-engine-environment.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/release-notes/topics/ml-whats-new.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-install-pkg-lib.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-using-conda.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-environment-variables.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-engine-environment-variables.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-accessing-environmental-variables-from-projects.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-customized-engines.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-creating-a-customized-engine-image.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-create-a-dockerfile-for-the-new-custom-image.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-build-the-new-image.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-distribute-the-image.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-whitelist-the-image-in-cloudera-data-science-workbench.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-custom-engine-limitations.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-end-to-end-example--mecab.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-engines-packaging.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-spark-configuration-files.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-managing-memory-available-for-spark-drivers.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-managing-dependencies-for-spark-2-jobs.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-spark-logging-configuration.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-proxy-setup.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-spark-webui.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-pyspark.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-example--montecarlo-estimation.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-example--locating-and-adding-jars-to-spark-2-configuration.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-example--distributing-dependencies-on-a-pyspark-cluster.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-installing-sparklyr.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-spark-and-scala.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/spark/topics/ml-adding--spark-scala-packages-jars.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/gpu/topics/ml-gpu.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/gpu/topics/ml-test-the-custom-cuda-engine.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-creating-and-deploying-a-model.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-usage-guidelines.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-models-known-issues-and-limitations.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-calling-a-model.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-testing-model-calls.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-model-access-key.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-updating-active-models.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-monitoring-active-models.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-models-debug.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-deleting-a-model.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-models-examples.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-train-the-model.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/models/topics/ml-deploy-the-model.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-running-an-experiment.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-limitations.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-tracking-metrics.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-saving-files.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/experiments/topics/ml-experiments-debug.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/applications/topics/ml-applications.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/applications/topics/ml-applications-limitations.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/jobs-pipelines/topics/ml-creating-a-job.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/jobs-pipelines/topics/ml-creating-a-pipeline.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/jobs-pipelines/topics/ml-rest-apis.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/jobs-pipelines/topics/ml-viewing-job-history.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/jobs-pipelines/topics/ml-rest-apis.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-kerberos.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-external-authentication.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-configuring-ldap-active-directory-authentication.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-ldap-general-settings.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-ldap-group-settings.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-test-ldap-configuration.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-configuring-saml-authentication.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-configuration-options.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-http-headers.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-enable-http-security-headers.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-enable-http-strict-transport-security--hsts-.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-enable-cross-origin-resource-sharing--cors-.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-ssh-keys.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-personal-key.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-team-key.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-adding-ssh-key-to-github.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-ssh-tunnels.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-user-created-pods.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-managing-users-as-a-site-administrator.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-quotas.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-monitoring.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-monitoring-tracked-events.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-monitoring-user-events.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-site-admin-model-monitoring.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-feature-control.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-email.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-support-diagnostic-bundle.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/cli/topics/ml-cli.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/cli/topics/ml-cli-client.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/cli/topics/ml-cli-client-config.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/cli/topics/ml-create-ssh-endpoint.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-local-data-from-your-computer.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-from-hdfs.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-from-apache-hbase.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-from-apache-hive.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-from-apache-impala.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-loading-csv-data-into-an-impala-table.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-running-queries-on-impala-tables.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-data-in-amazon-s3-buckets.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-accessing-external-sql-databases.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/jupyter/topics/ml-jupyter.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/jupyter/topics/ml-python.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/jupyter/topics/ml-scala.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-simple-plots.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-saved-images.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-html-visualizations.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-iframe-visualizations.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-grid-displays.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-documenting-your-analysis.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/release-notes/topics/ml-whats-new.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/release-notes/topics/ml-known-issues-limitations.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-troubleshooting.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-troubleshooting-workspaces.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-common-failures-solutions.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-logs.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-support-diagnostic-bundle.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-troubleshooting-issues-with-workloads.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-troubleshooting-kerberos-errors.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/model-training-deployment-overview/topics/ml-engines-models-experiments.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-user-guide.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-ssh-keys.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-engines.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
@@ -1221,212 +1245,170 @@
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-collaborate.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-sso.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-customized-engines.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-editors-local-ide.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-engines.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-create-ssh-endpoint.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-ssh-keys.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-applications.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/workspaces/topics/ml-workspaces-sso.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/user-accounts/topics/ml-collaborate.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-user-guide.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/applications/topics/ml-embedded-web-apps.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-user-guide.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-user-guide.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-troubleshooting-workspaces.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-tls-ssl.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-environment-variables.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-http-headers.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-ssh-keys.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/release-notes/topics/ml-create-ssh-endpoint.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/release-notes/topics/ml-workspaces-grant-user-access.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-user-guide.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-projects.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-kerberos.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-projects.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-environment-variables.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-managing-users-as-a-site-administrator.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/import-data/topics/ml-ssh-keys.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-projects.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-http-headers.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-managing-users-as-a-site-administrator.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-projects.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-troubleshooting.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/release-notes/topics/ml-workspaces-grant-user-access.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/troubleshooting/topics/ml-workspaces-remote-access.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-tls-ssl.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-managing-users-as-a-site-administrator.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/engines/topics/ml-projects.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-managing-users-as-a-site-administrator.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-projects.html</loc>
+		<lastmod>2020-01-31</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/site-administration/topics/ml-projects.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-user-guide.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-projects.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-tls-ssl.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-managing-users-as-a-site-administrator.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-troubleshooting.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-troubleshooting-workspaces.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-troubleshooting-workspaces.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/security/topics/ml-workspaces-remote-access.html</loc>
-		<lastmod>2019-12-16</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-workspaces-remote-access.html</loc>
-		<lastmod>2019-12-16</lastmod>
+		<loc>https://docs.cloudera.com/machine-learning/cloud/visualizations/topics/ml-projects.html</loc>
+		<lastmod>2020-01-31</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
