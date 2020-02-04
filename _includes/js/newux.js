@@ -308,6 +308,7 @@ var NEWUX = (function($) {
                 }
 
                 url = this.getAttribute("href"); // First start working with the relative URL.
+                if (!url) { return true; }
 
                 // If it starts with a hash, assume it's an in-page reference and bail..
                 if (!url.indexOf("#")) {
@@ -1302,13 +1303,23 @@ var NEWUX = (function($) {
     // Series of functions and event handlers to be attached to content on the page.
     var Transforms = {
         bindEvents: function($content) {
-            // Add in event handlers here..
-
-            // Example...
+            // Add event handlers here.
+            // Example:
             // $content.find('a').on('click', function(evt) {
             //     evt.preventDefault();
             //     console.log('I clicked a link');
             // });
+
+            $content.find(".tab-win a").click(function(e) {
+                e.preventDefault();
+                let p = $(this).closest('.tab-win');
+                let i = $(this).attr('data-target');
+
+                $(this).closest('ul').find('li').removeClass("active");
+                $(this).parent().addClass('active');
+                $(p).find('.tabcontents div').hide();
+                $(p).find(i).fadeIn('slow');
+            });
         },
         deTarget: function() {
             Array.from(document.querySelectorAll("a[target]")).forEach(at => {
@@ -1339,22 +1350,9 @@ var NEWUX = (function($) {
             });
         },
         tabs: function() {
-            $(document).ready(function() {
-	           $('.tab-win').find('ul li:first').addClass('active');
-	           $('.tab-win').find('.tabcontent').hide();
-	           $('.tab-win').find('.tabcontent:first').show(); 
-            });
-            
-            $(".tab-win a").click(function(e) {
-                e.preventDefault();
-                var p = $(this).closest('.tab-win');
-                var i = $(this).attr('data-target');
-  
-                $(this).closest('ul').find('li').removeClass("active");
-                $(this).parent().addClass('active');
-                $(p).find('.tabcontents div').hide();
-                $(p).find(i).fadeIn('slow');
-            });
+	        $('.tab-win').find('ul li:first').addClass('active');
+	        $('.tab-win').find('.tabcontent').hide();
+	        $('.tab-win').find('.tabcontent:first').show();
         },
         test: function($content) {
             $content.find('a').css('backgroundColor', 'red');
@@ -1367,7 +1365,7 @@ var NEWUX = (function($) {
              * but to be safe you might want to use $content[0].id;
              */
             // this.test($content);
-            // this.bindEvents($content);
+            this.bindEvents($content);
             this.deTarget();
             this.objectForYouTube();
             this.tabs();
