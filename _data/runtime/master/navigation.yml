@@ -369,7 +369,7 @@
           id: pub-search-deploying
           sub: search-deploying/navigation.json
 
-        - text: Cloudera Search Security
+        - text: Securing Cloudera Search
           href: search-security/index.html
           id: pub-search-security
           sub: search-security/navigation.json
