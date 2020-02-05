@@ -1,0 +1,41 @@
+# From Dave 2019-10-28
+- query: ranger-tag-based policies
+  target: https://docs.cloudera.com/runtime/7.0.1/security-ranger-authorization/topics/security-ranger-tag-based-policies.html
+- query: ranger security zones
+  target: https://docs.cloudera.com/runtime/7.0.1/security-ranger-authorization/topics/security-ranger-security-zones.html
+- query: ranger auditing
+  target: https://docs.cloudera.com/runtime/7.0.1/security-ranger-auditing/topics/security-ranger-audit-managing.html
+
+# From 	https://jira.cloudera.com/browse/DOCS-5498
+- query: impala analytic functions
+  target: https://docs.cloudera.com/runtime/7.0.3/impala-sql-reference/topics/impala-analytic-functions.html
+- query: impala row number
+  target: https://docs.cloudera.com/runtime/7.0.3/impala-sql-reference/topics/impala-count.html
+
+# From Dóra Marsal 2020-02-05
+- query: Cloudera flink
+  target: https://docs.cloudera.com/csa/1.1.0/overview/topics/csa-overview.html
+- query: Streaming cloudera
+  target: https://docs.cloudera.com/csa/1.1.0/overview/topics/csa-overview.html
+- query: Streaming analytics
+  target: https://docs.cloudera.com/csa/1.1.0/overview/topics/csa-overview.html
+- query: Stream processing
+  target: https://docs.cloudera.com/csa/1.1.0/overview/topics/csa-overview.html
+- query: Flink tutorial
+  target: https://docs.cloudera.com/csa/1.1.0/learning-overview/topics/csa-simple-tutorial.html
+- query: Stateful tutorial
+  target: https://docs.cloudera.com/csa/1.1.0/learning-overview/topics/csa-stateful-tutorial.html
+- query: Flink application tutorial
+  target: https://docs.cloudera.com/csa/1.1.0/learning-overview/topics/csa-tutorial-intro.html
+- query: Stateful application
+  target: https://docs.cloudera.com/csa/1.1.0/learning-overview/topics/csa-stateful-tutorial.html
+- query: Kafka Flink
+  target: https://docs.cloudera.com/csa/1.1.0/customization/topics/csa-kafka.html
+- query: Flink logging kafka
+  target: https://docs.cloudera.com/csa/1.1.0/operation/topics/csa-kafka-logging.html
+- query: Flink Streams Messaging Manager
+  target: https://docs.cloudera.com/csa/1.1.0/operation/topics/csa-smm-integration.html
+- query: Flink on YARN
+  target: https://docs.cloudera.com/csa/1.1.0/overview/topics/csa-service-layout.html
+- query: Flink HBase connector
+  target: https://docs.cloudera.com/csa/1.1.0/customization/topics/csa-hbase-connector.html
