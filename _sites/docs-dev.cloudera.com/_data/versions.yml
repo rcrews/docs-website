@@ -448,10 +448,12 @@
       - title: master
         url: /HDPDocuments/DAS/DAS-master/index.html
     - title: "1.4"
-      url: /HDPDocuments/DAS/DAS-1.4.4/index.html
+      url: /HDPDocuments/DAS/DAS-1.4.5/index.html
       minors:
-        - title: 1.4.4
+        - title: 1.4.5
           type: Latest
+          url: /HDPDocuments/DAS/DAS-1.4.5/index.html
+        - title: 1.4.4
           url: /HDPDocuments/DAS/DAS-1.4.4/index.html
         - title: 1.4.1
           url: /HDPDocuments/DAS/DAS-1.4.1/index.html

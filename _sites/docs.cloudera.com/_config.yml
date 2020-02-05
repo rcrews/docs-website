@@ -44,6 +44,7 @@ exclude:
 
   # Unreleased documentation
   - /HDPDocuments/Cloudbreak/Cloudbreak-1.10.0/
+  - /HDPDocuments/DAS/DAS-1.4.5/
   - /cem/1.1.1/
   - /cfm/2.0.0/
   - /csa/1.0.0/
