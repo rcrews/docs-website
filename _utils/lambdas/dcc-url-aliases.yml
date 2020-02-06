@@ -1,17 +1,17 @@
 - alias: /HDPDocuments/Ambari/latest/
-  exist: /HDPDocuments/Ambari/Ambari-2.7.4.0/
+  exist: /HDPDocuments/Ambari/Ambari-2.7.5.0/
 - alias: /HDPDocuments/Ambari-latest/
-  exist: /HDPDocuments/Ambari-2.7.4.0/
+  exist: /HDPDocuments/Ambari-2.7.5.0/
 - alias: /HDPDocuments/Cloudbreak/latest/
   exist: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/
 - alias: /HDPDocuments/DAS/latest/
-  exist: /HDPDocuments/DAS/DAS-1.3.0/
+  exist: /HDPDocuments/DAS/DAS-1.4.4/
 - alias: /HDPDocuments/DLM1/latest/
-  exist: /HDPDocuments/DLM1/DLM-1.5.0/
+  exist: /HDPDocuments/DLM1/DLM-1.5.1/
 - alias: /HDPDocuments/DP/latest/
-  exist: /HDPDocuments/DP/DP-1.2.2/
+  exist: /HDPDocuments/DP/DP-1.2.3/
 - alias: /HDPDocuments/DSS1/latest/
-  exist: /HDPDocuments/DSS1/DSS-1.5.0/
+  exist: /HDPDocuments/DSS1/DSS-1.6.0/
 - alias: /HDPDocuments/HCP1/latest/
   exist: /HDPDocuments/HCP1/HCP-1.9.1/
 - alias: /HDPDocuments/HDF1/latest/
@@ -25,7 +25,7 @@
 - alias: /HDPDocuments/HDP2/latest/
   exist: /HDPDocuments/HDP2/HDP-2.6.5/
 - alias: /HDPDocuments/HDP3/latest/
-  exist: /HDPDocuments/HDP3/HDP-3.1.4/
+  exist: /HDPDocuments/HDP3/HDP-3.1.5/
 - alias: /HDPDocuments/HDPforCloud/latest/
   exist: /HDPDocuments/HDPforCloud/HDPforCloud-3.1/
 - alias: /HDPDocuments/HDPS/latest/
@@ -37,7 +37,7 @@
   exist: /cdpdc/7.0/
 
 - alias: /cem/latest/
-  exist: /cem/1.0.0/
+  exist: /cem/1.1.0/
 - alias: /cfm/latest/
   exist: /cfm/1.0.1/
 - alias: /cloudera-manager/latest/
@@ -45,15 +45,15 @@
 - alias: /csa/latest/
   exist: /csa/1.1.0/
 - alias: /csp/latest/
-  exist: /csp/2.0.0/
+  exist: /csp/2.0.1/
 
 - alias: /ccp/latest/
   exist: /ccp/2.0.1/
 
 - alias: /documentation/data-science-workbench/latest/
-  exist: /documentation/data-science-workbench/1-6-x/
+  exist: /documentation/data-science-workbench/1-7-x/
 - alias: /documentation/data-science-workbench/latest.html
-  exist: /documentation/data-science-workbench/1-6-x.html
+  exist: /documentation/data-science-workbench/1-7-x.html
 
 - alias: /documentation/director/latest/
   exist: /documentation/director/6-3-x/
@@ -113,7 +113,7 @@
 - alias: /runtime/latest/
   exist: /runtime/7.0.3/
 - alias: /smm/latest/
-  exist: /smm/1.2.1/
+  exist: /smm/2.0.0/
 - alias: /srm/latest/
   exist: /srm/1.0.0/
 
