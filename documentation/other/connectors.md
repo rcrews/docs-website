@@ -16,6 +16,10 @@ dropdowns:
       href: /documentation/other/connectors/hive-odbc/2-0-0.html
     - text: Cloudera ODBC 2.5.0 Driver for Apache Hive
       href: /documentation/other/connectors/hive-odbc/2-5-0.html
+    - text: Cloudera ODBC 2.5.5 Driver for Apache Hive
+      href: /documentation/other/connectors/hive-odbc/2-5-5.html
+    - text: Cloudera ODBC 2.5.9 Driver for Apache Hive
+      href: /documentation/other/connectors/hive-odbc/2-5-9.html
     - text: Cloudera ODBC 2.5.10 Driver for Apache Hive
       href: /documentation/other/connectors/hive-odbc/2-5-10.html
     - text: Cloudera ODBC 2.5.12 Driver for Apache Hive
@@ -44,14 +48,12 @@ dropdowns:
       href: /documentation/other/connectors/hive-odbc/2-5-24.html
     - text: Cloudera ODBC 2.5.25 Driver for Apache Hive
       href: /documentation/other/connectors/hive-odbc/2-5-25.html
-    - text: Cloudera ODBC 2.5.5 Driver for Apache Hive
-      href: /documentation/other/connectors/hive-odbc/2-5-5.html
-    - text: Cloudera ODBC 2.5.9 Driver for Apache Hive
-      href: /documentation/other/connectors/hive-odbc/2-5-9.html
     - text: Cloudera ODBC 2.6.1 Driver for Apache Hive
       href: /documentation/other/connectors/hive-odbc/2-6-1.html
-    - text: Cloudera ODBC 2.6.4 Driver for Apache Hive
-      href: /documentation/other/connectors/hive-odbc/2-6-4.html
+    # - text: Cloudera ODBC 2.6.4 Driver for Apache Hive
+    #   href: /documentation/other/connectors/hive-odbc/2-6-4.html
+    - text: Cloudera ODBC 2.6.5 Driver for Apache Hive
+      href: /documentation/other/connectors/hive-odbc/2-6-5.html
 
 - section:
     title: Cloudera ODBC Drivers for Impala
@@ -60,14 +62,16 @@ dropdowns:
       href: /documentation/other/connectors/impala-odbc/1-2-0.html
     - text: Cloudera ODBC 2.0.0 Driver for Impala
       href: /documentation/other/connectors/impala-odbc/2-0-0.html
+    - text: Cloudera ODBC 2.5.2 Driver for Impala
+      href: /documentation/other/connectors/impala-odbc/2-5-2.html
+    - text: Cloudera ODBC 2.5.5 Driver for Impala
+      href: /documentation/other/connectors/impala-odbc/2-5-5.html
     - text: Cloudera ODBC 2.5.13 Driver for Impala
       href: /documentation/other/connectors/impala-odbc/2-5-13.html
     - text: Cloudera ODBC 2.5.15 Driver for Impala
       href: /documentation/other/connectors/impala-odbc/2-5-15.html
     - text: Cloudera ODBC 2.5.17 Driver for Impala
       href: /documentation/other/connectors/impala-odbc/2-5-17.html
-    - text: Cloudera ODBC 2.5.2 Driver for Impala
-      href: /documentation/other/connectors/impala-odbc/2-5-2.html
     - text: Cloudera ODBC 2.5.20 Driver for Impala
       href: /documentation/other/connectors/impala-odbc/2-5-20.html
     - text: Cloudera ODBC 2.5.22 Driver for Impala
@@ -110,8 +114,6 @@ dropdowns:
       href: /documentation/other/connectors/impala-odbc/2-5-43.html
     - text: Cloudera ODBC 2.5.44 Driver for Impala
       href: /documentation/other/connectors/impala-odbc/2-5-44.html
-    - text: Cloudera ODBC 2.5.5 Driver for Impala
-      href: /documentation/other/connectors/impala-odbc/2-5-5.html
     - text: Cloudera ODBC 2.6.0 Driver for Impala
       href: /documentation/other/connectors/impala-odbc/2-6-0.html
     - text: Cloudera ODBC 2.6.2 Driver for Impala
@@ -119,7 +121,11 @@ dropdowns:
     - text: Cloudera ODBC 2.6.4 Driver for Impala
       href: /documentation/other/connectors/impala-odbc/2-6-4.html
     - text: Cloudera ODBC 2.6.5 Driver for Impala
-      href: /documentation/other/connectors/impala-odbc/latest.html
+      href: /documentation/other/connectors/impala-odbc/2-6-5.html
+    - text: Cloudera ODBC 2.6.7 Driver for Impala
+      href: /documentation/other/connectors/impala-odbc/2-6-7.html
+    - text: Cloudera ODBC 2.6.8 Driver for Impala
+      href: /documentation/other/connectors/impala-odbc/2-6-8.html
 
 - section:
     title: Cloudera Connector Powered by Teradata
@@ -130,6 +136,12 @@ dropdowns:
 - section:
     title: Cloudera JDBC Drivers for Hive
     dropdown:
+    - text: Cloudera JDBC 2.5.4 Driver for Apache Hive
+      href: /documentation/other/connectors/hive-jdbc/2-5-4.html
+    - text: Cloudera JDBC 2.5.6 Driver for Apache Hive
+      href: /documentation/other/connectors/hive-jdbc/2-5-6.html
+    - text: Cloudera JDBC 2.5.9 Driver for Apache Hive
+      href: /documentation/other/connectors/hive-jdbc/2-5-9.html
     - text: Cloudera JDBC 2.5.10 Driver for Apache Hive
       href: /documentation/other/connectors/hive-jdbc/2-5-10.html
     - text: Cloudera JDBC 2.5.12 Driver for Apache Hive
@@ -146,22 +158,20 @@ dropdowns:
       href: /documentation/other/connectors/hive-jdbc/2-5-19.html
     - text: Cloudera JDBC 2.5.20 Driver for Apache Hive
       href: /documentation/other/connectors/hive-jdbc/2-5-20.html
-    - text: Cloudera JDBC 2.5.4 Driver for Apache Hive
-      href: /documentation/other/connectors/hive-jdbc/2-5-4.html
-    - text: Cloudera JDBC 2.5.6 Driver for Apache Hive
-      href: /documentation/other/connectors/hive-jdbc/2-5-6.html
-    - text: Cloudera JDBC 2.5.9 Driver for Apache Hive
-      href: /documentation/other/connectors/hive-jdbc/2-5-9.html
     - text: Cloudera JDBC 2.6.1 Driver for Apache Hive
       href: /documentation/other/connectors/hive-jdbc/2-6-1.html
     - text: Cloudera JDBC 2.6.2 Driver for Apache Hive
       href: /documentation/other/connectors/hive-jdbc/2-6-2.html
     - text: Cloudera JDBC 2.6.5 Driver for Apache Hive
-      href: /documentation/other/connectors/hive-jdbc/latest.html
+      href: /documentation/other/connectors/hive-jdbc/2-6-5.html
+    - text: Cloudera JDBC 2.6.9 Driver for Apache Hive
+      href: /documentation/other/connectors/hive-jdbc/2-6-9.html
 
 - section:
     title: Cloudera JDBC Drivers for Impala
     dropdown:
+    - text: Cloudera JDBC 2.5.5 Driver for Impala
+      href: /documentation/other/connectors/impala-jdbc/2-5-5.html
     - text: Cloudera JDBC 2.5.14 Driver for Impala
       href: /documentation/other/connectors/impala-jdbc/2-5-14.html
     - text: Cloudera JDBC 2.5.16 Driver for Impala
@@ -200,8 +210,6 @@ dropdowns:
       href: /documentation/other/connectors/impala-jdbc/2-5-43.html
     - text: Cloudera JDBC 2.5.45 Driver for Impala
       href: /documentation/other/connectors/impala-jdbc/2-5-45.html
-    - text: Cloudera JDBC 2.5.5 Driver for Impala
-      href: /documentation/other/connectors/impala-jdbc/2-5-5.html
     - text: Cloudera JDBC 2.6.11 Driver for Impala
       href: /documentation/other/connectors/impala-jdbc/2-6-11.html
     - text: Cloudera JDBC 2.6.2 Driver for Impala
@@ -212,8 +220,10 @@ dropdowns:
       href: /documentation/other/connectors/impala-jdbc/2-6-4.html
     - text: Cloudera JDBC 2.6.9 Driver for Impala
       href: /documentation/other/connectors/impala-jdbc/2-6-9.html
+    - text: Cloudera JDBC 2.6.11 Driver for Impala
+      href: /documentation/other/connectors/impala-jdbc/2.6.11.html
     - text: Cloudera JDBC 2.6.12 Driver for Impala
-      href: /documentation/other/connectors/impala-jdbc/latest.html
+      href: /documentation/other/connectors/impala-jdbc/2.6.12.html
 
 - section:
     title: Cloudera Connector for Netezza
