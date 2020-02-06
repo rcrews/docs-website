@@ -46,9 +46,10 @@
   exist: /csa/1.1.0/
 - alias: /csp/latest/
   exist: /csp/2.0.1/
-
-- alias: /ccp/latest/
-  exist: /ccp/2.0.1/
+- alias: /csp/latest/
+  exist: /csp/2.0.1/
+- alias: /cdf-datahub/latest/
+  exist: /cdf-datahub/7.0.2/
 
 - alias: /documentation/data-science-workbench/latest/
   exist: /documentation/data-science-workbench/1-7-x/
