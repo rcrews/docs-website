@@ -51,6 +51,10 @@
     aws s3 sync s3://docs-stage.cloudera.com/management-console "${LOCAL_ROOT}"/management-console
     aws s3 sync s3://docs-stage.cloudera.com/common/fonts "${LOCAL_ROOT}"/common/fonts
     aws s3 sync s3://docs-stage.cloudera.com/common/img   "${LOCAL_ROOT}"/common/img
+    aws s3 sync s3://docs-stage.cloudera.com/content      "${LOCAL_ROOT}"/content
+    aws s3 sync s3://docs-stage.cloudera.com/etc.clientlibs "${LOCAL_ROOT}"/etc.clientlibs
+    aws s3 sync s3://docs-stage.cloudera.com/etc          "${LOCAL_ROOT}"/etc
+    aws s3 sync s3://docs-stage.cloudera.com/libs         "${LOCAL_ROOT}"/libs
     rsync -ChivrlpgoDHAXc _site/                          "${LOCAL_ROOT}"
     # git checkout master
 # fi
