@@ -3,512 +3,536 @@
 <!-- created with Scrutiny from https://peacockmedia.software -->
 
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_admin_guide.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_admin_guide.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_requirements_supported_versions.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_upgrade.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_parallel_computing.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_visualize_report.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_workbench.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_release_notes.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_migrate_rpm_to_csd.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_editors.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_collaborate.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_overview.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_overview.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_models.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_release_notes.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_known_issues.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_known_issues.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_requirements_supported_versions.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_install.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_install_parcel.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_install_parcel.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_install.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_upgrade.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_install_package.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_install_package.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_upgrade_parcel.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_upgrade_parcel.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_migrate_rpm_to_csd.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_upgrade_package.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_upgrade_package.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_quickstart.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_workbench.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_user_guide.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_user_guide.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_hdp.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_projects.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_visualize_report.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_hdp.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_projects.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_quickstart.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_embedded_web_apps.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_gpu.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_gpu.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_embedded_web_apps.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_distributed_ml.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_web_ui.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_web_ui.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_distributed_ml.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_using_git.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_parallel_computing.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_editors.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_collaborate.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_editors_local_ide.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_using_git.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_editors_browser.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_editors_local_ide.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_editors_pycharm.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_editors_browser.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_import_data.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_editors_pycharm.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_experiments.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_import_data.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_experiments_debug.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_experiments.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_models.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_models_admin.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_models_admin.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_models_examples.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_models_debug.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_experiments_debug.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_jobs_pipelines.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_models_debug.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_rest_apis.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_analytical_applications.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_models_examples.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_limitations.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_engines_models_experiments.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_rest_apis.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_engine_configuration.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_engines.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_engines.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_jobs_pipelines.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_engine_dependencies.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_engines_models_experiments.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_environment_variables.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_engine_configuration.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_install_pkg_lib.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_engine_dependencies.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_extensible_engines.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_environment_variables.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_engines_packaging.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_install_pkg_lib.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_jupyter.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_extensible_engines.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_dist_comp_with_Spark.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_engines_packaging.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_spark_configuration.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_dist_comp_with_Spark.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_proxy_setup.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_jupyter.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_pyspark.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_spark_configuration.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_spark_and_scala.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_pyspark.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_sparklyr.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_sparklyr.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_monitoring.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_proxy_setup.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_monitoring_user_events.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_monitoring.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_cm.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_quotas.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_monitoring_tracked_events.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_spark_and_scala.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_data_collection.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_monitoring_tracked_events.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_email.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_monitoring_user_events.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_license_keys.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_cm.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_cluster_management.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_email.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_feature_control.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_feature_control.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_bdr.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_data_collection.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_performance_scale.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_cluster_management.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_ports.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_bdr.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_auth_freeipa.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_performance_scale.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_migrate.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_monitoring_workspaces.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_manage_hosts.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_ports.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_rollback.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_license_keys.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_uninstall.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_manage_hosts.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_tls_ssl.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_migrate.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_security.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_rollback.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_custom_root_ca.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_tls_ssl.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_proxy.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_security.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_kerberos.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_custom_root_ca.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_http_headers.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_uninstall.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_external_authentication.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_proxy.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_ssh_keys.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_kerberos.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_troubleshooting.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_auth_freeipa.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_user_created_pods.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_http_headers.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_cli_reference.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_user_created_pods.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_cli_client.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_ssh_keys.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_videos.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_external_authentication.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_faq.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_cli_reference.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_glossary.html</loc>
-		<lastmod>2019-10-22</lastmod>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_cli_client.html</loc>
+		<lastmod>2020-02-05</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_troubleshooting.html</loc>
+		<lastmod>2020-02-05</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_faq.html</loc>
+		<lastmod>2020-02-05</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_videos.html</loc>
+		<lastmod>2020-02-05</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/topics/cdsw_glossary.html</loc>
+		<lastmod>2020-02-05</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
