@@ -1254,10 +1254,12 @@
   search-name: cem
   versions:
     - title: "1.1"
-      url: /cem/1.1.0/index.html
+      url: /cem/1.1.1/index.html
       minors:
-        - title: 1.1.0
+        - title: 1.1.1
           type: Latest
+          url: /cem/1.1.1/index.html
+        - title: 1.1.0
           url: /cem/1.1.0/index.html
     - title: "1.0"
       url: /cem/1.0.0/index.html
