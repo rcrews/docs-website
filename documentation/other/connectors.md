@@ -224,6 +224,8 @@ dropdowns:
       href: /documentation/other/connectors/impala-jdbc/2.6.11.html
     - text: Cloudera JDBC 2.6.12 Driver for Impala
       href: /documentation/other/connectors/impala-jdbc/2.6.12.html
+    - text: Cloudera JDBC 2.6.15 Driver for Impala
+      href: /documentation/other/connectors/impala-jdbc/2.6.15.html
 
 - section:
     title: Cloudera Connector for Netezza
