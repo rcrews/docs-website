@@ -324,25 +324,10 @@
           id: pub-tuning-hue
           sub: tuning-hue/navigation.json
 
-        - text: Configuring Apache HBase for use with Apache Phoenix
-          href: phoenix-configure-hbase/index.html
-          id: pub-phoenix-configure-hbase
-          sub: phoenix-configure-hbase/navigation.json
-
-        - text: Using Apache Phoenix to Store and Access Data
-          href: phoenix-access-data/index.html
-          id: pub-phoenix-access-data
-          sub: phoenix-access-data/navigation.json
-
-        - text: Using Apache Phoenix-Spark Connector
-          href: phoenix-spark-connector/index.html
-          id: pub-phoenix-spark-connector
-          sub: phoenix-spark-connector/navigation.json
-
     - text: Operational Datastore
       href: howto-operational-database.html
       sub:
-        - text: Getting Started with Apache HBase
+        - text: Getting Started with Operational Database
           href: hbase-getting-started/index.html
           id: pub-hbase-getting-started
           sub: hbase-getting-started/navigation.json
