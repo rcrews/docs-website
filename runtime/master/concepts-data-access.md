@@ -4,6 +4,7 @@ breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Data Access
 
 # Concepts publications related to
+# * DAS
 # * Hive
 # * Impala
 # * Hue

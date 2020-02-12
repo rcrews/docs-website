@@ -89,6 +89,7 @@
           id: pub-phoenix-overview
           sub: phoenix-overview/navigation.json
 
+        # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
         - text: Cloudera Search Overview
           href: search-overview/index.html
           id: pub-search-overview
@@ -152,6 +153,7 @@
 - text: Planning
   id: cat-planning
   sub:
+    # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
     - text: Deployment Planning for Cloudera Search
       href: search-deployment-planning/index.html
       id: pub-search-deployment-planning
@@ -208,11 +210,13 @@
           id: pub-cloud-data-access
           sub: cloud-data-access/navigation.json
 
+        # Not in 7.1.0?
         - text: Storing Data Using Ozone
           href: ozone-storing-data/index.html
           id: pub-ozone-storing-data
           sub: ozone-storing-data/navigation.json
 
+        # Not in 7.1.0?
         - text: Configuring Ozone Security
           href: ozone-security/index.html
           id: pub-ozone-security
@@ -279,7 +283,7 @@
           id: pub-starting-hive
           sub: starting-hive/navigation.json
 
-        - text: Using Hive
+        - text: Using Apache Hive
           href: using-hiveql/index.html
           id: pub-using-hiveql
           sub: using-hiveql/navigation.json
@@ -344,51 +348,61 @@
           id: pub-tuning-hue
           sub: tuning-hue/navigation.json
 
+        # In master, but not in 7.1.0?
         - text: Configuring Apache HBase for use with Apache Phoenix
           href: phoenix-configure-hbase/index.html
           id: pub-phoenix-configure-hbase
           sub: phoenix-configure-hbase/navigation.json
 
+        # In master, but not in 7.1.0?
         - text: Using Apache Phoenix to Store and Access Data
           href: phoenix-access-data/index.html
           id: pub-phoenix-access-data
           sub: phoenix-access-data/navigation.json
 
+        # In master, but not in 7.1.0?
         - text: Using Apache Phoenix-Spark Connector
           href: phoenix-spark-connector/index.html
           id: pub-phoenix-spark-connector
           sub: phoenix-spark-connector/navigation.json
 
+        # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
         - text: Search Tutorial
           href: search-tutorial/index.html
           id: pub-search-tutorial
           sub: search-tutorial/navigation.json
 
+        # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
         - text: Deploying Cloudera Search
           href: search-deploying/index.html
           id: pub-search-deploying
           sub: search-deploying/navigation.json
 
+        # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
         - text: Securing Cloudera Search
           href: search-security/index.html
           id: pub-search-security
           sub: search-security/navigation.json
 
+        # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
         - text: Tuning Cloudera Search
           href: search-tuning/index.html
           id: pub-search-tuning
           sub: search-tuning/navigation.json
 
+        # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
         - text: Managing Cloudera Search
           href: search-managing/index.html
           id: pub-search-managing
           sub: search-managing/navigation.json
 
+        # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
         - text: Cloudera Search ETL
           href: search-etl-morphlines/index.html
           id: pub-search-etl-morphlines
           sub: search-etl-morphlines/navigation.json
 
+        # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
         - text: Indexing Data Using Cloudera Search
           href: search-indexing/index.html
           id: pub-search-indexing
@@ -397,6 +411,7 @@
     - text: Operational Datastore
       href: howto-operational-database.html
       sub:
+        # Why the title difference between 7.1.0 and master?
         - text: Getting Started with Apache HBase
           href: hbase-getting-started/index.html
           id: pub-hbase-getting-started
@@ -498,6 +513,7 @@
           id: pub-security-ranger-authentication-unix-ldap-ad
           sub: security-ranger-authentication-unix-ldap-ad/navigation.json
 
+        # Dave confirmed this is not in 7.1.0. Slack 2/12
         - text: Configuring Advanced Security Options for Apache Ranger
           href: security-ranger-configuring-advanced/index.html
           id: pub-security-ranger-configuring-advanced
@@ -586,6 +602,7 @@
       id: pub-troubleshooting-kudu
       sub: troubleshooting-kudu/navigation.json
 
+    # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
     - text: Troubleshooting Cloudera Search
       href: search-troubleshooting/index.html
       id: pub-search-troubleshooting
@@ -624,6 +641,7 @@
       id: pub-atlas-reference
       sub: atlas-reference/navigation.json
 
+    # Title difference between master and 7.1.0?
     - text: Apache Hadoop YARN Reference
       href: yarn-tuning/index.html
       id: pub-yarn-tuning
@@ -639,6 +657,13 @@
       id: pub-phoenix-faq
       sub: phoenix-faq/navigation.json
 
+    # Cloud-specific information. Slack with Dave 2/12
+    # - text: Encryption Reference
+    #   href: security-encryption-reference/index.html
+    #   id: security-encryption-reference
+    #   sub: security-encryption-reference/navigation.json
+
+    # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
     - text: Cloudera Search Frequently Asked Questions
       href: search-faq/index.html
       id: pub-search-faq

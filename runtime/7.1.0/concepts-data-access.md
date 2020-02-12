@@ -17,6 +17,7 @@ publications:
     description: >-
       Provides an overview and architecture of the Data Analytics Studio
       environment.
+
   - title: Apache Hive Overview
     url: hive-introduction/index.html
     description: >-
@@ -39,6 +40,13 @@ publications:
     description: >-
       Introduces Hue, which is a query editor that can be used to submit
       and analyze SQL queries and design Oozie workflows.
+
+  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
+  # - title: Cloudera Search Overview
+  #   url: search-overview/index.html
+  #   description: >-
+  #     Provides an overview of Cloudera Search, based on Apache Solr.
+
 ---
 Cloudera Data Platform Runtime data access concepts provide overview
 information about Apache Impala, Apache Hive, Data Analytics Studio, and Hue. Using the
