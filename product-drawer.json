@@ -115,7 +115,7 @@ json:
       icon: /common/img/mini_icons/icon-cybersecurity.png
 
     - text: Cloudera Data Science Workbench
-      href: /documentation/data-science-workbench/1-6-x.html
+      href: /documentation/data-science-workbench/1-7-x.html
       icon: /common/img/mini_icons/icon-dsw.png
 
 - title: Enterprise
