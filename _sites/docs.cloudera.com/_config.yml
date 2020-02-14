@@ -46,8 +46,10 @@ exclude:
   - /HDPDocuments/Cloudbreak/Cloudbreak-1.10.0/
   - /HDPDocuments/DAS/DAS-1.4.5/
   - /cfm/2.0.0/
+  - /cloudera-manager/7.1.0/
   - /csa/1.0.0/
   - /csp/3.0.0/
+  - /runtime/7.1.0/
 
   # "master" version for docs-dev only
   - /best-practices/master/
