@@ -641,12 +641,6 @@
       id: pub-atlas-reference
       sub: atlas-reference/navigation.json
 
-    # Don't know if this pub is in or out. Sent mail to Divya 2/13
-    # - text: Apache Hadoop YARN Configuration Parameters
-    #   href: yarn-config-parameters/index.html
-    #   id: pub-yarn-config-parameters
-    #   sub: yarn-config-parameters/navigation.json
-
     - text: Apache Hadoop YARN Reference
       href: yarn-reference/index.html
       id: pub-yarn-reference
