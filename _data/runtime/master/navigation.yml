@@ -64,6 +64,11 @@
           id: pub-das-overview
           sub: das-overview/navigation.json
 
+        - text: Apache Hive Metastore Overview
+          href: hive-metastore/index.html
+          id: pub-hive-metastore
+          sub: hive-metastore/navigation.json
+
         - text: Apache Hive Overview
           href: hive-introduction/index.html
           id: pub-hive-introduction
@@ -663,7 +668,7 @@
       id: pub-phoenix-faq
       sub: phoenix-faq/navigation.json
 
-    # Cloud-specific information. IN for 7.2.0. Slack with Dave 2/12
+    # Cloud-specific information. IN for 7.1.0. Slack with Dave 2/12
     - text: Encryption Reference
       href: security-encryption-reference/index.html
       id: security-encryption-reference
