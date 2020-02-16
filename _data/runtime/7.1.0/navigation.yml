@@ -63,6 +63,11 @@
           href: das-overview/index.html
           id: pub-das-overview
           sub: das-overview/navigation.json
+          
+        - text: Apache Hive Metastore Overview
+          href: hive-metastore/index.html
+          id: pub-hms-introduction
+          sub: hive-hms-introduction/navigation.json
 
         - text: Apache Hive Overview
           href: hive-introduction/index.html
