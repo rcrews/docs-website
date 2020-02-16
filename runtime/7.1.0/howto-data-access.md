@@ -18,6 +18,13 @@ publications:
       Describes how to work with queries, manage databases and tables,
       and generate reports.
 
+- title: Using Hive Metastore
+    url: hive-metastore/index.html
+    description: >-
+      Describes authorizing access to Hive tables from Spark and 
+      configuring access to metadata Hive metastore (HMS) for
+      multiple services, such as Hive and Impala.
+      
   - title: Starting Apache Hive
     url: starting-hive/index.html
     description: >-
@@ -48,12 +55,6 @@ publications:
     description: >-
       Describes how to set up Hive to generate statistics and control
       the number of concurrent connections to Hive.
-
-  - title: Configuring Apache Hive Metastore
-    url: hive-metastore/index.html
-    description: >-
-      Covers how to configure Hive metastore (HMS) to access metadata of
-      multiple services, such as Hive, Impala, and Spark.
 
   - title: Securing Apache Hive
     url: securing-hive/index.html
