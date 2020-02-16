@@ -89,6 +89,7 @@
           id: pub-phoenix-overview
           sub: phoenix-overview/navigation.json
 
+        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Cloudera Search Overview
           href: search-overview/index.html
           id: pub-search-overview
@@ -152,6 +153,7 @@
 - text: Planning
   id: cat-planning
   sub:
+    # Search is IN 7.1.0. 2/14 Email from Mitra
     - text: Deployment Planning for Cloudera Search
       href: search-deployment-planning/index.html
       id: pub-search-deployment-planning
@@ -364,36 +366,43 @@
           id: pub-phoenix-spark-connector
           sub: phoenix-spark-connector/navigation.json
 
+        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Search Tutorial
           href: search-tutorial/index.html
           id: pub-search-tutorial
           sub: search-tutorial/navigation.json
 
+        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Deploying Cloudera Search
           href: search-deploying/index.html
           id: pub-search-deploying
           sub: search-deploying/navigation.json
 
+        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Securing Cloudera Search
           href: search-security/index.html
           id: pub-search-security
           sub: search-security/navigation.json
 
+        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Tuning Cloudera Search
           href: search-tuning/index.html
           id: pub-search-tuning
           sub: search-tuning/navigation.json
 
+        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Managing Cloudera Search
           href: search-managing/index.html
           id: pub-search-managing
           sub: search-managing/navigation.json
 
+        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Cloudera Search ETL
           href: search-etl-morphlines/index.html
           id: pub-search-etl-morphlines
           sub: search-etl-morphlines/navigation.json
 
+        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Indexing Data Using Cloudera Search
           href: search-indexing/index.html
           id: pub-search-indexing
@@ -594,6 +603,7 @@
       id: pub-troubleshooting-kudu
       sub: troubleshooting-kudu/navigation.json
 
+    # Search is IN 7.1.0. 2/14 Email from Mitra
     - text: Troubleshooting Cloudera Search
       href: search-troubleshooting/index.html
       id: pub-search-troubleshooting
@@ -659,6 +669,7 @@
       id: security-encryption-reference
       sub: security-encryption-reference/navigation.json
 
+    # Search is IN 7.1.0. 2/14 Email from Mitra
     - text: Cloudera Search Frequently Asked Questions
       href: search-faq/index.html
       id: pub-search-faq
