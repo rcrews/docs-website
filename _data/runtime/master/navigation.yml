@@ -548,6 +548,12 @@
           id: pub-atlas-managing-business-terms-with-glossaries
           sub: atlas-managing-business-terms-with-glossaries/navigation.json
 
+        # This is OUT for 7.1.0, per Dave Slack 2/16
+        - text: Configuring and Securing Atlas using Cloudera Manager
+          href: atlas-securing/index.html
+          id: pub-atlas-securing
+          sub: atlas-securing/navigation.json
+
     - text: Jobs Management
       href: howto-jobs-management.html
       sub:
