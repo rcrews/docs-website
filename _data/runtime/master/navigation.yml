@@ -416,8 +416,7 @@
     - text: Operational Datastore
       href: howto-operational-database.html
       sub:
-        # Why the title difference between 7.1.0 and master?
-        - text: Getting Started with Apache HBase
+        - text: Getting Started with Operational Database
           href: hbase-getting-started/index.html
           id: pub-hbase-getting-started
           sub: hbase-getting-started/navigation.json
