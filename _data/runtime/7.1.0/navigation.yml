@@ -67,7 +67,7 @@
         - text: Apache Hive Metastore Overview
           href: hive-metastore/index.html
           id: pub-hms-introduction
-          sub: hive-hms-introduction/navigation.json
+          sub: hive-metastore/navigation.json
 
         - text: Apache Hive Overview
           href: hive-introduction/index.html
