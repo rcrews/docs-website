@@ -615,10 +615,10 @@
       id: pub-atlas-reference
       sub: atlas-reference/navigation.json
 
-    - text: Apache Hadoop YARN Tuning
-      href: yarn-tuning/index.html
-      id: pub-yarn-tuning
-      sub: yarn-tuning/navigation.json
+    - text: Apache Hadoop YARN Reference
+      href: yarn-reference/index.html
+      id: pub-yarn-reference
+      sub: yarn-reference/navigation.json
 
     - text: Apache Phoenix Performance Tuning
       href: phoenix-performance-tuning/index.html
