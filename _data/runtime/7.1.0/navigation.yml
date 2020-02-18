@@ -283,6 +283,11 @@
           href: using-das/index.html
           id: pub-using-das
           sub: using-das/navigation.json
+          
+        - text: Working with Apache Hive Metastore
+          href: hive-metastore/index.html
+          id: pub-hive-metastore
+          sub: hive-metastore/navigation.json
 
         - text: Starting Apache Hive
           href: starting-hive/index.html
@@ -308,11 +313,6 @@
           href: configuring-apache-hive/index.html
           id: pub-configuring-apache-hive
           sub: configuring-apache-hive/navigation.json
-
-        - text: Configuring Apache Hive Metastore
-          href: hive-metastore/index.html
-          id: pub-hive-metastore
-          sub: hive-metastore/navigation.json
 
         - text: Securing Apache Hive
           href: securing-hive/index.html
