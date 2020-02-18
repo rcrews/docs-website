@@ -18,6 +18,13 @@ publications:
       Provides an overview and architecture of the Data Analytics Studio
       environment.
 
+# need directory on S3
+#  - title Apache Hive Metastore Overview
+#    url: ?/index.html
+#    description: >-
+#      Describes the HMS service that stores metadata for a number 
+#      of services, including Hive, Spark, and Impala.
+
   - title: Apache Hive Overview
     url: hive-introduction/index.html
     description: >-
