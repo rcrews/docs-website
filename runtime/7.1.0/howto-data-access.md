@@ -18,7 +18,7 @@ publications:
       Describes how to work with queries, manage databases and tables,
       and generate reports.
 
-- title: Using Hive Metastore
+- title: Working with Hive Metastore
     url: hive-metastore/index.html
     description: >-
       Describes authorizing access to Hive tables from Spark and
