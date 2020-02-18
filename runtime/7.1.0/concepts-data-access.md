@@ -18,12 +18,11 @@ publications:
       Provides an overview and architecture of the Data Analytics Studio
       environment.
 
-# need directory on S3
-#  - title Apache Hive Metastore Overview
-#    url: ?/index.html
-#    description: >-
-#      Describes the HMS service that stores metadata for a number 
-#      of services, including Hive, Spark, and Impala.
+  - title Apache Hive Metastore Overview
+    url: hive-hms-overview/index.html
+    description: >-
+      Describes the HMS service that stores metadata for a number 
+      of services, including Hive, Spark, and Impala.
 
   - title: Apache Hive Overview
     url: hive-introduction/index.html
@@ -48,11 +47,11 @@ publications:
       Introduces Hue, which is a query editor that can be used to submit
       and analyze SQL queries and design Oozie workflows.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
-  # - title: Cloudera Search Overview
-  #   url: search-overview/index.html
-  #   description: >-
-  #     Provides an overview of Cloudera Search, based on Apache Solr.
+  # In 7.1.0, per Mitra 2/14
+  - title: Cloudera Search Overview
+    url: search-overview/index.html
+    description: >-
+      Provides an overview of Cloudera Search, based on Apache Solr.
 
 ---
 Cloudera Data Platform Runtime data access concepts provide overview

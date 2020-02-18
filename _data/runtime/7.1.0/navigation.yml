@@ -64,11 +64,10 @@
           id: pub-das-overview
           sub: das-overview/navigation.json
 
-  # awaiting creation of new directory on S3 for new ditamap hive-hms-overview.ditamap
-  #      - text: Apache Hive Metastore Overview
-  #        href: ?/index.html
-  #        id: ?
-  #        sub: ?/navigation.json
+        - text: Apache Hive Metastore Overview
+          href: hive-hms-overview/index.html
+          id: pub-hive-hms-overview
+          sub: hive-hms-overview/navigation.json
 
         - text: Apache Hive Overview
           href: hive-introduction/index.html
@@ -283,7 +282,7 @@
           href: using-das/index.html
           id: pub-using-das
           sub: using-das/navigation.json
-          
+
         - text: Working with Apache Hive Metastore
           href: hive-metastore/index.html
           id: pub-hive-metastore
