@@ -18,7 +18,7 @@ publications:
       Describes how to work with queries, manage databases and tables,
       and generate reports.
 
-- title: Working with Hive Metastore
+  - title: Working with Hive Metastore
     url: hive-metastore/index.html
     description: >-
       Describes authorizing access to Hive tables from Spark and
@@ -113,52 +113,52 @@ publications:
       for Hue and between Hue and other components, such as Hive, Impala,
       and HDFS.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
-  # - title: Search Tutorial
-  #   url: search-tutorial/index.html
-  #   description: >-
-  #     A tutorial on using Cloudera Search.
+  # In 7.1.0, per Mitra 2/14
+  - title: Search Tutorial
+    url: search-tutorial/index.html
+    description: >-
+      A tutorial on using Cloudera Search.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
-  # - title: Deploying Cloudera Search
-  #   url: search-deploying/index.html
-  #   description: >-
-  #     Describes how to deploy Cloudera Search.
+  # In 7.1.0, per Mitra 2/14
+  - title: Deploying Cloudera Search
+    url: search-deploying/index.html
+    description: >-
+      Describes how to deploy Cloudera Search.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
-  # - title: Securing Cloudera Search
-  #   url: search-security/index.html
-  #   description: >-
-  #     Nibh curabitur feugiat himenaeos sociosqu integer cras vel
-  #     efficitur, semper penatibus justo posuere auctor pharetra
-  #     sollicitudin fames, congue accumsan placerat.
+  # In 7.1.0, per Mitra 2/14
+  - title: Securing Cloudera Search
+    url: search-security/index.html
+    description: >-
+      Nibh curabitur feugiat himenaeos sociosqu integer cras vel
+      efficitur, semper penatibus justo posuere auctor pharetra
+      sollicitudin fames, congue accumsan placerat.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
-  # - title: Tuning Cloudera Search
-  #   url: search-tuning/index.html
-  #   description: >-
-  #     Nibh curabitur feugiat himenaeos sociosqu integer cras vel
-  #     efficitur, semper penatibus justo posuere auctor pharetra
-  #     sollicitudin fames, congue accumsan placerat.
+  # In 7.1.0, per Mitra 2/14
+  - title: Tuning Cloudera Search
+    url: search-tuning/index.html
+    description: >-
+      Nibh curabitur feugiat himenaeos sociosqu integer cras vel
+      efficitur, semper penatibus justo posuere auctor pharetra
+      sollicitudin fames, congue accumsan placerat.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
-  # - title: Managing Cloudera Search
-  #   url: search-managing/index.html
-  #   description: >-
-  #     Describes how to configure and manage Cloudera Search.
+  # In 7.1.0, per Mitra 2/14
+  - title: Managing Cloudera Search
+    url: search-managing/index.html
+    description: >-
+      Describes how to configure and manage Cloudera Search.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
-  # - title: Cloudera Search ETL
-  #   url: search-etl-morphlines/index.html
-  #   description: >-
-  #     Describes how to perform ETL using Cloudera Search and
-  #     Morphlines.
+  # In 7.1.0, per Mitra 2/14
+  - title: Cloudera Search ETL
+    url: search-etl-morphlines/index.html
+    description: >-
+      Describes how to perform ETL using Cloudera Search and
+      Morphlines.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
-  # - title: Indexing Data Using Cloudera Search
-  #   url: search-indexing/index.html
-  #   description: >-
-  #     Describes how to index data using Cloudera Search.
+  # In 7.1.0, per Mitra 2/14
+  - title: Indexing Data Using Cloudera Search
+    url: search-indexing/index.html
+    description: >-
+      Describes how to index data using Cloudera Search.
 
 ---
 Cloudera Data Platform Runtime includes Apache Hive 3 and Apache Impala

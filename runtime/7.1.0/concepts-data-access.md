@@ -18,10 +18,10 @@ publications:
       Provides an overview and architecture of the Data Analytics Studio
       environment.
 
-  - title Apache Hive Metastore Overview
+  - title: Apache Hive Metastore Overview
     url: hive-hms-overview/index.html
     description: >-
-      Describes the HMS service that stores metadata for a number 
+      Describes the HMS service that stores metadata for a number
       of services, including Hive, Spark, and Impala.
 
   - title: Apache Hive Overview
