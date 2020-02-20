@@ -450,6 +450,11 @@
           id: pub-tuning-spark
           sub: tuning-spark/navigation.json
 
+        - text: CDS 3 (Experimental) Powered by Apache Spark
+          href: cds-3/index.html
+          id: pub-cds-3
+          sub: cds-3/navigation.json
+
 # Commenting out Zeppelin for 7.0.3 release, because CDP-DC does not support Zeppelin initially
 #        - text: Configuring Apache Zeppelin
 #          href: configuring-zeppelin/index.html
