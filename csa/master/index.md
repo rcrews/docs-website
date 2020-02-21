@@ -25,14 +25,11 @@ guides walk you through the basic steps to build a Flink
 application from scratch.
 
 For newcomers to Flink:
-- Simple Flink Application Tutorial: a warning and alert application
-  with a basic Flink structure
+- Simple Flink Application Tutorial: a self-contained alerting application establishing basic Flink best practices
 
 For advanced users:
-- Secured Flink Application Tutorial: enabling security features for a Flink
-  application
-- Stateful Flink Application Tutorial: a real-time management service
-  with a stateful Flink application
+- Secured Flink Application Tutorial: an application demonstrating Flink security features
+- Stateful Flink Application Tutorial: a stateful inventory management service focusing on production grade development and operation requirements
 
 See the tutorials and the corresponding reference Flink applications
 on GitHub at
