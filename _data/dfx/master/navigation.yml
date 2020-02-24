@@ -113,7 +113,7 @@
   id: cat-releasenotes
   sub:
     - text: Release Notes
-      href: release-notes/index.html
+      href: https://docs.google.com/document/d/1SkbnQJb04Tkxfbx9I_YeWFpN-GbqwSz-igyFuuCFZ0w/edit
       id:   pub-release-notes
       sub:  release-notes/navigation.json
 
