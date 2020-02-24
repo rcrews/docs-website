@@ -59,6 +59,7 @@
 
 - text: How To
   id: cat-how-to
+  sub:
     - text: Importing Flows
       href: importing-flows/index.html
       id:   pub-importing-flows
@@ -93,12 +94,16 @@
       sub:  dev-environment-flows/navigation.json
 
 - text: Troubleshooting
+  id: cat-troubleshooting
+  sub:
     - text: Troubleshooting Flows
       href: troubleshooting-flows/index.html
       id:   pub-troubleshooting-flows
       sub:  troubleshooting-flows/navigation.json
 
 - text: Reference
+  id: cat-reference
+  sub:
     - text: Parameterized Passwords
       href: parameterized-passwords/index.html
       id:   pub-parameterized-passwords
@@ -106,6 +111,7 @@
 
 - text: Release Notes
   id: cat-releasenotes
+  sub:
     - text: Release Notes
       href: release-notes/index.html
       id:   pub-release-notes
