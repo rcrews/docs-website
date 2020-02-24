@@ -1,8 +1,8 @@
 ---
 layout: hwx_product
 title: Data Steward Studio
-version: 1.6.0
-base-path: /HDPDocuments/DSS1/DSS-1.6.0/
+version: 1.6.1
+base-path: /HDPDocuments/DSS1/DSS-1.6.1/
 
 sections:
   - title: Release Notes
