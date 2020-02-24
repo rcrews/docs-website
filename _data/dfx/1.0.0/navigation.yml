@@ -1,0 +1,116 @@
+---
+#- text: Concepts
+#- text: Planning
+#- text: Installation & Upgrade
+#- text: How To
+#- text: Troubleshooting
+#- text: Reference
+#- text: Release Notes
+#- text: Learning & Training
+
+- text: Cloudera Data Flow Experience
+  id: landing-cloudera-data-flow-experience
+  href: /dfx/1.0.0/index.html
+  display: none
+
+- text: Concepts & Use Cases
+  id: cat-concepts
+  sub:
+    - text: DFX Overview
+      href: overview/index.html
+      id:   pub-overview
+      sub:  overview/navigation.json
+    - text: Flow Development Lifecycle
+      href: flow-dev-lifecycle/index.html
+      id:   pub-flow-dev-lifecycle
+      sub:  flow-dev-lifecycle/navigation.json
+    - text: Security
+      href: security/index.html
+      id:   pub-security
+      sub:  security/navigation.json
+    - text: Personas
+      href: personas/index.html
+      id:   pub-personas
+      sub:  personas/navigation.json
+
+- text: Planning
+  id: cat-planning
+  sub:
+    - text: Resource Planning
+      href: resources/index.html
+      id:   pub-resources
+      sub:  resources/navigation.json
+    - text: Development Environment
+      href: development-environment/index.html
+      id:   pub-development-environment
+      sub:  development-environment/navigation.json
+
+- text: Installation & Upgrade
+  id: cat-install
+  sub:
+    - text: Initial Admin Setup
+      href: admin-setup/index.html
+      id:   pub-admin-setup
+      sub:  admin-setup/navigation.json
+    - text: First Time User Experience
+      href: first-time/index.html
+      id:   pub-first-time
+      sub:  first-time/navigation.json
+
+- text: How To
+  id: cat-how-to
+    - text: Importing Flows
+      href: importing-flows/index.html
+      id:   pub-importing-flows
+      sub:  importing-flows/navigation.json
+    - text: Managing Flow Definitions
+      href: flow-definitions/index.html
+      id:   pub-flow-definitions
+      sub:  flow-definitions/navigation.json
+    - text: Deploying Flows
+      href: deploying-flows/index.html
+      id:   pub-deploying-flows
+      sub:  deploying-flows/navigation.json
+    - text: Monitoring Flows
+      href: monitoring-flows/index.html
+      id:   pub-monitoring-flows
+      sub:  monitoring-flows/navigation.json
+    - text: Managing Flow Deployments
+      href: flow-deployments/index.html
+      id:   pub-flow-deployments
+      sub:  flow-deployments/navigation.json
+    - text: Monitoring KPIs
+      href: monitoring-kpis/index.html
+      id:   pub-monitoring-kpis
+      sub:  monitoring-kpis/navigation.json
+    - text: Flow Isolation
+      href: flow-isolation/index.html
+      id:   pub-flow-isolation
+      sub:  flow-isolation/navigation.json
+    - text: Development Environment Flows
+      href: dev-environment-flows/index.html
+      id:   pub-dev-environment-flows
+      sub:  dev-environment-flows/navigation.json
+
+- text: Troubleshooting
+    - text: Troubleshooting Flows
+      href: troubleshooting-flows/index.html
+      id:   pub-troubleshooting-flows
+      sub:  troubleshooting-flows/navigation.json
+
+- text: Reference
+    - text: Parameterized Passwords
+      href: parameterized-passwords/index.html
+      id:   pub-parameterized-passwords
+      sub:  parameterized-passwords/navigation.json
+
+- text: Release Notes
+  id: cat-releasenotes
+    - text: Release Notes
+      href: release-notes/index.html
+      id:   pub-release-notes
+      sub:  release-notes/navigation.json
+
+# - text: Learning & Training
+#   id: cat-learning-training
+#   sub:

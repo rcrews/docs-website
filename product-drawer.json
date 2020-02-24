@@ -108,6 +108,10 @@ json:
       href: /cdf-datahub/7.0.2/index.html
       icon: /common/img/mini_icons/icon-cdf-datahub.png
 
+    - text: Cloudera Data Flow Experience
+      href: /dfx/1.0.0/index.html
+      icon: /common/img/mini_icons/icon-dfx.png
+
 - title: Applications
   products:
     - text: Cloudera Cybersecurity Platform

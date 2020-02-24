@@ -90,7 +90,7 @@ json:
       href: /cfm/master/index.html
       icon: /common/img/mini_icons/icon-cfm.png
 
-    - text: Cloudera Stream Analytics
+    - text: Cloudera Streaming Analytics
       href: /csa/master/index.html
       icon: /common/img/mini_icons/icon-csa.png
 
@@ -105,6 +105,14 @@ json:
     - text: Cloudera Streams Replication Manager for HDF and HDP
       href: /srm/master/index.html
       icon: /common/img/mini_icons/icon-srm.png
+
+    - text: Cloudera Data Flow in Data Hub
+      href: /cdf-datahub/master/index.html
+      icon: /common/img/mini_icons/icon-cdf-datahub.png
+
+    - text: Cloudera Data Flow Experience
+      href: /dfx/master/index.html
+      icon: /common/img/mini_icons/icon-dfx.png
 
 - title: Applications
   products:
