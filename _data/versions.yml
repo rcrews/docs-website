@@ -367,15 +367,17 @@
           url: /HDPDocuments/DLM1/DLM-1.0.0/index.html
 
 - name: Data Steward Studio
-  latest-version: 1.6.0
-  latest-url: /HDPDocuments/DSS1/DSS-1.6.0/index.html
+  latest-version: 1.6.1
+  latest-url: /HDPDocuments/DSS1/DSS-1.6.1/index.html
   search-name: Data Steward Studio
   versions:
     - title: "1.6"
-      url: /HDPDocuments/DSS1/DSS-1.6.0/index.html
+      url: /HDPDocuments/DSS1/DSS-1.6.1/index.html
       minors:
-        - title: 1.6.0
+        - title: 1.6.1
           type: Latest
+          url: /HDPDocuments/DSS1/DSS-1.6.1/index.html
+        - title: 1.6.0
           url: /HDPDocuments/DSS1/DSS-1.6.0/index.html
     - title: "1.5"
       url: /HDPDocuments/DSS1/DSS-1.5.0/index.html
