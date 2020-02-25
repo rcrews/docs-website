@@ -19,9 +19,9 @@ sections:
     name: installation-upgrade
     books:
       - title: Installation
-        url: ../HDP3/HDP-3.1.5/installation.html
+        url: installation.html
       - title: Upgrade
-        url: ../HDP3/HDP-3.1.5/upgrade.html
+        url: upgrade.html
 
   - title: How To
     name: how-to
