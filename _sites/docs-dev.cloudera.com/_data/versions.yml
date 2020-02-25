@@ -152,11 +152,16 @@
       minors:
       - title: master
         url: /HDPDocuments/Ambari-master/index.html
+    - title: "7.1"
+      url: /HDPDocuments/Ambari/Ambari-7.1.0.0/index.html
+      minors:
+        - title: 7.1.0.0
+          type: Latest
+          url: /HDPDocuments/Ambari/Ambari-7.1.0.0/index.html
     - title: "2.7"
       url: /HDPDocuments/Ambari/Ambari-2.7.5.0/index.html
       minors:
         - title: 2.7.5.0
-          type: Latest
           url: /HDPDocuments/Ambari/Ambari-2.7.5.0/index.html
         - title: 2.7.4.0
           url: /HDPDocuments/Ambari/Ambari-2.7.4.0/index.html

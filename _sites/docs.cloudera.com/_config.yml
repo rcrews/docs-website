@@ -43,6 +43,7 @@ exclude:
   - /cfm/2.0.0/operator-api/
 
   # Unreleased documentation
+  - /HDPDocuments/Ambari/Ambari-7.1.0.0/
   - /HDPDocuments/Cloudbreak/Cloudbreak-1.10.0/
   - /HDPDocuments/DAS/DAS-1.4.5/
   - /HDPDocuments/DSS1/DSS-1.6.1/
