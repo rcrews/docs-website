@@ -173,11 +173,11 @@ dropdowns:
     title: Cloudera JDBC Drivers for Impala
     dropdown:
     - text: Cloudera JDBC 2.6.15 Driver for Impala
-      href: /documentation/other/connectors/impala-jdbc/2.6.15.html
+      href: /documentation/other/connectors/impala-jdbc/2-6-15.html
     - text: Cloudera JDBC 2.6.12 Driver for Impala
-      href: /documentation/other/connectors/impala-jdbc/2.6.12.html
+      href: /documentation/other/connectors/impala-jdbc/2-6-12.html
     - text: Cloudera JDBC 2.6.11 Driver for Impala
-      href: /documentation/other/connectors/impala-jdbc/2.6.11.html
+      href: /documentation/other/connectors/impala-jdbc/2-6-11.html
     - text: Cloudera JDBC 2.6.9 Driver for Impala
       href: /documentation/other/connectors/impala-jdbc/2-6-9.html
     - text: Cloudera JDBC 2.6.4 Driver for Impala

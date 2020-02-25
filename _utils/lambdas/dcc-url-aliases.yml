@@ -97,9 +97,9 @@
   exist: /documentation/other/connectors/impala-jdbc/2-6-15.html
 
 - alias: /documentation/other/connectors/impala-odbc/latest/
-  exist: /documentation/other/connectors/impala-odbc/2-6-8/
+  exist: /documentation/other/connectors/impala-odbc/2-6-9/
 - alias: /documentation/other/connectors/impala-odbc/latest.html
-  exist: /documentation/other/connectors/impala-odbc/2-6-8.html
+  exist: /documentation/other/connectors/impala-odbc/2-6-9.html
 
 - alias: /documentation/spark2/latest/
   exist: /documentation/spark2/2-4-x/
