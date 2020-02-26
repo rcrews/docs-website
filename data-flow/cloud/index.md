@@ -1,8 +1,8 @@
 ---
 layout: product
-title: Data Flow Experience
-version: 1.0.0
-base-path: /dfx/master/
+title: Data Flow
+version: cloud
+base-path: /data-flow/cloud/
 
 sections:
   - title: Release Notes

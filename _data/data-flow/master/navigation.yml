@@ -8,9 +8,9 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Cloudera Data Flow 
+- text: Cloudera Data Flow
   id: landing-cloudera-data-flow
-  href: /dfx/master/index.html
+  href: /data-flow/master/index.html
   display: none
 
 - text: Concepts & Use Cases
@@ -106,9 +106,8 @@
       sub:  troubleshooting-flows/navigation.json
 
 # - text: Reference
-#  id: cat-reference
-#  sub:
-
+#   id: cat-reference
+#   sub:
 
 - text: Release Notes
   id: cat-releasenotes

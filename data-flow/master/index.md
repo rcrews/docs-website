@@ -2,7 +2,7 @@
 layout: product
 title: Data Flow Experience
 version: 1.0.0
-base-path: /dfx/1.0.0/
+base-path: /data-flow/master/
 
 sections:
   - title: Release Notes

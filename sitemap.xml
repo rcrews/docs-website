@@ -13,9 +13,9 @@ sitemaps:
   - https://docs.cloudera.com/csa/1.1.0/sitemap.xml
   - https://docs.cloudera.com/csp/3.0.0/sitemap.xml
   - https://docs.cloudera.com/data-catalog/cloud/sitemap.xml
+  - https://docs.cloudera.com/data-flow/cloud/sitemap.xml
   - https://docs.cloudera.com/data-hub/cloud/sitemap.xml
   - https://docs.cloudera.com/data-warehouse/cloud/sitemap.xml
-  - https://docs.cloudera.com/dfx/1.0.0/sitemap.xml
   - https://docs.cloudera.com/documentation/altus/sitemap.xml
   - https://docs.cloudera.com/documentation/data-science-workbench/1-7-x/sitemap.xml
   - https://docs.cloudera.com/documentation/enterprise/6/6.3/sitemap.xml

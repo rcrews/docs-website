@@ -576,22 +576,6 @@
         type: latest
         url: /cdpdc/7.0/index.html
 
-- name: Management Console
-  latest-version: cloud
-  latest-url: /management-console/cloud/index.html
-  search-name: management-console
-  versions:
-    - title: cloud
-      url: /management-console/cloud/index.html
-
-- name: Workload Manager
-  latest-version: cloud
-  latest-url: /workload-manager/cloud/index.html
-  search-name: workload-manager
-  versions:
-    - title: cloud
-      url: /workload-manager/cloud/index.html
-
 - name: Data Catalog
   latest-version: cloud
   latest-url: /data-catalog/cloud/index.html
@@ -600,13 +584,13 @@
     - title: cloud
       url: /data-catalog/cloud/index.html
 
-- name: Replication Manager
+- name: Data Flow
   latest-version: cloud
-  latest-url: /replication-manager/cloud/index.html
-  search-name: replication-manager
+  latest-url: /data-flow/cloud/index.html
+  search-name: data-flow
   versions:
     - title: cloud
-      url: /replication-manager/cloud/index.html
+      url: /data-flow/cloud/index.html
 
 - name: Data Hub
   latest-version: cloud
@@ -631,6 +615,30 @@
   versions:
     - title: cloud
       url: /machine-learning/cloud/index.html
+
+- name: Management Console
+  latest-version: cloud
+  latest-url: /management-console/cloud/index.html
+  search-name: management-console
+  versions:
+    - title: cloud
+      url: /management-console/cloud/index.html
+
+- name: Replication Manager
+  latest-version: cloud
+  latest-url: /replication-manager/cloud/index.html
+  search-name: replication-manager
+  versions:
+    - title: cloud
+      url: /replication-manager/cloud/index.html
+
+- name: Workload Manager
+  latest-version: cloud
+  latest-url: /workload-manager/cloud/index.html
+  search-name: workload-manager
+  versions:
+    - title: cloud
+      url: /workload-manager/cloud/index.html
 
 - name: Cloudera Runtime
   latest-version: 7.1.0
@@ -1320,18 +1328,6 @@
       minors:
         - title: 1.0.0
           url: /csa/1.0.0/index.html
-
-- name: Data Flow Experience
-  latest-version: 1.1.0
-  latest-url: /csa/1.1.0/index.html
-  search-name: dfx
-  versions:
-    - title: "1.0"
-      url: /dfx/1.0.0/index.html
-      minors:
-        - title: 1.0.0
-          type: Latest
-          url: /dfx/1.0.0/index.html
 
 - name: Stream Processing
   latest-version: 3.0.0

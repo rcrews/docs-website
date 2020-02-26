@@ -28,6 +28,10 @@ json:
       href: /data-catalog/cloud/index.html
       icon: /common/img/mini_icons/icon-dc.png
 
+    - text: Cloudera Data Flow
+      href: /data-flow/master/index.html
+      icon: /common/img/mini_icons/icon-df.png
+
     - text: Cloudera Data Hub
       href: /data-hub/cloud/index.html
       icon: /common/img/mini_icons/icon-dh.png
@@ -107,10 +111,6 @@ json:
     - text: Cloudera Data Flow in Data Hub
       href: /cdf-datahub/7.0.2/index.html
       icon: /common/img/mini_icons/icon-cdf-datahub.png
-
-    - text: Cloudera Data Flow Experience
-      href: /dfx/1.0.0/index.html
-      icon: /common/img/mini_icons/icon-dfx.png
 
 - title: Applications
   products:
