@@ -8,8 +8,8 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Cloudera Data Flow Experience
-  id: landing-cloudera-data-flow-experience
+- text: Cloudera Data Flow 
+  id: landing-cloudera-data-flow
   href: /dfx/master/index.html
   display: none
 
