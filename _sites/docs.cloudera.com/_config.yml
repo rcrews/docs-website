@@ -47,6 +47,7 @@ exclude:
   - /HDPDocuments/Cloudbreak/Cloudbreak-1.10.0/
   - /HDPDocuments/DAS/DAS-1.4.5/
   - /HDPDocuments/DSS1/DSS-1.6.1/
+  - /cdf-datahub/7.1.0/
   - /cfm/2.0.0/
   - /cloudera-manager/7.1.0/
   - /csa/1.0.0/

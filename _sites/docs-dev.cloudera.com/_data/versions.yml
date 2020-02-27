@@ -895,6 +895,12 @@
       minors:
         - title: master
           url: /cdf-datahub/master/index.html
+    - title: "7.1"
+      url: /cdf-datahub/7.1.0/index.html
+      minors:
+        - title: 7.1.0
+          type: latest
+          url: /cdf-datahub/7.1.0/index.html
     - title: "7.0"
       url: /cdf-datahub/7.0.2/index.html
       minors:
