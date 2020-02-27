@@ -353,24 +353,6 @@
           id: pub-tuning-hue
           sub: tuning-hue/navigation.json
 
-        # Phoenix is IN for 7.1.0. 2/10 email from Gokul
-        - text: Configuring Apache HBase for use with Apache Phoenix
-          href: phoenix-configure-hbase/index.html
-          id: pub-phoenix-configure-hbase
-          sub: phoenix-configure-hbase/navigation.json
-
-        # Phoenix is IN for 7.1.0. 2/10 email from Gokul
-        - text: Using Apache Phoenix to Store and Access Data
-          href: phoenix-access-data/index.html
-          id: pub-phoenix-access-data
-          sub: phoenix-access-data/navigation.json
-
-        # Phoenix is IN for 7.1.0. 2/10 email from Gokul
-        - text: Using Apache Phoenix-Spark Connector
-          href: phoenix-spark-connector/index.html
-          id: pub-phoenix-spark-connector
-          sub: phoenix-spark-connector/navigation.json
-
         # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Search Tutorial
           href: search-tutorial/index.html
