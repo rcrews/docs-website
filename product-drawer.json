@@ -29,7 +29,7 @@ json:
       icon: /common/img/mini_icons/icon-dc.png
 
     - text: Cloudera Data Flow
-      href: /data-flow/master/index.html
+      href: /data-flow/cloud/index.html
       icon: /common/img/mini_icons/icon-df.png
 
     - text: Cloudera Data Hub
