@@ -49,11 +49,9 @@ exclude:
   - /HDPDocuments/DSS1/DSS-1.6.1/
   - /cdf-datahub/7.1.0/
   - /cfm/2.0.0/
-  - /cloudera-manager/7.1.0/
   - /csa/1.0.0/
   - /csp/3.0.0/
   - /data-flow/cloud/
-  - /runtime/7.1.0/
 
   # "master" version for docs-dev only
   - /best-practices/master/
