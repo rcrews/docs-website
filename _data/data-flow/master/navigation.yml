@@ -92,10 +92,10 @@
       href: https://docs.google.com/document/d/1jSuobM6z8vnqV8IUdBknIWvL1we8dn_QOrN5cmc1WzQ/edit
       id:   pub-designing-flows
       sub:  designing-flows/navigation.json
-    - text: Parameterized Passwords
+    - text: Working with Parameters
       href: https://docs.google.com/document/d/1s7ZNHZYaFszSedtGo_vQACcjEAJHsQF7BkbOHc8cQAY/edit
-      id:   pub-parameterized-passwords
-      sub:  parameterized-passwords/navigation.json
+      id:   pub-working-with-parameters
+      sub:  working-with-parameters/navigation.json
 
 - text: Troubleshooting
   id: cat-troubleshooting
