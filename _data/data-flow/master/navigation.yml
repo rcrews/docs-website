@@ -19,15 +19,15 @@
     - text: Overview
       href: https://docs.google.com/document/d/18Mz-v96i2NAoEkJSjMaurIhG-w8y3gMmy59gE68aMs8/edit
       id:   pub-overview
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Security
       href: https://docs.google.com/document/d/16A-ncZkT1MG0Op38QShuPnInqfGY4V5iUwDZNKEvAiw/edit
       id:   pub-security
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: User Personas
       href: https://docs.google.com/document/d/16NGXdQfMORNIam0i1QdMqbUxuNzAPxiaRzu1uznaffE/edit
       id:   pub-personas
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
 
 - text: Planning
   id: cat-planning
@@ -35,11 +35,11 @@
     - text: Resource Planning
       href: https://docs.google.com/document/d/1TnXw2EDcCJN291hRmT4LEpjL3MIfLVTSVKrQKAOF5hA/edit
       id:   pub-resources
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Maintaining a Development Environment
       href: https://docs.google.com/document/d/1_pUB8cQLfbBZserKtFO8s_ol9uQB_w2uxx0-m3XoW2w/edit
       id:   pub-development-environment
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
 
 - text: Installation & Upgrade
   id: cat-install
@@ -47,15 +47,15 @@
     - text: Quick Start
       href: https://docs.google.com/document/d/1UcVudmNDDE1m0D8NFlOJHxfSpiwQKyz2xMe8sCR47z8/edit
       id:   pub-flow-dev-lifecycle
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Getting Started as an Initial Admin
       href: https://docs.google.com/document/d/1_DhkSP1rFZPz_uJKX_oKASMqB3Nmrl3IXa07pJeSzq0/edit
       id:   pub-admin-setup
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Getting Started as a First Time User
       href: https://docs.google.com/document/d/1Bd4xlE3dKw7om2f5rSLMYkKBm65y5b_C1FV1dw-l_N0/edit
       id:   pub-first-time
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
 
 - text: How To
   id: cat-how-to
@@ -63,39 +63,39 @@
     - text: Importing Flows
       href: https://docs.google.com/document/d/1PYYHCx-wCTk4RBGM0SUjGjR4VYrZExUd_1E0vMspoV4/edit
       id:   pub-importing-flows
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Managing Flow Definitions
       href: https://docs.google.com/document/d/1NDOR1rB_geJzt6lO-sHidYSiOSQ8TyDyRFt5_wQieLg/edit
       id:   pub-flow-definitions
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Deploying Flows
       href: https://docs.google.com/document/d/18AR0ELtPrEwmhEYgbvYyhIqqXgOYjPZTZGJ8Q5sHIAk/edit
       id:   pub-deploying-flows
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Monitoring Flows
       href: https://docs.google.com/document/d/1guMo5axvEsyai0OmdTMW8c63qZbLjM07nJ9xo2wx7ZE/edit
       id:   pub-monitoring-flows
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Managing Flow Deployments
       href: https://docs.google.com/document/d/1QaYIEL-SnvsgCYtXE-H4IOlrnN8dt2aK-e-BbB8nARI/edit
       id:   pub-flow-deployments
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Working with KPIs
       href: https://docs.google.com/document/d/1mOjFLP9B1kf8x7DE_tzIGf1hjZ7uHxR2D7OuJIRX5ng/edit
       id:   pub-monitoring-kpis
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Best Practices for Flow Isolation
       href: https://docs.google.com/document/d/1pOIbGYGjuKWAvx5N-bTLk6VPYe7EjlSpzrlK9xqTkqI/edit
       id:   pub-flow-isolation
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Designing Flows
       href: https://docs.google.com/document/d/1jSuobM6z8vnqV8IUdBknIWvL1we8dn_QOrN5cmc1WzQ/edit
       id:   pub-designing-flows
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
     - text: Working with Parameters
       href: https://docs.google.com/document/d/1s7ZNHZYaFszSedtGo_vQACcjEAJHsQF7BkbOHc8cQAY/edit
       id:   pub-working-with-parameters
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
 
 - text: Troubleshooting
   id: cat-troubleshooting
@@ -103,7 +103,7 @@
     - text: Troubleshooting Flows
       href: https://docs.google.com/document/d/1bCeW8ea8nknoVDc6YS8nrIgWVIiMNtwLHfvhDs5Rmag/edit
       id:   pub-troubleshooting-flows
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
 
 # - text: Reference
 #   id: cat-reference
@@ -115,7 +115,7 @@
     - text: Release Notes
       href: https://docs.google.com/document/d/1SkbnQJb04Tkxfbx9I_YeWFpN-GbqwSz-igyFuuCFZ0w/edit
       id:   pub-release-notes
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
 
 # - text: Learning & Training
 #   id: cat-learning-training

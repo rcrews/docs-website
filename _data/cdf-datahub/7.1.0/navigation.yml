@@ -22,12 +22,12 @@
         - text: Apache NiFi Overview
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Apache NiFi Registry Overview
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
     - text: Streams Messaging
       href: concepts-streams-messaging.html
@@ -40,12 +40,12 @@
         - text: Schema Registry Overview
           href: schema-registry-overview/index.html
           id:   pub-schema-registry-overview
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: SMM Overview
           href: smm-overview/index.html
           id:   pub-smm-overview
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
 - text: Planning
   id:   cat-planning
@@ -56,17 +56,17 @@
         - text: Deployment scenarios
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Flow Management cluster definitions
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Flow Management cluster layout
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
     - text: Planning your Streams Messaging deployment
       href: planning-streams-messaging.html
@@ -74,17 +74,17 @@
         - text: Deployment scenarios
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Streams Messaging cluster definitions
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Streams Messaging cluster layout
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
 # - text: Installation & Upgrade
 #   id:   cat-installation
@@ -99,37 +99,37 @@
         - text: Quick Start for Flow Management
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Flow Management Security
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Ingesting Data into Kafka using NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Ingesting Data into Object Stores using NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Ingesting Data into HBase using NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: ingesting Data into Hive using NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Apache NiFi Registry
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
     - text: Streams Messaging
       href: howto-streams-messaging.html
@@ -137,22 +137,22 @@
         - text: Quick Start for Streams Messaging
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Apache Kafka
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Streams Messaging Manager
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
         - text: Schema Registry
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/index.html
+          sub:  publication-tbd/navigation.json
 
 # - text: Troubleshooting
 #   id:   cat-troubleshooting
@@ -177,7 +177,7 @@
     - text: Release Notes
       href: release-notes/index.html
       id:   pub-release-notes
-      sub:  publication-tbd/index.html
+      sub:  publication-tbd/navigation.json
 
 # - text: Learning & Training
 #   id:   cat-learning-training
@@ -185,4 +185,4 @@
 #     - text: Publication TBD
 #       href: publication-tbd/index.html
 #       id:   pub-publication-tbd
-#       sub:  publication-tbd/index.html
+#       sub:  publication-tbd/navigation.json
