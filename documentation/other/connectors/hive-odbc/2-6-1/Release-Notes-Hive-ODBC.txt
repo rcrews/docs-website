@@ -1,0 +1,77 @@
+======================================================================================
+Cloudera ODBC Driver for Apache Hive Release Notes
+======================================================================================
+
+The release notes provide details of enhancements and features in Cloudera ODBC Driver 
+for Apache Hive 2.6.1, as well as the version history.
+
+
+2.6.1 ===============================================================================
+
+Released 2018-08-03
+
+Resolved Issues
+The following issue has been resolved in Cloudera ODBC Driver for Apache Hive 2.6.1.
+
+
+ * [00119275][HAR-833] CAST AS VARCHAR(n) returns incorrect metadata.
+
+
+Version History ======================================================================
+
+2.6.0 -------------------------------------------------------------------------------- 
+
+Released 2018-07-13
+
+Enhancements & New Features
+
+ * [HAR-732] Minimum TLS support
+
+   You can now specify the minimum version of TLS the driver accepts when 
+   authenticating the connection to the data source.
+
+ * [HAR-822] Updated OpenSSL version
+
+   The driver now uses OpenSSL version 1.1.0h. Previously, the driver used 
+   OpenSSL version 1.0.2n.
+
+ * [HAR-807] More informative SSL error messages
+
+   The driver now provides more detailed error messages for TLS/SSL errors.
+
+ * [HAR-820] Catalog configuration improvements
+
+   Internal improvements were made to the way the driver configures the 
+   catalog, schema, table, and column name lengths.
+
+ * [00092073][HAR-657] Configuration instructions for Delegation UID
+
+   The driver documentation now provides additional configuration 
+   instructions for enabling the Delegation UID function on a clustered 
+   server or when using Kerberos authentication.
+
+
+Resolved Issues
+
+The following issue has been resolved in Cloudera ODBC Driver for Apache Hive
+2.6.0.
+
+ * [HAR-853] HiveServerType value is incorrect in some documentation 
+   examples.
+
+
+======================================================================================
+Contact Us
+======================================================================================
+
+If you are having difficulties using the driver, our Community Forum (http://community.cloudera.com) 
+may have your solution. In addition to providing user to user support, our forums are 
+a great place to share your questions, comments, and feature requests with us. 
+
+If you are a Subscription customer you may also use the Cloudera Support Portal 
+(http://www.cloudera.com/content/cloudera/en/support/home.html) to search the Knowledge 
+Base or file a Case.
+
+Important: To help us assist you, prior to contacting Cloudera Support please prepare a 
+detailed summary of the client and server environment including operating system version, 
+patch level, and configuration.
