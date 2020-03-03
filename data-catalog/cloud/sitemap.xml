@@ -9,182 +9,302 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/index.html</loc>
-		<lastmod>2019-10-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/index.html</loc>
-		<lastmod>2019-10-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/index.html</loc>
 		<lastmod>2019-10-23</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/index.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/index.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-data-catalog-overview.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/index.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-understanding-data-assets-by-using-the-asset-360-view.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/index.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-understanding-asset-collections.html</loc>
-		<lastmod>2019-10-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-understanding-the-ranger-audit-profiler.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-managing-asset-collections.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-create-asset-collections.html</loc>
-		<lastmod>2019-10-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-search-for-assets.html</loc>
-		<lastmod>2019-10-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-search-filters.html</loc>
-		<lastmod>2019-10-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-managing-asset-collections.html</loc>
-		<lastmod>2019-10-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-delete-asset-collections.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-edit-asset-collections.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-viewing-data-assets-with-asset-360.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-delete-asset-collections.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-view-data-asset-schema.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-collaborate-with-other-users.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-view-data-asset-overview.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-search-for-assets.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-search-filters.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-viewing-atlas-ranger.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-viewing-data-assets-with-asset-360.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-view-data-asset-overview.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-view-data-asset-schema.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-view-authorization-policies-on-a-data-asset.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-view-data-asset-audit-logs.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-profiles.html</loc>
-		<lastmod>2019-10-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-profiler-jobs.html</loc>
-		<lastmod>2019-10-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-viewing-profiler-configurations.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-launch-profiler-cluster.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-profiler-jobs.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-viewing-profiler-configurations.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-edit-profiler-configurations.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/topics/dc-whats-new-02.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-additional-configuration-for-cluster-sensitivity-profiler.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-understanding-the-hive-column-statistical-profile.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-additional-configuration-for-hive-column-profiler.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-replicate-profiler-configuration.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-enable-or-disable-profilers.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-profiler-tag-rules.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-creating-custom-profiler-rules.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-adding-custom-regular-expressions.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-adding-whitelist-or-blacklist-files.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-make-use-of-behaviors.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-regular-expressions.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-file-based-blacklist-and-whitelist-checks.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-luhn-algorithm.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/managing/topics/dc-make-use-of-dsl-grammar.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/topics/dc-whats-new.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/topics/dc-whats-new-04.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/topics/dc-whats-new-03.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/topics/dc-whats-new-02.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/topics/dc-whats-new-01.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/topics/dc-known-issues.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-catalog/cloud/release-notes/topics/dc-fixed-issues.html</loc>
-		<lastmod>2019-10-27</lastmod>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-data-catalog-overview.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-understanding-asset-collections.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-understanding-data-assets-by-using-the-asset-360-view.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-understanding-the-profiler.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-understanding-the-sensitive-data-profiler-sdp.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-understanding-the-ranger-audit-profiler.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-catalog/cloud/core-concepts/topics/dc-basic-terminology.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>

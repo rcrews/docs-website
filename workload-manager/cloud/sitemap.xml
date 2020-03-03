@@ -9,284 +9,284 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/index.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/workload-manager/cloud/index.html</loc>
 		<lastmod>2019-10-23</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/index.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/index.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/index.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/index.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/workload-manager/cloud/troubleshooting-jobs/index.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-query-status.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/index.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-query-health-checks.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/index.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-sql-issues.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-query-types.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-job-health-checks.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-managing-access.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-classifying-workloads-auto.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-cluster-reports.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-cluster-report-example.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-classifying-workloads.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-cluster-admin.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-cluster-user.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-classifying-workloads-manual.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-workload-user.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-whats-new.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-limited-environment-user.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-whats-new-01.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-overview.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-known-issues.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-diagnostic-data-sources.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-setup.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-diagnostic-data-collect.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-diagnostic-data-redaction.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-logging-in.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-default-time-range.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-data-redaction.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-data-redaction-logsandqueries.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/troubleshooting-jobs/topics/wm-trblshoot-abnormal-job-dur.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/workload-manager/cloud/troubleshooting-jobs/topics/wm-trblshoot-failed-data-eng-jobs.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-data-redaction-spark.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-cluster-report-enable.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-assigning-roles.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/troubleshooting-jobs/topics/wm-trblshoot-abnormal-job-dur.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/troubleshooting-jobs/topics/wm-comparing-jobs.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/workload-manager/cloud/troubleshooting-jobs/topics/wm-determine-cause-slow-failed-queries.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/troubleshooting-jobs/topics/wm-comparing-jobs.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-classifying-workloads.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-classifying-workloads-auto.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-classifying-workloads-manual.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-cluster-reports.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-cluster-report-example.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-managing-access.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-cluster-admin.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-cluster-user.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-workload-user.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-limited-environment-user.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-overview.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-diagnostic-data-collect.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-diagnostic-data-sources.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-diagnostic-data-details.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-assigning-roles.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-diagnostic-data-redaction.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-logging-in.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-setup.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-default-time-range.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-data-redaction.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-data-redaction-logsandqueries.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-data-redaction-spark.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-cluster-report-enable.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-assigning-roles.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-query-status.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-query-types.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-query-health-checks.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-sql-issues.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/reference/topics/wm-job-health-checks.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-whats-new.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-whats-new-01.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-known-issues.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-cluster-report-enable.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-assigning-roles.html</loc>
-		<lastmod>2019-11-15</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-managing-access.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/cluster-management/topics/wm-assigning-roles.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-cluster-reports.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/workload-manager/cloud/overview/topics/wm-managing-access.html</loc>
-		<lastmod>2019-11-15</lastmod>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-managing-access.html</loc>
+		<lastmod>2020-03-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/workload-manager/cloud/release-notes/topics/wm-assigning-roles.html</loc>
+		<lastmod>2020-03-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
