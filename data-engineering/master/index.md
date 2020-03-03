@@ -13,7 +13,6 @@ sections:
         url: release-notes/index.html
 
 ---
-Tempus feugiat enim velit facilisi orci at cras fusce, vivamus ex
-ultrices bibendum amet accumsan vehicula curae vestibulum, aliquet
-adipiscing nulla porttitor curabitur et dictum rutrum turpis, ornare sem
-convallis elit nec dolor himenaeos.
+Cloudera Data Engineering (CDE) is a serverless service for Cloudera Data Platform
+that allows you to submit Spark jobs to an auto-scaling cluster. CDE enables you
+to spend more time on your applications, and less time on infrastructure.

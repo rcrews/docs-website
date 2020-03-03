@@ -13,9 +13,13 @@
   href: /data-engineering/master/index.html
   display: none
 
-# - text: Concepts & Use Cases
-#   id: cat-concepts
-#   sub:
+ - text: Concepts & Use Cases
+   id: cat-concepts
+   sub:
+    - text: Data Engineering Overview
+      href: overview/index.html
+      id: pub-overview
+      sub: overview/navigation.json
 
 # - text: Planning
 #   id: cat-planning
@@ -25,17 +29,37 @@
 #   id: cat-installation
 #   sub:
 
-# - text: How To
-#   id: cat-how-to
-#   sub:
+- text: How To
+  id: cat-how-to
+  sub:
+
+    - text: Enabling and disabling Cloudera Data Engineering
+      href: enable-data-engineering/index.html
+      id: pub-enable-data-engineering
+      sub: enable-data-engineering/navigation.json
+
+    - text: Creating and managing virtual clusters
+      href: manage-clusters/index.html
+      id: pub-manage-clusters
+      sub: manage-clusters/navigation.json
+
+    - text: Creating and managing Apache Spark applications
+      href: manage-applications/index.html
+      id: pub-manage-applications
+      sub: manage-applications/navigation.json
 
 # - text: Troubleshooting
 #   id: cat-troubleshooting
 #   sub:
 
-# - text: Reference
-#   id: cat-reference
-#   sub:
+- text: Reference
+  id: cat-reference
+  sub:
+
+    - text: Accessing CDE using the API or CLI
+      href: cli-api-access/index.html
+      id: pub-cli-api-access
+      sub: cli-api-access/navigation.json
 
 # - text: Release Notes
 #   id: cat-release-notes
