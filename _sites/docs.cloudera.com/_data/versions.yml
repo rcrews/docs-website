@@ -578,6 +578,14 @@
     - title: cloud
       url: /data-hub/cloud/index.html
 
+# - name: Data Engineering
+#   latest-version: cloud
+#   latest-url: /data-Engineering/cloud/index.html
+#   search-name: data-engineering
+#   versions:
+#     - title: cloud
+#       url: /data-engineering/cloud/index.html
+
 # - name: Data Flow
 #   latest-version: cloud
 #   latest-url: /data-flow/cloud/index.html

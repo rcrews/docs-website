@@ -642,9 +642,19 @@
     - title: cloud
       url: /data-catalog/cloud/index.html
 
+- name: Data Engineering
+  latest-version: master
+  latest-url: /data-Engineering/master/index.html
+  search-name: data-engineering
+  versions:
+    - title: master
+      url: /data-engineering/master/index.html
+    - title: cloud
+      url: /data-engineering/cloud/index.html
+
 - name: Data Flow
-  latest-version: cloud
-  latest-url: /data-flow/cloud/index.html
+  latest-version: master
+  latest-url: /data-flow/master/index.html
   search-name: data-flow
   versions:
     - title: master
