@@ -51,8 +51,8 @@ exclude:
   - /cfm/2.0.0/
   - /csa/1.0.0/
   - /csp/3.0.0/
-  - /data-engineering/cloud/
-  - /data-flow/cloud/
+  - /data-engineering/
+  - /data-flow/
 
   # "master" version for docs-dev only
   - /best-practices/master/
