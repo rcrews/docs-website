@@ -30,6 +30,10 @@ json:
       href: /data-catalog/master/index.html
       icon: /common/img/mini_icons/icon-dc.png
 
+    - text: Cloudera Data Engineering
+      href: /data-engineering/master/index.html
+      icon: /common/img/mini_icons/icon-de.png
+
     - text: Cloudera Data Flow
       href: /data-flow/master/index.html
       icon: /common/img/mini_icons/icon-df.png

@@ -51,6 +51,7 @@ exclude:
   - /cfm/2.0.0/
   - /csa/1.0.0/
   - /csp/3.0.0/
+  - /data-engineering/cloud/
   - /data-flow/cloud/
 
   # "master" version for docs-dev only
@@ -65,6 +66,8 @@ exclude:
   - /csa/master/
   - /csp/master/
   - /data-catalog/master/
+  - /data-engineering/master/
+  - /data-flow/master/
   - /data-hub/master/
   - /data-warehouse/master/
   - /machine-learning/master/

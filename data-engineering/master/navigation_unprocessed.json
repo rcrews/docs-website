@@ -1,0 +1,7 @@
+---
+# Navigation data previously in this file
+# has been centralized into the _data folder.
+# Data that used to be here is now at
+#   _data/data-engineering/master/navigation.yml
+---
+{{ site.data.data-engineering.master.navigation | jsonify }}
