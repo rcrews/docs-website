@@ -14,12 +14,10 @@ publications:
       Provides information about managing applications by using the YARN
       REST APIs and YARN Services API.
 
-  - title: Managing and Allocating Cluster Resources using Apache Hadoop YARN
+   - title: Managing and Allocating Cluster Resources using Capacity Scheduler
     url: yarn-allocate-resources/index.html
     description: >-
-      Explains how to allocate cluster resources for the applications.
-      In addition, describes the procedures for using Fair Scheduler and
-      Capacity Scheduler.
+      Explains how to allocate cluster resources for the applications using Capacity Scheduler.
 
   - title: Configuring Apache Hadoop YARN Security
     url: yarn-security/index.html
