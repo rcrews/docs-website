@@ -31,11 +31,12 @@ publications:
       Provides information about ResourceManager High Availability. It
       also describes the work preserving recovery process.
 
-  - title: Using Cloud Credentials with Apache Hadoop YARN
-    url: yarn-using-cloud-credentials/index.html
+  - title: Monitoring Clusters and Apache Hadoop YARN Applications
+    url: yarn-monitoring-clusters-applications/index.html
     description: >-
-      Describes how to access data stored in a cloud service for
-      applications that use YARN.
+      Describes how to monitor clusters, queues, applications, services,
+      flow activities, and nodes using YARN web user interface and
+      Cloudera Manager.
 
   - title: Managing Apache ZooKeeper
     url: managing-zookeeper/index.html
