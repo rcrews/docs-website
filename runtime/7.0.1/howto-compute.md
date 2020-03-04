@@ -38,12 +38,6 @@ publications:
       flow activities, and nodes using YARN web user interface and
       Cloudera Manager.
 
-  - title: Using Cloud Credentials with Apache Hadoop YARN
-    url: yarn-using-cloud-credentials/index.html
-    description: >-
-      Describes how to access data stored in a cloud service for
-      applications that use YARN.
-
   - title: Managing Apache ZooKeeper
     url: managing-zookeeper/index.html
     description: >-
