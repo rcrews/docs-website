@@ -221,11 +221,6 @@
           id: pub-yarn-monitoring-clusters-applications
           sub: yarn-monitoring-clusters-applications/navigation.json
 
-        - text: Using Cloud Credentials with Apache Hadoop YARN
-          href: yarn-using-cloud-credentials/index.html
-          id: pub-yarn-using-cloud-credentials
-          sub: yarn-using-cloud-credentials/navigation.json
-
         - text: Managing Apache ZooKeeper
           href: managing-zookeeper/index.html
           id: pub-managing-zookeeper
