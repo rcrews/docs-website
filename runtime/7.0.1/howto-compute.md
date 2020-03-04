@@ -14,7 +14,7 @@ publications:
       Provides information about managing applications by using the YARN
       REST APIs and YARN Services API.
 
-   - title: Managing and Allocating Cluster Resources using Capacity Scheduler
+  - title: Managing and Allocating Cluster Resources using Capacity Scheduler
     url: yarn-allocate-resources/index.html
     description: >-
       Explains how to allocate cluster resources for the applications using Capacity Scheduler.
