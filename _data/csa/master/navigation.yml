@@ -76,11 +76,3 @@
       href: release-notes/index.html
       id: pub-release-notes
       sub: release-notes/navigation.json
-
-- text: Learning & Training
-  id: cat-learning-training
-  sub:
-    - text: Learning & Training Overview
-      href: learning-overview/index.html
-      id: pub-learning-overview
-      sub: learning-overview/navigation.json
