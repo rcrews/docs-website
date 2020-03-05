@@ -24,10 +24,6 @@
       href: flink-overview/index.html
       id: pub-flink-overview
       sub: flink-overview/navigation.json
-    - text: Security Overview
-      href: security-overview/index.html
-      id: pub-security-flink-overview
-      sub: security-overview/navigation.json
 
 - text: Installation
   id: cat-install
