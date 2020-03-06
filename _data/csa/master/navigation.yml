@@ -64,10 +64,14 @@
       href: configuration/index.html
       id: pub-configuration
       sub: configuration/navigation.json
-    - text: Operation
-      href: operation/index.html
-      id: pub-operation
-      sub: operation/navigation.json
+    - text: Job lifecycle
+      href: job-lifecycle/index.html
+      id: pub-job-lifecycle
+      sub: job-lifecycle/navigation.json
+    - text: Monitoring
+      href: monitoring/index.html
+      id: pub-monitoring
+      sub: monitoring/navigation.json
 
 - text: Release Notes
   id: cat-releasenotes
