@@ -10,7 +10,7 @@
 {%- if page.breadcrumb-title -%}
   {% if page.breadcrumb-title-uri -%}
     <a href="{{ page.breadcrumb-title-uri }}">{{ page.breadcrumb-title }}</a>
-  {% else -%}
+  {%- else -%}
     {{ page.breadcrumb-title }}
   {% endif -%}
 {% else -%}
