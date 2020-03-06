@@ -1,6 +1,7 @@
 ---
 layout: hwx_foyer
 breadcrumb-title: HDP
+breadcrumb-title-uri: /HDPDocuments/HDP3/HDF-3.1.5/index.html
 title: Data Science
 publications:
   - title: Configuring Apache Spark
