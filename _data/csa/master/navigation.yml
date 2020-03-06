@@ -44,7 +44,7 @@
 - text: How To
   id: cat-how-to
   sub:
-    - text: Development
+    - text: Application development
       href: development/index.html
       id: pub-development
       sub: development/navigation.json
