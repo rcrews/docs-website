@@ -12,10 +12,10 @@
     <a href="{{ page.breadcrumb-title-uri }}">{{ page.breadcrumb-title }}</a>
   {%- else -%}
     {{ page.breadcrumb-title }}
-  {% endif -%}
+  {%- endif -%}
 {% else -%}
   {{ page.title }}
-{% endif -%}
+{%- endif -%}
 </span></div>
             <h1 class="wordy">{{ page.title }}{% if page.layout != "post" and page.layout != "foyer" and page.layout != "sm-foyer" %} Documentation{% endif %}</h1>
             {% if page.version -%}
