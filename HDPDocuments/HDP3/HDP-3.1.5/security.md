@@ -1,7 +1,6 @@
 ---
 layout: hwx_foyer
 breadcrumb-title: HDP
-breadcrumb-title-uri: /HDPDocuments/HDP3/HDP-3.1.5/index.html
 title: Security
 publications:
   - title: Configuring Proxy with Apache Knox

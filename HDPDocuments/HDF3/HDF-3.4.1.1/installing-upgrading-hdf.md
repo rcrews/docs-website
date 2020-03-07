@@ -1,7 +1,6 @@
 ---
 layout: hwx_foyer
 breadcrumb-title: HDF
-breadcrumb-title-uri: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
 title: Installing & Upgrading HDF
 icon: hdf
 publications:

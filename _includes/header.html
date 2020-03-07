@@ -6,17 +6,7 @@
     <section class="ps titlebar">
         <div>
             <div class="featured_image"><img src="/common/img/product_icons/icon-{% if page.icon %}{{page.icon}}{% else %}{{page.title | remove: " " | downcase }}{% endif %}.png" onerror='this.onerror = null; this.src="/common/img/product_icons/icon-empty.png"'></div>
-            <div class="breadcrumb"><a href="/">Documentation</a> &raquo; <span class="current_book">
-{%- if page.breadcrumb-title -%}
-  {% if page.breadcrumb-title-uri -%}
-    <a href="{{ page.breadcrumb-title-uri }}">{{ page.breadcrumb-title }}</a>
-  {%- else -%}
-    {{ page.breadcrumb-title }}
-  {%- endif -%}
-{% else -%}
-  {{ page.title }}
-{%- endif -%}
-</span></div>
+            <div class="breadcrumb"><a href="/">Documentation</a> &raquo; <span class="current_book">{% if page.breadcrumb-title %}<a href="index.html">{{ page.breadcrumb-title }}</a>{% else %}{{ page.title }}{% endif %}</span></div>
             <h1 class="wordy">{{ page.title }}{% if page.layout != "post" and page.layout != "foyer" and page.layout != "sm-foyer" %} Documentation{% endif %}</h1>
             {% if page.version -%}
                 {% for product in site.data.versions -%}

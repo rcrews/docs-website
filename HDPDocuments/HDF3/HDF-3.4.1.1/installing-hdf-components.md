@@ -1,7 +1,6 @@
 ---
 layout: hwx_foyer
 breadcrumb-title: HDF
-breadcrumb-title-uri: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
 title: Installing HDF Components
 icon: hdf
 publications:
@@ -30,4 +29,4 @@ publications:
 ---
 
 Provides instructions on how to install individual HDF components,
-including NiFi, MiNiFi, Storm, and Kafka.
+including NiFi, MiNiFi, Storm, and Kafka. 

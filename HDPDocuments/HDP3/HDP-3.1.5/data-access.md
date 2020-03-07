@@ -1,7 +1,6 @@
 ---
 layout: hwx_foyer
 breadcrumb-title: HDP
-breadcrumb-title-uri: /HDPDocuments/HDP3/HDP-3.1.5/index.html
 title: Data Access
 publications:
   - title: Starting Apache Hive
