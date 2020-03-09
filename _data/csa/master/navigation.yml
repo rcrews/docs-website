@@ -52,11 +52,11 @@
       href: security/index.html
       id: pub-security
       sub: security/navigation.json
-    - text: Kafka Connector
+    - text: Apache Kafka Connector
       href: kafka-connector/index.html
       id: pub-kafka-connector
       sub: kafka-connector/navigation.json
-    - text: HBase Connector
+    - text: Apache HBase Connector
       href: hbase-connector/index.html
       id: pub-hbase-connector
       sub: hbase-connector/navigation.json
