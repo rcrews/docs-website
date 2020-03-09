@@ -44,6 +44,10 @@
 - text: How To
   id: cat-how-to
   sub:
+    - text: Quick Start
+      href: quickstart/index.html
+      id: pub-quickstart
+      sub: quickstart/navigation.json
     - text: Application development
       href: development/index.html
       id: pub-development
