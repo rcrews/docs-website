@@ -17,6 +17,12 @@ css: ../Licenses.css
 ---
 # {{ page.title }}
 
+## Cloudera Data Science Workbench 1.7.2, March 2020
+
+View the full list of third-party licenses for Cloudera Data Science
+Workbench 1.7.2 in the following file:
+[Cloudera Data Science Workbench 1.7.2 License Notice](/documentation/other/shared/licensefiles/CDSW_172_tpl.txt).
+
 ## Cloudera Data Science Workbench 1.7.1, February 2020
 
 View the full list of third-party licenses for Cloudera Data Science
