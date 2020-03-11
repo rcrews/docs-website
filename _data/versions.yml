@@ -709,15 +709,20 @@
           url: /cloudera-manager/7.0.3/index.html
 
 - name: HDF
-  latest-version: 3.4.1.1
-  latest-url: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
+  latest-version: 3.5.0
+  latest-url: /HDPDocuments/HDF3/HDF-3.5.0/index.html
   search-name: DataFlow
   versions:
+    - title: "3.5"
+      url: /HDPDocuments/HDF3/HDF-3.5.0/index.html
+      minors:
+        - title: 3.5.0
+          type: Latest
+          url: /HDPDocuments/HDF3/HDF-3.5.0/index.html
     - title: "3.4"
       url: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
       minors:
         - title: 3.4.1.1
-          type: Latest
           url: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
         - title: 3.4.0
           url: /HDPDocuments/HDF3/HDF-3.4.0/index.html
