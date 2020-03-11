@@ -327,11 +327,16 @@
       minors:
       - title: master
         url: /HDPDocuments/DP/DP-master/index.html
+    - title: "1.3"
+      url: /HDPDocuments/DP/DP-1.3.0/index.html
+      minors:
+        - title: 1.3.0
+          type: Latest
+          url: /HDPDocuments/DP/DP-1.3.0/index.html
     - title: "1.2"
       url: /HDPDocuments/DP/DP-1.2.3/index.html
       minors:
         - title: 1.2.3
-          type: Latest
           url: /HDPDocuments/DP/DP-1.2.3/index.html
         - title: 1.2.2
           url: /HDPDocuments/DP/DP-1.2.2/index.html

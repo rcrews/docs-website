@@ -46,6 +46,7 @@ exclude:
   - /HDPDocuments/Ambari/Ambari-7.1.0.0/
   - /HDPDocuments/Cloudbreak/Cloudbreak-1.10.0/
   - /HDPDocuments/DAS/DAS-1.4.5/
+  - /HDPDocuments/DP/DP-1.3.0/
   - /HDPDocuments/DSS1/DSS-1.6.1/
   - /HDPDocuments/HDF3/HDF-3.5.0/
   - /cdf-datahub/7.1.0/
