@@ -1299,15 +1299,20 @@
           url: /smm/1.0.0/index.html
 
 - name: Edge Management
-  latest-version: 1.1.1
-  latest-url: /cem/1.1.1/index.html
+  latest-version: 1.2.0
+  latest-url: /cem/1.2.0/index.html
   search-name: cem
   versions:
+    - title: "1.2"
+      url: /cem/1.2.0/index.html
+      minors:
+        - title: 1.2.0
+          type: Latest
+          url: /cem/1.2.0/index.html
     - title: "1.1"
       url: /cem/1.1.1/index.html
       minors:
         - title: 1.1.1
-          type: Latest
           url: /cem/1.1.1/index.html
         - title: 1.1.0
           url: /cem/1.1.0/index.html
