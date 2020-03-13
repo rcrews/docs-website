@@ -133,7 +133,7 @@ json:
       icon: /common/img/mini_icons/icon-cdh.png
 
     - text: HDF Enterprise
-      href: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
+      href: /HDPDocuments/index-hdf.html
       icon: /common/img/mini_icons/icon-hdf.png
 
     - text: HDP Enterprise
