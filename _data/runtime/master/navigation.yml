@@ -373,12 +373,6 @@
           sub: search-tutorial/navigation.json
 
         # Search is IN 7.1.0. 2/14 Email from Mitra
-        - text: Deploying Cloudera Search
-          href: search-deploying/index.html
-          id: pub-search-deploying
-          sub: search-deploying/navigation.json
-
-        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Securing Cloudera Search
           href: search-security/index.html
           id: pub-search-security
