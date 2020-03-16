@@ -36,3 +36,9 @@ CDP consists of the following services:
 * [Data Warehouse](/data-warehouse/cloud/index.html)
 * [Machine Learning](/machine-learning/cloud/index.html)
 * [Cloudera Runtime](/runtime/7.0.1/index.html)
+
+## Release Announcements
+
+* [March 2020](announcement-202003.html)
+* [December 2019](announcement-201912.html)
+* [November 2019](announcement-201911.html)
