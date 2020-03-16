@@ -50,6 +50,11 @@
       id: pub-requirements-aws
       sub: requirements-aws/navigation.json
 
+    - text: Azure Requirements
+      href: requirements-azure/index.html
+      id: pub-requirements-azure
+      sub: requirements-azure/navigation.json 
+
 # - text: Installation & Upgrade
 #   id: cat-installation
 #   sub:

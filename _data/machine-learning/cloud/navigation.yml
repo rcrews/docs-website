@@ -41,7 +41,7 @@
       id: pub-autoscaling-overview
       sub: autoscaling-overview/navigation.json
 
-      
+
 - text: Planning
   id: cat-planning
   sub:
@@ -49,6 +49,11 @@
       href: requirements-aws/index.html
       id: pub-requirements-aws
       sub: requirements-aws/navigation.json
+
+    - text: Azure Requirements
+      href: requirements-azure/index.html
+      id: pub-requirements-azure
+      sub: requirements-azure/navigation.json      
 
 # - text: Installation & Upgrade
 #   id: cat-installation
