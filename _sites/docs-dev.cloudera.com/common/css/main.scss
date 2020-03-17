@@ -1,0 +1,26 @@
+---
+---
+@charset "UTF-8";
+@import
+  // Sass variables and settings
+  "base/mixins",
+  "base/settings",
+  "base/base",
+  "base/global",
+
+  // DITA stuff
+  "newux/dita",
+
+  // Tab Windows
+  "newux/tabwin",
+  
+  // legacy cloudera filtering support and utilities
+  "newux/cdoc",
+
+  // DocUX specific stuff.
+  "newux/newux",
+
+  // FontAwesome
+  "fontawesome/fontawesome",
+  "fontawesome/solid",
+  "fontawesome/v4-shims";
