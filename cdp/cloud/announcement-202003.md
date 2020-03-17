@@ -1,6 +1,6 @@
 ---
 layout: fluid-topic
-title: CDP Public Cloud Updates - March 6, 2020
+title: CDP Public Cloud Updates - March 2020
 copyright:
   holder: Cloudera, Inc.
   years:
@@ -77,7 +77,7 @@ including in the CPD UI
   time & efficiency
 
 * Multiple ‘Streams Messaging’ (Kafka) clusters each with its own set of
-  Ranger (AuthZ) policies
+  Ranger (AuthZ) policies (Preview)
 
 * Reduced launch times for all clusters with wire encryption enabled
 
