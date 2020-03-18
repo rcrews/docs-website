@@ -25,12 +25,8 @@ guides walk you through the basic steps to build a Flink
 application from scratch.
 
 For newcomers to Flink:
-- Simple Flink Application Tutorial: a self-contained alerting application establishing basic Flink best practices
+- [Simple Flink Application Tutorial](https://github.com/cloudera/flink-tutorials/tree/master/flink-simple-tutorial): a self-contained alerting application establishing basic Flink best practices
 
 For advanced users:
-- Secured Flink Application Tutorial: an application demonstrating Flink security features
-- Stateful Flink Application Tutorial: a stateful inventory management service focusing on production grade development and operation requirements
-
-See the tutorials and the corresponding reference Flink applications
-on GitHub at
-[cloudera/flink-tutorials](https://github.com/cloudera/flink-tutorials).
+- [Secured Flink Application Tutorial](https://github.com/cloudera/flink-tutorials/tree/master/flink-secure-tutorial): an application demonstrating Flink security features
+- [Stateful Flink Application Tutorial](https://github.com/cloudera/flink-tutorials/tree/master/flink-stateful-tutorial): a stateful inventory management service focusing on production grade development and operation requirements
