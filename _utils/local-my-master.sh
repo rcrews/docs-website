@@ -48,6 +48,7 @@
     bundle exec jekyll build --trace
     aws s3 sync s3://docs-stage.cloudera.com/apps         "${LOCAL_ROOT}"/apps
     aws s3 sync s3://docs-stage.cloudera.com/cdp          "${LOCAL_ROOT}"/cdp
+    aws s3 sync s3://docs-stage.cloudera.com/cdf-datahub  "${LOCAL_ROOT}"/cdf-datahub
     aws s3 sync s3://docs-stage.cloudera.com/cfm          "${LOCAL_ROOT}"/cfm
     aws s3 sync s3://docs-stage.cloudera.com/management-console "${LOCAL_ROOT}"/management-console
     aws s3 sync s3://docs-stage.cloudera.com/common/fonts "${LOCAL_ROOT}"/common/fonts
