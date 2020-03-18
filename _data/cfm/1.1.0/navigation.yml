@@ -32,6 +32,10 @@
       href: upgrading-cfm/index.html
       id: pub-upgrading-cfm
       sub: upgrading-cfm/navigation.json
+    - text: Support Matrix
+      href: support-matrix/index.html
+      id: pub-support-matrix
+      sub: support-matrix/navigation.json
 
 - text: How To
   name: how-to
