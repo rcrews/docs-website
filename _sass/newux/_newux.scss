@@ -355,3 +355,35 @@ body                    { margin: 0; }
 }
 
 .hashpad:before                         { content: ""; display: block; height: 70px; margin: -50px 0 0; } // Used to create some padding before hashed links.
+
+.foyer-pub-list {
+  display: flex;
+  .column {
+    flex: 0 1 25rem;
+    .pub-group {
+      .pub-group-title {
+        margin-top: 0;
+        margin-bottom: 0.2rem;
+      }
+      .pub-group-title + .pub {
+        margin-top: 0;
+      }
+    }
+    .pub {
+      margin-bottom: 0.8rem;
+      .pub-title {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .pub-desc {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .column + .column {
+    padding-left: 1rem;
+  }
+}

@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: Security
 
@@ -8,6 +8,7 @@ title: Security
 # * Knox
 
 publications:
+- column:
   # - title: Identity Management and Federation
   #   url: identity-management-and-federation/index.html
   #   description: >-
@@ -26,6 +27,7 @@ publications:
       Apache Ranger provides fine-grained access control for CDP
       services.
 
+- column:
   - title: Configuring Apache Ranger Authentication with UNIX, LDAP, or AD
     url: security-ranger-authentication-unix-ldap-ad/index.html
     description: >-

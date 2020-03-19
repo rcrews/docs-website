@@ -43,21 +43,69 @@
 
     # start tomcat with
     # brew services start tomcat
-    LOCAL_ROOT="${HOME}/Library/Application Support/tomcat@9/webapps/ROOT"
+    LOCAL="${HOME}/Library/Application Support/tomcat@9/webapps/ROOT"
+    REMOTE='s3://docs-stage.cloudera.com'
     git checkout my-master
     bundle exec jekyll build --trace
-    aws s3 sync s3://docs-stage.cloudera.com/apps         "${LOCAL_ROOT}"/apps
-    aws s3 sync s3://docs-stage.cloudera.com/cdp          "${LOCAL_ROOT}"/cdp
-    aws s3 sync s3://docs-stage.cloudera.com/cdf-datahub  "${LOCAL_ROOT}"/cdf-datahub
-    aws s3 sync s3://docs-stage.cloudera.com/cfm          "${LOCAL_ROOT}"/cfm
-    aws s3 sync s3://docs-stage.cloudera.com/management-console "${LOCAL_ROOT}"/management-console
-    aws s3 sync s3://docs-stage.cloudera.com/common/fonts "${LOCAL_ROOT}"/common/fonts
-    aws s3 sync s3://docs-stage.cloudera.com/common/img   "${LOCAL_ROOT}"/common/img
-    aws s3 sync s3://docs-stage.cloudera.com/content      "${LOCAL_ROOT}"/content
-    aws s3 sync s3://docs-stage.cloudera.com/etc.clientlibs "${LOCAL_ROOT}"/etc.clientlibs
-    aws s3 sync s3://docs-stage.cloudera.com/etc          "${LOCAL_ROOT}"/etc
-    aws s3 sync s3://docs-stage.cloudera.com/libs         "${LOCAL_ROOT}"/libs
-    rsync -ChivrlpgoDHAXc _site/                          "${LOCAL_ROOT}"
+    aws s3 sync ${REMOTE}/apps                                      "${LOCAL}"/apps
+    aws s3 sync ${REMOTE}/common/fonts                              "${LOCAL}"/common/fonts
+    aws s3 sync ${REMOTE}/common/img                                "${LOCAL}"/common/img
+    aws s3 sync ${REMOTE}/content                                   "${LOCAL}"/content
+    aws s3 sync ${REMOTE}/etc.clientlibs                            "${LOCAL}"/etc.clientlibs
+    aws s3 sync ${REMOTE}/etc                                       "${LOCAL}"/etc
+    aws s3 sync ${REMOTE}/libs                                      "${LOCAL}"/libs
+
+    # aws s3 cp ${REMOTE}/best-practices/latest/navigation.json       "${LOCAL}"/best-practices/latest/navigation.json
+    # aws s3 cp ${REMOTE}/ccp/2.0.0/navigation.json                   "${LOCAL}"/ccp/2.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/ccp/2.0.1/navigation.json                   "${LOCAL}"/ccp/2.0.1/navigation.json
+    # aws s3 cp ${REMOTE}/cdf-datahub/7.0.2/navigation.json           "${LOCAL}"/cdf-datahub/7.0.2/navigation.json
+    # aws s3 cp ${REMOTE}/cdp/cloud/navigation.json                   "${LOCAL}"/cdp/cloud/navigation.json
+    # aws s3 cp ${REMOTE}/cdpdc/7.0/navigation.json                   "${LOCAL}"/cdpdc/7.0/navigation.json
+    # aws s3 cp ${REMOTE}/cem/1.0.0/navigation.json                   "${LOCAL}"/cem/1.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/cem/1.1.0/navigation.json                   "${LOCAL}"/cem/1.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/cem/1.1.1/navigation.json                   "${LOCAL}"/cem/1.1.1/navigation.json
+    # aws s3 cp ${REMOTE}/cfm/1.0.0/navigation.json                   "${LOCAL}"/cfm/1.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/cfm/1.0.1/navigation.json                   "${LOCAL}"/cfm/1.0.1/navigation.json
+    # aws s3 cp ${REMOTE}/cloudera-manager/7.0.0/navigation.json      "${LOCAL}"/cloudera-manager/7.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/cloudera-manager/7.0.1/navigation.json      "${LOCAL}"/cloudera-manager/7.0.1/navigation.json
+    # aws s3 cp ${REMOTE}/cloudera-manager/7.0.2/navigation.json      "${LOCAL}"/cloudera-manager/7.0.2/navigation.json
+    # aws s3 cp ${REMOTE}/cloudera-manager/7.0.3/navigation.json      "${LOCAL}"/cloudera-manager/7.0.3/navigation.json
+    # aws s3 cp ${REMOTE}/cloudera-manager/7.1.0/navigation.json      "${LOCAL}"/cloudera-manager/7.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/csa/1.1.0/navigation.json                   "${LOCAL}"/csa/1.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/csp/1.0.0/navigation.json                   "${LOCAL}"/csp/1.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/csp/2.0.0/navigation.json                   "${LOCAL}"/csp/2.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/csp/2.0.1/navigation.json                   "${LOCAL}"/csp/2.0.1/navigation.json
+    # aws s3 cp ${REMOTE}/data-catalog/cloud/navigation.json          "${LOCAL}"/data-catalog/cloud/navigation.json
+    # aws s3 cp ${REMOTE}/data-hub/cloud/navigation.json              "${LOCAL}"/data-hub/cloud/navigation.json
+    # aws s3 cp ${REMOTE}/data-warehouse/cloud/navigation.json        "${LOCAL}"/data-warehouse/cloud/navigation.json
+    # aws s3 cp ${REMOTE}/documentation/other/navigation.json         "${LOCAL}"/documentation/other/navigation.json
+    # aws s3 cp ${REMOTE}/HDPDocuments/Ambari-2.7.0.0/navigation.json "${LOCAL}"/HDPDocuments/Ambari-2.7.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/HDPDocuments/Ambari-2.7.1.0/navigation.json "${LOCAL}"/HDPDocuments/Ambari-2.7.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/HDPDocuments/Ambari-2.7.3.0/navigation.json "${LOCAL}"/HDPDocuments/Ambari-2.7.3.0/navigation.json
+    # aws s3 cp ${REMOTE}/HDPDocuments/Ambari-2.7.4.0/navigation.json "${LOCAL}"/HDPDocuments/Ambari-2.7.4.0/navigation.json
+    # aws s3 cp ${REMOTE}/HDPDocuments/Ambari-2.7.5.0/navigation.json "${LOCAL}"/HDPDocuments/Ambari-2.7.5.0/navigation.json
+    # aws s3 cp ${REMOTE}/machine-learning/cloud/navigation.json      "${LOCAL}"/machine-learning/cloud/navigation.json
+    # aws s3 cp ${REMOTE}/management-console/cloud/navigation.json    "${LOCAL}"/management-console/cloud/navigation.json
+    # aws s3 cp ${REMOTE}/replication-manager/cloud/navigation.json   "${LOCAL}"/replication-manager/cloud/navigation.json
+    # aws s3 cp ${REMOTE}/runtime/7.0.0/navigation.json               "${LOCAL}"/runtime/7.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/runtime/7.0.1/navigation.json               "${LOCAL}"/runtime/7.0.1/navigation.json
+    # aws s3 cp ${REMOTE}/runtime/7.0.2/navigation.json               "${LOCAL}"/runtime/7.0.2/navigation.json
+    # aws s3 cp ${REMOTE}/runtime/7.0.3/navigation.json               "${LOCAL}"/runtime/7.0.3/navigation.json
+    # aws s3 cp ${REMOTE}/runtime/7.1.0/navigation.json               "${LOCAL}"/runtime/7.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/smm/1.0.0/navigation.json                   "${LOCAL}"/smm/1.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/smm/1.1.0/navigation.json                   "${LOCAL}"/smm/1.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/smm/1.2.0/navigation.json                   "${LOCAL}"/smm/1.2.0/navigation.json
+    # aws s3 cp ${REMOTE}/smm/1.2.1/navigation.json                   "${LOCAL}"/smm/1.2.1/navigation.json
+    # aws s3 cp ${REMOTE}/smm/2.0.0/navigation.json                   "${LOCAL}"/smm/2.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/srm/1.0.0/navigation.json                   "${LOCAL}"/srm/1.0.0/navigation.json
+    # aws s3 cp ${REMOTE}/workload-manager/cloud/navigation.json      "${LOCAL}"/workload-manager/cloud/navigation.json
+
+    aws s3 sync ${REMOTE}/cdp                                       "${LOCAL}"/cdp
+    aws s3 sync ${REMOTE}/cdf-datahub                               "${LOCAL}"/cdf-datahub
+    aws s3 sync ${REMOTE}/cfm                                       "${LOCAL}"/cfm
+    aws s3 sync ${REMOTE}/management-console                        "${LOCAL}"/management-console
+
+    rsync -ChivrlpgoDHAXc _site/                                    "${LOCAL}"
     # git checkout master
 # fi
 #

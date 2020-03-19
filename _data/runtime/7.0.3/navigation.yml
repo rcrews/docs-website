@@ -13,7 +13,7 @@
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
 #   Data Access: DAS, Hive, Impala, Hue, Sqoop, Search, Phoenix
-#   Operational Datastore: HBase
+#   Operational Database: HBase
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox
 #   Governance: Atlas
@@ -94,7 +94,7 @@
           id: pub-search-overview
           sub: search-overview/navigation.json
 
-    - text: Operational Datastore
+    - text: Operational Database
       href: concepts-operational-database.html
       sub:
         - text: Apache HBase Overview
@@ -377,7 +377,7 @@
           id: pub-search-indexing
           sub: search-indexing/navigation.json
 
-    - text: Operational Datastore
+    - text: Operational Database
       href: howto-operational-database.html
       sub:
 

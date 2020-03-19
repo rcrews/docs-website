@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: Governance
 
@@ -7,6 +7,7 @@ title: Governance
 # * Atlas
 
 publications:
+- column:
   - title: Searching with Metadata
     url: atlas-searching-with-metadata/index.html
     description: >-
@@ -16,8 +17,10 @@ publications:
   - title: Working with Classifications and Labels
     url: atlas-working-with-classifications/index.html
     description: >-
-      How to use Apache Atlas to search for, annotate, classify, and manage data.
+      How to use Apache Atlas to search for, annotate, classify, and
+      manage data.
 
+- column:
   - title: Exploring using Lineage
     url: atlas-exploring-using-lineage/index.html
     description: >-

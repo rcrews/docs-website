@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Compute
 
@@ -8,6 +8,7 @@ title: Compute
 # * ZooKeeper
 
 publications:
+- column:
   - title: Apache YARN Overview
     url: yarn-overview/index.html
     description: >-

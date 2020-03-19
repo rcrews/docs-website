@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Security
 
@@ -8,6 +8,7 @@ title: Security
 # * Knox
 
 publications:
+- column:
   - title: CDP Security Overview
     url: cdp-security-overview/index.html
     description: >-

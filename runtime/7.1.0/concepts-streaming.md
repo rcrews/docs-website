@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Streaming
 
@@ -7,6 +7,7 @@ title: Streaming
 # * Kafka
 
 publications:
+- column:
   - title: Apache Kafka Overview
     url: kafka-overview/index.html
     description: >-

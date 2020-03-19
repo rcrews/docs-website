@@ -7,12 +7,12 @@ layout: newux
     <div class="foyer-content">
         {{ content }}
     </div>
-    <dl class="foyer-publications">
+    <dl>
         {% for publication in page.publications -%}
-            <dt class="publication-title">
-                <a href="{{ publication.url }}" {% if publication.external %} class="external" {% endif %}>{{ publication.title }}</a>
+            <dt>
+                <a href="{{ publication.url }}"{% if publication.external %} class="external"{% endif %}>{{ publication.title }}</a>
             </dt>
-            <dd class="publication-description">{{ publication.description }}</dd>
+            <dd>{{ publication.description }}</dd>
         {% endfor -%}
     </dl>
-</section>
+</div>
