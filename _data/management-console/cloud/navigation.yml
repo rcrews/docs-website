@@ -76,6 +76,11 @@
       id: pub-environments-azure
       sub: environments-azure/navigation.json
 
+    - text: Connection to Private Subnets
+      href: connection-to-private-subnets/index.html
+      id: pub-connection-to-private-subnets
+      sub: connection-to-private-subnets/navigation.json
+
     - text: Data Lakes
       href: data-lakes/index.html
       id: pub-data-lakes
