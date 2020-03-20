@@ -82,6 +82,7 @@ publications:
         Hive or to the file system or object store and how to move data
         back to Hive.
 
+- column:
   - title: Apache Impala
     sub:
 
@@ -96,7 +97,6 @@ publications:
       description: >-
         Presents the task topics for configuring and managing Impala.
 
-- column:
   - title: Hue
     sub:
 
