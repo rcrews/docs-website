@@ -27,11 +27,11 @@ publications:
       Describes information about the configuration parameters used to
       access data stored in the cloud.
 
-    - title: Configuring Fault Tolerance
-      url: fault-tolerance/index.html
-      description: >-
-        Describes the procedure to configure HDFS high availability on a
-        cluster.
+  - title: Configuring Fault Tolerance
+    url: fault-tolerance/index.html
+    description: >-
+      Describes the procedure to configure HDFS high availability on a
+      cluster.
 
   - title: Apache Hadoop HDFS
     sub:
