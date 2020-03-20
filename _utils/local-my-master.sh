@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# s3sync_jar='/Users/rcrews/Sandbox/s3sync/s3sync.jar'
+#
 # git checkout master
 # git fetch cloudera master
 # git fetch public playbranch
@@ -37,9 +39,9 @@
 # _utils/switchsite.rb stage
 # RESULT=$?
 # if [[ RESULT != 1 ]] ; then
-    # rm -rf _site/*
-    # bundle exec jekyll build --trace
-    # java -jar ../s3sync/s3sync.jar upload --directory _site --bucket 'docs-stage.cloudera.com'
+#     rm -rf _site/*
+#     bundle exec jekyll build --trace
+#     java -jar $s3sync_jar upload --directory _site --bucket 'docs-stage.cloudera.com'
 
     # start tomcat with
     # brew services start tomcat
@@ -106,7 +108,7 @@
     aws s3 sync ${REMOTE}/management-console                        "${LOCAL}"/management-console
 
     rsync -ChivrlpgoDHAXc _site/                                    "${LOCAL}"
-    # git checkout master
+#     git checkout master
 # fi
 #
 # _utils/switchsite.rb dev
@@ -114,7 +116,7 @@
 # if [[ RESULT != 1 ]] ; then
 #     rm -rf _site/*
 #     bundle exec jekyll build --trace
-#     java -jar ../s3sync/s3sync.jar upload --directory _site --bucket 'docs-dev.cloudera.com'
+#     java -jar $s3sync_jar upload --directory _site --bucket 'docs-dev.cloudera.com'
 # fi
 #
 # _utils/switchsite.rb prod
@@ -122,7 +124,7 @@
 # if [[ RESULT != 1 ]] ; then
 #     rm -rf _site/*
 #     bundle exec jekyll build --trace
-#     java -jar ../s3sync/s3sync.jar upload --directory _site --bucket 'docs.cloudera.com'
+#     java -jar $s3sync_jar upload --directory _site --bucket 'docs.cloudera.com'
 # fi
 #
 # _utils/switchsite.rb stage
