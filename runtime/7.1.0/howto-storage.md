@@ -21,24 +21,28 @@ publications:
       Provides information about configuring data protection on a Hadoop
       cluster.
 
-  - title: Configuring HDFS ACLs
-    url: hdfs-acls/index.html
-    description: >-
-      Describes the procedure to configure Access Control Lists (ACLs)
-      on Apache Hadoop HDFS.
-
-  - title: Configuring Fault Tolerance
-    url: fault-tolerance/index.html
-    description: >-
-      Describes the procedure to configure HDFS high availability on a
-      cluster.
-
   - title: Accessing Cloud Data
     url: cloud-data-access/index.html
     description: >-
       Describes information about the configuration parameters used to
       access data stored in the cloud.
 
+    - title: Configuring Fault Tolerance
+      url: fault-tolerance/index.html
+      description: >-
+        Describes the procedure to configure HDFS high availability on a
+        cluster.
+
+  - title: Apache Hadoop HDFS
+    sub:
+    - title: Apache Hadoop HDFS
+      sub:
+      - title: Configuring HDFS ACLs
+        url: hdfs-acls/index.html
+        description: >-
+          Describes the procedure to configure Access Control Lists (ACLs)
+          on Apache Hadoop HDFS.
+  
 - column:
   - title: Apache Kudu
     sub:

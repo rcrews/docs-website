@@ -9,7 +9,7 @@ title: Storage
 
 publications:
 - column:
-  - title: Apache Zeppelin
+  - title: Apache Hadoop HDFS
     sub:
 
     - title: HDFS Overview
