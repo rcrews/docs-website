@@ -107,7 +107,7 @@ if [[ RESULT != 1 ]] ; then
     aws s3 sync ${REMOTE}/cfm                                       "${LOCAL}"/cfm
     aws s3 sync ${REMOTE}/management-console                        "${LOCAL}"/management-console
 
-    rsync -ChivrlpgoDHAXc _site/                                    "${LOCAL_ROOT}"
+    rsync -ChivrlpgoDHAXc _site/                                    "${LOCAL}"
     git checkout master
 fi
 
