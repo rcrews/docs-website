@@ -119,27 +119,19 @@ publications:
     description: >-
       A tutorial on using Cloudera Search.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
-  - title: Deploying Cloudera Search
-    url: search-deploying/index.html
-    description: >-
-      Describes how to deploy Cloudera Search.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
   - title: Securing Cloudera Search
     url: search-security/index.html
     description: >-
-      Nibh curabitur feugiat himenaeos sociosqu integer cras vel
-      efficitur, semper penatibus justo posuere auctor pharetra
-      sollicitudin fames, congue accumsan placerat.
+      Describes how to secure Solr network connections, configure authentication
+      and authorization.
 
-  # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
+
   - title: Tuning Cloudera Search
     url: search-tuning/index.html
     description: >-
-      Nibh curabitur feugiat himenaeos sociosqu integer cras vel
-      efficitur, semper penatibus justo posuere auctor pharetra
-      sollicitudin fames, congue accumsan placerat.
+      Describes how to optimize Cloudera Search performance for
+      various use cases.
 
   # In 7.1.0, but not in left nav or foyer pages. mikusz email 2/11
   - title: Managing Cloudera Search
