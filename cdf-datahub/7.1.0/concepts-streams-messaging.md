@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title: Cloudera Data Flow for Data Hub How To
+breadcrumb-title: Cloudera Data Flow for Data Hub Concepts
 title: Streams Messaging
 
 publications:
@@ -21,3 +21,8 @@ publications:
     description: >-
       Provides an overview of Streams Messaging Manager key features.
 ---
+Facilisis porta sagittis mollis imperdiet risus feugiat iaculis dui
+ligula, potenti primis vivamus et tempor dictumst mattis vehicula
+senectus, est sapien sollicitudin fringilla purus nascetur aenean
+parturient vulputate nisi, convallis felis pharetra maximus sodales
+auctor ut quisque.

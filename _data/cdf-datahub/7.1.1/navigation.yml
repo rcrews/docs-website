@@ -51,40 +51,14 @@
   id:   cat-planning
   sub:
     - text: Planning your Flow Management deployment
-      href: planning-flow-management.html
-      sub:
-        - text: Deployment scenarios
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
-        - text: Flow Management cluster definitions
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
-        - text: Flow Management cluster layout
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+      href: publication-tbd/index.html
+      id:   pub-publication-tbd
+      sub:  publication-tbd/navigation.json
 
     - text: Planning your Streams Messaging deployment
-      href: planning-streams-messaging.html
-      sub:
-        - text: Deployment scenarios
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
-        - text: Streams Messaging cluster definitions
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
-        - text: Streams Messaging cluster layout
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+      href: publication-tbd/index.html
+      id:   pub-publication-tbd
+      sub:  publication-tbd/navigation.json
 
 # - text: Installation & Upgrade
 #   id:   cat-installation

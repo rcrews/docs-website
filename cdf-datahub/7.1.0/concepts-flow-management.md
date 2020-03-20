@@ -1,22 +1,16 @@
 ---
 layout: foyer
-breadcrumb-title: Cloudera Data Flow for Data Hub Planning
-title: Streams Messaging
+breadcrumb-title: Cloudera Data Flow for Data Hub Concepts
+title: Flow Management
 
 publications:
-  - title: Deployment scenarios
+  - title: Apache NiFi Overview
     url: publication-tbd/index.html
     description: >-
       Condimentum justo curae felis imperdiet nunc eros parturient orci,
       ad id habitasse.
 
-  - title: Streams Messaging cluster definitions
-    url: publication-tbd/index.html
-    description: >-
-      Condimentum justo curae felis imperdiet nunc eros parturient orci,
-      ad id habitasse.
-
-  - title: Streams Messaging cluster layout
+  - title: Apache NiFi Registry Overview
     url: publication-tbd/index.html
     description: >-
       Condimentum justo curae felis imperdiet nunc eros parturient orci,
