@@ -89,9 +89,6 @@
       id: pub-installation
       sub: installation/navigation.json
 
-- text: Installation & Upgrade
-  id: cat-upgrade
-  sub:
     - text: Upgrading to CDP Data Center
       href: upgrade/index.html
       id: pub-upgrade

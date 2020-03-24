@@ -8,7 +8,7 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Overview & Installation
+- text: Overview
   id: landing-overview-installation
   href: /cdpdc/master/index.html
   display: none
@@ -24,14 +24,6 @@
 # - text: Planning
 #   id: cat-planning
 #   sub:
-
-- text: Installation & Upgrade
-  id: cat-installation
-  sub:
-  - text: Release Guide
-      href: release-guide/index.html
-      id: pub-release-guide
-      sub: release-guide/navigation.json
 
 # - text: How To
 #   id: cat-howto
