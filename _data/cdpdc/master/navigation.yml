@@ -28,12 +28,7 @@
 - text: Installation & Upgrade
   id: cat-installation
   sub:
-    - text: Installation
-      href: installation/index.html
-      id: pub-installation
-      sub: installation/navigation.json
-
-    - text: Release Guide
+  - text: Release Guide
       href: release-guide/index.html
       id: pub-release-guide
       sub: release-guide/navigation.json

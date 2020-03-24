@@ -81,6 +81,22 @@
           id: security-how-to-guides.html
           sub: security-how-to-guides/navigation.json           
 
+- text: Installation & Upgrade
+  id: cat-installation
+  sub:
+    - text: Installation
+      href: installation/index.html
+      id: pub-installation
+      sub: installation/navigation.json
+
+- text: Installation & Upgrade
+  id: cat-upgrade
+  sub:
+    - text: Upgrading to CDP Data Center
+      href: upgrade/index.html
+      id: pub-upgrade
+      sub: upgrade/navigation.json
+      
 - text: Troubleshooting
   id: cat-troubleshooting
   sub:
