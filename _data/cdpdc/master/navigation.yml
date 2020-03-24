@@ -25,6 +25,10 @@
 #   id: cat-planning
 #   sub:
 
+# - text: Installation & Upgrade
+#   id: cat-installation
+#   sub:
+
 # - text: How To
 #   id: cat-howto
 #   sub:
