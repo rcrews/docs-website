@@ -62,6 +62,9 @@ json:
 - text: Cloudera Flow Manager
   href: topics/ctpl_cfm.html
 
+- text: Cloudera Data Lifecycle Manager
+  href: topics/ctpl_dlm.html
+
 - text: Cloudera Data Science Workbench
   href: topics/ctpl_cdsw1.html
 
