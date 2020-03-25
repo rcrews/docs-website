@@ -12,6 +12,9 @@ base-path: /cdp/cloud/
 #       - title: Release Notes
 #         url: release-notes/index.html
 
+# To be restored later:
+# * [March 2020](announcement-202003.html)
+
 ---
 Cloudera Data Platform (CDP) is a secure and governed cloud service
 platform that offers a broad set of enterprise data cloud services with
@@ -39,6 +42,5 @@ CDP consists of the following services:
 
 ## Release Announcements
 
-* [March 2020](announcement-202003.html)
 * [December 2019](announcement-201912.html)
 * [November 2019](announcement-201911.html)
