@@ -60,6 +60,10 @@
       href: kafka-connector/index.html
       id: pub-kafka-connector
       sub: kafka-connector/navigation.json
+    - text: Schema Registry
+      href: schema-registry/index.html
+      id: pub-schema-registry
+      sub: schema-registry/navigation.json
     - text: Apache HBase Connector
       href: hbase-connector/index.html
       id: pub-hbase-connector
