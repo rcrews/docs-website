@@ -16,7 +16,7 @@ layout: newux
 <h2 class="pub-group-title">{{ item.title }}</h2>
             {%- for sub in item.sub -%}
 <div class="pub">
-<h3 class="pub-title"><a href="{{ publication.url }}"{% if sub.external %} class="external"{% endif %}>{{ sub.title }}</a></h3>
+<h3 class="pub-title"><a href="{{ sub.url }}"{% if sub.external %} class="external"{% endif %}>{{ sub.title }}</a></h3>
 <p class="pub-desc">{{ sub.description }}</p>
 </div>
             {%- endfor -%}
