@@ -65,8 +65,14 @@ json:
 - text: Cloudera Data Lifecycle Manager
   href: topics/ctpl_dlm.html
 
+- text: Cloudera DataPlane Platform
+  href: topics/ctpl_dp.html
+
 - text: Cloudera Data Science Workbench
   href: topics/ctpl_cdsw1.html
+
+- text: Cloudera Data Steward Studio
+  href: topics/ctpl_dss.html
 
 - text: Cloudera HDP
   href: topics/ctpl_hdp_overview.html
