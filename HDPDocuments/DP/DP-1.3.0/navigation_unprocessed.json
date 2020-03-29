@@ -2,6 +2,6 @@
 # Navigation data previously in this file
 # has been centralized into the _data folder.
 # Data that used to be here is now at
-#   _data/dp/1.2.3/navigation.yml
+#   _data/dp/1.3.0/navigation.yml
 ---
-{{ site.data.dp["123"].navigation | jsonify }}
+{{ site.data.dp["130"].navigation | jsonify }}

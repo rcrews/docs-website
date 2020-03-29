@@ -1,8 +1,8 @@
 ---
 layout: hwx_product
 title: DataPlane Platform
-version: 1.2.3
-base-path: /HDPDocuments/DP/DP-1.2.3/
+version: 1.3,0
+base-path: /HDPDocuments/DP/DP-1.3.0/
 
 sections:
   - title: Release Notes
