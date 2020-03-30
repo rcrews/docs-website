@@ -138,6 +138,8 @@ dropdowns:
 - section:
     title: Cloudera JDBC Drivers for Hive
     dropdown:
+    - text: Cloudera JDBC 2.6.10 Driver for Apache Hive
+      href: /documentation/other/connectors/hive-jdbc/2-6-10.html
     - text: Cloudera JDBC 2.6.9 Driver for Apache Hive
       href: /documentation/other/connectors/hive-jdbc/2-6-9.html
     - text: Cloudera JDBC 2.6.5 Driver for Apache Hive
@@ -172,6 +174,8 @@ dropdowns:
 - section:
     title: Cloudera JDBC Drivers for Impala
     dropdown:
+    - text: Cloudera JDBC 2.6.17 Driver for Impala
+      href: /documentation/other/connectors/impala-jdbc/2-6-17.html
     - text: Cloudera JDBC 2.6.15 Driver for Impala
       href: /documentation/other/connectors/impala-jdbc/2-6-15.html
     - text: Cloudera JDBC 2.6.12 Driver for Impala

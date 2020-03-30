@@ -1608,9 +1608,15 @@
     - title: "2.6"
       url: /documentation/other/connectors/hive-jdbc/latest.html
       minors:
-        - title: 2.6.2
+        - title: 2.6.10
           label: Latest
-          url: /documentation/other/connectors/hive-jdbc/latest.html
+          url: /documentation/other/connectors/hive-jdbc/2-6-10.html
+        - title: 2.6.9
+          url: /documentation/other/connectors/hive-jdbc/2-6-9.html
+        - title: 2.6.5
+          url: /documentation/other/connectors/hive-jdbc/2-6-5.html
+        - title: 2.6.2
+          url: /documentation/other/connectors/hive-jdbc/2-6-2.html
         - title: 2.6.1
           url: /documentation/other/connectors/hive-jdbc/2-6-1.html
     - title: "2.5"
@@ -1772,9 +1778,15 @@
     - title: "2.6"
       url: /documentation/other/connectors/impala-jdbc/latest.html
       minors:
-        - title: 2.6.11
+        - title: 2.6.17
           label: Latest
-          url: /documentation/other/connectors/impala-jdbc/latest.html
+          url: /documentation/other/connectors/impala-jdbc/2-6-17.html
+        - title: 2.6.15
+          url: /documentation/other/connectors/impala-jdbc/2-6-15.html
+        - title: 2.6.12
+          url: /documentation/other/connectors/impala-jdbc/2-6-12.html
+        - title: 2.6.11
+          url: /documentation/other/connectors/impala-jdbc/2-6-11.html
         - title: 2.6.9
           url: /documentation/other/connectors/impala-jdbc/2-6-9.html
         - title: 2.6.4
