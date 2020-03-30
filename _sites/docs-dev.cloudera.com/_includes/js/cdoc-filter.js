@@ -166,10 +166,6 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
   function isCMUpgradePage() {
     return isPage('cm_upgrade');
   }
-  
-  function isDbBackupPage() {
-    return isPage('ug_cm_db');
-  }
 
   function isCMDowngradePage() {
     return isPage('cm_downgrade');
@@ -205,8 +201,6 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
   } else if (isCDHUpgradePage()) {
     repoGenerator = new RepoGenerator('cdh', 'Cloudera CDH');
   } else if (isHostUpgradeBeforePage() || isHostUpgradeAfterPage()) {
-    repoGenerator = new RepoGenerator('cm', 'Cloudera Manager');
-  } else if (isDbBackupPage()) {
     repoGenerator = new RepoGenerator('cm', 'Cloudera Manager');
   }
 
@@ -366,7 +360,7 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     var currValue = $('#archive_cloudera_com_input').val();
 
     // Adjust the input based on the paywall selection.
-    if (currValue.indexOf(ARCHIVE_CLOUDERA_COM) !== -1 || $.trim(currValue) === '') {
+    if (currValue && currValue.indexOf(ARCHIVE_CLOUDERA_COM) !== -1 || $.trim(currValue) === '') {
       setArchiveClouderaInput(paid ? ARCHIVE_CLOUDERA_COM_PAID : ARCHIVE_CLOUDERA_COM_FREE);
     }
   }
@@ -408,10 +402,6 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       pdVersion = cdhVersion || defaultCdhVersion;
       category = 'cdh';
     } else if (isHostUpgradeBeforePage() || isHostUpgradeAfterPage()) {
-      cmVersion = $('#cdoc-cm-select').val();
-      pdVersion = cmVersion || defaultCmVersion;
-      category = 'cdh';
-    } else if (isDbBackupPage()) {
       cmVersion = $('#cdoc-cm-select').val();
       pdVersion = cmVersion || defaultCmVersion;
       category = 'cdh';
@@ -461,11 +451,11 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     $('<button>').attr('id', 'archive_cloudera_com_btn').addClass('cdoc-archive_cloudera_com_btn').text('Apply').appendTo($archiveUrlContainer);
     $('#archive_cloudera_com_input').change(function() {
       populateRepoAndList();
-      //sendAnalytics('repo_url', 'change');
+      sendAnalytics('repo_url', 'change');
     });
     $('#archive_cloudera_com_btn').click(function() {
       populateRepoAndList();
-      //sendAnalytics('repo_url', 'apply');
+      sendAnalytics('repo_url', 'apply');
     });
   }
 
@@ -953,11 +943,11 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       changeSelection(category, fromOrDest, $select.val());
       populateRepoAndList();
       endRefresh();
-      /*  if (fromOrDest) {
+      if (fromOrDest) {
         sendAnalytics('filter', category + '-' + fromOrDest, $select.val());
       } else {
         sendAnalytics('filter', category, $select.val());
-      }*/
+      }
     });
     $('<label>').text(label).addClass('control-label').appendTo($formGroup);
     var $div = $('<div>').addClass('controls').appendTo($formGroup);
@@ -1193,7 +1183,7 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       }
       $url.text(url);
       copyToClipboard($url);
-      //sendAnalytics('filter', 'share', url);
+      sendAnalytics('filter', 'share', url);
     });
 
     var addOSFilter = function() {
@@ -1278,8 +1268,6 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       addFilter('New Operating System', 'os', '', osOptions, $filter);
     } else if (isJDKUpgradePage()) {
       addFilter('Current Operating System', 'os', '', osOptions, $filter);
-    } else if (isDbBackupPage()) {
-      addDbFilter();
     }
 
     var $pushRight = $('<p>').css('text-align', 'right');
