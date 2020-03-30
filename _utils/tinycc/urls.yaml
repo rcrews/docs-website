@@ -2,6 +2,14 @@
 urls:
 
   #
+  # DP 1.3.0
+  #
+
+  - custom_hash: dps130_h0001a
+    note: DataPlane landing page
+    long_url: https://docs.cloudera.com/HDPDocuments/DP/DP-1.3.0/index.html
+
+  #
   # DP 1.1.0
   #
 
