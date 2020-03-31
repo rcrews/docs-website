@@ -42,14 +42,10 @@ var NEWUX = (function($) {
                     // Let's do a little more work to this url...
                     // The url structure should be /product-name/product-version/index.html
                     let my_product_url_parts = my_product_url.split("/");
-// rpc
-console.log(`my_product_url_parts = ${my_product_url_parts}`);
                     // If we're on a latest branch, we need to identify what we really are.
                     WhoAmI.is_latest = false;
                     if (my_product_url_parts[2] === "latest") {
                         WhoAmI.is_latest = true;
-// rpc
-console.log(`WhoAmI.is_latest = ${WhoAmI.is_latest}`);
                         // This will not be found in the lookup below, because the latest url doesn't existing in the versions. So can we lookup based on something else?
 
                         // Sub-pages have the version baked into the meta....
@@ -63,12 +59,6 @@ console.log(`WhoAmI.is_latest = ${WhoAmI.is_latest}`);
 
                     // Make sure there's an index.html at the end of the url.
                     my_product_url = `/${my_product_url_parts[1]}/${my_product_url_parts[2]}/index.html`;
-// rpc
-console.log(`my_product_url_parts[1] = ${my_product_url_parts[1]}`);
-// rpc
-console.log(`my_product_url_parts[2] = ${my_product_url_parts[2]}`);
-// rpc
-console.log(`my_product_url = ${my_product_url}`);
                     // Walk the versions.yaml tree, figure out what product/version I am based on the URL, and get the related information for that product
                     let found = false;
                     let versions = [];
@@ -77,13 +67,9 @@ console.log(`my_product_url = ${my_product_url}`);
                         // We only need to loop through the versions if we've not found it.
                         if (WhoAmI.is_latest) {
                             // Special lookup based on the latest flag.
-                            if (typeof data[i]["latest-url"] !== "undefined" && data[i]["latest-url"] === my_product_url) {
+                            if (typeof data[i]["latest-url"] !== "undefined" && data[i]["latest-url"].replace(/^\/([^/]+).*/, "$1") === my_product_url.replace(/^\/([^/]+).*/, "$1") ) {
                                 // Ok, we found the right product, and from this can deduce the right version.
-// rpc
-console.log(`data[i]["latest-version"] = ${data[i]["latest-version"]}`);
                                 my_product_url = `/${my_product_url_parts[1]}/${data[i]["latest-version"]}/index.html`;
-// rpc
-console.log(`my_product_url = ${my_product_url}`);
                             }
                         }
                         if (!found) {
