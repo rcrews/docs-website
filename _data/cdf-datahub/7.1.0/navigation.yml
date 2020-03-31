@@ -73,9 +73,9 @@
       sub:  publication-tbd/navigation.json
 
     - text: Flow Management Security
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: nifi-security/index.html
+      id:   pub-nifi-security
+      sub:  nifi-security/navigation.json
     
     - text: Apache NiFi
       href: howto-apache-nifi.html
@@ -152,6 +152,11 @@
       href: rest-api-reference/index.html
       id:   pub-rest-api-reference
       external: external
+
+    - text: Apache NiFi REST API Reference
+      href: nifi-api/index.html
+      id:   pub-nifi-api
+      sub:  nifi-api/navigation.json
 
 - text: Release Notes
   id:   cat-releasenotes
