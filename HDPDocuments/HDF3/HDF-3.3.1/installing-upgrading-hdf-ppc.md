@@ -35,9 +35,9 @@ publications:
   - title: Apache Ambari Managed HDF Upgrade for IBM Power Systems
     url: ambari-managed-hdf-upgrade-ppc/index.html
     description: >-
-      Describes how to upgrade HDF 3.0.2 and HDF 3.1.x services on an
-      HDP cluster, and how to upgrade an HDF-only cluster. This
-      information is specific to installing HDF on IBM Power Systems.
+      Describes how to upgrade HDF service on an HDP cluster, and how to
+      upgrade an HDF-only cluster. This information is specific to
+      installing HDF on IBM Power Systems.
 
 ---
 
