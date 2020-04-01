@@ -719,6 +719,7 @@ var NEWUX = (function($) {
         makeLatestURL(url) {
             // Take a URL like /runtime/7.0.0/topic/item_name.html and convert it to runtime/latest/topic/item_name.html
             let url_parts = url.split("/");
+            if (url.match(/^\//)) { return url_parts.join("/"); }
             url_parts[2] = "latest";
             return url_parts.join("/");
         },
