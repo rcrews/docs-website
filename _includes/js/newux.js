@@ -1318,7 +1318,7 @@ var NEWUX = (function($) {
                 $(this).closest('ul').find('li').removeClass("active");
                 $(this).parent().addClass('active');
                 $(p).find('.tabcontents div').hide();
-                $(p).find(i).fadeIn('slow');
+                $(p).find(`#${i}`).fadeIn('slow');
             });
         },
         deTarget: function() {
