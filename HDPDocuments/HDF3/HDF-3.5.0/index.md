@@ -13,6 +13,8 @@ sections:
         url: release-notes/index.html
       - title: Support Matrix
         url: https://supportmatrix.hortonworks.com/
+      - title: Downloading Your Software
+        url: download/index.html
 
   - title: Concepts
     name: concepts
