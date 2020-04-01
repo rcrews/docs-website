@@ -4,6 +4,12 @@ breadcrumb-title: HDF
 title: Installing & Upgrading HDF
 icon: hdf
 publications:
+  - title: Downloading Your Software
+    url: download/index.html
+    description: >-
+      Describes how to download HDF software artifacts from behind the
+      Cloudera paywall.
+
   - title: Planning Your HDF Deployment
     url: planning-your-deployment/index.html
     description: >-

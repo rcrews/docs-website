@@ -47,6 +47,11 @@
     - text: Installing & Upgrading HDF
       href: installing-upgrading-hdf.html
       sub:
+        - text: Downloading Your Software
+          id: download/index.html
+          href: download/index.html
+          sub: download/navigation.json
+
         - text: Planning Your HDF Deployment
           id: pub-planning-your-deployment
           href: planning-your-deployment/index.html
@@ -75,6 +80,11 @@
     - text: Installing & Upgrading HDF on IBM Power Systems
       href: installing-upgrading-hdf-ppc.html
       sub:
+        - text: Downloading Your Software
+          id: download/index.html
+          href: download/index.html
+          sub: download/navigation.json
+
         - text: Planning Your HDF Deployment on IBM Power Systems
           id: pub-planning-your-deployment-ppc
           href: planning-your-deployment-ppc/index.html

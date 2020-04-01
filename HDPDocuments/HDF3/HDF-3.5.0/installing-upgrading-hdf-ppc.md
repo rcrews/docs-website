@@ -4,6 +4,12 @@ breadcrumb-title: HDF
 title: Installing & Upgrading HDF on Power PC Systems
 icon: hdf
 publications:
+  - title: Downloading Your Software
+    url: download/index.html
+    description: >-
+      Describes how to download HDF software artifacts from behind the
+      Cloudera paywall.
+
   - title: Planning Your HDF Deployment on IBM Power Systems
     url: planning-your-deployment-ppc/index.html
     description: >-
