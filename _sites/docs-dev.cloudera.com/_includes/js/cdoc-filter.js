@@ -340,6 +340,15 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     var i, paidVersions = $('.current_cdh_paid_releases').text();
     return getAllVersions(paidVersions);
   }
+  
+  /** 
+   * JD 4.2.2020: Add a separate function for getting all Cloudera Runtime releases
+   * 
+   */
+  function getAllCrVersions() {
+    var i, paidCrVersions = $('.current_cr_releases').text()
+    return getAllVersions(paidCrVersions);
+  }
 
   /**
    * Updates the archive_cloudera_com_input input box's value.
@@ -1035,6 +1044,26 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       }
     }
   }
+  
+  /**
+   * JD 4.2.2020: Seperate populate function for CR clusters
+   */
+  function populateCrVersions(paidVersions, prefix, array) {
+    var i, version;
+
+    // Read the list of new versions from the page.
+    trimAll(paidVersions);
+
+    for (i = 0; i < paidVersions.length; ++i) {
+      version = paidVersions[i];
+      if (version) {
+        array.push({
+          value: version,
+          label: prefix + ' ' + version + ' (License Required)'
+        });
+      }
+    }
+  }
 
   var osOptions = [{
     value: '',
@@ -1100,12 +1129,15 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     label: 'Mixed'
   }];
 
-  var cdhFromOptions = [{
+  /**
+   * JD 4.2.2020: Replace CDH From and Dest options with broader 'Cluster' options
+   */
+  var clusterFromOptions = [{
     label: 'Choose...',
     value: ''
   }];
 
-  var cdhDestOptions = [{
+  var clusterDestOptions = [{
     label: 'Choose...',
     value: ''
   }];
@@ -1114,9 +1146,30 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     label: 'Choose...',
     value: ''
   }];
+  
+  function clusterPrefix(versions) {
+    var i, version, clusterPrefix;
+    
+    for (i = 0; i < versions.length; ++i) {
+      version = versions[i];
+      if (version < 7) {
+        clusterPrefix = "CDH";
+      }
+      else {
+        clusterPrefix = "CR"
+      }
+    }
+    return clusterPrefix;
+  }
 
-  populateVersions(getAllPaidCDHVersions(), getAllFreeCDHVersions(), 'CDH', cdhFromOptions);
-  populateVersions(getAllPaidCDHVersions(), getAllFreeCDHVersions(), 'CDH', cdhDestOptions);
+  /**
+   * JD 4.2.2020: Add calls to separate populate function for Cloudera Runtime releases 
+   * and set options to 'Cluster' for both CR and CDH releases
+   */
+  populateCrVersions(getAllCrVersions(), 'CR', clusterFromOptions);
+  populateCrVersions(getAllCrVersions(), 'CR', clusterDestOptions);
+  populateVersions(getAllPaidCDHVersions(), getAllFreeCDHVersions(), 'CDH', clusterFromOptions);
+  populateVersions(getAllPaidCDHVersions(), getAllFreeCDHVersions(), 'CDH', clusterDestOptions);
   populateVersions(getAllPaidCMVersions(), getAllFreeCMVersions(), 'Cloudera Manager', cmOptions);
 
   var productOptions = [{
@@ -1206,12 +1259,15 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       addFilter('New Cloudera Manager Version', 'cm', 'dest', cmOptions, $filter);
     };
 
-    var addCDHFromFilter = function() {
-      addFilter('Current CDH Version', 'cdh', 'from', cdhFromOptions, $filter);
+    /**
+    * JD 4.2.2020: Replace CDH filters with broader 'Cluster' filters
+    */
+    var addClusterFromFilter = function() {
+      addFilter('Current Cluster Version', 'cluster', 'from', clusterFromOptions, $filter);
     };
 
-    var addCDHDestFilter = function() {
-      addFilter('New CDH Version', 'cdh', 'dest', cdhDestOptions, $filter);
+    var addClusterDestFilter = function() {
+      addFilter('New Cluster Version', 'cluster', 'dest', clusterDestOptions, $filter);
     };
 
     var addCMFilter = function() {
@@ -1233,18 +1289,24 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     } else if (isHueUpgradePage()) {
       addOSFilter();
       addFilter('Hue Database', 'db', '', dbOptions, $filter);
-      addCDHFromFilter();
+      /**
+      * JD 4.2.2020: Call 'Cluster' filters
+      */
+      addClusterFromFilter();
       addSeparator($filter);
-      addCDHDestFilter();
+      addClusterDestFilter();
     } else if (isCDHUpgradePage()) {
       addCMFilter();
       addFilter('Install Method', 'method', '', methodOptions, $filter);
       //addFilter('Operating System', 'os', '', osOptions, $filter, 'cdoc-method-package cdoc-hidden-method');
       addFilter('Operating System', 'os', '', osOptions, $filter);
       addFilter('HDFS High Availability', 'ha', '', haOptions, $filter);
-      addCDHFromFilter();
+      /**
+      * JD 4.2.2020: Call 'Cluster' filters
+      */
+      addClusterFromFilter();
       addSeparator($filter);
-      addCDHDestFilter();
+      addClusterDestFilter();
     } else if (isCMDowngradePage()) {
       addOSFilter();
       addDbFilter();
