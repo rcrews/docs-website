@@ -1146,21 +1146,6 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     label: 'Choose...',
     value: ''
   }];
-  
-  function clusterPrefix(versions) {
-    var i, version, clusterPrefix;
-    
-    for (i = 0; i < versions.length; ++i) {
-      version = versions[i];
-      if (version < 7) {
-        clusterPrefix = "CDH";
-      }
-      else {
-        clusterPrefix = "CR"
-      }
-    }
-    return clusterPrefix;
-  }
 
   /**
    * JD 4.2.2020: Add calls to separate populate function for Cloudera Runtime releases 
