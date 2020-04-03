@@ -29,12 +29,16 @@ publications:
   - title: Configuring Apache Ranger Authentication with UNIX, LDAP, or AD
     url: security-ranger-authentication-unix-ldap-ad/index.html
     description: >-
-      You can configure Apache Ranger authentication using UNIX, LDAP, or AD.
+      You can configure Apache Ranger authentication using UNIX, LDAP,
+      or AD.
       
   - title: Configuring Advanced Security Options for Apache Ranger
     url: security-ranger-configuring-advanced/index.html
     description: >-
-      How to configure advanced security options such as Kerberos and TLS/SSL for Apache Ranger.      
+      How to configure advanced security options such as Kerberos and
+      TLS/SSL for Apache Ranger.      
+
 ---
+
 Cloudera Data Platform security components enable you to control access
 to CDP services, and also provide access auditing and reporting.

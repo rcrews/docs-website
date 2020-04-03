@@ -5,32 +5,39 @@ title: Streaming
 
 # How-to publications related to
 # * Kafka
+# * Cruise Control
+# * SMM
+# * SRM
+# * Schema Registry
+
 
 publications:
-  - title: Configuring Apache Kafka
-    url: kafka-configuring/index.html
+  - title: Apache Kafka
+    url: howto-kafka.html
     description: >-
-      Provides information about configuring and setting up Kafka.
+      Mi taciti in cursus pharetra efficitur tellus himenaeos eu et.
 
-  - title: Securing Apache Kafka
-    url: kafka-securing/index.html
+  - title: Cruise Control
+    url: howto-cruise-control.html
     description: >-
-      Provides information on how to set up encryption and authentication for Kafka.
+      Mi taciti in cursus pharetra efficitur tellus himenaeos eu et.
 
-  - title: Tuning Apache Kafka Performance
-    url: kafka-performance-tuning/index.html
+  - title: SMM
+    url: howto-smm.html
     description: >-
-      Describes how to tune the performance of Kafka for different use cases and scenarios.
+      Mi taciti in cursus pharetra efficitur tellus himenaeos eu et.
 
-  - title: Managing Apache Kafka
-    url: kafka-managing/index.html
+  - title: SRM
+    url: howto-srm.html
     description: >-
-      Describes how to manage and administer Kafka clusters.
+      Mi taciti in cursus pharetra efficitur tellus himenaeos eu et.
 
-  - title: Developing Apache Kafka Applications
-    url: kafka-developing-applications/index.html
+  - title: Schema Registry
+    url: howto-schema-registry.html
     description: >-
-      Provides information on how to develop Kafka clients.
+      Mi taciti in cursus pharetra efficitur tellus himenaeos eu et.
 
 ---
-Apache Kafka is a high performance, highly available, and redundant streaming message platform.
+
+Apache Kafka is a high performance, highly available, and redundant
+streaming message platform.
