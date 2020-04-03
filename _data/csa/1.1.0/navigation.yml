@@ -24,10 +24,10 @@
       href: flink-overview/index.html
       id: pub-flink-overview
       sub: flink-overview/navigation.json
-    - text: Security Overview
-      href: security-overview/index.html
-      id: pub-security-flink-overview
-      sub: security-overview/navigation.json
+    - text: Quick Start
+      href: quickstart/index.html
+      id: pub-quickstart
+      sub: quickstart/navigation.json
 
 - text: Installation
   id: cat-install
@@ -48,26 +48,38 @@
 - text: How To
   id: cat-how-to
   sub:
-    - text: Development
+    - text: Application development
       href: development/index.html
       id: pub-development
       sub: development/navigation.json
-    - text: Customization
-      href: customization/index.html
-      id: pub-customization
-      sub: customization/navigation.json
-    - text: Configuration
-      href: configuration/index.html
-      id: pub-configuration
-      sub: configuration/navigation.json
     - text: Security
       href: security/index.html
       id: pub-security
       sub: security/navigation.json
-    - text: Operation
-      href: operation/index.html
-      id: pub-operation
-      sub: operation/navigation.json
+    - text: Apache Kafka Connector
+      href: kafka-connector/index.html
+      id: pub-kafka-connector
+      sub: kafka-connector/navigation.json
+    - text: Schema Registry
+      href: schema-registry/index.html
+      id: pub-schema-registry
+      sub: schema-registry/navigation.json
+    - text: Apache HBase Connector
+      href: hbase-connector/index.html
+      id: pub-hbase-connector
+      sub: hbase-connector/navigation.json
+    - text: Configuration
+      href: configuration/index.html
+      id: pub-configuration
+      sub: configuration/navigation.json
+    - text: Job lifecycle
+      href: job-lifecycle/index.html
+      id: pub-job-lifecycle
+      sub: job-lifecycle/navigation.json
+    - text: Monitoring
+      href: monitoring/index.html
+      id: pub-monitoring
+      sub: monitoring/navigation.json
 
 - text: Release Notes
   id: cat-releasenotes
@@ -76,11 +88,3 @@
       href: release-notes/index.html
       id: pub-release-notes
       sub: release-notes/navigation.json
-
-- text: Learning & Training
-  id: cat-learning-training
-  sub:
-    - text: Learning & Training Overview
-      href: learning-overview/index.html
-      id: pub-learning-overview
-      sub: learning-overview/navigation.json
