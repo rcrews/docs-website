@@ -77,11 +77,11 @@ json:
 - text: Cloudera Data Steward Studio
   href: topics/ctpl_dss.html
 
+- text: Cloudera HDF
+  href: topics/ctpl_hdf.html
+
 - text: Cloudera HDP
-  href: topics/ctpl_hdp_overview.html
-  sub:
-  - text: HDP 3
-    href: topics/ctpl_hdp3.html
+  href: topics/ctpl_hdp3.html
 
 - text: Cloudera Manager
   href: topics/ctpl_cm_overview.html

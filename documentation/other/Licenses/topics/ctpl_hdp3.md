@@ -1,6 +1,6 @@
 ---
 layout: fluid-topic
-title: Third-party Licenses, HDP 3
+title: Third-party Licenses, Cloudera HDP
 copyright:
   holder: Cloudera, Inc.
   years:
@@ -17,11 +17,11 @@ css: ../Licenses.css
 ---
 # {{ page.title }}
 
-This page lists the third-party license files for HDP 3.
+This page lists the third-party license files for Cloudera HDP.
 
 ## HDP 3.1.5, December 2019
 
-Third-party licenses for HDP 3.1.5 are in the following files:
+Third-party licenses for Cloudera HDP 3.1.5 are in the following files:
 
 * [Apache Accumulo Notice for HDP3.1.5.0](/documentation/other/shared/licensefiles/Apache_Accumulo_Notice_for_HDP3.1.5.0.txt)
 * [Apache Ambari Notice for HDP3.1.5.0](/documentation/other/shared/licensefiles/Apache_Ambari_Notice_for_HDP3.1.5.0.txt)
@@ -55,7 +55,7 @@ Third-party licenses for HDP 3.1.5 are in the following files:
 
 ## HDP 3.1.4, September 2019
 
-Third-party licenses for HDP 3.1.4 are in the following files:
+Third-party licenses for Cloudera HDP 3.1.4 are in the following files:
 
 * [Apache Accumulo Notice for HDP3.1.4.0](/documentation/other/shared/licensefiles/Apache_Accumulo_Notice_for_HDP3.1.4.0.txt)
 * [Apache Ambari Notice for HDP3.1.4.0](/documentation/other/shared/licensefiles/Apache_Ambari_Notice_for_HDP3.1.4.0.txt)
