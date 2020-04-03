@@ -1323,7 +1323,7 @@ var NEWUX = (function($) {
         },
         filter-stuff: function() {
             filter-stuff($);
-        }
+        },
         deTarget: function() {
             Array.from(document.querySelectorAll("a[target]")).forEach(at => {
                 if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes("//")) { return; }
