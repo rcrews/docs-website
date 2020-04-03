@@ -45,7 +45,6 @@ exclude:
   # Unreleased documentation
   - /HDPDocuments/Ambari/Ambari-7.1.0.0/
   - /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/
-  - /HDPDocuments/HDF3/HDF-3.5.0/
   - /cem/1.2.0/
   - /cdf-datahub/7.1.1/
   - /cdf-datahub/7.1.0/
