@@ -128,7 +128,7 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
   ].join('\n');
 };
 
-(function($) {
+function filter-stuff($) {
   function scrollTo(el, offset) {
     if (el) {
       $('html, body').animate({
@@ -1339,4 +1339,4 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     }
   }
 
-}(window.$));
+}
