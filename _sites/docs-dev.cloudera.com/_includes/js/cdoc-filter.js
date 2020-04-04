@@ -128,7 +128,7 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
   ].join('\n');
 };
 
-function filter-stuff($) {
+function filterStuff($) {
   function scrollTo(el, offset) {
     if (el) {
       $('html, body').animate({
