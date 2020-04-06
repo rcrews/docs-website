@@ -24,6 +24,14 @@ publications:
       Lineage offers insight into where data came from and how to
       determine the impact of changes to data assets.
 
+  - title: Leveraging Business Metadata
+    url: atlas-leveraging-business-metadata/index.html
+    description: >-
+      Business Metadata allows you to extend the model that represent a given asset
+      type in Atlas. Sets of business metadata can be authorized independently
+      through Ranger so you can manage who has the ability to update which
+      business metadata attributes.
+
   - title: Managing Business Terms with Atlas Glossaries
     url: atlas-managing-business-terms-with-glossaries/index.html
     description: >-
