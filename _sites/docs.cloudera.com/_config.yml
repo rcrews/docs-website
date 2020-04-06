@@ -43,11 +43,12 @@ exclude:
   - /cfm/2.0.0/operator-api/
 
   # Unreleased documentation
+  - /HDPDocuments/Ambari-7.1.0.0/
   - /HDPDocuments/Ambari/Ambari-7.1.0.0/
   - /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/
-  - /cem/1.2.0/
-  - /cdf-datahub/7.1.1/
   - /cdf-datahub/7.1.0/
+  - /cdf-datahub/7.1.1/
+  - /cem/1.2.0/
   - /cfm/1.1.0/
   - /cfm/2.0.0/
   - /csa/1.0.0/
