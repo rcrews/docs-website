@@ -19,7 +19,7 @@
 - alias: /HDPDocuments/HDF2/latest/
   exist: /HDPDocuments/HDF2/HDF-2.1.4/
 - alias: /HDPDocuments/HDF3/latest/
-  exist: /HDPDocuments/HDF3/HDF-3.4.1.1/
+  exist: /HDPDocuments/HDF3/HDF-3.5.0/
 - alias: /HDPDocuments/HDP1/latest/
   exist: /HDPDocuments/HDP1/HDP-1.3.10/
 - alias: /HDPDocuments/HDP2/latest/
