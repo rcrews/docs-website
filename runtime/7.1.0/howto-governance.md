@@ -14,18 +14,25 @@ publications:
       Use the metadata Atlas collects and metadata you add to
       effectively find entities.
 
-  - title: Working with Classifications and Labels
-    url: atlas-working-with-classifications/index.html
-    description: >-
-      How to use Apache Atlas to search for, annotate, classify, and
-      manage data.
-
-- column:
   - title: Exploring using Lineage
     url: atlas-exploring-using-lineage/index.html
     description: >-
       Lineage offers insight into where data came from and how to
       determine the impact of changes to data assets.
+
+  - title: Securing Atlas
+    url: atlas-securing/index.html
+    description: >-
+      Configure Atlas' authentication and authorization through Cloudera Manager
+      and using access policies in Apache Ranger.
+
+- column:
+
+  - title: Working with Classifications and Labels
+    url: atlas-working-with-classifications/index.html
+    description: >-
+      How to use Apache Atlas to search for, annotate, classify, and
+      manage data.
 
   - title: Managing Business Terms with Atlas Glossaries
     url: atlas-managing-business-terms-with-glossaries/index.html
