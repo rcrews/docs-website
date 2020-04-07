@@ -581,7 +581,7 @@
 
 - text: Troubleshooting
   id: cat-troubleshooting
-  sub:
+  sub:   
     - text: Troubleshooting Apache Impala
       href: impala-troubleshooting/index.html
       id: pub-impala-troubleshooting
@@ -607,6 +607,11 @@
       href: search-troubleshooting/index.html
       id: pub-search-troubleshooting
       sub: search-troubleshooting/navigation.json
+      
+    - text: Troubleshooting Data Analytics Studio
+      href: das-troubleshooting/index.html
+      id: pub-das-troubleshooting
+      sub: das-troubleshooting/navigation.json
 
 - text: Reference
   id: cat-reference
