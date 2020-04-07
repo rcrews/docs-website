@@ -1274,6 +1274,7 @@ function filterStuff($) {
     } else if (isHueUpgradePage()) {
       addOSFilter();
       addFilter('Hue Database', 'db', '', dbOptions, $filter);
+      addNavigatorFilter();
       /**
       * JD 4.2.2020: Call 'Cluster' filters
       */
@@ -1286,6 +1287,7 @@ function filterStuff($) {
       //addFilter('Operating System', 'os', '', osOptions, $filter, 'cdoc-method-package cdoc-hidden-method');
       addFilter('Operating System', 'os', '', osOptions, $filter);
       addFilter('HDFS High Availability', 'ha', '', haOptions, $filter);
+      addNavigatorFilter();
       /**
       * JD 4.2.2020: Call 'Cluster' filters
       */
