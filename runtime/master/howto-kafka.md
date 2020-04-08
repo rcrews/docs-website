@@ -1,9 +1,11 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: Apache Kafka
 
 publications:
+- column:
+
   - title: Configuring Apache Kafka
     url: kafka-configuring/index.html
     description: >-
@@ -20,6 +22,8 @@ publications:
     description: >-
       Describes how to tune the performance of Kafka for different use
       cases and scenarios.
+
+- column:
 
   - title: Managing Apache Kafka
     url: kafka-managing/index.html

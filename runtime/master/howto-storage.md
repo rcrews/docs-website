@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: Storage
 
@@ -8,6 +8,8 @@ title: Storage
 # * Kudu
 
 publications:
+- column:
+
   - title: Managing Data Storage
     url: scaling-namespaces/index.html
     description: >-
@@ -20,11 +22,11 @@ publications:
       Provides information about configuring data protection on a Hadoop
       cluster.
 
-  - title: Configuring HDFS ACLs
-    url: hdfs-acls/index.html
+  - title: Accessing Cloud Data
+    url: cloud-data-access/index.html
     description: >-
-      Describes the procedure to configure Access Control Lists (ACLs)
-      on Apache Hadoop HDFS.
+      Describes information about the configuration parameters used to
+      access data stored in the cloud.
 
   - title: Configuring Fault Tolerance
     url: fault-tolerance/index.html
@@ -32,40 +34,48 @@ publications:
       Describes the procedure to configure HDFS high availability on a
       cluster.
 
-  - title: Administering Apache Kudu
-    url: administering-kudu/index.html
-    description: >-
-      Describes common administrative tasks and Apache Kudu workflows.
+  - title: Apache Hadoop HDFS
+    sub:
 
-  - title: Developing Applications with Apache Kudu
-    url: kudu-development/index.html
-    description: >-
-      Provides reference examples to use C++ and Java client APIs to
-      develop apps using Apache Kudu.
+    - title: Configuring HDFS ACLs
+      url: hdfs-acls/index.html
+      description: >-
+        Describes the procedure to configure Access Control Lists (ACLs)
+        on Apache Hadoop HDFS.
 
-  - title: Using Apache Impala with Apache Kudu
-    url: kudu-integration/index.html
-    description: >-
-      Provides information about how to use use Kudu as a storage
-      for Apache Impala.
+- column:
+  - title: Apache Kudu
+    sub:
 
-  - title: Accessing Cloud Data
-    url: cloud-data-access/index.html
-    description: >-
-      Describes information about the configuration parameters used to
-      access data stored in the cloud.
+    - title: Administering Apache Kudu
+      url: administering-kudu/index.html
+      description: >-
+        Describes common administrative tasks and Apache Kudu workflows.
+  
+    - title: Developing Applications with Apache Kudu
+      url: kudu-development/index.html
+      description: >-
+        Provides reference examples to use C++ and Java client APIs to
+        develop apps using Apache Kudu.
+  
+    - title: Using Apache Impala with Apache Kudu
+      url: kudu-integration/index.html
+      description: >-
+        Provides information about how to use use Kudu as a storage
+        for Apache Impala.
 
-  - title: Storing Data Using Ozone
-    url: ozone-storing-data/index.html
-    description: >-
-      Provides information about configuring and managing data using
-      the Ozone object store.
+    - title: Storing Data Using Ozone
+      url: ozone-storing-data/index.html
+      description: >-
+        Provides information about configuring and managing data using
+        the Ozone object store.
 
-  - title: Configuring Ozone Security
-    url: ozone-security/index.html
-    description: >-
-      Provides information about securing data in Ozone clusters
-      and securing access to this data.
+    - title: Configuring Ozone Security
+      url: ozone-security/index.html
+      description: >-
+        Provides information about securing data in Ozone clusters
+        and securing access to this data.
+
 ---
 
 Cloudera Runtime provides different types of storage components that you

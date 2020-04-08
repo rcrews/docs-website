@@ -19,7 +19,7 @@ publications:
         key components.
 
 - column:
-  - title: Apache Zeppelin
+  - title: Apache Kudu
     sub:
 
     - title: Apache Kudu Overview
@@ -37,8 +37,8 @@ publications:
 
 ---
 
-Cloudera Runtime provides different types of storage components that you 
-can use depending on your data requirements. Apache Hadoop HDFS is a 
-distributed file system for storing large volumes of data. Apache Kudu 
-completes Apache Hadoop's storage layer, enabling fast analytics on fast data.
-
+Cloudera Runtime provides different types of storage components that you
+can use depending on your data requirements. Apache Hadoop HDFS is a
+distributed file system for storing large volumes of data. Apache Kudu
+completes Apache Hadoop's storage layer, enabling fast analytics on fast
+data.

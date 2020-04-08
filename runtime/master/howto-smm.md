@@ -1,9 +1,11 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: SMM
 
 publications:
+- column:
+
   - title: Monitoring Kafka Clusters
     url: monitoring-kafka-clusters/index.html
     description: >-
@@ -18,6 +20,8 @@ publications:
     url: managing-topics/index.html
     description: >-
       Nligula mus netus elementum inceptos torquent viverra.
+
+- column:
 
   - title: Monitoring End to End Latency
     url: monitoring-end-to-end-latency/index.html

@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: Jobs Management
 
@@ -7,6 +7,7 @@ title: Jobs Management
 # * Oozie
 
 publications:
+- column:
   - title: Configuring Oozie
     url: configuring-oozie/index.html
     description: >-

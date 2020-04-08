@@ -9,6 +9,7 @@ title: Security
 
 publications:
 - column:
+
   # - title: Identity Management and Federation
   #   url: identity-management-and-federation/index.html
   #   description: >-
@@ -28,10 +29,14 @@ publications:
       services.
 
 - column:
+
   - title: Configuring Apache Ranger Authentication with UNIX, LDAP, or AD
     url: security-ranger-authentication-unix-ldap-ad/index.html
     description: >-
-      You can configure Apache Ranger authentication using UNIX, LDAP, or AD.
+      You can configure Apache Ranger authentication using UNIX, LDAP,
+      or AD.
+
 ---
+
 Cloudera Data Platform security components enable you to control access
 to CDP services, and also provide access auditing and reporting.

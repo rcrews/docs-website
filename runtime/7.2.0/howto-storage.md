@@ -9,6 +9,7 @@ title: Storage
 
 publications:
 - column:
+
   - title: Managing Data Storage
     url: scaling-namespaces/index.html
     description: >-
@@ -41,7 +42,7 @@ publications:
       description: >-
         Describes the procedure to configure Access Control Lists (ACLs)
         on Apache Hadoop HDFS.
-  
+
 - column:
   - title: Apache Kudu
     sub:
@@ -66,8 +67,7 @@ publications:
 ---
 
 Cloudera Runtime provides different types of storage components that you
-can use depending on your data requirements. Apache Hadoop HDFS is a 
-distributed file system for storing large volumes of data. Apache Kudu 
-completes Apache Hadoop's storage layer, enabling fast analytics on 
-fast data.
-
+can use depending on your data requirements. Apache Hadoop HDFS is a
+distributed file system for storing large volumes of data. Apache Kudu
+completes Apache Hadoop's storage layer, enabling fast analytics on fast
+data.

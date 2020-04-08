@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: Operational Database
 
@@ -7,6 +7,7 @@ title: Operational Database
 # * HBase
 
 publications:
+- column:
   - title: Getting Started with Apache HBase
     url: hbase-getting-started/index.html
     description: >-
@@ -31,6 +32,8 @@ publications:
     description: >-
       Provides information about HBase security, authentication,
       authorization, and configuring TLS/SSL for HBase.
+
+- column:
 
   - title: Accessing Apache HBase
     url: accessing-hbase/index.html

@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Streaming
 
@@ -11,6 +11,7 @@ title: Streaming
 # * Schema Registry
 
 publications:
+- column:
   - title: Apache Kafka Overview
     url: kafka-overview/index.html
     description: >-
@@ -29,6 +30,7 @@ publications:
       Tempor iaculis sapien mollis velit vehicula rhoncus platea dictum,
       maximus posuere a sagittis magnis rutrum est quam pretium.
 
+- column:
   - title: SRM Overview
     url: publication-tbd/index.html
     description: >-

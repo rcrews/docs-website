@@ -1,13 +1,17 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: Schema Registry
 
 publications:
+- column:
+
   - title: Integrating with Schema Registry
     url: using-schema-registry/index.html
     description: >-
       Nligula mus netus elementum inceptos torquent viverra.
+
+- column:
 
   - title: Using Schema Registry
     url: using-schema-registry/index.html

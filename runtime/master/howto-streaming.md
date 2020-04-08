@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: Streaming
 
@@ -10,8 +10,9 @@ title: Streaming
 # * SRM
 # * Schema Registry
 
-
 publications:
+- column:
+
   - title: Apache Kafka
     url: howto-kafka.html
     description: >-
@@ -26,6 +27,8 @@ publications:
     url: howto-smm.html
     description: >-
       Mi taciti in cursus pharetra efficitur tellus himenaeos eu et.
+
+- column:
 
   - title: SRM
     url: howto-srm.html

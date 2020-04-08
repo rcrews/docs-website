@@ -1,5 +1,5 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Governance
 
@@ -7,6 +7,7 @@ title: Governance
 # * Atlas
 
 publications:
+- column:
   - title: Governance Overview
     url: cdp-governance-overview/index.html
     description: >-
@@ -18,6 +19,7 @@ publications:
     description: >-
       Add tags in Atlas to drive data access policies in Ranger.
 
+- column:
   - title: Extending Atlas to Manage Metadata from Additional Sources
     url: cdp-governance-extending-metadata/index.html
     description: >-

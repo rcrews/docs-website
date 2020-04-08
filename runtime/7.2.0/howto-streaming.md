@@ -5,9 +5,14 @@ title: Streaming
 
 # How-to publications related to
 # * Kafka
+# * Cruise Control
+# * SMM
+# * SRM
+# * Schema Registry
 
 publications:
 - column:
+
   - title: Configuring Apache Kafka
     url: kafka-configuring/index.html
     description: >-
@@ -26,6 +31,7 @@ publications:
       cases and scenarios.
 
 - column:
+
   - title: Managing Apache Kafka
     url: kafka-managing/index.html
     description: >-
@@ -37,5 +43,6 @@ publications:
       Provides information on how to develop Kafka clients.
 
 ---
+
 Apache Kafka is a high performance, highly available, and redundant
 streaming message platform.

@@ -1,13 +1,17 @@
 ---
-layout: foyer
+layout: foyer-grouped
 breadcrumb-title: Cloudera Runtime How To
 title: SRM
 
 publications:
+- column:
+
   - title: Configuring SRM
     url: configuration/index.html
     description: >-
       Nligula mus netus elementum inceptos torquent viverra.
+
+- column:
 
   - title: Using SRM
     url: using/index.html

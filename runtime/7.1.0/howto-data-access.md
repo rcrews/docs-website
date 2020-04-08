@@ -15,6 +15,7 @@ publications:
 - column:
   - title: Data Analytics Studio
     sub:
+
     - title: Using Data Analytics Studio
       url: using-das/index.html
       description: >-
@@ -146,7 +147,6 @@ publications:
       description: >-
         Describes how to secure Solr network connections, configure authentication
         and authorization.
-
 
     - title: Tuning Cloudera Search
       url: search-tuning/index.html

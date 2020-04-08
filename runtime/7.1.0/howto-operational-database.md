@@ -34,6 +34,7 @@ publications:
       authorization, and configuring TLS/SSL for HBase.
 
 - column:
+
   - title: Accessing Apache HBase
     url: accessing-hbase/index.html
     description: >-

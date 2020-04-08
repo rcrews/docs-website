@@ -15,19 +15,20 @@ publications:
     - title: Managing Applications on Apache Hadoop YARN
       url: yarn-application-management/index.html
       description: >-
-        Provides information about managing applications by using the YARN
-        REST APIs and YARN Services API.
+        Provides information about managing applications by using the
+        YARN REST APIs and YARN Services API.
   
     - title: Managing and Allocating Cluster Resources using Capacity Scheduler
       url: yarn-allocate-resources/index.html
       description: >-
-        Explains how to allocate cluster resources for the applications using Capacity Scheduler.
+        Explains how to allocate cluster resources for the applications
+        using Capacity Scheduler.
   
     - title: Configuring Apache Hadoop YARN Security
       url: yarn-security/index.html
       description: >-
-        Provides information about Access Control List and how to use YARN
-        with a secure cluster.
+        Provides information about Access Control List and how to use
+        YARN with a secure cluster.
   
     - title: Apache Hadoop YARN High Availability
       url: yarn-high-availability/index.html
@@ -38,9 +39,9 @@ publications:
     - title: Monitoring Clusters and Apache Hadoop YARN Applications
       url: yarn-monitoring-clusters-applications/index.html
       description: >-
-        Describes how to monitor clusters, queues, applications, services,
-        flow activities, and nodes using YARN web user interface and
-        Cloudera Manager.
+        Describes how to monitor clusters, queues, applications,
+        services, flow activities, and nodes using YARN web user
+        interface and Cloudera Manager.
 
 - column:
   - title: Apache ZooKeeper
@@ -51,7 +52,7 @@ publications:
       description: >-
         Provides information about adding and managing the Apache
         ZooKeeper service and replacing an Apache ZooKeeper role.
-        
+
     - title: Configuring Apache ZooKeeper
       url: zookeeper-configuring/index.html
       description: >-
@@ -63,7 +64,8 @@ publications:
       description: >-
         Describes the configuration of the ZooKeeper server and the
         ZooKeeper client shell for Kerberos authentication. It also
-        describes the verification of the ZooKeeper authentication and ACLs best practices.
+        describes the verification of the ZooKeeper authentication and
+        ACLs best practices.
 ---
 Apache YARN manages resources for the applications running on your
 cluster by allocating resources through scheduling,  limiting CPU usage,
