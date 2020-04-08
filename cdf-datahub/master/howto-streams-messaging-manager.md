@@ -4,33 +4,33 @@ breadcrumb-title: Cloudera Data Flow for Data Hub How To
 title: Streams Messaging Manager
 
 publications:
-  - title: Quick Start for Streams Messaging
-    url: publication-tbd/index.html
+  - title: Monitoring Kafka Clusters
+    url: monitoring-kafka-clusters/index.html
     description: >-
-      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
-      senectus lorem proin bibendum.
+      Describes how to use Streams Messaging Manager to monitor Apache
+      Kafka clusters, producers, topics, brokers, and consumers.
 
-  - title: Apache Kafka
-    url: publication-tbd/index.html
+  - title: Managing Alert Policies
+    url: managing-alert-policies/index.html
     description: >-
-      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
-      senectus lorem proin bibendum.
+      Describes how to use Streams Messaging Manager to create, modify,
+      and monitor alert policies and alerts.
 
-  - title: Streams Messaging Manager
-    url: publication-tbd/index.html
+  - title: Managing Topics
+    url: managing-topics/index.html
     description: >-
-      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
-      senectus lorem proin bibendum.
+      Describes how to create, moidify, and delete Kafka topics.
 
-  - title: Schema Registry
-    url: publication-tbd/index.html
+  - title: Monitoring End to End Latency
+    url: monitoring-end-to-end-latency/index.html
     description: >-
-      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
-      senectus lorem proin bibendum.
-
+      Describes how you can use Streams Messaging Manager to monitor
+      end-to-end latency in topics. Use the latency feature to
+      verify whether consumers are consuming the messages produced in a
+      topic within the time SLA, identify the slow consuming
+      applications that might occur due to an external or process
+      bottleneck, and verify whether the consumers are consuming
+      all the messages.
 ---
 
-Justo platea varius massa risus leo erat himenaeos vehicula, vitae
-facilisi egestas ex pellentesque pharetra porttitor nostra rhoncus, ac
-fermentum facilisis dictum quisque dui montes at magnis, sagittis arcu
-duis cubilia non phasellus mus.
+Streams Messaging Manager (SMM) is an operations monitoring and management tool that provides end-to-end visibility in an enterprise Apache Kafka environment. With SMM, you can gain clear insights about your Kafka clusters, understand the end-to-end flow of message streams from producers to topics to consumers and analyze the stream dynamics between producers and consumers using various filters. SMM also helps you troubleshoot your Kafka environment to identify bottlenecks, throughputs, consumer patterns, and traffic flow.
