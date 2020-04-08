@@ -166,20 +166,20 @@
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
 
-- text: "How To: Streams Messaging"
-  id:   cat-how-to-streams-messaging
-  sub:
-      - text: Creating your First Streams Messaging Cluster in CDP Public Cloud
-        href: publication-tbd/index.html
-        id:   pub-publication-tbd
-        sub:  publication-tbd/navigation.json
-        
-      - text: Connecting Kafka Cliuents to CDP Public Cloud Clusters
-        href: publication-tbd/index.html
-        id:   pub-publication-tbd
-        sub:  publication-tbd/navigation.json
+    - text: "How To: Streams Messaging"
+      id:   cat-how-to-streams-messaging
+      sub:
+        - text: Creating your First Streams Messaging Cluster in CDP Public Cloud
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Connecting Kafka Cliuents to CDP Public Cloud Clusters
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
   
-      - text: Apache Kafka
+    - text: Apache Kafka
       href: howto-apache-kafka.html
       sub:
         - text: Configuring Apache Kafka
