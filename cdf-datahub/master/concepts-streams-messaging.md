@@ -1,11 +1,11 @@
 ---
 layout: foyer
-breadcrumb-title: Cloudera Data Flow for Data Hub How To
+breadcrumb-title: Cloudera Data Flow for Data Hub Concepts & Use Cases
 title: Streams Messaging
 
 publications:
   - title: Apache Kafka Overview
-    url: /runtime/7.0.2/kafka-overview/index.html
+    url: /runtime/master/kafka-overview/index.html
     description: >-
       Provides an overview of Apache Kafka including key features,
       capabilities, and architecture.
@@ -21,3 +21,8 @@ publications:
     description: >-
       Provides an overview of Streams Messaging Manager key features.
 ---
+
+Justo platea varius massa risus leo erat himenaeos vehicula, vitae
+facilisi egestas ex pellentesque pharetra porttitor nostra rhoncus, ac
+fermentum facilisis dictum quisque dui montes at magnis, sagittis arcu
+duis cubilia non phasellus mus.
