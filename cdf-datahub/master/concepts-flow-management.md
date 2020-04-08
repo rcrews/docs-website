@@ -7,18 +7,13 @@ publications:
   - title: Apache NiFi Overview
     url: publication-tbd/index.html
     description: >-
-      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
-      senectus lorem proin bibendum.
+      Describes Apache NiFi, including key concepts, architecture, and use cases.
 
   - title: Apache NiFi Registry Overview
     url: publication-tbd/index.html
     description: >-
-      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
-      senectus lorem proin bibendum.
+      Describes Apache NiFi Registry, including key concepts, architecture, and use cases.
 
 ---
 
-Justo platea varius massa risus leo erat himenaeos vehicula, vitae
-facilisi egestas ex pellentesque pharetra porttitor nostra rhoncus, ac
-fermentum facilisis dictum quisque dui montes at magnis, sagittis arcu
-duis cubilia non phasellus mus.
+Flow Management cluster definitions for CDP Public Cloud deployed by Data Hub include Apache NiFi and Apache NiFi Registry.
