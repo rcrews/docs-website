@@ -42,7 +42,7 @@
           id:   pub-schema-registry-overview
           sub:  publication-tbd/navigation.json
 
-        - text: SMM Overview
+        - text: Streams Messaging Manager Overview
           href: smm-overview/index.html
           id:   pub-smm-overview
           sub:  publication-tbd/navigation.json
@@ -80,7 +80,32 @@
     - text: Data Ingest
       href: howto-data-ingest.html
       sub:
-        - text: TBD
+        - text: Ingesting Data into Apache Kafka in CDP Public Cloud
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Ingesting Data into Apache Hive in CDP Public Cloud
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Ingesting Data into Apache HBase in CDP Public Cloud
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Ingesting Data into Apache Kudu in CDP Public Cloud
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Ingesting Data into Amazon S3 Buckets
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Ingesting Data into Azure Data Lake Storage
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
@@ -88,35 +113,55 @@
     - text: Apache NiFi
       href: howto-apache-nifi.html
       sub:
-        - text: Ingesting Data into Kafka using NiFi
+        - text: Using the Apache NiFi Interface
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Building an Apache NiFi Data Flow
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Managing an Apache NiFi Data Flow 
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Navigating an Apache NiFi DAta Flow 
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Monitoring an Apache NiFi Data Flow 
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
 
-        - text: Ingesting Data into Object Stores using NiFi
+        - text: Versioning an Apache NiFi Data Flow
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
 
-        - text: Ingesting Data into HBase using NiFi
+        - text: Using Apache NiFi Templates
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
-
-        - text: Ingesting Data into Hive using NiFi
+          
+        - text: Using Apache NiFi Provenance Tools
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
-        - text: Ingesting Data in Kudu using NiFi
+          sub:  publication-tbd/navigation.json   
+          
+        - text: Adding Functionality to Apache NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
+          sub:  publication-tbd/navigation.json          
+          
     - text: Apache NiFi Registry
       href: howto-apache-nifi-registry.html
       sub:
-        - text: Apache NiFi Registry
+        - text: Using Apache NiFi Registry
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
@@ -195,10 +240,6 @@
 - text: Reference
   id:   cat-reference
   sub:
-    - text: Schema Registry REST API Reference
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      external: external
 
     - text: SMM REST API Reference
       href: rest-api-reference/index.html
