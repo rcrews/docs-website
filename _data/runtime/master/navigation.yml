@@ -205,15 +205,20 @@
           id: pub-data-protection
           sub: data-protection/navigation.json
 
-        - text: Configuring HDFS ACLs
-          href: hdfs-acls/index.html
-          id: pub-hdfs-acls
-          sub: hdfs-acls/navigation.json
+        - text: Accessing Cloud Data
+          href: cloud-data-access/index.html
+          id: pub-cloud-data-access
+          sub: cloud-data-access/navigation.json
 
         - text: Configuring Fault Tolerance
           href: fault-tolerance/index.html
           id: pub-fault-tolerance
           sub: fault-tolerance/navigation.json
+
+        - text: Configuring HDFS ACLs
+          href: hdfs-acls/index.html
+          id: pub-hdfs-acls
+          sub: hdfs-acls/navigation.json
 
         - text: Administering Apache Kudu
           href: administering-kudu/index.html
@@ -230,18 +235,11 @@
           id: pub-kudu-integration
           sub: kudu-integration/navigation.json
 
-        - text: Accessing Cloud Data
-          href: cloud-data-access/index.html
-          id: pub-cloud-data-access
-          sub: cloud-data-access/navigation.json
-
-        # Oxone is OUT for 7.1.0.2/14 email from Sairam
         - text: Storing Data Using Ozone
           href: ozone-storing-data/index.html
           id: pub-ozone-storing-data
           sub: ozone-storing-data/navigation.json
 
-        # Oxone is OUT for 7.1.0.2/14 email from Sairam
         - text: Configuring Ozone Security
           href: ozone-security/index.html
           id: pub-ozone-security
@@ -379,55 +377,46 @@
           id: pub-tuning-hue
           sub: tuning-hue/navigation.json
 
-        # Phoenix is IN for 7.1.0. 2/10 email from Gokul
         - text: Configuring Apache HBase for use with Apache Phoenix
           href: phoenix-configure-hbase/index.html
           id: pub-phoenix-configure-hbase
           sub: phoenix-configure-hbase/navigation.json
 
-        # Phoenix is IN for 7.1.0. 2/10 email from Gokul
         - text: Using Apache Phoenix to Store and Access Data
           href: phoenix-access-data/index.html
           id: pub-phoenix-access-data
           sub: phoenix-access-data/navigation.json
 
-        # Phoenix is IN for 7.1.0. 2/10 email from Gokul
         - text: Using Apache Phoenix-Spark Connector
           href: phoenix-spark-connector/index.html
           id: pub-phoenix-spark-connector
           sub: phoenix-spark-connector/navigation.json
 
-        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Search Tutorial
           href: search-tutorial/index.html
           id: pub-search-tutorial
           sub: search-tutorial/navigation.json
 
-        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Securing Cloudera Search
           href: search-security/index.html
           id: pub-search-security
           sub: search-security/navigation.json
 
-        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Tuning Cloudera Search
           href: search-tuning/index.html
           id: pub-search-tuning
           sub: search-tuning/navigation.json
 
-        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Managing Cloudera Search
           href: search-managing/index.html
           id: pub-search-managing
           sub: search-managing/navigation.json
 
-        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Cloudera Search ETL
           href: search-etl-morphlines/index.html
           id: pub-search-etl-morphlines
           sub: search-etl-morphlines/navigation.json
 
-        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Indexing Data Using Cloudera Search
           href: search-indexing/index.html
           id: pub-search-indexing
@@ -538,7 +527,6 @@
           id: pub-security-ranger-authentication-unix-ldap-ad
           sub: security-ranger-authentication-unix-ldap-ad/navigation.json
 
-        # Dave confirmed this is not in 7.1.0. Slack 2/12
         - text: Configuring Advanced Security Options for Apache Ranger
           href: security-ranger-configuring-advanced/index.html
           id: pub-security-ranger-configuring-advanced
@@ -692,7 +680,7 @@
 
 - text: Troubleshooting
   id: cat-troubleshooting
-  sub:   
+  sub:
     - text: Troubleshooting Apache Impala
       href: impala-troubleshooting/index.html
       id: pub-impala-troubleshooting
@@ -713,7 +701,6 @@
       id: pub-troubleshooting-kudu
       sub: troubleshooting-kudu/navigation.json
 
-    # Search is IN 7.1.0. 2/14 Email from Mitra
     - text: Troubleshooting Cloudera Search
       href: search-troubleshooting/index.html
       id: pub-search-troubleshooting
@@ -778,13 +765,11 @@
       id: pub-phoenix-faq
       sub: phoenix-faq/navigation.json
 
-    # Cloud-specific information. IN for 7.1.0. Slack with Dave 2/12
     - text: Encryption Reference
       href: security-encryption-reference/index.html
       id: security-encryption-reference
       sub: security-encryption-reference/navigation.json
 
-    # Search is IN 7.1.0. 2/14 Email from Mitra
     - text: Cloudera Search Frequently Asked Questions
       href: search-faq/index.html
       id: pub-search-faq
