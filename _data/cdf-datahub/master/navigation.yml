@@ -72,7 +72,7 @@
       id:   pub-publication-tbd
       sub:  publication-tbd/navigation.json
 
-    - text: Flow Management Security
+    - text: Authorizing Flow Management Cluster Access in CDP Public Cloud
       href: nifi-security/index.html
       id:   pub-nifi-security
       sub:  nifi-security/navigation.json
