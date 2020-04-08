@@ -95,7 +95,7 @@
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
     
-        - text: ingesting Data into Hive using NiFi
+        - text: Ingesting Data into Hive using NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json

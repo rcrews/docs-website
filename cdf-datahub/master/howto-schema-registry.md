@@ -13,6 +13,7 @@ publications:
     url: using-schema-registry/index.html
     description: >-
       Describes how to use Schema Registry.
+
 ---
 
 Justo platea varius massa risus leo erat himenaeos vehicula, vitae

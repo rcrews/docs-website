@@ -22,7 +22,7 @@ publications:
       Condimentum justo curae felis imperdiet nunc eros parturient orci,
       ad id habitasse.
 
-  - title: ingesting Data into Hive using NiFi
+  - title: Ingesting Data into Hive using NiFi
     url: publication-tbd/index.html
     description: >-
       Condimentum justo curae felis imperdiet nunc eros parturient orci,
@@ -33,7 +33,9 @@ publications:
     description: >-
       Condimentum justo curae felis imperdiet nunc eros parturient orci,
       ad id habitasse.
+
 ---
+
 Facilisis porta sagittis mollis imperdiet risus feugiat iaculis dui
 ligula, potenti primis vivamus et tempor dictumst mattis vehicula
 senectus, est sapien sollicitudin fringilla purus nascetur aenean

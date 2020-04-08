@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title: Cloudera Data Flow for Data Hub Concepts
+breadcrumb-title: Cloudera Data Flow for Data Hub Concepts & Use Cases
 title: Streams Messaging
 
 publications:
@@ -20,7 +20,9 @@ publications:
     url: smm-overview/index.html
     description: >-
       Provides an overview of Streams Messaging Manager key features.
+
 ---
+
 Facilisis porta sagittis mollis imperdiet risus feugiat iaculis dui
 ligula, potenti primis vivamus et tempor dictumst mattis vehicula
 senectus, est sapien sollicitudin fringilla purus nascetur aenean

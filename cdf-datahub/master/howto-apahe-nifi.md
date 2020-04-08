@@ -4,8 +4,32 @@ breadcrumb-title: Cloudera Data Flow for Data Hub How To
 title: Apache NiFi
 
 publications:
-  - title: TBD
-    url: publcation-tbd/index.html
+  - title: Ingesting Data into Kafka using NiFi
+    url: publication-tbd/index.html
+    description: >-
+      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
+      senectus lorem proin bibendum.
+
+  - title: Ingesting Data into Object Stores using NiFi
+    url: publication-tbd/index.html
+    description: >-
+      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
+      senectus lorem proin bibendum.
+
+  - title: Ingesting Data into HBase using NiFi
+    url: publication-tbd/index.html
+    description: >-
+      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
+      senectus lorem proin bibendum.
+
+  - title: Ingesting Data into Hive using NiFi
+    url: publication-tbd/index.html
+    description: >-
+      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
+      senectus lorem proin bibendum.
+
+  - title: Ingesting Data in Kudu using NiFi
+    url: publication-tbd/index.html
     description: >-
       Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
       senectus lorem proin bibendum.

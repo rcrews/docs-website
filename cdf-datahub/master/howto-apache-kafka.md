@@ -30,6 +30,7 @@ publications:
     url: /runtime/master/kafka-developing-applications/index.html
     description: >-
       Provides information on how to develop Kafka clients.
+
 ---
 
 Justo platea varius massa risus leo erat himenaeos vehicula, vitae

@@ -4,8 +4,8 @@ breadcrumb-title: Cloudera Data Flow for Data Hub How To
 title: Apache NiFi Registry
 
 publications:
-  - title: TBD
-    url: publcation-tbd/index.html
+  - title: Apache NiFi Registry
+    url: publication-tbd/index.html
     description: >-
       Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
       senectus lorem proin bibendum.

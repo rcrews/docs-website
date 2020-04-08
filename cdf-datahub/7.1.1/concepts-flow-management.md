@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title: Cloudera Data Flow for Data Hub Concepts
+breadcrumb-title: Cloudera Data Flow for Data Hub Concepts & Use Cases
 title: Flow Management
 
 publications:
@@ -15,7 +15,9 @@ publications:
     description: >-
       Condimentum justo curae felis imperdiet nunc eros parturient orci,
       ad id habitasse.
+
 ---
+
 Facilisis porta sagittis mollis imperdiet risus feugiat iaculis dui
 ligula, potenti primis vivamus et tempor dictumst mattis vehicula
 senectus, est sapien sollicitudin fringilla purus nascetur aenean

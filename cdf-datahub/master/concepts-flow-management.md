@@ -4,8 +4,14 @@ breadcrumb-title: Cloudera Data Flow for Data Hub Concepts & Use Cases
 title: Flow Management
 
 publications:
-  - title: TBD
-    url: publcation-tbd/index.html
+  - title: Apache NiFi Overview
+    url: publication-tbd/index.html
+    description: >-
+      Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
+      senectus lorem proin bibendum.
+
+  - title: Apache NiFi Registry Overview
+    url: publication-tbd/index.html
     description: >-
       Amet ultrices ridiculus sem lacus nascetur semper, est malesuada
       senectus lorem proin bibendum.

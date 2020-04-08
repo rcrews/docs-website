@@ -33,9 +33,9 @@
       href: concepts-streams-messaging.html
       sub:
         - text: Apache Kafka Overview
-          href: /runtime/7.1.0/kafka-overview/index.html
+          href: /runtime/master/kafka-overview/index.html
           id:   pub-kafka-overview
-          sub: /runtime/7.1.0/kafka-overview/navigation.json
+          sub: /runtime/master/kafka-overview/navigation.json
 
         - text: Schema Registry Overview
           href: schema-registry-overview/index.html
@@ -77,6 +77,14 @@
       id:   pub-nifi-security
       sub:  nifi-security/navigation.json
     
+    - text: Data Ingest
+      href: howto-data-ingest.html
+      sub:
+        - text: TBD
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+
     - text: Apache NiFi
       href: howto-apache-nifi.html
       sub:
@@ -84,22 +92,22 @@
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
-    
+
         - text: Ingesting Data into Object Stores using NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
-    
+
         - text: Ingesting Data into HBase using NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
-    
-        - text: ingesting Data into Hive using NiFi
+
+        - text: Ingesting Data into Hive using NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
-    
+
         - text: Ingesting Data in Kudu using NiFi
           href: publication-tbd/index.html
           id:   pub-publication-tbd
@@ -116,25 +124,69 @@
 - text: "How To: Streams Messaging"
   id:   cat-how-to-streams-messaging
   sub:
-    - text: Quick Start for Streams Messaging
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+    - text: Streams Messaging Manager
+      href: howto-streams-messaging-manager.html
+      sub:
+        - text: Quick Start for Streams Messaging
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+
+        - text: Apache Kafka
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+
+        - text: Streams Messaging Manager
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+
+        - text: Schema Registry
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
 
     - text: Apache Kafka
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: howto-apache-kafka.html
+      sub:
+        - text: Configuring Apache Kafka
+          href: /runtime/master/kafka-configuring/index.html
+          id:   pub-kafka-configuring
+          sub:   /runtime/master/kafka-configuring/navigation.json
 
-    - text: Streams Messaging Manager
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+        - text: Securing Apache Kafka
+          href: /runtime/master/kafka-securing/index.html
+          id:   pub-kafka-securing
+          sub:  /runtime/master/kafka-securing/navigation.json
+
+        - text: Tuning Apache Kafka Performance
+          href: /runtime/master/kafka-performance-tuning/index.html
+          id:   pub-kafka-performance-tuning
+          sub:   /runtime/master/kafka-performance-tuning/navigation.json
+
+        - text: Managing Apache Kafka
+          href: /runtime/master/kafka-managing/index.html
+          id:   pub-kafka-managing
+          sub:  /runtime/master/kafka-managing/navigation.json
+
+        - text: Developing Apache Kafka Applications
+          href: /runtime/master/kafka-developing-applications/index.html
+          id:   pub-kafka-developing-applications
+          sub:  /runtime/master/kafka-developing-applications/navigation.json
 
     - text: Schema Registry
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: howto-schema-registry.html
+      sub:
+        - text: Integrating with Schema Registry
+          href: integrating-with-schema-registry/index.html
+          id:   pub-integrating-with-schema-registry
+          sub:  integrating-with-schema-registry/navigation.json
+
+        - text: Using Schema Registry
+          href: integrating-with-schema-registry/index.html
+          id:   pub-integrating-with-schema-registry
+          sub:  integrating-with-schema-registry/navigation.json
 
 # - text: Troubleshooting
 #   id:   cat-troubleshooting
