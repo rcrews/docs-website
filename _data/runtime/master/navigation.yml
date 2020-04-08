@@ -608,7 +608,7 @@
             - text: Configuring
               href: configuring-cruise-control/index.html
               id: pub-configuring-cruise-control
-              sub: configuring-cruise-control
+              sub: configuring-cruise-control/navigation.json
 
             - text: Securing
               href: securing-cruise-control/index.html
