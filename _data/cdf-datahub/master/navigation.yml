@@ -210,18 +210,22 @@
     - text: Streams Messaging Manager
       href: howto-streams-messaging-manager.html
       sub:
-
-        - text: Apache Kafka
+        - text: Monitoring Kafka Clusters
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
 
-        - text: Streams Messaging Manager
+        - text: Managing Alert Policies
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
 
-        - text: Schema Registry
+        - text: Managing Topics
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+          
+        - text: Monitoring End to End Latency
           href: publication-tbd/index.html
           id:   pub-publication-tbd
           sub:  publication-tbd/navigation.json
