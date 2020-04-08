@@ -67,7 +67,7 @@
 - text: "How To: Flow Management"
   id:   cat-how-to-flow-management
   sub:
-    - text: Quick Start for Flow Management
+    - text: Creating your First Flow Management Cluster in CDP Public Cloud
       href: publication-tbd/index.html
       id:   pub-publication-tbd
       sub:  publication-tbd/navigation.json
@@ -169,30 +169,17 @@
 - text: "How To: Streams Messaging"
   id:   cat-how-to-streams-messaging
   sub:
-    - text: Streams Messaging Manager
-      href: howto-streams-messaging-manager.html
-      sub:
-        - text: Quick Start for Streams Messaging
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
-        - text: Apache Kafka
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
-        - text: Streams Messaging Manager
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
-        - text: Schema Registry
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-
-    - text: Apache Kafka
+      - text: Creating your First Streams Messaging Cluster in CDP Public Cloud
+        href: publication-tbd/index.html
+        id:   pub-publication-tbd
+        sub:  publication-tbd/navigation.json
+        
+      - text: Connecting Kafka Cliuents to CDP Public Cloud Clusters
+        href: publication-tbd/index.html
+        id:   pub-publication-tbd
+        sub:  publication-tbd/navigation.json
+  
+      - text: Apache Kafka
       href: howto-apache-kafka.html
       sub:
         - text: Configuring Apache Kafka
@@ -219,6 +206,25 @@
           href: /runtime/master/kafka-developing-applications/index.html
           id:   pub-kafka-developing-applications
           sub:  /runtime/master/kafka-developing-applications/navigation.json
+    
+    - text: Streams Messaging Manager
+      href: howto-streams-messaging-manager.html
+      sub:
+
+        - text: Apache Kafka
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+
+        - text: Streams Messaging Manager
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
+
+        - text: Schema Registry
+          href: publication-tbd/index.html
+          id:   pub-publication-tbd
+          sub:  publication-tbd/navigation.json
 
     - text: Schema Registry
       href: howto-schema-registry.html
