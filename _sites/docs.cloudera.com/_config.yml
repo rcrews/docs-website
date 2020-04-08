@@ -51,10 +51,14 @@ exclude:
   - /cem/1.2.0/
   - /cfm/1.1.0/
   - /cfm/2.0.0/
+  - /cloudera-manager/7.1.1/
+  - /cloudera-manager/7.2.0/
   - /csa/1.0.0/
   - /csp/3.0.0/
   - /data-engineering/
   - /data-flow/
+  - /runtime/7.1.1/
+  - /runtime/7.2.0/
 
   # "master" version for docs-dev only
   - /best-practices/master/
