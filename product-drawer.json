@@ -8,17 +8,7 @@ json:
       href: /best-practices/latest/index.html
       icon: /common/img/mini_icons/icon-bp.png
 
-- title: CDP Cloud
-  cloudera-manager-history:
-    - cloudera-manager/7.1.0
-    - cloudera-manager/7.0.2
-    - cloudera-manager/7.0.1
-    - cloudera-manager/7.0.0
-  runtime-history:
-    - runtime/7.1.0
-    - runtime/7.0.2
-    - runtime/7.0.1
-    - runtime/7.0.0
+- title: Data Platform
   products:
     - text: Overview
       href: /cdp/cloud/index.html
@@ -66,24 +56,6 @@ json:
 
     - text: Manager
       href: /cloudera-manager/7.1.0/index.html
-      icon: /common/img/mini_icons/icon-cm.png
-
-- title: CDP Data Center
-  cloudera-manager-history:
-    - cloudera-manager/7.0.3
-  runtime-history:
-    - runtime/7.0.3
-  products:
-    - text: Overview & Installation
-      href: /cdpdc/7.0/index.html
-      icon: /common/img/mini_icons/icon-cdp.png
-
-    - text: Runtime
-      href: /runtime/7.0.3/index.html
-      icon: /common/img/mini_icons/icon-cr.png
-
-    - text: Manager
-      href: /cloudera-manager/7.0.3/index.html
       icon: /common/img/mini_icons/icon-cm.png
 
 - title: DataFlow
