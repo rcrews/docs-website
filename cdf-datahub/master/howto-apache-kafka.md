@@ -33,7 +33,4 @@ publications:
 
 ---
 
-Justo platea varius massa risus leo erat himenaeos vehicula, vitae
-facilisi egestas ex pellentesque pharetra porttitor nostra rhoncus, ac
-fermentum facilisis dictum quisque dui montes at magnis, sagittis arcu
-duis cubilia non phasellus mus.
+Apache Kafka is a streaming message platform. It is designed to be high performance, highly available, and redundant. This information helps you to configure, secure, tune, manage, and develop Apache Kafka.
