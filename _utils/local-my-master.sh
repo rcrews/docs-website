@@ -3,7 +3,7 @@
 # s3sync_jar='/Users/rcrews/Sandbox/s3sync/s3sync.jar'
 #
 # git checkout master
-# git fetch cloudera master
+# git fetch origin master
 # git fetch public playbranch
 #
 # # https://stackoverflow.com/questions/3878624
