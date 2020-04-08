@@ -281,7 +281,7 @@
           id: pub-yarn-application-management
           sub: yarn-application-management/navigation.json
       
-        - text: Configuring YARN log Aggregation
+        - text: Configuring Apache Hadoop YARN Log Aggregation
           href: yarn-monitoring-clusters-applications/index.html
           id: pub-yarn-monitoring-clusters-applications
           sub: yarn-monitoring-clusters-applications/navigation.json
