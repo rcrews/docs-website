@@ -14,7 +14,7 @@ sections:
 
 ---
 
-Cloudera Data Flow delivers Streams Messaging and FLow Management cluster definitions for
+Cloudera Data Flow delivers Streams Messaging and Flow Management cluster definitions for
 installation on CDP Public Cloud using Data Hub.
 
 The Streams Messaging Light and Heavy Duty clusters provide
