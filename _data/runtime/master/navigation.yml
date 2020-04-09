@@ -248,16 +248,12 @@
     - text: Compute
       href: howto-compute.html
       sub:
-        # Review with Robert
-        #- text: Using YARN Web UI and CLI 
-        #  href: yarn-using-ui-cli/index.html
-        #  id: pub-yarn-using-ui-cli
-        #  sub: yarn-using-ui-cli/navigation.json
         
-        #- text: Managing YARN Docker Containers
-        #  href: yarn-managing-docker-containers/index.html
-        #  id: pub-yarn-managing-docker-containers
-        #  sub: yarn-managing-docker-containers/navigation.json
+        - text: Using YARN Web UI and CLI 
+          href: yarn-using-ui-cli/index.html
+          id: pub-yarn-using-ui-cli
+          sub: yarn-using-ui-cli/navigation.json
+
         
         - text: Configuring Apache Hadoop YARN Security
           href: yarn-security/index.html
@@ -278,7 +274,12 @@
           href: yarn-application-management/index.html
           id: pub-yarn-application-management
           sub: yarn-application-management/navigation.json
-      
+              
+        - text: Managing YARN Docker Containers
+          href: yarn-managing-docker-containers/index.html
+          id: pub-yarn-managing-docker-containers
+          sub: yarn-managing-docker-containers/navigation.json
+          
         - text: Configuring Apache Hadoop YARN Log Aggregation
           href: yarn-monitoring-clusters-applications/index.html
           id: pub-yarn-monitoring-clusters-applications
