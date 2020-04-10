@@ -17,35 +17,35 @@ publications:
       description: >-
         Explains how to use YARN Web UI to monitor clusters and
         YARN CLI to view logs for running application.
-        
+
     - title: Configuring Apache Hadoop YARN Security
       url: yarn-security/index.html
       description: >-
         Provides information about Access Control List and how to use
         YARN with a secure cluster.
-  
+
     - title: Apache Hadoop YARN High Availability
       url: yarn-high-availability/index.html
       description: >-
         Provides information about ResourceManager High Availability. It
         also describes the work preserving recovery process.
-        
+
     - title: Managing and Allocating Cluster Resources using Capacity Scheduler
       url: yarn-allocate-resources/index.html
       description: >-
         Explains how to allocate cluster resources for the applications
         using Capacity Scheduler.
-    
-    - title: Managing Apache Hadoop YARN Services 
+
+    - title: Managing Apache Hadoop YARN Services
       url: yarn-application-management/index.html
       description: >-
-        Provides information about using the YARN REST APIs and 
+        Provides information about using the YARN REST APIs and
         YARN Services API to manage YARN services.
- 
- 	- title: Managing YARN Docker Containers 
+
+    - title: Managing YARN Docker Containers
       url: yarn-managing-docker-containers/index.html
       description: >-
-        Explains how to configure YARN to manage Docker containers. 
+        Explains how to configure YARN to manage Docker containers.
 
     - title: Configuring YARN Log Aggregation
       url: yarn-monitoring-clusters-applications/index.html
@@ -68,7 +68,7 @@ publications:
       description: >-
         Provides information about configuring the Apache
         ZooKeeper service.
-  
+
     - title: Managing Apache ZooKeeper Security
       url: zookeeper-security/index.html
       description: >-
