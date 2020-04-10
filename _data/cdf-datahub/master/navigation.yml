@@ -51,14 +51,14 @@
   id:   cat-planning
   sub:
     - text: Planning your Flow Management deployment
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: planning-your-flow-management-deployment/index.html
+      id:   pub-planning-your-flow-management-deployment
+      sub:  planning-your-flow-management-deployment/navigation.json
 
     - text: Planning your Streams Messaging deployment
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: planning-your-streams-messaging-deployment/index.html
+      id:   pub-planning-your-streams-messaging-deployment
+      sub:  planning-your-streams-messaging-deployment/navigation.json
 
 # - text: Installation & Upgrade
 #   id:   cat-installation
