@@ -562,24 +562,12 @@
       url: /best-practices/latest/index.html
 
 - name: Cloudera Data Platform
-  latest-version: cloud
-  latest-url: /cdp/cloud/index.html
+  latest-version: latest
+  latest-url: /cdp/latest/index.html
   search-name: cdp
   versions:
-    - title: cloud
-      url: /cdp/cloud/index.html
-
-- name: Cloudera Data Platform Data Center
-  latest-version: "7.0"
-  latest-url: /cdpdc/7.0/index.html
-  search-name: cdpdc
-  versions:
-    - title: "7.0"
-      url: /cdpdc/7.0/index.html
-      minors:
-      - title: "7.0"
-        type: latest
-        url: /cdpdc/7.0/index.html
+    - title: latest
+      url: /cdp/latest/index.html
 
 - name: Data Catalog
   latest-version: cloud

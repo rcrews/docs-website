@@ -621,21 +621,7 @@
     - title: master
       url: /cdp/master/index.html
     - title: cloud
-      url: /cdp/cloud/index.html
-
-- name: Cloudera Data Platform Data Center
-  latest-version: master
-  latest-url: /cdpdc/master/index.html
-  search-name: cdpdc
-  versions:
-    - title: master
-      url: /cdpdc/master/index.html
-    - title: "7.0"
-      url: /cdpdc/7.0/index.html
-      minors:
-      - title: "7.0"
-        type: latest
-        url: /cdpdc/7.0/index.html
+      url: /cdp/latest/index.html
 
 - name: Data Catalog
   latest-version: master
