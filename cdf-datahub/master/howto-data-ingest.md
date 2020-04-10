@@ -5,7 +5,7 @@ title: Data Ingest
 
 publications:
   - title: Ingesting Data into Apache Kafka in CDP Public Cloud
-    url: publcation-tbd/index.html
+    url: nifi-kafka-ingest/index.html
     description: >-
       Describes how to use an Apache NiFi data flow to ingest data into Apache Kafka in CDP Public Cloud. 
   - title: Ingesting Data into Apache Hive in CDP Public Cloud
@@ -17,7 +17,7 @@ publications:
     description: >-
       Describes how to use an Apache NiFi data flow to ingest data into Apache HBase in CDP Public Cloud. 
   - title: Ingesting Data into Apache Kudu in CDP Public Cloud
-    url: publcation-tbd/index.html
+    url: nifi-kudu-ingest/index.html
     description: >-
       Describes how to use an Apache NiFi data flow to ingest data into Apache Kudu in CDP Public Cloud. 
   - title: Ingesting Data into Amazon S3 Buckets
