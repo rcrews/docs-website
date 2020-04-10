@@ -13,7 +13,7 @@ publications:
     description: >-
       Describes how to use an Apache NiFi data flow to ingest data into Apache Hive in CDP Public Cloud. 
   - title: Ingesting Data into Apache HBase in CDP Public Cloud
-    url: publcation-tbd/index.html
+    url: nifi-hbase-ingest/index.html
     description: >-
       Describes how to use an Apache NiFi data flow to ingest data into Apache HBase in CDP Public Cloud. 
   - title: Ingesting Data into Apache Kudu in CDP Public Cloud
