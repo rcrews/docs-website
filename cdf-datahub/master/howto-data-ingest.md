@@ -21,11 +21,11 @@ publications:
     description: >-
       Describes how to use an Apache NiFi data flow to ingest data into Apache Kudu in CDP Public Cloud. 
   - title: Ingesting Data into Amazon S3 Buckets
-    url: publcation-tbd/index.html
+    url: nifi-aws-ingest/index.html
     description: >-
       Describes how to use an Apache NiFi data flow to ingest data into Amazon S3 buckets in CDP Public Cloud. 
   - title: Ingesting Data into Azure Data Lake Storage
-    url: publcation-tbd/index.html
+    url: nifi-azure-ingest/index.html
     description: >-
       Describes how to use an Apache NiFi data flow to ingest data into Azure Data Lake Storage in CDP Public Cloud. 
 
