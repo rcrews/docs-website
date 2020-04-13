@@ -20,9 +20,9 @@
       href: concepts-flow-management.html
       sub:
         - text: Apache NiFi Overview
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+          href: /HDPDocuments/HDF3/HDF-3.5.0/apache-nifi-overview/index.html
+          id:   pub-apache-nifi-overview
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/apache-nifi-overview/navigation.json
 
         - text: Apache NiFi Registry Overview
           href: publication-tbd/index.html
