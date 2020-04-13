@@ -46,6 +46,11 @@
 - text: How To
   id: cat-howto
   sub:
+    - text: AWS Quickstart
+      href: aws-quickstart/index.html
+      id: pub-aws-quickstart
+      sub: aws-quickstart/navigation.json
+
     - text: Getting Started
       href: getting-started/index.html
       id: pub-getting-started
