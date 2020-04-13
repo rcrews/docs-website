@@ -81,34 +81,34 @@
       href: howto-data-ingest.html
       sub:
         - text: Ingesting Data into Apache Kafka in CDP Public Cloud
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+          href: nifi-kafka-ingest/index.html
+          id:   pub-nifi-kafka-ingest
+          sub:  nifi-kafka-ingest/navigation.json
 
         - text: Ingesting Data into Apache Hive in CDP Public Cloud
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+          href: nifi-hive-ingest/index.html
+          id:   pub-nifi-hive-ingest
+          sub:  nifi-hive-ingest/navigation.json
 
         - text: Ingesting Data into Apache HBase in CDP Public Cloud
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+          href: nifi-hbase-ingest/index.html
+          id:   pub-nifi-hbase-ingest
+          sub:  nifi-hbase-ingest/navigation.json
 
         - text: Ingesting Data into Apache Kudu in CDP Public Cloud
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+          href: nifi-kudu-ingest/index.html
+          id:   pub-nifi-kudu-ingest
+          sub:  nifi-kudu-ingest/navigation.json
 
         - text: Ingesting Data into Amazon S3 Buckets
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+          href: nifi-aws-ingest/index.html
+          id:   pub-nifi-aws-ingest
+          sub:  nifi-aws-ingest/navigation.json
 
         - text: Ingesting Data into Azure Data Lake Storage
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+          href: nifi-azure-ingest/index.html
+          id:   pub-nifi-azure-ingest
+          sub:  nifi-azure-ingest/navigation.json
 
     - text: Apache NiFi
       href: howto-apache-nifi.html
