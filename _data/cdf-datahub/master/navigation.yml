@@ -68,9 +68,9 @@
   id:   cat-how-to-flow-management
   sub:
     - text: Creating your First Flow Management Cluster in CDP Public Cloud
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: quick-start-fm/index.html
+      id:   pub-quick-start-fm
+      sub:  quick-start-fm/navigation.json
 
     - text: Authorizing Flow Management Cluster Access in CDP Public Cloud
       href: nifi-security/index.html
@@ -170,9 +170,9 @@
   id:   cat-how-to-streams-messaging
   sub:
     - text: Creating your First Streams Messaging Cluster in CDP Public Cloud
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: quick-start-sm/index.html
+      id:   pub-quick-start-sm
+      sub:  quick-start-sm/navigation.json
 
     - text: Connecting Kafka Cliuents to CDP Public Cloud Clusters
       href: publication-tbd/index.html
