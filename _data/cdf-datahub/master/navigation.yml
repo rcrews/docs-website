@@ -36,16 +36,17 @@
           href: /runtime/master/kafka-overview/index.html
           id:   pub-kafka-overview
           sub: /runtime/master/kafka-overview/navigation.json
+          external: external
 
         - text: Schema Registry Overview
           href: schema-registry-overview/index.html
           id:   pub-schema-registry-overview
-          sub:  publication-tbd/navigation.json
+          sub:  schema-registry-overview/navigation.json
 
         - text: Streams Messaging Manager Overview
           href: smm-overview/index.html
           id:   pub-smm-overview
-          sub:  publication-tbd/navigation.json
+          sub:  smm-overview/navigation.json
 
 - text: Planning
   id:   cat-planning
@@ -116,27 +117,27 @@
         - text: Using the Apache NiFi Interface
           href:  /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-interface/index.html
           id:   pub-using-nifi-interface
-          sub:  using-nifi-interface/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-interface/navigation.json
 
         - text: Building an Apache NiFi Data Flow
           href: /HDPDocuments/HDF3/HDF-3.5.0/building-a-dataflow/index.html
           id:   pub-building-a-dataflow
-          sub:  building-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/building-a-dataflow/navigation.json
 
         - text: Managing an Apache NiFi Data Flow
           href: /HDPDocuments/HDF3/HDF-3.5.0/managing-a-dataflow/index.html
           id:   pub-managing-a-dataflow
-          sub:  managing-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/managing-a-dataflow/managing-a-dataflow/navigation.json
 
         - text: Navigating an Apache NiFi DAta Flow
           href: /HDPDocuments/HDF3/HDF-3.5.0/navigating-a-dataflow/index.html
           id:   pub-navigating-a-dataflow
-          sub:  navigating-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/navigating-a-dataflow/navigation.json
 
         - text: Monitoring an Apache NiFi Data Flow
           href: /HDPDocuments/HDF3/HDF-3.5.0/monitoring-a-dataflow/index.html
           id:   pub-monitoring-a-dataflow
-          sub:  monitoring-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/monitoring-a-dataflow/navigation.json
 
         - text: Versioning an Apache NiFi Data Flow
           href: /HDPDocuments/HDF3/HDF-3.5.0/versioning-a-dataflow/index.html
@@ -146,17 +147,17 @@
         - text: Using Apache NiFi Templates
           href: /HDPDocuments/HDF3/HDF-3.5.0/using-dataflow-templates/index.html
           id:   pub-using-dataflow-templates
-          sub:  using-dataflow-templates/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/versioning-a-dataflow/navigation.json
 
         - text: Using Apache NiFi Provenance Tools
           href: /HDPDocuments/HDF3/HDF-3.5.0/using-dataflow-provenance-tools/index.html
           id:   pub-using-dataflow-provenance-tools
-          sub:  using-dataflow-provenance-tools/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/using-dataflow-provenance-tools/navigation.json
 
         - text: Adding Functionality to Apache NiFi
           href: /HDPDocuments/HDF3/HDF-3.5.0/adding-functionality-to-apache-nifi/index.html
           id:   pub-adding-functionality-to-apache-nifi
-          sub:  adding-functionality-to-apache-nifi/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/adding-functionality-to-apache-nifi/navigation.json
 
     - text: Apache NiFi Registry
       href: howto-apache-nifi-registry.html
@@ -164,7 +165,7 @@
         - text: Using Apache NiFi Registry
           href: /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-registry/index.html
           id:   pub-using-nifi-registry
-          sub:  using-nifi-registry/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-registry/navigation.json
 
 - text: "How To: Streams Messaging"
   id:   cat-how-to-streams-messaging
@@ -186,26 +187,31 @@
           href: /runtime/master/kafka-configuring/index.html
           id:   pub-kafka-configuring
           sub:   /runtime/master/kafka-configuring/navigation.json
+          external: external
 
         - text: Securing Apache Kafka
           href: /runtime/master/kafka-securing/index.html
           id:   pub-kafka-securing
           sub:  /runtime/master/kafka-securing/navigation.json
+          external: external
 
         - text: Tuning Apache Kafka Performance
           href: /runtime/master/kafka-performance-tuning/index.html
           id:   pub-kafka-performance-tuning
           sub:   /runtime/master/kafka-performance-tuning/navigation.json
+          external: external
 
         - text: Managing Apache Kafka
           href: /runtime/master/kafka-managing/index.html
           id:   pub-kafka-managing
           sub:  /runtime/master/kafka-managing/navigation.json
+          external: external
 
         - text: Developing Apache Kafka Applications
           href: /runtime/master/kafka-developing-applications/index.html
           id:   pub-kafka-developing-applications
           sub:  /runtime/master/kafka-developing-applications/navigation.json
+          external: external
 
     - text: Streams Messaging Manager
       href: howto-streams-messaging-manager.html
@@ -267,7 +273,7 @@
     - text: Release Notes
       href: release-notes/index.html
       id:   pub-release-notes
-      sub:  publication-tbd/navigation.json
+      sub:  release-notes/navigation.json
 
 # - text: Learning & Training
 #   id:   cat-learning-training
