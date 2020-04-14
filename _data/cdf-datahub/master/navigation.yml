@@ -24,10 +24,10 @@
           id:   pub-apache-nifi-overview
           sub:  /HDPDocuments/HDF3/HDF-3.5.0/apache-nifi-overview/navigation.json
 
-        - text: Apache NiFi Registry Overview
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+        # - text: Apache NiFi Registry Overview
+        #   href: publication-tbd/index.html
+        #   id:   pub-publication-tbd
+        #   sub:  publication-tbd/navigation.json
 
     - text: Streams Messaging
       href: concepts-streams-messaging.html
@@ -36,7 +36,6 @@
           href: /runtime/master/kafka-overview/index.html
           id:   pub-kafka-overview
           sub: /runtime/master/kafka-overview/navigation.json
-          external: external
 
         - text: Schema Registry Overview
           href: schema-registry-overview/index.html
@@ -175,10 +174,10 @@
       id:   pub-quick-start-sm
       sub:  quick-start-sm/navigation.json
 
-    - text: Connecting Kafka Cliuents to CDP Public Cloud Clusters
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+    # - text: Connecting Kafka Cliuents to CDP Public Cloud Clusters
+    #   href: publication-tbd/index.html
+    #   id:   pub-publication-tbd
+    #   sub:  publication-tbd/navigation.json
 
     - text: Apache Kafka
       href: howto-apache-kafka.html
@@ -187,54 +186,49 @@
           href: /runtime/master/kafka-configuring/index.html
           id:   pub-kafka-configuring
           sub:   /runtime/master/kafka-configuring/navigation.json
-          external: external
 
         - text: Securing Apache Kafka
           href: /runtime/master/kafka-securing/index.html
           id:   pub-kafka-securing
           sub:  /runtime/master/kafka-securing/navigation.json
-          external: external
 
         - text: Tuning Apache Kafka Performance
           href: /runtime/master/kafka-performance-tuning/index.html
           id:   pub-kafka-performance-tuning
           sub:   /runtime/master/kafka-performance-tuning/navigation.json
-          external: external
 
         - text: Managing Apache Kafka
           href: /runtime/master/kafka-managing/index.html
           id:   pub-kafka-managing
           sub:  /runtime/master/kafka-managing/navigation.json
-          external: external
 
         - text: Developing Apache Kafka Applications
           href: /runtime/master/kafka-developing-applications/index.html
           id:   pub-kafka-developing-applications
           sub:  /runtime/master/kafka-developing-applications/navigation.json
-          external: external
 
-    - text: Streams Messaging Manager
-      href: howto-streams-messaging-manager.html
-      sub:
-        - text: Monitoring Kafka Clusters
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+    # - text: Streams Messaging Manager
+    #   href: howto-streams-messaging-manager.html
+    #   sub:
+    #     - text: Monitoring Kafka Clusters
+    #       href: publication-tbd/index.html
+    #       id:   pub-publication-tbd
+    #       sub:  publication-tbd/navigation.json
 
-        - text: Managing Alert Policies
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+    #     - text: Managing Alert Policies
+    #       href: publication-tbd/index.html
+    #       id:   pub-publication-tbd
+    #       sub:  publication-tbd/navigation.json
 
-        - text: Managing Topics
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+    #     - text: Managing Topics
+    #       href: publication-tbd/index.html
+    #       id:   pub-publication-tbd
+    #       sub:  publication-tbd/navigation.json
 
-        - text: Monitoring End to End Latency
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+    #     - text: Monitoring End to End Latency
+    #       href: publication-tbd/index.html
+    #       id:   pub-publication-tbd
+    #       sub:  publication-tbd/navigation.json
 
     - text: Schema Registry
       href: howto-schema-registry.html
