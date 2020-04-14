@@ -128,7 +128,7 @@
           id:   pub-managing-a-dataflow
           sub:  /HDPDocuments/HDF3/HDF-3.5.0/managing-a-dataflow/navigation.json
 
-        - text: Navigating an Apache NiFi DAta Flow
+        - text: Navigating an Apache NiFi Data Flow
           href: /HDPDocuments/HDF3/HDF-3.5.0/navigating-a-dataflow/index.html
           id:   pub-navigating-a-dataflow
           sub:  /HDPDocuments/HDF3/HDF-3.5.0/navigating-a-dataflow/navigation.json
