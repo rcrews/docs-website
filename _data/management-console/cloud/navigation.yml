@@ -43,14 +43,25 @@
 #   id: cat-installation
 #   sub:
 
+- text: Getting Started
+  id: cat-getstart
+  sub:
+    - text: AWS onboarding quickstart
+      href: getstart-quick-starts.html
+      sub:
+        - text: AWS onboarding quickstart
+          href: aws-quickstart/index.html
+          id: pub-aws-quickstart
+          sub: aws-quickstart/navigation.json
+
+        # - text: Azure onboarding quickstart
+        #   href: azure-quickstart/index.html
+        #   id: pub-azure-quickstart
+        #   sub: azure-quickstart/navigation.json
+
 - text: How To
   id: cat-howto
   sub:
-    - text: AWS Quickstart
-      href: aws-quickstart/index.html
-      id: pub-aws-quickstart
-      sub: aws-quickstart/navigation.json
-
     - text: Getting Started
       href: getting-started/index.html
       id: pub-getting-started
