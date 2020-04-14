@@ -21,20 +21,6 @@ publications:
       Lineage offers insight into where data came from and how to
       determine the impact of changes to data assets.
 
-  - title: Securing Atlas
-    url: atlas-securing/index.html
-    description: >-
-      Configure Atlas' authentication and authorization through Cloudera
-      Manager and using access policies in Apache Ranger.
-
-  - title: Migrating Data from Cloudera Navigator to Atlas
-    url: atlas-migrating-from-navigator/index.html
-    description: >-
-      When upgrading from CDH to CDP, you can choose to move your
-      Navigator Data Management metadata into Atlas.
-
-- column:
-
   - title: Working with Classifications and Labels
     url: atlas-working-with-classifications/index.html
     description: >-
@@ -55,6 +41,27 @@ publications:
       Collecting your organization's terms in Atlas helps you build a
       search index to easily find the data assets you are looking for.
 
+-column:
+
+  - title: Configuring and Monitoring Atlas in Cloudera Manager
+    url: atlas-configuring/index.html
+    description: >-
+      Configure Atlas' extractors, monitor status, and access logs 
+      using Cloudera Manager.
+
+  - title: Securing Atlas
+    url: atlas-securing/index.html
+    description: >-
+      Configure Atlas' authentication and authorization through Cloudera
+      Manager and using access policies in Apache Ranger.
+
+  - title: Migrating Data from Cloudera Navigator to Atlas
+    url: atlas-migrating-from-navigator/index.html
+    description: >-
+      When upgrading from CDH to CDP, you can choose to move your
+      Navigator Data Management metadata into Atlas.
+
+- column:
 ---
 
 Apache Atlas provides data governance capabilities for Hadoop. Apache
