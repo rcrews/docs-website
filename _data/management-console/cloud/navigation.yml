@@ -49,12 +49,12 @@
     - text: Quick Starts
       href: getstart-quick-starts.html
       sub:
-        - text: AWS onboarding quickstart
+        - text: AWS Onboarding Quickstart
           href: aws-quickstart/index.html
           id: pub-aws-quickstart
           sub: aws-quickstart/navigation.json
 
-        # - text: Azure onboarding quickstart
+        # - text: Azure Onboarding Quickstart
         #   href: azure-quickstart/index.html
         #   id: pub-azure-quickstart
         #   sub: azure-quickstart/navigation.json
