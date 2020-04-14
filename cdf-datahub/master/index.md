@@ -28,7 +28,7 @@ Flow Management Light and Heavy Duty clusters deliver high-scale data ingestion,
 
 <div style="border: 1px solid #ccc;border-radius: 2px;background: #fed;padding: 1ex 1em;">
 <b>Note</b><br>
-Streams Messaging cluster definitions in Cloudera Data Flow for Data Hub are available for Technical Preview.
+Streams Messaging cluster definitions are available for Technical Preview.
 Cloudera encourages you to explore these technical preview features in
 non-production environments and provide feedback on your experiences
 through the Cloudera Support Portal.
