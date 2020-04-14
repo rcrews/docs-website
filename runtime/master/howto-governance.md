@@ -27,6 +27,12 @@ publications:
       Configure Atlas' authentication and authorization through Cloudera
       Manager and using access policies in Apache Ranger.
 
+  - title: Migrating Data from Cloudera Navigator to Atlas
+    url: atlas-migrating-from-navigator/index.html
+    description: >-
+      When upgrading from CDH to CDP, you can choose to move your
+      Navigator Data Management metadata into Atlas.
+
 - column:
 
   - title: Working with Classifications and Labels
