@@ -46,7 +46,7 @@
 - text: Getting Started
   id: cat-getstart
   sub:
-    - text: AWS onboarding quickstart
+    - text: Quick Starts
       href: getstart-quick-starts.html
       sub:
         - text: AWS onboarding quickstart
