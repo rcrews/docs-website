@@ -260,7 +260,7 @@
           id: pub-yarn-security
           sub: yarn-security/navigation.json
 
-        - text: Apache Hadoop YARN High Availability
+        - text: Configuring Apache Hadoop YARN High Availability
           href: yarn-high-availability/index.html
           id: pub-yarn-high-availability
           sub: yarn-high-availability/navigation.json
