@@ -77,7 +77,7 @@
       id:   pub-nifi-security
       sub:  nifi-security/navigation.json
 
-    - text: Data Ingest
+    - text: Data Ingest into CDP Public Cloud
       href: howto-data-ingest.html
       sub:
         - text: Ingesting Data into Apache Kafka in CDP Public Cloud
