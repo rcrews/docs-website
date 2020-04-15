@@ -23,7 +23,7 @@ Apache Kafka, centralized schema management using Schema Registry, and
 management and monitoring capabilities powered by Streams Messaging
 Manager.
 
-Flow Management Light and Heavy Duty clusters deliver high-scale data ingestion, transformation, and management to enterprises from any-to-any environment. It addresses key enterprise use cases such as data movement, continuous data ingestion, log data ingestion, and acquisition of all types of streaming data including social, mobile, clickstream, and IoT data. 
+Flow Management Light and Heavy Duty clusters deliver high-scale data ingestion, transformation, and management to enterprises from any-to-any environment. Flow Management addresses key enterprise use cases such as data movement, continuous data ingestion, log data ingestion, and acquisition of all types of streaming data including social, mobile, clickstream, and IoT data. 
 
 
 <div style="border: 1px solid #ccc;border-radius: 2px;background: #fed;padding: 1ex 1em;">
