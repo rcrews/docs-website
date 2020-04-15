@@ -30,4 +30,4 @@ publications:
       Describes how to use an Apache NiFi data flow to ingest data into Azure Data Lake Storage in CDP Public Cloud. 
 
 ---
-You can use Apache NiFi data flows to ingest data into various locations in CDP Public Cloud. These documents walk you through the steps involved in building a data flow into CDP Public Cloud, including data flow set up, meeting security requirements, and configuring your processors and controller services. 
+You can use Apache NiFi data flows to ingest data into various locations in CDP Public Cloud. These use cases walk you through the steps involved in building a data flow into CDP Public Cloud, including data flow set up, meeting security requirements, and configuring your processors and controller services. 
