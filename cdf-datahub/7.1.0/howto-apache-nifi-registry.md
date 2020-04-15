@@ -4,16 +4,11 @@ breadcrumb-title: Cloudera Data Flow for Data Hub How To
 title: Apache NiFi Registry
 
 publications:
-  - title: Apache NiFi Registry
-    url: publication-tbd/index.html
+  - title: Using Apache NiFi Registry
+    url: /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-registry/index.html
     description: >-
-      Condimentum justo curae felis imperdiet nunc eros parturient orci,
-      ad id habitasse.
+      Guides you through how to use NiFi Registry to manage data flow versions.
 
 ---
 
-Facilisis porta sagittis mollis imperdiet risus feugiat iaculis dui
-ligula, potenti primis vivamus et tempor dictumst mattis vehicula
-senectus, est sapien sollicitudin fringilla purus nascetur aenean
-parturient vulputate nisi, convallis felis pharetra maximus sodales
-auctor ut quisque.
+Apache NiFi Registry provides a central location for the storage and management of shared data flow resources across more than one instance of Apache NiFi.

@@ -5,21 +5,15 @@ title: Flow Management
 
 publications:
   - title: Apache NiFi Overview
-    url: publication-tbd/index.html
+    url: /HDPDocuments/HDF3/HDF-3.5.0/apache-nifi-overview/index.html
     description: >-
-      Condimentum justo curae felis imperdiet nunc eros parturient orci,
-      ad id habitasse.
+      Describes Apache NiFi, including key concepts, architecture, and use cases.
 
   - title: Apache NiFi Registry Overview
     url: publication-tbd/index.html
     description: >-
-      Condimentum justo curae felis imperdiet nunc eros parturient orci,
-      ad id habitasse.
+      Describes Apache NiFi Registry, including key concepts, architecture, and use cases.
 
 ---
 
-Facilisis porta sagittis mollis imperdiet risus feugiat iaculis dui
-ligula, potenti primis vivamus et tempor dictumst mattis vehicula
-senectus, est sapien sollicitudin fringilla purus nascetur aenean
-parturient vulputate nisi, convallis felis pharetra maximus sodales
-auctor ut quisque.
+Flow Management cluster definitions for CDP Public Cloud deployed by Data Hub include Apache NiFi and Apache NiFi Registry.

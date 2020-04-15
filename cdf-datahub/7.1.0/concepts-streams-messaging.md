@@ -23,8 +23,4 @@ publications:
 
 ---
 
-Facilisis porta sagittis mollis imperdiet risus feugiat iaculis dui
-ligula, potenti primis vivamus et tempor dictumst mattis vehicula
-senectus, est sapien sollicitudin fringilla purus nascetur aenean
-parturient vulputate nisi, convallis felis pharetra maximus sodales
-auctor ut quisque.
+Streams Messaging cluster definitions for CDP Public Cloud deployed by Data Hub include Apache Kafka, Schema Registry, and Streams Messaging Manager.

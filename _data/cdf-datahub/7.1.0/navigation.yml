@@ -20,14 +20,14 @@
       href: concepts-flow-management.html
       sub:
         - text: Apache NiFi Overview
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+          href: /HDPDocuments/HDF3/HDF-3.5.0/apache-nifi-overview/index.html
+          id:   pub-apache-nifi-overview
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/apache-nifi-overview/navigation.json
 
-        - text: Apache NiFi Registry Overview
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+        # - text: Apache NiFi Registry Overview
+        #   href: publication-tbd/index.html
+        #   id:   pub-publication-tbd
+        #   sub:  publication-tbd/navigation.json
 
     - text: Streams Messaging
       href: concepts-streams-messaging.html
@@ -40,25 +40,25 @@
         - text: Schema Registry Overview
           href: schema-registry-overview/index.html
           id:   pub-schema-registry-overview
-          sub:  publication-tbd/navigation.json
+          sub:  schema-registry-overview/navigation.json
 
-        - text: SMM Overview
+        - text: Streams Messaging Manager Overview
           href: smm-overview/index.html
           id:   pub-smm-overview
-          sub:  publication-tbd/navigation.json
+          sub:  smm-overview/navigation.json
 
 - text: Planning
   id:   cat-planning
   sub:
     - text: Planning your Flow Management deployment
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: planning-your-flow-management-deployment/index.html
+      id:   pub-planning-your-flow-management-deployment
+      sub:  planning-your-flow-management-deployment/navigation.json
 
     - text: Planning your Streams Messaging deployment
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: planning-your-streams-messaging-deployment/index.html
+      id:   pub-planning-your-streams-messaging-deployment
+      sub:  planning-your-streams-messaging-deployment/navigation.json
 
 # - text: Installation & Upgrade
 #   id:   cat-installation
@@ -67,74 +67,181 @@
 - text: "How To: Flow Management"
   id:   cat-how-to-flow-management
   sub:
-    - text: Quick Start for Flow Management
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+    - text: Creating your First Flow Management Cluster in CDP Public Cloud
+      href: quick-start-fm/index.html
+      id:   pub-quick-start-fm
+      sub:  quick-start-fm/navigation.json
 
-    - text: Flow Management Security
+    - text: Authorizing Flow Management Cluster Access in CDP Public Cloud
       href: nifi-security/index.html
       id:   pub-nifi-security
       sub:  nifi-security/navigation.json
-    
+
+    - text: Data Ingest into CDP Public Cloud
+      href: howto-data-ingest.html
+      sub:
+        - text: Ingesting Data into Apache Kafka in CDP Public Cloud
+          href: nifi-kafka-ingest/index.html
+          id:   pub-nifi-kafka-ingest
+          sub:  nifi-kafka-ingest/navigation.json
+
+        - text: Ingesting Data into Apache Hive in CDP Public Cloud
+          href: nifi-hive-ingest/index.html
+          id:   pub-nifi-hive-ingest
+          sub:  nifi-hive-ingest/navigation.json
+
+        - text: Ingesting Data into Apache HBase in CDP Public Cloud
+          href: nifi-hbase-ingest/index.html
+          id:   pub-nifi-hbase-ingest
+          sub:  nifi-hbase-ingest/navigation.json
+
+        - text: Ingesting Data into Apache Kudu in CDP Public Cloud
+          href: nifi-kudu-ingest/index.html
+          id:   pub-nifi-kudu-ingest
+          sub:  nifi-kudu-ingest/navigation.json
+
+        - text: Ingesting Data into Amazon S3 Buckets
+          href: nifi-aws-ingest/index.html
+          id:   pub-nifi-aws-ingest
+          sub:  nifi-aws-ingest/navigation.json
+
+        - text: Ingesting Data into Azure Data Lake Storage
+          href: nifi-azure-ingest/index.html
+          id:   pub-nifi-azure-ingest
+          sub:  nifi-azure-ingest/navigation.json
+
     - text: Apache NiFi
       href: howto-apache-nifi.html
       sub:
-        - text: Ingesting Data into Kafka using NiFi
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-    
-        - text: Ingesting Data into Object Stores using NiFi
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-    
-        - text: Ingesting Data into HBase using NiFi
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-    
-        - text: Ingesting Data into Hive using NiFi
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
-    
-        - text: Ingesting Data in Kudu using NiFi
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+        - text: Using the Apache NiFi Interface
+          href:  /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-interface/index.html
+          id:   pub-using-nifi-interface
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-interface/navigation.json
+
+        - text: Building an Apache NiFi Data Flow
+          href: /HDPDocuments/HDF3/HDF-3.5.0/building-a-dataflow/index.html
+          id:   pub-building-a-dataflow
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/building-a-dataflow/navigation.json
+
+        - text: Managing an Apache NiFi Data Flow
+          href: /HDPDocuments/HDF3/HDF-3.5.0/managing-a-dataflow/index.html
+          id:   pub-managing-a-dataflow
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/managing-a-dataflow/navigation.json
+
+        - text: Navigating an Apache NiFi Data Flow
+          href: /HDPDocuments/HDF3/HDF-3.5.0/navigating-a-dataflow/index.html
+          id:   pub-navigating-a-dataflow
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/navigating-a-dataflow/navigation.json
+
+        - text: Monitoring an Apache NiFi Data Flow
+          href: /HDPDocuments/HDF3/HDF-3.5.0/monitoring-a-dataflow/index.html
+          id:   pub-monitoring-a-dataflow
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/monitoring-a-dataflow/navigation.json
+
+        - text: Versioning an Apache NiFi Data Flow
+          href: /HDPDocuments/HDF3/HDF-3.5.0/versioning-a-dataflow/index.html
+          id:   pub-versioning-a-dataflow
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/versioning-a-dataflow/navigation.json
+
+        - text: Using Apache NiFi Templates
+          href: /HDPDocuments/HDF3/HDF-3.5.0/using-dataflow-templates/index.html
+          id:   pub-using-dataflow-templates
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/versioning-a-dataflow/navigation.json
+
+        - text: Using Apache NiFi Provenance Tools
+          href: /HDPDocuments/HDF3/HDF-3.5.0/using-dataflow-provenance-tools/index.html
+          id:   pub-using-dataflow-provenance-tools
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/using-dataflow-provenance-tools/navigation.json
+
+        - text: Adding Functionality to Apache NiFi
+          href: /HDPDocuments/HDF3/HDF-3.5.0/adding-functionality-to-apache-nifi/index.html
+          id:   pub-adding-functionality-to-apache-nifi
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/adding-functionality-to-apache-nifi/navigation.json
 
     - text: Apache NiFi Registry
       href: howto-apache-nifi-registry.html
       sub:
-        - text: Apache NiFi Registry
-          href: publication-tbd/index.html
-          id:   pub-publication-tbd
-          sub:  publication-tbd/navigation.json
+        - text: Using Apache NiFi Registry
+          href: /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-registry/index.html
+          id:   pub-using-nifi-registry
+          sub:  /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-registry/navigation.json
 
 - text: "How To: Streams Messaging"
   id:   cat-how-to-streams-messaging
   sub:
-    - text: Quick Start for Streams Messaging
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+    - text: Creating your First Streams Messaging Cluster in CDP Public Cloud
+      href: quick-start-sm/index.html
+      id:   pub-quick-start-sm
+      sub:  quick-start-sm/navigation.json
+
+    - text: Connecting Kafka Clients to CDP Public Cloud Clusters
+      href: connecting-kafka/index.html
+      id: pub-connecting-kafka
+      sub: connecting-kafka/navigation.json
 
     - text: Apache Kafka
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: howto-apache-kafka.html
+      sub:
+        - text: Configuring Apache Kafka
+          href: /runtime/7.1.0/kafka-configuring/index.html
+          id:   pub-kafka-configuring
+          sub:   /runtime/7.1.0/kafka-configuring/navigation.json
+
+        - text: Securing Apache Kafka
+          href: /runtime/7.1.0/kafka-securing/index.html
+          id:   pub-kafka-securing
+          sub:  /runtime/7.1.0/kafka-securing/navigation.json
+
+        - text: Tuning Apache Kafka Performance
+          href: /runtime/7.1.0/kafka-performance-tuning/index.html
+          id:   pub-kafka-performance-tuning
+          sub:   /runtime/7.1.0/kafka-performance-tuning/navigation.json
+
+        - text: Managing Apache Kafka
+          href: /runtime/7.1.0/kafka-managing/index.html
+          id:   pub-kafka-managing
+          sub:  /runtime/7.1.0/kafka-managing/navigation.json
+
+        - text: Developing Apache Kafka Applications
+          href: /runtime/7.1.0/kafka-developing-applications/index.html
+          id:   pub-kafka-developing-applications
+          sub:  /runtime/7.1.0/kafka-developing-applications/navigation.json
 
     - text: Streams Messaging Manager
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: howto-streams-messaging-manager.html
+      sub:
+        - text: Monitoring Kafka Clusters
+          href: monitoring-kafka-clusters/index.html
+          id: pub-monitoring-kafka-clusters
+          sub: monitoring-kafka-clusters/navigation.json
+
+        - text: Managing Alert Policies
+          href: managing-alert-policies/index.html
+          id: pub-managing-alert-policies
+          sub: managing-alert-policies/navigation.json
+
+        - text: Managing Topics
+          href: managing-topics/index.html
+          id: pub-managing-topics
+          sub: managing-topics/navigation.json
+
+        - text: Monitoring End to End Latency
+          href: monitoring-end-to-end-latency/index.html
+          id: pub-monitoring-end-to-end-latency
+          sub: monitoring-end-to-end-latency/navigation.json
 
     - text: Schema Registry
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      sub:  publication-tbd/navigation.json
+      href: howto-schema-registry.html
+      sub:
+        - text: Integrating with Schema Registry
+          href: integrating-with-schema-registry/index.html
+          id:   pub-integrating-with-schema-registry
+          sub:  integrating-with-schema-registry/navigation.json
+
+        - text: Using Schema Registry
+          href: integrating-with-schema-registry/index.html
+          id:   pub-integrating-with-schema-registry
+          sub:  integrating-with-schema-registry/navigation.json
 
 # - text: Troubleshooting
 #   id:   cat-troubleshooting
@@ -143,10 +250,6 @@
 - text: Reference
   id:   cat-reference
   sub:
-    - text: Schema Registry REST API Reference
-      href: publication-tbd/index.html
-      id:   pub-publication-tbd
-      external: external
 
     - text: SMM REST API Reference
       href: rest-api-reference/index.html
@@ -164,12 +267,17 @@
     - text: Release Notes
       href: release-notes/index.html
       id:   pub-release-notes
-      sub:  publication-tbd/navigation.json
+      sub:  release-notes/navigation.json
 
-# - text: Learning & Training
-#   id:   cat-learning-training
-#   sub:
-#     - text: Publication TBD
-#       href: publication-tbd/index.html
-#       id:   pub-publication-tbd
-#       sub:  publication-tbd/navigation.json
+- text: Learning & Training
+  id:   cat-learning-training
+  sub:
+    - text: Getting Started with Apache NiFi
+      href: /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-apache-nifi/index.html
+      id:   pub-getting-started-with-apache-nifi
+      sub:  /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-apache-nifi/navigation.json
+
+    - text: Getting Started with Apache NiFi Registry
+      href: /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-nifi-registry/index.html
+      id:   pub-getting-started-with-nifi-registry
+      sub:  /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-nifi-registry/navigation.json

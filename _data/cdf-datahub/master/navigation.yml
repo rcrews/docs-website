@@ -269,10 +269,15 @@
       id:   pub-release-notes
       sub:  release-notes/navigation.json
 
-# - text: Learning & Training
-#   id:   cat-learning-training
-#   sub:
-#     - text: Publication TBD
-#       href: publication-tbd/index.html
-#       id:   pub-publication-tbd
-#       sub:  publication-tbd/navigation.json
+- text: Learning & Training
+  id:   cat-learning-training
+  sub:
+    - text: Getting Started with Apache NiFi
+      href: /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-apache-nifi/index.html
+      id:   pub-getting-started-with-apache-nifi
+      sub:  /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-apache-nifi/navigation.json
+
+    - text: Getting Started with Apache NiFi Registry
+      href: /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-nifi-registry/index.html
+      id:   pub-getting-started-with-nifi-registry
+      sub:  /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-nifi-registry/navigation.json
