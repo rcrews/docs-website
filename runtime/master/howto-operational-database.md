@@ -57,6 +57,12 @@ publications:
     description: >-
       Provides information about configuring HBase snapshots, and using
       HBase replication.
+
+  - title: Using Apache Phoenix to Store and Access Data
+        url: phoenix-access-data/index.html
+        description: >-
+          Provides information about interacting with Apache Phoenix using
+          your client and Apache Phoenix Query Server (PQS).
 ---
 Apache HBase is a NoSQL database that provides real-time read/write
 access to large datasets.
