@@ -248,13 +248,13 @@
     - text: Compute
       href: howto-compute.html
       sub:
-        
-        - text: Using YARN Web UI and CLI 
+
+        - text: Using YARN Web UI and CLI
           href: yarn-using-ui-cli/index.html
           id: pub-yarn-using-ui-cli
           sub: yarn-using-ui-cli/navigation.json
 
-        
+
         - text: Configuring Apache Hadoop YARN Security
           href: yarn-security/index.html
           id: pub-yarn-security
@@ -274,12 +274,12 @@
           href: yarn-application-management/index.html
           id: pub-yarn-application-management
           sub: yarn-application-management/navigation.json
-              
+
         - text: Managing YARN Docker Containers
           href: yarn-managing-docker-containers/index.html
           id: pub-yarn-managing-docker-containers
           sub: yarn-managing-docker-containers/navigation.json
-          
+
         - text: Configuring Apache Hadoop YARN Log Aggregation
           href: yarn-monitoring-clusters-applications/index.html
           id: pub-yarn-monitoring-clusters-applications
@@ -378,20 +378,21 @@
           id: pub-tuning-hue
           sub: tuning-hue/navigation.json
 
-        - text: Configuring Apache HBase for use with Apache Phoenix
-          href: phoenix-configure-hbase/index.html
-          id: pub-phoenix-configure-hbase
-          sub: phoenix-configure-hbase/navigation.json
+#Phoenix moved to OpDB. Gokul 16 April
+#        - text: Configuring Apache HBase for use with Apache Phoenix
+#          href: phoenix-configure-hbase/index.html
+#          id: pub-phoenix-configure-hbase
+#          sub: phoenix-configure-hbase/navigation.json
 
-        - text: Using Apache Phoenix to Store and Access Data
-          href: phoenix-access-data/index.html
-          id: pub-phoenix-access-data
-          sub: phoenix-access-data/navigation.json
+#        - text: Using Apache Phoenix to Store and Access Data
+#          href: phoenix-access-data/index.html
+#          id: pub-phoenix-access-data
+#          sub: phoenix-access-data/navigation.json
 
-        - text: Using Apache Phoenix-Spark Connector
-          href: phoenix-spark-connector/index.html
-          id: pub-phoenix-spark-connector
-          sub: phoenix-spark-connector/navigation.json
+#        - text: Using Apache Phoenix-Spark Connector
+#          href: phoenix-spark-connector/index.html
+#          id: pub-phoenix-spark-connector
+#          sub: phoenix-spark-connector/navigation.json
 
         - text: Search Tutorial
           href: search-tutorial/index.html
@@ -465,6 +466,11 @@
           href: hbase-backup-dr/index.html
           id: pub-hbase-backup-dr
           sub: hbase-backup-dr/navigation.json
+
+        - text: Using Apache Phoenix to Store and Access Data
+          href: phoenix-access-data/index.html
+          id: pub-phoenix-access-data
+          sub: phoenix-access-data/navigation.json
 
     - text: Data Science
       href: howto-data-science.html
@@ -581,22 +587,22 @@
               href: kafka-configuring/index.html
               id: pub-kafka-configuring
               sub: kafka-configuring/navigation.json
-    
+
             - text: Securing Apache Kafka
               href: kafka-securing/index.html
               id: pub-kafka-securing
               sub: kafka-securing/navigation.json
-    
+
             - text: Tuning Apache Kafka Performance
               href: kafka-performance-tuning/index.html
               id: pub-kafka-performance-tuning
               sub: kafka-performance-tuning/navigation.json
-    
+
             - text: Managing Apache Kafka
               href: kafka-managing/index.html
               id: pub-kafka-managing
               sub: kafka-managing/navigation.json
-    
+
             - text: Developing Apache Kafka Applications
               href: kafka-developing-applications/index.html
               id: pub-kafka-developing-applications
@@ -706,7 +712,7 @@
       href: search-troubleshooting/index.html
       id: pub-search-troubleshooting
       sub: search-troubleshooting/navigation.json
-      
+
     - text: Troubleshooting Data Analytics Studio
       href: das-troubleshooting/index.html
       id: pub-das-troubleshooting
