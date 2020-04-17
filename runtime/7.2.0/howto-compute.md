@@ -12,36 +12,46 @@ publications:
   - title: Apache Hadoop YARN
     sub:
 
-    - title: Managing Applications on Apache Hadoop YARN
-      url: yarn-application-management/index.html
-      description: >-
-        Provides information about managing applications by using the
-        YARN REST APIs and YARN Services API.
-  
-    - title: Managing and Allocating Cluster Resources using Capacity Scheduler
-      url: yarn-allocate-resources/index.html
-      description: >-
-        Explains how to allocate cluster resources for the applications
-        using Capacity Scheduler.
-  
+     - title: Using YARN Web UI and CLI
+       url: yarn-using-ui-cli/index.html
+       description: >-
+        Explains how to use YARN Web UI to monitor clusters and
+        YARN CLI to view logs for running application.
+
     - title: Configuring Apache Hadoop YARN Security
       url: yarn-security/index.html
       description: >-
         Provides information about Access Control List and how to use
         YARN with a secure cluster.
-  
+
     - title: Apache Hadoop YARN High Availability
       url: yarn-high-availability/index.html
       description: >-
         Provides information about ResourceManager High Availability. It
         also describes the work preserving recovery process.
-  
-    - title: Monitoring Clusters and Apache Hadoop YARN Applications
+
+    - title: Managing and Allocating Cluster Resources using Capacity Scheduler
+      url: yarn-allocate-resources/index.html
+      description: >-
+        Explains how to allocate cluster resources for the applications
+        using Capacity Scheduler.
+
+    - title: Managing Apache Hadoop YARN Services
+      url: yarn-application-management/index.html
+      description: >-
+        Provides information about using the YARN REST APIs and
+        YARN Services API to manage YARN services.
+
+    - title: Managing YARN Docker Containers
+      url: yarn-managing-docker-containers/index.html
+      description: >-
+        Explains how to configure YARN to manage Docker containers.
+
+    - title: Configuring YARN Log Aggregation
       url: yarn-monitoring-clusters-applications/index.html
       description: >-
-        Describes how to monitor clusters, queues, applications,
-        services, flow activities, and nodes using YARN web user
-        interface and Cloudera Manager.
+        Provides information about moving local log files of any application
+        onto HDFS or a cloud-based storage.
 
 - column:
   - title: Apache ZooKeeper
