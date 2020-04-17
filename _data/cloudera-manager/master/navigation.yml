@@ -52,6 +52,11 @@
       id: pub-monitoring-and-diagnostics
       sub: monitoring-and-diagnostics/navigation.json
 
+    - text: Replication Manager
+      href: replication-manager/index.html
+      id: pub-replication-manager
+      sub: replication-manager/navigation.json
+
     - text: Security
       id: cat-howto-security
       sub:
