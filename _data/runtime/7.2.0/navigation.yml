@@ -228,27 +228,38 @@
     - text: Compute
       href: howto-compute.html
       sub:
-        - text: Managing Applications on Apache Hadoop YARN
-          href: yarn-application-management/index.html
-          id: pub-yarn-application-management
-          sub: yarn-application-management/navigation.json
-
-        - text: Managing and Allocating Cluster Resources using Capacity Scheduler
-          href: yarn-allocate-resources/index.html
-          id: pub-yarn-allocate-resources
-          sub: yarn-allocate-resources/navigation.json
+      
+        - text: Using YARN Web UI and CLI
+          href: yarn-using-ui-cli/index.html
+          id: pub-yarn-using-ui-cli
+          sub: yarn-using-ui-cli/navigation.json
 
         - text: Configuring Apache Hadoop YARN Security
           href: yarn-security/index.html
           id: pub-yarn-security
           sub: yarn-security/navigation.json
 
-        - text: Apache Hadoop YARN High Availability
+        - text: Configuring Apache Hadoop YARN High Availability
           href: yarn-high-availability/index.html
           id: pub-yarn-high-availability
           sub: yarn-high-availability/navigation.json
 
-        - text: Monitoring Clusters and Apache Hadoop YARN Applications
+        - text: Managing and Allocating Cluster Resources using Capacity Scheduler
+          href: yarn-allocate-resources/index.html
+          id: pub-yarn-allocate-resources
+          sub: yarn-allocate-resources/navigation.json
+
+        - text: Managing Apache Hadoop YARN Services
+          href: yarn-application-management/index.html
+          id: pub-yarn-application-management
+          sub: yarn-application-management/navigation.json
+
+        - text: Managing YARN Docker Containers
+          href: yarn-managing-docker-containers/index.html
+          id: pub-yarn-managing-docker-containers
+          sub: yarn-managing-docker-containers/navigation.json
+
+        - text: Configuring Apache Hadoop YARN Log Aggregation
           href: yarn-monitoring-clusters-applications/index.html
           id: pub-yarn-monitoring-clusters-applications
           sub: yarn-monitoring-clusters-applications/navigation.json
