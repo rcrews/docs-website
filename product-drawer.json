@@ -11,7 +11,7 @@ json:
 - title: Data Platform
   products:
     - text: Overview
-      href: /cdp/cloud/index.html
+      href: /cdp/latest/index.html
       icon: /common/img/mini_icons/icon-cdp.png
 
     - text: Data Catalog

@@ -38,11 +38,11 @@ Warehouse), and machine learning workspaces (Machine Learning).
   * *Easily manage hybrid Kafka architectures* - Running a Cloudera
     supported Kafka distribution on-premises and Kafka in CDP Data Hub
     ensures consistent tooling and support, minimizing integration risks.
-  
+
   * *Easy migration to public cloud* - Leveraging NiFi along with your
     hybrid Kafka architecture can help move and migrate any data set to the
     public cloud with ease.
-  
+
   * *Build cloud-native streaming applications* - Kafka deployments in CDP
     Data Hub can serve as your building blocks to build cloud-native
     streaming applications in the public cloud advanced messaging
@@ -120,5 +120,5 @@ of models for production environments.
 
 The full release documentation including release notes for each service
 is available
-[here](/cdp/cloud/index.html)
+[here](/cdp/latest/index.html)
 (Service Name → Release Notes → What’s New).

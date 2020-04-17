@@ -41,7 +41,7 @@ Warehouse), and machine learning workspaces (Machine Learning).
 
 * *Accelerated Data Warehouse SQL at Massive Scale* - For demanding, long
   running workloads on massive data volumes, typical of an enterprise data
-  warehouse, Hive on LLAP delivers speed without sacrificing scalability. 
+  warehouse, Hive on LLAP delivers speed without sacrificing scalability.
   With this update, Hive has been further optimized for even faster SQL
   performance with improvements in memory handling and accuracy of table
   statistics for partitioned tables, ensuring all your reports meet or
@@ -162,5 +162,5 @@ Warehouse), and machine learning workspaces (Machine Learning).
 
 The full release documentation including release notes for each service
 is available
-[here](/cdp/cloud/index.html)
+[here](/cdp/latest/index.html)
 (Service Name → Release Notes → What’s New).

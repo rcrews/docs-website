@@ -62,6 +62,7 @@
     # aws s3 cp ${REMOTE}/ccp/2.0.1/navigation.json                   "${LOCAL}"/ccp/2.0.1/navigation.json
     # aws s3 cp ${REMOTE}/cdf-datahub/7.0.2/navigation.json           "${LOCAL}"/cdf-datahub/7.0.2/navigation.json
     # aws s3 cp ${REMOTE}/cdp/cloud/navigation.json                   "${LOCAL}"/cdp/cloud/navigation.json
+    # aws s3 cp ${REMOTE}/cdp/latest/navigation.json                  "${LOCAL}"/cdp/latest/navigation.json
     # aws s3 cp ${REMOTE}/cdpdc/7.0/navigation.json                   "${LOCAL}"/cdpdc/7.0/navigation.json
     # aws s3 cp ${REMOTE}/cem/1.0.0/navigation.json                   "${LOCAL}"/cem/1.0.0/navigation.json
     # aws s3 cp ${REMOTE}/cem/1.1.0/navigation.json                   "${LOCAL}"/cem/1.1.0/navigation.json

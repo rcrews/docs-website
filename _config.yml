@@ -112,6 +112,7 @@ exclude:
   - /ccp/2.0.1/sitemap.xml
   - /cdf-datahub/7.0.2/sitemap.xml
   - /cdp/cloud/sitemap.xml
+  - /cdp/latest/sitemap.xml
   - /cdpdc/7.0/sitemap.xml
   - /cem/1.0.0/sitemap.xml
   - /cem/1.1.0/sitemap.xml

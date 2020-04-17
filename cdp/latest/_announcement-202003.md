@@ -88,22 +88,22 @@ including in the CPD UI
 
   * Tech preview of RDBMS-like capabilities like ANSI SQL, Secondary indexes
     and views
-  
+
   * Improved performance
-  
+
   * Numerous bug fixes
-  
+
   * Enhancements to operational support tools
 
 * ‘Real-time Data Mart’ improvements to simplify configuration &
   maintenance and performance improvements
 
   * Auto-configuration of NTP (in AWS),
-  
+
   * Faster compression
-  
+
   * New maintenance mode for tablet servers
-  
+
   * Support for rolling restarts to avoid service outages while applying
     configuration changes
 
@@ -131,7 +131,7 @@ This release also includes over 125 bug fixes, security improvements,
 and other improvements to the CDP continuous delivery pipeline &
 processes.  Full release documentation including release notes for each
 service is available
-[here](/cdp/cloud/index.html)
+[here](/cdp/latest/index.html)
 (Service Name → Release Notes → What’s New).
 
 <!--

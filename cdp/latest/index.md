@@ -2,7 +2,7 @@
 layout: product
 title: Overview
 version: cloud
-base-path: /cdp/cloud/
+base-path: /cdp/latest/
 
 # sections:
 #   - title: Release Notes
