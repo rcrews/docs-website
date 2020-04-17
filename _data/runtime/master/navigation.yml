@@ -254,7 +254,6 @@
           id: pub-yarn-using-ui-cli
           sub: yarn-using-ui-cli/navigation.json
 
-
         - text: Configuring Apache Hadoop YARN Security
           href: yarn-security/index.html
           id: pub-yarn-security
