@@ -49,6 +49,7 @@ exclude:
   - /HDPDocuments/HDF3/HDF-3.5.1/
   - /cdf-datahub/7.1.0/
   - /cdf-datahub/7.1.1/
+  - /cdp/latest/
   - /cem/1.2.0/
   - /cfm/1.1.0/
   - /cfm/2.0.0/

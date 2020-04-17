@@ -1,0 +1,166 @@
+---
+layout: fluid-topic
+title: CDP Public Cloud Updates - November 2019
+copyright:
+  holder: Cloudera, Inc.
+  years:
+    - 2019
+---
+# {{ page.title }}
+
+Cloudera is pleased to announce the latest feature updates to CDP Public
+Cloud delivered in November 2019. CDP is an integrated data platform
+that is easy to deploy, manage, and use. CDP Public Cloud provides
+secured and governed data lakes (SDX), an environment with a wide range
+of analytic engines (Data Hub) as well as self-service data marts (Data
+Warehouse), and machine learning workspaces (Machine Learning).
+
+## Overview
+
+* *Replication Manager* is now available in CDP Public Cloud and supports
+  replication of HDFS & Hive from CDH clusters (version 5.14 and later) to
+  CDP Public Cloud. Additional components & data sources (e.g. HDP
+  clusters) will be supported in future updates.
+
+* *CDP Public Cloud on Azure* is now in Tech Preview with support for SDX
+  and
+  [Data Hub](/data-hub/cloud/create-cluster-azure/topics/mc-create-cluster-from-template.html)
+  services, suitable for demos and a limited set of onboarded
+  customers. Cloudera Data Warehouse and Cloudera Machine Learning on
+  Azure are planned for future updates.
+
+## Cloudera Data Warehouse
+
+* *Rapid Auto-scaling* - For critical workloads with an immediate need for
+  availability and a short term lifespan, Impala VMs can auto-scale to
+  ensure results are delivered as fast as possible.  With this update,
+  autoscaling happens significantly faster (seconds vs. minutes) by
+  preparing more of the package in advance of the auto-scale request,
+  saving valuable resource consumption costs. Read more about
+  [Impala Auto-scaling](/data-warehouse/cloud/overview/topics/dw-impala-autoscaling-overview.html).
+
+* *Accelerated Data Warehouse SQL at Massive Scale* - For demanding, long
+  running workloads on massive data volumes, typical of an enterprise data
+  warehouse, Hive on LLAP delivers speed without sacrificing scalability. 
+  With this update, Hive has been further optimized for even faster SQL
+  performance with improvements in memory handling and accuracy of table
+  statistics for partitioned tables, ensuring all your reports meet or
+  exceed business KPIs. Read more about managing and tuning
+  [Hive LLAP Virtual Data Warehouses](data-warehouse/cloud/managing-warehouses/topics/dw-tuning-hive-llap-data-warehouses.html).
+
+* *Built-in Fuzzy Full Text Search* - Finding “close enough” text matches,
+  such as finding customer name matches when mis-spelled, or by
+  approximate address, may require multiple queries into the same data,
+  with different search engines.  With this update, Impala streamlines
+  such searches with native support for Jaro-Winkler fuzzy string
+  matching, making it faster and easier to retrieve numerically scored,
+  approximate match results in a single query, making it far easier for
+  line of business users to take advantage of text searching in their
+  analytics. Read more about
+  [Impala string functions](/runtime/7.0.2/impala-sql-reference/topics/impala-string-functions.html#string_functions).
+
+* *Optimized Cloud Data Warehousing* - Returning large result sets across
+  long latency connections in the cloud can be slow and expensive, as they
+  tend to be demanding on server-side execution resources. With this
+  update, server-side results spooling dramatically frees up those
+  execution resources, speeding up how users see their query results while
+  also reducing cloud consumption cost. Read more about
+  [spooling Impala query results](/runtime/7.0.2/impala-manage/topics/impala-query-results-spooling.html).
+
+## Cloudera Machine Learning
+
+* *Analytical Applications:* This capability enables data science teams
+  build and host persistent web-based applications and dashboards using
+  frameworks like Flask, Dash, and Shiny to easily share analytics results
+  and insights with business stakeholders. Users can build completely
+  custom functional applications for everything from dashboard reports
+  like Tableau to portable predictive apps that make use of underlying
+  machine learning models in business user UIs. Check
+  [this blog](https://blog.cloudera.com/building-an-interactive-machine-learning-application-with-cml/)
+  to see how
+  it works and don’t forget to share it with your colleagues and
+  customers.
+
+* *Resource Quotas:* This feature gives CML workspace site administrators
+  a way to enable CPU, GPU, and memory usage quotas per user. Quotas limit
+  the aggregate resource consumption for data scientists and enable admins
+  to control resource costs more granularly.
+
+* *Diagnostic Bundles:* CML now allows site administrators to download
+  diagnostic bundles from the Site Admin panel making it easier to
+  analyze, share, and address issues.
+
+## Cloudera Data Hub
+
+* *[Operational Database](https://www.cloudera.com/products/operational-db.html) cluster enhancements:*
+  The Operational Database
+  [cluster definition](/data-hub/cloud/overview/topics/dh-cluster-definitions-default.html)
+  enables customers to build real-time,
+  high-concurrency, mission-critical business applications in the cloud
+  environment. Key enhancements in this update include real-time
+  monitoring, out-of-the-box resilience, and replication capabilities
+  (Tech Preview) for Disaster Recovery (DR) and for enabling seamless
+  migration of operational applications from on-premises to cloud.
+
+* *Real-Time Data Mart [cluster definition](/data-hub/cloud/overview/topics/dh-cluster-definitions-default.html):*
+  Now available in Data Hub with
+  Apache Kudu, Apache Impala, and Apache Spark for real-time data
+  management and operational analytics use cases. This cluster definition
+  is an excellent choice for real-time analytics on fast changing data,
+  and can be leveraged with Cloudera Data Warehouse (CDW) for a holistic
+  analytics experience.
+
+* *Enhanced SQL Access for DE Clusters:*
+  [Data Hub](/data-hub/cloud/overview/topics/dh-overview.html)
+  clusters built with
+  [Data Engineering](/data-hub/cloud/overview/topics/dh-cluster-definitions-default.html)
+  cluster definition now offer an improved SQL experience for
+  Hive SQL users with smart query authorizing, inbuild performance
+  analysis & recommendations tools available in
+  [Data Analytics Studio](https://www.cloudera.com/downloads/data-plane/data-analytics-studio.html)
+  (DAS). This capability provides an enhanced self-service experience for
+  data analysts and data engineers.
+
+* *Simplified, consistent access to [Amazon S3](/runtime/7.0.2/cloud-data-access/topics/cr-cda-working-with-amazon-s3.html):*
+  S3Guard provides strong
+  consistency guarantees when accessing data in S3 across multiple
+  workloads or clusters. S3guard is now easier to use in CDP, allowing
+  customers to either leverage existing DynamoDB infrastructure or have
+  Data Hub clusters automatically manage this infrastructure, resulting in
+  less administration overhead and minimizing costs.
+
+## Management Console
+
+* *Wire Encryption:* CDP Data Hub and SDX now offer TLS encryption across
+  all endpoints for both data and control traffic, providing an internal
+  Certificate Authority (CA) with commonly trusted certificates and
+  automatic certificate expiry warnings. With auto-TLS, CDP’s default
+  setting, adding new cluster hosts or services to a cluster with auto-TLS
+  enabled automatically creates and deploys the required certificates.
+  Automatic wire encryption makes your complete deployment secure by
+  design and reduces business risk as well as operational overheads
+  associated with enabling and managing TLS encryption on the cluster.
+  Read more about
+  [how to use S3 encryption with CDP](/management-console/cloud/environments/topics/mc-idbroker-encryption.html).
+
+* *Consistent FreeIPA user password across all environments:* Users’
+  FreeIPA passwords are automatically propagated to each newly created
+  environment. Users can still manage their FreeIPA password from the User
+  Management page and reset it if needed. Learn more about
+  [how CDP federates identities across clouds](/management-console/cloud/security-overview/topics/security_how_identity_federation_works_in_cdp.html).
+
+## Data Catalog
+
+* *Ranger Audit Profiler:* Adds ability to view access patterns from a
+  forensic audit or compliance perspective. The audit profiler uses the
+  Apache Ranger audit logs to show the most recent raw audit event data as
+  well as summarized views of audits by type of access and access outcomes
+  (allowed/denied). Access pattern visualizations make anomalies stand out
+  and allow for focussed investigation and improved security. Find out
+  more about how any data can be profiled
+  [using the Data Catalog Profilers](/data-catalog/cloud/managing/topics/dc-profiles.html).
+
+The full release documentation including release notes for each service
+is available
+[here](/cdp/cloud/index.html)
+(Service Name → Release Notes → What’s New).

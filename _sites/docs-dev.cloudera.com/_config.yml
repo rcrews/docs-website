@@ -39,6 +39,9 @@ exclude:
   - /README.md
   - "*.bbprojectd"
 
+  # Library going away
+  - /cdp/cloud/
+
   # Static content that doesn't need to be part of most builds
   - /common/fonts/
   - /common/img/
