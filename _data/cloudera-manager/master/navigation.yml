@@ -94,11 +94,6 @@
       id: pub-installation
       sub: installation/navigation.json
 
-    - text: Upgrade Guide
-      href: upgrade/index.html
-      id: pub-upgrade
-      sub: upgrade/navigation.json
-
 - text: Troubleshooting
   id: cat-troubleshooting
   sub:
