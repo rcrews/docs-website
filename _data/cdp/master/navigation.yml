@@ -25,7 +25,7 @@
 #   id: cat-planning
 #   sub:
 
-- text: Upgrade
+- text: Upgrade Guide 
   id: cat-installation
   sub:
     - text: Upgrade

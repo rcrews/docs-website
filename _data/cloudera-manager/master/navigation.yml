@@ -86,7 +86,7 @@
           id: security-how-to-guides.html
           sub: security-how-to-guides/navigation.json
 
-- text: Installation & Upgrade
+- text: Installation
   id: cat-installation
   sub:
     - text: Installation
