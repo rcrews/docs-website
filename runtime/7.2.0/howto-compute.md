@@ -12,11 +12,11 @@ publications:
   - title: Apache Hadoop YARN
     sub:
 
-     - title: Using YARN Web UI and CLI
-       url: yarn-using-ui-cli/index.html
-       description: >-
-        Explains how to use YARN Web UI to monitor clusters and
-        YARN CLI to view logs for running application.
+    - title: Using YARN Web UI and CLI
+      url: yarn-using-ui-cli/index.html
+      description: >-
+       Explains how to use YARN Web UI to monitor clusters and
+       YARN CLI to view logs for running application.
 
     - title: Configuring Apache Hadoop YARN Security
       url: yarn-security/index.html
@@ -68,7 +68,7 @@ publications:
       description: >-
         Provides information about configuring the Apache
         ZooKeeper service.
-  
+
     - title: Managing Apache ZooKeeper Security
       url: zookeeper-security/index.html
       description: >-
