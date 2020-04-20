@@ -47,7 +47,7 @@
     # brew services start tomcat
     LOCAL="${HOME}/Library/Application Support/tomcat@9/webapps/ROOT"
     REMOTE='s3://docs-stage.cloudera.com'
-    git checkout my-master
+    # git checkout my-master
     bundle exec jekyll build --trace
     aws s3 sync ${REMOTE}/apps                                      "${LOCAL}"/apps
     aws s3 sync ${REMOTE}/common/fonts                              "${LOCAL}"/common/fonts
