@@ -357,6 +357,11 @@
           id: pub-search-deploying
           sub: search-deploying/navigation.json
 
+        - text: Securing Cloudera Search
+          href: search-security/index.html
+          id: pub-search-security
+          sub: search-security/navigation.json
+
         - text: Tuning Cloudera Search
           href: search-tuning/index.html
           id: pub-search-tuning
@@ -483,7 +488,7 @@
           href: security-ranger-authentication-unix-ldap-ad/index.html
           id: pub-security-ranger-authentication-unix-ldap-ad
           sub: security-ranger-authentication-unix-ldap-ad/navigation.json
-          
+
         - text: Configuring Advanced Security Options for Apache Ranger
           href: security-ranger-configuring-advanced/index.html
           id: pub-security-ranger-configuring-advanced

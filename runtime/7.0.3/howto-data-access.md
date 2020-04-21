@@ -101,6 +101,18 @@ publications:
     url: search-deploying/index.html
     description: >-
       Describes how to deploy Cloudera Search.
+      
+  - title: Securing Cloudera Search
+    url: search-security/index.html
+    description: >-
+      Describes how to secure Solr network connections,
+      configure authentication and authorization.
+    
+  - title: Tuning Cloudera Search
+    url: search-tuning/index.html
+    description: >-
+      Describes how to optimize Cloudera Search performance for
+      various use cases.
 
   - title: Managing Cloudera Search
     url: search-managing/index.html
