@@ -59,7 +59,7 @@ publications:
     url: integrating-hive-and-bi/index.html
     description: >-
       Covers accessing Spark data to and from Hive, accessing data in Kafka
-      from Hive, and using the JdbcStorageHandler to access an external data source, 
+      from Hive, and using the JdbcStorageHandler to access an external data source,
       such as Business Intelligence (BI) tools.
 
   - title: Migrating Data to Apache Hive
@@ -92,6 +92,20 @@ publications:
       Describes how to configure Hue, customize its web UI, and to
       enable integration with Apache Atlas.
 
+  - title: Securing Hue
+    url: securing-hue/index.html
+    description: >-
+      Describes how to set Hue user and application permissions, configure
+      SSL connections, LDAP authentication, and integration with Apache
+      Ranger and Knox.
+
+  - title: Tuning Hue
+    url: tuning-hue/index.html
+    description: >-
+      Describes how to add a load balancer and configure high availability
+      for Hue and between Hue and other components, such as Hive, Impala,
+      and HDFS.
+
   - title: Search Tutorial
     url: search-tutorial/index.html
     description: >-
@@ -101,13 +115,13 @@ publications:
     url: search-deploying/index.html
     description: >-
       Describes how to deploy Cloudera Search.
-      
+
   - title: Securing Cloudera Search
     url: search-security/index.html
     description: >-
       Describes how to secure Solr network connections,
       configure authentication and authorization.
-    
+
   - title: Tuning Cloudera Search
     url: search-tuning/index.html
     description: >-
@@ -138,5 +152,5 @@ addresses enterprise data warehouse demands for transactional data in
 the ORC file format. Impala performs high-performance, low-latency SQL
 queries on data in Parquet and other formats. Hue is a web-based interactive
 editor for querying the Hive metastore that also creates Oozie workflows. DAS
-is a web application for performing operations on Hive tables and also 
+is a web application for performing operations on Hive tables and also
 provides recommendations for optimizing the performance of your queries.

@@ -7,12 +7,6 @@ title: Operational Database
 # * HBase
 
 publications:
-  - title: Getting Started with Apache HBase
-    url: hbase-getting-started/index.html
-    description: >-
-      Provides information about the operational database cluster shape,
-      and instructions to create an operational database. Provides
-      instructions to start, stop your HBase cluster.
 
   - title: Configuring Apache HBase
     url: configuring-hbase/index.html
