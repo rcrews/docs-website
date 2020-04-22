@@ -21,11 +21,12 @@ publications:
       Lineage offers insight into where data came from and how to
       determine the impact of changes to data assets.
 
-  - title: Securing Atlas
-    url: atlas-securing/index.html
-    description: >-
-      Configure Atlas' authentication and authorization through Cloudera
-      Manager and using access policies in Apache Ranger.
+  # This is OUT for 7.1.0, per Dave Slack 2/16
+  # - title: Securing Atlas
+  #   url: atlas-securing/index.html
+  #   description: >-
+  #     Configure Atlas' authentication and authorization through Cloudera
+  #     Manager and using access policies in Apache Ranger.
 
 - column:
 
