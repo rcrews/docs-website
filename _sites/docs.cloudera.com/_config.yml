@@ -63,6 +63,7 @@ exclude:
   - /runtime/7.2.0/
 
   # "master" version for docs-dev only
+  - /HDPDocuments/HDF3/HDF-master/
   - /best-practices/master/
   - /ccp/master/
   - /cdf-datahub/master/
