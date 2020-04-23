@@ -21,6 +21,11 @@
       id: pub-concepts
       sub: concepts/navigation.json
 
+    - text: Security Overview
+      href: security-overview/index.html
+      id: security-overview
+      sub: security-overview/navigation.json
+
 # - text: Planning
 #   id: cat-planning
 #   sub:
@@ -32,12 +37,12 @@
 - text: How To
   id: cat-howto
   sub:
-    - text: Managing Data Hub Clusters
+    - text: Managing Clusters
       href: managing-clusters/index.html
       id: pub-managing-clusters
       sub: managing-clusters/navigation.json
 
-    - text: Configuring Data Hub Clusters
+    - text: Configuring Clusters
       href: configuring-clusters/index.html
       id: pub-configuring-clusters
       sub: configuring-clusters/navigation.json
@@ -47,9 +52,55 @@
       id: pub-monitoring-and-diagnostics
       sub: monitoring-and-diagnostics/navigation.json
 
-# - text: Troubleshooting
-#   id: cat-troubleshooting
-#   sub:
+    - text: Replication Manager
+      href: replication-manager/index.html
+      id: pub-replication-manager
+      sub: replication-manager/navigation.json
+
+    - text: Security
+      id: cat-howto-security
+      sub:
+
+        - text: Configuring Authentication in Cloudera Manager
+          href: security-kerberos-authentication/index.html
+          id: security-kerberos-authentication.html
+          sub: security-kerberos-authentication/navigation.json
+
+        - text: Cloudera Authorization
+          href: security-authorization/index.html
+          id: security-authorization
+          sub: security-authorization/navigation.json
+
+        - text: Encrypting Data in Transit
+          href: security-encrypting-data-in-transit/index.html
+          id: security-encrypting-data-in-transit.html
+          sub: security-encrypting-data-in-transit/navigation.json
+
+        - text: Encrypting Data at Rest
+          href: security-encrypting-data-at-rest/index.html
+          id: security-encrypting-data-at-rest.html
+          sub: security-encrypting-data-at-rest/navigation.json
+
+        - text: How-to Guides
+          href: security-how-to-guides/index.html
+          id: securityhow-to-guides.html
+          sub: security-how-to-guides/navigation.json
+
+- text: Installation
+  id: cat-installation
+  sub:
+    - text: Installation
+      href: installation/index.html
+      id: pub-installation
+      sub: installation/navigation.json
+
+- text: Troubleshooting
+  id: cat-troubleshooting
+  sub:
+    - text: Troubleshooting Security Issues
+      href: security-troubleshooting/index.html
+      id: security-troubleshooting.html
+      sub: security-troubleshooting/navigation.json
 
 - text: Reference
   id: cat-reference
