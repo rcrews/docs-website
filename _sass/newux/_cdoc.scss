@@ -52,7 +52,7 @@
  */
 
 /* adjusts the left margin so all boxes are aligned. */
-.cdoc-page ~ section li dl {
+.cdoc-page ~ article li dl {
   left: 0;
 }
 
@@ -72,11 +72,11 @@ li .dd[class*='cdoc-'] {
   counter-reset: step-counter;
 }
 
-.cdoc-page ~ section.nested1 {
+.cdoc-page ~ article.nested1 {
   counter-increment: step-counter;
 }
 
-.cdoc-page ~ section.nested1 h2.topictitle2:before {
+.cdoc-page ~ article.nested1 h2.topictitle2:before {
   content: "Step " counter(step-counter) ": ";
 }
 
@@ -252,6 +252,7 @@ pre.codeblock var {
 .cdoc-hidden,
 .cdoc-hidden-db,
 .cdoc-hidden-jdk,
+.cdoc-hidden-cluster,
 .cdoc-hidden-cdh,
 .cdoc-hidden-cm,
 .cdoc-hidden-product,

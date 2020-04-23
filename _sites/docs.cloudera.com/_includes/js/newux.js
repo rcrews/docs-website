@@ -1321,12 +1321,6 @@ var NEWUX = (function($) {
                 $(p).find(`#${i}`).fadeIn('slow');
             });
         },
-        filterStuff: function() {
-            filterStuff($);
-        },
-        cdocUtils: function() {
-            cdocUtils($);
-        },
         deTarget: function() {
             Array.from(document.querySelectorAll("a[target]")).forEach(at => {
                 if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes("//")) { return; }
@@ -1336,15 +1330,14 @@ var NEWUX = (function($) {
         objectForYouTube: function() {
             /**
              * Transforms DITA/HTML4 object element to YouTube-preferred iframe markup.
-             * DITA: &lt;object data="https://www.youtube.com/embed/WhOyVz3VJ7c">&lt;/object>
+             * DITA: <object data="https://www.youtube.com/embed/WhOyVz3VJ7c"></object>
              */
-
             const ALLOW = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
             const WIDTH = 560;
             const HEIGHT = 315;
             document.querySelectorAll("object").forEach(o => {
                 if (o.data.match(/\/\/www\.youtube\.com\//)) {
-                    iframe = document.createElement("iframe");
+                    let iframe = document.createElement("iframe");
                     iframe.setAttribute("frameborder", 0);
                     iframe.setAttribute("allow", ALLOW);
                     iframe.setAttribute("allowfullscreen", "allowfullscreen");
@@ -1375,8 +1368,6 @@ var NEWUX = (function($) {
             this.deTarget();
             this.objectForYouTube();
             this.tabs();
-            this.filterStuff();
-            this.cdocUtils();
         }
     };
 

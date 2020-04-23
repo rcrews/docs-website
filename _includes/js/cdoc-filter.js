@@ -128,7 +128,7 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
   ].join('\n');
 };
 
-(function($) {
+function filterStuff($) {
   function scrollTo(el, offset) {
     if (el) {
       $('html, body').animate({
@@ -166,10 +166,6 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
   function isCMUpgradePage() {
     return isPage('cm_upgrade');
   }
-  
-  function isDbBackupPage() {
-    return isPage('ug_cm_db');
-  }
 
   function isCMDowngradePage() {
     return isPage('cm_downgrade');
@@ -205,8 +201,6 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
   } else if (isCDHUpgradePage()) {
     repoGenerator = new RepoGenerator('cdh', 'Cloudera CDH');
   } else if (isHostUpgradeBeforePage() || isHostUpgradeAfterPage()) {
-    repoGenerator = new RepoGenerator('cm', 'Cloudera Manager');
-  } else if (isDbBackupPage()) {
     repoGenerator = new RepoGenerator('cm', 'Cloudera Manager');
   }
 
@@ -346,6 +340,15 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     var i, paidVersions = $('.current_cdh_paid_releases').text();
     return getAllVersions(paidVersions);
   }
+  
+  /** 
+   * JD 4.2.2020: Add a separate function for getting all Cloudera Runtime releases
+   * 
+   */
+  function getAllCrVersions() {
+    var i, paidCrVersions = $('.current_cr_releases').text()
+    return getAllVersions(paidCrVersions);
+  }
 
   /**
    * Updates the archive_cloudera_com_input input box's value.
@@ -366,7 +369,7 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     var currValue = $('#archive_cloudera_com_input').val();
 
     // Adjust the input based on the paywall selection.
-    if (currValue.indexOf(ARCHIVE_CLOUDERA_COM) !== -1 || $.trim(currValue) === '') {
+    if (currValue && currValue.indexOf(ARCHIVE_CLOUDERA_COM) !== -1 || $.trim(currValue) === '') {
       setArchiveClouderaInput(paid ? ARCHIVE_CLOUDERA_COM_PAID : ARCHIVE_CLOUDERA_COM_FREE);
     }
   }
@@ -408,10 +411,6 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       pdVersion = cdhVersion || defaultCdhVersion;
       category = 'cdh';
     } else if (isHostUpgradeBeforePage() || isHostUpgradeAfterPage()) {
-      cmVersion = $('#cdoc-cm-select').val();
-      pdVersion = cmVersion || defaultCmVersion;
-      category = 'cdh';
-    } else if (isDbBackupPage()) {
       cmVersion = $('#cdoc-cm-select').val();
       pdVersion = cmVersion || defaultCmVersion;
       category = 'cdh';
@@ -461,11 +460,11 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     $('<button>').attr('id', 'archive_cloudera_com_btn').addClass('cdoc-archive_cloudera_com_btn').text('Apply').appendTo($archiveUrlContainer);
     $('#archive_cloudera_com_input').change(function() {
       populateRepoAndList();
-      //sendAnalytics('repo_url', 'change');
+      sendAnalytics('repo_url', 'change');
     });
     $('#archive_cloudera_com_btn').click(function() {
       populateRepoAndList();
-      //sendAnalytics('repo_url', 'apply');
+      sendAnalytics('repo_url', 'apply');
     });
   }
 
@@ -953,11 +952,11 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       changeSelection(category, fromOrDest, $select.val());
       populateRepoAndList();
       endRefresh();
-      /*  if (fromOrDest) {
+      if (fromOrDest) {
         sendAnalytics('filter', category + '-' + fromOrDest, $select.val());
       } else {
         sendAnalytics('filter', category, $select.val());
-      }*/
+      }
     });
     $('<label>').text(label).addClass('control-label').appendTo($formGroup);
     var $div = $('<div>').addClass('controls').appendTo($formGroup);
@@ -1045,6 +1044,26 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       }
     }
   }
+  
+  /**
+   * JD 4.2.2020: Seperate populate function for CR clusters
+   */
+  function populateCrVersions(paidVersions, prefix, array) {
+    var i, version;
+
+    // Read the list of new versions from the page.
+    trimAll(paidVersions);
+
+    for (i = 0; i < paidVersions.length; ++i) {
+      version = paidVersions[i];
+      if (version) {
+        array.push({
+          value: version,
+          label: prefix + ' ' + version + ' (License Required)'
+        });
+      }
+    }
+  }
 
   var osOptions = [{
     value: '',
@@ -1110,12 +1129,15 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     label: 'Mixed'
   }];
 
-  var cdhFromOptions = [{
+  /**
+   * JD 4.2.2020: Replace CDH From and Dest options with broader 'Cluster' options
+   */
+  var clusterFromOptions = [{
     label: 'Choose...',
     value: ''
   }];
 
-  var cdhDestOptions = [{
+  var clusterDestOptions = [{
     label: 'Choose...',
     value: ''
   }];
@@ -1125,8 +1147,14 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     value: ''
   }];
 
-  populateVersions(getAllPaidCDHVersions(), getAllFreeCDHVersions(), 'CDH', cdhFromOptions);
-  populateVersions(getAllPaidCDHVersions(), getAllFreeCDHVersions(), 'CDH', cdhDestOptions);
+  /**
+   * JD 4.2.2020: Add calls to separate populate function for Cloudera Runtime releases 
+   * and set options to 'Cluster' for both CR and CDH releases
+   */
+  populateCrVersions(getAllCrVersions(), 'CR', clusterFromOptions);
+  populateCrVersions(getAllCrVersions(), 'CR', clusterDestOptions);
+  populateVersions(getAllPaidCDHVersions(), getAllFreeCDHVersions(), 'CDH', clusterFromOptions);
+  populateVersions(getAllPaidCDHVersions(), getAllFreeCDHVersions(), 'CDH', clusterDestOptions);
   populateVersions(getAllPaidCMVersions(), getAllFreeCMVersions(), 'Cloudera Manager', cmOptions);
 
   var productOptions = [{
@@ -1193,7 +1221,7 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       }
       $url.text(url);
       copyToClipboard($url);
-      //sendAnalytics('filter', 'share', url);
+      sendAnalytics('filter', 'share', url);
     });
 
     var addOSFilter = function() {
@@ -1216,12 +1244,15 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       addFilter('New Cloudera Manager Version', 'cm', 'dest', cmOptions, $filter);
     };
 
-    var addCDHFromFilter = function() {
-      addFilter('Current CDH Version', 'cdh', 'from', cdhFromOptions, $filter);
+    /**
+    * JD 4.2.2020: Replace CDH filters with broader 'Cluster' filters
+    */
+    var addClusterFromFilter = function() {
+      addFilter('Current Cluster Version', 'cluster', 'from', clusterFromOptions, $filter);
     };
 
-    var addCDHDestFilter = function() {
-      addFilter('New CDH Version', 'cdh', 'dest', cdhDestOptions, $filter);
+    var addClusterDestFilter = function() {
+      addFilter('New Cluster Version', 'cluster', 'dest', clusterDestOptions, $filter);
     };
 
     var addCMFilter = function() {
@@ -1243,18 +1274,26 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     } else if (isHueUpgradePage()) {
       addOSFilter();
       addFilter('Hue Database', 'db', '', dbOptions, $filter);
-      addCDHFromFilter();
+      addNavigatorFilter();
+      /**
+      * JD 4.2.2020: Call 'Cluster' filters
+      */
+      addClusterFromFilter();
       addSeparator($filter);
-      addCDHDestFilter();
+      addClusterDestFilter();
     } else if (isCDHUpgradePage()) {
       addCMFilter();
       addFilter('Install Method', 'method', '', methodOptions, $filter);
       //addFilter('Operating System', 'os', '', osOptions, $filter, 'cdoc-method-package cdoc-hidden-method');
       addFilter('Operating System', 'os', '', osOptions, $filter);
       addFilter('HDFS High Availability', 'ha', '', haOptions, $filter);
-      addCDHFromFilter();
+      addNavigatorFilter();
+      /**
+      * JD 4.2.2020: Call 'Cluster' filters
+      */
+      addClusterFromFilter();
       addSeparator($filter);
-      addCDHDestFilter();
+      addClusterDestFilter();
     } else if (isCMDowngradePage()) {
       addOSFilter();
       addDbFilter();
@@ -1278,8 +1317,6 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
       addFilter('New Operating System', 'os', '', osOptions, $filter);
     } else if (isJDKUpgradePage()) {
       addFilter('Current Operating System', 'os', '', osOptions, $filter);
-    } else if (isDbBackupPage()) {
-      addDbFilter();
     }
 
     var $pushRight = $('<p>').css('text-align', 'right');
@@ -1304,4 +1341,4 @@ RepoGenerator.prototype.generateClouderaList = function(baseUrl, pdVersion, os, 
     }
   }
 
-}(window.$));
+}

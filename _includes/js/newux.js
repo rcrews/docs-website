@@ -1321,6 +1321,12 @@ var NEWUX = (function($) {
                 $(p).find(`#${i}`).fadeIn('slow');
             });
         },
+        filterStuff: function() {
+            filterStuff($);
+        },
+        cdocUtils: function() {
+            cdocUtils($);
+        },
         deTarget: function() {
             Array.from(document.querySelectorAll("a[target]")).forEach(at => {
                 if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes("//")) { return; }
@@ -1368,6 +1374,8 @@ var NEWUX = (function($) {
             this.deTarget();
             this.objectForYouTube();
             this.tabs();
+            this.filterStuff();
+            this.cdocUtils();
         }
     };
 

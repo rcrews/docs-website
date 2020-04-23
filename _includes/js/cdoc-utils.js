@@ -161,7 +161,7 @@ function splitCdocLines(j, elem) {
   $elem.append(spans.join("\n"));
 }
 
-(function($) {
+function cdocUtils($) {
   var blockTypes = [
     'mysql', 'mariadb', 'postgres', 'oracle', 'impala', 'beeline',
     'hbase', 'zk', 'kadmin', 'kadminlocal', 'bash', 'python', 'scala'
@@ -192,4 +192,4 @@ function splitCdocLines(j, elem) {
   addCopyListener('cdoc-copy-btn');
 
   $('<div>').addClass('cdoc-feedback cdoc-hidden').appendTo('body');
-}(window.$));
+}
