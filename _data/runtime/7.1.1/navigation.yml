@@ -65,9 +65,9 @@
           sub: das-overview/navigation.json
 
         - text: Apache Hive Metastore Overview
-          href: hive-hms-overview/index.html
-          id: pub-hive-hms-overview
-          sub: hive-hms-overview/navigation.json
+          href: hive-metastore/index.html
+          id: pub-hive-metastore
+          sub: hive-metastore/navigation.json
 
         - text: Apache Hive Overview
           href: hive-introduction/index.html
@@ -94,6 +94,7 @@
           id: pub-phoenix-overview
           sub: phoenix-overview/navigation.json
 
+        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Cloudera Search Overview
           href: search-overview/index.html
           id: pub-search-overview
@@ -154,9 +155,30 @@
           id: pub-kafka-overview
           sub: kafka-overview/navigation.json
 
+        - text: Cruise Control Overview
+          href: publication-tbd/index.html
+          id: pub-publication-tbd
+          sub: publication-tbd/navigation.json
+
+        - text: SMM Overview
+          href: publication-tbd/index.html
+          id: publication-tbd
+          sub: publication-tbd/navigation.json
+
+        - text: SRM Overview
+          href: publication-tbd/index.html
+          id: pub-publication-tbd
+          sub: publication-tbd/navigation.json
+
+        - text: Schema Registry Overview
+          href: publication-tbd/index.html
+          id: pub-publication-tbd
+          sub: publication-tbd/navigation.json
+
 - text: Planning
   id: cat-planning
   sub:
+    # Search is IN 7.1.0. 2/14 Email from Mitra
     - text: Deployment Planning for Cloudera Search
       href: search-deployment-planning/index.html
       id: pub-search-deployment-planning
@@ -213,22 +235,20 @@
           id: pub-kudu-integration
           sub: kudu-integration/navigation.json
 
-        # Oxone is OUT for 7.1.0.2/14 email from Sairam
-        # - text: Storing Data Using Ozone
-        #   href: ozone-storing-data/index.html
-        #   id: pub-ozone-storing-data
-        #   sub: ozone-storing-data/navigation.json
+        - text: Storing Data Using Ozone
+          href: ozone-storing-data/index.html
+          id: pub-ozone-storing-data
+          sub: ozone-storing-data/navigation.json
 
-        # Oxone is OUT for 7.1.0.2/14 email from Sairam
-        # - text: Configuring Ozone Security
-        #   href: ozone-security/index.html
-        #   id: pub-ozone-security
-        #   sub: ozone-security/navigation.json
+        - text: Configuring Ozone Security
+          href: ozone-security/index.html
+          id: pub-ozone-security
+          sub: ozone-security/navigation.json
 
     - text: Compute
       href: howto-compute.html
       sub:
-      
+
         - text: Using YARN Web UI and CLI
           href: yarn-using-ui-cli/index.html
           id: pub-yarn-using-ui-cli
@@ -357,15 +377,26 @@
           id: pub-tuning-hue
           sub: tuning-hue/navigation.json
 
+#Phoenix moved to OpDB. Gokul 16 April
+#        - text: Configuring Apache HBase for use with Apache Phoenix
+#          href: phoenix-configure-hbase/index.html
+#          id: pub-phoenix-configure-hbase
+#          sub: phoenix-configure-hbase/navigation.json
+
+#        - text: Using Apache Phoenix to Store and Access Data
+#          href: phoenix-access-data/index.html
+#          id: pub-phoenix-access-data
+#          sub: phoenix-access-data/navigation.json
+
+#        - text: Using Apache Phoenix-Spark Connector
+#          href: phoenix-spark-connector/index.html
+#          id: pub-phoenix-spark-connector
+#          sub: phoenix-spark-connector/navigation.json
+
         - text: Search Tutorial
           href: search-tutorial/index.html
           id: pub-search-tutorial
           sub: search-tutorial/navigation.json
-
-        - text: Deploying Cloudera Search
-          href: search-deploying/index.html
-          id: pub-search-deploying
-          sub: search-deploying/navigation.json
 
         - text: Securing Cloudera Search
           href: search-security/index.html
@@ -435,6 +466,11 @@
           id: pub-hbase-backup-dr
           sub: hbase-backup-dr/navigation.json
 
+        - text: Using Apache Phoenix to Store and Access Data
+          href: phoenix-access-data/index.html
+          id: pub-phoenix-access-data
+          sub: phoenix-access-data/navigation.json
+
     - text: Data Science
       href: howto-data-science.html
       sub:
@@ -459,10 +495,10 @@
           sub: tuning-spark/navigation.json
 
         # Not in 7.1.0. Confirmed by Brian over Slack 2/14
-        # - text: CDS 3 (Experimental) Powered by Apache Spark
-        #   href: cds-3/index.html
-        #   id: pub-cds-3
-        #   sub: cds-3/navigation.json
+        - text: CDS 3 (Experimental) Powered by Apache Spark
+          href: cds-3/index.html
+          id: pub-cds-3
+          sub: cds-3/navigation.json
 
         - text: Configuring Apache Zeppelin
           href: configuring-zeppelin/index.html
@@ -497,11 +533,10 @@
           id: pub-security-ranger-authentication-unix-ldap-ad
           sub: security-ranger-authentication-unix-ldap-ad/navigation.json
 
-        # Dave confirmed this is not in 7.1.0. Slack 2/12
-        # - text: Configuring Advanced Security Options for Apache Ranger
-        #   href: security-ranger-configuring-advanced/index.html
-        #   id: pub-security-ranger-configuring-advanced
-        #   sub: security-ranger-configuring-advanced/navigation.json
+        - text: Configuring Advanced Security Options for Apache Ranger
+          href: security-ranger-configuring-advanced/index.html
+          id: pub-security-ranger-configuring-advanced
+          sub: security-ranger-configuring-advanced/navigation.json
 
     - text: Governance
       href: howto-governance.html
@@ -528,10 +563,10 @@
           sub: atlas-managing-business-terms-with-glossaries/navigation.json
 
         # This is OUT for 7.1.0, per Dave Slack 2/16
-        # - text: Configuring and Securing Atlas using Cloudera Manager
-        #   href: atlas-securing/index.html
-        #   id: pub-atlas-securing
-        #   sub: atlas-securing/navigation.json
+        - text: Configuring and Securing Atlas using Cloudera Manager
+          href: atlas-securing/index.html
+          id: pub-atlas-securing
+          sub: atlas-securing/navigation.json
 
     - text: Jobs Management
       href: howto-jobs-management.html
@@ -544,30 +579,110 @@
     - text: Streaming
       href: howto-streaming.html
       sub:
-        - text: Configuring Apache Kafka
-          href: kafka-configuring/index.html
-          id: pub-kafka-configuring
-          sub: kafka-configuring/navigation.json
+        - text: Apache Kafka
+          href: howto-kafka.html
+          sub:
+            - text: Configuring Apache Kafka
+              href: kafka-configuring/index.html
+              id: pub-kafka-configuring
+              sub: kafka-configuring/navigation.json
 
-        - text: Securing Apache Kafka
-          href: kafka-securing/index.html
-          id: pub-kafka-securing
-          sub: kafka-securing/navigation.json
+            - text: Securing Apache Kafka
+              href: kafka-securing/index.html
+              id: pub-kafka-securing
+              sub: kafka-securing/navigation.json
 
-        - text: Tuning Apache Kafka Performance
-          href: kafka-performance-tuning/index.html
-          id: pub-kafka-performance-tuning
-          sub: kafka-performance-tuning/navigation.json
+            - text: Tuning Apache Kafka Performance
+              href: kafka-performance-tuning/index.html
+              id: pub-kafka-performance-tuning
+              sub: kafka-performance-tuning/navigation.json
 
-        - text: Managing Apache Kafka
-          href: kafka-managing/index.html
-          id: pub-kafka-managing
-          sub: kafka-managing/navigation.json
+            - text: Managing Apache Kafka
+              href: kafka-managing/index.html
+              id: pub-kafka-managing
+              sub: kafka-managing/navigation.json
 
-        - text: Developing Apache Kafka Applications
-          href: kafka-developing-applications/index.html
-          id: pub-kafka-developing-applications
-          sub: kafka-developing-applications/navigation.json
+            - text: Developing Apache Kafka Applications
+              href: kafka-developing-applications/index.html
+              id: pub-kafka-developing-applications
+              sub: kafka-developing-applications/navigation.json
+
+        - text: Cruise Control
+          href: howto-cruise-control.html
+          sub:
+            - text: Configuring
+              href: configuring-cruise-control/index.html
+              id: pub-configuring-cruise-control
+              sub: configuring-cruise-control/navigation.json
+
+            - text: Securing
+              href: securing-cruise-control/index.html
+              id: pub-securing-cruise-control
+              sub: securing-cruise-control/navigation.json
+
+            - text: Managing
+              href: managing-cruise-control/index.html
+              id: pub-managing-cruise-control
+              sub: managing-cruise-control/navigation.json
+
+        - text: SMM
+          href: howto-smm.html
+          sub:
+            - text: Monitoring Kafka Clusters
+              href: monitoring-kafka-clusters/index.html
+              id: pub-monitoring-kafka-clusters
+              sub: monitoring-kafka-clusters/navigation.json
+
+            - text: Managing Alert Policies
+              href: managing-alert-policies/index.html
+              id: pub-managing-alert-policies
+              sub: managing-alert-policies/navigation.json
+
+            - text: Managing Topics
+              href: managing-topics/index.html
+              id: pub-managing-topics
+              sub: managing-topics/navigation.json
+
+            - text: Monitoring End to End Latency
+              href: monitoring-end-to-end-latency/index.html
+              id: pub-monitoring-end-to-end-latency
+              sub: monitoring-end-to-end-latency/navigation.json
+
+            - text: Monitoring Kafka Cluster Replication
+              href: monitoring-kafka-cluster-replications/index.html
+              id: pub-monitoring-kafka-cluster-replications
+              sub: monitoring-kafka-cluster-replications/navigation.json
+
+            - text: Monitoring Kafka Connect
+              href: monitoring-kafka-connect/index.html
+              id: pub-monitoring-kafka-connect
+              sub: monitoring-kafka-connect/navigation.json
+
+        - text: SRM
+          href: howto-srm.html
+          sub:
+            - text: Configuring SRM
+              href: configuration/index.html
+              id: pub-configuration
+              sub: configuration/navigation.json
+
+            - text: Using SRM
+              href: using/index.html
+              id: pub-using
+              sub: using/navigation.json
+
+        - text: Schema Registry
+          href: howto-schema-registry.html
+          sub:
+            - text: Integrating with Schema Registry
+              href: publication-tbd/index.html
+              id: pub-publication-tbd
+              sub: publication-tbd/navigation.json
+
+            - text: Using Schema Registry
+              href: publication-tbd/index.html
+              id: pub-publication-tbd
+              sub: publication-tbd/navigation.json
 
 - text: Troubleshooting
   id: cat-troubleshooting
@@ -596,6 +711,11 @@
       href: search-troubleshooting/index.html
       id: pub-search-troubleshooting
       sub: search-troubleshooting/navigation.json
+
+    - text: Troubleshooting Data Analytics Studio
+      href: das-troubleshooting/index.html
+      id: pub-das-troubleshooting
+      sub: das-troubleshooting/navigation.json
 
 - text: Reference
   id: cat-reference
@@ -630,6 +750,12 @@
       id: pub-atlas-reference
       sub: atlas-reference/navigation.json
 
+    # Pub is OUT for 7.1.0. Pub no longer exists. 2/15 email from Divya
+    # - text: Apache Hadoop YARN Configuration Parameters
+    #   href: yarn-config-parameters/index.html
+    #   id: pub-yarn-config-parameters
+    #   sub: yarn-config-parameters/navigation.json
+
     - text: Apache Hadoop YARN Reference
       href: yarn-reference/index.html
       id: pub-yarn-reference
@@ -654,6 +780,21 @@
       href: search-faq/index.html
       id: pub-search-faq
       sub: search-faq/navigation.json
+
+    - text: SMM REST API Reference
+      href: smm-rest-api-reference/index.html
+      id: pub-smm-rest-api-reference
+      external: external
+
+    - text: SRM REST API Reference
+      href: srm-rest-api-reference/index.html
+      id: pub-srm-rest-api-reference
+      external: external
+
+    - text: Schema Registry REST API Reference
+      href: sr-rest-api-reference/index.html
+      id: pub-sr-rest-api-reference
+      external: external
 
 - text: Release Notes
   id: cat-releasenotes
