@@ -56,6 +56,7 @@ exclude:
   - /cloudera-manager/7.1.1/
   - /cloudera-manager/7.2.0/
   - /csa/1.0.0/
+  - /csa/1.2.0/
   - /csp/3.0.0/
   - /data-engineering/
   - /data-flow/
@@ -63,6 +64,7 @@ exclude:
   - /runtime/7.2.0/
 
   # "master" version for docs-dev only
+  - /HDPDocuments/HDF3/HDF-master/
   - /best-practices/master/
   - /ccp/master/
   - /cdf-datahub/master/

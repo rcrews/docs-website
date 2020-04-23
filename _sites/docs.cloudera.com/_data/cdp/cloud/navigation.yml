@@ -10,7 +10,7 @@
 
 - text: Overview
   id: landing-overview
-  href: /cdp/master/index.html
+  href: /cdp/cloud/index.html
   display: none
 
 - text: Concepts & Use Cases
@@ -25,18 +25,13 @@
 #   id: cat-planning
 #   sub:
 
-- text: Installation & Upgrade
-  id: cat-installation
-  sub:
-    - text: Upgrade
-      href: upgrade/index.html
-      id: pub-upgrade
-      sub: upgrade/navigation.json
-
-    - text: Release Guide
-      href: release-guide/index.html
-      id: pub-release-guide
-      sub: release-guide/navigation.json
+# - text: Upgrade
+#   id: cat-installation
+#   sub:
+#     - text: Upgrade
+#       href: upgrade/index.html
+#       id: pub-upgrade
+#       sub: upgrade/navigation.json
 
 # - text: How To
 #   id: cat-howto

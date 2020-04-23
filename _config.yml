@@ -46,6 +46,7 @@ exclude:
   - /cdp/cloud/
 
   # "master" version for docs-dev only
+  - /HDPDocuments/HDF3/HDF-master/
   - /best-practices/master/
   - /ccp/master/
   - /cdf-datahub/master/
