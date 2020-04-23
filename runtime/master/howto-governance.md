@@ -46,7 +46,7 @@ publications:
   - title: Configuring and Monitoring Atlas in Cloudera Manager
     url: atlas-configuring/index.html
     description: >-
-      Configure Atlas' extractors, monitor status, and access logs 
+      Configure Atlas' extractors, monitor status, and access logs
       using Cloudera Manager.
 
   - title: Securing Atlas
@@ -61,7 +61,6 @@ publications:
       When upgrading from CDH to CDP, you can choose to move your
       Navigator Data Management metadata into Atlas.
 
-- column:
 ---
 
 Apache Atlas provides data governance capabilities for Hadoop. Apache
