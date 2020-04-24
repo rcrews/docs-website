@@ -30,9 +30,13 @@
 #   id: cat-planning
 #   sub:
 
-# - text: Installation & Upgrade
-#   id: cat-installation
-#   sub:
+- text: Installation
+  id: cat-installation
+  sub:
+    - text: Installation
+      href: installation/index.html
+      id: pub-installation
+      sub: installation/navigation.json
 
 - text: How To
   id: cat-howto
@@ -63,7 +67,7 @@
 
         - text: Configuring Authentication in Cloudera Manager
           href: security-kerberos-authentication/index.html
-          id: security-kerberos-authentication.html
+          id: security-kerberos-authentication
           sub: security-kerberos-authentication/navigation.json
 
         - text: Cloudera Authorization
@@ -73,33 +77,25 @@
 
         - text: Encrypting Data in Transit
           href: security-encrypting-data-in-transit/index.html
-          id: security-encrypting-data-in-transit.html
+          id: security-encrypting-data-in-transit
           sub: security-encrypting-data-in-transit/navigation.json
 
         - text: Encrypting Data at Rest
           href: security-encrypting-data-at-rest/index.html
-          id: security-encrypting-data-at-rest.html
+          id: security-encrypting-data-at-rest
           sub: security-encrypting-data-at-rest/navigation.json
 
         - text: How-to Guides
           href: security-how-to-guides/index.html
-          id: security-how-to-guides.html
+          id: security-how-to-guides
           sub: security-how-to-guides/navigation.json
-
-- text: Installation
-  id: cat-installation
-  sub:
-    - text: Installation
-      href: installation/index.html
-      id: pub-installation
-      sub: installation/navigation.json
 
 - text: Troubleshooting
   id: cat-troubleshooting
   sub:
     - text: Troubleshooting Security Issues
       href: security-troubleshooting/index.html
-      id: security-troubleshooting.html
+      id: security-troubleshooting
       sub: security-troubleshooting/navigation.json
 
 - text: Reference
