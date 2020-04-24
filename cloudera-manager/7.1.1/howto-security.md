@@ -7,45 +7,32 @@ publications:
   - title: Configuring Authentication in Cloudera Manager
     url: security-kerberos-authentication/index.html
     description: >-
-      Tincidunt viverra porta cras nisl nisi tellus scelerisque tempus,
-      sociosqu accumsan blandit eget elementum.
+      Configure Kerberos authentication in Cloudera Manager.
 
   - title: Cloudera Authorization
     url: security-authorization/index.html
     description: >-
-      Volutpat morbi eros ultricies quisque viverra et efficitur dictum
-      placerat vel mus, feugiat iaculis maecenas tempus augue natoque bibendum
-      lectus nulla magnis litora etiam, id vitae mollis ipsum sit suscipit
-      magna varius dui praesent.
+      Control access to Cloudera Manager resources using LDAP.
 
   - title: Encrypting Data in Transit
     url: security-encrypting-data-in-transit/index.html
     description: >-
-      Nascetur himenaeos pretium dui finibus congue tempus ultricies torquent
-      vivamus, tempor potenti facilisis orci rhoncus posuere class platea
-      commodo, magna vel.
+      Configure TLS/SSL secure networking in Cloudera Manager clusters.
 
   - title: Encrypting Data at Rest
     url: security-encrypting-data-at-rest/index.html
     description: >-
-      Dapibus fusce et condimentum magnis tempor primis tincidunt mauris erat
-      ex, ullamcorper blandit.
+      Secure data at rest using encryption mechanisms and key management.
 
   - title: Key Trustee Server
     url: security-key-trustee-server/index.html
     description: >-
-      Purus imperdiet porta at ac laoreet primis magnis proin, massa lorem
-      bibendum dolor viverra rutrum potenti.
+      How to configure the Key Trustee Server key storage and management system.
 
   - title: How-to Guides
     url: security-how-to-guides/index.html
     description: >-
-      Nec a suspendisse orci nibh conubia litora class purus, vivamus curae
-      cubilia arcu egestas sit proin ut, imperdiet.
+      A collection of How-to guides covering a wide range of advanced Cloudera Manager security topics.
 
 ---
 
-Dictum consectetur sociosqu accumsan dapibus habitant faucibus ad
-lobortis at, morbi scelerisque tempus venenatis orci auctor mus pharetra
-iaculis, dignissim cubilia ullamcorper lacus pretium rutrum per dis,
-egestas class nostra feugiat senectus donec porttitor ridiculus.
