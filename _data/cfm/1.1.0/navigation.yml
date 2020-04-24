@@ -96,6 +96,11 @@
       href: property-enhancements/index.html
       id: pub-property-enhancements
       sub: property-enhancements/navigation.json
+    - text: Apache NiFI API Reference
+      href: nifi-api/index.html
+      id: pub-nifi-api
+      sub: nifi-api/navigation.json
+
     - text: Record Path Reference
       href: /HDPDocuments/HDF3/HDF-3.4.1.1/record-path-guide/index.html
       id: pub-record-path-guide
