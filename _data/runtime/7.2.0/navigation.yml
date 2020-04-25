@@ -327,7 +327,7 @@
           id: pub-integrating-hive-and-bi
           sub: integrating-hive-and-bi/navigation.json
 
-        - text: Migrating Data to Apache Hive
+        - text: Migrating Data Using Sqoop
           href: migrating-data-into-hive/index.html
           id: pub-migrating-data-into-hive
           sub: migrating-data-into-hive/navigation.json
