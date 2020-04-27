@@ -1,0 +1,610 @@
+============================================================================== 
+Cloudera ODBC Driver for Impala Release Notes 
+============================================================================== 
+
+The release notes provide details of enhancements, features, known issues, and 
+workflow changes in Cloudera ODBC Driver for Impala 2.6.10, as well as the 
+version history. 
+
+For information about upcoming support deprecations or removals, see the 
+Workflow Changes section. Deprecated features will not receive any updates,
+but will continue to be usable in their current state until support is 
+removed in a future release.
+
+
+2.6.10 =======================================================================
+
+Released 2020-03-27
+
+Enhancements & New Features
+
+ * [IMP-656] Updated default value for DisableOptimizedEncodingConverter
+
+    The DisableOptimizedEncodingConvert property is now set to false by 
+    default. For more information, see the Installation and Configuration 
+    Guide.
+
+ * [IMP-700] Updated CDH support
+
+   The driver now supports CDH versions 5.11 through 5.16 and 6.0 through 6.3.
+
+ * [IMP-752] Support for notarization
+
+   The driver now supports notarization on macOS systems, enabling it to be 
+   run on macOS versions 10.14.6 and later.
+
+ * [IMP-769] Updated boost library on AIX
+
+   The AIX version of the driver now uses boost version 1.59.0. Previously, 
+   the AIX version of the driver used version 1.55.0.
+
+
+Resolved Issues
+The following issues have been resolved in Cloudera ODBC Driver for Impala 
+2.6.10.
+
+ * [IMP-661] If the server returns invalid UTF-8 characters, the driver 
+   throws an exception. In some cases, this causes exceptionally slow 
+   performance in certain BI tools.
+
+   This issue has been resolved. The driver now replaces the invalid UTF-8 
+   characters.
+
+ * [IMP-705][00174966] If the driver calls SQLColumns on a column whose data 
+   type name is longer than 128 bytes, it throws a memory management error.
+
+ * [IMP-768] The driver exports third-party symbols that, in some cases, 
+   cause conflicts with applications
+
+   This issue has been resolved. The driver now hides all third-party symbols.
+
+ * [IMP-770][00177089] In some cases, the driver does not log a connection 
+   error.
+
+
+Known Issues
+The following are known issues that you may encounter due to limitations in 
+the data source, the driver, or an application.
+
+ * Limited support for BINARY, DATE, and TIME data types
+
+   - BINARY is not a supported data type in Impala.
+   - DATE is supported only when you connect to Impala version 3.3 or later.
+   - As a result of the limitations above, some values of TIME data types are
+     also not supported.
+
+
+Workflow Changes =============================================================
+
+The following changes may disrupt established workflows for the driver.
+
+In addition to changes that are already implemented in the current version of 
+the driver, this section describes potentially disruptive changes that will 
+be implemented in a future version of the driver, so that you can plan 
+accordingly.
+
+
+Upcoming ---------------------------------------------------------------------
+
+ * [IMP-713][IMP-717] Removing support for earlier versions of Windows
+
+   As early as June 2020, the driver will no longer support the following 
+   versions of Windows:
+   - Windows 7
+   - Windows Server 2008
+   - Windows Server 2008r2
+
+   In addition, as early as June 2020, the driver will no longer support 
+   Visual Studio 2013.
+
+   For a list of supported Windows and Visual Studio versions, see the 
+   Installation and Configuration Guide.
+
+ * [IMP-728] Removing support for macOS 10.12 and earlier
+
+   As early as June 2020, the driver will no longer support the following 
+   versions of macOS:
+   - macOS 10.12 "Sierra"
+   - macOS 10.11 "El Capitan"
+   - macOS 10.10 "Yosemite"
+   - macOS 10.9 "Mavericks"
+
+   For a list of supported macOS versions, see the Installation and 
+   Configuration Guide.
+
+ * [IMP-732] Removing support for CentOS 6 and RHEL 6
+
+   As early as June 2020, the driver will no longer support CentOS 6 or Red 
+   Hat Enterprise Linux (RHEL) 6.
+
+   For a list of supported Linux versions, see the Installation and 
+   Configuration Guide.
+
+
+2.6.10 -----------------------------------------------------------------------
+
+ * [IMP-680] Removed support for earlier versions of Impala and CDH
+
+   Beginning with this release, the driver no longer supports Impala 2.7 and 
+   CDH 5.9 to 5.10. For a list of supported versions, see the Installation and 
+   Configuration Guide.
+
+ * [IMP-713][IMP-717] Deprecated support for earlier versions of Windows
+
+   Beginning with this release, support for the following versions of Windows 
+   has been deprecated:
+   * Windows 7
+   * Windows Server 2008
+   * Windows Server 2008r2
+
+   In addition, beginning with this release, support for Visual Studio 2013 
+   has been deprecated.
+
+   Support will be removed in a future release. For a list of supported 
+   Windows and Visual Studio versions, see the Installation and Configuration 
+   Guide.
+
+ * [IMP-728] Deprecated support for earlier versions of macOS
+
+   Beginning with this release, support for the following versions of macOS 
+   has been deprecated:
+   * macOS 10.12 "Sierra"
+   * macOS 10.11 "El Capitan"
+   * macOS 10.10 "Yosemite"
+   * macOS 10.9 "Mavericks"
+
+   Support will be removed in a future release. For a list of supported macOS 
+   versions, see the Installation and Configuration Guide.
+
+ * [IMP-732] Deprecated support for CentOS 6 and RHEL 6
+
+   Beginning with this release, support for CentOS 6 or Red Hat Enterprise 
+   Linux (RHEL) 6 has been deprecated.
+
+   Support will be removed in a future release. For a list of supported Linux 
+   versions, see the Installation and Configuration Guide.
+
+
+2.6.8 ------------------------------------------------------------------------
+
+ * [IMP-680] Removed support for earlier versions of Impala and CDH
+
+   Beginning with this release, the driver no longer supports Impala 1.0.1 to
+   2.6 and CDH 5.0 to 5.8. For a list of supported versions, see the 
+   Installation and Configuration Guide.
+
+
+2.6.0 ------------------------------------------------------------------------
+
+ * Minimum TLS Version
+
+   Beginning with this release, the driver requires a minimum version of TLS 
+   for encrypting the data store connection. By default, the driver requires 
+   TLS version 1.2. This requirement may cause existing DSNs and connection 
+   strings to stop working, if they are used to connect to data stores that 
+   use a TLS version earlier than 1.2.
+
+   To resolve this, in your DSN or connection string, set the Minimum TLS 
+   option (the Min_TLS property) to the appropriate version of TLS for your 
+   server. For more information, see the Installation and Configuration Guide.
+
+
+Version History ==============================================================
+
+2.6.9 ------------------------------------------------------------------------
+
+Released 2020-01-24
+
+Enhancements & New Features
+
+ * [IMP-704][00174819] Improved performance with multiple concurrent
+   connections
+
+   The driver now retrieves data much faster in scenarios that involve 
+   multiple concurrent connections to the data store. This improves 
+   performance when working with applications such as Power BI.
+
+ * [IMP-696][IMP-708][IMP-722] Updated third-party libraries
+
+   The driver has been updated to use the following libraries:
+   - Boost 1.64.0 (previously 1.57.0)
+   - libcurl 7.66.0 (previously 7.60.0)
+   - Expat 2.2.9 (previously 2.2.0)
+   - OpenSSL 1.1.1d (previously 1.1.0j)
+
+
+Resolved Issues
+The following issues have been resolved in Cloudera ODBC Driver for Impala 
+2.6.9.
+
+ * [IMP-699][00173163] In some cases, when the driver submits a query that 
+   contains a Boolean value expression, the driver returns an "Unsupported 
+   query" error.
+
+ * [IMP-724] The driver terminates unexpectedly when both of the following 
+   occur: 
+   - Multiple database drivers are loaded to the same process. 
+   - One driver unloads and calls ICU's u_cleanup() function, while another 
+     driver continues to run and tries to access the memory space that has 
+     been cleaned up. 
+
+
+2.6.8 ------------------------------------------------------------------------
+
+Released 2019-09-27
+
+Enhancements & New Features
+
+ * [IMP-636] Updated Impala and CDH support
+
+   The driver now supports Impala versions 2.7 through 3.3, and CDH 
+   versions 5.9 through 5.16 and 6.0 through 6.2.
+
+ * [IMP-666] Support for DATE data type
+ 
+   The driver now supports the DATE data type for Impala version 3.3 and 
+   later. For more information, see "Data Types" in the Installation and 
+   Configuration Guide.
+
+
+Resolved Issues
+The following issues have been resolved in Cloudera ODBC Driver for Impala 
+2.6.8.
+
+ * [IMP-686] When an AnalysisException error occurs, the driver incorrectly
+   classifies it as a syntax error and returns SQLState 42000.
+   
+ * [IMP-687] After SQLFetch returns an error, if you attempt to call SQLFetch 
+   again, the driver terminates unexpectedly.
+
+
+2.6.7 ------------------------------------------------------------------------
+
+Released 2019-08-23
+
+Enhancements & New Features
+
+ * [IMP-678] Reporting the maximum length of database fields
+
+   You can now specify the maximum character length that the driver reports
+   for the names of catalogs, columns, schemas, and tables. To do this, set
+   the following connection properties:
+   - MaxCatalogNameLen
+   - MaxColumnNameLen
+   - MaxSchemaNameLen
+   - MaxTableNameLen
+
+   For more information, see the Installation and Configuration Guide.
+
+ * [IMP-634] Thrift transport modes
+
+   The driver now enables you to specify the Thrift transport mode used. You 
+   can configure the driver to use binary, HTTP, or SASL transport. For more 
+   information, see the Installation and Configuration Guide.
+
+ * [00139411][IMP-668] Updated driver version information in Linux binary
+
+   You can now check the Linux driver's version from the driver binary file. 
+   To do this, open the .so file in a text editor, and search for the text 
+   "$driver_version_sb$:". The driver's version number is listed after this 
+   text.
+
+ * [IMP-677] New name for Enable Simulated Transactions
+
+   The configuration option Enable Simulated Transactions (key name 
+   EnableSimulatedTransactions) has been renamed to Ignore Transactions (key 
+   name IgnoreTransactions). The previous key name continues to be supported 
+   for backwards compatibility.
+
+ * [IMP-671] Updated third-party library linking for Linux
+ 
+   In the Linux driver, minor internal improvements have been implemented for 
+   the linking between the third-party libraries and the main driver library.
+
+ * [00141891][IMP-645] Internal driver improvements
+
+   The driver has been updated with minor internal improvements.
+
+ * [IMP-639] Updated default value for DisableOptimizedEncodingConverter
+
+   The DisableOptimizedEncodingConvert property is now set to true by 
+   default. This enables the driver to read and replace invalid UTF-8 
+   characters.
+
+
+Resolved Issues
+The following issues have been resolved in Cloudera ODBC Driver for Impala 
+2.6.7.
+
+ * [00145514][IMP-672] When the driver sets the SQLSetConnectAttr attribute 
+   SQL_ATTR_AUTOCOMMIT to SQL_AUTOCOMMIT_OFF, it terminates unexpectedly.
+
+ * [00142448][IMP-647] When the driver executes a dynamic or parameterized 
+   query with OFFSET, it returns an error.
+
+   This issue has been resolved. The driver now properly supports LIMIT x,y 
+   query syntax.
+
+ * [IMP-654] When query retry is enabled, the driver does not retry a query 
+   when a transport or communication link failure occurs.
+
+ * [00144299][IMP-660] When you insert a negative value into a TINYINT 
+   column, the driver returns an error.
+
+ * [00144389][IMP-664] When the driver prepares a query that includes a 
+   STRING column cast to a variable-length VARCHAR, a length of 32767 is 
+   always returned.
+
+ * [IMP-670] When retrieving a DECIMAL value that contains an integer ending 
+   with 0, the driver erroneously returns SQL_SUCCESS_WITH_INFO and a 
+   truncation error.
+
+
+2.6.5 ------------------------------------------------------------------------
+
+Released 2019-05-10
+
+Enhancements & New Features
+
+ * [IMP-573] unixODBC driver manager support for macOS 
+
+   On macOS, you can now use the driver with unixODBC driver manager version 
+   2.3.1. 
+
+ * [IMP-628] Updated OpenSSL support
+ 
+   The driver now uses OpenSSL 1.1.0j.
+   
+ * [IMP-636] Updated Impala and CDH support
+
+   The driver now supports Impala versions 1.0.1 through 3.2, and CDH 
+   versions 5.0 through 5.16 and 6.0 through 6.2.
+
+
+Resolved Issues
+The following issue has been resolved in Cloudera ODBC Driver for Impala 
+2.6.5.
+
+ * [00141430][IMP-623] In some cases, queries with a parameterized INSERT 
+   clauses fail.
+ 
+ * [00141992][IMP-629] The driver does not handle the scale and precision of 
+   DECIMAL data correctly. 
+   
+ * [IMP-612] The driver does not pass a UID into the session when connected 
+   using No Authentication.
+
+ * [IMP-631] When inserting CHAR or VARCHAR values, the driver incorrectly 
+   translates those values to CAST(CAST(...)). 
+   
+   This issue is resolved. The driver now translates these values to a single 
+   CAST.
+
+2.6.4 ------------------------------------------------------------------------
+
+Released 2019-03-08
+
+Enhancements & New Features
+
+ * [00138885][IMP-601] SERVER as alias for HOST
+
+   The driver now supports the use of SERVER as an alias for the HOST 
+   configuration option. The configuration option HOST is still supported.
+
+ * [IMP-607] Updated RapidJSON parser
+
+   The driver has been updated to use version 1.1.0 of the RapidJSON parser. 
+
+
+Resolved Issues
+The following issue has been resolved in Cloudera ODBC Driver for Impala 
+2.6.4.
+
+ * [00139182][IMP-603] In some queries that include aliases in subqueries, 
+   the driver translates the query to a syntax that is not supported by 
+   Impala CDH6.
+   
+
+2.6.3 ------------------------------------------------------------------------
+
+Released 2019-02-15
+
+Enhancements & New Features
+
+ * [00137626][IMP-567] Impala 3.0 support
+
+   The driver now supports Apache Impala 1.0.1 through 3.0, and CDH versions 
+   5.0 through 6.0. Previously the driver supported Apache Impala 1.0.1 
+   through 2.12, and CDH versions 5.0 through 5.15.
+
+ * [00135683][IMP-569] Oracle Linux support
+
+   The driver now supports Oracle Linux RHCK and UEK 7.5.
+
+ * [00136413][IMP-580] Support for driver-wide configuration on Windows
+
+   On Windows, the driver can now read driver-wide configuration settings 
+   from the [vendor].impalaodbc.ini file. This file must be present in the 
+   \lib subfolder inside the driver installation directory.
+
+ * [00136789][IMP-592] Support for invalid UTF-8 characters
+
+   The driver can now read and replace invalid characters in UTF-8 data. To 
+   do this, set the DisableOptimizedEncodingConverter option to "true". For 
+   more information, see the Installation and Configuration Guide.
+
+ * [IMP-589] Dynamically linked third-party libraries
+
+   The Linux driver has been updated to use dynamically linked libraries for 
+   ICU and OpenSSL. The installation directory now includes a "ThirdParty" 
+   directory which contains all required runtime libraries for the driver.
+
+ * [IMP-566] Updated ICU library
+
+   The driver has been updated to use version 58.2 of the ICU library.
+
+
+Resolved Issues
+The following issues have been resolved in Cloudera ODBC Driver for Impala 
+2.6.3.
+
+ * [IMP-570] When the driver is installed on a machine that uses Turkish 
+   locale settings, if you try to connect using a connection string where one 
+   or more of the property names contains a lower-case "i" character, the 
+   driver does not connect to the server.
+
+ * [00135746][IMP-581] If the comments for a table are longer than 256 
+   characters, the driver returns the following error: (20030) Memory 
+   management error.
+
+ * [00135988][IMP-582] In some cases, the driver returns the following 
+   error: (20030) Memory management error.
+
+ * [00136067][IMP-583] In some cases when the Use SQL Unicode Types property 
+   is disabled, after SQL_PREPARE the driver incorrectly returns SQL_WCHAR 
+   and SQL_WVARCHAR for SQL_CHAR and SQL_VARCHAR.
+
+
+2.6.2 ------------------------------------------------------------------------
+
+Released 2018-11-14
+   
+Resolved Issues
+The following issue has been resolved in Cloudera ODBC Driver for Impala 
+2.6.2.
+
+ * [00134149] [IMP-565] The driver reports transport-related errors using the 
+   generic error code 10000, instead of reporting them more specifically using 
+   error code 08S01.
+
+
+2.6.1 ------------------------------------------------------------------------
+
+Released 2018-10-05
+
+Enhancements & New Features
+
+ * [IMP-474] Support for native scalar functions
+
+   The driver now defaults to using native Impala scalar functions, provided 
+   that those functions are supported by the Impala server.
+
+ * [IMP-550] More informative Port value error messages 
+
+   The driver now provides more detailed error messages when an invalid 
+   value is specified for the Port connection property.
+
+ * [IMP-576] Updated OpenSSL version
+
+   The driver now uses OpenSSL version 1.1.0i. Previously, the driver used 
+   OpenSSL version 1.1.0h.
+
+ 
+Resolved Issues
+The following issues were resolved in Cloudera ODBC Driver for Impala 
+2.6.1.
+
+ * [00134149] [IMP-553] The driver translates Winsock error 10053 into 
+   generic error 10000.
+
+   This issue has been resolved. The drive now translates the Winsock error 
+   into error 08S01.
+
+ * [00115866] [IMP-475] The driver treats strings with the literal value 
+   "NULL" as NULL values.
+
+ * [00133890] [IMP-552] The driver does not honor the SQL_ATTR_LOGIN_TIME 
+   attribute when connecting, which may cause the driver to behave 
+   unexpectedly.
+
+
+2.6.0 ------------------------------------------------------------------------
+
+Released 2018-07-25
+
+Enhancements & New Features
+
+ * [IMP-533] Support for Impala 2.12 and CDH 5.15
+
+   The driver now supports Impala versions 1.0.1 through 2.12, and CDH 
+   versions 5.0 through 5.15.
+
+ * [IMP-478] Updated SSL support
+ 
+   The driver now uses OpenSSL 1.1.0h.
+   
+ * [IMP-519] Minimum TLS support
+   
+   You can now specify the minimum level of TLS the driver will accept when
+   authenticating into the data source.
+   
+ * [IMP-472] TLS Server Name Indication
+  
+   The driver now supports TLS Server Name Indication (SNI).
+  
+ * [IMP-508] Standardized log file names
+
+   When logging is enabled, the driver now produces the following log files:
+
+   - A [vendor]impalaodbcdriver.log file that logs driver activity that is not 
+     specific to a connection, where [vendor] is the name of the driver vendor.
+
+   - A [vendor]impalaodbcdriver_connection_[Number].log for each connection 
+     made to the database, where [Number] is a number that identifies each log 
+     file and [vendor] is the name of the driver vendor. This file logs driver
+     activity that is specific to the connection.  
+
+ * [IMP-462] More informative SSL error messages
+
+   The driver now provides more detailed error messages for TLS/SSL errors.
+
+ * [00116516] [IMP-484] Renamed keytab property
+
+   The key name for the UPN Keytab Mapping File configuration property has
+   been changed to keytab.
+      
+ * [IMP-520] Linux installation workflow improvement
+ 
+   A single set of RPMs now work for all supported Linux distributions.
+   Previously, a set of RPMs for each supported Linux distribution was
+   required. 
+   
+ * [IMP-317] Support for result set cache and query retry
+
+   The driver can now be configured to set a limit on the result set cache
+   size, and to retry queries to the server. For details, see the Installation
+   and Configuration guide.
+
+   
+Resolved Issues
+The following issues were resolved in Cloudera ODBC Driver for Impala 
+2.6.0.
+
+ * [00131357] [IMP-511] In some cases queries are not properly closed on the
+   server, negatively impacting server resources.
+
+ * [IMP-486] In some cases, CAST AS VARCHAR does not function correctly.
+ 
+ * [00119275] [IMP-503] Connections from a machine with large amounts of RAM
+   are slower than expected.
+   
+ * [00132211] [IMP-523] Driver wide properties cannot be read from the .ini
+   file.
+
+
+============================================================================== 
+Contact Us 
+============================================================================== 
+
+If you are having difficulties using the driver, our Community Forum 
+(http://community.cloudera.com) may have your solution. In addition to 
+providing user to user support, our forums are a great place to share your 
+questions, comments, and feature requests with us. 
+
+If you are a Subscription customer you may also use the Cloudera Support 
+Portal (http://www.cloudera.com/content/cloudera/en/support/home.html) to 
+search the Knowledge Base or file a Case.
+
+Important: To help us assist you, prior to contacting Cloudera Support please 
+prepare a detailed summary of the client and server environment including 
+operating system version, patch level, and configuration.

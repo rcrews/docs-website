@@ -58,6 +58,8 @@ dropdowns:
 - section:
     title: Cloudera ODBC Drivers for Impala
     dropdown:
+    - text: Cloudera ODBC 2.6.10 Driver for Impala
+      href: /documentation/other/connectors/impala-odbc/2-6-10.html
     - text: Cloudera ODBC 2.6.9 Driver for Impala
       href: /documentation/other/connectors/impala-odbc/2-6-9.html
     - text: Cloudera ODBC 2.6.8 Driver for Impala
