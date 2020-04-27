@@ -23,4 +23,4 @@ publications:
 
 ---
 
-Streams Messaging cluster definitions for CDP Public Cloud deployed by Data Hub include Apache Kafka, Schema Registry, and Streams Messaging Manager. 
+Streams Messaging cluster definitions for CDP Public Cloud deployed by Data Hub include Apache Kafka, Schema Registry, and Streams Messaging Manager.
