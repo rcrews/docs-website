@@ -105,11 +105,11 @@
       href: models/index.html
       id: pub-models
       sub: models/navigation.json
-      
+
     - text: Model Metrics
       href: model-governance-and-monitoring/index.html
-      id: model-governance-and-monitoring
-      sub: model-governance-and-monitoring/navigation.json      
+      id: pub-model-governance-and-monitoring
+      sub: model-governance-and-monitoring/navigation.json
 
     - text: Applications
       href: applications/index.html

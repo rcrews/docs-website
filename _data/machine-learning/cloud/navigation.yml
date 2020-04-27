@@ -108,7 +108,7 @@
 
     - text: Model Metrics
       href: model-governance-and-monitoring/index.html
-      id: model-governance-and-monitoring
+      id: pub-model-governance-and-monitoring
       sub: model-governance-and-monitoring/navigation.json
 
     - text: Applications
