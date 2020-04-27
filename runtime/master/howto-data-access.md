@@ -76,7 +76,7 @@ publications:
         JdbcStorageHandler to access an external data source, such as
         Business Intelligence (BI) tools.
 
-    - title: Migrating Data to Apache Hive
+    - title: Migrating Data Using Sqoop
       url: migrating-data-into-hive/index.html
       description: >-
         Explains how to move data from relational databases directly to
@@ -135,7 +135,7 @@ publications:
       url: search-tutorial/index.html
       description: >-
         A tutorial on using Cloudera Search.
-  
+
     - title: Securing Cloudera Search
       url: search-security/index.html
       description: >-
