@@ -5,7 +5,7 @@ title: Flow Management
 
 publications:
   - title: Apache NiFi Overview
-    url: /HDPDocuments/HDF3/HDF-3.5.0/apache-nifi-overview/index.html
+    url: /HDPDocuments/HDF3/HDF-3.5.1/apache-nifi-overview/index.html
     description: >-
       Describes Apache NiFi, including key concepts, architecture, and
       use cases.

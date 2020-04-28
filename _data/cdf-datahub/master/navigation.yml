@@ -20,9 +20,9 @@
       href: concepts-flow-management.html
       sub:
         - text: Apache NiFi Overview
-          href: /HDPDocuments/HDF3/HDF-3.5.0/apache-nifi-overview/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/apache-nifi-overview/index.html
           id:   pub-apache-nifi-overview
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/apache-nifi-overview/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/apache-nifi-overview/navigation.json
 
         # - text: Apache NiFi Registry Overview
         #   href: publication-tbd/index.html
@@ -114,57 +114,57 @@
       href: howto-apache-nifi.html
       sub:
         - text: Using the Apache NiFi Interface
-          href:  /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-interface/index.html
+          href:  /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-interface/index.html
           id:   pub-using-nifi-interface
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-interface/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-interface/navigation.json
 
         - text: Building an Apache NiFi Data Flow
-          href: /HDPDocuments/HDF3/HDF-3.5.0/building-a-dataflow/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/building-a-dataflow/index.html
           id:   pub-building-a-dataflow
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/building-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/building-a-dataflow/navigation.json
 
         - text: Managing an Apache NiFi Data Flow
-          href: /HDPDocuments/HDF3/HDF-3.5.0/managing-a-dataflow/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/managing-a-dataflow/index.html
           id:   pub-managing-a-dataflow
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/managing-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/managing-a-dataflow/navigation.json
 
         - text: Navigating an Apache NiFi Data Flow
-          href: /HDPDocuments/HDF3/HDF-3.5.0/navigating-a-dataflow/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/navigating-a-dataflow/index.html
           id:   pub-navigating-a-dataflow
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/navigating-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/navigating-a-dataflow/navigation.json
 
         - text: Monitoring an Apache NiFi Data Flow
-          href: /HDPDocuments/HDF3/HDF-3.5.0/monitoring-a-dataflow/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/monitoring-a-dataflow/index.html
           id:   pub-monitoring-a-dataflow
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/monitoring-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/monitoring-a-dataflow/navigation.json
 
         - text: Versioning an Apache NiFi Data Flow
-          href: /HDPDocuments/HDF3/HDF-3.5.0/versioning-a-dataflow/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/versioning-a-dataflow/index.html
           id:   pub-versioning-a-dataflow
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/versioning-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/versioning-a-dataflow/navigation.json
 
         - text: Using Apache NiFi Templates
-          href: /HDPDocuments/HDF3/HDF-3.5.0/using-dataflow-templates/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/using-dataflow-templates/index.html
           id:   pub-using-dataflow-templates
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/versioning-a-dataflow/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/versioning-a-dataflow/navigation.json
 
         - text: Using Apache NiFi Provenance Tools
-          href: /HDPDocuments/HDF3/HDF-3.5.0/using-dataflow-provenance-tools/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/using-dataflow-provenance-tools/index.html
           id:   pub-using-dataflow-provenance-tools
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/using-dataflow-provenance-tools/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/using-dataflow-provenance-tools/navigation.json
 
         - text: Adding Functionality to Apache NiFi
-          href: /HDPDocuments/HDF3/HDF-3.5.0/adding-functionality-to-apache-nifi/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/adding-functionality-to-apache-nifi/index.html
           id:   pub-adding-functionality-to-apache-nifi
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/adding-functionality-to-apache-nifi/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/adding-functionality-to-apache-nifi/navigation.json
 
     - text: Apache NiFi Registry
       href: howto-apache-nifi-registry.html
       sub:
         - text: Using Apache NiFi Registry
-          href: /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-registry/index.html
+          href: /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-registry/index.html
           id:   pub-using-nifi-registry
-          sub:  /HDPDocuments/HDF3/HDF-3.5.0/using-nifi-registry/navigation.json
+          sub:  /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-registry/navigation.json
 
 - text: "How To: Streams Messaging"
   id:   cat-how-to-streams-messaging
@@ -273,11 +273,11 @@
   id:   cat-learning-training
   sub:
     - text: Getting Started with Apache NiFi
-      href: /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-apache-nifi/index.html
+      href: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-apache-nifi/index.html
       id:   pub-getting-started-with-apache-nifi
-      sub:  /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-apache-nifi/navigation.json
+      sub:  /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-apache-nifi/navigation.json
 
     - text: Getting Started with Apache NiFi Registry
-      href: /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-nifi-registry/index.html
+      href: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-nifi-registry/index.html
       id:   pub-getting-started-with-nifi-registry
-      sub:  /HDPDocuments/HDF3/HDF-3.5.0/getting-started-with-nifi-registry/navigation.json
+      sub:  /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-nifi-registry/navigation.json
