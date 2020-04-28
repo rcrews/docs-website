@@ -39,13 +39,11 @@ exclude:
   - /README.md
   - "*.bbprojectd"
 
-  # Sarah's special API reference only on dev for now
-  - /cfm/2.0.0/operator-api/
-
   # Unreleased documentation
   - /HDPDocuments/Ambari-7.1.0.0/
   - /HDPDocuments/Ambari/Ambari-7.1.0.0/
   - /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/
+  - /cdf-datahub/7.1.0/
   - /cdf-datahub/7.1.1/
   - /cdp/latest/
   - /cem/1.2.0/
