@@ -214,16 +214,16 @@
           sub: kudu-integration/navigation.json
 
         # Oxone is OUT for 7.1.0.2/14 email from Sairam
-        # - text: Storing Data Using Ozone
-        #   href: ozone-storing-data/index.html
-        #   id: pub-ozone-storing-data
-        #   sub: ozone-storing-data/navigation.json
+        - text: Storing Data Using Ozone
+          href: ozone-storing-data/index.html
+          id: pub-ozone-storing-data
+          sub: ozone-storing-data/navigation.json
 
         # Oxone is OUT for 7.1.0.2/14 email from Sairam
-        # - text: Configuring Ozone Security
-        #   href: ozone-security/index.html
-        #   id: pub-ozone-security
-        #   sub: ozone-security/navigation.json
+        - text: Configuring Ozone Security
+          href: ozone-security/index.html
+          id: pub-ozone-security
+          sub: ozone-security/navigation.json
 
     - text: Compute
       href: howto-compute.html
