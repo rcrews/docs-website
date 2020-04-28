@@ -56,9 +56,13 @@
       id: pub-managing-environments
       sub: managing-environments/navigation.json
 
-# - text: Troubleshooting
-#   id: cat-troubleshooting
-#   sub:
+- text: Troubleshooting
+  id: cat-troubleshooting
+  sub:
+    - text: Monitoring
+      href: monitoring/index.html
+      id: pub-monitoring
+      sub: monitoring/navigation.json
 
 # - text: Reference
 #   id: cat-reference
