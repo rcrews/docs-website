@@ -89,11 +89,6 @@
           id: pub-hue-introduction
           sub: hue-introduction/navigation.json
 
-        - text: Apache Phoenix Overview
-          href: phoenix-overview/index.html
-          id: pub-phoenix-overview
-          sub: phoenix-overview/navigation.json
-
         - text: Cloudera Search Overview
           href: search-overview/index.html
           id: pub-search-overview
@@ -106,6 +101,11 @@
           href: hbase-overview/index.html
           id: pub-hbase-overview
           sub: hbase-overview/navigation.json
+
+        - text: Apache Phoenix Overview
+          href: phoenix-overview/index.html
+          id: pub-phoenix-overview
+          sub: phoenix-overview/navigation.json
 
     - text: Data Science
       href: concepts-data-science.html
@@ -434,6 +434,11 @@
           href: hbase-backup-dr/index.html
           id: pub-hbase-backup-dr
           sub: hbase-backup-dr/navigation.json
+
+        - text: Connecting to Apache Phoenix Query Server
+          href: phoenix-access-data/index.html
+          id: pub-phoenix-access-data
+          sub: phoenix-access-data/navigation.json
 
     - text: Data Science
       href: howto-data-science.html

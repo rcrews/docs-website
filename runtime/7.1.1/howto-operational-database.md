@@ -5,6 +5,7 @@ title: Operational Database
 
 # How-to publications related to
 # * HBase
+# * Phoenix
 
 publications:
 - column:
@@ -57,6 +58,15 @@ publications:
     description: >-
       Provides information about configuring HBase snapshots, and using
       HBase replication.
+
+  - title: Connecting to Apache Phoenix Query Server
+    url: phoenix-access-data/index.html
+    description: >-
+      Provides information about connecting to Apache Phoenix query
+      Server using the JDBC client.
+
 ---
+
 Apache HBase is a NoSQL database that provides real-time read/write
-access to large datasets.
+access to large datasets. Apache Phoenix provides a SQL interface
+for managing data in Apache HBase.

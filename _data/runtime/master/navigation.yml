@@ -89,11 +89,6 @@
           id: pub-hue-introduction
           sub: hue-introduction/navigation.json
 
-        - text: Apache Phoenix Overview
-          href: phoenix-overview/index.html
-          id: pub-phoenix-overview
-          sub: phoenix-overview/navigation.json
-
         # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Cloudera Search Overview
           href: search-overview/index.html
@@ -107,6 +102,11 @@
           href: hbase-overview/index.html
           id: pub-hbase-overview
           sub: hbase-overview/navigation.json
+
+        - text: Apache Phoenix Overview
+          href: phoenix-overview/index.html
+          id: pub-phoenix-overview
+          sub: phoenix-overview/navigation.json
 
     - text: Data Science
       href: concepts-data-science.html
@@ -377,22 +377,6 @@
           id: pub-tuning-hue
           sub: tuning-hue/navigation.json
 
-#Phoenix moved to OpDB. Gokul 16 April
-#        - text: Configuring Apache HBase for use with Apache Phoenix
-#          href: phoenix-configure-hbase/index.html
-#          id: pub-phoenix-configure-hbase
-#          sub: phoenix-configure-hbase/navigation.json
-
-#        - text: Using Apache Phoenix to Store and Access Data
-#          href: phoenix-access-data/index.html
-#          id: pub-phoenix-access-data
-#          sub: phoenix-access-data/navigation.json
-
-#        - text: Using Apache Phoenix-Spark Connector
-#          href: phoenix-spark-connector/index.html
-#          id: pub-phoenix-spark-connector
-#          sub: phoenix-spark-connector/navigation.json
-
         - text: Search Tutorial
           href: search-tutorial/index.html
           id: pub-search-tutorial
@@ -466,7 +450,7 @@
           id: pub-hbase-backup-dr
           sub: hbase-backup-dr/navigation.json
 
-        - text: Using Apache Phoenix to Store and Access Data
+        - text: Connecting to Apache Phoenix Query Server
           href: phoenix-access-data/index.html
           id: pub-phoenix-access-data
           sub: phoenix-access-data/navigation.json
