@@ -41,7 +41,7 @@ publications:
       Collecting your organization's terms in Atlas helps you build a
       search index to easily find the data assets you are looking for.
 
--column:
+- column:
 
   - title: Configuring and Monitoring Atlas in Cloudera Manager
     url: atlas-configuring/index.html
