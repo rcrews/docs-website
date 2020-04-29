@@ -228,7 +228,7 @@
     - text: Compute
       href: howto-compute.html
       sub:
-      
+
         - text: Using YARN Web UI and CLI
           href: yarn-using-ui-cli/index.html
           id: pub-yarn-using-ui-cli
@@ -521,6 +521,11 @@
           href: atlas-exploring-using-lineage/index.html
           id: pub-atlas-exploring-using-lineage
           sub: atlas-exploring-using-lineage/navigation.json
+
+        - text: Leveraging Business Metadata
+          href: atlas-leveraging-business-metadata/index.html
+          id: pub-atlas-leveraging-business-metadata
+          sub: atlas-leveraging-business-metadata/navigation.json
 
         - text: Managing Business Terms with Atlas Glossaries
           href: atlas-managing-business-terms-with-glossaries/index.html
