@@ -52,7 +52,7 @@ publications:
       description: >-
         Provides information about moving local log files of any application
         onto HDFS or a cloud-based storage.
-   
+
 
 - column:
   - title: Apache ZooKeeper
@@ -69,7 +69,7 @@ publications:
       description: >-
         Provides information about configuring the Apache
         ZooKeeper service.
-  
+
     - title: Managing Apache ZooKeeper Security
       url: zookeeper-security/index.html
       description: >-
@@ -77,7 +77,9 @@ publications:
         ZooKeeper client shell for Kerberos authentication. It also
         describes the verification of the ZooKeeper authentication and
         ACLs best practices.
+
 ---
+
 Apache YARN manages resources for the applications running on your
 cluster by allocating resources through scheduling,  limiting CPU usage,
 and partitioning clusters. You can use Access Control Lists to use YARN

@@ -27,5 +27,7 @@ publications:
       description: >-
         Provides a brief overview of Apache Zeppelin, a notebook
         application included in Cloudera Data Platform.
+
 ---
+
 Overview of Apache Spark and Apache Zeppelin.

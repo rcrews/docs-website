@@ -17,25 +17,25 @@ publications:
       description: >-
         Provides information about managing applications by using the
         YARN REST APIs and YARN Services API.
-  
+
     - title: Managing and Allocating Cluster Resources using Capacity Scheduler
       url: yarn-allocate-resources/index.html
       description: >-
         Explains how to allocate cluster resources for the applications
         using Capacity Scheduler.
-  
+
     - title: Configuring Apache Hadoop YARN Security
       url: yarn-security/index.html
       description: >-
         Provides information about Access Control List and how to use
         YARN with a secure cluster.
-  
+
     - title: Apache Hadoop YARN High Availability
       url: yarn-high-availability/index.html
       description: >-
         Provides information about ResourceManager High Availability. It
         also describes the work preserving recovery process.
-  
+
     - title: Monitoring Clusters and Apache Hadoop YARN Applications
       url: yarn-monitoring-clusters-applications/index.html
       description: >-
@@ -58,7 +58,7 @@ publications:
       description: >-
         Provides information about configuring the Apache
         ZooKeeper service.
-  
+
     - title: Managing Apache ZooKeeper Security
       url: zookeeper-security/index.html
       description: >-
@@ -66,7 +66,9 @@ publications:
         ZooKeeper client shell for Kerberos authentication. It also
         describes the verification of the ZooKeeper authentication and
         ACLs best practices.
+
 ---
+
 Apache YARN manages resources for the applications running on your
 cluster by allocating resources through scheduling,  limiting CPU usage,
 and partitioning clusters. You can use Access Control Lists to use YARN

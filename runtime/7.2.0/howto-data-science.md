@@ -17,19 +17,19 @@ publications:
       description: >-
         Instructions for configuring Apache Spark in Cloudera Data
         Platform.
-  
+
     - title: Developing Apache Spark Applications
       url: developing-spark-applications/index.html
       description: >-
         Instructions and examples for creating Apache Spark applications
         to run on Cloudera Data Platform.
-  
+
     - title: Running Apache Spark Applications
       url: running-spark-applications/index.html
       description: >-
         Instructions and examples for running Apache Spark applications
         on Cloudera Data Platform.
-  
+
     - title: Tuning Apache Spark
       url: tuning-spark/index.html
       description: >-
@@ -45,12 +45,14 @@ publications:
       description: >-
         Instructions for configuring Apache Zeppelin in Cloudera Data
         Platform.
-  
+
     - title: Using Apache Zepppelin
       url: using-zeppelin/index.html
       description: >-
         Instructions and examples for using Apache Zeppelin in Cloudera
         Data Platform
+
 ---
+
 Instructions and examples for Apache Spark and Apache Zeppelin in
 Cloudera Data Platform.

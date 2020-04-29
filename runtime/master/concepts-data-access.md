@@ -29,7 +29,7 @@ publications:
       description: >-
         Presents key features of Hive and Hive Metastore, and covers
         Hive 3 architecture.
-  
+
     - title: Apache Hive Performance Tuning
       url: hive-performance-tuning/index.html
       description: >-
@@ -64,6 +64,7 @@ publications:
         Provides an overview of Cloudera Search, based on Apache Solr.
 
 ---
+
 Cloudera Data Platform Runtime data access concepts provide overview
 information about Apache Impala, Apache Hive, Data Analytics Studio, and Hue. Using the
 familiar SQL interfaces of these components, you access your data.

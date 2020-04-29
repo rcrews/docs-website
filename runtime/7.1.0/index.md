@@ -13,6 +13,7 @@ sections:
         url: release-notes/index.html
 
 ---
+
 Cloudera Runtime is the core open source software distribution within
 Cloudera Data Platform (CDP) that is maintained, supported, versioned,
 and packaged as a single entity by Cloudera. Cloudera Runtime includes
@@ -29,4 +30,5 @@ Cloudera Runtime does not include:
 * Add-on products such as CDSW, CDF, and Metron
 
 To learn about installing, configuring, and managing clusters, refer
-to the [Cloudera Manager documentation](/cloudera-manager/{{ page.version }}/index.html).
+to the
+[Cloudera Manager documentation](/cloudera-manager/{{ page.version }}/index.html).

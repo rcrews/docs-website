@@ -165,6 +165,7 @@ publications:
         Describes how to index data using Cloudera Search.
 
 ---
+
 Cloudera Data Platform Runtime includes Apache Hive 3 and Apache Impala
 for storing and accessing data in the Hive metastore database. Hive 3
 addresses enterprise data warehouse demands for transactional data in

@@ -13,6 +13,8 @@ publications:
     description: >-
       Provides an overview of Apache Kafka including key features,
       capabilities, and architecture.
+
 ---
+
 Apache Kafka is a high performance, highly available, and redundant
 streaming message platform.

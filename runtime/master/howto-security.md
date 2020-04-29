@@ -35,12 +35,12 @@ publications:
     description: >-
       You can configure Apache Ranger authentication using UNIX, LDAP,
       or AD.
-      
+
   - title: Configuring Advanced Security Options for Apache Ranger
     url: security-ranger-configuring-advanced/index.html
     description: >-
       How to configure advanced security options such as Kerberos and
-      TLS/SSL for Apache Ranger.      
+      TLS/SSL for Apache Ranger.
 
 ---
 
