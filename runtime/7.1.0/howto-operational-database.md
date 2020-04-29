@@ -66,6 +66,7 @@ publications:
       Server using the JDBC client.
 
 ---
+
 Apache HBase is a NoSQL database that provides real-time read/write
 access to large datasets. Apache Phoenix provides a SQL interface
 for managing data in Apache HBase.
