@@ -13,5 +13,6 @@ publications:
       Introduces Apache HBase, with information about Apache HBase use cases.
 
 ---
+
 Apache HBase is a NoSQL database that provides real-time read/write
 access to large datasets.
