@@ -19,10 +19,9 @@ publications:
   - title: Apache Phoenix Overview
     url: phoenix-overview/index.html
     description: >-
-      Interdum porta augue felis nibh rhoncus at auctor nostra, non
-      etiam mus malesuada dui facilisi nisi.
-
+    Provides an overview of Apache Phoenix.
 ---
 
 Apache HBase is a NoSQL database that provides real-time read/write
-access to large datasets.
+access to large datasets. Apache Phoenix provides a SQL interface
+for managing data in Apache HBase.
