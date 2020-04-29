@@ -19,7 +19,7 @@ css: ../Licenses.css
 
 This page lists the third-party license files for Cloudera HDF.
 
-## HDF 3.5.0, April 28, 2020
+## HDF 3.5.1, April 28, 2020
 
 Third-party licenses for Cloudera HDF 3.5.1 are in the following files:
 
