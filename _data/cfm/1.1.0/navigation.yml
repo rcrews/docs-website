@@ -24,6 +24,10 @@
 - text: Installation & Upgrade
   id: cat-install
   sub:
+    - text: Download
+      href: download/index.html
+      id: pub-download
+      sub: download/navigation.json
     - text: Installation
       href: installation/index.html
       id: pub-installation
