@@ -191,14 +191,6 @@ function filterStuff($) {
     return isPage('jdk');
   }
   
-  function isLocalPackage() {
-    return isPage('local_package');
-  }
-  
-  function isLocalParcel() {
-    return isPage('local_parcel');
-  }
-  
   var repoGenerator;
   if (isPackageRepoPage() || isParcelRepoPage()) {
     repoGenerator = new RepoGenerator('cm', 'Cloudera Manager');
@@ -1270,8 +1262,12 @@ function filterStuff($) {
     var $instruction1 = $('<p>').text('Fill in the following form to create a customized set of instructions for your environment.');
     $filter.append($instruction1);
 
-    if (isPackageRepoPage() || isParcelRepoPage()) {
+    if (isPackageRepoPage()) {
       addOSFilter();
+      addCMDestFilter();
+    } else if (isParcelRepoPage()) {
+      addOSFilter();
+      addClusterDestFilter();
     } else if (isCMUpgradePage()) {
       addOSFilter();
       addDbFilter();
@@ -1325,11 +1321,7 @@ function filterStuff($) {
       addFilter('New Operating System', 'os', '', osOptions, $filter);
     } else if (isJDKUpgradePage()) {
       addFilter('Current Operating System', 'os', '', osOptions, $filter);
-    } else if (isLocalPackage()) {
-      addCMDestFilter();
-    } else if (isLocalParcel()) {
-      addClusterDestFilter();
-    }
+    } 
 
     var $pushRight = $('<p>').css('text-align', 'right');
     var $refreshContent = $('<span>').addClass('cdoc-upgrade-refresh-content').html('<span class="fa fa-refresh fa-spin"></span> Refreshing Content').hide();
