@@ -191,6 +191,14 @@ function filterStuff($) {
     return isPage('jdk');
   }
   
+  function isLocalPackage() {
+    return isPage('local_package');
+  }
+  
+  function isLocalParcel() {
+    return isPage('local_parcel');
+  }
+  
   var repoGenerator;
   if (isPackageRepoPage() || isParcelRepoPage()) {
     repoGenerator = new RepoGenerator('cm', 'Cloudera Manager');
@@ -1317,6 +1325,10 @@ function filterStuff($) {
       addFilter('New Operating System', 'os', '', osOptions, $filter);
     } else if (isJDKUpgradePage()) {
       addFilter('Current Operating System', 'os', '', osOptions, $filter);
+    } else if (isLocalPackage()) {
+      addCMDestFilter();
+    } else if (isLocalParcel()) {
+      addClusterDestFilter();
     }
 
     var $pushRight = $('<p>').css('text-align', 'right');
