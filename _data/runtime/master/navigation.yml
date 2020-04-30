@@ -557,6 +557,12 @@
           id: pub-atlas-securing
           sub: atlas-securing/navigation.json
 
+#        - text: Migrating Data from Cloudera Navigator to Atlas
+#          href: atlas-migrating-from-navigator/index.html
+#          id: pub-atlas-migrating-from-navigator
+#          sub: atlas-migrating-from-navigator/navigation.json
+
+
     - text: Jobs Management
       href: howto-jobs-management.html
       sub:
