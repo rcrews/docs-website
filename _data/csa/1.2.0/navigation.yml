@@ -44,6 +44,10 @@
       href: installation/index.html
       id: pub-installation
       sub: installation/navigation.json
+    - text: Upgrade
+      href: upgrade/index.html
+      id: pub-upgrade
+      sub: upgrade/navigation.json
 
 - text: How To
   id: cat-how-to
@@ -72,6 +76,14 @@
       href: configuration/index.html
       id: pub-configuration
       sub: configuration/navigation.json
+    - text: SQL Client
+      href: sql-client/index.html
+      id: pub-sql-client
+      sub: sql-client/navigation.json
+    - text: Governance
+      href: governance/index.html
+      id: pub-governance
+      sub: governance/navigation.json
     - text: Job lifecycle
       href: job-lifecycle/index.html
       id: pub-job-lifecycle
