@@ -44,14 +44,10 @@
 - text: How To
   name: how-to
   sub:
-    - text: Security
-      href: howto-security.html
-      id: foyer-security
-      sub:
-        - text: Securing
-          href: securing-cfm/index.html
-          id: pub-securing-cfm
-          sub: securing-cfm/navigation.json
+    - text: Securing
+      href: securing-cfm/index.html
+      id: pub-securing-cfm
+      sub: securing-cfm/navigation.json
 
     - text: Apache NiFi
       href: howto-apache-nifi.html
@@ -94,32 +90,15 @@
           id: pub-adding-functionality-to-apache-nifi
           sub: /HDPDocuments/HDF3/HDF-3.5.1/adding-functionality-to-apache-nifi/navigation.json
 
-    - text: Apache NiFi Toolkit
-      href: howto-apache-nifi-toolkit.html
-      id: foyer-apache-nifi-toolkit
-      sub:
-        - text: Using the Apache NiFi Toolkit
-          href: /HDPDocuments/HDF3/HDF-3.5.1/nifi-toolkit/index.html
-          id: pub-nifi-toolkit
-          sub: /HDPDocuments/HDF3/HDF-3.5.1/nifi-toolkit/navigation.json
+    - text: Using the Apache NiFi Toolkit
+      href: /HDPDocuments/HDF3/HDF-3.5.1/nifi-toolkit/index.html
+      id: pub-nifi-toolkit
+      sub: /HDPDocuments/HDF3/HDF-3.5.1/nifi-toolkit/navigation.json
 
-    - text: Apache NiFi Registry
-      href: howto-apache-nifi-registry.html
-      id: foyer-apache-nifi-registry
-      sub:
-        - text: Using Apache NiFi Registry
-          href: /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-registry/index.html
-          id: pub-using-nifi-registry
-          sub: /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-registry/navigation.json
-
-    - text: CFM in Data Hub
-      href: howto-cfm-in-data-hub.html
-      id: foyer-cfm-in-data-hub
-      sub:
-        - text: Publication TBD
-          href: publication-tbd/index.html
-          id: pub-publication-tbd
-          sub: publication-tbd/navigation.json
+    - text: Using Apache NiFi Registry
+      href: /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-registry/index.html
+      id: pub-using-nifi-registry
+      sub: /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-registry/navigation.json
 
 - text: Reference
   name: reference
@@ -153,10 +132,6 @@
       href: /HDPDocuments/HDF3/HDF-3.5.1/administering-nifi-registry/index.html
       id: pub-administering-nifi-registry
       sub: /HDPDocuments/HDF3/HDF-3.5.1/administering-nifi-registry/navigation.json
-    - text: Operator API
-      href: operator-api/index.html
-      id: pub-operator-api
-      sub: operator-api/navigation.json
 
 - text: Release Notes
   name: releasenotes
