@@ -12,12 +12,12 @@ publications:
   - title: Building an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/building-a-dataflow/index.html
     description: >-
-      Provides an overview of how to build an Apache NiFi dataflow. 
+      Provides an overview of how to build an Apache NiFi dataflow.
 
   - title: Managing an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/managing-a-dataflow/index.html
     description: >-
-      Describes how to manage an Apache NiFi dataflow. 
+      Describes how to manage an Apache NiFi dataflow.
 
   - title: Navigating an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/navigating-a-dataflow/index.html
@@ -27,12 +27,13 @@ publications:
   - title: Monitoring an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/monitoring-a-dataflow/index.html
     description: >-
-      Describes the tools you ahve to monitor an Apache NiFi dataflow. 
+      Describes the tools you ahve to monitor an Apache NiFi dataflow.
 
   - title: Versioning an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/versioning-a-dataflow/index.html
     description: >-
-      Describes how to connect to NiFi Registry and version dataflows on the process group level. 
+      Describes how to connect to NiFi Registry and version dataflows on
+      the process group level.
 
   - title: Using Apache NiFi Templates
     url: /HDPDocuments/HDF3/HDF-3.5.1/using-dataflow-templates/index.html
@@ -47,8 +48,10 @@ publications:
   - title: Adding functionality to Apache NiFi
     url: /HDPDocuments/HDF3/HDF-3.5.1/adding-functionality-to-apache-nifi/index.html
     description: >-
-      Describes how developers can customize and contribute to Apache NiFi. 
+      Describes how developers can customize and contribute to Apache
+      NiFi.
 
 ---
 
-Provides documentation covering how to use Apache NiFi to collect and distribute data. 
+Provides documentation covering how to use Apache NiFi to collect and
+distribute data.

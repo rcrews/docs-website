@@ -7,73 +7,51 @@ publications:
   - title: Using the Apache NiFi Interface
     url: /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-interface/index.html
     description: >-
-      Sodales gravida egestas duis mus mattis risus odio est cursus,
-      nullam luctus nisi senectus habitant tempus donec sit nascetur,
-      scelerisque iaculis.
+      Describes the components of the Apache NiFi user interface.
 
   - title: Building an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/building-a-dataflow/index.html
     description: >-
-      Sodales gravida egestas duis mus mattis risus odio est cursus,
-      nullam luctus nisi senectus habitant tempus donec sit nascetur,
-      scelerisque iaculis.
+      Provides an overview of how to build an Apache NiFi dataflow.
 
   - title: Managing an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/managing-a-dataflow/index.html
     description: >-
-      Sodales gravida egestas duis mus mattis risus odio est cursus,
-      nullam luctus nisi senectus habitant tempus donec sit nascetur,
-      scelerisque iaculis.
+      Describes how to manage an Apache NiFi dataflow.
 
   - title: Navigating an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/navigating-a-dataflow/index.html
     description: >-
-      Sodales gravida egestas duis mus mattis risus odio est cursus,
-      nullam luctus nisi senectus habitant tempus donec sit nascetur,
-      scelerisque iaculis.
+      Describes how to navigate within an Apache NiFi dataflow.
 
   - title: Monitoring an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/monitoring-a-dataflow/index.html
     description: >-
-      Sodales gravida egestas duis mus mattis risus odio est cursus,
-      nullam luctus nisi senectus habitant tempus donec sit nascetur,
-      scelerisque iaculis.
+      Describes the tools you ahve to monitor an Apache NiFi dataflow.
 
   - title: Versioning an Apache NiFi DataFlow
     url: /HDPDocuments/HDF3/HDF-3.5.1/versioning-a-dataflow/index.html
     description: >-
-      Sodales gravida egestas duis mus mattis risus odio est cursus,
-      nullam luctus nisi senectus habitant tempus donec sit nascetur,
-      scelerisque iaculis.
+      Describes how to connect to NiFi Registry and version dataflows on
+      the process group level.
 
   - title: Using Apache NiFi Templates
     url: /HDPDocuments/HDF3/HDF-3.5.1/using-dataflow-templates/index.html
     description: >-
-      Sodales gravida egestas duis mus mattis risus odio est cursus,
-      nullam luctus nisi senectus habitant tempus donec sit nascetur,
-      scelerisque iaculis.
+      Describes how to use Apache NiFi templates within a dataflow.
 
   - title: Using Apache NiFi Provenance Tools
     url: /HDPDocuments/HDF3/HDF-3.5.1/using-dataflow-provenance-tools/index.html
     description: >-
-      Sodales gravida egestas duis mus mattis risus odio est cursus,
-      nullam luctus nisi senectus habitant tempus donec sit nascetur,
-      scelerisque iaculis.
+      Describes how to use Apache NiFi to monitor flow file provenance.
 
   - title: Adding functionality to Apache NiFi
     url: /HDPDocuments/HDF3/HDF-3.5.1/adding-functionality-to-apache-nifi/index.html
     description: >-
-      Sodales gravida egestas duis mus mattis risus odio est cursus,
-      nullam luctus nisi senectus habitant tempus donec sit nascetur,
-      scelerisque iaculis.
+      Describes how developers can customize and contribute to Apache
+      NiFi.
 
 ---
 
-Dignissim eros egestas mauris dolor montes nisi porttitor urna velit
-efficitur, litora aenean consectetur hac nulla ligula cubilia netus at
-justo, curabitur facilisi pretium nisl habitasse curae morbi enim cras,
-sodales erat libero metus proin consequat phasellus natoque sapien. Quam
-ex senectus curabitur sem ac amet lacus nisi auctor, natoque magnis eu
-lacinia finibus vulputate dictum nec integer, eros tellus ligula
-placerat mollis ullamcorper sed facilisi convallis mattis, turpis platea
-inceptos habitant torquent dignissim lectus proin.
+Provides documentation covering how to use Apache NiFi to collect and
+distribute data.
