@@ -82,7 +82,7 @@ publications:
       description: >-
         Nligula mus netus elementum inceptos torquent viverra.
 
-    - title: Monitoring End to End Latency
+    - title: Monitoring End-to-End Latency
       url: monitoring-end-to-end-latency/index.html
       description: >-
         Nligula mus netus elementum inceptos torquent viverra.
