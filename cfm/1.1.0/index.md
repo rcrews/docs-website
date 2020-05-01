@@ -31,5 +31,5 @@ CFM includes two primary components:
 
 - *Apache NiFi Registry* – The companion to NiFi that enables DevOps
   style development and deployment of flow files. It also supports flow
-  versioning, promoting flows from one environment into another, and
-  flow deployment.
+  versioning, promoting flows from one environment into another, and flow
+  deployment.
