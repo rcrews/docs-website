@@ -24,6 +24,10 @@
 - text: Installation & Upgrade
   id: cat-install
   sub:
+    - text: Support Matrix
+      href: support-matrix/index.html
+      id: pub-support-matrix
+      sub: support-matrix/navigation.json
     - text: Download
       href: download/index.html
       id: pub-download
@@ -36,10 +40,6 @@
       href: upgrading-cfm/index.html
       id: pub-upgrading-cfm
       sub: upgrading-cfm/navigation.json
-    - text: Support Matrix
-      href: support-matrix/index.html
-      id: pub-support-matrix
-      sub: support-matrix/navigation.json
 
 - text: How To
   name: how-to
