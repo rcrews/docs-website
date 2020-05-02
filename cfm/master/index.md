@@ -16,7 +16,6 @@ sections:
       - title: Release Notes
         url: release-notes/index.html
 
-
 ---
 
 Cloudera Flow Management (CFM) is a no-code data ingestion and
