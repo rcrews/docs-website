@@ -1,20 +1,21 @@
 ---
 ---
-
-@charset "utf-8";
+@charset "UTF-8";
 @import
-// Sass variables and settings
-"base/mixins",
-"base/settings",
-"base/base",  // Boilerplate etc.
-"base/global",
+  // Sass variables and settings
+  "base/mixins",
+  "base/settings",
+  "base/normalize_801",
+  "base/html5-boilerplate_730_main",
+  "base/print",
+  "base/global",
 
-// Cloudera Home specific stuff.
-"newux/home",
-"newux/homeoverlay",
-"newux/errors",
+  // Cloudera Home specific stuff.
+  "newux/home",
+  "newux/homeoverlay",
+  "newux/errors",
 
-// FontAwesome
-"fontawesome/fontawesome",
-"fontawesome/solid",
-"fontawesome/v4-shims";
+  // FontAwesome
+  "fontawesome/fontawesome",
+  "fontawesome/solid",
+  "fontawesome/v4-shims";
