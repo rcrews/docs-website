@@ -2,10 +2,7 @@
 # frozen_string_literal: true
 
 #
-# Generates Node.js Lambda/Lambda@Edge function for
-# - http://docs-dev.cloudera.com/
-# - http://docs-stage.cloudera.com/
-# - https://docs.cloudera.com/
+# Generates Node.js Lambda@Edge function for https://docs.cloudera.com/
 # Depends on
 # - dcc-url-aliases.yml
 # - dcc-url-aliases.erb
