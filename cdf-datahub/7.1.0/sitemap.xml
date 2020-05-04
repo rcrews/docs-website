@@ -4,1213 +4,1213 @@
 
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/links.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-flow-management-deployment/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/concepts-flow-management.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-streams-messaging-deployment/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/concepts-streams-messaging.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-flow-management-deployment/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-apache-nifi-registry.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-streams-messaging-deployment/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-data-ingest.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/connecting-kafka/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-apache-nifi.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-apache-kafka.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-streams-messaging-manager.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/rest-api-reference/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-schema-registry.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-api/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/concepts-flow-management.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-flow-management-deployment/topics/cdf-datahub-fm-cluster-definitions.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-flow-management-deployment/topics/cdf-datahub-fm-cluster-layout.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-flow-management-deployment/topics/cdf-datahub-fm-deployment-scenarios.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-apache-nifi-registry.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-streams-messaging-deployment/topics/cdf-datahub-sm-cluster-definitions.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-data-ingest.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-streams-messaging-deployment/topics/cdf-datahub-sm-deployment-scenarios.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-apache-nifi.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-setup-quick-start-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-streams-messaging-deployment/topics/cdf-datahub-sm-cluster-layout.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/connecting-kafka/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-quick-start-createcluster.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-apache-kafka.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-quick-start-giveaccess.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-streams-messaging-manager.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/rest-api-reference/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/howto-schema-registry.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-api/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-quick-start-nextsteps.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/smm-overview/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-quick-start-prereq.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-flow-management-deployment/topics/cdf-datahub-fm-deployment-scenarios.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-before-you-begin.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-flow-management-deployment/topics/cdf-datahub-fm-cluster-definitions.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-fm-security-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-streams-messaging-deployment/topics/cdf-datahub-sm-deployment-scenarios.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-user-authorization.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-streams-messaging-deployment/topics/cdf-datahub-sm-cluster-layout.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-understanding-the-workflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-flow-management-deployment/topics/cdf-datahub-fm-cluster-layout.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-authorization-options.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-environmentadmin.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-selective-permissions.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-selective-permissions-step1.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-selective-permissions-step3.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-selective-permissions-step2.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-example.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-predefined-nifi-policies.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-predefined-nifiregistry-policies.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-quick-start-prereq.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-setup-quick-start-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-quick-start-createcluster.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-quick-start-nextsteps.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-quick-start-giveaccess.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/connecting-kafka/topics/kafka-dh-connect-clients-outside-vpc.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-topics/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-kafka-clusters/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-api/topics/cdf-datahub-nifi-rest-api.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-whats-new.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/using-schema-registry/index.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-component-support.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-unsupported-features.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-unsupported-nifi-extensions.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-unsupported-flow-management-features.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-apache-patches.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-unsupported-streams-messaging-features.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-nifi-patches.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/planning-your-streams-messaging-deployment/topics/cdf-datahub-sm-cluster-definitions.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-nifi-registry-patches.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-whats-new.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-unsupported-features.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-component-support.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-unsupported-streams-messaging-features.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-unsupported-nifi-extensions.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-apache-patches.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-unsupported-flow-management-features.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-nifi-patches.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-known-issues.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-fixed-issues.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/release-notes/topics/cdf-datahub-cve.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-setup-quick-start-overview.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-quick-start-createcluster.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-quick-start-prereq.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-quick-start-giveaccess.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-fm/topics/cdf-datahub-fm-cluster-quick-start-nextsteps.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-fm-security-overview.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-before-you-begin.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-understanding-the-workflow.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-user-authorization.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-authorization-options.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-environmentadmin.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-selective-permissions.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-selective-permissions-step1.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-selective-permissions-step2.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-predefined-nifi-policies.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-selective-permissions-step3.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-example.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-security/topics/cdf-datahub-nifi-security-predefined-nifiregistry-policies.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-setup-quick-start-overview.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-quick-start-prereq.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-quick-start-giveaccess.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-quick-start-nextsteps.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/quick-start-sm/topics/cdf-datahub-sm-cluster-quick-start-createcluster.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/connecting-kafka/topics/kafka-dh-connect-clients-outside-vpc.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-kafka-clusters/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-topics/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/using-schema-registry/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-api/topics/cdf-datahub-nifi-rest-api.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/index.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-schema_registry_overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-examples_of_interacting_with_schema_registry.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-schema_registry_use_cases.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-use_case_1__registering_and_querying_a_schema_for_a_kafka_topic.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-use_case_2__reading_deserializing_and_writing_serializing_data_from_and_to_a_kafka_topic.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-use_case_3__dataflow_management_with_schema-based_routing.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-schema_registry_component_architecture.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-schema_registry_concepts.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-compatibility_policies.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-schema_entities.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-schema_registry_component_architecture.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/smm-overview/topics/smm-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-nifi-hive-ingest.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-schema_entities.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-table.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-understand.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-prerequisites.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-service-account.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-ranger.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-idbroker-mapping.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-data-source.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-build.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-controller-service.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-start.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-verify.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-data-target.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-connection-detail.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/schema-registry-overview/topics/csp-compatibility_policies.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-understand-kafka-usecase.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-next.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-prereq.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-create-cs.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-source-processor.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-buildflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-prereq.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-source-processor.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-create-cs.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-target-processor.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-startflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-monitorflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-nextsteps.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-startflow.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-verifyflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-appendix.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-nifi-hbase-ingest.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kafka-ingest/topics/cdf-datahub-fm-kafka-ingest-nextsteps.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-understand.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-table.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-prerequisites.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-table.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-ranger.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-build.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-controller-service.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-connection-details.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-controller-service.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-build.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-data-source.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-verify.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-data-target.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-start.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-next.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hbase-ingest/topics/cdf-datahub-hbase-ingest-verify.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-understand.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-nifi-hive-ingest.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-prerequisites.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-service-account.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-idbroker-mapping.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-table.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-ranger.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-build.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-connection-detail.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-controller-service.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-data-target.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-start.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-verify.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-data-source.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-hive-ingest/topics/cdf-datahub-hive-ingest-next.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-nifi-kudu-ingest.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-understand.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-table.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-build.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-controller-service.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-data-source.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-prerequisites.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-data-target.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-controller-service.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-verify.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-table.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-build.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-data-source.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-start.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-next.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-verify.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-kudu-ingest/topics/cdf-datahub-kudu-ingest-data-target.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-understand-s3-usecase.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-prereq.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-buildflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-merging-records-processor.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-create-cs.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-create-idbroker-mapping.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-target-processor.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-prereq.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-source-processor.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-buildflow.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-create-cs.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-merging-records-processor.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-startflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-nextsteps.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-verifyflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-target-processor.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-monitorflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-understand-adls-usecase.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-verifyflow.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-buildflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-overview.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-aws-ingest/topics/cdf-datahub-fm-s3-ingest-nextsteps.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-prereq.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-understand-adls-usecase.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-buildflow.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-create-idbroker-mapping.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-source-processor.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-create-cs.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-merging-records-processor.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-target-processor.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-verifyflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-source-processor.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-startflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-nextsteps.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-verifyflow.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-merging-records-processor.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-monitorflow.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-topics/topics/smm-create-kafka-topic.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-topics/topics/smm-modify-kafka-topic.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/nifi-azure-ingest/topics/cdf-datahub-fm-adls-ingest-nextsteps.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-kafka-clusters/topics/smm-monitoring-clusters.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-kafka-clusters/topics/smm-monitoring-brokers.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-kafka-clusters/topics/smm-monitoring-consumers.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-kafka-clusters/topics/smm-monitoring-producers.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-kafka-clusters/topics/smm-monitoring-topics.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-kafka-clusters/topics/smm-monitoring-consumers.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-topics/topics/smm-create-kafka-topic.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-kafka-clusters/topics/smm-monitoring-brokers.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-topics/topics/smm-modify-kafka-topic.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-topics/topics/smm-delete-kafka-topic.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-enabling-interceptors.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-monitoring-end-to-end-latency.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-latency-granularity-metrics.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-latency-use-cases.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-end-to-end-latency-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-alert-notifications.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-managing-alertpolicies-notifications.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-alert-policies-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-creating-alert-notificaton.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-entitytype-entity-metrics.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-deleting-notifier.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-managing-alertpolicies-notifications.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-creating-alert-notificaton.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-alert-notifications.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-updating-notifier.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-updating-alert-policy.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-deleting-notifier.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-creating-alert-policy.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-updating-alert-policy.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-disabling-alert-policy.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-deleting-alert-policy.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-end-to-end-latency-overview.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/managing-alert-policies/topics/smm-enabling-alert-policy.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-understanding_nifi_record_based_processing.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-latency-granularity-metrics.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-setting_up_the_hortonworksschemaregistry_controller_service.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-enabling-interceptors.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-integrating_with_nifi.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-latency-use-cases.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-adding_and_configuring_record_reader_and_writer_controller_services.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-integrating_with_kafka.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-using_record-enabled_processors.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-integrating_kafka_and_schema_registry_using_nifi_processors.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-monitoring-end-to-end-latency.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/using-schema-registry/topics/csp-adding_a_new_schema.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/using-schema-registry/topics/csp-evolving_schema.html</loc>
-		<lastmod>2020-04-27</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/using-schema-registry/topics/csp-deleting-schemas.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/using-schema-registry/topics/csp-querying_schemas.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/using-schema-registry/topics/csp-evolving_schema.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/using-schema-registry/topics/csp-deleting-schemas.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-integrating_with_nifi.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-understanding_nifi_record_based_processing.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-setting_up_the_hortonworksschemaregistry_controller_service.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-adding_and_configuring_record_reader_and_writer_controller_services.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-using_record-enabled_processors.html</loc>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-integrating_with_kafka.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-integrating_kafka_and_schema_registry.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/integrating-with-schema-registry/topics/csp-integrating_kafka_and_schema_registry_using_nifi_processors.html</loc>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdf-datahub/7.1.0/monitoring-end-to-end-latency/topics/smm-alert-policies-overview.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-04</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
