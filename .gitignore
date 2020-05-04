@@ -7,6 +7,9 @@
 _utils/tinycc/urls.json
 dcc-url-aliases.js
 
+node_modules/
+out/
+
 ########
 
 # Don't store data directories from other source control systems

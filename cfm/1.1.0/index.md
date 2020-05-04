@@ -9,10 +9,12 @@ sections:
     # "name" here below must be "releasenotes" to get the black background
     name: releasenotes
     books:
-      - title: Release Notes
-        url: release-notes/index.html
       - title: Support Matrix
         url: support-matrix/index.html
+      - title: Download
+        url: download/index.html
+      - title: Release Notes
+        url: release-notes/index.html
 
 ---
 
@@ -29,5 +31,5 @@ CFM includes two primary components:
 
 - *Apache NiFi Registry* – The companion to NiFi that enables DevOps
   style development and deployment of flow files. It also supports flow
-  versioning, promoting flows from one environment into another, and
-  flow deployment.
+  versioning, promoting flows from one environment into another, and flow
+  deployment.

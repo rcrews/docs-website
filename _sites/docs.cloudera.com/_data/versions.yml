@@ -803,16 +803,16 @@
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
 - name: Cloudera Data Flow for Data Hub
-  latest-version: 7.0.2
-  latest-url: /cdf-datahub/7.0.2/index.html
+  latest-version: 7.1.0
+  latest-url: /cdf-datahub/7.1.0/index.html
   search-name: cdf-datahub
   versions:
-    #- title: "7.1"
-    #  url: /cdf-datahub/7.1.0/index.html
-    #  minors:
-    #    - title: 7.1.0
-    #      type: latest
-    #      url: /cdf-datahub/7.1.0/index.html
+    - title: "7.1"
+      url: /cdf-datahub/7.1.0/index.html
+      minors:
+        - title: 7.1.0
+          type: latest
+          url: /cdf-datahub/7.1.0/index.html
     - title: "7.0"
       url: /cdf-datahub/7.0.2/index.html
       minors:

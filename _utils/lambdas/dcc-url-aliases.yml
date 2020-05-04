@@ -51,7 +51,7 @@
 - alias: /csp/latest/
   exist: /csp/2.0.1/
 - alias: /cdf-datahub/latest/
-  exist: /cdf-datahub/7.0.2/
+  exist: /cdf-datahub/7.1.0/
 
 - alias: /documentation/data-science-workbench/latest/
   exist: /documentation/data-science-workbench/1-7-x/

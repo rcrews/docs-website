@@ -28,6 +28,7 @@ publications:
         Tempor iaculis sapien mollis velit vehicula rhoncus platea dictum,
         maximus posuere a sagittis magnis rutrum est quam pretium.
 
+- column:
   - title: Streams Messaging Manager
     sub:
     - title: SMM Overview
@@ -36,7 +37,6 @@ publications:
         Tempor iaculis sapien mollis velit vehicula rhoncus platea dictum,
         maximus posuere a sagittis magnis rutrum est quam pretium.
 
-- column:
   - title: Streams Replication Manager
     sub:
     - title: SRM Overview

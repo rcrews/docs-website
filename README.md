@@ -14,3 +14,9 @@ infrastructure up-to-date.
 
 After building, use BucketExplorer to copy the assembled files from your
 `_site` directory to the appropriate place on docs.hortonworks.
+
+# Significant Deletions
+
+Recover last CFM Operator API with:
+
+    git checkout 03ecfae77c4a89eb8609387a086239473399c6b7 -- cfm/master/operator-api

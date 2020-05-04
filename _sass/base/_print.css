@@ -1,0 +1,10 @@
+@media print {
+  .chead,
+  .cpage
+  .inner-breadcrumbs,
+  .logo,
+  .next,
+  .short-next {
+    display: none !important;
+  }
+}
