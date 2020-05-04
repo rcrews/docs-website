@@ -864,8 +864,8 @@ function filterStuff($) {
       }
       if (category === 'cm') {
         // This occurs on the CDH upgrade page.
-        var $fromSelection = $('#' + getSelectId('cdh', 'from'));
-        var $destSelection = $('#' + getSelectId('cdh', 'dest'));
+        var $fromSelection = $('#' + getSelectId('cluster', 'from'));
+        var $destSelection = $('#' + getSelectId('cluster', 'dest'));
 
         // The third digit is the maintainence version. CM x.y.0 supports all CDH x.y.? or below.
         var selectedParts = selected.split('.');
