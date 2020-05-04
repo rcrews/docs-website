@@ -38,6 +38,9 @@ exclude:
   - /Gemfile.lock
   - /README.md
   - "*.bbprojectd"
+  - package.json
+  - package-lock.json
+  - jsdoc-conf.json
 
   # Library going away
   - /cdp/cloud/
