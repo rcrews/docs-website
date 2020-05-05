@@ -59,7 +59,7 @@ publications:
       Provides information about configuring HBase snapshots, and using
       HBase replication.
 
-  - title: Connecting to Apache Phoenix Query Server
+  - title: Using Apache Phoenix to store and access data
     url: phoenix-access-data/index.html
     description: >-
       Provides information about connecting to Apache Phoenix query
