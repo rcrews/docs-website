@@ -872,13 +872,14 @@ function filterStuff($) {
         if (selectedParts.length === 3) {
           selectedParts[2] = 9999;
         }
-        selected = selectedParts.join('.');
-        showLessThanOrEqualOnlyMinusIncompatible(category, selected, $fromSelection);
-        showLessThanOrEqualOnlyMinusIncompatible(category, selected, $destSelection);
+        var cmAdjustSelected = selectedParts.join('.');
+
+        showLessThanOrEqualOnlyMinusIncompatible(category, cmAdjustSelected, $fromSelection);
+        showLessThanOrEqualOnlyMinusIncompatible(category, cmAdjustSelected, $destSelection);
         // We also want to make sure the CM version is used to determine
         // whether certain sections are shown or not. We could extend
         // this to other categories later.
-        changeVersion(category, selected);
+        changeVersion(category, cmAdjustSelected);
       }
       adjustArchiveClouderaInput(category, selected);
     }
