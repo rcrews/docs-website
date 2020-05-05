@@ -109,12 +109,12 @@
     - text: Model Governance
       href: model-governance/index.html
       id: pub-model-governance
-      sub: model-governance/navigation.json      
+      sub: model-governance/navigation.json
 
     - text: Model Metrics
       href: model-metrics/index.html
       id: pub-model-metrics
-      sub: model-model-metrics/navigation.json
+      sub: model-metrics/navigation.json
 
     - text: Applications
       href: applications/index.html
