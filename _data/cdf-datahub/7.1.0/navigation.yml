@@ -261,6 +261,11 @@
       id:   pub-nifi-api
       sub:  nifi-api/navigation.json
 
+    - text: Apache NiFi Registry REST API Reference
+      href: registry-api/index.html
+      id:   pub-registry-api
+      sub:  registry-api/navigation.json
+
 - text: Release Notes
   id:   cat-releasenotes
   sub:
