@@ -23,35 +23,31 @@ publications:
   - title: Cruise Control
     sub:
     - title: Cruise Control Overview
-      url: publication-tbd/index.html
+      url: cctrol-overview/index.html
       description: >-
-        Tempor iaculis sapien mollis velit vehicula rhoncus platea dictum,
-        maximus posuere a sagittis magnis rutrum est quam pretium.
+        Provides an overview of Cruise Control load balanacing features to use with Apache Kafka.
 
 - column:
   - title: Streams Messaging Manager
     sub:
     - title: SMM Overview
-      url: publication-tbd/index.html
+      url: smm-overview/index.html
       description: >-
-        Tempor iaculis sapien mollis velit vehicula rhoncus platea dictum,
-        maximus posuere a sagittis magnis rutrum est quam pretium.
+        Provides an overview of Streams Messaging Manager features to use for managing and monitoring Apache Kafka. 
 
   - title: Streams Replication Manager
     sub:
     - title: SRM Overview
-      url: publication-tbd/index.html
+      url: srm-overview/index.html
       description: >-
-        Tempor iaculis sapien mollis velit vehicula rhoncus platea dictum,
-        maximus posuere a sagittis magnis rutrum est quam pretium.
+        Provides an overview of Streams Replication Manager Apache Kafka replication features. 
 
   - title: Schema Registry
     sub:
     - title: Schema Registry Overview
-      url: publication-tbd/index.html
+      url: schema-registry-overview/index.html
       description: >-
-        Tempor iaculis sapien mollis velit vehicula rhoncus platea dictum,
-        maximus posuere a sagittis magnis rutrum est quam pretium.
+        Provides an overview of Schema Registry schema management features. 
 
 ---
 
