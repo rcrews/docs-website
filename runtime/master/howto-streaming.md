@@ -122,5 +122,4 @@ publications:
 
 ---
 
-Apache Kafka is a high performance, highly available, and redundant
-streaming message platform.
+Cloudera Data Platform Runtime streaming components provide a high performance, highly available, and redundant streams messaging platform. Streaming components include Apache Kafka, Streams Messaging Manager, Streams Replication Manager, Schema Registry, and Cruise Control.
