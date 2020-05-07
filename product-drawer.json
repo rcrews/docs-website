@@ -73,7 +73,7 @@ json:
       icon: /common/img/mini_icons/icon-csa.png
 
     - text: Stream Processing
-      href: /csp/3.0.0/index.html
+      href: /csp/2.0.1/index.html
       icon: /common/img/mini_icons/icon-csp.png
 
     - text: Streams Messaging Manager for HDF and HDP
