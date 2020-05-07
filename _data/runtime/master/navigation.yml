@@ -19,7 +19,7 @@
 #   Governance: Atlas
 #   Cluster Management: Cloudera Manager
 #   Jobs Management: Oozie
-#   Streaming: Kafka
+#   Streaming: Kafka, Streams Replication Manager, Streams Messaging Manager, Schema Registry, Cruise Control
 # -> Kudu moved from operational db to storage Mitra 8/7
 
 - text: Cloudera Runtime
@@ -156,24 +156,24 @@
           sub: kafka-overview/navigation.json
 
         - text: Cruise Control Overview
-          href: publication-tbd/index.html
-          id: pub-publication-tbd
-          sub: publication-tbd/navigation.json
+          href: cctrol-overview/index.html
+          id: pub-cctrol-overview
+          sub: cctrol-overview/navigation.json
 
-        - text: SMM Overview
-          href: publication-tbd/index.html
-          id: publication-tbd
-          sub: publication-tbd/navigation.json
+        - text: Streams Messaging Manager Overview
+          href: smm-overview/index.html
+          id: pub-smm-overview
+          sub: smm-overview/navigation.json
 
-        - text: SRM Overview
-          href: publication-tbd/index.html
-          id: pub-publication-tbd
-          sub: publication-tbd/navigation.json
+        - text: Streams Replication Manager Overview
+          href: srm-overview/index.html
+          id: srm-overview
+          sub: srm-overview/navigation.json
 
         - text: Schema Registry Overview
-          href: publication-tbd/index.html
-          id: pub-publication-tbd
-          sub: publication-tbd/navigation.json
+          href: schema-registry-overview/index.html
+          id: pub-schema-registry-overview
+          sub: schema-registry-overview/navigation.json
 
 - text: Planning
   id: cat-planning
