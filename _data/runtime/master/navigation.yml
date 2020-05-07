@@ -600,19 +600,19 @@
           sub: kafka-developing-applications/navigation.json
 
         - text: Configuring Cruise Control
-          href: configuring-cruise-control/index.html
-          id: pub-configuring-cruise-control
-          sub: configuring-cruise-control/navigation.json
+          href: cctrl-configuration/index.html
+          id: pub-cctrl-configuration
+          sub: cctrl-configuration/navigation.json
 
         - text: Securing Cruise Control
-          href: securing-cruise-control/index.html
-          id: pub-securing-cruise-control
-          sub: securing-cruise-control/navigation.json
+          href: cctrl-security/index.html
+          id: pub-cctrl-security
+          sub: cctrl-security/navigation.json
 
         - text: Managing Cruise Control
-          href: managing-cruise-control/index.html
-          id: pub-managing-cruise-control
-          sub: managing-cruise-control/navigation.json
+          href: cctrl-managing/index.html
+          id: pub-cctrl-managing
+          sub: cctrl-managing/navigation.json
 
         - text: Monitoring Kafka Clusters
           href: monitoring-kafka-clusters/index.html
@@ -655,14 +655,14 @@
           sub: using/navigation.json
 
         - text: Integrating with Schema Registry
-          href: publication-tbd/index.html
-          id: pub-publication-tbd
-          sub: publication-tbd/navigation.json
+          href: integrating-with-schema-registry/index.html
+          id: pub-integrating-with-schema-registry
+          sub: integrating-with-schema-registry/navigation.json
 
         - text: Using Schema Registry
-          href: publication-tbd/index.html
-          id: pub-publication-tbd
-          sub: publication-tbd/navigation.json
+          href: using-schema-registry/index.html
+          id: pub-using-schema-registry
+          sub: using-schema-registry/navigation.json
 
 - text: Troubleshooting
   id: cat-troubleshooting
