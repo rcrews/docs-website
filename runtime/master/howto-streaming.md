@@ -44,25 +44,24 @@ publications:
     - title: Apache Kafka Connect
       url: publication-tbd/index.html
       description: >-
-        Tempor iaculis sapien mollis velit vehicula rhoncus platea dictum,
-        maximus posuere a sagittis magnis rutrum est quam pretium.
+        Provides information about how to use Kafka Connect
 
   - title: Cruise Control
     sub:
     - title: Configuring Cruise Control
-      url: configuring-cruise-control/index.html
+      url: cctrl-configuration/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to configure Cruise Control for Apache Kafka load balancing workflows. 
 
     - title: Securing Cruise Control
-      url: securing-cruise-control/index.html
+      url: cctrl-security/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to secure Cruise Control. 
 
     - title: Managing Cruise Control
-      url: managing-cruise-control/index.html
+      url: cctrl-managing/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to use Cruise Control. 
 
 - column:
   - title: Streams Messaging Manager
@@ -70,56 +69,56 @@ publications:
     - title: Monitoring Kafka Clusters
       url: monitoring-kafka-clusters/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to use Streams Messaging Manager to monitor Kafka clusters, producers, topics, brokers, and consumers.
 
     - title: Managing Alert Policies
       url: managing-alert-policies/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to use Streams Messaging Manager to create, modify, and monitor alert policies and alerts.
 
     - title: Managing Topics
       url: managing-topics/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to create, moidify, and delete Kafka topics.
 
     - title: Monitoring End-to-End Latency
       url: monitoring-end-to-end-latency/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how you can use Streams Messaging Manager to monitor end-to-end latency in topics.
 
     - title: Monitoring Kafka Cluster Replication
       url: monitoring-kafka-cluster-replications/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how you can use Streams Replication Manager to implement cross-cluster Kafka topic replication.
 
     - title: Monitoring Kafka Connect
       url: monitoring-kafka-connect/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to monitor Kafka Connect. 
 
   - title: Streams Replication Manager
     sub:
     - title: Configuring SRM
       url: configuration/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes Streams Replication Manager configuration options.
 
     - title: Using SRM
       url: using/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to use Streams Replication Manager.
 
   - title: Schema Registry
     sub:
     - title: Integrating with Schema Registry
-      url: using-schema-registry/index.html
+      url: integrating-with-schema-registry/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to integrate Cloudera components with Schema Registry.
 
     - title: Using Schema Registry
       url: using-schema-registry/index.html
       description: >-
-        Nligula mus netus elementum inceptos torquent viverra.
+        Describes how to use Schema Registry.
 
 ---
 
