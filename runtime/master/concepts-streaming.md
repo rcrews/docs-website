@@ -30,14 +30,14 @@ publications:
 - column:
   - title: Streams Messaging Manager
     sub:
-    - title: SMM Overview
+    - title: Streams Messaging Manager Overview
       url: smm-overview/index.html
       description: >-
         Provides an overview of Streams Messaging Manager features to use for managing and monitoring Apache Kafka. 
 
   - title: Streams Replication Manager
     sub:
-    - title: SRM Overview
+    - title: Streams Replication Manager Overview
       url: srm-overview/index.html
       description: >-
         Provides an overview of Streams Replication Manager Apache Kafka replication features. 
