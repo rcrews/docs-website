@@ -645,14 +645,14 @@
           sub: monitoring-kafka-connect/navigation.json
 
         - text: Configuring SRM
-          href: configuration/index.html
-          id: pub-configuration
-          sub: configuration/navigation.json
+          href: srm-configuration/index.html
+          id: pub-srm-configuration
+          sub: srm-configuration/navigation.json
 
         - text: Using SRM
-          href: using/index.html
-          id: pub-using
-          sub: using/navigation.json
+          href: srm-using/index.html
+          id: pub-srm-using
+          sub: srm-using/navigation.json
 
         - text: Integrating with Schema Registry
           href: integrating-with-schema-registry/index.html
