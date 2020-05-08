@@ -99,12 +99,12 @@ publications:
   - title: Streams Replication Manager
     sub:
     - title: Configuring SRM
-      url: configuration/index.html
+      url: srm-configuration/index.html
       description: >-
-        Describes Streams Replication Manager configuration options.
+        Describes how to set up and configure Streams Replication Manager.
 
     - title: Using SRM
-      url: using/index.html
+      url: srm-using/index.html
       description: >-
         Describes how to use Streams Replication Manager.
 
