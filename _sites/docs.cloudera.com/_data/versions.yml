@@ -1314,15 +1314,20 @@
           url: /cem/1.0.0/index.html
 
 - name: Flow Management
-  latest-version: 1.0.1
-  latest-url: /cfm/1.0.1/index.html
+  latest-version: 1.1.0
+  latest-url: /cfm/1.1.0/index.html
   search-name: cfm
   versions:
+    - title: "1.1"
+      url: /cfm/1.1.0/index.html
+      minors:
+        - title: 1.1.0
+          type: Latest
+          url: /cfm/1.1.0/index.html
     - title: "1.0"
       url: /cfm/1.0.1/index.html
       minors:
         - title: 1.0.1
-          type: Latest
           url: /cfm/1.0.1/index.html
         - title: 1.0.0
           url: /cfm/1.0.0/index.html
