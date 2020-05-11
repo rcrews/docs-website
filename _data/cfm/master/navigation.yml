@@ -39,7 +39,11 @@
     - text: Upgrade
       href: upgrading-cfm/index.html
       id: pub-upgrading-cfm
-      sub: upgrading-cfm/navigation.json
+      sub: upgrading-cfm/navigation.jsons
+    - text: Component Installation and Upgrade
+      href: components-installation-and-upgrade/index.html
+      id: pub-components-installation-and-upgrade
+      sub: components-installation-and-upgrade/navigation.json
 
 - text: How To
   name: how-to
