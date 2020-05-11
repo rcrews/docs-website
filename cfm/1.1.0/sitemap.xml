@@ -9,18 +9,6 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/index.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/index.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/index.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
@@ -33,13 +21,37 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/download/index.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/index.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/index.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/index.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/download/index.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/index.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/howto-apache-nifi.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
@@ -51,25 +63,7 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-installation-overview.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/index.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-manually-launching_the_user_interface.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/howto-apache-nifi.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
@@ -81,7 +75,115 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-installing-nifi-registry-manually.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/content/upgrading-cfm.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/download/topics/cfm-downloading-your-software.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/support-matrix/topics/cfm-system-requirements.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-getting-ready-to-upgrade-manually.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-manually-nifi_installation.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-manually-installing-nifi-on-linux.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-manually-launching_the_user_interface.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-manually-starting_and_stopping_nifi_on_linux.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-manually-installing_nifi_as_a_service.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-installing-nifi-registry-manually.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-upgrading_nifi.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-preserve_customizations_prior_to_upgrade.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-preserve_your_custom_processors.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-preserve_your_custom_nar_files.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-install_the_new_nifi_version.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-update_the_configuration_files_for_your_new_nifi_installation.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-migrating-dataflow-with-sensitive-properties.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/components-installation-and-upgrade/topics/cfm-restarting_the_dataflow_after_upgrade_.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-installation-overview.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -93,19 +195,13 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-get-csd.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-add-zookeeper.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-installing-databases-for-nifi-registry.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-get-csd.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -117,7 +213,7 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-installing-mysql.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-installing-databases-for-nifi-registry.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -129,13 +225,19 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-configuring-nif-registry-metadata-stores-postgres.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-install-postgres.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-install-postgres.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-installing-mysql.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-configuring-nif-registry-metadata-stores-postgres.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -147,13 +249,13 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-install-parcel-parent.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-manual-parcel-install.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-manual-parcel-install.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-install-parcel-parent.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -183,30 +285,6 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-manually-nifi_installation.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-manually-installing-nifi-on-linux.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-manually-installing_nifi_as_a_service.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/installation/topics/cfm-manually-starting_and_stopping_nifi_on_linux.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-enabling-tls.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
@@ -225,7 +303,7 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-external-certificates.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-authentication-strategies.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -237,13 +315,13 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-authentication-strategies.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-get-client-certificates.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-get-client-certificates.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-external-certificates.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -261,6 +339,18 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-security-templates.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-pairing-with-composite-group-provider.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-ldap-user-sync-configuration.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
@@ -273,25 +363,13 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-pairing-with-composite-group-provider.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-security-templates.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-nifi-user-sync-ldap-properties.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-nifi-default-properties.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/securing-cfm/topics/cfm-nifi-user-sync-ldap-properties.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -309,73 +387,13 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/content/upgrading-cfm.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/property-enhancements/topics/cfm-bootstrap-properties-enhancements.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/topics/cfm-upgrading_nifi.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/topics/cfm-preserve_customizations_prior_to_upgrade.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/topics/cfm-getting-ready-to-upgrade-manually.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/topics/cfm-preserve_your_custom_processors.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/topics/cfm-preserve_your_custom_nar_files.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/topics/cfm-install_the_new_nifi_version.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/topics/cfm-migrating-dataflow-with-sensitive-properties.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/topics/cfm-restarting_the_dataflow_after_upgrade_.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/upgrading-cfm/topics/cfm-update_the_configuration_files_for_your_new_nifi_installation.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/support-matrix/topics/cfm-system-requirements.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/download/topics/cfm-downloading-your-software.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/property-enhancements/topics/cfm-xml-property-enhancements.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -387,19 +405,7 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/property-enhancements/topics/cfm-bootstrap-properties-enhancements.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/topics/cfm-whats-new.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/property-enhancements/topics/cfm-xml-property-enhancements.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -417,6 +423,12 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/topics/cfm-unsupported-customizations.html</loc>
+		<lastmod>2020-05-11</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/topics/cfm-nifi-community-driven-features.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
@@ -429,25 +441,19 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/topics/cfm-unsupported-customizations.html</loc>
-		<lastmod>2020-05-11</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/topics/cfm-nifi-patches.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/topics/cfm-fixed-issues.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/topics/cfm-nifi-registry-patches.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/topics/cfm-nifi-registry-patches.html</loc>
+		<loc>https://docs.cloudera.com/cfm/1.1.0/release-notes/topics/cfm-fixed-issues.html</loc>
 		<lastmod>2020-05-11</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
