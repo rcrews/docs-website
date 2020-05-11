@@ -13,6 +13,7 @@ sections:
         url: release-notes/index.html
 
 ---
+
 Cloudera Runtime is the core open source software distribution within
 Cloudera Data Platform (CDP) that is maintained, supported, versioned,
 and packaged as a single entity by Cloudera. Cloudera Runtime includes

@@ -76,6 +76,7 @@ publications:
         ZooKeeper client shell for Kerberos authentication. It also
         describes the verification of the ZooKeeper authentication and
         ACLs best practices.
+
 ---
 
 Apache YARN manages resources for the applications running on your

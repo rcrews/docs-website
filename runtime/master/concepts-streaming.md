@@ -25,7 +25,8 @@ publications:
     - title: Cruise Control Overview
       url: cctrol-overview/index.html
       description: >-
-        Provides an overview of Cruise Control load balanacing features to use with Apache Kafka.
+        Provides an overview of Cruise Control load balanacing features
+        to use with Apache Kafka.
 
 - column:
   - title: Streams Messaging Manager
@@ -33,23 +34,27 @@ publications:
     - title: Streams Messaging Manager Overview
       url: smm-overview/index.html
       description: >-
-        Provides an overview of Streams Messaging Manager features to use for managing and monitoring Apache Kafka. 
+        Provides an overview of Streams Messaging Manager features to
+        use for managing and monitoring Apache Kafka.
 
   - title: Streams Replication Manager
     sub:
     - title: Streams Replication Manager Overview
       url: srm-overview/index.html
       description: >-
-        Provides an overview of Streams Replication Manager Apache Kafka replication features. 
+        Provides an overview of Streams Replication Manager Apache Kafka
+        replication features.
 
   - title: Schema Registry
     sub:
     - title: Schema Registry Overview
       url: schema-registry-overview/index.html
       description: >-
-        Provides an overview of Schema Registry schema management features. 
+        Provides an overview of Schema Registry schema management features.
 
 ---
 
-Cloudera Data Platform Runtime streaming components provide a high performance, highly available, and redundant
-streams messaging platform. Streaming components include Apache Kafka, Streams Messaging Manager, Streams Replication Manager, Schema Registry, and Cruise Control. 
+Cloudera Data Platform Runtime streaming components provide a high
+performance, highly available, and redundant streams messaging platform.
+Streaming components include Apache Kafka, Streams Messaging Manager,
+Streams Replication Manager, Schema Registry, and Cruise Control.

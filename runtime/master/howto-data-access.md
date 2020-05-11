@@ -76,6 +76,12 @@ publications:
         JdbcStorageHandler to access an external data source, such as
         Business Intelligence (BI) tools.
 
+    - title: Apache Hive Performance Tuning
+      url: hive-performance-tuning/index.html
+      description: >-
+        Explains low-latency analytical processing, caching,
+        and tuning options.
+
     - title: Migrating Data Using Sqoop
       url: migrating-data-into-hive/index.html
       description: >-

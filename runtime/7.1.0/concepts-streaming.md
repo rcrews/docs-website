@@ -4,7 +4,11 @@ breadcrumb-title: Cloudera Runtime Concepts & Use Cases
 title: Streaming
 
 # Concepts publications related to
-# * Kafka
+# * Apache Kafka
+# * Cruise Control
+# * Streams Messaging Manager
+# * Streams Replication Manager
+# * Schema Registry
 
 publications:
 - column:

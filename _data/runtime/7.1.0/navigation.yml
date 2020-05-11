@@ -19,7 +19,7 @@
 #   Governance: Atlas
 #   Cluster Management: Cloudera Manager
 #   Jobs Management: Oozie
-#   Streaming: Kafka
+#   Streaming: Kafka, Streams Replication Manager, Streams Messaging Manager, Schema Registry, Cruise Control
 # -> Kudu moved from operational db to storage Mitra 8/7
 
 - text: Cloudera Runtime
@@ -73,11 +73,6 @@
           href: hive-introduction/index.html
           id: pub-hive-introduction
           sub: hive-introduction/navigation.json
-
-        - text: Apache Hive Performance Tuning
-          href: hive-performance-tuning/index.html
-          id: pub-hive-performance-tuning
-          sub: hive-performance-tuning/navigation.json
 
         - text: Apache Impala Overview
           href: impala-overview/index.html
@@ -315,6 +310,11 @@
           href: integrating-hive-and-bi/index.html
           id: pub-integrating-hive-and-bi
           sub: integrating-hive-and-bi/navigation.json
+
+        - text: Apache Hive Performance Tuning
+          href: hive-performance-tuning/index.html
+          id: pub-hive-performance-tuning
+          sub: hive-performance-tuning/navigation.json
 
         - text: Migrating Data Using Sqoop
           href: migrating-data-into-hive/index.html

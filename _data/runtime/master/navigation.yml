@@ -65,19 +65,14 @@
           sub: das-overview/navigation.json
 
         - text: Apache Hive Metastore Overview
-          href: hive-metastore/index.html
-          id: pub-hive-metastore
-          sub: hive-metastore/navigation.json
+          href: hive-hms-overview/index.html
+          id: pub-hive-hms-overview
+          sub: hive-hms-overview/navigation.json
 
         - text: Apache Hive Overview
           href: hive-introduction/index.html
           id: pub-hive-introduction
           sub: hive-introduction/navigation.json
-
-        - text: Apache Hive Performance Tuning
-          href: hive-performance-tuning/index.html
-          id: pub-hive-performance-tuning
-          sub: hive-performance-tuning/navigation.json
 
         - text: Apache Impala Overview
           href: impala-overview/index.html
@@ -89,7 +84,6 @@
           id: pub-hue-introduction
           sub: hue-introduction/navigation.json
 
-        # Search is IN 7.1.0. 2/14 Email from Mitra
         - text: Cloudera Search Overview
           href: search-overview/index.html
           id: pub-search-overview
@@ -178,7 +172,6 @@
 - text: Planning
   id: cat-planning
   sub:
-    # Search is IN 7.1.0. 2/14 Email from Mitra
     - text: Deployment Planning for Cloudera Search
       href: search-deployment-planning/index.html
       id: pub-search-deployment-planning
@@ -346,6 +339,11 @@
           href: integrating-hive-and-bi/index.html
           id: pub-integrating-hive-and-bi
           sub: integrating-hive-and-bi/navigation.json
+
+        - text: Apache Hive Performance Tuning
+          href: hive-performance-tuning/index.html
+          id: pub-hive-performance-tuning
+          sub: hive-performance-tuning/navigation.json
 
         - text: Migrating Data Using Sqoop
           href: migrating-data-into-hive/index.html

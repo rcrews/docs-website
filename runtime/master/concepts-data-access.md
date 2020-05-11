@@ -24,17 +24,17 @@ publications:
   - title: Apache Hive
     sub:
 
+    - title: Apache Hive Metastore Overview
+      url: hive-hms-overview/index.html
+      description: >-
+        Describes the HMS service that stores metadata for a number
+        of services, including Hive, Spark, and Impala.
+
     - title: Apache Hive Overview
       url: hive-introduction/index.html
       description: >-
         Presents key features of Hive and Hive Metastore, and covers
         Hive 3 architecture.
-
-    - title: Apache Hive Performance Tuning
-      url: hive-performance-tuning/index.html
-      description: >-
-        Explains low-latency analytical processing, caching,
-        and tuning options.
 
 - column:
   - title: Apache Impala
