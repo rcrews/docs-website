@@ -65,7 +65,7 @@ json:
       icon: /common/img/mini_icons/icon-cem.png
 
     - text: Flow Management
-      href: /cfm/2.0.0/index.html
+      href: /cfm/1.1.0/index.html
       icon: /common/img/mini_icons/icon-cfm.png
 
     - text: Streaming Analytics
