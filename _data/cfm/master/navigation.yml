@@ -21,6 +21,14 @@
       id: pub-apache-nifi-overview
       sub: /HDPDocuments/HDF3/HDF-3.5.1/apache-nifi-overview/navigation.json
 
+- text: Planning
+  id: cat-planning
+  sub:
+    - text: Sizing your Flow Management Cluster
+      href: nifi-sizing/index.html
+      id: pub-nifi-sizing
+      sub: nifi-sizing/navigation.json
+
 - text: Installation & Upgrade
   id: cat-install
   sub:
