@@ -150,9 +150,9 @@
           sub: kafka-overview/navigation.json
 
         - text: Cruise Control Overview
-          href: cctrol-overview/index.html
-          id: pub-cctrol-overview
-          sub: cctrol-overview/navigation.json
+          href: cctrl-overview/index.html
+          id: pub-cctrl-overview
+          sub: cctrl-overview/navigation.json
 
         - text: Streams Messaging Manager Overview
           href: smm-overview/index.html
