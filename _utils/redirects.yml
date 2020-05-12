@@ -15636,12 +15636,6 @@
   d: 5-12-x/topics/kudu.html
 - s: documentation/navopt/index.html
   d: topics/navopt.html
-- s: documentation/other/Licenses/topics/csb_all_product_issues.html
-  d: /documentation/other/security-bulletins/topics/Security-Bulletin.html
-- s: documentation/other/Licenses/topics/csb_topic_1.html
-  d: /documentation/other/security-bulletins/topics/Security-Bulletin.html
-- s: documentation/other/Licenses/topics/csb_topic_2.html
-  d: /documentation/other/security-bulletins/topics/Security-Bulletin.html
 - s: documentation/other/reference-architecture/index.html
   d: topics/ra_introduction.html
 - s: documentation/other/security-bulletins/topics/csb_all_product_issues.html
