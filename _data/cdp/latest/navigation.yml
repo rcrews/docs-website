@@ -8,8 +8,8 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Overview
-  id: landing-overview
+- text: Cloudera Data Platform
+  id: landing-cdp
   href: /cdp/latest/index.html
   display: none
 
@@ -25,7 +25,7 @@
 #   id: cat-planning
 #   sub:
 
-- text: Upgrade
+- text: Installation & Upgrade
   id: cat-installation
   sub:
     - text: Upgrade Guide

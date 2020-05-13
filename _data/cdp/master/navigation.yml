@@ -8,13 +8,8 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Overview
-  id: landing-overview
-  href: /cdp/master/index.html
-  display: none
-  
-  - text: Data Migration Guide
-  id: cdp-data-migration-guide
+- text: Cloudera Data Platform
+  id: landing-cdp
   href: /cdp/master/index.html
   display: none
 
@@ -26,9 +21,13 @@
       id: pub-overview
       sub: overview/navigation.json
 
-# - text: Planning
-#   id: cat-planning
-#   sub:
+- text: Planning
+  id: cat-planning
+  sub:
+    - text: Data Migration Guide
+      id: pub-data-migration
+      href: data-migration/index.html
+      sub: data-migration/navigation.json
 
 - text: Installation & Upgrade
   id: cat-installation
