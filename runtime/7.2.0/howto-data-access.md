@@ -76,6 +76,12 @@ publications:
         JdbcStorageHandler to access an external data source, such as
         Business Intelligence (BI) tools.
 
+    - title: Apache Hive Performance Tuning
+      url: hive-performance-tuning/index.html
+      description: >-
+        Explains low-latency analytical processing, caching,
+        and tuning options.
+
     - title: Migrating Data Using Sqoop
       url: migrating-data-into-hive/index.html
       description: >-
@@ -130,13 +136,11 @@ publications:
   - title: Search
     sub:
 
-    # In 7.1.0, per Mitra 2/14
     - title: Search Tutorial
       url: search-tutorial/index.html
       description: >-
         A tutorial on using Cloudera Search.
 
-    # In 7.1.0, per Mitra 2/14
     - title: Deploying Cloudera Search
       url: search-deploying/index.html
       description: >-
@@ -154,20 +158,17 @@ publications:
         Describes how to optimize Cloudera Search performance for
         various use cases.
 
-    # In 7.1.0, per Mitra 2/14
     - title: Managing Cloudera Search
       url: search-managing/index.html
       description: >-
         Describes how to configure and manage Cloudera Search.
 
-    # In 7.1.0, per Mitra 2/14
     - title: Cloudera Search ETL
       url: search-etl-morphlines/index.html
       description: >-
         Describes how to perform ETL using Cloudera Search and
         Morphlines.
 
-    # In 7.1.0, per Mitra 2/14
     - title: Indexing Data Using Cloudera Search
       url: search-indexing/index.html
       description: >-

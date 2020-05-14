@@ -13,5 +13,7 @@ publications:
     description: >-
       A brief introduction to CDP security components, architecture, and
       terminology.
+
 ---
+
 Cloudera Data Platform Runtime security concepts.

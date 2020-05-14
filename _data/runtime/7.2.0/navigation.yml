@@ -12,8 +12,8 @@
 # Here's the final list:
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
-#   Data Access: Hive, Impala, Hue, Sqoop, Search, DAS
-#   Operational Database: HBase
+#   Data Access: DAS, Hive, Hue, Impala, Sqoop, Search
+#   Operational Database: HBase, Phoenix
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox
 #   Governance: Atlas
@@ -73,11 +73,6 @@
           href: hive-introduction/index.html
           id: pub-hive-introduction
           sub: hive-introduction/navigation.json
-
-        - text: Apache Hive Performance Tuning
-          href: hive-performance-tuning/index.html
-          id: pub-hive-performance-tuning
-          sub: hive-performance-tuning/navigation.json
 
         - text: Apache Impala Overview
           href: impala-overview/index.html
@@ -213,22 +208,19 @@
           id: pub-kudu-integration
           sub: kudu-integration/navigation.json
 
-        # Oxone is OUT for 7.1.0.2/14 email from Sairam
-        # - text: Storing Data Using Ozone
-        #   href: ozone-storing-data/index.html
-        #   id: pub-ozone-storing-data
-        #   sub: ozone-storing-data/navigation.json
+        - text: Storing Data Using Ozone
+          href: ozone-storing-data/index.html
+          id: pub-ozone-storing-data
+          sub: ozone-storing-data/navigation.json
 
-        # Oxone is OUT for 7.1.0.2/14 email from Sairam
-        # - text: Configuring Ozone Security
-        #   href: ozone-security/index.html
-        #   id: pub-ozone-security
-        #   sub: ozone-security/navigation.json
+        - text: Configuring Ozone Security
+          href: ozone-security/index.html
+          id: pub-ozone-security
+          sub: ozone-security/navigation.json
 
     - text: Compute
       href: howto-compute.html
       sub:
-
         - text: Using YARN Web UI and CLI
           href: yarn-using-ui-cli/index.html
           id: pub-yarn-using-ui-cli
@@ -326,6 +318,11 @@
           href: integrating-hive-and-bi/index.html
           id: pub-integrating-hive-and-bi
           sub: integrating-hive-and-bi/navigation.json
+
+        - text: Apache Hive Performance Tuning
+          href: hive-performance-tuning/index.html
+          id: pub-hive-performance-tuning
+          sub: hive-performance-tuning/navigation.json
 
         - text: Migrating Data Using Sqoop
           href: migrating-data-into-hive/index.html
@@ -463,12 +460,6 @@
           id: pub-tuning-spark
           sub: tuning-spark/navigation.json
 
-        # Not in 7.1.0. Confirmed by Brian over Slack 2/14
-        # - text: CDS 3 (Experimental) Powered by Apache Spark
-        #   href: cds-3/index.html
-        #   id: pub-cds-3
-        #   sub: cds-3/navigation.json
-
         - text: Configuring Apache Zeppelin
           href: configuring-zeppelin/index.html
           id: pub-configuring-zeppelin
@@ -502,11 +493,10 @@
           id: pub-security-ranger-authentication-unix-ldap-ad
           sub: security-ranger-authentication-unix-ldap-ad/navigation.json
 
-        # Dave confirmed this is not in 7.1.0. Slack 2/12
-        # - text: Configuring Advanced Security Options for Apache Ranger
-        #   href: security-ranger-configuring-advanced/index.html
-        #   id: pub-security-ranger-configuring-advanced
-        #   sub: security-ranger-configuring-advanced/navigation.json
+        - text: Configuring Advanced Security Options for Apache Ranger
+          href: security-ranger-configuring-advanced/index.html
+          id: pub-security-ranger-configuring-advanced
+          sub: security-ranger-configuring-advanced/navigation.json
 
     - text: Governance
       href: howto-governance.html
@@ -531,12 +521,6 @@
           href: atlas-managing-business-terms-with-glossaries/index.html
           id: pub-atlas-managing-business-terms-with-glossaries
           sub: atlas-managing-business-terms-with-glossaries/navigation.json
-
-        # This is OUT for 7.1.0, per Dave Slack 2/16
-        # - text: Configuring and Securing Atlas using Cloudera Manager
-        #   href: atlas-securing/index.html
-        #   id: pub-atlas-securing
-        #   sub: atlas-securing/navigation.json
 
     - text: Jobs Management
       href: howto-jobs-management.html

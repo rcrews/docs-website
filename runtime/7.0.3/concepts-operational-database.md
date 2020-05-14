@@ -5,12 +5,14 @@ title: Operational Database
 
 # Concepts publications related to
 # * HBase
+# * Phoenix
 
 publications:
   - title: Apache HBase Overview
     url: hbase-overview/index.html
     description: >-
-      Introduces Apache HBase, with information about Apache HBase use cases.
+      Introduces Apache HBase, with information about Apache HBase use
+      cases.
 
 ---
 

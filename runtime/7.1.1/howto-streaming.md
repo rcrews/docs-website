@@ -6,8 +6,8 @@ title: Streaming
 # How-to publications related to
 # * Kafka
 # * Cruise Control
-# * SMM
-# * SRM
+# * Streams Messaging Manager
+# * Streams Replication Manager
 # * Schema Registry
 
 publications:

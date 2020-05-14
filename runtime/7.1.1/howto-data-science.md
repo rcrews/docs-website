@@ -51,6 +51,7 @@ publications:
       description: >-
         Instructions and examples for using Apache Zeppelin in Cloudera
         Data Platform
+
 ---
 
 Instructions and examples for Apache Spark and Apache Zeppelin in

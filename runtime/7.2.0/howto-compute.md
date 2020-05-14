@@ -15,8 +15,8 @@ publications:
     - title: Using YARN Web UI and CLI
       url: yarn-using-ui-cli/index.html
       description: >-
-       Explains how to use YARN Web UI to monitor clusters and
-       YARN CLI to view logs for running application.
+        Explains how to use YARN Web UI to monitor clusters and
+        YARN CLI to view logs for running application.
 
     - title: Configuring Apache Hadoop YARN Security
       url: yarn-security/index.html

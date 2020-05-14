@@ -21,26 +21,45 @@ publications:
       Lineage offers insight into where data came from and how to
       determine the impact of changes to data assets.
 
-  # This is OUT for 7.1.0, per Dave Slack 2/16
-  # - title: Securing Atlas
-  #   url: atlas-securing/index.html
-  #   description: >-
-  #     Configure Atlas' authentication and authorization through Cloudera
-  #     Manager and using access policies in Apache Ranger.
-
-- column:
-
   - title: Working with Classifications and Labels
     url: atlas-working-with-classifications/index.html
     description: >-
       How to use Apache Atlas to search for, annotate, classify, and
       manage data.
 
+  - title: Leveraging Business Metadata
+    url: atlas-leveraging-business-metadata/index.html
+    description: >-
+      Business Metadata allows you to extend the model that represent a
+      given asset type in Atlas. Sets of business metadata can be
+      authorized independently through Ranger so you can manage who has
+      the ability to update which business metadata attributes.
+
   - title: Managing Business Terms with Atlas Glossaries
     url: atlas-managing-business-terms-with-glossaries/index.html
     description: >-
       Collecting your organization's terms in Atlas helps you build a
       search index to easily find the data assets you are looking for.
+
+- column:
+
+  - title: Configuring and Monitoring Atlas in Cloudera Manager
+    url: atlas-configuring/index.html
+    description: >-
+      Configure Atlas' extractors, monitor status, and access logs
+      using Cloudera Manager.
+
+  - title: Securing Atlas
+    url: atlas-securing/index.html
+    description: >-
+      Configure Atlas' authentication and authorization through Cloudera
+      Manager and using access policies in Apache Ranger.
+
+  - title: Migrating Data from Cloudera Navigator to Atlas
+    url: atlas-migrating-from-navigator/index.html
+    description: >-
+      When upgrading from CDH to CDP, you can choose to move your
+      Navigator Data Management metadata into Atlas.
 
 ---
 

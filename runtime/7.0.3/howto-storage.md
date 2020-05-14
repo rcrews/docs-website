@@ -48,22 +48,16 @@ publications:
     description: >-
       Provides information about how to use use Kudu as a storage
       for Apache Impala.
-      
+
   - title: Storing Data using Ozone
     url: ozone-storing-data/index.html
     description: >-
       Describes how to store and manage data using Apache Hadoop Ozone.
-  
+
   - title: Configuring Ozone Security
     url: ozone-security/index.html
     description: >-
       Describes how to store and manage data using Apache Hadoop Ozone.
-
-  #- title: Accessing Cloud Data
-  #  url: cloud-data-access/index.html
-  #  description: >-
-  #  Describes information about the configuration parameters used to
-  #  access data stored in the cloud.
 
 ---
 

@@ -53,7 +53,6 @@ publications:
         Provides information about moving local log files of any application
         onto HDFS or a cloud-based storage.
 
-
 - column:
   - title: Apache ZooKeeper
     sub:

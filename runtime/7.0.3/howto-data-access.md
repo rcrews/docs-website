@@ -4,6 +4,7 @@ breadcrumb-title: Cloudera Runtime How To
 title: Data Access
 
 # How-to publications related to
+# * DAS
 # * Hive
 # * Impala
 # * Hue

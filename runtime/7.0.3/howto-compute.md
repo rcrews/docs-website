@@ -55,8 +55,11 @@ publications:
     description: >-
       Describes the configuration of the ZooKeeper server and the
       ZooKeeper client shell for Kerberos authentication. It also
-      describes the verification of the ZooKeeper authentication and ACLs best practices.
+      describes the verification of the ZooKeeper authentication and
+      ACLs best practices.
+
 ---
+
 Apache YARN manages resources for the applications running on your
 cluster by allocating resources through scheduling,  limiting CPU usage,
 and partitioning clusters. You can use Access Control Lists to use YARN

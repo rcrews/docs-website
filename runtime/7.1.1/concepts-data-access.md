@@ -35,12 +35,6 @@ publications:
       description: >-
         Presents key features of Hive and Hive 3 architecture.
 
-    - title: Apache Hive Performance Tuning
-      url: hive-performance-tuning/index.html
-      description: >-
-        Explains low-latency analytical processing, caching,
-        and tuning options.
-
 - column:
   - title: Apache Impala
     sub:
@@ -63,7 +57,6 @@ publications:
   - title: Search
     sub:
 
-    # In 7.1.0, per Mitra 2/14
     - title: Cloudera Search Overview
       url: search-overview/index.html
       description: >-

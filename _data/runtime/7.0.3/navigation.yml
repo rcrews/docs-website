@@ -12,17 +12,16 @@
 # Here's the final list:
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
-#   Data Access: DAS, Hive, Impala, Hue, Sqoop, Search, Phoenix
-#   Operational Database: HBase
+#   Data Access: DAS, Hive, Hue, Impala, Sqoop, Search
+#   Operational Database: HBase, Phoenix
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox
 #   Governance: Atlas
 #   Cluster Management: Cloudera Manager
 #   Jobs Management: Oozie
 # -> Kudu moved from operational db to storage Mitra 8/7
-#   Add Phoenix to data access in CR 7.0.3 Gokul 11/17
 
-- text: Cloudera Runtime Data Center
+- text: Cloudera Runtime
   id: landing-runtime
   href: /runtime/7.0.3/index.html
   display: none
@@ -69,11 +68,6 @@
           id: pub-hive-introduction
           sub: hive-introduction/navigation.json
 
-        - text: Apache Hive Performance Tuning
-          href: hive-performance-tuning/index.html
-          id: pub-hive-performance-tuning
-          sub: hive-performance-tuning/navigation.json
-
         - text: Apache Impala Overview
           href: impala-overview/index.html
           id: pub-impala-overview
@@ -83,11 +77,6 @@
           href: hue-introduction/index.html
           id: pub-hue-introduction
           sub: hue-introduction/navigation.json
-
-        - text: Apache Phoenix Overview
-          href: phoenix-overview/index.html
-          id: pub-phoenix-overview
-          sub: phoenix-overview/navigation.json
 
         - text: Cloudera Search Overview
           href: search-overview/index.html
@@ -102,6 +91,11 @@
           id: pub-hbase-overview
           sub: hbase-overview/navigation.json
 
+        - text: Apache Phoenix Overview
+          href: phoenix-overview/index.html
+          id: pub-phoenix-overview
+          sub: phoenix-overview/navigation.json
+
     - text: Data Science
       href: concepts-data-science.html
       sub:
@@ -109,21 +103,6 @@
           href: spark-overview/index.html
           id: pub-spark-overview
           sub: spark-overview/navigation.json
-
-# Commenting out Zeppelin for 7.0.3 release, because CDP-DC does not support Zeppelin initially
-#        - text: Apache Zeppelin Overview
-#          href: zeppelin-overview/index.html
-#          id: pub-zeppelin-overview
-#          sub: zeppelin-overview/navigation.json
-
-# Commenting out CDP cloud security overview content until a CDP-DC specific topic is written.
-#    - text: Security
-#      href: concepts-security.html
-#      sub:
-#        - text: CDP Security Overview
-#          href: cdp-security-overview/index.html
-#          id: pub-cdp-security-overview/index.html
-#          sub: cdp-security-overview/navigation.json
 
     - text: Governance
       href: concepts-governance.html
@@ -180,15 +159,15 @@
           id: pub-data-protection
           sub: data-protection/navigation.json
 
-        - text: Configuring HDFS ACLs
-          href: hdfs-acls/index.html
-          id: pub-hdfs-acls
-          sub: hdfs-acls/navigation.json
-
         - text: Configuring Fault Tolerance
           href: fault-tolerance/index.html
           id: pub-fault-tolerance
           sub: fault-tolerance/navigation.json
+
+        - text: Configuring HDFS ACLs
+          href: hdfs-acls/index.html
+          id: pub-hdfs-acls
+          sub: hdfs-acls/navigation.json
 
         - text: Administering Apache Kudu
           href: administering-kudu/index.html
@@ -205,7 +184,7 @@
           id: pub-kudu-integration
           sub: kudu-integration/navigation.json
 
-        - text: Storing Data using Ozone
+        - text: Storing Data Using Ozone
           href: ozone-storing-data/index.html
           id: pub-ozone-storing-data
           sub: ozone-storing-data/navigation.json
@@ -214,12 +193,6 @@
           href: ozone-security/index.html
           id: pub-ozone-security
           sub: ozone-security/navigation.json
-
-        # Commenting out Cloud Data Access content for 7.0.3 because S3 and ADLS are not supported for the initial release
-        # - text: Accessing Cloud Data
-        # href: cloud-data-access/index.html
-        # id: pub-cloud-data-access
-        # sub: cloud-data-access/navigation.json
 
     - text: Compute
       href: howto-compute.html
@@ -239,7 +212,7 @@
           id: pub-yarn-security
           sub: yarn-security/navigation.json
 
-        - text: Apache Hadoop YARN High Availability
+        - text: Configuring Apache Hadoop YARN High Availability
           href: yarn-high-availability/index.html
           id: pub-yarn-high-availability
           sub: yarn-high-availability/navigation.json
@@ -272,12 +245,17 @@
           id: pub-using-das
           sub: using-das/navigation.json
 
+        - text: Working with Apache Hive Metastore
+          href: hive-metastore/index.html
+          id: pub-hive-metastore
+          sub: hive-metastore/navigation.json
+
         - text: Starting Apache Hive
           href: starting-hive/index.html
           id: pub-starting-hive
           sub: starting-hive/navigation.json
 
-        - text: Using Hive
+        - text: Using Apache Hive
           href: using-hiveql/index.html
           id: pub-using-hiveql
           sub: using-hiveql/navigation.json
@@ -297,11 +275,6 @@
           id: pub-configuring-apache-hive
           sub: configuring-apache-hive/navigation.json
 
-        - text: Configuring Apache Hive Metastore
-          href: hive-metastore/index.html
-          id: pub-hive-metastore
-          sub: hive-metastore/navigation.json
-
         - text: Securing Apache Hive
           href: securing-hive/index.html
           id: pub-securing-hive
@@ -311,6 +284,11 @@
           href: integrating-hive-and-bi/index.html
           id: pub-integrating-hive-and-bi
           sub: integrating-hive-and-bi/navigation.json
+
+        - text: Apache Hive Performance Tuning
+          href: hive-performance-tuning/index.html
+          id: pub-hive-performance-tuning
+          sub: hive-performance-tuning/navigation.json
 
         - text: Migrating Data Using Sqoop
           href: migrating-data-into-hive/index.html
@@ -341,21 +319,6 @@
           href: tuning-hue/index.html
           id: pub-tuning-hue
           sub: tuning-hue/navigation.json
-
-        - text: Configuring Apache HBase for use with Apache Phoenix
-          href: phoenix-configure-hbase/index.html
-          id: pub-phoenix-configure-hbase
-          sub: phoenix-configure-hbase/navigation.json
-
-        - text: Using Apache Phoenix to Store and Access Data
-          href: phoenix-access-data/index.html
-          id: pub-phoenix-access-data
-          sub: phoenix-access-data/navigation.json
-
-        - text: Using Apache Phoenix-Spark Connector
-          href: phoenix-spark-connector/index.html
-          id: pub-phoenix-spark-connector
-          sub: phoenix-spark-connector/navigation.json
 
         - text: Search Tutorial
           href: search-tutorial/index.html
@@ -395,7 +358,6 @@
     - text: Operational Database
       href: howto-operational-database.html
       sub:
-
         - text: Configuring Apache HBase
           href: configuring-hbase/index.html
           id: pub-configuring-hbase
@@ -431,6 +393,21 @@
           id: pub-hbase-backup-dr
           sub: hbase-backup-dr/navigation.json
 
+        - text: Configuring Apache HBase for use with Apache Phoenix
+          href: phoenix-configure-hbase/index.html
+          id: pub-phoenix-configure-hbase
+          sub: phoenix-configure-hbase/navigation.json
+
+        - text: Using Apache Phoenix to Store and Access Data
+          href: phoenix-access-data/index.html
+          id: pub-phoenix-access-data
+          sub: phoenix-access-data/navigation.json
+
+        - text: Using Apache Phoenix-Spark Connector
+          href: phoenix-spark-connector/index.html
+          id: pub-phoenix-spark-connector
+          sub: phoenix-spark-connector/navigation.json
+
     - text: Data Science
       href: howto-data-science.html
       sub:
@@ -458,17 +435,6 @@
           href: cds-3/index.html
           id: pub-cds-3
           sub: cds-3/navigation.json
-
-# Commenting out Zeppelin for 7.0.3 release, because CDP-DC does not support Zeppelin initially
-#        - text: Configuring Apache Zeppelin
-#          href: configuring-zeppelin/index.html
-#          id: pub-configuring-zeppelin
-#          sub: configuring-zeppelin/navigation.json
-#
-#        - text: Using Apache Zeppelin
-#          href: using-zeppelin/index.html
-#          id: pub-using-zeppelin
-#          sub: using-zeppelin/navigation.json
 
     - text: Security
       href: howto-security.html

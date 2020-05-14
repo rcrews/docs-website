@@ -38,7 +38,9 @@ publications:
     url: search-overview/index.html
     description: >-
       Provides an overview of Cloudera Search, based on Apache Solr.
+
 ---
+
 Cloudera Data Platform Runtime data access concepts provide overview
-information about Apache Impala, Apache Hive, Data Analytics Studio, and Hue. 
+information about Apache Impala, Apache Hive, Data Analytics Studio, and Hue.
 Using the familiar SQL interfaces of these components, you access your data.

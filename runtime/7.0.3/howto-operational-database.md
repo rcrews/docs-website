@@ -5,6 +5,7 @@ title: Operational Database
 
 # How-to publications related to
 # * HBase
+# * Phoenix
 
 publications:
 
@@ -48,6 +49,8 @@ publications:
     description: >-
       Provides information about configuring HBase snapshots, and using
       HBase replication.
+
 ---
+
 Apache HBase is a NoSQL database that provides real-time read/write
 access to large datasets.

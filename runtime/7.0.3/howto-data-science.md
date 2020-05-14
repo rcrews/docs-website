@@ -37,17 +37,7 @@ publications:
       Adding an experimental Spark 3 service to your CDP Data Center cluster to
       evaluate new features and changes.
 
-# Commenting out Zeppelin for 7.0.3 release, because CDP-DC does not support Zeppelin initially
-#  - title: Configuring Apache Zeppelin
-#    url: configuring-zeppelin/index.html
-#    description: >-
-#      Instructions for configuring Apache Zeppelin in Cloudera Data Platform.
-#
-#  - title: Using Apache Zepppelin
-#    url: using-zeppelin/index.html
-#    description: >-
-#      Instructions and examples for using Apache Zeppelin in Cloudera Data
-#      Platform
 ---
+
 Instructions and examples for Apache Spark in Cloudera Data
 Platform.
