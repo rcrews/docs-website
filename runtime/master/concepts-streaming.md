@@ -23,7 +23,7 @@ publications:
   - title: Cruise Control
     sub:
     - title: Cruise Control Overview
-      url: cctrol-overview/index.html
+      url: cctrl-overview/index.html
       description: >-
         Provides an overview of Cruise Control load balanacing features
         to use with Apache Kafka.
