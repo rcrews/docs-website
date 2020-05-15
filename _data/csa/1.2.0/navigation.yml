@@ -76,6 +76,10 @@
       href: configuration/index.html
       id: pub-configuration
       sub: configuration/navigation.json
+    - text: SQL and Table API
+      href: flink-sql-table-api/index.html
+      id: pub-flink-sql-table-api
+      sub: flink-sql-table-api/navigation.json
     - text: SQL Client
       href: sql-client/index.html
       id: pub-sql-client
