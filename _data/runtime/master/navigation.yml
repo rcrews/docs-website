@@ -557,7 +557,6 @@
 #          id: pub-atlas-migrating-from-navigator
 #          sub: atlas-migrating-from-navigator/navigation.json
 
-
     - text: Jobs Management
       href: howto-jobs-management.html
       sub:
