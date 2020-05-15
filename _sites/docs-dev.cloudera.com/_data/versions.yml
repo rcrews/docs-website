@@ -1431,11 +1431,16 @@
       minors:
       - title: master
         url: /cfm/master/index.html
+    - title: "2.0"
+      url: /cfm/2.0.1/index.html
+      minors:
+        - title: 2.0.1
+          type: Latest
+          url: /cfm/2.0.1/index.html
     - title: "1.1"
       url: /cfm/1.1.0/index.html
       minors:
         - title: 1.1.0
-          type: Latest
           url: /cfm/1.1.0/index.html
     - title: "1.0"
       url: /cfm/1.0.1/index.html

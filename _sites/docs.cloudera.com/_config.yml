@@ -49,6 +49,7 @@ exclude:
   - /cdf-datahub/7.1.1/
   - /cdp/latest/
   - /cem/1.2.0/
+  - /cfm/2.0.1/
   - /cloudera-manager/7.1.1/
   - /cloudera-manager/7.2.0/
   - /csa/1.0.0/
