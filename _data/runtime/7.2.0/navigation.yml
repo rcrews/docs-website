@@ -578,6 +578,11 @@
           id: pub-kafka-developing-applications
           sub: kafka-developing-applications/navigation.json
 
+        - text: Kafka Connect
+          href: kafka-connect/index.html
+          id: pub-kafka-connect
+          sub: kafka-connect/navigation.json
+
         - text: Configuring Cruise Control
           href: cctrl-configuration/index.html
           id: pub-cctrl-configuration
