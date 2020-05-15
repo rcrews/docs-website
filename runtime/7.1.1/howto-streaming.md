@@ -42,9 +42,11 @@ publications:
         Provides information on how to develop Kafka clients.
 
     - title: Apache Kafka Connect
-      url: publication-tbd/index.html
+      url: kafka-connect/index.html
       description: >-
-        Provides information about how to use Kafka Connect
+        Provides information on how to setup, use, and configure
+        Kafka Connect. In addition, contains information on connectors
+        bundeled with Runtime.
 
   - title: Cruise Control
     sub:
