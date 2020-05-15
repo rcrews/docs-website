@@ -600,6 +600,11 @@
       href: search-troubleshooting/index.html
       id: pub-search-troubleshooting
       sub: search-troubleshooting/navigation.json
+      
+    - text: Troubleshooting Data Analytics Studio
+      href: das-troubleshooting-cm/index.html
+      id: pub-das-troubleshooting-cm
+      sub: das-troubleshooting-cm/navigation.json      
 
 - text: Reference
   id: cat-reference
