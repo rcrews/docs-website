@@ -697,9 +697,9 @@
       sub: search-troubleshooting/navigation.json
 
     - text: Troubleshooting Data Analytics Studio
-      href: das-troubleshooting-cm/index.html
-      id: pub-das-troubleshooting-cm
-      sub: das-troubleshooting-cm/navigation.json
+      href: das-cm-troubleshooting/index.html
+      id: pub-das-cm-troubleshooting
+      sub: das-cm-troubleshooting/navigation.json
 
 - text: Reference
   id: cat-reference
