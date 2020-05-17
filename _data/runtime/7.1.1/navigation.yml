@@ -753,6 +753,11 @@
       id: security-encryption-reference
       sub: security-encryption-reference/navigation.json
 
+    - text: Kafka Connect Connector Reference
+      href: kafka-connector-reference/index.html
+      id: pub-kafka-connector-reference
+      sub: kafka-connector-reference/navigation.json
+
     - text: Cloudera Search Frequently Asked Questions
       href: search-faq/index.html
       id: pub-search-faq
