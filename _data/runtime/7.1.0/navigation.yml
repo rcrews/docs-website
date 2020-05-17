@@ -476,7 +476,6 @@
     - text: Governance
       href: howto-governance.html
       sub:
-
         - text: Searching with Metadata
           href: atlas-searching-with-metadata/index.html
           id: pub-atlas-searching-with-metadata

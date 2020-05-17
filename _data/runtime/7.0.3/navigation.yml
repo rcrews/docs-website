@@ -12,7 +12,7 @@
 # Here's the final list:
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
-#   Data Access: DAS, Hive, Hue, Impala, Sqoop, Search
+#   Data Access: DAS, Hive, Hue, Impala, Search, Sqoop
 #   Operational Database: HBase, Phoenix
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox
@@ -217,7 +217,7 @@
           id: pub-yarn-high-availability
           sub: yarn-high-availability/navigation.json
 
-        - text: Monitoring Clusters and Apache Hadoop YARN Applications
+        - text: Configuring Apache Hadoop YARN Log Aggregation
           href: yarn-monitoring-clusters-applications/index.html
           id: pub-yarn-monitoring-clusters-applications
           sub: yarn-monitoring-clusters-applications/navigation.json
@@ -398,7 +398,7 @@
           id: pub-phoenix-configure-hbase
           sub: phoenix-configure-hbase/navigation.json
 
-        - text: Using Apache Phoenix to Store and Access Data
+        - text: Connecting to Apache Phoenix Query Server
           href: phoenix-access-data/index.html
           id: pub-phoenix-access-data
           sub: phoenix-access-data/navigation.json
@@ -467,7 +467,6 @@
     - text: Governance
       href: howto-governance.html
       sub:
-
         - text: Searching with Metadata
           href: atlas-searching-with-metadata/index.html
           id: pub-atlas-searching-with-metadata
@@ -488,7 +487,7 @@
           id: pub-atlas-managing-business-terms-with-glossaries
           sub: atlas-managing-business-terms-with-glossaries/navigation.json
 
-        - text: Configuring and Securing Atlas using Cloudera Manager
+        - text: Securing Atlas
           href: atlas-securing/index.html
           id: pub-atlas-securing
           sub: atlas-securing/navigation.json

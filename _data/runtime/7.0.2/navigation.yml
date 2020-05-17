@@ -12,7 +12,7 @@
 # Here's the final list:
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
-#   Data Access: DAS, Hive, Impala, Hue, Sqoop, Search
+#   Data Access: DAS, Hive, Hue, Impala, Search, Sqoop
 #   Operational Database: HBase
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox
@@ -68,11 +68,6 @@
           href: hive-introduction/index.html
           id: pub-hive-introduction
           sub: hive-introduction/navigation.json
-
-        - text: Apache Hive Performance Tuning
-          href: hive-performance-tuning/index.html
-          id: pub-hive-performance-tuning
-          sub: hive-performance-tuning/navigation.json
 
         - text: Apache Impala Overview
           href: impala-overview/index.html
@@ -163,15 +158,15 @@
           id: pub-data-protection
           sub: data-protection/navigation.json
 
-        - text: Configuring HDFS ACLs
-          href: hdfs-acls/index.html
-          id: pub-hdfs-acls
-          sub: hdfs-acls/navigation.json
-
         - text: Configuring Fault Tolerance
           href: fault-tolerance/index.html
           id: pub-fault-tolerance
           sub: fault-tolerance/navigation.json
+
+        - text: Configuring HDFS ACLs
+          href: hdfs-acls/index.html
+          id: pub-hdfs-acls
+          sub: hdfs-acls/navigation.json
 
         - text: Administering Apache Kudu
           href: administering-kudu/index.html
@@ -211,12 +206,12 @@
           id: pub-yarn-security
           sub: yarn-security/navigation.json
 
-        - text: Apache Hadoop YARN High Availability
+        - text: Configuring Apache Hadoop YARN High Availability
           href: yarn-high-availability/index.html
           id: pub-yarn-high-availability
           sub: yarn-high-availability/navigation.json
 
-        - text: Monitoring Clusters and Apache Hadoop YARN Applications
+        - text: Configuring Apache Hadoop YARN Log Aggregation
           href: yarn-monitoring-clusters-applications/index.html
           id: pub-yarn-monitoring-clusters-applications
           sub: yarn-monitoring-clusters-applications/navigation.json
@@ -244,6 +239,11 @@
           id: pub-using-das
           sub: using-das/navigation.json
 
+        - text: Working with Apache Hive Metastore
+          href: hive-metastore/index.html
+          id: pub-hive-metastore
+          sub: hive-metastore/navigation.json
+
         - text: Starting Apache Hive
           href: starting-hive/index.html
           id: pub-starting-hive
@@ -269,11 +269,6 @@
           id: pub-configuring-apache-hive
           sub: configuring-apache-hive/navigation.json
 
-        - text: Configuring Apache Hive Metastore
-          href: hive-metastore/index.html
-          id: pub-hive-metastore
-          sub: hive-metastore/navigation.json
-
         - text: Securing Apache Hive
           href: securing-hive/index.html
           id: pub-securing-hive
@@ -284,7 +279,12 @@
           id: pub-integrating-hive-and-bi
           sub: integrating-hive-and-bi/navigation.json
 
-        - text: Migrating Data to Apache Hive
+        - text: Apache Hive Performance Tuning
+          href: hive-performance-tuning/index.html
+          id: pub-hive-performance-tuning
+          sub: hive-performance-tuning/navigation.json
+
+        - text: Migrating Data Using Sqoop
           href: migrating-data-into-hive/index.html
           id: pub-migrating-data-into-hive
           sub: migrating-data-into-hive/navigation.json
@@ -416,7 +416,6 @@
     - text: Governance
       href: howto-governance.html
       sub:
-
         - text: Searching with Metadata
           href: atlas-searching-with-metadata/index.html
           id: pub-atlas-searching-with-metadata
