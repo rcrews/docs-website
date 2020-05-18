@@ -733,11 +733,6 @@
       id: security-encryption-reference
       sub: security-encryption-reference/navigation.json
 
-    - text: Cloudera Search Frequently Asked Questions
-      href: search-faq/index.html
-      id: pub-search-faq
-      sub: search-faq/navigation.json
-
     - text: SMM REST API Reference
       href: smm-rest-api-reference/index.html
       id: pub-smm-rest-api-reference
