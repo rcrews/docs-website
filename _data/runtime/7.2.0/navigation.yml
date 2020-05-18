@@ -12,7 +12,7 @@
 # Here's the final list:
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
-#   Data Access: DAS, Hive, Hue, Impala, Sqoop, Search
+#   Data Access: DAS, Hive, Hue, Impala, Search, Sqoop
 #   Operational Database: HBase, Phoenix
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox
@@ -490,6 +490,11 @@
           id: pub-tuning-spark
           sub: tuning-spark/navigation.json
 
+        - text: CDS 3 (Experimental) Powered by Apache Spark
+          href: cds-3/index.html
+          id: pub-cds-3
+          sub: cds-3/navigation.json
+
         - text: Configuring Apache Zeppelin
           href: configuring-zeppelin/index.html
           id: pub-configuring-zeppelin
@@ -657,17 +662,17 @@
           id: pub-monitoring-kafka-connect
           sub: monitoring-kafka-connect/navigation.json
 
-        - text: Configuring SRM
+        - text: Configuring Streams Replication Manager
           href: srm-configuration/index.html
           id: pub-srm-configuration
           sub: srm-configuration/navigation.json
 
-        - text: Using SRM
+        - text: Using Streams Replication Manager
           href: srm-using/index.html
           id: pub-srm-using
           sub: srm-using/navigation.json
 
-        - text: Securing SRM
+        - text: Securing Streams Replication Manager
           href: srm-security/index.html
           id: pub-srm-security
           sub: srm-security/navigation.json
@@ -767,6 +772,11 @@
       href: security-encryption-reference/index.html
       id: security-encryption-reference
       sub: security-encryption-reference/navigation.json
+
+    - text: Streams Replication Manager Reference
+      href: srm-reference/index.html
+      id: pub-srm-reference
+      sub: srm-reference/navigation.json
 
     - text: Kafka Connect Connector Reference
       href: kafka-connector-reference/index.html
