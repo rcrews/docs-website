@@ -657,6 +657,11 @@
           id: pub-srm-using
           sub: srm-using/navigation.json
 
+        - text: Securing SRM
+          href: srm-security/index.html
+          id: pub-srm-security
+          sub: srm-security/navigation.json
+
         - text: Integrating with Schema Registry
           href: integrating-with-schema-registry/index.html
           id: pub-integrating-with-schema-registry

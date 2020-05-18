@@ -116,6 +116,11 @@ publications:
       description: >-
         Describes how to use Streams Replication Manager.
 
+    - title: Securing SRM
+      url: srm-security/index.html
+      description: >-
+        Describes how to secure Streams Replication Manager.
+
   - title: Schema Registry
     sub:
     - title: Integrating with Schema Registry
