@@ -59,11 +59,21 @@ publications:
       Provides information about configuring HBase snapshots, and using
       HBase replication.
 
-  - title: Using Apache Phoenix to store and access data
+  - title: Using Apache Phoenix to Store and Access Data
     url: phoenix-access-data/index.html
     description: >-
-      Provides information about connecting to Apache Phoenix query
-      Server using the JDBC client.
+      Provides information about accessing data on HBase by connecting to the Apache Phoenix Query Server using the JDBC client.
+
+  - title: Configuring Apache HBase for Apache Phoenix
+    url: phoenix-configure-hbase/index.html
+    description: >-
+      Provides information about configuring HBase for use with Phoenix.
+
+  - title: Managing Apache Phoenix Security
+    url: phoenix-managing-security/index.html
+    description: >-
+      Provides information about authorization and access control
+      capabilities when using Phoenix to access data in HBase.
 
 ---
 
