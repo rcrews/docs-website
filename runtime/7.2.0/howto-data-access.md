@@ -141,11 +141,6 @@ publications:
       description: >-
         A tutorial on using Cloudera Search.
 
-    - title: Deploying Cloudera Search
-      url: search-deploying/index.html
-      description: >-
-        Describes how to deploy Cloudera Search.
-
     - title: Securing Cloudera Search
       url: search-security/index.html
       description: >-
