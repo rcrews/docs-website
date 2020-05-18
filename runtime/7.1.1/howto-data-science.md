@@ -36,6 +36,12 @@ publications:
         Advice and recommendations for optimizing the performance of
         Apache Spark and Spark applications for Cloudera Data Platform.
 
+    - title: CDS 3 (Experimental) Powered by Apache Spark
+      url: cds-3/index.html
+      description: >-
+        Adding an experimental Spark 3 service to your CDP Data Center
+        cluster to evaluate new features and changes.
+
 - column:
   - title: Apache Zeppelin
     sub:

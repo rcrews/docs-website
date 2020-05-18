@@ -490,6 +490,11 @@
           id: pub-tuning-spark
           sub: tuning-spark/navigation.json
 
+        - text: CDS 3 (Experimental) Powered by Apache Spark
+          href: cds-3/index.html
+          id: pub-cds-3
+          sub: cds-3/navigation.json
+
         - text: Configuring Apache Zeppelin
           href: configuring-zeppelin/index.html
           id: pub-configuring-zeppelin
