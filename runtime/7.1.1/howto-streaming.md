@@ -41,7 +41,7 @@ publications:
       description: >-
         Provides information on how to develop Kafka clients.
 
-    - title: Kafka Connect
+    - title: Apache Kafka Connect
       url: kafka-connect/index.html
       description: >-
         Provides information on how to setup, use, and configure

@@ -9,7 +9,7 @@ title: Operational Database
 
 publications:
 - column:
-  - title: Getting Started with Apache HBase
+  - title: Getting Started with Operational Database
     url: hbase-getting-started/index.html
     description: >-
       Provides information about the operational database cluster shape,
@@ -62,7 +62,8 @@ publications:
   - title: Using Apache Phoenix to Store and Access Data
     url: phoenix-access-data/index.html
     description: >-
-      Provides information about accessing data on HBase by connecting to the Apache Phoenix Query Server using the JDBC client.
+      Provides information about accessing data on HBase by connecting
+      to the Apache Phoenix Query Server using the JDBC client.
 
   - title: Configuring Apache HBase for Apache Phoenix
     url: phoenix-configure-hbase/index.html
@@ -74,6 +75,12 @@ publications:
     description: >-
       Provides information about authorization and access control
       capabilities when using Phoenix to access data in HBase.
+
+  - title: Using Apache Phoenix-Spark Connector
+    url: phoenix-spark-connector/index.html
+    description: >-
+      Id primis porttitor ridiculus faucibus nascetur netus elit nec,
+      diam rhoncus natoque dolor habitant tincidunt taciti arcu, lacus.
 
 ---
 

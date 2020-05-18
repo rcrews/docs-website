@@ -12,7 +12,7 @@
 # Here's the final list:
 #   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
-#   Data Access: DAS, Hive, Hue, Impala, Sqoop, Search
+#   Data Access: DAS, Hive, Hue, Impala, Search, Sqoop
 #   Operational Database: HBase, Phoenix
 #   Data Science: Spark, Zeppelin
 #   Security: Ranger, Knox
@@ -563,10 +563,25 @@
 - text: Reference
   id: cat-reference
   sub:
-    # - text: Knox Reference
-    #   href: knox-reference/index.html
-    #   id: pub-knox-reference/index.html
-    #   sub: knox-reference/navigation.json
+    - text: Apache Atlas Reference
+      href: atlas-reference/index.html
+      id: pub-atlas-reference
+      sub: atlas-reference/navigation.json
+
+    - text: Apache Hadoop YARN Reference
+      href: yarn-reference/index.html
+      id: pub-yarn-reference
+      sub: yarn-reference/navigation.json
+
+    - text: Apache Hive Materialized View Commands
+      href: materialized-view-commands/index.html
+      id: pub-materialized-view-commands
+      sub: materialized-view-commands/navigation.json
+
+    - text: Apache Hive Workload Management Commands
+      href: workload-management/index.html
+      id: pub-workload-management
+      sub: workload-management/navigation.json
 
     - text: Apache Impala Reference
       href: impala-reference/index.html
@@ -578,45 +593,25 @@
       id: pub-impala-sql-reference/index.html
       sub: impala-sql-reference/navigation.json
 
-    - text: Apache Hive Workload Management Commands
-      href: workload-management/index.html
-      id: pub-workload-management
-      sub: workload-management/navigation.json
-
-    - text: Apache Hive Materialized View Commands
-      href: materialized-view-commands/index.html
-      id: pub-materialized-view-commands
-      sub: materialized-view-commands/navigation.json
-
-    - text: Apache Atlas Reference
-      href: atlas-reference/index.html
-      id: pub-atlas-reference
-      sub: atlas-reference/navigation.json
-
-    - text: Apache Hadoop YARN Reference
-      href: yarn-reference/index.html
-      id: pub-yarn-reference
-      sub: yarn-reference/navigation.json
+    - text: Apache Phoenix Frequently Asked Questions
+      href: phoenix-faq/index.html
+      id: pub-phoenix-faq
+      sub: phoenix-faq/navigation.json
 
     - text: Apache Phoenix Performance Tuning
       href: phoenix-performance-tuning/index.html
       id: pub-phoenix-performance-tuning
       sub: phoenix-performance-tuning/navigation.json
 
-    - text: Apache Phoenix Frequently Asked Questions
-      href: phoenix-faq/index.html
-      id: pub-phoenix-faq
-      sub: phoenix-faq/navigation.json
+    - text: Cloudera Search Frequently Asked Questions
+      href: search-faq/index.html
+      id: pub-search-faq
+      sub: search-faq/navigation.json
 
     - text: Encryption Reference
       href: security-encryption-reference/index.html
       id: security-encryption-reference
       sub: security-encryption-reference/navigation.json
-
-    - text: Cloudera Search Frequently Asked Questions
-      href: search-faq/index.html
-      id: pub-search-faq
-      sub: search-faq/navigation.json
 
 - text: Release Notes
   id: cat-releasenotes

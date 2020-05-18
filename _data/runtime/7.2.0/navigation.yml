@@ -379,11 +379,6 @@
           id: pub-search-tutorial
           sub: search-tutorial/navigation.json
 
-        - text: Deploying Cloudera Search
-          href: search-deploying/index.html
-          id: pub-search-deploying
-          sub: search-deploying/navigation.json
-
         - text: Securing Cloudera Search
           href: search-security/index.html
           id: pub-search-security
@@ -452,10 +447,25 @@
           id: pub-hbase-backup-dr
           sub: hbase-backup-dr/navigation.json
 
-        - text: Connecting to Apache Phoenix Query Server
+        - text: Using Apache Phoenix to Store and Access Data
           href: phoenix-access-data/index.html
           id: pub-phoenix-access-data
           sub: phoenix-access-data/navigation.json
+
+        - text: Configuring Apache HBase for Apache Phoenix
+          href: phoenix-configure-hbase/index.html
+          id: pub-phoenix-configure-hbase
+          sub: phoenix-configure-hbase/navigation.json
+
+        - text: Managing Apache Phoenix Security
+          href: phoenix-managing-security/index.html
+          id: pub-phoenix-managing-security
+          sub: phoenix-managing-security/navigation.json
+
+        - text: Using Apache Phoenix-Spark Connector
+          href: phoenix-spark-connector/index.html
+          id: pub-phoenix-spark-connector
+          sub: phoenix-spark-connector/navigation.json
 
     - text: Data Science
       href: howto-data-science.html
@@ -536,10 +546,30 @@
           id: pub-atlas-exploring-using-lineage
           sub: atlas-exploring-using-lineage/navigation.json
 
+        - text: Leveraging Business Metadata
+          href: atlas-leveraging-business-metadata/index.html
+          id: pub-atlas-leveraging-business-metadata
+          sub: atlas-leveraging-business-metadata/navigation.json
+
         - text: Managing Business Terms with Atlas Glossaries
           href: atlas-managing-business-terms-with-glossaries/index.html
           id: pub-atlas-managing-business-terms-with-glossaries
           sub: atlas-managing-business-terms-with-glossaries/navigation.json
+
+        - text: Securing Atlas
+          href: atlas-securing/index.html
+          id: pub-atlas-securing
+          sub: atlas-securing/navigation.json
+
+        - text: Configuring Atlas using Cloudera Manager
+          href: atlas-configuring/index.html
+          id: pub-atlas-configuring
+          sub: atlas-configuring/navigation.json
+
+        - text: Migrating Data from Cloudera Navigator to Atlas
+          href: atlas-migrating-from-navigator/index.html
+          id: pub-atlas-migrating-from-navigator
+          sub: atlas-migrating-from-navigator/navigation.json
 
     - text: Jobs Management
       href: howto-jobs-management.html
@@ -637,6 +667,11 @@
           id: pub-srm-using
           sub: srm-using/navigation.json
 
+        - text: Securing SRM
+          href: srm-security/index.html
+          id: pub-srm-security
+          sub: srm-security/navigation.json
+
         - text: Integrating with Schema Registry
           href: integrating-with-schema-registry/index.html
           id: pub-integrating-with-schema-registry
@@ -683,10 +718,25 @@
 - text: Reference
   id: cat-reference
   sub:
-    # - text: Knox Reference
-    #   href: knox-reference/index.html
-    #   id: pub-knox-reference/index.html
-    #   sub: knox-reference/navigation.json
+    - text: Apache Atlas Reference
+      href: atlas-reference/index.html
+      id: pub-atlas-reference
+      sub: atlas-reference/navigation.json
+
+    - text: Apache Hadoop YARN Reference
+      href: yarn-reference/index.html
+      id: pub-yarn-reference
+      sub: yarn-reference/navigation.json
+
+    - text: Apache Hive Materialized View Commands
+      href: materialized-view-commands/index.html
+      id: pub-materialized-view-commands
+      sub: materialized-view-commands/navigation.json
+
+    - text: Apache Hive Workload Management Commands
+      href: workload-management/index.html
+      id: pub-workload-management
+      sub: workload-management/navigation.json
 
     - text: Apache Impala Reference
       href: impala-reference/index.html
@@ -698,40 +748,30 @@
       id: pub-impala-sql-reference/index.html
       sub: impala-sql-reference/navigation.json
 
-    - text: Apache Hive Workload Management Commands
-      href: workload-management/index.html
-      id: pub-workload-management
-      sub: workload-management/navigation.json
-
-    - text: Apache Hive Materialized View Commands
-      href: materialized-view-commands/index.html
-      id: pub-materialized-view-commands
-      sub: materialized-view-commands/navigation.json
-
-    - text: Apache Atlas Reference
-      href: atlas-reference/index.html
-      id: pub-atlas-reference
-      sub: atlas-reference/navigation.json
-
-    - text: Apache Hadoop YARN Reference
-      href: yarn-reference/index.html
-      id: pub-yarn-reference
-      sub: yarn-reference/navigation.json
+    - text: Apache Phoenix Frequently Asked Questions
+      href: phoenix-faq/index.html
+      id: pub-phoenix-faq
+      sub: phoenix-faq/navigation.json
 
     - text: Apache Phoenix Performance Tuning
       href: phoenix-performance-tuning/index.html
       id: pub-phoenix-performance-tuning
       sub: phoenix-performance-tuning/navigation.json
 
-    - text: Apache Phoenix Frequently Asked Questions
-      href: phoenix-faq/index.html
-      id: pub-phoenix-faq
-      sub: phoenix-faq/navigation.json
+    - text: Cloudera Search Frequently Asked Questions
+      href: search-faq/index.html
+      id: pub-search-faq
+      sub: search-faq/navigation.json
 
     - text: Encryption Reference
       href: security-encryption-reference/index.html
       id: security-encryption-reference
       sub: security-encryption-reference/navigation.json
+
+    - text: Kafka Connect Connector Reference
+      href: kafka-connector-reference/index.html
+      id: pub-kafka-connector-reference
+      sub: kafka-connector-reference/navigation.json
 
     - text: SMM REST API Reference
       href: smm-rest-api-reference/index.html
@@ -741,11 +781,6 @@
     - text: SRM REST API Reference
       href: srm-rest-api-reference/index.html
       id: pub-srm-rest-api-reference
-      external: external
-
-    - text: Schema Registry REST API Reference
-      href: sr-rest-api-reference/index.html
-      id: pub-sr-rest-api-reference
       external: external
 
 - text: Release Notes
