@@ -407,20 +407,24 @@
     - text: Operational Database
       href: howto-operational-database.html
       sub:
-        - text: Getting Started with Operational Database
-          href: hbase-getting-started/index.html
-          id: pub-hbase-getting-started
-          sub: hbase-getting-started/navigation.json
+        # Gokul removed pub from build?
+        # https://github.infra.cloudera.com/cloudera-docs/newco-docs/commits/master/build-properties/hbase-targets.xml
+        # - text: Getting Started with Operational Database
+        #   href: hbase-getting-started/index.html
+        #   id: pub-hbase-getting-started
+        #   sub: hbase-getting-started/navigation.json
 
         - text: Configuring Apache HBase
           href: configuring-hbase/index.html
           id: pub-configuring-hbase
           sub: configuring-hbase/navigation.json
 
-        - text: Using Amazon S3 with Apache HBase
-          href: hbase-s3/index.html
-          id: pub-hbase-s3
-          sub: hbase-s3/navigation.json
+        # Gokul removed pub from build?
+        # https://github.infra.cloudera.com/cloudera-docs/newco-docs/commits/master/build-properties/hbase-targets.xml
+        # - text: Using Amazon S3 with Apache HBase
+        #   href: hbase-s3/index.html
+        #   id: pub-hbase-s3
+        #   sub: hbase-s3/navigation.json
 
         - text: Managing Apache HBase Security
           href: hbase-security/index.html
