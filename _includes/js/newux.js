@@ -312,7 +312,7 @@ var NEWUX = (function ($) {
         if (!url.indexOf('#')) {
           // Pubnav.is_hash_link = true;
           // Also add some spacing so that it doesn't get covered up by the nav.
-          const anchor = url.substr(url.indexOf('#'))
+          const anchor = url.substring(url.indexOf('#'))
           $(anchor).addClass('hashpad')
           return true
         }
@@ -339,7 +339,7 @@ var NEWUX = (function ($) {
         }
       } else if (e.type === 'popstate') {
         if (location.hash !== '') { // Hashes also fire popstate, and we only want to capture back/forward
-          hash = location.hash.substr(1)
+          hash = location.hash.substring(1)
           const el = document.getElementById(hash)
           if (el) {
             el.className += ' hashpad'
@@ -461,7 +461,7 @@ var NEWUX = (function ($) {
         if (faded && complete) {
           $content.html(elems) // should I be using html() here?
           if (hash !== '' && typeof hash !== 'undefined') {
-            hash = hash.substr(1)
+            hash = hash.substring(1)
             const el = document.getElementById(hash)
             if (el) {
               el.className += ' hashpad'
@@ -1238,7 +1238,7 @@ var NEWUX = (function ($) {
         id = chunks[chunks.length - 3] + '-' + id
       }
       if (parser.hash) {
-        id = id + '-' + parser.hash.substr(1)
+        id = id + '-' + parser.hash.substring(1)
       }
       return id
     },
