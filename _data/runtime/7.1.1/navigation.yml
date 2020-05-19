@@ -407,20 +407,10 @@
     - text: Operational Database
       href: howto-operational-database.html
       sub:
-        - text: Getting Started with Operational Database
-          href: hbase-getting-started/index.html
-          id: pub-hbase-getting-started
-          sub: hbase-getting-started/navigation.json
-
         - text: Configuring Apache HBase
           href: configuring-hbase/index.html
           id: pub-configuring-hbase
           sub: configuring-hbase/navigation.json
-
-        - text: Using Amazon S3 with Apache HBase
-          href: hbase-s3/index.html
-          id: pub-hbase-s3
-          sub: hbase-s3/navigation.json
 
         - text: Managing Apache HBase Security
           href: hbase-security/index.html
@@ -447,25 +437,20 @@
           id: pub-hbase-backup-dr
           sub: hbase-backup-dr/navigation.json
 
-        - text: Using Apache Phoenix to Store and Access Data
-          href: phoenix-access-data/index.html
-          id: pub-phoenix-access-data
-          sub: phoenix-access-data/navigation.json
-
         - text: Configuring Apache HBase for Apache Phoenix
           href: phoenix-configure-hbase/index.html
           id: pub-phoenix-configure-hbase
           sub: phoenix-configure-hbase/navigation.json
 
+        - text: Using Apache Phoenix to Store and Access Data
+          href: phoenix-access-data/index.html
+          id: pub-phoenix-access-data
+          sub: phoenix-access-data/navigation.json
+
         - text: Managing Apache Phoenix Security
           href: phoenix-managing-security/index.html
           id: pub-phoenix-managing-security
           sub: phoenix-managing-security/navigation.json
-
-        - text: Using Apache Phoenix-Spark Connector
-          href: phoenix-spark-connector/index.html
-          id: pub-phoenix-spark-connector
-          sub: phoenix-spark-connector/navigation.json
 
     - text: Data Science
       href: howto-data-science.html
