@@ -27,6 +27,12 @@ publications:
     description: >-
       Apache Ranger provides fine-grained access control for CDP
       services.
+      
+  - title: Apache Knox Authentication
+    url: security-knox-authentication/index.html
+    description: >-
+      Apache Knox provides perimeter security, a single point of 
+      authentication and access for your services, to your CDP cluster. 
 
 - column:
 
