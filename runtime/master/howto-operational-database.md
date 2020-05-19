@@ -9,7 +9,7 @@ title: Operational Database
 
 publications:
 - column:
-  - title: Getting Started with Apache HBase
+  - title: Getting Started with Operational Database
     url: hbase-getting-started/index.html
     description: >-
       Provides information about the operational database cluster shape,
@@ -59,21 +59,23 @@ publications:
       Provides information about configuring HBase snapshots, and using
       HBase replication.
 
-  - title: Using Apache Phoenix to Store and Access Data
-    url: phoenix-access-data/index.html
-    description: >-
-      Provides information about accessing data on HBase by connecting to the Apache Phoenix Query Server using the JDBC client.
-
   - title: Configuring Apache HBase for Apache Phoenix
     url: phoenix-configure-hbase/index.html
     description: >-
       Provides information about configuring HBase for use with Phoenix.
+
+  - title: Using Apache Phoenix to Store and Access Data
+    url: phoenix-access-data/index.html
+    description: >-
+      Provides information about storing and accessing data on HBase
+      using Phoenix.
 
   - title: Managing Apache Phoenix Security
     url: phoenix-managing-security/index.html
     description: >-
       Provides information about authorization and access control
       capabilities when using Phoenix to access data in HBase.
+
 ---
 
 Apache HBase is a NoSQL database that provides real-time read/write
