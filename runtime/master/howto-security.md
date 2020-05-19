@@ -9,44 +9,50 @@ title: Security
 
 publications:
 - column:
+  - title: Apache Ranger
+    sub:
 
-  # - title: Identity Management and Federation
-  #   url: identity-management-and-federation/index.html
-  #   description: >-
-  #     CDP identity management includes FreeIPA, identity
-  #     federation via IDBroker, and Knox authentication.
+      - title: Apache Ranger Auditing
+        url: security-ranger-auditing/index.html
+        description: >-
+          Apache Ranger provides access auditing and reporting for CDP
+          services.
 
-  - title: Apache Ranger Auditing
-    url: security-ranger-auditing/index.html
-    description: >-
-      Apache Ranger provides access auditing and reporting for CDP
-      services.
+      - title: Apache Ranger Authorization
+        url: security-ranger-authorization/index.html
+        description: >-
+          Apache Ranger provides fine-grained access control for CDP
+          services.
 
-  - title: Apache Ranger Authorization
-    url: security-ranger-authorization/index.html
-    description: >-
-      Apache Ranger provides fine-grained access control for CDP
-      services.
-      
-  - title: Apache Knox Authentication
-    url: security-knox-authentication/index.html
-    description: >-
-      Apache Knox provides perimeter security, a single point of 
-      authentication and access for your services, to your CDP cluster. 
+      - title: Configuring Apache Ranger Authentication with UNIX, LDAP, or AD
+        url: security-ranger-authentication-unix-ldap-ad/index.html
+        description: >-
+          You can configure Apache Ranger authentication using UNIX, LDAP,
+          or AD.
+
+      - title: Configuring Advanced Security Options for Apache Ranger
+        url: security-ranger-configuring-advanced/index.html
+        description: >-
+          How to configure advanced security options such as Kerberos and
+          TLS/SSL for Apache Ranger.
 
 - column:
+  - title: Apache Knox
+    sub:
 
-  - title: Configuring Apache Ranger Authentication with UNIX, LDAP, or AD
-    url: security-ranger-authentication-unix-ldap-ad/index.html
-    description: >-
-      You can configure Apache Ranger authentication using UNIX, LDAP,
-      or AD.
+      - title: Apache Knox Authentication
+        url: security-knox-authentication/index.html
+        description: >-
+          Apache Knox provides perimeter security, a single point of
+          authentication and access for your services, to your CDP cluster.
 
-  - title: Configuring Advanced Security Options for Apache Ranger
-    url: security-ranger-configuring-advanced/index.html
-    description: >-
-      How to configure advanced security options such as Kerberos and
-      TLS/SSL for Apache Ranger.
+  # - title: Identity Management and Federation
+  #   sub:
+  #     - title: Identity Management and Federation
+  #       url: identity-management-and-federation/index.html
+  #       description: >-
+  #         CDP identity management includes FreeIPA, identity
+  #         federation via IDBroker, and Knox authentication.
 
 ---
 
