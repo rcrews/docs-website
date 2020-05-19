@@ -20,7 +20,7 @@ function addExpandCollapse(cssClass, text) {
       $icon = $('<i>').addClass('fa fa-search-plus');
       $content.addClass('cdoc-hidden');
     }
-    $link = $('<a>').attr('href', '#').addClass(linkClass);
+    $link = $('<a>').addClass(linkClass);
     $link.append($icon).append(' ').append($span);
     var $space = $('<span>').text(' ');
     $content.before($link);
