@@ -793,6 +793,11 @@
       id: pub-srm-rest-api-reference
       external: external
 
+    - text: Criuse Control REST API Reference
+      href: cctrl-rest-api-reference/index.html
+      id: pub-cctrl-rest-api-reference
+      external: external
+
 - text: Release Notes
   id: cat-releasenotes
   sub:
