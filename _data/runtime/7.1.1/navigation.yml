@@ -519,9 +519,9 @@
           sub: security-ranger-configuring-advanced/navigation.json
 
         - text: Apache Knox Authentication
-          href: security-knox-authentication/index.html
-          id: pub-security-knox-authentication
-          sub: security-knox-authentication/navigation.json
+          href: knox-authentication/index.html
+          id: pub-knox-authentication
+          sub: knox-authentication/navigation.json
 
     - text: Governance
       href: howto-governance.html

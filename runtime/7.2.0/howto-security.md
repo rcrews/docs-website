@@ -35,7 +35,7 @@ publications:
     sub:
 
       - title: Apache Knox Authentication
-        url: security-knox-authentication/index.html
+        url: knox-authentication/index.html
         description: >-
           Apache Knox provides perimeter security, a single point of
           authentication and access for your services, to your CDP cluster.
