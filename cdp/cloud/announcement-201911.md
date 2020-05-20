@@ -41,12 +41,12 @@ Warehouse), and machine learning workspaces (Machine Learning).
 
 * *Accelerated Data Warehouse SQL at Massive Scale* - For demanding, long
   running workloads on massive data volumes, typical of an enterprise data
-  warehouse, Hive on LLAP delivers speed without sacrificing scalability. 
+  warehouse, Hive on LLAP delivers speed without sacrificing scalability.
   With this update, Hive has been further optimized for even faster SQL
   performance with improvements in memory handling and accuracy of table
   statistics for partitioned tables, ensuring all your reports meet or
   exceed business KPIs. Read more about managing and tuning
-  [Hive LLAP Virtual Data Warehouses](managing-warehouses/topics/dw-tuning-hive-llap-data-warehouses.html  ).
+  [Hive LLAP Virtual Data Warehouses](managing-warehouses/topics/dw-tuning-hive-llap-data-warehouses.html).
 
 * *Built-in Fuzzy Full Text Search* - Finding “close enough” text matches,
   such as finding customer name matches when mis-spelled, or by
