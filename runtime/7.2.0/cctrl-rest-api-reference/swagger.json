@@ -1,0 +1,5137 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Cruise Control API",
+    "description": "Cruise-control is the first of its kind to fully automate the dynamic workload rebalance and self-healing of a kafka cluster. It provides great value to Kafka users by simplifying the operation of Kafka clusters.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/kafkacruisecontrol/add_broker": {
+      "post": {
+        "operationId": "addBroker",
+        "summary": "Move partitions to the specified brokers, according to the specified goals.",
+        "parameters": [
+          {
+            "name": "brokerid",
+            "in": "query",
+            "description": "List of target broker ids.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "required": true
+          },
+          {
+            "name": "dryrun",
+            "in": "query",
+            "description": "Whether to dry-run the request or not.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "throttle_added_broker",
+            "in": "query",
+            "description": "Whether to throttle the added broker.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "allow_capacity_estimation",
+            "in": "query",
+            "description": "Whether to allow capacity estimation when cruise-control is unable to obtain all per-broker capacity information.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "goals",
+            "in": "query",
+            "description": "List of goals used to generate proposal, the default goals will be used if this parameter is not specified.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "RackAwareGoal",
+                "ReplicaCapacityGoal",
+                "ReplicaDistributionGoal"
+              ]
+            }
+          },
+          {
+            "name": "concurrent_partition_movements_per_broker",
+            "in": "query",
+            "description": "The upper bound of ongoing replica movements going into/out of each broker.",
+            "schema": {
+              "type": "integer",
+              "default": 5,
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "concurrent_leader_movements",
+            "in": "query",
+            "description": "The upper bound of ongoing leadership movements.",
+            "schema": {
+              "type": "integer",
+              "default": 1000,
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "skip_hard_goal_check",
+            "in": "query",
+            "description": "Whether to allow hard goals be skipped in proposal generation.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "excluded_topics",
+            "in": "query",
+            "description": "Specify topic whose partition is excluded from replica movement.",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "example": "__CruiseControl.%2A"
+            }
+          },
+          {
+            "name": "kafka_assigner",
+            "in": "query",
+            "description": "Whether to use Kafka assigner mode to general proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "use_ready_default_goals",
+            "in": "query",
+            "description": "Whether to only use ready goals to generate proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "verbose",
+            "in": "query",
+            "description": "Return detailed state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_demoted_brokers",
+            "in": "query",
+            "description": "Whether to allow leader replicas to be moved to recently demoted broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_removed_brokers",
+            "in": "query",
+            "description": "Whether to allow replicas to be moved to recently removed broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "replica_movement_strategies",
+            "in": "query",
+            "description": "Replica movement strategies to use.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "default": null,
+              "example": [
+                "PrioritizeLargeReplicaMovementStrategy",
+                "PostponeUrpReplicaMovementStrategy"
+              ]
+            }
+          },
+          {
+            "name": "execution_progress_check_interval_ms",
+            "in": "query",
+            "description": "Execution progress check interval in milliseconds.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 5000
+            }
+          },
+          {
+            "name": "stop_ongoing_execution",
+            "in": "query",
+            "description": "Whether to stop the ongoing execution (if any) and start executing the given request.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "reason",
+            "in": "query",
+            "description": "Reason for request.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "data_from",
+            "in": "query",
+            "description": "Whether to calculate proposal from available valid partitions or valid windows.",
+            "schema": {
+              "type": "string",
+              "default": "VALID_WINDOWS"
+            }
+          },
+          {
+            "name": "replication_throttle",
+            "in": "query",
+            "description": "Upper bound on the bandwidth in bytes per second used to move replicas.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful add brokers response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OptimizationResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Add brokers in progress.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/admin": {
+      "post": {
+        "operationId": "admin",
+        "summary": "Dynamically change some configs of Cruise Control.",
+        "parameters": [
+          {
+            "name": "disable_self_healing_for",
+            "in": "query",
+            "description": "Disable self-healing for certain anomaly types.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "GOAL_VIOLATION",
+                  "BROKER_FAILURE",
+                  "METRIC_ANOMALY",
+                  "DISK_FAILURE",
+                  "TOPIC_ANOMALY"
+                ]
+              },
+              "example": [
+                "METRIC_ANOMALY"
+              ]
+            }
+          },
+          {
+            "name": "enable_self_healing_for",
+            "in": "query",
+            "description": "Enable self-healing for certain anomaly types.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "GOAL_VIOLATION",
+                  "BROKER_FAILURE",
+                  "METRIC_ANOMALY",
+                  "DISK_FAILURE",
+                  "TOPIC_ANOMALY"
+                ]
+              },
+              "example": [
+                "GOAL_VIOLATION",
+                "BROKER_FAILURE"
+              ]
+            }
+          },
+          {
+            "name": "concurrent_partition_movements_per_broker",
+            "in": "query",
+            "description": "Change upper bound of ongoing replica movements going into/out of each broker.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "concurrent_intra_broker_partition_movements",
+            "in": "query",
+            "description": "Change upper bound of ongoing replica movements between disks within each broker.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "concurrent_leader_movements",
+            "in": "query",
+            "description": "Change upper bound of ongoing leadership movements.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "drop_recently_removed_brokers",
+            "in": "query",
+            "description": "Drop broker ids from recently removed broker list so that Cruise Control can move replicas to these brokers.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "example": [
+                1,
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "name": "drop_recently_demoted_brokers",
+            "in": "query",
+            "description": "Drop broker ids from recently demoted broker list so that Cruise Control can move leader replicas or to transfer replica leadership to these brokers.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "example": [
+                7,
+                8,
+                9
+              ]
+            }
+          },
+          {
+            "name": "execution_progress_check_interval_ms",
+            "in": "query",
+            "description": "Change execution progress check interval in milliseconds.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 5000
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful admin response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "$ref": "#/components/schemas/AdminResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/bootstrap": {
+      "get": {
+        "operationId": "bootstrap",
+        "summary": "Bootstrap Cruise Control.",
+        "parameters": [
+          {
+            "name": "start",
+            "in": "query",
+            "description": "Timestamp in millisecond of earliest metrics sample to load during bootstrap.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": -1,
+              "minimum": -1
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "description": "Timestamp in millisecond of latest metrics sample to load during bootstrap, current time will be used if this parameter is not specified.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "clearmetrics",
+            "in": "query",
+            "description": "Whethere clear the collected metrics sample during bootstrap.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful admin response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BootstrapResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/demote_broker": {
+      "post": {
+        "operationId": "demoteBroker",
+        "summary": "Demote specified brokers.",
+        "parameters": [
+          {
+            "name": "brokerid",
+            "in": "query",
+            "description": "List of target broker ids.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "required": true
+          },
+          {
+            "name": "dryrun",
+            "in": "query",
+            "description": "Whether to dry-run the request or not.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "concurrent_leader_movements",
+            "in": "query",
+            "description": "The upper bound of ongoing leadership movements.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1000,
+              "minimum": 1
+            }
+          },
+          {
+            "name": "allow_capacity_estimation",
+            "in": "query",
+            "description": "Whether to allow capacity estimation when cruise-control is unable to obtain all per-broker capacity information.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "skip_urp_demotion",
+            "in": "query",
+            "description": "Whether to operate on partitions which are currently under-replicated.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_follower_demotion",
+            "in": "query",
+            "description": "Whether to operate on partitions which only have follower replicas on the specified broker(s).",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "verbose",
+            "in": "query",
+            "description": "Return detailed state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_demoted_brokers",
+            "in": "query",
+            "description": "Whether to allow leader replicas to be moved to recently demoted broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "replica_movement_strategies",
+            "in": "query",
+            "description": "Replica movement strategies to use.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "default": null,
+              "example": [
+                "PrioritizeLargeReplicaMovementStrategy",
+                "PostponeUrpReplicaMovementStrategy"
+              ]
+            }
+          },
+          {
+            "name": "brokerid_and_logdirs",
+            "in": "query",
+            "description": "List of broker id and logdir pair to be demoted in the cluster.",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          {
+            "name": "replication_throttle",
+            "in": "query",
+            "description": "Upper bound on the bandwidth in bytes per second used to move replicas.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "reason",
+            "in": "query",
+            "description": "Reason for request.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "execution_progress_check_interval_ms",
+            "in": "query",
+            "description": "Execution progress check interval in milliseconds.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 5000
+            }
+          },
+          {
+            "name": "stop_ongoing_execution",
+            "in": "query",
+            "description": "Whether to stop the ongoing execution (if any) and start executing the given request.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful demote brokers response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OptimizationResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Demote brokers in progress.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/fix_offline_replicas": {
+      "post": {
+        "operationId": "fixOfflineReplicas",
+        "summary": "Fix offline replicas by moving currently offline replicas to healthy brokers.",
+        "parameters": [
+          {
+            "name": "dryrun",
+            "in": "query",
+            "description": "Whether dry-run the request or not.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "goals",
+            "in": "query",
+            "description": "List of goals used to generate proposal, the default goals will be used if this parameter is not specified.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "RackAwareGoal",
+                "ReplicaCapacityGoal",
+                "ReplicaDistributionGoal"
+              ]
+            }
+          },
+          {
+            "name": "allow_capacity_estimation",
+            "in": "query",
+            "description": "Whether to allow capacity estimation when cruise-control is unable to obtain all per-broker capacity information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "concurrent_partition_movements_per_broker",
+            "in": "query",
+            "description": "The upper bound of ongoing replica movements going into/out of each broker.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "concurrent_leader_movements",
+            "in": "query",
+            "description": "The upper bound of ongoing leadership movements.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "skip_hard_goal_check",
+            "in": "query",
+            "description": "Whether to allow hard goals be skipped in proposal generation.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "excluded_topics",
+            "in": "query",
+            "description": "Specify topic whose partition is excluded from replica movement.",
+            "schema": {
+              "type": "string",
+              "default": null
+            },
+            "example": "__CruiseControl.%2A"
+          },
+          {
+            "name": "use_ready_default_goals",
+            "in": "query",
+            "description": "Whether to only use ready goals to generate proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "data_from",
+            "in": "query",
+            "description": "Whether to calculate proposal from available valid partitions or valid windows.",
+            "schema": {
+              "type": "string",
+              "default": "VALID_WINDOWS"
+            }
+          },
+          {
+            "name": "verbose",
+            "in": "query",
+            "description": "Return detailed state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_demoted_brokers",
+            "in": "query",
+            "description": "Whether to allow leader replicas to be moved to recently demoted broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_removed_brokers",
+            "in": "query",
+            "description": "Whether to allow leader replicas to be moved to recently removed broker.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "replica_movement_strategies",
+            "in": "query",
+            "description": "Replica movement strategies to use.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "PrioritizeLargeReplicaMovementStrategy",
+                "PostponeUrpReplicaMovementStrategy"
+              ]
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "replication_throttle",
+            "in": "query",
+            "description": "Upper bound on the bandwidth in bytes per second used to move replicas.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "execution_progress_check_interval_ms",
+            "in": "query",
+            "description": "Execution progress check interval in milliseconds.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 5000
+            }
+          },
+          {
+            "name": "reason",
+            "in": "query",
+            "description": "Reason for request.",
+            "schema": {
+              "type": "string"
+            },
+            "example": "Move offline replicas away from broken brokers."
+          },
+          {
+            "name": "stop_ongoing_execution",
+            "in": "query",
+            "description": "Whether to stop the ongoing execution (if any) and start executing the given request.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful rebalance response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OptimizationResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Fix in progress.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/kafka_cluster_state": {
+      "get": {
+        "operationId": "kafkaClusterState",
+        "summary": "Retrive the current Kafka cluster state.",
+        "parameters": [
+          {
+            "name": "topic",
+            "in": "query",
+            "description": "Topic regex to filter partition information in response.",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "example": "myTopic.*"
+            }
+          },
+          {
+            "name": "verbose",
+            "in": "query",
+            "description": "Return detailed state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Current Kafka cluster state.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KafkaClusterState"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/load": {
+      "get": {
+        "operationId": "load",
+        "summary": "Get the cluster load once Cruise Control Load Monitor is running.",
+        "parameters": [
+          {
+            "name": "start",
+            "in": "query",
+            "description": "Start time of the cluster load. Default is time of earliest valid window.",
+            "schema": {
+              "type": "integer",
+              "default": -1,
+              "format": "int64",
+              "minimum": -1
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "description": "End time of the cluster load. Default is current system time.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "time",
+            "in": "query",
+            "description": "End time of the clutser load. Default is current system time, mutually exclusive with end parameter.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "allow_capacity_estimation",
+            "in": "query",
+            "description": "Whether to allow capacity estimation when cruise-control is unable to obtain all per-broker capacity information.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "populate_disk_info",
+            "in": "query",
+            "description": "Whether show the load of each disk of broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful load from valid partitions response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BrokerStats"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/partition_load": {
+      "get": {
+        "operationId": "partitionload",
+        "summary": "Get the resource load for each partition.",
+        "parameters": [
+          {
+            "name": "resource",
+            "in": "query",
+            "description": "The host and broker-level resource by which to sort the cruise-control response.",
+            "schema": {
+              "type": "string",
+              "default": "disk",
+              "enum": [
+                "cpu",
+                "networkInbound",
+                "networkOutbound",
+                "disk"
+              ]
+            }
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "description": "The timestamp in millisecond of the earliest metric sample use to generate load.",
+            "schema": {
+              "type": "integer",
+              "default": -1,
+              "format": "int64",
+              "minimum": -1
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "description": "The timestamp in millisecond of the latest metric sample use to generate load, current time will be used if this parameter is not specified.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "entries",
+            "in": "query",
+            "description": "The number of entries to show in the response.",
+            "schema": {
+              "type": "integer",
+              "default": 2147483647,
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "description": "A regular expression used to filter the partition load returned based on topic.",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "example": "myTopic.*"
+            }
+          },
+          {
+            "name": "partition",
+            "in": "query",
+            "description": "The partition or partition range to filter partition load returned.",
+            "schema": {
+              "oneOf": [
+                {
+                  "type": "integer",
+                  "format": "int32",
+                  "example": [
+                    {
+                      "value": 0
+                    },
+                    {
+                      "summary": "returns 0th partition"
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "pattern": "^[0-9]+-[0-9]+$",
+                  "example": [
+                    {
+                      "value": "0-9"
+                    },
+                    {
+                      "summary": "0 is the start index and 9 is the end index of the partition boundaries."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "min_valid_partition_ratio",
+            "in": "query",
+            "description": "The minimum required ratio of partition load data completeness.",
+            "schema": {
+              "type": "number",
+              "default": 0.98,
+              "format": "double",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          {
+            "name": "allow_capacity_estimation",
+            "in": "query",
+            "description": "Whether to allow capacity estimation when cruise-control is unable to obtain all per-broker capacity information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "max_load",
+            "in": "query",
+            "description": "If true, the maximum load is returned.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "avg_load",
+            "in": "query",
+            "description": "If true, the average load is returned.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "brokerid",
+            "in": "query",
+            "description": "Set of broker ids used to filter partition load returned.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "example": [
+                1,
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful partition load state response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PartitionLoadState"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Partition load state fetch in progress.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/pause_sampling": {
+      "post": {
+        "operationId": "pauseSampling",
+        "summary": "Pause metric sampling.",
+        "parameters": [
+          {
+            "name": "reason",
+            "in": "query",
+            "description": "Reason for request.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful execution response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PauseSamplingResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/proposals": {
+      "get": {
+        "operationId": "proposals",
+        "summary": "Get current proposals.",
+        "parameters": [
+          {
+            "name": "kafka_assigner",
+            "in": "query",
+            "description": "Whether use Kafka assigner mode to general proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "destination_broker_ids",
+            "in": "query",
+            "description": "Specify brokers to move replicas to.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "default": null,
+              "example": [
+                1,
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "name": "ignore_proposal_cache",
+            "in": "query",
+            "description": "Whether ignore the cached proposal or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "rebalance_disk",
+            "in": "query",
+            "description": "Whether balance load between disks within each broker or between brokers in cluster.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "data_from",
+            "in": "query",
+            "description": "Whether calculating proposal from available valid partitions or valid windows.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "VALID_WINDOWS",
+                "VALID_PARTITIONS"
+              ],
+              "default": "VALID_WINDOWS"
+            }
+          },
+          {
+            "name": "use_ready_default_goals",
+            "in": "query",
+            "description": "Whether only using ready goals to generate proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "excluded_topics",
+            "in": "query",
+            "description": "Specify topic whose partition is excluded from replica movement.",
+            "schema": {
+              "type": "string",
+              "default": null
+            },
+            "example": "__CruiseControl.%2A"
+          },
+          {
+            "name": "exclude_recently_removed_brokers",
+            "in": "query",
+            "description": "Whether allow replicas to be moved to recently removed broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "goals",
+            "in": "query",
+            "description": "List of goals used to generate proposal, the default goals will be used if this parameter is not specified.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "RackAwareGoal",
+                "ReplicaCapacityGoal",
+                "ReplicaDistributionGoal"
+              ]
+            }
+          },
+          {
+            "name": "allow_capacity_estimation",
+            "in": "query",
+            "description": "Whether allow broker capacity to be estimated.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "verbose",
+            "in": "query",
+            "description": "Return detailed state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_demoted_brokers",
+            "in": "query",
+            "description": "Whether allow leader replicas to be moved to recently demoted broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful optimization proposals response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OptimizationResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Optimization proposals generation in progress.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResult"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/rebalance": {
+      "post": {
+        "operationId": "rebalance",
+        "summary": "Rebalance a Kafka cluster based on goals.",
+        "parameters": [
+          {
+            "name": "dryrun",
+            "in": "query",
+            "description": "Whether to dry-run the request or not.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "goals",
+            "in": "query",
+            "description": "List of goals used to generate proposal, the default goals will be used if this parameter is not specified.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "RackAwareGoal",
+                "ReplicaCapacityGoal",
+                "ReplicaDistributionGoal"
+              ]
+            }
+          },
+          {
+            "name": "allow_capacity_estimation",
+            "in": "query",
+            "description": "Whether to allow capacity estimation when cruise-control is unable to obtain all per-broker capacity information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "stop_ongoing_execution",
+            "in": "query",
+            "description": "Whether to stop the ongoing execution (if any) and start executing the given request.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "concurrent_partition_movements_per_broker",
+            "in": "query",
+            "description": "The upper bound of ongoing replica movements going into/out of each broker.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "concurrent_intra_broker_partition_movements",
+            "in": "query",
+            "description": "The upper bound of ongoing replica movements between disks within each broker.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "concurrent_leader_movements",
+            "in": "query",
+            "description": "The upper bound of ongoing leadership movements.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "skip_hard_goal_check",
+            "in": "query",
+            "description": "Whether to allow hard goals be skipped in proposal generation.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "excluded_topics",
+            "in": "query",
+            "description": "Specify topic whose partition is excluded from replica movement.",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "example": "__CruiseControl.%2A"
+            }
+          },
+          {
+            "name": "use_ready_default_goals",
+            "in": "query",
+            "description": "Whether to only use ready goals to generate proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "data_from",
+            "in": "query",
+            "description": "Whether to calculate proposal from available valid partitions or valid windows.",
+            "schema": {
+              "type": "string",
+              "default": "VALID_WINDOWS"
+            }
+          },
+          {
+            "name": "verbose",
+            "in": "query",
+            "description": "Return detailed state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_demoted_brokers",
+            "in": "query",
+            "description": "Whether to allow leader replicas to be moved to recently demoted broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_removed_brokers",
+            "in": "query",
+            "description": "Whether to allow replicas to be moved to recently removed broker.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "replica_movement_strategies",
+            "in": "query",
+            "description": "Replica movement strategies to use.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "PrioritizeLargeReplicaMovementStrategy",
+                "PostponeUrpReplicaMovementStrategy"
+              ]
+            }
+          },
+          {
+            "name": "ignore_proposal_cache",
+            "in": "query",
+            "description": "Whether to ignore the cached proposal or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "destination_broker_ids",
+            "in": "query",
+            "description": "Specify the destination brokers for partitions to move replicas to.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                1,
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "name": "kafka_assigner",
+            "in": "query",
+            "description": "Whether to use Kafka assigner mode to general proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "rebalance_disk",
+            "in": "query",
+            "description": "Whether to balance load between brokers or between disks within broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "replication_throttle",
+            "in": "query",
+            "description": "Upper bound on the bandwidth in bytes per second used to move replicas.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "execution_progress_check_interval_ms",
+            "in": "query",
+            "description": "Execution progress check interval in milliseconds.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 5000
+            }
+          },
+          {
+            "name": "reason",
+            "in": "query",
+            "description": "Reason for request.",
+            "schema": {
+              "type": "string"
+            },
+            "example": "Balance disk utilization across all brokers in the cluster."
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful rebalance response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OptimizationResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Rebalancing in progress.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/remove_broker": {
+      "post": {
+        "operationId": "removeBroker",
+        "summary": "Remove/decomission specified brokers.",
+        "parameters": [
+          {
+            "name": "brokerid",
+            "in": "query",
+            "description": "List of target broker ids.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "required": true
+          },
+          {
+            "name": "dryrun",
+            "in": "query",
+            "description": "Whether to dry-run the request or not.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "throttle_removed_broker",
+            "in": "query",
+            "description": "Whether to throttle the added broker.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "goals",
+            "in": "query",
+            "description": "List of goals used to generate proposal, the default goals will be used if this parameter is not specified.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "RackAwareGoal",
+                "ReplicaCapacityGoal",
+                "ReplicaDistributionGoal"
+              ]
+            }
+          },
+          {
+            "name": "allow_capacity_estimation",
+            "in": "query",
+            "description": "Whether to allow capacity estimation when cruise-control is unable to obtain all per-broker capacity information.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "concurrent_partition_movements_per_broker",
+            "in": "query",
+            "description": "The upper bound of ongoing replica movements going into/out of each broker.",
+            "schema": {
+              "type": "integer",
+              "default": 5,
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "concurrent_leader_movements",
+            "in": "query",
+            "description": "The upper bound of ongoing leadership movements.",
+            "schema": {
+              "type": "integer",
+              "default": 1000,
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "skip_hard_goal_check",
+            "in": "query",
+            "description": "Whether to allow hard goals be skipped in proposal generation.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "excluded_topics",
+            "in": "query",
+            "description": "Specify topic whose partition is excluded from replica movement.",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "example": "__CruiseControl.%2A"
+            }
+          },
+          {
+            "name": "kafka_assigner",
+            "in": "query",
+            "description": "Whether to use Kafka assigner mode to general proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "use_ready_default_goals",
+            "in": "query",
+            "description": "Whether to only use ready goals to generate proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "verbose",
+            "in": "query",
+            "description": "Return detailed state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_demoted_brokers",
+            "in": "query",
+            "description": "Whether to allow leader replicas to be moved to recently demoted broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_removed_brokers",
+            "in": "query",
+            "description": "Whether to allow replicas to be moved to recently removed broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "replica_movement_strategies",
+            "in": "query",
+            "description": "Replica movement strategies to use.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "default": null,
+              "example": [
+                "PrioritizeLargeReplicaMovementStrategy",
+                "PostponeUrpReplicaMovementStrategy"
+              ]
+            }
+          },
+          {
+            "name": "destination_broker_ids",
+            "in": "query",
+            "description": "Comma-separated and/or space-separated list of broker IDs.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            }
+          },
+          {
+            "name": "execution_progress_check_interval_ms",
+            "in": "query",
+            "description": "Execution progress check interval in milliseconds.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 5000
+            }
+          },
+          {
+            "name": "stop_ongoing_execution",
+            "in": "query",
+            "description": "Whether to stop the ongoing execution (if any) and start executing the given request.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "reason",
+            "in": "query",
+            "description": "Reason for request.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "data_from",
+            "in": "query",
+            "description": "Whether to calculate proposal from available valid partitions or valid windows.",
+            "schema": {
+              "type": "string",
+              "default": "VALID_WINDOWS"
+            }
+          },
+          {
+            "name": "replication_throttle",
+            "in": "query",
+            "description": "Upper bound on the bandwidth in bytes per second used to move replicas.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful add brokers response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OptimizationResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Add brokers in progress.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/resume_sampling": {
+      "post": {
+        "operationId": "resumeSampling",
+        "summary": "Resume metric sampling.",
+        "parameters": [
+          {
+            "name": "reason",
+            "in": "query",
+            "description": "Reason for request.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful execution response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResumeSamplingResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/review": {
+      "post": {
+        "operationId": "review",
+        "summary": "Reivew pending Cruise Control requests.",
+        "parameters": [
+          {
+            "name": "approve",
+            "in": "query",
+            "description": "Approve one or more pending Cruise Control requests.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "example": [
+                1,
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "name": "discard",
+            "in": "query",
+            "description": "Reject one or more pending Cruise Control requests.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "example": [
+                4,
+                5,
+                6
+              ]
+            }
+          },
+          {
+            "name": "reason",
+            "in": "query",
+            "description": "Reason of approval or rejection.",
+            "schema": {
+              "type": "string",
+              "default": null
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful review response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReviewResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/review_board": {
+      "get": {
+        "operationId": "reviewBoard",
+        "summary": "Check review status of Cruise Control requests.",
+        "parameters": [
+          {
+            "name": "review_ids",
+            "in": "query",
+            "description": "Ids for selected request to check.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "example": [
+                1,
+                2,
+                3
+              ]
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful review response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReviewResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/state": {
+      "get": {
+        "summary": "Get the state of cruise control.",
+        "parameters": [
+          {
+            "name": "substates",
+            "in": "query",
+            "description": "The substates for which to retrieve state from cruise-control.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "executor",
+                  "analyzer",
+                  "monitor",
+                  "anomaly_detector"
+                ]
+              }
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "verbose",
+            "in": "query",
+            "description": "Return detailed state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "super_verbose",
+            "in": "query",
+            "description": "Return super-verbose state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful state response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CruiseControlState"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "State querying in progress.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/stop_proposal_execution": {
+      "post": {
+        "operationId": "stopProposalExecution",
+        "summary": "Stop ongoing execution in Cruise Control.",
+        "parameters": [
+          {
+            "name": "force_stop",
+            "in": "query",
+            "description": "If true, stop execution forcefully by deleting the /admin/partition_reassignemt, /preferred_replica_election and /controller zNodes in Zookeeper.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful admin response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StopProposalResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/topic_configuration": {
+      "post": {
+        "summary": "Change the configuration of a topic",
+        "parameters": [
+          {
+            "name": "dryrun",
+            "in": "query",
+            "description": "Whether to dry-run the request or not.",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "description": "Regular expression to specify subject topics.",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "example": "topic_%5B0-9%5D.%2A"
+            }
+          },
+          {
+            "name": "replication_factor",
+            "in": "query",
+            "description": "Target replication factor.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "data_from",
+            "in": "query",
+            "description": "Whether to calculate proposal from available valid partitions or valid windows.",
+            "schema": {
+              "type": "string",
+              "default": "VALID_WINDOWS"
+            }
+          },
+          {
+            "name": "goals",
+            "in": "query",
+            "description": "List of goals used to generate proposal, the default goals will be used if this parameter is not specified.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "RackAwareGoal",
+                "ReplicaCapacityGoal",
+                "ReplicaDistributionGoal"
+              ]
+            }
+          },
+          {
+            "name": "allow_capacity_estimation",
+            "in": "query",
+            "description": "Whether to allow capacity estimation when cruise-control is unable to obtain all per-broker capacity information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "concurrent_partition_movements_per_broker",
+            "in": "query",
+            "description": "The upper bound of ongoing replica movements going into/out of each broker.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "concurrent_leader_movements",
+            "in": "query",
+            "description": "The upper bound of ongoing leadership movements.",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "skip_hard_goal_check",
+            "in": "query",
+            "description": "Whether to allow hard goals be skipped in proposal generation.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_demoted_brokers",
+            "in": "query",
+            "description": "Whether to allow leader replicas to be moved to recently demoted broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "exclude_recently_removed_brokers",
+            "in": "query",
+            "description": "Whether to allow replicas to be moved to recently removed broker.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "excluded_topics",
+            "in": "query",
+            "description": "Specify topic whose partition is excluded from replica movement.",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "example": "__CruiseControl.%2A"
+            }
+          },
+          {
+            "name": "execution_progress_check_interval_ms",
+            "in": "query",
+            "description": "Execution progress check interval in milliseconds.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 5000
+            }
+          },
+          {
+            "name": "reason",
+            "in": "query",
+            "description": "Reason for request.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "replica_movement_strategies",
+            "in": "query",
+            "description": "Replica movement strategies to use.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "PrioritizeLargeReplicaMovementStrategy",
+                "PostponeUrpReplicaMovementStrategy"
+              ]
+            }
+          },
+          {
+            "name": "replication_throttle",
+            "in": "query",
+            "description": "Upper bound on the bandwidth in bytes per second used to move replicas.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "review_id",
+            "in": "query",
+            "description": "Review id for 2FA.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "skip_rack_awareness_check",
+            "in": "query",
+            "description": "Whether to allow rack awareness check to be skipped.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "stop_ongoing_execution",
+            "in": "query",
+            "description": "Whether to stop the ongoing execution (if any) and start executing the given request.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "use_ready_default_goals",
+            "in": "query",
+            "description": "Whether to only use ready goals to generate proposal.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "verbose",
+            "in": "query",
+            "description": "Return detailed state information.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful topic configuration response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OptimizationResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Topic configuration in progress.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/train": {
+      "get": {
+        "operationId": "train",
+        "summary": "Train Cruise Control to better model broker cpu usage.",
+        "parameters": [
+          {
+            "name": "start",
+            "in": "query",
+            "description": "Timestamp in millisecond of earliest metrics sample used to train Cruise Control.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": -1,
+              "minimum": -1
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "description": "Timestamp in millisecond of latest metrics sample used to train Cruise Control, current time will be used if this parameter is not specified.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "Whether to return in JSON format or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful train response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrainResult"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kafkacruisecontrol/user_tasks": {
+      "get": {
+        "summary": "Get the recent user tasks from cruise control.",
+        "parameters": [
+          {
+            "name": "client_ids",
+            "in": "query",
+            "description": "Comma separated IP addresses to filter the task results Cruise Control report.",
+            "schema": {
+              "type": "string",
+              "example": [
+                "0.0.0.1"
+              ]
+            }
+          },
+          {
+            "name": "endpoints",
+            "in": "query",
+            "description": "Comma separated endpoints to filter the task results Cruise Control report.",
+            "schema": {
+              "type": "string",
+              "example": [
+                "PROPOSALS,REBALANCE"
+              ]
+            }
+          },
+          {
+            "name": "entries",
+            "in": "query",
+            "description": "The number of entries to show in the response.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": "MAX_INT",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "types",
+            "in": "query",
+            "description": "Comma separated HTTP request types to filter the task results Cruise Control report.",
+            "schema": {
+              "type": "string",
+              "example": [
+                "COMPLETED",
+                "ACTIVE"
+              ]
+            }
+          },
+          {
+            "name": "user_task_ids",
+            "in": "query",
+            "description": "Comma separated UUIDs to filter the task results Cruise Control report.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "json",
+            "in": "query",
+            "description": "If true, cruise-control's response is in JSON format.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "fetch_completed_task",
+            "in": "query",
+            "description": "Whether return the original request's final response.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "get_response_schema",
+            "in": "query",
+            "description": "Whether to return in JSON schema in response header or not.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "doAs",
+            "in": "query",
+            "description": "The user specified by a trusted proxy in that authentication model.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User tasks state response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserTaskState"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "KafkaClusterState": {
+        "type": "object",
+        "required": [
+          "KafkaBrokerState",
+          "KafkaPartitionState",
+          "version"
+        ],
+        "properties": {
+          "KafkaBrokerState": {
+            "$ref": "#/components/schemas/ClusterBrokerState"
+          },
+          "KafkaPartitionState": {
+            "$ref": "#/components/schemas/ClusterPartitionState"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "ClusterBrokerState": {
+        "type": "object",
+        "required": [
+          "LeaderCountByBrokerId",
+          "OutOfSyncCountByBrokerId",
+          "ReplicaCountByBrokerId",
+          "OfflineReplicaCountByBrokerId",
+          "IsController",
+          "OnlineLogDirsByBrokerId",
+          "OfflineLogDirsByBrokerId"
+        ],
+        "properties": {
+          "LeaderCountByBrokerId": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "OutOfSyncCountByBrokerId": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "ReplicaCountByBrokerId": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "OfflineReplicaCountByBrokerId": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "IsController": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "boolean"
+            }
+          },
+          "OnlineLogDirsByBrokerId": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "OfflineLogDirsByBrokerId": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "ClusterPartitionState": {
+        "type": "object",
+        "required": [
+          "offline",
+          "with-offline-replicas",
+          "urp",
+          "under-min-isr"
+        ],
+        "properties": {
+          "offline": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PartitionState"
+            }
+          },
+          "with-offline-replicas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PartitionState"
+            }
+          },
+          "urp": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PartitionState"
+            }
+          },
+          "under-min-isr": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PartitionState"
+            }
+          },
+          "other": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PartitionState"
+            }
+          }
+        }
+      },
+      "PartitionState": {
+        "type": "object",
+        "required": [
+          "topic",
+          "partition",
+          "leader",
+          "replicas",
+          "in-sync",
+          "out-of-sync",
+          "offline"
+        ],
+        "properties": {
+          "topic": {
+            "type": "string"
+          },
+          "partition": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "leader": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "replicas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "in-sync": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "out-of-sync": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "offline": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "required": [
+          "version",
+          "stackTrace",
+          "errorMessage"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "stackTrace": {
+            "type": "string"
+          },
+          "errorMessage": {
+            "type": "string"
+          }
+        }
+      },
+      "AdminResult": {
+        "type": "object",
+        "required": [
+          "version"
+        ],
+        "properties": {
+          "selfHealingEnabledBefore": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "boolean"
+            }
+          },
+          "selfHealingEnabledAfter": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "boolean"
+            }
+          },
+          "ongoingConcurrencyChangeRequest": {
+            "type": "string"
+          },
+          "dropRecentBrokersRequest": {
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "AnalyzerState": {
+        "type": "object",
+        "required": [
+          "isProposalReady",
+          "readyGoals"
+        ],
+        "properties": {
+          "isProposalReady": {
+            "type": "boolean"
+          },
+          "readyGoals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "goalReadiness": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GoalReadinessRecord"
+            }
+          }
+        }
+      },
+      "GoalReadinessRecord": {
+        "type": "object",
+        "required": [
+          "name",
+          "modelCompleteRequirement",
+          "status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "modelCompleteRequirement": {
+            "$ref": "#/components/schemas/ModelCompletenessRequirements"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ready",
+              "notReady"
+            ]
+          }
+        }
+      },
+      "ModelCompletenessRequirements": {
+        "type": "object",
+        "required": [
+          "requiredNumSnapshots",
+          "minMonitoredPartitionsPercentage",
+          "includeAllTopics"
+        ],
+        "properties": {
+          "requiredNumSnapshots": {
+            "type": "number"
+          },
+          "minMonitoredPartitionsPercentage": {
+            "type": "number"
+          },
+          "includeAllTopics": {
+            "type": "boolean"
+          }
+        }
+      },
+      "AnomalyDetectorState": {
+        "type": "object",
+        "required": [
+          "selfHealingEnabled",
+          "selfHealingDisabled",
+          "recentGoalViolations",
+          "recentBrokerFailures",
+          "recentMetricAnomalies",
+          "recentDiskFailures",
+          "recentTopicAnomalies",
+          "metrics",
+          "balancednessScore",
+          "selfHealingEnabledRatio"
+        ],
+        "properties": {
+          "selfHealingEnabled": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selfHealingDisabled": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selfHealingEnabledRatio": {
+            "$ref": "#/components/schemas/SelfHealingEnabledRatio"
+          },
+          "recentGoalViolations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AnomalyDetails"
+            }
+          },
+          "recentBrokerFailures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AnomalyDetails"
+            }
+          },
+          "recentMetricAnomalies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AnomalyDetails"
+            }
+          },
+          "recentDiskFailures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AnomalyDetails"
+            }
+          },
+          "recentTopicAnomalies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AnomalyDetails"
+            }
+          },
+          "metrics": {
+            "$ref": "#/components/schemas/AnomalyMetrics"
+          },
+          "ongoingSelfHealingAnomaly": {
+            "type": "string"
+          },
+          "balancednessScore": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      },
+      "AnomalyDetails": {
+        "type": "object",
+        "required": [
+          "status",
+          "anomalyId",
+          "statusUpdateMs",
+          "detectionMs"
+        ],
+        "properties": {
+          "statusUpdateMs": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "detectionMs": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "DETECTED",
+              "IGNORED",
+              "FIX_STARTED",
+              "FIX_FAILED_TO_START",
+              "CHECK_WITH_DELAY",
+              "LOAD_MONITOR_NOT_READY",
+              "COMPLETENESS_NOT_READY"
+            ]
+          },
+          "anomalyId": {
+            "type": "string"
+          },
+          "fixableViolatedGoals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unfixableViolatedGoals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "optimizationResult": {
+            "type": "string"
+          },
+          "failedBrokersByTimeMs": {
+            "description": "Dictionary of broker id to failure time in MS.",
+            "additionalProperties": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "failedDisksByTimeMs": {
+            "description": "Dictionary of broker id to a dictionary of log dir to failure time in MS.",
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer",
+                "format": "int64"
+              }
+            }
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "SelfHealingEnabledRatio": {
+        "required": [
+          "GOAL_VIOLATION",
+          "BROKER_FAILURE",
+          "METRIC_ANOMALY",
+          "DISK_FAILURE",
+          "TOPIC_ANOMALY"
+        ],
+        "properties": {
+          "GOAL_VIOLATION": {
+            "type": "number",
+            "format": "float"
+          },
+          "BROKER_FAILURE": {
+            "type": "number",
+            "format": "float"
+          },
+          "METRIC_ANOMALY": {
+            "type": "number",
+            "format": "float"
+          },
+          "DISK_FAILURE": {
+            "type": "number",
+            "format": "float"
+          },
+          "TOPIC_ANOMALY": {
+            "type": "number",
+            "format": "float"
+          }
+        }
+      },
+      "AnomalyMetrics": {
+        "type": "object",
+        "required": [
+          "meanTimeBetweenAnomaliesMs",
+          "meanTimeToStartFixMs",
+          "numSelfHealingStarted",
+          "numSelfHealingFailedToStart",
+          "ongoingAnomalyDurationMs"
+        ],
+        "properties": {
+          "meanTimeBetweenAnomaliesMs": {
+            "type": "object",
+            "$ref": "#/components/schemas/MeanTimeBetweenAnomaliesMs"
+          },
+          "meanTimeToStartFixMs": {
+            "type": "number",
+            "format": "double"
+          },
+          "numSelfHealingStarted": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "numSelfHealingFailedToStart": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ongoingAnomalyDurationMs": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "MeanTimeBetweenAnomaliesMs": {
+        "required": [
+          "GOAL_VIOLATION",
+          "BROKER_FAILURE",
+          "METRIC_ANOMALY",
+          "DISK_FAILURE",
+          "TOPIC_ANOMALY"
+        ],
+        "properties": {
+          "GOAL_VIOLATION": {
+            "type": "number",
+            "format": "double"
+          },
+          "BROKER_FAILURE": {
+            "type": "number",
+            "format": "double"
+          },
+          "METRIC_ANOMALY": {
+            "type": "number",
+            "format": "double"
+          },
+          "DISK_FAILURE": {
+            "type": "number",
+            "format": "double"
+          },
+          "TOPIC_ANOMALY": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      },
+      "BootstrapResult": {
+        "type": "object",
+        "required": [
+          "version",
+          "message"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "BrokerStats": {
+        "type": "object",
+        "required": [
+          "hosts",
+          "brokers"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hosts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SingleHostStats"
+            }
+          },
+          "brokers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SingleBrokerStats"
+            }
+          }
+        }
+      },
+      "SingleBrokerStats": {
+        "type": "object",
+        "required": [
+          "Host",
+          "Broker",
+          "BrokerState",
+          "DiskMB",
+          "DiskPct",
+          "CpuPct",
+          "LeaderNwInRate",
+          "FollowerNwInRate",
+          "NwOutRate",
+          "PnwOutRate",
+          "Replicas",
+          "Leaders"
+        ],
+        "properties": {
+          "Host": {
+            "type": "string"
+          },
+          "Broker": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "BrokerState": {
+            "type": "string",
+            "enum": [
+              "ALIVE",
+              "DEAD",
+              "NEW",
+              "DEMOTED",
+              "BAD_DISKS"
+            ]
+          },
+          "DiskMB": {
+            "type": "number",
+            "format": "double"
+          },
+          "DiskPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "CpuPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "LeaderNwInRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "FollowerNwInRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "NwOutRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "PnwOutRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "Replicas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Leaders": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "DiskState": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/DiskStats"
+            }
+          }
+        }
+      },
+      "DiskStats": {
+        "type": "object",
+        "description": "Based on _diskStatsByLogDir",
+        "required": [
+          "DiskMB",
+          "DiskPct",
+          "NumLeaderReplicas",
+          "NumReplicas"
+        ],
+        "properties": {
+          "DiskMB": {
+            "oneOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "DEAD"
+                ]
+              },
+              {
+                "type": "number",
+                "format": "double"
+              }
+            ]
+          },
+          "DiskPct": {
+            "oneOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "DEAD"
+                ]
+              },
+              {
+                "type": "number",
+                "format": "double"
+              }
+            ]
+          },
+          "NumLeaderReplicas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "NumReplicas": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "SingleHostStats": {
+        "type": "object",
+        "required": [
+          "Host",
+          "DiskMB",
+          "DiskPct",
+          "CpuPct",
+          "LeaderNwInRate",
+          "FollowerNwInRate",
+          "NwOutRate",
+          "PnwOutRate",
+          "Replicas",
+          "Leaders"
+        ],
+        "properties": {
+          "Host": {
+            "type": "string"
+          },
+          "DiskMB": {
+            "type": "number",
+            "format": "double"
+          },
+          "DiskPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "CpuPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "LeaderNwInRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "FollowerNwInRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "NwOutRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "PnwOutRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "Replicas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Leaders": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "ClusterModelStats": {
+        "type": "object",
+        "required": [
+          "metadata",
+          "statistics"
+        ],
+        "properties": {
+          "metadata": {
+            "$ref": "#/components/schemas/ClusterModelStatsMetaData"
+          },
+          "statistics": {
+            "$ref": "#/components/schemas/ClusterModelStatsValue"
+          }
+        }
+      },
+      "ClusterModelStatsMetaData": {
+        "type": "object",
+        "required": [
+          "brokers",
+          "replicas",
+          "topics"
+        ],
+        "properties": {
+          "brokers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "replicas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "topics": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "ClusterModelStatsValue": {
+        "type": "object",
+        "required": [
+          "AVG",
+          "MAX",
+          "MIN",
+          "STD"
+        ],
+        "properties": {
+          "AVG": {
+            "$ref": "#/components/schemas/ClusterModelStatsValueHolder"
+          },
+          "MAX": {
+            "$ref": "#/components/schemas/ClusterModelStatsValueHolder"
+          },
+          "MIN": {
+            "$ref": "#/components/schemas/ClusterModelStatsValueHolder"
+          },
+          "STD": {
+            "$ref": "#/components/schemas/ClusterModelStatsValueHolder"
+          }
+        }
+      },
+      "ClusterModelStatsValueHolder": {
+        "type": "object",
+        "required": [
+          "cpu",
+          "networkInbound",
+          "networkOutbound",
+          "disk",
+          "potentialNwOut",
+          "replicas",
+          "leaderReplicas",
+          "topicReplicas"
+        ],
+        "properties": {
+          "cpu": {
+            "type": "number",
+            "format": "double"
+          },
+          "networkInbound": {
+            "type": "number",
+            "format": "double"
+          },
+          "networkOutbound": {
+            "type": "number",
+            "format": "double"
+          },
+          "disk": {
+            "type": "number",
+            "format": "double"
+          },
+          "potentialNwOut": {
+            "type": "number",
+            "format": "double"
+          },
+          "replicas": {
+            "type": "number"
+          },
+          "leaderReplicas": {
+            "type": "number"
+          },
+          "topicReplicas": {
+            "type": "number"
+          }
+        }
+      },
+      "CruiseControlState": {
+        "type": "object",
+        "required": [
+          "version"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "MonitorState": {
+            "$ref": "#/components/schemas/LoadMonitorState"
+          },
+          "ExecutorState": {
+            "$ref": "#/components/schemas/ExecutorState"
+          },
+          "AnalyzerState": {
+            "$ref": "#/components/schemas/AnalyzerState"
+          },
+          "AnomalyDetectorState": {
+            "$ref": "#/components/schemas/AnomalyDetectorState"
+          }
+        }
+      },
+      "ExecutionProposal": {
+        "type": "object",
+        "required": [
+          "topicPartition",
+          "oldLeader",
+          "oldReplicas",
+          "newReplicas"
+        ],
+        "properties": {
+          "topicPartition": {
+            "type": "string"
+          },
+          "oldLeader": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "oldReplicas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "newReplicas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      },
+      "ExecutorState": {
+        "type": "object",
+        "required": [
+          "state"
+        ],
+        "properties": {
+          "triggeredUserTaskId": {
+            "type": "string"
+          },
+          "triggeredSelfHealingTaskId": {
+            "type": "string"
+          },
+          "triggeredTaskReason": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "NO_TASK_IN_PROGRESS",
+              "STARTING_EXECUTION",
+              "INTER_BROKER_REPLICA_MOVEMENT_TASK_IN_PROGRESS",
+              "INTRA_BROKER_REPLICA_MOVEMENT_TASK_IN_PROGRESS",
+              "LEADER_MOVEMENT_TASK_IN_PROGRESS",
+              "STOPPING_EXECUTION"
+            ]
+          },
+          "recentlyDemotedBrokers": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "recentlyRemovedBrokers": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "numTotalLeadershipMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numCancelledLeadershipMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numPendingLeadershipMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numFinishedLeadershipMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pendingLeadershipMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "cancelledLeadershipMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "maximumConcurrentLeaderMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numTotalPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numPendingPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numCancelledPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numInProgressPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "abortingPartitions": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numFinishedPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inProgressPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "pendingPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "cancelledPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "deadPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "completedPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "abortingPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "abortedPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "finishedDataMovement": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "totalDataToMove": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "maximumConcurrentPartitionMovementsPerBroker": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numTotalIntraBrokerPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numFinishedIntraBrokerPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numInProgressIntraBrokerPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numAbortingIntraBrokerPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numPendingIntraBrokerPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numCancelledIntraBrokerPartitionMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inProgressIntraBrokerPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "pendingIntraBrokerPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "cancelledIntraBrokerPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "deadIntraBrokerPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "completedIntraBrokerPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "abortingIntraBrokerPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "abortedIntraBrokerPartitionMovement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionTask"
+            }
+          },
+          "finishedIntraBrokerDataMovement": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "totalIntraBrokerDataToMove": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "maximumConcurrentIntraBrokerPartitionMovementsPerBroker": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "error": {
+            "type": "string"
+          }
+        }
+      },
+      "ExecutionTask": {
+        "type": "object",
+        "required": [
+          "executionId",
+          "type",
+          "state",
+          "proposal",
+          "brokerId"
+        ],
+        "properties": {
+          "executionId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "INTER_BROKER_REPLICA_ACTION",
+              "INTRA_BROKER_REPLICA_ACTION",
+              "LEADER_ACTION"
+            ]
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "PENDING",
+              "IN_PROGRESS",
+              "ABORTING",
+              "ABORTED",
+              "DEAD",
+              "COMPLETED"
+            ]
+          },
+          "proposal": {
+            "$ref": "#/components/schemas/ExecutionProposal"
+          },
+          "brokerId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "GoalStatus": {
+        "type": "object",
+        "required": [
+          "goal",
+          "status",
+          "clusterModelStats"
+        ],
+        "properties": {
+          "goal": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "VIOLATED",
+              "FIXED",
+              "NO-ACTION"
+            ]
+          },
+          "clusterModelStats": {
+            "$ref": "#/components/schemas/ClusterModelStats"
+          }
+        }
+      },
+      "LoadMonitorState": {
+        "type": "object",
+        "required": [
+          "state",
+          "trained",
+          "trainingPct",
+          "numMonitoredWindows",
+          "numValidPartitions",
+          "numTotalPartitions",
+          "monitoringCoveragePct",
+          "numFlawedPartitions"
+        ],
+        "properties": {
+          "state": {
+            "type": "string",
+            "enum": [
+              "NOT_STARTED",
+              "RUNNING",
+              "PAUSED",
+              "SAMPLING",
+              "BOOTSTRAPPING",
+              "TRAINING",
+              "LOADING"
+            ]
+          },
+          "trained": {
+            "type": "boolean"
+          },
+          "trainingPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "numMonitoredWindows": {
+            "type": "number"
+          },
+          "monitoredWindows": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          "numValidPartitions": {
+            "type": "number"
+          },
+          "numTotalPartitions": {
+            "type": "number"
+          },
+          "monitoringCoveragePct": {
+            "type": "number",
+            "format": "double"
+          },
+          "numFlawedPartitions": {
+            "type": "number"
+          },
+          "reasonOfLatestPauseOrResume": {
+            "type": "string"
+          },
+          "bootstrapProgressPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "loadingProgressPct": {
+            "type": "number",
+            "format": "double"
+          },
+          "error": {
+            "type": "string"
+          }
+        }
+      },
+      "OptimizationResult": {
+        "type": "object",
+        "required": [
+          "loadAfterOptimization",
+          "summary",
+          "goalSummary"
+        ],
+        "properties": {
+          "proposals": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionProposal"
+            }
+          },
+          "loadBeforeOptimization": {
+            "$ref": "#/components/schemas/BrokerStats"
+          },
+          "summary": {
+            "$ref": "#/components/schemas/OptimizerResult"
+          },
+          "goalSummary": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GoalStatus"
+            }
+          },
+          "loadAfterOptimization": {
+            "$ref": "#/components/schemas/BrokerStats"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "OptimizerResult": {
+        "type": "object",
+        "required": [
+          "numReplicaMovements",
+          "dataToMoveMB",
+          "numIntraBrokerReplicaMovements",
+          "intraBrokerDataToMoveMB",
+          "numLeaderMovements",
+          "recentWindows",
+          "monitoredPartitionsPercentage",
+          "excludedTopics",
+          "excludedBrokersForReplicaMove",
+          "excludedBrokersForLeadership",
+          "onDemandBalancednessScoreBefore",
+          "onDemandBalancednessScoreAfter"
+        ],
+        "properties": {
+          "numReplicaMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataToMoveMB": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "numIntraBrokerReplicaMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "intraBrokerDataToMoveMB": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "numLeaderMovements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "recentWindows": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "monitoredPartitionsPercentage": {
+            "type": "number",
+            "format": "double"
+          },
+          "excludedTopics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "excludedBrokersForReplicaMove": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "excludedBrokersForLeadership": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "onDemandBalancednessScoreBefore": {
+            "type": "number",
+            "format": "double"
+          },
+          "onDemandBalancednessScoreAfter": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      },
+      "PartitionLoadState": {
+        "type": "object",
+        "required": [
+          "version",
+          "records"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "records": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PartitionLoadRecord"
+            }
+          }
+        }
+      },
+      "PartitionLoadRecord": {
+        "type": "object",
+        "required": [
+          "topic",
+          "partition",
+          "leader",
+          "followers",
+          "cpu",
+          "networkInbound",
+          "networkOutbound",
+          "disk",
+          "msg_in"
+        ],
+        "properties": {
+          "topic": {
+            "type": "string"
+          },
+          "partition": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "leader": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "followers": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "cpu": {
+            "type": "integer",
+            "format": "double"
+          },
+          "networkInbound": {
+            "type": "integer",
+            "format": "double"
+          },
+          "networkOutbound": {
+            "type": "integer",
+            "format": "double"
+          },
+          "disk": {
+            "type": "integer",
+            "format": "double"
+          },
+          "msg_in": {
+            "type": "integer",
+            "format": "double"
+          }
+        }
+      },
+      "PauseSamplingResult": {
+        "type": "object",
+        "required": [
+          "version",
+          "message"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "ProgressResult": {
+        "type": "object",
+        "required": [
+          "version",
+          "progress"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "progress": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OperationProgress"
+            }
+          }
+        }
+      },
+      "OperationProgress": {
+        "type": "object",
+        "required": [
+          "version",
+          "operation",
+          "operationProgress"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "operation": {
+            "type": "string"
+          },
+          "operationProgress": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StepProgress"
+            }
+          }
+        }
+      },
+      "StepProgress": {
+        "type": "object",
+        "required": [
+          "step",
+          "description",
+          "time-in-ms",
+          "completionPercentage"
+        ],
+        "properties": {
+          "step": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "time-in-ms": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "completionPercentage": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      },
+      "ResumeSamplingResult": {
+        "type": "object",
+        "required": [
+          "version",
+          "message"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "ReviewResult": {
+        "type": "object",
+        "required": [
+          "vesion",
+          "RequestInfo"
+        ],
+        "properties": {
+          "RequestInfo": {
+            "$ref": "#/components/schemas/RequestInfo"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "RequestInfo": {
+        "type": "object",
+        "required": [
+          "Id",
+          "SubmitterAddress",
+          "SubmissionTimeMs",
+          "Status",
+          "EndpointWithParams",
+          "Reason"
+        ],
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "SubmitterAddress": {
+            "type": "string"
+          },
+          "SubmissionTimeMs": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "Status": {
+            "type": "string",
+            "enum": [
+              "PENDING_REVIEW",
+              "APPROVED",
+              "SUBMITTED",
+              "DISCARDED"
+            ]
+          },
+          "EndpointWithParams": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
+      "Statistic": {
+        "type": "object",
+        "properties": {
+          "potentialNwOut": {
+            "type": "number",
+            "format": "double"
+          },
+          "replicas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "leaderReplicas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "topicReplicas": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "StopProposalResult": {
+        "type": "object",
+        "required": [
+          "version",
+          "message"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "TrainResult": {
+        "type": "object",
+        "required": [
+          "version",
+          "message"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "UserTaskInfo": {
+        "type": "object",
+        "required": [
+          "UserTaskId",
+          "RequestURL",
+          "ClientIdentity",
+          "StartMs",
+          "Status"
+        ],
+        "properties": {
+          "UserTaskId": {
+            "type": "string"
+          },
+          "RequestURL": {
+            "type": "string"
+          },
+          "ClientIdentity": {
+            "type": "string"
+          },
+          "StartMs": {
+            "type": "string"
+          },
+          "Status": {
+            "type": "string",
+            "enum": [
+              "Active",
+              "InExecution",
+              "Completed",
+              "CompletedWithError"
+            ]
+          },
+          "originalResponse": {
+            "type": "string"
+          }
+        }
+      },
+      "UserTaskState": {
+        "type": "object",
+        "required": [
+          "userTasks",
+          "version"
+        ],
+        "properties": {
+          "userTasks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserTaskInfo"
+            }
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    }
+  }
+}
