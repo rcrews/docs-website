@@ -64,6 +64,11 @@
       id: pub-monitoring
       sub: monitoring/navigation.json
 
+    - text: Troubleshooting
+      href: troubleshooting/index.html
+      id: pub-troubleshooting
+      sub: troubleshooting/navigation.json
+
 # - text: Reference
 #   id: cat-reference
 #   sub:
