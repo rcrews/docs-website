@@ -28,15 +28,16 @@ publications:
     - title: Working with Hive Metastore
       url: hive-metastore/index.html
       description: >-
-        Describes authorizing access to Hive tables from Spark and
-        configuring access to metadata Hive metastore (HMS) for
-        multiple services, such as Hive and Impala.
+        Describes how Hive metastore (HMS) detects client types and 
+        and stores compatible tables, authorizes access to tables
+        from Spark, and stores metadata of multiple services, such
+        as Hive and Impala.
 
     - title: Starting Apache Hive
       url: starting-hive/index.html
       description: >-
-        Describes how to launch Hive, execute Hive commands, and issue
-        Hive queries from Beeline.
+        Describes how to launch Hive, execute commands, and issue
+        queries from Beeline.
 
     - title: Using Hive
       url: using-hiveql/index.html
@@ -48,14 +49,14 @@ publications:
       url: managing-hive/index.html
       description: >-
         Includes information about mature ACID v2 operations on
-        transactions.
+        transactions, compaction of files that accumulate during,
+        ingestion, and query vectorization.
 
     - title: Managing Apache Hive Workloads
       url: managing-a-hive-workload/index.html
       description: >-
         Summarizes and describes how to improve parallel query execution
-        and share queries in a cluster that supports low-latency
-        analytical processing (LLAP).
+        and share queries in CDP Public Cloud.
 
     - title: Configuring Apache Hive
       url: configuring-apache-hive/index.html
@@ -66,15 +67,16 @@ publications:
     - title: Securing Apache Hive
       url: securing-hive/index.html
       description: >-
-        Discusses how to choose an authorization model based on how your
-        organization uses Hive.
+        Discusses how to choose an authorization model based on your
+        use case.
 
     - title: Integrating Apache Hive with Apache Spark and BI
       url: integrating-hive-and-bi/index.html
       description: >-
-        Covers accessing Spark data to and from Hive and using the
-        JdbcStorageHandler to access an external data source, such as
-        Business Intelligence (BI) tools.
+        Covers accessing Hive tables from Spark through the  
+        Spark Direct Reader or Hive Warehouse Connector, using
+        JdbcStorageHandler to access an external data source, and
+        connecting to Business Intelligence (BI) tools.
 
     - title: Apache Hive Performance Tuning
       url: hive-performance-tuning/index.html
