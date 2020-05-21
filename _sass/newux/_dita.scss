@@ -143,10 +143,6 @@
       .rowsep-0 					{ border-bottom:0;  }
       .rowsep-1 					{ border-bottom:1px solid #fff;  }
 
-      .stentry 					    { border-right:1px solid #000; border-bottom:1px solid #000;  }
-      .stentry:last-child 		    { border-right:0;  }
-      .strow:last-child .stentry 	{ border-bottom:0;  }
-
       .align-left 				    { text-align:left;  }
       .align-right 				    { text-align:right;  }
       .align-center 				{ text-align:center;  }
@@ -155,6 +151,31 @@
       .valign-top 				    { vertical-align:top;  }
       .valign-bottom 				{ vertical-align:bottom;  }
       .valign-middle 				{ vertical-align:middle;  }
+      
+      .stentry 					    { border-right:1px solid #000; border-bottom:1px solid #000;  }
+      .stentry:last-child 		    { border-right:0;  }
+      .strow:last-child .stentry 	{ border-bottom:0;  }
+  
+  // Separate styles for table vs. simpletable just in case we need to differentiate    
+  table.simpletable 					    { border-color:#fff; table-layout:fixed; width:100%; border-collapse:collapse; background-color:#eee; margin:1rem 0;
+      .desc 					    { display:block; font-style:italic;  }
+      thead tr, th 				    { border-color:#fff; background-color:#5f7c82; font-weight:500; color:#fff; }
+      th, td 						{ padding:5px; overflow-wrap:break-word; font-size:90%; }
+      tbody tr:nth-child(odd) 	    { background-color:#eee;  }
+      tbody tr:nth-child(even)	    { background-color:#ddd;  }
+      caption 					    { margin:0.5rem 0 0.25rem 0;
+        .table--title-label         { font-weight:bold; color:#666;  }
+      }
+   
+  // no-format style simpletable when outputclass="no-format" for when using simpletable as a non-formatted container 
+  table.simpletable.no-format       { border-color: transparent; table-layout: auto; width: auto; border-collapse: separate; background-color: transparent; margin: 0;
+      .desc 					    { display:block; font-style:italic;  }
+      thead tr, th 				    { border-color: transparent; background-color: transparent; font-weight: 500; color: #000; }
+      th, td 						{ padding:5px; overflow-wrap:break-word; font-size:90%; }
+      tbody tr	                    { background-color:transparent;  }
+      caption 					    { margin:0.5rem 0 0.25rem 0;
+        .table--title-label         { font-weight:bold; color:#666;  }
+      }
   }
 
   .nested0 						    { margin-top:1rem;  } // Add space for top level topics
