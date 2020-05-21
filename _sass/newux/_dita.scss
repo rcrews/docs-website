@@ -156,6 +156,31 @@
       .valign-bottom 				{ vertical-align:bottom;  }
       .valign-middle 				{ vertical-align:middle;  }
   }
+  
+  // Separate styles for table vs. simpletable just in case we need to differentiate    
+  table.simpletable                                        { border-color:#fff; table-layout:fixed; width:100%; border-collapse:collapse; background-color:#eee; margin:1rem 0;
+      .desc                                        { display:block; font-style:italic;  }
+      thead tr, th                                 { border-color:#fff; background-color:#5f7c82; font-weight:500; color:#fff; }
+      th, td                                           { padding:5px; overflow-wrap:break-word; font-size:90%; }
+      tbody tr:nth-child(odd)      { background-color:#eee;  }
+      tbody tr:nth-child(even)     { background-color:#ddd;  }
+      caption                                      { margin:0.5rem 0 0.25rem 0;
+        .table--title-label         { font-weight:bold; color:#666;  }
+      }
+    }
+   
+  // no-format style simpletable when outputclass="no-format" for when using simpletable as a non-formatted container 
+  table.simpletable.no-format       { border-color: transparent; table-layout: auto; width: auto; border-collapse: separate; background-color: transparent; margin: 0;
+      .desc                                        { display:block; font-style:italic;  }
+      thead tr, th                                 { border-color: transparent; background-color: transparent; font-weight: 500; color: #000; }
+      th, td                                           { padding:5px; overflow-wrap:break-word; font-size:90%; }
+      tbody tr                     { background-color:transparent;  }
+      caption                                      { margin:0.5rem 0 0.25rem 0;
+        .table--title-label         { font-weight:bold; color:#666;  }
+      }
+    }
+  
+   
 
   .nested0 						    { margin-top:1rem;  } // Add space for top level topics
   .p 							    { margin-top:1rem;  } // div with class=p is used for paragraphs that contain blocks, // to keep the XHTML valid
@@ -190,5 +215,5 @@
   .ki-workaround::before { content: "Workaround: "; display: inline; font-weight: 400;  }
   .fi-item { border-top: 1px solid black; margin-bottom: 24px;  }
   .fi-jira { margin-bottom: 12px; }
-
+  
 }
