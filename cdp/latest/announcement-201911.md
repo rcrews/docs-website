@@ -46,7 +46,7 @@ Warehouse), and machine learning workspaces (Machine Learning).
   performance with improvements in memory handling and accuracy of table
   statistics for partitioned tables, ensuring all your reports meet or
   exceed business KPIs. Read more about managing and tuning
-  [Hive LLAP Virtual Data Warehouses](data-warehouse/cloud/managing-warehouses/topics/dw-tuning-hive-llap-data-warehouses.html).
+  [Hive LLAP Virtual Data Warehouses](/data-warehouse/cloud/managing-warehouses/topics/dw-tuning-hive-llap-data-warehouses.html).
 
 * *Built-in Fuzzy Full Text Search* - Finding “close enough” text matches,
   such as finding customer name matches when mis-spelled, or by
