@@ -897,28 +897,8 @@ const NEWUX = (function($) {
                 let active = '';
                 if (el) {
                   if (WhoAmI.version.url) {
-                    const productOnly = (WhoAmI.version.url.split('/'))[1];
-                    let productVersion = WhoAmI.version.url.split('/').slice(1, 3).join('/');
-
-                    if (data[0]['runtime-history'] &&
-                                        data[0]['runtime-history'].includes(productVersion)) {
-                      productVersion = data[0]['runtime-history'][0];
-                    }
-                    if (data[0]['cloudera-manager-history'] &&
-                                        data[0]['cloudera-manager-history'].includes(productVersion)) {
-                      productVersion = data[0]['cloudera-manager-history'][0];
-                    }
-                    if (data[1]['runtime-history'] &&
-                                        data[1]['runtime-history'].includes(productVersion)) {
-                      productVersion = data[1]['runtime-history'][0];
-                    }
-                    if (data[1]['cloudera-manager-history'] &&
-                                        data[1]['cloudera-manager-history'].includes(productVersion)) {
-                      productVersion = data[1]['cloudera-manager-history'][0];
-                    }
-                    if ((productOnly !== 'runtime' && productOnly !== 'cloudera-manager' &&
-                                        productOnly === (el.href.split('/'))[1]) ||
-                                        productVersion === el.href.split('/').slice(1, 3).join('/')) {
+                    if (WhoAmI.version.url &&
+                        (WhoAmI.version.url.split('/').slice(1, 3).join('/') === el.href.split('/').slice(1, 3).join('/'))) {
                       active = 'active ';
                       open = 'expanded ';
                     }
