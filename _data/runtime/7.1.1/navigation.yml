@@ -198,10 +198,11 @@
           id: pub-data-protection
           sub: data-protection/navigation.json
 
-        - text: Accessing Cloud Data
-          href: cloud-data-access/index.html
-          id: pub-cloud-data-access
-          sub: cloud-data-access/navigation.json
+       # Divya: This pub is not yet ready for publish (22-May)
+       # - text: Accessing Cloud Data
+       #  href: cloud-data-access/index.html
+       #   id: pub-cloud-data-access
+       #   sub: cloud-data-access/navigation.json
 
         - text: Configuring Fault Tolerance
           href: fault-tolerance/index.html
