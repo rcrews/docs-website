@@ -60,9 +60,7 @@
 - s: documentation/enterprise/upgrade/topics/cdh_sg_hdfs_encryption.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/cm-tune-g1gc.html
-  d: /cdp/latest/release-guide/topics/cm-tune-g1gc.html
   d: /cdp/latest/upgrade-cdh/topics/cm-tune-g1gc.html
-  d: /cdp/latest/upgrade/topics/cm-tune-g1gc.html
 - s: documentation/enterprise/upgrade/topics/cm_ag_agents.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/cm_ag_backup_cm.html
@@ -82,13 +80,9 @@
 - s: documentation/enterprise/upgrade/topics/cm_bdr_hdfs_replication.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/cm_ig_create_local_package_repo.html
-  d: /cdp/latest/release-guide/topics/cm_ig_create_local_package_repo.html
   d: /cdp/latest/upgrade-cdh/topics/cm_ig_create_local_package_repo.html
-  d: /cdp/latest/upgrade/topics/cm_ig_create_local_package_repo.html
 - s: documentation/enterprise/upgrade/topics/cm_ig_create_local_parcel_repo.html
-  d: /cdp/latest/release-guide/topics/cm_ig_create_local_parcel_repo.html
   d: /cdp/latest/upgrade-cdh/topics/cm_ig_create_local_parcel_repo.html
-  d: /cdp/latest/upgrade/topics/cm_ig_create_local_parcel_repo.html
 - s: documentation/enterprise/upgrade/topics/cm_ig_extrnl_pstgrs.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/cm_ig_installing_configuring_dbs.html
@@ -166,9 +160,7 @@
 - s: documentation/enterprise/upgrade/topics/how_to_configure_cm_tls.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/hsm_kms_upgrade.html
-  d: /cdp/latest/release-guide/topics/hsm_kms_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/hsm_kms_upgrade.html
-  d: /cdp/latest/upgrade/topics/hsm_kms_upgrade.html
 - s: documentation/enterprise/upgrade/topics/impala_aliases.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/impala_create_function.html
@@ -184,32 +176,19 @@
 - s: documentation/enterprise/upgrade/topics/impala_reserved_words.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/impala_upgrading.html
-  d: /cdp/latest/release-guide/topics/impala_upgrading.html
   d: /cdp/latest/upgrade-cdh/topics/impala_upgrading.html
-  d: /cdp/latest/upgrade/topics/impala_upgrading.html
 - s: documentation/enterprise/upgrade/topics/index.html
   d: /cdp/latest/upgrade-cdh/index.html
-  d: /cdp/latest/upgrade-hdp/index.html
-  d: /cdp/latest/upgrade-post/index.html
-  d: /cdp/latest/upgrade/index.html
 - s: documentation/enterprise/upgrade/topics/install_python_27.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/install_rollback.html
-  d: /cdp/latest/release-guide/topics/install_rollback.html
   d: /cdp/latest/upgrade-cdh/topics/install_rollback.html
-  d: /cdp/latest/upgrade/topics/install_rollback.html
 - s: documentation/enterprise/upgrade/topics/install_upgrade_kts3_to_54.html
-  d: /cdp/latest/release-guide/topics/install_upgrade_kts3_to_54.html
   d: /cdp/latest/upgrade-cdh/topics/install_upgrade_kts3_to_54.html
-  d: /cdp/latest/upgrade/topics/install_upgrade_kts3_to_54.html
 - s: documentation/enterprise/upgrade/topics/install_upgrade_kts54.html
-  d: /cdp/latest/release-guide/topics/install_upgrade_kts54.html
   d: /cdp/latest/upgrade-cdh/topics/install_upgrade_kts54.html
-  d: /cdp/latest/upgrade/topics/install_upgrade_kts54.html
 - s: documentation/enterprise/upgrade/topics/install_upgrade_ktupgrade_script.html
-  d: /cdp/latest/release-guide/topics/install_upgrade_ktupgrade_script.html
   d: /cdp/latest/upgrade-cdh/topics/install_upgrade_ktupgrade_script.html
-  d: /cdp/latest/upgrade/topics/install_upgrade_ktupgrade_script.html
 - s: documentation/enterprise/upgrade/topics/key_hsm_initialize.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/key_hsm_key_trustee.html
@@ -223,21 +202,15 @@
 - s: documentation/enterprise/upgrade/topics/key_trustee_kms_hsm_ha.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/key_trustee_kms_upgrade.html
-  d: /cdp/latest/release-guide/topics/key_trustee_kms_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/key_trustee_kms_upgrade.html
-  d: /cdp/latest/upgrade/topics/key_trustee_kms_upgrade.html
 - s: documentation/enterprise/upgrade/topics/key_trustee_upgrade.html
-  d: /cdp/latest/release-guide/topics/key_trustee_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/key_trustee_upgrade.html
-  d: /cdp/latest/upgrade/topics/key_trustee_upgrade.html
 - s: documentation/enterprise/upgrade/topics/kudu_administration_cli.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/kudu_hms.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/kudu_upgrade.html
-  d: /cdp/latest/release-guide/topics/kudu_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/kudu_upgrade.html
-  d: /cdp/latest/upgrade/topics/kudu_upgrade.html
 - s: documentation/enterprise/upgrade/topics/navigator_data_mgmt.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/navigator_encrypt.html
@@ -299,13 +272,9 @@
 - s: documentation/enterprise/upgrade/topics/search_index.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/search_prepare_upgrade_cdh_6.html
-  d: /cdp/latest/release-guide/topics/search_prepare_upgrade_cdh_6.html
   d: /cdp/latest/upgrade-cdh/topics/search_prepare_upgrade_cdh_6.html
-  d: /cdp/latest/upgrade/topics/search_prepare_upgrade_cdh_6.html
 - s: documentation/enterprise/upgrade/topics/search_reindex_cdh6.html
-  d: /cdp/latest/release-guide/topics/search_reindex_cdh6.html
   d: /cdp/latest/upgrade-cdh/topics/search_reindex_cdh6.html
-  d: /cdp/latest/upgrade/topics/search_reindex_cdh6.html
 - s: documentation/enterprise/upgrade/topics/search_solrctl_ref.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/search_using_kerberos.html
@@ -321,9 +290,7 @@
 - s: documentation/enterprise/upgrade/topics/sg_sentry_before_you_install.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/sg_sentry_migrate.html
-  d: /cdp/latest/release-guide/topics/sg_sentry_migrate.html
   d: /cdp/latest/upgrade-cdh/topics/sg_sentry_migrate.html
-  d: /cdp/latest/upgrade/topics/sg_sentry_migrate.html
 - s: documentation/enterprise/upgrade/topics/sg_sentry_service_config.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade/topics/sg_sentry_service_install.html
@@ -331,93 +298,49 @@
 - s: documentation/enterprise/upgrade/topics/ug_cdh6_post_migration.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cdh6_post_migration.html
 - s: documentation/enterprise/upgrade/topics/ug_cdh6_pre_migration.html
-  d: /cdp/latest/release-guide/topics/ug_cdh6_pre_migration.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cdh6_pre_migration.html
-  d: /cdp/latest/upgrade/topics/ug_cdh6_pre_migration.html
 - s: documentation/enterprise/upgrade/topics/ug_cdh_upgrade.html
-  d: /cdp/latest/release-guide/topics/ug_cdh_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade.html
-  d: /cdp/latest/upgrade/topics/ug_cdh_upgrade.html
 - s: documentation/enterprise/upgrade/topics/ug_cdh_upgrade_backup.html
-  d: /cdp/latest/release-guide/topics/ug_cdh_upgrade_backup.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_backup.html
-  d: /cdp/latest/upgrade/topics/ug_cdh_upgrade_backup.html
 - s: documentation/enterprise/upgrade/topics/ug_cdh_upgrade_before.html
-  d: /cdp/latest/release-guide/topics/ug_cdh_upgrade_before.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_before.html
-  d: /cdp/latest/upgrade/topics/ug_cdh_upgrade_before.html
 - s: documentation/enterprise/upgrade/topics/ug_cdh_upgrade_hue_psycopg2.html
-  d: /cdp/latest/release-guide/topics/ug_cdh_upgrade_hue_psycopg2.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_hue_psycopg2.html
-  d: /cdp/latest/upgrade/topics/ug_cdh_upgrade_hue_psycopg2.html
 - s: documentation/enterprise/upgrade/topics/ug_cdh_upgrade_troubleshooting.html
-  d: /cdp/latest/release-guide/topics/ug_cdh_upgrade_troubleshooting.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_troubleshooting.html
-  d: /cdp/latest/upgrade/topics/ug_cdh_upgrade_troubleshooting.html
 - s: documentation/enterprise/upgrade/topics/ug_cdh_upgrading_top.html
-  d: /cdp/latest/release-guide/topics/ug_cdh_upgrading_top.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cdh_upgrading_top.html
-  d: /cdp/latest/upgrade/topics/ug_cdh_upgrading_top.html
-  d: /cdp/latest/upgrade-post/topics/ug_cdp_post_upgrade.html
 - s: documentation/enterprise/upgrade/topics/ug_cm_downgrade.html
-  d: /cdp/latest/release-guide/topics/ug_cm_downgrade.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cm_downgrade.html
-  d: /cdp/latest/upgrade/topics/ug_cm_downgrade.html
 - s: documentation/enterprise/upgrade/topics/ug_cm_ts.html
-  d: /cdp/latest/release-guide/topics/ug_cm_ts.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cm_ts.html
-  d: /cdp/latest/upgrade/topics/ug_cm_ts.html
 - s: documentation/enterprise/upgrade/topics/ug_cm_upgrade.html
-  d: /cdp/latest/release-guide/topics/ug_cm_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cm_upgrade.html
-  d: /cdp/latest/upgrade/topics/ug_cm_upgrade.html
 - s: documentation/enterprise/upgrade/topics/ug_cm_upgrade_after.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_after.html
 - s: documentation/enterprise/upgrade/topics/ug_cm_upgrade_agent.html
-  d: /cdp/latest/release-guide/topics/ug_cm_upgrade_agent.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_agent.html
-  d: /cdp/latest/upgrade/topics/ug_cm_upgrade_agent.html
 - s: documentation/enterprise/upgrade/topics/ug_cm_upgrade_backup.html
-  d: /cdp/latest/release-guide/topics/ug_cm_upgrade_backup.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_backup.html
-  d: /cdp/latest/upgrade/topics/ug_cm_upgrade_backup.html
 - s: documentation/enterprise/upgrade/topics/ug_cm_upgrade_before.html
-  d: /cdp/latest/release-guide/topics/ug_cm_upgrade_before.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_before.html
-  d: /cdp/latest/upgrade/topics/ug_cm_upgrade_before.html
 - s: documentation/enterprise/upgrade/topics/ug_cm_upgrade_server.html
-  d: /cdp/latest/release-guide/topics/ug_cm_upgrade_server.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_server.html
-  d: /cdp/latest/upgrade/topics/ug_cm_upgrade_server.html
 - s: documentation/enterprise/upgrade/topics/ug_cm_wizard_actions.html
-  d: /cdp/latest/release-guide/topics/ug_cm_wizard_actions.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cm_wizard_actions.html
-  d: /cdp/latest/upgrade/topics/ug_cm_wizard_actions.html
 - s: documentation/enterprise/upgrade/topics/ug_cn_upgrade.html
-  d: /cdp/latest/release-guide/topics/ug_cn_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/ug_cn_upgrade.html
-  d: /cdp/latest/upgrade/topics/ug_cn_upgrade.html
-  d: /cdp/latest/upgrade-post/topics/ug_data_governance_atlas.html
 - s: documentation/enterprise/upgrade/topics/ug_hbase_pre_upgrade.html
-  d: /cdp/latest/release-guide/topics/ug_hbase_pre_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/ug_hbase_pre_upgrade.html
-  d: /cdp/latest/upgrade/topics/ug_hbase_pre_upgrade.html
 - s: documentation/enterprise/upgrade/topics/ug_hsm_kms_pre_upgrade.html
-  d: /cdp/latest/release-guide/topics/ug_hsm_kms_pre_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/ug_hsm_kms_pre_upgrade.html
-  d: /cdp/latest/upgrade/topics/ug_hsm_kms_pre_upgrade.html
 - s: documentation/enterprise/upgrade/topics/ug_jdk8.html
-  d: /cdp/latest/release-guide/topics/ug_jdk8.html
   d: /cdp/latest/upgrade-cdh/topics/ug_jdk8.html
-  d: /cdp/latest/upgrade/topics/ug_jdk8.html
 - s: documentation/enterprise/upgrade/topics/ug_kt_kms_pre_upgrade.html
-  d: /cdp/latest/release-guide/topics/ug_kt_kms_pre_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/ug_kt_kms_pre_upgrade.html
-  d: /cdp/latest/upgrade/topics/ug_kt_kms_pre_upgrade.html
 - s: documentation/enterprise/upgrade/topics/ug_os_upgrade.html
-  d: /cdp/latest/release-guide/topics/ug_os_upgrade.html
   d: /cdp/latest/upgrade-cdh/topics/ug_os_upgrade.html
-  d: /cdp/latest/upgrade/topics/ug_os_upgrade.html
 - s: documentation/enterprise/upgrade/topics/ug_os_upgrade_after.html
   d: /cdp/latest/upgrade-cdh/topics/ug_os_upgrade_after.html
 - s: documentation/enterprise/upgrade/topics/ug_os_upgrade_backup.html
@@ -427,18 +350,11 @@
 - s: documentation/enterprise/upgrade/topics/ug_os_upgrade_prepare.html
   d: /cdp/latest/upgrade-cdh/topics/ug_os_upgrade_prepare.html
 - s: documentation/enterprise/upgrade/topics/ug_overview.html
-  d: /cdp/latest/release-guide/topics/ug_overview.html
   d: /cdp/latest/upgrade-cdh/topics/ug_overview.html
-  d: /cdp/latest/upgrade/topics/ug_overview.html
 - s: documentation/enterprise/upgrade/topics/ug_spark_post.html
-  d: /cdp/latest/release-guide/topics/ug_spark_post.html
   d: /cdp/latest/upgrade-cdh/topics/ug_spark_post.html
-  d: /cdp/latest/upgrade/topics/ug_spark_post.html
 - s: documentation/enterprise/upgrade/topics/ug_spark_standalone.html
-  d: /cdp/latest/release-guide/topics/ug_spark_standalone.html
   d: /cdp/latest/upgrade-cdh/topics/ug_spark_standalone.html
-  d: /cdp/latest/upgrade/topics/ug_spark_standalone.html
-  d: /cdp/latest/upgrade-cdh/topics/ug_supplemental.html
 - s: documentation/enterprise/upgrade/topics/ug_upgrade_paths.html
   d: /cdp/latest/index.html
 - s: documentation/enterprise/upgrade.html
