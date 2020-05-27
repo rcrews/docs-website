@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e -x
+set -e
 
 # s3sync_jar='/Users/rcrews/Sandbox/s3sync/s3sync.jar'
 #
@@ -37,10 +37,9 @@ set -e -x
 # }
 # require_clean_work_tree
 #
-# _utils/switchsite.rb stage
-# RESULT=$?
-# if [[ RESULT != 1 ]] ; then
-#     rm -rf _site/*
+# if _utils/switchsite.rb stage
+# then
+#     rm -rf _site
 #     bundle exec jekyll build --trace
 #     java -jar $s3sync_jar upload --directory _site --bucket 'docs-stage.cloudera.com'
 
@@ -118,18 +117,16 @@ set -e -x
 #     git checkout master
 # fi
 #
-# _utils/switchsite.rb dev
-# RESULT=$?
-# if [[ RESULT != 1 ]] ; then
-#     rm -rf _site/*
+# if _utils/switchsite.rb dev
+# then
+#     rm -rf _site
 #     bundle exec jekyll build --trace
 #     java -jar $s3sync_jar upload --directory _site --bucket 'docs-dev.cloudera.com'
 # fi
 #
-# _utils/switchsite.rb prod
-# RESULT=$?
-# if [[ RESULT != 1 ]] ; then
-#     rm -rf _site/*
+# if _utils/switchsite.rb prod
+# then
+#     rm -rf _site
 #     bundle exec jekyll build --trace
 #     java -jar $s3sync_jar upload --directory _site --bucket 'docs.cloudera.com'
 # fi
