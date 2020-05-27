@@ -898,7 +898,7 @@ const NEWUX = (function($) {
                 if (el) {
                   if (WhoAmI.version.url) {
                     if (WhoAmI.version.url &&
-                        (WhoAmI.version.url.split('/').slice(1, 3).join('/') === el.href.split('/').slice(1, 3).join('/'))) {
+                        (WhoAmI.version.url.split('/').slice(1, 2).join('/') === el.href.split('/').slice(1, 2).join('/'))) {
                       active = 'active ';
                       open = 'expanded ';
                     }
