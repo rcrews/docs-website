@@ -60,6 +60,11 @@
       href: securing-cfm/index.html
       id: pub-securing-cfm
       sub: securing-cfm/navigation.json
+      
+    - text: Tuning your data flow
+      href: nifi-tuning/index.html
+      id: pub-nifi-tuning
+      sub: nifi-tuning/navigation.json
 
     - text: Apache NiFi
       href: howto-apache-nifi.html
