@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/dash
+set -e -x
+
 bundle exec jekyll build --trace
 aws s3 cp _site/common/js/main.js s3://docs-dev.cloudera.com/common/js/main.js
 # aws s3 cp _site/common/css/home.css s3://docs-dev.cloudera.com/common/css/home.css

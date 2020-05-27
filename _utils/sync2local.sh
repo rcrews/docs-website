@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e -x
 
 # s3sync_jar='/Users/rcrews/Sandbox/s3sync/s3sync.jar'
 #
@@ -61,7 +62,6 @@
     # aws s3 cp ${REMOTE}/ccp/2.0.0/navigation.json                   "${LOCAL}"/ccp/2.0.0/navigation.json
     # aws s3 cp ${REMOTE}/ccp/2.0.1/navigation.json                   "${LOCAL}"/ccp/2.0.1/navigation.json
     # aws s3 cp ${REMOTE}/cdf-datahub/7.0.2/navigation.json           "${LOCAL}"/cdf-datahub/7.0.2/navigation.json
-    # aws s3 cp ${REMOTE}/cdp/cloud/navigation.json                   "${LOCAL}"/cdp/cloud/navigation.json
     # aws s3 cp ${REMOTE}/cdp/latest/navigation.json                  "${LOCAL}"/cdp/latest/navigation.json
     # aws s3 cp ${REMOTE}/cdpdc/7.0/navigation.json                   "${LOCAL}"/cdpdc/7.0/navigation.json
     # aws s3 cp ${REMOTE}/cem/1.0.0/navigation.json                   "${LOCAL}"/cem/1.0.0/navigation.json
@@ -74,6 +74,8 @@
     # aws s3 cp ${REMOTE}/cloudera-manager/7.0.2/navigation.json      "${LOCAL}"/cloudera-manager/7.0.2/navigation.json
     # aws s3 cp ${REMOTE}/cloudera-manager/7.0.3/navigation.json      "${LOCAL}"/cloudera-manager/7.0.3/navigation.json
     # aws s3 cp ${REMOTE}/cloudera-manager/7.1.0/navigation.json      "${LOCAL}"/cloudera-manager/7.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/cloudera-manager/7.1.1/navigation.json      "${LOCAL}"/cloudera-manager/7.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/cloudera-manager/7.2.0/navigation.json      "${LOCAL}"/cloudera-manager/7.1.0/navigation.json
     # aws s3 cp ${REMOTE}/csa/1.1.0/navigation.json                   "${LOCAL}"/csa/1.1.0/navigation.json
     # aws s3 cp ${REMOTE}/csp/1.0.0/navigation.json                   "${LOCAL}"/csp/1.0.0/navigation.json
     # aws s3 cp ${REMOTE}/csp/2.0.0/navigation.json                   "${LOCAL}"/csp/2.0.0/navigation.json
@@ -95,6 +97,8 @@
     # aws s3 cp ${REMOTE}/runtime/7.0.2/navigation.json               "${LOCAL}"/runtime/7.0.2/navigation.json
     # aws s3 cp ${REMOTE}/runtime/7.0.3/navigation.json               "${LOCAL}"/runtime/7.0.3/navigation.json
     # aws s3 cp ${REMOTE}/runtime/7.1.0/navigation.json               "${LOCAL}"/runtime/7.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/runtime/7.1.1/navigation.json               "${LOCAL}"/runtime/7.1.0/navigation.json
+    # aws s3 cp ${REMOTE}/runtime/7.2.0/navigation.json               "${LOCAL}"/runtime/7.1.0/navigation.json
     # aws s3 cp ${REMOTE}/smm/1.0.0/navigation.json                   "${LOCAL}"/smm/1.0.0/navigation.json
     # aws s3 cp ${REMOTE}/smm/1.1.0/navigation.json                   "${LOCAL}"/smm/1.1.0/navigation.json
     # aws s3 cp ${REMOTE}/smm/1.2.0/navigation.json                   "${LOCAL}"/smm/1.2.0/navigation.json
@@ -107,6 +111,8 @@
     aws s3 sync ${REMOTE}/cdf-datahub                               "${LOCAL}"/cdf-datahub
     aws s3 sync ${REMOTE}/cfm                                       "${LOCAL}"/cfm
     aws s3 sync ${REMOTE}/management-console                        "${LOCAL}"/management-console
+    aws s3 sync ${REMOTE}/runtime/7.1.1                             "${LOCAL}"/runtime/7.1.1
+    aws s3 sync ${REMOTE}/cloudera-manager/7.1.1                    "${LOCAL}"/cloudera-manager/7.1.1
 
     rsync -ChivrlpgoDHAXc _site/                                    "${LOCAL}"
 #     git checkout master

@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/dash
+set -e -x
 
 aws s3 rm --recursive s3://docs-dev.cloudera.com/runtime-dc/master/
 aws s3 rm --recursive s3://docs-dev.cloudera.com/runtime-dc/7.0.3/

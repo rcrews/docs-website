@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e -x
+
 release="HDP3/HDP-3.0.0"
 publications="
     adding-druid
@@ -86,9 +88,11 @@ buckets="
     private-repo-1.hortonworks.com
     "
 
-for bucket in $buckets ; do
-    for publication in $publications ; do
+for bucket in $buckets
+do
+    for publication in $publications
+    do
         aws s3 rm --recursive \
-            s3://${bucket}/HDPDocuments/${release}/${publication}/
+            "s3://${bucket}/HDPDocuments/${release}/${publication}/"
     done
 done
