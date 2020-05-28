@@ -5,7 +5,7 @@ title: Streams Messaging
 
 publications:
   - title: Apache Kafka Overview
-    url: /runtime/7.1.0/kafka-overview/index.html
+    url: /runtime/7.2.0/kafka-overview/index.html
     description: >-
       Provides an overview of Apache Kafka including key features,
       capabilities, and architecture.

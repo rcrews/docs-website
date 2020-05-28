@@ -9,19 +9,9 @@ json:
       icon: /common/img/mini_icons/icon-bp.png
 
 - title: CDP Cloud
-  cloudera-manager-history:
-    - cloudera-manager/7.1.0
-    - cloudera-manager/7.0.2
-    - cloudera-manager/7.0.1
-    - cloudera-manager/7.0.0
-  runtime-history:
-    - runtime/7.1.0
-    - runtime/7.0.2
-    - runtime/7.0.1
-    - runtime/7.0.0
   products:
     - text: Overview
-      href: /cdp/cloud/index.html
+      href: /cdp/latest/index.html
       icon: /common/img/mini_icons/icon-cdp.png
 
     - text: Data Catalog
@@ -53,11 +43,11 @@ json:
       icon: /common/img/mini_icons/icon-wm.png
 
     - text: Runtime
-      href: /runtime/7.1.0/index.html
+      href: /runtime/7.1.1/index.html
       icon: /common/img/mini_icons/icon-cr.png
 
     - text: Manager
-      href: /cloudera-manager/7.1.0/index.html
+      href: /cloudera-manager/7.1.1/index.html
       icon: /common/img/mini_icons/icon-cm.png
 
 - title: CDP Data Center
