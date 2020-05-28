@@ -1,5 +1,5 @@
 ---
-#- text: Concepts
+#- text: Concepts & Use Cases
 #- text: Planning
 #- text: Installation & Upgrade
 #- text: How To
@@ -47,6 +47,16 @@
       id: pub-using-cem
       sub: using-cem/navigation.json
 
+    - text: Getting Started
+      href: getting-started/index.html
+      id: pub-getting-started
+      sub: getting-started/navigation.json
+
+    - text: Using Agent Parameters
+      href: using-agent-parameters/index.html
+      id: pub-using-agent-parameters
+      sub: using-agent-parameters/navigation.json
+
 - text: Reference
   id: cat-reference
   sub:
@@ -54,7 +64,6 @@
       href: rest-api-reference/index.html
       id: pub-rest-api-reference
       external: external
-      # sub: rest-api-reference/navigation.json
 
 - text: Release Notes
   id: cat-release-notes
