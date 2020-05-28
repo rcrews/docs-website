@@ -44,6 +44,10 @@
       href: installation/index.html
       id: pub-installation
       sub: installation/navigation.json
+    - text: Upgrade
+      href: upgrade/index.html
+      id: pub-upgrade
+      sub: upgrade/navigation.json
 
 - text: How To
   id: cat-how-to
@@ -56,22 +60,26 @@
       href: security/index.html
       id: pub-security
       sub: security/navigation.json
-    - text: Apache Kafka Connector
-      href: kafka-connector/index.html
-      id: pub-kafka-connector
-      sub: kafka-connector/navigation.json
-    - text: Schema Registry
-      href: schema-registry/index.html
-      id: pub-schema-registry
-      sub: schema-registry/navigation.json
-    - text: Apache HBase Connector
-      href: hbase-connector/index.html
-      id: pub-hbase-connector
-      sub: hbase-connector/navigation.json
+    - text: DataStream Connectors
+      href: datastream-connectors/index.html
+      id: pub-datastream-connectors
+      sub: datastream-connectors/navigation.json
     - text: Configuration
       href: configuration/index.html
       id: pub-configuration
       sub: configuration/navigation.json
+    - text: SQL and Table API
+      href: flink-sql-table-api/index.html
+      id: pub-flink-sql-table-api
+      sub: flink-sql-table-api/navigation.json
+    - text: SQL Client
+      href: sql-client/index.html
+      id: pub-sql-client
+      sub: sql-client/navigation.json
+    - text: Governance
+      href: governance/index.html
+      id: pub-governance
+      sub: governance/navigation.json
     - text: Job lifecycle
       href: job-lifecycle/index.html
       id: pub-job-lifecycle
