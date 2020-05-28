@@ -28,6 +28,18 @@
           "required" : false,
           "type" : "integer",
           "format" : "int32"
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
         } ],
         "responses" : {
           "200" : {
@@ -64,6 +76,18 @@
           "required" : false,
           "type" : "integer",
           "format" : "int32"
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
         } ],
         "responses" : {
           "200" : {
@@ -105,6 +129,18 @@
           "required" : false,
           "type" : "integer",
           "format" : "int32"
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
         } ],
         "responses" : {
           "200" : {
@@ -143,6 +179,18 @@
           "required" : false,
           "type" : "integer",
           "format" : "int32"
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
         } ],
         "responses" : {
           "200" : {
@@ -181,6 +229,18 @@
           "required" : false,
           "type" : "integer",
           "format" : "int32"
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
         }, {
           "name" : "samples",
           "in" : "query",
@@ -226,6 +286,18 @@
           "required" : false,
           "type" : "integer",
           "format" : "int32"
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
         }, {
           "name" : "samples",
           "in" : "query",
@@ -380,18 +452,18 @@
         "source" : {
           "type" : "string"
         },
-        "numPartitions" : {
-          "type" : "integer",
-          "format" : "int32"
-        },
         "numConsumerGroups" : {
           "type" : "integer",
           "format" : "int32"
         },
-        "upstreamTopic" : {
+        "originalTopic" : {
           "type" : "string"
         },
-        "originalTopic" : {
+        "numPartitions" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "upstreamTopic" : {
           "type" : "string"
         }
       }
