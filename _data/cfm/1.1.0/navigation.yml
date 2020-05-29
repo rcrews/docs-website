@@ -28,7 +28,7 @@
       href: support-matrix/index.html
       id: pub-support-matrix
       sub: support-matrix/navigation.json
-    - text: Download
+    - text: Download Locations
       href: download/index.html
       id: pub-download
       sub: download/navigation.json
