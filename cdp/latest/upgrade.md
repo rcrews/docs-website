@@ -1,0 +1,38 @@
+---
+layout: foyer-grouped
+breadcrumb-title: CDP Data Center Upgrades
+title: Upgrades
+
+publications:
+- column:
+  - title: Upgrade
+    url: upgrade/index.html
+    description: >-
+      Provides guidance and procedures for upgrading CDH, HDP, and
+      earlier releases of CDP Data Center.
+
+  - title: Upgrading CDH and CDP Data Center
+    url: upgrade-cdh/index.html
+    description: >-
+      Describes upgrading Cloudera Enterprise CDH to higher versions of
+      CDH and to CDP Data Center.
+
+- column:
+  - title: Upgrading Ambari and HDP to CDP Data Center
+    url: upgrade-hdp/index.html
+    description: >-
+      Provides instructions on upgrading from HDP to CDP Data Center.
+
+  - title: CDP Data Center Post-Upgrade Migration
+    url: upgrade-post/index.html
+    description: >-
+      Describes migration tasks required after upgrading to CDP, as well
+      as important configuration changes related to Hive, Impala, Solr,
+      and other components.
+
+---
+
+You can upgrade from CDH, HDP, or earlier releases of CDP Data Center.
+The information in these pages describe the prerequisites, procedures,
+critical component differences, and post-migration tasks needed for
+successful upgrades.

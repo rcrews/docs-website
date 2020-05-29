@@ -30,26 +30,39 @@
   sub:
     - text: Installation
       href: installation.html
+      sub:
+        - text: Installing CDP Data Center 7.1
+          href: /cloudera-manager/7.1.1/installation/index.html
+          id: pub-install71
+          sub: /cloudera-manager/7.1.1/installation/navigation.json
+
+        - text: Installing CDP Data Center 7.0
+          href: /cloudera-manager/7.0.3/installation/index.html
+          id: pub-install70
+          sub: /cloudera-manager/7.0.3/installation/navigation.json
 
     - text: Upgrade
-      href: upgrade/index.html
-      id: pub-upgrade
-      sub: upgrade/navigation.json
+      href: upgrade.html
+      sub:
+        - text: Upgrade
+          href: upgrade/index.html
+          id: pub-upgrade
+          sub: upgrade/navigation.json
 
-    - text: Upgrading CDH and CDP Data Center
-      href: upgrade-cdh/index.html
-      id: pub-upgrade-cdh
-      sub: upgrade-cdh/navigation.json
+        - text: Upgrading CDH and CDP Data Center
+          href: upgrade-cdh/index.html
+          id: pub-upgrade-cdh
+          sub: upgrade-cdh/navigation.json
 
-    - text: Upgrading Ambari and HDP to CDP Data Center
-      href: upgrade-hdp/index.html
-      id: pub-upgrade-hdp
-      sub: upgrade-hdp/navigation.json
+        - text: Upgrading Ambari and HDP to CDP Data Center
+          href: upgrade-hdp/index.html
+          id: pub-upgrade-hdp
+          sub: upgrade-hdp/navigation.json
 
-    - text: CDP Data Center Post-Upgrade Migration
-      href: upgrade-post/index.html
-      id: pub-upgrade-post
-      sub: upgrade-post/navigation.json
+        - text: CDP Data Center Post-Upgrade Migration
+          href: upgrade-post/index.html
+          id: pub-upgrade-post
+          sub: upgrade-post/navigation.json
 
     - text: Release Guide
       href: release-guide/index.html
