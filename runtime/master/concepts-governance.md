@@ -29,10 +29,13 @@ publications:
 
 ---
 
-Apache Atlas provides data governance capabilities for Hadoop. Apache
-Atlas serves as a common metadata store that is designed to exchange
-metadata both within and outside of the Hadoop stack. Close integration
+Apache Atlas provides data governance capabilities for your Cloudera 
+Data Platform (CDP). Apache Atlas serves as a common metadata store 
+that is designed to collect and store metadata, show relationships
+among metadata entities, and give you a place to add your own 
+information to document business processes. 
+Close integration
 of Atlas with Apache Ranger enables you to define, administer, and
 manage security and compliance policies consistently across all
-components of the Hadoop stack. Atlas provides metadata and lineage to
-Data Steward Studio to support curating data across enterprise data.
+components of CDP. Atlas also provides metadata and lineage to
+Data Catalog to support curating data across enterprise data.
