@@ -22,17 +22,19 @@ publications:
   - title: Encrypting Data at Rest
     url: security-encrypting-data-at-rest/index.html
     description: >-
-      Secure data at rest using encryption mechanisms and key management.
+      Secure data at rest using encryption mechanisms and key
+      management.
 
   - title: Key Trustee Server
     url: security-key-trustee-server/index.html
     description: >-
-      How to configure the Key Trustee Server key storage and management system.
+      How to configure the Key Trustee Server key storage and management
+      system.
 
   - title: How-to Guides
     url: security-how-to-guides/index.html
     description: >-
-      A collection of How-to guides covering a wide range of advanced Cloudera Manager security topics.
+      A collection of How-to guides covering a wide range of advanced
+      Cloudera Manager security topics.
 
 ---
-

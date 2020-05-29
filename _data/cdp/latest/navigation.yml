@@ -28,7 +28,10 @@
 - text: Installation & Upgrade
   id: cat-installation
   sub:
-    - text: Upgrade Guide
+    - text: Installation
+      href: installation.html
+
+    - text: Upgrade
       href: upgrade/index.html
       id: pub-upgrade
       sub: upgrade/navigation.json

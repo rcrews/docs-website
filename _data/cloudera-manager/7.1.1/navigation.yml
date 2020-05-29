@@ -62,6 +62,7 @@
       sub: replication-manager/navigation.json
 
     - text: Security
+      href: howto-security.html
       id: cat-howto-security
       sub:
 
