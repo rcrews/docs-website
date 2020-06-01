@@ -12,10 +12,8 @@ dropdowns:
 - section:
     title: Cloudera ODBC Drivers for Hive
     dropdown:
-    - text: Cloudera ODBC 2.6.5 Driver for Apache Hive
-      href: /documentation/other/connectors/hive-odbc/2-6-5.html
-    # - text: Cloudera ODBC 2.6.4 Driver for Apache Hive
-    #   href: /documentation/other/connectors/hive-odbc/2-6-4.html
+    - text: Cloudera ODBC 2.6.4 Driver for Apache Hive
+      href: /documentation/other/connectors/hive-odbc/2-6-4.html
     - text: Cloudera ODBC 2.6.1 Driver for Apache Hive
       href: /documentation/other/connectors/hive-odbc/2-6-1.html
     - text: Cloudera ODBC 2.5.25 Driver for Apache Hive
