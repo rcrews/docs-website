@@ -6,6 +6,7 @@ title: Storage
 # How-to publications related to
 # * HDFS
 # * Kudu
+# * Ozone
 
 publications:
   - title: Managing Data Storage
