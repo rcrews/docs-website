@@ -1,7 +1,7 @@
 ---
 layout: foyer-grouped
 breadcrumb-title: CDP Data Center Upgrades
-title: Upgrades
+title: Upgrade Guide
 
 publications:
 - column:
