@@ -17,6 +17,8 @@ css: ../Licenses.css
 ---
 # {{ page.title }}
 
-The following pages list the third-party license files for CDP-DC and its components:
+The following pages list the third-party license files for CDP-DC and
+its components:
 
-* [CDP-DC](ctpl_cdpdc70.html)
+* [CDP-DC 7.1, May 2020](ctpl_cdpdc71.html)
+* [CDP-DC 7.0, November 2019](ctpl_cdpdc70.html)
