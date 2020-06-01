@@ -12,8 +12,8 @@ publications:
   - title: Managing Data Storage
     url: scaling-namespaces/index.html
     description: >-
-      Provides information about optimizing data storage,
-      APIs and services for accessing data, and managing data across clusters.
+      Provides information about optimizing data storage, APIs and
+      services for accessing data, and managing data across clusters.
 
   - title: Configuring Data Protection
     url: data-protection/index.html

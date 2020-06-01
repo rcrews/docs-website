@@ -6,10 +6,10 @@ title: Upgrade Guide
 publications:
 - column:
   - title: Supported Upgrade Paths
-    url: upgrade/cdpdc-upgrade-paths.html
+    url: upgrade/index.html
     description: >-
       Describes which product versions are are supported for upgrades.
-      
+
   - title: Upgrading CDH and CDP Data Center
     url: upgrade-cdh/index.html
     description: >-
@@ -36,22 +36,20 @@ publications:
       as important configuration changes related to Hive, Impala, Solr,
       and other components.
 
-
 ---
 
-The Cloudera Upgrade Guide provides guidance and procedures for upgrading the following products:
+The Cloudera Upgrade Guide provides guidance and procedures for
+upgrading the following products:
 
 - Cloudera Enterprise and CDH
 - Cloudera Manager
 - CDP Data Center
 - HDP 2.6.5 (upgrades to CDP Data Center)
 
-For information on upgrading to HDP 2.6.5, see the  
-[HDP Documentation](href="https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.5/index.html"). 
+For information on upgrading to HDP 2.6.5, see the
+[HDP Documentation](/HDPDocuments/HDP2/HDP-2.6.5/index.html).
 
 You can upgrade from CDH, HDP, or earlier releases of CDP Data Center.
 The information in these pages describe the prerequisites, procedures,
 critical component differences, and post-migration tasks needed for
 successful upgrades.
-
-
