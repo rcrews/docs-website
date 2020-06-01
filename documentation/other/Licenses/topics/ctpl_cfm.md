@@ -20,6 +20,13 @@ css: ../Licenses.css
 This page lists the third-party license files for Cloudera Stream
 Processing:
 
+## Cloudera Flow Management 1.1.0, May 2020
+
+Third-party licenses are as follows:
+
+* [NiFi CFM 1.1.0 Notice](/documentation/other/shared/licensefiles/cfm-11-apache-nifi.txt)
+* [NiFi Registry CFM 1.1.0 Notice](/documentation/other/shared/licensefiles/cfm-11-apache-nifi-registry.txt)
+
 ## Cloudera Flow Management 2.0.0, December 2019
 
 Third-party licenses are as follows:
