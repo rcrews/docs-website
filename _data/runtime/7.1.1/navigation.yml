@@ -10,7 +10,7 @@
 
 # Foyer Pages
 # Here's the final list:
-#   Storage: HDFS, Kudu
+#   Storage: HDFS, Kudu, Ozone
 #   Compute: YARN, ZooKeeper
 #   Data Access: DAS, Hive, Hue, Impala, Search, Sqoop
 #   Operational Database: HBase, Phoenix
