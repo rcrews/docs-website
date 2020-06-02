@@ -59,7 +59,7 @@ json:
   - text: NiFi MiNiFi CPP CEM 1.1.0.0
     href: topics/ctpl_nifi_minifi-CPP.html
 
-- text: Cloudera Flow Manager
+- text: Cloudera Flow Management
   href: topics/ctpl_cfm.html
 
 - text: Cloudera Data Analytics Studio
