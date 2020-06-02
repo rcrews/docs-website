@@ -802,7 +802,7 @@
       href: sr-rest-api-reference/index.html
       id: pub-sr-rest-api-reference
       external: external
-      
+
     - text: Cloudera Search solrctl Reference
       href: search-solrctl-reference/index.html
       id: pub-search-solrctl-reference
