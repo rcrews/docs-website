@@ -38,10 +38,10 @@ publications:
         cluster.
 
     - title: Configuring HDFS ACLs
-        url: hdfs-acls/index.html
-        description: >-
-          Describes the procedure to configure Access Control Lists (ACLs)
-          on Apache Hadoop HDFS.
+      url: hdfs-acls/index.html
+      description: >-
+        Describes the procedure to configure Access Control Lists (ACLs)
+        on Apache Hadoop HDFS.
 
 - column:
   - title: Apache Kudu
