@@ -48,7 +48,7 @@
     - text: Upgrade
       href: upgrade.html
       sub:
-        - text: Upgrade
+        - text: Upgrade Guide Overview
           href: upgrade/index.html
           id: pub-upgrade
           sub: upgrade/navigation.json

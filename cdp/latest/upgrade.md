@@ -1,11 +1,11 @@
 ---
 layout: foyer-grouped
 breadcrumb-title: CDP Data Center Upgrades
-title: Upgrade Guide
+title: Upgrade
 
 publications:
 - column:
-  - title: Supported Upgrade Paths
+  - title: Upgrade Guide Overview
     url: upgrade/index.html
     description: >-
       Describes which product versions are are supported for upgrades.
@@ -15,13 +15,6 @@ publications:
     description: >-
       Describes upgrading Cloudera Enterprise CDH to higher versions of
       CDH and to CDP Data Center.
-
-  - title: Release Guide
-    url: release-guide/index.html
-    description: >-
-      Learn about supported operating systems, databases, Java, hardware
-      requirements, download
-      locations, and product compatibility.
 
 - column:
   - title: Upgrading Ambari and HDP to CDP Data Center
