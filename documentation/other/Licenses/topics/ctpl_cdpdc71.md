@@ -22,8 +22,9 @@ This page lists the third-party license files for CDP-DC 7.1.1.0.
 ## CDP-DC 7.1.1.0, May 2020
 
 Third-party licenses for CDP-DC 7.1.1.0 are in the following files:
-
 * [CDP-DC 7.1.1.0 Notice](/documentation/other/shared/licensefiles/cdpdc7110/cdpdc-7111-notice.txt)
+
+The following components comprise CDP-DC 7.1.1.0 and are listed in the Notices file above:
 * [Apache Accumulo 1.7.0 Notice](/documentation/other/shared/licensefiles/cdpdc7110/apache-accumulo-1-7-0-notice.txt)
 * [Apache Atlas 2.0.0 Notice](/documentation/other/shared/licensefiles/cdpdc7110/apache-atlas-2-0-0-notice.txt)
 * [Apache Avro 1.8.2 Notice](/documentation/other/shared/licensefiles/cdpdc7110/apache-avro-1-8-2-notice.txt)

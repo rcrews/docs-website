@@ -28,6 +28,8 @@ json:
   sub:
   - text: CDP-DC 7.0
     href: topics/ctpl_cdpdc70.html
+  - text: CDP-DC 7.1
+    href: topics/ctpl_cdpdc71.html
 
 - text: CDH
   href: topics/ctpl_cdh_overview.html

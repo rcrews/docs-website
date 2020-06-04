@@ -22,8 +22,9 @@ This page lists the third-party license files for CDP-DC 7.0.0.0.
 ## CDP-DC 7.0.0.0, November 2019
 
 Third-party licenses for CDP-DC 7.0.0.0 are in the following files:
+* [CDP-DC 7.0.0.0](/documentation/other/shared/licensefiles/cdpdc7000/CDP-DC_7.0.0.0_04JUN.txt)
 
-* [CDP-DC 7.0.0.0](/documentation/other/shared/licensefiles/cdpdc7000/CDP-DC_7.0.0.0.txt)
+The following components comprise CDP-DC 7.0.0.0 and are listed in the Notices file above:
 * [Apache Avro](/documentation/other/shared/licensefiles/cdpdc7000/Apache_Avro.txt)
 * [Apache Bigtop-tomcat](/documentation/other/shared/licensefiles/cdpdc7000/Apache_Bigtop-tomcat.txt)
 * [Apache Hadoop](/documentation/other/shared/licensefiles/cdpdc7000/Apache_Hadoop.txt)
