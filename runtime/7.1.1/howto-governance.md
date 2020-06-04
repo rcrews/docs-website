@@ -53,12 +53,15 @@ publications:
     url: atlas-securing/index.html
     description: >-
       Configure Atlas' authentication and authorization through Cloudera
-      Manager and using access policies in Apache Ranger.
+      Manager and using access policies in Apache Ranger. With CDP Cloud,
+      authentication is configured for you using Free IPA; you'll still want to
+      review and customize Atlas policies in Ranger to meet your organization's
+      requirements.
 
   - title: Migrating Data from Cloudera Navigator to Atlas
     url: atlas-migrating-from-navigator/index.html
     description: >-
-      When upgrading from CDH to CDP, you can choose to move your
+      When upgrading a cluster from CDH to CDP, you can choose to move your
       Navigator Data Management metadata into Atlas.
 
 ---
