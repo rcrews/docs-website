@@ -15,554 +15,548 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/release-notes/index.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/index.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/index.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/release-notes/index.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/release-notes/topics/rm-whats-new.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/release-notes/topics/rm-known-issues.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-ui-overview.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-policies-panel.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/release-notes/topics/rm-whats-new02.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/release-notes/topics/rm-known-issues.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-ui-overview.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-overview.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-cluster-health-panel.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-policies-panel.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-notifications.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-jobs-panel.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-issues-and-updates-table.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-terminology.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-delete-credentials.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-clusters-map.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-update-cloud-credentials.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-issues-and-updates-table.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-terminology.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-cloud-credentials-operations.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-update-cloud-credentials.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-delete-credentials.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-unregistered-credentials.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-policy-guidelines-and-considerations.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-snapshot-replication-between-hdp-clusters.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-enabling-disabling-hdfs-snapshots-using-cdh-clusters.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-hdfs-snapshot-repl-cdh-clusters.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-how-policies-work-in-replication-manager.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-hdfs-cloud-replication.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-policy-guidelines-and-considerations.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-hdfs-replication-overview-new.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-hdfs-snapshot-repl-cdh-clusters.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-enabling-disabling-hdfs-snapshots-using-cdh-clusters.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-snapshot-replication-between-hdp-clusters.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-hdfs-cloud-replication.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-replication-of-data-using-hive.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-sentry-ranger-permissions.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-managed-tables-external-tables.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-table-level-replication.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-sentry-policy-replication.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-hive-cloud-replication.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-sentry-ranger-permissions.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-table-level-replication.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-hive-replicaton-bootstrap.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/rm-hive-cloud-replication.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-about-replication-manager.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-preparing-tosetup-replication-policy.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-manager-using-cdh.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-working-with-cluster.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-cdpdc-clusters.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-classic-clusters.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-manager-using-cdh.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-manager-using-hdp.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-hdp-version-feature-differences.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-installing-dlm-hdp-on-premise-cluster.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-requirements-for-bdr-cdh-clusters.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-port-requirements-cdh.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-installing-dlm-hdp-on-premise-cluster.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-dlm-support-requirements.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-dlm-setting-up-packages.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-dlm-engine-prerequisites.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-dlm-setting-up-local-repository.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-download-dlm-packages.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-version-recommendation-dlm-hdp.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-dlm-setting-up-packages.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-download-dlm-packages.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-dlm-setting-up-local-repository.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-dlm-setting-up-dlm-packages-local-repo.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-configure-postgresext-db.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-setting-up-local-repo.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-install-dlm-engine.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-install-dlm-engine-mpack.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-set-up-dlm-engine-db.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-configure-mysql-db.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-configure-postgresext-db.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-dlm-create-service-user.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-set-up-dlm-engine-service-in-ambari.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-install-dlm-engine-service-ambari.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-complete-dlm-installation.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-restart-ambari-services.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-configure-kerberos-security.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-restart-ambari-services.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-verify-dlm-installation.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-cloud-credentials.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-tuning-dlm-engine.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-cloud-credentials.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-register-cloud-credentials.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-considerations-s3.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-registering-amazon-s3-cloud-account.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-using-cdh-cluster.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-on-premise-to-amazon-s3-replication-in-hive.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-data-replication-use-cases.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-using-cdh-cluster.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-on-premise-to-amazon-s3-replication-in-hive.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-of-data-on-premise-to-amazon-s3-in-hive.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-on-premise-to-amazon-s3-replication-in-hdfs.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-using-hdp-cluster.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-of-data-on-premise-to-amazon-s3-in-hive-hdp.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-on-premise-to-amazon-s3-replication-in-hive-hdp.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-of-data-on-premise-to-amazon-s3-data-in-hdfs.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-policy-operations.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-using-hdp-cluster.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-on-premise-to-amazon-s3-replication-in-hive-hdp.html</loc>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-of-data-on-premise-to-amazon-s3-in-hive-hdp.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-workload-data-migration.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-view-job-status-overview-page.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-policy-operations.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-monitoring-replication.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-view-job-status-policies-page.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-view-job-status-overview-page.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-view-job-status-notifications-page.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-tuning-replication-policy.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-view-running-logs.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-tuning-replication-policy.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-suspend-data-replication.html</loc>
-		<lastmod>2020-05-12</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-edit-existing-policy.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-resume-data-replication.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-edit-existing-policy.html</loc>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-browsing-data-directory.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/core-concepts/topics/mc-management-console.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/replication-manager/cloud/operations/topics/mc-management-console.html</loc>
-		<lastmod>2020-05-12</lastmod>
+		<lastmod>2020-05-21</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>

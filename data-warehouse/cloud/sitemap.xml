@@ -4,7 +4,7 @@
 
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/links.html</loc>
-		<lastmod>2020-04-27</lastmod>
+		<lastmod>2020-05-20</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -16,325 +16,337 @@
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/index.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/planning/index.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/index.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/index.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/index.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/monitoring/index.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/troubleshooting/index.html</loc>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/index.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-service-overview.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-hive-autoscaling-overview.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-impala-autoscaling-overview.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-pub-cloud-provider-support.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-aws-support.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-azure-support.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-adding-new-database-catalog.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-adding-new-virtual-warehouse.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-modifying-virtual-warehouse.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-tuning-virtual-warehouse-auto-scaling.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-tuning-hive-llap-data-warehouses.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-tuning-impala-data-marts.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-auto-scale-threshold-settings.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/planning/topics/dw-aws-account-requirements.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/planning/topics/dw-azure-account-requirements.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/planning/topics/dw-manage-cloud-costs.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-querying-data.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-querying-with-das.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-querying-with-hue.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-using-impala-shell.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-connect-to-hive-virt-warehouse-with-tableau.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-about-environments.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-aws-environment-requirements-checklist.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-azure-environment-requirements-checklist.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-activating-environments-4-data-catalogs.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-viewing-editing-environment-details.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-grant-remote-access-to-kube-clust-aws.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-revok-remote-access-to-kube-clust-aws.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-whitelisting-ips-access-2-environments.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-edit-whitelisted-ip-cidrs-for-endpoints.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-aws-private-networking-setup.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-aws-private-networking-deployment-modes.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-aws-private-networking-prerequisites.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-aws-activating-private-network-support.html</loc>
-		<lastmod>2020-05-04</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-aws-private-networking-architecture.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-aws-priv-ld-balancer-priv-wkr-nodes-architecture.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-environments/topics/dw-aws-priv-only-subnet-architecture.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-adding-new-database-catalog.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-adding-new-virtual-warehouse.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-modifying-virtual-warehouse.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-tuning-virtual-warehouse-auto-scaling.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-tuning-hive-llap-data-warehouses.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-tuning-impala-data-marts.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/managing-warehouses/topics/dw-auto-scale-threshold-settings.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-querying-data.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-querying-with-das.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-das-specify-adminusers-admingroups.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-querying-with-hue.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-using-impala-shell.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/querying-data/topics/dw-connect-to-hive-virt-warehouse-with-tableau.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/planning/topics/dw-aws-account-requirements.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/planning/topics/dw-azure-account-requirements.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/planning/topics/dw-manage-cloud-costs.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-service-overview.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-hive-autoscaling-overview.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-impala-autoscaling-overview.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-pub-cloud-provider-support.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-aws-support.html</loc>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/overview/topics/dw-azure-support.html</loc>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/monitoring/topics/dw-monitoring-with-grafana.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/monitoring/topics/dw-connecting-to-grafana.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/troubleshooting/topics/dw-download-diagnostic-bundles.html</loc>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/topics/dw-whats-new.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/topics/dw-whats-new-07.html</loc>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/topics/dw-whats-new-06.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/topics/dw-whats-new-05.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/topics/dw-whats-new-04.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/topics/dw-whats-new-03.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/topics/dw-whats-new-02.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/topics/dw-whats-new-01.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/data-warehouse/cloud/release-notes/topics/dw-known-issues.html</loc>
-		<lastmod>2020-05-04</lastmod>
+		<lastmod>2020-06-02</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
