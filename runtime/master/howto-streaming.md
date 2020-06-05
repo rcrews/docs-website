@@ -12,6 +12,13 @@ title: Streaming
 
 publications:
 - column:
+  - title: Quick Start
+    sub:
+    - title: Stream Cluster Quick Start
+      url: quick-start-installation-streaming/index.html
+      description: >-
+        Provides instructions on how to create a Streaming cluster. 
+
   - title: Apache Kafka
     sub:
     - title: Configuring Apache Kafka
