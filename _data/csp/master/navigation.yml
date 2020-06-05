@@ -153,6 +153,11 @@
       id: pub-srm-rest-api-reference
       external: external
 
+    - text: Quick Start Installation for Streaming
+      href: /srm/cdp-quick-start-install-stream-cluster/index.html
+      id: pub-cdp-quick-start-install-stream-cluster
+      external: external
+
 - text: Release Notes
   name: cat-releasenotes
   sub:
