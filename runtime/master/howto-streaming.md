@@ -17,7 +17,7 @@ publications:
     - title: Stream Cluster Quick Start
       url: quick-start-installation-streaming/index.html
       description: >-
-        Provides instructions on how to create a Streaming cluster. 
+        Provides instructions on how to create a Streaming cluster.
 
   - title: Apache Kafka
     sub:

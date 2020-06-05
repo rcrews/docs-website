@@ -587,12 +587,12 @@
     - text: Streaming
       href: howto-streaming.html
       sub:
-     
+
         - text: Quick Start Installation for Streaming Clusters
           href: quick-start-installation-streaming/index.html
           id: pub-quick-start-installation-streaming
           sub: quick-start-installation-streaming/navigation.json
-          
+
         - text: Configuring Apache Kafka
           href: kafka-configuring/index.html
           id: pub-kafka-configuring
