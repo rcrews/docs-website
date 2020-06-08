@@ -11,7 +11,7 @@ AMBARI-2.7.5.0!
 
 With this release HDP is supporting single catalog for Hive/Spark and
 Hive table-level replication. To keep up with the increased customer
-interest, we delivered HBase 2.1.6 and GCS Connector 1.9.17 as well.
+interest, we delivered HBase 2.1.6 and GCS Connector 1.9.10 as well.
 
 We have also delivered nearly 200 fixes to increase stability,
 usability, supportability and performance, enhance security and improve
