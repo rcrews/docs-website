@@ -30,3 +30,6 @@ For newcomers to Flink:
 For advanced users:
 - [Secured Flink Application Tutorial](https://github.com/cloudera/flink-tutorials/tree/master/flink-secure-tutorial): an application demonstrating Flink security features
 - [Stateful Flink Application Tutorial](https://github.com/cloudera/flink-tutorials/tree/master/flink-stateful-tutorial): a stateful inventory management service focusing on production grade development and operation requirements
+
+For taking the first steps in Flink SQL Client:
+- [Flink SQL Tutorial](https://github.com/cloudera/flink-tutorials/tree/master/flink-sql-tutorial): an advanced application that leads you through the basic steps to use Flink with the SQL Client
