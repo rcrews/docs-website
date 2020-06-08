@@ -42,7 +42,8 @@ exclude:
   - package-lock.json
   - jsdoc-conf.json
 
-  # Library going away
+  # Removed libraries
+  - /cdpdc/
   - /cdp/cloud/
 
   # Static content that doesn't need to be part of most builds
