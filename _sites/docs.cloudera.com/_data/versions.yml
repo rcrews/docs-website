@@ -556,7 +556,7 @@
   latest-url: /cdp/latest/index.html
   search-name: cdp
   versions:
-    - title: cloud
+    - title: latest
       url: /cdp/latest/index.html
 
 - name: Data Catalog
