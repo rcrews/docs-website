@@ -3,404 +3,656 @@
 <!-- created with Scrutiny from https://peacockmedia.software -->
 
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/links.html</loc>
-		<lastmod>2020-04-03</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/links.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/overview/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/sql-client/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/job-lifecycle/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-overview/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/support-matrix/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/quickstart/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/quickstart/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/overview/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/flink-overview/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/support-matrix/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/download/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/download/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/development/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/installation/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/security/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/upgrade/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/kafka-connector/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/datastream-connectors/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/schema-registry/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/development/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/installation/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/configuration/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/configuration/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/security/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/monitoring/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/job-lifecycle/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/hbase-connector/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/governance/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/release-notes/index.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/overview/topics/csa-overview.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/release-notes/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/monitoring/index.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/sql-client/topics/csa-sql-client-session-config.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/overview/topics/csa-service-layout.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/sql-client/topics/csa-sql-client-config.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/job-lifecycle/topics/csa-run-job.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/sql-client/topics/csa-sql-security.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/job-lifecycle/topics/csa-savepoint.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-overview/topics/csa-flink-use-cases.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/job-lifecycle/topics/csa-checkpoint.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-overview/topics/csa-flink-overview.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/quickstart/topics/csa-quickstart.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-overview/topics/csa-stateful-applications.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/flink-overview/topics/csa-flink-use-cases.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-overview/topics/csa-datastream-api.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/flink-overview/topics/csa-flink-overview.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-overview/topics/csa-event-time.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/flink-overview/topics/csa-datastream-api.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-overview/topics/csa-sophisticated-windowing.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/flink-overview/topics/csa-stateful-applications.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-overview/topics/csa-watermark.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/support-matrix/topics/csa-system-req.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-overview/topics/csa-checkpoint-savepoint.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/flink-overview/topics/csa-event-time.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/quickstart/topics/csa-quickstart.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/flink-overview/topics/csa-checkpoint-savepoint.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/overview/topics/csa-overview.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/download/topics/csa-download-portal.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/support-matrix/topics/csa-api-support.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/download/topics/csa-download-cred.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/support-matrix/topics/csa-system-req.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/development/topics/csa-flink-archetype.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/overview/topics/csa-service-layout.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/development/topics/csa-application-logic.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/download/topics/csa-download-cred.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/flink-overview/topics/csa-sophisticated-windowing.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/download/topics/csa-download-portal.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/development/topics/csa-stream-windowing.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/installation/topics/csa-installing-parcel.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/development/topics/csa-test-validation.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/installation/topics/csa-java-home-install.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/security/topics/csa-authentication.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/installation/topics/csa-hdfs-home-install.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/security/topics/csa-encryption.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/installation/topics/csa-add-flink-service.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/kafka-connector/topics/csa-kafka.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/upgrade/topics/csa-upgrade-summary.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/security/topics/csa-enable-security.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/upgrade/topics/csa-create-new-version.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/security/topics/csa-securing-jobs.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/upgrade/topics/csa-stop-applications.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/security/topics/csa-encrypt-tool-security.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/upgrade/topics/csa-upgrade-artifacts.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/schema-registry/topics/csa-serialization-schema.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/datastream-connectors/topics/csa-hbase-configuration.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/schema-registry/topics/csa-schema-registry.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/upgrade/topics/csa-resume-application.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/schema-registry/topics/csa-deserialization-schema.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/datastream-connectors/topics/csa-hbase-connector.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/installation/topics/csa-hdfs-home-install.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/datastream-connectors/topics/csa-kafka.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/installation/topics/csa-installing-parcel.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/datastream-connectors/topics/csa-serialization-schema.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/installation/topics/csa-add-flink-service.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/datastream-connectors/topics/csa-kudu-sink.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/configuration/topics/csa-rocksdb-config.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/datastream-connectors/topics/csa-deserialization-schema.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/configuration/topics/csa-configuration-overview.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/datastream-connectors/topics/csa-schema-registry.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/configuration/topics/csa-resource-config.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/development/topics/csa-flink-archetype.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/installation/topics/csa-java-home-install.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/development/topics/csa-test-validation.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/configuration/topics/csa-other-configs.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/development/topics/csa-stream-windowing.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/configuration/topics/csa-max-parallelism.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/configuration/topics/csa-configuration-overview.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/configuration/topics/csa-rocksdb-timers.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/development/topics/csa-application-logic.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/configuration/topics/csa-rocksdb-config-params.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/configuration/topics/csa-resource-config.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/monitoring/topics/csa-metrics-reporter.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/configuration/topics/csa-rocksdb-config-params.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/monitoring/topics/csa-hs-webui.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/configuration/topics/csa-memory-usage.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/configuration/topics/csa-memory-usage.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/configuration/topics/csa-other-configs.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/monitoring/topics/csa-kafka-logging.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/configuration/topics/csa-max-parallelism.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/monitoring/topics/csa-smm-integration.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/configuration/topics/csa-rocksdb-timers.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/hbase-connector/topics/csa-hbase-connector.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/configuration/topics/csa-rocksdb-config.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/hbase-connector/topics/csa-hbase-configuration.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/security/topics/csa-authentication.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/release-notes/topics/csa-what-new.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/security/topics/csa-encryption.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/release-notes/topics/csa-unsupported-features.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/security/topics/csa-enable-security.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/csa/1.1.0/release-notes/topics/csa-known-issues.html</loc>
-		<lastmod>2020-04-06</lastmod>
+		<loc>https://docs.cloudera.com/csa/1.2.0/security/topics/csa-securing-jobs.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/job-lifecycle/topics/csa-run-job.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/security/topics/csa-encrypt-tool-security.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/job-lifecycle/topics/csa-checkpoint.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/job-lifecycle/topics/csa-supported-cli.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/job-lifecycle/topics/csa-savepoint.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/governance/topics/csa-atlas-flink.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/governance/topics/csa-atlas-config.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/governance/topics/csa-atlas-verify.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/governance/topics/csa-metadata-coll.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-datastream-interop.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-sql-table-api.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-conv-stream-table.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-conv-table-stream.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-supported-datatypes.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-sql-catalogs.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-hive-catalog.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-kudu-catalog.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-schemaregistry-catalog.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-sql-connectors.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-kafka-sql-datatypes.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-kafka-json.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-kafka-sql-connector.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-kafka-csv.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-datatypes-avro.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-kafka-avro.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-sql-statements.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-kafka-registry-avro.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-alter-statements.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-insert-statements.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-create-statements.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-drop-statements.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/release-notes/topics/csa-what-new.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/flink-sql-table-api/topics/csa-sql-queries.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/release-notes/topics/csa-supported-sql.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/release-notes/topics/csa-unsupported-features.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/monitoring/topics/csa-hs-webui.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/release-notes/topics/csa-known-issues.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/monitoring/topics/csa-metrics-reporter.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/monitoring/topics/csa-smm-integration.html</loc>
+		<lastmod>2020-06-10</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/csa/1.2.0/monitoring/topics/csa-kafka-logging.html</loc>
+		<lastmod>2020-06-10</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
