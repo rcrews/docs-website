@@ -61,7 +61,7 @@ json:
       icon: /common/img/mini_icons/icon-cfm.png
 
     - text: Streaming Analytics
-      href: /csa/1.1.0/index.html
+      href: /csa/1.2.0/index.html
       icon: /common/img/mini_icons/icon-csa.png
 
     - text: Stream Processing
