@@ -763,11 +763,6 @@
       id: pub-phoenix-performance-tuning
       sub: phoenix-performance-tuning/navigation.json
 
-    - text: Cloudera Search Frequently Asked Questions
-      href: search-faq/index.html
-      id: pub-search-faq
-      sub: search-faq/navigation.json
-
     - text: Encryption Reference
       href: security-encryption-reference/index.html
       id: security-encryption-reference
