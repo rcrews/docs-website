@@ -28,10 +28,10 @@ publications:
     - title: Working with Hive Metastore
       url: hive-metastore/index.html
       description: >-
-        Describes how Hive metastore (HMS) detects client types and 
-        and stores compatible tables, authorizes access to tables
-        from Spark, and stores metadata of multiple services, such
-        as Hive and Impala.
+        Describes how Hive metastore (HMS) detects client types and and
+        stores compatible tables, authorizes access to tables from
+        Spark, and stores metadata of multiple services, such as Hive
+        and Impala.
 
     - title: Starting Apache Hive
       url: starting-hive/index.html
@@ -73,7 +73,7 @@ publications:
     - title: Integrating Apache Hive with Apache Spark and BI
       url: integrating-hive-and-bi/index.html
       description: >-
-        Covers accessing Hive tables from Spark through the  
+        Covers accessing Hive tables from Spark through the
         Spark Direct Reader or Hive Warehouse Connector, using
         JdbcStorageHandler to access an external data source, and
         connecting to Business Intelligence (BI) tools.

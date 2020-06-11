@@ -29,8 +29,8 @@ publications:
       url: hive-metastore/index.html
       description: >-
         Describes authorizing access to Hive tables from Spark and
-        configuring access to metadata Hive metastore (HMS) for
-        multiple services, such as Hive and Impala.
+        configuring access to metadata Hive metastore (HMS) for multiple
+        services, such as Hive and Impala.
 
     - title: Starting Apache Hive
       url: starting-hive/index.html

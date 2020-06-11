@@ -9,24 +9,12 @@ title: Operational Database
 
 publications:
 - column:
-#  - title: Getting Started with Operational Database
-#    url: hbase-getting-started/index.html
-#    description: >-
-#      Provides information about the operational database cluster shape,
-#      and instructions to create an operational database. Provides
-#      instructions to start, stop your HBase cluster.
 
   - title: Configuring Apache HBase
     url: configuring-hbase/index.html
     description: >-
       Provides information to configure HBase to use it as your
       operational data store.
-
-#  - title: Using Amazon S3 with Apache HBase
-#    url: hbase-s3/index.html
-#    description: >-
-#      Provides information about how to use use Amazon S3 as a storage
-#      layer for HBase.
 
   - title: Managing Apache HBase Security
     url: hbase-security/index.html
