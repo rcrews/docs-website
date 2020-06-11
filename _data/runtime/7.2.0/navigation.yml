@@ -10,7 +10,7 @@
 
 # Foyer Pages
 # Here's the final list:
-#   Storage: HDFS, Kudu
+#   Storage: HDFS, Kudu, Ozone
 #   Compute: YARN, ZooKeeper
 #   Data Access: DAS, Hive, Hue, Impala, Search, Sqoop
 #   Operational Database: HBase, Phoenix
@@ -503,11 +503,6 @@
     - text: Security
       href: howto-security.html
       sub:
-        # - text: Identity Management and Federation
-        #   ref: identity-management-and-federation/index.html
-        #   id: pub-identity-management-and-federation-and-federation/index.html
-        #   sub: identity-management-and-federation/navigation.json
-
         - text: Apache Ranger Auditing
           href: security-ranger-auditing/index.html
           id: pub-security-ranger-auditing

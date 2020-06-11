@@ -198,12 +198,6 @@
           id: pub-data-protection
           sub: data-protection/navigation.json
 
-       # Divya: This pub is not yet ready for publish (22-May)
-       # - text: Accessing Cloud Data
-       #  href: cloud-data-access/index.html
-       #   id: pub-cloud-data-access
-       #   sub: cloud-data-access/navigation.json
-
         - text: Configuring Fault Tolerance
           href: fault-tolerance/index.html
           id: pub-fault-tolerance
@@ -494,11 +488,6 @@
     - text: Security
       href: howto-security.html
       sub:
-        # - text: Identity Management and Federation
-        #   ref: identity-management-and-federation/index.html
-        #   id: pub-identity-management-and-federation-and-federation/index.html
-        #   sub: identity-management-and-federation/navigation.json
-
         - text: Apache Ranger Auditing
           href: security-ranger-auditing/index.html
           id: pub-security-ranger-auditing
