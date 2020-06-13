@@ -33,8 +33,8 @@ publications:
     - title: Apache Hive Overview
       url: hive-introduction/index.html
       description: >-
-        Presents key features of Hive and Hive 3 architecture
-        unsupported interfaces and installing Hive on Tez.
+        Presents key features of Hive and Hive 3 architecture,
+        unsupported interfaces, and installing Hive on Tez.
 
 - column:
   - title: Apache Impala
