@@ -281,6 +281,7 @@
       href: kafka-gs/index.html
       id:   pub-kafka-gs
       sub:  kafka-gs/navigation.json
+
     - text: Getting Started with Apache NiFi
       href: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-apache-nifi/index.html
       id:   pub-getting-started-with-apache-nifi
