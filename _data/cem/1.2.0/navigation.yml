@@ -42,6 +42,11 @@
 - text: How To
   id: cat-howto
   sub:
+  - text: MiNiFi Agent Quick Start
+      href: minifi-agent-quick-start/index.html
+      id: pub-minifi-agent-quick-start
+      sub: minifi-agent-quick-start/navigation.json
+      
     - text: Using CEM
       href: using-cem/index.html
       id: pub-using-cem
