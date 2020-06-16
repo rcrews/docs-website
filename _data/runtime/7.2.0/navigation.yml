@@ -10,7 +10,7 @@
 
 # Foyer Pages
 # Here's the final list:
-#   Storage: HDFS, Kudu, Ozone
+#   Storage: HDFS, Kudu
 #   Compute: YARN, ZooKeeper
 #   Data Access: DAS, Hive, Hue, Impala, Search, Sqoop
 #   Operational Database: HBase, Phoenix
@@ -227,16 +227,6 @@
           href: kudu-integration/index.html
           id: pub-kudu-integration
           sub: kudu-integration/navigation.json
-
-        - text: Storing Data Using Ozone
-          href: ozone-storing-data/index.html
-          id: pub-ozone-storing-data
-          sub: ozone-storing-data/navigation.json
-
-        - text: Configuring Ozone Security
-          href: ozone-security/index.html
-          id: pub-ozone-security
-          sub: ozone-security/navigation.json
 
     - text: Compute
       href: howto-compute.html
