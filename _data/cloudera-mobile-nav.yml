@@ -461,22 +461,6 @@
   href: /downloads.html
   data-tab: downloads-tab
   sub:
-  - text: QuickStart VMs
-    href: /downloads/quickstart_vms.html
-    data-tab: quickstartvms-tab
-    sub:
-    - text: QuickStarts for CDH 5.13
-      href: /downloads/quickstart_vms/5-13.html
-      data-tab: quickstartsforcdh513
-    - text: QuickStarts for CDH 5.12
-      href: /downloads/quickstart_vms/5-12.html
-      data-tab: quickstartsforcdh512
-    - text: QuickStarts for CDH 5.10
-      href: /downloads/quickstart_vms/5-10.html
-      data-tab: quickstartsforcdh510
-    - text: QuickStarts for CDH 5.8
-      href: /downloads/quickstart_vms/5-8.html
-      data-tab: quickstartsforcdh58
   - text: Cloudera DataFlow
     href: /downloads/cdf.html
     data-tab: clouderadataflow-tab
