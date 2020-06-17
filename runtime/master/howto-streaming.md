@@ -141,6 +141,10 @@ publications:
       description: >-
         Describes how to use Schema Registry.
 
+    - title: Schema Registry Security
+      url: schema-registry-security/index.html
+      description: >-
+        Describes how authorization works in Schema Registry.
 ---
 
 Cloudera Data Platform Runtime streaming components provide a high
