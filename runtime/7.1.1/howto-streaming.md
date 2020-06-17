@@ -134,7 +134,7 @@ publications:
       description: >-
         Describes how to use Schema Registry.
         
-    - title: Schema Registry Security
+    - title: Securing Schema Registry
       url: schema-registry-security/index.html
       description: >-
         Describes how authorization works in Schema Registry.
