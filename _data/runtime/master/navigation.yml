@@ -692,6 +692,11 @@
           href: using-schema-registry/index.html
           id: pub-using-schema-registry
           sub: using-schema-registry/navigation.json
+          
+        - text: Securing Schema Registry
+          href: schema-registry-security/index.html
+          id: pub-schema-registry-security
+          sub: schema-registry-security/navigation.json  
 
 - text: Troubleshooting
   id: cat-troubleshooting
