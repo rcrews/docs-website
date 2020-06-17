@@ -36,7 +36,7 @@
       href: support-matrix/index.html
       id: pub-support-matrix
       sub: support-matrix/navigation.json
-    - text: Download
+    - text: Download Locations
       href: download/index.html
       id: pub-download
       sub: download/navigation.json
@@ -60,7 +60,7 @@
       href: securing-cfm/index.html
       id: pub-securing-cfm
       sub: securing-cfm/navigation.json
-      
+
     - text: Tuning your data flow
       href: nifi-tuning/index.html
       id: pub-nifi-tuning
