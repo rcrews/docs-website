@@ -23,13 +23,19 @@ json:
 - text: Cloudera Cybersecurity Platform
   href: topics/ctpl_ccp.html
 
-- text: CDP-DC
+- text: CDP Data Center
   href: topics/ctpl_cdpdc_overview.html
   sub:
-  - text: CDP-DC 7.0
+  - text: CDP Data Center 7.0
     href: topics/ctpl_cdpdc70.html
-  - text: CDP-DC 7.1
+  - text: CDP Data Center 7.1
     href: topics/ctpl_cdpdc71.html
+
+- text: CDP Public Cloud
+  href: topics/ctpl_cdppc_overview.html
+  sub:
+  - text: CDP Public Cloud 7.2
+    href: topics/ctpl_cdppc72.html
 
 - text: CDH
   href: topics/ctpl_cdh_overview.html
