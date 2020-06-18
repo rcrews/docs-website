@@ -61,7 +61,7 @@
       id: pub-securing-cfm
       sub: securing-cfm/navigation.json
 
-    - text: Tuning your data flow
+    - text: Tuning your DataFlow
       href: nifi-tuning/index.html
       id: pub-nifi-tuning
       sub: nifi-tuning/navigation.json

@@ -22,8 +22,8 @@ json:
       href: /data-engineering/cloud/index.html
       icon: /common/img/mini_icons/icon-de.png
 
-    - text: Data Flow
-      href: /data-flow/cloud/index.html
+    - text: DataFlow
+      href: /dataflow/cloud/index.html
       icon: /common/img/mini_icons/icon-df.png
 
     - text: Data Hub
@@ -84,7 +84,7 @@ json:
       href: /srm/1.0.0/index.html
       icon: /common/img/mini_icons/icon-srm.png
 
-    - text: Data Flow for Data Hub
+    - text: DataFlow for Data Hub
       href: /cdf-datahub/7.1.0/index.html
       icon: /common/img/mini_icons/icon-cdf-datahub.png
 

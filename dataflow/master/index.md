@@ -1,8 +1,8 @@
 ---
 layout: product
-title: Data Flow
-version: cloud
-base-path: /data-flow/cloud/
+title: Cloudera DataFlow
+version: master
+base-path: /dataflow/master/
 
 sections:
   - title: Release Notes

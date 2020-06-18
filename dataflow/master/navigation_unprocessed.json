@@ -2,6 +2,6 @@
 # Navigation data previously in this file
 # has been centralized into the _data folder.
 # Data that used to be here is now at
-#   _data/data-flow/cloud/navigation.yml
+#   _data/dfx/master/navigation.yml
 ---
-{{ site.data.data-flow.cloud.navigation | jsonify }}
+{{ site.data.dataflow.master.navigation | jsonify }}

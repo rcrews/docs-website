@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Cloudera Data Flow for Data Hub
+title:
 version: master
 base-path: /cdf-datahub/master/
 
@@ -14,13 +14,17 @@ sections:
 
 ---
 
-Cloudera Data Flow delivers Streams Messaging and Flow Management cluster definitions for
-installation on CDP Public Cloud using Data Hub.
+Cloudera DataFlow delivers Streams Messaging and Flow Management cluster
+definitions for installation on CDP Public Cloud using Data Hub.
 
-The Streams Messaging Light and Heavy Duty clusters provide
-advanced messaging and real-time processing on streaming data using
-Apache Kafka, centralized schema management using Schema Registry, and
-management and monitoring capabilities powered by Streams Messaging
-Manager.
+The Streams Messaging Light and Heavy Duty clusters provide advanced
+messaging and real-time processing on streaming data using Apache Kafka,
+centralized schema management using Schema Registry, and management and
+monitoring capabilities powered by Streams Messaging Manager.
 
-Flow Management Light and Heavy Duty clusters deliver high-scale data ingestion, transformation, and management to enterprises from any-to-any environment. Flow Management addresses key enterprise use cases such as data movement, continuous data ingestion, log data ingestion, and acquisition of all types of streaming data including social, mobile, clickstream, and IoT data.
+Flow Management Light and Heavy Duty clusters deliver high-scale data
+ingestion, transformation, and management to enterprises from any-to-any
+environment. Flow Management addresses key enterprise use cases such as
+data movement, continuous data ingestion, log data ingestion, and
+acquisition of all types of streaming data including social, mobile,
+clickstream, and IoT data.

@@ -8,9 +8,9 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Cloudera Data Flow
-  id: landing-cloudera-data-flow
-  href: /data-flow/master/index.html
+- text: Cloudera DataFlow
+  id: landing-cloudera-dataflow
+  href: /dataflow/master/index.html
   display: none
 
 - text: Concepts & Use Cases

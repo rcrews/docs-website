@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title: Cloudera Data Flow for Data Hub Concepts & Use Cases
+breadcrumb-title:  Concepts & Use Cases
 title: Streams Messaging
 
 publications:

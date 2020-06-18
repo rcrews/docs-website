@@ -59,7 +59,7 @@ exclude:
   - /csa/master/
   - /csp/master/
   - /data-catalog/master/
-  - /data-flow/master/
+  - /dataflow/master/
   - /data-hub/master/
   - /data-warehouse/master/
   - /machine-learning/master/

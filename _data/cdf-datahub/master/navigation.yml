@@ -8,8 +8,8 @@
 #- text: Release Notes
 #- text: Learning & Training
 
-- text: Cloudera Data Flow for Data Hub
-  id:   landing-data-flow-for-data-hub
+- text:
+  id:   landing-dataflow-for-data-hub
   href: /cdf-datahub/master/index.html
   display: none
 
@@ -118,27 +118,27 @@
           id:   pub-using-nifi-interface
           sub:  /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-interface/navigation.json
 
-        - text: Building an Apache NiFi Data Flow
+        - text: Building an Apache NiFi DataFlow
           href: /HDPDocuments/HDF3/HDF-3.5.1/building-a-dataflow/index.html
           id:   pub-building-a-dataflow
           sub:  /HDPDocuments/HDF3/HDF-3.5.1/building-a-dataflow/navigation.json
 
-        - text: Managing an Apache NiFi Data Flow
+        - text: Managing an Apache NiFi DataFlow
           href: /HDPDocuments/HDF3/HDF-3.5.1/managing-a-dataflow/index.html
           id:   pub-managing-a-dataflow
           sub:  /HDPDocuments/HDF3/HDF-3.5.1/managing-a-dataflow/navigation.json
 
-        - text: Navigating an Apache NiFi Data Flow
+        - text: Navigating an Apache NiFi DataFlow
           href: /HDPDocuments/HDF3/HDF-3.5.1/navigating-a-dataflow/index.html
           id:   pub-navigating-a-dataflow
           sub:  /HDPDocuments/HDF3/HDF-3.5.1/navigating-a-dataflow/navigation.json
 
-        - text: Monitoring an Apache NiFi Data Flow
+        - text: Monitoring an Apache NiFi DataFlow
           href: /HDPDocuments/HDF3/HDF-3.5.1/monitoring-a-dataflow/index.html
           id:   pub-monitoring-a-dataflow
           sub:  /HDPDocuments/HDF3/HDF-3.5.1/monitoring-a-dataflow/navigation.json
 
-        - text: Versioning an Apache NiFi Data Flow
+        - text: Versioning an Apache NiFi DataFlow
           href: /HDPDocuments/HDF3/HDF-3.5.1/versioning-a-dataflow/index.html
           id:   pub-versioning-a-dataflow
           sub:  /HDPDocuments/HDF3/HDF-3.5.1/versioning-a-dataflow/navigation.json

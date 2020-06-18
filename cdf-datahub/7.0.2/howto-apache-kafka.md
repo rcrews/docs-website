@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title: Cloudera Data Flow for Data Hub How To
+breadcrumb-title: Cloudera DataFlow for Data Hub How To
 title: Apache Kafka
 
 publications:

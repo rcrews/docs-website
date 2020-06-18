@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Cloudera Data Flow for Data Hub
+title:
 version: 7.1.0
 base-path: /cdf-datahub/7.1.0/
 
@@ -14,7 +14,7 @@ sections:
 
 ---
 
-Cloudera Data Flow delivers Streams Messaging and Flow Management
+Cloudera DataFlow delivers Streams Messaging and Flow Management
 cluster definitions for installation on CDP Public Cloud using Data Hub.
 
 The Streams Messaging Light and Heavy Duty clusters provide advanced

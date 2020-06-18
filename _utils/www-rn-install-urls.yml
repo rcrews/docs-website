@@ -71,7 +71,7 @@
     relnote: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.0.0/release-notes/index.html
     install: https://docs.cloudera.com/HDPDocuments/DAS/DAS-1.0.0/installation/index.html
 
-- product: Cloudera Data Flow for Data Hub
+- product: Cloudera DataFlow for Data Hub
   releases:
   - version: 7.0.2
     landing: https://docs.cloudera.com/cdf-datahub/7.0.2/index.html

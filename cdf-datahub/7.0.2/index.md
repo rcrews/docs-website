@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Cloudera Data Flow for Data Hub
+title: Cloudera DataFlow for Data Hub
 version: 7.0.2
 base-path: /cdf-datahub/7.0.2/
 
@@ -12,7 +12,7 @@ sections:
       - title: Release Notes
         url: release-notes/index.html
 ---
-Cloudera Data Flow delivers Streams Messaging cluster definitions for
+Cloudera DataFlow delivers Streams Messaging cluster definitions for
 installation using Data Hub.
 
 The Streams Messaging Heavy Duty and Streams Messaging Light Duty
@@ -24,7 +24,7 @@ Manager.
 
 <div style="border: 1px solid #ccc;border-radius: 2px;background: #fed;padding: 1ex 1em;">
 <b>Note</b><br>
-Cloudera Data Flow for Data Hub is available for Technical Preview.
+ is available for Technical Preview.
 Cloudera encourages you to explore these technical preview features in
 non-production environments and provide feedback on your experiences
 through the Cloudera Support Portal.
