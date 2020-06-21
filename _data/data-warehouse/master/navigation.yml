@@ -21,6 +21,16 @@
       id: pub-overview
       sub: overview/navigation.json
 
+    - text: Virtual Warehouse Auto-scaling
+      href: auto-scaling/index.html
+      id: pub-auto-scaling
+      sub: auto-scaling/navigation.json
+
+    - text: Cloud Support
+      href: cloud-support/index.html
+      id: pub-cloud-support
+      sub: cloud-support/navigation.json
+
 - text: Planning
   id: cat-planning
   sub:
