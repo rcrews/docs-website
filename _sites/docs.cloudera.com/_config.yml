@@ -46,12 +46,11 @@ exclude:
   - /HDPDocuments/Ambari-7.1.0.0/
   - /HDPDocuments/Ambari/Ambari-7.1.0.0/
   - /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/
-  - /cem/1.2.0/
   - /cfm/2.0.1/
   - /csa/1.0.0/
   - /csp/3.0.0/
   - /data-engineering/
-  - /data-flow/ # "/dataflow/" ?
+  - /dataflow/
   - /operational-database/ # "/opdb/" ?
 
   # Removed libraries

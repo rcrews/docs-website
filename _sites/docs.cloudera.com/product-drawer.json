@@ -53,7 +53,7 @@ json:
 - title: DataFlow
   products:
     - text: Edge Management
-      href: /cem/1.1.1/index.html
+      href: /cem/1.2.0/index.html
       icon: /common/img/mini_icons/icon-cem.png
 
     - text: Flow Management
