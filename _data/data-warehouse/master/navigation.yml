@@ -21,7 +21,7 @@
       id: pub-overview
       sub: overview/navigation.json
 
-    - text: Virtual Warehouse Auto-scaling
+    - text: Auto-scaling
       href: auto-scaling/index.html
       id: pub-auto-scaling
       sub: auto-scaling/navigation.json
