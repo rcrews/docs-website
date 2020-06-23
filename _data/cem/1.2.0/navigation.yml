@@ -24,16 +24,19 @@
 - text: Installation & Upgrade
   id: cat-installation-upgrade
   sub:
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Installation
       href: installation/index.html
       id: pub-installation
       sub: installation/navigation.json
 
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Upgrade
       href: upgrade/index.html
       id: pub-upgrade
       sub: upgrade/navigation.json
 
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Support Matrix
       href: support-matrix/index.html
       id: pub-support-matrix
@@ -42,21 +45,25 @@
 - text: How To
   id: cat-howto
   sub:
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: MiNiFi Agent Quick Start
       href: minifi-agent-quick-start/index.html
       id: pub-minifi-agent-quick-start
       sub: minifi-agent-quick-start/navigation.json
 
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Using CEM
       href: using-cem/index.html
       id: pub-using-cem
       sub: using-cem/navigation.json
 
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Getting Started
       href: getting-started/index.html
       id: pub-getting-started
       sub: getting-started/navigation.json
 
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Using Agent Parameters
       href: using-agent-parameters/index.html
       id: pub-using-agent-parameters
@@ -65,6 +72,7 @@
 - text: Reference
   id: cat-reference
   sub:
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: REST API Reference
       href: rest-api-reference/index.html
       id: pub-rest-api-reference
@@ -73,6 +81,7 @@
 - text: Release Notes
   id: cat-release-notes
   sub:
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Release Notes
       href: release-notes/index.html
       id: pub-release-notes
