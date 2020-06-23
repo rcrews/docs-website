@@ -10,7 +10,7 @@
 
 - text: Data Warehouse
   id: landing-data-warehouse
-  href: /data-warehouse/cloud/index.html
+  href: /data-warehouse/master/index.html
   display: none
 
 - text: Concepts & Use Cases
@@ -20,6 +20,16 @@
       href: overview/index.html
       id: pub-overview
       sub: overview/navigation.json
+
+    - text: Auto-scaling
+      href: auto-scaling/index.html
+      id: pub-auto-scaling
+      sub: auto-scaling/navigation.json
+
+    - text: Cloud Support
+      href: cloud-support/index.html
+      id: pub-cloud-support
+      sub: cloud-support/navigation.json
 
 - text: Planning
   id: cat-planning
