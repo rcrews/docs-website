@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title:  How To
+breadcrumb-title: How To
 title: Apache Kafka
 
 publications:

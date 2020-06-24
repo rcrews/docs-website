@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title:  Concepts & Use Cases
+breadcrumb-title: Concepts & Use Cases
 title: Streams Messaging
 
 publications:
@@ -23,4 +23,6 @@ publications:
 
 ---
 
-Streams Messaging cluster definitions for CDP Public Cloud deployed by Data Hub include Apache Kafka, Schema Registry, and Streams Messaging Manager.
+Streams Messaging cluster definitions for CDP Public Cloud deployed by
+Data Hub include Apache Kafka, Schema Registry, and Streams Messaging
+Manager.

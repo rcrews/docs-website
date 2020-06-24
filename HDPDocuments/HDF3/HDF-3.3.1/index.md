@@ -34,7 +34,7 @@ sections:
     name: installation-upgrade
     books:
       - title: Installing & Upgrading HDF
-        url:  installing-upgrading-hdf.html
+        url: installing-upgrading-hdf.html
       - title: Installing & Upgrading HDF on IBM Power Systems
         url: installing-upgrading-hdf-ppc.html
       - title: Installing HDF Components
@@ -44,7 +44,7 @@ sections:
     name: how-to
     books:
       - title: Flow Management
-        url:  flow-management.html
+        url: flow-management.html
       - title: Managing Schemas
         url: managing-schemas.html
       - title: Streaming Analytics

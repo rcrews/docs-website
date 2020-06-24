@@ -1,13 +1,14 @@
 ---
 layout: foyer
-breadcrumb-title:  How To
+breadcrumb-title: How To
 title: Apache NiFi Registry
 
 publications:
   - title: Using Apache NiFi Registry
     url: /HDPDocuments/HDF3/HDF-3.5.1/using-nifi-registry/index.html
     description: >-
-      Guides you through how to use NiFi Registry to manage data flow versions.
+      Guides you through how to use NiFi Registry to manage data flow
+      versions.
 
 ---
 

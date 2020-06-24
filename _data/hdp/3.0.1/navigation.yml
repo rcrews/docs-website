@@ -50,7 +50,7 @@
   id: cat-installation-upgrade
   sub:
     - text: Installation
-      href:  installation.html
+      href: installation.html
       sub:
         - text: Apache Ambari Installation
           id: pub-bk_ambari-installation

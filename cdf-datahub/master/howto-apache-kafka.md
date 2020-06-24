@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title:  How To
+breadcrumb-title: How To
 title: Apache Kafka
 
 publications:
@@ -33,4 +33,6 @@ publications:
 
 ---
 
-Apache Kafka is a streaming message platform. It is designed to be high performance, highly available, and redundant. This information helps you to configure, secure, tune, manage, and develop Apache Kafka.
+Apache Kafka is a streaming message platform. It is designed to be high
+performance, highly available, and redundant. This information helps you
+to configure, secure, tune, manage, and develop Apache Kafka.

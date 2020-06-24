@@ -38,7 +38,7 @@ sections:
     name: installation-upgrade
     books:
       - title: Installation
-        url:  installation.html
+        url: installation.html
       - title: Upgrade
         url: upgrade.html
 
@@ -46,7 +46,7 @@ sections:
     name: how-to
     books:
       - title: Data Storage & Data OS
-        url:  data-storage-data-os.html
+        url: data-storage-data-os.html
       - title: Data Access
         url: data-access.html
       - title: Streaming

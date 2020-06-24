@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title:  How To
+breadcrumb-title: How To
 title: Streams Messaging Manager
 
 publications:
@@ -31,6 +31,14 @@ publications:
       applications that might occur due to an external or process
       bottleneck, and verify whether the consumers are consuming
       all the messages.
+
 ---
 
-Streams Messaging Manager (SMM) is an operations monitoring and management tool that provides end-to-end visibility in an enterprise Apache Kafka environment. With SMM, you can gain clear insights about your Kafka clusters, understand the end-to-end flow of message streams from producers to topics to consumers and analyze the stream dynamics between producers and consumers using various filters. SMM also helps you troubleshoot your Kafka environment to identify bottlenecks, throughputs, consumer patterns, and traffic flow.
+Streams Messaging Manager (SMM) is an operations monitoring and
+management tool that provides end-to-end visibility in an enterprise
+Apache Kafka environment. With SMM, you can gain clear insights about
+your Kafka clusters, understand the end-to-end flow of message streams
+from producers to topics to consumers and analyze the stream dynamics
+between producers and consumers using various filters. SMM also helps
+you troubleshoot your Kafka environment to identify bottlenecks,
+throughputs, consumer patterns, and traffic flow.

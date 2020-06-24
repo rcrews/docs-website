@@ -1,6 +1,6 @@
 ---
 layout: foyer
-breadcrumb-title:  Concepts & Use Cases
+breadcrumb-title: Concepts & Use Cases
 title: Flow Management
 
 publications:

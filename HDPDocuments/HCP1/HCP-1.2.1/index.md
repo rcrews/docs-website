@@ -37,7 +37,7 @@ sections:
         url: bk_administration/index.html
         pdf: bk_administration/bk_administration.pdf
         contents:
-          - chapter:  HCP Information Roadmap
+          - chapter: HCP Information Roadmap
             url: bk_administration/content/managing_service_high_availability.html
           - chapter: Introduction to Hortonworks CyberSecurity Suite
             url: bk_administration/content/overview.html

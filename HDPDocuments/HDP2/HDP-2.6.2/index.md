@@ -632,7 +632,7 @@ sections:
             url: bk_iop-to-hdp-migration/content/iop_hdp_upgrade_stack.html
           - chapter: BigSQLv5 Upgrade
             url: bk_iop-to-hdp-migration/content/big_sql5_upgrade.html
-          - chapter:  DSM Upgrade
+          - chapter: DSM Upgrade
             url: bk_iop-to-hdp-migration/content/dsm_upgrade.html
 
     # subprojects:

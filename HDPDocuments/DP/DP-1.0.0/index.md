@@ -27,7 +27,7 @@ sections:
             url: bk_dps-installation/content/dps_planning.html
           - chapter: Configuring DPS for Secure Clusters
             url: bk_dps-installation/content/security_configuration.html
-          - chapter:  Preparing Your External Database
+          - chapter: Preparing Your External Database
             url: bk_dps-installation/content/dps_prepare_external_database.html
           - chapter: Setting Up the Local Repository for Your DPS Installation
             url: bk_dps-installation/content/ch_using-local-repos.html
