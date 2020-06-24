@@ -2,7 +2,7 @@
   "swagger" : "2.0",
   "info" : {
     "description" : "This REST API provides remote access to the EFM Server.\n                                            Endpoints that are marked as [BETA] are subject to change in future releases of the application without backwards compatibility and without a major version change.",
-    "version" : "1.1.0-SNAPSHOT",
+    "version" : "1.2.0.0",
     "title" : "Cloudera Edge Flow Manager REST API",
     "license" : {
       "name" : "GNU Affero General Public License (AGPL), Version 3",
@@ -19,6 +19,9 @@
   }, {
     "name" : "Agent Manifests",
     "description" : "Register and manage agent manifest definitions"
+  }, {
+    "name" : "Agent class manifest config",
+    "description" : "Manage agent class to manifest mapping configurations"
   }, {
     "name" : "Agents",
     "description" : "Register and manage MiNiFi agents"
@@ -68,6 +71,122 @@
             "description" : "successful operation",
             "schema" : {
               "$ref" : "#/definitions/CurrentUser"
+            }
+          }
+        }
+      }
+    },
+    "/agent-class-manifest-config" : {
+      "get" : {
+        "tags" : [ "Agent class manifest config" ],
+        "summary" : "Get all agent class to agent manifest mapping configurations ",
+        "description" : "",
+        "operationId" : "getAgentManifestMappings",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/AgentClassManifestConfig"
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Agent class manifest config" ],
+        "summary" : "Creates agent class to agent manifest mapping configuration.",
+        "description" : "",
+        "operationId" : "createAgentManifestMapping",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "The agent manifest mapping to create",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/AgentClassManifestConfig"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentClassManifestConfig"
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Agent class manifest config" ],
+        "summary" : "Updates and existing agent class to agent manifest mapping configuration.",
+        "description" : "",
+        "operationId" : "updateAgentManifestMapping",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "The agent class manifest mapping configuration to update",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/AgentClassManifestConfig"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentClassManifestConfig"
+            }
+          }
+        }
+      }
+    },
+    "/agent-class-manifest-config/{name}" : {
+      "get" : {
+        "tags" : [ "Agent class manifest config" ],
+        "summary" : "Returns the agent class to agent manifest mapping for a given agent class name.",
+        "description" : "",
+        "operationId" : "getAgentManifestMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "path",
+          "description" : "The name of the agent class to retrieve mapping",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentClassManifestConfig"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Agent class manifest config" ],
+        "summary" : "Deletes an agent class to agent manifest mapping configuration.",
+        "description" : "",
+        "operationId" : "deleteAgentManifestMapping",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "path",
+          "description" : "The agent class name.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AgentClassManifestConfig"
             }
           }
         }
@@ -1864,6 +1983,61 @@
         }
       }
     },
+    "/designer/{agentClassName}/flows/export" : {
+      "get" : {
+        "tags" : [ "Flow Designer" ],
+        "summary" : "Export flow content, parameters and agent manifest for a given agent class",
+        "description" : "",
+        "operationId" : "exportFlowByAgentClass",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentClassName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ExportableFlow"
+            }
+          }
+        }
+      }
+    },
+    "/designer/{agentClassName}/flows/import" : {
+      "post" : {
+        "tags" : [ "Flow Designer" ],
+        "summary" : "Persists the given flow in the given agent class",
+        "description" : "",
+        "operationId" : "importFlowByAgentClass",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "agentClassName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "description" : "The flow details.",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ExportableFlow"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/FDFlowMetadata"
+            }
+          }
+        }
+      }
+    },
     "/events" : {
       "get" : {
         "tags" : [ "Events" ],
@@ -2909,6 +3083,17 @@
         }
       }
     },
+    "AgentClassManifestConfig" : {
+      "type" : "object",
+      "properties" : {
+        "agentClassName" : {
+          "type" : "string"
+        },
+        "agentManifestId" : {
+          "type" : "string"
+        }
+      }
+    },
     "AgentClassMetrics" : {
       "type" : "object",
       "properties" : {
@@ -2959,12 +3144,12 @@
     "AgentClassSummaryLinks" : {
       "type" : "object",
       "properties" : {
-        "flow" : {
-          "description" : "Link to the flow mapped to this agent class",
-          "$ref" : "#/definitions/Link"
-        },
         "alerts" : {
           "description" : "Link to the alerts for the agent class",
+          "$ref" : "#/definitions/Link"
+        },
+        "flow" : {
+          "description" : "Link to the flow mapped to this agent class",
           "$ref" : "#/definitions/Link"
         },
         "details" : {
@@ -3257,6 +3442,10 @@
           "type" : "boolean",
           "description" : "Indicates if this bucket allows the same version of an extension bundle to be redeployed and thus overwrite the existing artifact. By default this is false."
         },
+        "allowPublicRead" : {
+          "type" : "boolean",
+          "description" : "Indicates if this bucket allows read access to unauthenticated anonymous users"
+        },
         "permissions" : {
           "description" : "The access that the current user has to this bucket.",
           "readOnly" : true,
@@ -3453,6 +3642,18 @@
         "operationState" : {
           "description" : "The agent's status response for this operation ID",
           "$ref" : "#/definitions/C2OperationState"
+        },
+        "deviceInfo" : {
+          "description" : "Optionally, an ack can include device info that is relevant to the operation being acknowledged",
+          "$ref" : "#/definitions/DeviceInfo"
+        },
+        "agentInfo" : {
+          "description" : "Optionally, an ack can include agent info that is relevant to the operation being acknowledged",
+          "$ref" : "#/definitions/AgentInfo"
+        },
+        "flowInfo" : {
+          "description" : "Optionally, an ack can include flow info that is relevant to the operation being acknowledged",
+          "$ref" : "#/definitions/FlowInfo"
         }
       }
     },
@@ -3814,7 +4015,7 @@
     },
     "Event" : {
       "type" : "object",
-      "required" : [ "eventSource", "eventType", "level" ],
+      "required" : [ "eventType", "level" ],
       "properties" : {
         "id" : {
           "type" : "string"
@@ -3864,12 +4065,12 @@
           "description" : "Link to the event details, if applicable",
           "$ref" : "#/definitions/Link"
         },
-        "agentClass" : {
-          "description" : "Link to the event details, if applicable",
-          "$ref" : "#/definitions/Link"
-        },
         "source" : {
           "description" : "Link to the source of the event, if applicable",
+          "$ref" : "#/definitions/Link"
+        },
+        "agentClass" : {
+          "description" : "Link to the event details, if applicable",
           "$ref" : "#/definitions/Link"
         },
         "self" : {
@@ -3882,6 +4083,34 @@
           "items" : {
             "$ref" : "#/definitions/Link"
           }
+        }
+      }
+    },
+    "ExportableFlow" : {
+      "type" : "object",
+      "required" : [ "exportableFlowFormat", "flowContent" ],
+      "properties" : {
+        "exportableFlowFormat" : {
+          "type" : "string",
+          "description" : "Exportable format",
+          "enum" : [ "V1" ]
+        },
+        "flowContent" : {
+          "description" : "The flow contents",
+          "readOnly" : true,
+          "$ref" : "#/definitions/VersionedProcessGroup"
+        },
+        "parameterContexts" : {
+          "type" : "array",
+          "description" : "Information about the parameter contexts used in this flow",
+          "uniqueItems" : true,
+          "items" : {
+            "$ref" : "#/definitions/FDParameterContext"
+          }
+        },
+        "agentManifest" : {
+          "description" : "The Agent Manifest",
+          "$ref" : "#/definitions/AgentManifest"
         }
       }
     },
@@ -4922,7 +5151,7 @@
           "type" : "string",
           "description" : "The current state of the operation",
           "readOnly" : true,
-          "enum" : [ "NEW", "READY", "QUEUED", "DEPLOYED", "DONE", "FAILED", "CANCELLED" ]
+          "enum" : [ "NEW", "SUBMITTED", "READY", "QUEUED", "DEPLOYED", "DONE", "FAILED", "CANCELLED" ]
         },
         "details" : {
           "type" : "string",
@@ -4952,20 +5181,20 @@
           "description" : "Link to the previous page",
           "$ref" : "#/definitions/Link"
         },
-        "first" : {
-          "description" : "Link to the first page",
-          "$ref" : "#/definitions/Link"
-        },
         "new" : {
           "description" : "Link to newer results, in the case that the resource type supports it",
           "$ref" : "#/definitions/Link"
         },
-        "last" : {
-          "description" : "Link to the last page",
+        "first" : {
+          "description" : "Link to the first page",
           "$ref" : "#/definitions/Link"
         },
         "next" : {
           "description" : "Link to the next page",
+          "$ref" : "#/definitions/Link"
+        },
+        "last" : {
+          "description" : "Link to the last page",
           "$ref" : "#/definitions/Link"
         },
         "self" : {
@@ -5899,6 +6128,10 @@
         "name" : {
           "type" : "string",
           "description" : "The name of the context"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "The description of the parameter context"
         },
         "parameters" : {
           "type" : "array",
