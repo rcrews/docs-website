@@ -501,7 +501,7 @@ Contents
           TDCH-1677: TDCH failed to export Hive ORC format table with date format
           TDCH-1676: TDCH jobs configured to load a Teradata table with a TIMESTAMP(6) and TIME(0) 
                      column fail to define their import statement correctly
-          TDCH-1652: Remove dependency of â€œserialization.formatâ€
+          TDCH-1652: Remove dependency of “serialization.format”
           TDCH-1649: TDCH should Filter out unsupported Unicode characters with TD 15.10
           TDCH-1634: configureOozie.sh script fails with javax.security.sasl.SaslException: GSS initiate failed
 	  TDCH-1630: Multiple input paths separated by commas can fail
@@ -564,7 +564,7 @@ Contents
 
           TDCH-1176: Failure with split.by.partition when using ANSI transaction
                      mode
-          TDCH-860: TDCH doesnâ€™t support separators with backslash characters
+          TDCH-860: TDCH doesn’t support separators with backslash characters
           TDCH-816: Split.by.hash/value should utilize first column in table when
                     table is NOPI and nummappers > 1
           TDCH-789: Import method quietly overridden when using sourcequery option
@@ -685,7 +685,7 @@ Contents
 
         Included fixes in the 1.3 release
 
-        a) Remove hidden 'teradata.db.custom_parseâ€™ parameter to make the logic
+        a) Remove hidden 'teradata.db.custom_parse’ parameter to make the logic
            of csv handling simple.
 
         Included fixes in the 1.2.1 release
@@ -763,7 +763,7 @@ Contents
            in user provided hive table and partition schema option.(Temporarily
            do not support redundant white space in complex types definition)
         f) Fix unexpected syntax error when adding partitions to existing hive 
-           table with hive tableâ€™s database specified.
+           table with hive table’s database specified.
 
         Included fixes in the 1.0.7 release
 
@@ -1598,7 +1598,7 @@ Contents
                                   'split.by.hash' and 'split.by.value' methods,
                                   and not valid with 'split.by.partition' method.
                                   If this parameter is not specified, the first
-                                  column of the tableâ€™s primary key or primary
+                                  column of the table’s primary key or primary
                                   index will be used.
                 Required:         no
                 Supported values: a valid table column name
@@ -1992,7 +1992,7 @@ Contents
 
              8. tdch.input.hdfs.enclosed.by
                 Description:      A character, when specified, is used to
-                                  enclose each fieldâ€™s text on both end. The
+                                  enclose each field’s text on both end. The
                                   parameter is only valid for text files.
                 Required:         no
                 Supported values: Character
@@ -2002,7 +2002,7 @@ Contents
              9. tdch.input.hdfs.escaped.by
                 Description:      A character, when specified, is used to escape
                                   all instances of the enclosed-by and the 
-                                  escaped-by characters in the fieldsâ€™ text. The
+                                  escaped-by characters in the fields’ text. The
                                   parameter is only valid for text files.
                 Required:         no
                 Supported values: Character
@@ -2075,7 +2075,7 @@ Contents
 
              6. tdch.output.hdfs.null.string
                 Description:      A string, when specified, is used to replace
-                                  all instances with which the fieldâ€™s value is
+                                  all instances with which the field’s value is
                                   null. This parameter is only applied on fields
                                   with data type related to string (VARCHAR,
                                   CHAR, LONGVARCHAR, and CLOB). The parameter
@@ -2087,7 +2087,7 @@ Contents
 
              7. tdch.output.hdfs.null.non.string
                 Description:      A string, when specified, is used to replace
-                                  all instances with which the fieldâ€™s value is
+                                  all instances with which the field’s value is
                                   null. This parameter is only applied on fields
                                   with data  type unrelated to string (VARCHAR,
                                   CHAR, LONGVARCHAR, and CLOB). The parameter
@@ -2099,7 +2099,7 @@ Contents
 
              8. tdch.output.hdfs.enclosed.by
                 Description:      A character, when specified, is used to
-                                  enclose each fieldâ€™s text on both end. The
+                                  enclose each field’s text on both end. The
                                   parameter is only valid for text files.
                 Required:         no
                 Supported values: Character
@@ -2109,7 +2109,7 @@ Contents
              9. tdch.output.hdfs.escaped.by
                 Description:      A character, when specified, is used to escape
                                   all instances of the enclosed-by and the 
-                                  escaped-by characters in the fieldsâ€™ text. The
+                                  escaped-by characters in the fields’ text. The
                                   parameter is only valid for text files.
                 Required:         no
                 Supported values: Character
@@ -2315,7 +2315,7 @@ Contents
 
              8. tdch.output.hive.null.string
                 Description:      A string, when specified, is used to replace
-                                  all instances with which the fieldâ€™s value is
+                                  all instances with which the field’s value is
                                   null. For hive table, this field is applied
                                   to all fields.
                 Required:         no
@@ -3362,7 +3362,7 @@ Contents
 
            These conversion routines can be run against columns in the source
            data by specifying the desired converter in the string supplied to
-           the â€“sourcerecordschema argument. The following sample commands
+           the –sourcerecordschema argument. The following sample commands
            demonstrate how to import all four columns from the
            'sales_transaction' table in a Teradata system to a HDFS text file,
            and convert column "tran_date" to format "YY/MM/dd" using the
@@ -3413,8 +3413,8 @@ Contents
                i) targettimezoneid
 
            For example, the example above could be modified to use the
-           â€“targetdateformat parameter, rather than specifying the converter
-           explicitly in the value supplied to â€“sourcerecordschema, shown in the
+           –targetdateformat parameter, rather than specifying the converter
+           explicitly in the value supplied to –sourcerecordschema, shown in the
            following sample commands.
 
              su mapred
