@@ -13,13 +13,13 @@
   href: /cem/1.2.0/index.html
   display: none
 
-#- text: Concepts
+#- text: Concepts & Use Cases
 #  id: cat-concepts
 #  sub:
-#    - text: Overview
-#      href: overview/index.html
-#      id: pub-overview
-#      sub: overview/navigation.json
+
+#- text: Planning
+#  id: cat-planning
+#  sub:
 
 - text: Installation & Upgrade
   id: cat-installation-upgrade
@@ -46,16 +46,16 @@
   id: cat-howto
   sub:
     # Arpita Talukder <atalukder@cloudera.com>
+    - text: Quick Start
+      href: quick-start/index.html
+      id: pub-quick-start
+      sub: quick-start/navigation.json
+
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: MiNiFi Agent Quick Start
       href: minifi-agent-quick-start/index.html
       id: pub-minifi-agent-quick-start
       sub: minifi-agent-quick-start/navigation.json
-
-    # Arpita Talukder <atalukder@cloudera.com>
-    - text: Using CEM
-      href: using-cem/index.html
-      id: pub-using-cem
-      sub: using-cem/navigation.json
 
     # Arpita Talukder <atalukder@cloudera.com>
     - text: Getting Started
@@ -64,10 +64,20 @@
       sub: getting-started/navigation.json
 
     # Arpita Talukder <atalukder@cloudera.com>
+    - text: Using CEM
+      href: using-cem/index.html
+      id: pub-using-cem
+      sub: using-cem/navigation.json
+
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Using Agent Parameters
       href: using-agent-parameters/index.html
       id: pub-using-agent-parameters
       sub: using-agent-parameters/navigation.json
+
+#- text: Troubleshooting
+#  id: cat-troubleshooting
+#  sub:
 
 - text: Reference
   id: cat-reference
@@ -86,3 +96,7 @@
       href: release-notes/index.html
       id: pub-release-notes
       sub: release-notes/navigation.json
+
+#- text: Learning & Training
+#  id: cat-learning-training
+#  sub:

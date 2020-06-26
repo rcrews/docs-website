@@ -13,9 +13,18 @@
   href: /cem/master/index.html
   display: none
 
+#- text: Concepts & Use Cases
+#  id: cat-concepts
+#  sub:
+
+#- text: Planning
+#  id: cat-planning
+#  sub:
+
 - text: Installation & Upgrade
   id: cat-installation-upgrade
   sub:
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Installation
       href: installation/index.html
       id: pub-installation
@@ -24,14 +33,20 @@
 - text: How To
   id: cat-howto
   sub:
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Using CEM
       href: using-cem/index.html
       id: pub-using-cem
       sub: using-cem/navigation.json
 
+#- text: Troubleshooting
+#  id: cat-troubleshooting
+#  sub:
+
 - text: Reference
   id: cat-reference
   sub:
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: REST API Reference
       href: rest-api-reference/index.html
       id: pub-rest-api-reference
@@ -40,7 +55,12 @@
 - text: Release Notes
   id: cat-release-notes
   sub:
+    # Arpita Talukder <atalukder@cloudera.com>
     - text: Release Notes
       href: release-notes/index.html
       id: pub-release-notes
       sub: release-notes/navigation.json
+
+#- text: Learning & Training
+#  id: cat-learning-training
+#  sub:
