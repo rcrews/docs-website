@@ -1,0 +1,5015 @@
+{
+  "swagger" : "2.0",
+  "info" : { },
+  "basePath" : "/",
+  "tags" : [ {
+    "name" : "Alert policy operations"
+  }, {
+    "name" : "Alert notifications"
+  }, {
+    "name" : "Authentication"
+  }, {
+    "name" : "Kafka Connect operations"
+  }, {
+    "name" : "SMM debug operations"
+  }, {
+    "name" : "Brokers metadata operations"
+  }, {
+    "name" : "Cluster metadata operations"
+  }, {
+    "name" : "Consumer group related details."
+  }, {
+    "name" : "Resource configuration operations"
+  }, {
+    "name" : "v1"
+  }, {
+    "name" : "Notifier related operations"
+  }, {
+    "name" : "Search related operations"
+  }, {
+    "name" : "Topic metadata related operations"
+  }, {
+    "name" : "Topic consumption operations"
+  }, {
+    "name" : "Aggregated metric operations"
+  }, {
+    "name" : "Broker metrics operations"
+  }, {
+    "name" : "Kafka Connect metrics operations"
+  }, {
+    "name" : "Consumer metric operations"
+  }, {
+    "name" : "End to End latency metrics"
+  }, {
+    "name" : "Producer metrics operations"
+  }, {
+    "name" : "Topic metrics operations"
+  }, {
+    "name" : "Streams replication manager monitoring operations"
+  }, {
+    "name" : "Schema registry operations"
+  }, {
+    "name" : "Serdes related operations"
+  }, {
+    "name" : "Application context related operations"
+  } ],
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/api/v1/admin/alertPolicy/automata/{version}" : {
+      "get" : {
+        "tags" : [ "Alert policy operations" ],
+        "summary" : "Returns Autocomplete automata for alert policy.",
+        "description" : "",
+        "operationId" : "getAutoCompleteAutomata",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "version",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/PolicyAutoCompleteAutomata"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/alertPolicy" : {
+      "get" : {
+        "tags" : [ "Alert policy operations" ],
+        "summary" : "Get all the alert policies register.",
+        "description" : "",
+        "operationId" : "getAllAlertPolicies",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AlertPolicies"
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Alert policy operations" ],
+        "summary" : "Add an alert policy.",
+        "description" : "",
+        "operationId" : "addAlertPolicy",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/AlertPolicy"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/alertPolicy/{id}/enable" : {
+      "put" : {
+        "tags" : [ "Alert policy operations" ],
+        "summary" : "Enable an existing alert policy.",
+        "description" : "",
+        "operationId" : "enableAlertPolicy",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/alertPolicy/{id}/disable" : {
+      "put" : {
+        "tags" : [ "Alert policy operations" ],
+        "summary" : "Disable an existing alert policy.",
+        "description" : "",
+        "operationId" : "disableAlertPolicy",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/alertPolicy/{id}" : {
+      "get" : {
+        "tags" : [ "Alert policy operations" ],
+        "summary" : "Get the alert policy for a given id.",
+        "description" : "",
+        "operationId" : "getAlertPolicy",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AlertPolicy"
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Alert policy operations" ],
+        "summary" : "Update an existing alert policy.",
+        "description" : "",
+        "operationId" : "updateAlertPolicy",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/AlertPolicy"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Alert policy operations" ],
+        "summary" : "Delete an existing alert policy.",
+        "description" : "",
+        "operationId" : "deleteAlertPolicy",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/alert/notifications/entity/{entityType}/{entityName}" : {
+      "get" : {
+        "tags" : [ "Alert notifications" ],
+        "summary" : "Get the Alert notifications for the given entity type and resource name",
+        "description" : "",
+        "operationId" : "getAlertNotificationsByEntityTypeAndName",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "entityType",
+          "in" : "path",
+          "description" : "Type of the entity",
+          "required" : true,
+          "type" : "string",
+          "enum" : [ "CLUSTER", "BROKER", "TOPIC", "PRODUCER", "CONSUMER", "CLUSTER_REPLICATION", "LATENCY" ]
+        }, {
+          "name" : "entityName",
+          "in" : "path",
+          "description" : "Name of the entity",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/AlertNotificationContext"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/alert/notifications/entity/{entityType}" : {
+      "get" : {
+        "tags" : [ "Alert notifications" ],
+        "summary" : "Get all the Alert notifications for a given entity type",
+        "description" : "",
+        "operationId" : "getAlertNotificationsByEntityType",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "entityType",
+          "in" : "path",
+          "description" : "Type of the entity",
+          "required" : true,
+          "type" : "string",
+          "enum" : [ "CLUSTER", "BROKER", "TOPIC", "PRODUCER", "CONSUMER", "CLUSTER_REPLICATION", "LATENCY" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "object",
+              "additionalProperties" : {
+                "type" : "array",
+                "items" : {
+                  "$ref" : "#/definitions/AlertNotificationContext"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/alert/notifications" : {
+      "get" : {
+        "tags" : [ "Alert notifications" ],
+        "summary" : "Get the Alert notifications from the given `offset`, up to the given `limit`. If the offset is `-1`, it will return `limit` number of latest notifications, If the offset is `-2`, it will return `limit` number of earliest notifications.Default value of offset param is -1.",
+        "description" : "",
+        "operationId" : "getAlertNotifications",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "limit",
+          "in" : "query",
+          "description" : "limit value should be greater than zero",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "startOffset",
+          "in" : "query",
+          "description" : "start offset should be greater than or equal to -2 (-2 is to fetch earliest notifications/ -1 is to fetch latest notifications)",
+          "required" : false,
+          "type" : "integer",
+          "default" : -1,
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AlertNotifications"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/alert/notifications/read" : {
+      "put" : {
+        "tags" : [ "Alert notifications" ],
+        "summary" : "Mark the Alert notifications as read",
+        "description" : "",
+        "operationId" : "markAlertNotifications",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "offsets",
+          "in" : "query",
+          "description" : "notification offset",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "collectionFormat" : "multi"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/alert/notifications/unread" : {
+      "put" : {
+        "tags" : [ "Alert notifications" ],
+        "summary" : "Mark the alert notifications as unread",
+        "description" : "",
+        "operationId" : "unmarkAlertNotifications",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "offsets",
+          "in" : "query",
+          "description" : "notification offset",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "collectionFormat" : "multi"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/auth/logout" : {
+      "get" : {
+        "tags" : [ "Authentication" ],
+        "summary" : "Get the logout success",
+        "description" : "",
+        "operationId" : "logout",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AuthenticationResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/auth/login" : {
+      "post" : {
+        "tags" : [ "Authentication" ],
+        "summary" : "Get the login response",
+        "description" : "",
+        "operationId" : "login",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AuthenticationResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/auth/access" : {
+      "get" : {
+        "tags" : [ "Authentication" ],
+        "summary" : "Get the Authentication status.",
+        "description" : "",
+        "operationId" : "getAccess",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AuthenticationResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/kafka-connect/connectors" : {
+      "get" : {
+        "tags" : [ "Kafka Connect operations" ],
+        "summary" : "Get info for all configured Connectors",
+        "description" : "",
+        "operationId" : "connectors",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ConnectorsDTO"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/kafka-connect/is-configured" : {
+      "get" : {
+        "tags" : [ "Kafka Connect operations" ],
+        "summary" : "Check if Kafka Connect is configured",
+        "description" : "",
+        "operationId" : "isKafkaConnectConfigured",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/kafka-connect/connectors/{connector}" : {
+      "put" : {
+        "tags" : [ "Kafka Connect operations" ],
+        "summary" : "Create or reconfigure a Connector",
+        "description" : "",
+        "operationId" : "configureConnector",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "connector",
+          "in" : "path",
+          "description" : "Connector name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "object"
+            }
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Kafka Connect operations" ],
+        "summary" : "Delete a Connector",
+        "description" : "",
+        "operationId" : "deleteConnector",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "connector",
+          "in" : "path",
+          "description" : "Connector name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/kafka-connect/connector-plugins/{connector}/config/validate" : {
+      "put" : {
+        "tags" : [ "Kafka Connect operations" ],
+        "summary" : "Validate Connector Configuration",
+        "description" : "",
+        "operationId" : "validateConfig",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "connector",
+          "in" : "path",
+          "description" : "Connector name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "object"
+            }
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/kafka-connect/connectors/{connector}/{operation}" : {
+      "post" : {
+        "tags" : [ "Kafka Connect operations" ],
+        "summary" : "Pause, resume, or restart a Connector",
+        "description" : "",
+        "operationId" : "connectorOperation",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "connector",
+          "in" : "path",
+          "description" : "Connector name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "operation",
+          "in" : "path",
+          "description" : "Operation",
+          "required" : true,
+          "type" : "string",
+          "enum" : [ "RESTART", "PAUSE", "RESUME" ]
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/kafka-connect/connectors/{connector}/tasks/{task}/{operation}" : {
+      "post" : {
+        "tags" : [ "Kafka Connect operations" ],
+        "summary" : "Restart a Task",
+        "description" : "",
+        "operationId" : "taskOperation",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "connector",
+          "in" : "path",
+          "description" : "Connector name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "task",
+          "in" : "path",
+          "description" : "Task id",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "operation",
+          "in" : "path",
+          "description" : "Operation",
+          "required" : true,
+          "type" : "string",
+          "enum" : [ "RESTART" ]
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/kafka-connect/connector-plugins" : {
+      "get" : {
+        "tags" : [ "Kafka Connect operations" ],
+        "summary" : "Return a list of connector plugins installed in the Kafka Connect cluster",
+        "description" : "",
+        "operationId" : "pluginConnectors",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ConnectorPluginDTO"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/kafka-connect/connector-plugins/{connector}/config/sample" : {
+      "get" : {
+        "tags" : [ "Kafka Connect operations" ],
+        "summary" : "Return a sample configuration of a connector plugin",
+        "description" : "",
+        "operationId" : "pluginConfigSample",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "connector",
+          "in" : "path",
+          "description" : "Connector name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/SamplePluginConfig"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/debug/alert/attributeValue" : {
+      "get" : {
+        "tags" : [ "SMM debug operations" ],
+        "summary" : "Get alert resource attribute value",
+        "description" : "",
+        "operationId" : "getAttributeValue",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "entity",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "attribute",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "name",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "operator",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "value",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ResourceAttribute"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/brokers" : {
+      "get" : {
+        "tags" : [ "Brokers metadata operations" ],
+        "summary" : "Returns all broker nodes in the cluster with the given brokerIds if they exist.",
+        "description" : "",
+        "operationId" : "getBrokers",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "brokerIds",
+          "in" : "query",
+          "description" : "Comma separated broker identifiers",
+          "required" : false,
+          "type" : "string",
+          "x-example" : "1001,1002"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/BrokerNode"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/brokers/{brokerId}" : {
+      "get" : {
+        "tags" : [ "Brokers metadata operations" ],
+        "summary" : "Returns broker node in the cluster with the given broker Id.",
+        "description" : "",
+        "operationId" : "getBroker",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "brokerId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/BrokerNode"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/cluster" : {
+      "get" : {
+        "tags" : [ "Cluster metadata operations" ],
+        "summary" : "Get the kafka cluster details to which this service is connected to.",
+        "description" : "",
+        "operationId" : "getClusterDetails",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/KafkaClusterInfo"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/consumers/groups" : {
+      "get" : {
+        "tags" : [ "Consumer group related details." ],
+        "summary" : "Get all consumer group details.",
+        "description" : "",
+        "operationId" : "getConsumerGroups",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "state",
+          "in" : "query",
+          "description" : "State of the Consumer Group",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "active", "inactive", "all" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ConsumerGroupInfo"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/consumers/groupNames" : {
+      "get" : {
+        "tags" : [ "Consumer group related details." ],
+        "summary" : "Get all consumer group names.",
+        "description" : "",
+        "operationId" : "getConsumerGroupNames",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/consumers/groups/{groupName}" : {
+      "get" : {
+        "tags" : [ "Consumer group related details." ],
+        "summary" : "Get consumer group details for the given groupName `groupName`.",
+        "description" : "",
+        "operationId" : "getConsumerGroupInfo",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "groupName",
+          "in" : "path",
+          "description" : "Name of the consumer group",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ConsumerGroupInfo"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/consumers/clients" : {
+      "get" : {
+        "tags" : [ "Consumer group related details." ],
+        "summary" : "Get consumer group details for all clients.",
+        "description" : "",
+        "operationId" : "getAllConsumerInfo",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ConsumerInfo"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/consumers/clients/{clientId}" : {
+      "get" : {
+        "tags" : [ "Consumer group related details." ],
+        "summary" : "Get consumer group details for a given clientId.",
+        "description" : "",
+        "operationId" : "getConsumerInfo",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "clientId",
+          "in" : "path",
+          "description" : "Consumer client identifier",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ConsumerInfo"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/configs/brokers/{brokerId}" : {
+      "get" : {
+        "tags" : [ "Resource configuration operations" ],
+        "summary" : "Get kafka configurations for the given brokerId.",
+        "description" : "",
+        "operationId" : "getBrokerDetails",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "brokerId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/KafkaResourceConfig"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/configs/topics/{topicName}" : {
+      "get" : {
+        "tags" : [ "Resource configuration operations" ],
+        "summary" : "Get kafka configurations for a topic with given topicName.",
+        "description" : "",
+        "operationId" : "getTopicConfigs",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/KafkaResourceConfig"
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Resource configuration operations" ],
+        "summary" : "Alter Topic configurations for the given topicName.",
+        "description" : "",
+        "operationId" : "alterTopicConfigs",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "string"
+            }
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/configs/topics" : {
+      "get" : {
+        "tags" : [ "Resource configuration operations" ],
+        "summary" : "Get kafka configurations for all topics.",
+        "description" : "",
+        "operationId" : "getAllTopicConfigs",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/KafkaResourceConfig"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/configs/default/topics" : {
+      "get" : {
+        "tags" : [ "Resource configuration operations" ],
+        "summary" : "Get default kafka topic configuration",
+        "description" : "",
+        "operationId" : "getDefaultTopicConfigs",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/KafkaResourceConfigEntry"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/configs/brokers" : {
+      "get" : {
+        "tags" : [ "Resource configuration operations" ],
+        "summary" : "Get kafka configurations for the given brokerIds. if brokerIds parameter does not have any value then configuration for all brokers is returned.",
+        "description" : "",
+        "operationId" : "getAllBrokerDetails",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/KafkaResourceConfig"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/notifiers" : {
+      "get" : {
+        "tags" : [ "Notifier related operations" ],
+        "summary" : "List of added notifiers",
+        "description" : "",
+        "operationId" : "listNotifiers",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/NotifierConfiguration"
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Notifier related operations" ],
+        "summary" : "Creates Notifier for the given NotifierConfiguration",
+        "description" : "",
+        "operationId" : "createNotifier",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/NotifierConfiguration"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/notifiers/providerConfigs" : {
+      "get" : {
+        "tags" : [ "Notifier related operations" ],
+        "summary" : "This API return map of notifier provider id with respective configuration fields. This  is useful in understanding what kind of information is required for creating different notifiers.",
+        "description" : "",
+        "operationId" : "getNotifierProviderConfigs",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/NotifierConfigTemplates"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/notifiers/{notifierId}" : {
+      "get" : {
+        "tags" : [ "Notifier related operations" ],
+        "summary" : "Notifier configuration for the given notifierId",
+        "description" : "",
+        "operationId" : "getNotifier",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "notifierId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/NotifierConfiguration"
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Notifier related operations" ],
+        "summary" : "Updates Notifier for the given NotifierConfiguration with notifierId",
+        "description" : "",
+        "operationId" : "updateNotifier",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "notifierId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/NotifierConfiguration"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Notifier related operations" ],
+        "summary" : "Deletes Notifier for the given notifierId",
+        "description" : "",
+        "operationId" : "deleteNotifier",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "notifierId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/search/topics" : {
+      "get" : {
+        "tags" : [ "Search related operations" ],
+        "summary" : "Get respective details for given topicNames.",
+        "description" : "",
+        "operationId" : "getTopicDetails",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicNames",
+          "in" : "query",
+          "description" : "Comma separated topic names",
+          "required" : false,
+          "type" : "string",
+          "x-example" : "topic1, topic2"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/TopicInfo"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/search/topicPartitions" : {
+      "get" : {
+        "tags" : [ "Search related operations" ],
+        "summary" : "Get a list of topic partitions with respective details for the given collection of topicPartitions which exist in target Kafka cluster.",
+        "description" : "",
+        "operationId" : "getTopicPartitionInfos",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "partitions",
+          "in" : "query",
+          "description" : "Comma separated topic partition values",
+          "required" : false,
+          "type" : "string",
+          "x-example" : "events-1, events-2, events-9"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TopicPartitionInfos"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/search/configs/topics" : {
+      "get" : {
+        "tags" : [ "Search related operations" ],
+        "summary" : "Get kafka configurations at topic level for given topicNames",
+        "description" : "",
+        "operationId" : "getTopicConfigs_1",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicNames",
+          "in" : "query",
+          "description" : "Comma separated topic names",
+          "required" : false,
+          "type" : "string",
+          "x-example" : "topic1, topic2"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/KafkaResourceConfig"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/search/configs/brokers" : {
+      "get" : {
+        "tags" : [ "Search related operations" ],
+        "summary" : "Get kafka configurations for the given brokerIds.",
+        "description" : "",
+        "operationId" : "getBrokerConfigs",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "brokerIds",
+          "in" : "query",
+          "description" : "Comma separated broker identifiers",
+          "required" : false,
+          "type" : "string",
+          "x-example" : "1001, 1002"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/KafkaResourceConfig"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/search/brokers" : {
+      "get" : {
+        "tags" : [ "Search related operations" ],
+        "summary" : "Returns broker nodes in the cluster with the given brokerIds if they exist.",
+        "description" : "",
+        "operationId" : "getBrokers_1",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "brokerIds",
+          "in" : "query",
+          "description" : "Comma separated broker identifiers",
+          "required" : false,
+          "type" : "string",
+          "x-example" : "1001, 1002"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/BrokerNode"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/topics" : {
+      "get" : {
+        "tags" : [ "Topic metadata related operations" ],
+        "summary" : "Get respective details for all the topics. ",
+        "description" : "",
+        "operationId" : "allTopicInfos",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/TopicInfo"
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Topic metadata related operations" ],
+        "summary" : "Create topics",
+        "description" : "",
+        "operationId" : "createTopics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/NewTopics"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Topic metadata related operations" ],
+        "summary" : "Alter topic partitions",
+        "description" : "",
+        "operationId" : "createPartitions",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/NewTopicPartitions"
+          }
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Topic metadata related operations" ],
+        "summary" : "Delete topics",
+        "description" : "",
+        "operationId" : "deleteTopics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "query",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          },
+          "collectionFormat" : "multi"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/topics/{topicName}" : {
+      "get" : {
+        "tags" : [ "Topic metadata related operations" ],
+        "summary" : "Get respective details about topic with the given `topicName`",
+        "description" : "",
+        "operationId" : "getTopicInfo",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TopicInfo"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/topics/{topicName}/partitions" : {
+      "get" : {
+        "tags" : [ "Topic metadata related operations" ],
+        "summary" : "Get respective partitions for the given topic with topicName",
+        "description" : "",
+        "operationId" : "getTopicPartitions",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/TopicPartitionInfo"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/topics/{topicName}/partition/{partitionId}/payloads" : {
+      "get" : {
+        "tags" : [ "Topic consumption operations" ],
+        "summary" : "Get topic content for a given topic, its partition and the offset range with in the partition",
+        "description" : "",
+        "operationId" : "getTopicContent",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "partitionId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "startOffset",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "endOffset",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "keyDeserializer",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "valueDeserializer",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "responseWaitTimeInMs",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TopicContent"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/topics/{topicName}/offsets" : {
+      "get" : {
+        "tags" : [ "Topic consumption operations" ],
+        "summary" : "Get offsets for all the partition for a given kafka topic name",
+        "description" : "",
+        "operationId" : "getTopicOffsets",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TopicOffsetInfo"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/aggregated/topics/{topicName}" : {
+      "get" : {
+        "tags" : [ "Aggregated metric operations" ],
+        "summary" : "Get topic metrics for the given topic",
+        "description" : "",
+        "operationId" : "getTopicMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "description" : "Name of the topic",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "state",
+          "in" : "query",
+          "description" : "State of the Client",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "active", "inactive", "all" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AggrTopicMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/aggregated/groups/{groupName}" : {
+      "get" : {
+        "tags" : [ "Aggregated metric operations" ],
+        "summary" : "Get consumer group details for the given groupName.",
+        "description" : "",
+        "operationId" : "getConsumerGroupMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "groupName",
+          "in" : "path",
+          "description" : "Name of the consumer group",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "requireTimelineMetrics",
+          "in" : "query",
+          "description" : "Whether to fetch timeline metrics",
+          "required" : false,
+          "type" : "boolean"
+        }, {
+          "name" : "state",
+          "in" : "query",
+          "description" : "State of the Producer",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "active", "inactive", "all" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AggrConsumerMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/aggregated/producers/{producerClientId}" : {
+      "get" : {
+        "tags" : [ "Aggregated metric operations" ],
+        "summary" : "Get producer metrics for the given producerClientId",
+        "description" : "",
+        "operationId" : "getProducerMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "producerClientId",
+          "in" : "path",
+          "description" : "Producer client identifier",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/AggrProducerMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/aggregated/topics" : {
+      "get" : {
+        "tags" : [ "Aggregated metric operations" ],
+        "summary" : "Get cluster with topic metrics",
+        "description" : "",
+        "operationId" : "getClusterWithTopicMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "state",
+          "in" : "query",
+          "description" : "State of the Client",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "active", "inactive", "all" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ClusterWithTopicMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/aggregated/brokers" : {
+      "get" : {
+        "tags" : [ "Aggregated metric operations" ],
+        "summary" : "Get cluster with broker metrics",
+        "description" : "",
+        "operationId" : "getClusterWithBrokerMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ClusterWithBrokerMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/aggregated/brokers/{brokerId}" : {
+      "get" : {
+        "tags" : [ "Aggregated metric operations" ],
+        "summary" : "Get broker details with metrics for a given brokerId",
+        "description" : "",
+        "operationId" : "getBrokerDetails_1",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "brokerId",
+          "in" : "path",
+          "description" : "Broker setId",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/BrokerDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/aggregated/producers" : {
+      "get" : {
+        "tags" : [ "Aggregated metric operations" ],
+        "summary" : "Get producer metrics for all the alive producers",
+        "description" : "",
+        "operationId" : "getAllProducerMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "state",
+          "in" : "query",
+          "description" : "State of the Client",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "active", "inactive", "all" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/AggrProducerMetrics"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/aggregated/groups" : {
+      "get" : {
+        "tags" : [ "Aggregated metric operations" ],
+        "summary" : "Get all consumer group details.",
+        "description" : "",
+        "operationId" : "getAllConsumerGroupMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "requireTimelineMetrics",
+          "in" : "query",
+          "description" : "Whether to fetch timeline metrics",
+          "required" : false,
+          "type" : "boolean"
+        }, {
+          "name" : "state",
+          "in" : "query",
+          "description" : "State of the Client",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "active", "inactive", "all" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/AggrConsumerMetrics"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/brokers/{brokerId}" : {
+      "get" : {
+        "tags" : [ "Broker metrics operations" ],
+        "summary" : "Get broker metrics for given brokerId.",
+        "description" : "",
+        "operationId" : "getBrokerMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "brokerId",
+          "in" : "path",
+          "description" : "Broker identifier",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/BrokerMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/connect/workers" : {
+      "get" : {
+        "tags" : [ "Kafka Connect metrics operations" ],
+        "summary" : "Get worker level metrics for the given connector.",
+        "description" : "",
+        "operationId" : "getConnectWorkerMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ConnectWorkerMetrics"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/connect/source/{connectorName}/{taskId}" : {
+      "get" : {
+        "tags" : [ "Kafka Connect metrics operations" ],
+        "summary" : "Get task level metrics for the given connector.",
+        "description" : "",
+        "operationId" : "getSourceConnectorTaskMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "connectorName",
+          "in" : "path",
+          "description" : "Name of the connector",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "taskId",
+          "in" : "path",
+          "description" : "Task Id",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/SourceConnectorTaskMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/connect/sink/{connectorName}/{taskId}" : {
+      "get" : {
+        "tags" : [ "Kafka Connect metrics operations" ],
+        "summary" : "Get task level metrics for the given connector.",
+        "description" : "",
+        "operationId" : "getSinkConnectorTaskMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "connectorName",
+          "in" : "path",
+          "description" : "Name of the connector",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "taskId",
+          "in" : "path",
+          "description" : "Task Id",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/SinkConnectorTaskMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/consumers/group/{groupId}" : {
+      "get" : {
+        "tags" : [ "Consumer metric operations" ],
+        "summary" : "Get timeline metrics for a consumer group. This will return per partition metrics for a consumer group.",
+        "description" : "",
+        "operationId" : "getConsumerGroupMetrics_1",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "groupId",
+          "in" : "path",
+          "description" : "Consumer group identifier",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "skipPartitionMetrics",
+          "in" : "query",
+          "description" : "Whether to skip partition metrics",
+          "required" : false,
+          "type" : "boolean"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ConsumerGroupMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/etelatency/{topicName}" : {
+      "get" : {
+        "tags" : [ "End to End latency metrics" ],
+        "summary" : "Get the end to end latency metrics for the given topic across all intercepted consumer groups.",
+        "description" : "",
+        "operationId" : "getConsumerMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "description" : "Topic to query about",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "granularity",
+          "in" : "query",
+          "description" : "Granularity to aggregate the metrics with",
+          "required" : false,
+          "type" : "string",
+          "default" : "THIRTY_SECS",
+          "enum" : [ "THIRTY_SECS", "FIFTEEN_MINUTE" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ETELatencyMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/etelatency/{topicName}/groups/{groupId}" : {
+      "get" : {
+        "tags" : [ "End to End latency metrics" ],
+        "summary" : "Get the end to end latency metrics under the given consumer group Id for the given topic.",
+        "description" : "",
+        "operationId" : "getConsumerMetricsByGroup",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "description" : "Topic to query about",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "groupId",
+          "in" : "path",
+          "description" : "Consumer Group Id queried for",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "granularity",
+          "in" : "query",
+          "description" : "Granularity to aggregate the metrics with",
+          "required" : false,
+          "type" : "string",
+          "default" : "THIRTY_SECS",
+          "enum" : [ "THIRTY_SECS", "FIFTEEN_MINUTE" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ETELatencyMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/etelatency/{topicName}/partitions/{partitionNum}/groups/{groupId}" : {
+      "get" : {
+        "tags" : [ "End to End latency metrics" ],
+        "summary" : "Get the end to end latency metrics under a given consumer group for the given partition and topic.",
+        "description" : "",
+        "operationId" : "getConsumerMetricsByPartition",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "description" : "Topic to query about",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "partitionNum",
+          "in" : "path",
+          "description" : "Partition to query about",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "groupId",
+          "in" : "path",
+          "description" : "Consumer Group Id queried for",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "granularity",
+          "in" : "query",
+          "description" : "Granularity to aggregate the metrics with",
+          "required" : false,
+          "type" : "string",
+          "default" : "THIRTY_SECS",
+          "enum" : [ "THIRTY_SECS", "FIFTEEN_MINUTE" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ETELatencyMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/etelatency/{topicName}/groups/{groupId}/clients/{clientId}" : {
+      "get" : {
+        "tags" : [ "End to End latency metrics" ],
+        "summary" : "Get the end to end latency metrics under a given consumer group for the given clientId and topic.",
+        "description" : "",
+        "operationId" : "getConsumerMetricsByClientId",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "description" : "Topic to query about",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "groupId",
+          "in" : "path",
+          "description" : "Consumer Group Id queried for",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "clientId",
+          "in" : "path",
+          "description" : "Client Id queried for",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "granularity",
+          "in" : "query",
+          "description" : "Granularity to aggregate the metrics with",
+          "required" : false,
+          "type" : "string",
+          "default" : "THIRTY_SECS",
+          "enum" : [ "THIRTY_SECS", "FIFTEEN_MINUTE" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ETELatencyMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/etelatency/{topicName}/partitions/{partitionNum}/groups/{groupId}/clients/{clientId}" : {
+      "get" : {
+        "tags" : [ "End to End latency metrics" ],
+        "summary" : "Get the end to end latency metrics of a client under a given consumer group for the given partition and topic.",
+        "description" : "",
+        "operationId" : "getConsumerMetricsByClientPartition",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "description" : "Topic to query about",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "partitionNum",
+          "in" : "path",
+          "description" : "Partition to query about",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "groupId",
+          "in" : "path",
+          "description" : "Consumer Group Id queried for",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "clientId",
+          "in" : "path",
+          "description" : "Client Id queried for",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "granularity",
+          "in" : "query",
+          "description" : "Granularity to aggregate the metrics with",
+          "required" : false,
+          "type" : "string",
+          "default" : "THIRTY_SECS",
+          "enum" : [ "THIRTY_SECS", "FIFTEEN_MINUTE" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ETELatencyMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/producers/{producerClientId}" : {
+      "get" : {
+        "tags" : [ "Producer metrics operations" ],
+        "summary" : "Get producer metrics for the given producerClientId",
+        "description" : "",
+        "operationId" : "getProducerMetrics_1",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "producerClientId",
+          "in" : "path",
+          "description" : "Producer client identifier",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ProducerMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/producers" : {
+      "get" : {
+        "tags" : [ "Producer metrics operations" ],
+        "summary" : "Get producer metrics for all the alive producers",
+        "description" : "",
+        "operationId" : "getAllProducerMetrics_1",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "state",
+          "in" : "query",
+          "description" : "State of the Producer",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "active", "inactive", "all" ]
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ProducerMetrics"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/topics/{topicName}" : {
+      "get" : {
+        "tags" : [ "Topic metrics operations" ],
+        "summary" : "Get topic metrics for the given topic.",
+        "description" : "",
+        "operationId" : "getTopicMetrics_1",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "description" : "Name of the topic",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TopicMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics/topics/{topicName}/{partitionNum}" : {
+      "get" : {
+        "tags" : [ "Topic metrics operations" ],
+        "summary" : "Get topic-partition metrics for the given topic-partition.",
+        "description" : "",
+        "operationId" : "getTopicPartitionMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "description" : "Name of the topic",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "partitionNum",
+          "in" : "path",
+          "description" : "Partition number",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Pre-defined Time duration. Supply either 'duration' [OR] 'from' & 'to' params",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        }, {
+          "name" : "from",
+          "in" : "query",
+          "description" : "Beginning of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "End of the time period. Provide '-1' to fetch the latest value",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TopicPartitionMetrics"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/replication-stats/is-configured" : {
+      "get" : {
+        "tags" : [ "Streams replication manager monitoring operations" ],
+        "summary" : "Check if streams replication manager is configured",
+        "description" : "",
+        "operationId" : "isStreamsReplicationManagerConfigured",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/replication-stats" : {
+      "get" : {
+        "tags" : [ "Streams replication manager monitoring operations" ],
+        "summary" : "Get replication stats for all the streams that are being replicated",
+        "description" : "",
+        "operationId" : "clusterReplicationStats",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Time span",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ClusterReplicationStatsDTO"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/replication-stats/{source}/topics" : {
+      "get" : {
+        "tags" : [ "Streams replication manager monitoring operations" ],
+        "summary" : "Get all the topic replication stats for a given source cluster",
+        "description" : "",
+        "operationId" : "topicReplicationStats",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "source",
+          "in" : "path",
+          "description" : "Source name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Time span",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TopicReplicationStatsDTO"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/replication-stats/topics/{topic}" : {
+      "get" : {
+        "tags" : [ "Streams replication manager monitoring operations" ],
+        "summary" : "Get all the timeline metrics for a given topic",
+        "description" : "",
+        "operationId" : "topicTimelineMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topic",
+          "in" : "path",
+          "description" : "Topic name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Time span",
+          "required" : false,
+          "type" : "string",
+          "enum" : [ "LAST_THIRTY_MINUTES", "LAST_ONE_HOUR", "LAST_SIX_HOURS", "LAST_ONE_DAY", "LAST_TWO_DAYS", "LAST_ONE_WEEK", "LAST_THIRTY_DAYS" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TopicTimelineMetricsDTO"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/schemas/topics/{topicName}/keySchema/versions" : {
+      "get" : {
+        "tags" : [ "Schema registry operations" ],
+        "summary" : "Get schema versions for the given kafka topic name",
+        "description" : "",
+        "operationId" : "getKeySchemaVersionInfos",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/SchemaVersionInfo"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/schemas/topics/{topicName}/valueSchema/versions" : {
+      "get" : {
+        "tags" : [ "Schema registry operations" ],
+        "summary" : "Get schema versions for the given kafka topic name",
+        "description" : "",
+        "operationId" : "getValueSchemaVersionInfos",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/SchemaVersionInfo"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/schemas/topics/{topicName}/schema/mapping" : {
+      "get" : {
+        "tags" : [ "Schema registry operations" ],
+        "summary" : "Schema mapping for a given kafka topic name",
+        "description" : "",
+        "operationId" : "getSchemaMetaForTopic",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/TopicSchemaMapping"
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Schema registry operations" ],
+        "summary" : "Register a schema name for a kafka topic name",
+        "description" : "",
+        "operationId" : "registerTopicSchemaMeta",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "topicName",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/TopicSchemaMapping"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "integer",
+              "format" : "int64"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/schemas/registryInfo" : {
+      "get" : {
+        "tags" : [ "Schema registry operations" ],
+        "summary" : "Get the information about schema registry",
+        "description" : "",
+        "operationId" : "getSchemaRegistryInfo",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/SchemaRegistryInfo"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/serdes" : {
+      "get" : {
+        "tags" : [ "Serdes related operations" ],
+        "summary" : "List of supported serdes",
+        "description" : "",
+        "operationId" : "getSupportedSerdes",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/SerdesMappings"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/version" : {
+      "get" : {
+        "tags" : [ "Application context related operations" ],
+        "summary" : "Returns version of SMM service",
+        "description" : "",
+        "operationId" : "getSMMVersion",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/SMMVersion"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "PolicyAutoCompleteAutomata" : {
+      "type" : "object",
+      "properties" : {
+        "version" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "AlertPolicies" : {
+      "type" : "object",
+      "properties" : {
+        "alertPolicies" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/AlertPolicy"
+          }
+        },
+        "policyHints" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/PolicyHint"
+          }
+        }
+      }
+    },
+    "AlertPolicy" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "enabled" : {
+          "type" : "boolean"
+        },
+        "version" : {
+          "type" : "integer",
+          "format" : "int32",
+          "minimum" : 1
+        },
+        "policy" : {
+          "type" : "string"
+        },
+        "executionIntervalInMillis" : {
+          "type" : "integer",
+          "format" : "int64",
+          "minimum" : 1
+        },
+        "executionDelayInMillis" : {
+          "type" : "integer",
+          "format" : "int64",
+          "minimum" : 1
+        },
+        "notifierIds" : {
+          "type" : "array",
+          "items" : {
+            "type" : "integer",
+            "format" : "int64"
+          },
+          "maxItems" : 2147483647,
+          "minItems" : 1
+        },
+        "timestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "PolicyHint" : {
+      "type" : "object"
+    },
+    "AlertNotificationContext" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "payload" : {
+          "type" : "string"
+        },
+        "headers" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object"
+          }
+        },
+        "alertPolicyId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "alertName" : {
+          "type" : "string"
+        },
+        "notifierInstanceIds" : {
+          "type" : "array",
+          "items" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "rootResource" : {
+          "$ref" : "#/definitions/Resource"
+        },
+        "resolvedResources" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Resource"
+          }
+        },
+        "state" : {
+          "type" : "string",
+          "enum" : [ "RAISED", "CLEARED" ]
+        },
+        "createTimestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "updateTimestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "Resource" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string",
+          "enum" : [ "CLUSTER", "BROKER", "TOPIC", "PRODUCER", "CONSUMER", "CLUSTER_REPLICATION", "LATENCY" ]
+        },
+        "name" : {
+          "type" : "string"
+        }
+      }
+    },
+    "AlertNotifications" : {
+      "type" : "object",
+      "properties" : {
+        "notifications" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/DefaultNotificationContextWrapper"
+          }
+        },
+        "nextOffset" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "previousOffset" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "DefaultNotificationContextWrapper" : {
+      "type" : "object",
+      "properties" : {
+        "notificationContext" : {
+          "readOnly" : true,
+          "$ref" : "#/definitions/AlertNotificationContext"
+        },
+        "marked" : {
+          "type" : "boolean",
+          "readOnly" : true
+        }
+      }
+    },
+    "AuthenticationResponse" : {
+      "type" : "object",
+      "properties" : {
+        "response" : {
+          "type" : "string",
+          "readOnly" : true
+        },
+        "user" : {
+          "type" : "string",
+          "readOnly" : true
+        }
+      }
+    },
+    "ConnectorDTO" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "config" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object"
+          }
+        },
+        "tasks" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/TaskDTO"
+          }
+        },
+        "state" : {
+          "type" : "string",
+          "enum" : [ "UNASSIGNED", "RUNNING", "PAUSED", "FAILED" ]
+        },
+        "workerId" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ConnectorsDTO" : {
+      "type" : "object",
+      "properties" : {
+        "connectors" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/ConnectorDTO"
+          }
+        }
+      }
+    },
+    "TaskDTO" : {
+      "type" : "object",
+      "properties" : {
+        "workerId" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string",
+          "enum" : [ "UNASSIGNED", "RUNNING", "PAUSED", "FAILED" ]
+        },
+        "trace" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ConnectorPluginDTO" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "version" : {
+          "type" : "string"
+        },
+        "class" : {
+          "type" : "string",
+          "readOnly" : true
+        }
+      }
+    },
+    "SamplePluginConfig" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "readOnly" : true
+        },
+        "config" : {
+          "type" : "object",
+          "readOnly" : true,
+          "additionalProperties" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "ResourceAttribute" : {
+      "type" : "object"
+    },
+    "BrokerNode" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "host" : {
+          "type" : "string"
+        },
+        "port" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "rack" : {
+          "type" : "string"
+        },
+        "isController" : {
+          "type" : "boolean",
+          "readOnly" : true
+        }
+      }
+    },
+    "KafkaClusterInfo" : {
+      "type" : "object",
+      "properties" : {
+        "brokerNodes" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/BrokerNode"
+          }
+        },
+        "controller" : {
+          "$ref" : "#/definitions/BrokerNode"
+        },
+        "clusterId" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ConsumerGroupInfo" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "active" : {
+          "type" : "boolean"
+        },
+        "topicPartitionAssignments" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "$ref" : "#/definitions/PartitionAssignment"
+            }
+          }
+        }
+      }
+    },
+    "PartitionAssignment" : {
+      "type" : "object",
+      "properties" : {
+        "lag" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "offset" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "logEndOffset" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "consumerInstanceId" : {
+          "type" : "string"
+        },
+        "clientId" : {
+          "type" : "string"
+        },
+        "host" : {
+          "type" : "string"
+        },
+        "commitTimestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "ConsumerInfo" : {
+      "type" : "object",
+      "properties" : {
+        "clientId" : {
+          "type" : "string"
+        },
+        "consumerPartitionInfos" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ConsumerPartitionInfo"
+          }
+        }
+      }
+    },
+    "ConsumerPartitionInfo" : {
+      "type" : "object",
+      "properties" : {
+        "groupId" : {
+          "type" : "string",
+          "readOnly" : true
+        },
+        "topicPartitionOffsets" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "$ref" : "#/definitions/ConsumerPartitionOffsetInfo"
+            }
+          }
+        }
+      }
+    },
+    "ConsumerPartitionOffsetInfo" : {
+      "type" : "object",
+      "properties" : {
+        "offset" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "lag" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "commitTimestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "ConfigSynonym" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        },
+        "source" : {
+          "type" : "string",
+          "enum" : [ "DYNAMIC_TOPIC_CONFIG", "DYNAMIC_BROKER_LOGGER_CONFIG", "DYNAMIC_BROKER_CONFIG", "DYNAMIC_DEFAULT_BROKER_CONFIG", "STATIC_BROKER_CONFIG", "DEFAULT_CONFIG", "UNKNOWN" ]
+        }
+      }
+    },
+    "KafkaResourceConfig" : {
+      "type" : "object",
+      "properties" : {
+        "resourceType" : {
+          "type" : "string"
+        },
+        "resourceName" : {
+          "type" : "string"
+        },
+        "resourceConfigs" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/KafkaResourceConfigEntry"
+          }
+        }
+      }
+    },
+    "KafkaResourceConfigEntry" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        },
+        "source" : {
+          "type" : "string",
+          "enum" : [ "DYNAMIC_TOPIC_CONFIG", "DYNAMIC_BROKER_LOGGER_CONFIG", "DYNAMIC_BROKER_CONFIG", "DYNAMIC_DEFAULT_BROKER_CONFIG", "STATIC_BROKER_CONFIG", "DEFAULT_CONFIG", "UNKNOWN" ]
+        },
+        "synonyms" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ConfigSynonym"
+          }
+        },
+        "validValues" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "type" : {
+          "type" : "string",
+          "enum" : [ "BOOLEAN", "INT", "LONG", "DOUBLE", "FLOAT", "BINARY", "CHAR", "STRING", "COMPLEX" ]
+        },
+        "isSensitive" : {
+          "type" : "boolean",
+          "readOnly" : true
+        },
+        "isDefault" : {
+          "type" : "boolean",
+          "readOnly" : true
+        },
+        "isReadOnly" : {
+          "type" : "boolean",
+          "readOnly" : true
+        }
+      }
+    },
+    "NotifierConfiguration" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "notifierProviderId" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "config" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object"
+          }
+        },
+        "rateLimiterConfig" : {
+          "$ref" : "#/definitions/RateLimiterConfig"
+        }
+      }
+    },
+    "RateLimiterConfig" : {
+      "type" : "object",
+      "properties" : {
+        "count" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "duration" : {
+          "type" : "string",
+          "enum" : [ "SECOND", "MINUTE", "HOUR", "DAY" ]
+        }
+      }
+    },
+    "ConfigField" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "displayName" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string",
+          "enum" : [ "BOOLEAN", "INT", "LONG", "DOUBLE", "FLOAT", "BINARY", "CHAR", "STRING", "COMPLEX" ]
+        },
+        "defaultValue" : {
+          "type" : "object"
+        },
+        "mandatory" : {
+          "type" : "boolean"
+        },
+        "advanced" : {
+          "type" : "boolean"
+        },
+        "hideValue" : {
+          "type" : "boolean"
+        }
+      }
+    },
+    "NotifierConfigTemplates" : {
+      "type" : "object",
+      "properties" : {
+        "entries" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/ConfigField"
+            }
+          }
+        }
+      }
+    },
+    "TopicInfo" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "internal" : {
+          "type" : "boolean",
+          "readOnly" : true
+        },
+        "partitions" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/TopicPartitionInfo"
+          }
+        }
+      }
+    },
+    "TopicPartitionInfo" : {
+      "type" : "object",
+      "properties" : {
+        "partition" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "leader" : {
+          "$ref" : "#/definitions/BrokerNode"
+        },
+        "replicas" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/BrokerNode"
+          }
+        },
+        "isr" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/BrokerNode"
+          }
+        }
+      }
+    },
+    "TopicPartitionInfos" : {
+      "type" : "object",
+      "properties" : {
+        "entries" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/TopicPartitionInfo"
+            }
+          }
+        }
+      }
+    },
+    "NewTopic" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "numPartitions" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "replicationFactor" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "configs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "NewTopics" : {
+      "type" : "object",
+      "properties" : {
+        "newTopics" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/NewTopic"
+          }
+        },
+        "allTopicNames" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "NewPartitions" : {
+      "type" : "object",
+      "properties" : {
+        "totalCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "newAssignments" : {
+          "type" : "array",
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "type" : "integer",
+              "format" : "int32"
+            }
+          }
+        }
+      }
+    },
+    "NewTopicPartitions" : {
+      "type" : "object",
+      "properties" : {
+        "topicWithNewPartitions" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/NewPartitions"
+          }
+        }
+      }
+    },
+    "TopicContent" : {
+      "type" : "object",
+      "properties" : {
+        "keySchemaName" : {
+          "type" : "string"
+        },
+        "valueSchemaName" : {
+          "type" : "string"
+        },
+        "offsetToRecordMap" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/TopicRecord"
+          }
+        }
+      }
+    },
+    "TopicRecord" : {
+      "type" : "object",
+      "properties" : {
+        "key" : {
+          "type" : "object"
+        },
+        "value" : {
+          "type" : "object"
+        },
+        "timestampType" : {
+          "type" : "string",
+          "enum" : [ "NO_TIMESTAMP_TYPE", "CREATE_TIME", "LOG_APPEND_TIME" ]
+        },
+        "timestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "PartitionOffsetInfo" : {
+      "type" : "object",
+      "properties" : {
+        "partitionId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "startOffset" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "endOffset" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "TopicOffsetInfo" : {
+      "type" : "object",
+      "properties" : {
+        "partitionOffsetInfos" : {
+          "type" : "array",
+          "readOnly" : true,
+          "items" : {
+            "$ref" : "#/definitions/PartitionOffsetInfo"
+          }
+        }
+      }
+    },
+    "AggrTopicMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "messagesInCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "bytesInCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "bytesOutCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "partitionMetrics" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/WrappedTopicPartitionMetrics"
+          }
+        },
+        "retentionMs" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "topicSummary" : {
+          "$ref" : "#/definitions/TopicSummary"
+        }
+      }
+    },
+    "AggrTopicPartitionMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "partitionInfo" : {
+          "$ref" : "#/definitions/TopicPartitionInfo"
+        },
+        "messagesInCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "bytesInCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "bytesOutCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "TopicSummary" : {
+      "type" : "object",
+      "properties" : {
+        "internal" : {
+          "type" : "boolean",
+          "readOnly" : true
+        },
+        "numOfReplicas" : {
+          "type" : "integer",
+          "format" : "int32",
+          "readOnly" : true
+        },
+        "numOfPartitions" : {
+          "type" : "integer",
+          "format" : "int32",
+          "readOnly" : true
+        },
+        "numOfBrokersForTopic" : {
+          "type" : "integer",
+          "format" : "int32",
+          "readOnly" : true
+        },
+        "preferredReplicasPercent" : {
+          "type" : "number",
+          "format" : "float",
+          "readOnly" : true
+        },
+        "underReplicatedPercent" : {
+          "type" : "number",
+          "format" : "float",
+          "readOnly" : true
+        }
+      }
+    },
+    "WrappedTopicPartitionMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "aggrTopicPartitionMetrics" : {
+          "$ref" : "#/definitions/AggrTopicPartitionMetrics"
+        },
+        "producerIdToOutMessagesCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "consumerGroupIdToLag" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "AggrConsumerMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "consumerGroupInfo" : {
+          "$ref" : "#/definitions/ConsumerGroupInfo"
+        },
+        "wrappedPartitionMetrics" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "$ref" : "#/definitions/WrappedConsumerMetrics"
+            }
+          }
+        }
+      }
+    },
+    "ConsumerGroupPartitionMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "lag" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "lagRate" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "committedOffsets" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "committedOffsetsRate" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        }
+      }
+    },
+    "WrappedConsumerMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "partitionMetrics" : {
+          "$ref" : "#/definitions/AggrTopicPartitionMetrics"
+        },
+        "producerIdToOutMessagesCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "groupPartitionMetrics" : {
+          "$ref" : "#/definitions/ConsumerGroupPartitionMetrics"
+        }
+      }
+    },
+    "AggrProducerMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "clientId" : {
+          "type" : "string"
+        },
+        "active" : {
+          "type" : "boolean"
+        },
+        "latestOutMessagesCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "outMessagesCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "wrappedPartitionMetrics" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "$ref" : "#/definitions/WrappedProducerMetrics"
+            }
+          }
+        }
+      }
+    },
+    "WrappedProducerMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "latestOutMessagesCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "partitionMetrics" : {
+          "$ref" : "#/definitions/AggrTopicPartitionMetrics"
+        },
+        "consumerGroupIdToLag" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "ClusterWithTopicMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "totalBytesIn" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalBytesOut" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "producedPerSec" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "fetchedPerSec" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "inSyncReplicas" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "outOfSyncReplicas" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "underReplicatedPartitions" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "offlinePartitions" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "aggrTopicMetricsCollection" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/AggrTopicMetrics"
+          }
+        }
+      }
+    },
+    "AggrBrokerMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "node" : {
+          "$ref" : "#/definitions/BrokerNode"
+        },
+        "throughput" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "messageIn" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "cpuIdle" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "loadAvg" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "memFreePercent" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "diskPercent" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "diskIo" : {
+          "type" : "number",
+          "format" : "float"
+        }
+      }
+    },
+    "ClusterWithBrokerMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "totalBytesIn" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalBytesOut" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "producedPerSec" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "fetchedPerSec" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "activeControllers" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "uncleanLeaderElectionsCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "requestPoolUsage" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "aggrBrokerMetricsCollection" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/AggrBrokerMetrics"
+          }
+        }
+      }
+    },
+    "BrokerDetails" : {
+      "type" : "object",
+      "properties" : {
+        "brokerNode" : {
+          "$ref" : "#/definitions/BrokerNode"
+        },
+        "totalNumReplicas" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalNumInSyncReplicas" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "totalMessages" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "producerDetails" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ProducerDetail"
+          }
+        },
+        "consumerDetails" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ConsumerDetail"
+          }
+        },
+        "topicLeaderPartitionInfos" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/TopicLeaderPartitionInfo"
+          }
+        },
+        "cpuUsagePercentage" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "diskUsagePercentage" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "cpuLoad" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "memoryUsagePercentage" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "logRetentionPeriodValue" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "logRetentionPeriodTimeUnit" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ConsumerDetail" : {
+      "type" : "object",
+      "properties" : {
+        "consumerGroupName" : {
+          "type" : "string"
+        },
+        "active" : {
+          "type" : "boolean"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "lag" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "ProducerDetail" : {
+      "type" : "object",
+      "properties" : {
+        "producerName" : {
+          "type" : "string"
+        },
+        "active" : {
+          "type" : "boolean"
+        },
+        "messageCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "TopicLeaderPartitionInfo" : {
+      "type" : "object",
+      "properties" : {
+        "topicName" : {
+          "type" : "string"
+        },
+        "partitionId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "bytesInCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "bytesOutCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalTopicBytesInCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalTopicBytesOutCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "BrokerMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "bytesInCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "bytesOutCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "messagesInCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "cpuIdle" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "loadFive" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "memFreePercent" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "diskPercent" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "diskWriteBps" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "diskReadBps" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        }
+      }
+    },
+    "ConnectWorkerMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "hostName" : {
+          "type" : "string"
+        },
+        "ipAddress" : {
+          "type" : "string"
+        },
+        "uptime" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "taskCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorStartupAttemptsTotal" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorStartupFailureTotal" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "taskStartupAttemptsTotal" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "taskStartupSuccessTotal" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "taskStartupFailureTotal" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "workerCompletedRebalancesTotal" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "workerRebalanceAvgTimeMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "workerRebalanceMaxTimeMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "workerEpoch" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "workerRebalancing" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        },
+        "workerTimeSinceLastRebalanceMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "ConnectorTaskErrorMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "connectorTaskLastErrorTimeStamp" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorTaskTotalRecordFailures" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorTaskTotalRecordErrors" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorTaskTotalRecordSkipped" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorTaskTotalRetries" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorTaskTotalErrorsLogged" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "SourceConnectorTaskMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "taskId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "connectorTaskOffsetCommitAvgTimeMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorTaskBatchSizeAvg" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskOffsetCommitMaxTimeMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorTaskOffsetCommitSuccessPercentage" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskOffsetCommitFailurePercentage" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskRunningRatio" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskPauseRatio" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskBatchSizeMax" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskErrorMetrics" : {
+          "$ref" : "#/definitions/ConnectorTaskErrorMetrics"
+        },
+        "connectorSourceTaskRecordWriteRate" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorSourceTaskPollBatchSizeAvgTimeMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorSourceTaskSourceRecordWriteTotal" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorSourceTaskPollBatchSizeMaxTimeMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorSourceTaskSourceRecordPollTotal" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorSourceTaskSourceRecordPollRate" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorSourceTaskSourceRecordActiveCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorSourceTaskSourceRecordActiveCountMax" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorSourceTaskSourceRecordActiveCountAvg" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "SinkConnectorTaskMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "taskId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "connectorTaskOffsetCommitAvgTimeMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorTaskBatchSizeAvg" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskOffsetCommitMaxTimeMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorTaskOffsetCommitSuccessPercentage" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskOffsetCommitFailurePercentage" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskRunningRatio" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskPauseRatio" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskBatchSizeMax" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorTaskErrorMetrics" : {
+          "$ref" : "#/definitions/ConnectorTaskErrorMetrics"
+        },
+        "connectorSinkTaskPartitionCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorSinkTaskSinkRecordLagMax" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "connectorSinkTaskSinkRecordSendRate" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "connectorSinkTaskPutBatchSizeAvgTimeMs" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "ConsumerGroupMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "lag" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "lagRate" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "committedOffsets" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "committedOffsetsRate" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "float"
+          }
+        },
+        "topicPartitionMetrics" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "$ref" : "#/definitions/ConsumerGroupPartitionMetrics"
+            }
+          }
+        }
+      }
+    },
+    "ETELatencyMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "topic" : {
+          "type" : "string"
+        },
+        "availPartitions" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        },
+        "partitions" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        },
+        "availGroups" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "groups" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "availClients" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "clients" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "latencyCountsBySecond" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/LatencyCountMetrics"
+          }
+        }
+      }
+    },
+    "LatencyCountMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "produced" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "consumed" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "minLatency" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "maxLatency" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "avgLatency" : {
+          "type" : "integer",
+          "format" : "int64",
+          "readOnly" : true
+        }
+      }
+    },
+    "ProducerMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "clientId" : {
+          "type" : "string"
+        },
+        "active" : {
+          "type" : "boolean"
+        },
+        "outMessagesCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "object",
+              "additionalProperties" : {
+                "type" : "integer",
+                "format" : "int64"
+              }
+            }
+          }
+        }
+      }
+    },
+    "TopicMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "messagesInCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "bytesInCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "bytesOutCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "partitionMetrics" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/TopicPartitionMetrics"
+          }
+        }
+      }
+    },
+    "TopicPartitionMetrics" : {
+      "type" : "object",
+      "properties" : {
+        "messagesInCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "bytesInCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        },
+        "bytesOutCount" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "ClusterReplicationStatsDTO" : {
+      "type" : "object",
+      "properties" : {
+        "clusterReplicationStatsEntryMap" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/ClusterReplicationStatsEntryDTO"
+          }
+        }
+      }
+    },
+    "ClusterReplicationStatsEntryDTO" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "source" : {
+          "type" : "string"
+        },
+        "target" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "string",
+          "enum" : [ "ACTIVE", "INACTIVE", "WARNING" ]
+        },
+        "numTopics" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "numConsumerGroups" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "throughputBpsMetric" : {
+          "$ref" : "#/definitions/ReplicationMetricValueDTO"
+        },
+        "replicationLatencyMsMetric" : {
+          "$ref" : "#/definitions/ReplicationMetricValueDTO"
+        },
+        "checkpointLatencyMsMetric" : {
+          "$ref" : "#/definitions/ReplicationMetricValueDTO"
+        }
+      }
+    },
+    "ReplicationMetricValueDTO" : {
+      "type" : "object",
+      "properties" : {
+        "min" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "avg" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "max" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    },
+    "TopicReplicationStatsDTO" : {
+      "type" : "object",
+      "properties" : {
+        "replicationStatsByTopic" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/TopicReplicationStatsEntryDTO"
+          }
+        },
+        "throughputTimelineMetrics" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "replicationLatencyTimelineMetrics" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        }
+      }
+    },
+    "TopicReplicationStatsEntryDTO" : {
+      "type" : "object",
+      "properties" : {
+        "topic" : {
+          "type" : "string"
+        },
+        "sourceTopic" : {
+          "type" : "string"
+        },
+        "originalTopic" : {
+          "type" : "string"
+        },
+        "source" : {
+          "type" : "string"
+        },
+        "numPartitions" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "numConsumerGroups" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "replicationLatencyMsMetric" : {
+          "$ref" : "#/definitions/ReplicationMetricValueDTO"
+        },
+        "throughputBpsMetric" : {
+          "$ref" : "#/definitions/ReplicationMetricValueDTO"
+        },
+        "checkpointLatencyMsMetric" : {
+          "$ref" : "#/definitions/ReplicationMetricValueDTO"
+        }
+      }
+    },
+    "TopicTimelineMetricsDTO" : {
+      "type" : "object",
+      "properties" : {
+        "replicationLatencyTimelineMetrics" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        },
+        "throughputTimelineMetrics" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "number",
+            "format" : "double"
+          }
+        }
+      }
+    },
+    "MergeInfo" : {
+      "type" : "object",
+      "properties" : {
+        "schemaBranchName" : {
+          "type" : "string"
+        },
+        "schemaVersionId" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "SchemaVersionInfo" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "schemaMetadataId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "version" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "schemaText" : {
+          "type" : "string"
+        },
+        "timestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "stateId" : {
+          "type" : "string",
+          "format" : "byte"
+        },
+        "mergeInfo" : {
+          "$ref" : "#/definitions/MergeInfo"
+        }
+      }
+    },
+    "TopicSchemaMapping" : {
+      "type" : "object",
+      "properties" : {
+        "keySchemaName" : {
+          "type" : "string",
+          "readOnly" : true
+        },
+        "valueSchemaName" : {
+          "type" : "string",
+          "readOnly" : true
+        }
+      }
+    },
+    "SchemaRegistryInfo" : {
+      "type" : "object",
+      "properties" : {
+        "url" : {
+          "type" : "string"
+        }
+      }
+    },
+    "DeserializerInfo" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "className" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "SerdesMappings" : {
+      "type" : "object",
+      "properties" : {
+        "deserializerInfos" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/DeserializerInfo"
+          }
+        }
+      }
+    },
+    "SMMVersion" : {
+      "type" : "object",
+      "properties" : {
+        "version" : {
+          "type" : "string"
+        },
+        "revision" : {
+          "type" : "string"
+        },
+        "timestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    }
+  }
+}
