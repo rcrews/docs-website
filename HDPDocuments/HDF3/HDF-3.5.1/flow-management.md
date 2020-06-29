@@ -63,6 +63,12 @@ publications:
       Guides users through the basic steps of using the Apache NiFi
       Registry.
 
+  - title: Tuning your DataFlow
+    url: /cfm/1.1.0/nifi-tuning/topics/cfm-tuning-your-data-flow.html
+    description: >-
+      Learn about the concepts involved in and recommendations for
+      tuning your data flow.
+
 ---
 
 Provides documentation covering how to use HDF Flow Management services

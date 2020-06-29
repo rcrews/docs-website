@@ -194,6 +194,11 @@
           href: using-nifi-registry/index.html
           sub: using-nifi-registry/navigation.json
 
+        - text: Tuning your DataFlow
+          id: pub-nifi-tuning
+          href: /cfm/1.1.0/nifi-tuning/topics/cfm-tuning-your-data-flow.html
+          sub: /cfm/1.1.0/nifi-tuning/navigation.json
+
     - text: Managing Schemas
       href: managing-schemas.html
       sub:
