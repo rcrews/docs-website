@@ -9,14 +9,14 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/index.html</loc>
-		<lastmod>2020-06-12</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade.html</loc>
+		<lastmod>2020-06-03</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/overview/index.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -27,20 +27,86 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade.html</loc>
-		<lastmod>2020-06-03</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/index.html</loc>
+		<lastmod>2020-06-12</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/index.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/announcement-202003.html</loc>
-		<lastmod>2020-06-17</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/index.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/index.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/index.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/index.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-introduction.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-overview.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-use-cases.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-services.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-interfaces.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-glossary.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-getting-started.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdpdc-overview.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -51,2174 +117,2108 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-release-guide-overview.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/announcement-201911.html</loc>
 		<lastmod>2020-05-28</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/index.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/index.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/index.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/index.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-release-guide-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-release-notes-links.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/announcement-202003.html</loc>
+		<lastmod>2020-06-17</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-version-and-download-information.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-cm-version-information.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-cm-download-information.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-runtime-version-information.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-cm-download-information.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-release-notes-links.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-runtime-download-information.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-trial-download-information.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-maven-repo.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-trial-download-information.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-runtime-maven-703.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-requirements-supported-versions.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-hardware-requirements.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-os-requirements.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-database-requirements.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-requirements-supported-versions.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-java-requirements.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-database-requirements.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-os-requirements.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-networking-security-requirements.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-data-at-rest-encryption-requirements.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-product-compatibility-matrices.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-compatibility-matrix-bdr.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cm-cdh-runtime-versions.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdp-component-info.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-rt-updated-cdh-components.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-compatibility-matrix-bdr.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cm-cdh-runtime-versions.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-rt-updated-hdp-components.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/amb-core-components-difference.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/amb-changes-services-views.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-migrating-cloud-workloads-to-cdp.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-migration-versus-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-introduction.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-use-cases.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-services.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-interfaces.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-getting-started.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdp-glossary.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/overview/topics/cdpdc-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-pre-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-migrating-mapreduce.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-upgrading-mrv1-installation-cm.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-writing-jobs-mrv2.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-configuring-mrv2-clusters.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-configuration-migration.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-resource-configuration.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-administration-commands.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-secure-setup.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-ports.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-high-availability.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-web-ui.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-configuration-changes.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-scheduler-migration-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-scheduler-migration-procedure.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-cli-options-fs2cs-conversion-tool.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-configure-scheduler-properties-manually.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-qm-ui-configure-scheduler-properties.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-safety-valves-configure-scheduler-properties.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-configuring-scheduler-properties.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-auto-converted-fs-properties.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-fs-features-conversion-details.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-weights-resource-settings-conversion.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-example-convert-weights-fs-queues.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-example-convert-minresource-maxresource-fs-queues.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/search-prepare-upgrade-cdp.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-sentry-pre-upgrade-migration-to-ranger.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configure-mysql-ranger.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configure-postgres-ranger.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configure-oracle-ranger.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-from-navigator-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-steps.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-prerequisites.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-installing-using-wizard.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-using-scripts.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-mapping.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-audits.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-new-to-cdh-users.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_hive_preupgrade_tasks.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_hive_preupgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_hive_supergroup.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_remove_property.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_hbase_pre_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-remove-prefix-tree-data-block-encoding.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-co-processor-classes.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-cdh-upgrade-reqs-for-replmanager.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/kudu-upgrade-notes-for-kudu-1.12.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh6_pre_migration.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-migrating-mapreduce-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-upgrading-mrv1-installation-cm-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-writing-jobs-mrv2-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-configuring-mrv2-clusters-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-configuration-migration-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-resource-configuration-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-administration-commands-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-secure-setup-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-ports-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-high-availability-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-web-ui-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-configuration-changes-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/search_prepare_upgrade_cdh_6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/sg_sentry_migrate.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_spark_standalone.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_hue_psycopg2.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_kt_kms_pre_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_hsm_kms_pre_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-pre-upgrade-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-remove-prefix-tree-data-block-encoding-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-co-processor-classes-c6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_jdk8.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-jdk-encryption.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-configure-java-home.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-tune-g1gc.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade_before.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade_backup.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade_prepare.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade_after.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_before.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_backup.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-backup-databases.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_server.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_agent.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_after.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_ts.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_downgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrading_top.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_before.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_backup.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_wizard_actions.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_troubleshooting.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/install_rollback.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh6_post_migration.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/kudu_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/search_reindex_cdh6.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_spark_post.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_supplemental.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_ig_create_local_package_repo.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_ig_create_local_parcel_repo.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cn_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/key_trustee_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/install_upgrade_kts54.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/install_upgrade_kts3_to_54.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/install_upgrade_ktupgrade_script.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/key_hsm_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/key_trustee_kms_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/hsm_kms_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/navigator_encrypt_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_ag_migrate_postgres_db.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-on-line-upgrade-guide.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-upgrade-paths.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-cdh-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-hdp-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdp-upgrade-dc-dc.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdh-cdh-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-upgrade-replication-manager-upgrade-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-upgrade-replication-manager-upgrade-considerations.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-upgrade-supported%20and%20unsupported-replmanager.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-and-migrate-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-migrating-cloud-workloads-to-cdp.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-getting-ready-to-upgrade-ambari-hdp.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/release-guide/topics/cdpdc-migration-versus-upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-getting-ready.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-preparing-upgrade-ambari.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-for-large-clusters.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-changes-services-views.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-core-components-difference.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-underlying-os.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-changes-services-views.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-inplace-restore.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-underlying-os.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-move-decom.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-behavioral-changes.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrading-ambari.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-ambari-introduction.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-ambari.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-behavioral-changes.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrading-hdp.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-ambari.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-hdp-introduction.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-ambari-introduction.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hdp-prerequisites.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-prepare-to-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-checkpoint-hdfs.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-register-target-version.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-install-target-version.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/cdpdc-hdp-pre-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-migrating-atlas-data.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-prepare-hbase.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/cdpdc-hdp-pre-upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_prepare.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_backup.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-prepare-hbase.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_sparksql.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_jar.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_ticket.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_compact.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_backup_hms.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_ambari_configgroup.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_compact.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_ticket.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_backup.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_preupgrade_help.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_ambari_configgroup.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-prepare-kafka.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-prepare-zeppelin-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-ams-ss.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-amb-metrics.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upgrade-ss.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-prepare-zeppelin-upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-backing-amb-infra-atlas-data.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-backup-amb-infra-logsearch.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-generate-migration-config.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-backup-amb-solr-data.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-remove-collection-upgrade-bin.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-backup-amb-infra-logsearch.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-migrate-atlas-data.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-backup-amb-solr-data.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-perform-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-perform-express-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-post-upgrade-tasks.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-update-ranger-password.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-remove-collection-upgrade-bin.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-atlas-hbase-hook.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-metrics-ss-ls.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-perform-express-upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-infra-migrate-restore.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-metrics-ss-ls.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-migrate-amb-metrics-data.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-upload-hdfs-entity-information.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hive-post-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_check_locations.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hive_spark_problems.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/ug_hdp_hive_correct_locations.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-verify-zeppelin.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-troubleshoot-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-restoring-hive-metastore.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-recovering-missing-hive-tables.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-yarn-reg-dns-fails-start.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-verify-zeppelin.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ams-does-not-start.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-restoring-hive-metastore.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-migrating-to-cdpdc.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-pre-migration-steps.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ams-does-not-start.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-yarn-reg-dns-fails-start.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-databases.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-kerberos.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-yarn_hive_kerberos_principal.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hdfs.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-pre-migration-steps.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-preparing-hdfs.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-yarn_hive_kerberos_principal.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-cluster-topology.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hdfs.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-spark-livy.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb_pretransition_spark.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ranger_pre-transition_step.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-phoenix.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-optional-tasks.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ranger_pre-transition_step.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-phoenix.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-kerberos%202.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-auto-tls.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-cm-installation-setup.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb_migrating_amb_hdp_to_cm_dc.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-migrating-the-cluster.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-post-migration-steps.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-auto-tls.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-zookeeper.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hdfs-2.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-post-migration-steps.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ports.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb_migrating_amb_hdp_to_cm_dc.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ha.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hdfs-2.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-cluster-topology-2.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-add-balancer-role-to-hdfs.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-other-review-configurations-for-hdfs.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-yarn.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ha-yarn.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-other-review-configurations-for-hdfs.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-tez.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-yarn.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hive-metastore.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-schema-validity.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-safety-value-entries.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hive-server-2.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb_posttransition_hbase.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-oozie.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-validate-database-url.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb_posttransition_hbase.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hive-server-2.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-oozie.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-installing-the-new-shared-libraries.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-spark.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-livy2.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-kafka-cleanup.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-starting-all-services.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-spark.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-enabling-the-ranger-and-knox-services.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-yarn-queue-manager.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hive.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ranger-post-migration.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ranger-policy-migration-tool.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-ranger-policy-migration-tool-example.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-migrating-policy-activities.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb_posttransition_solr.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hive-policy-additions.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-migrating-policy-activities.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-activating-ranger-for-services.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hive-policy-additions.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb_knox_gateway.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-enbable-knox-for-services.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-client-configurations.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-zookeeper-secure.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-install-das-on-cdpdc.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-check-cluster-configurations-for-hive-tez.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-zookeeper-secure.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-install-das-on-cdpdc.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-client-configurations.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-add-service.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-post-installation-tasks.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-additional-configuration.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-setup-tmp-directory.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-configure-ssl.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-post-installation-tasks.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-configure-tls-cacertificate.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-configure-ssl.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-configure-tls-sscertificate.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-configure-tls.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-setup-tmp-directory.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-configuring-user-authentication.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-user-authentication-using-knox-sso.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-user-authentication-using-knox-proxy.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-user-authentication-using-spnego.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-enabling-knoxssout.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-troubleshooting-das-installation.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-problem-area-queries-section.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-queries-not-appearing.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-user-authentication-using-spnego.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-enabling-knoxssout.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-user-authentication-using-knox-sso.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-query-column-empty-can-see-dag-and-app-id.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-query-column-not-empty-cannot-see-dag-or-app-id.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-cannot-view-queries-from-other-users.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-queries-not-appearing.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-problem-area-compose-page.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-query-column-not-empty-cannot-see-dag-or-app-id.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-cannot-see-databases-or-the-query-editor.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-cannot-view-queries-from-other-users.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-cannot-view-new-databases-and-tables-or-cannot-alter-tables.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-replication-failure-in-event-processor.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-problem-area-reports-page.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-service-installation-fails-python-files-missing.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-session-timeout-configuration.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-getting-401-unauthorized-access-while-accessing-das.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-problem-area-reports-page.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-on-line-upgrade-guide.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-setting-up-quicklinksi.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_cdp_post_upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/das-ambari-service-installation-fails-python-files-missing.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdpdc-upgrade-post-upgrade-replmanager-tasks.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-cdh-overview.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-upgrade-paths.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-hdp-overview.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdh-cdh-upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-upgrade-replication-manager-upgrade-overview.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-upgrade-supported%20and%20unsupported-replmanager.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdpdc-upgrade-replication-manager-upgrade-considerations.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade/topics/cdp-upgrade-dc-dc.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_changes_in_cdp.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_configuration_changes.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdpdc-upgrade-post-upgrade-replmanager-tasks.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_cdp_post_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_post_cdp_upgrade_tasks.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_property_overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_restore_overrides.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_configuration_changes.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_user_configuration.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_restore_overrides.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-hive-on-spark.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_update_ranger.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-acl.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_encryption_zone.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_edge_configuration.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_hwc.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_configure_http_mode.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp_data_migration_hive_semantics.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_encryption_zone.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-table-create.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_hwc.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp_data_migration_hive_semantics.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-cascade-clause.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-column-type.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-dbtable.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_backticks.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-partitions-change.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-hive-acl-sync.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-dbtable.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_configure_http_mode.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-rename.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-column-type.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/cdp-data-migration-hive-acl-sync.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/hive-unsupported.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_tables_from_cdh.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_backticks.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_tables_from_hdp.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_hive_tables_from_cdh.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_cdh_impala_changes.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_impala_acl.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_impala_configuration.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/impala_interoperability.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_impala_authorization.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_data_governance_atlas.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/rm-sentry-ranger-permissions.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/search-reindex-cdp.html</loc>
-		<lastmod>2020-06-25</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/yarn-post-upgrade.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/yarn-default-value-changes.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-upgrade-paths.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/search-reindex-cdp.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/rm-sentry-ranger-permissions.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/ug_data_governance_atlas.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-user-roles.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_overview.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configuring-local-package-repository.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-migrating-mapreduce.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configuring-local-parcel-repository.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-configuring-mrv2-clusters.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/impala_upgrading.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-writing-jobs-mrv2.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/search-reindex-cdp.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-upgrading-mrv1-installation-cm.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_impala_changes.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-pre-upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configuring-hosts-internal-repository.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-ports.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_sg_create_key_trust.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-administration-commands.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
-		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_sg_s2_jce_policy.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-high-availability.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-configuration-migration.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-secure-setup.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-web-ui.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-scheduler-migration-overview.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-scheduler-migration-procedure.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-cli-options-fs2cs-conversion-tool.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-configuration-changes.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-resource-configuration.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-configure-scheduler-properties-manually.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-qm-ui-configure-scheduler-properties.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-safety-valves-configure-scheduler-properties.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-auto-converted-fs-properties.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-weights-resource-settings-conversion.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-example-convert-minresource-maxresource-fs-queues.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-fs-features-conversion-details.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-configuring-scheduler-properties.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-example-convert-weights-fs-queues.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/search-prepare-upgrade-cdp.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-sentry-pre-upgrade-migration-to-ranger.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configure-mysql-ranger.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configure-postgres-ranger.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-from-navigator-overview.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configure-oracle-ranger.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-steps.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-mapping.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-installing-using-wizard.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-audits.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-using-scripts.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-prerequisites.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/atlas-migrating-new-to-cdh-users.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_hive_preupgrade_tasks.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_hive_supergroup.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_remove_property.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_hbase_pre_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_hive_preupgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-remove-prefix-tree-data-block-encoding.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-cdh-upgrade-reqs-for-replmanager.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-co-processor-classes.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/kudu-upgrade-notes-for-kudu-1.12.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh6_pre_migration.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-migrating-mapreduce-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-configuring-mrv2-clusters-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-upgrading-mrv1-installation-cm-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-writing-jobs-mrv2-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-configuration-migration-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-resource-configuration-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-administration-commands-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-secure-setup-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-ports-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-high-availability-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-web-ui-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/yarn-mr-configuration-changes-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/sg_sentry_migrate.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/search_prepare_upgrade_cdh_6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_spark_standalone.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_hsm_kms_pre_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_hue_psycopg2.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_kt_kms_pre_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-pre-upgrade-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-remove-prefix-tree-data-block-encoding-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_jdk8.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug-hbase-co-processor-classes-c6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-tune-g1gc.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-configure-java-home.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-jdk-encryption.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade_prepare.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade_before.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade_backup.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_os_upgrade_after.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_before.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_agent.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_server.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-backup-databases.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_backup.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_upgrade_after.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_ts.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_downgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrading_top.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_before.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_backup.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cm_wizard_actions.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/install_rollback.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh6_post_migration.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/search_reindex_cdh6.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/kudu_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_spark_post.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_supplemental.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_ig_create_local_package_repo.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/install_upgrade_kts54.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_upgrade_troubleshooting.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_ig_create_local_parcel_repo.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/key_trustee_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cn_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/install_upgrade_kts3_to_54.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/install_upgrade_ktupgrade_script.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/key_hsm_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/navigator_encrypt_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/hsm_kms_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/key_trustee_kms_upgrade.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_ag_migrate_postgres_db.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-downloadables.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-hdp/topics/amb-hdp-7110-repositories.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-post/topics/yarn-configure-scheduler-properties-manually.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-upgrade-paths.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/rm-sentry-ranger-permissions.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm-user-roles.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configuring-local-package-repository.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configuring-hosts-internal-repository.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-configuring-local-parcel-repository.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/impala_upgrading.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/search-reindex-cdp.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/ug_cdh_impala_changes.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_sg_create_key_trust.html</loc>
+		<lastmod>2020-06-29</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cm_sg_s2_jce_policy.html</loc>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-upgrade-replication-manager-upgrade-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://docs.cloudera.com/cdp/latest/upgrade-cdh/topics/cdpdc-cdh-overview.html</loc>
-		<lastmod>2020-06-25</lastmod>
+		<lastmod>2020-06-29</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.2</priority>
 	</url>
