@@ -56,10 +56,10 @@
 - text: How To
   name: how-to
   sub:
-    - text: Securing
-      href: securing-cfm/index.html
-      id: pub-securing-cfm
-      sub: securing-cfm/navigation.json
+    - text: Security
+      href: cfm-security/index.html
+      id: pub-cfm-security
+      sub: cfm-security/navigation.json
 
     - text: Tuning your DataFlow
       href: nifi-tuning/index.html
