@@ -35,7 +35,7 @@ content routing.
 deployment of flow files. It also supports flow versioning, promoting
 flows from one environment into another, and flow deployment.
 
-<table style="border-collapse: collapse; border: .5px solid #666;">
+<table style="border-collapse: collapse; border: .5px solid #666; margin-top: 2em;">
   <tr style="background: #ddd">
     <th style="padding: .3rem; border-bottom: .5px solid #666; border-right: .5px solid #666;">If you want to install NiFi and NiFi Registry with…</th>
     <th style="padding: .3rem; border-bottom: .5px solid #666;">Review this documentation </th>
@@ -43,7 +43,7 @@ flows from one environment into another, and flow deployment.
   <tr>
     <td style="padding: .3rem; border-bottom: .5px solid #666; border-right: .5px solid #666;">HDF</td>
     <td style="padding: .3rem; border-bottom: .5px solid #666">
-      <a href="/HDPDocuments/HDF3/master/index.html">HDF 3.5.0 documentation</a>
+      <a href="/HDPDocuments/HDF3/HDF-3.5.1/index.html">HDF 3.5.1 documentation</a>
     </td>
   </tr>
   <tr style="border-bottom: .5px solid #666">
@@ -65,3 +65,13 @@ flows from one environment into another, and flow deployment.
     </td>
   </tr>
 </table>
+
+{:.table}
+{:.frame-all}
+|---
+If you want to install NiFi and NiFi Registry with... | Review this documentation
+|-|-
+| HDF | [HDF](/HDPDocuments/HDF3/HDF-3.5.1/index.html)
+| CDH | [CFM](/cfm/1.0.1/index.html)
+| CDP Public Cloud | [Cloudera DataFlow for Data Hub](/cdf-datahub/7.2.0/index.html)
+| CDP Data Center | [CDP DataFlow](/dataflow/master/index.html)
