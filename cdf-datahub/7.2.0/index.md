@@ -28,11 +28,3 @@ environment. Flow Management addresses key enterprise use cases such as
 data movement, continuous data ingestion, log data ingestion, and
 acquisition of all types of streaming data including social, mobile,
 clickstream, and IoT data.
-
-<div style="border: 1px solid #ccc;border-radius: 2px;background: #fed;padding: 1ex 1em;">
-<b>Note</b><br>
-Streams Messaging cluster definitions are available for Technical Preview.
-Cloudera encourages you to explore these technical preview features in
-non-production environments and provide feedback on your experiences
-through the Cloudera Support Portal.
-</div>
