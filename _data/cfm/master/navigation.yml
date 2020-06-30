@@ -40,10 +40,10 @@
       href: download/index.html
       id: pub-download
       sub: download/navigation.json
-    - text: Installation
-      href: installation/index.html
-      id: pub-installation
-      sub: installation/navigation.json
+    - text: Deployment
+      href: deployment/index.html
+      id: pub-deployment
+      sub: deployment/navigation.json
     - text: Upgrade
       href: upgrading-cfm/index.html
       id: pub-upgrading-cfm
