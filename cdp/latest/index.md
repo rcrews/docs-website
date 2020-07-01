@@ -25,7 +25,14 @@ CDP documentation is provided for deployed options.
 and
 [Cloudera Runtime](/runtime/latest/index.html)
 are part of both form factors.
-Documentation for the services for your edition are available as well.
+Documentation for the services for your edition are available as well:
+[Data Catalog](/data-catalog/cloud/index.html),
+[Data Hub](/data-hub/cloud/index.html),
+[Data Warehouse](/data-warehouse/cloud/index.html),
+[Machine Learning](/machine-learning/cloud/index.html),
+[Management Console](/management-console/cloud/index.html),
+[Replication Manager](/replication-manager/cloud/index.html),
+[Workload Manager](/workload-manager/cloud/index.html).
 
 ## Release Announcements
 
