@@ -7,7 +7,7 @@ copyright:
     - 2020
 ---
 
-# CDP Public Cloud Release Summary - June 2020
+# CDP Public Cloud Release Summary
 
 June 30, 2020
 
@@ -20,11 +20,9 @@ Highlights
 -   Cloudera Data Engineering (CDE) Service is now in Tech Preview for
     AWS
 -   Streams Messaging DataHub Cluster is now GA
--   [*Runtime
-    7.2.0*](/runtime/7.2.0/release-notes) has
+-   [*Runtime 7.2.0*](/runtime/7.2.0/release-notes/index.html) has
     been released, which unlocks a few key features, but much more
-    importantly fixes over 250
-    [*issues*](https://jira.cloudera.com/secure/StructureBoard.jspa?s=619#)
+    importantly fixes over 250 issues
 
 New Or Updated Capabilities
 
@@ -54,8 +52,7 @@ Warehouse*](/data-warehouse/cloud/release-notes/topics/dw-whats-new.html)
     -   Ability to restrict use Virtual Warehouses\--login, execute
         queries, based on LDAP group membership.
 
--   [***Query Transparent Retry (Tech
-    Preview)***](https://jira.cloudera.com/browse/CDPD-4241)**:**
+-   **Query Transparent Retry (Tech Preview):**
 
     -   If submitted Impala queries fail via Hue, other clients at query
         startup time or fragment fails, query will be retried a
@@ -113,8 +110,7 @@ Database*](https://www.cloudera.com/products/operational-db.html)
     -   Integrated with SDX - Ranger for authorization, Atlas for Data
         Lineage, Data Analytics Studio for Data Stewards
 
-[*Cloudera Data
-Flow*](/cdf-datahub/7.1.0/index.html)
+[*Cloudera DataFlow*](/cdf-datahub/7.2.0/index.html)
 
 -   **Streams Messaging for Data Hub Template - based on Kafka 2.4 - is
     now GA**
