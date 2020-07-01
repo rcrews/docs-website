@@ -7,6 +7,8 @@ copyright:
     - 2020
 ---
 
+# CDP Data Center 7.1 Release Summary - June 2020
+
 Cloudera is pleased to announce the release of Cloudera Data Platform
 Data Center (CDP DC) version 7.1. This release provides the most
 powerful and comprehensive data management and analytics platform for

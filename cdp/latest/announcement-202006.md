@@ -7,6 +7,8 @@ copyright:
     - 2020
 ---
 
+# CDP Public Cloud Release Summary - June 2020
+
 June 30, 2020
 
 Cloudera is pleased to announce the latest updates to CDP Public Cloud.
