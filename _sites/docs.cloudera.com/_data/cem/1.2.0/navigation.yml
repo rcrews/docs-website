@@ -75,12 +75,6 @@
       id: pub-using-agent-parameters
       sub: using-agent-parameters/navigation.json
 
-    # Arpita Talukder <atalukder@cloudera.com>
-    - text: Deploying an EFM Cluster
-      href: deploying-an-efm-cluster/index.html
-      id: pub-deploying-an-efm-cluster
-      sub: deploying-an-efm-cluster/navigation.json
-
 #- text: Troubleshooting
 #  id: cat-troubleshooting
 #  sub:
