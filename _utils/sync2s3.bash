@@ -4,7 +4,7 @@ setopt ERR_EXIT
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 
 source ~/.rvm/scripts/rvm
-rvm 2.7.1@docs-website
+rvm 2.6.6@docs-website
 
 s3sync_jar='/Users/rcrews/Sandbox/s3sync/s3sync.jar'
 
