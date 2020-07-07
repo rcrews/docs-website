@@ -80,7 +80,7 @@ then
     # /usr/local/bin/aws s3 cp ${REMOTE}/cloudera-manager/7.0.3/navigation.json      "${LOCAL}"/cloudera-manager/7.0.3/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/cloudera-manager/7.1.0/navigation.json      "${LOCAL}"/cloudera-manager/7.1.0/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/cloudera-manager/7.1.1/navigation.json      "${LOCAL}"/cloudera-manager/7.1.0/navigation.json
-    # /usr/local/bin/aws s3 cp ${REMOTE}/cloudera-manager/7.2.0/navigation.json      "${LOCAL}"/cloudera-manager/7.1.0/navigation.json
+    # /usr/local/bin/aws s3 cp ${REMOTE}/cloudera-manager/7.2.0/navigation.json      "${LOCAL}"/cloudera-manager/7.2.0/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/csa/1.1.0/navigation.json                   "${LOCAL}"/csa/1.1.0/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/csp/1.0.0/navigation.json                   "${LOCAL}"/csp/1.0.0/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/csp/2.0.0/navigation.json                   "${LOCAL}"/csp/2.0.0/navigation.json
@@ -103,7 +103,7 @@ then
     # /usr/local/bin/aws s3 cp ${REMOTE}/runtime/7.0.3/navigation.json               "${LOCAL}"/runtime/7.0.3/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/runtime/7.1.0/navigation.json               "${LOCAL}"/runtime/7.1.0/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/runtime/7.1.1/navigation.json               "${LOCAL}"/runtime/7.1.0/navigation.json
-    # /usr/local/bin/aws s3 cp ${REMOTE}/runtime/7.2.0/navigation.json               "${LOCAL}"/runtime/7.1.0/navigation.json
+    # /usr/local/bin/aws s3 cp ${REMOTE}/runtime/7.2.0/navigation.json               "${LOCAL}"/runtime/7.2.0/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/smm/1.0.0/navigation.json                   "${LOCAL}"/smm/1.0.0/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/smm/1.1.0/navigation.json                   "${LOCAL}"/smm/1.1.0/navigation.json
     # /usr/local/bin/aws s3 cp ${REMOTE}/smm/1.2.0/navigation.json                   "${LOCAL}"/smm/1.2.0/navigation.json
