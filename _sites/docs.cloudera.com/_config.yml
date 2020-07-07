@@ -72,7 +72,7 @@ exclude:
   - /csp/master/
   - /data-catalog/master/
   - /data-engineering/master/
-  - /data-flow/master/
+  - /dataflow/master/
   - /data-hub/master/
   - /data-warehouse/master/
   - /machine-learning/master/

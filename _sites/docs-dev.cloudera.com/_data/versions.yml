@@ -643,15 +643,15 @@
     - title: cloud
       url: /data-engineering/cloud/index.html
 
-- name: Data Flow
+- name: DataFlow
   latest-version: master
-  latest-url: /data-flow/master/index.html
-  search-name: data-flow
+  latest-url: /dataflow/master/index.html
+  search-name: dataflow
   versions:
     - title: master
-      url: /data-flow/master/index.html
+      url: /dataflow/master/index.html
     - title: cloud
-      url: /data-flow/cloud/index.html
+      url: /dataflow/cloud/index.html
 
 - name: Data Hub
   latest-version: master
@@ -881,7 +881,7 @@
         - title: 1.1.0
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
-- name: Cloudera Data Flow for Data Hub
+- name: Cloudera DataFlow for Data Hub
   latest-version: master
   latest-url: /cdf-datahub/master/index.html
   search-name: cdf-datahub
