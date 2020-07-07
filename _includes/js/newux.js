@@ -10,11 +10,11 @@
  * @link http://docs.cloudera.com
  * @author James Dilworth - james@jamesdilworth.com
  */
-const NEWUX = (function($) {
+const NEWUX = (($) => {
   'use strict';
 
   const COPYRIGHT = `&copy; ${new Date().getFullYear()} by Cloudera, Inc. All rights reserved.`;
-  var WhoAmI = {
+  const WhoAmI = {
     product_name: '', // We get this from the from the URL, or the meta-tag
     search_name: '', // This is used to pass the query on to the search engine.
     version: '', // We get this from the URL, or the meta tag.
@@ -23,7 +23,7 @@ const NEWUX = (function($) {
     versions: [], // Populate this from versions.yaml
     products: [], // The full versions.yaml jsonified.
 
-    bootstrap: function() {
+    bootstrap: () => {
       // Load in the versions.json
       const navfile = '/versions.json';
       fetch(navfile)
@@ -151,7 +151,7 @@ const NEWUX = (function($) {
             this.setupVersions();
           });
     },
-    setupVersions: function() {
+    setupVersions: () => {
       $('.bread-product').html(`<a href="${WhoAmI.version.url}">${WhoAmI.product_name}</a>`);
 
       // Change "Cloud" to the Cloud Symbol
@@ -159,7 +159,7 @@ const NEWUX = (function($) {
         $('.bread-version').html('<i class="fa fa-cloud"></i>');
       } else {
         if (WhoAmI.version.type !== '') {
-          $('.bread-version').html(WhoAmI.version.title + ` (${WhoAmI.version.type})`);
+          $('.bread-version').html(`${WhoAmI.version.title} (${WhoAmI.version.type})`);
         } else {
           $('.bread-version').html(WhoAmI.version.title);
         }
@@ -169,12 +169,12 @@ const NEWUX = (function($) {
       let output = '';
 
       let x = 0;
-      WhoAmI.versions.forEach(function(el) {
+      WhoAmI.versions.forEach((el) => {
         if (el) {
           output += `<li class="major"><a href="${el.url}">${el.title}</a>`;
           if (typeof el.minors === 'object') {
             output += '<ul class="minors">';
-            el.minors.forEach(function(em) {
+            el.minors.forEach((em) => {
               output += `<li class="minor"><a href="${em.url}">${em.title}</a></li>`;
               x++;
             });
@@ -191,7 +191,7 @@ const NEWUX = (function($) {
       }
 
       // Add Handlers
-      $('.bread-version .selector').click(function() {
+      $('.bread-version .selector').click(() => {
         const $this = $(this);
         $this.hasClass('fa-angle-down') ? $this.removeClass('fa-angle-down').addClass('fa-angle-up') : $this.removeClass('fa-angle-up').addClass('fa-angle-down');
         $('.version-select').toggle();
@@ -200,7 +200,7 @@ const NEWUX = (function($) {
       // And now that's all done, let's set up the product drawer too.
       ProductDrawer.init();
     },
-    init: function() {
+    init: () => {
       if (!$('.bread-product').length) $('.chead .breadcrumbs').append('<span class="bread-product"></span>');
       if (!$('.bread-version').length) $('.chead .breadcrumbs').append('<span class="bread-version"></span>');
 
@@ -208,8 +208,7 @@ const NEWUX = (function($) {
     },
   };
 
-  var Pubnav = {
-
+  const Pubnav = {
     nav_tree: [], // Will hold the full, cleaned, nav JSON file
     product: '', // Holds a unique name for the product we're in, which is used as a key for saving the menu.
     pagestate: { // Will hold the current state of the page.
@@ -226,10 +225,10 @@ const NEWUX = (function($) {
     navstate: [], // Holds the list of open nav items in the menu... used to maintain state between loads.
     is_hash_link: false, // Used as a flag to work around the hashlinks also firing the popstate.
     clicktrack: 0, // Used to stop the loadContent function from racing if the nav.json and fiiles are incorrect.
-    init: function() {
+    init: () => {
       this.setupNav();
     },
-    bindEvents: function() {
+    bindEvents: () => {
       // Catch Link Clicks from Pubmenu and Feed through System
       $('.ctoc a').on('click', this.handleNewPageRequest);
       $('.cpage').on('click', 'a', this.handleNewPageRequest);
@@ -247,22 +246,22 @@ const NEWUX = (function($) {
       // PUBNAV FOR MOBILE
       $('.launch-pubnav').on('click', this.handleMobileToggle);
     },
-    handleCollapseAll: function(e) {
+    handleCollapseAll: (e) => {
       //
       const $this = $(this);
       if ($this.hasClass('collapse')) {
         $this.removeClass('collapse');
         $this.find('i').removeClass('fa-angle-double-up').addClass('fa-angle-double-down');
         $('li.xp').removeClass('open sesame');
-        localStorage.setItem(Pubnav.product + '_navstate', '');
+        localStorage.setItem(`${Pubnav.product}_navstate`, '');
       } else {
         $this.addClass('collapse');
         $this.find('i').removeClass('fa-angle-double-down').addClass('fa-angle-double-up');
         $('li.xp').addClass('open sesame');
-        localStorage.setItem(Pubnav.product + '_navstate', '');
+        localStorage.setItem(`${Pubnav.product}_navstate`, '');
       }
     },
-    handleNavOpen: function(evt) {
+    handleNavOpen: (evt) => {
       evt.stopPropagation();
       const $this = $(this);
 
@@ -272,19 +271,19 @@ const NEWUX = (function($) {
         // Update the state
         if (!Pubnav.navstate.includes(id)) {
           Pubnav.navstate.push(id);
-          localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
+          localStorage.setItem(`${Pubnav.product}_navstate`, Pubnav.navstate);
         }
         Pubnav.expandNavElem(id);
       }
     },
-    handleNavContract: function(evt) {
+    handleNavContract: (evt) => {
       if ($(this).parent('li').hasClass('open')) {
         evt.stopPropagation();
         const id = $(this).parent('li').data('navid');
         Pubnav.contractNavElem(id);
       }
     },
-    handleNewPageRequest: function(e) {
+    handleNewPageRequest: (e) => {
       // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
       Pubnav.mobileClose(); // Close the mobile nav if it was open.
 
@@ -367,17 +366,17 @@ const NEWUX = (function($) {
         Pubnav.mobileOpen();
       }
     },
-    mobileOpen: function() {
+    mobileOpen: () => {
       $('.pubmenu').addClass('open');
       $('.cpage').fadeOut();
       $('.launch-pubnav i').removeClass('fa-bars').addClass('fa-times');
     },
-    mobileClose: function() {
+    mobileClose: () => {
       $('.pubmenu').removeClass('open');
       $('.cpage').fadeIn();
       $('.launch-pubnav i').removeClass('fa-times').addClass('fa-bars');
     },
-    setupNav: function() {
+    setupNav: () => {
       // Inject HTML Elements necessary for paging and the pubmenu
       if (!$('.ctoc').length) $('.pubmenu').append('<div class="ctoc"></div>');
       if (!$('.collapse-ctoc').length) $('.ctoc').append('<div class="collapse-ctoc collapse"><i class="fa fa-angle-double-up"></i></div>');
@@ -407,11 +406,11 @@ const NEWUX = (function($) {
       const url = new URL(window.location.href);
       const urlChunks = url.pathname.split('/'); // This will include the first item as an empty item.
       urlChunks.length = 3; // This will dump any extra url stuff for nested files.
-      const navfile = urlChunks.join('/') + '/navigation.json';
+      const navfile = `${urlChunks.join('/')}/navigation.json`;
 
       // Let's also define the product code for saving the navstate and the product bar lookup.
       this.product = urlChunks[1].toLowerCase();
-      this.navstate = localStorage.getItem(this.product + '_navstate') ? localStorage.getItem(this.product + '_navstate').split(',') : [];
+      this.navstate = localStorage.getItem(`${this.product}_navstate`) ? localStorage.getItem(`${this.product}_navstate`).split(',') : [];
 
       // Now, get the JSON, and then build out a shadow structure and insert it into the DOM.
       // TODO!!! - Handle errors?
@@ -449,7 +448,7 @@ const NEWUX = (function($) {
             this.updatePageState();
           });
     },
-    loadContent: function(url, hash, updateHistory) {
+    loadContent: (url, hash, updateHistory) => {
       Pubnav.clicktrack++; // This is just used to prevent runaway clicks.
 
       // Start by fading out the existing content....
@@ -483,7 +482,7 @@ const NEWUX = (function($) {
 
       // $(".maincontent").append('<div id="content-spinner"><i class="fas fa-circle-notch fa-spin"></i></div>');
       // Fade out the current content.
-      $content.fadeTo(200, 0, function() {
+      $content.fadeTo(200, 0, () => {
         faded = true;
         swapContent();
       });
@@ -495,7 +494,7 @@ const NEWUX = (function($) {
         url: url,
         type: 'GET',
         dataType: 'html',
-      }).done(function(responseText) {
+      }).done((responseText) => {
         // Save response for use in complete callback
         const response = arguments;
 
@@ -526,8 +525,10 @@ const NEWUX = (function($) {
 
           // Update history so the back button works.... We don't want this to fire if we're going back in time!
           if (updateHistory) {
-            if (typeof hash === 'undefined') hash = '';
-            history.pushState({page: url}, Pubnav.pagestate.current.text, url + hash);
+            if (typeof hash === 'undefined') {
+              hash = '';
+            }
+            history.pushState({page: url}, Pubnav.pagestate.current.text, `${url}${hash}`);
           }
 
           $(virtualDOM).find('head').append(`<base href="${url}">`);
@@ -551,7 +552,7 @@ const NEWUX = (function($) {
           complete = true;
           swapContent();
         }
-      }).fail(function(jqXHR, status, error) {
+      }).fail((jqXHR, status, error) => {
         // If the request succeeds, this function gets "data", "status", "jqXHR"
         // but they are ignored because response was set above.
         // If it fails, this function gets "jqXHR", "status", "error"
@@ -585,7 +586,7 @@ const NEWUX = (function($) {
 
       return data;
     },
-    createHtmlTree: function(tree, level) {
+    createHtmlTree: (tree, level) => {
       if (typeof level === 'undefined') {
         level = 1;
       }
@@ -621,7 +622,7 @@ const NEWUX = (function($) {
       html += '</ul>';
       return html;
     },
-    expandNavElem: function(id) {
+    expandNavElem: (id) => {
       const $this = $(`.ctoc li[data-navid="${id}"]`);
 
       // If it's already open, ignore.
@@ -632,7 +633,7 @@ const NEWUX = (function($) {
       // Collapse other menu items at the same level as this one:
       const level = $this.data('level');
       if (level > 1) {
-        $(`.ctoc li.open[data-level="${level}"]`).each(function() {
+        $(`.ctoc li.open[data-level="${level}"]`).each(() => {
           if ($(this).find('.active').length === 0) {
             // As long as it's not the parent of an active element.
             const id = $(this).data('navid');
@@ -643,35 +644,35 @@ const NEWUX = (function($) {
 
       // Now expand this one..
       $this.addClass('open');
-      setTimeout(function() {
+      setTimeout(() => {
         $this.addClass('sesame');
       }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
       // Ensure the parents are open too.
-      $this.parents('.ctoc li:not(.open)').each(function() {
+      $this.parents('.ctoc li:not(.open)').each(() => {
         const $parent = $(this);
         if ($parent.data('level') > 1) {
           $parent.addClass('open');
-          setTimeout(function() {
+          setTimeout(() => {
             $parent.addClass('sesame');
           }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
           const parentId = $parent.data('navid');
           if (!Pubnav.navstate.indexOf(parentId)) {
             Pubnav.navstate.push(parentId);
-            localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
+            localStorage.setItem(`${Pubnav.product}_navstate`, Pubnav.navstate);
           }
         }
       });
     },
-    contractNavElem: function(id) {
+    contractNavElem: (id) => {
       // Contract the elem....
       // $(this).text("\uf107").siblings("ul").parent("li").removeClass("open sesame");
       const $elem = $('.ctoc').find(`li[data-navid=${id}]`);
       $elem.removeClass('sesame');
 
       // Again the hack to hide the item after compression.... I think we could do this with keyframes instead. https://jsfiddle.net/jalbertbowdenii/mHRb8/
-      setTimeout(function() {
+      setTimeout(() => {
         $elem.removeClass('open');
       }, 320);
 
@@ -680,9 +681,9 @@ const NEWUX = (function($) {
       if (index > -1) {
         Pubnav.navstate.splice(index, 1);
       }
-      localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
+      localStorage.setItem(`${Pubnav.product}_navstate`, Pubnav.navstate);
     },
-    requestNewPage: function(url, hash, updateHistory) {
+    requestNewPage: (url, hash, updateHistory) => {
       // console.log(`called requestNew Page with url: ${url}, hash: ${hash}, and updateHistory: ${updateHistory}`);
       // Only load if the url is actually in the nav tree...
       if (typeof updateHistory === 'undefined') updateHistory = true;
@@ -703,7 +704,7 @@ const NEWUX = (function($) {
         return false;
       }
     },
-    getNestedItemBy: function(key, value, arr) {
+    getNestedItemBy: (key, value, arr) => {
       for (let i = 0; i < arr.length; i++) {
         if (key === 'id' && arr[i].id === value) {
           return arr[i];
@@ -725,7 +726,7 @@ const NEWUX = (function($) {
       urlParts[2] = 'latest';
       return urlParts.join('/');
     },
-    isFoyer: function(navitem) {
+    isFoyer: (navitem) => {
       // Detects whether the page is a foyer page.
       let foyer = false;
       if (navitem.href !== undefined) {
@@ -738,7 +739,7 @@ const NEWUX = (function($) {
       }
       return foyer;
     },
-    mapPageState: function(navarray, id) {
+    mapPageState: (navarray, id) => {
       // This searches for the id in the nav tree, and then sets up the back, forward etc.
 
       const lastParent = [];
@@ -786,7 +787,7 @@ const NEWUX = (function($) {
       }
       return false; // didn't find a matching id?
     },
-    updatePageState: function() {
+    updatePageState: () => {
       // Update the page elems based on current situation!
 
       // Title
@@ -873,15 +874,15 @@ const NEWUX = (function($) {
     },
   };
 
-  var ProductDrawer = {
+  const ProductDrawer = {
     data: {},
-    init: function() {
+    init: () => {
       if (!$('.product-drawer .products').length) $('.product-drawer').append('<ul class="products"></ul>');
       if (!$('.product-drawer .open-close').length) $('.product-drawer').append('<div class="open-close">»</div>');
 
       this.bootstrap(); // Actually, we can't fire this until the WhoAmI function has fired, so moved the init call over there.
     },
-    bootstrap: function() {
+    bootstrap: () => {
       // Load in the versions.json
       const navfile = '/product-drawer.json';
       fetch(navfile)
@@ -890,10 +891,10 @@ const NEWUX = (function($) {
             ProductDrawer.data = data; // Save the whole thingy in case we need it again.
 
             let output = '';
-            data.forEach(function(cat) {
+            data.forEach((cat) => {
               let innerOutput = '';
               let open = '';
-              cat.products.forEach(function(el) {
+              cat.products.forEach((el) => {
                 let active = '';
                 if (el) {
                   if (WhoAmI.version.url) {
@@ -913,12 +914,12 @@ const NEWUX = (function($) {
             this.bindEvents();
           });
     },
-    bindEvents: function() {
-      $('.cat').on('click', function() {
+    bindEvents: () => {
+      $('.cat').on('click', () => {
         $('.cat').removeClass('expanded');
         $(this).addClass('expanded');
       });
-      $('.product-drawer .open-close').on('click', function() {
+      $('.product-drawer .open-close').on('click', () => {
         if ($('.product-drawer').hasClass('open')) {
           $('.product-drawer').css('width', '50px').removeClass('open');
           $('.cmain').removeAttr('style'); // TODO!!! - A bit brittle if something else codes styles to this element!
@@ -927,7 +928,7 @@ const NEWUX = (function($) {
           $(this).html('&raquo;'); // TODO... delay this .5s
         } else {
           $('.product-drawer').css('width', '210px').addClass('open');
-          // setTimeout(function() { $(".product-drawer").addClass("open")}, 500);
+          // setTimeout(() => { $(".product-drawer").addClass("open")}, 500);
           $('.logo').hide();
           $('.cmain').css('marginLeft', '210px');
           $('.chead').css('left', '210px');
@@ -937,25 +938,36 @@ const NEWUX = (function($) {
     },
   };
 
-  var Search = {
+  const Search = {
     cpage: '', // This will hold the page info when detached.
-    init: function() {
+    init: () => {
       // Inject Search Containers...
-      const searchHtml = '<div class="search"><i class="search-close fas fa-times"></i><form class="searchform"><input type="text" placeholder="Search Documentation" class="searchterm"><i class="fas fa-search" class="submit"></i></form></div>' +
-                '<div class="launch-search"><i class="fas fa-search"></i></div>' +
-                '<div class="launch-pubnav"><i class="fas fa-bars"></i></div>';
+      const searchHtml = `<div class="search">
+        <i class="search-close fas fa-times"></i>
+        <form class="searchform">
+        <input type="text" placeholder="Search Documentation" class="searchterm">
+        <i class="fas fa-search" class="submit"></i>
+        </form>
+        </div>
+        <div class="launch-search"><i class="fas fa-search"></i></div>
+        <div class="launch-pubnav"><i class="fas fa-bars"></i></div>`;
 
-      const overlayHtml = '<div class="lucene-overlay">\n' +
-                '    <div class="lucene-results">\n' +
-                '        <div class="close-search"><a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a></div>' +
-                '        <h1>Search Results</h1>\n' +
-                '        <div class="results"></div>\n' +
-                '        <div class="fail"></div>\n' +
-                '        <div class="waiting"><img src="/common/img/spinner.svg"></div>\n' +
-                '        <div class="more-results"><a href="" data-nextcursormark="" data-searchterm="" class="more-link"><i class="fa fa-arrow-circle-o-down"></i>More</a></div>\n' +
-                '        <p style="text-align:center;"><a href="" class="close-search-results grey btn">Close Search Results.</a></p>\n' +
-                '    </div>\n' +
-                '</div>';
+      const overlayHtml = `<div class="lucene-overlay">
+        <div class="lucene-results">
+        <div class="close-search"><a href="#" class="close-btn">
+        <i class="fa fa-times-circle"></i></a></div>
+        <h1>Search Results</h1>
+        <div class="results"></div>
+        <div class="fail"></div>
+        <div class="waiting"><img src="/common/img/spinner.svg"></div>
+        <div class="more-results">
+        <a href="" data-nextcursormark="" data-searchterm="" class="more-link">
+        <i class="fa fa-arrow-circle-o-down"></i>More</a></div>
+        <p style="text-align:center;">
+        <a href="" class="close-search-results grey btn">Close Search Results</a>
+        </p>
+        </div>
+        </div>`;
 
       if (!$('.chead .search').length) $('.chead').append(searchHtml);
       if (!$('.cmain .lucene-overlay').length) $('.cmain').append(overlayHtml);
@@ -966,7 +978,7 @@ const NEWUX = (function($) {
     },
 
     // Configs the search functionality...
-    searchURL: function() {
+    searchURL: () => {
       const sserver = ['nool', 'yoop'];
       return 'https://' + sserver[Math.floor(Math.random() * sserver.length)] +
                 '.td.hortonworks.com/solr/dhc/query';
@@ -974,9 +986,9 @@ const NEWUX = (function($) {
       // return "/common/sample-data/solr1.json"
     },
 
-    bindEvents: function() {
+    bindEvents: () => {
       $('.searchform').on('submit', this.launchSearch.bind(this));
-      $('.searchform i.submit').on('click', function() {
+      $('.searchform i.submit').on('click', () => {
         $(this).closest('.searchform').trigger('submit');
       });
 
@@ -984,30 +996,30 @@ const NEWUX = (function($) {
       $('.lucene-results .more-link').on('click', this.loadMoreResults.bind(this));
 
       // SEARCH DRAWER
-      $('.launch-search').on('click', function() {
+      $('.launch-search').on('click', () => {
         $(this).hide();
         $('.search').show().addClass('open');
       });
-      $('.search-close').on('click', function() {
+      $('.search-close').on('click', () => {
         $('.search').hide().removeClass('open');
         $('.launch-search').show();
       });
     },
 
-    formatReleaseNumber: function(version, shorten) {
+    formatReleaseNumber: (version, shorten) => {
       /* IGNORE THIS in transition to Cloudera
        * Bi-way formatting of release number.
 
             shorten = shorten ? true : false;
-            var release = version.toString().split(".");
+            let release = version.toString().split(".");
             if (release.length == 4 && shorten) {
-                for (var i = 3; i = 0; i--) {
+                for (let i = 3; i = 0; i--) {
                     if (release[i] == "0") {
                         release.pop();
                     }
                 }
             } else {
-                for (var i = 0; i < 4; i++) {
+                for (let i = 0; i < 4; i++) {
                     if (!release[i]) {
                         release[i] = 0;
                     }
@@ -1025,7 +1037,7 @@ const NEWUX = (function($) {
     },
 
     /* Launch a new search from the main search field */
-    launchSearch: function(evt) {
+    launchSearch: (evt) => {
       evt.preventDefault();
       const current = evt ? evt.currentTarget : false;
       const searchTerm = this.filterSearchTerm($(current).find('.searchterm').val());
@@ -1037,23 +1049,23 @@ const NEWUX = (function($) {
       this.fireQuery(searchTerm);
     },
 
-    hideSearch: function(evt) {
+    hideSearch: (evt) => {
       // console.log("hideSearch");
       $('.lucene-overlay').hide();
       $('.cpage').show();
     },
 
-    loadMoreResults: function(evt) {
+    loadMoreResults: (evt) => {
       evt.preventDefault();
       const current = evt ? evt.currentTarget : false;
       this.fireQuery($(current).data('searchTerm'), $(current).data('nextCursorMark'));
     },
 
-    fireQuery: function(searchterm, nextCursorMark) {
+    fireQuery: (searchterm, nextCursorMark) => {
       const that = this;
       const q = searchterm == null ? filterSearchTerm($('#overlay-search .searchterm').val()) : searchterm;
       // For Example: fq = "((product:\\\"Ambari\\\" AND release:2.7.3.0))",
-      let fq = WhoAmI.search_name ? '(search-name:"' + WhoAmI.search_name + '" AND release:' + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ')' : '';
+      let fq = WhoAmI.search_name ? `(search-name:"${WhoAmI.search_name}" AND release:${encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title))})` : '';
       const rows = 10;
       let params = {};
       const defaults = '&sort=score desc,id asc&facet=true&facet.field=product&facet.field=release&facet.field=booktitle&hl=true&hl.fl=text&fl=id,score,url,product,release,booktitle,title';
@@ -1067,8 +1079,7 @@ const NEWUX = (function($) {
       };
 
       if (fq) {
-        fq = '(' + fq + ')';
-        params.fq = fq;
+        params.fq = `(${fq})`;
       }
 
       if (nextCursorMark) {
@@ -1081,7 +1092,7 @@ const NEWUX = (function($) {
         data: params,
         dataType: 'jsonp',
         jsonp: 'json.wrf',
-        beforeSend: function() {
+        beforeSend: () => {
           if (!nextCursorMark) {
             $('.lucene-results .results').hide();
           }
@@ -1091,14 +1102,14 @@ const NEWUX = (function($) {
             Search.query.abort();
           }
         },
-        success: function(response) {
+        success: (response) => {
           const outputHolder = [];
           let output = '';
           let result = '';
 
           // ToDo : Group by book
           if (response.response.docs.length) {
-            $.each(response.response.docs, function(index, item) {
+            $.each(response.response.docs, (index, item) => {
               // Check there is an associated entry with the result.
               if (!$.isEmptyObject(response.highlighting[item.url])) {
                 // First add in the highlighting to the item list. Escape HTML,
@@ -1111,12 +1122,11 @@ const NEWUX = (function($) {
                 if (!url.match(/^http/)) {
                   url = `https://docs.cloudera.com${item.url}`;
                 }
-                result = '';
-                result += ' <div class="result">';
-                result += '     <div class="title"><a href="' + url + '"><span class="chapter">' + item.title + '</span></a></div>';
-                result += '     <div class="excerpt">' + item.text + '</div>';
-                result += '     <div class="url"><a href="' + url + '">' + item.url + '</a></div>';
-                result += ' </div>';
+                result = `<div class="result">
+                    <div class="title"><a href="${url}"><span class="chapter">${item.title}</span></a></div>
+                    <div class="excerpt">${item.text}</div>
+                    <div class="url"><a href="${url}">${item.url}</a></div>
+                  </div>`;
 
                 outputHolder[item.booktitle] = outputHolder[item.booktitle] || [];
                 outputHolder[item.booktitle].push(result);
@@ -1126,9 +1136,8 @@ const NEWUX = (function($) {
             for (const book in outputHolder) {
               // TODO!!! - Sort by book is nice, but we need to integrate with DITA structure, and make sure the book is readable
               if (outputHolder.hasOwnProperty(book)) {
-                result = '';
-                result += '<div class="book-group">';
-                result += ' <div class="book">' + (book !== 'undefined' ? book : '') + '</div>';
+                result = `<div class="book-group">
+                  <div class="book">${(book !== 'undefined' ? book : '')}</div>`;
                 for (let i = 0; i < outputHolder[book].length; i++) {
                   result += outputHolder[book][i];
                 }
@@ -1164,9 +1173,9 @@ const NEWUX = (function($) {
           }
         },
       })
-          .done(function(data) {
+          .done((data) => {
           })
-          .fail(function(jqXHR, textStatus) {
+          .fail((jqXHR, textStatus) => {
             $('.lucene-results .waiting').hide();
             $('.lucene-results .results').hide();
             $('.lucene-results .fail').show();
@@ -1175,21 +1184,21 @@ const NEWUX = (function($) {
 
             $('.lucene-results .fail').html(errMsg);
           })
-          .always(function() {
+          .always(() => {
             // complete
           });
     },
   };
 
   // Example Toolbelt Functions
-  var Utils = {
-    stripAndCollapse: function(value) {
+  const Utils = {
+    stripAndCollapse: (value) => {
       // Strip and collapse whitespace according to HTML spec
       // https://infra.spec.whatwg.org/#strip-and-collapse-ascii-whitespace
       const tokens = value.match(/[^\x20\t\r\n\f]+/g) || [];
       return tokens.join(' ');
     },
-    store: function(namespace, data) {
+    store: (namespace, data) => {
       if (arguments.length > 1) {
         return localStorage.setItem(namespace, JSON.stringify(data));
       } else {
@@ -1214,12 +1223,12 @@ const NEWUX = (function($) {
 
       return str;
     },
-    flatten: function(arr, subkey) {
+    flatten: (arr, subkey) => {
       // TODO! Flatten a nested array with subs, into a consecutive array....
       // we'll use this to make it easier to jump forwards and backwards.
       return arr;
     },
-    makeIdFromHref: function(href) {
+    makeIdFromHref: (href) => {
       // Clever way to parse incomplete URLs - https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
       const parser = document.createElement('a');
       parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
@@ -1229,14 +1238,14 @@ const NEWUX = (function($) {
       id = id.substring(0, id.indexOf('.')); // dump anything after a period... .html / .php etc.
 
       if (chunks.length > 5) {
-        id = chunks[chunks.length - 3] + '-' + id;
+        id = `${chunks[chunks.length - 3]}-${id}`;
       }
       if (parser.hash) {
-        id = id + '-' + parser.hash.substring(1);
+        id = `${id}-${parser.hash.substring(1)}`;
       }
       return id;
     },
-    isEmpty: function(obj) {
+    isEmpty: (obj) => {
       for (const key in obj) {
         if (obj.hasOwnProperty(key)) {
           return false;
@@ -1244,7 +1253,7 @@ const NEWUX = (function($) {
       }
       return true;
     },
-    formatCopyright: function(content) {
+    formatCopyright: (content) => {
       /**
        * Formats a copyright string.
        * Assumes digit groups are 4-digit years.
@@ -1283,8 +1292,8 @@ const NEWUX = (function($) {
   };
 
   // Series of functions and event handlers to be attached to content on the page.
-  var Transforms = {
-    bindEvents: function($content) {
+  const Transforms = {
+    bindEvents: ($content) => {
       // Add event handlers here.
       // Example:
       // $content.find('a').on('click', function(evt) {
@@ -1292,7 +1301,7 @@ const NEWUX = (function($) {
       //     console.log('I clicked a link');
       // });
 
-      $content.find('.tab-win a').click(function(e) {
+      $content.find('.tab-win a').click((e) => {
         e.preventDefault();
         const p = $(this).closest('.tab-win');
         const i = $(this).attr('data-target');
@@ -1303,13 +1312,13 @@ const NEWUX = (function($) {
         $(p).find(`#${i}`).fadeIn('slow');
       });
     },
-    filterStuff: function() {
+    filterStuff: () => {
       filterStuff($);
     },
-    cdocUtils: function() {
+    cdocUtils: () => {
       cdocUtils($);
     },
-    deTarget: function() {
+    deTarget: () => {
       Array.from(document.querySelectorAll('a[target]')).forEach((at) => {
         if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes('//')) {
           return;
@@ -1317,7 +1326,7 @@ const NEWUX = (function($) {
         at.removeAttribute('target');
       });
     },
-    objectForYouTube: function() {
+    objectForYouTube: () => {
       /**
        * Transforms DITA/HTML4 object element to YouTube-preferred iframe markup.
        * DITA: <object data="https://www.youtube.com/embed/WhOyVz3VJ7c"></object>
@@ -1338,15 +1347,15 @@ const NEWUX = (function($) {
         }
       });
     },
-    tabs: function() {
+    tabs: () => {
       $('.tab-win').find('ul li:first').addClass('active');
       $('.tab-win').find('.tabcontent').hide();
       $('.tab-win').find('.tabcontent:first').show();
     },
-    test: function($content) {
+    test: ($content) => {
       $content.find('a').css('backgroundColor', 'red');
     },
-    run: function($content) {
+    run: ($content) => {
       /*
        * Accepts a jQuery element as a parameter, and applies the following filters to it.
        *
