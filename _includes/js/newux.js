@@ -1,3 +1,15 @@
+// These are currently only used for eslint formatting and checking.
+// E.g., uncomment them before running eslint and recomment them after.
+// import {$, jQuery} from 'jquery-3.4.1.min.js';
+// import {cdocUtils} from 'cdoc-utils.js';
+// import {filterStuff} from 'cdoc-filter.js';
+
+/**
+ * NEWUX - Functionality associated with the 2019 Rework of the Cloudera Documentation.
+ *
+ * @link http://docs.cloudera.com
+ * @author James Dilworth - james@jamesdilworth.com
+ */
 const NEWUX = (function($) {
   'use strict';
 
@@ -147,7 +159,7 @@ const NEWUX = (function($) {
         $('.bread-version').html('<i class="fa fa-cloud"></i>');
       } else {
         if (WhoAmI.version.type !== '') {
-          $('.bread-version').html(`${WhoAmI.version.title} (${WhoAmI.version.type})`);
+          $('.bread-version').html(WhoAmI.version.title + ` (${WhoAmI.version.type})`);
         } else {
           $('.bread-version').html(WhoAmI.version.title);
         }
@@ -197,6 +209,7 @@ const NEWUX = (function($) {
   };
 
   var Pubnav = {
+
     nav_tree: [], // Will hold the full, cleaned, nav JSON file
     product: '', // Holds a unique name for the product we're in, which is used as a key for saving the menu.
     pagestate: { // Will hold the current state of the page.
@@ -241,12 +254,12 @@ const NEWUX = (function($) {
         $this.removeClass('collapse');
         $this.find('i').removeClass('fa-angle-double-up').addClass('fa-angle-double-down');
         $('li.xp').removeClass('open sesame');
-        localStorage.setItem(`${Pubnav.product}_navstate`, '');
+        localStorage.setItem(Pubnav.product + '_navstate', '');
       } else {
         $this.addClass('collapse');
         $this.find('i').removeClass('fa-angle-double-down').addClass('fa-angle-double-up');
         $('li.xp').addClass('open sesame');
-        localStorage.setItem(`${Pubnav.product}_navstate`, '');
+        localStorage.setItem(Pubnav.product + '_navstate', '');
       }
     },
     handleNavOpen: function(evt) {
@@ -259,7 +272,7 @@ const NEWUX = (function($) {
         // Update the state
         if (!Pubnav.navstate.includes(id)) {
           Pubnav.navstate.push(id);
-          localStorage.setItem(`${Pubnav.product}_navstate`, Pubnav.navstate);
+          localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
         }
         Pubnav.expandNavElem(id);
       }
@@ -394,11 +407,11 @@ const NEWUX = (function($) {
       const url = new URL(window.location.href);
       const urlChunks = url.pathname.split('/'); // This will include the first item as an empty item.
       urlChunks.length = 3; // This will dump any extra url stuff for nested files.
-      const navfile = `${urlChunks.join('/')}/navigation.json`;
+      const navfile = urlChunks.join('/') + '/navigation.json';
 
       // Let's also define the product code for saving the navstate and the product bar lookup.
       this.product = urlChunks[1].toLowerCase();
-      this.navstate = localStorage.getItem(`${this.product}_navstate`) ? localStorage.getItem(`${this.product}_navstate`).split(',') : [];
+      this.navstate = localStorage.getItem(this.product + '_navstate') ? localStorage.getItem(this.product + '_navstate').split(',') : [];
 
       // Now, get the JSON, and then build out a shadow structure and insert it into the DOM.
       // TODO!!! - Handle errors?
@@ -513,10 +526,8 @@ const NEWUX = (function($) {
 
           // Update history so the back button works.... We don't want this to fire if we're going back in time!
           if (updateHistory) {
-            if (typeof hash === 'undefined') {
-              hash = '';
-            }
-            history.pushState({page: url}, Pubnav.pagestate.current.text, `${url}${hash}`);
+            if (typeof hash === 'undefined') hash = '';
+            history.pushState({page: url}, Pubnav.pagestate.current.text, url + hash);
           }
 
           $(virtualDOM).find('head').append(`<base href="${url}">`);
@@ -648,7 +659,7 @@ const NEWUX = (function($) {
           const parentId = $parent.data('navid');
           if (!Pubnav.navstate.indexOf(parentId)) {
             Pubnav.navstate.push(parentId);
-            localStorage.setItem(`${Pubnav.product}_navstate`, Pubnav.navstate);
+            localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
           }
         }
       });
@@ -669,7 +680,7 @@ const NEWUX = (function($) {
       if (index > -1) {
         Pubnav.navstate.splice(index, 1);
       }
-      localStorage.setItem(`${Pubnav.product}_navstate`, Pubnav.navstate);
+      localStorage.setItem(Pubnav.product + '_navstate', Pubnav.navstate);
     },
     requestNewPage: function(url, hash, updateHistory) {
       // console.log(`called requestNew Page with url: ${url}, hash: ${hash}, and updateHistory: ${updateHistory}`);
@@ -930,32 +941,21 @@ const NEWUX = (function($) {
     cpage: '', // This will hold the page info when detached.
     init: function() {
       // Inject Search Containers...
-      const searchHtml = `<div class="search">
-        <i class="search-close fas fa-times"></i>
-        <form class="searchform">
-        <input type="text" placeholder="Search Documentation" class="searchterm">
-        <i class="fas fa-search" class="submit"></i>
-        </form>
-        </div>
-        <div class="launch-search"><i class="fas fa-search"></i></div>
-        <div class="launch-pubnav"><i class="fas fa-bars"></i></div>`;
+      const searchHtml = '<div class="search"><i class="search-close fas fa-times"></i><form class="searchform"><input type="text" placeholder="Search Documentation" class="searchterm"><i class="fas fa-search" class="submit"></i></form></div>' +
+                '<div class="launch-search"><i class="fas fa-search"></i></div>' +
+                '<div class="launch-pubnav"><i class="fas fa-bars"></i></div>';
 
-      const overlayHtml = `<div class="lucene-overlay">
-        <div class="lucene-results">
-        <div class="close-search"><a href="#" class="close-btn">
-        <i class="fa fa-times-circle"></i></a></div>
-        <h1>Search Results</h1>
-        <div class="results"></div>
-        <div class="fail"></div>
-        <div class="waiting"><img src="/common/img/spinner.svg"></div>
-        <div class="more-results">
-        <a href="" data-nextcursormark="" data-searchterm="" class="more-link">
-        <i class="fa fa-arrow-circle-o-down"></i>More</a></div>
-        <p style="text-align:center;">
-        <a href="" class="close-search-results grey btn">Close Search Results</a>
-        </p>
-        </div>
-        </div>`;
+      const overlayHtml = '<div class="lucene-overlay">\n' +
+                '    <div class="lucene-results">\n' +
+                '        <div class="close-search"><a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a></div>' +
+                '        <h1>Search Results</h1>\n' +
+                '        <div class="results"></div>\n' +
+                '        <div class="fail"></div>\n' +
+                '        <div class="waiting"><img src="/common/img/spinner.svg"></div>\n' +
+                '        <div class="more-results"><a href="" data-nextcursormark="" data-searchterm="" class="more-link"><i class="fa fa-arrow-circle-o-down"></i>More</a></div>\n' +
+                '        <p style="text-align:center;"><a href="" class="close-search-results grey btn">Close Search Results.</a></p>\n' +
+                '    </div>\n' +
+                '</div>';
 
       if (!$('.chead .search').length) $('.chead').append(searchHtml);
       if (!$('.cmain .lucene-overlay').length) $('.cmain').append(overlayHtml);
@@ -999,15 +999,15 @@ const NEWUX = (function($) {
        * Bi-way formatting of release number.
 
             shorten = shorten ? true : false;
-            let release = version.toString().split(".");
+            var release = version.toString().split(".");
             if (release.length == 4 && shorten) {
-                for (let i = 3; i = 0; i--) {
+                for (var i = 3; i = 0; i--) {
                     if (release[i] == "0") {
                         release.pop();
                     }
                 }
             } else {
-                for (let i = 0; i < 4; i++) {
+                for (var i = 0; i < 4; i++) {
                     if (!release[i]) {
                         release[i] = 0;
                     }
@@ -1053,7 +1053,7 @@ const NEWUX = (function($) {
       const that = this;
       const q = searchterm == null ? filterSearchTerm($('#overlay-search .searchterm').val()) : searchterm;
       // For Example: fq = "((product:\\\"Ambari\\\" AND release:2.7.3.0))",
-      let fq = WhoAmI.search_name ? `(search-name:"${WhoAmI.search_name}" AND release:${encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title))})` : '';
+      let fq = WhoAmI.search_name ? '(search-name:"' + WhoAmI.search_name + '" AND release:' + encodeURIComponent(that.formatReleaseNumber(WhoAmI.version.title)) + ')' : '';
       const rows = 10;
       let params = {};
       const defaults = '&sort=score desc,id asc&facet=true&facet.field=product&facet.field=release&facet.field=booktitle&hl=true&hl.fl=text&fl=id,score,url,product,release,booktitle,title';
@@ -1067,7 +1067,8 @@ const NEWUX = (function($) {
       };
 
       if (fq) {
-        params.fq = `(${fq})`;
+        fq = '(' + fq + ')';
+        params.fq = fq;
       }
 
       if (nextCursorMark) {
@@ -1110,11 +1111,12 @@ const NEWUX = (function($) {
                 if (!url.match(/^http/)) {
                   url = `https://docs.cloudera.com${item.url}`;
                 }
-                result = `<div class="result">
-                    <div class="title"><a href="${url}"><span class="chapter">${item.title}</span></a></div>
-                    <div class="excerpt">${item.text}</div>
-                    <div class="url"><a href="${url}">${item.url}</a></div>
-                  </div>`;
+                result = '';
+                result += ' <div class="result">';
+                result += '     <div class="title"><a href="' + url + '"><span class="chapter">' + item.title + '</span></a></div>';
+                result += '     <div class="excerpt">' + item.text + '</div>';
+                result += '     <div class="url"><a href="' + url + '">' + item.url + '</a></div>';
+                result += ' </div>';
 
                 outputHolder[item.booktitle] = outputHolder[item.booktitle] || [];
                 outputHolder[item.booktitle].push(result);
@@ -1124,8 +1126,9 @@ const NEWUX = (function($) {
             for (const book in outputHolder) {
               // TODO!!! - Sort by book is nice, but we need to integrate with DITA structure, and make sure the book is readable
               if (outputHolder.hasOwnProperty(book)) {
-                result = `<div class="book-group">
-                  <div class="book">${(book !== 'undefined' ? book : '')}</div>`;
+                result = '';
+                result += '<div class="book-group">';
+                result += ' <div class="book">' + (book !== 'undefined' ? book : '') + '</div>';
                 for (let i = 0; i < outputHolder[book].length; i++) {
                   result += outputHolder[book][i];
                 }
@@ -1226,10 +1229,10 @@ const NEWUX = (function($) {
       id = id.substring(0, id.indexOf('.')); // dump anything after a period... .html / .php etc.
 
       if (chunks.length > 5) {
-        id = `${chunks[chunks.length - 3]}-${id}`;
+        id = chunks[chunks.length - 3] + '-' + id;
       }
       if (parser.hash) {
-        id = `${id}-${parser.hash.substring(1)}`;
+        id = id + '-' + parser.hash.substring(1);
       }
       return id;
     },
