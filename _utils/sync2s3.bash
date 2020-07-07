@@ -53,6 +53,7 @@ then
     LOCAL="${HOME}/Library/Application Support/tomcat@9/webapps/ROOT"
     REMOTE='s3://docs-stage.cloudera.com'
     /usr/local/bin/git checkout my-master
+    bundle exec jekyll clean
     bundle exec jekyll build --trace
     /usr/local/bin/aws s3 sync ${REMOTE}/apps                                      "${LOCAL}"/apps
     /usr/local/bin/aws s3 sync ${REMOTE}/common/fonts                              "${LOCAL}"/common/fonts
