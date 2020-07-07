@@ -186,11 +186,11 @@ function filterStuff($) {
   function isHostUpgradeAfterPage() {
     return isPage('os_upgrade_after');
   }
-  
+
   function isJDKUpgradePage() {
     return isPage('jdk');
   }
-  
+
   var repoGenerator;
   if (isPackageRepoPage() || isParcelRepoPage()) {
     repoGenerator = new RepoGenerator('cm', 'Cloudera Manager');
@@ -340,10 +340,10 @@ function filterStuff($) {
     var i, paidVersions = $('.current_cdh_paid_releases').text();
     return getAllVersions(paidVersions);
   }
-  
-  /** 
+
+  /**
    * JD 4.2.2020: Add a separate function for getting all Cloudera Runtime releases
-   * 
+   *
    */
   function getAllCrVersions() {
     var i, paidCrVersions = $('.current_cr_releases').text()
@@ -1045,7 +1045,7 @@ function filterStuff($) {
       }
     }
   }
-  
+
   /**
    * JD 4.2.2020: Seperate populate function for CR clusters
    */
@@ -1149,7 +1149,7 @@ function filterStuff($) {
   }];
 
   /**
-   * JD 4.2.2020: Add calls to separate populate function for Cloudera Runtime releases 
+   * JD 4.2.2020: Add calls to separate populate function for Cloudera Runtime releases
    * and set options to 'Cluster' for both CR and CDH releases
    */
   populateCrVersions(getAllCrVersions(), 'CR', clusterFromOptions);
@@ -1322,7 +1322,7 @@ function filterStuff($) {
       addFilter('New Operating System', 'os', '', osOptions, $filter);
     } else if (isJDKUpgradePage()) {
       addFilter('Current Operating System', 'os', '', osOptions, $filter);
-    } 
+    }
 
     var $pushRight = $('<p>').css('text-align', 'right');
     var $refreshContent = $('<span>').addClass('cdoc-upgrade-refresh-content').html('<span class="fa fa-refresh fa-spin"></span> Refreshing Content').hide();
