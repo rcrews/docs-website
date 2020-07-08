@@ -25,13 +25,13 @@ publications:
       description: >-
         Provides information about configuring data protection on a Hadoop
         cluster.
-        
+
    - title: Accessing Cloud Data
      url: cloud-data-access/index.html
      description: >-
        Describes information about the configuration parameters used to
        access data stored in the cloud.
-       
+
     - title: Configuring HDFS ACLs
       url: hdfs-acls/index.html
       description: >-
