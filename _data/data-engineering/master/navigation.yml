@@ -42,10 +42,10 @@
       id: pub-manage-clusters
       sub: manage-clusters/navigation.json
 
-    - text: Creating and managing Apache Spark applications
-      href: manage-applications/index.html
-      id: pub-manage-applications
-      sub: manage-applications/navigation.json
+    - text: Creating and managing CDE jobs
+      href: manage-jobs/index.html
+      id: pub-manage-jobs
+      sub: manage-jobs/navigation.json
 
 # - text: Troubleshooting
 #   id: cat-troubleshooting
