@@ -49,12 +49,12 @@ class WhoAmIClass {
     let output = '';
 
     let x = 0;
-    WhoAmI.versions.forEach(function(el) {
+    WhoAmI.versions.forEach(el => {
       if (el) {
         output += `<li class="major"><a href="${el.url}">${el.title}</a>`;
         if (typeof el.minors === 'object') {
           output += '<ul class="minors">';
-          el.minors.forEach(function(em) {
+          el.minors.forEach(em => {
             output += `<li class="minor"><a href="${em.url}">${em.title}</a></li>`;
             x++;
           });
@@ -71,9 +71,13 @@ class WhoAmIClass {
     }
 
     // Add Handlers
-    $('.bread-version .selector').click(function() {
+    $('.bread-version .selector').click(() => {
       const $this = $(this);
-      $this.hasClass('fa-angle-down') ? $this.removeClass('fa-angle-down').addClass('fa-angle-up') : $this.removeClass('fa-angle-up').addClass('fa-angle-down');
+      if ($this.hasClass('fa-angle-down')) {
+        $this.removeClass('fa-angle-down').addClass('fa-angle-up');
+      } else {
+        $this.removeClass('fa-angle-up').addClass('fa-angle-down');
+      }
       $('.version-select').toggle();
     });
 
@@ -85,8 +89,8 @@ class WhoAmIClass {
     // Load in the versions.json
     const navfile = '/versions.json';
     fetch(navfile)
-        .then((resp) => resp.json()) // Transform the data into json
-        .then((data) => {
+        .then(resp => resp.json()) // Transform the data into json
+        .then(data => {
           WhoAmI.products = data; // Save the whole thingy in case we need it again.
 
           // See if I can figure out what product loading page is in from the product link.
@@ -435,8 +439,8 @@ class PubnavClass {
     // Now, get the JSON, and then build out a shadow structure and insert it into the DOM.
     // TODO!!! - Handle errors?
     fetch(navfile)
-        .then((resp) => resp.json()) // Transform the data into json
-        .then((data) => {
+        .then(resp => resp.json()) // Transform the data into json
+        .then(data => {
           // 1. Clean and build tree... add unique ids for all elements based on hrefs, check for duplicates.
           this.nav_tree = this.cleanNavData(data);
 
@@ -503,7 +507,7 @@ class PubnavClass {
 
       // $(".maincontent").append('<div id="content-spinner"><i class="fas fa-circle-notch fa-spin"></i></div>');
       // Fade out the current content.
-      $content.fadeTo(200, 0, function() {
+      $content.fadeTo(200, 0, () => {
         faded = true;
         swapContent();
       });
@@ -515,7 +519,7 @@ class PubnavClass {
         url: url,
         type: 'GET',
         dataType: 'html',
-      }).done(function(responseText) {
+      }).done(responseText => {
         // Save response for use in complete callback
         const response = arguments;
 
@@ -573,12 +577,17 @@ class PubnavClass {
           complete = true;
           swapContent();
         }
-      }).fail(function(jqXHR, status, error) {
+      }).fail((jqXHR, status, error) => {
         // If the request succeeds, this function gets "data", "status", "jqXHR"
         // but they are ignored because response was set above.
         // If it fails, this function gets "jqXHR", "status", "error"
         complete = true;
-        elems[0] = `<h1>Load error</h1><p>We're not able to get the page you requested. Most likely we planned a page for this location, but it's not ready yet.</p><p style="font-size: 85%">${status} ${jqXHR.statusText}</p><p>Choose a different topic from the left or find one using search.</p>`;
+        elems[0] = `<h1>Load error</h1>
+          <p>We're not able to get the page you requested.
+          Most likely we planned a page for this location,
+          but it's not ready yet.</p>
+          <p style="font-size: 85%">${status} ${jqXHR.statusText}</p>
+          <p>Choose a different topic from the left or find one using search.</p>`;
         swapContent();
       });
     }
@@ -614,7 +623,7 @@ class PubnavClass {
         level = 1;
       }
       let html = '<ul>';
-      tree.forEach((item) => {
+      tree.forEach(item => {
         let css = '';
         if (!('id' in item)) {
           if ('href' in item) {
@@ -657,7 +666,7 @@ class PubnavClass {
       // Collapse other menu items at the same level as this one:
       const level = $this.data('level');
       if (level > 1) {
-        $(`.ctoc li.open[data-level="${level}"]`).each(function() {
+        $(`.ctoc li.open[data-level="${level}"]`).each(() => {
           if ($(this).find('.active').length === 0) {
             // As long as it's not the parent of an active element.
             const id = $(this).data('navid');
@@ -668,16 +677,16 @@ class PubnavClass {
 
       // Now expand this one..
       $this.addClass('open');
-      setTimeout(function() {
+      setTimeout(() => {
         $this.addClass('sesame');
       }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
       // Ensure the parents are open too.
-      $this.parents('.ctoc li:not(.open)').each(function() {
+      $this.parents('.ctoc li:not(.open)').each(() => {
         const $parent = $(this);
         if ($parent.data('level') > 1) {
           $parent.addClass('open');
-          setTimeout(function() {
+          setTimeout(() => {
             $parent.addClass('sesame');
           }, 5); // This is a little hack to help the slide-down effect on the menu. The transitions don't actually work if they come right after display:block being made.
 
@@ -697,7 +706,7 @@ class PubnavClass {
       $elem.removeClass('sesame');
 
       // Again the hack to hide the item after compression.... I think we could do this with keyframes instead. https://jsfiddle.net/jalbertbowdenii/mHRb8/
-      setTimeout(function() {
+      setTimeout(() => {
         $elem.removeClass('open');
       }, 320);
 
@@ -923,15 +932,15 @@ class ProductDrawer {
     // Load in the versions.json
     const navfile = '/product-drawer.json';
     fetch(navfile)
-        .then((resp) => resp.json()) // Transform the data into json
-        .then((data) => {
+        .then(resp => resp.json()) // Transform the data into json
+        .then(data => {
           this.data = data; // Save the whole thingy in case we need it again.
 
           let output = '';
-          data.forEach(function(cat) {
+          data.forEach(cat => {
             let innerOutput = '';
             let open = '';
-            cat.products.forEach(function(el) {
+            cat.products.forEach(el => {
               let active = '';
               if (el) {
                 if (WhoAmI.version.url) {
@@ -1309,7 +1318,7 @@ class Utils {
       content = `${new Date().getFullYear()}`;
     }
     content.split(/\D+/)
-        .filter((v) => {
+        .filter(v => {
           return v.length > 1;
         })
         .filter((v, i, s) => {
@@ -1369,7 +1378,7 @@ class Transforms {
   }
 
   deTarget() {
-    Array.from(document.querySelectorAll('a[target]')).forEach((at) => {
+    Array.from(document.querySelectorAll('a[target]')).forEach(at => {
       if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes('//')) {
         return;
       }
@@ -1385,7 +1394,7 @@ class Transforms {
     const ALLOW = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
     const WIDTH = 560;
     const HEIGHT = 315;
-    document.querySelectorAll('object').forEach((o) => {
+    document.querySelectorAll('object').forEach(o => {
       if (o.data.match(/\/\/www\.youtube\.com\//)) {
         const iframe = document.createElement('iframe');
         iframe.setAttribute('frameborder', 0);
