@@ -264,17 +264,17 @@
       id:   pub-quick-start-sa
       sub:  quick-start-sa/navigation.json
 
-    - text: Analysing data with Apache Kafka in CDP Public Cloud
+    - text: Analyzing data with Apache Kafka in CDP Public Cloud
       href: flink-kafka-analysis/index.html
       id:   pub-flink-kafka-analysis
       sub:  flink-kafka-analysis/navigation.json
 
-    - text: Analysing data with Apache HBase in CDP Public Cloud
+    - text: Analyzing data with Apache HBase in CDP Public Cloud
       href: flink-hbase-analysis/index.html
       id:   pub-flink-hbase-analysis
       sub:  flink-hbase-analysis/navigation.json
 
-    - text: Analysing data with Apache Kudu in CDP Public Cloud
+    - text: Analyzing data with Apache Kudu in CDP Public Cloud
       href: flink-kudu-analysis/index.html
       id:   pub-flink-kudu-analysis
       sub:  flink-kudu-analysis/navigation.json
