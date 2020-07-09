@@ -80,9 +80,9 @@
           sub: impala-overview/navigation.json
 
         - text: Accessing Data Using Apache Druid
-          href: accessing-data-druid/index.html
-          id: pub-accessing-data-druid
-          sub: accessing-data-druid/navigation.json
+          href: druid-accessing-data/index.html
+          id: pub-druid-accessing-data
+          sub: druid-accessing-data/navigation.json
 
         - text: Hue Overview
           href: hue-introduction/index.html

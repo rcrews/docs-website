@@ -51,7 +51,7 @@ publications:
     sub:
 
     - title: Accessing Data Using Apache Druid
-      url: accessing-data-druid/index.html
+      url: druid-accessing-data/index.html
       description: >-
         Introduces Apache Druid capabilities and architecture.
 
