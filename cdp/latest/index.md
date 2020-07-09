@@ -34,10 +34,15 @@ Documentation for the services for your edition are available as well:
 [Replication Manager](/replication-manager/cloud/index.html),
 [Workload Manager](/workload-manager/cloud/index.html).
 
-## Release Announcements
+## CDP Public Cloud Release Announcements
 
-* [CDP Public Cloud 7.2, June 2020](announcement-202006.html)
+* [June 2020](announcement-202006.html)
+* [March 2020](announcement-202003.html)
+* [April 2020](announcement-202004.html)
+* [May 2020](announcement-202005.html)
+* [December 2019](announcement-201912.html)
+* [November 2019](announcement-201911.html)
+
+## CDP Data Center Release Announcements
+
 * [CDP Data Center 7.1, June 2020](announcement-202006-71.html)
-* [CDP Public Cloud 7.1, March 2020](announcement-202003.html)
-* [CDP Public Cloud 7.0, December 2019](announcement-201912.html)
-* [CDP Public Cloud 7.0, November 2019](announcement-201911.html)
