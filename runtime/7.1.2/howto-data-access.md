@@ -113,14 +113,13 @@ publications:
     - title: Setting Up and Using Apache Druid
       url: setting-up-druid/index.html
       description: >-
-        Varius, amet hendrerit quam ad aenean ultricies maximus nunc
-        consectetur facilisi, faucibus.
+        Explains the basics of setting up and using Apache Druid.
 
     - title: Using Apache Druid and Apache Hive
       url: using-druid-and-apache-hive/index.html
       description: >-
-        Lacus eleifend tempor malesuada sodales pulvinar ex massa
-        vivamus elit, turpis cras phasellus laoreettur facilisi.
+        Discusses using Apache Druid and Hive in tandem to index 
+        data from Hive into Druid and query data from Hive.
 
   - title: Hue
     sub:
