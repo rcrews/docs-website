@@ -25,7 +25,7 @@ CDP documentation is provided for deployed options.
 and
 [Cloudera Runtime](/runtime/latest/index.html)
 are part of both form factors.
-Documentation for the services for your edition are available as well:
+Documentation for the services for your edition are available separately:
 [Data Catalog](/data-catalog/cloud/index.html),
 [Data Hub](/data-hub/cloud/index.html),
 [Data Warehouse](/data-warehouse/cloud/index.html),
@@ -45,4 +45,4 @@ Documentation for the services for your edition are available as well:
 
 ## CDP Data Center Release Announcements
 
-* [CDP Data Center 7.1, June 2020](announcement-202006-71.html)
+* [7.1, June 2020](announcement-202006-71.html)
