@@ -10,6 +10,7 @@ title: Data Access
 # * Hue
 # * Sqoop
 # * Search
+# * Druid
 
 publications:
 - column:
@@ -105,6 +106,21 @@ publications:
       url: impala-manage/index.html
       description: >-
         Presents the task topics for configuring and managing Impala.
+
+  - title: Apache Druid
+    sub:
+
+    - title: Setting Up and Using Apache Druid
+      url: setting-up-druid/index.html
+      description: >-
+        Varius, amet hendrerit quam ad aenean ultricies maximus nunc
+        consectetur facilisi, faucibus.
+
+    - title: Using Apache Druid and Apache Hive
+      url: using-druid-and-apache-hive/index.html
+      description: >-
+        Lacus eleifend tempor malesuada sodales pulvinar ex massa
+        vivamus elit, turpis cras phasellus laoreettur facilisi.
 
   - title: Hue
     sub:

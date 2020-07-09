@@ -79,6 +79,11 @@
           id: pub-impala-overview
           sub: impala-overview/navigation.json
 
+        - text: Accessing Data Using Apache Druid
+          href: accessing-data-druid/index.html
+          id: pub-accessing-data-druid
+          sub: accessing-data-druid/navigation.json
+
         - text: Hue Overview
           href: hue-introduction/index.html
           id: pub-hue-introduction
@@ -348,6 +353,16 @@
           href: impala-manage/index.html
           id: pub-impala-manage
           sub: impala-manage/navigation.json
+
+        - text: Setting Up and Using Apache Druid
+          href: setting-up-druid/index.html
+          id: pub-setting-up-druid
+          sub: setting-up-druid/navigation.json
+
+        - text: Using Apache Druid and Apache Hive
+          href: using-druid-and-apache-hive/index.html
+          id: pub-using-druid-and-apache-hive
+          sub: using-druid-and-apache-hive/navigation.json
 
         - text: Using Hue
           href: using-hue/index.html

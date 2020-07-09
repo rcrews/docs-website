@@ -10,6 +10,7 @@ title: Data Access
 # * Hue
 # * Sqoop
 # * Search
+# * Druid
 
 publications:
 - column:
@@ -45,6 +46,15 @@ publications:
       description: >-
         Provides an overview and describes the key components of Apache
         Impala.
+
+  - title: Apache Druid
+    sub:
+
+    - title: Accessing Data Using Apache Druid
+      url: accessing-data-druid/index.html
+      description: >-
+        Montes urna arcu adipiscing varius, amet hendrerit quam ad
+        aenean ultricies.
 
   - title: Hue
     sub:
