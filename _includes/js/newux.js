@@ -4,15 +4,13 @@
 // import {cdocUtils} from 'cdoc-utils.js';
 // import {filterStuff} from 'cdoc-filter.js';
 
-/**
- * NEWUX - Functionality associated with the 2019 Rework of the Cloudera Documentation.
- *
- * @link http://docs.cloudera.com
- * @author James Dilworth - james@jamesdilworth.com
- */
-
 const COPYRIGHT = `&copy; ${new Date().getFullYear()} by Cloudera, Inc. All rights reserved.`;
 
+/**
+ * Tracks information about the library and version the page belongs to.
+ *
+ * @author James Dilworth <james@jamesdilworth.com>
+ */
 class WhoAmIClass {
   constructor() {
     // We get this from the from the URL, or the meta-tag
@@ -222,6 +220,12 @@ class WhoAmIClass {
   }
 }
 
+/**
+ * Builds and operates the page left nav.
+ * Expects a JSON file at ../../navigation.json
+ *
+ * @author James Dilworth <james@jamesdilworth.com>
+ */
 class PubnavClass {
   constructor() {
       this.nav_tree = []; // Will hold the full, cleaned, nav JSON file
@@ -914,6 +918,12 @@ class PubnavClass {
     }
 }
 
+/**
+ * Builds and operates the far left product drawer
+ * Expects a JSON file at /product-drawer.json
+ *
+ * @author James Dilworth <james@jamesdilworth.com>
+ */
 class ProductDrawer {
   constructor() {
     this.data = {};
@@ -1012,6 +1022,11 @@ const OVERLAY_HTML = `<div class="lucene-overlay">
   </div>
   </div>`;
 
+/**
+ * Builds and operates the search result page overlay.
+ *
+ * @author James Dilworth <james@jamesdilworth.com>
+ */
 class Search {
   constructor() {
     this.cpage = '';
@@ -1237,6 +1252,11 @@ class Search {
   }
 }
 
+/**
+ * Various static utility functions.
+ *
+ * @author James Dilworth <james@jamesdilworth.com>
+ */
 class Utils {
   static stripAndCollapse(value) {
     // Strip and collapse whitespace according to HTML spec
@@ -1343,20 +1363,26 @@ class Utils {
   }
 }
 
+/**
+ * Dynamically change the page HTML.
+ *
+ * @author James Dilworth <james@jamesdilworth.com>
+ */
 class Transforms {
-
   constructor($content) {
     this.run($content);
   }
 
+  /**
+   * Add event handlers here.
+   *
+   * Example:
+   * $content.find('a').on('click', function(evt) {
+   *   evt.preventDefault();
+   *   console.log('I clicked a link');
+   * });
+   */
   bindEvents($content) {
-    // Add event handlers here.
-    // Example:
-    // $content.find('a').on('click', function(evt) {
-    //     evt.preventDefault();
-    //     console.log('I clicked a link');
-    // });
-
     $content.find('.tab-win a').click(function(e) {
       e.preventDefault();
       const p = $(this).closest('.tab-win');
@@ -1377,6 +1403,11 @@ class Transforms {
     cdocUtils($);
   }
 
+  /**
+   * Remove a@target attributes when linking to Cloudera docs sites.
+   *
+   * @author Robert Crews <rcrews@cloudera.com>
+   */
   deTarget() {
     Array.from(document.querySelectorAll('a[target]')).forEach(at => {
       if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes('//')) {
@@ -1389,6 +1420,8 @@ class Transforms {
   /**
    * Transforms DITA/HTML4 object element to YouTube-preferred iframe markup.
    * DITA: <object data="https://www.youtube.com/embed/WhOyVz3VJ7c"></object>
+   *
+   * @author Robert Crews <rcrews@cloudera.com>
    */
   objectForYouTube() {
     const ALLOW = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
@@ -1408,16 +1441,24 @@ class Transforms {
     });
   }
 
+  /**
+   * Tabbed window feature.
+   * See event handlers in bindEvents() above.
+   *
+   * @author Jason Davis
+   */
   tabs() {
     $('.tab-win').find('ul li:first').addClass('active');
     $('.tab-win').find('.tabcontent').hide();
     $('.tab-win').find('.tabcontent:first').show();
   }
 
+  /**  Example transformation */
   test($content) {
     $content.find('a').css('backgroundColor', 'red');
   }
 
+  /**  Run all the things. */
   run($content) {
     this.bindEvents($content);
     this.deTarget();
