@@ -53,8 +53,7 @@ publications:
     - title: Accessing Data Using Apache Druid
       url: accessing-data-druid/index.html
       description: >-
-        Montes urna arcu adipiscing varius, amet hendrerit quam ad
-        aenean ultricies.
+        Introduces Apache Druid capabilities and architecture.
 
   - title: Hue
     sub:
