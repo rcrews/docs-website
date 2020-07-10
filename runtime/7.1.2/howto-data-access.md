@@ -116,7 +116,7 @@ publications:
         Explains the basics of setting up LDAP and using Apache Druid.
 
     - title: Using Apache Druid and Apache Hive
-      url: using-druid-and-apache-hive/index.html
+      url: using-druid-and-hive/index.html
       description: >-
         Discusses using Apache Druid and Hive in tandem to index 
         data from Hive into Druid and query data from Hive.

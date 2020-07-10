@@ -360,9 +360,9 @@
           sub: setting-up-druid/navigation.json
 
         - text: Using Apache Druid and Apache Hive
-          href: using-druid-and-apache-hive/index.html
-          id: pub-using-druid-and-apache-hive
-          sub: using-druid-and-apache-hive/navigation.json
+          href: using-druid-and-hive/index.html
+          id: pub-using-druid-and-hive
+          sub: using-druid-and-hive/navigation.json
 
         - text: Using Hue
           href: using-hue/index.html
