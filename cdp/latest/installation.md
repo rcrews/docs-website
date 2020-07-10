@@ -6,7 +6,7 @@ title: Installation
 publications:
 - column:
   - title: Installing CDP Data Center 7.1
-    url: /cloudera-manager/7.1.1/installation/index.html
+    url: /cloudera-manager/7.1.2/installation/index.html
     description: >-
       Describes how to use Cloudera Manager to install CDP Data Center
       at your site.
