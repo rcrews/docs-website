@@ -44,6 +44,10 @@
       href: deployment/index.html
       id: pub-deployment
       sub: deployment/navigation.json
+    - text: Migration
+      href: hdf-migration/index.html
+      id: pub-hdf-migration
+      sub: hdf-migration/navigation.json
     - text: Upgrade
       href: upgrading-cfm/index.html
       id: pub-upgrading-cfm
