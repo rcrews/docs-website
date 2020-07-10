@@ -51,11 +51,11 @@ json:
       icon: /common/img/mini_icons/icon-wm.png
 
     - text: Runtime
-      href: /runtime/7.2.0/index.html
+      href: /runtime/7.2.1/index.html
       icon: /common/img/mini_icons/icon-cr.png
 
     - text: Manager
-      href: /cloudera-manager/7.2.0/index.html
+      href: /cloudera-manager/7.2.1/index.html
       icon: /common/img/mini_icons/icon-cm.png
 
 - title: DataFlow
@@ -85,7 +85,7 @@ json:
       icon: /common/img/mini_icons/icon-srm.png
 
     - text: DataFlow for Data Hub
-      href: /cdf-datahub/7.1.0/index.html
+      href: /cdf-datahub/7.2.1/index.html
       icon: /common/img/mini_icons/icon-cdf-datahub.png
 
 - title: Applications

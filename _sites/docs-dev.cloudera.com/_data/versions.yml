@@ -724,10 +724,12 @@
         - title: master
           url: /runtime/master/index.html
     - title: "7.2"
-      url: /runtime/7.2.0/index.html
+      url: /runtime/7.2.1/index.html
       minors:
-        - title: 7.2.0
+        - title: 7.2.1
           type: Latest
+          url: /runtime/7.2.1/index.html
+        - title: 7.2.0
           url: /runtime/7.2.0/index.html
     - title: "7.1"
       url: /runtime/7.1.0/index.html
@@ -759,10 +761,12 @@
         - title: master
           url: /cloudera-manager/master/index.html
     - title: "7.2"
-      url: /cloudera-manager/7.2.0/index.html
+      url: /cloudera-manager/7.2.1/index.html
       minors:
-        - title: 7.2.0
+        - title: 7.2.1
           type: Latest
+          url: /cloudera-manager/7.2.1/index.html
+        - title: 7.2.0
           url: /cloudera-manager/7.2.0/index.html
     - title: "7.1"
       url: /cloudera-manager/7.1.0/index.html
@@ -892,10 +896,12 @@
         - title: master
           url: /cdf-datahub/master/index.html
     - title: "7.2"
-      url: /cdf-datahub/7.2.0/index.html
+      url: /cdf-datahub/7.2.1/index.html
       minors:
-        - title: 7.2.0
+        - title: 7.2.1
           type: latest
+          url: /cdf-datahub/7.2.1/index.html
+        - title: 7.2.0
           url: /cdf-datahub/7.2.0/index.html
     - title: "7.1"
       url: /cdf-datahub/7.1.0/index.html

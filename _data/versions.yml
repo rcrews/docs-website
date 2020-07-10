@@ -642,15 +642,17 @@
       url: /workload-manager/cloud/index.html
 
 - name: Cloudera Runtime
-  latest-version: 7.2.0
-  latest-url: /runtime/7.2.0/index.html
+  latest-version: 7.2.1
+  latest-url: /runtime/7.2.1/index.html
   search-name: Runtime
   versions:
     - title: "7.2"
-      url: /runtime/7.2.0/index.html
+      url: /runtime/7.2.1/index.html
       minors:
-        - title: 7.2.0
+        - title: 7.2.1
           type: Latest
+          url: /runtime/7.2.1/index.html
+        - title: 7.2.0
           url: /runtime/7.2.0/index.html
     - title: "7.1"
       url: /runtime/7.1.2/index.html
@@ -674,15 +676,17 @@
           url: /runtime/7.0.0/index.html
 
 - name: Cloudera Manager
-  latest-version: 7.2.0
-  latest-url: /cloudera-manager/7.2.0/index.html
+  latest-version: 7.2.1
+  latest-url: /cloudera-manager/7.2.1/index.html
   search-name: manager
   versions:
     - title: "7.2"
-      url: /cloudera-manager/7.2.0/index.html
+      url: /cloudera-manager/7.2.1/index.html
       minors:
-        - title: 7.2.0
+        - title: 7.2.1
           type: Latest
+          url: /cloudera-manager/7.2.1/index.html
+        - title: 7.2.0
           url: /cloudera-manager/7.2.0/index.html
     - title: "7.1"
       url: /cloudera-manager/7.1.1/index.html
@@ -799,15 +803,17 @@
           url: /HDPDocuments/HDF1/HDF-1.1.0/index.html
 
 - name: Cloudera DataFlow for Data Hub
-  latest-version: 7.2.0
-  latest-url: /cdf-datahub/7.2.0/index.html
+  latest-version: 7.2.1
+  latest-url: /cdf-datahub/7.2.1/index.html
   search-name: cdf-datahub
   versions:
     - title: "7.2"
-      url: /cdf-datahub/7.2.0/index.html
+      url: /cdf-datahub/7.2.1/index.html
       minors:
-        - title: 7.2.0
+        - title: 7.2.1
           type: latest
+          url: /cdf-datahub/7.2.1/index.html
+        - title: 7.2.0
           url: /cdf-datahub/7.2.0/index.html
     - title: "7.1"
       url: /cdf-datahub/7.1.0/index.html
