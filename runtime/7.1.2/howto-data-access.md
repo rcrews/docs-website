@@ -113,7 +113,7 @@ publications:
     - title: Setting Up and Using Apache Druid
       url: setting-up-druid/index.html
       description: >-
-        Explains the basics of setting up and using Apache Druid.
+        Explains the basics of setting up LDAP and using Apache Druid.
 
     - title: Using Apache Druid and Apache Hive
       url: using-druid-and-apache-hive/index.html
