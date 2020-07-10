@@ -97,6 +97,11 @@
       id: pub-connection-to-private-subnets
       sub: connection-to-private-subnets/navigation.json
 
+    - text: Identity Management
+      href: identity-management/index.html
+      id: pub-identity-management
+      sub: identity-management/navigation.json
+
     - text: Data Lakes
       href: data-lakes/index.html
       id: pub-data-lakes
