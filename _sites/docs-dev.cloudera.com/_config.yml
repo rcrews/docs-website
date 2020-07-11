@@ -26,6 +26,9 @@ github_username:  cloudera
 
 # Build settings
 markdown: kramdown
+timezone: America/Los_Angeles
+sass:
+  style: compressed
 #theme: minima
 #plugins:
 #  - jekyll-feed
