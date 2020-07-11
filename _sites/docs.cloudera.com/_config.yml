@@ -45,6 +45,7 @@ exclude:
   # Unreleased documentation
   - /cdf-datahub/7.2.1/
   - /cfm/2.0.1/
+  - /cloudera-manager/7.1.2/
   - /cloudera-manager/7.2.1/
   - /csa/1.0.0/
   - /csp/3.0.0/
@@ -54,6 +55,7 @@ exclude:
   - /HDPDocuments/Ambari/Ambari-7.1.0.0/
   - /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/
   - /operational-database/ # "/opdb/" ?
+  - /runtime/7.1.2/
   - /runtime/7.2.1/
 
   # Removed libraries

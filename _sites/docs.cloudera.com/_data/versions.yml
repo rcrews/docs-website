@@ -643,10 +643,8 @@
           type: Latest
           url: /runtime/7.2.0/index.html
     - title: "7.1"
-      url: /runtime/7.1.2/index.html
+      url: /runtime/7.1.1/index.html
       minors:
-        - title: 7.1.2
-          url: /runtime/7.1.2/index.html
         - title: 7.1.1
           url: /runtime/7.1.1/index.html
         - title: 7.1.0
@@ -675,10 +673,8 @@
           type: Latest
           url: /cloudera-manager/7.2.0/index.html
     - title: "7.1"
-      url: /cloudera-manager/7.1.2/index.html
+      url: /cloudera-manager/7.1.1/index.html
       minors:
-        - title: 7.1.2
-          url: /cloudera-manager/7.1.2/index.html
         - title: 7.1.1
           url: /cloudera-manager/7.1.1/index.html
         - title: 7.1.0
