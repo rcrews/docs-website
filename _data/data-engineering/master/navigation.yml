@@ -54,10 +54,15 @@
 - text: Reference
   id: cat-reference
   sub:
-    - text: Accessing CDE using the API or CLI
-      href: cli-api-access/index.html
-      id: pub-cli-api-access
-      sub: cli-api-access/navigation.json
+    - text: Accessing CDE using the API
+      href: api-access/index.html
+      id: pub-api-access
+      sub: api-access/navigation.json
+
+    - text: Accessing CDE using the CLI
+      href: cli-access/index.html
+      id: pub-cli-access
+      sub: cli-access/navigation.json
 
 # - text: Release Notes
 #   id: cat-release-notes
