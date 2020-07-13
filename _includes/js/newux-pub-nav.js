@@ -1,5 +1,6 @@
-// These are currently only used for eslint formatting and checking.
-// E.g., uncomment them before running eslint and recomment them after.
+// These import statements are currently only used for eslint formatting
+// and checking. E.g., uncomment them before running eslint and
+// recomment them after.
 // import {$, jQuery} from 'jquery-3.4.1.min.js';
 
 const COPYRIGHT = `&copy; ${new Date().getFullYear()} by Cloudera, Inc. All rights reserved.`;
@@ -90,8 +91,12 @@ class PubnavClass {
     }
   }
 
+  /**
+   * Can be called from link click or back button, or a failed
+   * loadContent() - If passed from an link, we'll look up, otherwise
+   * get from the URL.
+   */
   handleNewPageRequest(e) {
-    // Can be called from link click or back button, or a failed loadContent() - If passed from an link, we'll look up, otherwise get from the URL.
     Pubnav.mobileClose(); // Close the mobile nav if it was open.
 
     let url;
@@ -116,16 +121,19 @@ class PubnavClass {
         return true;
       }
 
-      // If it starts with a hash, assume it's an in-page reference and bail..
+      // If it starts with a hash, assume it's an in-page reference and
+      // bail..
       if (!url.indexOf('#')) {
         // Pubnav.is_hash_link = true;
-        // Also add some spacing so that it doesn't get covered up by the nav.
+        // Also add some spacing so that it doesn't get covered up by
+        // the nav.
         const anchor = url.substring(url.indexOf('#'));
         $(anchor).addClass('hashpad');
         return true;
       }
 
-      // If a protoocol is specified, assume it's an external link, and don't intercept.
+      // If a protoocol is specified, assume it's an external link, and
+      // don't intercept.
       if (!url.indexOf('http')) {
         // will return if http is at the beginning of the string.
         return true;
@@ -141,7 +149,8 @@ class PubnavClass {
       url = obj.pathname;
       hash = obj.hash;
 
-      // If this is the same page... might be a hash, also don't do anything.
+      // If this is the same page... might be a hash, also don't do
+      // anything.
       if (obj.pathname === location.pathname) {
         return true;
       }
@@ -155,7 +164,8 @@ class PubnavClass {
         }
         return true;
       }
-      // the page history is changing... happens with back/forward button, but also hash links!
+      // the page history is changing... happens with back/forward
+      // button, but also hash links!
       url = location.pathname;
       updateHistory = false;
     }
@@ -241,7 +251,8 @@ class PubnavClass {
     urlChunks.length = 3; // This will dump any extra url stuff for nested files.
     const navfile = `${urlChunks.join('/')}/navigation.json`;
 
-    // Let's also define the product code for saving the navstate and the product bar lookup.
+    // Let's also define the product code for saving the navstate and
+    // the product bar lookup.
     this.product = urlChunks[1].toLowerCase();
     this.navstate = localStorage.getItem(`${this.product}_navstate`) ? localStorage.getItem(`${this.product}_navstate`).split(',') : [];
 
@@ -404,9 +415,9 @@ class PubnavClass {
         swapContent();
       }
     }).fail((jqXHR, status, error) => {
-      // If the request succeeds, this function gets "data", "status", "jqXHR"
-      // but they are ignored because response was set above.
-      // If it fails, this function gets "jqXHR", "status", "error"
+      // If the request succeeds, this function gets "data", "status",
+      // "jqXHR" but they are ignored because response was set above. If
+      // it fails, this function gets "jqXHR", "status", "error"
       complete = true;
       elems[0] = `<h1>Load error</h1>
         <p>We're not able to get the page you requested.
@@ -418,14 +429,16 @@ class PubnavClass {
     });
   }
 
+   /**
+   * Let's ensure a good ID for every item in the nav.
+   * If the item doesn't have an ID, create it from the href.
+   */
   cleanNavData(data) {
-    // Let's ensure a good ID for every item in the nav.
-    // If the item doesn't have an ID, create it from the href.
-
     for (let i = 0; i < data.length; i++) {
       if (typeof data[i].id === 'undefined') {
         if (typeof data[i].href !== 'undefined') {
-          // Use the HREF to build the ID... this is the preferred method.
+          // Use the HREF to build the ID... this is the preferred
+          // method.
           data[i].id = Utils.makeIdFromHref(data[i].href);
         } else {
           // Use the text to build the ID... this might occur for menu

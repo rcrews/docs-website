@@ -1,5 +1,6 @@
-// These are currently only used for eslint formatting and checking.
-// E.g., uncomment them before running eslint and recomment them after.
+// These import statements are currently only used for eslint formatting
+// and checking. E.g., uncomment them before running eslint and
+// recomment them after.
 // import {$, jQuery} from 'jquery-3.4.1.min.js';
 // import {cdocUtils} from 'cdoc-utils.js';
 // import {filterStuff} from 'cdoc-filter.js';
