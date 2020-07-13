@@ -51,7 +51,8 @@ class Transforms {
    */
   deTarget() {
     Array.from(document.querySelectorAll('a[target]')).forEach(at => {
-      if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) && at.href.includes('//')) {
+      if (!at.href.match(/docs(?:-dev|-stage)?\.cloudera\.com/) &&
+          at.href.includes('//')) {
         return;
       }
       at.removeAttribute('target');

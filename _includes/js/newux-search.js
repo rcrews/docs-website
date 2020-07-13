@@ -42,8 +42,12 @@ class Search {
   }
 
   init() {
-    if (!$('.chead .search').length) $('.chead').append(SEARCH_HTML);
-    if (!$('.cmain .lucene-overlay').length) $('.cmain').append(OVERLAY_HTML);
+    if (!$('.chead .search').length) {
+      $('.chead').append(SEARCH_HTML);
+    }
+    if (!$('.cmain .lucene-overlay').length) {
+      $('.cmain').append(OVERLAY_HTML);
+    }
 
     // Figure out what product I am... else
     this.query = null;
@@ -114,7 +118,8 @@ class Search {
     const current = evt ? evt.currentTarget : false;
     const searchTerm = this.filterSearchTerm($(current).find('.searchterm').val());
 
-    // For better or worse, hide the content and show the search overlay.
+    // For better or worse, hide the content and show the search
+    // overlay.
     $('.cpage').hide();
     $('.lucene-overlay').show();
 
@@ -144,7 +149,8 @@ class Search {
     const searchUrl = this.searchURL();
     // solr_url = "//localhost:8983/solr/corehw/query?";
 
-    // Build the Query from the searchterm and filters that are in the HTML.
+    // Build the Query from the searchterm and filters that are in the
+    // HTML.
     params = { wt: 'json', q: q };
 
     if (fq) {
@@ -181,7 +187,8 @@ class Search {
           $.each(response.response.docs, function(index, item) {
             // Check there is an associated entry with the result.
             if (!$.isEmptyObject(response.highlighting[item.url])) {
-              // First add in the highlighting to the item list. Escape HTML,
+              // First add in the highlighting to the item list. Escape
+              // HTML,
               item.text = response.highlighting[item.url].text.join('').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
               // Add back in <b> tags which are there for highlighting
@@ -192,7 +199,9 @@ class Search {
                 url = `https://docs.cloudera.com${item.url}`;
               }
               result = `<div class="result">
-                  <div class="title"><a href="${url}"><span class="chapter">${item.title}</span></a></div>
+                  <div class="title"><a href="${url}">
+                    <span class="chapter">${item.title}</span></a>
+                  </div>
                   <div class="excerpt">${item.text}</div>
                   <div class="url"><a href="${url}">${item.url}</a></div>
                 </div>`;
@@ -203,7 +212,8 @@ class Search {
           });
 
           for (const book in outputHolder) {
-            // TODO!!! - Sort by book is nice, but we need to integrate with DITA structure, and make sure the book is readable
+            // TODO!!! - Sort by book is nice, but we need to integrate
+            // with DITA structure, and make sure the book is readable
             if (outputHolder.hasOwnProperty(book)) {
               result = `<div class="book-group">
                 <div class="book">${(book !== 'undefined' ? book : '')}</div>`;
@@ -224,19 +234,24 @@ class Search {
           $('.more-results').show();
           $('.lucene-results .more-link').data('nextCursorMark', response.nextCursorMark).data('searchTerm', response.responseHeader.params.q);
         } else {
-          // No results... this could be because there were none, or there were no more.
+          // No results... this could be because there were none, or
+          // there were no more.
           $('.lucene-results .waiting').hide();
           $('.more-results').hide();
           let errMsg = '';
           if (response.response.numFound > 0) {
             // There's no more.
-            errMsg = '<h2><i class="fa fa-frown-o"></i> Sorry, No more results were found</h2>';
-            errMsg += '<p>Check your search term, and ensure that you have the appropriate product filter selected';
+            errMsg = `<h2><i class="fa fa-frown-o"></i>
+              Sorry, No more results were found</h2>`;
+            errMsg += `<p>Check your search term, and ensure that you
+              have the appropriate product filter selected.</p>`;
           } else {
             // There's none.
             $('.lucene-results .results').hide();
-            errMsg = '<h2><i class="fa fa-frown-o"></i> Sorry, No results were found</h2>';
-            errMsg += '<p>Check your search term, and ensure that you have the appropriate product filter selected';
+            errMsg = `<h2><i class="fa fa-frown-o"></i>
+              Sorry, No results were found</h2>`;
+            errMsg += `<p>Check your search term, and ensure that you
+              have the appropriate product filter selected.</p>`;
           }
           $('.lucene-results .fail').html(errMsg).show();
         }
@@ -248,7 +263,8 @@ class Search {
           $('.lucene-results .waiting').hide();
           $('.lucene-results .results').hide();
           $('.lucene-results .fail').show();
-          let errMsg = '<h2><i class="fa fa-frown-o"></i> Uh-oh, the search request failed</h2>';
+          let errMsg = `<h2><i class="fa fa-frown-o"></i>
+            Uh-oh, the search request failed</h2>`;
           errMsg += `<p>${textStatus}</p>`;
 
           $('.lucene-results .fail').html(errMsg);

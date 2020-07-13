@@ -29,7 +29,8 @@ class WhoAmIClass {
     $('.bread-product').html(`<a href="${WhoAmI.version.url}">${WhoAmI.product_name}</a>`);
 
     // Change "Cloud" to the Cloud Symbol
-    if (typeof WhoAmI.version.title === 'string' && WhoAmI.version.title.trim().toLowerCase() === 'cloud') {
+    if (typeof WhoAmI.version.title === 'string' &&
+        WhoAmI.version.title.trim().toLowerCase() === 'cloud') {
       $('.bread-version').html('<i class="fa fa-cloud"></i>');
     } else {
       if (WhoAmI.version.type !== '') {
@@ -60,7 +61,8 @@ class WhoAmIClass {
     });
     if (x > 1) {
       // There are some other versions to show...
-      $('.bread-version').append(' <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>');
+      $('.bread-version').append(`
+        <i class="fa fa-angle-down selector"></i><ul class="version-select"></ul>`);
       $('.version-select').hide().html(output);
     }
 
@@ -105,9 +107,11 @@ class WhoAmIClass {
           }
 
           // Let's do a little more work to this url...
-          // The url structure should be /product-name/product-version/index.html
+          // The url structure should be
+          // /product-name/product-version/index.html
           const myProductUrlParts = myProductUrl.split('/');
-          // If we're on a latest branch, we need to identify what we really are.
+          // If we're on a latest branch, we need to identify what we
+          // really are.
           WhoAmI.is_latest = false;
           if (myProductUrlParts[2] === 'latest') {
             WhoAmI.is_latest = true;
@@ -135,11 +139,13 @@ class WhoAmIClass {
           let versions = [];
 
           for (let i = 0; i < data.length; i++) {
-            // We only need to loop through the versions if we've not found it.
+            // We only need to loop through the versions if we've not
+            // found it.
             if (WhoAmI.is_latest) {
               // Special lookup based on the latest flag.
               if (typeof data[i]['latest-url'] !== 'undefined' && data[i]['latest-url'].replace(/^\/([^/]+).*/, '$1') === myProductUrl.replace(/^\/([^/]+).*/, '$1')) {
-                // Ok, we found the right product, and from this can deduce the right version.
+                // Ok, we found the right product, and from this can
+                // deduce the right version.
                 myProductUrl = `/${myProductUrlParts[1]}/${data[i]['latest-version']}/index.html`;
               }
             }

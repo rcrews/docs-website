@@ -6,6 +6,7 @@
 {% include js/cdoc-utils.js %}
 {% include js/newux-who-am-i.js %}
 {% include js/newux-pub-nav.js %}
+{% include js/newux-product-drawer.js %}
 {% include js/newux-search.js %}
 {% include js/newux-utils.js %}
 {% include js/newux-transforms.js %}
