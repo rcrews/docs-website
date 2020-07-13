@@ -49,7 +49,9 @@ class Utils {
   }
 
   static makeIdFromHref(href) {
-    // Clever way to parse incomplete URLs - https://makandracards.com/makandra/29377-the-easiest-way-to-parse-urls-with-javascript
+    // Clever way to parse incomplete URLs -
+    // https://makandracards.com/makandra/29377-the-easiest-way-to-parse
+    // -urls-with-javascript
     const parser = document.createElement('a');
     parser.href = href; // set the URL you want to parse (resolving relative paths in the context of the current URL)
     const chunks = parser.pathname.split('/');

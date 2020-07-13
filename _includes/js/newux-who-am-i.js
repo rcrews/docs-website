@@ -87,10 +87,13 @@ class WhoAmIClass {
         .then(data => {
           WhoAmI.products = data; // Save the whole thingy in case we need it again.
 
-          // See if I can figure out what product loading page is in from the product link.
+          // See if I can figure out what product loading page is in
+          // from the product link.
           let myProductUrl = '';
 
-          // Initially, we used the newux template to inject the product name into the index pages. I don't think we're doing this anymore
+          // Initially, we used the newux template to inject the product
+          // name into the index pages. I don't think we're doing this
+          // anymore
           const $myProduct = $('.bread-product a');
           if ($myProduct.length > 0) {
             myProductUrl = new URL($myProduct[0].href);
@@ -108,20 +111,26 @@ class WhoAmIClass {
           WhoAmI.is_latest = false;
           if (myProductUrlParts[2] === 'latest') {
             WhoAmI.is_latest = true;
-            // This will not be found in the lookup below, because the latest url doesn't existing in the versions. So can we lookup based on something else?
+            // This will not be found in the lookup below, because the
+            // latest url doesn't existing in the versions. So can we
+            // lookup based on something else?
 
             // Sub-pages have the version baked into the meta....
-            // Product home pages also have the version in them, but in a different place....
+            // Product home pages also have the version in them, but in
+            // a different place....
             // And foyer pages don't have a version in them at all.
 
             // We could do the lookup through the versions.yaml
-            // Each product has a "latest-version" and a "latest-url" parameter.
+            // Each product has a "latest-version" and a "latest-url"
+            // parameter.
             // We can do that in the loop below.
           }
 
           // Make sure there's an index.html at the end of the url.
           myProductUrl = `/${myProductUrlParts[1]}/${myProductUrlParts[2]}/index.html`;
-          // Walk the versions.yaml tree, figure out what product/version I am based on the URL, and get the related information for that product
+          // Walk the versions.yaml tree, figure out what
+          // product/version I am based on the URL, and get the related
+          // information for that product
           let found = false;
           let versions = [];
 
@@ -183,7 +192,9 @@ class WhoAmIClass {
 
             // It might now be found... if so, set our thingy's
             if (found) {
-              // If versions.yaml didn't quote the version number they might now be integers missing the decimal point versus strings
+              // If versions.yaml didn't quote the version number they
+              // might now be integers missing the decimal point versus
+              // strings
               if (Number.isInteger(WhoAmI.version.title)) {
                 WhoAmI.version.title = WhoAmI.version.title.toFixed(1);
               }
@@ -197,7 +208,8 @@ class WhoAmIClass {
           }
 
           if ($('.bread-version').length && WhoAmI.version.length === 0) {
-            // If we couldn't find a version in versions.yaml, might still be able to get it from the HTML...
+            // If we couldn't find a version in versions.yaml, might
+            // still be able to get it from the HTML...
             WhoAmI.version = {
               title: $('.bread-version').length ? $('.bread-version').text() : '',
               url: $('.bread-product a').length ? $('.bread-product a')[0].href : '',
@@ -209,8 +221,12 @@ class WhoAmIClass {
   }
 
   init() {
-    if (!$('.bread-product').length) $('.chead .breadcrumbs').append('<span class="bread-product"></span>');
-    if (!$('.bread-version').length) $('.chead .breadcrumbs').append('<span class="bread-version"></span>');
+    if (!$('.bread-product').length) {
+      $('.chead .breadcrumbs').append('<span class="bread-product"></span>');
+    }
+    if (!$('.bread-version').length) {
+      $('.chead .breadcrumbs').append('<span class="bread-version"></span>');
+    }
 
     this.bootstrap();
   }
