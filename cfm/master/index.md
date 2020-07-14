@@ -49,7 +49,7 @@ flows from one environment into another, and flow deployment.
   <tr style="border-bottom: .5px solid #666">
     <td style="padding: .3rem; border-bottom: .5px solid #666; border-right: .5px solid #666;">CDH</td>
     <td style="padding: .3rem; border-bottom: .5px solid #666">
-      <a href="/cfm/master/index.html">CFM 1.0.1 </a>
+      <a href="/cfm/master/index.html">CFM 1.1.0</a>
     </td>
   </tr>
   <tr style="border-bottom: .5px solid #666">
@@ -65,13 +65,3 @@ flows from one environment into another, and flow deployment.
     </td>
   </tr>
 </table>
-
-<!-- {:.table}
-{:.frame-all}
-|---
-If you want to install NiFi and NiFi Registry with... | Review this documentation
-|-|-
-| HDF | [HDF](/HDPDocuments/HDF3/HDF-3.5.1/index.html)
-| CDH | [CFM](/cfm/1.0.1/index.html)
-| CDP Public Cloud | [Cloudera DataFlow for Data Hub](/cdf-datahub/7.2.0/index.html)
-| CDP Data Center | [CDP DataFlow](/dataflow/master/index.html) -->

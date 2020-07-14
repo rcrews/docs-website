@@ -21,6 +21,14 @@
       id: pub-apache-nifi-overview
       sub: /HDPDocuments/HDF3/HDF-3.5.1/apache-nifi-overview/navigation.json
 
+- text: Planning
+  id: cat-planning
+  sub:
+    - text: Sizing your Flow Management Cluster
+      href: nifi-sizing/index.html
+      id: pub-nifi-sizing
+      sub: nifi-sizing/navigation.json
+
 - text: Installation & Upgrade
   id: cat-install
   sub:
@@ -28,14 +36,18 @@
       href: support-matrix/index.html
       id: pub-support-matrix
       sub: support-matrix/navigation.json
-    - text: Download
+    - text: Download Locations
       href: download/index.html
       id: pub-download
       sub: download/navigation.json
-    - text: Installation
-      href: installation/index.html
-      id: pub-installation
-      sub: installation/navigation.json
+    - text: Deployment
+      href: deployment/index.html
+      id: pub-deployment
+      sub: deployment/navigation.json
+    - text: Migration
+      href: hdf-migration/index.html
+      id: pub-hdf-migration
+      sub: hdf-migration/navigation.json
     - text: Upgrade
       href: upgrading-cfm/index.html
       id: pub-upgrading-cfm
@@ -48,10 +60,15 @@
 - text: How To
   name: how-to
   sub:
-    - text: Securing
-      href: securing-cfm/index.html
-      id: pub-securing-cfm
-      sub: securing-cfm/navigation.json
+    - text: Security
+      href: cfm-security/index.html
+      id: pub-cfm-security
+      sub: cfm-security/navigation.json
+
+    - text: Tuning your DataFlow
+      href: nifi-tuning/index.html
+      id: pub-nifi-tuning
+      sub: nifi-tuning/navigation.json
 
     - text: Apache NiFi
       href: howto-apache-nifi.html
@@ -148,11 +165,7 @@
 - text: Learning & Training
   name: learning-training
   sub:
-    - text: Getting Started with Apache NiFi
-      href: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-apache-nifi/index.html
-      id: pub-getting-started-with-apache-nifi
-      sub: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-apache-nifi/navigation.json
-    - text: Getting Started with Apache NiFi Registry
-      href: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-nifi-registry/index.html
-      id: pub-getting-started-with-nifi-registry
-      sub: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-nifi-registry/navigation.json
+    - text: Getting Started with Cloudera Flow Management
+      href: getting-started-with-cloudera-flow-management/index.html
+      id: pub-getting-started-with-cloudera-flow-management
+      sub: getting-started-with-cloudera-flow-management/navigation.json
