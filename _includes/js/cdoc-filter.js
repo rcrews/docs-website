@@ -170,6 +170,10 @@ function filterStuff($) {
   function isCMDowngradePage() {
     return isPage('cm_downgrade');
   }
+  
+  function isCMWizardPage() {
+    return isPage('cm_wizard');
+  }
 
   function isHueUpgradePage() {
     return isPage('cdh_upgrade_hue');
@@ -1304,6 +1308,10 @@ function filterStuff($) {
       addDbFilter();
       addSeparator($filter);
       addFilter('Old Cloudera Manager Version', 'cm', 'dest', cmOptions, $filter);
+    } else if (isCMWizardPage()) {
+      addClusterFromFilter();
+      addSeparator($filter);
+      addClusterDestFilter();
     } else if (isHostUpgradeBeforePage()) {
       addCMFilter();
       addFilter('Host runs Cloudera Manager Server?', 'running_server', '', booleanOptions, $filter);
