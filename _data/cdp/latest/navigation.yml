@@ -63,7 +63,7 @@
           id: pub-upgrade-hdp
           sub: upgrade-hdp/navigation.json
 
-        - text: CDP Data Center Post-Upgrade Migration
+        - text: CDP Data Center Post-Upgrade Transitions
           href: upgrade-post/index.html
           id: pub-upgrade-post
           sub: upgrade-post/navigation.json

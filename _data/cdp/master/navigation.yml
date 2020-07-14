@@ -32,6 +32,23 @@
 - text: Installation & Upgrade
   id: cat-installation
   sub:
+    - text: Installation
+      href: installation.html
+      sub:
+        - text: Installing CDP Data Center 7.1
+          href: /cloudera-manager/7.1.1/installation/index.html
+          id: pub-install71
+          # Can't do x-library subs due to special handling of "latest" URLs
+          # sub: /cloudera-manager/7.1.1/installation/navigation.json
+          external: external
+
+        - text: Installing CDP Data Center 7.0
+          href: /cloudera-manager/7.0.3/installation/index.html
+          id: pub-install70
+          # Can't do x-library subs due to special handling of "latest" URLs
+          # sub: /cloudera-manager/7.0.3/installation/navigation.json
+          external: external
+
     - text: Upgrade
       href: upgrade/index.html
       id: pub-upgrade
