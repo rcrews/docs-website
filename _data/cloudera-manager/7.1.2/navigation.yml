@@ -38,6 +38,30 @@
       id: pub-installation
       sub: installation/navigation.json
 
+    - text: Upgrade Guide Overview
+      href: /cdp/latest/upgrade/index.html
+      id: pub-upgrade
+      sub: /cdp/latest/upgrade/navigation.json
+      external: external
+
+    - text: Upgrading CDH and CDP Data Center
+      href: /cdp/latest/upgrade-cdh/index.html
+      id: pub-upgrade-cdh
+      sub: /cdp/latest/upgrade-cdh/navigation.json
+      external: external
+
+    - text: Upgrading Ambari and HDP to CDP Data Center
+      href: /cdp/latest/upgrade-hdp/index.html
+      id: pub-upgrade-hdp
+      sub: /cdp/latest/upgrade-hdp/navigation.json
+      external: external
+
+    - text: CDP Data Center Post-Upgrade Migration
+      href: /cdp/latest/upgrade-post/index.html
+      id: pub-upgrade-post
+      sub: /cdp/latest/upgrade-post/navigation.json
+      external: external
+
 - text: How To
   id: cat-howto
   sub:
