@@ -650,29 +650,37 @@
       url: /runtime/7.2.1/index.html
       minors:
         - title: 7.2.1
-          type: Latest
+          type: Public Cloud latest
           url: /runtime/7.2.1/index.html
         - title: 7.2.0
+          type: Public Cloud
           url: /runtime/7.2.0/index.html
     - title: "7.1"
       url: /runtime/7.1.2/index.html
       minors:
         - title: 7.1.2
+          type: Data Center
           url: /runtime/7.1.2/index.html
         - title: 7.1.1
+          type: Data Center
           url: /runtime/7.1.1/index.html
         - title: 7.1.0
+          type: Public Cloud
           url: /runtime/7.1.0/index.html
     - title: "7.0"
       url: /runtime/7.0.3/index.html
       minors:
         - title: 7.0.3
           url: /runtime/7.0.3/index.html
+          type: Data Center
         - title: 7.0.2
+          type: Public Cloud
           url: /runtime/7.0.2/index.html
         - title: 7.0.1
+          type: Public Cloud
           url: /runtime/7.0.1/index.html
         - title: 7.0.0
+          type: Public Cloud
           url: /runtime/7.0.0/index.html
 
 - name: Cloudera Manager
@@ -684,29 +692,37 @@
       url: /cloudera-manager/7.2.1/index.html
       minors:
         - title: 7.2.1
-          type: Latest
+          type: Public Cloud Latest
           url: /cloudera-manager/7.2.1/index.html
         - title: 7.2.0
+          type: Public Cloud
           url: /cloudera-manager/7.2.0/index.html
     - title: "7.1"
       url: /cloudera-manager/7.1.1/index.html
       minors:
         - title: 7.1.2
+          type: Data Center
           url: /cloudera-manager/7.1.2/index.html
         - title: 7.1.1
+          type: Data Center
           url: /cloudera-manager/7.1.1/index.html
         - title: 7.1.0
+          type: Public Cloud
           url: /cloudera-manager/7.1.0/index.html
     - title: "7.0"
       url: /cloudera-manager/7.0.3/index.html
       minors:
         - title: 7.0.3
+          type: Data Center
           url: /cloudera-manager/7.0.3/index.html
         - title: 7.0.2
+          type: Public Cloud
           url: /cloudera-manager/7.0.2/index.html
         - title: 7.0.1
+          type: Public Cloud
           url: /cloudera-manager/7.0.1/index.html
         - title: 7.0.0
+          type: Public Cloud
           url: /cloudera-manager/7.0.0/index.html
 
 - name: HDF
