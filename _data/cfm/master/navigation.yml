@@ -165,11 +165,7 @@
 - text: Learning & Training
   name: learning-training
   sub:
-    - text: Getting Started with Apache NiFi
-      href: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-apache-nifi/index.html
-      id: pub-getting-started-with-apache-nifi
-      sub: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-apache-nifi/navigation.json
-    - text: Getting Started with Apache NiFi Registry
-      href: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-nifi-registry/index.html
-      id: pub-getting-started-with-nifi-registry
-      sub: /HDPDocuments/HDF3/HDF-3.5.1/getting-started-with-nifi-registry/navigation.json
+    - text: Getting Started with Cloudera Flow Management
+      href: getting-started-with-cloudera-flow-management/index.html
+      id: pub-getting-started-with-cloudera-flow-management
+      sub: getting-started-with-cloudera-flow-management/navigation.json
