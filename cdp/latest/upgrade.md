@@ -1,6 +1,6 @@
 ---
 layout: foyer-grouped
-breadcrumb-title: CDP Data Center Upgrades
+breadcrumb-title: CDP Data Center and CDH Upgrades
 title: Upgrade
 
 publications:
@@ -22,7 +22,7 @@ publications:
     description: >-
       Provides instructions on upgrading from HDP to CDP Data Center.
 
-  - title: CDP Data Center Post-Upgrade Migration
+  - title: CDP Data Center Post-Upgrade Transitions
     url: upgrade-post/index.html
     description: >-
       Describes migration tasks required after upgrading to CDP, as well
