@@ -33,9 +33,9 @@
       href: concepts-streams-messaging.html
       sub:
         - text: Apache Kafka Overview
-          href: /runtime/7.2.0/kafka-overview/index.html
+          href: /runtime/7.2.1/kafka-overview/index.html
           id:   pub-kafka-overview
-          sub: /runtime/7.2.0/kafka-overview/navigation.json
+          sub: /runtime/7.2.1/kafka-overview/navigation.json
 
         - text: Schema Registry Overview
           href: schema-registry-overview/index.html
@@ -196,29 +196,29 @@
       href: howto-apache-kafka.html
       sub:
         - text: Configuring Apache Kafka
-          href: /runtime/7.2.0/kafka-configuring/index.html
+          href: /runtime/7.2.1/kafka-configuring/index.html
           id:   pub-kafka-configuring
-          sub:   /runtime/7.2.0/kafka-configuring/navigation.json
+          sub:   /runtime/7.2.1/kafka-configuring/navigation.json
 
         - text: Securing Apache Kafka
-          href: /runtime/7.2.0/kafka-securing/index.html
+          href: /runtime/7.2.1/kafka-securing/index.html
           id:   pub-kafka-securing
-          sub:  /runtime/7.2.0/kafka-securing/navigation.json
+          sub:  /runtime/7.2.1/kafka-securing/navigation.json
 
         - text: Tuning Apache Kafka Performance
-          href: /runtime/7.2.0/kafka-performance-tuning/index.html
+          href: /runtime/7.2.1/kafka-performance-tuning/index.html
           id:   pub-kafka-performance-tuning
-          sub:   /runtime/7.2.0/kafka-performance-tuning/navigation.json
+          sub:   /runtime/7.2.1/kafka-performance-tuning/navigation.json
 
         - text: Managing Apache Kafka
-          href: /runtime/7.2.0/kafka-managing/index.html
+          href: /runtime/7.2.1/kafka-managing/index.html
           id:   pub-kafka-managing
-          sub:  /runtime/7.2.0/kafka-managing/navigation.json
+          sub:  /runtime/7.2.1/kafka-managing/navigation.json
 
         - text: Developing Apache Kafka Applications
-          href: /runtime/7.2.0/kafka-developing-applications/index.html
+          href: /runtime/7.2.1/kafka-developing-applications/index.html
           id:   pub-kafka-developing-applications
-          sub:  /runtime/7.2.0/kafka-developing-applications/navigation.json
+          sub:  /runtime/7.2.1/kafka-developing-applications/navigation.json
 
     - text: Streams Messaging Manager
       href: howto-streams-messaging-manager.html
