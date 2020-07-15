@@ -166,6 +166,6 @@
   name: learning-training
   sub:
     - text: Getting Started with Cloudera Flow Management
-      href: getting-started-with-cloudera-flow-management/index.html
-      id: pub-getting-started-with-cloudera-flow-management
-      sub: getting-started-with-cloudera-flow-management/navigation.json
+      href: cfm-getting-started/index.html
+      id: pub-cfm-getting-started
+      sub: cfm-getting-started/navigation.json
