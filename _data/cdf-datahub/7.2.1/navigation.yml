@@ -10,7 +10,7 @@
 
 - text: Cloudera DataFlow for Data Hub
   id:   landing-dataflow-for-data-hub
-  href: /cdf-datahub/7.2.0/index.html
+  href: /cdf-datahub/7.2.1/index.html
   display: none
 
 - text: Concepts & Use Cases
@@ -47,6 +47,14 @@
           id:   pub-smm-overview
           sub:  smm-overview/navigation.json
 
+    - text: Streaming Analytics
+      href: concepts-streaming-analytics.html
+      sub:
+        - text: Apache Flink Overview
+          href: /csa/1.2.0/flink-overview/index.html
+          id:   pub-apache-flink-overview
+          sub:  /csa/1.2.0/flink-overview/navigation.json
+
 - text: Planning
   id:   cat-planning
   sub:
@@ -59,6 +67,11 @@
       href: planning-your-streams-messaging-deployment/index.html
       id:   pub-planning-your-streams-messaging-deployment
       sub:  planning-your-streams-messaging-deployment/navigation.json
+
+    - text: Planning your Streaming Analytics deployment
+      href: planning-your-streaming-analytics-deployment/index.html
+      id:   pub-planning-your-streaming-analytics-deployment
+      sub:  planning-your-streaming-analytics-deployment/navigation.json
 
 # - text: Installation & Upgrade
 #   id:   cat-installation
@@ -242,6 +255,29 @@
           href: using-schema-registry/index.html
           id:   pub-using-schema-registry
           sub:  using-schema-registry/navigation.json
+
+- text: "How To: Streaming Analytics"
+  id:   cat-how-to-streaming-analytics
+  sub:
+    - text: Creating your First Streaming Analytics Cluster in CDP Public Cloud
+      href: quick-start-sa/index.html
+      id:   pub-quick-start-sa
+      sub:  quick-start-sa/navigation.json
+
+    - text: Analyzing data with Apache Kafka in CDP Public Cloud
+      href: flink-kafka-analysis/index.html
+      id:   pub-flink-kafka-analysis
+      sub:  flink-kafka-analysis/navigation.json
+
+    - text: Analyzing data with Apache HBase in CDP Public Cloud
+      href: flink-hbase-analysis/index.html
+      id:   pub-flink-hbase-analysis
+      sub:  flink-hbase-analysis/navigation.json
+
+    - text: Analyzing data with Apache Kudu in CDP Public Cloud
+      href: flink-kudu-analysis/index.html
+      id:   pub-flink-kudu-analysis
+      sub:  flink-kudu-analysis/navigation.json
 
 # - text: Troubleshooting
 #   id:   cat-troubleshooting
