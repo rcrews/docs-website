@@ -32,7 +32,7 @@
       href: installation.html
       sub:
         - text: Installing CDP Data Center 7.1
-          href: /cloudera-manager/7.1.1/installation/index.html
+          href: /cloudera-manager/7.1.2/installation/index.html
           id: pub-install71
           # Can't do x-library subs due to special handling of "latest" URLs
           # sub: /cloudera-manager/7.1.1/installation/navigation.json
