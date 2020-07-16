@@ -34,6 +34,7 @@ class PubnavClass {
   }
 
   bindEvents() {
+
     // Catch Link Clicks from Pubmenu and Feed through System
     $('.ctoc a').on('click', this.handleNewPageRequest);
     $('.cpage').on('click', 'a', this.handleNewPageRequest);
@@ -197,8 +198,8 @@ class PubnavClass {
     $('.launch-pubnav i').removeClass('fa-times').addClass('fa-bars');
   }
 
+  /** Inject HTML Elements necessary for paging and the pubmenu */
   setupNav() {
-    // Inject HTML Elements necessary for paging and the pubmenu
     if (!$('.ctoc').length) {
       $('.pubmenu').append('<div class="ctoc"></div>');
     }
@@ -429,7 +430,7 @@ class PubnavClass {
     });
   }
 
-   /**
+  /**
    * Let's ensure a good ID for every item in the nav.
    * If the item doesn't have an ID, create it from the href.
    */
@@ -541,8 +542,8 @@ class PubnavClass {
     });
   }
 
+  /** Contract the elem.... */
   contractNavElem(id) {
-    // Contract the elem....
     // $(this).text("\uf107").siblings("ul").parent("li").removeClass("open sesame");
     const $elem = $('.ctoc').find(`li[data-navid=${id}]`);
     $elem.removeClass('sesame');
@@ -564,6 +565,7 @@ class PubnavClass {
 
   requestNewPage(url, hash, updateHistory) {
     // console.log(`called requestNew Page with url: ${url}, hash: ${hash}, and updateHistory: ${updateHistory}`);
+
     // Only load if the url is actually in the nav tree...
     if (typeof updateHistory === 'undefined') updateHistory = true;
     const destination = this.getNestedItemBy('href', url, this.nav_tree);
@@ -599,9 +601,11 @@ class PubnavClass {
     return false; // Defaults to false if we couldn't find anything.
   }
 
+  /**
+   * Take a URL like /runtime/7.0.0/topic/item_name.html and convert
+   * it to runtime/latest/topic/item_name.html
+   */
   makeLatestURL(url) {
-    // Take a URL like /runtime/7.0.0/topic/item_name.html and convert
-    // it to runtime/latest/topic/item_name.html
     const urlParts = url.split('/');
     if (url.match(/HDPDocuments/)) {
       return urlParts.join('/');
@@ -624,9 +628,11 @@ class PubnavClass {
     return foyer;
   }
 
+  /**
+   * This searches for the id in the nav tree, and then sets up the
+   * back, forward etc.
+   */
   mapPageState(navarray, id) {
-    // This searches for the id in the nav tree, and then sets up the
-    // back, forward etc.
 
     const lastParent = [];
     Pubnav.pagestate.count++;
@@ -676,8 +682,8 @@ class PubnavClass {
     return false; // didn't find a matching id?
   }
 
+  /** Update the page elems based on current situation! */
   updatePageState() {
-    // Update the page elems based on current situation!
 
     // Title
     if (typeof this.pagestate.current.text !== 'undefined') {

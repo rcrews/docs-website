@@ -82,8 +82,8 @@ class WhoAmIClass {
     new ProductDrawer();
   }
 
+  /** Load in the versions.json */
   bootstrap() {
-    // Load in the versions.json
     const navfile = '/versions.json';
     fetch(navfile)
         .then(resp => resp.json()) // Transform the data into json
