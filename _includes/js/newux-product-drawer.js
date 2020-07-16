@@ -1,8 +1,3 @@
-// These import statements are currently only used for eslint formatting
-// and checking. E.g., uncomment them before running eslint and
-// recomment them after.
-// import {$, jQuery} from 'jquery-3.4.1.min.js';
-
 const DEFAULT_ICON = '/common/img/mini_icons/icon-studio.png';
 
 /**
@@ -12,14 +7,15 @@ const DEFAULT_ICON = '/common/img/mini_icons/icon-studio.png';
  * @author James Dilworth <james@jamesdilworth.com>
  */
 class ProductDrawer {
-  constructor() {
-    // this.data = {};
 
-    if (!$('.product-drawer .products').length) {
-      $('.product-drawer').append('<ul class="products"></ul>');
+  constructor() {
+    if (!document.querySelector('.product-drawer .products')) {
+      document.querySelector('.product-drawer')
+          .insertAdjacentHTML('beforeend', '<ul class="products"></ul>');
     }
-    if (!$('.product-drawer .open-close').length) {
-      $('.product-drawer').append('<div class="open-close">»</div>');
+    if (!document.querySelector('.product-drawer .open-close')) {
+      document.querySelector('.product-drawer')
+          .insertAdjacentHTML('beforeend', '<div class="open-close">»</div>');
     }
 
     this.bootstrap();
@@ -29,12 +25,9 @@ class ProductDrawer {
    * Load versions.json, transform data, and insert into page
    */
   bootstrap() {
-    const navfile = '/product-drawer.json';
-    fetch(navfile)
+    fetch('/product-drawer.json')
         .then(resp => resp.json()) // Parse response as JSON
         .then(data => {
-          // this.data = data; // Save, in case we need it again.
-
           let output = '';
           data.forEach(cat => {
             let innerOutput = '';
@@ -56,31 +49,40 @@ class ProductDrawer {
               >${cat.title}</span><ul class="items">${innerOutput}</ul></li>`;
           });
 
-          $('.product-drawer .products').append(output);
+          document.querySelector('.product-drawer .products')
+              .insertAdjacentHTML('beforeend', output);
           this.bindEvents();
         });
   }
 
   bindEvents() {
-    $('.cat').on('click', function() {
-      $('.cat').removeClass('expanded');
-      $(this).addClass('expanded');
-    });
-    $('.product-drawer .open-close').on('click', function() {
-      if ($('.product-drawer').hasClass('open')) {
-        $('.product-drawer').css('width', '50px').removeClass('open');
+    document.querySelectorAll('.cat')
+        .forEach(function(e) {
+          e.addEventListener('click', function() {
+            document.querySelectorAll('.cat').forEach(cat => {
+              cat.classList.remove('expanded');
+            });
+        this.classList.add('expanded');
+        });
+      });
+    document.querySelector('.product-drawer .open-close')
+        .addEventListener('click', function() {
+      if (document.querySelector('.product-drawer').classList.contains('open')) {
+        document.querySelector('.product-drawer').style.cssText = 'width:50px';
+        document.querySelector('.product-drawer').classList.remove('open');
         // TODO - A bit brittle if something else codes styles to this element!
-        $('.cmain').removeAttr('style');
-        $('.chead').removeAttr('style');
-        $('.logo').show();
-        $(this).html('&raquo;'); // TODO... delay this .5s
+        document.querySelector('.cmain').removeAttribute('style');
+        document.querySelector('.chead').removeAttribute('style');
+        document.querySelector('.logo').style.cssText = 'display:block';
+        this.textContent = '»'; // TODO... delay this .5s
       } else {
-        $('.product-drawer').css('width', '210px').addClass('open');
+        document.querySelector('.product-drawer').style.cssText = 'width:210px';
+        document.querySelector('.product-drawer').classList.add('open');
         // setTimeout(function() { $(".product-drawer").addClass("open")}, 500);
-        $('.logo').hide();
-        $('.cmain').css('marginLeft', '210px');
-        $('.chead').css('left', '210px');
-        $(this).html('&laquo;');
+        document.querySelector('.logo').style.cssText = 'display:none';
+        document.querySelector('.cmain').style.cssText = 'margin-left:210px';
+        document.querySelector('.chead').style.cssText = 'left:210px';
+        this.textContent = '«';
       }
     });
   }
