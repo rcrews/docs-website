@@ -16,7 +16,7 @@
       url: /HDPDocuments/HDP3/HDP-3.1.5/index.html
       minors:
       - title: 3.1.5
-        type: Latest
+        type: latest
         url: /HDPDocuments/HDP3/HDP-3.1.5/index.html
       - title: 3.1.4
         url: /HDPDocuments/HDP3/HDP-3.1.4/index.html
@@ -156,7 +156,7 @@
       url: /HDPDocuments/Ambari/Ambari-7.1.0.0/index.html
       minors:
         - title: 7.1.0.0
-          type: Latest
+          type: latest
           url: /HDPDocuments/Ambari/Ambari-7.1.0.0/index.html
     - title: "2.7"
       url: /HDPDocuments/Ambari/Ambari-2.7.5.0/index.html
@@ -278,7 +278,7 @@
       url: /HDPDocuments/SS1/SmartSense-1.5.1/index.html
       minors:
         - title: 1.5.1
-          type: Latest
+          type: latest
           url: /HDPDocuments/SS1/SmartSense-1.5.1/index.html
         - title: 1.5.0
           url: /HDPDocuments/SS1/SmartSense-1.5.0/index.html
@@ -331,7 +331,7 @@
       url: /HDPDocuments/DP/DP-1.3.0/index.html
       minors:
         - title: 1.3.0
-          type: Latest
+          type: latest
           url: /HDPDocuments/DP/DP-1.3.0/index.html
     - title: "1.2"
       url: /HDPDocuments/DP/DP-1.2.3/index.html
@@ -369,7 +369,7 @@
       url: /HDPDocuments/DLM1/DLM-1.5.1/index.html
       minors:
         - title: 1.5.1
-          type: Latest
+          type: latest
           url: /HDPDocuments/DLM1/DLM-1.5.1/index.html
         - title: 1.5.0
           url: /HDPDocuments/DLM1/DLM-1.5.0/index.html
@@ -415,7 +415,7 @@
       url: /HDPDocuments/DSS1/DSS-1.6.1/index.html
       minors:
         - title: 1.6.1
-          type: Latest
+          type: latest
           url: /HDPDocuments/DSS1/DSS-1.6.1/index.html
         - title: 1.6.0
           url: /HDPDocuments/DSS1/DSS-1.6.0/index.html
@@ -463,7 +463,7 @@
       url: /HDPDocuments/DAS/DAS-1.4.5/index.html
       minors:
         - title: 1.4.5
-          type: Latest
+          type: latest
           url: /HDPDocuments/DAS/DAS-1.4.5/index.html
         - title: 1.4.4
           url: /HDPDocuments/DAS/DAS-1.4.4/index.html
@@ -508,7 +508,7 @@
       url: /HDPDocuments/HDPS/HDPS-5.0.0/index.html
       minors:
         - title: 5.0.0
-          type: Latest
+          type: latest
           url: /HDPDocuments/HDPS/HDPS-5.0.0/index.html
     - title: "4.0"
       url: /HDPDocuments/HDPS/HDPS-4.0.0/index.html
@@ -535,7 +535,7 @@
       url: /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/index.html
       minors:
         - title: 2.10.0
-          type: Latest
+          type: latest
           url: /HDPDocuments/Cloudbreak/Cloudbreak-2.10.0/index.html
     - title: "2.9"
       url: /HDPDocuments/Cloudbreak/Cloudbreak-2.9.1/index.html
@@ -727,27 +727,37 @@
       url: /runtime/7.2.1/index.html
       minors:
         - title: 7.2.1
-          type: Latest
+          type: Public Cloud • latest
           url: /runtime/7.2.1/index.html
         - title: 7.2.0
+          type: Public Cloud
           url: /runtime/7.2.0/index.html
     - title: "7.1"
-      url: /runtime/7.1.0/index.html
+      url: /runtime/7.1.2/index.html
       minors:
+        - title: 7.1.2
+          type: Data Center
+          url: /runtime/7.1.2/index.html
         - title: 7.1.1
+          type: Data Center
           url: /runtime/7.1.1/index.html
         - title: 7.1.0
+          type: Public Cloud
           url: /runtime/7.1.0/index.html
     - title: "7.0"
       url: /runtime/7.0.3/index.html
       minors:
         - title: 7.0.3
+          type: Data Center
           url: /runtime/7.0.3/index.html
         - title: 7.0.2
+          type: Public Cloud
           url: /runtime/7.0.2/index.html
         - title: 7.0.1
+          type: Public Cloud
           url: /runtime/7.0.1/index.html
         - title: 7.0.0
+          type: Public Cloud
           url: /runtime/7.0.0/index.html
 
 - name: Cloudera Manager
@@ -764,16 +774,22 @@
       url: /cloudera-manager/7.2.1/index.html
       minors:
         - title: 7.2.1
-          type: Latest
+          type: Public Cloud • latest
           url: /cloudera-manager/7.2.1/index.html
         - title: 7.2.0
+          type: Public Cloud
           url: /cloudera-manager/7.2.0/index.html
     - title: "7.1"
-      url: /cloudera-manager/7.1.0/index.html
+      url: /cloudera-manager/7.1.2/index.html
       minors:
+        - title: 7.1.2
+          type: Data Center
+          url: /cloudera-manager/7.1.2/index.html
         - title: 7.1.1
+          type: Data Center
           url: /cloudera-manager/7.1.1/index.html
         - title: 7.1.0
+          type: Public Cloud
           url: /cloudera-manager/7.1.0/index.html
     - title: "7.0"
       url: /cloudera-manager/7.0.3/index.html
@@ -781,10 +797,13 @@
         - title: 7.0.3
           url: /cloudera-manager/7.0.3/index.html
         - title: 7.0.2
+          type: Public Cloud
           url: /cloudera-manager/7.0.2/index.html
         - title: 7.0.1
+          type: Public Cloud
           url: /cloudera-manager/7.0.1/index.html
         - title: 7.0.0
+          type: Public Cloud
           url: /cloudera-manager/7.0.0/index.html
 
 - name: HDF
@@ -801,7 +820,7 @@
       url: /HDPDocuments/HDF3/HDF-3.5.1/index.html
       minors:
         - title: 3.5.1
-          type: Latest
+          type: latest
           url: /HDPDocuments/HDF3/HDF-3.5.1/index.html
     - title: "3.4"
       url: /HDPDocuments/HDF3/HDF-3.4.1.1/index.html
@@ -929,7 +948,7 @@
       url: /ccp/2.0.1/index.html
       minors:
         - title: 2.0.1
-          type: Latest
+          type: latest
           url: /ccp/2.0.1/index.html
         - title: 2.0.0
           url: /ccp/2.0.0/index.html
@@ -1018,7 +1037,7 @@
       url: /documentation/data-science-workbench/1-6-x.html
       minors:
         - title: "1.6"
-          label: Latest
+          label: latest
           url: /documentation/data-science-workbench/1-6-x.html
         - title: "1.5"
           url: /documentation/data-science-workbench/1-5-x.html
@@ -1139,7 +1158,7 @@
       url: /documentation/enterprise/6/6.3.html
       minors:
         - title: "6.3"
-          label: Latest
+          label: latest
           url: /documentation/enterprise/6/6.3.html
         - title: "6.2"
           url: /documentation/enterprise/6/6.2.html
@@ -1201,7 +1220,7 @@
       url: /documentation/spark2/2-3-x.html
       minors:
         - title: "2.3"
-          label: Latest
+          label: latest
           url: /documentation/spark2/2-3-x.html
         - title: "2.2"
           url: /documentation/spark2/2-2-x.html
@@ -1231,7 +1250,7 @@
       url: /documentation/kafka/latest.html
       minors:
         - title: "4.0"
-          label: Latest
+          label: latest
           url: /documentation/kafka/latest.html
     - title: "3"
       url: /documentation/kafka/3-1-x.html
@@ -1274,7 +1293,7 @@
       url: /documentation/kudu/5-12-x.html
       minors:
         - title: "5.12"
-          label: Latest
+          label: latest
           url: /documentation/kudu/5-12-x.html
         - title: "5.11"
           url: /documentation/kudu/5-11-x.html
@@ -1295,7 +1314,7 @@
       url: /documentation/manager/5-1-x.html
       minors:
         - title: "5.1"
-          label: Latest
+          label: latest
           url: /documentation/manager/5-1-x.html
         - title: "5.0"
           url: /documentation/manager/5-0-x.html
@@ -1328,7 +1347,7 @@
       url: /documentation/director/latest.html
       minors:
         - title: "6.2"
-          label: Latest
+          label: latest
           url: /documentation/director/latest.html
         - title: "6.1"
           url: /documentation/director/6-1-x.html
@@ -1379,7 +1398,7 @@
       url: /smm/2.0.0/index.html
       minors:
         - title: "2.0.0"
-          type: Latest
+          type: latest
           url: /smm/2.0.0/index.html
     - title: "1.2"
       url: /smm/1.2.1/index.html
@@ -1413,7 +1432,7 @@
       url: /cem/1.2.0/index.html
       minors:
         - title: 1.2.0
-          type: Latest
+          type: latest
           url: /cem/1.2.0/index.html
     - title: "1.1"
       url: /cem/1.1.1/index.html
@@ -1442,7 +1461,7 @@
       url: /cfm/2.0.1/index.html
       minors:
         - title: 2.0.1
-          type: Latest
+          type: latest
           url: /cfm/2.0.1/index.html
     - title: "1.1"
       url: /cfm/1.1.0/index.html
@@ -1471,7 +1490,7 @@
       url: /csa/1.2.0/index.html
       minors:
         - title: 1.2.0
-          type: Latest
+          type: latest
           url: /csa/1.2.0/index.html
     - title: "1.1"
       url: /csa/1.1.0/index.html
@@ -1498,7 +1517,7 @@
       url: /csp/2.0.1/index.html
       minors:
         - title: 2.0.1
-          type: Latest
+          type: latest
           url: /csp/2.0.1/index.html
         - title: 2.0.0
           url: /csp/2.0.0/index.html
@@ -1563,7 +1582,7 @@
       url: /documentation/other/accumulo/1-7-2.html
       minors:
         - title: 1.7.2
-          label: Latest
+          label: latest
           url: /documentation/other/accumulo/1-7-2.html
     - title: "1.6"
       url: /documentation/other/accumulo/1-6-0.html
@@ -1596,7 +1615,7 @@
       url: /documentation/other/connectors/hive-jdbc/latest.html
       minors:
         - title: 2.6.10
-          label: Latest
+          label: latest
           url: /documentation/other/connectors/hive-jdbc/2-6-10.html
         - title: 2.6.9
           url: /documentation/other/connectors/hive-jdbc/2-6-9.html
@@ -1645,7 +1664,7 @@
       url: /HDPDocuments/other/connectors/hive-jdbc/2.6.7/index.html
       minors:
         - title: 2.6.7
-          label: Latest
+          label: latest
           url: /HDPDocuments/other/connectors/hive-jdbc/2.6.7/index.html
 
 - name: Hive ODBC
@@ -1679,7 +1698,7 @@
       url: /documentation/other/connectors/hive-odbc/latest.html
       minors:
         - title: 2.6.1
-          label: Latest
+          label: latest
           url: /documentation/other/connectors/hive-odbc/latest.html
     - title: "2.5"
       url: /documentation/other/connectors/hive-odbc/2-5-25.html
@@ -1766,7 +1785,7 @@
       url: /documentation/other/connectors/impala-jdbc/latest.html
       minors:
         - title: 2.6.17
-          label: Latest
+          label: latest
           url: /documentation/other/connectors/impala-jdbc/2-6-17.html
         - title: 2.6.15
           url: /documentation/other/connectors/impala-jdbc/2-6-15.html
@@ -1870,7 +1889,7 @@
       url: /documentation/other/connectors/impala-odbc/latest.html
       minors:
         - title: 2.6.4
-          label: Latest
+          label: latest
           url: /documentation/other/connectors/impala-odbc/latest.html
         - title: 2.6.2
           url: /documentation/other/connectors/impala-odbc/2-6-2.html
@@ -1953,7 +1972,7 @@
       url: /documentation/other/connectors/netezza/1-x.html
       minors:
         - title: "1.0"
-          label: Latest
+          label: latest
           url: /documentation/other/connectors/netezza/1-x.html
 
 - name: Teradata Connector
@@ -1969,11 +1988,11 @@
       url: /documentation/other/connectors/teradata/1-x.html
       minors:
         - title: "1.0"
-          label: Latest
+          label: latest
           url: /documentation/other/connectors/teradata/1-x.html
 
 - name: Licenses
-  latest-version: Latest
+  latest-version: latest
   latest-url: /documentation/other/Licenses/index.html
   search-name: licenses
   #
@@ -1982,11 +2001,11 @@
   # - /documentation/other/shared/licensefiles/
   #
   versions:
-    - title: Latest
+    - title: latest
       url: /documentation/other/Licenses/index.html
 
 - name: Matrix
-  latest-version: Latest
+  latest-version: latest
   latest-url: /documentation/other/Matrix/topics/Product_Compatibility_Matrix.html
   search-name: licenses
   #
@@ -1994,11 +2013,11 @@
   # - /documentation/other/Matrix/
   #
   versions:
-    - title: Latest
+    - title: latest
       url: /documentation/other/Matrix/topics/Product_Compatibility_Matrix.html
 
 - name: Reference Architecture
-  latest-version: Latest
+  latest-version: latest
   latest-url: /documentation/other/reference-architecture.html
   search-name: licenses
   #
@@ -2006,11 +2025,11 @@
   # - /documentation/other/reference-architecture/
   #
   versions:
-    - title: Latest
+    - title: latest
       url: /documentation/other/reference-architecture.html
 
 - name: Security Bulletins
-  latest-version: Latest
+  latest-version: latest
   latest-url: /documentation/other/security-bulletins/topics/Security-Bulletin.html
   search-name: security-bulletins
   #
@@ -2040,7 +2059,7 @@
   #  - /documentation/other/security-bulletins/topics/csb_topic_1.html
   #
   versions:
-    - title: Latest
+    - title: latest
       url: /documentation/other/security-bulletins/topics/Security-Bulletin.html
 
 - name: Workload XM
