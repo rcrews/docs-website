@@ -35,6 +35,13 @@ content routing.
 deployment of flow files. It also supports flow versioning, promoting
 flows from one environment into another, and flow deployment.
 
+<div style="border: 1px solid #ccc;border-radius: 2px;background: #fed;padding: 1ex 1em;max-width: 52rem;">
+<b>Note</b><br>
+CFM 2.0.1 installs NiFi and NiFi Registry on CDP Data Center. If you
+want to deploy CFM on on CDH or HDF clusters, review the table below for
+the correct information.
+</div>
+
 <table style="border-collapse: collapse; border: .5px solid #666; margin-top: 3em;">
   <tr style="background: #ddd">
     <th style="padding: .3rem; border-bottom: .5px solid #666; border-right: .5px solid #666;">If you want to install NiFi and NiFi Registry with…</th>
@@ -60,8 +67,6 @@ flows from one environment into another, and flow deployment.
   </tr>
   <tr style="border-bottom: .5px solid #666">
     <td style="padding: .3rem; border-bottom: .5px solid #666; border-right: .5px solid #666;">CDP Data Center</td>
-    <td style="padding: .3rem; border-bottom: .5px solid #666">
-      <a href="/dataflow/master/index.html">CDP DataFlow</a>
-    </td>
+    <td style="padding: .3rem; border-bottom: .5px solid #666">You are in the correct library</td>
   </tr>
 </table>

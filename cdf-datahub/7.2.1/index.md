@@ -14,8 +14,9 @@ sections:
 
 ---
 
-Cloudera DataFlow delivers Streams Messaging and Flow Management
-cluster definitions for installation on CDP Public Cloud using Data Hub.
+Cloudera DataFlow delivers Streams Messaging, Streaming Analytics, and
+Flow Management cluster definitions for installation on CDP Public Cloud
+using Data Hub.
 
 The Streams Messaging Light and Heavy Duty clusters provide advanced
 messaging and real-time processing on streaming data using Apache Kafka,
@@ -29,9 +30,11 @@ data movement, continuous data ingestion, log data ingestion, and
 acquisition of all types of streaming data including social, mobile,
 clickstream, and IoT data.
 
-The Streaming Analytics Light Duty clusters offer real-time stream processing and stream analytics with low-latency and high scaling capabilities powered by Apache Flink.
+The Streaming Analytics Light Duty clusters offer real-time stream
+processing and stream analytics with low-latency and high scaling
+capabilities powered by Apache Flink.
 
-<div style="border: 1px solid #ccc;border-radius: 2px;background: #fed;padding: 1ex 1em;">
+<div style="border: 1px solid #ccc;border-radius: 2px;background: #fed;padding: 1ex 1em;max-width: 52rem;">
 <b>Note</b><br>
 Streaming Analytics cluster definitions are available for Technical Preview.
 Cloudera encourages you to explore these technical preview features in
