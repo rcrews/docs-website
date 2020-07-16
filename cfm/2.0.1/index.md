@@ -26,7 +26,7 @@ movement, transformation, and management capabilities to the enterprise.
 CFM includes two primary components:
 
 *Apache NiFi*
-: the core data ingestion engine that has a no-code graphical user
+: TThe core data ingestion engine that has a no-code graphical user
 interface and supports processors for connectivity, transformation, and
 content routing.
 
