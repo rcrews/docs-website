@@ -4,7 +4,7 @@
   "description": "Cloudera docs website",
   "main": "index.js",
   "dependencies": {
-    "eslint": "^7.0.0",
+    "eslint": "^7.4.0",
     "eslint-config-google": "^0.14.0"
   },
   "devDependencies": {
