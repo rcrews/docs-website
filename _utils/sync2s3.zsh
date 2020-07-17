@@ -8,8 +8,8 @@ rvm 2.6.6@docs-website
 
 s3sync_jar='/Users/rcrews/Sandbox/s3sync/s3sync.jar'
 
-/usr/local/bin/git checkout master
-/usr/local/bin/git fetch origin master
+/usr/local/bin/git checkout main
+/usr/local/bin/git fetch origin main
 /usr/local/bin/git fetch public playbranch
 
 # https://stackoverflow.com/questions/3878624
@@ -52,7 +52,7 @@ then
     # brew services start tomcat
     LOCAL="${HOME}/Library/Application Support/tomcat@9/webapps/ROOT"
     REMOTE='s3://docs-stage.cloudera.com'
-    /usr/local/bin/git checkout my-master
+    /usr/local/bin/git checkout my-main
     bundle exec jekyll clean
     bundle exec jekyll build --trace
     /usr/local/bin/aws s3 sync ${REMOTE}/apps                                      "${LOCAL}"/apps
@@ -125,7 +125,7 @@ then
     /usr/local/bin/aws s3 sync ${REMOTE}/cloudera-manager/7.1.1                    "${LOCAL}"/cloudera-manager/7.1.1
 
     /usr/local/bin/rsync -ChivrlpgoDHAXc _site/                                    "${LOCAL}"
-    /usr/local/bin/git checkout master
+    /usr/local/bin/git checkout main
 fi
 
 if _utils/switchsite.rb dev
@@ -146,4 +146,4 @@ _utils/switchsite.rb stage
 
 /usr/local/bin/aws cloudfront create-invalidation --distribution-id E8CUP7Y9RHWIX --paths '/*'
 
-/usr/local/bin/git checkout my-master
+/usr/local/bin/git checkout my-main
